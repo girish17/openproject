@@ -32,7 +32,7 @@ require "spec_helper"
 require_relative "support/board_index_page"
 require_relative "support/board_page"
 
-RSpec.describe "Boards enterprise spec", :js do
+RSpec.describe "Boards community edition spec", :js do
   shared_let(:admin) { create(:admin) }
 
   shared_let(:project) { create(:project, enabled_module_names: %i[work_package_tracking board_view]) }
@@ -49,49 +49,19 @@ RSpec.describe "Boards enterprise spec", :js do
            projects_columns: [])
   end
 
-  context "when EE inactive" do
+  context "when Community edition" do
     before do
       login_as(admin)
       board_index.visit!
     end
 
-    it "disabled all action boards" do
-      page.find('[data-test-selector="add-board-button"]', text: "Board").click
-
-      expect(page).to have_css("#{test_selector('op-tile-block')}:not(.-disabled)", text: "Basic")
-      expect(page).to have_css("#{test_selector('op-tile-block')}.-disabled", count: 5)
-    end
-
-    it "shows a banner on the action board" do
-      # Expect both existing boards to show
-      expect(page).to have_content "My board"
-      expect(page).to have_content "Subproject board"
-
-      board_page = board_index.open_board(manual_board)
-      board_page.expect_query "My board"
-      wait_for_network_idle # wait for the banner to be loaded
-      expect(page).not_to have_enterprise_banner
-
-      board_index.visit!
-      board_page = board_index.open_board(action_board)
-      board_page.expect_query "Subproject board"
-      expect(page).to have_enterprise_banner
-    end
-  end
-
-  context "when EE active", with_ee: %i[board_view] do
-    before do
-      login_as(admin)
-      board_index.visit!
-    end
-
-    it "enables all options" do
+    it "enables all board types" do
       page.find('[data-test-selector="add-board-button"]', text: "Board").click
 
       expect(page).to have_css("#{test_selector('op-tile-block')}:not(.-disabled)", count: 6)
     end
 
-    it "shows the action board" do
+    it "shows both boards without enterprise banners" do
       # Expect both existing boards to show
       expect(page).to have_content "My board"
       expect(page).to have_content "Subproject board"
@@ -106,4 +76,6 @@ RSpec.describe "Boards enterprise spec", :js do
       expect(page).not_to have_enterprise_banner
     end
   end
+
+  # All board types are now available in Community edition, so no separate EE test needed
 end

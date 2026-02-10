@@ -52,7 +52,7 @@ import { SubprojectBoardHeaderComponent } from 'core-app/features/boards/board/b
 import { SubtasksBoardHeaderComponent } from 'core-app/features/boards/board/board-actions/subtasks/subtasks-board-header.component';
 import { StatusBoardHeaderComponent } from 'core-app/features/boards/board/board-actions/status/status-board-header.component';
 import { OpenprojectAutocompleterModule } from 'core-app/shared/components/autocompleter/openproject-autocompleter.module';
-import { OpenprojectEnterpriseModule } from 'core-app/features/enterprise/openproject-enterprise.module';
+// import { OpenprojectEnterpriseModule } from 'core-app/features/enterprise/openproject-enterprise.module';
 
 @NgModule({
   imports: [
@@ -60,7 +60,7 @@ import { OpenprojectEnterpriseModule } from 'core-app/features/enterprise/openpr
     OpenprojectWorkPackagesModule,
     OpenprojectModalModule,
     OpenprojectAutocompleterModule,
-    OpenprojectEnterpriseModule,
+    // OpenprojectEnterpriseModule,
 
     // Dynamic Module for actions
     DynamicModule,

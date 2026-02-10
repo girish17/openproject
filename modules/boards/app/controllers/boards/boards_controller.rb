@@ -11,7 +11,7 @@ module ::Boards
 
     before_action :build_board_grid, only: %i[new]
     before_action :load_query, only: %i[index]
-    before_action :ensure_board_type_not_restricted, only: %i[create]
+    # before_action :ensure_board_type_not_restricted, only: %i[create]
 
     menu_item :boards
 
@@ -85,13 +85,13 @@ module ::Boards
       @board_grid = Boards::Grid.new
     end
 
-    def ensure_board_type_not_restricted
-      render_403 if restricted_board_type?
-    end
+    # def ensure_board_type_not_restricted
+    #   render_403 if restricted_board_type?
+    # end
 
-    def restricted_board_type?
-      !EnterpriseToken.allows_to?(:board_view) && board_grid_params[:attribute] != "basic"
-    end
+    # def restricted_board_type?
+    #   !EnterpriseToken.allows_to?(:board_view) && board_grid_params[:attribute] != "basic"
+    # end
 
     def service_call
       service_class.new(user: User.current)
