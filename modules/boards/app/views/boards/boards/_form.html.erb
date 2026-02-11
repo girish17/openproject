@@ -59,11 +59,7 @@ See COPYRIGHT and LICENSE files for more details.
 
   <div class="form--field -required -align-start">
     <label class="form--label" for="board_type"><%= t("boards.label_board_type") %></label>
-    <div class="form--field-container -enterprise-restricted">
-      <%=
-        render(EnterpriseEdition::BannerComponent.new(:board_view))
-      %>
-
+    <div class="form--field-container">
       <div class="op-tile-block">
         <% board_types.each_with_index do |board_type, tile_number| %>
           <label class="op-tile-block--tile form--radio-button-container -wide <%= "-disabled" if board_type.disabled? %>"
