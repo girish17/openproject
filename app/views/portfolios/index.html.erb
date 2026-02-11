@@ -37,14 +37,6 @@ See COPYRIGHT and LICENSE files for more details.
       )
     )
   %>
-  <%=
-    with_enterprise_banner_guard(
-      :portfolio_management,
-      variant: :large,
-      image: "enterprise/portfolio-management.png"
-    ) do
-  %>
-    <%= render Portfolios::IndexSubHeaderComponent.new(query:, current_user:, disable_buttons: false) %>
-    <%= render Portfolios::IndexComponent.new(query:, current_user:) %>
-  <% end %>
+  <%= render Portfolios::IndexSubHeaderComponent.new(query:, current_user:, disable_buttons: false) %>
+  <%= render Portfolios::IndexComponent.new(query:, current_user:) %>
 </div>

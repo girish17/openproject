@@ -175,7 +175,6 @@ module Projects
     end
 
     def workspace_type_badge
-      return unless OpenProject::FeatureDecisions.portfolio_models_active?
       # Only show icon and type for non-project workspaces
       return unless project.workspace_type.in?(["portfolio", "program"])
 
