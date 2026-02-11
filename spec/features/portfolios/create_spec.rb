@@ -53,74 +53,59 @@ RSpec.describe "Portfolios",
 
   current_user { user_with_permissions }
 
-  context "with enterprise feature enabled", with_ee: :portfolio_management do
-    it "can create a portfolio", with_flag: { portfolio_models: true } do
-      projects_page.visit!
-      projects_page.create_new_workspace
+  it "can create a portfolio", with_flag: { portfolio_models: true } do
+    projects_page.visit!
+    projects_page.create_new_workspace
 
-      expect(page).to have_heading "New portfolio"
+    expect(page).to have_heading "New portfolio"
 
-      # Step 1: Select workspace type (blank portfolio)
-      click_on "Continue"
+    # Step 1: Select workspace type (blank portfolio)
+    click_on "Continue"
 
-      # Step 2: Fill in project details
-      fill_in "Name", with: "Foo bar"
+    # Step 2: Fill in project details
+    fill_in "Name", with: "Foo bar"
 
-      # No parent field since portfolios are always root elements
-      expect(page)
-        .not_to have_combo_box "Subproject of"
+    # No parent field since portfolios are always root elements
+    expect(page)
+      .not_to have_combo_box "Subproject of"
 
-      click_on "Complete"
+    click_on "Complete"
 
-      expect_and_dismiss_flash type: :success, message: "Successful creation."
+    expect_and_dismiss_flash type: :success, message: "Successful creation."
 
-      expect(page).to have_current_path /\/projects\/foo-bar\/?/
-      expect(page).to have_content "Foo bar"
+    expect(page).to have_current_path /\/projects\/foo-bar\/?/
+    expect(page).to have_content "Foo bar"
 
-      portfolio = Project.last
-      expect(portfolio.workspace_type).to eq "portfolio"
-      expect(portfolio.identifier).to eq "foo-bar"
-      expect(portfolio.parent).to be_nil
-    end
+    portfolio = Project.last
+    expect(portfolio.workspace_type).to eq "portfolio"
+    expect(portfolio.identifier).to eq "foo-bar"
+    expect(portfolio.parent).to be_nil
+  end
 
-    it "redirects to portfolios#index when users cancels", with_flag: { portfolio_models: true } do
+  it "redirects to portfolios#index when users cancels", with_flag: { portfolio_models: true } do
+    visit new_portfolio_path
+
+    expect(page).to have_heading "New portfolio"
+
+    click_on "Cancel"
+    expect(page).to have_current_path portfolios_path
+  end
+
+  context "without the necessary permissions to create portfolios", with_flag: { portfolio_models: true } do
+    current_user { create(:user) }
+
+    it "cannot create the portfolio" do
       visit new_portfolio_path
 
-      expect(page).to have_heading "New portfolio"
-
-      click_on "Cancel"
-      expect(page).to have_current_path portfolios_path
-    end
-
-    context "without the necessary permissions to create portfolios", with_flag: { portfolio_models: true } do
-      current_user { create(:user) }
-
-      it "cannot create the portfolio" do
-        visit new_portfolio_path
-
-        expect(page).to have_content "[Error 403] You are not authorized to access this page."
-      end
-    end
-
-    context "without the feature flag being active", with_flag: { portfolio_models: false } do
-      it "cannot create the portfolio" do
-        visit new_portfolio_path
-
-        expect(page).to have_content "[Error 403] You are not authorized to access this page."
-      end
+      expect(page).to have_content "[Error 403] You are not authorized to access this page."
     end
   end
 
-  context "without enterprise feature enabled", with_ee: [] do
-    it "shows enterprise banner instead of the form", with_flag: { portfolio_models: true } do
-      projects_page.visit!
-      projects_page.create_new_workspace
+  context "without the feature flag being active", with_flag: { portfolio_models: false } do
+    it "cannot create the portfolio" do
+      visit new_portfolio_path
 
-      expect(page).to have_heading "New portfolio"
-
-      expect(page).to have_no_button "Continue"
-
-      expect(page).to have_enterprise_banner(:premium, class: "op-enterprise-banner_large")
+      expect(page).to have_content "[Error 403] You are not authorized to access this page."
     end
   end
 end

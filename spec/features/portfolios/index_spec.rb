@@ -30,7 +30,7 @@
 
 require "spec_helper"
 
-RSpec.describe "Portfolios", "index", :js, with_ee: :portfolio_management do # TODO: test without enterprise feature
+RSpec.describe "Portfolios", "index", :js do
   let!(:portfolio_a) { create(:portfolio, name: "Portfolio A") }
   let!(:portfolio_b) { create(:portfolio, name: "Portfolio B") }
   let!(:portfolio_favorited) { create(:portfolio, name: "Favorited") }

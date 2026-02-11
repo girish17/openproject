@@ -79,48 +79,36 @@ RSpec.describe Projects::CreateContract do
     context "if workspace type is 'program'" do
       let(:project_workspace_type) { "program" }
 
-      context "without portfolio_management enterprise feature", with_ee: [] do
-        it_behaves_like "contract is invalid", base: %i[error_enterprise_only]
+      it_behaves_like "contract is valid"
+
+      context "without the add_programs permission" do
+        let(:global_permissions) { %i[add_project add_portfolios] }
+
+        it_behaves_like "contract is invalid", base: %i[error_unauthorized]
       end
 
-      context "with portfolio_management enterprise feature", with_ee: :portfolio_management do
+      context "having the add_programs permission" do
+        let(:global_permissions) { %i[add_programs] }
+
         it_behaves_like "contract is valid"
-
-        context "without the add_programs permission" do
-          let(:global_permissions) { %i[add_project add_portfolios] }
-
-          it_behaves_like "contract is invalid", base: %i[error_unauthorized]
-        end
-
-        context "having the add_programs permission" do
-          let(:global_permissions) { %i[add_programs] }
-
-          it_behaves_like "contract is valid"
-        end
       end
     end
 
     context "if workspace type is 'portfolio'" do
       let(:project_workspace_type) { "portfolio" }
 
-      context "without portfolio_management enterprise feature", with_ee: [] do
-        it_behaves_like "contract is invalid", base: %i[error_enterprise_only]
+      it_behaves_like "contract is valid"
+
+      context "without the add_portfolios permission" do
+        let(:global_permissions) { %i[add_project add_programs] }
+
+        it_behaves_like "contract is invalid", base: %i[error_unauthorized]
       end
 
-      context "with portfolio_management enterprise feature", with_ee: :portfolio_management do
+      context "having the add_portfolios permission" do
+        let(:global_permissions) { %i[add_portfolios] }
+
         it_behaves_like "contract is valid"
-
-        context "without the add_portfolios permission" do
-          let(:global_permissions) { %i[add_project add_programs] }
-
-          it_behaves_like "contract is invalid", base: %i[error_unauthorized]
-        end
-
-        context "having the add_portfolios permission" do
-          let(:global_permissions) { %i[add_portfolios] }
-
-          it_behaves_like "contract is valid"
-        end
       end
     end
 

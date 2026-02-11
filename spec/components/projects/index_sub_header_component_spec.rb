@@ -117,13 +117,7 @@ RSpec.describe Projects::IndexSubHeaderComponent, type: :component do
       end
 
       context "with feature flag", with_flag: { portfolio_models: true } do
-        context "without enterprise feature enabled", with_ee: [] do
-          include_examples "renders add button directly", :portfolio, upsell: true
-        end
-
-        context "with enterprise feature enabled", with_ee: :portfolio_management do
-          include_examples "renders add button directly", :portfolio, upsell: false
-        end
+        include_examples "renders add button directly", :portfolio, upsell: false
       end
     end
 
@@ -135,13 +129,7 @@ RSpec.describe Projects::IndexSubHeaderComponent, type: :component do
       end
 
       context "with feature flag", with_flag: { portfolio_models: true } do
-        context "without enterprise feature enabled", with_ee: [] do
-          include_examples "renders add button directly", :program, upsell: true
-        end
-
-        context "with enterprise feature enabled", with_ee: :portfolio_management do
-          include_examples "renders add button directly", :program, upsell: false
-        end
+        include_examples "renders add button directly", :program, upsell: false
       end
     end
 
@@ -151,9 +139,7 @@ RSpec.describe Projects::IndexSubHeaderComponent, type: :component do
       include_examples "renders add button directly", :project, upsell: false
 
       context "with feature flag", with_flag: { portfolio_models: true } do
-        context "with enterprise feature enabled", with_ee: :portfolio_management do
-          include_examples "renders add button directly", :project, upsell: false
-        end
+        include_examples "renders add button directly", :project, upsell: false
       end
     end
 
@@ -165,13 +151,7 @@ RSpec.describe Projects::IndexSubHeaderComponent, type: :component do
       end
 
       context "with feature flag", with_flag: { portfolio_models: true } do
-        context "without enterprise feature enabled", with_ee: [] do
-          include_examples "renders add buttons in a pulldown", %i[program project], upsell: %i[program]
-        end
-
-        context "with enterprise feature enabled", with_ee: :portfolio_management do
-          include_examples "renders add buttons in a pulldown", %i[program project], upsell: []
-        end
+        include_examples "renders add buttons in a pulldown", %i[program project], upsell: []
       end
     end
 
@@ -183,13 +163,7 @@ RSpec.describe Projects::IndexSubHeaderComponent, type: :component do
       end
 
       context "with feature flag", with_flag: { portfolio_models: true } do
-        context "without enterprise feature enabled", with_ee: [] do
-          include_examples "renders add buttons in a pulldown", workspace_types, upsell: %i[portfolio program]
-        end
-
-        context "with enterprise feature enabled", with_ee: :portfolio_management do
-          include_examples "renders add buttons in a pulldown", workspace_types, upsell: []
-        end
+        include_examples "renders add buttons in a pulldown", workspace_types, upsell: []
       end
     end
   end

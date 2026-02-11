@@ -53,65 +53,50 @@ RSpec.describe "Programs",
 
   current_user { user_with_permissions }
 
-  context "with enterprise feature enabled", with_ee: :portfolio_management do
-    it "can create a program", with_flag: { portfolio_models: true } do
-      projects_page.visit!
-      projects_page.create_new_workspace
+  it "can create a program", with_flag: { portfolio_models: true } do
+    projects_page.visit!
+    projects_page.create_new_workspace
 
-      expect(page).to have_heading "New program"
+    expect(page).to have_heading "New program"
 
-      # Step 1: Select workspace type (blank program)
-      click_on "Continue"
+    # Step 1: Select workspace type (blank program)
+    click_on "Continue"
 
-      # Step 2: Fill in project details
-      fill_in "Name", with: "Foo bar"
+    # Step 2: Fill in project details
+    fill_in "Name", with: "Foo bar"
 
-      expect(page).to have_combo_box "Subproject of"
-      parent_field.expect_no_option "Other portfolio"
-      parent_field.select_option "Root portfolio"
+    expect(page).to have_combo_box "Subproject of"
+    parent_field.expect_no_option "Other portfolio"
+    parent_field.select_option "Root portfolio"
 
-      click_on "Complete"
+    click_on "Complete"
 
-      expect_and_dismiss_flash type: :success, message: "Successful creation."
+    expect_and_dismiss_flash type: :success, message: "Successful creation."
 
-      expect(page).to have_current_path /\/projects\/foo-bar\/?/
-      expect(page).to have_content "Foo bar"
+    expect(page).to have_current_path /\/projects\/foo-bar\/?/
+    expect(page).to have_content "Foo bar"
 
-      program = Project.last
-      expect(program.workspace_type).to eq "program"
-      expect(program.identifier).to eq "foo-bar"
-      expect(program.parent).to eq root_portfolio
-    end
+    program = Project.last
+    expect(program.workspace_type).to eq "program"
+    expect(program.identifier).to eq "foo-bar"
+    expect(program.parent).to eq root_portfolio
+  end
 
-    context "without the necessary permissions to create programs", with_flag: { portfolio_models: true } do
-      current_user { create(:user) }
+  context "without the necessary permissions to create programs", with_flag: { portfolio_models: true } do
+    current_user { create(:user) }
 
-      it "cannot create the program" do
-        visit new_program_path
+    it "cannot create the program" do
+      visit new_program_path
 
-        expect(page).to have_content "[Error 403] You are not authorized to access this page."
-      end
-    end
-
-    context "without the feature flag being active", with_flag: { portfolio_models: false } do
-      it "cannot create the program" do
-        visit new_program_path
-
-        expect(page).to have_content "[Error 403] You are not authorized to access this page."
-      end
+      expect(page).to have_content "[Error 403] You are not authorized to access this page."
     end
   end
 
-  context "without enterprise feature enabled", with_ee: [] do
-    it "shows enterprise banner instead of the form", with_flag: { portfolio_models: true } do
-      projects_page.visit!
-      projects_page.create_new_workspace
+  context "without the feature flag being active", with_flag: { portfolio_models: false } do
+    it "cannot create the program" do
+      visit new_program_path
 
-      expect(page).to have_heading "New program"
-
-      expect(page).to have_no_button "Continue"
-
-      expect(page).to have_enterprise_banner(:premium, class: "op-enterprise-banner_large")
+      expect(page).to have_content "[Error 403] You are not authorized to access this page."
     end
   end
 end
