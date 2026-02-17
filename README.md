@@ -1,6 +1,6 @@
 # Yojana
 
-Yojana is a web-based project management software. Use Yojana to manage your projects, tasks and goals. 
+yojanā is a web-based project management software. Use yojanā to manage your portfolios, projects, tasks and goals. 
 
 
 Yojana's key features are:
@@ -18,5 +18,5 @@ Yojana's key features are:
 
 ## License
 
-Yojana is licensed under the terms of the GNU General Public License version 3.
+yojanā is licensed under the terms of the GNU General Public License version 3.
 
