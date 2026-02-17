@@ -1,9 +1,9 @@
-# Yojana
+# yojanā
 
 yojanā is a web-based project management software. Use yojanā to manage your portfolios, projects, tasks and goals. 
 
 
-Yojana's key features are:
+yojanā's key features are:
 
 * Project planning and scheduling
 * Portfolio management
