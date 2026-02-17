@@ -76,7 +76,7 @@ module Settings
         default: false
       },
       app_title: {
-        default: "OpenProject"
+        default: "Yojana"
       },
       attachment_max_size: {
         default: 5120
@@ -1154,11 +1154,11 @@ module Settings
       },
       software_name: {
         description: "Override software application name",
-        default: "OpenProject"
+        default: "Yojana"
       },
       software_url: {
         description: "Override software application URL",
-        default: "https://www.openproject.org/"
+        default: "https://yojana.example.com"
       },
       sql_slow_query_threshold: {
         description: "Time limit in ms after which queries will be logged as slow queries",
@@ -1573,7 +1573,7 @@ module Settings
         env_var_hash_part
           .scan(/(?:[a-zA-Z0-9]|__)+/)
           .map do |seg|
-          unescape_underscores(seg.downcase)
+            unescape_underscores(seg.downcase)
         end
       end
 

@@ -49,7 +49,7 @@ module OpenProject::CustomStyles
           "accent-color" => ACCENT_COLOR,
           "header-bg-color" => "#1A67A3",
           "main-menu-bg-color" => "#FFFFFF",
-          "main-menu-bg-selected-background" => "#175A8E",
+          "main-menu-bg-selected-background" => "#175A8E"
         }
       },
       {
@@ -59,9 +59,9 @@ module OpenProject::CustomStyles
           "accent-color" => ACCENT_COLOR,
           "header-bg-color" => "#FAFAFA",
           "main-menu-bg-color" => "#ECECEC",
-          "main-menu-bg-selected-background" => "#A9A9A9",
+          "main-menu-bg-selected-background" => "#A9A9A9"
         },
-        logo: "logo_openproject.png"
+        logo: "logo_yojana.png"
       },
       {
         theme: "OpenProject Navy Blue",
@@ -70,7 +70,7 @@ module OpenProject::CustomStyles
           "accent-color" => ACCENT_COLOR,
           "header-bg-color" => "#05002C",
           "main-menu-bg-color" => "#0E2045",
-          "main-menu-bg-selected-background" => "#3270DB",
+          "main-menu-bg-selected-background" => "#3270DB"
         }
       }
     ].freeze

@@ -66,7 +66,7 @@ en:
         can be requested.
       last_backup: Last backup
       last_backup_from: Last backup from
-      title: Backup OpenProject
+      title: Backup Yojana
       options: Options
       include_attachments: Include attachments
       download_backup: Download backup
@@ -547,7 +547,7 @@ en:
         next: "Next"
         got_it: "Got it"
       steps:
-        help_menu: "The Help (?) menu provides <b>additional help resources</b>. Here you can find a user guide, helpful how-to videos and more. <br> Enjoy your work with OpenProject!"
+        help_menu: "The Help (?) menu provides <b>additional help resources</b>. Here you can find a user guide, helpful how-to videos and more. <br> Enjoy your work with Yojana!"
         members: "Invite new <b>members</b> to join your project."
         quick_add_button: "Click on the plus (+) icon in the header navigation to <b>create a new project</b> or to <b>invite coworkers</b>."
         sidebar_arrow: "Use the return arrow in the top left corner to return to the project’s <b>main menu</b>."

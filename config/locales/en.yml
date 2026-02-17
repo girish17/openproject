@@ -246,39 +246,36 @@ en:
       name: Arbitrary name of the LDAP connection
       host: LDAP host name or IP address
       login_map: The attribute key in LDAP that is used to identify the unique user login. Usually, this will be `uid` or `samAccountName`.
-      generic_map: The attribute key in LDAP that is mapped to the OpenProject `%{attribute}` attribute
-      admin_map_html: "Optional: The attribute key in LDAP that <strong>if present</strong> marks the OpenProject user an admin. Leave empty when in doubt."
+      generic_map: The attribute key in LDAP that is mapped to the Yojana `%{attribute}` attribute
+      admin_map_html: "Optional: The attribute key in LDAP that <strong>if present</strong> marks the Yojana user an admin. Leave empty when in doubt."
       system_user_dn_html: |
         Enter the DN of the system user used for read-only access.
         <br>
         Example: uid=openproject,ou=system,dc=example,dc=com
       system_user_password: Enter the bind password of the system user
       base_dn: |
-        Enter the Base DN of the subtree in LDAP you want OpenProject to look for users and groups.
-        OpenProject will filter for provided usernames in this subtree only.
+        Enter the Base DN of the subtree in LDAP you want Yojana to look for users and groups.
+        Yojana will filter for provided usernames in this subtree only.
         Example: ou=users,dc=example,dc=com
       filter_string: |
         Add an optional RFC4515 filter to apply to the results returned for users filtered in the LDAP.
-        This can be used to restrict the set of users that are found by OpenProject for authentication and group synchronization.
-      filter_string_concat: |
-        OpenProject will always filter for the login attribute provided by the user to identify the record. If you provide a filter here,
-        it will be concatenated with an AND. By default, a catch-all (objectClass=*) will be used as a filter.
-      onthefly_register: |
-        If you check this box, OpenProject will automatically create new users from their LDAP entries
-        when they first authenticate with OpenProject.
-        Leave this unchecked to only allow existing accounts in OpenProject to authenticate through LDAP!
+        This can be used to restrict the set of users that are found by Yojana for authentication and group synchronization.
+        Yojana will always filter for the login attribute provided by the user to identify the record. If you provide a filter here,
+        If you check this box, Yojana will automatically create new users from their LDAP entries
+        when they first authenticate with Yojana.
+        Leave this unchecked to only allow existing accounts in Yojana to authenticate through LDAP!
 
     connection_encryption: "Connection encryption"
     encryption_details: "LDAPS / STARTTLS options"
     system_account: "System account"
     system_account_legend: |
-      OpenProject requires read-only access through a system account to lookup users and groups in your LDAP tree.
+      Yojana requires read-only access through a system account to lookup users and groups in your LDAP tree.
       Please specify the bind credentials for that system user in the following section.
     ldap_details: "LDAP details"
     user_settings: "Attribute mapping"
     user_settings_legend: |
-      The following fields are related to how users are created in OpenProject from LDAP entries and
-      what LDAP attributes are used to define the attributes of an OpenProject user (attribute mapping).
+      The following fields are related to how users are created in Yojana from LDAP entries and
+      what LDAP attributes are used to define the attributes of a Yojana user (attribute mapping).
     tls_mode:
       plain: "none"
       simple_tls: "LDAPS"
@@ -1602,7 +1599,7 @@ en:
         confirmation: "doesn't match %{attribute}."
         could_not_be_copied: "%{dependency} could not be (fully) copied."
         does_not_exist: "does not exist."
-        error_enterprise_only: "%{action} is only available in the OpenProject Enterprise edition."
+        error_enterprise_only: "%{action} is only available in the Yojana Enterprise edition."
         error_unauthorized: "may not be accessed."
         error_readonly: "was attempted to be written but is not writable."
         error_conflict: "Information has been updated by at least one other user in the meantime."
@@ -2238,7 +2235,7 @@ en:
       heading_create: "Create backup token"
       implications: >
         Enabling backups will allow any user with the required permissions and this backup token
-        to download a backup containing all data of this OpenProject installation.
+        to download a backup containing all data of this Yojana installation.
         This includes the data of all other users.
       info: >
         You will need to generate a backup token to be able to create a backup.
@@ -2663,7 +2660,7 @@ en:
       define_custom_style:
         title: "Custom color theme and logo"
         more_info: "Note: the used logo will be publicly accessible."
-        description: Customize your OpenProject installation with your own logo and colors.
+        description: Customize your Yojana installation with your own logo and colors.
       custom_actions:
         title: "Custom actions"
         description: "Custom actions are one-click shortcuts to a set of pre-defined actions that you can make available on certain work packages based on status, role, type or project."
@@ -2712,15 +2709,15 @@ en:
       request_again: "Request again"
       resend_action: "Resend confirmation email"
       welcome_title: "Quick feature overview"
-      welcome_description: "Get a quick overview of project management and team collaboration with OpenProject Enterprise edition."
+      welcome_description: "Get a quick overview of project management and team collaboration with Yojana Enterprise edition."
       confirmation_info: >
-        We sent you an email on %{date} to %{email} with all the information to start the free trial of OpenProject Enterprise.
+        We sent you an email on %{date} to %{email} with all the information to start the free trial of Yojana Enterprise.
         Please check your inbox and click the confirmation link provided to start your 14-day free trial.
       confirmation_subline: >
         Please, check your inbox and follow the steps to start your 14-day free trial.
       domain_caption: The token will be valid for your currently configured host name.
       receive_newsletter_html: >
-        I want to receive the OpenProject <a target="_blank" href="https://www.openproject.org/newsletter/">newsletter</a>.
+        I want to receive the Yojana <a target="_blank" href="https://www.yojana.example.com/newsletter/">newsletter</a>.
       consent_html: >
         I agree with the <a target="_blank" href="https://www.openproject.org/terms-of-service/">terms of service</a>
         and the <a target="_blank" href="https://www.openproject.org/data-privacy-and-security/">privacy policy</a>.
@@ -2760,7 +2757,7 @@ en:
   error_check_user_and_role: "Please choose a user and a role."
   error_code: "Error %{code}"
   error_color_could_not_be_saved: "Color could not be saved"
-  error_cookie_missing: "The OpenProject cookie is missing. Please ensure that cookies are enabled, as this application will not properly function without."
+  error_cookie_missing: "The Yojana cookie is missing. Please ensure that cookies are enabled, as this application will not properly function without."
   error_custom_option_not_found: "Option does not exist."
   error_enterprise_plan_needed: "You need the %{plan} enterprise plan to perform this action."
   error_enterprise_activation_user_limit: "Your account could not be activated (user limit reached). Please contact your administrator to gain access."
@@ -2778,7 +2775,7 @@ en:
   error_work_package_not_found_in_project: "The work package was not found or does not belong to this project"
   error_work_package_id_not_found: "The work package was not found."
   error_must_be_project_member: "must be project member"
-  error_migrations_are_pending: "Your OpenProject installation has pending database migrations. You have likely missed running the migrations on your last upgrade. Please check the upgrade guide to properly upgrade your installation."
+  error_migrations_are_pending: "Your Yojana installation has pending database migrations. You have likely missed running the migrations on your last upgrade. Please check the upgrade guide to properly upgrade your installation."
   error_migrations_visit_upgrade_guides: "Please visit our upgrade guide documentation"
   error_no_default_work_package_status: 'No default work package status is defined. Please check your configuration (Go to "Administration -> Work package statuses").'
   error_no_type_in_project: "No type is associated to this project. Please check the Project settings."
@@ -2893,7 +2890,7 @@ en:
     failed: "An error has occurred while trying to export the work packages: %{message}"
     demo:
       heading: "Demo PDF"
-      footer: "Generated by OpenProject"
+      footer: "Generated by Yojana"
       button_text: Generate Demo PDF
     errors:
       embedded_table_with_too_many_columns: "This embedded work package table could not fit on the page, please reduce the number of columns."
@@ -2989,7 +2986,7 @@ en:
       no_visible_projects: "There are no visible projects in this instance."
       users: "Newest registered users in this instance."
     blocks:
-      community: "OpenProject community"
+      community: "Yojana community"
       upsell:
         title: "Upgrade to Enterprise edition"
       new_features:
@@ -3003,7 +3000,7 @@ en:
           new_features_list:
             line_0: Automated project initiation (Enterprise add-on).
             line_1: "Meetings: add new or existing work packages as outcomes."
-            line_2: "Meetings: show iCal responses in OpenProject."
+            line_2: "Meetings: show iCal responses in Yojana."
             line_3: "Recurring meetings: duplicate agenda items to the next occurrence."
             line_4: "Release to Community: Attribute highlighting."
             line_5: Warning before opening external links in user-provided content (Enterprise add-on).
@@ -3016,7 +3013,7 @@ en:
       impressum: "Legal notice"
       glossary: "Glossary"
       shortcuts: "Shortcuts"
-      blog: "OpenProject blog"
+      blog: "Yojana blog"
       forums: "Community forum"
       security_alerts: "Security alerts"
       newsletter: "Newsletter"
@@ -3032,7 +3029,7 @@ en:
       default_attribute_written: "Read-only attributes written"
       progress_mode_changed_to_status_based: "Progress calculation updated"
       status_changed: "Status '%{status_name}'"
-      system_update: "OpenProject system update:"
+      system_update: "Yojana system update:"
       work_package_duplicate_closed: "Duplicate work package updated:"
       total_percent_complete_mode_changed_to_work_weighted_average: "Calculation of % Complete totals now weighted by Work."
       total_percent_complete_mode_changed_to_simple_average: "Calculation of % Complete totals now based on a simple average of only % Complete values."
@@ -3093,7 +3090,7 @@ en:
 
   my_account:
     access_tokens:
-      description: "Provider tokens are issued by OpenProject, allowing other applications to access it. Client tokens are issued by other applications, allowing OpenProject to access them."
+      description: "Provider tokens are issued by Yojana, allowing other applications to access it. Client tokens are issued by other applications, allowing Yojana to access them."
       no_results:
         title: "No access tokens to display"
         description: "All of them have been disabled. They can be re-enabled in the administration menu."
@@ -3326,7 +3323,7 @@ en:
   label_custom_field_plural: "Custom fields"
   label_custom_field_default_type: "Empty type"
   label_custom_style: "Design"
-  label_custom_style_description: "Choose how OpenProject looks to you with themes, select your default colors to use in the app and how exports look like."
+  label_custom_style_description: "Choose how Yojana looks to you with themes, select your default colors to use in the app and how exports look like."
   label_dashboard: "Dashboard"
   label_database_version: "PostgreSQL version"
   label_date: "Date"
@@ -3598,7 +3595,7 @@ en:
   label_open_menu: "Open menu"
   label_open_work_packages: "open"
   label_open_work_packages_plural: "open"
-  label_openproject_website: "OpenProject website"
+  label_yojana_website: "Yojana website"
   label_optional_description: "Description"
   label_options: "Options"
   label_other: "Other"
@@ -4001,8 +3998,8 @@ en:
   mail_body_backup_token_reset_user_info: Your backup token has been reset.
   mail_body_backup_token_info: The previous token is no longer valid.
   mail_body_backup_waiting_period: The new token will be enabled in %{hours} hours.
-  mail_body_backup_token_warning: If this wasn't you, login to OpenProject immediately and reset it again.
-  mail_body_incoming_email_error: The email you sent to OpenProject could not be processed.
+  mail_body_backup_token_warning: If this wasn't you, login to Yojana immediately and reset it again.
+  mail_body_incoming_email_error: The email you sent to Yojana could not be processed.
   mail_body_incoming_email_error_in_reply_to: "At %{received_at} %{from_email} wrote"
   mail_body_incoming_email_error_logs: "Logs"
   mail_body_lost_password: "To change your password, click on the following link:"
@@ -4018,7 +4015,7 @@ en:
     and “Get started” videos (%{get_started_link}) to make your first steps in OpenProject as easy as possible.
     <br />
     If you have any further questions, consult our documentation (%{documentation_link}) or contact your administrator.
-  mail_body_register_closing: "Your OpenProject team"
+  mail_body_register_closing: "Your Yojana team"
   mail_body_register_ending: "Stay connected! Kind regards,"
   mail_body_reminder: "%{count} work package(s) that are assigned to you are due in the next %{days} days:"
   mail_body_group_reminder: '%{count} work package(s) that are assigned to group "%{group}" are due in the next %{days} days:'
@@ -4027,7 +4024,7 @@ en:
   mail_subject_account_activation_request: "%{value} account activation request"
   mail_subject_backup_ready: "Your backup is ready"
   mail_subject_backup_token_reset: "Backup token reset"
-  mail_subject_incoming_email_error: "An email you sent to OpenProject could not be processed"
+  mail_subject_incoming_email_error: "An email you sent to Yojana could not be processed"
   mail_subject_lost_password: "Your %{value} password"
   mail_subject_register: "Your %{value} account activation"
   mail_subject_wiki_content_added: "'%{id}' wiki page has been added"
@@ -4069,7 +4066,7 @@ en:
 
   more_actions: "More functions"
 
-  noscript_description: "You need to activate JavaScript in order to use OpenProject!"
+  noscript_description: "You need to activate JavaScript in order to use Yojana!"
   noscript_heading: "JavaScript disabled"
   noscript_learn_more: "Learn more"
 
@@ -4149,7 +4146,7 @@ en:
   notice_wont_delete_auth_source: The LDAP connection cannot be deleted as long as there are still users using it.
   notice_project_cannot_update_custom_fields: "You cannot update the project's available custom fields. The project is invalid: %{errors}"
   notice_attachment_migration_wiki_page: >
-    This page was generated automatically during the update of OpenProject.
+    This page was generated automatically during the update of Yojana.
     It contains all attachments previously associated with the %{container_type} "%{container_name}".
 
   # Default format for numbers
@@ -4175,7 +4172,7 @@ en:
 
   onboarding:
     heading_getting_started: "Get an overview"
-    text_getting_started_description: "Get a quick overview of project management and team collaboration with OpenProject. You can restart this video from the help menu."
+    text_getting_started_description: "Get a quick overview of project management and team collaboration with Yojana. You can restart this video from the help menu."
     welcome: "Welcome to %{app_title}"
     select_language: "Please select your language"
 
@@ -4271,7 +4268,7 @@ en:
   permission_view_all_principals_explanation: >
     Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
   permission_view_project: "View projects"
-  permission_view_changesets: "View repository revisions in OpenProject"
+  permission_view_changesets: "View repository revisions in Yojana"
   permission_view_internal_comments: "View internal comments"
   permission_view_commit_author_statistics: "View commit author statistics"
   permission_view_dashboards: "View dashboards"
@@ -4405,22 +4402,9 @@ en:
     destroy:
       confirmation: "If you continue, this will permanently delete the managed repository."
       info: "Deleting the repository is an irreversible action."
-      info_not_managed: "Note: This will NOT delete the contents of this repository, as it is not managed by OpenProject."
-      managed_path_note: "The following directory will be erased: %{path}"
-      repository_verification: "Enter the project's identifier %{identifier} to verify the deletion of its repository."
-      subtitle: "Do you really want to delete the %{repository_type} of the project %{project_name}?"
-      subtitle_not_managed: "Do you really want to remove the linked %{repository_type} %{url} from the project %{project_name}?"
-      title: "Delete the %{repository_type}"
-      title_not_managed: "Remove the linked %{repository_type}?"
-    errors:
-      build_failed: "Unable to create the repository with the selected configuration. %{reason}"
-      managed_delete: "Unable to delete the managed repository."
-      managed_delete_local: "Unable to delete the local repository on filesystem at '%{path}': %{error_message}"
-      empty_repository: "The repository exists, but is empty. It does not contain any revisions yet."
-      exists_on_filesystem: "The repository directory already exists in the filesystem."
-      filesystem_access_failed: "An error occurred while accessing the repository in the filesystem: %{message}"
-      not_manageable: "This repository vendor cannot be managed by OpenProject."
-      path_permission_failed: "An error occurred trying to create the following path: %{path}. Please ensure that OpenProject may write to that folder."
+      info_not_managed: "Note: This will NOT delete the contents of this repository, as it is not managed by Yojana."
+      not_manageable: "This repository vendor cannot be managed by Yojana."
+      path_permission_failed: "An error occurred trying to create the following path: %{path}. Please ensure that Yojana may write to that folder."
       unauthorized: "You're not authorized to access the repository or the credentials are invalid."
       unavailable: "The repository is unavailable."
       exception_title: "Cannot access the repository: %{message}"
@@ -4439,9 +4423,9 @@ en:
         path_encoding: "Override Git path encoding (Default: UTF-8)"
       local_title: "Link existing local Git repository"
       local_url: "Local URL"
-      local_introduction: "If you have an existing local Git repository, you can link it with OpenProject to access it from within the application."
-      managed_introduction: "Let OpenProject create and integrate a local Git repository automatically."
-      managed_title: "Git repository integrated into OpenProject"
+      local_introduction: "If you have an existing local Git repository, you can link it with Yojana to access it from within the application."
+      managed_introduction: "Let Yojana create and integrate a local Git repository automatically."
+      managed_title: "Git repository integrated into Yojana"
       managed_url: "Managed URL"
       path: "Path to Git repository"
       path_encoding: "Path encoding"
@@ -4458,7 +4442,7 @@ en:
     scm_types:
       local: "Link existing local repository"
       existing: "Link existing repository"
-      managed: "Create new repository in OpenProject"
+      managed: "Create new repository in Yojana"
     storage:
       not_available: "Disk storage consumption is not available for this repository."
       update_timeout: "Keep the last required disk space information for a repository for N minutes.\nAs counting the required disk space of a repository may be costly, increase this value to reduce performance impact."
@@ -4469,13 +4453,9 @@ en:
       show_warning_details: "To use this file storage remember to activate the module and the specific storage in the project settings of each desired project."
     subversion:
       existing_title: "Existing Subversion repository"
-      existing_introduction: "If you have an existing Subversion repository, you can link it with OpenProject to access it from within the application."
-      existing_url: "Existing URL"
-      instructions:
-        managed_url: "This is the URL of the managed (local) Subversion repository."
-        url: "Enter the repository URL. This may either target a local repository (starting with %{local_proto} ), or a remote repository.\nThe following URL schemes are supported:"
-      managed_title: "Subversion repository integrated into OpenProject"
-      managed_introduction: "Let OpenProject create and integrate a local Subversion repository automatically."
+      existing_introduction: "If you have an existing Subversion repository, you can link it with Yojana to access it from within the application."
+      managed_title: "Subversion repository integrated into Yojana"
+      managed_introduction: "Let Yojana create and integrate a local Subversion repository automatically."
       managed_url: "Managed URL"
       password: "Repository Password"
       username: "Repository username"
@@ -5627,11 +5607,8 @@ en:
   link: link
 
   plugin_openproject_auth_plugins:
-    name: "OpenProject Auth Plugins"
-    description: "Integration of OmniAuth strategy providers for authentication in OpenProject."
-  plugin_openproject_auth_saml:
-    name: "OmniAuth SAML / Single-Sign On"
-    description: "Adds the OmniAuth SAML provider to OpenProject"
+    name: "Yojana Auth Plugins"
+    description: "Integration of OmniAuth strategy providers for authentication in Yojana."
 
   enterprise_plans:
     legacy_enterprise: "Enterprise Plan"
@@ -5641,7 +5618,7 @@ en:
       display_value_placeholder: "***"
 
   external_link_warning:
-    title: "Leaving OpenProject"
-    warning_message: "You are about to leave OpenProject and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies."
+    title: "Leaving Yojana"
+    warning_message: "You are about to leave Yojana and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies."
     continue_message: "Are you sure you want to proceed to the following external link?"
     continue_button: "Continue to external website"
