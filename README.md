@@ -20,4 +20,3 @@ Currently, portfolio management is widely used through proprietary products such
 ## License
 
 yojanā is licensed under the terms of the GNU General Public License version 3.
-
