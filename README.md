@@ -1,5 +1,7 @@
 # yojanā
 
+![yojana logo](app/assets/images/logo_yojana.png)
+
 yojanā is a web-based project management software. Use yojanā to manage your portfolios, projects, tasks and goals. 
 
 
