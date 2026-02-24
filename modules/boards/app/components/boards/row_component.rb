@@ -52,7 +52,18 @@ module Boards
     end
 
     def button_links
-      [delete_link].compact
+      [export_link, delete_link].compact
+    end
+
+    def export_link
+      if render_export_link?
+        link_to(
+          "",
+          export_project_work_package_board_path(model.project, model),
+          class: "icon icon-export",
+          title: t("boards.button_export")
+        )
+      end
     end
 
     def delete_link
@@ -72,6 +83,10 @@ module Boards
     end
 
     private
+
+    def render_export_link?
+      table.current_project && table.current_user.allowed_in_project?(:export_board_views, table.current_project)
+    end
 
     def render_delete_link?
       table.current_project && table.current_user.allowed_in_project?(:manage_board_views, table.current_project)
