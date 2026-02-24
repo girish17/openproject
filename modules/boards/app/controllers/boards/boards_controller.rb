@@ -4,6 +4,7 @@ module ::Boards
 
     before_action :load_and_authorize_in_optional_project
     before_action :find_board_for_deletion, only: %i[destroy]
+    before_action :find_board_for_export, only: %i[export]
 
     # The boards permission alone does not suffice
     # to view work packages
@@ -53,6 +54,52 @@ module ::Boards
       end
     end
 
+    def export
+      export = Boards::Exports::CSV.new(@board_grid).export!
+
+      send_data export.content, type: export.mime_type, filename: export.title
+    end
+
+    def import; end
+
+    def import_csv
+      Rails.logger.error "================ IMPORT_CSV STARTED ================"
+      return render_403 unless current_user.allowed_in_project?(:manage_board_views, @project)
+      return render_404 if @project.nil?
+
+      Rails.logger.error "================ Project authorized: #{@project.identifier}"
+
+      csv_file = params[:csv_file]
+      board_name = params[:board_name]
+
+      if csv_file.blank?
+        Rails.logger.error "================ No file provided"
+        flash[:error] = t("boards.import.error_no_file")
+        redirect_to project_work_package_boards_path(@project) && return
+      end
+
+      csv_content = csv_file.read
+
+      Rails.logger.error "================ Starting import service with #{csv_content.length} bytes"
+
+      result = Boards::ImportCsvService.new(
+        project: @project,
+        user: current_user,
+        csv_content:,
+        board_name:
+      ).call
+
+      Rails.logger.error "================ Service result success? #{result.success?}"
+
+      if result.success?
+        flash[:notice] = t("boards.import.success_simple")
+        redirect_to project_work_package_board_path(@project, result.result)
+      else
+        flash[:error] = result.errors.join(", ")
+        redirect_to project_work_package_boards_path(@project)
+      end
+    end
+
     private
 
     def load_query
@@ -65,6 +112,11 @@ module ::Boards
 
     def find_board_for_deletion
       @board_grid = Boards::Grid.find_by!(id: params[:id], project: @project)
+    end
+
+    def find_board_for_export
+      @board_grid = Boards::Grid.find_by!(id: params[:id], project: @project)
+      render_403 unless current_user.allowed_in_project?(:export_board_views, @project)
     end
 
     def authorize_work_package_permission

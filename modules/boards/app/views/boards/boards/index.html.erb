@@ -26,22 +26,23 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 See COPYRIGHT and LICENSE files for more details.
 
 ++#%>
-
 <% html_title(t("boards.label_boards")) -%>
-
 <%=
   render Primer::OpenProject::PageHeader.new do |header|
     header.with_title { t("boards.label_boards") }
     header.with_breadcrumbs(@project ? [{ href: project_overview_path(@project.id), text: @project.name }, t("boards.label_boards")] : nil)
   end
 %>
-
 <%=
   render Primer::OpenProject::SubHeader.new do |subheader|
     render Boards::AddButtonComponent.new(subheader:, current_project: @project)
   end
 %>
-
+<% if @project && current_user.allowed_in_project?(:manage_board_views, @project) %>
+  <div style="margin-bottom: 1rem;">
+    <%= link_to t("boards.button_import"), import_project_work_package_boards_path(@project), class: "button" %>
+  </div>
+<% end %>
 <% if @board_grids.empty? -%>
   <%= no_results_box %>
 <% else -%>

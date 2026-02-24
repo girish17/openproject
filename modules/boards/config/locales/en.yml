@@ -5,6 +5,7 @@ en:
     description: "Provides board views."
 
   permission_show_board_views: "View boards"
+  permission_export_board_views: "Export boards"
   permission_manage_board_views: "Manage boards"
   project_module_board_view: "Boards"
 
@@ -15,6 +16,18 @@ en:
   boards:
     label_board: "Board"
     label_boards: "Boards"
+    button_export: "Export to CSV"
+    button_import: "Import from CSV"
+    import:
+      title: "Import Board from CSV"
+      description: "Import a board from a CSV file. The first column will be used as the work package subject, and the last column will be used as the status/column."
+      select_file: "Select CSV file"
+      board_name: "Board name (optional)"
+      board_name_placeholder: "Leave empty to use default name"
+      submit: "Import"
+      error_no_file: "Please select a CSV file"
+      success: "Successfully imported board with %{count} work packages"
+      success_simple: "Board imported successfully"
     label_create_new_board: "Create new board"
     label_board_type: "Board type"
     board_types:
