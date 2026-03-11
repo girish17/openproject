@@ -32,8 +32,7 @@ require_relative "../support/pages/team_planner"
 
 RSpec.describe "Team planner project include",
                :js,
-               :selenium,
-               with_ee: %i[team_planner_view] do
+               :selenium do
   shared_let(:enabled_modules) { %w[work_package_tracking team_planner_view] }
   shared_let(:permissions) do
     %w[view_work_packages edit_work_packages add_work_packages

@@ -30,7 +30,7 @@
 
 require "spec_helper"
 
-RSpec.describe TeamPlanner::Views::GlobalCreateService, with_ee: %i[team_planner_view] do
+RSpec.describe TeamPlanner::Views::GlobalCreateService do
   shared_let(:project) { create(:project) }
   shared_let(:user) { build_stubbed(:admin) }
   shared_let(:instance) { described_class.new(user:) }

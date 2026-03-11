@@ -60,7 +60,7 @@ RSpec.describe "Team planner Menu Item",
       end
     end
 
-    context "when EE enabled", with_ee: %i[team_planner_view] do
+    context "when EE enabled" do
       it "navigates to the global index page" do
         expect(page).to have_current_path(team_planners_path)
       end
@@ -83,7 +83,7 @@ RSpec.describe "Team planner Menu Item",
         end
       end
 
-      context "when EE enabled", with_ee: %i[team_planner_view] do
+      context "when EE enabled" do
         it "does not show the create team planner option" do
           visit project_path(project)
 
@@ -111,7 +111,7 @@ RSpec.describe "Team planner Menu Item",
         end
       end
 
-      context "when EE enabled", with_ee: %i[team_planner_view] do
+      context "when EE enabled" do
         it "shows the create team planner option" do
           visit project_path(project)
 
