@@ -183,7 +183,7 @@ module Boards
         options: {
           "queryId" => query.id,
           "filters" => [
-            { "status" => { "operator" => "=", "values" => [status.id.to_s] } }
+            { "status_id" => { "operator" => "=", "values" => [status.id.to_s] } }
           ]
         }
       )
