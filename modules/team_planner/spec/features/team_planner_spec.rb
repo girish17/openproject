@@ -32,7 +32,6 @@ require_relative "shared_context"
 RSpec.describe "Team planner",
                :js,
                :selenium,
-               with_ee: %i[team_planner_view],
                with_settings: { start_of_week: 1 } do
   include_context "with team planner full access"
 
@@ -341,7 +340,7 @@ RSpec.describe "Team planner",
              subject: "A blocked task")
     end
 
-    it "disables editing on readonly tasks", with_ee: %i[team_planner_view readonly_work_packages] do
+    it "disables editing on readonly tasks", with_ee: %i[readonly_work_packages] do
       team_planner.visit!
 
       team_planner.wait_for_loaded
