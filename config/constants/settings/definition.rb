@@ -76,7 +76,7 @@ module Settings
         default: false
       },
       app_title: {
-        default: "Yojana"
+        default: "yojanā"
       },
       attachment_max_size: {
         default: 5120
@@ -110,7 +110,7 @@ module Settings
         default: true
       },
       antivirus_scan_mode: {
-        description: "Virus scanning option for files uploaded to OpenProject",
+        description: "Virus scanning option for files uploaded to Yojana",
         format: :symbol,
         default: :disabled,
         allowed: %i[disabled clamav_socket clamav_host]
@@ -291,7 +291,7 @@ module Settings
       consent_info: {
         default: {
           en: "## Consent\n\nYou need to agree to the [privacy and security policy]" +
-            "(https://www.openproject.org/data-privacy-and-security/) of this OpenProject instance."
+            "(https://yojana.girishm.info/data-privacy-and-security/) of this Yojana instance."
         }
       },
       # Indicates whether or not users need to consent to something such as privacy policy.
@@ -721,7 +721,7 @@ module Settings
         default: true
       },
       mail_from: {
-        default: "openproject@example.net"
+        default: "yojana@girishm.info"
       },
       mail_handler_api_key: {
         format: :string,
@@ -1014,7 +1014,7 @@ module Settings
       },
       seed_admin_user_name: {
         description: "Name to set for the initially created admin user.",
-        default: "OpenProject Admin",
+        default: "Yojana Admin",
         writable: false
       },
       seed_admin_user_password_reset: {
@@ -1066,7 +1066,7 @@ module Settings
       },
       session_cookie_name: {
         description: "Set session cookie name",
-        default: "_open_project_session"
+        default: "_yojana_session"
       },
       session_ttl_enabled: {
         default: false
@@ -1158,7 +1158,7 @@ module Settings
       },
       software_url: {
         description: "Override software application URL",
-        default: "https://yojana.example.com"
+        default: "https://yojana.girishm.info"
       },
       sql_slow_query_threshold: {
         description: "Time limit in ms after which queries will be logged as slow queries",

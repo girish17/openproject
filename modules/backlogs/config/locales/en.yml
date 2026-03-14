@@ -29,8 +29,8 @@
 ---
 en:
   plugin_openproject_backlogs:
-    name: "OpenProject Backlogs"
-    description: "This module adds features enabling agile teams to work with OpenProject in Scrum projects."
+    name: "Yojana Backlogs"
+    description: "This module adds features enabling agile teams to work with Yojana in Scrum projects."
 
   activerecord:
     attributes:

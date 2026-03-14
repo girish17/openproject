@@ -1,7 +1,7 @@
 # English strings go here
 en:
   plugin_openproject_calendar:
-    name: "OpenProject Calendar"
+    name: "Yojana Calendar"
     description: "Provides calendar views."
 
   label_calendar: "Calendar"

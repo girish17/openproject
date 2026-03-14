@@ -1,7 +1,7 @@
 # English strings go here
 en:
   plugin_openproject_boards:
-    name: "OpenProject Boards"
+    name: "Yojana Boards"
     description: "Provides board views."
 
   permission_show_board_views: "View boards"

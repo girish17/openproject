@@ -58,10 +58,10 @@ en:
           attributes:
             host:
               authorization_header_missing: is not fully set up. The Nextcloud instance does not receive the "Authorization" header, which is necessary for a Bearer token based authorization of API requests. Please double check your HTTP server configuration.
-              cannot_be_connected_to: could not be reached. Please ensure the host is reachable and the OpenProject integration app is installed.
+              cannot_be_connected_to: could not be reached. Please ensure the host is reachable and the Yojana integration app is installed.
               minimal_nextcloud_version_unmet: does not meet minimal version requirements (must be Nextcloud 23 or higher)
               not_nextcloud_server: is not a Nextcloud server
-              op_application_not_installed: appears to not have the app "OpenProject integration" installed. Please install it first and then try again.
+              op_application_not_installed: appears to not have the app "Yojana integration" installed. Please install it first and then try again.
             password:
               invalid_password: is not valid.
               unknown_error: could not be validated with the file storage provider. Please verify that the connection is functioning properly.
@@ -122,16 +122,16 @@ en:
         rename_project_folder: 'Rename managed project Folder:'
     errors:
       messages:
-        error: An unexpected error occurred. Please check OpenProject logs for more information or contact an administrator
-        forbidden: OpenProject could not access the requested resource. Please check your permissions configuration on the Storage Provider.
-        unauthorized: OpenProject could not authenticate with the Storage Provider. Please ensure that you have access to it.
+        error: An unexpected error occurred. Please check Yojana logs for more information or contact an administrator
+        forbidden: Yojana could not access the requested resource. Please check your permissions configuration on the Storage Provider.
+        unauthorized: Yojana could not authenticate with the Storage Provider. Please ensure that you have access to it.
       models:
         copy_project_folders_service:
           conflict: The folder %{destination_path} already exists. Interrupting process to avoid overwrites.
-          error: An unexpected error occurred. Please check OpenProject logs for more information or contact an administrator
-          forbidden: OpenProject could not access the source folder. Please check your permissions configuration on the Storage Provider
+          error: An unexpected error occurred. Please check Yojana logs for more information or contact an administrator
+          forbidden: Yojana could not access the source folder. Please check your permissions configuration on the Storage Provider
           not_found: The source template location %{source_path} wasn't found.
-          unauthorized: OpenProject could not authenticate with the Storage Provider. Please check your storage configuration
+          unauthorized: Yojana could not authenticate with the Storage Provider. Please check your storage configuration
         nextcloud_sync_service:
           attributes:
             add_user_to_group:
@@ -152,17 +152,17 @@ en:
               conflict: 'The user %{user} could not be removed from the %{group} group for the following reason: %{reason}'
               failed_to_remove: 'The user %{user} could not be removed from the %{group} group for the following reason: %{reason}'
             rename_project_folder:
-              conflict: OpenProject could not rename the project folder to %{current_path} as a folder with the same name already exists
-              forbidden: OpenProject user does not have access to %{current_path} folder.
+              conflict: Yojana could not rename the project folder to %{current_path} as a folder with the same name already exists
+              forbidden: Yojana user does not have access to %{current_path} folder.
               not_found: "%{current_path} wasn't found."
             set_folders_permissions:
               permission_not_set: could not set permissions on %{path}.
-          error: An unexpected error occurred. Please ensure that your Nextcloud instance is reachable and check OpenProject worker logs for more information
+          error: An unexpected error occurred. Please ensure that your Nextcloud instance is reachable and check Yojana worker logs for more information
           group_does_not_exist: "%{group} does not exist. Check your Nextcloud instance configuration."
-          insufficient_privileges: OpenProject does not have enough privileges to add %{user} to %{group}. Check you group settings in Nextcloud.
+          insufficient_privileges: Yojana does not have enough privileges to add %{user} to %{group}. Check you group settings in Nextcloud.
           not_allowed: Nextcloud block the request.
-          not_found: OpenProject could not find the file on the Nextcloud Storage Provider. Please check if it wasn't deleted.
-          unauthorized: OpenProject could not sync with Nextcloud. Please check your storage and Nextcloud configuration.
+          not_found: Yojana could not find the file on the Nextcloud Storage Provider. Please check if it wasn't deleted.
+          unauthorized: Yojana could not sync with Nextcloud. Please check your storage and Nextcloud configuration.
           user_does_not_exist: "%{user} does not exist in Nextcloud."
         one_drive_sync_service:
           attributes:
@@ -172,16 +172,16 @@ en:
             hide_inactive_folders:
               permission_not_set: could not set permissions on %{path}.
             remote_folders:
-              request_error: OpenProject could not access your drive %{drive_id}. Please check if your storage configuration is correct.
+              request_error: Yojana could not access your drive %{drive_id}. Please check if your storage configuration is correct.
             rename_project_folder:
-              conflict: OpenProject could not rename the folder %{current_path} to %{project_folder_name} as a folder with the same name already exists.
-              forbidden: OpenProject does not have access to %{current_path} in order to rename it.
+              conflict: Yojana could not rename the folder %{current_path} to %{project_folder_name} as a folder with the same name already exists.
+              forbidden: Yojana does not have access to %{current_path} in order to rename it.
               not_found: "%{current_path} wasn't found."
             set_folders_permissions:
               permission_not_set: could not set permissions on %{path}.
-          error: An unexpected error occurred. Please ensure that OneDrive is reachable and check OpenProject worker logs for more information.
-          not_allowed: OpenProject wasn't allowed to access your OneDrive drive. Please check the permissions set on the Azure Application.
-          unauthorized: OpenProject could not sync with OneDrive. Please check your storage and Azure Application configuration.
+          error: An unexpected error occurred. Please ensure that OneDrive is reachable and check Yojana worker logs for more information.
+          not_allowed: Yojana wasn't allowed to access your OneDrive drive. Please check the permissions set on the Azure Application.
+          unauthorized: Yojana could not sync with OneDrive. Please check your storage and Azure Application configuration.
           user_does_not_exist: "%{user} does not exist in Nextcloud."
         sharepoint_sync_service:
           attributes:
@@ -191,15 +191,15 @@ en:
             hide_inactive_folders:
               permission_not_set: could not set permissions on %{path}.
             rename_project_folder:
-              conflict: OpenProject could not rename the folder %{current_path} to %{project_folder_name} as a folder with the same name already exists
-              forbidden: OpenProject does not have access to %{current_path} in order to rename it.
+              conflict: Yojana could not rename the folder %{current_path} to %{project_folder_name} as a folder with the same name already exists
+              forbidden: Yojana does not have access to %{current_path} in order to rename it.
               not_found: "%{current_path} wasn't found."
             set_folders_permissions:
               permission_not_set: could not set permissions on %{path}.
-          error: An unexpected error occurred. Please ensure that OneDrive is reachable and check OpenProject worker logs for more information
-          not_allowed: OpenProject wasn't allowed to access your OneDrive drive. Please check the permissions set on the Azure Application.
-          not_found: OpenProject could not access your library %{drive_name}. Please check you Sharepoint site document libraries.
-          unauthorized: OpenProject could not sync with OneDrive. Please check your storage and Azure Application configuration.
+          error: An unexpected error occurred. Please ensure that OneDrive is reachable and check Yojana worker logs for more information
+          not_allowed: Yojana wasn't allowed to access your OneDrive drive. Please check the permissions set on the Azure Application.
+          not_found: Yojana could not access your library %{drive_name}. Please check you Sharepoint site document libraries.
+          unauthorized: Yojana could not sync with OneDrive. Please check your storage and Azure Application configuration.
           user_does_not_exist: "%{user} does not exist in Nextcloud."
         upload_link_service:
           not_found: The destination folder %{folder} could not be found on %{storage_name}.
@@ -207,19 +207,19 @@ en:
     buttons:
       done_continue: Done, continue
       open_storage: Open file storage
-      replace_oauth_application: Replace OpenProject OAuth
+      replace_oauth_application: Replace Yojana OAuth
       replace_oauth_client: Replace %{provider_type} OAuth
       save_and_continue: Save and continue
       select_folder: Select folder
     configuration_checks:
       oauth_client_incomplete:
-        nextcloud: Allow OpenProject to access Nextcloud data using OAuth.
-        one_drive: Allow OpenProject to access Azure data using OAuth to connect OneDrive.
-        sharepoint: Allow OpenProject to access SharePoint data using OAuth.
+        nextcloud: Allow Yojana to access Nextcloud data using OAuth.
+        one_drive: Allow Yojana to access Azure data using OAuth to connect OneDrive.
+        sharepoint: Allow Yojana to access SharePoint data using OAuth.
       redirect_uri_incomplete:
         one_drive: Complete the setup with the correct URI redirection.
         sharepoint: Complete the setup with the correct URI redirection.
-    confirm_replace_oauth_application: This action will reset the current OAuth credentials. After confirming you will have to reenter the credentials at the storage provider and all remote users will have to authorize against OpenProject again. Are you sure you want to proceed?
+    confirm_replace_oauth_application: This action will reset the current OAuth credentials. After confirming you will have to reenter the credentials at the storage provider and all remote users will have to authorize against Yojana again. Are you sure you want to proceed?
     confirm_replace_oauth_client: This action will reset the current OAuth credentials. After confirming you will have to enter new credentials from the storage provider and all users will have to authorize against %{provider_type} again. Are you sure you want to proceed?
     delete_warning:
       project_storage: Are you sure you want to remove %{file_storage} from this project?
@@ -232,7 +232,7 @@ en:
     dependencies:
       nextcloud:
         group_folders_app: Team Folders
-        integration_app: Integration OpenProject
+        integration_app: Integration Yojana
     enabled_in_projects:
       setup_incomplete_description: This storage has an incomplete setup. Please, complete the setup before enabling it in multiple projects.
       setup_incomplete_header: Storage setup incomplete
@@ -241,7 +241,7 @@ en:
       access_management:
         automatic_management: Enable automatically-managed access and folders
         automatic_management_description: Each project will be able to decide, when a storage is added to it, whether they want the automatically-managed or the manual approach to folder and access management.
-        description: OpenProject can automatically create and manage project folders when a file storage is added to a project. This can result in a more organized folder structure and straightforward access management that guarantees access to all relevant users.
+        description: Yojana can automatically create and manage project folders when a file storage is added to a project. This can result in a more organized folder structure and straightforward access management that guarantees access to all relevant users.
         manual_management: Only allow manually-managed access and folders
         manual_management_description: Projects using this storage will not be offered the option of the automatically-managed approach. Folders and access must be managed manually.
         setup_incomplete: Select the type of management of user access and folder creation.
@@ -257,7 +257,7 @@ en:
           manual_management: Only allow manually-managed access and folders
           manual_management_description: Projects using this storage will not be offered the option of the automatically-managed approach. Folders and access must be managed manually.
       one_drive_oauth: Azure OAuth
-      openproject_oauth: OpenProject OAuth
+      openproject_oauth: Yojana OAuth
       project_folders: Project folders
       redirect_uri: Redirect URI
       sharepoint_oauth: Azure OAuth
@@ -322,7 +322,7 @@ en:
         nc_host_not_found: No Nextcloud server found at the configured host url. Please check the configuration.
         nc_oauth_request_not_found: The endpoint to fetch the currently connected user was not found. Please check the server logs for further information.
         nc_oauth_request_unauthorized: The current user isn't authorized to access the remote file storage. Please check the server logs for further information.
-        nc_oauth_token_missing: OpenProject cannot test the user level communication with Nextcloud as the user did not yet link their Nextcloud account.
+        nc_oauth_token_missing: Yojana cannot test the user level communication with Nextcloud as the user did not yet link their Nextcloud account.
         nc_team_folder_not_found: The team folder could not be found.
         nc_unexpected_content: Unexpected content found in the managed team folder.
         nc_userless_access_denied: The configured app password is invalid.
@@ -333,7 +333,7 @@ en:
         od_drive_id_not_found: The configured drive id could not be found. Please check the configuration.
         od_oauth_request_not_found: The endpoint to fetch the currently connected user was not found. Please check the server logs for further information.
         od_oauth_request_unauthorized: The current user isn't authorized to access the remote file storage. Please check the server logs for further information.
-        od_oauth_token_missing: OpenProject cannot test the user level communication with OneDrive as the user did not yet link their Microsoft account.
+        od_oauth_token_missing: Yojana cannot test the user level communication with OneDrive as the user did not yet link their Microsoft account.
         od_tenant_id_wrong: The configured directory (tenant) id is invalid. Please check the configuration.
         od_test_folder_exists: The folder %{folder_name} needed for testing already exists. Please delete it and try again.
         od_unexpected_content: Unexpected content found in the drive.
@@ -352,7 +352,7 @@ en:
         sp_existing_test_folder: The folder %{folder_name} needed for testing already exists in SharePoint. Please delete it and try again.
         sp_oauth_request_error: The user-bound request to SharePoint failed. Please check the server logs for further information.
         sp_oauth_request_unauthorized: The current user isn't authorized to access the remote file storage. Please check the server logs for further information.
-        sp_oauth_token_missing: OpenProject cannot test the user level communication with SharePoint as the user did not yet link their SharePoint account.
+        sp_oauth_token_missing: Yojana cannot test the user level communication with SharePoint as the user did not yet link their SharePoint account.
         sp_tenant_id_missing: The configured directory (tenant) id is missing for SharePoint. Please check the configuration.
         sp_unexpected_content: Unexpected content found in the SharePoint Document Library.
         unknown_error: The connection could not be validated. An unknown error occurred. Please check the server logs for further information.
@@ -384,7 +384,7 @@ en:
       project_folder_bulk: The project folder is the default folder for file uploads for all the projects selected. You can modify this individually in each project settings. Users can nevertheless still upload files to other locations.
     instructions:
       all_available_storages_already_added: All available storages are already added to the project.
-      authentication_method: The way that requests between OpenProject and the Storage are authenticated.
+      authentication_method: The way that requests between Yojana and the Storage are authenticated.
       automatic_folder: This will automatically create a root folder for this project and manage the access permissions for each project member.
       empty_project_folder_validation: Selecting a folder is mandatory to proceed.
       existing_manual_folder: You can designate an existing folder as the root folder for this project. The permissions are however not automatically managed, the administrator needs to manually ensure relevant users have access. The selected folder can be used by multiple projects.
@@ -393,8 +393,8 @@ en:
       name: Give your storage a name so that users can differentiate between multiple storages.
       new_storage: Read our documentation on <a target='_blank' href='%{provider_link}'>setting up a %{provider_name} file storage</a> integration for more information.
       nextcloud:
-        application_link_text: application “Integration OpenProject”
-        integration: Nextcloud Administration / OpenProject
+        application_link_text: application “Integration Yojana”
+        integration: Nextcloud Administration / Yojana
         oauth_configuration: Copy these values from %{application_link_text}.
         provider_configuration: Please make sure you have administration privileges in your Nextcloud instance and the %{application_link_text} is installed before doing the setup.
         storage_audience: The client ID that the Nextcloud instance uses to communicate with the identity provider.
@@ -404,7 +404,7 @@ en:
       no_storage_set_up: There are no file storages set up yet.
       not_logged_into_storage: To select a project folder, please first login
       oauth_application_details: The client secret value will not be accessible again after you close this window. Please copy these values into the %{oauth_application_details_link}.
-      oauth_application_details_link_text: Nextcloud OpenProject Integration settings
+      oauth_application_details_link_text: Nextcloud Yojana Integration settings
       one_drive:
         application_link_text: Azure portal
         copy_redirect_uri: Copy redirect URI
@@ -424,11 +424,11 @@ en:
       setting_up_storages_non_admin: Administrators can set up file storages in Administration / File storages.
       sharepoint:
         application_link_text: SharePoint site
-        integration: SharePoint Administration / OpenProject
+        integration: SharePoint Administration / Yojana
         oauth_configuration: Copy these values from the desired application in the %{application_link_text}.
         provider_configuration: Please make sure you have administration privileges in the %{application_link_text} or contact your Microsoft administrator before doing the setup. In the portal, you also need to register an Azure application or use an existing one for authentication.
       type: 'Please make sure you have administration privileges in your Nextcloud instance and have the following application installed before doing the setup:'
-      type_link_text: "“Integration OpenProject”"
+      type_link_text: "“Integration Yojana”"
     label_active: Active
     label_add_new_storage: Add new storage
     label_automatic_folder: New folder with automatically managed permissions
@@ -452,8 +452,8 @@ en:
     label_no_selected_folder: No selected folder
     label_no_specific_folder: No specific folder
     label_oauth_client_id: OAuth Client ID
-    label_openproject_oauth_application_id: OpenProject OAuth Client ID
-    label_openproject_oauth_application_secret: OpenProject OAuth Client Secret
+    label_openproject_oauth_application_id: Yojana OAuth Client ID
+    label_openproject_oauth_application_secret: Yojana OAuth Client Secret
     label_project_folder: Project folder
     label_provider: Provider
     label_redirect_uri: Redirect URI
@@ -493,7 +493,7 @@ en:
         title: Integration setup completed
       timeout:
         link_text: health status of the file storage setup
-        subtitle: OpenProject could not provide you access to the project folder within the expected period of time. Please, try once again.<br><br> If that problem persists please contact your OpenProject administrator to check %{storages_health_link}.
+        subtitle: Yojana could not provide you access to the project folder within the expected period of time. Please, try once again.<br><br> If that problem persists please contact your Yojana administrator to check %{storages_health_link}.
       waiting:
         subtitle: One moment please, this might take some time...
         title: We are setting up your permissions on the project folder.
@@ -503,9 +503,9 @@ en:
         subtitle: Add an external file storage in order to upload, link and manage files in work packages.
       managed_project_folders:
         subtitle: |-
-          Let OpenProject create folders per project automatically. This is recommended as it ensures that every team
+          Let Yojana create folders per project automatically. This is recommended as it ensures that every team
           member always has the correct access permissions.
-        subtitle_short: Let OpenProject create folders per project automatically.
+        subtitle_short: Let Yojana create folders per project automatically.
         title: Automatically managed project folders
       project_settings:
         edit: Edit the file storage to this project
@@ -516,7 +516,7 @@ en:
         title: Members connection status
       project_storages:
         delete: Remove file storage from project?
-    permission_header_explanation: File permissions on external storages are applied only to folders and files within automatically managed project folders. Note that not all file permissions are supported by all storage providers. Please check the documentation on <a target='_blank' href='https://www.openproject.org/docs/system-admin-guide/users-permissions/roles-permissions/#file-storages-permissions'>file storage permissions</a> for more information.
+    permission_header_explanation: File permissions on external storages are applied only to folders and files within automatically managed project folders. Note that not all file permissions are supported by all storage providers. Please check the documentation on <a target='_blank' href='https://www.yojana.girishm.info/docs/system-admin-guide/users-permissions/roles-permissions/#file-storages-permissions'>file storage permissions</a> for more information.
     provider_types:
       label: Provider type
       nextcloud:
@@ -530,7 +530,7 @@ en:
         name: OneDrive
         name_placeholder: e.g. OneDrive
       sharepoint:
-        drive_description: OpenProject access-managed document library
+        drive_description: Yojana access-managed document library
         label_oauth_client_id: Azure OAuth Application (client) ID
         label_oauth_client_secret: Azure OAuth Client Secret Value
         name: SharePoint
@@ -541,10 +541,10 @@ en:
     storage_audience:
       documentation_intro: Please read our documentation for details on the following options and configuration of the identity provider.
       idp:
-        helptext: OpenProject will use the access token received by the identity provider during log in to authenticate requests to the storage. It will not try to obtain another token.
+        helptext: Yojana will use the access token received by the identity provider during log in to authenticate requests to the storage. It will not try to obtain another token.
         label: Use access token obtained during user log in
       manual:
-        helptext: OpenProject will exchange a token with the identity provider for the given audience.
+        helptext: Yojana will exchange a token with the identity provider for the given audience.
         label: Manually specify audience for which to exchange access token (Recommended)
     storage_list_blank_slate:
       description: Add a storage to see them here.
@@ -553,11 +553,11 @@ en:
     upsell:
       one_drive:
         description: |-
-          Integrate your OneDrive drive as a file storage with OpenProject. Upload files and link them directly to
+          Integrate your OneDrive drive as a file storage with Yojana. Upload files and link them directly to
           work packages in a project.
         title: OneDrive integration
       sharepoint:
         description: |-
-          Integrate your SharePoint site as a file storage with OpenProject. Upload files and link them directly to
+          Integrate your SharePoint site as a file storage with Yojana. Upload files and link them directly to
           work packages in a project.
         title: SharePoint integration

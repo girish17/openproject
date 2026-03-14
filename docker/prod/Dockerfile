@@ -1,4 +1,4 @@
-ARG RUBY_VERSION="3.4.7"
+ARG RUBY_VERSION="3.4.9"
 ARG DEBIAN_BASE="trixie"
 # Add SBOM scan context for intermediate steps
 ARG BUILDKIT_SBOM_SCAN_CONTEXT=true
@@ -6,7 +6,7 @@ ARG BUILDKIT_SBOM_SCAN_STAGE=true
 FROM ruby:${RUBY_VERSION}-slim-${DEBIAN_BASE} AS base
 LABEL maintainer="operations@openproject.com"
 
-ARG NODE_VERSION="22.21.0"
+ARG NODE_VERSION="22.22.1"
 ARG BIM_SUPPORT=true
 ENV USE_JEMALLOC=false
 ENV DEBIAN_FRONTEND=noninteractive

@@ -1,7 +1,7 @@
 en:
   label_job_status_plural: "Job statuses"
   plugin_openproject_job_status:
-    name: "OpenProject Job status"
+    name: "Yojana Job status"
     description: "Listing and status of background jobs."
   job_status_dialog:
     download_starts: 'The download should start automatically.'

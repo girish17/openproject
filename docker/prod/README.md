@@ -9,7 +9,7 @@ OpenProject publishes docker images in two varieties:
 
 ## Docker Hub
 
-All images are being published on Docker Hub. For more information on the available versions, please see https://hub.docker.com/r/openproject/openproject/tags.
+All images are being published on Docker Hub. For more information on the available versions, please see https://hub.docker.com/r/girish17/yojana/tags.
 
 
 

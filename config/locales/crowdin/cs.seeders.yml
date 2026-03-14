@@ -197,7 +197,7 @@ cs:
             * View the change history
             * View as Markdown
 
-            More information: [https://www.openproject.org/docs/user-guide/wiki/](https://www.openproject.org/docs/user-guide/wiki/)
+            More information: [https://www.yojana.girishm.info/docs/user-guide/wiki/](https://www.yojana.girishm.info/docs/user-guide/wiki/)
         scrum-project:
           name: Projekt Scrum
           status_explanation: Všechny úkoly a dílčí projekty probíhají podle harmonogramu. Zúčastněné osoby znají své úkoly. Systém je kompletně nastaven.
@@ -299,7 +299,7 @@ cs:
                 options:
                   name: Začínáme
                   text: |
-                    Jsme rádi, že jste se připojili! Doporučujeme zkusit pár věcí pro začátek v OpenProject.
+                    Jsme rádi, že jste se připojili! Doporučujeme zkusit pár věcí pro začátek v Yojana.
 
                     _Vyzkoušejte následující kroky:_[Backlogs]. *Pozvěte nové členy do svého projektu*: &rightarrow; Jděte do [Members]({{opSetting:base_url}}/projects/your-scrum-project/members) v projektové navigaci.
                     2. *Podívejte se na nevyřízené produkty a nevyřízené záznamy*: &rightarrow; Přejděte do [Backlogs]({{opSetting:base_url}}/projects/your-scrum-project/backlogs) v projektové navigaci.
@@ -428,19 +428,19 @@ cs:
         item_6:
           name: Chyba
       welcome:
-        title: Vítejte v OpenProject!
+        title: Vítejte v Yojana!
         text: |
-          OpenProject je hlavní open source software pro správu projektů. Podporuje klasické, agilní i hybridní řízení projektů a dává vám plnou kontrolu nad vašimi daty.
+          Yojana je hlavní open source software pro správu projektů. Podporuje klasické, agilní i hybridní řízení projektů a dává vám plnou kontrolu nad vašimi daty.
 
           Základní funkce a použití případů:
 
-          * [Project Portfolio Management](https://www.openproject.org/collaboration-software-features/project-portfolio-management/)
-          * [Plánování projektů a plánování](https://www.openproject.org/collaboration-software-features/project-planning-scheduling/)
-          * [Správa úloh a sledování problémů](https://www.openproject.org/collaboration-software-features/task-management/)
-          * [Agile Boards (Scrum and Kanban)](https://www.openproject.org/collaboration-software-features/agile-project-management/)
-          * [Requirements Management and Release Planning](https://www.openproject.org/collaboration-software-features/product-development/)
-          * [Time and Cost Tracking, Budgets](https://www.openproject.org/collaboration-software-features/time-tracking/)
-          * [Team Collaboration and Documentation](https://www.openproject.org/collaboration-software-features/tým-collaboration/)
+          * [Project Portfolio Management](https://www.yojana.girishm.info/collaboration-software-features/project-portfolio-management/)
+          * [Plánování projektů a plánování](https://www.yojana.girishm.info/collaboration-software-features/project-planning-scheduling/)
+          * [Správa úloh a sledování problémů](https://www.yojana.girishm.info/collaboration-software-features/task-management/)
+          * [Agile Boards (Scrum and Kanban)](https://www.yojana.girishm.info/collaboration-software-features/agile-project-management/)
+          * [Requirements Management and Release Planning](https://www.yojana.girishm.info/collaboration-software-features/product-development/)
+          * [Time and Cost Tracking, Budgets](https://www.yojana.girishm.info/collaboration-software-features/time-tracking/)
+          * [Team Collaboration and Documentation](https://www.yojana.girishm.info/collaboration-software-features/tým-collaboration/)
 
           Vítejte v budoucnosti řízení projektu.
 

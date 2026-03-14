@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -111,12 +111,12 @@ it:
         link: "webhook"
     mcp_configurations:
       index:
-        description: "Il protocollo di contesto del modello consente agli agenti di intelligenza artificiale di fornire ai propri utenti strumenti e risorse esposti da questa istanza di OpenProject."
+        description: "Il protocollo di contesto del modello consente agli agenti di intelligenza artificiale di fornire ai propri utenti strumenti e risorse esposti da questa istanza di Yojana."
         resources_heading: "Risorse"
-        resources_description: "OpenProject implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
+        resources_description: "Yojana implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
         resources_submit: "Aggiorna risorse"
         tools_heading: "Strumenti"
-        tools_description: "OpenProject implementa i seguenti strumenti. Ognuno di essi può essere abilitato, rinominato e descritto a piacere. Per ulteriori informazioni, consultare la [documentazione sugli strumenti MCP](docs_url)."
+        tools_description: "Yojana implementa i seguenti strumenti. Ognuno di essi può essere abilitato, rinominato e descritto a piacere. Per ulteriori informazioni, consultare la [documentazione sugli strumenti MCP](docs_url)."
         tools_submit: "Aggiorna strumenti"
       multi_update:
         success: "Configurazioni MCP aggiornate con successo."
@@ -147,13 +147,13 @@ it:
       edit:
         label_delete_scim_client: "Elimina client SCIM"
       form:
-        auth_provider_description: "Questo è il servizio che gli utenti aggiunti dal provider SCIM utilizzeranno per autenticarsi in OpenProject."
-        authentication_method_description_html: "Questo è il modo in cui il cliente SCIM si autentica presso OpenProject. Assicurati che i token OAuth includano l'ambito <code>scim_v2</code>."
+        auth_provider_description: "Questo è il servizio che gli utenti aggiunti dal provider SCIM utilizzeranno per autenticarsi in Yojana."
+        authentication_method_description_html: "Questo è il modo in cui il cliente SCIM si autentica presso Yojana. Assicurati che i token OAuth includano l'ambito <code>scim_v2</code>."
         description: "Per maggiori informazioni su queste opzioni di configurazione, fai riferimento alla nostra [documentazione sulla configurazione dei client SCIM](docs_url)."
         jwt_sub_description: "Ad esempio, per Keycloak, si tratta dell'UUID dell'account di servizio associato al client SCIM. Consulta [la nostra documentazione](docs_url) per sapere come trovare la richiesta di accesso all'oggetto per il tuo caso d'uso."
         name_description: "Scegli un nome che aiuterà gli altri amministratori a capire meglio perché questo client è stato configurato."
       index:
-        description: "I client SCIM configurati qui sono in grado di interagire con l'API del server SCIM di OpenProject per fornire, aggiornare e annullare il provisioning di account utente e gruppi."
+        description: "I client SCIM configurati qui sono in grado di interagire con l'API del server SCIM di Yojana per fornire, aggiornare e annullare il provisioning di account utente e gruppi."
         label_create_button: "Aggiungi client SCIM"
       new:
         title: "Nuovo client SCIM"
@@ -161,14 +161,14 @@ it:
         confirm_button: "Revoca"
         title: "Revoca token statico"
         heading: "Vuoi davvero revocare il token?"
-        description: "Il client SCIM che utilizza questo token non sarà più in grado di accedere all'API del server SCIM di OpenProject."
+        description: "Il client SCIM che utilizza questo token non sarà più in grado di accedere all'API del server SCIM di Yojana."
       table_component:
         blank_slate:
           title: "Nessun client SCIM ancora configurato"
           description: "Aggiungi client per vederli qui"
         user_count: "Utenti"
       token_list_component:
-        description: "I token che generi qui possono essere passati da un client SCIM per accedere all'API di OpenProject SCIM."
+        description: "I token che generi qui possono essere passati da un client SCIM per accedere all'API di Yojana SCIM."
         heading: "Token"
         label_add_token: "Token"
         label_aria_add_token: "Aggiungi token"
@@ -229,36 +229,36 @@ it:
       name: Nome della connessione LDAP
       host: Nome host LDAP o indirizzo IP
       login_map: L'attributo chiave LDAP usato per identificare il login univoco dell'utente. Solitamente, è il campo 'uid' o 'samAccountName'.
-      generic_map: L'attributo chiave LDAP mappato nell'attributo OpenProject '%{attribute}'
-      admin_map_html: "Opzionale: L'attributo chiave LDAP che <strong>se presente</strong> indica l'utente OpenProject come amministratore. Lasciare vuoto se non sicuri."
+      generic_map: L'attributo chiave LDAP mappato nell'attributo Yojana '%{attribute}'
+      admin_map_html: "Opzionale: L'attributo chiave LDAP che <strong>se presente</strong> indica l'utente Yojana come amministratore. Lasciare vuoto se non sicuri."
       system_user_dn_html: |
         Inserire il nome dominio del sistema utilizzato dall'utente per l'accesso in sola lettura.
         <br>
-        Esempio: uid=openproject,ou=system,dc=example,dc=com
+        Esempio: uid=yojana,ou=system,dc=example,dc=com
       system_user_password: Inserire la password associata all'utente di sistema
       base_dn: |
-        Inserire il nome dominio del ramo LDAP che si vuole far scansionare da OpenProject per la ricerca di utenti e gruppi.
-        OpenProject scansionerà solo il ramo fornito.
+        Inserire il nome dominio del ramo LDAP che si vuole far scansionare da Yojana per la ricerca di utenti e gruppi.
+        Yojana scansionerà solo il ramo fornito.
         Esempio: ou=utenti,dc=esempio,dc=com
       filter_string: |
         Aggiungi un filtro RFC4515 opzionale da applicare ai risultati restituiti per gli utenti filtrati in LDAP.
-        Questa funzionalità può essere usata per limitare l'insieme di utenti che vengono trovati da OpenProject per l'autenticazione e la sincronizzazione di gruppo.
+        Questa funzionalità può essere usata per limitare l'insieme di utenti che vengono trovati da Yojana per l'autenticazione e la sincronizzazione di gruppo.
       filter_string_concat: |
-        OpenProject filtrerà sempre tramite l'attributo di login fornito dall'utente al fine di identificare il record. Inserendo un filtro qui,
+        Yojana filtrerà sempre tramite l'attributo di login fornito dall'utente al fine di identificare il record. Inserendo un filtro qui,
         sarà concatenato con una AND. Come impostazione predefinita, verrà usato un jolly (objectClass=*) come filtro.
       onthefly_register: |
-        Se selezioni questa spunta, OpenProject creerà automaticamente nuovi utenti dai loro record LDAP quando effettueranno la prima autenticazione con OpenProject.
-        Lasciare vuota questa spunta se si vuole garantire ai soli account presenti su OpenProject di autenticarsi tramite LDAP!
+        Se selezioni questa spunta, Yojana creerà automaticamente nuovi utenti dai loro record LDAP quando effettueranno la prima autenticazione con Yojana.
+        Lasciare vuota questa spunta se si vuole garantire ai soli account presenti su Yojana di autenticarsi tramite LDAP!
     connection_encryption: "Crittografia connessione"
     encryption_details: "Opzioni LDAPS / STARTTLS"
     system_account: "Account di sistema"
     system_account_legend: |
-      OpenProject richiede accesso in sola lettura ad un account di sistema per cercare utenti e gruppi nell'albero LDAP.
+      Yojana richiede accesso in sola lettura ad un account di sistema per cercare utenti e gruppi nell'albero LDAP.
       Per favore, specificare le credenziali associate per l'account di sistema nella sezione seguente.
     ldap_details: "Dettagli LDAP"
     user_settings: "Mappatura attributi"
     user_settings_legend: |
-      I seguenti campi sono associati a come gli utenti sono creati all'interno di OpenProject dai record LDAP e quali attributi LDAP sono usati per definire gli attributi di un utente OpenProject (mapping degli attributi).
+      I seguenti campi sono associati a come gli utenti sono creati all'interno di Yojana dai record LDAP e quali attributi LDAP sono usati per definire gli attributi di un utente Yojana (mapping degli attributi).
     tls_mode:
       plain: "nessuno"
       simple_tls: "LDAPS"
@@ -1503,7 +1503,7 @@ it:
         confirmation: "non coincide con %{attribute}."
         could_not_be_copied: "%{dependency} non può essere (completamente) copiato."
         does_not_exist: "non esiste."
-        error_enterprise_only: "%{action} è disponibile solo in OpenProject Enterprise edition."
+        error_enterprise_only: "%{action} è disponibile solo in Yojana Enterprise edition."
         error_unauthorized: "potrebbe non essere accessibile."
         error_readonly: "è in sola lettura, pertanto non è stato possibile modificarlo."
         error_conflict: "L'informazione è stata aggiornata da almeno un altro utente nel frattempo."
@@ -2131,7 +2131,7 @@ it:
       heading_reset: "Ripristina token di backup"
       heading_create: "Crea token di backup"
       implications: >
-        Abilitare i backup consentirà a ogni utente i permessi necessari e a questo token di backup di scaricare un backup contenente tutti i dati di quest'installazione di OpenProject. Questo include i dati di tutti gli altri utenti.
+        Abilitare i backup consentirà a ogni utente i permessi necessari e a questo token di backup di scaricare un backup contenente tutti i dati di quest'installazione di Yojana. Questo include i dati di tutti gli altri utenti.
       info: >
         Dovrai generare un token di backup per poterne creare uno. Ogni volta che vorrai richiedere un backup dovrai fornire questo token. Puoi eliminare il token di backup per disabilitarli per questo utente.
       verification: >
@@ -2491,7 +2491,7 @@ it:
         Hai già un token? Aggiungilo usando il pulsante qui sotto per aggiornare al piano Enterprise prenotato.
       hide_banner: "Nascondi questo banner"
       homescreen_description: >
-        I piani Enterprise estendono l'edizione Community di OpenProject con [componenti aggiuntivi Enterprise](enterprise_url) e supporto professionale, ideali per le organizzazioni che utilizzano OpenProject in ambienti mission-critical.
+        I piani Enterprise estendono l'edizione Community di Yojana con [componenti aggiuntivi Enterprise](enterprise_url) e supporto professionale, ideali per le organizzazioni che utilizzano Yojana in ambienti mission-critical.
       homescreen_subline: Effettuando l'aggiornamento supporterai anche un progetto open source.
       baseline_comparison:
         description: Evidenzia le modifiche apportate a questo elenco da qualsiasi punto nel passato.
@@ -2504,7 +2504,7 @@ it:
         premium_features: "Componenti aggiuntivi Enterprise"
         premium_features_text: "Tabelloni Agile, tema e logo personalizzati, grafici, flussi di lavoro intelligenti con azioni personalizzate, ricerca completa di allegati nelle macro-attività e campi personalizzati a selezione multipla."
         professional_support: "Assistenza professionale"
-        professional_support_text: "Ottieni un supporto affidabile e di livello da esperti tecnici con conoscenze dettagliate sulla gestione di OpenProject in ambienti critici per le imprese."
+        professional_support_text: "Ottieni un supporto affidabile e di livello da esperti tecnici con conoscenze dettagliate sulla gestione di Yojana in ambienti critici per le imprese."
       work_package_subject_generation:
         description: "Crea oggetti generati automaticamente utilizzando gli attributi e il testo di riferimento."
       customize_life_cycle:
@@ -2536,29 +2536,29 @@ it:
       define_custom_style:
         title: "Tema e logo a colori personalizzati"
         more_info: "Nota: il logo utilizzato sarà accessibile al pubblico."
-        description: Personalizza la tua installazione OpenProject con il tuo logo e i tuoi colori.
+        description: Personalizza la tua installazione Yojana con il tuo logo e i tuoi colori.
       custom_actions:
         title: "Azioni personalizzate"
         description: "Le azioni personalizzate sono scorciatoie che con un clic ti consentono di eseguire una serie di azioni predefinite che è possibile rendere disponibili su determinate macro-attività in base a stato, ruolo, tipo o progetto."
       mcp_server:
-        description: "Integra gli agenti IA con l'istanza OpenProject tramite MCP."
+        description: "Integra gli agenti IA con l'istanza Yojana tramite MCP."
       nextcloud_sso:
         title: "Single Sign-On per Nextcloud Storage"
         description: "Abilita un'autenticazione veloce e sicura per il tuo archivio Nextcloud con Single Sign-On. Semplifica la gestione degli accessi e migliora la praticità per l'utente."
       scim_api:
         title: "Client SCIM"
-        description: "Automatizza la gestione degli utenti in OpenProject integrando perfettamente servizi di identità esterni come Microsoft Entra o Keycloak attraverso la nostra API Server SCIM. Disponibile a partire dal piano aziendale Enterprise."
+        description: "Automatizza la gestione degli utenti in Yojana integrando perfettamente servizi di identità esterni come Microsoft Entra o Keycloak attraverso la nostra API Server SCIM. Disponibile a partire dal piano aziendale Enterprise."
       sso_auth_providers:
         title: "Single Sign-On (SSO)"
         description: "Consenti agli utenti di accedere tramite provider SSO esterni utilizzando SAML o OpenID Connect, per un accesso fluido e un'integrazione con i sistemi di identità esistenti."
       virus_scanning:
-        description: "Assicurati che i file caricati in OpenProject vengano scansionati alla ricerca di virus prima di renderli accessibili ad altri utenti."
+        description: "Assicurati che i file caricati in Yojana vengano scansionati alla ricerca di virus prima di renderli accessibili ad altri utenti."
       project_creation_wizard:
         description: "Genera una procedura guidata passo dopo passo per aiutare i project manager a compilare una richiesta di avvio del progetto."
       placeholder_users:
         title: Utenti segnaposto
         description: >
-          Gli utenti segnaposto sono un modo per assegnare macro-attività a utenti che non fanno parte del tuo progetto. Possono essere utili in una vasta gamma di scenari: ad esempio, quando occorre tenere traccia delle attività per una risorsa che non è ancora nominata o disponibile, o se non si desidera concedere a quella persona l'accesso a OpenProject ma si desidera comunque tenere traccia delle attività assegnate.
+          Gli utenti segnaposto sono un modo per assegnare macro-attività a utenti che non fanno parte del tuo progetto. Possono essere utili in una vasta gamma di scenari: ad esempio, quando occorre tenere traccia delle attività per una risorsa che non è ancora nominata o disponibile, o se non si desidera concedere a quella persona l'accesso a Yojana ma si desidera comunque tenere traccia delle attività assegnate.
       internal_comments:
         title: Commenti interni
         description: "I commenti interni consentono a un team interno di comunicare privatamente. Questi sono visibili solo ad alcuni ruoli di progetto e non saranno mai visibili pubblicamente."
@@ -2582,16 +2582,16 @@ it:
       request_again: "Richiedi nuovamente"
       resend_action: "Invia di nuovo e-mail di conferma"
       welcome_title: "Panoramica rapida delle funzioni"
-      welcome_description: "Veloce panoramica sulla gestione dei progetti e il lavoro di squadra nell'edizione OpenProject Enterprise."
+      welcome_description: "Veloce panoramica sulla gestione dei progetti e il lavoro di squadra nell'edizione Yojana Enterprise."
       confirmation_info: >
-        Ti abbiamo inviato un'e-mail il giorno %{date} su %{email} con tutte le informazioni per iniziare la prova gratuita di OpenProject Enterprise. Controlla la posta in arrivo e clicca sul link di conferma fornito per iniziare la prova gratuita di 14 giorni.
+        Ti abbiamo inviato un'e-mail il giorno %{date} su %{email} con tutte le informazioni per iniziare la prova gratuita di Yojana Enterprise. Controlla la posta in arrivo e clicca sul link di conferma fornito per iniziare la prova gratuita di 14 giorni.
       confirmation_subline: >
         Controlla la tua casella di posta e segui i passaggi per iniziare la tua prova gratuita di 14 giorni.
       domain_caption: Il token sarà valido per il tuo nome host attualmente configurato.
       receive_newsletter_html: >
-        Voglio ricevere la newsletter di <a target="_blank" href="https://www.openproject.org/newsletter/">OpenProject</a>.
+        Voglio ricevere la newsletter di <a target="_blank" href="https://www.yojana.girishm.info/newsletter/">Yojana</a>.
       consent_html: >
-        Accetto i <a target="_blank" href="https://www.openproject.org/terms-of-service/">termini di servizio</a> e l'<a target="_blank" href="https://www.openproject.org/data-privacy-and-security/">informativa sulla privacy</a>.
+        Accetto i <a target="_blank" href="https://www.yojana.girishm.info/terms-of-service/">termini di servizio</a> e l'<a target="_blank" href="https://www.yojana.girishm.info/data-privacy-and-security/">informativa sulla privacy</a>.
   email_calendar_updates:
     state:
       disabled: "Disabilitati."
@@ -2624,7 +2624,7 @@ it:
   error_check_user_and_role: "Si prega di scegliere un utente e un ruolo."
   error_code: "Errore %{code}"
   error_color_could_not_be_saved: "Il colore non può essere salvato"
-  error_cookie_missing: "Il cookie di OpenProject è mancante. Prego, verifica che i cookie siano attivati, questa applicazione non funziona correttamente senza."
+  error_cookie_missing: "Il cookie di Yojana è mancante. Prego, verifica che i cookie siano attivati, questa applicazione non funziona correttamente senza."
   error_custom_option_not_found: "L'opzione non esiste."
   error_enterprise_plan_needed: "Hai bisogno del piano aziendale %{plan} per eseguire questa azione."
   error_enterprise_activation_user_limit: "Il tuo account potrebbe non essere attivo (raggiunto il limite utente). Si prega di contattare l'amministratore per ottenere l'accesso."
@@ -2642,7 +2642,7 @@ it:
   error_work_package_not_found_in_project: "La macro-attività non è stata trovata o non appartiene a questo progetto"
   error_work_package_id_not_found: "Impossibile trovare la macro-attività."
   error_must_be_project_member: "deve essere membro del progetto"
-  error_migrations_are_pending: "L'installazione di OpenProject ha migrazioni di database in sospeso. Probabilmente non hai effettuato le migrazioni durante l'ultimo aggiornamento. Controlla la documentazione sull'aggiornamento per aggiornare correttamente l'installazione."
+  error_migrations_are_pending: "L'installazione di Yojana ha migrazioni di database in sospeso. Probabilmente non hai effettuato le migrazioni durante l'ultimo aggiornamento. Controlla la documentazione sull'aggiornamento per aggiornare correttamente l'installazione."
   error_migrations_visit_upgrade_guides: "Visita la nostra documentazione sull'aggiornamento"
   error_no_default_work_package_status: 'Non è configurato alcuno stato predefinito per le macro-attività. Per favore controlla la tua configurazione (vai a "Amministrazione -> Stato macro-attività").'
   error_no_type_in_project: "Nessun tipo è associato a questo progetto. Si prega di controllare le impostazioni del progetto."
@@ -2753,7 +2753,7 @@ it:
     failed: "Si è verificato un errore durante il tentativo di esportare le macro-attività: %{message}"
     demo:
       heading: "PDF demo"
-      footer: "Generato da OpenProject"
+      footer: "Generato da Yojana"
       button_text: Genera PDF demo
     errors:
       embedded_table_with_too_many_columns: "Questa tabella di macro-attività incorporata non può essere inserita nella pagina. Riduci il numero di colonne."
@@ -2844,7 +2844,7 @@ it:
       no_visible_projects: "Non ci sono progetti visibili in questa istanza."
       users: "Utenti registrati più recenti in questa istanza."
     blocks:
-      community: "Comunità di OpenProject"
+      community: "Comunità di Yojana"
       upsell:
         title: "Aggiorna ad Enterprise edition"
       new_features:
@@ -2858,7 +2858,7 @@ it:
           new_features_list:
             line_0: Avvio automatico del progetto (componente aggiuntivo Enterprise).
             line_1: "Riunioni: aggiungi macro-attività nuove o esistenti come risultati."
-            line_2: "Meetings: show iCal responses in OpenProject."
+            line_2: "Meetings: show iCal responses in Yojana."
             line_3: "Riunioni ricorrenti: duplica i punti dell'ordine del giorno della prossima ricorrenza."
             line_4: "Rilascio alla community: evidenziazione degli attributi."
             line_5: Avviso prima dell'apertura di link esterni nei contenuti forniti dall'utente (componente aggiuntivo Enterprise).
@@ -2871,7 +2871,7 @@ it:
       impressum: "Note legali"
       glossary: "Glossario"
       shortcuts: "Tasti di scelta rapida"
-      blog: "Blog di OpenProject"
+      blog: "Blog di Yojana"
       forums: "Forum della Comunità"
       security_alerts: "Avvisi di sicurezza"
       newsletter: "Newsletter"
@@ -2884,7 +2884,7 @@ it:
       default_attribute_written: "Attributi di sola lettura scritti"
       progress_mode_changed_to_status_based: "Calcolo dei progressi aggiornato"
       status_changed: "Stato '%{status_name}'"
-      system_update: "Aggiornamento del sistema OpenProject:"
+      system_update: "Aggiornamento del sistema Yojana:"
       work_package_duplicate_closed: "Macro-attività duplicata aggiornata:"
       total_percent_complete_mode_changed_to_work_weighted_average: "Il calcolo dei totali della % completamento è ora ponderato in base al Lavoro."
       total_percent_complete_mode_changed_to_simple_average: "Il calcolo dei totali della % completamento si basa ora su una media semplice dei soli valori della % completamento."
@@ -2940,7 +2940,7 @@ it:
       label: "Aggiungi…"
   my_account:
     access_tokens:
-      description: "I token provider vengono emessi da OpenProject, consentendo ad altre applicazioni di accedervi. I token client vengono emessi da altre applicazioni, consentendo a OpenProject di accedervi."
+      description: "I token provider vengono emessi da Yojana, consentendo ad altre applicazioni di accedervi. I token client vengono emessi da altre applicazioni, consentendo a Yojana di accedervi."
       no_results:
         title: "Nessun token di accesso da visualizzare"
         description: "Sono stati tutti disabilitati. Possono essere nuovamente abilitati dal menu amministrazione."
@@ -2960,7 +2960,7 @@ it:
         blank_title: "Nessun token API"
         title: "API"
         table_title: "Token API"
-        text_hint: "I token API consentono alle applicazioni di terze parti di comunicare con questa istanza OpenProject tramite le API REST."
+        text_hint: "I token API consentono alle applicazioni di terze parti di comunicare con questa istanza Yojana tramite le API REST."
         static_token_name: "Token API"
         disabled_text: "I token API non sono abilitati dall'amministratore. Contatta il tuo amministratore per utilizzare questa funzione."
         add_button: "Token API"
@@ -2969,7 +2969,7 @@ it:
         blank_title: "Nessun token iCalendar"
         title: "iCalendar"
         table_title: "Token iCalendar"
-        text_hint_link: "I token iCalendar consentono agli utenti di [iscriversi ai calendari di OpenProject](docs_url) e visualizzare informazioni aggiornate sulle macro-attività da client esterni."
+        text_hint_link: "I token iCalendar consentono agli utenti di [iscriversi ai calendari di Yojana](docs_url) e visualizzare informazioni aggiornate sulle macro-attività da client esterni."
         disabled_text: "Le iscrizioni iCalendar non sono abilitate dall'amministratore. Contatta il tuo amministratore per utilizzare questa funzione."
       oauth_application:
         active_tokens: "Token attivi"
@@ -2978,14 +2978,14 @@ it:
         last_used_at: "Ultimo utilizzo:"
         title: "OAuth"
         table_title: "Token di applicazione OAuth"
-        text_hint: "I token di applicazione OAuth consentono alle applicazioni di terze parti di connettersi con questa istanza OpenProject."
+        text_hint: "I token di applicazione OAuth consentono alle applicazioni di terze parti di connettersi con questa istanza Yojana."
       oauth_client:
         blank_description: "Non ci sono ancora token client OAuth."
         blank_title: "Nessun token client OAuth"
         failed: "Si è verificato un errore e non è stato possibile rimuovere il token. Riprova più tardi."
         integration_type: "Tipo di integrazione"
         table_title: "Token client OAuth"
-        text_hint: "I token client OAuth consentono a questa istanza di OpenProject di connettersi con applicazioni esterne, come gli archivi di file."
+        text_hint: "I token client OAuth consentono a questa istanza di Yojana di connettersi con applicazioni esterne, come gli archivi di file."
         title: "OAuth"
         remove_token: "Vuoi davvero rimuovere questo token? Dovrai effettuare nuovamente l'accesso su %{integration}."
         removed: "Il token del cliente OAuth è stato rimosso con successo"
@@ -2996,7 +2996,7 @@ it:
         blank_title: "Nessun token RSS"
         title: "RSS"
         table_title: "Token RSS"
-        text_hint: "I token RSS consentono agli utenti di tenere il passo con le ultime modifiche in questa istanza di OpenProject tramite un lettore RSS esterno."
+        text_hint: "I token RSS consentono agli utenti di tenere il passo con le ultime modifiche in questa istanza di Yojana tramite un lettore RSS esterno."
         static_token_name: "Token RSS"
         disabled_text: "I token RSS non sono abilitati dall'amministratore. Contatta il tuo amministratore per utilizzare questa funzione."
       storages:
@@ -3171,7 +3171,7 @@ it:
   label_custom_field_plural: "Campo personalizzato"
   label_custom_field_default_type: "Tipo vuoto"
   label_custom_style: "Progettazione"
-  label_custom_style_description: "Scegli l'aspetto che vuoi dare a OpenProject con i temi, seleziona i colori predefiniti da utilizzare nell'app e l'aspetto delle esportazioni."
+  label_custom_style_description: "Scegli l'aspetto che vuoi dare a Yojana con i temi, seleziona i colori predefiniti da utilizzare nell'app e l'aspetto delle esportazioni."
   label_dashboard: "Dashboard"
   label_database_version: "Versione di PostgreSQL"
   label_date: "Data"
@@ -3443,7 +3443,7 @@ it:
   label_open_menu: "Apri menu"
   label_open_work_packages: "aperte"
   label_open_work_packages_plural: "aperte"
-  label_openproject_website: "Sito web OpenProject"
+  label_openproject_website: "Sito web Yojana"
   label_optional_description: "Descrizione"
   label_options: "Opzioni"
   label_other: "Altro"
@@ -3846,8 +3846,8 @@ it:
   mail_body_backup_token_reset_user_info: Il tuo token di backup è stato ripristinato.
   mail_body_backup_token_info: Il token precedente non è più valido.
   mail_body_backup_waiting_period: Il nuovo token sarà abilitato tra %{hours} ore.
-  mail_body_backup_token_warning: Se non sei stato tu, accedi immediatamente a OpenProject e ripristinalo di nuovo.
-  mail_body_incoming_email_error: L'email che hai inviato a OpenProject non può essere processata.
+  mail_body_backup_token_warning: Se non sei stato tu, accedi immediatamente a Yojana e ripristinalo di nuovo.
+  mail_body_incoming_email_error: L'email che hai inviato a Yojana non può essere processata.
   mail_body_incoming_email_error_in_reply_to: "Alle %{received_at} %{from_email} ha scritto"
   mail_body_incoming_email_error_logs: "Log"
   mail_body_lost_password: "Per cambiare la password, clicca nel link seguente:"
@@ -3860,10 +3860,10 @@ it:
   mail_body_register_user: "Gentile %{name}, "
   mail_body_register_links_html: |
     Date un'occhiata al nostro canale youtube (%{youtube_link}) dove forniamo un webinar (%{webinar_link})
-    e video su “Come iniziare” (%{get_started_link}), in modo da rendere i tuoi primi passi in OpenProject più facili possibile.
+    e video su “Come iniziare” (%{get_started_link}), in modo da rendere i tuoi primi passi in Yojana più facili possibile.
     <br />
     Se hai ulteriori domande, consulta la nostra documentazione (%{documentation_link}) o contatta l'amministratore.
-  mail_body_register_closing: "Il tuo team OpenProject"
+  mail_body_register_closing: "Il tuo team Yojana"
   mail_body_register_ending: "Resta in contatto! Cordiali saluti,"
   mail_body_reminder: "%{count} macro-attività a te assegnata/e scadono nei prossimi %{days} giorni:"
   mail_body_group_reminder: '%{count} macro-attività assegnata/e al gruppo "%{group}" scadono nei prossimi %{days} giorni:'
@@ -3872,7 +3872,7 @@ it:
   mail_subject_account_activation_request: "%{value} richiesta di attivazione account"
   mail_subject_backup_ready: "Il tuo backup è pronto"
   mail_subject_backup_token_reset: "Resetta il token di backup"
-  mail_subject_incoming_email_error: "Impossibile elaborare un'email inviata a OpenProject"
+  mail_subject_incoming_email_error: "Impossibile elaborare un'email inviata a Yojana"
   mail_subject_lost_password: "La tua %{value} password"
   mail_subject_register: "La tua %{value} attivazione dell'account"
   mail_subject_wiki_content_added: "La pagina wiki '%{id}' è stata aggiunta"
@@ -3901,14 +3901,14 @@ it:
   mail_user_activation_limit_reached:
     subject: Limite di attivazione dell'utente raggiunto
     message: |
-      Un nuovo utente (%{email}) ha tentato di creare un account su un ambiente OpenProject che gestisci (%{host}).
+      Un nuovo utente (%{email}) ha tentato di creare un account su un ambiente Yojana che gestisci (%{host}).
       L'utente non può attivare il proprio account dal momento che è stato raggiunto il limite di utente.
     steps:
       label: "Per consentire all'utente di registrarsi puoi: "
       a: "Aggiorna il tuo piano di pagamento ([here](upgrade_url))" #here turned into a link
       b: "Bloccare o eliminare un utente esistente ([here](users_url))" #here turned into a link
   more_actions: "Altre funzioni"
-  noscript_description: "È necessario attivare JavaScript per poter usare OpenProject!"
+  noscript_description: "È necessario attivare JavaScript per poter usare Yojana!"
   noscript_heading: "JavaScript disabilitato"
   noscript_learn_more: "Scopri di più"
   notice_accessibility_mode: La modalità di accesso facilitato può essere abilitata nelle [impostazioni account] del tuo profilo (url).
@@ -3986,7 +3986,7 @@ it:
   notice_wont_delete_auth_source: La connessione LDAP non può essere eliminata finché ci sono ancora utenti che la utilizzano.
   notice_project_cannot_update_custom_fields: "Non è possibile aggiornare i campi personalizzati del progetto disponibili. Il progetto non è valido: %{errors}"
   notice_attachment_migration_wiki_page: >
-    Questa pagina è stata generata automaticamente durante l'aggiornamento di OpenProject. Contiene tutti gli allegati precedentemente connessi con il %{container_type} "%{container_name}".
+    Questa pagina è stata generata automaticamente durante l'aggiornamento di Yojana. Contiene tutti gli allegati precedentemente connessi con il %{container_type} "%{container_name}".
   #Default format for numbers
   number:
     format:
@@ -4009,7 +4009,7 @@ it:
           tb: "TB"
   onboarding:
     heading_getting_started: "Fatti un'idea"
-    text_getting_started_description: "Fai una rapida panoramica della gestione dei progetti e della collaborazione in team con OpenProject. Puoi riavviare questo video dal menu di aiuto."
+    text_getting_started_description: "Fai una rapida panoramica della gestione dei progetti e della collaborazione in team con Yojana. Puoi riavviare questo video dal menu di aiuto."
     welcome: "Benvenuto in %{app_title}"
     select_language: "Per favore seleziona la tua lingua"
   permission_add_work_package_comments: "Aggiungi commenti"
@@ -4102,7 +4102,7 @@ it:
   permission_view_all_principals_explanation: >
     Consente agli utenti di visualizzare tutti gli utenti e i gruppi nel sistema, anche se non sono membri di alcun progetto o gruppo a cui si è partecipato.
   permission_view_project: "Visualizza progetti"
-  permission_view_changesets: "Visualizza l'archivio revisioni in OpenProject"
+  permission_view_changesets: "Visualizza l'archivio revisioni in Yojana"
   permission_view_internal_comments: "Visualizzare commenti interni"
   permission_view_commit_author_statistics: "Visualizza le statistiche dell'autore delle modifiche confermate"
   permission_view_dashboards: "Visualizza dashboard"
@@ -4227,7 +4227,7 @@ it:
     destroy:
       confirmation: "Se si continua, questo eliminerà definitivamente l'archivio gestito dal sistema."
       info: "L'eliminazione del repository è un'operazione irreversibile."
-      info_not_managed: "Nota: questa azione NON eliminerà il contenuto di questo archivio, che non è gestito direttamente da OpenProject."
+      info_not_managed: "Nota: questa azione NON eliminerà il contenuto di questo archivio, che non è gestito direttamente da Yojana."
       managed_path_note: "La seguente cartella sarà eliminata: %{path}"
       repository_verification: "Immettere l'identificatore del progetto %{identifier} per verificare l'eliminazione del suo archivio gestito dal sistema."
       subtitle: "Vuoi davvero eliminare la risorsa %{repository_type} del %{project_name} progetto?"
@@ -4241,8 +4241,8 @@ it:
       empty_repository: "L'archivio esiste, ma è vuoto. Non contiene ancora alcuna revisione."
       exists_on_filesystem: "La directory di repository esiste già nel file system."
       filesystem_access_failed: "Si è verificato un errore durante l'accesso dell'archivio nel file system: %{message}"
-      not_manageable: "Questo tipo di archivo non può essere gestito da OpenProject."
-      path_permission_failed: "Si è verificato un errore cercando di creare il seguente percorso: %{path}. Si prega di verificare che OpenProject possa scrivere in tale cartella."
+      not_manageable: "Questo tipo di archivo non può essere gestito da Yojana."
+      path_permission_failed: "Si è verificato un errore cercando di creare il seguente percorso: %{path}. Si prega di verificare che Yojana possa scrivere in tale cartella."
       unauthorized: "Non sei autorizzato ad accedere all'archivio o le credenziali utilizzate non sono valide."
       unavailable: "L'archivio non è disponibile."
       exception_title: "Non è possibile accedere all'archivio: %{message}"
@@ -4259,9 +4259,9 @@ it:
         path_encoding: "Rimpiazza la codifica Git per il percorso (Default: UTF-8)"
       local_title: "Collega un archivio Git locale"
       local_url: "URL locale"
-      local_introduction: "Se si dispone di un archivio Git locale preesistente, è possibile collegarlo con OpenProject per accedervi dall'interno dell'applicazione."
-      managed_introduction: "Permetti ad OpenProject di creare ed integrare un archivio Git locale automaticamente."
-      managed_title: "Archivio Git integrato in OpenProject"
+      local_introduction: "Se si dispone di un archivio Git locale preesistente, è possibile collegarlo con Yojana per accedervi dall'interno dell'applicazione."
+      managed_introduction: "Permetti ad Yojana di creare ed integrare un archivio Git locale automaticamente."
+      managed_title: "Archivio Git integrato in Yojana"
       managed_url: "URL gestito"
       path: "Percorso all'archivio Git"
       path_encoding: "Codifica del percorso"
@@ -4278,24 +4278,24 @@ it:
     scm_types:
       local: "Collega un archivio locale preesistente"
       existing: "Collega un archivio preesistente"
-      managed: "Crea un nuovo archivio in OpenProject"
+      managed: "Crea un nuovo archivio in Yojana"
     storage:
       not_available: "Consumo di spazio su disco non è disponibile per questo repository."
       update_timeout: "Mantieni l'ultima informazione sullo spazio su disco richiesto per un archivio di progetto per N minuti.\nPoichè il calcolo dello spazio su disco richiesto per un archivio di progetto può essere un'attività costosa, aumentare questo intervallo riduce l'impatto sulle prestazioni."
-      oauth_application_details: "Il valore segreto del client non sarà nuovamente accessibile dopo aver chiuso questa finestra. Copia questi valori nelle impostazioni d'integrazione di Nextcloud OpenProject:"
+      oauth_application_details: "Il valore segreto del client non sarà nuovamente accessibile dopo aver chiuso questa finestra. Copia questi valori nelle impostazioni d'integrazione di Nextcloud Yojana:"
       oauth_application_details_link_text: "Vai alla pagina delle impostazioni"
       setup_documentation_details: "Se hai bisogno di aiuto per configurare un nuovo archivio file, controlla la documentazione: "
       setup_documentation_details_link_text: "Configurazione archivi file"
       show_warning_details: "Per utilizzare questo archivio di file ricordarsi di attivare il modulo e l'archivio specifico nelle impostazioni del progetto di ogni progetto desiderato."
     subversion:
       existing_title: "Archivio Subversion preesistente"
-      existing_introduction: "Se si dispone di un archivio Subversion preesistente, è possibile collegarlo con OpenProject per accedervi dall'interno dell'applicazione."
+      existing_introduction: "Se si dispone di un archivio Subversion preesistente, è possibile collegarlo con Yojana per accedervi dall'interno dell'applicazione."
       existing_url: "URL esistente"
       instructions:
         managed_url: "Questo è l'URL dell'archivio Subversion (locale) gestito direttamente."
         url: "Immettere l'URL dell'archivio. Può riferirsi ad un archivio locale (iniziando con %{local_proto}), o ad un archivio remoto.\nSono supportati i seguenti schemi URL:"
-      managed_title: "L'archivio Subversion è stato integrato in OpenProject"
-      managed_introduction: "Permetti ad OpenProject di creare ed integrare un archivio Subversion locale automaticamente."
+      managed_title: "L'archivio Subversion è stato integrato in Yojana"
+      managed_introduction: "Permetti ad Yojana di creare ed integrare un archivio Subversion locale automaticamente."
       managed_url: "URL gestito"
       password: "Password di accesso all'archivio"
       username: "Nome utente di accesso all'archivio"
@@ -4328,7 +4328,7 @@ it:
   setting_apiv3_cors_enabled: "Abilita CORS"
   setting_apiv3_cors_origins: "Origini di condivisione CORS (Cross-Origin Resource Sharing) API V3 consentite"
   setting_apiv3_cors_origins_text_html: >
-    Se CORS è abilitato, queste sono le origini che possono accedere alle API di OpenProject. <br/> Controlla la <a href="%{origin_link}" target="_blank">Documentazione sull'intestazione dell'origine</a> per sapere come specificare i valori previsti.
+    Se CORS è abilitato, queste sono le origini che possono accedere alle API di Yojana. <br/> Controlla la <a href="%{origin_link}" target="_blank">Documentazione sull'intestazione dell'origine</a> per sapere come specificare i valori previsti.
   setting_apiv3_write_readonly_attributes: "Accesso in scrittura agli attributi di sola lettura"
   setting_apiv3_write_readonly_attributes_instructions: >
     Se l'opzione è abilitata, l'API consentirà agli amministratori di scrivere attributi statici di sola lettura durante la creazione, come createdAt e author.
@@ -4525,7 +4525,7 @@ it:
       omniauth_direct_login_hint_html: >
         Se questa opzione è attiva, le richieste di accesso saranno reindirizzate al fornitore omniauth configurato. Il menu a tendina di accesso e la pagina di accesso saranno disabilitate. <br/> <strong>Nota:</strong> a meno che non si disabiliti anche l'accesso con password, con questa opzione abilitata, gli utenti possono ancora accedere internamente visitando la pagina di accesso <code>%{internal_path}</code>.
       remapping_existing_users_hint: >
-        Se abilitata, consente a qualsiasi provider di identità configurato di far accedere gli utenti esistenti in base al loro nome utente, anche se l'utente non ha mai effettuato l'accesso tramite quel provider in precedenza. Questo può essere utile durante la migrazione dell'istanza OpenProject a un nuovo provider SSO, ma non è raccomandato quando si utilizza un provider non considerato affidabile da tutti gli utenti dell'istanza.
+        Se abilitata, consente a qualsiasi provider di identità configurato di far accedere gli utenti esistenti in base al loro nome utente, anche se l'utente non ha mai effettuato l'accesso tramite quel provider in precedenza. Questo può essere utile durante la migrazione dell'istanza Yojana a un nuovo provider SSO, ma non è raccomandato quando si utilizza un provider non considerato affidabile da tutti gli utenti dell'istanza.
     attachments:
       whitelist_text_html: >
         Definisci un elenco di estensioni di file valide e/o tipi MIME per i file caricati. <br/> Inserisci le estensioni dei file (ad es. <code>%{ext_example}</code>) o i tipi MIME (ad es. <code>%{mime_example}</code>). <br/> Lascia vuoto per consentire il caricamento di qualsiasi tipo di file. Sono consentiti più valori (una riga per ogni valore).
@@ -4549,7 +4549,7 @@ it:
         clamav_socket_html: Inserisci la socket al daemon clamd, ad esempio %{example}
         clamav_host_html: Immettere il nome host e la porta del daemon clamd separati dai due punti. Ad esempio, %{example}
         description_html: >
-          Seleziona la modalità in cui deve funzionare l'integrazione dello scanner antivirus. <br/> <ul> <li><strong>%{disabled_option}</strong>: i file caricati non vengono sottoposti a scansione antivirus.</li> <li><strong>%{socket_option}</strong>: hai configurato un ClamAV sullo stesso server di OpenProject e il daemon di scansione clamd è in esecuzione in background</li> <li><strong>%{host_option}</strong>: invierai il file a un host di scansione antivirus esterno.</li> </ul>
+          Seleziona la modalità in cui deve funzionare l'integrazione dello scanner antivirus. <br/> <ul> <li><strong>%{disabled_option}</strong>: i file caricati non vengono sottoposti a scansione antivirus.</li> <li><strong>%{socket_option}</strong>: hai configurato un ClamAV sullo stesso server di Yojana e il daemon di scansione clamd è in esecuzione in background</li> <li><strong>%{host_option}</strong>: invierai il file a un host di scansione antivirus esterno.</li> </ul>
     brute_force_prevention: "Blocco automatico degli utenti"
     date_format:
       first_date_of_week_and_year_set: >
@@ -4557,8 +4557,8 @@ it:
       first_week_of_year_text_html: >
         Seleziona la data di gennaio che è contenuta nella prima settimana dell'anno. Questo valore insieme al primo giorno della settimana determina il numero totale di settimane in un anno. Per ulteriori informazioni, consulta la nostra <a href="%{link}" target="_blank">documentazione</a> su questo argomento.
     experimental:
-      save_confirmation: Attenzione! Rischio di perdita di dati! Attiva le funzionalità sperimentali solo se non è importante danneggiare l'installazione di OpenProject e perdere tutti i dati.
-      warning_toast: I flag di funzionalità sono impostazioni che attivano funzionalità ancora in fase di sviluppo. Devono essere utilizzati solo a scopo di test. Non devono mai essere attivati ​​su installazioni OpenProject contenenti dati importanti. Queste funzionalità molto probabilmente danneggeranno i tuoi dati. Usali a tuo rischio e pericolo.
+      save_confirmation: Attenzione! Rischio di perdita di dati! Attiva le funzionalità sperimentali solo se non è importante danneggiare l'installazione di Yojana e perdere tutti i dati.
+      warning_toast: I flag di funzionalità sono impostazioni che attivano funzionalità ancora in fase di sviluppo. Devono essere utilizzati solo a scopo di test. Non devono mai essere attivati ​​su installazioni Yojana contenenti dati importanti. Queste funzionalità molto probabilmente danneggeranno i tuoi dati. Usali a tuo rischio e pericolo.
       feature_flags: Flag di funzionalità
     general: "Generale"
     highlighting:
@@ -4569,7 +4569,7 @@ it:
         type: "Tutta la riga per Tipo"
         priority: "Tutta la riga per Priorità"
     icalendar:
-      enable_subscriptions_text_html: Consente agli utenti con le autorizzazioni necessarie di iscriversi ai calendari OpenProject e accedere alle informazioni sui pacchetti di lavoro tramite un client di calendario esterno. <strong>Nota:</strong> informati sulle <a href="%{link}" target="_blank">iscrizioni a iCalendar</a> per comprendere i potenziali rischi per la sicurezza prima di abilitare questa funzione.
+      enable_subscriptions_text_html: Consente agli utenti con le autorizzazioni necessarie di iscriversi ai calendari Yojana e accedere alle informazioni sui pacchetti di lavoro tramite un client di calendario esterno. <strong>Nota:</strong> informati sulle <a href="%{link}" target="_blank">iscrizioni a iCalendar</a> per comprendere i potenziali rischi per la sicurezza prima di abilitare questa funzione.
     language_name_being_default: "%{language_name} (predefinito)"
     notifications:
       events_explanation: "Determina per quale evento viene inviata un'e-mail. Le macro-attività sono escluse da questo elenco in quanto le notifiche per essi possono essere configurate in modo specifico per ogni utente."
@@ -4603,7 +4603,7 @@ it:
               description: "Aggiungi tutti gli attributi di progetto in una sezione all'interno del pannello laterale destro nella panoramica del progetto."
     project_initiation_request:
       header_description: >
-        OpenProject può generare una procedura guidata passo passo per aiutare i responsabili di progetto a compilare una richiesta di avvio del progetto. Puoi scegliere quali attributi di progetto includere e creare come risultato un artefatto PDF.
+        Yojana può generare una procedura guidata passo passo per aiutare i responsabili di progetto a compilare una richiesta di avvio del progetto. Puoi scegliere quali attributi di progetto includere e creare come risultato un artefatto PDF.
       status:
         submitted: "%{wizard_name} è stato inviato"
         submitted_description: "Fai clic sul pulsante qui sotto per accedere alla macro-attività relativa al processo di invio."
@@ -4616,7 +4616,7 @@ it:
         project_mandate: "Apri mandato progetto"
       blankslate:
         title: "Richiesta di apertura non attivata"
-        description: "OpenProject può generare una procedura guidata passo passo per aiutare i responsabili di progetto a compilare una richiesta di avvio del progetto. Puoi scegliere quali attributi di progetto includere e come gestire il documento di output. Abilita qui la funzione per iniziare a configurare la procedura guidata."
+        description: "Yojana può generare una procedura guidata passo passo per aiutare i responsabili di progetto a compilare una richiesta di avvio del progetto. Puoi scegliere quali attributi di progetto includere e come gestire il documento di output. Abilita qui la funzione per iniziare a configurare la procedura guidata."
       disable_dialog:
         title: "Disabilita la richiesta di avvio del progetto"
         heading: "Disabilitare la richiesta di avvio del progetto?"
@@ -4697,7 +4697,7 @@ it:
       sentence_connector: "e"
       skip_last_comma: "falso"
   text_accessibility_hint: "La modalità di accesso facilitato è progettata per utenti non vedenti, con handicap fisici o con una vista scarsa. Per questi ultimi, gli elementi evidenziati vengono messi particolarmente in rilievo. Nota che il modulo di backlog non è disponibile in questa modalità."
-  text_access_token_hint: "I token di accesso consentono di concedere ad applicazioni esterne l'accesso alle risorse in OpenProject."
+  text_access_token_hint: "I token di accesso consentono di concedere ad applicazioni esterne l'accesso alle risorse in Yojana."
   text_analyze: "Analizzare ulteriormente: %{subject}"
   text_are_you_sure: "Sei sicuro?"
   open_link_in_a_new_tab: "Apri collegamento in una nuova scheda"
@@ -4796,7 +4796,7 @@ it:
   text_no_notes: "Non ci sono commenti disponibili per questa macro-attività."
   text_notice_too_many_values_are_inperformant: "Nota: La visualizzazione di più di 100 elementi per pagina può aumentare il tempo di caricamento della pagina."
   text_notice_security_badge_displayed_html: >
-    Nota: se abilitata questa opzione visualizzerà un badge con lo stato dell'installazione nel pannello di amministrazione di <a href="%{information_panel_path}">%{information_panel_label}</a> e sulla home page. Verrà visualizzata solo agli amministratori. <br/> il badge controllerà la tua attuale versione di OpenProject con l'ultima versione rilasciata per avvisarti di eventuali aggiornamenti o risoluzioni di vulnerabilità note. Per ulteriori informazioni sulle funzionalità offerte dal controllo, su quali dati è necessario fornire per ottenere gli aggiornamenti disponibili e su come disabilitare questo controllo, visita <a href="%{more_info_url}">la documentazione sulla configurazione</a>.
+    Nota: se abilitata questa opzione visualizzerà un badge con lo stato dell'installazione nel pannello di amministrazione di <a href="%{information_panel_path}">%{information_panel_label}</a> e sulla home page. Verrà visualizzata solo agli amministratori. <br/> il badge controllerà la tua attuale versione di Yojana con l'ultima versione rilasciata per avvisarti di eventuali aggiornamenti o risoluzioni di vulnerabilità note. Per ulteriori informazioni sulle funzionalità offerte dal controllo, su quali dati è necessario fornire per ottenere gli aggiornamenti disponibili e su come disabilitare questo controllo, visita <a href="%{more_info_url}">la documentazione sulla configurazione</a>.
   text_own_membership_delete_confirmation: "Stai per rimuovere qualcuno o tutti i tuoi permessi e potresti non essere più in grado di modificare questo progetto dopo questo passo.\nSei sicuro di voler continuare?"
   text_permanent_delete_confirmation_checkbox_label: "Sono consapevole che questa cancellazione non può essere annullata"
   text_permanent_remove_confirmation_checkbox_label: "Sono consapevole che questa rimozione non può essere annullata"
@@ -4806,7 +4806,7 @@ it:
   text_reassign: "Riassegna alla macro-attività:"
   text_regexp_info: "es. ^[A-Z0-9]+$"
   text_regexp_multiline: 'L''espressione regolare viene applicata in modalità multi-linea. ad esempio, ^---\s+'
-  text_repository_usernames_mapping: "Seleziona o aggiorna l'utente OpenProject mappato per ogni nome utente trovato nel registro dell'archivio. Gli utenti con lo stesso nome utente e repository OpenProject o e-mail vengono mappati automaticamente."
+  text_repository_usernames_mapping: "Seleziona o aggiorna l'utente Yojana mappato per ogni nome utente trovato nel registro dell'archivio. Gli utenti con lo stesso nome utente e repository Yojana o e-mail vengono mappati automaticamente."
   text_status_changed_by_changeset: "Stato variato a partire dalla modifica %{value}."
   text_table_difference_description: "In questa tabella sono mostrate le singole %{entries}. È possibile visualizzare le differenze tra due voci selezionando prima le corrispondenti caselle di controllo nella tabella. Cliccando sul pulsante sotto la tabella saranno mostrate le differenze."
   text_time_logged_by_changeset: "Stato variato a partire dalla modifica %{value}."
@@ -4881,7 +4881,7 @@ it:
     authentication_provider: "Servizio di autenticazione"
     identity_url_text: "Identificativo unico interno fornito dal fornitore di autenticazione."
     authentication_settings_disabled_due_to_external_authentication: >
-      Questo utente si autentica tramite un servizio di autenticazione esterno, quindi non c'è nessuna password che può essere cambiata in OpenProject.
+      Questo utente si autentica tramite un servizio di autenticazione esterno, quindi non c'è nessuna password che può essere cambiata in Yojana.
     authorization_rejected: "Non ti è consentito accedere."
     assign_random_password: "Assegna una password casuale (verrà inviata via email all'utente)"
     blocked: "temporaneamente bloccato"
@@ -4915,7 +4915,7 @@ it:
   warning: Attenzione
   warning_attachments_not_saved: "%{count} file non possono essere salvati."
   warning_imminent_user_limit: >
-    Hai invitato più utenti di quanti siano supportati dal tuo attuale piano. Gli utenti invitati potrebbero non essere in grado di unirsi al vostro ambiente OpenProject. Per favore <a href="%{upgrade_url}">aggiorna il tuo piano</a> o blocca gli utenti esistenti al fine di consentire agli utenti invitati e e registrati di unirsi.
+    Hai invitato più utenti di quanti siano supportati dal tuo attuale piano. Gli utenti invitati potrebbero non essere in grado di unirsi al vostro ambiente Yojana. Per favore <a href="%{upgrade_url}">aggiorna il tuo piano</a> o blocca gli utenti esistenti al fine di consentire agli utenti invitati e e registrati di unirsi.
   warning_registration_token_expired: |
     L'attivazione della e-mail è scaduta. Te ne abbiamo mandata una nuova a %{email}.
     Clicca il link al suo interno per attivare il tuo account.
@@ -4924,7 +4924,7 @@ it:
   warning_user_limit_reached_admin: >
     L'aggiunta di ulteriori utenti supererà il limite attuale. <a href="%{upgrade_url}">Aggiorna il tuo piano</a> per poter garantire che gli utenti esterni possano accedere a questa istanza.
   warning_user_limit_reached_instructions: >
-    Raggiunto il limite di utenti (%{current}/%{max} utenti attivi). Si prega di contattare sales@openproject.com per aggiornare il tuo piano dell'edizione Enterprise e aggiungere ulteriori utenti.
+    Raggiunto il limite di utenti (%{current}/%{max} utenti attivi). Si prega di contattare sales@girishm.info per aggiornare il tuo piano dell'edizione Enterprise e aggiungere ulteriori utenti.
   warning_protocol_mismatch_html: >
 
   warning_bar:
@@ -5197,7 +5197,7 @@ it:
         confidential: "Controlla se l'applicazione verrà utilizzata dove il segreto del client può essere tenuto confidenziale. Applicazioni mobili native e app a pagina singola sono considerate non riservate."
         scopes: "Controlla a cosa avrà accesso l'applicazione. Se non sono selezionati permessi, si assume api_v3."
         client_credential_user_id: "ID utente opzionale da impersonare quando i client usano questa applicazione. Lascia vuoto per consentire solo l'accesso pubblico"
-        register_intro: "Se stai sviluppando un'applicazione client OAuth API per OpenProject è possibile registrarla utilizzando questo modulo per consentirne l'uso a tutti gli utenti."
+        register_intro: "Se stai sviluppando un'applicazione client OAuth API per Yojana è possibile registrarla utilizzando questo modulo per consentirne l'uso a tutti gli utenti."
         default_scopes: ""
     header:
       builtin_applications: Applicazioni OAuth integrate
@@ -5205,14 +5205,14 @@ it:
     empty_application_lists: Nessuna applicazione OAuth è stata registrata.
     client_id: "ID Client"
     client_secret_notice: >
-      Questa è l'unico momento in cui possiamo stampare il segreto del client, abbi cura di annotarlo e tenerlo al sicuro. Dovrebbe essere trattato come una password e non può essere recuperato da OpenProject in un momento successivo.
+      Questa è l'unico momento in cui possiamo stampare il segreto del client, abbi cura di annotarlo e tenerlo al sicuro. Dovrebbe essere trattato come una password e non può essere recuperato da Yojana in un momento successivo.
     authorization_dialog:
       authorize: "Autorizza"
       cancel: "Annulla e nega autorizzazioni."
       prompt_html: "Autorizzare <strong>%{application_name}</strong> ad utilizzare il tuo account <em>%{login}</em>?"
       title: "Autorizza %{application_name}"
       wants_to_access_html: >
-        Questa applicazione richiede l'accesso al tuo account OpenProject. <br/> <strong>Ha richiesto i seguenti permessi:</strong>
+        Questa applicazione richiede l'accesso al tuo account Yojana. <br/> <strong>Ha richiesto i seguenti permessi:</strong>
     scopes:
       api_v3: "Accesso completo alle API v3"
       api_v3_text: "L'applicazione riceverà accesso completo in lettura e scrittura alle API v3 per effettuare azioni a tuo nome."
@@ -5231,7 +5231,7 @@ it:
     client_credentials_impersonation_set_to: "Credenziali del client impostate dall'utente"
     client_credentials_impersonation_warning: "Nota: i clienti che utilizzano il flusso \"Credenziali client\" di questa applicazione avranno i diritti di questo utente"
     client_credentials_impersonation_html: >
-      Per impostazione predefinita, OpenProject fornisce l'autorizzazione OAuth 2.0 tramite %{authorization_code_flow_link}. È possibile abilitare facoltativamente %{client_credentials_flow_link}, ma è necessario fornire un utente a cui nome verranno eseguite le richieste.
+      Per impostazione predefinita, Yojana fornisce l'autorizzazione OAuth 2.0 tramite %{authorization_code_flow_link}. È possibile abilitare facoltativamente %{client_credentials_flow_link}, ma è necessario fornire un utente a cui nome verranno eseguite le richieste.
     authorization_error: "Si è verificato un errore di autorizzazione."
     revoke_my_application_confirmation: "Vuoi davvero rimuovere questa applicazione? Questo revocherà %{token_count} attivo per essa."
     my_registered_applications: "Applicazioni OAuth registrate"
@@ -5260,20 +5260,20 @@ it:
         Errore interno: refresh_token richiamato senza un token precedentemente esistente.
       refresh_token_updated_failed: "Errore durante l'aggiornamento di OAuthClientToken"
       oauth_client_not_found_explanation: >
-        Questo errore appare dopo aver aggiornato il client_id e il client_secret in OpenProject senza aver aggiornato il campo 'Return URI' nel provider OAuth2.
+        Questo errore appare dopo aver aggiornato il client_id e il client_secret in Yojana senza aver aggiornato il campo 'Return URI' nel provider OAuth2.
       oauth_code_not_present: "OAuth2 'code' non trovato nell'endpoint 'callback' (redirect_uri)."
       oauth_code_not_present_explanation: >
         Questo errore appare se hai selezionato response_type errato nel provider OAuth2. Response_type dovrebbe essere 'code' o simile.
       oauth_state_not_present: "OAuth2 'state' non trovato nell'endpoint 'callback' (redirect_uri)."
       oauth_state_not_present_explanation: >
-        L'attributo 'state' viene usato per indicare a OpenProject dove continuare dopo un'autorizzazione OAuth2 riuscita. Uno 'state' assente è un errore interno che potrebbe verificarsi durante la configurazione. Contatta l'amministratore di sistema.
+        L'attributo 'state' viene usato per indicare a Yojana dove continuare dopo un'autorizzazione OAuth2 riuscita. Uno 'state' assente è un errore interno che potrebbe verificarsi durante la configurazione. Contatta l'amministratore di sistema.
       rack_oauth2:
         client_secret_invalid: "Il segreto del client non è valido (client_secret_invalid)"
         invalid_request: >
           Il server di autorizzazione OAuth2 ha risposto con 'invalid_request'. Questo errore si verificsa quando si tenta di autorizzare più volte o in caso di problemi tecnici.
         invalid_response: "Il server di autorizzazione OAuth2 ha fornito una risposta non valida (invalid_response)"
         invalid_grant: "Il server di autorizzazione OAuth2 chiede di autorizzare nuovamente (invalid_grant)."
-        invalid_client: "Il server di autorizzazione OAuth2 non riconosce OpenProject (invalid_client)."
+        invalid_client: "Il server di autorizzazione OAuth2 non riconosce Yojana (invalid_client)."
         unauthorized_client: "Il server di autorizzazione OAuth2 rifiuta il tipo di concessione (unauthorized_client)"
         unsupported_grant_type: "Il server di autorizzazione OAuth2 chiede di autorizzare nuovamente (unsupported_grant_type)."
         invalid_scope: "Non sei autorizzato ad accedere alla risorsa richiesta (invalid_scope)."
@@ -5286,18 +5286,18 @@ it:
   you: tu
   link: link
   plugin_openproject_auth_plugins:
-    name: "Plugin Autenticazione OpenProject"
-    description: "Integrazione dei fornitori di strategie OmniAuth per l'autenticazione in OpenProject."
+    name: "Plugin Autenticazione Yojana"
+    description: "Integrazione dei fornitori di strategie OmniAuth per l'autenticazione in Yojana."
   plugin_openproject_auth_saml:
     name: "OmniAuth SAML / Single-Sign On"
-    description: "Aggiunge il provider OmniAuth SAML a OpenProject"
+    description: "Aggiunge il provider OmniAuth SAML a Yojana"
   enterprise_plans:
     legacy_enterprise: "Programma aziendale"
   token:
     hashed_token:
       display_value_placeholder: "***"
   external_link_warning:
-    title: "Uscita da OpenProject"
-    warning_message: "Stai per uscire da OpenProject e visitare un sito web esterno. Tieni presente che i siti web esterni non sono sotto il nostro controllo e potrebbero avere politiche sulla privacy e sulla sicurezza diverse."
+    title: "Uscita da Yojana"
+    warning_message: "Stai per uscire da Yojana e visitare un sito web esterno. Tieni presente che i siti web esterni non sono sotto il nostro controllo e potrebbero avere politiche sulla privacy e sulla sicurezza diverse."
     continue_message: "Vuoi davvero procedere al seguente link esterno?"
     continue_button: "Prosegui con il sito web esterno"

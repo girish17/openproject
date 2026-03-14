@@ -19,13 +19,13 @@ fi
 
 # Build the images
 echo "📦 Building backend Docker image..."
-docker build -f docker/dev/backend/Dockerfile -t openproject/dev:$BRANCH_NAME .
+docker build -f docker/dev/backend/Dockerfile -t girish17/yojana:$BRANCH_NAME .
 
 echo "📦 Building frontend Docker image..."
 docker build -f docker/dev/frontend/Dockerfile -t openproject-frontend:$BRANCH_NAME .
 
 # Also tag as latest for compose to use
-docker tag openproject/dev:$BRANCH_NAME openproject/dev:latest
+docker tag girish17/yojana:$BRANCH_NAME girish17/yojana:latest
 docker tag openproject-frontend:$BRANCH_NAME openproject-frontend:latest
 
 echo "✅ Docker images built successfully!"

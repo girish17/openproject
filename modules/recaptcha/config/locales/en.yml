@@ -1,7 +1,7 @@
 # English strings go here for Rails i18n
 en:
   plugin_openproject_recaptcha:
-    name: "OpenProject ReCaptcha"
+    name: "Yojana ReCaptcha"
     description: "This module provides recaptcha checks during login."
   recaptcha:
     label_recaptcha: "reCAPTCHA"
@@ -22,7 +22,7 @@ en:
       type_hcaptcha: 'HCaptcha'
       type_turnstile: 'Cloudflare Turnstile™'
       captcha_description_html: >
-        reCAPTCHA is a free service by Google that can be enabled for your OpenProject instance.
+        reCAPTCHA is a free service by Google that can be enabled for your Yojana instance.
         If enabled, a captcha form will be rendered upon login for all users that have not verified a captcha yet.
         <br/>
         Please see the following link for more details on reCAPTCHA and their versions, and how

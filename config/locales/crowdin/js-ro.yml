@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -52,7 +52,7 @@ ro:
         O nouă copie de rezervă va înlocui orice copie de rezervă anterioară. Se poate solicita doar un număr limitat de copii de rezervă pe zi.
       last_backup: Ultima copie de rezervă
       last_backup_from: Ultima copie de rezervă
-      title: Copie de rezervă OpenProject
+      title: Copie de rezervă Yojana
       options: Opțiuni
       include_attachments: Include atașamente
       download_backup: Descarcă backup
@@ -504,7 +504,7 @@ ro:
         next: "Înainte"
         got_it: "Am înțeles"
       steps:
-        help_menu: "Meniul Ajutor (?) oferă <b>resurse suplimentare de ajutor</b>. Aici puteți găsi un ghid de utilizator, un ghid util pentru videoclipuri și multe altele. <br> Bucurați-vă de munca dumneavoastră cu OpenProject!"
+        help_menu: "Meniul Ajutor (?) oferă <b>resurse suplimentare de ajutor</b>. Aici puteți găsi un ghid de utilizator, un ghid util pentru videoclipuri și multe altele. <br> Bucurați-vă de munca dumneavoastră cu Yojana!"
         members: "Invitați noi <b>membri</b> să se alăture proiectului dumneavoastră."
         quick_add_button: "Dă click pe pictograma plus (+) din antetul navigării pentru a <b>crea un nou proiect</b> sau <b>invita colaboratori</b>."
         sidebar_arrow: "Folosește săgeata de întoarcere din colțul din stânga sus pentru a te întoarce în meniul <b>al proiectului</b>."

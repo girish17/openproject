@@ -1,7 +1,7 @@
 en:
   plugin_openproject_openid_connect:
-    name: "OpenProject OpenID Connect"
-    description: "Adds OmniAuth OpenID Connect strategy providers to OpenProject."
+    name: "Yojana OpenID Connect"
+    description: "Adds OmniAuth OpenID Connect strategy providers to Yojana."
   logout_warning: >
     You have been logged out. The contents of any form you submit may be lost.
     Please [log in].
@@ -124,7 +124,7 @@ en:
         name: Custom
       upsell:
         title: "Single Sign-On (SSO) with OpenID connect"
-        description: Connect OpenProject to an OpenID connect identity provider
+        description: Connect Yojana to an OpenID connect identity provider
       label_add_new: Add a new OpenID provider
       label_edit: Edit OpenID provider %{name}
       label_empty_title: No OpenID providers configured yet.
@@ -138,12 +138,12 @@ en:
       label_client_details: Client details
       label_attribute_mapping: Attribute mapping
       notice_created: A new OpenID provider was successfully created.
-      client_details_description: Configuration details of OpenProject as an OIDC client
+      client_details_description: Configuration details of Yojana as an OIDC client
       no_results_table: No providers have been defined yet.
       plural: OpenID providers
       singular: OpenID provider
       section_texts:
-        group_mapping: Map group names provided by the identity provider to groups in OpenProject.
+        group_mapping: Map group names provided by the identity provider to groups in Yojana.
         metadata: Pre-fill configuration using an OpenID Connect discovery endpoint URL
         metadata_form_banner: Editing the discovery endpoint may override existing pre-filled metadata values.
         metadata_form_title: OpenID Connect Discovery endpoint
@@ -151,7 +151,7 @@ en:
         configuration_metadata: The information has been pre-filled using the supplied discovery endpoint. In most cases, they do not require editing.
         configuration: Configuration details of the OpenID Connect provider
         display_name: The display name visible to users.
-        attribute_mapping: Configure the mapping of attributes between OpenProject and the OpenID Connect provider.
+        attribute_mapping: Configure the mapping of attributes between Yojana and the OpenID Connect provider.
         claims: Request additional claims for the ID token or userinfo response.
       side_panel:
         information_component:

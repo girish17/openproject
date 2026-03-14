@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -52,7 +52,7 @@ ru:
         Новая резервная копия создается поверх предыдущий. Число создаваемых резервных копий в день ограничено.
       last_backup: Последнее резервное копирование
       last_backup_from: Последняя резервная копия от
-      title: Резервное копирование OpenProject
+      title: Резервное копирование Yojana
       options: Параметры
       include_attachments: Включая вложения
       download_backup: Скачать резервную копию
@@ -504,7 +504,7 @@ ru:
         next: "Следующий"
         got_it: "Понятно"
       steps:
-        help_menu: "Меню Справка (?) предоставляет <b>дополнительные вспомогательные ресурсы</b>. Здесь вы можете найти руководство пользователя, полезные видео инструкций и многое другое. <br> Наслаждайтесь вашей работой с OpenProject!"
+        help_menu: "Меню Справка (?) предоставляет <b>дополнительные вспомогательные ресурсы</b>. Здесь вы можете найти руководство пользователя, полезные видео инструкций и многое другое. <br> Наслаждайтесь вашей работой с Yojana!"
         members: "Пригласите в ваш проект <b>новых участников</b>."
         quick_add_button: "Нажмите на значок плюс (+) в заголовке навигации, чтобы <b>создать новый проект</b> или <b>пригласить коллег</b>."
         sidebar_arrow: "Используйте стрелку возврата в левом верхнем углу, чтобы вернуться в <b>главное меню</b> проекта."

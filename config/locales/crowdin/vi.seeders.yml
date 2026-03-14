@@ -141,7 +141,7 @@ vi:
                 options:
                   name: Bắt đầu
                   text: |
-                    Chúng tôi rất vui vì bạn đã tham gia! Chúng tôi khuyên bạn nên thử một số thứ để bắt đầu trong OpenProject.
+                    Chúng tôi rất vui vì bạn đã tham gia! Chúng tôi khuyên bạn nên thử một số thứ để bắt đầu trong Yojana.
 
                     Khám phá những tính năng quan trọng nhất với [Guided Tour]({{opSetting:base_url}}/projects/demo-project/work_packages/?start_onboarding_tour=true của chúng tôi).
 
@@ -154,7 +154,7 @@ vi:
                     5. *Kích hoạt thêm các mô-đun*: &rightarrow; Chuyển đến [Project settings &rightarrow; Modules]({{opSetting:base_url}}/projects/demo-project/settings/modules).
                     6. *Hoàn thành nhiệm vụ của bạn trong dự án*: &rightarrow; Truy cập [Work packages &rightarrow; Tasks]({{opSetting:base_url}}/projects/demo-project/work_packages/details/##wp.id:set_date_and_location_of_conference/overview?query_id=##query.id:demo_project__query__tasks).
 
-                    Tại đây bạn sẽ tìm thấy [User Guides](https://www.openproject.org/docs/user-guide/) của chúng tôi.
+                    Tại đây bạn sẽ tìm thấy [User Guides](https://www.yojana.girishm.info/docs/user-guide/) của chúng tôi.
                     Vui lòng cho chúng tôi biết nếu bạn có bất kỳ câu hỏi nào hoặc cần hỗ trợ. Liên hệ với chúng tôi: [support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
@@ -211,7 +211,7 @@ vi:
             * Xem lịch sử thay đổi
             * Xem dưới dạng Markdown
 
-            Thông tin thêm: [https://www.openproject.org/docs/user-guide/wiki/](https://www.openproject.org/docs/user-guide/wiki/)
+            Thông tin thêm: [https://www.yojana.girishm.info/docs/user-guide/wiki/](https://www.yojana.girishm.info/docs/user-guide/wiki/)
         scrum-project:
           name: Dự án Scrum
           status_explanation: Mọi công việc đều đúng tiến độ. Những người liên quan biết nhiệm vụ của họ. Hệ thống đã được thiết lập hoàn chỉnh.
@@ -313,7 +313,7 @@ vi:
                 options:
                   name: Bắt đầu
                   text: |
-                    Chúng tôi rất vui vì bạn đã tham gia! Chúng tôi khuyên bạn nên thử một số thứ để bắt đầu trong OpenProject.
+                    Chúng tôi rất vui vì bạn đã tham gia! Chúng tôi khuyên bạn nên thử một số thứ để bắt đầu trong Yojana.
 
                     _Hãy thử các bước sau:_
 
@@ -325,7 +325,7 @@ vi:
                     6. *Tạo một wiki Sprint*: &rightarrow; Đi tới [Backlogs]({{opSetting:base_url}}/projects/your-scrum-project/backlogs) và mở wiki chạy nước rút từ menu thả xuống bên phải trong một lần chạy nước rút. Bạn có thể chỉnh sửa [wiki template]({{opSetting:base_url}}/projects/your-scrum-project/wiki/) tùy theo nhu cầu của mình.
                     7. *Kích hoạt thêm các mô-đun*: &rightarrow; Đi tới [Project settings &rightarrow; Modules]({{opSetting:base_url}}/projects/your-scrum-project/settings/modules).
 
-                    Tại đây bạn sẽ tìm thấy [User Guides](https://www.openproject.org/docs/user-guide/) của chúng tôi.
+                    Tại đây bạn sẽ tìm thấy [User Guides](https://www.yojana.girishm.info/docs/user-guide/) của chúng tôi.
                     Vui lòng cho chúng tôi biết nếu bạn có bất kỳ câu hỏi nào hoặc cần hỗ trợ. Liên hệ với chúng tôi: [support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
@@ -488,19 +488,19 @@ vi:
         item_6:
           name: lỗi
       welcome:
-        title: Chào mừng đến với OpenProject!
+        title: Chào mừng đến với Yojana!
         text: |
-          OpenProject là phần mềm quản lý dự án nguồn mở hàng đầu. Nó hỗ trợ quản lý dự án cổ điển, linh hoạt cũng như kết hợp và cung cấp cho bạn toàn quyền kiểm soát dữ liệu của mình.
+          Yojana là phần mềm quản lý dự án nguồn mở hàng đầu. Nó hỗ trợ quản lý dự án cổ điển, linh hoạt cũng như kết hợp và cung cấp cho bạn toàn quyền kiểm soát dữ liệu của mình.
 
           Các tính năng cốt lõi và trường hợp sử dụng:
 
-          * [Project Portfolio Management](https://www.openproject.org/collaboration-software-features/project-portfolio-management/)
-          * [Project Planning and Scheduling](https://www.openproject.org/collaboration-software-features/project-planning-scheduling/)
-          * [Task Management and Issue Tracking](https://www.openproject.org/collaboration-software-features/task-management/)
-          * [Agile Boards (Scrum and Kanban)](https://www.openproject.org/collaboration-software-features/agile-project-management/)
-          * [Requirements Management and Release Planning](https://www.openproject.org/collaboration-software-features/product-development/)
-          * [Time and Cost Tracking, Budgets](https://www.openproject.org/collaboration-software-features/time-tracking/)
-          * [Team Collaboration and Documentation](https://www.openproject.org/collaboration-software-features/team-collaboration/)
+          * [Project Portfolio Management](https://www.yojana.girishm.info/collaboration-software-features/project-portfolio-management/)
+          * [Project Planning and Scheduling](https://www.yojana.girishm.info/collaboration-software-features/project-planning-scheduling/)
+          * [Task Management and Issue Tracking](https://www.yojana.girishm.info/collaboration-software-features/task-management/)
+          * [Agile Boards (Scrum and Kanban)](https://www.yojana.girishm.info/collaboration-software-features/agile-project-management/)
+          * [Requirements Management and Release Planning](https://www.yojana.girishm.info/collaboration-software-features/product-development/)
+          * [Time and Cost Tracking, Budgets](https://www.yojana.girishm.info/collaboration-software-features/time-tracking/)
+          * [Team Collaboration and Documentation](https://www.yojana.girishm.info/collaboration-software-features/team-collaboration/)
 
           Chào mừng bạn đến với tương lai của quản lý dự án.
 

@@ -10,8 +10,8 @@
   },
   "private": true,
   "engines": {
-    "node": "^22.21.0",
-    "npm": "^10.1.0"
+    "node": "^22.22.1",
+    "npm": ">= 10.1.0"
   },
   "devDependencies": {
     "@redocly/openapi-cli": "^1.0.0-beta.80"

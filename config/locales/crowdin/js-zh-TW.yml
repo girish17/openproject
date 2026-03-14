@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -52,7 +52,7 @@ zh-TW:
         新備份將覆蓋任何之前的備份。每天只能請求有限次數的備份。
       last_backup: 上次備份
       last_backup_from: 上次備份從
-      title: 備份OpenProject
+      title: 備份Yojana
       options: 選項
       include_attachments: 包含附件
       download_backup: 下載備份
@@ -504,7 +504,7 @@ zh-TW:
         next: "下一頁"
         got_it: "了解"
       steps:
-        help_menu: "幫助 (?) 菜單中提供了<b>其他幫助資源</b>。您可以在這裡找到用戶指南、實用的使用方法視頻等內容。<br>使用 OpenProject 盡情享受您的工作吧！"
+        help_menu: "幫助 (?) 菜單中提供了<b>其他幫助資源</b>。您可以在這裡找到用戶指南、實用的使用方法視頻等內容。<br>使用 Yojana 盡情享受您的工作吧！"
         members: "邀請新 <b>會員</b> 加入您的專案。"
         quick_add_button: "於頁首點按 (+) 鍵 <b>來建立新的專案</b> 或 <b>來邀請隊員</b>."
         sidebar_arrow: "用左上方的返回鍵，返回至專案的 <b>主選單</b>."

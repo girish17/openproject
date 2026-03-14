@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -52,7 +52,7 @@ fa:
         A new backup will override any previous one. Only a limited number of backups per day can be requested.
       last_backup: آخرین پشتیبانی گیری
       last_backup_from: آخرین پشتیبانی گیری از
-      title: Backup OpenProject
+      title: Backup Yojana
       options: گزینه‌ها
       include_attachments: Include attachments
       download_backup: دانلود نسخه پشتیبان گیری

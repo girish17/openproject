@@ -22,7 +22,7 @@ This will output a MySQL dump at `/var/db/openproject/backup/mysql-dump-<timesta
 
 ```shell
 cp /var/db/openproject/backup/mysql-dump-<timestamp>.sql.gz /tmp/openproject-mysql.dump.gz
-gunzip /tmp/openproject/openproject-mysql.dump.gz
+gunzip /tmp/girish17/yojana-mysql.dump.gz
 ```
 
 ### Run the docker migration script

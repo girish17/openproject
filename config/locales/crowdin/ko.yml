@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -111,12 +111,12 @@ ko:
         link: "webhook"
     mcp_configurations:
       index:
-        description: "모델 컨텍스트 프로토콜을 통해 AI 에이전트는 이 OpenProject 인스턴스에 의해 노출된 도구와 리소스를 사용자에게 제공할 수 있습니다."
+        description: "모델 컨텍스트 프로토콜을 통해 AI 에이전트는 이 Yojana 인스턴스에 의해 노출된 도구와 리소스를 사용자에게 제공할 수 있습니다."
         resources_heading: "리소스"
-        resources_description: "OpenProject implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
+        resources_description: "Yojana implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
         resources_submit: "리소스 업데이트"
         tools_heading: "도구"
-        tools_description: "OpenProject는 다음 도구를 구현합니다. 원하는 대로 각 도구를 활성화하고, 이름을 바꾸고, 설명할 수 있습니다. 자세한 내용은 [MCP 도구의 문서](docs_url)를 참조하세요."
+        tools_description: "Yojana는 다음 도구를 구현합니다. 원하는 대로 각 도구를 활성화하고, 이름을 바꾸고, 설명할 수 있습니다. 자세한 내용은 [MCP 도구의 문서](docs_url)를 참조하세요."
         tools_submit: "도구 업데이트"
       multi_update:
         success: "MCP 구성이 업데이트되었습니다."
@@ -147,13 +147,13 @@ ko:
       edit:
         label_delete_scim_client: "SCIM 클라이언트 삭제"
       form:
-        auth_provider_description: "SCIM 공급자에 의해 추가된 사용자가 OpenProject에서 인증하는 데 사용하는 서비스입니다."
-        authentication_method_description_html: "SCIM 클라이언트가 OpenProject에서 인증하는 방식입니다. OAuth 토큰에 <code>scim_v2</code> 범위가 포함되어 있는지 확인하세요."
+        auth_provider_description: "SCIM 공급자에 의해 추가된 사용자가 Yojana에서 인증하는 데 사용하는 서비스입니다."
+        authentication_method_description_html: "SCIM 클라이언트가 Yojana에서 인증하는 방식입니다. OAuth 토큰에 <code>scim_v2</code> 범위가 포함되어 있는지 확인하세요."
         description: "이러한 구성 옵션에 대한 자세한 내용은 [SCIM 클라이언트 구성에 대한 설명서](docs_url)를 참조하세요."
         jwt_sub_description: "예를 들어 Keycloak의 경우, 이것은 SCIM 클라이언트와 연결된 서비스 계정의 UUID입니다. 사용 사례의 제목 클레임을 찾는 방법은 [설명서](docs_url)를 참조하세요."
         name_description: "다른 관리자가 이 클라이언트가 구성된 이유를 보다 쉽게 이해하는 데 도움이 되는 이름을 선택하세요."
       index:
-        description: "여기에서 구성된 SCIM 클라이언트는 OpenProject SCIM 서버 API와 상호 작용하여 사용자 계정 및 그룹을 프로비저닝, 업데이트, 프로비저닝 해제할 수 있습니다."
+        description: "여기에서 구성된 SCIM 클라이언트는 Yojana SCIM 서버 API와 상호 작용하여 사용자 계정 및 그룹을 프로비저닝, 업데이트, 프로비저닝 해제할 수 있습니다."
         label_create_button: "SCIM 클라이언트 추가"
       new:
         title: "새로운 SCIM 클라이언트"
@@ -161,14 +161,14 @@ ko:
         confirm_button: "취소"
         title: "정적 토큰 취소"
         heading: "이 토큰을 취소하시겠습니까?"
-        description: "이 토큰을 사용하는 SCIM 클라이언트는 더 이상 OpenProject의 SCIM 서버 API에 액세스할 수 없습니다."
+        description: "이 토큰을 사용하는 SCIM 클라이언트는 더 이상 Yojana의 SCIM 서버 API에 액세스할 수 없습니다."
       table_component:
         blank_slate:
           title: "아직 구성된 SCIM 클라이언트 없음"
           description: "여기에서 보려는 클라이언트를 추가하세요"
         user_count: "사용자"
       token_list_component:
-        description: "여기서 생성하는 토큰은 OpenProject SCIM API에 액세스하기 위해 SCIM 클라이언트에 의해 전달될 수 있습니다."
+        description: "여기서 생성하는 토큰은 Yojana SCIM API에 액세스하기 위해 SCIM 클라이언트에 의해 전달될 수 있습니다."
         heading: "토큰"
         label_add_token: "토큰"
         label_aria_add_token: "토큰 추가"
@@ -229,38 +229,38 @@ ko:
       name: LDAP 연결의 임의 이름
       host: LDAP 호스트 이름 또는 IP 주소
       login_map: 고유한 사용자 로그인을 식별하는 데 사용되는 LDAP의 특성 키입니다. 일반적으로 `uid` 또는 `samAccountName`입니다.
-      generic_map: OpenProject `%{attribute}` 특성에 매핑되는 LDAP의 특성 키
-      admin_map_html: "선택 사항: <strong>있는 경우</strong> LDAP의 속성 키는 OpenProject 사용자를 관리자로 표시합니다. 확실하지 않은 경우 비워 두세요."
+      generic_map: Yojana `%{attribute}` 특성에 매핑되는 LDAP의 특성 키
+      admin_map_html: "선택 사항: <strong>있는 경우</strong> LDAP의 속성 키는 Yojana 사용자를 관리자로 표시합니다. 확실하지 않은 경우 비워 두세요."
       system_user_dn_html: |
         읽기 전용 액세스에 사용되는 시스템 사용자의 DN을 입력하세요.
         <br>
-        예: uid=openproject,ou=system,dc=example,dc=com
+        예: uid=yojana,ou=system,dc=example,dc=com
       system_user_password: 시스템 사용자의 바인딩 암호 입력
       base_dn: |
-        OpenProject가 사용자 및 그룹을 검색할 LDAP 하위 트리의 기본 DN을 입력하세요.
-        OpenProject는 이 하위 트리에서 제공된 사용자 이름만 필터링합니다.
+        Yojana가 사용자 및 그룹을 검색할 LDAP 하위 트리의 기본 DN을 입력하세요.
+        Yojana는 이 하위 트리에서 제공된 사용자 이름만 필터링합니다.
         예: ou=users,dc=example,dc=com
       filter_string: |
         LDAP에서 필터링된 사용자에 대해 반환된 결과에 적용할 선택적 RFC4515 필터를 추가하세요.
-        이 필터는 인증 및 그룹 동기화를 위해 OpenProject에서 찾는 일련의 사용자를 제한하는 데 사용할 수 있습니다.
+        이 필터는 인증 및 그룹 동기화를 위해 Yojana에서 찾는 일련의 사용자를 제한하는 데 사용할 수 있습니다.
       filter_string_concat: |
-        OpenProject는 레코드를 식별하기 위해 사용자가 제공한 로그인 특성에 대해 항상 필터링합니다. 여기서 필터를 제공하는 경우,
+        Yojana는 레코드를 식별하기 위해 사용자가 제공한 로그인 특성에 대해 항상 필터링합니다. 여기서 필터를 제공하는 경우,
         AND로 연결됩니다. 기본적으로, catch-all(objectClass=*)이 필터로 사용됩니다.
       onthefly_register: |
-        이 확인란을 선택하면 OpenProject로 처음 인증할 때 OpenProject가 LDAP 항목에서
+        이 확인란을 선택하면 Yojana로 처음 인증할 때 Yojana가 LDAP 항목에서
         자동으로 새 사용자를 만듭니다.
-        OpenProject의 기존 계정만 LDAP를 통해 인증할 수 있게 하려면 이 확인란을 선택하지 마세요!
+        Yojana의 기존 계정만 LDAP를 통해 인증할 수 있게 하려면 이 확인란을 선택하지 마세요!
     connection_encryption: "연결 암호화"
     encryption_details: "LDAPS / STARTTLS 옵션"
     system_account: "시스템 계정"
     system_account_legend: |
-      OpenProject는 LDAP 트리에서 사용자 및 그룹을 찾기 위해 시스템 계정을 통한 읽기 전용 액세스 권한을 필요로 합니다.
+      Yojana는 LDAP 트리에서 사용자 및 그룹을 찾기 위해 시스템 계정을 통한 읽기 전용 액세스 권한을 필요로 합니다.
       다음 섹션에서 해당 시스템 사용자의 바인딩 자격 증명을 지정하세요.
     ldap_details: "LDAP 세부 정보"
     user_settings: "특성 매핑"
     user_settings_legend: |
-      다음 필드는 LDAP 항목에서 OpenProject에 사용자를 생성하는 방법 및
-      OpenProject 사용자의 특성을 정의하기 위해 사용되는 LDAP 특성(특성 매핑)과 관련이 있습니다.
+      다음 필드는 LDAP 항목에서 Yojana에 사용자를 생성하는 방법 및
+      Yojana 사용자의 특성을 정의하기 위해 사용되는 LDAP 특성(특성 매핑)과 관련이 있습니다.
     tls_mode:
       plain: "없음"
       simple_tls: "LDAPS"
@@ -1497,7 +1497,7 @@ ko:
         confirmation: "%{attribute} 속성에 부합하지 않습니다."
         could_not_be_copied: "%{dependency}을(를) (완전히) 복사할 수 없습니다."
         does_not_exist: "존재하지 않음"
-        error_enterprise_only: "%{action}은(는) OpenProject Enterprise Edition에서만 사용할 수 있습니다."
+        error_enterprise_only: "%{action}은(는) Yojana Enterprise Edition에서만 사용할 수 있습니다."
         error_unauthorized: "액세스하지 못할 수 있습니다."
         error_readonly: "- 쓰려고 했지만 쓸 수 없습니다."
         error_conflict: "그 사이에 정보가 한 명 이상의 다른 사용자에 의해 업데이트되었습니다."
@@ -2106,7 +2106,7 @@ ko:
       heading_reset: "백업 토큰 초기화"
       heading_create: "백업 토큰 생성"
       implications: >
-        백업을 활성화하면 필요한 권한과 이 백업 토큰이 있는 모든 사용자가 이 OpenProject 프로젝트의 모든 데이터가 포함된 백업을 다운로드할 수 있습니다. 여기에는 다른 모든 사용자의 데이터도 포함됩니다.
+        백업을 활성화하면 필요한 권한과 이 백업 토큰이 있는 모든 사용자가 이 Yojana 프로젝트의 모든 데이터가 포함된 백업을 다운로드할 수 있습니다. 여기에는 다른 모든 사용자의 데이터도 포함됩니다.
       info: >
         백업을 생성하려면 백업 토큰을 생성해야 합니다. 백업을 요청할 때마다 토큰을 입력해야 합니다. 백업 토큰을 삭제하면 해당 사용자의 백업을 비활성화할 수 있습니다.
       verification: >
@@ -2446,7 +2446,7 @@ ko:
         이미 토큰이 있으신가요? 아래 버튼을 사용하여 토큰을 추가하고 예약한 Enterprise 플랜으로 업그레이드하세요.
       hide_banner: "이 배너 숨기기"
       homescreen_description: >
-        Enterprise 플랜은 OpenProject Community Edition에 [Enterprise 추가 기능](enterprise_url)과 전문 지원을 포함하여 확장한 플랜으로, 미션 크리티컬 환경에서 OpenProject를 실행하는 조직에 이상적입니다.
+        Enterprise 플랜은 Yojana Community Edition에 [Enterprise 추가 기능](enterprise_url)과 전문 지원을 포함하여 확장한 플랜으로, 미션 크리티컬 환경에서 Yojana를 실행하는 조직에 이상적입니다.
       homescreen_subline: 업그레이드하면 오픈 소스 프로젝트도 지원하게 됩니다.
       baseline_comparison:
         description: 과거 어느 시점 이후에 이 목록에서 변경된 사항을 강조 표시합니다.
@@ -2459,7 +2459,7 @@ ko:
         premium_features: "Enterprise 추가 기능"
         premium_features_text: "애자일 보드, 사용자 지정 테마 및 로고, 그래프, 인텔리전트 워크플로와 사용자 지정 작업, 작업 패키지 첨부 파일 및 다중 선택 사용자 지정 필드에 대한 전체 텍스트 검색."
         professional_support: "전문 지원"
-        professional_support_text: "비즈니스 크리티컬 환경에서의 OpenProject 실행에 대한 전문 지식을 갖춘 선임 지원 엔지니어가 신뢰할 수 있는 뛰어난 지원을 제공합니다."
+        professional_support_text: "비즈니스 크리티컬 환경에서의 Yojana 실행에 대한 전문 지식을 갖춘 선임 지원 엔지니어가 신뢰할 수 있는 뛰어난 지원을 제공합니다."
       work_package_subject_generation:
         description: "참조된 특성과 텍스트를 사용하여 자동으로 생성되는 제목을 만듭니다."
       customize_life_cycle:
@@ -2491,29 +2491,29 @@ ko:
       define_custom_style:
         title: "사용자 지정 색상 테마 및 로고"
         more_info: "참고: 사용된 로그는 공개적으로 액세스 가능합니다."
-        description: 고유한 로고와 색상으로 OpenProject 설치를 사용자 지정하세요.
+        description: 고유한 로고와 색상으로 Yojana 설치를 사용자 지정하세요.
       custom_actions:
         title: "사용자 지정 작업"
         description: "사용자 지정 작업은 상태, 역할, 유형 또는 프로젝트를 기반으로 특정 작업 패키지에서 사용할 수 있도록 미리 정의된 작업 세트에 대한 원클릭 바로 가기입니다."
       mcp_server:
-        description: "MCP를 통해 AI 에이전트를 OpenProject 인스턴스와 통합합니다."
+        description: "MCP를 통해 AI 에이전트를 Yojana 인스턴스와 통합합니다."
       nextcloud_sso:
         title: "Nextcloud 저장소용 Single Sign-On"
         description: "Single Sign-On을 사용하여 Nextcloud 저장소에 대한 원활하고 안전한 인증을 활성화합니다. 액세스 관리를 간소화하고 사용자 편의성을 개선합니다."
       scim_api:
         title: "SCIM 클라이언트"
-        description: "SCIM 서버 API를 통해 Microsoft Entra 또는 Keycloak 같은 외부 ID 서비스를 원활하게 통합하여 OpenProject에서 사용자 관리를 자동화하세요. Enterprise 기업 플랜부터 사용할 수 있습니다."
+        description: "SCIM 서버 API를 통해 Microsoft Entra 또는 Keycloak 같은 외부 ID 서비스를 원활하게 통합하여 Yojana에서 사용자 관리를 자동화하세요. Enterprise 기업 플랜부터 사용할 수 있습니다."
       sso_auth_providers:
         title: "SSO(Single Sign-On)"
         description: "기존 ID 시스템에서 원활하게 액세스하고 통합할 수 있도록 SAML 또는 OpenID Connect를 사용하여 외부 SSO 공급자를 통해 사용자가 로그인할 수 있게 합니다."
       virus_scanning:
-        description: "OpenProject에서 업로드된 파일은 바이러스 검사를 수행한 후에 다른 사용자가 액세스해야 합니다."
+        description: "Yojana에서 업로드된 파일은 바이러스 검사를 수행한 후에 다른 사용자가 액세스해야 합니다."
       project_creation_wizard:
         description: "프로젝트 관리자가 프로젝트 시작 요청을 작성하는 데 도움이 되는 단계별 마법사를 생성합니다."
       placeholder_users:
         title: 플레이스홀더 사용자
         description: >
-          플레이스홀더 사용자는 해당 프로젝트에 속하지 않은 사용자에게 작업 패키지를 할당하는 방법으로, 다양한 시나리오에서 유용할 수 있습니다. 예를 들어, 아직 명명되지 않았거나 사용 가능하지 않은 리소스에 대한 작업을 추적해야 하거나, 해당 개인에게 OpenProject에 대한 액세스 권한을 부여하고 싶지 않지만 이들에게 할당된 작업을 추적하려는 경우에 유용합니다.
+          플레이스홀더 사용자는 해당 프로젝트에 속하지 않은 사용자에게 작업 패키지를 할당하는 방법으로, 다양한 시나리오에서 유용할 수 있습니다. 예를 들어, 아직 명명되지 않았거나 사용 가능하지 않은 리소스에 대한 작업을 추적해야 하거나, 해당 개인에게 Yojana에 대한 액세스 권한을 부여하고 싶지 않지만 이들에게 할당된 작업을 추적하려는 경우에 유용합니다.
       internal_comments:
         title: 내부 코멘트
         description: "내부 코멘트를 사용하여 내부 팀이 비공개로 서로 커뮤니케이션할 수 있습니다. 이러한 코멘트는 특정 프로젝트 역할에만 표시되며 공개적으로 표시되지 않습니다."
@@ -2536,16 +2536,16 @@ ko:
       request_again: "다시 요청"
       resend_action: "확인 이메일 다시 보내기"
       welcome_title: "빠른 기능 개요"
-      welcome_description: "OpenProject Enterprise Edition에서 프로젝트 관리 및 팀 공동 작업에 대한 간략한 개요를 확인할 수 있습니다."
+      welcome_description: "Yojana Enterprise Edition에서 프로젝트 관리 및 팀 공동 작업에 대한 간략한 개요를 확인할 수 있습니다."
       confirmation_info: >
-        OpenProject Enterprise 무료 평가판을 시작하기 위한 모든 정보가 포함된 이메일을 %{date}, %{email}에 보내드렸습니다. 받은 편지함을 확인하고 제공된 확인 링크를 클릭하여 14일 무료 평가판을 시작하세요.
+        Yojana Enterprise 무료 평가판을 시작하기 위한 모든 정보가 포함된 이메일을 %{date}, %{email}에 보내드렸습니다. 받은 편지함을 확인하고 제공된 확인 링크를 클릭하여 14일 무료 평가판을 시작하세요.
       confirmation_subline: >
         받은 편지함을 확인하고 해당 단계에 따라 14일 무료 평가판을 시작하세요.
       domain_caption: 토큰은 현재 구성된 호스트 이름에 유효하게 됩니다.
       receive_newsletter_html: >
-        OpenProject <a target="_blank" href="https://www.openproject.org/newsletter/">뉴스레터</a>를 받아보고 싶습니다.
+        Yojana <a target="_blank" href="https://www.yojana.girishm.info/newsletter/">뉴스레터</a>를 받아보고 싶습니다.
       consent_html: >
-        <a target="_blank" href="https://www.openproject.org/terms-of-service/">서비스 약관</a> 및 <a target="_blank" href="https://www.openproject.org/data-privacy-and-security/">개인정보 취급방침</a>에 동의합니다.
+        <a target="_blank" href="https://www.yojana.girishm.info/terms-of-service/">서비스 약관</a> 및 <a target="_blank" href="https://www.yojana.girishm.info/data-privacy-and-security/">개인정보 취급방침</a>에 동의합니다.
   email_calendar_updates:
     state:
       disabled: "비활성화되었습니다."
@@ -2578,7 +2578,7 @@ ko:
   error_check_user_and_role: "사용자 및 역할을 선택하세요."
   error_code: "오류 %{code}"
   error_color_could_not_be_saved: "색상을 저장할 수 없습니다."
-  error_cookie_missing: "OpenProject 쿠키가 없습니다. 이 응용 프로그램은 쿠키 없이 제대로 작동하지 않으므로, 쿠키를 활성화해야 합니다."
+  error_cookie_missing: "Yojana 쿠키가 없습니다. 이 응용 프로그램은 쿠키 없이 제대로 작동하지 않으므로, 쿠키를 활성화해야 합니다."
   error_custom_option_not_found: "존재하지 않는 옵션입니다."
   error_enterprise_plan_needed: "이 작업을 수행하려면 %{plan} Enterprise 플랜이 필요합니다."
   error_enterprise_activation_user_limit: "사용자 계정을 활성화할 수 없습니다(사용자 제한에 도달함). 액세스하려면 관리자에게 문의하세요."
@@ -2596,7 +2596,7 @@ ko:
   error_work_package_not_found_in_project: "작업 패키지가 없거나 이 프로젝트에 속하지 않습니다."
   error_work_package_id_not_found: "작업 패키지를 찾을 수 없습니다."
   error_must_be_project_member: "은(는) 프로젝트 멤버여야 합니다."
-  error_migrations_are_pending: "OpenProject 설치에 보류 중인 데이터베이스 마이그레이션이 있습니다. 지난 업그레이드에서 마이그레이션을 실행하지 않았을 가능성이 있습니다. 업그레이드 가이드를 확인하여 제대로 설치를 업그레이드하세요."
+  error_migrations_are_pending: "Yojana 설치에 보류 중인 데이터베이스 마이그레이션이 있습니다. 지난 업그레이드에서 마이그레이션을 실행하지 않았을 가능성이 있습니다. 업그레이드 가이드를 확인하여 제대로 설치를 업그레이드하세요."
   error_migrations_visit_upgrade_guides: "업그레이드 가이드 문서를 참조하십시오."
   error_no_default_work_package_status: '기본 작업 패키지 상태가 정의되지 않았습니다. 구성을 확인하세요("관리 -> 작업 패키지 상태"로 이동).'
   error_no_type_in_project: "이 프로젝트에 유형이 연결되어 있지 않습니다. 프로젝트 설정을 확인하세요."
@@ -2707,7 +2707,7 @@ ko:
     failed: "작업 패키지를 내보내려는 중에 오류가 발생했습니다: %{message}"
     demo:
       heading: "데모 PDF"
-      footer: "OpenProject에서 생성함"
+      footer: "Yojana에서 생성함"
       button_text: 데모 PDF 생성
     errors:
       embedded_table_with_too_many_columns: "이 포함된 작업 패키지 테이블은 페이지에 맞지 않습니다. 열 수를 줄여주세요."
@@ -2798,7 +2798,7 @@ ko:
       no_visible_projects: "이 경우 표시되는 프로젝트가 없습니다."
       users: "이 경우 최신 등록 된 사용자입니다."
     blocks:
-      community: "OpenProject 커뮤니티"
+      community: "Yojana 커뮤니티"
       upsell:
         title: "Enterprise Edition으로 업그레이드"
       new_features:
@@ -2812,7 +2812,7 @@ ko:
           new_features_list:
             line_0: 자동화된 프로젝트 시작(Enterprise 추가 기능).
             line_1: "미팅: 새 작업 패키지 또는 기존 작업 패키지를 결과로 추가합니다."
-            line_2: "Meetings: show iCal responses in OpenProject."
+            line_2: "Meetings: show iCal responses in Yojana."
             line_3: "반복 미팅: 의제 항목을 다음 항목에 복제합니다."
             line_4: "커뮤니티에 릴리스: 특성이 강조 표시됩니다."
             line_5: 사용자 제공 콘텐츠에서 외부 링크를 열기 전에 표시되는 경고입니다(Enterprise 추가 기능).
@@ -2825,7 +2825,7 @@ ko:
       impressum: "법적 고지"
       glossary: "용어집"
       shortcuts: "바로가기 "
-      blog: "OpenProject 블로그"
+      blog: "Yojana 블로그"
       forums: "커뮤니티 포럼"
       security_alerts: "보안 알림"
       newsletter: "뉴스레터"
@@ -2838,7 +2838,7 @@ ko:
       default_attribute_written: "읽기 전용 특성 작성됨"
       progress_mode_changed_to_status_based: "진행률 계산 업데이트됨"
       status_changed: "상태 '%{status_name}'"
-      system_update: "OpenProject 시스템 업데이트:"
+      system_update: "Yojana 시스템 업데이트:"
       work_package_duplicate_closed: "중복 작업 패키지가 업데이트되었습니다:"
       total_percent_complete_mode_changed_to_work_weighted_average: "이제 완료 % 합계 계산에는 작업별로 가중치가 적용됩니다."
       total_percent_complete_mode_changed_to_simple_average: "이제 완료 % 합계 계산은 완료 % 값의 단순 평균만을 기반으로 합니다."
@@ -2894,7 +2894,7 @@ ko:
       label: "추가…"
   my_account:
     access_tokens:
-      description: "공급자 토큰은 OpenProject에서 발급하며, 다른 애플리케이션이 액세스하도록 허용합니다. 클라이언트 토큰은 다른 애플리케이션에서 발급하며, OpenProject가 액세스하도록 허용합니다."
+      description: "공급자 토큰은 Yojana에서 발급하며, 다른 애플리케이션이 액세스하도록 허용합니다. 클라이언트 토큰은 다른 애플리케이션에서 발급하며, Yojana가 액세스하도록 허용합니다."
       no_results:
         title: "표시할 수 있는 접근 토큰이 없습니다."
         description: "모두 비활성화 되었습니다. 관리 메뉴에서 가용 상태로 되돌릴 수 있습니다."
@@ -2914,7 +2914,7 @@ ko:
         blank_title: "API 토큰 없음"
         title: "API"
         table_title: "API 토큰"
-        text_hint: "API 토큰을 사용하면 타사 애플리케이션이 REST API를 통해 이 OpenProject 인스턴스와 통신할 수 있습니다."
+        text_hint: "API 토큰을 사용하면 타사 애플리케이션이 REST API를 통해 이 Yojana 인스턴스와 통신할 수 있습니다."
         static_token_name: "API 토큰"
         disabled_text: "관리자가 API 토큰을 활성화하지 않았습니다. 이 기능을 사용하려면 관리자에게 문의하세요."
         add_button: "API 토큰"
@@ -2923,7 +2923,7 @@ ko:
         blank_title: "iCalendar 토큰 없음"
         title: "iCalendar"
         table_title: "iCalendar 토큰"
-        text_hint_link: "iCalendar 토큰을 사용하여 사용자가 [OpenProject 캘린더를 구독](docs_url)하고 외부 클라이언트의 최신 작업 패키지 정보를 볼 수 있습니다."
+        text_hint_link: "iCalendar 토큰을 사용하여 사용자가 [Yojana 캘린더를 구독](docs_url)하고 외부 클라이언트의 최신 작업 패키지 정보를 볼 수 있습니다."
         disabled_text: "관리자가 iCalendar 구독을 활성화하지 않았습니다. 이 기능을 사용하려면 관리자에게 문의하세요."
       oauth_application:
         active_tokens: "활성 토큰"
@@ -2932,14 +2932,14 @@ ko:
         last_used_at: "마지막 사용"
         title: "OAuth"
         table_title: "OAuth 애플리케이션 토큰"
-        text_hint: "OAuth 애플리케이션 토큰을 통해 타사 애플리케이션이 이 OpenProject 인스턴스와 연결할 수 있습니다."
+        text_hint: "OAuth 애플리케이션 토큰을 통해 타사 애플리케이션이 이 Yojana 인스턴스와 연결할 수 있습니다."
       oauth_client:
         blank_description: "아직 OAuth 클라이언트 토큰이 없습니다."
         blank_title: "OAuth 클라이언트 토큰 없음"
         failed: "오류가 발생하여 토큰을 제거할 수 없습니다. 나중에 다시 시도하세요."
         integration_type: "통합 유형"
         table_title: "OAuth 클라이언트 토큰"
-        text_hint: "OAuth 클라이언트 토큰을 통해 이 OpenProject 인스턴스가 파일 저장소와 같은 외부 애플리케이션과 연결할 수 있습니다."
+        text_hint: "OAuth 클라이언트 토큰을 통해 이 Yojana 인스턴스가 파일 저장소와 같은 외부 애플리케이션과 연결할 수 있습니다."
         title: "OAuth"
         remove_token: "이 토큰을 제거하시겠습니까? %{integration}에서 다시 로그인해야 합니다."
         removed: "OAuth 클라이언트 토큰이 제거되었습니다"
@@ -2950,7 +2950,7 @@ ko:
         blank_title: "RSS 토큰 없음"
         title: "RSS"
         table_title: "RSS 토큰"
-        text_hint: "RSS 토큰을 사용하면 외부 RSS 리더를 통해 이 OpenProject 인스턴스의 최신 변경 사항을 확인할 수 있습니다."
+        text_hint: "RSS 토큰을 사용하면 외부 RSS 리더를 통해 이 Yojana 인스턴스의 최신 변경 사항을 확인할 수 있습니다."
         static_token_name: "RSS 토큰"
         disabled_text: "관리자가 RSS 토큰을 활성화하지 않았습니다. 이 기능을 사용하려면 관리자에게 문의하세요."
       storages:
@@ -3125,7 +3125,7 @@ ko:
   label_custom_field_plural: "사용자 정의 필드"
   label_custom_field_default_type: "빈 유형"
   label_custom_style: "디자인"
-  label_custom_style_description: "테마를 사용하여 OpenProject의 모양을 선택하고, 앱에서 사용할 기본 색상 및 내보내기의 모양을 선택하세요."
+  label_custom_style_description: "테마를 사용하여 Yojana의 모양을 선택하고, 앱에서 사용할 기본 색상 및 내보내기의 모양을 선택하세요."
   label_dashboard: "대시보드"
   label_database_version: "PostgreSQL 버전"
   label_date: "날짜"
@@ -3397,7 +3397,7 @@ ko:
   label_open_menu: "메뉴 열기"
   label_open_work_packages: "열기"
   label_open_work_packages_plural: "열기"
-  label_openproject_website: "OpenProject 웹사이트"
+  label_openproject_website: "Yojana 웹사이트"
   label_optional_description: "설명"
   label_options: "옵션"
   label_other: "기타"
@@ -3799,8 +3799,8 @@ ko:
   mail_body_backup_token_reset_user_info: 백업 토큰이 초기화되었습니다.
   mail_body_backup_token_info: 이전 토큰은 더 이상 유효하지 않습니다.
   mail_body_backup_waiting_period: '%{hours}시간 후 새 토큰이 활성화됩니다.'
-  mail_body_backup_token_warning: 만약 본인이 한 것이 아니라면, OpenProject에 즉시 로그인하고 다시 초기화하십시오.
-  mail_body_incoming_email_error: OpenProject로 보낸 이메일을 처리할 수 없습니다.
+  mail_body_backup_token_warning: 만약 본인이 한 것이 아니라면, Yojana에 즉시 로그인하고 다시 초기화하십시오.
+  mail_body_incoming_email_error: Yojana로 보낸 이메일을 처리할 수 없습니다.
   mail_body_incoming_email_error_in_reply_to: "%{received_at}, %{from_email} 작성함"
   mail_body_incoming_email_error_logs: "로그"
   mail_body_lost_password: "암호를 변경하려면 다음 링크를 클릭하세요."
@@ -3813,10 +3813,10 @@ ko:
   mail_body_register_user: "%{name}님께, "
   mail_body_register_links_html: |
     웨비나(%{webinar_link})가 제공되는 Youtube 채널(%{youtube_link})을 찾아보고
-    “시작하기” 동영상(%{get_started_link})을 보고 OpenProject에서의 첫 단계를 최대한 수월하게 진행하세요.
+    “시작하기” 동영상(%{get_started_link})을 보고 Yojana에서의 첫 단계를 최대한 수월하게 진행하세요.
     <br />
     추가 질문이 있으시면 설명서(%{documentation_link})를 참조하거나 관리자에게 문의하세요.
-  mail_body_register_closing: "OpenProject 팀"
+  mail_body_register_closing: "Yojana 팀"
   mail_body_register_ending: "계속 지켜봐 주세요! 감사합니다."
   mail_body_reminder: "사용자에게 할당된 %{count} 작업 패키지가 다음 %{days}일 후 만료됩니다."
   mail_body_group_reminder: '"%{group}" 그룹에 할당된 %{count}개 작업 패키지가 향후 %{days}일 후 만료됩니다.'
@@ -3825,7 +3825,7 @@ ko:
   mail_subject_account_activation_request: "%{value} 계정 활성화 요청"
   mail_subject_backup_ready: "백업이 준비되었습니다"
   mail_subject_backup_token_reset: "백업 토큰 초기화"
-  mail_subject_incoming_email_error: "OpenProject로 보낸 이메일을 처리할 수 없습니다."
+  mail_subject_incoming_email_error: "Yojana로 보낸 이메일을 처리할 수 없습니다."
   mail_subject_lost_password: "%{value} 암호"
   mail_subject_register: "%{value} 계정 활성화"
   mail_subject_wiki_content_added: "'%{id}' 위키 페이지가 추가되었습니다."
@@ -3854,14 +3854,14 @@ ko:
   mail_user_activation_limit_reached:
     subject: 사용자 활성화 제한에 도달함
     message: |
-      회원님이 관리하는 OpenProject 환경(%{host})에서 새로운 사용자(%{email})가 계정을 만들려고 시도했습니다.
+      회원님이 관리하는 Yojana 환경(%{host})에서 새로운 사용자(%{email})가 계정을 만들려고 시도했습니다.
       사용자 제한에 도달한 후에는 해당 사용자가 계정을 활성화할 수 없습니다.
     steps:
       label: "사용자가 로그인하게 허용하려면 다음 중 하나를 수행할 수 있습니다. "
       a: "결제 플랜([here](upgrade_url)) 업그레이드" #here turned into a link
       b: "기존 사용자([here](users_url)) 잠금 또는 삭제" #here turned into a link
   more_actions: "추가 기능"
-  noscript_description: "OpenProject를 사용하려면 JavaScript를 활성화해야 합니다!"
+  noscript_description: "Yojana를 사용하려면 JavaScript를 활성화해야 합니다!"
   noscript_heading: "JavaScript 사용 안 함"
   noscript_learn_more: "자세히 알아보기"
   notice_accessibility_mode: 접근성 모드는 해당 [계정 설정](url)에서 활성화할 수 있습니다.
@@ -3938,7 +3938,7 @@ ko:
   notice_wont_delete_auth_source: 사용자가 사용 중인 LDAP 연결은 삭제할 수 없습니다.
   notice_project_cannot_update_custom_fields: "프로젝트의 사용 가능한 사용자 지정 필드를 업데이트할 수 없습니다. 프로젝트가 유효하지 않습니다: %{errors}"
   notice_attachment_migration_wiki_page: >
-    이 페이지는 OpenProject 업데이트 중에 자동으로 생성되었습니다. 이 페이지에는 %{container_type} "%{container_name}"과(와) 이전에 연결된 모든 첨부 파일이 포함되어 있습니다.
+    이 페이지는 Yojana 업데이트 중에 자동으로 생성되었습니다. 이 페이지에는 %{container_type} "%{container_name}"과(와) 이전에 연결된 모든 첨부 파일이 포함되어 있습니다.
   #Default format for numbers
   number:
     format:
@@ -3960,7 +3960,7 @@ ko:
           tb: "TB"
   onboarding:
     heading_getting_started: "개요 가져오기"
-    text_getting_started_description: "OpenProject로 프로젝트 관리 및 팀 공동 작업에 대한 간략한 개요를 가져올 수 있습니다. 도움말 메뉴에서 이 동영상을 다시 시작할 수 있습니다."
+    text_getting_started_description: "Yojana로 프로젝트 관리 및 팀 공동 작업에 대한 간략한 개요를 가져올 수 있습니다. 도움말 메뉴에서 이 동영상을 다시 시작할 수 있습니다."
     welcome: "%{app_title}입니다."
     select_language: "언어를 선택하세요."
   permission_add_work_package_comments: "코멘트 추가"
@@ -4032,7 +4032,7 @@ ko:
   permission_manage_project_activities: "프로젝트 작업 관리"
   permission_manage_public_queries: "공용 보기 관리"
   permission_manage_repository: "리포지토리 관리"
-  permission_manage_subtasks: "OpenProject aims to connect distributed teams and organizations and make project management intuitive and fun. The open source software supports classical project management and team collaboration as well as agile project management methodologies. OpenProject is continuously developed and maintained by an active international community to provide a powerful feature set and yet intuitive user interface. The overall purpose is to create customer benefit. To achieve this, OpenProject follows a requirements and product development process that empathizes identifying and building the functionality which most aligns with OpenProject’s product vision and delivers customer value.\n\nThis guide is an evolving description of the steps taken from collecting requirements all the way to implementation and release. The goal is to provide a single source of truth and provide a guideline for team members, community contributors and interested customers. As such this document will continuously be updated."
+  permission_manage_subtasks: "Yojana aims to connect distributed teams and organizations and make project management intuitive and fun. The open source software supports classical project management and team collaboration as well as agile project management methodologies. Yojana is continuously developed and maintained by an active international community to provide a powerful feature set and yet intuitive user interface. The overall purpose is to create customer benefit. To achieve this, Yojana follows a requirements and product development process that empathizes identifying and building the functionality which most aligns with Yojana’s product vision and delivers customer value.\n\nThis guide is an evolving description of the steps taken from collecting requirements all the way to implementation and release. The goal is to provide a single source of truth and provide a guideline for team members, community contributors and interested customers. As such this document will continuously be updated."
   permission_manage_versions: "버전 관리"
   permission_manage_wiki: "위키 관리"
   permission_manage_wiki_menu: "위키 메뉴 관리"
@@ -4053,7 +4053,7 @@ ko:
   permission_view_all_principals_explanation: >
     사용자가 참여 프로젝트나 그룹의 멤버가 아니더라도 시스템의 모든 사용자와 그룹을 볼 수 있도록 허용합니다.
   permission_view_project: "프로젝트 보기"
-  permission_view_changesets: "OpenProject에서 리포지토리 수정 사항 보기"
+  permission_view_changesets: "Yojana에서 리포지토리 수정 사항 보기"
   permission_view_internal_comments: "내부 코멘트 보기"
   permission_view_commit_author_statistics: "커밋 작성자 통계 보기"
   permission_view_dashboards: "대시보드 보기"
@@ -4176,7 +4176,7 @@ ko:
     destroy:
       confirmation: "계속하는 경우, 관리되는 리포지토리가 영구적으로 삭제됩니다."
       info: "리포지토리 삭제는 취소할 수 없는 작업입니다."
-      info_not_managed: "참고: 이렇게 해도 이 리포지토리의 콘텐츠는 삭제되지 않습니다. OpenProject에 의해 관리되지 않기 때문입니다."
+      info_not_managed: "참고: 이렇게 해도 이 리포지토리의 콘텐츠는 삭제되지 않습니다. Yojana에 의해 관리되지 않기 때문입니다."
       managed_path_note: "다음 디렉터리가 지워집니다. %{path}"
       repository_verification: "해당 리포지토리의 삭제를 확인하려면 프로젝트의 식별자 %{identifier}을(를) 입력하세요."
       subtitle: "프로젝트 %{project_name}의 %{repository_type}을(를) 삭제하시겠습니까?"
@@ -4190,8 +4190,8 @@ ko:
       empty_repository: "리포지토리가 존재하지만 비어 있습니다. 여기에는 아직 수정 사항이 포함되어 있지 않습니다."
       exists_on_filesystem: "리포지토리 디렉터리가 파일 시스템에 이미 있습니다."
       filesystem_access_failed: "파일 시스템의 리포지토리에 액세스하는 중에 오류가 발생했습니다. %{message}"
-      not_manageable: "이 리포지토리 공급업체는 OpenProject가 관리할 수 없습니다."
-      path_permission_failed: "다음 경로를 만드는 중에 오류가 발생했습니다. %{path}. OpenProject가 해당 폴더에 쓸 수 있는지 확인하세요."
+      not_manageable: "이 리포지토리 공급업체는 Yojana가 관리할 수 없습니다."
+      path_permission_failed: "다음 경로를 만드는 중에 오류가 발생했습니다. %{path}. Yojana가 해당 폴더에 쓸 수 있는지 확인하세요."
       unauthorized: "리포지토리에 액세스할 수 있는 권한이 없거나 자격 증명이 올바르지 않습니다."
       unavailable: "리포지토리를 사용할 수 없습니다"
       exception_title: "리포지토리에 액세스할 수 없습니다. %{message}"
@@ -4208,9 +4208,9 @@ ko:
         path_encoding: "Git 경로 인코딩 재정의(기본: UTF-8)"
       local_title: "기존 로컬 Git 리포지토리 연결"
       local_url: "로컬 URL"
-      local_introduction: "기존 로컬 Git 리포지토리가 있는 경우 응용 프로그램 내에서 액세스하기 위해 OpenProject와 이 리포지토리를 연결할 수 있습니다."
-      managed_introduction: "OpenProject가 생성되고 자동으로 로컬 Git 리포지토리를 통합하게 합니다."
-      managed_title: "OpenProject에 통합된 Git 리포지토리"
+      local_introduction: "기존 로컬 Git 리포지토리가 있는 경우 응용 프로그램 내에서 액세스하기 위해 Yojana와 이 리포지토리를 연결할 수 있습니다."
+      managed_introduction: "Yojana가 생성되고 자동으로 로컬 Git 리포지토리를 통합하게 합니다."
+      managed_title: "Yojana에 통합된 Git 리포지토리"
       managed_url: "관리되는 URL"
       path: "Git 리포지토리의 경로"
       path_encoding: "경로 인코딩"
@@ -4227,24 +4227,24 @@ ko:
     scm_types:
       local: "기존 로컬 리포지토리 연결"
       existing: "기존 리포지토리 연결"
-      managed: "OpenProject에서 새로운 리포지토리 만들기"
+      managed: "Yojana에서 새로운 리포지토리 만들기"
     storage:
       not_available: "이 리포지토리에 대한 디스크 저장소 사용량이 사용 가능하지 않습니다."
       update_timeout: "N분 동안 리포지토리의 마지막 필요한 디스크 공간 정보를 유지하세요.\n리포지토리의 필요한 디스크 저장소 공간 계산에는 비용이 많이 소요될 수 있으므로, 이 값을 늘려 성능 영향을 줄이세요."
-      oauth_application_details: "이 창을 닫으면 클라이언트 비밀 값에 다시 액세스할 수 없습니다. 다음 값을 Nextcloud OpenProject Integration 설정에 복사하세요:"
+      oauth_application_details: "이 창을 닫으면 클라이언트 비밀 값에 다시 액세스할 수 없습니다. 다음 값을 Nextcloud Yojana Integration 설정에 복사하세요:"
       oauth_application_details_link_text: "설정 페이지로 이동"
       setup_documentation_details: "새 파일 저장소를 구성하는 데 도움이 필요하면 설명서를 확인하세요. "
       setup_documentation_details_link_text: "파일 저장소 설정"
       show_warning_details: "이 파일 저장소를 사용하려면 원하는 각 프로젝트의 프로젝트 설정에서 모듈과 특정 저장소를 활성화해야 합니다."
     subversion:
       existing_title: "기존 Subversion 리포지토리"
-      existing_introduction: "기존 Subversion 리포지토리가 있는 경우 응용 프로그램 내에서 액세스하기 위해 OpenProject와 이 리포지토리를 연결할 수 있습니다."
+      existing_introduction: "기존 Subversion 리포지토리가 있는 경우 응용 프로그램 내에서 액세스하기 위해 Yojana와 이 리포지토리를 연결할 수 있습니다."
       existing_url: "기존 URL"
       instructions:
         managed_url: "관리되는 (로컬) Subversion 리포지토리의 URL입니다."
         url: "리포지토리 URL을 입력하세요. 이는 로컬 리포지토리(%{local_proto}(으)로 시작) 또는 원격 리포지토리를 대상으로 할 수 있습니다.\n다음 URL 구성표가 지원됩니다."
-      managed_title: "OpenProject에 통합된 Subversion 리포지토리"
-      managed_introduction: "OpenProject가 생성되고 자동으로 로컬 Subversion 리포지토리를 통합하게 합니다."
+      managed_title: "Yojana에 통합된 Subversion 리포지토리"
+      managed_introduction: "Yojana가 생성되고 자동으로 로컬 Subversion 리포지토리를 통합하게 합니다."
       managed_url: "관리되는 URL"
       password: "리포지토리 암호"
       username: "리포지토리 사용자 이름"
@@ -4277,7 +4277,7 @@ ko:
   setting_apiv3_cors_enabled: "CORS 사용"
   setting_apiv3_cors_origins: "API V3 CORS(크로스-원본 리소스 공유) 허용 원본"
   setting_apiv3_cors_origins_text_html: >
-    CORS가 활성화된 경우, OpenProject API에 액세스하도록 허용된 원본이 있습니다. <br/> <a href="%{origin_link}" target="_blank">원본 헤더의 설명서</a>에서 예상 값 지정 방법을 확인하세요.
+    CORS가 활성화된 경우, Yojana API에 액세스하도록 허용된 원본이 있습니다. <br/> <a href="%{origin_link}" target="_blank">원본 헤더의 설명서</a>에서 예상 값 지정 방법을 확인하세요.
   setting_apiv3_write_readonly_attributes: "읽기 전용 특성에 대한 쓰기 액세스"
   setting_apiv3_write_readonly_attributes_instructions: >
     활성화된 경우, API를 통해 관리자는 생성 중에 createdAt 및 author 등 정적 읽기 전용 특성을 작성할 수 있습니다.
@@ -4474,7 +4474,7 @@ ko:
       omniauth_direct_login_hint_html: >
         이 옵션이 활성화된 경우, 로그인 요청은 구성된 omniauth 공급자로 리디렉션됩니다. 로그인 드롭다운 및 로그인 페이지가 비활성화됩니다. <br/> <strong>참고:</strong> 또한 암호 로그인을 비활성화하지 않는 경우에는 이 옵션이 활성화된 상태에서 사용자가 <code>%{internal_path}</code> 로그인 페이지를 방문하여 내부에서 계속 로그인할 수 있습니다.
       remapping_existing_users_hint: >
-        활성화된 경우, 사용자가 이전에 해당 공급자를 통해 로그인한 적이 없더라도, 구성된 모든 ID 공급자가 사용자 이름을 기반으로 기존 사용자에 로그인하도록 허용합니다. 이 옵션은 OpenProject 인스턴스를 새 SSO 공급자로 마이그레이션할 때 유용할 수 있지만 인스턴스의 일부 사용자가 신뢰하지 않는 공급자를 이용할 때는 권장되지 않습니다.
+        활성화된 경우, 사용자가 이전에 해당 공급자를 통해 로그인한 적이 없더라도, 구성된 모든 ID 공급자가 사용자 이름을 기반으로 기존 사용자에 로그인하도록 허용합니다. 이 옵션은 Yojana 인스턴스를 새 SSO 공급자로 마이그레이션할 때 유용할 수 있지만 인스턴스의 일부 사용자가 신뢰하지 않는 공급자를 이용할 때는 권장되지 않습니다.
     attachments:
       whitelist_text_html: >
         업로드된 파일의 유효한 파일 확장명 및/또는 MIME 형식 목록을 정의합니다. <br/> 파일 확장명(예: <code>%{ext_example}</code>) 또는 MIME 형식(예: <code>%{mime_example}</code>)을 입력합니다. <br/> 모든 파일 형식을 업로드할 수 있도록 허용하려면 비워 둡니다. 여러 값이 허용됩니다(각 값에 대해 한 줄).
@@ -4498,7 +4498,7 @@ ko:
         clamav_socket_html: 'clamd 데몬의 소켓을 입력하세요. 예: %{example}'
         clamav_host_html: '호스트 이름 및 clamd 데몬의 포트를 콜론으로 구분하여 입력하세요. 예: %{example}'
         description_html: >
-          바이러스 백신 스캐너 통합이 작동되어야 하는 모드를 선택하세요. <br/> <ul> <li><strong>%{disabled_option}</strong>: 업로드된 파일은 바이러스 검사를 받지 않습니다.</li> <li><strong>%{socket_option}</strong>: OpenProject와 동일한 서버에서 ClamAV를 설정했으며 스캔 데몬 clamd가 백그라운드에서 실행 중입니다.</li> <li><strong>%{host_option}</strong>: 외부 바이러스 스캔 호스트에 파일을 스트리밍하고 있습니다.</li> </ul>
+          바이러스 백신 스캐너 통합이 작동되어야 하는 모드를 선택하세요. <br/> <ul> <li><strong>%{disabled_option}</strong>: 업로드된 파일은 바이러스 검사를 받지 않습니다.</li> <li><strong>%{socket_option}</strong>: Yojana와 동일한 서버에서 ClamAV를 설정했으며 스캔 데몬 clamd가 백그라운드에서 실행 중입니다.</li> <li><strong>%{host_option}</strong>: 외부 바이러스 스캔 호스트에 파일을 스트리밍하고 있습니다.</li> </ul>
     brute_force_prevention: "자동화된 사용자 차단"
     date_format:
       first_date_of_week_and_year_set: >
@@ -4506,8 +4506,8 @@ ko:
       first_week_of_year_text_html: >
         해당 연도의 첫 번째 주에 포함된 1월의 날짜를 선택하세요. 이 값은 주의 첫째 날과 함께 1년의 총 주 수를 결정합니다. 자세한 내용은 이 항목에 대한 <a href="%{link}" target="_blank">문서</a>를 참조하세요.
     experimental:
-      save_confirmation: 주의! 데이터 손실 위험! OpenProject 설치를 중단하고 일부 데이터를 손실해도 괜찮을 경우에만 실험적 기능을 활성화하세요.
-      warning_toast: 기능 플래그는 아직 개발 중인 기능을 활성화하는 설정이며, 테스트 목적으로만 사용해야 합니다. 중요한 데이터가 있는 OpenProject 설치에서는 절대 활성화하지 말아야 합니다. 이러한 기능은 데이터를 손상시킬 가능성이 매우 높습니다. 사용 시 책임은 사용자에게 있습니다.
+      save_confirmation: 주의! 데이터 손실 위험! Yojana 설치를 중단하고 일부 데이터를 손실해도 괜찮을 경우에만 실험적 기능을 활성화하세요.
+      warning_toast: 기능 플래그는 아직 개발 중인 기능을 활성화하는 설정이며, 테스트 목적으로만 사용해야 합니다. 중요한 데이터가 있는 Yojana 설치에서는 절대 활성화하지 말아야 합니다. 이러한 기능은 데이터를 손상시킬 가능성이 매우 높습니다. 사용 시 책임은 사용자에게 있습니다.
       feature_flags: 기능 플래그
     general: "일반"
     highlighting:
@@ -4518,7 +4518,7 @@ ko:
         type: "유형별 전체 행"
         priority: "우선 순위별 전체 행"
     icalendar:
-      enable_subscriptions_text_html: 필요한 권한이 있는 사용자가 OpenProject 캘린더를 구독하고 외부 캘린더 클라이언트를 통해 작업 패키지 정보에 액세스하도록 허용합니다. <strong>참고:</strong> 활성화하기 전에 <a href="%{link}" target="_blank">iCalendar 구독</a>에 대해 읽고 잠재적인 보안 위험을 파악하세요.
+      enable_subscriptions_text_html: 필요한 권한이 있는 사용자가 Yojana 캘린더를 구독하고 외부 캘린더 클라이언트를 통해 작업 패키지 정보에 액세스하도록 허용합니다. <strong>참고:</strong> 활성화하기 전에 <a href="%{link}" target="_blank">iCalendar 구독</a>에 대해 읽고 잠재적인 보안 위험을 파악하세요.
     language_name_being_default: "%{language_name}(기본값)"
     notifications:
       events_explanation: "이메일을 보낼 이벤트를 관리합니다. 작업 패키지에 대한 알림은 각 사용자에 대해 구체적으로 구성할 수 있으므로 작업 패키지는 이 목록에 포함되지 않습니다."
@@ -4552,7 +4552,7 @@ ko:
               description: "프로젝트 개요의 오른쪽 사이드 패널 내 섹션에 모든 프로젝트 특성을 추가합니다."
     project_initiation_request:
       header_description: >
-        OpenProject는 프로젝트 관리자가 프로젝트 시작 요청을 작성하는 데 도움이 되는 단계별 마법사를 생성할 수 있습니다. 어떤 프로젝트 특성을 포함할지 선택하고 PDF 아티팩트를 결과로 생성할 수 있습니다.
+        Yojana는 프로젝트 관리자가 프로젝트 시작 요청을 작성하는 데 도움이 되는 단계별 마법사를 생성할 수 있습니다. 어떤 프로젝트 특성을 포함할지 선택하고 PDF 아티팩트를 결과로 생성할 수 있습니다.
       status:
         submitted: "%{wizard_name}이(가) 제출되었습니다"
         submitted_description: "아래 버튼을 클릭하여 제출 프로세스에 대한 작업 패키지로 이동합니다."
@@ -4565,7 +4565,7 @@ ko:
         project_mandate: "프로젝트 위임 열기"
       blankslate:
         title: "시작 요청이 활성화되지 않음"
-        description: "OpenProject는 프로젝트 관리자가 프로젝트 시작 요청을 작성하는 데 도움이 되는 단계별 마법사를 생성할 수 있습니다. 어떤 프로젝트 특성을 포함할지, 출력 문서로 무엇을 수행할지 사용자가 선택할 수 있습니다. 마법사 구성을 시작하려면 여기에서 활성화하세요."
+        description: "Yojana는 프로젝트 관리자가 프로젝트 시작 요청을 작성하는 데 도움이 되는 단계별 마법사를 생성할 수 있습니다. 어떤 프로젝트 특성을 포함할지, 출력 문서로 무엇을 수행할지 사용자가 선택할 수 있습니다. 마법사 구성을 시작하려면 여기에서 활성화하세요."
       disable_dialog:
         title: "프로젝트 시작 요청 비활성화"
         heading: "이 프로젝트 시작 요청을 비활성화하시겠습니까?"
@@ -4646,7 +4646,7 @@ ko:
       sentence_connector: "그리고"
       skip_last_comma: "false"
   text_accessibility_hint: "접근성 모드는 시각장애인, 신체장애인, 혹은 시력이 나쁜 사람들을 위해 디자인 되었습니다. 후자를 위해서 중심이 되는 요소는 특별히 하이라이트 됩니다. 이 모드에서는 Backlogs 모듈 사용이 불가능합니다."
-  text_access_token_hint: "액세스 토큰을 사용하여 OpenProject의 리소스에 대한 외부 응용 프로그램 액세스 권한을 부여할 수 있습니다."
+  text_access_token_hint: "액세스 토큰을 사용하여 Yojana의 리소스에 대한 외부 응용 프로그램 액세스 권한을 부여할 수 있습니다."
   text_analyze: "추가 분석: %{subject}"
   text_are_you_sure: "계속하시겠습니까?"
   open_link_in_a_new_tab: "새 탭에서 링크 열기"
@@ -4745,7 +4745,7 @@ ko:
   text_no_notes: "이 작업 패키지에 사용할 수 있는 코멘트가 없습니다."
   text_notice_too_many_values_are_inperformant: "참고: 페이지당 100개가 넘는 항목을 표시하면 페이지 로드 시간이 늘어날 수 있습니다."
   text_notice_security_badge_displayed_html: >
-    참고: 활성화하는 경우, <a href="%{information_panel_path}">%{information_panel_label}</a> 관리 패널 및 홈페이지에서 설치 상태가 나오는 배지가 표시됩니다. 배지는 관리자에게만 표시됩니다. <br/> 배지는 공식 OpenProject 릴리스 데이터베이스와 비교하여 현재 OpenProject 버전을 확인하고 업데이트 또는 알려진 취약성에 대해 알려줍니다. 이 검사에서 제공하는 사항, 사용 가능한 업데이트를 제공하기 위해 필요한 데이터 및 이 검사를 비활성화하는 방법에 대한 자세한 내용은 <a href="%{more_info_url}">구성 문서</a>를 참조하십시오.
+    참고: 활성화하는 경우, <a href="%{information_panel_path}">%{information_panel_label}</a> 관리 패널 및 홈페이지에서 설치 상태가 나오는 배지가 표시됩니다. 배지는 관리자에게만 표시됩니다. <br/> 배지는 공식 Yojana 릴리스 데이터베이스와 비교하여 현재 Yojana 버전을 확인하고 업데이트 또는 알려진 취약성에 대해 알려줍니다. 이 검사에서 제공하는 사항, 사용 가능한 업데이트를 제공하기 위해 필요한 데이터 및 이 검사를 비활성화하는 방법에 대한 자세한 내용은 <a href="%{more_info_url}">구성 문서</a>를 참조하십시오.
   text_own_membership_delete_confirmation: "권한의 일부 또는 전부를 삭제하려고 합니다. 이렇게 한 후에는 이 프로젝트를 더 이상 편집하지 못할 수 있습니다.\n계속하시겠습니까?"
   text_permanent_delete_confirmation_checkbox_label: "이 삭제는 되돌릴 수 없음을 이해합니다."
   text_permanent_remove_confirmation_checkbox_label: "이 제거는 되돌릴 수 없음을 이해합니다"
@@ -4755,7 +4755,7 @@ ko:
   text_reassign: "작업 패키지에 다시 할당:"
   text_regexp_info: "예: ^[A-Z0-9]+$"
   text_regexp_multiline: '멀티라인 모드에서 정규식이 적용됩니다. 예, e.g., ^---\s+'
-  text_repository_usernames_mapping: "리포지토리 로그에 있는 각 사용자 이름에 매핑된 OpenProject 사용자를 선택하거나 업데이트하세요.\n동일한 OpenProject 및 리포지토리 사용자 이름이나 이메일을 가진 사용자가 자동으로 매핑됩니다."
+  text_repository_usernames_mapping: "리포지토리 로그에 있는 각 사용자 이름에 매핑된 Yojana 사용자를 선택하거나 업데이트하세요.\n동일한 Yojana 및 리포지토리 사용자 이름이나 이메일을 가진 사용자가 자동으로 매핑됩니다."
   text_status_changed_by_changeset: "변경 집합 %{value}에 적용되었습니다."
   text_table_difference_description: "이 테이블에서 단일 %{entries}이(가) 표시됩니다. 먼저 테이블의 해당 확인란을 선택하여 두 항목 사이의 차이를 볼 수 있습니다. 테이블 아래 버튼을 클릭하면 차이가 표시됩니다."
   text_time_logged_by_changeset: "변경 집합 %{value}에 적용되었습니다."
@@ -4830,7 +4830,7 @@ ko:
     authentication_provider: "인증 공급자"
     identity_url_text: "인증 공급자가 제공한 내부 고유 식별자입니다."
     authentication_settings_disabled_due_to_external_authentication: >
-      이 사용자는 외부 인증 공급자를 통해 인증하므로, 변경할 OpenProject의 암호가 없습니다.
+      이 사용자는 외부 인증 공급자를 통해 인증하므로, 변경할 Yojana의 암호가 없습니다.
     authorization_rejected: "로그인할 수 없습니다."
     assign_random_password: "무작위 암호 할당(이메일로 사용자에게 전송됨)"
     blocked: "일시적으로 잠김"
@@ -4863,7 +4863,7 @@ ko:
   warning: 경고
   warning_attachments_not_saved: "%{count}개 파일을 저장할 수 없습니다."
   warning_imminent_user_limit: >
-    현재 플랜으로 지원되는 사용자보다 많은 사용자를 초대했습니다. 초대된 사용자가 OpenProject 환경에 참여하지 못할 수 있습니다. 초대된 사용자와 등록된 사용자가 참여할 수 있도록 하려면 <a href="%{upgrade_url}">플랜을 업그레이드</a>하세요.
+    현재 플랜으로 지원되는 사용자보다 많은 사용자를 초대했습니다. 초대된 사용자가 Yojana 환경에 참여하지 못할 수 있습니다. 초대된 사용자와 등록된 사용자가 참여할 수 있도록 하려면 <a href="%{upgrade_url}">플랜을 업그레이드</a>하세요.
   warning_registration_token_expired: |
     활성화 이메일이 만료되었습니다. %{email}(으)로 새로운 이메일이 전송되었습니다.
     이메일 내 링크를 클릭하여 계정을 활성화하세요.
@@ -4872,7 +4872,7 @@ ko:
   warning_user_limit_reached_admin: >
     사용자를 더 추가하면 현재 한도가 초과됩니다. 외부 사용자가 이 인스턴스에 액세스할 수 있도록 하려면 <a href="%{upgrade_url}">플랜을 업그레이드</a>하세요.
   warning_user_limit_reached_instructions: >
-    사용자 제한(활성 사용자 %{current}/%{max}명)에 도달했습니다. sales@openproject.com으로 연락하여 Enterprise Edition 플랜을 업그레이드하고 사용자를 더 추가하세요.
+    사용자 제한(활성 사용자 %{current}/%{max}명)에 도달했습니다. sales@girishm.info으로 연락하여 Enterprise Edition 플랜을 업그레이드하고 사용자를 더 추가하세요.
   warning_protocol_mismatch_html: >
 
   warning_bar:
@@ -5145,7 +5145,7 @@ ko:
         confidential: "클라이언트 비밀번호를 기밀로 유지할 수 있는 위치에서 애플리케이션이 사용되는지 여부를 확인합니다. 네이티브 모바일 앱과 싱글 페이지 앱은 기밀로 간주되지 않습니다."
         scopes: "애플리케이션이 액세스 권한을 부여할 범위를 확인하세요. 범위를 확인하지 않으면 api_v3로 가정됩니다."
         client_credential_user_id: "클라이언트가 이 애플리케이션을 사용할 때 가장하기 위한 선택적 사용자 ID입니다. 공용 액세스만 허용하려면 비워두세요."
-        register_intro: "OpenProject용 OAuth API 클라이언트 애플리케이션을 개발할 경우 이 양식을 사용하여 모든 사용자가 사용할 수 있도록 등록할 수 있습니다."
+        register_intro: "Yojana용 OAuth API 클라이언트 애플리케이션을 개발할 경우 이 양식을 사용하여 모든 사용자가 사용할 수 있도록 등록할 수 있습니다."
         default_scopes: ""
     header:
       builtin_applications: 기본 제공 OAuth 애플리케이션
@@ -5153,17 +5153,17 @@ ko:
     empty_application_lists: 등록된 OAuth 애플리케이션이 없습니다.
     client_id: "클라이언트 ID"
     client_secret_notice: >
-      클라이언트 비밀번호를 인쇄할 수 있는 유일한 순간입니다. 이 비밀번호를 기록하고 안전하게 보관하십시오. 이 비밀번호는 암호로 취급해야 하며 나중에 OpenProject로 검색할 수 없습니다.
+      클라이언트 비밀번호를 인쇄할 수 있는 유일한 순간입니다. 이 비밀번호를 기록하고 안전하게 보관하십시오. 이 비밀번호는 암호로 취급해야 하며 나중에 Yojana로 검색할 수 없습니다.
     authorization_dialog:
       authorize: "권한 부여"
       cancel: "취소하고 권한 부여를 거부합니다."
       prompt_html: "계정 <em>%{login}</em>을(를) 사용하도록 <strong>%{application_name}</strong>에 권한을 부여하시겠습니까?"
       title: "%{application_name} 권한 부여"
       wants_to_access_html: >
-        이 애플리케이션은 사용자의 OpenProject 계정에 대한 액세스 권한을 요청합니다. <br/> <strong>다음과 같은 사용 권한을 요청했습니다:</strong>
+        이 애플리케이션은 사용자의 Yojana 계정에 대한 액세스 권한을 요청합니다. <br/> <strong>다음과 같은 사용 권한을 요청했습니다:</strong>
     scopes:
       api_v3: "전체 API v3 액세스"
-      api_v3_text: "애플리케이션은 사용자를 대신하여 작업을 수행하기 위해 OpenProject API v3에 대한 전체 읽기 및 쓰기 액세스 권한을 받습니다."
+      api_v3_text: "애플리케이션은 사용자를 대신하여 작업을 수행하기 위해 Yojana API v3에 대한 전체 읽기 및 쓰기 액세스 권한을 받습니다."
     grants:
       created_date: "승인:"
       scopes: "권한"
@@ -5178,7 +5178,7 @@ ko:
     client_credentials_impersonation_set_to: "클라이언트 자격 증명 사용자 설정:"
     client_credentials_impersonation_warning: "참고: 이 애플리케이션에서 '클라이언트 자격 증명' 흐름을 사용하는 클라이언트는 이 사용자의 권한을 갖게 됩니다."
     client_credentials_impersonation_html: >
-      기본적으로, OpenProject는 %{authorization_code_flow_link}에서 OAuth 2.0 인증을 제공합니다. 선택적으로 %{client_credentials_flow_link}을(를) 활성화할 수 있지만, 대신하여 요청을 수행할 대상 사용자를 제공해야 합니다.
+      기본적으로, Yojana는 %{authorization_code_flow_link}에서 OAuth 2.0 인증을 제공합니다. 선택적으로 %{client_credentials_flow_link}을(를) 활성화할 수 있지만, 대신하여 요청을 수행할 대상 사용자를 제공해야 합니다.
     authorization_error: "권한 부여 오류가 발생했습니다."
     revoke_my_application_confirmation: "이 애플리케이션을 제거하시겠습니까? 그러면 이 애플리케이션에 대해 활성화된 %{token_count}개가 취소됩니다."
     my_registered_applications: "등록된 OAuth 애플리케이션"
@@ -5207,20 +5207,20 @@ ko:
         내부 오류: 기존 토큰 없이 refresh_token을 호출했습니다.
       refresh_token_updated_failed: "OAuthClientToken 업데이트 중에 오류 발생"
       oauth_client_not_found_explanation: >
-        이 오류는 OpenProject에서 client_id 및 client_secret을 업데이트했지만 OAuth2 공급자에서 'Return URI' 필드를 업데이트하지 않으면 나타납니다.
+        이 오류는 Yojana에서 client_id 및 client_secret을 업데이트했지만 OAuth2 공급자에서 'Return URI' 필드를 업데이트하지 않으면 나타납니다.
       oauth_code_not_present: "'callback' 엔드포인트(redirect_uri)에서 OAuth2 'code'를 찾을 수 없습니다."
       oauth_code_not_present_explanation: >
         이 오류는 OAuth2 공급자에서 잘못된 response_type을 선택한 경우 나타납니다. Response_type은 'code' 또는 이와 유사해야 합니다.
       oauth_state_not_present: "'callback' 엔드포인트(redirect_uri)에서 OAuth2 'state'를 찾을 수 없습니다."
       oauth_state_not_present_explanation: >
-        'state'는 성공적인 OAuth2 인증 후 계속할 위치를 OpenProject에 표시하는 데 사용됩니다. 누락된 'state'는 설정 중에 나타날 수 있는 내부 오류입니다. 시스템 관리자에게 문의하세요.
+        'state'는 성공적인 OAuth2 인증 후 계속할 위치를 Yojana에 표시하는 데 사용됩니다. 누락된 'state'는 설정 중에 나타날 수 있는 내부 오류입니다. 시스템 관리자에게 문의하세요.
       rack_oauth2:
         client_secret_invalid: "클라이언트 비밀이 유효하지 않습니다(client_secret_invalid)"
         invalid_request: >
           OAuth2 인증 서버가 'invalid_request'로 응답했습니다. 이 오류는 인증을 여러 번 시도했거나 기술적인 문제가 있는 경우 나타납니다.
         invalid_response: "OAuth2 인증 서버가 잘못된 응답을 제공했습니다(invalid_response)."
         invalid_grant: "OAuth2 인증 서버가 재인증을 요청합니다(invalid_grant)."
-        invalid_client: "OAuth2 인증 서버가 OpenProject를 인식하지 못합니다(invalid_client)."
+        invalid_client: "OAuth2 인증 서버가 Yojana를 인식하지 못합니다(invalid_client)."
         unauthorized_client: "OAuth2 인증 서버가 인증 유형을 거부합니다(unauthorized_client)."
         unsupported_grant_type: "OAuth2 인증 서버가 재인증을 요청합니다(unsupported_grant_type)."
         invalid_scope: "요청한 리소스에 액세스할 수 없습니다(invalid_scope)."
@@ -5233,18 +5233,18 @@ ko:
   you: 당신
   link: 링크
   plugin_openproject_auth_plugins:
-    name: "OpenProject 인증 플러그인"
-    description: "인증을 위해 OpenProject에서 OmniAuth 정책 공급자를 통합합니다."
+    name: "Yojana 인증 플러그인"
+    description: "인증을 위해 Yojana에서 OmniAuth 정책 공급자를 통합합니다."
   plugin_openproject_auth_saml:
     name: "OmniAuth SAML/Single-Sign On"
-    description: "OpenProject에 OmniAuth SAML 공급자를 추가합니다"
+    description: "Yojana에 OmniAuth SAML 공급자를 추가합니다"
   enterprise_plans:
     legacy_enterprise: "Enterprise 플랜"
   token:
     hashed_token:
       display_value_placeholder: "***"
   external_link_warning:
-    title: "OpenProject 종료"
-    warning_message: "OpenProject를 종료하고 외부 웹사이트를 방문하려고 합니다. 외부 웹사이트는 당사의 통제를 받지 않으며 개인정보 보호 및 보안 정책이 다를 수 있다는 점에 유의하시기 바랍니다."
+    title: "Yojana 종료"
+    warning_message: "Yojana를 종료하고 외부 웹사이트를 방문하려고 합니다. 외부 웹사이트는 당사의 통제를 받지 않으며 개인정보 보호 및 보안 정책이 다를 수 있다는 점에 유의하시기 바랍니다."
     continue_message: "다음 외부 링크로 계속하시겠습니까?"
     continue_button: "외부 웹사이트로 계속하기"

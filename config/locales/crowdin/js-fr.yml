@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -52,7 +52,7 @@ fr:
         Une nouvelle sauvegarde remplacera toute sauvegarde précédente. Il n'est possible de demander qu'un nombre limité de sauvegardes par jour.
       last_backup: Dernière sauvegarde
       last_backup_from: Dernière sauvegarde du
-      title: Sauvegarder OpenProject
+      title: Sauvegarder Yojana
       options: Options
       include_attachments: Inclure les pièces jointes
       download_backup: Télécharger la sauvegarde
@@ -505,7 +505,7 @@ fr:
         next: "Suivante"
         got_it: "J'ai compris"
       steps:
-        help_menu: "Le menu Aide (?) fournit des <b>ressources d'aide supplémentaires</b>. Vous y trouverez un guide utilisateur, des vidéos pratiques et plus encore. <br> Profitez de votre travail avec OpenProject !"
+        help_menu: "Le menu Aide (?) fournit des <b>ressources d'aide supplémentaires</b>. Vous y trouverez un guide utilisateur, des vidéos pratiques et plus encore. <br> Profitez de votre travail avec Yojana !"
         members: "Invitez de nouveaux <b>membres</b> à rejoindre votre projet."
         quick_add_button: "Cliquez sur l'icône plus (+) dans l'en-tête de navigation pour <b>créer un nouveau projet</b> ou <b>inviter des collègues</b>."
         sidebar_arrow: "Utilisez la flèche de retour dans le coin supérieur gauche pour retourner au <b>menu principal</b> du projet."

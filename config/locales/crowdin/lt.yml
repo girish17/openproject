@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -111,12 +111,12 @@ lt:
         link: "tinklo jungtis"
     mcp_configurations:
       index:
-        description: "The model context protocol allows AI agents to provide its users with tools and resources exposed by this OpenProject instance."
+        description: "The model context protocol allows AI agents to provide its users with tools and resources exposed by this Yojana instance."
         resources_heading: "Resources"
-        resources_description: "OpenProject implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
+        resources_description: "Yojana implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
         resources_submit: "Update resources"
         tools_heading: "Tools"
-        tools_description: "OpenProject implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url)."
+        tools_description: "Yojana implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url)."
         tools_submit: "Update tools"
       multi_update:
         success: "MCP configurations were updated successfully."
@@ -147,13 +147,13 @@ lt:
       edit:
         label_delete_scim_client: "Delete SCIM client"
       form:
-        auth_provider_description: "This is the service that users added by the SCIM provider will use to authenticate in OpenProject."
-        authentication_method_description_html: "This is how the SCIM client authenticates at OpenProject. Please ensure that OAuth tokens include the <code>scim_v2</code> scope."
+        auth_provider_description: "This is the service that users added by the SCIM provider will use to authenticate in Yojana."
+        authentication_method_description_html: "This is how the SCIM client authenticates at Yojana. Please ensure that OAuth tokens include the <code>scim_v2</code> scope."
         description: "Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options."
         jwt_sub_description: "For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case."
         name_description: "Choose a name that will help other admins better understand why this client was configured."
       index:
-        description: "SCIM clients configured here are able to interact with OpenProject SCIM server API to provision, update, and deprovision user accounts and groups."
+        description: "SCIM clients configured here are able to interact with Yojana SCIM server API to provision, update, and deprovision user accounts and groups."
         label_create_button: "Add SCIM client"
       new:
         title: "New SCIM client"
@@ -161,14 +161,14 @@ lt:
         confirm_button: "Atšaukti"
         title: "Revoke static token"
         heading: "Ar tikrai norite atšaukti šį raktą?"
-        description: "The SCIM client that uses this token will no longer be able to access OpenProject's SCIM server API."
+        description: "The SCIM client that uses this token will no longer be able to access Yojana's SCIM server API."
       table_component:
         blank_slate:
           title: "No SCIM clients configured yet"
           description: "Add clients to see them here"
         user_count: "Naudotojai"
       token_list_component:
-        description: "The tokens you generate here can be passed by a SCIM client to access the OpenProject SCIM API."
+        description: "The tokens you generate here can be passed by a SCIM client to access the Yojana SCIM API."
         heading: "Tokens"
         label_add_token: "Token"
         label_aria_add_token: "Add token"
@@ -229,35 +229,35 @@ lt:
       name: LDAP prisijungimui suteiktas pavadinimas
       host: LDAP serverio vardas arba IP adresas
       login_map: LDAP atributo, kuris naudojamas vienareikšmiškai nustatyti besijungiantį asmenį, pavadinimas. Dažniausiai tai būna `uid` arba `samAccountName`.
-      generic_map: LDAP atributo pavadinimas, kuris bus susietas su OpenProject atributu `%{attribute}`
-      admin_map_html: "Pasirinktinis: LDAP atributas, kuris <strong>jei bus nustatytas</strong> pažymi, kad naudotojas yra OpenProject administratorius. Jei abejojate, palikite tuščią."
+      generic_map: LDAP atributo pavadinimas, kuris bus susietas su Yojana atributu `%{attribute}`
+      admin_map_html: "Pasirinktinis: LDAP atributas, kuris <strong>jei bus nustatytas</strong> pažymi, kad naudotojas yra Yojana administratorius. Jei abejojate, palikite tuščią."
       system_user_dn_html: |
         Enter the DN of the system user used for read-only access.
         <br>
-        Example: uid=openproject,ou=system,dc=example,dc=com
+        Example: uid=yojana,ou=system,dc=example,dc=com
       system_user_password: Įveskite sisteminio naudotojo, kuris jungsis prie LDAP, slaptažodį
       base_dn: |
-        Įveskite submedžio, kuriame OpenProject ieškos naudotojų ir grupių šaknies DN (Base DN).
-        OpenProject ieškos naudotojų tik šio submedžio ribose.
+        Įveskite submedžio, kuriame Yojana ieškos naudotojų ir grupių šaknies DN (Base DN).
+        Yojana ieškos naudotojų tik šio submedžio ribose.
         Pavyzdys: ou=users,dc=example,dc=com
       filter_string: |
         Pridėkite nebūtiną RFC4515 filtrą, kuris bus naudojamas riboti perduodamų iš LDAP naudotojų sąrašą.
-        Jis gali būti naudojamas norint sumažinti aibę naudotojų, kuriuos OpenProject ras ir galės naudoti autentifikavimui ir grupių sinchronizavimui.
+        Jis gali būti naudojamas norint sumažinti aibę naudotojų, kuriuos Yojana ras ir galės naudoti autentifikavimui ir grupių sinchronizavimui.
       filter_string_concat: |
-        OpenProject įrašų identifikavimui visada naudos login atributą su naudotojo pateiktais duomenimis. Jei jūs čia nurodysite filtrą, jis prie kitų filtrų bus prijungtas naudojant AND. Nenurodžius, bus naudojamas viską apimantis filtras (objectClass=*).
+        Yojana įrašų identifikavimui visada naudos login atributą su naudotojo pateiktais duomenimis. Jei jūs čia nurodysite filtrą, jis prie kitų filtrų bus prijungtas naudojant AND. Nenurodžius, bus naudojamas viską apimantis filtras (objectClass=*).
       onthefly_register: |
-        Jei pažymėsite šį lauką, OpenProject automatiškai sukurs naujus naudotojus pagal LDAP informaciją, kai tik šie naudotojai pirmą kartą prisijungs prie OpenProject.
+        Jei pažymėsite šį lauką, Yojana automatiškai sukurs naujus naudotojus pagal LDAP informaciją, kai tik šie naudotojai pirmą kartą prisijungs prie Yojana.
         Nežymėkite šio lauko, jei norite, kad tik jau sukurti naudotojai galėtų prisijungti pasinaudodami LDAP!
     connection_encryption: "Jungties šifravimas"
     encryption_details: "LDAPS / STARTTLS parinktys"
     system_account: "Sistemos paskyra"
     system_account_legend: |
-      OpenProject reikia tik-skaitymui skirto sisteminio naudotojo kitų naudotojų ir grupių patikrinimui jūsų LDAP medyje.
+      Yojana reikia tik-skaitymui skirto sisteminio naudotojo kitų naudotojų ir grupių patikrinimui jūsų LDAP medyje.
       Šioje skiltyje prašome pateikti tokio naudotojo prisijungimo duomenis.
     ldap_details: "LDAP duomenys"
     user_settings: "Atributų surišimas"
     user_settings_legend: |
-      Žemiau esantys laukai yra naudojami nurodant, kaip OpenProject naudotojai yra kuriami pagal LDAP įrašus ir kokie LDAP atributai yra naudojami nurodant kuriuos OpenProject naudotojo atributus (atributų surišimas).
+      Žemiau esantys laukai yra naudojami nurodant, kaip Yojana naudotojai yra kuriami pagal LDAP įrašus ir kokie LDAP atributai yra naudojami nurodant kuriuos Yojana naudotojo atributus (atributų surišimas).
     tls_mode:
       plain: "joks"
       simple_tls: "LDAPS"
@@ -1521,7 +1521,7 @@ lt:
         confirmation: "nesutampa su %{attribute}."
         could_not_be_copied: "%{dependency} negali (pilnai) būti nukopijuota(s)."
         does_not_exist: "neegzistuoja."
-        error_enterprise_only: "%{action} is only available in the OpenProject Enterprise edition."
+        error_enterprise_only: "%{action} is only available in the Yojana Enterprise edition."
         error_unauthorized: "negali būti pasiektas."
         error_readonly: "bandytas įrašyti, bet įrašyti nebuvo galima."
         error_conflict: "Tuo metu informaciją pakeitė bent vienas kitas naudotojas."
@@ -2187,7 +2187,7 @@ lt:
       heading_reset: "Atstatyti atsarginės kopijos žetoną"
       heading_create: "Sukurti atsarginės kopijos žetoną"
       implications: >
-        Atsarginių kopijų įgalinimas leis bet kuriam naudotojui su priskirtomis teisėmis ir šiuo atsarginės kopijos žetonu parsisiųsti atsarginę kopiją, turinčią visus šio OpenProject egzemplioriaus duomenis. Juose bus ir visų kitų naudotojų duomenys.
+        Atsarginių kopijų įgalinimas leis bet kuriam naudotojui su priskirtomis teisėmis ir šiuo atsarginės kopijos žetonu parsisiųsti atsarginę kopiją, turinčią visus šio Yojana egzemplioriaus duomenis. Juose bus ir visų kitų naudotojų duomenys.
       info: >
         Norint sukurti atsarginę kopiją jums reikės sugeneruoti atsarginės kopijos žetoną. Kaskart, kai jūs norėsite sukurti atsarginę kopiją, turėsite pateikti šį žetoną. Jūs galite ištrinti žetoną ir taip atimsite iš naudotojo teisę daryti atsargines kopijas.
       verification: >
@@ -2587,7 +2587,7 @@ lt:
         Already have a token? Add it using the button below to upgrade to the booked Enterprise plan.
       hide_banner: "Hide this banner"
       homescreen_description: >
-        Enterprise plans extend the Community edition of OpenProject with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running OpenProject in a mission-critical environment.
+        Enterprise plans extend the Community edition of Yojana with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running Yojana in a mission-critical environment.
       homescreen_subline: By upgrading, you will also be supporting an open source project.
       baseline_comparison:
         description: Paryškinti pakeitimus, padarytus šiame sąraše, nuo bet kokio laiko momento praeityje.
@@ -2600,7 +2600,7 @@ lt:
         premium_features: "Enterprise priedai"
         premium_features_text: "Agile lentos, savo tema ir logotipas, grafai, protingi darbo scenarijai su apibrėžtais veiksmais, pilna teksto paieška darbo paketų prieduose ir galimybė pasirinkti daugiau nei vieną reikšmę pritaikytuose laukuose."
         professional_support: "Profesionali pagalba"
-        professional_support_text: "Gaukite patikimą, artimą pagalbą iš patyrusių pagalbos inžinierių su ekspertinėmis žiniomis apie OpenProject naudojimą verslui kritinėse aplinkose."
+        professional_support_text: "Gaukite patikimą, artimą pagalbą iš patyrusių pagalbos inžinierių su ekspertinėmis žiniomis apie Yojana naudojimą verslui kritinėse aplinkose."
       work_package_subject_generation:
         description: "Create automatically generated subjects using referenced attributes and text."
       customize_life_cycle:
@@ -2632,29 +2632,29 @@ lt:
       define_custom_style:
         title: "Custom color theme and logo"
         more_info: "Pastaba: panaudotas logotipas bus viešai prieinamas."
-        description: Tinkinkite jūsų OpenProject naudodami savo logotipą ir spalvas.
+        description: Tinkinkite jūsų Yojana naudodami savo logotipą ir spalvas.
       custom_actions:
         title: "Pasirinktiniai veiksmai"
         description: "Savo veiksmai yra vieno paspaudimo kombinacijos, leidžiančios nustatyti veiksmus, kuriuos galite padaryti preinamais kai kuriuose darbo paketuose pagal jų būseną, rolę, tipą ar projektą."
       mcp_server:
-        description: "Integrate AI agents with your OpenProject instance through MCP."
+        description: "Integrate AI agents with your Yojana instance through MCP."
       nextcloud_sso:
         title: "Single Sign-On for Nextcloud Storage"
         description: "Enable seamless and secure authentication for your Nextcloud storage with Single Sign-On. Simplify access management and enhance user convenience."
       scim_api:
         title: "SCIM clients"
-        description: "Automate user management in OpenProject by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan."
+        description: "Automate user management in Yojana by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan."
       sso_auth_providers:
         title: "Single Sign-On (SSO)"
         description: "Enable users to log in via external SSO providers using SAML or OpenID Connect for seamless access and integration with existing identity systems."
       virus_scanning:
-        description: "Užtikrinkite, kad į OpenProject įkelti failai būtų patikrinti nuo virusų prieš padarant juos prieinamus kitiems naudotojams."
+        description: "Užtikrinkite, kad į Yojana įkelti failai būtų patikrinti nuo virusų prieš padarant juos prieinamus kitiems naudotojams."
       project_creation_wizard:
         description: "Generate a step-by-step wizard to help project managers fill out a project initiation request."
       placeholder_users:
         title: Statytiniai naudotojai
         description: >
-          Statytiniai naudotojai leidžia paskirti darbo paketus naudotojams, kurių nėra jūsų projekte. Jie gali būti naudingi įvairiose situacijose. Pavyzdžiui jums reikia sekti užduotis resursų, kurie dar neįvardinti ar negalimi arba jūs nenorite duoti konkrečiam asmeniui prieigos prie OpenProject, bet vis tiek norite sekti jiems paskirtas užduotis.
+          Statytiniai naudotojai leidžia paskirti darbo paketus naudotojams, kurių nėra jūsų projekte. Jie gali būti naudingi įvairiose situacijose. Pavyzdžiui jums reikia sekti užduotis resursų, kurie dar neįvardinti ar negalimi arba jūs nenorite duoti konkrečiam asmeniui prieigos prie Yojana, bet vis tiek norite sekti jiems paskirtas užduotis.
       internal_comments:
         title: Internal comments
         description: "Internal comments allow an internal team to communicate amongst themselves privately. These are only visible to certain project roles and will never be visible publicly."
@@ -2680,16 +2680,16 @@ lt:
       request_again: "Request again"
       resend_action: "Resend confirmation email"
       welcome_title: "Quick feature overview"
-      welcome_description: "Gaukite greitą apžvalgą apie projektų valdymą ir komandos bendradarbiavimą naudojant OpenProject Enterprise versiją."
+      welcome_description: "Gaukite greitą apžvalgą apie projektų valdymą ir komandos bendradarbiavimą naudojant Yojana Enterprise versiją."
       confirmation_info: >
-        We sent you an email on %{date} to %{email} with all the information to start the free trial of OpenProject Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
+        We sent you an email on %{date} to %{email} with all the information to start the free trial of Yojana Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
       confirmation_subline: >
         Please, check your inbox and follow the steps to start your 14-day free trial.
       domain_caption: The token will be valid for your currently configured host name.
       receive_newsletter_html: >
-        I want to receive the OpenProject <a target="_blank" href="https://www.openproject.org/newsletter/">newsletter</a>.
+        I want to receive the Yojana <a target="_blank" href="https://www.yojana.girishm.info/newsletter/">newsletter</a>.
       consent_html: >
-        I agree with the <a target="_blank" href="https://www.openproject.org/terms-of-service/">terms of service</a> and the <a target="_blank" href="https://www.openproject.org/data-privacy-and-security/">privacy policy</a>.
+        I agree with the <a target="_blank" href="https://www.yojana.girishm.info/terms-of-service/">terms of service</a> and the <a target="_blank" href="https://www.yojana.girishm.info/data-privacy-and-security/">privacy policy</a>.
   email_calendar_updates:
     state:
       disabled: "Disabled."
@@ -2722,7 +2722,7 @@ lt:
   error_check_user_and_role: "Prašome pasirinkti naudotoją ir vaidmenį."
   error_code: "Klaida %{code}"
   error_color_could_not_be_saved: "Nepavyko įrašyti spalvos"
-  error_cookie_missing: "OpenProject sausainėlis nerastas. Prašome patikrinti, ar sausainėliai yra įgalinti, nes kitaip aplikacija tinkamai neveiks."
+  error_cookie_missing: "Yojana sausainėlis nerastas. Prašome patikrinti, ar sausainėliai yra įgalinti, nes kitaip aplikacija tinkamai neveiks."
   error_custom_option_not_found: "Galimybė neegzistuoja."
   error_enterprise_plan_needed: "You need the %{plan} enterprise plan to perform this action."
   error_enterprise_activation_user_limit: "Jūsų paskyra negali būti aktyvuota (pasiektas vartotojų limitas). Prašome kreiptis į savo sistemos administratorių."
@@ -2740,7 +2740,7 @@ lt:
   error_work_package_not_found_in_project: "Darbų paketas nerastas arba nepriklauso šiam projektui"
   error_work_package_id_not_found: "The work package was not found."
   error_must_be_project_member: "turi būti projekto narys"
-  error_migrations_are_pending: "Jūsų OpenProject instaliacijai trūksta duomenų bazės migracijos. Greičiausiai atnaujinimo metu buvo nepaleistas migravimas. Atnaujinimo gide aprašyta kaip tinkamai atnaujinti jūsų instaliaciją."
+  error_migrations_are_pending: "Jūsų Yojana instaliacijai trūksta duomenų bazės migracijos. Greičiausiai atnaujinimo metu buvo nepaleistas migravimas. Atnaujinimo gide aprašyta kaip tinkamai atnaujinti jūsų instaliaciją."
   error_migrations_visit_upgrade_guides: "Prašome perskaityti dokumentaciją atnaujinimo vadove"
   error_no_default_work_package_status: 'Numatytoji darbų paketo būsena nenustatyta. Prašome patikrinti nustatymus (Eiti į „Administravimas“->„Darbų paketų būsenos“).'
   error_no_type_in_project: "Joks tipas nepriskirtas šiam projektui. Prašome patikrinti projekto nustatymus."
@@ -2851,7 +2851,7 @@ lt:
     failed: "An error has occurred while trying to export the work packages: %{message}"
     demo:
       heading: "Demo PDF"
-      footer: "Generated by OpenProject"
+      footer: "Generated by Yojana"
       button_text: Generate Demo PDF
     errors:
       embedded_table_with_too_many_columns: "This embedded work package table could not fit on the page, please reduce the number of columns."
@@ -2942,7 +2942,7 @@ lt:
       no_visible_projects: "Šiame egzemplioriuje nėra matomų projektų."
       users: "Naujausi registruoti naudotojai."
     blocks:
-      community: "OpenProject community"
+      community: "Yojana community"
       upsell:
         title: "Pagerinti į Enterprise versiją"
       new_features:
@@ -2956,7 +2956,7 @@ lt:
           new_features_list:
             line_0: Automated project initiation (Enterprise add-on).
             line_1: "Meetings: add new or existing work packages as outcomes."
-            line_2: "Meetings: show iCal responses in OpenProject."
+            line_2: "Meetings: show iCal responses in Yojana."
             line_3: "Recurring meetings: duplicate agenda items to the next occurrence."
             line_4: "Release to Community: Attribute highlighting."
             line_5: Warning before opening external links in user-provided content (Enterprise add-on).
@@ -2969,7 +2969,7 @@ lt:
       impressum: "Teisinė informacija"
       glossary: "Aiškinamasis terminų žodynas"
       shortcuts: "Nuorodos"
-      blog: "OpenProject blogas"
+      blog: "Yojana blogas"
       forums: "Bendruomenės forumas"
       security_alerts: "Security alerts"
       newsletter: "Newsletter"
@@ -2982,7 +2982,7 @@ lt:
       default_attribute_written: "Tik-skaitymo atributai įrašyti"
       progress_mode_changed_to_status_based: "Eigos skaičiavimas atnaujintas"
       status_changed: "Status '%{status_name}'"
-      system_update: "OpenProject sistemos atnaujinimas"
+      system_update: "Yojana sistemos atnaujinimas"
       work_package_duplicate_closed: "Duplicate work package updated:"
       total_percent_complete_mode_changed_to_work_weighted_average: "Calculation of % Complete totals now weighted by Work."
       total_percent_complete_mode_changed_to_simple_average: "Calculation of % Complete totals now based on a simple average of only % Complete values."
@@ -3038,7 +3038,7 @@ lt:
       label: "Add…"
   my_account:
     access_tokens:
-      description: "Provider tokens are issued by OpenProject, allowing other applications to access it. Client tokens are issued by other applications, allowing OpenProject to access them."
+      description: "Provider tokens are issued by Yojana, allowing other applications to access it. Client tokens are issued by other applications, allowing Yojana to access them."
       no_results:
         title: "Nėra rodytinų prieigos raktų"
         description: "Visi iš jų buvo išjungti. Jie gali būti vėl įgalinti administravimo meniu."
@@ -3058,7 +3058,7 @@ lt:
         blank_title: "No API token"
         title: "API"
         table_title: "API tokens"
-        text_hint: "API žetonai leidžia trečiųjų šalių aplikacijoms komunikuoti su šiuo OpenProject per REST"
+        text_hint: "API žetonai leidžia trečiųjų šalių aplikacijoms komunikuoti su šiuo Yojana per REST"
         static_token_name: "API token"
         disabled_text: "Administratorius neįjungė API žetonų. Prašome susisiekti su administratoriumi, kad galėtumėte naudoti šią savybę."
         add_button: "API token"
@@ -3067,7 +3067,7 @@ lt:
         blank_title: "No iCalendar token"
         title: "iCalendar"
         table_title: "iCalendar tokens"
-        text_hint_link: "iCalendar tokens allow users to [subscribe to OpenProject calendars](docs_url) and view up-to-date work package information from external clients."
+        text_hint_link: "iCalendar tokens allow users to [subscribe to Yojana calendars](docs_url) and view up-to-date work package information from external clients."
         disabled_text: "Administratorius neįjungė iCalendar prenumeratų. Prašome susisiekti su administratoriumi, kad galėtumėte naudoti šią savybę."
       oauth_application:
         active_tokens: "Active tokens"
@@ -3076,14 +3076,14 @@ lt:
         last_used_at: "Last used at"
         title: "OAuth"
         table_title: "OAuth application tokens"
-        text_hint: "OAuth application tokens allow third-party applications to connect with this OpenProject instance."
+        text_hint: "OAuth application tokens allow third-party applications to connect with this Yojana instance."
       oauth_client:
         blank_description: "There are no OAuth client tokens yet."
         blank_title: "No OAuth client tokens"
         failed: "An error occurred and the token couldn't be removed. Please try again later."
         integration_type: "Integration type"
         table_title: "OAuth client tokens"
-        text_hint: "OAuth client tokens allow this OpenProject instance to connect with external applications, such as file storages."
+        text_hint: "OAuth client tokens allow this Yojana instance to connect with external applications, such as file storages."
         title: "OAuth"
         remove_token: "Do you really want to remove this token? You will need to login again on %{integration}."
         removed: "OAuth client token successfully removed"
@@ -3094,7 +3094,7 @@ lt:
         blank_title: "No RSS token"
         title: "RSS"
         table_title: "RSS tokens"
-        text_hint: "RSS tokens allow users to keep up with the latest changes in this OpenProject instance via an external RSS reader."
+        text_hint: "RSS tokens allow users to keep up with the latest changes in this Yojana instance via an external RSS reader."
         static_token_name: "RSS token"
         disabled_text: "RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature."
       storages:
@@ -3269,7 +3269,7 @@ lt:
   label_custom_field_plural: "Pritaikyti laukai"
   label_custom_field_default_type: "Tuščias tipas"
   label_custom_style: "Išvaizda"
-  label_custom_style_description: "Choose how OpenProject looks to you with themes, select your default colors to use in the app and how exports look like."
+  label_custom_style_description: "Choose how Yojana looks to you with themes, select your default colors to use in the app and how exports look like."
   label_dashboard: "Skydelis"
   label_database_version: "PostgreSQL versija"
   label_date: "Data"
@@ -3541,7 +3541,7 @@ lt:
   label_open_menu: "Atidaryti meniu"
   label_open_work_packages: "atidarytas"
   label_open_work_packages_plural: "atidarytas"
-  label_openproject_website: "OpenProject svetainė"
+  label_openproject_website: "Yojana svetainė"
   label_optional_description: "Aprašymas"
   label_options: "Nustatymai"
   label_other: "Kita"
@@ -3946,8 +3946,8 @@ lt:
   mail_body_backup_token_reset_user_info: Jūsų atsarginės kopijos žetonas buvo atstatytas.
   mail_body_backup_token_info: Ankstesnis žetonas nebegalioja.
   mail_body_backup_waiting_period: Naujas atsarginės kopijos žetonas bus tinkamas po %{hours} valandų.
-  mail_body_backup_token_warning: Jei tai buvote ne jūs, nedelsiant prisijunkite prie OpenProject ir atšaukite jį dar kartą.
-  mail_body_incoming_email_error: Nepavyksta apdoroti laiško, kurį jūs nusiuntėte OpenProject.
+  mail_body_backup_token_warning: Jei tai buvote ne jūs, nedelsiant prisijunkite prie Yojana ir atšaukite jį dar kartą.
+  mail_body_incoming_email_error: Nepavyksta apdoroti laiško, kurį jūs nusiuntėte Yojana.
   mail_body_incoming_email_error_in_reply_to: "%{received_at} %{from_email} rašė"
   mail_body_incoming_email_error_logs: "Žurnalai"
   mail_body_lost_password: "Norėdami pakeisti slaptažodį, spauskite nuorodą:"
@@ -3960,10 +3960,10 @@ lt:
   mail_body_register_user: "Brangus %{name}, "
   mail_body_register_links_html: |
     Galite panaršyti mūsų youtube kanale (%{youtube_link}), kur mes pateikiame  (%{webinar_link})
-    ir „Pradėkime“ video (%{get_started_link}) tam, kad jūsų pirmieji OpenProject žingsniai būtų kaip įmanoma lengvesni.
+    ir „Pradėkime“ video (%{get_started_link}) tam, kad jūsų pirmieji Yojana žingsniai būtų kaip įmanoma lengvesni.
     <br />
     Jei turėsite papildomų klausimų, pažiūrėkite mūsų dokumentaciją (%{documentation_link}) arba susisiekite su jūsų administratoriumi.
-  mail_body_register_closing: "Jūsų OpenProject komanda"
+  mail_body_register_closing: "Jūsų Yojana komanda"
   mail_body_register_ending: "Likite prisijungę! Su geriausiais linkėjimais,"
   mail_body_reminder: "%{count} darbų paketai, kurie yra jums priskirti, baigiasi per artimiausias %{days} dienų (-ą, -as):"
   mail_body_group_reminder: '%{count} darbo paketas(ai), kurie priskirti grupei „%{group}“ turi būti baigti per kitas %{days} dienas:'
@@ -3972,7 +3972,7 @@ lt:
   mail_subject_account_activation_request: "%{value} paskyros aktyvavimo prašymas"
   mail_subject_backup_ready: "Jūsų atsarginė kopija paruošta"
   mail_subject_backup_token_reset: "Rezervinės kopijos žetonas atstatytas"
-  mail_subject_incoming_email_error: "Nepavyksta apdoroti laiško, kurį jūs nusiuntėte OpenProject."
+  mail_subject_incoming_email_error: "Nepavyksta apdoroti laiško, kurį jūs nusiuntėte Yojana."
   mail_subject_lost_password: "Jūsų slaptažodis %{value}"
   mail_subject_register: "Jūsų %{value} paskyros aktyvavimas"
   mail_subject_wiki_content_added: "Wiki puslapis '%{id}' buvo pridėtas"
@@ -4001,14 +4001,14 @@ lt:
   mail_user_activation_limit_reached:
     subject: Pasiekta vartotojų aktyvinimo riba
     message: |
-      Naujas vartotojas (%{email}) bandė sukurti paskyrą OpenProject aplinkoją, kurią jūs valdote (%{host}).
+      Naujas vartotojas (%{email}) bandė sukurti paskyrą Yojana aplinkoją, kurią jūs valdote (%{host}).
       Vartotojas negali aktyvuoti savo paskyros, nes sistemoje pasiekta vartotojų riba.
     steps:
       label: "Norėdami leisti vartotojui prisijungti jūs galite: "
       a: "Atnaujinti savo mokėjimo planą ([here](upgrade_url))" #here turned into a link
       b: "Užrakinti arba panaikinti esamo naudotojo paskyrą ([here](users_url))" #here turned into a link
   more_actions: "Daugiau funkcijų"
-  noscript_description: "Jums reikia įjungti JavaScript, kad galėtumėte naudoti OpenProject!"
+  noscript_description: "Jums reikia įjungti JavaScript, kad galėtumėte naudoti Yojana!"
   noscript_heading: "JavaScript išjungta"
   noscript_learn_more: "Sužinoti daugiau"
   notice_accessibility_mode: Pasiekiamumo režimas gali būti įjungtas Jūsų paskyros nustatymuose [account settings](nuoroda).
@@ -4085,7 +4085,7 @@ lt:
   notice_wont_delete_auth_source: Negalima ištrinti LDAP jungties, kol naudotojai ją naudoja.
   notice_project_cannot_update_custom_fields: "Jūs negalite atnaujinti projekto pasirinktinų laukų. Projektas yra netinkamas: %{errors}"
   notice_attachment_migration_wiki_page: >
-    Šis puslapis buvo sugeneruotas automatiškai, kai buvo naujinama OpenProject. Jame yra visi prisegti failai, kurie buvo susieti su %{container_type} „%{container_name}“.
+    Šis puslapis buvo sugeneruotas automatiškai, kai buvo naujinama Yojana. Jame yra visi prisegti failai, kurie buvo susieti su %{container_type} „%{container_name}“.
   #Default format for numbers
   number:
     format:
@@ -4110,7 +4110,7 @@ lt:
           tb: "TB"
   onboarding:
     heading_getting_started: "Gauti aprašymą"
-    text_getting_started_description: "Gaukite greitą apžvalgą apie projektų valdymą ir komandos bendradarbiavimą naudojant OpenProject. Šį video galite paleisti iš naujo per pagalbos meniu."
+    text_getting_started_description: "Gaukite greitą apžvalgą apie projektų valdymą ir komandos bendradarbiavimą naudojant Yojana. Šį video galite paleisti iš naujo per pagalbos meniu."
     welcome: "Jus sveikina %{app_title}"
     select_language: "Pasirinkite kalbą"
   permission_add_work_package_comments: "Add comments"
@@ -4203,7 +4203,7 @@ lt:
   permission_view_all_principals_explanation: >
     Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
   permission_view_project: "Peržiūrėti projektus"
-  permission_view_changesets: "Rodyti repozitorijos pakeitimus OpenProject"
+  permission_view_changesets: "Rodyti repozitorijos pakeitimus Yojana"
   permission_view_internal_comments: "View internal comments"
   permission_view_commit_author_statistics: "Peržiūrėti autorių pakeitimų pateikimo statistiką"
   permission_view_dashboards: "Peržiūrėti švieslentes"
@@ -4326,7 +4326,7 @@ lt:
     destroy:
       confirmation: "Jei tęsite, visam laikui ištrinsite valdomą repozitoriją."
       info: "Repozitorijos ištrynimas yra negrįžtamas veiksmas."
-      info_not_managed: "Pastaba: tai NEIŠTRINS jokių duomenų repozitorijoje, KURIŲ nevaldo OpenProject sistema."
+      info_not_managed: "Pastaba: tai NEIŠTRINS jokių duomenų repozitorijoje, KURIŲ nevaldo Yojana sistema."
       managed_path_note: "Ši katalogas bus išvalytas: %{path}"
       repository_verification: "Įveskite projekto identifikatorių %{identifier}, kad patvirtintumėte repozitorijos ištrynimą."
       subtitle: "Ar tikrai norite ištrinti projekto %{project_name} repozitoriją %{repository_type}?"
@@ -4340,8 +4340,8 @@ lt:
       empty_repository: "Repozitorija egzistuoja, bet ji yra tuščia. Joje dar nėra jokių peržiūrų."
       exists_on_filesystem: "Repozitorijos katalogas jau yra sukurtas šioje failų sistemoje."
       filesystem_access_failed: "Įvyko klaida bandant pasiekti repozitoriją failų sistemoje: %{message}"
-      not_manageable: "Repozitorijos paslaugų teikėjas negali būti valdomas OpenProject sistemos."
-      path_permission_failed: "Įvyko klaida bandant sukurti šį kelią: %{path}. Prašome įsitikinti, kad OpenProject turi rašymo teises šiame kataloge."
+      not_manageable: "Repozitorijos paslaugų teikėjas negali būti valdomas Yojana sistemos."
+      path_permission_failed: "Įvyko klaida bandant sukurti šį kelią: %{path}. Prašome įsitikinti, kad Yojana turi rašymo teises šiame kataloge."
       unauthorized: "Jūs neturite teisės pasiekti šią repozitoriją arba prisijungimo duomenys yra neteisingi."
       unavailable: "Repozitorija yra nepasiekiama."
       exception_title: "Neina pasiekti repozitorijos: %{message}"
@@ -4358,9 +4358,9 @@ lt:
         path_encoding: "Perrašyti Git kelio koduotę (numatytoji: UTF-8)"
       local_title: "Susieti esamą vietinę Git repozitoriją"
       local_url: "Vietinis URL"
-      local_introduction: "Jei turite jau egzistuojančią vietinę Git repozitoriją, Jūs galite susieti ją su OpenProject, kad galėtumėte repozitoriją pasiekti sistemos viduje."
-      managed_introduction: "Leisti OpenProject automatiškai sukurti ir integruoti vietinę Git repozitoriją."
-      managed_title: "Git repozitorija integruota į OpenProject"
+      local_introduction: "Jei turite jau egzistuojančią vietinę Git repozitoriją, Jūs galite susieti ją su Yojana, kad galėtumėte repozitoriją pasiekti sistemos viduje."
+      managed_introduction: "Leisti Yojana automatiškai sukurti ir integruoti vietinę Git repozitoriją."
+      managed_title: "Git repozitorija integruota į Yojana"
       managed_url: "Valdomas URL"
       path: "Kelias į Git repozitoriją"
       path_encoding: "Kelio koduotė"
@@ -4377,24 +4377,24 @@ lt:
     scm_types:
       local: "Susieti esamą vietinę repozitoriją"
       existing: "Susieti esamą repozitoriją"
-      managed: "Sukurti naują repozitoriją OpenProject"
+      managed: "Sukurti naują repozitoriją Yojana"
     storage:
       not_available: "Disko vietos naudojimas nėra prieinamas šiai repozitorijai."
       update_timeout: "Laikyti paskiausią reikalingą disko vietos informaciją repozitorijai N minutes (-ių). Kadangi reikalingos vietos repozitorijai skaičiavimas gali būti reiklus resursams, minučių reikšmės didinimas gali stipriai sumažinti sistemos našumą."
-      oauth_application_details: "Kliento slapta reikšmė daugiau nebebus prieinama po to, kai uždarysite šį langą. Prašome nukopijuoti šias reikšmes į Nextcloud OpenProject integracijos nustatymus:"
+      oauth_application_details: "Kliento slapta reikšmė daugiau nebebus prieinama po to, kai uždarysite šį langą. Prašome nukopijuoti šias reikšmes į Nextcloud Yojana integracijos nustatymus:"
       oauth_application_details_link_text: "Eiti į nustatymų puslapį"
       setup_documentation_details: "Jei jums reikia pagalbos konfigūruojant naują failų saugyklą, prašome skaityti dokumentaciją: "
       setup_documentation_details_link_text: "File storages setup"
       show_warning_details: "Norėdami naudoti šią failų talpyklą, nepamirškite aktyvuoti modulį ir konkrečią saugyklą projekto nustatymuose kiekvienam reikiamam projektui."
     subversion:
       existing_title: "Esama Subversion repozitorija"
-      existing_introduction: "Jei jau turite esamą Subversion repozitoriją, Jūs galite ją susieti su OpenProject, kad galėtumėte informaciją pasiekti iš sistemos vidaus."
+      existing_introduction: "Jei jau turite esamą Subversion repozitoriją, Jūs galite ją susieti su Yojana, kad galėtumėte informaciją pasiekti iš sistemos vidaus."
       existing_url: "Esamas URL"
       instructions:
         managed_url: "Tai yra URL kelias į valdomą (vietinę) Subversion repozitoriją."
         url: "Įveskite repozitorijos URL kelią. Jis gali rodyti tiek į vietinę (pasidedančią %{local_proto}), tiek į nuotolinę repozitoriją.\nŠios URL kelio schemos yra palaikomos:"
-      managed_title: "Subversion repozitorija integruota į OpenProject"
-      managed_introduction: "Leisti OpenProject automatiškai sukurti ir integruoti vietinę Subversion repozitoriją."
+      managed_title: "Subversion repozitorija integruota į Yojana"
+      managed_introduction: "Leisti Yojana automatiškai sukurti ir integruoti vietinę Subversion repozitoriją."
       managed_url: "Valdomas URL"
       password: "Repozitorijos slaptažodis"
       username: "Repozitorijos vartotojo vardas"
@@ -4427,7 +4427,7 @@ lt:
   setting_apiv3_cors_enabled: "Įgalinti CORS"
   setting_apiv3_cors_origins: "API V3 Cross-Origin Resource Sharing (CORS) leidžiami kilmės domenai"
   setting_apiv3_cors_origins_text_html: >
-    Jei CORS yra įgalinta, tai yra kilmės domenai, kuriems leidžiama pasiekti OpenProject API. <br/> Kaip nurodyti reikšmes aprašoma <a href="%{origin_link}" target="_blank">Origin antraštės dokumentacijoje</a>.
+    Jei CORS yra įgalinta, tai yra kilmės domenai, kuriems leidžiama pasiekti Yojana API. <br/> Kaip nurodyti reikšmes aprašoma <a href="%{origin_link}" target="_blank">Origin antraštės dokumentacijoje</a>.
   setting_apiv3_write_readonly_attributes: "Rašymo prieiga prie tik skaitymui skirtų atributų"
   setting_apiv3_write_readonly_attributes_instructions: >
     If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
@@ -4624,7 +4624,7 @@ lt:
       omniauth_direct_login_hint_html: >
         If this option is active, login requests will redirect to the configured omniauth provider. The login dropdown and sign-in page will be disabled. <br/> <strong>Note:</strong> Unless you also disable password logins, with this option enabled, users can still log in internally by visiting the <code>%{internal_path}</code> login page.
       remapping_existing_users_hint: >
-        If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the OpenProject instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
+        If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the Yojana instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
     attachments:
       whitelist_text_html: >
         Sudarykite sąrašą leidžiamų failų praplėtimų ir/arba MIME tipų su kuriais bus leidžiama įkelti failus. <br/> Įveskite failų praplėtimus (t.y., <code>%{ext_example}</code>) arba MIME tipus (t.y., <code>%{mime_example}</code>). <br/> Palikite tuščią, jei norite leisti visus tipus. Leidžiama daugiau nei viena reikšmė (po vieną kiekvienoje eilutėje).
@@ -4648,7 +4648,7 @@ lt:
         clamav_socket_html: Įveskite clamd demono lizdą, pvz., %{example}
         clamav_host_html: Įveskite kompiuterio pavadinimą ir prievadą clamd demonui, atskirti dvitaškiu. pvz., %{example}
         description_html: >
-          Pasirinkite režimą, kuriuo turėtų veikti virusų tikrinimo integracija. <br/> <ul> <li><strong>%{disabled_option}</strong>: Įkelti failai nėra tikrinami dėl virusų.</li> <li><strong>%{socket_option}</strong>: Tame pačiame serveryje, kuriame yra „OpenProject“, įdiegėte "ClamAV" ir fone veikia skenavimo demonas clamd.</li> <li><strong>%{host_option}</strong>: Siunčiate failus į išorinį virusų skenavimo kompiuterį.</li> </ul>
+          Pasirinkite režimą, kuriuo turėtų veikti virusų tikrinimo integracija. <br/> <ul> <li><strong>%{disabled_option}</strong>: Įkelti failai nėra tikrinami dėl virusų.</li> <li><strong>%{socket_option}</strong>: Tame pačiame serveryje, kuriame yra „Yojana“, įdiegėte "ClamAV" ir fone veikia skenavimo demonas clamd.</li> <li><strong>%{host_option}</strong>: Siunčiate failus į išorinį virusų skenavimo kompiuterį.</li> </ul>
     brute_force_prevention: "Automatinis vartotojų blokavimas"
     date_format:
       first_date_of_week_and_year_set: >
@@ -4656,8 +4656,8 @@ lt:
       first_week_of_year_text_html: >
         Parinkite Sausio dieną, kuri yra pirmoje metų savaitėje. Ši reikšmė, kartu su pirmos savaitės dienos reikšme, nustato bendrą savaičių metuose skaičių. Daugiau informacijos rasite šios temos  <a href="%{link}" target="_blank">dokumentacijoje</a>.
     experimental:
-      save_confirmation: Atsargiai! Duomenų praradimo rizika! Eksperimentines savybes įjunkite tik tada, jei nebijote sugadinti savo OpenProject ir prarasti visus duomenis.
-      warning_toast: Savybių vėliavėlės yra nustatymai, kurie aktyvuoja vis dar kuriamas savybes. Jos turėtų būti naudojamos tik testavimo tikslais. Jų niekada nereikia įjungti OpenProject serveriuose, kuriuose yra svarbūs duomenys. Šios savybės labai gali sugadinti jūsų duomenis. Naudokite savo rizika.
+      save_confirmation: Atsargiai! Duomenų praradimo rizika! Eksperimentines savybes įjunkite tik tada, jei nebijote sugadinti savo Yojana ir prarasti visus duomenis.
+      warning_toast: Savybių vėliavėlės yra nustatymai, kurie aktyvuoja vis dar kuriamas savybes. Jos turėtų būti naudojamos tik testavimo tikslais. Jų niekada nereikia įjungti Yojana serveriuose, kuriuose yra svarbūs duomenys. Šios savybės labai gali sugadinti jūsų duomenis. Naudokite savo rizika.
       feature_flags: Savybių vėliavėlės
     general: "Bendra"
     highlighting:
@@ -4668,7 +4668,7 @@ lt:
         type: "Visa eilutė pagal tipą"
         priority: "Visa eilutė pagal prioritetą"
     icalendar:
-      enable_subscriptions_text_html: Leidžia naudotojams su reikiamomis teisėmis prenumeruoti OpenProject kalendorius ir turėti prieigą prie darbo paketo informacijos per išorinį kalendoriaus klientą. <strong>Pastaba:</strong> Prašome prieš įjungiant šį funkcionalumą paskaityti apie <a href="%{link}" target="_blank">iCalendar prenumeratas</a>, kad suprastiumėte potencialias rizikas.
+      enable_subscriptions_text_html: Leidžia naudotojams su reikiamomis teisėmis prenumeruoti Yojana kalendorius ir turėti prieigą prie darbo paketo informacijos per išorinį kalendoriaus klientą. <strong>Pastaba:</strong> Prašome prieš įjungiant šį funkcionalumą paskaityti apie <a href="%{link}" target="_blank">iCalendar prenumeratas</a>, kad suprastiumėte potencialias rizikas.
     language_name_being_default: "%{language_name} (numatytoji)"
     notifications:
       events_explanation: "Valdo, kuriems įvykiams yra siunčiami el.laiškai. Darbų paketai nepatenka į šį sąrašą, nes kiekvienam naudotojui pranešimai gali būti sukonfigūruoti individualiai."
@@ -4702,7 +4702,7 @@ lt:
               description: "Add all the project attributes in a section inside the right side panel in the project overview."
     project_initiation_request:
       header_description: >
-        OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
+        Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
       status:
         submitted: "%{wizard_name} has been submitted"
         submitted_description: "Click the button below to go to the work package for the submission process."
@@ -4715,7 +4715,7 @@ lt:
         project_mandate: "Open project mandate"
       blankslate:
         title: "Initiation request not enabled"
-        description: "OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard."
+        description: "Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard."
       disable_dialog:
         title: "Disable project initiation request"
         heading: "Disable this project initiation request?"
@@ -4796,7 +4796,7 @@ lt:
       sentence_connector: "ir"
       skip_last_comma: "netiesa"
   text_accessibility_hint: "Pasiekiamumo režimas yra skirtas vartotojams, kurie turi regėjimo sutrikimų. Tuo tikslu svarbūs elementai būna paryškinami/pabrėžiami. Prašome atkreipti dėmesį, kad Backlogs modulis neprieinamas, kai šis režimas įjungtas."
-  text_access_token_hint: "Prieigos raktai leidžia išorinėms aplikacijoms pasiekti OpenProject resursus."
+  text_access_token_hint: "Prieigos raktai leidžia išorinėms aplikacijoms pasiekti Yojana resursus."
   text_analyze: "Toliau analizuoti: %{subject}"
   text_are_you_sure: "Ar esate įsitikinę?"
   open_link_in_a_new_tab: "Open link in a new tab"
@@ -4895,7 +4895,7 @@ lt:
   text_no_notes: "Šis darbų paketas neturi komentarų."
   text_notice_too_many_values_are_inperformant: "Pastaba: Rodant daugiau nei 100 įrašų puslapyje gali prailginti puslapio įkėlimo laiką."
   text_notice_security_badge_displayed_html: >
-    Pastaba: įjungus bus rodomas ženkliukas su jūsų diegimo būsena <a href="%{information_panel_path}">%{information_panel_label}</a> administravimo skydelyje. Rodoma tik administratoriams. <br/> Ženkliukas palygins jūsų OpenProject versiją su oficialia OpenProject laidų duomenų baze ir praneš, jei yra atnaujinimų dėl žinomų saugumo problemų. Daugiau informacijos, ką daro šis tikrinimas, kokią reikia pateikti informaciją ir kaip šį tikrinimą išjungti, rasite <a href="%{more_info_url}">konfigūravimo dokumentacijoje</a>.
+    Pastaba: įjungus bus rodomas ženkliukas su jūsų diegimo būsena <a href="%{information_panel_path}">%{information_panel_label}</a> administravimo skydelyje. Rodoma tik administratoriams. <br/> Ženkliukas palygins jūsų Yojana versiją su oficialia Yojana laidų duomenų baze ir praneš, jei yra atnaujinimų dėl žinomų saugumo problemų. Daugiau informacijos, ką daro šis tikrinimas, kokią reikia pateikti informaciją ir kaip šį tikrinimą išjungti, rasite <a href="%{more_info_url}">konfigūravimo dokumentacijoje</a>.
   text_own_membership_delete_confirmation: "Jūs ketinate pašalinti keletą ar visus leidimus ir gali būti, kad nebegalėsite redaguoti šio projekto po to.\nAr jūs tikrai norite tęsti?"
   text_permanent_delete_confirmation_checkbox_label: "I understand that this deletion cannot be reversed"
   text_permanent_remove_confirmation_checkbox_label: "I understand that this removal cannot be reversed"
@@ -4905,7 +4905,7 @@ lt:
   text_reassign: "Iš naujo priskirti darbų paketui:"
   text_regexp_info: "pvz., ^[A-Z0-9]+$"
   text_regexp_multiline: 'Reguliarioji išraiška yra pritaikoma daug eilučių režime, pvz., ^---\s+'
-  text_repository_usernames_mapping: "Parinkite ar atnaujinkite OpenProject naudotoją, kuris paminėtas repozitorijos žurnale.\nNaudotojai, turintys tą patį OpenProject ir repozitorijos vardą ar el. paštą yra automatiškai surišti."
+  text_repository_usernames_mapping: "Parinkite ar atnaujinkite Yojana naudotoją, kuris paminėtas repozitorijos žurnale.\nNaudotojai, turintys tą patį Yojana ir repozitorijos vardą ar el. paštą yra automatiškai surišti."
   text_status_changed_by_changeset: "Atlikta pakeitimų pakete %{value}."
   text_table_difference_description: "Šioje lentelėje pavieniai %{entries} yra rodomi. Jūs galite palyginti skirtumus tarp bet kutių dviejų įrašų pasirinkdami atitinkamus žymėtinus laukelius lentelėje. Vėliau paspaudus ant mygtuko apačioje parodomi skirtumai."
   text_time_logged_by_changeset: "Atlikta pakeitimų pakete %{value}."
@@ -4980,7 +4980,7 @@ lt:
     authentication_provider: "Autentifikacijos paslaugos teikėjas"
     identity_url_text: "Autentifikacijos tiekėjo suteiktas vidinis unikalus identifikatorius."
     authentication_settings_disabled_due_to_external_authentication: >
-      Šis vartotojas naudoja išorinį autentifikacijos paslaugų teikėją, todėl nėra galimo pakeisti slaptažodžio OpenProject aplinkoje.
+      Šis vartotojas naudoja išorinį autentifikacijos paslaugų teikėją, todėl nėra galimo pakeisti slaptažodžio Yojana aplinkoje.
     authorization_rejected: "Jums neleidžiama prisijungti."
     assign_random_password: "Priskirti atsitiktinį slaptažodį (siunčiamas vartotojui el. paštu)"
     blocked: "laikinai užrakintas"
@@ -5016,7 +5016,7 @@ lt:
   warning: Įspėjimas
   warning_attachments_not_saved: "%{count} failas (-ai, -ų) negali būti išsaugotas (-i)."
   warning_imminent_user_limit: >
-    Jūs pakvietėte daugiau naudotojų, nei palaiko jūsų dabartis planas. Pakviestiems naudotojams gali nepavykti prisijungti prie jūsų OpenProject aplinkos. <a href="%{upgrade_url}">Atnaujinkite savo planą</a> arba blokuokite esamus naudotojus, kad pakviesti ir registruoti vartotojai galėtų prisijungti.
+    Jūs pakvietėte daugiau naudotojų, nei palaiko jūsų dabartis planas. Pakviestiems naudotojams gali nepavykti prisijungti prie jūsų Yojana aplinkos. <a href="%{upgrade_url}">Atnaujinkite savo planą</a> arba blokuokite esamus naudotojus, kad pakviesti ir registruoti vartotojai galėtų prisijungti.
   warning_registration_token_expired: |
     Aktyvavimo el. laiško galiojimas pasibaigė. Išsiuntėme jums naują %{email}. Paspauskite laiške duotą nuorodą, kad aktyvuotumėte savo paskyrą.
   warning_user_limit_reached: >
@@ -5024,7 +5024,7 @@ lt:
   warning_user_limit_reached_admin: >
     Pridėjus papildomus naudotojus bus viršytas dabartinis apribojimas. Prašome <a href="%{upgrade_url}">pagerinti jūsų planą</a>, kad užtikrintumėte, jog išoriniai naudotojai gali prieigi prie šio egzemplioriaus.
   warning_user_limit_reached_instructions: >
-    Jūs pasiekėte naudotojų ribą (%{current}/%{max} aktyvūs naudotojai). Susisiekite su sales@openproject.com norėdami atnaujinti savo Enterprise versijos planą arba pridėti papildomų naudotojų.
+    Jūs pasiekėte naudotojų ribą (%{current}/%{max} aktyvūs naudotojai). Susisiekite su sales@girishm.info norėdami atnaujinti savo Enterprise versijos planą arba pridėti papildomų naudotojų.
   warning_protocol_mismatch_html: >
 
   warning_bar:
@@ -5297,7 +5297,7 @@ lt:
         confidential: "Patikrinkite, ar bus naudojama aplikacija, kurioje kliento paslaptis gali likti konfidenciali. Mobilios aplikacijos ir Vieno puslapio aplikacijos laikomos nekonfidencialiomis."
         scopes: "Pažymėkite programos sritis, kurioms norite suteikti prieigą. Kai jokia sritis nėra pažymėta, api_v3 yra leidžiama."
         client_credential_user_id: "Neprivalomas naudotojo ID, naudojamas kai klientai naudoja šią aplikaciją. Palikite tuščią, jei norite leisti tik viešą prieigą"
-        register_intro: "Jei kuriate OAuth API kliento aplikaciją skirtą OpenProject, jūs galite registruoti ją visiems naudotojams naudojant šią formą."
+        register_intro: "Jei kuriate OAuth API kliento aplikaciją skirtą Yojana, jūs galite registruoti ją visiems naudotojams naudojant šią formą."
         default_scopes: ""
     header:
       builtin_applications: Built-in OAuth applications
@@ -5305,17 +5305,17 @@ lt:
     empty_application_lists: No OAuth applications have been registered.
     client_id: "Kliento ID"
     client_secret_notice: >
-      Tai vienintelis kartas, kai mes galime atspausdinti kliento paslaptį, prašome ją užsirašyti ir laikyti saugiai. Ji turi būti saugoma kaip slaptažodis ir jos vėliau nebebus galima ištraukti iš OpenProject.
+      Tai vienintelis kartas, kai mes galime atspausdinti kliento paslaptį, prašome ją užsirašyti ir laikyti saugiai. Ji turi būti saugoma kaip slaptažodis ir jos vėliau nebebus galima ištraukti iš Yojana.
     authorization_dialog:
       authorize: "Autorizuoti"
       cancel: "Nutraukti arba neleisti autorizacijos."
       prompt_html: "Autorizuokite <strong>%{application_name}</strong>, kad naudotumėte jūsų paskyrą <em>%{login}</em>?"
       title: "Autorizuoti %{application_name}"
       wants_to_access_html: >
-        Šiai aplikacijai reikia prieigos prie jūsų OpenProject paskyros. <br/> <strong>Ji paprašė tokių teisių:</strong>
+        Šiai aplikacijai reikia prieigos prie jūsų Yojana paskyros. <br/> <strong>Ji paprašė tokių teisių:</strong>
     scopes:
       api_v3: "Pilna API v3 prieiga"
-      api_v3_text: "Aplikacija gaus pilną skaitymo ir rašymo prieigą prie OpenProject API v3 vykdyti veiksmus jūsų vardu."
+      api_v3_text: "Aplikacija gaus pilną skaitymo ir rašymo prieigą prie Yojana API v3 vykdyti veiksmus jūsų vardu."
     grants:
       created_date: "Patvirtinimo data"
       scopes: "Leidimai"
@@ -5333,7 +5333,7 @@ lt:
     client_credentials_impersonation_set_to: "Kliento įgaliojimų naudotojas nustatytas į"
     client_credentials_impersonation_warning: "Pastaba: klientai, naudojantys „kliento įgaliojimų“ eigą šioje aplikacijoje turės šio naudotojo teises"
     client_credentials_impersonation_html: >
-      Pagal nutylėjimą OpenProject teikia OAuth 2.0 autorizaciją per %{authorization_code_flow_link}. Pasirinktinai galite įjungti %{client_credentials_flow_link}, bet privalote pateikti naudotoją, kurio vardu bus vykdomos visos užklausos.
+      Pagal nutylėjimą Yojana teikia OAuth 2.0 autorizaciją per %{authorization_code_flow_link}. Pasirinktinai galite įjungti %{client_credentials_flow_link}, bet privalote pateikti naudotoją, kurio vardu bus vykdomos visos užklausos.
     authorization_error: "Įvyko autorizacijos klaida."
     revoke_my_application_confirmation: "Ar tikrai norite išimti šią aplikaciją? Tai atšauks %{token_count} aktyvių žetonų."
     my_registered_applications: "Registruotos OAuth aplikacijos"
@@ -5362,20 +5362,20 @@ lt:
         Vidinė klaida: refresh_token pakviestas be iki to esančio žetono.
       refresh_token_updated_failed: "Klaida atnaujinant OAuthClientToken"
       oauth_client_not_found_explanation: >
-        Ši klaida pasirodo po to, kai jūs pakeičiate OpenProject client_id ir client_secret, bet nepakeičiate „Grąžinamo URI“ lauko OAuth2 tiekėjo pusėje.
+        Ši klaida pasirodo po to, kai jūs pakeičiate Yojana client_id ir client_secret, bet nepakeičiate „Grąžinamo URI“ lauko OAuth2 tiekėjo pusėje.
       oauth_code_not_present: "OAuth2 „code“ nerastas „callback“ taške (redirect_uri)."
       oauth_code_not_present_explanation: >
         Ši klaida pasirodo, jei jūs parinkote netinkamą OAuth2 tiekėjo response_type. Response_type privalo būti „code“ ar panašus.
       oauth_state_not_present: "OAuth2 „state“ nerastas „callback“ taške (redirect_uri)."
       oauth_state_not_present_explanation: >
-        „State“ naudojama nurodyti OpenProject, kur tęsti po sėkmingos OAuth2 autorizacijos. Trūkstamas „state“ yra vidinė klaida, kuri gali atsitikti nustatymo metu. Prašome susisiekti su jūsų sistemos administratoriumi.
+        „State“ naudojama nurodyti Yojana, kur tęsti po sėkmingos OAuth2 autorizacijos. Trūkstamas „state“ yra vidinė klaida, kuri gali atsitikti nustatymo metu. Prašome susisiekti su jūsų sistemos administratoriumi.
       rack_oauth2:
         client_secret_invalid: "Kliento paslaptis netinkama (client_secret_invalid)"
         invalid_request: >
           OAuth2 autorizacijos serveris atsakė „netinkama užklausa“. Ši klaida įvyksta, kai jūs bandote autorizuoti kelis kartus arba dėl techninių problemų.
         invalid_response: "OAuth2 autorizacijos serveris pateikė netinkamą atsakymą (invalid_response)"
         invalid_grant: "OAuth2 autorizacijos serveris prašo jūsų autorizuotis iš naujo (invalid_grant)."
-        invalid_client: "OAuth2 autorizacijos serveris neatpažįsta OpenProject (invalid_client)."
+        invalid_client: "OAuth2 autorizacijos serveris neatpažįsta Yojana (invalid_client)."
         unauthorized_client: "OAuth2 autorizacijos serveris nepriima privilegijos tipo (unauthorized_client)"
         unsupported_grant_type: "OAuth2 autorizacijos serveris prašo jūsų autorizuotis iš naujo (unsupported_grant_type)."
         invalid_scope: "Jums neleidžiama prieiti prie prašomo resurso (invalid_scope)."
@@ -5388,18 +5388,18 @@ lt:
   you: jūs
   link: nuoroda
   plugin_openproject_auth_plugins:
-    name: "OpenProject Auth Priedai"
-    description: "OmniAuth stretegijos tiekėjų OpenProject autentifikacijos integracija."
+    name: "Yojana Auth Priedai"
+    description: "OmniAuth stretegijos tiekėjų Yojana autentifikacijos integracija."
   plugin_openproject_auth_saml:
     name: "OmniAuth SAML / Vienas prisijungimas"
-    description: "Prideda OmniAuth SAML tiekėja į OpenProject"
+    description: "Prideda OmniAuth SAML tiekėja į Yojana"
   enterprise_plans:
     legacy_enterprise: "Enterprise Plan"
   token:
     hashed_token:
       display_value_placeholder: "***"
   external_link_warning:
-    title: "Leaving OpenProject"
-    warning_message: "You are about to leave OpenProject and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies."
+    title: "Leaving Yojana"
+    warning_message: "You are about to leave Yojana and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies."
     continue_message: "Are you sure you want to proceed to the following external link?"
     continue_button: "Continue to external website"

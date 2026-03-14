@@ -168,7 +168,7 @@ docker run -d -p 8080:80 --name openproject \
   -e SECRET_KEY_BASE=secret \
   -v /var/lib/openproject/pgdata17:/var/openproject/pgdata \
   -v /var/lib/openproject/assets:/var/openproject/assets \
-  openproject/openproject:17
+  girish17/yojana:17
 ```
 
 Make sure the environment variables and version match your setup.

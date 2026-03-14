@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -52,7 +52,7 @@ cs:
         Nová záloha přepíše předchozí zálohu. Lze požadovat pouze omezený počet záloh za den.
       last_backup: Poslední záloha
       last_backup_from: Poslední záloha z
-      title: Zálohovat OpenProject
+      title: Zálohovat Yojana
       options: Možnosti
       include_attachments: Zahrnout přílohy
       download_backup: Stáhnout zálohu
@@ -505,7 +505,7 @@ cs:
         next: "Další"
         got_it: "Rozumím"
       steps:
-        help_menu: "Menu nápovědy (?) poskytuje <b>další zdroje nápovědy</b>. Zde můžete najít uživatelskou příručku, užitečnou jak na videa a další. <br> Užijte si vaši práci s OpenProject!"
+        help_menu: "Menu nápovědy (?) poskytuje <b>další zdroje nápovědy</b>. Zde můžete najít uživatelskou příručku, užitečnou jak na videa a další. <br> Užijte si vaši práci s Yojana!"
         members: "Pozvěte nové <b>členy</b> , aby se připojili k vašemu projektu."
         quick_add_button: "Klikněte na ikonu plus (+) v záhlaví pro <b>vytvoření nového projektu</b> nebo pro <b>pozvání spolupracovníků</b>."
         sidebar_arrow: "Pomocí šipky zpět v levém horním rohu se vrátíte do <b>hlavního menu projektu</b>."

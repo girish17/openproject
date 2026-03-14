@@ -29,7 +29,7 @@ addprinc -randkey HTTP/openproject.example.com
 ktadd -k /etc/apache2/openproject.keytab HTTP/openproject.example.com
 ```
 
-This will output a keytab file for the realm selected by `kadmin` (in the above example, this would create all users from the default_realm) to `/etc/openproject/openproject.keytab`
+This will output a keytab file for the realm selected by `kadmin` (in the above example, this would create all users from the default_realm) to `/etc/girish17/yojana.keytab`
 
 You still need to make this file readable for Apache. For Debian/Ubuntu based systems, the Apache user and group is `www-data`. This will vary depending on your installation
 

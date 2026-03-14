@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -111,12 +111,12 @@ vi:
         link: "webhook"
     mcp_configurations:
       index:
-        description: "Giao thức bối cảnh mô hình cho phép các tác nhân AI cung cấp cho người dùng của mình các công cụ và tài nguyên được cung cấp bởi phiên bản OpenProject này."
+        description: "Giao thức bối cảnh mô hình cho phép các tác nhân AI cung cấp cho người dùng của mình các công cụ và tài nguyên được cung cấp bởi phiên bản Yojana này."
         resources_heading: "Tài nguyên"
-        resources_description: "OpenProject implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
+        resources_description: "Yojana implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
         resources_submit: "Cập nhật tài nguyên"
         tools_heading: "Công cụ"
-        tools_description: "OpenProject cung cấp các công cụ sau đây. Mỗi công cụ có thể được kích hoạt, đổi tên và mô tả theo ý muốn của bạn. Để biết thêm thông tin, vui lòng tham khảo [tài liệu về các công cụ MCP](docs_url)."
+        tools_description: "Yojana cung cấp các công cụ sau đây. Mỗi công cụ có thể được kích hoạt, đổi tên và mô tả theo ý muốn của bạn. Để biết thêm thông tin, vui lòng tham khảo [tài liệu về các công cụ MCP](docs_url)."
         tools_submit: "Cập nhật công cụ"
       multi_update:
         success: "Cấu hình MCP đã được cập nhật thành công."
@@ -147,13 +147,13 @@ vi:
       edit:
         label_delete_scim_client: "Xóa ứng dụng khách SCIM"
       form:
-        auth_provider_description: "Đây là dịch vụ mà người dùng được nhà cung cấp SCIM thêm vào sẽ sử dụng để xác thực trong OpenProject."
-        authentication_method_description_html: "Đây là cách ứng dụng khách SCIM xác thực tại OpenProject. Vui lòng đảm bảo rằng mã thông báo OAuth bao gồm phạm vi <code>scim_v2</code>."
+        auth_provider_description: "Đây là dịch vụ mà người dùng được nhà cung cấp SCIM thêm vào sẽ sử dụng để xác thực trong Yojana."
+        authentication_method_description_html: "Đây là cách ứng dụng khách SCIM xác thực tại Yojana. Vui lòng đảm bảo rằng mã thông báo OAuth bao gồm phạm vi <code>scim_v2</code>."
         description: "Vui lòng tham khảo [documentation on configuring SCIM clients](docs_url) của chúng tôi để biết thêm thông tin về các tùy chọn cấu hình này."
         jwt_sub_description: "Ví dụ: đối với Keycloak, đây là UUID của tài khoản dịch vụ được liên kết với máy khách SCIM. Hãy tham khảo [our documentation](docs_url) để tìm hiểu cách tìm xác nhận quyền sở hữu chủ đề cho trường hợp sử dụng của bạn."
         name_description: "Chọn một tên sẽ giúp các quản trị viên khác hiểu rõ hơn lý do tại sao ứng dụng khách này được định cấu hình."
       index:
-        description: "Các máy khách SCIM được định cấu hình ở đây có thể tương tác với API máy chủ OpenProject SCIM để cung cấp, cập nhật và hủy cấp phép các tài khoản và nhóm người dùng."
+        description: "Các máy khách SCIM được định cấu hình ở đây có thể tương tác với API máy chủ Yojana SCIM để cung cấp, cập nhật và hủy cấp phép các tài khoản và nhóm người dùng."
         label_create_button: "Thêm ứng dụng khách SCIM"
       new:
         title: "Khách hàng SCIM mới"
@@ -161,14 +161,14 @@ vi:
         confirm_button: "Thu hồi"
         title: "Thu hồi mã thông báo tĩnh"
         heading: "Bạn có chắc chắn muốn thu hồi mã thông báo này không?"
-        description: "Ứng dụng khách SCIM sử dụng mã thông báo này sẽ không thể truy cập API máy chủ SCIM của OpenProject nữa."
+        description: "Ứng dụng khách SCIM sử dụng mã thông báo này sẽ không thể truy cập API máy chủ SCIM của Yojana nữa."
       table_component:
         blank_slate:
           title: "Chưa có máy khách SCIM nào được định cấu hình"
           description: "Thêm khách hàng để xem họ ở đây"
         user_count: "người dùng"
       token_list_component:
-        description: "Mã thông báo bạn tạo ở đây có thể được máy khách SCIM chuyển để truy cập API OpenProject SCIM."
+        description: "Mã thông báo bạn tạo ở đây có thể được máy khách SCIM chuyển để truy cập API Yojana SCIM."
         heading: "mã thông báo"
         label_add_token: "mã thông báo"
         label_aria_add_token: "Thêm mã thông báo"
@@ -229,38 +229,38 @@ vi:
       name: Tên tùy ý của kết nối LDAP
       host: Tên máy chủ LDAP hoặc địa chỉ IP
       login_map: Khóa thuộc tính trong LDAP được sử dụng để xác định thông tin đăng nhập người dùng duy nhất. Thông thường, đây sẽ là `uid` hoặc` samAccountName`.
-      generic_map: "84/5000\nKhóa thuộc tính trong LDAP được ánh xạ tới thuộc tính `%{attribute}` của OpenProject"
-      admin_map_html: "Tùy chọn: Khóa thuộc tính trong LDAP mà <strong>nếu có</strong> đánh dấu người dùng OpenProject là quản trị viên. Để trống khi nghi ngờ."
+      generic_map: "84/5000\nKhóa thuộc tính trong LDAP được ánh xạ tới thuộc tính `%{attribute}` của Yojana"
+      admin_map_html: "Tùy chọn: Khóa thuộc tính trong LDAP mà <strong>nếu có</strong> đánh dấu người dùng Yojana là quản trị viên. Để trống khi nghi ngờ."
       system_user_dn_html: |
         Nhập DN của người dùng hệ thống được sử dụng để truy cập chỉ đọc.
         <br>
-        Ví dụ: uid=openproject,ou=system,dc=example,dc=com
+        Ví dụ: uid=yojana,ou=system,dc=example,dc=com
       system_user_password: Nhập mật khẩu liên kết của người dùng hệ thống
       base_dn: |
-        Nhập Base DN của cây con trong LDAP mà bạn muốn OpenProject tìm kiếm người dùng và nhóm.
-        OpenProject sẽ chỉ lọc tên người dùng được cung cấp trong cây con này.
+        Nhập Base DN của cây con trong LDAP mà bạn muốn Yojana tìm kiếm người dùng và nhóm.
+        Yojana sẽ chỉ lọc tên người dùng được cung cấp trong cây con này.
         Ví dụ: ou=users,dc=example,dc=com
       filter_string: |
         Thêm bộ lọc RFC4515 tùy chọn để áp dụng cho kết quả trả về cho người dùng được lọc trong LDAP.
-        Điều này có thể được sử dụng để hạn chế nhóm người dùng được OpenProject tìm thấy để xác thực và đồng bộ hóa nhóm.
+        Điều này có thể được sử dụng để hạn chế nhóm người dùng được Yojana tìm thấy để xác thực và đồng bộ hóa nhóm.
       filter_string_concat: |
-        OpenProject sẽ luôn lọc thuộc tính đăng nhập do người dùng cung cấp để xác định bản ghi. Nếu bạn cung cấp bộ lọc ở đây,
+        Yojana sẽ luôn lọc thuộc tính đăng nhập do người dùng cung cấp để xác định bản ghi. Nếu bạn cung cấp bộ lọc ở đây,
         nó sẽ được nối với AND. Theo mặc định, tổng hợp (objectClass=*) sẽ được sử dụng làm bộ lọc.
       onthefly_register: |
-        Nếu bạn chọn hộp này, OpenProject sẽ tự động tạo người dùng mới từ các mục LDAP của họ
-        khi họ xác thực lần đầu bằng OpenProject.
-        Bỏ chọn mục này để chỉ cho phép các tài khoản hiện có trong OpenProject xác thực thông qua LDAP!
+        Nếu bạn chọn hộp này, Yojana sẽ tự động tạo người dùng mới từ các mục LDAP của họ
+        khi họ xác thực lần đầu bằng Yojana.
+        Bỏ chọn mục này để chỉ cho phép các tài khoản hiện có trong Yojana xác thực thông qua LDAP!
     connection_encryption: "Mã hóa kết nối"
     encryption_details: "Tùy chọn LDAPS / STARTTLS"
     system_account: "Tài khoản hệ thống"
     system_account_legend: |
-      OpenProject yêu cầu quyền truy cập chỉ đọc thông qua tài khoản hệ thống để tra cứu người dùng và nhóm trong cây LDAP của bạn.
+      Yojana yêu cầu quyền truy cập chỉ đọc thông qua tài khoản hệ thống để tra cứu người dùng và nhóm trong cây LDAP của bạn.
       Vui lòng chỉ định thông tin xác thực liên kết cho người dùng hệ thống đó trong phần sau.
     ldap_details: "Chi tiết LDAP "
     user_settings: "Ánh xạ thuộc tính"
     user_settings_legend: |
-      Các trường sau đây liên quan đến cách người dùng được tạo trong OpenProject từ các mục nhập LDAP và
-      thuộc tính LDAP nào được sử dụng để xác định thuộc tính của người dùng OpenProject (ánh xạ thuộc tính).
+      Các trường sau đây liên quan đến cách người dùng được tạo trong Yojana từ các mục nhập LDAP và
+      thuộc tính LDAP nào được sử dụng để xác định thuộc tính của người dùng Yojana (ánh xạ thuộc tính).
     tls_mode:
       plain: "không có"
       simple_tls: "LDAPS"
@@ -1495,7 +1495,7 @@ vi:
         confirmation: "không khớp %{attribute}."
         could_not_be_copied: "%{dependency} không thể sao chép (đầy đủ)."
         does_not_exist: "không tồn tại"
-        error_enterprise_only: "%{action} chỉ có trong phiên bản OpenProject Enterprise."
+        error_enterprise_only: "%{action} chỉ có trong phiên bản Yojana Enterprise."
         error_unauthorized: "Có thể không được truy cập."
         error_readonly: "đã được cố gắng viết nhưng không thể ghi được."
         error_conflict: "Thông tin đã được cập nhật bởi ít nhất một người dùng khác trong thời gian chờ đợi."
@@ -2444,7 +2444,7 @@ vi:
         Bạn đã có mã thông báo chưa? Thêm nó bằng nút bên dưới để nâng cấp lên gói Enterprise đã đặt.
       hide_banner: "Ẩn biểu ngữ này"
       homescreen_description: >
-        Các gói doanh nghiệp mở rộng phiên bản Cộng đồng của OpenProject với [Enterprise add-ons](enterprise_url) bổ sung và hỗ trợ chuyên nghiệp, lý tưởng cho các tổ chức chạy OpenProject trong môi trường quan trọng.
+        Các gói doanh nghiệp mở rộng phiên bản Cộng đồng của Yojana với [Enterprise add-ons](enterprise_url) bổ sung và hỗ trợ chuyên nghiệp, lý tưởng cho các tổ chức chạy Yojana trong môi trường quan trọng.
       homescreen_subline: Bằng cách nâng cấp, bạn cũng sẽ hỗ trợ một dự án nguồn mở.
       baseline_comparison:
         description: Đánh dấu những thay đổi được thực hiện trong danh sách này kể từ bất kỳ thời điểm nào trong quá khứ.
@@ -2457,7 +2457,7 @@ vi:
         premium_features: "Tiện ích bổ sung dành cho doanh nghiệp"
         premium_features_text: "Bảng linh hoạt, chủ đề và logo tùy chỉnh, đồ thị, quy trình làm việc thông minh với các hành động tùy chỉnh, tìm kiếm toàn văn cho tệp đính kèm gói công việc và các trường tùy chỉnh nhiều lựa chọn."
         professional_support: "Hỗ trợ chuyên nghiệp"
-        professional_support_text: "Nhận được sự hỗ trợ đáng tin cậy, liên tục từ các kỹ sư hỗ trợ cấp cao có kiến ​​thức chuyên môn về việc chạy OpenProject trong các môi trường quan trọng trong kinh doanh."
+        professional_support_text: "Nhận được sự hỗ trợ đáng tin cậy, liên tục từ các kỹ sư hỗ trợ cấp cao có kiến ​​thức chuyên môn về việc chạy Yojana trong các môi trường quan trọng trong kinh doanh."
       work_package_subject_generation:
         description: "Tạo chủ đề được tạo tự động bằng cách sử dụng các thuộc tính và văn bản được tham chiếu."
       customize_life_cycle:
@@ -2489,29 +2489,29 @@ vi:
       define_custom_style:
         title: "Chủ đề và logo màu tùy chỉnh"
         more_info: "Lưu ý: logo được sử dụng sẽ có thể truy cập công khai."
-        description: Tùy chỉnh cài đặt OpenProject bằng logo và màu sắc của riêng bạn.
+        description: Tùy chỉnh cài đặt Yojana bằng logo và màu sắc của riêng bạn.
       custom_actions:
         title: "Hành động tùy chỉnh"
         description: "Hành động tùy chỉnh là các phím tắt bằng một cú nhấp chuột tới một tập hợp các hành động được xác định trước mà bạn có thể cung cấp trên các gói công việc nhất định dựa trên trạng thái, vai trò, loại hoặc dự án."
       mcp_server:
-        description: "Tích hợp các tác nhân AI với phiên bản OpenProject của bạn thông qua MCP."
+        description: "Tích hợp các tác nhân AI với phiên bản Yojana của bạn thông qua MCP."
       nextcloud_sso:
         title: "Đăng nhập một lần để lưu trữ Nextcloud"
         description: "Cho phép xác thực liền mạch và an toàn cho bộ lưu trữ Nextcloud của bạn bằng Đăng nhập một lần. Đơn giản hóa việc quản lý truy cập và nâng cao sự thuận tiện cho người dùng."
       scim_api:
         title: "khách hàng SCIM"
-        description: "Tự động hóa việc quản lý người dùng trong OpenProject bằng cách tích hợp liền mạch các dịch vụ nhận dạng bên ngoài như Microsoft Entra hoặc Keycloak thông qua API máy chủ SCIM của chúng tôi. Có sẵn bắt đầu với gói doanh nghiệp Enterprise."
+        description: "Tự động hóa việc quản lý người dùng trong Yojana bằng cách tích hợp liền mạch các dịch vụ nhận dạng bên ngoài như Microsoft Entra hoặc Keycloak thông qua API máy chủ SCIM của chúng tôi. Có sẵn bắt đầu với gói doanh nghiệp Enterprise."
       sso_auth_providers:
         title: "Đăng nhập một lần (SSO)"
         description: "Cho phép người dùng đăng nhập thông qua các nhà cung cấp SSO bên ngoài bằng SAML hoặc OpenID Connect để truy cập và tích hợp liền mạch với các hệ thống nhận dạng hiện có."
       virus_scanning:
-        description: "Đảm bảo các tệp được tải lên trong OpenProject được quét vi-rút trước khi người dùng khác có thể truy cập được."
+        description: "Đảm bảo các tệp được tải lên trong Yojana được quét vi-rút trước khi người dùng khác có thể truy cập được."
       project_creation_wizard:
         description: "Tạo một trình hướng dẫn từng bước để hỗ trợ các nhà quản lý dự án điền vào đơn yêu cầu khởi tạo dự án."
       placeholder_users:
         title: Người dùng giữ chỗ
         description: >
-          Người dùng giữ chỗ là một cách để gán các gói công việc cho những người dùng không thuộc dự án của bạn. Chúng có thể hữu ích trong nhiều tình huống khác nhau; ví dụ: nếu bạn cần theo dõi các nhiệm vụ cho một tài nguyên chưa được đặt tên hoặc chưa có sẵn hoặc nếu bạn không muốn cấp cho người đó quyền truy cập vào OpenProject nhưng vẫn muốn theo dõi các nhiệm vụ được giao cho họ.
+          Người dùng giữ chỗ là một cách để gán các gói công việc cho những người dùng không thuộc dự án của bạn. Chúng có thể hữu ích trong nhiều tình huống khác nhau; ví dụ: nếu bạn cần theo dõi các nhiệm vụ cho một tài nguyên chưa được đặt tên hoặc chưa có sẵn hoặc nếu bạn không muốn cấp cho người đó quyền truy cập vào Yojana nhưng vẫn muốn theo dõi các nhiệm vụ được giao cho họ.
       internal_comments:
         title: Bình luận nội bộ
         description: "Nhận xét nội bộ cho phép một nhóm nội bộ liên lạc riêng tư với nhau. Những thông tin này chỉ hiển thị với một số vai trò dự án nhất định và sẽ không bao giờ hiển thị công khai."
@@ -2534,16 +2534,16 @@ vi:
       request_again: "Yêu cầu lại"
       resend_action: "Gửi lại email xác nhận"
       welcome_title: "Tổng quan về tính năng nhanh"
-      welcome_description: "Nhận tổng quan nhanh về quản lý dự án và cộng tác nhóm với phiên bản OpenProject Enterprise."
+      welcome_description: "Nhận tổng quan nhanh về quản lý dự án và cộng tác nhóm với phiên bản Yojana Enterprise."
       confirmation_info: >
-        Chúng tôi đã gửi cho bạn email theo số %{date} tới %{email} kèm theo tất cả thông tin để bắt đầu dùng thử miễn phí OpenProject Enterprise. Vui lòng kiểm tra hộp thư đến của bạn và nhấp vào liên kết xác nhận được cung cấp để bắt đầu dùng thử miễn phí 14 ngày.
+        Chúng tôi đã gửi cho bạn email theo số %{date} tới %{email} kèm theo tất cả thông tin để bắt đầu dùng thử miễn phí Yojana Enterprise. Vui lòng kiểm tra hộp thư đến của bạn và nhấp vào liên kết xác nhận được cung cấp để bắt đầu dùng thử miễn phí 14 ngày.
       confirmation_subline: >
         Vui lòng kiểm tra hộp thư đến của bạn và làm theo các bước để bắt đầu dùng thử miễn phí 14 ngày.
       domain_caption: Mã thông báo sẽ hợp lệ cho tên máy chủ hiện được định cấu hình của bạn.
       receive_newsletter_html: >
-        Tôi muốn nhận bản tin OpenProject <a target="_blank" href="https://www.openproject.org/newsletter/"></a>.
+        Tôi muốn nhận bản tin Yojana <a target="_blank" href="https://www.yojana.girishm.info/newsletter/"></a>.
       consent_html: >
-        Tôi đồng ý với <a target="_blank" href="https://www.openproject.org/terms-of-service/">điều khoản dịch vụ</a> và <a target="_blank" href="https://www.openproject.org/data-privacy-and-security/">chính sách quyền riêng tư</a>.
+        Tôi đồng ý với <a target="_blank" href="https://www.yojana.girishm.info/terms-of-service/">điều khoản dịch vụ</a> và <a target="_blank" href="https://www.yojana.girishm.info/data-privacy-and-security/">chính sách quyền riêng tư</a>.
   email_calendar_updates:
     state:
       disabled: "Tàn tật."
@@ -2576,7 +2576,7 @@ vi:
   error_check_user_and_role: "Hãy chọn người dùng và một vai trò."
   error_code: "Lỗi %{code}"
   error_color_could_not_be_saved: "Không thể lưu màu"
-  error_cookie_missing: "Cookie OpenProject bị thiếu. Hãy đảm bảo rằng cookie đã được bật vì ứng dụng này sẽ không hoạt động bình thường nếu không có cookie."
+  error_cookie_missing: "Cookie Yojana bị thiếu. Hãy đảm bảo rằng cookie đã được bật vì ứng dụng này sẽ không hoạt động bình thường nếu không có cookie."
   error_custom_option_not_found: "Tùy chọn không tồn tại."
   error_enterprise_plan_needed: "Bạn cần có gói doanh nghiệp %{plan} để thực hiện hành động này."
   error_enterprise_activation_user_limit: "Không thể kích hoạt tài khoản của bạn (đã đạt đến giới hạn người dùng). Vui lòng liên hệ với quản trị viên của bạn để có quyền truy cập."
@@ -2594,7 +2594,7 @@ vi:
   error_work_package_not_found_in_project: "Work package không được tìm thấy hoặc không thuộc về dự án này"
   error_work_package_id_not_found: "Gói công việc không được tìm thấy."
   error_must_be_project_member: "phải là thành viên dự án"
-  error_migrations_are_pending: "Bản cài đặt OpenProject của bạn có quá trình di chuyển cơ sở dữ liệu đang chờ xử lý. Bạn có thể đã bỏ lỡ quá trình di chuyển trong lần nâng cấp gần đây nhất của mình. Vui lòng kiểm tra hướng dẫn nâng cấp để nâng cấp đúng cách cài đặt của bạn."
+  error_migrations_are_pending: "Bản cài đặt Yojana của bạn có quá trình di chuyển cơ sở dữ liệu đang chờ xử lý. Bạn có thể đã bỏ lỡ quá trình di chuyển trong lần nâng cấp gần đây nhất của mình. Vui lòng kiểm tra hướng dẫn nâng cấp để nâng cấp đúng cách cài đặt của bạn."
   error_migrations_visit_upgrade_guides: "Vui lòng truy cập tài liệu hướng dẫn nâng cấp của chúng tôi"
   error_no_default_work_package_status: 'Không có tình trạng mặc định được định nghĩa cho work package. Vui lòng kiểm tra cấu hình của bạn (đi đến "Quản lý-> các trạng thái của work package").'
   error_no_type_in_project: "Không có kiểu được liên kết với dự án này. Hãy kiểm tra lại phần \"Thiết Lập Dự Án\"."
@@ -2705,7 +2705,7 @@ vi:
     failed: "Đã xảy ra lỗi khi cố gắng xuất các gói công việc: %{message}"
     demo:
       heading: "Bản demo PDF"
-      footer: "Được tạo bởi OpenProject"
+      footer: "Được tạo bởi Yojana"
       button_text: Tạo bản PDF demo
     errors:
       embedded_table_with_too_many_columns: "Bảng gói công việc được nhúng này không thể vừa trên trang, vui lòng giảm số lượng cột."
@@ -2796,7 +2796,7 @@ vi:
       no_visible_projects: "Không có không có thể nhìn thấy các dự án trong trường hợp này."
       users: "Người dùng đã đăng ký mới nhất trong trường hợp này."
     blocks:
-      community: "Cộng đồng OpenProject"
+      community: "Cộng đồng Yojana"
       upsell:
         title: "Nâng cấp lên phiên bản Enterprise"
       new_features:
@@ -2810,7 +2810,7 @@ vi:
           new_features_list:
             line_0: Khởi tạo dự án tự động (Phần mở rộng doanh nghiệp).
             line_1: "Họp: Thêm các gói công việc mới hoặc hiện có làm kết quả."
-            line_2: "Họp: Hiển thị phản hồi iCal trong OpenProject."
+            line_2: "Họp: Hiển thị phản hồi iCal trong Yojana."
             line_3: "Cuộc họp định kỳ: Sao chép các mục trong chương trình nghị sự sang lần họp tiếp theo."
             line_4: "Phát hành cho cộng đồng: Tính năng làm nổi bật thuộc tính."
             line_5: Cảnh báo trước khi mở các liên kết bên ngoài trong nội dung do người dùng cung cấp (Phần mở rộng doanh nghiệp).
@@ -2823,7 +2823,7 @@ vi:
       impressum: "Thông báo pháp lý"
       glossary: "Thuật ngữ"
       shortcuts: "phím tắt"
-      blog: "OpenProject blog"
+      blog: "Yojana blog"
       forums: "diễn đàn cộng đồng"
       security_alerts: "Cảnh báo bảo mật"
       newsletter: "Bản tin"
@@ -2836,7 +2836,7 @@ vi:
       default_attribute_written: "Thuộc tính chỉ đọc được viết"
       progress_mode_changed_to_status_based: "Đã cập nhật tính toán tiến độ"
       status_changed: "Trạng thái '%{status_name}'"
-      system_update: "Cập nhật hệ thống OpenProject:"
+      system_update: "Cập nhật hệ thống Yojana:"
       work_package_duplicate_closed: "Gói công việc trùng lặp được cập nhật:"
       total_percent_complete_mode_changed_to_work_weighted_average: "Tính toán % tổng số hoàn thành hiện được tính theo Công việc."
       total_percent_complete_mode_changed_to_simple_average: "Tính toán tổng số % Hoàn thành hiện dựa trên mức trung bình đơn giản chỉ là các giá trị % Hoàn thành."
@@ -2892,7 +2892,7 @@ vi:
       label: "Thêm vào…"
   my_account:
     access_tokens:
-      description: "Mã thông báo của nhà cung cấp được OpenProject phát hành, cho phép các ứng dụng khác truy cập vào nó. Mã thông báo của khách hàng được phát hành bởi các ứng dụng khác, cho phép OpenProject truy cập chúng."
+      description: "Mã thông báo của nhà cung cấp được Yojana phát hành, cho phép các ứng dụng khác truy cập vào nó. Mã thông báo của khách hàng được phát hành bởi các ứng dụng khác, cho phép Yojana truy cập chúng."
       no_results:
         title: "Không có mã thông báo truy cập để hiển thị"
         description: "Tất cả đều đã bị vô hiệu hóa. Chúng có thể được kích hoạt lại trong menu quản trị."
@@ -2912,7 +2912,7 @@ vi:
         blank_title: "Không có mã thông báo API"
         title: "API"
         table_title: "Mã thông báo API"
-        text_hint: "Mã thông báo API cho phép các ứng dụng của bên thứ ba giao tiếp với phiên bản OpenProject này thông qua API REST."
+        text_hint: "Mã thông báo API cho phép các ứng dụng của bên thứ ba giao tiếp với phiên bản Yojana này thông qua API REST."
         static_token_name: "Mã thông báo API"
         disabled_text: "Mã thông báo API không được quản trị viên bật. Vui lòng liên hệ với quản trị viên của bạn để sử dụng tính năng này."
         add_button: "Token API"
@@ -2921,7 +2921,7 @@ vi:
         blank_title: "Không có mã thông báo iCalendar"
         title: "iCalendar"
         table_title: "mã thông báo iCalendar"
-        text_hint_link: "Mã thông báo iCalendar cho phép người dùng [subscribe to OpenProject calendars](docs_url) và xem thông tin gói công việc cập nhật từ các máy khách bên ngoài."
+        text_hint_link: "Mã thông báo iCalendar cho phép người dùng [subscribe to Yojana calendars](docs_url) và xem thông tin gói công việc cập nhật từ các máy khách bên ngoài."
         disabled_text: "Quản trị viên không kích hoạt đăng ký iCalendar. Vui lòng liên hệ với quản trị viên của bạn để sử dụng tính năng này."
       oauth_application:
         active_tokens: "Mã thông báo hoạt động"
@@ -2930,14 +2930,14 @@ vi:
         last_used_at: "Được sử dụng lần cuối vào lúc"
         title: "OAuth"
         table_title: "Mã thông báo ứng dụng OAuth"
-        text_hint: "Mã thông báo ứng dụng OAuth cho phép ứng dụng của bên thứ ba kết nối với phiên bản OpenProject này."
+        text_hint: "Mã thông báo ứng dụng OAuth cho phép ứng dụng của bên thứ ba kết nối với phiên bản Yojana này."
       oauth_client:
         blank_description: "Chưa có mã thông báo ứng dụng khách OAuth nào."
         blank_title: "Không có mã thông báo ứng dụng khách OAuth"
         failed: "Đã xảy ra lỗi và không thể xóa mã thông báo. Vui lòng thử lại sau."
         integration_type: "Kiểu tích hợp"
         table_title: "Mã thông báo ứng dụng khách OAuth"
-        text_hint: "Mã thông báo ứng dụng khách OAuth cho phép phiên bản OpenProject này kết nối với các ứng dụng bên ngoài, chẳng hạn như kho lưu trữ tệp."
+        text_hint: "Mã thông báo ứng dụng khách OAuth cho phép phiên bản Yojana này kết nối với các ứng dụng bên ngoài, chẳng hạn như kho lưu trữ tệp."
         title: "OAuth"
         remove_token: "Bạn có thực sự muốn xóa mã thông báo này không? Bạn sẽ cần phải đăng nhập lại vào %{integration}."
         removed: "Đã xóa thành công mã thông báo ứng dụng khách OAuth"
@@ -2948,7 +2948,7 @@ vi:
         blank_title: "Không có mã thông báo RSS"
         title: "RSS"
         table_title: "Mã thông báo RSS"
-        text_hint: "Mã thông báo RSS cho phép người dùng cập nhật những thay đổi mới nhất trong phiên bản OpenProject này thông qua trình đọc RSS bên ngoài."
+        text_hint: "Mã thông báo RSS cho phép người dùng cập nhật những thay đổi mới nhất trong phiên bản Yojana này thông qua trình đọc RSS bên ngoài."
         static_token_name: "mã thông báo RSS"
         disabled_text: "Mã thông báo RSS không được quản trị viên kích hoạt. Vui lòng liên hệ với quản trị viên của bạn để sử dụng tính năng này."
       storages:
@@ -3123,7 +3123,7 @@ vi:
   label_custom_field_plural: "Trường tùy chỉnh"
   label_custom_field_default_type: "Kiểu rỗng"
   label_custom_style: "Thiết kế"
-  label_custom_style_description: "Chọn cách OpenProject hiển thị với bạn bằng các chủ đề, chọn màu mặc định để sử dụng trong ứng dụng và cách xuất sẽ trông như thế nào."
+  label_custom_style_description: "Chọn cách Yojana hiển thị với bạn bằng các chủ đề, chọn màu mặc định để sử dụng trong ứng dụng và cách xuất sẽ trông như thế nào."
   label_dashboard: "Trang tổng quan"
   label_database_version: "Phiên bản PostgreSQL"
   label_date: "ngày"
@@ -3395,7 +3395,7 @@ vi:
   label_open_menu: "Mở trình đơn"
   label_open_work_packages: "mở"
   label_open_work_packages_plural: "mở"
-  label_openproject_website: "Trang web OpenProject"
+  label_openproject_website: "Trang web Yojana"
   label_optional_description: "mô tả"
   label_options: "Tuỳ chọn"
   label_other: "khác"
@@ -3797,8 +3797,8 @@ vi:
   mail_body_backup_token_reset_user_info: Token sao lưu của bạn đã được thiết lập lại.
   mail_body_backup_token_info: Token trước đó không còn hiệu lực.
   mail_body_backup_waiting_period: Mã token sao lưu sẽ được kích hoạt trong %{hours} giờ.
-  mail_body_backup_token_warning: Nếu đây không phải là bạn, hãy đăng nhập vào OpenProject ngay lập tức và thiết lập lại lại.
-  mail_body_incoming_email_error: Không thể xử lý email bạn gửi tới OpenProject.
+  mail_body_backup_token_warning: Nếu đây không phải là bạn, hãy đăng nhập vào Yojana ngay lập tức và thiết lập lại lại.
+  mail_body_incoming_email_error: Không thể xử lý email bạn gửi tới Yojana.
   mail_body_incoming_email_error_in_reply_to: "Tại %{received_at} %{from_email} đã viết"
   mail_body_incoming_email_error_logs: "Nhật ký"
   mail_body_lost_password: "Để thay đổi mật khẩu của bạn, hãy nhấp vào liên kết sau:"
@@ -3811,10 +3811,10 @@ vi:
   mail_body_register_user: "Kính gửi %{name},"
   mail_body_register_links_html: |
     Vui lòng duyệt qua kênh youtube của chúng tôi (%{youtube_link}) nơi chúng tôi cung cấp hội thảo trên web (%{webinar_link})
-    và video “Bắt đầu” (%{get_started_link}) để thực hiện các bước đầu tiên của bạn trong OpenProject dễ dàng nhất có thể.
+    và video “Bắt đầu” (%{get_started_link}) để thực hiện các bước đầu tiên của bạn trong Yojana dễ dàng nhất có thể.
     <br />
     Nếu bạn có thêm bất kỳ câu hỏi nào, hãy tham khảo tài liệu của chúng tôi (%{documentation_link}) hoặc liên hệ với quản trị viên của bạn.
-  mail_body_register_closing: "Nhóm OpenProject của bạn"
+  mail_body_register_closing: "Nhóm Yojana của bạn"
   mail_body_register_ending: "Luôn kết nối! Trân trọng,"
   mail_body_reminder: "%{count} gói công việc được giao cho bạn sẽ đến hạn trong %{days} ngày tới:"
   mail_body_group_reminder: '%{count}  gói công việc được gán cho nhóm "%{group}" là do %{days} ngày tiếp theo:'
@@ -3823,7 +3823,7 @@ vi:
   mail_subject_account_activation_request: "%{value} yêu cầu kích hoạt tài khoản"
   mail_subject_backup_ready: "Bản sao lưu của bạn đã sẵn sàng"
   mail_subject_backup_token_reset: "Đặt lại mã thông báo dự phòng"
-  mail_subject_incoming_email_error: "Không thể xử lý email bạn gửi tới OpenProject"
+  mail_subject_incoming_email_error: "Không thể xử lý email bạn gửi tới Yojana"
   mail_subject_lost_password: "Mật khẩu %{value} của bạn"
   mail_subject_register: "Kích hoạt tài khoản %{value} của bạn"
   mail_subject_wiki_content_added: "Trang wiki '%{id}' đã được thêm"
@@ -3852,14 +3852,14 @@ vi:
   mail_user_activation_limit_reached:
     subject: Đã đạt đến giới hạn kích hoạt người dùng
     message: |
-      Một người dùng mới (%{email}) đã cố gắng tạo tài khoản trên môi trường OpenProject mà bạn quản lý (%{host}).
+      Một người dùng mới (%{email}) đã cố gắng tạo tài khoản trên môi trường Yojana mà bạn quản lý (%{host}).
       Người dùng không thể kích hoạt tài khoản của họ vì đã đạt đến giới hạn người dùng.
     steps:
       label: "Để cho phép người dùng đăng nhập, bạn có thể:"
       a: "Nâng cấp gói thanh toán của bạn ([here](upgrade_url))" #here turned into a link
       b: "Khóa hoặc xóa người dùng hiện tại ([here](users_url))" #here turned into a link
   more_actions: "Nhiều chức năng hơn"
-  noscript_description: "Bạn cần kích hoạt JavaScript để sử dụng OpenProject!"
+  noscript_description: "Bạn cần kích hoạt JavaScript để sử dụng Yojana!"
   noscript_heading: "Đã tắt JavaScript"
   noscript_learn_more: "Tìm hiểu thêm"
   notice_accessibility_mode: Chế độ tiếp cận có thể được kích hoạt trong [tài khoản settings](url) của bạn.
@@ -3937,7 +3937,7 @@ vi:
   notice_wont_delete_auth_source: Không thể xóa kết nối LDAP miễn là vẫn còn người dùng sử dụng nó.
   notice_project_cannot_update_custom_fields: "Bạn không thể cập nhật các mục tùy chỉnh có sẵn của dự án. Dự án không hợp lệ: %{errors}"
   notice_attachment_migration_wiki_page: >
-    Trang này được tạo ra tự động trong quá trình Cập Nhật của OpenProject. Nó chứa tất cả các tập tin đính kèm trước đó liên kết với %{container_type} "%{container_name}".
+    Trang này được tạo ra tự động trong quá trình Cập Nhật của Yojana. Nó chứa tất cả các tập tin đính kèm trước đó liên kết với %{container_type} "%{container_name}".
   #Default format for numbers
   number:
     format:
@@ -3959,7 +3959,7 @@ vi:
           tb: "bệnh lao"
   onboarding:
     heading_getting_started: "Nhận một cái nhìn tổng quan"
-    text_getting_started_description: "Nhận tổng quan nhanh về quản lý dự án và cộng tác nhóm với OpenProject. Bạn có thể khởi động lại video này từ menu trợ giúp."
+    text_getting_started_description: "Nhận tổng quan nhanh về quản lý dự án và cộng tác nhóm với Yojana. Bạn có thể khởi động lại video này từ menu trợ giúp."
     welcome: "Chào mừng đến với %{app_title}"
     select_language: "Vui lòng chọn ngôn ngữ của bạn"
   permission_add_work_package_comments: "Thêm nhận xét"
@@ -4052,7 +4052,7 @@ vi:
   permission_view_all_principals_explanation: >
     Cho phép người dùng xem tất cả người dùng và nhóm trong hệ thống, ngay cả khi họ không phải là thành viên của bất kỳ dự án hoặc nhóm nào đã tham gia.
   permission_view_project: "Xem dự án"
-  permission_view_changesets: "Xem các bản sửa đổi kho lưu trữ trong OpenProject"
+  permission_view_changesets: "Xem các bản sửa đổi kho lưu trữ trong Yojana"
   permission_view_internal_comments: "Xem bình luận nội bộ"
   permission_view_commit_author_statistics: "Xem số liệu thống kê về tác giả cam kết"
   permission_view_dashboards: "Xem trang tổng quan"
@@ -4177,7 +4177,7 @@ vi:
     destroy:
       confirmation: "Nếu bạn tiếp tục, thao tác này sẽ xóa vĩnh viễn kho lưu trữ được quản lý."
       info: "Xóa kho lưu trữ là một hành động không thể đảo ngược."
-      info_not_managed: "Lưu ý: Thao tác này sẽ KHÔNG xóa nội dung của kho lưu trữ này vì nó không được OpenProject quản lý."
+      info_not_managed: "Lưu ý: Thao tác này sẽ KHÔNG xóa nội dung của kho lưu trữ này vì nó không được Yojana quản lý."
       managed_path_note: "Thư mục sau sẽ bị xóa: %{path}"
       repository_verification: "Nhập mã định danh của dự án %{identifier} để xác minh việc xóa kho lưu trữ của dự án."
       subtitle: "Bạn có thực sự muốn xóa %{repository_type} của dự án %{project_name} không?"
@@ -4191,8 +4191,8 @@ vi:
       empty_repository: "Kho lưu trữ tồn tại nhưng trống rỗng. Nó chưa chứa bất kỳ sửa đổi nào."
       exists_on_filesystem: "Thư mục kho lưu trữ đã tồn tại trong hệ thống tập tin."
       filesystem_access_failed: "Đã xảy ra lỗi khi truy cập kho lưu trữ trong hệ thống tệp: %{message}"
-      not_manageable: "OpenProject không thể quản lý nhà cung cấp kho lưu trữ này."
-      path_permission_failed: "Đã xảy ra lỗi khi tạo đường dẫn sau: %{path}. Hãy đảm bảo rằng OpenProject có thể ghi vào thư mục đó."
+      not_manageable: "Yojana không thể quản lý nhà cung cấp kho lưu trữ này."
+      path_permission_failed: "Đã xảy ra lỗi khi tạo đường dẫn sau: %{path}. Hãy đảm bảo rằng Yojana có thể ghi vào thư mục đó."
       unauthorized: "Bạn không được phép truy cập vào kho lưu trữ hoặc thông tin xác thực không hợp lệ."
       unavailable: "Kho lưu trữ không có sẵn."
       exception_title: "Không thể truy cập kho lưu trữ: %{message}"
@@ -4209,9 +4209,9 @@ vi:
         path_encoding: "Ghi đè mã hóa đường dẫn Git (Mặc định: UTF-8)"
       local_title: "Liên kết kho lưu trữ Git cục bộ hiện có"
       local_url: "URL địa phương"
-      local_introduction: "Nếu bạn có kho lưu trữ Git cục bộ hiện có, bạn có thể liên kết nó với OpenProject để truy cập nó từ bên trong ứng dụng."
-      managed_introduction: "Hãy để OpenProject tự động tạo và tích hợp kho lưu trữ Git cục bộ."
-      managed_title: "Kho lưu trữ Git được tích hợp vào OpenProject"
+      local_introduction: "Nếu bạn có kho lưu trữ Git cục bộ hiện có, bạn có thể liên kết nó với Yojana để truy cập nó từ bên trong ứng dụng."
+      managed_introduction: "Hãy để Yojana tự động tạo và tích hợp kho lưu trữ Git cục bộ."
+      managed_title: "Kho lưu trữ Git được tích hợp vào Yojana"
       managed_url: "URL được quản lý"
       path: "Đường dẫn đến kho Git"
       path_encoding: "Mã hóa đường dẫn"
@@ -4228,24 +4228,24 @@ vi:
     scm_types:
       local: "Liên kết kho lưu trữ cục bộ hiện có"
       existing: "Liên kết kho lưu trữ hiện có"
-      managed: "Tạo kho lưu trữ mới trong OpenProject"
+      managed: "Tạo kho lưu trữ mới trong Yojana"
     storage:
       not_available: "Mức tiêu thụ dung lượng ổ đĩa không có sẵn cho kho lưu trữ này."
       update_timeout: "Giữ thông tin dung lượng ổ đĩa cần thiết cuối cùng cho kho lưu trữ trong N phút.\nVì việc tính dung lượng đĩa cần thiết của kho lưu trữ có thể tốn kém nên hãy tăng giá trị này để giảm tác động đến hiệu suất."
-      oauth_application_details: "Giá trị bí mật của máy khách sẽ không thể truy cập lại được sau khi bạn đóng cửa sổ này. Vui lòng sao chép các giá trị này vào cài đặt Tích hợp Nextcloud OpenProject:"
+      oauth_application_details: "Giá trị bí mật của máy khách sẽ không thể truy cập lại được sau khi bạn đóng cửa sổ này. Vui lòng sao chép các giá trị này vào cài đặt Tích hợp Nextcloud Yojana:"
       oauth_application_details_link_text: "Đi tới trang cài đặt"
       setup_documentation_details: "Nếu bạn cần trợ giúp định cấu hình bộ lưu trữ tệp mới, vui lòng kiểm tra tài liệu:"
       setup_documentation_details_link_text: "Thiết lập kho lưu trữ tập tin"
       show_warning_details: "Để sử dụng bộ lưu trữ tệp này, hãy nhớ kích hoạt mô-đun và bộ lưu trữ cụ thể trong cài đặt dự án của từng dự án mong muốn."
     subversion:
       existing_title: "Kho lưu trữ Subversion hiện có"
-      existing_introduction: "Nếu bạn có kho lưu trữ Subversion hiện có, bạn có thể liên kết nó với OpenProject để truy cập nó từ bên trong ứng dụng."
+      existing_introduction: "Nếu bạn có kho lưu trữ Subversion hiện có, bạn có thể liên kết nó với Yojana để truy cập nó từ bên trong ứng dụng."
       existing_url: "URL hiện tại"
       instructions:
         managed_url: "Đây là URL của kho lưu trữ Subversion (cục bộ) được quản lý."
         url: "Nhập URL kho lưu trữ. Điều này có thể nhắm mục tiêu kho lưu trữ cục bộ (bắt đầu bằng %{local_proto} ) hoặc kho lưu trữ từ xa.\nCác lược đồ URL sau được hỗ trợ:"
-      managed_title: "Kho lưu trữ Subversion được tích hợp vào OpenProject"
-      managed_introduction: "Hãy để OpenProject tự động tạo và tích hợp kho lưu trữ Subversion cục bộ."
+      managed_title: "Kho lưu trữ Subversion được tích hợp vào Yojana"
+      managed_introduction: "Hãy để Yojana tự động tạo và tích hợp kho lưu trữ Subversion cục bộ."
       managed_url: "URL được quản lý"
       password: "Mật khẩu kho lưu trữ"
       username: "Tên người dùng kho lưu trữ"
@@ -4278,7 +4278,7 @@ vi:
   setting_apiv3_cors_enabled: "Kích hoạt CORS"
   setting_apiv3_cors_origins: "Nguồn gốc được phép chia sẻ tài nguyên chéo nguồn gốc (CORS) của API V3"
   setting_apiv3_cors_origins_text_html: >
-    Nếu CORS được kích hoạt, đây là các nguồn gốc được phép truy cập API của OpenProject. <br/> Vui lòng kiểm tra <a href="%{origin_link}" target="_blank">Tài liệu về Header Origin</a> để biết cách chỉ định các giá trị mong đợi.
+    Nếu CORS được kích hoạt, đây là các nguồn gốc được phép truy cập API của Yojana. <br/> Vui lòng kiểm tra <a href="%{origin_link}" target="_blank">Tài liệu về Header Origin</a> để biết cách chỉ định các giá trị mong đợi.
   setting_apiv3_write_readonly_attributes: "Viết quyền truy cập vào các thuộc tính chỉ đọc"
   setting_apiv3_write_readonly_attributes_instructions: >
     Nếu được bật, API sẽ cho phép quản trị viên ghi các thuộc tính tĩnh chỉ đọc trong quá trình tạo, chẳng hạn như createAt và tác giả.
@@ -4475,7 +4475,7 @@ vi:
       omniauth_direct_login_hint_html: >
         Nếu tùy chọn này đang hoạt động, yêu cầu đăng nhập sẽ chuyển hướng đến nhà cung cấp omniauth đã định cấu hình. Trang đăng nhập thả xuống và trang đăng nhập sẽ bị vô hiệu hóa. <br/> <strong>Lưu ý:</strong> Trừ khi bạn cũng tắt tính năng đăng nhập bằng mật khẩu, khi bật tùy chọn này, người dùng vẫn có thể đăng nhập nội bộ bằng cách truy cập trang đăng nhập <code>%{internal_path}</code>.
       remapping_existing_users_hint: >
-        Nếu được bật, sẽ cho phép mọi nhà cung cấp danh tính được định cấu hình đăng nhập người dùng hiện tại dựa trên tên người dùng của họ, ngay cả khi người dùng chưa từng đăng nhập thông qua nhà cung cấp đó trước đây. Điều này có thể hữu ích khi di chuyển phiên bản OpenProject sang nhà cung cấp SSO mới, nhưng không được khuyến nghị khi sử dụng nhà cung cấp không được tất cả người dùng phiên bản của bạn tin cậy.
+        Nếu được bật, sẽ cho phép mọi nhà cung cấp danh tính được định cấu hình đăng nhập người dùng hiện tại dựa trên tên người dùng của họ, ngay cả khi người dùng chưa từng đăng nhập thông qua nhà cung cấp đó trước đây. Điều này có thể hữu ích khi di chuyển phiên bản Yojana sang nhà cung cấp SSO mới, nhưng không được khuyến nghị khi sử dụng nhà cung cấp không được tất cả người dùng phiên bản của bạn tin cậy.
     attachments:
       whitelist_text_html: >
         Xác định danh sách các phần mở rộng tệp hợp lệ và/hoặc loại mime cho các tệp được tải lên. <br/> Nhập phần mở rộng tệp (ví dụ: <code>%{ext_example}</code>) hoặc loại mime (ví dụ: <code>%{mime_example}</code>). <br/> Để trống để cho phép tải lên mọi loại tệp. Cho phép nhiều giá trị (mỗi giá trị một dòng).
@@ -4499,7 +4499,7 @@ vi:
         clamav_socket_html: 'Nhập ổ cắm vào daemon ngao, ví dụ: %{example}'
         clamav_host_html: 'Nhập tên máy chủ và cổng vào trình nền Clamd được phân tách bằng dấu hai chấm. ví dụ: %{example}'
         description_html: >
-          Chọn chế độ mà tích hợp trình quét antivirus nên hoạt động. <br/> <ul> <li><strong>%{disabled_option}</strong>: Các tệp tải lên sẽ không được quét virus.</li> <li><strong>%{socket_option}</strong>: Bạn đã thiết lập ClamAV trên cùng một máy chủ với OpenProject và daemon quét clamd đang chạy nền</li> <li><strong>%{host_option}</strong>: Bạn đang truyền tệp đến một máy chủ quét virus bên ngoài.</li> </ul>
+          Chọn chế độ mà tích hợp trình quét antivirus nên hoạt động. <br/> <ul> <li><strong>%{disabled_option}</strong>: Các tệp tải lên sẽ không được quét virus.</li> <li><strong>%{socket_option}</strong>: Bạn đã thiết lập ClamAV trên cùng một máy chủ với Yojana và daemon quét clamd đang chạy nền</li> <li><strong>%{host_option}</strong>: Bạn đang truyền tệp đến một máy chủ quét virus bên ngoài.</li> </ul>
     brute_force_prevention: "Tự động chặn người dùng"
     date_format:
       first_date_of_week_and_year_set: >
@@ -4507,8 +4507,8 @@ vi:
       first_week_of_year_text_html: >
         Chọn ngày của tháng Một thuộc tuần đầu tiên của năm. Giá trị này cùng với ngày đầu tiên của tuần xác định tổng số tuần trong năm. Để biết thêm thông tin, vui lòng xem <a href="%{link}" target="_blank">tài liệu</a> của chúng tôi về chủ đề này.
     experimental:
-      save_confirmation: Thận trọng! Nguy cơ mất dữ liệu! Chỉ kích hoạt các tính năng thử nghiệm nếu bạn không ngại phá vỡ cài đặt OpenProject và mất tất cả dữ liệu của nó.
-      warning_toast: Cờ tính năng là cài đặt kích hoạt các tính năng vẫn đang được phát triển. Chúng chỉ được sử dụng cho mục đích thử nghiệm. Chúng sẽ không bao giờ được kích hoạt trên các bản cài đặt OpenProject chứa dữ liệu quan trọng. Những tính năng này rất có thể sẽ làm hỏng dữ liệu của bạn. Sử dụng chúng có nguy cơ của riêng bạn.
+      save_confirmation: Thận trọng! Nguy cơ mất dữ liệu! Chỉ kích hoạt các tính năng thử nghiệm nếu bạn không ngại phá vỡ cài đặt Yojana và mất tất cả dữ liệu của nó.
+      warning_toast: Cờ tính năng là cài đặt kích hoạt các tính năng vẫn đang được phát triển. Chúng chỉ được sử dụng cho mục đích thử nghiệm. Chúng sẽ không bao giờ được kích hoạt trên các bản cài đặt Yojana chứa dữ liệu quan trọng. Những tính năng này rất có thể sẽ làm hỏng dữ liệu của bạn. Sử dụng chúng có nguy cơ của riêng bạn.
       feature_flags: Cờ tính năng
     general: "chung"
     highlighting:
@@ -4519,7 +4519,7 @@ vi:
         type: "Toàn bộ hàng theo loại"
         priority: "Toàn bộ hàng theo mức độ ưu tiên"
     icalendar:
-      enable_subscriptions_text_html: Cho phép người dùng với quyền cần thiết đăng ký các lịch OpenProject và truy cập thông tin gói công việc qua một ứng dụng lịch bên ngoài. <strong>Lưu ý:</strong> Vui lòng đọc về <a href="%{link}" target="_blank">đăng ký iCalendar</a> để hiểu các rủi ro bảo mật tiềm ẩn trước khi kích hoạt tính năng này.
+      enable_subscriptions_text_html: Cho phép người dùng với quyền cần thiết đăng ký các lịch Yojana và truy cập thông tin gói công việc qua một ứng dụng lịch bên ngoài. <strong>Lưu ý:</strong> Vui lòng đọc về <a href="%{link}" target="_blank">đăng ký iCalendar</a> để hiểu các rủi ro bảo mật tiềm ẩn trước khi kích hoạt tính năng này.
     language_name_being_default: "%{language_name} (mặc định)"
     notifications:
       events_explanation: "Quản lý sự kiện mà email được gửi đi. Các gói công việc được loại trừ khỏi danh sách này vì thông báo cho chúng có thể được cấu hình cụ thể cho từng người dùng."
@@ -4553,7 +4553,7 @@ vi:
               description: "Thêm tất cả thuộc tính dự án vào một phần bên trong bảng điều khiển bên phải trong phần tổng quan về dự án."
     project_initiation_request:
       header_description: >
-        OpenProject có thể tạo trình hướng dẫn từng bước để giúp người quản lý dự án điền vào yêu cầu khởi tạo dự án. Bạn có thể chọn những thuộc tính dự án nào sẽ được đưa vào và kết quả là tạo một tạo phẩm PDF.
+        Yojana có thể tạo trình hướng dẫn từng bước để giúp người quản lý dự án điền vào yêu cầu khởi tạo dự án. Bạn có thể chọn những thuộc tính dự án nào sẽ được đưa vào và kết quả là tạo một tạo phẩm PDF.
       status:
         submitted: "%{wizard_name} đã được gửi"
         submitted_description: "Nhấp vào nút bên dưới để chuyển đến gói công việc cho quá trình gửi bài."
@@ -4566,7 +4566,7 @@ vi:
         project_mandate: "Nhiệm vụ mở dự án"
       blankslate:
         title: "Yêu cầu bắt đầu không được kích hoạt"
-        description: "OpenProject có thể tạo trình hướng dẫn từng bước để giúp người quản lý dự án điền vào yêu cầu khởi tạo dự án. Bạn có thể chọn những thuộc tính dự án nào sẽ được đưa vào và những việc cần làm với tài liệu đầu ra. Kích hoạt nó ở đây để bắt đầu cấu hình trình hướng dẫn."
+        description: "Yojana có thể tạo trình hướng dẫn từng bước để giúp người quản lý dự án điền vào yêu cầu khởi tạo dự án. Bạn có thể chọn những thuộc tính dự án nào sẽ được đưa vào và những việc cần làm với tài liệu đầu ra. Kích hoạt nó ở đây để bắt đầu cấu hình trình hướng dẫn."
       disable_dialog:
         title: "Tắt yêu cầu khởi tạo dự án"
         heading: "Tắt yêu cầu bắt đầu dự án này?"
@@ -4647,7 +4647,7 @@ vi:
       sentence_connector: "và"
       skip_last_comma: "sai"
   text_accessibility_hint: "Chế độ trợ năng được thiết kế dành cho người dùng bị mù, khuyết tật vận động hoặc có thị lực kém. Đối với các yếu tố tập trung sau này được đánh dấu đặc biệt. Xin lưu ý rằng mô-đun Backlogs không khả dụng ở chế độ này."
-  text_access_token_hint: "Mã thông báo truy cập cho phép bạn cấp cho các ứng dụng bên ngoài quyền truy cập vào tài nguyên trong OpenProject."
+  text_access_token_hint: "Mã thông báo truy cập cho phép bạn cấp cho các ứng dụng bên ngoài quyền truy cập vào tài nguyên trong Yojana."
   text_analyze: "Phân tích sâu hơn: %{subject}"
   text_are_you_sure: "Bạn có chắc không?"
   open_link_in_a_new_tab: "Mở liên kết trong tab mới"
@@ -4746,7 +4746,7 @@ vi:
   text_no_notes: "Không có bình luận nào cho gói công việc này."
   text_notice_too_many_values_are_inperformant: "Lưu ý: Hiển thị hơn 100 mục trên mỗi trang có thể làm tăng thời gian tải trang."
   text_notice_security_badge_displayed_html: >
-    Lưu ý: nếu được kích hoạt, một bảng thông báo về tình trạng của phần mềm sẽ được hiển thị tại trang quản trị <a href="%{information_panel_path}">%{information_panel_label}</a>, và tại trang chủ. Thông tin này chỉ được thấy bởi Quản trị viên. <br/> Bảng thông báo sẽ kiểm tra các thông tin cập nhật từ OpenProject và thông báo về các cập nhật mới hay các lỗi được phát hiện. Để biết thêm chi tiết, vui lòng tham khảo <a href="%{more_info_url}">tài liệu cấu hình</a>.
+    Lưu ý: nếu được kích hoạt, một bảng thông báo về tình trạng của phần mềm sẽ được hiển thị tại trang quản trị <a href="%{information_panel_path}">%{information_panel_label}</a>, và tại trang chủ. Thông tin này chỉ được thấy bởi Quản trị viên. <br/> Bảng thông báo sẽ kiểm tra các thông tin cập nhật từ Yojana và thông báo về các cập nhật mới hay các lỗi được phát hiện. Để biết thêm chi tiết, vui lòng tham khảo <a href="%{more_info_url}">tài liệu cấu hình</a>.
   text_own_membership_delete_confirmation: "Bạn sắp xóa một số hoặc tất cả các quyền của mình và sau đó có thể không chỉnh sửa được dự án này nữa.\nBạn có chắc chắn muốn tiếp tục không?"
   text_permanent_delete_confirmation_checkbox_label: "Tôi hiểu rằng việc xóa này không thể đảo ngược"
   text_permanent_remove_confirmation_checkbox_label: "Tôi hiểu rằng việc xóa này không thể hoàn tác được"
@@ -4756,7 +4756,7 @@ vi:
   text_reassign: "Phân công lại cho gói công việc:"
   text_regexp_info: "ví dụ. ^[A-Z0-9]+$"
   text_regexp_multiline: 'Biểu thức được áp dụng ở chế độ đa dòng. Ví dụ: ^---\s+'
-  text_repository_usernames_mapping: "Chọn hoặc cập nhật người dùng OpenProject được ánh xạ tới từng tên người dùng được tìm thấy trong nhật ký kho lưu trữ.\nNgười dùng có cùng tên người dùng hoặc email của OpenProject và kho lưu trữ sẽ được tự động ánh xạ."
+  text_repository_usernames_mapping: "Chọn hoặc cập nhật người dùng Yojana được ánh xạ tới từng tên người dùng được tìm thấy trong nhật ký kho lưu trữ.\nNgười dùng có cùng tên người dùng hoặc email của Yojana và kho lưu trữ sẽ được tự động ánh xạ."
   text_status_changed_by_changeset: "Được áp dụng trong bộ thay đổi %{value}."
   text_table_difference_description: "Trong bảng này, đơn %{entries} được hiển thị. Bạn có thể xem sự khác biệt giữa hai mục bất kỳ bằng cách trước tiên chọn các hộp kiểm tương ứng trong bảng. Khi nhấp vào nút bên dưới bảng, sự khác biệt sẽ được hiển thị."
   text_time_logged_by_changeset: "Được áp dụng trong bộ thay đổi %{value}."
@@ -4831,7 +4831,7 @@ vi:
     authentication_provider: "Nhà cung cấp xác thực"
     identity_url_text: "Mã định danh duy nhất nội bộ do nhà cung cấp dịch vụ xác thực cung cấp."
     authentication_settings_disabled_due_to_external_authentication: >
-      Người dùng này xác thực thông qua nhà cung cấp xác thực bên ngoài, do đó không có mật khẩu nào trong OpenProject cần thay đổi.
+      Người dùng này xác thực thông qua nhà cung cấp xác thực bên ngoài, do đó không có mật khẩu nào trong Yojana cần thay đổi.
     authorization_rejected: "Bạn không được phép đăng nhập."
     assign_random_password: "Gán mật khẩu ngẫu nhiên (gửi cho người dùng qua email)"
     blocked: "bị khóa tạm thời"
@@ -4864,7 +4864,7 @@ vi:
   warning: Cảnh báo
   warning_attachments_not_saved: "%{count} tệp không thể lưu được."
   warning_imminent_user_limit: >
-    Bạn đã mời nhiều người dùng hơn số lượng được hỗ trợ bởi gói hiện tại của bạn. Những người dùng được mời có thể không thể tham gia vào môi trường OpenProject của bạn. Vui lòng <a href="%{upgrade_url}">nâng cấp gói của bạn</a> hoặc khóa người dùng hiện tại để cho phép người dùng được mời và đã đăng ký tham gia.
+    Bạn đã mời nhiều người dùng hơn số lượng được hỗ trợ bởi gói hiện tại của bạn. Những người dùng được mời có thể không thể tham gia vào môi trường Yojana của bạn. Vui lòng <a href="%{upgrade_url}">nâng cấp gói của bạn</a> hoặc khóa người dùng hiện tại để cho phép người dùng được mời và đã đăng ký tham gia.
   warning_registration_token_expired: |
     Mail kích hoạt đã hết hạn. Sẽ gửi mail mới tới %{email}.
   warning_user_limit_reached: >
@@ -4872,7 +4872,7 @@ vi:
   warning_user_limit_reached_admin: >
     Thêm người dùng bổ sung sẽ vượt quá giới hạn hiện tại. Vui lòng <a href="%{upgrade_url}">nâng cấp gói của bạn</a> để đảm bảo người dùng bên ngoài có thể truy cập vào phiên bản này.
   warning_user_limit_reached_instructions: >
-    Bạn đã đạt đến giới hạn người dùng của mình (%{current}/%{max} người dùng đang hoạt động). Vui lòng liên hệ sales@openproject.com để nâng cấp gói phiên bản Enterprise của bạn và thêm người dùng bổ sung.
+    Bạn đã đạt đến giới hạn người dùng của mình (%{current}/%{max} người dùng đang hoạt động). Vui lòng liên hệ sales@girishm.info để nâng cấp gói phiên bản Enterprise của bạn và thêm người dùng bổ sung.
   warning_protocol_mismatch_html: >
 
   warning_bar:
@@ -5145,7 +5145,7 @@ vi:
         confidential: "Kiểm tra xem ứng dụng sẽ được sử dụng trong khi thông tin mật của khách hàng vẫn được đảm bảo. Các ứng dụng di động và Ứng dụng web được cho là không bảo mật."
         scopes: "Kiểm tra phạm vi bạn muốn ứng dụng cấp quyền truy cập. Nếu không có phạm vi nào được chọn, api_v3 sẽ được giả sử."
         client_credential_user_id: "ID người dùng tùy chọn để mạo danh khi khách hàng sử dụng ứng dụng này. Để trống để chỉ cho phép truy cập công cộng"
-        register_intro: "Nếu bạn đang phát triển ứng dụng khách API OAuth cho OpenProject, bạn có thể đăng ký ứng dụng đó bằng biểu mẫu này để tất cả người dùng sử dụng."
+        register_intro: "Nếu bạn đang phát triển ứng dụng khách API OAuth cho Yojana, bạn có thể đăng ký ứng dụng đó bằng biểu mẫu này để tất cả người dùng sử dụng."
         default_scopes: ""
     header:
       builtin_applications: Các ứng dụng OAuth tích hợp
@@ -5153,17 +5153,17 @@ vi:
     empty_application_lists: Không có ứng dụng OAuth nào được đăng ký.
     client_id: "ID người dùng"
     client_secret_notice: >
-      Đây là lần duy nhất chúng tôi có thể in bí mật của khách hàng, vui lòng ghi lại và giữ an toàn. Nó phải được coi như một mật khẩu và OpenProject không thể lấy lại được sau này.
+      Đây là lần duy nhất chúng tôi có thể in bí mật của khách hàng, vui lòng ghi lại và giữ an toàn. Nó phải được coi như một mật khẩu và Yojana không thể lấy lại được sau này.
     authorization_dialog:
       authorize: "Xác thực"
       cancel: "Hủy bỏ và từ chối xác thực."
       prompt_html: "Ủy quyền cho <strong>%{application_name}</strong> sử dụng tài khoản của bạn <em>%{login}</em>?"
       title: "Ủy quyền %{application_name}"
       wants_to_access_html: >
-        Ứng dụng này yêu cầu quyền truy cập vào tài khoản OpenProject của bạn. <br/> <strong>Nó đã yêu cầu các quyền sau:</strong>
+        Ứng dụng này yêu cầu quyền truy cập vào tài khoản Yojana của bạn. <br/> <strong>Nó đã yêu cầu các quyền sau:</strong>
     scopes:
       api_v3: "Truy cập đầy đủ API v3"
-      api_v3_text: "Ứng dụng sẽ nhận được quyền truy cập đọc và ghi đầy đủ vào OpenProject API v3 để thay mặt bạn thực hiện các hành động."
+      api_v3_text: "Ứng dụng sẽ nhận được quyền truy cập đọc và ghi đầy đủ vào Yojana API v3 để thay mặt bạn thực hiện các hành động."
     grants:
       created_date: "Đã duyệt"
       scopes: "quyền"
@@ -5178,7 +5178,7 @@ vi:
     client_credentials_impersonation_set_to: "Người dùng thông tin đăng nhập của khách hàng được đặt thành"
     client_credentials_impersonation_warning: "Lưu ý: Khách hàng sử dụng luồng 'Thông tin xác thực khách hàng' trong ứng dụng này sẽ có các quyền của người dùng này"
     client_credentials_impersonation_html: >
-      Theo mặc định, OpenProject cung cấp ủy quyền OAuth 2.0 thông qua %{authorization_code_flow_link}. Bạn có thể tùy ý bật %{client_credentials_flow_link}, nhưng bạn phải cung cấp người dùng mà yêu cầu của họ sẽ được thực hiện thay mặt họ.
+      Theo mặc định, Yojana cung cấp ủy quyền OAuth 2.0 thông qua %{authorization_code_flow_link}. Bạn có thể tùy ý bật %{client_credentials_flow_link}, nhưng bạn phải cung cấp người dùng mà yêu cầu của họ sẽ được thực hiện thay mặt họ.
     authorization_error: "Đã xảy ra lỗi ủy quyền."
     revoke_my_application_confirmation: "Bạn có thực sự muốn xóa ứng dụng này? Điều này sẽ thu hồi %{token_count} hoạt động cho nó."
     my_registered_applications: "Ứng dụng OAuth đã đăng ký"
@@ -5207,20 +5207,20 @@ vi:
         Lỗi nội bộ: Được gọi là Refresh_token mà không có mã thông báo hiện có trước đó.
       refresh_token_updated_failed: "Lỗi trong quá trình cập nhật OAuthClientToken"
       oauth_client_not_found_explanation: >
-        Lỗi này xuất hiện sau khi bạn đã cập nhật client_id và client_secret trong OpenProject nhưng chưa cập nhật trường 'Return URI' trong nhà cung cấp OAuth2.
+        Lỗi này xuất hiện sau khi bạn đã cập nhật client_id và client_secret trong Yojana nhưng chưa cập nhật trường 'Return URI' trong nhà cung cấp OAuth2.
       oauth_code_not_present: "Không tìm thấy 'mã' OAuth2 trong điểm cuối 'gọi lại' (redirect_uri)."
       oauth_code_not_present_explanation: >
         Lỗi này xuất hiện nếu bạn chọn sai loại phản hồi trong nhà cung cấp OAuth2. Response_type phải là 'code' hoặc tương tự.
       oauth_state_not_present: "Không tìm thấy 'trạng thái' OAuth2 trong điểm cuối 'gọi lại' (redirect_uri)."
       oauth_state_not_present_explanation: >
-        'Trạng thái' được sử dụng để chỉ ra cho OpenProject nơi tiếp tục sau khi ủy quyền OAuth2 thành công. 'Trạng thái' bị thiếu là lỗi nội bộ có thể xuất hiện trong quá trình thiết lập. Vui lòng liên hệ với quản trị viên hệ thống của bạn.
+        'Trạng thái' được sử dụng để chỉ ra cho Yojana nơi tiếp tục sau khi ủy quyền OAuth2 thành công. 'Trạng thái' bị thiếu là lỗi nội bộ có thể xuất hiện trong quá trình thiết lập. Vui lòng liên hệ với quản trị viên hệ thống của bạn.
       rack_oauth2:
         client_secret_invalid: "Bí mật của ứng dụng khách không hợp lệ (client_secret_invalid)"
         invalid_request: >
           Máy chủ ủy quyền OAuth2 phản hồi bằng 'invalid_request'. Lỗi này xuất hiện nếu bạn cố gắng ủy quyền nhiều lần hoặc trong trường hợp có vấn đề về kỹ thuật.
         invalid_response: "Máy chủ ủy quyền OAuth2 đã cung cấp phản hồi không hợp lệ (invalid_response)"
         invalid_grant: "Máy chủ ủy quyền OAuth2 yêu cầu bạn ủy quyền lại (invalid_grant)."
-        invalid_client: "Máy chủ ủy quyền OAuth2 không nhận ra OpenProject (invalid_client)."
+        invalid_client: "Máy chủ ủy quyền OAuth2 không nhận ra Yojana (invalid_client)."
         unauthorized_client: "Máy chủ ủy quyền OAuth2 từ chối loại cấp phép (unauthorized_client)"
         unsupported_grant_type: "Máy chủ ủy quyền OAuth2 yêu cầu bạn ủy quyền lại (unsupported_grant_type)."
         invalid_scope: "Bạn không được phép truy cập tài nguyên được yêu cầu (invalid_scope)."
@@ -5233,18 +5233,18 @@ vi:
   you: bạn
   link: liên kết
   plugin_openproject_auth_plugins:
-    name: "Plugin xác thực OpenProject"
-    description: "Tích hợp các nhà cung cấp chiến lược OmniAuth để xác thực trong OpenProject."
+    name: "Plugin xác thực Yojana"
+    description: "Tích hợp các nhà cung cấp chiến lược OmniAuth để xác thực trong Yojana."
   plugin_openproject_auth_saml:
     name: "OmniAuth SAML / Đăng nhập một lần"
-    description: "Thêm nhà cung cấp SAML OmniAuth vào OpenProject"
+    description: "Thêm nhà cung cấp SAML OmniAuth vào Yojana"
   enterprise_plans:
     legacy_enterprise: "Kế hoạch doanh nghiệp"
   token:
     hashed_token:
       display_value_placeholder: "***"
   external_link_warning:
-    title: "Rời khỏi OpenProject"
-    warning_message: "Bạn sắp rời khỏi OpenProject và truy cập vào một trang web bên ngoài. Xin lưu ý rằng các trang web bên ngoài không nằm dưới sự kiểm soát của chúng tôi và có thể có các chính sách bảo mật và an ninh khác nhau."
+    title: "Rời khỏi Yojana"
+    warning_message: "Bạn sắp rời khỏi Yojana và truy cập vào một trang web bên ngoài. Xin lưu ý rằng các trang web bên ngoài không nằm dưới sự kiểm soát của chúng tôi và có thể có các chính sách bảo mật và an ninh khác nhau."
     continue_message: "Bạn có chắc chắn muốn tiếp tục đến liên kết bên ngoài sau đây không?"
     continue_button: "Tiếp tục đến trang web bên ngoài"

@@ -141,7 +141,7 @@ ms:
                 options:
                   name: Permulaan
                   text: |
-                    Kami gembira anda menyertai kami! Kami cadangkan beberapa perkara sebagai permulaan di OpenProject.
+                    Kami gembira anda menyertai kami! Kami cadangkan beberapa perkara sebagai permulaan di Yojana.
 
                     Temui fitur paling penting dengan [Lawatan Berpandu ({{opSetting:base_url}}/projects/demo-project/work_packages/?start_onboarding_tour=true) kami. 
 
@@ -154,7 +154,7 @@ ms:
                     5. *Aktifkan modul selanjutanya*: &rightarrow; Pergi ke [Tetapan projek &rightarrow; Modul]({{opSetting:base_url}}/projects/demo-project/settings/modules).
                     6. *Lengkapkan tugasan anda dalam projek*: &rightarrow; Pergi ke [Pakej kerja &rightarrow; Tugasan]({{opSetting:base_url}}/projects/demo-project/work_packages/details/##wp.id:set_date_and_location_of_conference/overview?query_id=##query.id:demo_project__query__tasks).
 
-                    Di sini anda akan menemui [Panduan Pengguna] (https://www.openproject.org/docs/user-guide/) kami.
+                    Di sini anda akan menemui [Panduan Pengguna] (https://www.yojana.girishm.info/docs/user-guide/) kami.
                     Sila beritahu kami jika anda mempunyai sebarang soalan atau memerlukan bantuan. Hubungi kami: [support[at]openproject.com](mel ke:support@openproject.com).
               item_5:
                 options:
@@ -211,7 +211,7 @@ ms:
             *Lihat sejarah perubahan
             *Lihat sebagai Markdown
 
-            Maklumat lanjut: [https://www.openproject.org/docs/user-guide/wiki/](https://www.openproject.org/docs/user-guide/wiki/)
+            Maklumat lanjut: [https://www.yojana.girishm.info/docs/user-guide/wiki/](https://www.yojana.girishm.info/docs/user-guide/wiki/)
 
         scrum-project:
           name: Projek Scrum
@@ -314,7 +314,7 @@ ms:
                 options:
                   name: Permulaan
                   text: |
-                    Kami gembira anda menyertai kami! Kami cadangkan beberapa perkara sebagai permula andi OpenProject.
+                    Kami gembira anda menyertai kami! Kami cadangkan beberapa perkara sebagai permula andi Yojana.
 
                     _Cuba ikuti langkah-langkah berikut:_
 
@@ -326,7 +326,7 @@ ms:
                     6. *Cipta Pecutan wiki*: &rightarrow; Pergi ke [Tunggakan]({{opSetting:base_url}}/projects/your-scrum-project/backlogs) dan buka pecutan wiki dari menu juntai bawah sebelah kanan di pecutan. Anda boleh edit [templat wiki]({{opSetting:base_url}}/projects/your-scrum-project/wiki/) berdasarkan keperluan anda.
                     7. *Aktifkan modul lanjutan*: &rightarrow; Pergi ke [Tetapan projek &rightarrow; Modul]({{opSetting:base_url}}/projects/your-scrum-project/settings/modules).
 
-                    Disini anda akan menemui [Panduan Pengguna](https://www.openproject.org/docs/user-guide/) kami.
+                    Disini anda akan menemui [Panduan Pengguna](https://www.yojana.girishm.info/docs/user-guide/) kami.
                     Sila beritahu kami jika anda mempunyai sebarang soalan atau memerlukan bantuan. Hubungi kami: [support[at]openproject.com](mel ke:support@openproject.com).
               item_5:
                 options:
@@ -489,19 +489,19 @@ ms:
         item_6:
           name: Bug
       welcome:
-        title: Selamat datang ke OpenProject!
+        title: Selamat datang ke Yojana!
         text: |
-          OpenProject adalah perisian pengurusan projek sumber terbuka terkemuka. Ia menyokong pengurusan projek klasik, agile serta hibrid dan memberi anda kawalan sepenuhnya terhadap data anda.
+          Yojana adalah perisian pengurusan projek sumber terbuka terkemuka. Ia menyokong pengurusan projek klasik, agile serta hibrid dan memberi anda kawalan sepenuhnya terhadap data anda.
 
           Fitur-fitur teras dan kes penggunaan:
 
-          * [Pengurusan Portfolio Projek](https://www.openproject.org/collaboration-software-features/project-portfolio-management/)
-          * [Perancangan dan Penjadualan Projek](https://www.openproject.org/collaboration-software-features/project-planning-scheduling/)
-          * [Pengurusan Tugasan dan Penjejakan Isu](https://www.openproject.org/collaboration-software-features/task-management/)
-          * [Board Agile (Scrum dan Kanban)](https://www.openproject.org/collaboration-software-features/agile-project-management/)
-          * [Pengurusan Keperluan dan Perancangan Pelepasan](https://www.openproject.org/collaboration-software-features/product-development/)
-          * [Penjejakan Masa dan Kos, Anggaran](https://www.openproject.org/collaboration-software-features/time-tracking/)
-          * [Kolaborasi Pasukan dan Dokumentasi](https://www.openproject.org/collaboration-software-features/team-collaboration/)
+          * [Pengurusan Portfolio Projek](https://www.yojana.girishm.info/collaboration-software-features/project-portfolio-management/)
+          * [Perancangan dan Penjadualan Projek](https://www.yojana.girishm.info/collaboration-software-features/project-planning-scheduling/)
+          * [Pengurusan Tugasan dan Penjejakan Isu](https://www.yojana.girishm.info/collaboration-software-features/task-management/)
+          * [Board Agile (Scrum dan Kanban)](https://www.yojana.girishm.info/collaboration-software-features/agile-project-management/)
+          * [Pengurusan Keperluan dan Perancangan Pelepasan](https://www.yojana.girishm.info/collaboration-software-features/product-development/)
+          * [Penjejakan Masa dan Kos, Anggaran](https://www.yojana.girishm.info/collaboration-software-features/time-tracking/)
+          * [Kolaborasi Pasukan dan Dokumentasi](https://www.yojana.girishm.info/collaboration-software-features/team-collaboration/)
 
           Selamat datang ke masa hadapan pengurusan projek.
 

@@ -76,7 +76,7 @@ module OpenProject::TwoFactorAuthentication
             "DefaultSMSType" => "Transactional",
 
             # Set sender ID name (may not be supported in all countries)
-            "DefaultSenderID" => configuration_params.fetch("sender_id", "OpenProject")
+            "DefaultSenderID" => configuration_params.fetch("sender_id", "Yojana")
           }
         )
 

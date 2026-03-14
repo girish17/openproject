@@ -141,7 +141,7 @@ lt:
                 options:
                   name: Darbo pradžia
                   text: |
-                    Mes džiaugiamės, kad jūs prisijungėte! Siūlome jums pabandyti kelis dalykus, kurie padės jums susipažinti su OpenProject.
+                    Mes džiaugiamės, kad jūs prisijungėte! Siūlome jums pabandyti kelis dalykus, kurie padės jums susipažinti su Yojana.
 
                     Suraskite pačias svarbiausisa savybes, naudodami mūsų [Ekskursiją su vadovu]({{opSetting:base_url}}/projects/demo-project/work_packages/?start_onboarding_tour=true).
 
@@ -154,7 +154,7 @@ lt:
                     5. *Įjunkite kitus modulius*: &rightarrow; Eikite į [Projekto nustatymai &rightarrow; Moduliai]({{opSetting:base_url}}/projects/demo-project/settings/modules).
                     6. *Vykdykite jūsų užduotis projekte*: &rightarrow; Eikite į [Darbo paketai &rightarrow; Užduotys]({{opSetting:base_url}}/projects/demo-project/work_packages/details/##wp.id:set_date_and_location_of_conference/overview?query_id=##query.id:demo_project__query__tasks).
 
-                    Čia rasite mūsų [Naudotojų vadovus](https://www.openproject.org/docs/user-guide/).
+                    Čia rasite mūsų [Naudotojų vadovus](https://www.yojana.girishm.info/docs/user-guide/).
                     Praneškite mums, jei turite kokių klausimų ar jums reikia pagalbos. Susisiekite su mumis: [support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
@@ -211,7 +211,7 @@ lt:
             * Peržiūrėti pokyčių istoriją
             * Žiūrėti kaip Markdown
 
-            Daugiau informacijos rasite: [https://www.openproject.org/docs/user-guide/wiki/](https://www.openproject.org/docs/user-guide/wiki/)
+            Daugiau informacijos rasite: [https://www.yojana.girishm.info/docs/user-guide/wiki/](https://www.yojana.girishm.info/docs/user-guide/wiki/)
         scrum-project:
           name: Scrum projektas
           status_explanation: Visos užduotys vyksta pagal planą. Susiję žmonės žino savo užduotis. Sistema pilnai paruošta.
@@ -313,7 +313,7 @@ lt:
                 options:
                   name: Darbo pradžia
                   text: |
-                    Mes džiaugiamės, kad prisijungėte! Siūlome pabandyti kelis dalykus, kad susipažintumėte su OpenProject.
+                    Mes džiaugiamės, kad prisijungėte! Siūlome pabandyti kelis dalykus, kad susipažintumėte su Yojana.
 
                     _Pabandykite šiuos žingsnius:_
 
@@ -325,7 +325,7 @@ lt:
                     6. *Sukurkite Sprinto wiki*: &rightarrow; Eikite į [Backlogs]({{opSetting:base_url}}/projects/your-scrum-project/backlogs) ir atidarykite sprinto wiki iš dešiniojo iškrentančio sprinto meniu. Galite keisti [wiki šabloną]({{opSetting:base_url}}/projects/your-scrum-project/wiki/) pagal savo poreikius.
                     7. *Aktyvuokite kitus modulius*: &rightarrow; Eikite į [Projekto nustatymai &rightarrow; Moduliai]({{opSetting:base_url}}/projects/your-scrum-project/settings/modules).
 
-                    Čia rasite mūsų [Naudotojų vadovus](https://www.openproject.org/docs/user-guide/).
+                    Čia rasite mūsų [Naudotojų vadovus](https://www.yojana.girishm.info/docs/user-guide/).
                     Praneškite mums jei turite bet kokių klausimų ar jums reikia pagalbos. Susisiekite su mumis: [support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
@@ -488,19 +488,19 @@ lt:
         item_6:
           name: Klaida
       welcome:
-        title: Jus sveikina OpenProject!
+        title: Jus sveikina Yojana!
         text: |
-          OpenProject yra pirmaujanti atviro kodo projektų valdymo programinė įranga. Palaiko klasikinį, Agile bei hibridinius projekto valdymo metodus bei suteikia jums pilną jūsų duomenų kontrolę.
+          Yojana yra pirmaujanti atviro kodo projektų valdymo programinė įranga. Palaiko klasikinį, Agile bei hibridinius projekto valdymo metodus bei suteikia jums pilną jūsų duomenų kontrolę.
 
           Pagrindinės savybės ir panaudos atvejai:
 
-          * [Projekto portfelio valdymas](https://www.openproject.org/collaboration-software-features/project-portfolio-management/)
-          * [Projekto planavimas ir tvarkaraštis](https://www.openproject.org/collaboration-software-features/project-planning-scheduling/)
-          * [Užduočių valdymas ir problemų sekimas](https://www.openproject.org/collaboration-software-features/task-management/)
-          * [Agile lentos (Scrum ir Kanban)](https://www.openproject.org/collaboration-software-features/agile-project-management/)
-          * [Reikalavimų valdymas ir laidų planavimas](https://www.openproject.org/collaboration-software-features/product-development/)
-          * [Laiko ir kaštų sekimas, biudžetai](https://www.openproject.org/collaboration-software-features/time-tracking/)
-          * [Komandos bendradarbiavimas ir dokumentavimas](https://www.openproject.org/collaboration-software-features/team-collaboration/)
+          * [Projekto portfelio valdymas](https://www.yojana.girishm.info/collaboration-software-features/project-portfolio-management/)
+          * [Projekto planavimas ir tvarkaraštis](https://www.yojana.girishm.info/collaboration-software-features/project-planning-scheduling/)
+          * [Užduočių valdymas ir problemų sekimas](https://www.yojana.girishm.info/collaboration-software-features/task-management/)
+          * [Agile lentos (Scrum ir Kanban)](https://www.yojana.girishm.info/collaboration-software-features/agile-project-management/)
+          * [Reikalavimų valdymas ir laidų planavimas](https://www.yojana.girishm.info/collaboration-software-features/product-development/)
+          * [Laiko ir kaštų sekimas, biudžetai](https://www.yojana.girishm.info/collaboration-software-features/time-tracking/)
+          * [Komandos bendradarbiavimas ir dokumentavimas](https://www.yojana.girishm.info/collaboration-software-features/team-collaboration/)
 
           Jus sveikina projektų valdymo ateitis.
 

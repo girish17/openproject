@@ -141,7 +141,7 @@ ja:
                 options:
                   name: はじめに
                   text: |
-                    ご参加いただきありがとうございます！OpenProjectを始めるにあたって、いくつかのことを試してみることをお勧めします。
+                    ご参加いただきありがとうございます！Yojanaを始めるにあたって、いくつかのことを試してみることをお勧めします。
 
                     ガイドツアー]({{opSetting:base_url}}/projects/demo-project/work_packages/?start_onboarding_tour=true)で最も重要な機能を発見してください。
 
@@ -154,7 +154,7 @@ ja:
                     5.*さらにモジュールをアクティブにする： &rightarrow; プロジェクト設定 &rightarrow; モジュール]({{opSetting:base_url}}/projects/demo-project/settings/modules)に移動します。
                     6.*プロジェクトのタスクを完了する： &rightarrow; ワークパッケージ &rightarrow; タスク]({{opSetting:base_url}}/projects/demo-project/work_packages/details/##wp.id:set_date_and_location_of_conference/overview?query_id=##query.id:demo_project__query__tasks) に移動します。
 
-                    こちらには[ユーザーガイド](https://www.openproject.org/docs/user-guide/)があります。
+                    こちらには[ユーザーガイド](https://www.yojana.girishm.info/docs/user-guide/)があります。
                     ご質問やサポートが必要な場合は、ご連絡ください。ご連絡ください：[support[at]openproject.com](mailto:support@openproject.com)。
               item_5:
                 options:
@@ -211,7 +211,7 @@ ja:
             * 変更履歴を表示
             * Markdownとして表示
 
-            詳細情報：[https://www.openproject.org/docs/user-guide/wiki/](https://www.openproject.org/docs/user-guide/wiki/)
+            詳細情報：[https://www.yojana.girishm.info/docs/user-guide/wiki/](https://www.yojana.girishm.info/docs/user-guide/wiki/)
         scrum-project:
           name: スクラムプロジェクト
           status_explanation: すべてのタスクがスケジュール通りに進んでいる。関係者は自分のタスクを把握している。システムは完全にセットアップされている。
@@ -313,7 +313,7 @@ ja:
                 options:
                   name: はじめに
                   text: |
-                    ご参加いただきありがとうございます！OpenProjectを始めるにあたって、いくつかのことを試してみることをお勧めします。
+                    ご参加いただきありがとうございます！Yojanaを始めるにあたって、いくつかのことを試してみることをお勧めします。
 
 
 
@@ -325,7 +325,7 @@ ja:
                     6.*スプリントWikiを作成する： &rightarrow; Backlogs]({{opSetting:base_url}}/projects/your-scrum-project/backlogs)に移動し、スプリント内の右ドロップダウンメニューからスプリントwikiを開きます。wiki テンプレート]({{opSetting:base_url}}/projects/your-scrum-project/wiki/)を必要に応じて編集する。
                     7.*さらにモジュールを有効にする &rightarrow; Project settings &rightarrow; Modules]({{opSetting:base_url}}/projects/your-scrum-project/settings/modules) にアクセスしてください。
 
-                    ここに[ユーザーガイド](https://www.openproject.org/docs/user-guide/)があります。
+                    ここに[ユーザーガイド](https://www.yojana.girishm.info/docs/user-guide/)があります。
                     ご質問やサポートが必要な場合はご連絡ください。ご連絡ください：[support[at]openproject.com](mailto:support@openproject.com)。
               item_5:
                 options:
@@ -488,19 +488,19 @@ ja:
         item_6:
           name: 不具合
       welcome:
-        title: OpenProjectへようこそ！
+        title: Yojanaへようこそ！
         text: |
-          OpenProjectは、オープンソースを代表するプロジェクト管理ソフトウェアです。クラシック、アジャイル、ハイブリッドのプロジェクト管理をサポートし、データを完全にコントロールすることができます。
+          Yojanaは、オープンソースを代表するプロジェクト管理ソフトウェアです。クラシック、アジャイル、ハイブリッドのプロジェクト管理をサポートし、データを完全にコントロールすることができます。
 
           コア機能とユースケース
 
-          * プロジェクトポートフォリオ管理](https://www.openproject.org/collaboration-software-features/project-portfolio-management/)
-          * [プロジェクト計画とスケジューリング](https://www.openproject.org/collaboration-software-features/project-planning-scheduling/)
-          * [タスク管理と課題追跡](https://www.openproject.org/collaboration-software-features/task-management/)
-          * [アジャイルボード（スクラムとカンバン）](https://www.openproject.org/collaboration-software-features/agile-project-management/)
-          * [要件管理とリリース計画](https://www.openproject.org/collaboration-software-features/product-development/)
-          * [時間とコスト追跡、予算](https://www.openproject.org/collaboration-software-features/time-tracking/)
-          * [チームコラボレーションと文書化](https://www.openproject.org/collaboration-software-features/team-collaboration/)
+          * プロジェクトポートフォリオ管理](https://www.yojana.girishm.info/collaboration-software-features/project-portfolio-management/)
+          * [プロジェクト計画とスケジューリング](https://www.yojana.girishm.info/collaboration-software-features/project-planning-scheduling/)
+          * [タスク管理と課題追跡](https://www.yojana.girishm.info/collaboration-software-features/task-management/)
+          * [アジャイルボード（スクラムとカンバン）](https://www.yojana.girishm.info/collaboration-software-features/agile-project-management/)
+          * [要件管理とリリース計画](https://www.yojana.girishm.info/collaboration-software-features/product-development/)
+          * [時間とコスト追跡、予算](https://www.yojana.girishm.info/collaboration-software-features/time-tracking/)
+          * [チームコラボレーションと文書化](https://www.yojana.girishm.info/collaboration-software-features/team-collaboration/)
 
           プロジェクト管理の未来へようこそ。
 

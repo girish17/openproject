@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -111,12 +111,12 @@ zh-TW:
         link: "webhook"
     mcp_configurations:
       index:
-        description: "模型上下文協定允許 AI 代理向其使用者提供此 OpenProject 實體所揭露的工具與資源。"
+        description: "模型上下文協定允許 AI 代理向其使用者提供此 Yojana 實體所揭露的工具與資源。"
         resources_heading: "資源"
-        resources_description: "OpenProject implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
+        resources_description: "Yojana implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
         resources_submit: "更新資源"
         tools_heading: "工具"
-        tools_description: "OpenProject 實作下列工具。每個工具都可以依您的需求啟用、重新命名和描述。如需詳細資訊，請參閱 [MCP 工具說明文件](docs_url)。"
+        tools_description: "Yojana 實作下列工具。每個工具都可以依您的需求啟用、重新命名和描述。如需詳細資訊，請參閱 [MCP 工具說明文件](docs_url)。"
         tools_submit: "更新工具"
       multi_update:
         success: "MCP 組態已成功更新。"
@@ -147,13 +147,13 @@ zh-TW:
       edit:
         label_delete_scim_client: "刪除 SCIM 用戶端"
       form:
-        auth_provider_description: "這是由 SCIM 提供者新增的使用者用來在 OpenProject 中進行驗證的服務。"
-        authentication_method_description_html: "這是 SCIM 用戶端在 OpenProject 進行認證的方式。請確保 OAuth 令牌包含<code>scim_v2</code>範圍。"
+        auth_provider_description: "這是由 SCIM 提供者新增的使用者用來在 Yojana 中進行驗證的服務。"
+        authentication_method_description_html: "這是 SCIM 用戶端在 Yojana 進行認證的方式。請確保 OAuth 令牌包含<code>scim_v2</code>範圍。"
         description: "有關這些組態選項的詳細資訊，請參閱我們的 [設定 SCIM 用戶端的說明文件](docs_url)。"
         jwt_sub_description: "例如，對於 Keycloak，這是與 SCIM 用戶端關聯的服務帳戶的 UUID。請參閱 [我們的說明文件](docs_url) 來學習如何針對您的使用個案尋找主題聲稱。"
         name_description: "請選擇一個能幫助其他管理員理解此用戶端設定目的的名稱。"
       index:
-        description: "在此設定的 SCIM 用戶端能夠與 OpenProject SCIM 伺服器 API 互動，以提供、更新和取消提供使用者帳戶和群組。"
+        description: "在此設定的 SCIM 用戶端能夠與 Yojana SCIM 伺服器 API 互動，以提供、更新和取消提供使用者帳戶和群組。"
         label_create_button: "新的 SCIM 用戶端"
       new:
         title: "新增 SCIM-client"
@@ -161,14 +161,14 @@ zh-TW:
         confirm_button: "撤銷"
         title: "撤銷靜態令牌"
         heading: "你確定要撤銷此令牌(Token)？"
-        description: "使用此標記的 SCIM 用戶端將不能再存取 OpenProject 的 SCIM 伺服器 API。"
+        description: "使用此標記的 SCIM 用戶端將不能再存取 Yojana 的 SCIM 伺服器 API。"
       table_component:
         blank_slate:
           title: "尚未設定 SCIM 用戶端"
           description: "新增用戶端後，將會在此顯示"
         user_count: "使用者"
       token_list_component:
-        description: "您在此產生的令牌可由 SCIM 用戶端用來存取 OpenProject SCIM API。"
+        description: "您在此產生的令牌可由 SCIM 用戶端用來存取 Yojana SCIM API。"
         heading: "令牌"
         label_add_token: "令牌"
         label_aria_add_token: "新增令牌"
@@ -229,37 +229,37 @@ zh-TW:
       name: LDAP 連線名稱
       host: LDAP 主機名稱或 IP 位址
       login_map: LDAP 中用於識別使用者登入的屬性。 通常是“uid”或“samAccountName”。
-      generic_map: LDAP 的的屬性對應到 OpenProject的 `%{attribute}`
-      admin_map_html: "可選：LDAP 中的屬性金鑰，<strong>如果存在即</strong>標示 OpenProject 使用者為管理員。有疑問時請留空。"
+      generic_map: LDAP 的的屬性對應到 Yojana的 `%{attribute}`
+      admin_map_html: "可選：LDAP 中的屬性金鑰，<strong>如果存在即</strong>標示 Yojana 使用者為管理員。有疑問時請留空。"
       system_user_dn_html: |
         輸入唯讀權限的系統使用者 DN。
         <br>
-        範例：uid=openproject,ou=system,dc=example,dc=com
+        範例：uid=yojana,ou=system,dc=example,dc=com
       system_user_password: 輸入該系統之使用者密碼
       base_dn: |
-        輸入您希望 OpenProject 在 LDAP 中尋找使用者和群組的子目錄的基本 DN。
-        OpenProject 將僅篩選此子目樹中所提供的使用者名稱。
+        輸入您希望 Yojana 在 LDAP 中尋找使用者和群組的子目錄的基本 DN。
+        Yojana 將僅篩選此子目樹中所提供的使用者名稱。
         範例：ou=users,dc=example,dc=com
       filter_string: |
         新增選擇性的 RFC4515 過濾器，以套用至在 LDAP 中過濾使用者所傳回的結果。
-        這可以用來限制 OpenProject 在驗證和群組同步化時找到的使用者集。
+        這可以用來限制 Yojana 在驗證和群組同步化時找到的使用者集。
       filter_string_concat: |
-        OpenProject 總是會篩選使用者提供的登入屬性來識別記錄。如果您在此提供篩選器，
+        Yojana 總是會篩選使用者提供的登入屬性來識別記錄。如果您在此提供篩選器，
         ，它將與 AND 連結。預設情況下，一個 catch-all (objectClass=*) 會被用作篩選器。
       onthefly_register: |
-        如果勾選此方框，OpenProject 將在使用者"首次"登入時，自動根據 LDAP 資料創建新的使用者帳戶。
+        如果勾選此方框，Yojana 將在使用者"首次"登入時，自動根據 LDAP 資料創建新的使用者帳戶。
 
-        保持此方框不勾選，則僅限於 OpenProject 已有帳戶可以使用 LDAP 驗證登入。
+        保持此方框不勾選，則僅限於 Yojana 已有帳戶可以使用 LDAP 驗證登入。
     connection_encryption: "連線加密"
     encryption_details: "LDAPS / STARTTLS 選項"
     system_account: "系統帳戶"
     system_account_legend: |
-      OpenProject 需要透過系統帳戶進行唯讀存取才能在 LDAP 樹中尋找使用者和群組。
+      Yojana 需要透過系統帳戶進行唯讀存取才能在 LDAP 樹中尋找使用者和群組。
       請在下一節中指定該系統使用者的綁定憑證。
     ldap_details: "LDAP 詳細資料"
     user_settings: "屬性對應"
     user_settings_legend: |
-      以下欄位說明了 OpenProject 如何從 LDAP 資料自動建立使用者帳戶，以及如何使用 LDAP 屬性對應到OpenProject的使用者的屬性 (屬性映射)。
+      以下欄位說明了 Yojana 如何從 LDAP 資料自動建立使用者帳戶，以及如何使用 LDAP 屬性對應到Yojana的使用者的屬性 (屬性映射)。
     tls_mode:
       plain: "無"
       simple_tls: "LDAPS"
@@ -1493,7 +1493,7 @@ zh-TW:
         confirmation: "不吻合 %{attribute}。"
         could_not_be_copied: "%{dependency} 無法完整複製."
         does_not_exist: "不存在"
-        error_enterprise_only: "%{action} 只適用於 OpenProject 企業版。"
+        error_enterprise_only: "%{action} 只適用於 Yojana 企業版。"
         error_unauthorized: "無法被存取。"
         error_readonly: "被嘗試寫入但是無法寫入。"
         error_conflict: "在此同時，資訊已經被至少一個使用者更新"
@@ -2102,7 +2102,7 @@ zh-TW:
       heading_reset: "重置備份令牌(Token)"
       heading_create: "產生備份用的token"
       implications: >
-        啓用備份將允許具有所需權限和此備份令牌(Token)的任何用戶下載包含此 OpenProject 安裝的所有數據的備份。這包括所有其他用戶的數據。
+        啓用備份將允許具有所需權限和此備份令牌(Token)的任何用戶下載包含此 Yojana 安裝的所有數據的備份。這包括所有其他用戶的數據。
       info: >
         您將需要產生備份token才能建立備份。 每次您想要請求備份時，您都必須提供此token。 您可以刪除備份token以停用該備份。
       verification: >
@@ -2442,7 +2442,7 @@ zh-TW:
         已經有令牌了嗎？請使用下方按鈕新增，以升級至預約的 Enterprise 方案。
       hide_banner: "隱藏此廣告"
       homescreen_description: >
-        企業方案在 OpenProject 社群版的基礎上，提供額外的 [企業附加元件](enterprise_url)與專業支援，特別適合在關鍵任務環境中使用 OpenProject 的組織。
+        企業方案在 Yojana 社群版的基礎上，提供額外的 [企業附加元件](enterprise_url)與專業支援，特別適合在關鍵任務環境中使用 Yojana 的組織。
       homescreen_subline: 升級即是對開源專案的一種支持。
       baseline_comparison:
         description: 突顯自過去任一時間點以來對此清單所做的變更。
@@ -2455,7 +2455,7 @@ zh-TW:
         premium_features: "Enterprise 附加元件"
         premium_features_text: "敏捷看板、自訂主題與標誌、圖表、具備自訂動作的智慧工作流程、工作套件附件的全文搜尋，以及多選自訂欄位。"
         professional_support: "專業支援"
-        professional_support_text: "由資深支援工程師提供可靠且貼近需求的高品質支援，具備在商業關鍵環境中執行 OpenProject 的專業知識。"
+        professional_support_text: "由資深支援工程師提供可靠且貼近需求的高品質支援，具備在商業關鍵環境中執行 Yojana 的專業知識。"
       work_package_subject_generation:
         description: "使用參考的屬性和文字建立自動產生的主題。"
       customize_life_cycle:
@@ -2487,23 +2487,23 @@ zh-TW:
       define_custom_style:
         title: "自訂布景主題顏色與logo"
         more_info: "備註：Logo可被公開存取。"
-        description: 客製OpenProject中專屬您的標誌(logo)與顏色。
+        description: 客製Yojana中專屬您的標誌(logo)與顏色。
       custom_actions:
         title: "自訂動作"
         description: "自訂動作是一系列預先定義動作的單鍵捷徑，您可以根據狀態、角色、類型或專案，在特定工作套件上使用這些動作。"
       mcp_server:
-        description: "透過 MCP 將 AI 代理與您的 OpenProject 實例整合。"
+        description: "透過 MCP 將 AI 代理與您的 Yojana 實例整合。"
       nextcloud_sso:
         title: "Nextcloud 儲存空間的單一登入(SSO)"
         description: "使用單一登入為您的 Nextcloud 儲存空間啟用無縫且安全的驗證。簡化存取管理並提升使用者便利性。"
       scim_api:
         title: "SCIM 用戶端"
-        description: "透過我們的 SCIM Server API，將 OpenProject 與 Microsoft Entra 或 Keycloak 等外部身分識別服務無縫整合，自動化使用者管理功能。此功能自企業版訂閱方案起提供。"
+        description: "透過我們的 SCIM Server API，將 Yojana 與 Microsoft Entra 或 Keycloak 等外部身分識別服務無縫整合，自動化使用者管理功能。此功能自企業版訂閱方案起提供。"
       sso_auth_providers:
         title: "單一帳號登入(SSO)"
         description: "啟用使用者透過外部 SSO 提供者（如 SAML 或 OpenID Connect）登入，以便與現有身份系統無縫整合和存取。"
       virus_scanning:
-        description: "確保在其他使用者存取 OpenProject 中上傳的檔案前，對其進行病毒掃描。"
+        description: "確保在其他使用者存取 Yojana 中上傳的檔案前，對其進行病毒掃描。"
       project_creation_wizard:
         description: "產生一個逐步引導的精靈（Wizard），協助專案經理填寫專案啟動申請。"
       placeholder_users:
@@ -2532,16 +2532,16 @@ zh-TW:
       request_again: "重新申請"
       resend_action: "重新傳送確認電子郵件"
       welcome_title: "功能快速總覽"
-      welcome_description: "快速瞭解 OpenProject Enterprise 版的專案管理與團隊協作功能。"
+      welcome_description: "快速瞭解 Yojana Enterprise 版的專案管理與團隊協作功能。"
       confirmation_info: >
-        我們已於 %{date} 寄送一封電子郵件至 %{email}，內含開始 OpenProject Enterprise 免費試用所需的所有資訊。請查看您的收件匣，並點擊信中的確認連結以開始為期 14 天的免費試用。
+        我們已於 %{date} 寄送一封電子郵件至 %{email}，內含開始 Yojana Enterprise 免費試用所需的所有資訊。請查看您的收件匣，並點擊信中的確認連結以開始為期 14 天的免費試用。
       confirmation_subline: >
         請查看您的收件匣並依照指示操作，以開始為期 14 天的免費試用。
       domain_caption: 此令牌將僅對您目前設定的主機名稱有效。
       receive_newsletter_html: >
-        我想訂閱 OpenProject 的<a target="_blank" href="https://www.openproject.org/newsletter/">電子報</a>。
+        我想訂閱 Yojana 的<a target="_blank" href="https://www.yojana.girishm.info/newsletter/">電子報</a>。
       consent_html: >
-        我同意<a target="_blank" href="https://www.openproject.org/terms-of-service/">服務條款</a>及<a target="_blank" href="https://www.openproject.org/data-privacy-and-security/">隱私政策</a>。
+        我同意<a target="_blank" href="https://www.yojana.girishm.info/terms-of-service/">服務條款</a>及<a target="_blank" href="https://www.yojana.girishm.info/data-privacy-and-security/">隱私政策</a>。
   email_calendar_updates:
     state:
       disabled: "已停用。"
@@ -2574,7 +2574,7 @@ zh-TW:
   error_check_user_and_role: "請選擇一個使用者與一個角色。"
   error_code: "錯誤碼 %{code}"
   error_color_could_not_be_saved: "無法儲存顏色"
-  error_cookie_missing: "OpenProject的Cookie遺失了。請確保瀏覽器的Cookie已經啟用，否則本應用程式將無法正常做用。"
+  error_cookie_missing: "Yojana的Cookie遺失了。請確保瀏覽器的Cookie已經啟用，否則本應用程式將無法正常做用。"
   error_custom_option_not_found: "選項不存在。"
   error_enterprise_plan_needed: "您需要 %{plan} 企業方案才能執行此操作。"
   error_enterprise_activation_user_limit: "無法啟動您的帳戶 (已達到使用者限制)。請與管理員聯繫以獲取存取權限。"
@@ -2592,7 +2592,7 @@ zh-TW:
   error_work_package_not_found_in_project: "工作套件找不到或是不屬於這個專案"
   error_work_package_id_not_found: "無此工作套件。"
   error_must_be_project_member: "必須是專案的成員"
-  error_migrations_are_pending: "您的 OpenProject 安裝有待定的資料庫轉移。您可能在上次升級時遺漏了執行遷移。請檢查升級指南以正確升級您的安裝。"
+  error_migrations_are_pending: "您的 Yojana 安裝有待定的資料庫轉移。您可能在上次升級時遺漏了執行遷移。請檢查升級指南以正確升級您的安裝。"
   error_migrations_visit_upgrade_guides: "請參閱我們的升級指南文件"
   error_no_default_work_package_status: '沒有定義預設的工作套件狀態。請檢查您的設定 (前往 "管理 -> 工作套件狀態")。'
   error_no_type_in_project: "這個專案沒有關聯的類型，請檢查專案設定。"
@@ -2703,7 +2703,7 @@ zh-TW:
     failed: "嘗試匯出工作套件時發生錯誤： %{message}"
     demo:
       heading: "範例 PDF"
-      footer: "由 OpenProject 產生"
+      footer: "由 Yojana 產生"
       button_text: 產生示範 PDF
     errors:
       embedded_table_with_too_many_columns: "此內嵌工作套件表格無法符合頁面大小，請減少欄位數量。"
@@ -2794,7 +2794,7 @@ zh-TW:
       no_visible_projects: "最新的可見專案"
       users: "最新註冊的使用者"
     blocks:
-      community: "OpenProject 社群"
+      community: "Yojana 社群"
       upsell:
         title: "升級到企業版"
       new_features:
@@ -2808,7 +2808,7 @@ zh-TW:
           new_features_list:
             line_0: 自動化專案啟動（企業附加元件）。
             line_1: "會議：添加新的或現有的工作套件作為成果。"
-            line_2: "會議：在 OpenProject 中顯示 iCal 回應。"
+            line_2: "會議：在 Yojana 中顯示 iCal 回應。"
             line_3: "重複性會議：將議程項目重複至下次會議。"
             line_4: "發佈到社群：高亮顯示屬性。"
             line_5: 在使用者提供的內容中開啟外部連結前警告（企業附加元件）。
@@ -2834,7 +2834,7 @@ zh-TW:
       default_attribute_written: "已寫入只讀屬性"
       progress_mode_changed_to_status_based: "更新計算後的進度"
       status_changed: "狀態 '%{status_name}'"
-      system_update: "OpenProject 系統更新："
+      system_update: "Yojana 系統更新："
       work_package_duplicate_closed: "更新了重複工作套件："
       total_percent_complete_mode_changed_to_work_weighted_average: "完成百分比總計的計算現在以工作加權。"
       total_percent_complete_mode_changed_to_simple_average: "完成百分比總數的計算現在僅基於完成百分比值的簡單平均值。"
@@ -2890,7 +2890,7 @@ zh-TW:
       label: "新增…"
   my_account:
     access_tokens:
-      description: "提供者令牌由 OpenProject 發行，允許其他應用程式存取。用戶端識別碼由其他應用程式發行，允許 OpenProject 存取它們。"
+      description: "提供者令牌由 Yojana 發行，允許其他應用程式存取。用戶端識別碼由其他應用程式發行，允許 Yojana 存取它們。"
       no_results:
         title: "沒有可顯示的存取令牌(Token)"
         description: "他們全都被停用了。他們可以在管理功能表重新啟用"
@@ -2910,7 +2910,7 @@ zh-TW:
         blank_title: "無 API 令牌"
         title: "API"
         table_title: "API 令牌(Token)"
-        text_hint: "API 令牌(Tokens)允許第三方應用程式透過 REST API 與此 OpenProject 實例進行通訊。"
+        text_hint: "API 令牌(Tokens)允許第三方應用程式透過 REST API 與此 Yojana 實例進行通訊。"
         static_token_name: "API 令牌(Token)"
         disabled_text: "API 令牌(Tokens)未由管理員啟用。若要使用此功能，請聯絡您的管理員。"
         add_button: "API 令牌(Token)"
@@ -2919,7 +2919,7 @@ zh-TW:
         blank_title: "沒有 iCalendar 令牌"
         title: "iCalendar "
         table_title: "iCalendar 令牌"
-        text_hint_link: "iCalendar 權杖可讓使用者[訂閱 OpenProject 行事曆](docs_url)，並在外部用戶端中檢視最新的工作套件資訊。"
+        text_hint_link: "iCalendar 權杖可讓使用者[訂閱 Yojana 行事曆](docs_url)，並在外部用戶端中檢視最新的工作套件資訊。"
         disabled_text: "管理員未啟用 iCalendar 訂閱。 請聯絡您的管理員以使用此功能。"
       oauth_application:
         active_tokens: "有效令牌"
@@ -2928,14 +2928,14 @@ zh-TW:
         last_used_at: "最後使用於"
         title: "OAuth"
         table_title: "OAuth 應用程式令牌"
-        text_hint: "OAuth 應用程式令牌允許第三方應用程式與此 OpenProject 範例連線。"
+        text_hint: "OAuth 應用程式令牌允許第三方應用程式與此 Yojana 範例連線。"
       oauth_client:
         blank_description: "目前還沒有 OAuth 用戶端令牌。"
         blank_title: "沒有 OAuth 用戶端令牌"
         failed: "發生錯誤，令牌無法移除。請稍後再試。"
         integration_type: "整合類型"
         table_title: "OAuth 用戶端令牌"
-        text_hint: "OAuth 客戶端令牌允許此 OpenProject 實例與外部應用程式連線，例如檔案儲存。"
+        text_hint: "OAuth 客戶端令牌允許此 Yojana 實例與外部應用程式連線，例如檔案儲存。"
         title: "OAuth"
         remove_token: "您真的要移除此令牌？您需要重新登入 %{integration}。"
         removed: "成功移除 OAuth 用戶端令牌"
@@ -2946,7 +2946,7 @@ zh-TW:
         blank_title: "沒有 RSS 令牌"
         title: "RSS"
         table_title: "RSS 令牌(Token)"
-        text_hint: "RSS 令牌允許使用者透過外部 RSS 閱讀器，瞭解此 OpenProject 實例的最新變更。"
+        text_hint: "RSS 令牌允許使用者透過外部 RSS 閱讀器，瞭解此 Yojana 實例的最新變更。"
         static_token_name: "RSS 令牌(Token)"
         disabled_text: "RSS 令牌並非由管理員啟用。請聯絡您的管理員以使用此功能。"
       storages:
@@ -3121,7 +3121,7 @@ zh-TW:
   label_custom_field_plural: "客製欄位"
   label_custom_field_default_type: "空類型"
   label_custom_style: "設計"
-  label_custom_style_description: "選擇 OpenProject 的主題外觀、選擇要在應用程式中使用的預設顏色以及匯出的外觀。"
+  label_custom_style_description: "選擇 Yojana 的主題外觀、選擇要在應用程式中使用的預設顏色以及匯出的外觀。"
   label_dashboard: "儀表板"
   label_database_version: "PostgreSQL 版本"
   label_date: "日期"
@@ -3393,7 +3393,7 @@ zh-TW:
   label_open_menu: "開啟選單"
   label_open_work_packages: "開啟中"
   label_open_work_packages_plural: "開啟中"
-  label_openproject_website: "OpenProject 網站"
+  label_openproject_website: "Yojana 網站"
   label_optional_description: "說明"
   label_options: "選項"
   label_other: "其他"
@@ -3795,8 +3795,8 @@ zh-TW:
   mail_body_backup_token_reset_user_info: 您備份用令牌(Token)已重置。
   mail_body_backup_token_info: 之前的令牌(Token)不再有效。
   mail_body_backup_waiting_period: 新令牌(Token)將在 %{hours} 小時後啓用。
-  mail_body_backup_token_warning: 如果不是您在操作，請立即登錄 OpenProject 並重置。
-  mail_body_incoming_email_error: 無法處理您發送給 OpenProject 的電子郵件。
+  mail_body_backup_token_warning: 如果不是您在操作，請立即登錄 Yojana 並重置。
+  mail_body_incoming_email_error: 無法處理您發送給 Yojana 的電子郵件。
   mail_body_incoming_email_error_in_reply_to: "%{from_email} 在 %{received_at} 撰寫"
   mail_body_incoming_email_error_logs: "日誌"
   mail_body_lost_password: "若要變更您的密碼，請按一下以下的連結:"
@@ -3809,10 +3809,10 @@ zh-TW:
   mail_body_register_user: "親 %{name}，"
   mail_body_register_links_html: |
     請隨時瀏覽我們提供網絡研討會 (%{webinar_link}) 的 YouTube 頻道 (%{youtube_link})
-    和“入門”視頻 (%{get_started_link}) 使您在 OpenProject 中的第一步盡可能簡單。
+    和“入門”視頻 (%{get_started_link}) 使您在 Yojana 中的第一步盡可能簡單。
     <br />
     如果您有任何其他問題，請查閱我們的文件 (%{documentation_link}) 或聯繫您的管理員。
-  mail_body_register_closing: "您的OpenProject 團隊"
+  mail_body_register_closing: "您的Yojana 團隊"
   mail_body_register_ending: "親，保持聯繫！"
   mail_body_reminder: "%{count} 個指派給您的工作套件將在 %{days} 天後到期："
   mail_body_group_reminder: '%{count} 個分配給群組 “%{group}”的工作(包) 將在 %{days} 天後到期：'
@@ -3821,7 +3821,7 @@ zh-TW:
   mail_subject_account_activation_request: "帳號 %{value} 啟用請求"
   mail_subject_backup_ready: "備份已準備好"
   mail_subject_backup_token_reset: "重設備份用令牌(Token)"
-  mail_subject_incoming_email_error: "無法處理您發送給 OpenProject 的電子郵件"
+  mail_subject_incoming_email_error: "無法處理您發送給 Yojana 的電子郵件"
   mail_subject_lost_password: "你的 %{value} 密碼"
   mail_subject_register: "你的帳號 %{value} 啟用"
   mail_subject_wiki_content_added: "Wiki 頁面 '%{id}' 已經被增加"
@@ -3850,13 +3850,13 @@ zh-TW:
   mail_user_activation_limit_reached:
     subject: 已達到用戶激活限制
     message: |
-      新用戶(%{email}) 試圖在您管理的 OpenProject 環境 (%{host}) 上創建賬戶。用戶無法激活其賬戶, 因爲已達到用戶限制。
+      新用戶(%{email}) 試圖在您管理的 Yojana 環境 (%{host}) 上創建賬戶。用戶無法激活其賬戶, 因爲已達到用戶限制。
     steps:
       label: "要允許用戶登錄，您可以： "
       a: "([在這裏](upgrade_url)) 升級付款計劃" #here turned into a link
       b: "([在這裏](users_url)) 鎖定或刪除現有用戶" #here turned into a link
   more_actions: "更多功能"
-  noscript_description: "您必須啟用 Javascript 才能使用 OpenProject!"
+  noscript_description: "您必須啟用 Javascript 才能使用 Yojana!"
   noscript_heading: "JavaScript 已停用"
   noscript_learn_more: "了解更多"
   notice_accessibility_mode: 可以在您的 [帳戶設定](url) 中啟用輔助功能模式。
@@ -3933,7 +3933,7 @@ zh-TW:
   notice_wont_delete_auth_source: 只要仍有用戶在使用該 LDAP 連接，就無法將其刪除。
   notice_project_cannot_update_custom_fields: "無法更新專案的可用客製欄位。專案無效：%{errors}"
   notice_attachment_migration_wiki_page: >
-    此頁面是因為更新 OpenProject 而自動產生的。他包含了所有之前與 %{container_type} "%{container_name}" 有關聯的附加檔案。
+    此頁面是因為更新 Yojana 而自動產生的。他包含了所有之前與 %{container_type} "%{container_name}" 有關聯的附加檔案。
   #Default format for numbers
   number:
     format:
@@ -3955,7 +3955,7 @@ zh-TW:
           tb: "TB"
   onboarding:
     heading_getting_started: "取得概覽"
-    text_getting_started_description: "快速瞭解 OpenProject 的項目管理和團隊協作。您可以從幫助菜單重新啓動此視頻。"
+    text_getting_started_description: "快速瞭解 Yojana 的項目管理和團隊協作。您可以從幫助菜單重新啓動此視頻。"
     welcome: "歡迎使用 %{app_title}"
     select_language: "請選擇您的語言"
   permission_add_work_package_comments: "增加留言"
@@ -4048,7 +4048,7 @@ zh-TW:
   permission_view_all_principals_explanation: >
     允許使用者查看系統中的所有使用者和群組，即使他們不是任何已加入專案或群組的成員。
   permission_view_project: "檢視專案"
-  permission_view_changesets: "在 OpenProject 檢視版本庫修訂"
+  permission_view_changesets: "在 Yojana 檢視版本庫修訂"
   permission_view_internal_comments: "檢視內部留言"
   permission_view_commit_author_statistics: "檢視 Commit 的作者統計資訊"
   permission_view_dashboards: "檢視儀表板"
@@ -4173,7 +4173,7 @@ zh-TW:
     destroy:
       confirmation: "如果你要繼續，這將會永久刪除這個託管的版本庫"
       info: "刪除這個版本庫是不可逆的動作"
-      info_not_managed: "注意: 這將\"不會\"刪除版本庫的內容，因為他不是由 OpenProject 所託管的"
+      info_not_managed: "注意: 這將\"不會\"刪除版本庫的內容，因為他不是由 Yojana 所託管的"
       managed_path_note: "以下的資料夾將會被刪除: %{path}"
       repository_verification: "輸入這個專案的識別碼 %{identifier} 以確認刪除它的版本庫"
       subtitle: "你真的想要刪除專案 %{project_name} 的 %{repository_type} 嗎？"
@@ -4187,8 +4187,8 @@ zh-TW:
       empty_repository: "版本庫已存在，但是是空的。"
       exists_on_filesystem: "版本庫的路徑已經存在在檔案系統中"
       filesystem_access_failed: "在檔案系統中存取版本庫時發生錯誤: %{message}"
-      not_manageable: "此版本庫的提供商不能被 OpenProject 所管理"
-      path_permission_failed: "嘗試建立以下路徑(%{path})時發生錯誤。請確保 OpenProject 可以寫入到該資料夾。"
+      not_manageable: "此版本庫的提供商不能被 Yojana 所管理"
+      path_permission_failed: "嘗試建立以下路徑(%{path})時發生錯誤。請確保 Yojana 可以寫入到該資料夾。"
       unauthorized: "你沒有被授權存取這個版本庫，或者你的憑證已經失效。"
       unavailable: "版本褲無法使用"
       exception_title: "無法存取這個版本庫: %{message}"
@@ -4205,9 +4205,9 @@ zh-TW:
         path_encoding: "複寫 Git 路徑編碼 (預設: UTF-8)"
       local_title: "連結現有的本機 Git 版本庫"
       local_url: "本地 URL"
-      local_introduction: "如果你已經有一個現有的本機 Git 版本庫，你可以連結它以便在 OpenProject 中存取"
-      managed_introduction: "讓 OpenProject 自動建立和製作一個本機 Git 版本庫"
-      managed_title: "Git 版本庫套用到 OpenProject"
+      local_introduction: "如果你已經有一個現有的本機 Git 版本庫，你可以連結它以便在 Yojana 中存取"
+      managed_introduction: "讓 Yojana 自動建立和製作一個本機 Git 版本庫"
+      managed_title: "Git 版本庫套用到 Yojana"
       managed_url: "管理 URL"
       path: "Git 版本庫路徑"
       path_encoding: "Path encoding"
@@ -4224,24 +4224,24 @@ zh-TW:
     scm_types:
       local: "連結現有的本機版本庫"
       existing: "連結現有的版本庫"
-      managed: "在 OpenProject 建立一個新的版本庫"
+      managed: "在 Yojana 建立一個新的版本庫"
     storage:
       not_available: "這個版本庫沒有可用的磁碟消耗資訊"
       update_timeout: "保留 N 分鐘版本庫使用的碟空間資訊。\n計算一個版本庫使用的磁碟空間也許要消耗很多效能，增加這個值來降低效能的影響。"
-      oauth_application_details: "關閉此窗口後，將無法再次訪問客戶端密鑰值。請將這些值複製到 Nextcloud OpenProject 集成設置中："
+      oauth_application_details: "關閉此窗口後，將無法再次訪問客戶端密鑰值。請將這些值複製到 Nextcloud Yojana 集成設置中："
       oauth_application_details_link_text: "前往設定"
       setup_documentation_details: "如果您在配置新文件存儲方面需要幫助，請查看文檔： "
       setup_documentation_details_link_text: "設定文件儲存區"
       show_warning_details: "無法在應用程序中更改外部帳戶的密碼。請使用您的身份驗證服務提供商的密碼丟失功能。"
     subversion:
       existing_title: "現有的 Subversion 版本庫"
-      existing_introduction: "如果你已經有一個現有的本機 Subversion 版本庫，你可以連結它以便在 OpenProject 中存取"
+      existing_introduction: "如果你已經有一個現有的本機 Subversion 版本庫，你可以連結它以便在 Yojana 中存取"
       existing_url: "現有的 URL"
       instructions:
         managed_url: "這是託管(本機)的 Subversion 版本庫的 URL"
         url: "輸入這個版本庫的 URL。這可能會標定 (從 %{local_proto} 開始)的本機或遠端版本庫。支援以下的 URL 格式:"
-      managed_title: "Subversion 版本庫已套用到 OpenProject"
-      managed_introduction: "讓 OpenProject 自動建立或套用一個本機的 Subversion 版本庫。"
+      managed_title: "Subversion 版本庫已套用到 Yojana"
+      managed_introduction: "讓 Yojana 自動建立或套用一個本機的 Subversion 版本庫。"
       managed_url: "託管的 URL"
       password: "版本庫密碼"
       username: "版本庫使用者名稱"
@@ -4274,7 +4274,7 @@ zh-TW:
   setting_apiv3_cors_enabled: "啟用 CORS"
   setting_apiv3_cors_origins: "CROSS-ORIGIN RESOURCE SHARING (CORS)"
   setting_apiv3_cors_origins_text_html: >
-    如果啓用了 CORS ，這些是允許訪問 OpenProject API 的源。<br/>請查看<a href="%{origin_link}" target="_blank">有關“源”標題的文檔</a>，瞭解如何指定預期值。
+    如果啓用了 CORS ，這些是允許訪問 Yojana API 的源。<br/>請查看<a href="%{origin_link}" target="_blank">有關“源”標題的文檔</a>，瞭解如何指定預期值。
   setting_apiv3_write_readonly_attributes: "對唯讀屬性的寫入存取權限"
   setting_apiv3_write_readonly_attributes_instructions: >
     如果啟用，API 將允許管理員在建立時寫入靜態唯讀屬性，例如 createdAt 和 author。
@@ -4471,7 +4471,7 @@ zh-TW:
       omniauth_direct_login_hint_html: >
         如果此選項處於活動狀態，登入請求將重新導向至已設定的omniauth 提供者。登入下拉選單和登入頁面將被停用。 <br/> <strong>注意：</strong>除非您也停用密碼登錄，否則啟用此選項後，使用者仍可透過造訪 <code>%{internal_path}</code> 登入頁面進行內部登入。
       remapping_existing_users_hint: >
-        如果啟用，允許任何已設定的身分提供者根據使用者名稱登入現有使用者，即使使用者之前從未透過該提供者登入。這在將 OpenProject 實例遷移至新的 SSO 提供者時可能很有用，但在使用並非所有實例使用者都信任的提供者時，則不建議使用。
+        如果啟用，允許任何已設定的身分提供者根據使用者名稱登入現有使用者，即使使用者之前從未透過該提供者登入。這在將 Yojana 實例遷移至新的 SSO 提供者時可能很有用，但在使用並非所有實例使用者都信任的提供者時，則不建議使用。
     attachments:
       whitelist_text_html: >
         為上傳的文件定義有效文件副檔名和/或 MIME 類型的列表。 <br/> 輸入文件副檔名（例如 <code>%{ext_example}</code>）或 MIME 類型（例如 <code>%{mime_example}</code>）。 <br/> 留空以允許上傳任何文件類型。允許多個值（每個值一行）。
@@ -4503,8 +4503,8 @@ zh-TW:
       first_week_of_year_text_html: >
         選擇一年第一週的一月日期。 該值可確定一年中的總週數。 有關更多信息，請參閱 <a href="%{link}" target="_blank">相關文件</a> 。
     experimental:
-      save_confirmation: 注意！數據存在丟失風險！只有在您不介意破壞 OpenProject 安裝並丟失其所有數據的情況下，才啟用實驗性功能。
-      warning_toast: 功能標誌是啟用仍在開發中的功能的設置。它們只能用於測試目的。切勿在擁有重要數據的 OpenProject 安裝中啟用它們。這些功能很可能會破壞您的數據。請自行承擔使用它們所帶來的風險。
+      save_confirmation: 注意！數據存在丟失風險！只有在您不介意破壞 Yojana 安裝並丟失其所有數據的情況下，才啟用實驗性功能。
+      warning_toast: 功能標誌是啟用仍在開發中的功能的設置。它們只能用於測試目的。切勿在擁有重要數據的 Yojana 安裝中啟用它們。這些功能很可能會破壞您的數據。請自行承擔使用它們所帶來的風險。
       feature_flags: 功能標誌
     general: "一般"
     highlighting:
@@ -4515,7 +4515,7 @@ zh-TW:
         type: "依工作套件類型區分"
         priority: "依工作套件優先順序區分"
     icalendar:
-      enable_subscriptions_text_html: "允許具有相應權限的使用者訂閱 OpenProject 行事曆，並透過外部行事曆客戶端存取工作套件資訊。\n<strong>注意：</strong> 啟用前請閱讀關於<a href=\"%{link}\" target=\"_blank\">iCalendar 訂閱</a>的相關說明，以了解可能的安全風險。"
+      enable_subscriptions_text_html: "允許具有相應權限的使用者訂閱 Yojana 行事曆，並透過外部行事曆客戶端存取工作套件資訊。\n<strong>注意：</strong> 啟用前請閱讀關於<a href=\"%{link}\" target=\"_blank\">iCalendar 訂閱</a>的相關說明，以了解可能的安全風險。"
     language_name_being_default: "%{language_name} (預設)"
     notifications:
       events_explanation: "控制已發送電子郵件事件。工作套件不包括在此列表中，因為可以為每個用戶專門配置它們的通知。"
@@ -4549,7 +4549,7 @@ zh-TW:
               description: "將所有專案屬性加入專案總覽中右側面板內的區段。"
     project_initiation_request:
       header_description: >
-        OpenProject 可以產生逐步操作精靈，協助專案經理填寫專案啟動申請。你可以選擇要包含哪些專案屬性，並產出 PDF 成果檔。
+        Yojana 可以產生逐步操作精靈，協助專案經理填寫專案啟動申請。你可以選擇要包含哪些專案屬性，並產出 PDF 成果檔。
       status:
         submitted: "%{wizard_name} 已提交"
         submitted_description: "請點擊下方的按鈕，以前往提交流程的工作套件。"
@@ -4562,7 +4562,7 @@ zh-TW:
         project_mandate: "專案啟動授權"
       blankslate:
         title: "啟動請求尚未啟用"
-        description: "OpenProject 可以生成一個逐步引導精靈，來協助專案經理填寫專案啟動請求。您可以選擇應包含哪些專案屬性，以及如何處理輸出的文件。在此處啟用它，即可開始配置該精靈。"
+        description: "Yojana 可以生成一個逐步引導精靈，來協助專案經理填寫專案啟動請求。您可以選擇應包含哪些專案屬性，以及如何處理輸出的文件。在此處啟用它，即可開始配置該精靈。"
       disable_dialog:
         title: "停用專案啟動請求"
         heading: "停用此專案啟動請求？"
@@ -4742,7 +4742,7 @@ zh-TW:
   text_no_notes: "這個工作套件沒有留言。"
   text_notice_too_many_values_are_inperformant: "注意: 每頁顯示超過100個項目會增加頁面載入時間。"
   text_notice_security_badge_displayed_html: >
-    注：如果啓用，這會在 <a href="%{information_panel_path}">%{information_panel_label}</a> 管理面板中和首頁上顯示一個包含您的安裝狀態的徽章。徽章僅向管理員顯示。<br/>徽章將根據官方的 OpenProject 版本數據庫檢查您當前的 OpenProject 版本，提醒您是否存在任何更新或已知漏洞。如需詳細瞭解檢查可以提供哪些信息，需要哪些數據來提供可用更新，以及如何禁用此檢查，請訪問<a href="%{more_info_url}">配置文檔</a>。
+    注：如果啓用，這會在 <a href="%{information_panel_path}">%{information_panel_label}</a> 管理面板中和首頁上顯示一個包含您的安裝狀態的徽章。徽章僅向管理員顯示。<br/>徽章將根據官方的 Yojana 版本數據庫檢查您當前的 Yojana 版本，提醒您是否存在任何更新或已知漏洞。如需詳細瞭解檢查可以提供哪些信息，需要哪些數據來提供可用更新，以及如何禁用此檢查，請訪問<a href="%{more_info_url}">配置文檔</a>。
   text_own_membership_delete_confirmation: "您將要刪除部分或全部權限, 之後可能無法再編輯此專案。\n是否要繼續？"
   text_permanent_delete_confirmation_checkbox_label: "我了解此刪除無法逆轉"
   text_permanent_remove_confirmation_checkbox_label: "我了解此移除無法逆轉"
@@ -4752,7 +4752,7 @@ zh-TW:
   text_reassign: "重新指派到工作套件："
   text_regexp_info: "例如: ^[A-Z0-9]+$"
   text_regexp_multiline: '這個正規表達式套用在多行模式。 e.g., ^---\s+'
-  text_repository_usernames_mapping: "選擇或更新與版本庫中的帳號所對應的OpenProject使用者。\n版本庫中與OpenProject的使用者具有相同名稱或email將被自動對應。"
+  text_repository_usernames_mapping: "選擇或更新與版本庫中的帳號所對應的Yojana使用者。\n版本庫中與Yojana的使用者具有相同名稱或email將被自動對應。"
   text_status_changed_by_changeset: "已套用至變更列表 %{value} 中。"
   text_table_difference_description: "此表格展示了單個%{entries}。您可以先選擇複選框，再點擊表格下方的按鈕來比較兩項之間的差異。"
   text_time_logged_by_changeset: "已套用至變更列表 %{value} 中。"
@@ -4827,7 +4827,7 @@ zh-TW:
     authentication_provider: "身份驗證提供商"
     identity_url_text: "身份驗證提供商提供的內部唯一標識符。"
     authentication_settings_disabled_due_to_external_authentication: >
-      此使用者通過外部身份檢查器提供者進行身份驗證, 因此 OpenProject 中沒有要更改的密碼。
+      此使用者通過外部身份檢查器提供者進行身份驗證, 因此 Yojana 中沒有要更改的密碼。
     authorization_rejected: "你不被允許登入。"
     assign_random_password: "指定亂數密碼 (通過電子郵件寄送給使用者)"
     blocked: "暫時停用"
@@ -4860,7 +4860,7 @@ zh-TW:
   warning: 警告
   warning_attachments_not_saved: "無法儲存 %{count} 檔。"
   warning_imminent_user_limit: >
-    您邀請的用戶數超過了當前計劃支持的用戶數。受邀用戶可能無法加入您的OpenProject環境。 請<a href="%{upgrade_url}">升級您的計劃</a>或阻止現有用戶，以允許受邀和注冊用戶加入。
+    您邀請的用戶數超過了當前計劃支持的用戶數。受邀用戶可能無法加入您的Yojana環境。 請<a href="%{upgrade_url}">升級您的計劃</a>或阻止現有用戶，以允許受邀和注冊用戶加入。
   warning_registration_token_expired: |
     帳號啟用 email 已經逾期。我們已經寄了一封新的 email 至您的 %{email}。
     請點擊 email 內的連結來啟用您的帳號。
@@ -4869,7 +4869,7 @@ zh-TW:
   warning_user_limit_reached_admin: >
     添加額外的用戶將超出當前限制。請<a href="%{upgrade_url}">升級您的計劃</a>，以確保外部用戶能夠訪問此實例。
   warning_user_limit_reached_instructions: >
-    您已達到用戶限制（%{current}/%{max} 活躍用戶）。請聯繫 sales@openproject.com 升級您的企業版計劃以添加額外用戶。
+    您已達到用戶限制（%{current}/%{max} 活躍用戶）。請聯繫 sales@girishm.info 升級您的企業版計劃以添加額外用戶。
   warning_protocol_mismatch_html: >
 
   warning_bar:
@@ -5142,7 +5142,7 @@ zh-TW:
         confidential: "檢查是否這個應用程式能夠保存客戶端密鑰的隱密性。原生行動應用程式和一頁式應用程式被認定是非保密的。"
         scopes: "選擇您希望應用程序授予權限的範圍。如果不選擇任何範圍，將假定 api_v3。"
         client_credential_user_id: "可選擇的 user id 使用戶端在使用此應用程式時保持唯一。保留空白表示只允許公眾訪問"
-        register_intro: "如果你在開發一個 OAuth API 客戶端應用程式給 OpenProject，你可以用這個格式註冊它以便給所有使用者使用。"
+        register_intro: "如果你在開發一個 OAuth API 客戶端應用程式給 Yojana，你可以用這個格式註冊它以便給所有使用者使用。"
         default_scopes: ""
     header:
       builtin_applications: 內建 OAuth 應用程式
@@ -5150,17 +5150,17 @@ zh-TW:
     empty_application_lists: 尚未註冊任何 OAuth 應用程式。
     client_id: "用戶端 ID"
     client_secret_notice: >
-      這是唯一顯示客戶端密鑰的機會，請記下密鑰並妥善保存。客戶端密鑰應該被視為密碼妥善保管，日後你將無法再次透過 OpenProject 取得它。
+      這是唯一顯示客戶端密鑰的機會，請記下密鑰並妥善保存。客戶端密鑰應該被視為密碼妥善保管，日後你將無法再次透過 Yojana 取得它。
     authorization_dialog:
       authorize: "授權"
       cancel: "取消並拒絕授權。"
       prompt_html: "是否授權 <strong>%{application_name}</strong> 使用您的帳號 <em>%{login}</em>？"
       title: "授權 %{application_name}"
       wants_to_access_html: >
-        此應用程式要求存取您的 OpenProject 帳號。<br/><strong> 請求的權限如下：</strong>
+        此應用程式要求存取您的 Yojana 帳號。<br/><strong> 請求的權限如下：</strong>
     scopes:
       api_v3: "完整 API v3 存取"
-      api_v3_text: "應用程序將獲得 OpenProject API v3 的完全讀寫訪問權限來代表您執行操作。"
+      api_v3_text: "應用程序將獲得 Yojana API v3 的完全讀寫訪問權限來代表您執行操作。"
     grants:
       created_date: "核准於"
       scopes: "權限"
@@ -5175,7 +5175,7 @@ zh-TW:
     client_credentials_impersonation_set_to: "設置的目標客戶端憑據用戶"
     client_credentials_impersonation_warning: "注：在此應用程序中使用“客戶端憑據”流的客戶端將具有此用戶的權限。"
     client_credentials_impersonation_html: >
-      默認情況下，OpenProject 通過 %{authorization_code_flow_link} 提供 OAuth 2.0 授權。您可以選擇啓用 %{client_credentials_flow_link}，但您必須提供代其執行請求的用戶。
+      默認情況下，Yojana 通過 %{authorization_code_flow_link} 提供 OAuth 2.0 授權。您可以選擇啓用 %{client_credentials_flow_link}，但您必須提供代其執行請求的用戶。
     authorization_error: "授權錯誤。"
     revoke_my_application_confirmation: "確定想要移除此應用程序嗎？這將撤銷對其有效的 %{token_count}。"
     my_registered_applications: "已註冊的 OAuth 應用程式"
@@ -5204,20 +5204,20 @@ zh-TW:
         內部錯誤：在沒有先前存在的令牌(Token)情況下調用 refresh_token。
       refresh_token_updated_failed: "更新 OAuthClientToken 時出錯"
       oauth_client_not_found_explanation: >
-        此錯誤在您更新 OpenProject 中的 client_id 和 client_secret，但尚未更新 OAuth2 提供程序中的 'Return URI' 字段後出現。
+        此錯誤在您更新 Yojana 中的 client_id 和 client_secret，但尚未更新 OAuth2 提供程序中的 'Return URI' 字段後出現。
       oauth_code_not_present: "在 'callback' 端點 (redirect_uri) 中找不到 OAuth2 'code'。"
       oauth_code_not_present_explanation: >
         如果您在 OAuth2 提供程序中選擇了錯誤的 response_type，則會出現此錯誤。Response_type 應當為 'code' 或類似條目。
       oauth_state_not_present: "在 'callback' 端點 (redirect_uri) 中找不到 OAuth2 'state'。"
       oauth_state_not_present_explanation: >
-        'state' 用於向 OpenProject 指示在成功 OAuth2 授權後從哪裡繼續。缺少 'state' 是安裝過程中可能出現的內部錯誤。請聯繫您的系統管理員。
+        'state' 用於向 Yojana 指示在成功 OAuth2 授權後從哪裡繼續。缺少 'state' 是安裝過程中可能出現的內部錯誤。請聯繫您的系統管理員。
       rack_oauth2:
         client_secret_invalid: "客戶端密鑰無效 (client_secret_invalid)"
         invalid_request: >
           OAuth2 授權服務器以 'invalid_request' 響應。如果您嘗試多次授權或者出現技術問題，則會出現此錯誤。
         invalid_response: "OAuth2 授權服務器提供了無效響應 (invalid_response)"
         invalid_grant: "OAuth2 授權服務器要求您重新授權 (invalid_grant)。"
-        invalid_client: "OAuth2 授權服務器無法識別 OpenProject (invalid_client)。"
+        invalid_client: "OAuth2 授權服務器無法識別 Yojana (invalid_client)。"
         unauthorized_client: "OAuth2 授權服務器拒絕了該授權類型 (unauthorized_client)"
         unsupported_grant_type: "OAuth2 授權服務器要求您重新授權 (unsupported_grant_type)。"
         invalid_scope: "您無權訪問請求的資源 (invalid_scope)。"
@@ -5230,18 +5230,18 @@ zh-TW:
   you: 您
   link: 連結
   plugin_openproject_auth_plugins:
-    name: "OpenProject 認證外掛"
-    description: "在 OpenProject 中集成 OmniAuth 策略提供程序以進行身份驗證。"
+    name: "Yojana 認證外掛"
+    description: "在 Yojana 中集成 OmniAuth 策略提供程序以進行身份驗證。"
   plugin_openproject_auth_saml:
     name: "OmniAuth SAML / SSO單點登錄"
-    description: "將 OmniAuth SAML 提供商增加到 OpenProject"
+    description: "將 OmniAuth SAML 提供商增加到 Yojana"
   enterprise_plans:
     legacy_enterprise: "企業方案"
   token:
     hashed_token:
       display_value_placeholder: "***"
   external_link_warning:
-    title: "離開 OpenProject"
-    warning_message: "您即將離開 OpenProject 並訪問外部網站。請注意，外部網站不受我們控制，可能有不同的隱私和安全政策。"
+    title: "離開 Yojana"
+    warning_message: "您即將離開 Yojana 並訪問外部網站。請注意，外部網站不受我們控制，可能有不同的隱私和安全政策。"
     continue_message: "您確定要前往下列外部連結嗎？"
     continue_button: "繼續到外部網站"

@@ -141,7 +141,7 @@ uk:
                 options:
                   name: Починаємо
                   text: |
-                    Ми раді, що ви приєдналися! Пропонуємо вам дещо підготувати перед початком роботи в OpenProject.
+                    Ми раді, що ви приєдналися! Пропонуємо вам дещо підготувати перед початком роботи в Yojana.
 
                     Дізнатися про найважливіші функції можна в нашому [Покроковому посібнику]({{opSetting:base_url}}/projects/demo-project/work_packages/?start_onboarding_tour=true).
 
@@ -154,7 +154,7 @@ uk:
                     5. *Активуйте додаткові модулі*: &rightarrow; виберіть [Налаштування проєкту &rightarrow; Модулі]({{opSetting:base_url}}/projects/demo-project/settings/modules).
                     6. *Завершіть завдання в проєкті*: &rightarrow; виберіть [Пакети робіт &rightarrow; Завдання]({{opSetting:base_url}}/projects/demo-project/work_packages/details/##wp.id:set_date_and_location_of_conference/overview?query_id=##query.id:demo_project__query__tasks).
 
-                    Тут ви знайдете наші [Посібники користувача](https://www.openproject.org/docs/user-guide/).
+                    Тут ви знайдете наші [Посібники користувача](https://www.yojana.girishm.info/docs/user-guide/).
                     Якщо маєте запитання або потребуєте допомоги, зв’яжіться з нами: [support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
@@ -211,7 +211,7 @@ uk:
             * Переглядати історію змін
             * Переглядати контент у режимі розмітки
 
-            Докладна інформація: [https://www.openproject.org/docs/user-guide/wiki/](https://www.openproject.org/docs/user-guide/wiki/)
+            Докладна інформація: [https://www.yojana.girishm.info/docs/user-guide/wiki/](https://www.yojana.girishm.info/docs/user-guide/wiki/)
         scrum-project:
           name: Проект Scrum
           status_explanation: Усі завдання заплановано. Виконавців повідомлено про їхні завдання. Систему повністю налаштовано.
@@ -313,7 +313,7 @@ uk:
                 options:
                   name: Починаємо
                   text: |
-                    Ми раді, що ви приєдналися! Пропонуємо вам дещо підготувати перед початком роботи в OpenProject.
+                    Ми раді, що ви приєдналися! Пропонуємо вам дещо підготувати перед початком роботи в Yojana.
 
                     _Виконайте такі дії:_
 
@@ -325,7 +325,7 @@ uk:
                     6. *Створіть вікі-сторінку спринту*: &rightarrow; виберіть [Невиконані завдання]({{opSetting:base_url}}/projects/your-scrum-project/backlogs) і відкрийте вікі-сторінку спринту з розкривного меню праворуч у вікні спринту. Ви можете відредагувати [шаблон вікі-сторінки]({{opSetting:base_url}}/projects/your-scrum-project/wiki/) залежно від своїх потреб.
                     7. *Активуйте додаткові модулі*: &rightarrow; виберіть [Налаштування проєкту &rightarrow; Модулі]({{opSetting:base_url}}/projects/your-scrum-project/settings/modules).
 
-                    Тут ви знайдете наші [Посібники користувача](https://www.openproject.org/docs/user-guide/). Якщо маєте запитання або потребуєте допомоги, зв’яжіться з нами: [support[at]openproject.com](mailto:support@openproject.com).
+                    Тут ви знайдете наші [Посібники користувача](https://www.yojana.girishm.info/docs/user-guide/). Якщо маєте запитання або потребуєте допомоги, зв’яжіться з нами: [support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
                   name: Пакети робіт
@@ -484,19 +484,19 @@ uk:
         item_6:
           name: Помилка
       welcome:
-        title: Вітаємо в OpenProject!
+        title: Вітаємо в Yojana!
         text: |
-          OpenProject – це провідне програмне забезпечення з відкритим кодом, що підтримує класичне, гібридне, а також гнучке керування проєктами й надає повний контроль над даними.
+          Yojana – це провідне програмне забезпечення з відкритим кодом, що підтримує класичне, гібридне, а також гнучке керування проєктами й надає повний контроль над даними.
 
           Ключові функції і застосування:
 
-          * [Керування портфоліо проєктів](https://www.openproject.org/collaboration-software-features/project-portfolio-management/)
-          * [Планування проєктів і їх виконання](https://www.openproject.org/collaboration-software-features/project-planning-scheduling/)
-          * [Керування завданнями й відстеження помилок](https://www.openproject.org/collaboration-software-features/task-management/)
-          * [Дошки Agile (Scrum і Kanban)](https://www.openproject.org/collaboration-software-features/agile-project-management/)
-          * [Керування вимогами й планування випуску](https://www.openproject.org/collaboration-software-features/product-development/)
-          * [Відстеження часу й витрат, бюджети](https://www.openproject.org/collaboration-software-features/time-tracking/)
-          * [Співпраця в командах і документація](https://www.openproject.org/collaboration-software-features/team-collaboration/)
+          * [Керування портфоліо проєктів](https://www.yojana.girishm.info/collaboration-software-features/project-portfolio-management/)
+          * [Планування проєктів і їх виконання](https://www.yojana.girishm.info/collaboration-software-features/project-planning-scheduling/)
+          * [Керування завданнями й відстеження помилок](https://www.yojana.girishm.info/collaboration-software-features/task-management/)
+          * [Дошки Agile (Scrum і Kanban)](https://www.yojana.girishm.info/collaboration-software-features/agile-project-management/)
+          * [Керування вимогами й планування випуску](https://www.yojana.girishm.info/collaboration-software-features/product-development/)
+          * [Відстеження часу й витрат, бюджети](https://www.yojana.girishm.info/collaboration-software-features/time-tracking/)
+          * [Співпраця в командах і документація](https://www.yojana.girishm.info/collaboration-software-features/team-collaboration/)
 
           Представляємо новий рівень керування проєктами.
 

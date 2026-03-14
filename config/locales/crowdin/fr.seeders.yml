@@ -141,7 +141,7 @@ fr:
                 options:
                   name: Pour commencer
                   text: |
-                    Nous sommes heureux que vous nous ayez rejoints ! Nous vous suggérons d'effectuer quelques essais pour vous familiariser avec OpenProject.
+                    Nous sommes heureux que vous nous ayez rejoints ! Nous vous suggérons d'effectuer quelques essais pour vous familiariser avec Yojana.
 
                     Découvrez les fonctionnalités les plus importantes grâce à notre [Visite guidée]({{opSetting:base_url}}/projects/demo-project/work_packages/?start_onboarding_tour=true).
 
@@ -154,7 +154,7 @@ fr:
                     5. *Activez d'autres modules* : &rightarrow; Accédez à [Paramètres du projet &rightarrow; Modules]({{opSetting:base_url}}/projects/demo-project/settings/modules).
                     6. *Complétez vos tâches dans le projet* : &rightarrow; Accédez à [Lots de travaux &rightarrow; Tâches]({{opSetting:base_url}}/projects/demo-project/work_packages/details/##wp.id:set_date_and_location_of_conference/overview?query_id=##query.id:demo_project__query__tasks).
 
-                    Vous trouverez ici nos [Guides de l'utilisateur] (https://www.openproject.org/docs/user-guide/).
+                    Vous trouverez ici nos [Guides de l'utilisateur] (https://www.yojana.girishm.info/docs/user-guide/).
                     Si vous avez des questions ou si avez besoin d'aide, n'hésitez pas à nous contacter : [support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
@@ -211,7 +211,7 @@ fr:
             * Afficher l'historique des modifications
             * Afficher en tant que Markdown
 
-            Plus d'informations : [https://www.openproject.org/docs/user-guide/wiki/](https://www.openproject.org/docs/user-guide/wiki/)
+            Plus d'informations : [https://www.yojana.girishm.info/docs/user-guide/wiki/](https://www.yojana.girishm.info/docs/user-guide/wiki/)
         scrum-project:
           name: Projet Scrum
           status_explanation: Toutes les tâches sont en cours. Les personnes concernées connaissent leurs tâches. Le système est entièrement configuré.
@@ -312,7 +312,7 @@ fr:
                 options:
                   name: Pour commencer
                   text: |
-                    Nous sommes ravis que vous nous ayez rejoints ! Nous vous suggérons de faire quelques essais pour commencer à utiliser OpenProject.
+                    Nous sommes ravis que vous nous ayez rejoints ! Nous vous suggérons de faire quelques essais pour commencer à utiliser Yojana.
 
                     _Essayez les étapes suivantes:_
 
@@ -324,7 +324,7 @@ fr:
                     6. *Créer un wiki de sprint* : &rightarrow ; Allez dans [Backlogs]({{opSetting:base_url}}/projects/votre-projet-scrum/backlogs) et ouvrez le wiki de sprint à partir du menu déroulant de droite dans un sprint. Vous pouvez modifier le [modèle de wiki]({{opSetting:base_url}}/projets/votre-scrum-projet/wiki/) en fonction de vos besoins.
                     7. *Activer d'autres modules* : &rightarrow ; Allez dans les [Paramètres du projet &rightarrow ; Modules]({{opSetting:base_url}}/projet/votre-scrum-projet/paramètres/modules).
 
-                    Vous y trouverez nos [guides de l'utilisateur](https://www.openproject.org/docs/user-guide/).
+                    Vous y trouverez nos [guides de l'utilisateur](https://www.yojana.girishm.info/docs/user-guide/).
                     N'hésitez pas à nous contacter si vous avez des questions ou si vous avez besoin d'aide. N'hésitez pas à nous contacter : [support[at]openproject.com(mailto:support@openproject.com).
               item_5:
                 options:
@@ -486,19 +486,19 @@ fr:
         item_6:
           name: Bug
       welcome:
-        title: Bienvenue sur OpenProject !
+        title: Bienvenue sur Yojana !
         text: |
-          OpenProject est le principal logiciel de gestion de projet open source. Il prend en charge la gestion de projets classiques, agiles et hybrides et vous donne un contrôle total sur vos données.
+          Yojana est le principal logiciel de gestion de projet open source. Il prend en charge la gestion de projets classiques, agiles et hybrides et vous donne un contrôle total sur vos données.
 
           Fonctionnalités principales et cas d'utilisation :
 
-          * [Gestion de portefeuille de projets](https://www.openproject.org/fr/fonctionnalites-collaboration-logiciel/gestion-portefeuille-projets/)
-          * [Planification et organisation de projets](https://www.openproject.org/fr/fonctionnalites-collaboration-logiciel/planification-ordonnancement-projet/)
-          * [Gestion des tâches et suivi des problèmes](https://www.openproject.org/fr/fonctionnalites-collaboration-logiciel/gestion-des-taches/)
-          * [Tableaux agiles (Scrum et Kanban)](https://www.openproject.org/fr/fonctionnalites-collaboration-logiciel/gestion-projet-agile/)
-          * [Gestion des exigences et planification des versions](https://www.openproject.org/fr/fonctionnalites-collaboration-logiciel/developpement-de-produits/)
-          * [Suivi du temps et des coûts, budgets](https://www.openproject.org/fr/fonctionnalites-collaboration-logiciel/suivi-du-temps/)
-          * [Collaboration d'équipe et documentation](https://www.openproject.org/fr/fonctionnalites-collaboration-logiciel/collaboration-equipe/)
+          * [Gestion de portefeuille de projets](https://www.yojana.girishm.info/fr/fonctionnalites-collaboration-logiciel/gestion-portefeuille-projets/)
+          * [Planification et organisation de projets](https://www.yojana.girishm.info/fr/fonctionnalites-collaboration-logiciel/planification-ordonnancement-projet/)
+          * [Gestion des tâches et suivi des problèmes](https://www.yojana.girishm.info/fr/fonctionnalites-collaboration-logiciel/gestion-des-taches/)
+          * [Tableaux agiles (Scrum et Kanban)](https://www.yojana.girishm.info/fr/fonctionnalites-collaboration-logiciel/gestion-projet-agile/)
+          * [Gestion des exigences et planification des versions](https://www.yojana.girishm.info/fr/fonctionnalites-collaboration-logiciel/developpement-de-produits/)
+          * [Suivi du temps et des coûts, budgets](https://www.yojana.girishm.info/fr/fonctionnalites-collaboration-logiciel/suivi-du-temps/)
+          * [Collaboration d'équipe et documentation](https://www.yojana.girishm.info/fr/fonctionnalites-collaboration-logiciel/collaboration-equipe/)
 
           Bienvenue dans l'avenir de la gestion de projet.
 

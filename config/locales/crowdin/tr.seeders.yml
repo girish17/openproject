@@ -141,7 +141,7 @@ tr:
                 options:
                   name: Başlarken
                   text: |
-                    Katıldığınız için çok mutluyuz! OpenProject'e başlamak için birkaç şey denemenizi öneririz.
+                    Katıldığınız için çok mutluyuz! Yojana'e başlamak için birkaç şey denemenizi öneririz.
 
                     [Rehberli Tur]({{opSetting:base_url}}/projects/demo-project/work_packages/?start_onboarding_tour=true) ile en önemli özellikleri keşfedin.
 
@@ -154,7 +154,7 @@ tr:
                     5. *Diğer modülleri etkinleştirin*: &rightarrow; Proje ayarları &rightarrow; Modüller]({{opSetting:base_url}}/projects/demo-project/settings/modules) adresine gidin.
                     6. *Projedeki görevlerinizi tamamlayın*: &rightarrow; İş paketleri &rightarrow; Görevler]({{opSetting:base_url}}/projects/demo-project/work_packages/details/##wp.id:set_date_and_location_of_conference/overview?query_id=##query.id:demo_project__query__tasks) bölümüne gidin.
 
-                    Burada [Kullanıcı Rehberlerimizi](https://www.openproject.org/docs/user-guide/) bulacaksınız.
+                    Burada [Kullanıcı Rehberlerimizi](https://www.yojana.girishm.info/docs/user-guide/) bulacaksınız.
                     Herhangi bir sorunuz varsa veya desteğe ihtiyacınız varsa lütfen bize bildirin. Bize ulaşın: [support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
@@ -211,7 +211,7 @@ tr:
             * Değişiklik geçmişini görüntüleyin
             * Markdown olarak görüntüleyin
 
-            Daha fazla bilgi: [https://www.openproject.org/docs/user-guide/wiki/](https://www.openproject.org/docs/user-guide/wiki/)
+            Daha fazla bilgi: [https://www.yojana.girishm.info/docs/user-guide/wiki/](https://www.yojana.girishm.info/docs/user-guide/wiki/)
         scrum-project:
           name: Scrum projesi
           status_explanation: Tüm görevler programa uygundur. İlgili kişiler görevlerini biliyor. Sistem tamamen kurulmuştur.
@@ -313,7 +313,7 @@ tr:
                 options:
                   name: Başlarken
                   text: |
-                    Katıldığınız için çok mutluyuz! OpenProject'e başlamak için birkaç şey denemenizi öneririz.
+                    Katıldığınız için çok mutluyuz! Yojana'e başlamak için birkaç şey denemenizi öneririz.
 
                     Aşağıdaki adımları deneyin:_
 
@@ -325,7 +325,7 @@ tr:
                     6. *Bir Sprint wiki* oluşturun: &rightarrow; Backlogs]({{opSetting:base_url}}/projects/your-scrum-project/backlogs) adresine gidin ve bir sprintte sağ açılır menüden sprint wikisini açın. Wiki şablonunu]({{opSetting:base_url}}/projects/your-scrum-project/wiki/) ihtiyaçlarınıza göre düzenleyebilirsiniz.
                     7. *Diğer modülleri etkinleştirin*: &rightarrow; Proje ayarları &rightarrow; Modüller]({{opSetting:base_url}}/projects/your-scrum-project/settings/modules) bölümüne gidin.
 
-                    Burada [Kullanıcı Kılavuzlarımızı] (https://www.openproject.org/docs/user-guide/) bulacaksınız.
+                    Burada [Kullanıcı Kılavuzlarımızı] (https://www.yojana.girishm.info/docs/user-guide/) bulacaksınız.
                     Herhangi bir sorunuz varsa veya desteğe ihtiyacınız varsa lütfen bize bildirin. Bize ulaşın: [support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
@@ -488,19 +488,19 @@ tr:
         item_6:
           name: Hata
       welcome:
-        title: OpenProject'e hoş geldiniz!
+        title: Yojana'e hoş geldiniz!
         text: |
-          OpenProject, önde gelen açık kaynaklı proje yönetim yazılımıdır. Klasik, çevik ve hibrit proje yönetimini destekler ve verileriniz üzerinde tam kontrol sahibi olmanızı sağlar.
+          Yojana, önde gelen açık kaynaklı proje yönetim yazılımıdır. Klasik, çevik ve hibrit proje yönetimini destekler ve verileriniz üzerinde tam kontrol sahibi olmanızı sağlar.
 
           Temel özellikler ve kullanım durumları:
 
-          * [Proje Portföy Yönetimi](https://www.openproject.org/collaboration-software-features/project-portfolio-management/)
-          * [Proje Planlama ve Takvimlendirme](https://www.openproject.org/collaboration-software-features/project-planning-scheduling/)
-          * [Görev Yönetimi ve Sorun İzleme](https://www.openproject.org/collaboration-software-features/task-management/)
-          * [Çevik Panolar (Scrum ve Kanban)](https://www.openproject.org/collaboration-software-features/agile-project-management/)
-          * [Gereksinim Yönetimi ve Sürüm Planlama](https://www.openproject.org/collaboration-software-features/product-development/)
-          * [Zaman ve Maliyet Takibi, Bütçeler](https://www.openproject.org/collaboration-software-features/time-tracking/)
-          * [Ekip İşbirliği ve Belgeleme](https://www.openproject.org/collaboration-software-features/team-collaboration/)
+          * [Proje Portföy Yönetimi](https://www.yojana.girishm.info/collaboration-software-features/project-portfolio-management/)
+          * [Proje Planlama ve Takvimlendirme](https://www.yojana.girishm.info/collaboration-software-features/project-planning-scheduling/)
+          * [Görev Yönetimi ve Sorun İzleme](https://www.yojana.girishm.info/collaboration-software-features/task-management/)
+          * [Çevik Panolar (Scrum ve Kanban)](https://www.yojana.girishm.info/collaboration-software-features/agile-project-management/)
+          * [Gereksinim Yönetimi ve Sürüm Planlama](https://www.yojana.girishm.info/collaboration-software-features/product-development/)
+          * [Zaman ve Maliyet Takibi, Bütçeler](https://www.yojana.girishm.info/collaboration-software-features/time-tracking/)
+          * [Ekip İşbirliği ve Belgeleme](https://www.yojana.girishm.info/collaboration-software-features/team-collaboration/)
 
           Proje yönetiminin geleceğine hoş geldiniz.
 

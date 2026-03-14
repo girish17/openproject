@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -111,12 +111,12 @@ ja:
         link: "webhook"
     mcp_configurations:
       index:
-        description: "The model context protocol allows AI agents to provide its users with tools and resources exposed by this OpenProject instance."
+        description: "The model context protocol allows AI agents to provide its users with tools and resources exposed by this Yojana instance."
         resources_heading: "Resources"
-        resources_description: "OpenProject implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
+        resources_description: "Yojana implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
         resources_submit: "Update resources"
         tools_heading: "Tools"
-        tools_description: "OpenProject implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url)."
+        tools_description: "Yojana implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url)."
         tools_submit: "Update tools"
       multi_update:
         success: "MCP configurations were updated successfully."
@@ -147,13 +147,13 @@ ja:
       edit:
         label_delete_scim_client: "SCIM クライアントを削除"
       form:
-        auth_provider_description: "これは、SCIMプロバイダが追加したユーザーがOpenProjectでの認証に使用するサービスです。"
-        authentication_method_description_html: "これは SCIM クライアントが OpenProject で認証する方法です。OAuth トークンに <code>scim_v2</code> スコープが含まれていることを確認してください。"
+        auth_provider_description: "これは、SCIMプロバイダが追加したユーザーがYojanaでの認証に使用するサービスです。"
+        authentication_method_description_html: "これは SCIM クライアントが Yojana で認証する方法です。OAuth トークンに <code>scim_v2</code> スコープが含まれていることを確認してください。"
         description: "設定オプションの詳細については、[SCIM クライアントの設定に関するドキュメント](docs_url)を参照してください。"
         jwt_sub_description: "例えば、Keycloakの場合、これはSCIMクライアントに関連付けられたサービスアカウントのUUIDです。あなたのユースケースにあった Subject claim を見つける方法については [ドキュメント](docs_url) を参照してください。"
         name_description: "他の管理者がこのクライアントが設定された理由を理解するのに役立つ名前を選択してください。"
       index:
-        description: "ここで設定されたSCIMクライアントは、OpenProjectのSCIMサーバー APIと相互作用して、ユーザーアカウントとグループのプロビジョニング、更新、およびデプロビジョニングを行うことができます。"
+        description: "ここで設定されたSCIMクライアントは、YojanaのSCIMサーバー APIと相互作用して、ユーザーアカウントとグループのプロビジョニング、更新、およびデプロビジョニングを行うことができます。"
         label_create_button: "SCIMクライアントを追加"
       new:
         title: "新しいSCIMクライアント"
@@ -161,14 +161,14 @@ ja:
         confirm_button: "取り消す"
         title: "静的トークンを取り消す"
         heading: "このトークンを取り消してもよろしいですか？"
-        description: "このトークンを使用する SCIM クライアントは、OpenProject の SCIM サーバ API にアクセスできなくなります。"
+        description: "このトークンを使用する SCIM クライアントは、Yojana の SCIM サーバ API にアクセスできなくなります。"
       table_component:
         blank_slate:
           title: "SCIMクライアントがまだ設定されていません"
           description: "ここに表示するクライアントを追加"
         user_count: "ユーザー"
       token_list_component:
-        description: "ここで生成されたトークンは、OpenProject SCIM API にアクセスするために、SCIM クライアントによって渡すことができます。"
+        description: "ここで生成されたトークンは、Yojana SCIM API にアクセスするために、SCIM クライアントによって渡すことができます。"
         heading: "トークン"
         label_add_token: "トークン"
         label_aria_add_token: "トークンを追加"
@@ -229,36 +229,36 @@ ja:
       name: LDAP接続の任意の名称
       host: LDAPのホスト名または IP アドレス
       login_map: ユーザー固有のログイン情報を識別するために使用されるLDAPの属性キーです。通常は、`uid` または `samAccountName` になります。
-      generic_map: OpenProject`%{attribute}`属性にマップされているLDAPの属性キーです。
-      admin_map_html: "オプション: LDAPの属性キー。 <strong>存在する場合</strong> はOpenProjectユーザーを管理者としてマークします。疑わしい場合は空のままにします。"
+      generic_map: Yojana`%{attribute}`属性にマップされているLDAPの属性キーです。
+      admin_map_html: "オプション: LDAPの属性キー。 <strong>存在する場合</strong> はYojanaユーザーを管理者としてマークします。疑わしい場合は空のままにします。"
       system_user_dn_html: |
         読み取り専用アクセスに使用するシステムユーザの DN を入力します。
         <br>
-        例: uid=openproject,ou=system,dc=example,dc=com
+        例: uid=yojana,ou=system,dc=example,dc=com
       system_user_password: システムユーザーの Bind パスワードを入力してください
       base_dn: |
-        OpenProjectがユーザーとグループを探すように、サブツリーのベースDNをLDAPに入力します。
-        OpenProject は、このサブツリー内の指定されたユーザー名のみをフィルタリングします。
+        Yojanaがユーザーとグループを探すように、サブツリーのベースDNをLDAPに入力します。
+        Yojana は、このサブツリー内の指定されたユーザー名のみをフィルタリングします。
         例: ou=users,dc=example,dc=com
       filter_string: |
         LDAPでフィルタされたユーザーに対して返された結果に適用するオプションのRFC4515フィルタを追加します。
-        これは、OpenProjectによって検出された認証とグループ同期のためのユーザーのセットを制限するために使用することができます。
+        これは、Yojanaによって検出された認証とグループ同期のためのユーザーのセットを制限するために使用することができます。
       filter_string_concat: |
 
-        OpenProjectはレコードを識別するために、ユーザーが提供するログイン属性を常にフィルタリングします。ここにフィルタを指定すると、
+        Yojanaはレコードを識別するために、ユーザーが提供するログイン属性を常にフィルタリングします。ここにフィルタを指定すると、
         ANDで連結されます。デフォルトではキャッチオール（objectClass = *）がフィルタとして使用されます。
       onthefly_register: |
-        チェックを入れると、OpenProjectは初回認証時に自動的にLDAPエントリーに新規ユーザー登録します。LDAPの既存ユーザーのみ許可する場合はチェックを外してください。
+        チェックを入れると、Yojanaは初回認証時に自動的にLDAPエントリーに新規ユーザー登録します。LDAPの既存ユーザーのみ許可する場合はチェックを外してください。
     connection_encryption: "接続の暗号化"
     encryption_details: "LDAPS / STARTLSオプション"
     system_account: "システムアカウント"
     system_account_legend: |
-      OpenProject は、LDAP ツリー内のユーザーとグループを検索するために、システムアカウントを介して読み取り専用アクセスを必要とします。
+      Yojana は、LDAP ツリー内のユーザーとグループを検索するために、システムアカウントを介して読み取り専用アクセスを必要とします。
       次のセクションで、システムユーザのバインド資格情報を指定してください。
     ldap_details: "LDAPに関する詳細"
     user_settings: "属性のマッピング"
     user_settings_legend: |
-      以下のフィールドは、LDAPエントリからOpenProjectのユーザーの作成方法とアトリビュートマッピングに関連しています。
+      以下のフィールドは、LDAPエントリからYojanaのユーザーの作成方法とアトリビュートマッピングに関連しています。
     tls_mode:
       plain: "なし"
       simple_tls: "LDAP"
@@ -1496,7 +1496,7 @@ ja:
         confirmation: "は%{attribute} と一致しません。"
         could_not_be_copied: "%{dependency} を（完全に）コピーできませんでした。"
         does_not_exist: "は存在しません。"
-        error_enterprise_only: "%{action} is only available in the OpenProject Enterprise edition."
+        error_enterprise_only: "%{action} is only available in the Yojana Enterprise edition."
         error_unauthorized: "アクセスできません。"
         error_readonly: "書けませんでした。"
         error_conflict: "別のユーザーが同時にデータを更新しています。"
@@ -2105,7 +2105,7 @@ ja:
       heading_reset: "バックアップトークンをリセットする"
       heading_create: "バックアップトークンを作成する"
       implications: >
-        バックアップを有効にすると、必要な権限とこのバックアップトークンを持つすべてのユーザーが、この OpenProject にインストールされたすべてのデータを含むバックアップをダウンロードできるようになります。これには、他のすべてのユーザーのデータも含まれます。
+        バックアップを有効にすると、必要な権限とこのバックアップトークンを持つすべてのユーザーが、この Yojana にインストールされたすべてのデータを含むバックアップをダウンロードできるようになります。これには、他のすべてのユーザーのデータも含まれます。
       info: >
         バックアップを作成するためには、バックアップトークンを生成する必要があります。バックアップを要求するたびに、このトークンを指定する必要があります。バックアップトークンを削除すると、このユーザーのバックアップを無効にすることができます。
       verification: >
@@ -2445,7 +2445,7 @@ ja:
         すでにトークンをお持ちですか？予約済みのエンタープライズプランにアップグレードするには、下のボタンを使用して追加してください。
       hide_banner: "このバナーを非表示"
       homescreen_description: >
-        Enterprise plans extend the Community edition of OpenProject with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running OpenProject in a mission-critical environment.
+        Enterprise plans extend the Community edition of Yojana with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running Yojana in a mission-critical environment.
       homescreen_subline: アップグレードすることで、オープンソースプロジェクトをサポートすることもできます。
       baseline_comparison:
         description: 過去の任意の点からこのリストに加えられた変更を強調表示します。
@@ -2458,7 +2458,7 @@ ja:
         premium_features: "エンタープライズアドオン"
         premium_features_text: "アジャイルボード、カスタムテーマとロゴ、グラフ、カスタムアクションとインテリジェントワークフロー、ワークパッケージの添付ファイルとマルチセレクトカスタムフィールドのフルテキスト検索。"
         professional_support: "プロフェッショナルサポート"
-        professional_support_text: "OpenProjectをビジネスに不可欠な環境で実行することについての専門知識を持つ上級サポートエンジニアから信頼性の高いハイタッチサポートを受けましょう。"
+        professional_support_text: "Yojanaをビジネスに不可欠な環境で実行することについての専門知識を持つ上級サポートエンジニアから信頼性の高いハイタッチサポートを受けましょう。"
       work_package_subject_generation:
         description: "参照された属性とテキストを使用して自動生成された件名を作成します。"
       customize_life_cycle:
@@ -2490,29 +2490,29 @@ ja:
       define_custom_style:
         title: "カスタムカラーテーマとロゴ"
         more_info: "注:使用されたロゴは一般公開されます。"
-        description: 独自のロゴと色でOpenProjectのインストールをカスタマイズします。
+        description: 独自のロゴと色でYojanaのインストールをカスタマイズします。
       custom_actions:
         title: "カスタムアクション"
         description: "カスタムアクションは、ステータスに基づいて特定のワークパッケージで利用できる、事前に定義されたアクションです。"
       mcp_server:
-        description: "Integrate AI agents with your OpenProject instance through MCP."
+        description: "Integrate AI agents with your Yojana instance through MCP."
       nextcloud_sso:
         title: "Nextcloudストレージへのシングルサインオン"
         description: "シングルサインオンでNextcloudストレージのシームレスかつセキュアな認証を可能にします。アクセス管理を簡素化し、ユーザーの利便性を向上させます。"
       scim_api:
         title: "SCIMクライアント"
-        description: "Microsoft EntraやKeycloakなどの外部アイデンティティサービスをSCIM Server API経由でシームレスに統合することで、OpenProjectのユーザー管理を自動化します。 エンタープライズ企業プランから利用できます。"
+        description: "Microsoft EntraやKeycloakなどの外部アイデンティティサービスをSCIM Server API経由でシームレスに統合することで、Yojanaのユーザー管理を自動化します。 エンタープライズ企業プランから利用できます。"
       sso_auth_providers:
         title: "シングルサインオン(SSO)"
         description: "SAML または OpenID Connect を使用して外部の SSO プロバイダ経由でログインし、既存の ID システムとのシームレスなアクセスと統合を可能にします。"
       virus_scanning:
-        description: "他のユーザーがアクセスできるようになる前に、OpenProjectにアップロードされたファイルがウイルスでスキャンされていることを確認してください。"
+        description: "他のユーザーがアクセスできるようになる前に、Yojanaにアップロードされたファイルがウイルスでスキャンされていることを確認してください。"
       project_creation_wizard:
         description: "Generate a step-by-step wizard to help project managers fill out a project initiation request."
       placeholder_users:
         title: プレースホルダー ユーザー
         description: >
-          プレースホルダー・ユーザーは、プロジェクトに参加していないユーザーにワーク・パッケージを割り当てる方法です。例えば、まだ名前も決まっていない、利用可能でもないリソースのタスクを追跡する必要がある場合や、その人にOpenProjectへのアクセス権を与えたくないが、その人に割り当てられたタスクを追跡したい場合などです。
+          プレースホルダー・ユーザーは、プロジェクトに参加していないユーザーにワーク・パッケージを割り当てる方法です。例えば、まだ名前も決まっていない、利用可能でもないリソースのタスクを追跡する必要がある場合や、その人にYojanaへのアクセス権を与えたくないが、その人に割り当てられたタスクを追跡したい場合などです。
       internal_comments:
         title: 内部コメント
         description: "内部コメントは、社内チームがプライベートにコミュニケーションを取ることを可能にします。これらは特定のプロジェクトの役割にのみ表示され、公開されることはありません。"
@@ -2535,16 +2535,16 @@ ja:
       request_again: "再度リクエストする"
       resend_action: "確認メールを再送信する"
       welcome_title: "クイック機能の概要"
-      welcome_description: "OpenProject Enterprise版のプロジェクト管理とチームコラボレーションの概要を簡単にご確認ください。"
+      welcome_description: "Yojana Enterprise版のプロジェクト管理とチームコラボレーションの概要を簡単にご確認ください。"
       confirmation_info: >
-        OpenProject Enterpriseの無料トライアルを開始するために、すべての情報を %{date} にメールを %{email} に送信しました。 14日間の無料トライアルを開始するには、受信トレイを確認し、確認リンクをクリックしてください。
+        Yojana Enterpriseの無料トライアルを開始するために、すべての情報を %{date} にメールを %{email} に送信しました。 14日間の無料トライアルを開始するには、受信トレイを確認し、確認リンクをクリックしてください。
       confirmation_subline: >
         受信トレイを確認し、手順に従って14日間の無料トライアルを開始してください。
       domain_caption: このトークンは、現在設定されているホスト名に対して有効です。
       receive_newsletter_html: >
-        OpenProject <a target="_blank" href="https://www.openproject.org/newsletter/">ニュースレター</a> を受け取りたい。
+        Yojana <a target="_blank" href="https://www.yojana.girishm.info/newsletter/">ニュースレター</a> を受け取りたい。
       consent_html: >
-        <a target="_blank" href="https://www.openproject.org/terms-of-service/">サービス規約</a> および <a target="_blank" href="https://www.openproject.org/data-privacy-and-security/">プライバシーポリシー</a>に同意します。
+        <a target="_blank" href="https://www.yojana.girishm.info/terms-of-service/">サービス規約</a> および <a target="_blank" href="https://www.yojana.girishm.info/data-privacy-and-security/">プライバシーポリシー</a>に同意します。
   email_calendar_updates:
     state:
       disabled: "無効だ。"
@@ -2577,7 +2577,7 @@ ja:
   error_check_user_and_role: "ユーザーとロールを選択してください。"
   error_code: "エラー %{code}"
   error_color_could_not_be_saved: "色を保存できませんでした。"
-  error_cookie_missing: "OpenProject のcookieが見つかりません。cookieが有効であることを確認してください。そうしないとこのアプリケーションは正しく動作しません。"
+  error_cookie_missing: "Yojana のcookieが見つかりません。cookieが有効であることを確認してください。そうしないとこのアプリケーションは正しく動作しません。"
   error_custom_option_not_found: "オプションが存在しません。"
   error_enterprise_plan_needed: "この操作を実行するには、 %{plan} エンタープライズプランが必要です。"
   error_enterprise_activation_user_limit: "あなたのアカウントを有効にすることができませんでした（ユーザー制限に達しました）。アクセスするには管理者に連絡してください。"
@@ -2595,7 +2595,7 @@ ja:
   error_work_package_not_found_in_project: "ワークパッケージが見つからないか、このプロジェクトに属していません。"
   error_work_package_id_not_found: "ワークパッケージが見つかりません。"
   error_must_be_project_member: "プロジェクトのメンバーである必要があります。"
-  error_migrations_are_pending: "OpenProject のインストールはデータベースの移行が保留中です。前回のアップグレード時に移行の実行を行っていない可能性があります。アップグレードガイドを確認して、適切にインストールをアップグレードしてください。"
+  error_migrations_are_pending: "Yojana のインストールはデータベースの移行が保留中です。前回のアップグレード時に移行の実行を行っていない可能性があります。アップグレードガイドを確認して、適切にインストールをアップグレードしてください。"
   error_migrations_visit_upgrade_guides: "アップグレードガイドのドキュメントをご覧ください"
   error_no_default_work_package_status: '｀ワークパッケージ目の既定のステータスが定義されていません。 設定をご確認してください（管理→ワークパッケージステータス）。'
   error_no_type_in_project: "このプロジェクトには関連付けられているワークパッケージの種類がありません。プロジェクトの設定をご確認してください。"
@@ -2706,7 +2706,7 @@ ja:
     failed: "ワークパッケージのエクスポート中にエラーが発生しました: %{message}"
     demo:
       heading: "デモPDF"
-      footer: "OpenProject によって生成"
+      footer: "Yojana によって生成"
       button_text: デモPDFを生成
     errors:
       embedded_table_with_too_many_columns: "この埋め込まれたワークパッケージテーブルはページに収まりませんでした。列数を減らしてください。"
@@ -2797,7 +2797,7 @@ ja:
       no_visible_projects: "このサイトに表示されているプロジェクトはありません。"
       users: "このサイトの最新の登録ユーザー。"
     blocks:
-      community: "OpenProject コミュニティ"
+      community: "Yojana コミュニティ"
       upsell:
         title: "エンタープライズ版にアップグレード"
       new_features:
@@ -2811,7 +2811,7 @@ ja:
           new_features_list:
             line_0: Automated project initiation (Enterprise add-on).
             line_1: "Meetings: add new or existing work packages as outcomes."
-            line_2: "Meetings: show iCal responses in OpenProject."
+            line_2: "Meetings: show iCal responses in Yojana."
             line_3: "Recurring meetings: duplicate agenda items to the next occurrence."
             line_4: "Release to Community: Attribute highlighting."
             line_5: Warning before opening external links in user-provided content (Enterprise add-on).
@@ -2824,7 +2824,7 @@ ja:
       impressum: "法的情報"
       glossary: "用語集"
       shortcuts: "ショートカット"
-      blog: "OpenProject ブログ"
+      blog: "Yojana ブログ"
       forums: "コミュニティ フォーラム"
       security_alerts: "セキュリティアラート"
       newsletter: "ニュースレター"
@@ -2837,7 +2837,7 @@ ja:
       default_attribute_written: "読み取り専用属性が書き込まれました"
       progress_mode_changed_to_status_based: "進捗の計算が更新されました"
       status_changed: "状態 '%{status_name}'"
-      system_update: "OpenProject システムの更新："
+      system_update: "Yojana システムの更新："
       work_package_duplicate_closed: "重複ワークパッケージの更新："
       total_percent_complete_mode_changed_to_work_weighted_average: "作業で加重された全体合計の%を計算します。"
       total_percent_complete_mode_changed_to_simple_average: "%の計算 完全な合計は、単純な平均のみに基づいています。"
@@ -2893,7 +2893,7 @@ ja:
       label: "追加"
   my_account:
     access_tokens:
-      description: "Provider tokens are issued by OpenProject, allowing other applications to access it. Client tokens are issued by other applications, allowing OpenProject to access them."
+      description: "Provider tokens are issued by Yojana, allowing other applications to access it. Client tokens are issued by other applications, allowing Yojana to access them."
       no_results:
         title: "表示するアクセス トークンはありません"
         description: "すべてが無効になっています。管理メニューで再度有効にすることができます。"
@@ -2913,7 +2913,7 @@ ja:
         blank_title: "No API token"
         title: "API"
         table_title: "API tokens"
-        text_hint: "API トークンを使用すると、サードパーティのアプリケーションが REST API 経由でこの OpenProject サイトと通信できます。"
+        text_hint: "API トークンを使用すると、サードパーティのアプリケーションが REST API 経由でこの Yojana サイトと通信できます。"
         static_token_name: "API token"
         disabled_text: "API トークンは管理者によって有効化されていません。この機能を使用するには管理者に問い合わせてください。"
         add_button: "API token"
@@ -2922,7 +2922,7 @@ ja:
         blank_title: "No iCalendar token"
         title: "iCalendar"
         table_title: "iCalendar tokens"
-        text_hint_link: "iCalendar tokens allow users to [subscribe to OpenProject calendars](docs_url) and view up-to-date work package information from external clients."
+        text_hint_link: "iCalendar tokens allow users to [subscribe to Yojana calendars](docs_url) and view up-to-date work package information from external clients."
         disabled_text: "iCalendar サブスクリプションは管理者によって有効になっていません。この機能を使用するには管理者に問い合わせてください。"
       oauth_application:
         active_tokens: "Active tokens"
@@ -2931,14 +2931,14 @@ ja:
         last_used_at: "Last used at"
         title: "OAuth"
         table_title: "OAuth application tokens"
-        text_hint: "OAuth application tokens allow third-party applications to connect with this OpenProject instance."
+        text_hint: "OAuth application tokens allow third-party applications to connect with this Yojana instance."
       oauth_client:
         blank_description: "There are no OAuth client tokens yet."
         blank_title: "No OAuth client tokens"
         failed: "An error occurred and the token couldn't be removed. Please try again later."
         integration_type: "Integration type"
         table_title: "OAuth client tokens"
-        text_hint: "OAuth client tokens allow this OpenProject instance to connect with external applications, such as file storages."
+        text_hint: "OAuth client tokens allow this Yojana instance to connect with external applications, such as file storages."
         title: "OAuth"
         remove_token: "Do you really want to remove this token? You will need to login again on %{integration}."
         removed: "OAuth client token successfully removed"
@@ -2949,7 +2949,7 @@ ja:
         blank_title: "No RSS token"
         title: "RSS"
         table_title: "RSS tokens"
-        text_hint: "RSS tokens allow users to keep up with the latest changes in this OpenProject instance via an external RSS reader."
+        text_hint: "RSS tokens allow users to keep up with the latest changes in this Yojana instance via an external RSS reader."
         static_token_name: "RSS token"
         disabled_text: "RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature."
       storages:
@@ -3124,7 +3124,7 @@ ja:
   label_custom_field_plural: "カスタムフィールド"
   label_custom_field_default_type: "空の種類"
   label_custom_style: "デザイン"
-  label_custom_style_description: "OpenProjectがテーマでどのように見えるかを選択し、アプリで使用するデフォルトの色を選択し、エクスポートがどのように見えるかを選択します。"
+  label_custom_style_description: "Yojanaがテーマでどのように見えるかを選択し、アプリで使用するデフォルトの色を選択し、エクスポートがどのように見えるかを選択します。"
   label_dashboard: "ダッシュボード"
   label_database_version: "PostgreSQL バージョン"
   label_date: "日付"
@@ -3396,7 +3396,7 @@ ja:
   label_open_menu: "メニューを開く"
   label_open_work_packages: "未完了"
   label_open_work_packages_plural: "未完了"
-  label_openproject_website: "OpenProjectのWebサイト"
+  label_openproject_website: "YojanaのWebサイト"
   label_optional_description: "説明"
   label_options: "オプション"
   label_other: "その他"
@@ -3798,8 +3798,8 @@ ja:
   mail_body_backup_token_reset_user_info: バックアップトークンがリセットされました。
   mail_body_backup_token_info: 以前のトークンは無効になりました。
   mail_body_backup_waiting_period: 新しいトークンは %{hours} 時間後に有効になります。
-  mail_body_backup_token_warning: これがあなたでなかった場合、すぐに OpenProject にログインして、再度リセットしてください。
-  mail_body_incoming_email_error: OpenProjectに送信したメールを処理できませんでした。
+  mail_body_backup_token_warning: これがあなたでなかった場合、すぐに Yojana にログインして、再度リセットしてください。
+  mail_body_incoming_email_error: Yojanaに送信したメールを処理できませんでした。
   mail_body_incoming_email_error_in_reply_to: "%{received_at} に %{from_email} が書きました"
   mail_body_incoming_email_error_logs: "ログ"
   mail_body_lost_password: "パスワードを変更するには、以下のリンクをクリックしてください:"
@@ -3812,10 +3812,10 @@ ja:
   mail_body_register_user: "%{name}さん"
   mail_body_register_links_html: |
     当社のYouTubeチャンネル（%{youtube_link}）を自由に閲覧してください。ここでは、ウェビナー（%{webinar_link}）
-    および「はじめの一歩」動画（%{get_started_link}）を提供し、OpenProjectでの最初のステップをできるだけ簡単にするためのサポートを提供しています。
+    および「はじめの一歩」動画（%{get_started_link}）を提供し、Yojanaでの最初のステップをできるだけ簡単にするためのサポートを提供しています。
     <br />
     さらに質問がある場合は、ドキュメント（%{documentation_link}）を参照するか、管理者にお問い合わせください。
-  mail_body_register_closing: "あなたのOpenProjectチーム"
+  mail_body_register_closing: "あなたのYojanaチーム"
   mail_body_register_ending: "連絡をお待ちしています！よろしくお願いいたします。"
   mail_body_reminder: "担当している %{count}件 のワークパッケージが %{days} 日内に期限を迎えます："
   mail_body_group_reminder: 'グループ "%{group}" に割り当てられた %{count} 件のワークパッケージが %{days} 日内に期限を迎えます'
@@ -3824,7 +3824,7 @@ ja:
   mail_subject_account_activation_request: "%{value} アカウントの承認要求"
   mail_subject_backup_ready: "バックアップの準備ができました"
   mail_subject_backup_token_reset: "バックアップトークンのリセット"
-  mail_subject_incoming_email_error: "OpenProjectに送信したメールを処理できませんでした"
+  mail_subject_incoming_email_error: "Yojanaに送信したメールを処理できませんでした"
   mail_subject_lost_password: "%{value} パスワード再発行"
   mail_subject_register: "%{value} アカウント登録の確認"
   mail_subject_wiki_content_added: "Wikiページ'%{id}'が追加されました"
@@ -3853,14 +3853,14 @@ ja:
   mail_user_activation_limit_reached:
     subject: ユーザーのアクティブ化の上限に達しました。
     message: |
-      新しいユーザー（%{email}）が管理しているOpenProjectの環境（%{host})）上にアカウントを作成しようとしました。
+      新しいユーザー（%{email}）が管理しているYojanaの環境（%{host})）上にアカウントを作成しようとしました。
       ユーザーの制限に達しているため、ユーザーは自分のアカウントをアクティブ化できません。
     steps:
       label: "ユーザーがサインインできるようにするには、次のいずれかを行います: "
       a: "お支払いプランをアップグレードします。 ([ここ](upgrade_url))" #here turned into a link
       b: "既存のユーザーをロックまたは削除する ([ここ](users_url))" #here turned into a link
   more_actions: "他の機能"
-  noscript_description: "OpenProjectを使用するためにJavaScriptを有効にする必要があります！"
+  noscript_description: "Yojanaを使用するためにJavaScriptを有効にする必要があります！"
   noscript_heading: "JavaScriptは無効されています。"
   noscript_learn_more: "もっと詳しく"
   notice_accessibility_mode: アクセシビリティモードを [アカウント設定](url) で有効にすることができます。
@@ -3938,7 +3938,7 @@ ja:
   notice_wont_delete_auth_source: ユーザーがまだ使用している限り、LDAP 接続は削除できません。
   notice_project_cannot_update_custom_fields: "プロジェクトの有効なカスタムフィールドを更新できません。プロジェクトは無効です: %{errors}"
   notice_attachment_migration_wiki_page: >
-    このページは、OpenProject の更新時に自動的に生成されました。%{container_type} "%{container_name}" と関連付けられていたすべての添付ファイルが含まれています。
+    このページは、Yojana の更新時に自動的に生成されました。%{container_type} "%{container_name}" と関連付けられていたすべての添付ファイルが含まれています。
   #Default format for numbers
   number:
     format:
@@ -3960,7 +3960,7 @@ ja:
           tb: "TB"
   onboarding:
     heading_getting_started: "概要を取得"
-    text_getting_started_description: "OpenProject とのプロジェクト管理とチームのコラボレーションの概要を簡単に取得します。ヘルプメニューからこのビデオを再起動できます。"
+    text_getting_started_description: "Yojana とのプロジェクト管理とチームのコラボレーションの概要を簡単に取得します。ヘルプメニューからこのビデオを再起動できます。"
     welcome: "%{app_title} へようこそ"
     select_language: "言語を選択してください"
   permission_add_work_package_comments: "コメントの追加"
@@ -4053,7 +4053,7 @@ ja:
   permission_view_all_principals_explanation: >
     Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
   permission_view_project: "プロジェクトを表示"
-  permission_view_changesets: "OpenProject にリポジトリのリビジョンを表示"
+  permission_view_changesets: "Yojana にリポジトリのリビジョンを表示"
   permission_view_internal_comments: "内部コメントの閲覧"
   permission_view_commit_author_statistics: "コミット作成者の統計情報の閲覧"
   permission_view_dashboards: "ダッシュボードを表示"
@@ -4178,7 +4178,7 @@ ja:
     destroy:
       confirmation: "続行した場合、管理リポジトリは削除されます。"
       info: "リポジトリの削除は復元できない操作です。"
-      info_not_managed: "注: これは、このリポジトリの内容を削除しません。OpenProject によって管理されていません。"
+      info_not_managed: "注: これは、このリポジトリの内容を削除しません。Yojana によって管理されていません。"
       managed_path_note: "次のディレクトリが消去されます: %{path}"
       repository_verification: "リポジトリの削除を確認するため、プロジェクトの識別子 %{identifier} を入力してください。"
       subtitle: "プロジェクト %{project_name} の %{repository_type} を削除してもよろしいですか？"
@@ -4192,8 +4192,8 @@ ja:
       empty_repository: "リポジトリは存在しますが、空です。まだリビジョンを含んでいません。"
       exists_on_filesystem: "リポジトリのディレクトリは、既にファイルシステムに存在します。"
       filesystem_access_failed: "ファイルシステム上のリポジトリへのアクセス中にエラーが発生しました: %{message}"
-      not_manageable: "OpenProject によって、このリポジトリ ベンダーを管理できません。"
-      path_permission_failed: "次のパスを作成しようとしてエラーが発生しました: %{path}。OpenProject がそのフォルダーに書き込むことができることを確認してください。"
+      not_manageable: "Yojana によって、このリポジトリ ベンダーを管理できません。"
+      path_permission_failed: "次のパスを作成しようとしてエラーが発生しました: %{path}。Yojana がそのフォルダーに書き込むことができることを確認してください。"
       unauthorized: "リポジトリにアクセスする承認がないか、認証情報が有効ではありません。"
       unavailable: "リポジトリが利用できません。"
       exception_title: "リポジトリにアクセスできません: %{message}"
@@ -4210,9 +4210,9 @@ ja:
         path_encoding: "Git パス エンコーディングを上書き (デフォルト: UTF-8)"
       local_title: "既存のローカル Git リポジトリのリンク"
       local_url: "ローカル URL"
-      local_introduction: "既存のローカル Git リポジトリがある場合は、アプリケーション内からアクセスするために、OpenProject  とリンクできます。"
-      managed_introduction: "OpenProject が、自動的にローカル Git リポジトリを作成して統合します。"
-      managed_title: "Git リポジトリを OpenProject に統合しました"
+      local_introduction: "既存のローカル Git リポジトリがある場合は、アプリケーション内からアクセスするために、Yojana  とリンクできます。"
+      managed_introduction: "Yojana が、自動的にローカル Git リポジトリを作成して統合します。"
+      managed_title: "Git リポジトリを Yojana に統合しました"
       managed_url: "管理用 URL"
       path: "Git リポジトリのパス"
       path_encoding: "パスのエンコード"
@@ -4229,24 +4229,24 @@ ja:
     scm_types:
       local: "既存のローカルリポジトリのリンク"
       existing: "既存のリポジトリのリンク"
-      managed: "OpenProject に新しいリポジトリを作成"
+      managed: "Yojana に新しいリポジトリを作成"
     storage:
       not_available: "このリポジトリのディスク ストレージ消費量は利用できません。"
       update_timeout: "最後のリポジトリに必要なディスク容量の情報を N 分間保持します。\nリポジトリの必要なディスク容量を計算するにはコストがかかるため、パフォーマンスへの影響を減らすにはこの値を増やしてください。"
-      oauth_application_details: "このウィンドウを閉じた後、クライアントの秘密の値にはアクセスできません。これらの値をNextcloudのOpenProject統合設定にコピーしてください："
+      oauth_application_details: "このウィンドウを閉じた後、クライアントの秘密の値にはアクセスできません。これらの値をNextcloudのYojana統合設定にコピーしてください："
       oauth_application_details_link_text: "設定ページに移動"
       setup_documentation_details: "新しいファイルストレージの設定にヘルプが必要な場合は、ドキュメントを確認してください。 "
       setup_documentation_details_link_text: "ファイルストレージのセットアップ"
       show_warning_details: "このファイルストレージを使用するには、各プロジェクトのプロジェクト設定でモジュールと特定のストレージを有効にする必要があります。"
     subversion:
       existing_title: "既存の Subversion リポジトリ"
-      existing_introduction: "既存のローカル Subversion リポジトリがある場合は、アプリケーション内からアクセスするために、OpenProject とリンクできます。"
+      existing_introduction: "既存のローカル Subversion リポジトリがある場合は、アプリケーション内からアクセスするために、Yojana とリンクできます。"
       existing_url: "既存のURL"
       instructions:
         managed_url: "これは、管理 (ローカル) Subversion リポジトリの URL です。"
         url: "リポジトリの URL を入力してください。これはローカル リポジトリ (%{local_proto} で始まる)、またはリモート リポジトリを対象にすることができます。\n次の URL スキームがサポートされています:"
-      managed_title: "Subversion リポジトリを OpenProject に統合しました"
-      managed_introduction: "OpenProject が、自動的にローカル Subversion リポジトリを作成して統合します。"
+      managed_title: "Subversion リポジトリを Yojana に統合しました"
+      managed_introduction: "Yojana が、自動的にローカル Subversion リポジトリを作成して統合します。"
       managed_url: "管理 URL"
       password: "リポジトリのパスワード"
       username: "リポジトリのユーザ名"
@@ -4279,7 +4279,7 @@ ja:
   setting_apiv3_cors_enabled: "CORSを有効にする"
   setting_apiv3_cors_origins: "API V3のオリジン間リソース共有 (CORS) が許可されています"
   setting_apiv3_cors_origins_text_html: >
-    CORS が有効になっている場合、これらは OpenProject API へのアクセスが許可されている起源です。 <br/> 期待される値を指定する方法については、 <a href="%{origin_link}" target="_blank">Origin ヘッダー</a> のドキュメントを確認してください。
+    CORS が有効になっている場合、これらは Yojana API へのアクセスが許可されている起源です。 <br/> 期待される値を指定する方法については、 <a href="%{origin_link}" target="_blank">Origin ヘッダー</a> のドキュメントを確認してください。
   setting_apiv3_write_readonly_attributes: "読み取り専用属性への書き込み権限"
   setting_apiv3_write_readonly_attributes_instructions: >
     If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
@@ -4476,7 +4476,7 @@ ja:
       omniauth_direct_login_hint_html: >
         このオプションが有効な場合、ログイン要求は設定された omniauth プロバイダにリダイレクトされます。ログインドロップダウンとサインインページは無効になります。 <br/> <strong>注意:</strong>パスワードログインも無効にしない限り、このオプションを有効にした場合でも、ユーザは内部的に <code>%{internal_path}</code>ログインページにアクセスしてログインすることができます。
       remapping_existing_users_hint: >
-        If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the OpenProject instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
+        If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the Yojana instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
     attachments:
       whitelist_text_html: >
         アップロードされたファイルに有効なファイル拡張子および/または MIME タイプのリストを定義します。 <br/> ファイル拡張子（例． <code>%{ext_example}</code>)またはMIMEタイプ(例、 <code>%{mime_example}</code>). <br/> 任意のファイル タイプをアップロードできるようにするには、空のままにします。複数の値を指定できます (各値に 1 行)。
@@ -4500,7 +4500,7 @@ ja:
         clamav_socket_html: クラムデーモンのソケットを入力します。例えば、 %{example}
         clamav_host_html: ホスト名とポートをコロンで区切って入力します。例： %{example}
         description_html: >
-          アンチウイルススキャナの統合が動作するモードを選択します。 <br/> <ul> <li><strong>%{disabled_option}</strong>:アップロードされたファイルはウイルススキャンされません。</li> <li><strong>%{socket_option}</strong>:OpenProject と同じサーバに ClamAV をセットアップし、スキャンデーモン clamd がバックグラウンドで動作している。</li> <li><strong>%{host_option}</strong>:外部のウイルススキャンホストにファイルをストリーミングしている。</li> </ul>
+          アンチウイルススキャナの統合が動作するモードを選択します。 <br/> <ul> <li><strong>%{disabled_option}</strong>:アップロードされたファイルはウイルススキャンされません。</li> <li><strong>%{socket_option}</strong>:Yojana と同じサーバに ClamAV をセットアップし、スキャンデーモン clamd がバックグラウンドで動作している。</li> <li><strong>%{host_option}</strong>:外部のウイルススキャンホストにファイルをストリーミングしている。</li> </ul>
     brute_force_prevention: "自動的にユーザをロック"
     date_format:
       first_date_of_week_and_year_set: >
@@ -4508,8 +4508,8 @@ ja:
       first_week_of_year_text_html: >
         年の最初の週に含まれる1月の日付を選択します。 この値は週の最初の日と一緒に年の週の合計数を決定します。 詳細については、このトピックに関する <a href="%{link}" target="_blank">ドキュメント</a> をご覧ください。
     experimental:
-      save_confirmation: 注意! データ損失のリスク! OpenProjectのインストールを中断し、すべてのデータを失うことを気にしない場合にのみ、実験的な機能を有効にしてください。
-      warning_toast: 機能フラグは、開発中の機能を有効にする設定です。これらはテスト目的のみに使用されます。 重要なデータを保持しているOpenProjectインストールでは、これらの機能は、データが破損する可能性が高いです。自己責任で使用してください。
+      save_confirmation: 注意! データ損失のリスク! Yojanaのインストールを中断し、すべてのデータを失うことを気にしない場合にのみ、実験的な機能を有効にしてください。
+      warning_toast: 機能フラグは、開発中の機能を有効にする設定です。これらはテスト目的のみに使用されます。 重要なデータを保持しているYojanaインストールでは、これらの機能は、データが破損する可能性が高いです。自己責任で使用してください。
       feature_flags: 機能フラグ
     general: "概要"
     highlighting:
@@ -4520,7 +4520,7 @@ ja:
         type: "タイプごとの行全体"
         priority: "優先度別に行全体"
     icalendar:
-      enable_subscriptions_text_html: 必要な権限を持つユーザーが、OpenProject のカレンダーを購読し、外部のカレンダークライアントを介してワークパッケージ情報にアクセスできるようにします。<strong>注意:</strong>この機能を有効にする前に、<a href="%{link}" target="_blank">iCalendar サブスクリプションについてを</a>読み、潜在的なセキュリティリスクを理解してください。
+      enable_subscriptions_text_html: 必要な権限を持つユーザーが、Yojana のカレンダーを購読し、外部のカレンダークライアントを介してワークパッケージ情報にアクセスできるようにします。<strong>注意:</strong>この機能を有効にする前に、<a href="%{link}" target="_blank">iCalendar サブスクリプションについてを</a>読み、潜在的なセキュリティリスクを理解してください。
     language_name_being_default: "%{language_name} (デフォルト)"
     notifications:
       events_explanation: "メールが送信されるイベントを管理します。 ワークパッケージはすべてのユーザーに特に設定できるため、リストから除外されます。"
@@ -4554,7 +4554,7 @@ ja:
               description: "Add all the project attributes in a section inside the right side panel in the project overview."
     project_initiation_request:
       header_description: >
-        OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
+        Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
       status:
         submitted: "%{wizard_name} has been submitted"
         submitted_description: "Click the button below to go to the work package for the submission process."
@@ -4567,7 +4567,7 @@ ja:
         project_mandate: "Open project mandate"
       blankslate:
         title: "Initiation request not enabled"
-        description: "OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard."
+        description: "Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard."
       disable_dialog:
         title: "Disable project initiation request"
         heading: "Disable this project initiation request?"
@@ -4648,7 +4648,7 @@ ja:
       sentence_connector: "及び"
       skip_last_comma: "偽"
   text_accessibility_hint: "アクセシビリティ モードは目の不自由な人、視覚障害者、視力が悪いユーザーのためにデザインされています。後者向けには、フォーカスされた要素が特に強調表示されます。バックログ モジュールはこのモードで使用できないことにご注意ください。"
-  text_access_token_hint: "アクセストークンで、外部アプリケーションが OpenProject のリソースへのアクセスを許可することができます。"
+  text_access_token_hint: "アクセストークンで、外部アプリケーションが Yojana のリソースへのアクセスを許可することができます。"
   text_analyze: "さらに分析: %{subject}"
   text_are_you_sure: "よろしいですか？"
   open_link_in_a_new_tab: "Open link in a new tab"
@@ -4747,7 +4747,7 @@ ja:
   text_no_notes: "このワークパッケージに有効なコメントはありません."
   text_notice_too_many_values_are_inperformant: "注: 1ページあたり100以上の項目を表示すると読み込み時間が増加することがあります。"
   text_notice_security_badge_displayed_html: >
-    602/5000 注：有効にすると、<a href="%{information_panel_path}">%{information_panel_label}</a>管理パネルとホームページに、インストールステータスのバッジが表示されます。 管理者のみに表示されます。 <br/>バッジは、最新のOpenProjectバージョンを公式のOpenProjectリリースデータベースと照合して、アップデートや既知の脆弱性について警告します。 チェックの内容、利用可能なアップデートを提供するために必要なデータ、およびこのチェックを無効にする方法の詳細については、<a href="%{more_info_url}">設定ドキュメント</a>をご覧ください。
+    602/5000 注：有効にすると、<a href="%{information_panel_path}">%{information_panel_label}</a>管理パネルとホームページに、インストールステータスのバッジが表示されます。 管理者のみに表示されます。 <br/>バッジは、最新のYojanaバージョンを公式のYojanaリリースデータベースと照合して、アップデートや既知の脆弱性について警告します。 チェックの内容、利用可能なアップデートを提供するために必要なデータ、およびこのチェックを無効にする方法の詳細については、<a href="%{more_info_url}">設定ドキュメント</a>をご覧ください。
   text_own_membership_delete_confirmation: "一部またはすべての権限を自分自身から剥奪しようとしているため、このプロジェクトを編集できなくなる可能性があります。\n本当に続けますか？"
   text_permanent_delete_confirmation_checkbox_label: "私は、この削除は取り消すことができないことを理解しています。"
   text_permanent_remove_confirmation_checkbox_label: "I understand that this removal cannot be reversed"
@@ -4757,7 +4757,7 @@ ja:
   text_reassign: "ワークパッケージへの再割り当て:"
   text_regexp_info: "例) ^[A-Z0-9]+$"
   text_regexp_multiline: '正規表現は、複数行モードで適用されます。例えば、^---\s+'
-  text_repository_usernames_mapping: "リポジトリのログから検出されたユーザ名をどのOpenProjectユーザに関連づけるかを選択してください。\nログ上のユーザ名またはメールアドレスがOpenProjectのユーザと一致する場合は自動的に関連づけます。"
+  text_repository_usernames_mapping: "リポジトリのログから検出されたユーザ名をどのYojanaユーザに関連づけるかを選択してください。\nログ上のユーザ名またはメールアドレスがYojanaのユーザと一致する場合は自動的に関連づけます。"
   text_status_changed_by_changeset: "変更履歴%{value}で適用されました。"
   text_table_difference_description: "この表には、単一の %{entries} が表示されています。 まず、表の対応するチェックボックスを選択して、両者の項目の違いを見ることができます。 表の下のボタンをクリックすると、違いが表示されます。"
   text_time_logged_by_changeset: "変更履歴 %{value} で適用されました。"
@@ -4832,7 +4832,7 @@ ja:
     authentication_provider: "認証プロバイダー"
     identity_url_text: "認証プロバイダが提供する内部一意識別子。"
     authentication_settings_disabled_due_to_external_authentication: >
-      外部認証プロバイダー経由でこのユーザを認証しますので、OpenProjectではパスワードの変更ができません。
+      外部認証プロバイダー経由でこのユーザを認証しますので、Yojanaではパスワードの変更ができません。
     authorization_rejected: "ログインすることはできません。"
     assign_random_password: "ランダムパスワードを設定 (メールでユーザに送信されます)"
     blocked: "一時的ロック"
@@ -4865,7 +4865,7 @@ ja:
   warning: 注意
   warning_attachments_not_saved: "%{count} 件のファイルを保存できませんでした。"
   warning_imminent_user_limit: >
-    現在のプランでサポートされているユーザーよりも多くのユーザーを招待しました。 招待されたユーザーは、OpenProject環境に参加できない場合があります。 招待者と登録ユーザーが参加できるようにするには、<a href="%{upgrade_url}">プランをアップグレード</a>するか、既存のユーザーをブロックしてください。
+    現在のプランでサポートされているユーザーよりも多くのユーザーを招待しました。 招待されたユーザーは、Yojana環境に参加できない場合があります。 招待者と登録ユーザーが参加できるようにするには、<a href="%{upgrade_url}">プランをアップグレード</a>するか、既存のユーザーをブロックしてください。
   warning_registration_token_expired: |
     アクティベーションメールの有効期限が切れています。%{email} に新しいメールを送りました。メール内のリンクをクリックして、アカウントを有効にしてください。
   warning_user_limit_reached: >
@@ -4873,7 +4873,7 @@ ja:
   warning_user_limit_reached_admin: >
     ユーザーを追加すると、現在の制限を超えます。外部ユーザーがこのサイトにアクセスできるように、<a href="%{upgrade_url}">プランをアップグレードして</a>ください。
   warning_user_limit_reached_instructions: >
-    ユーザー制限(%{current}/%{max} アクティブユーザー)に達しました。 sales@openproject.com に連絡してEnterprise Editionプランをアップグレードし、ユーザーを追加してください。
+    ユーザー制限(%{current}/%{max} アクティブユーザー)に達しました。 sales@girishm.info に連絡してEnterprise Editionプランをアップグレードし、ユーザーを追加してください。
   warning_protocol_mismatch_html: >
 
   warning_bar:
@@ -5146,7 +5146,7 @@ ja:
         confidential: "クライアントシークレットを機密にできる場所でアプリケーションが使用されるかどうかを確認します。 ネイティブモバイルアプリとシングルページアプリは機密とはみなされません。"
         scopes: "アプリケーションにアクセスを許可するスコープをチェックします。チェックされていない場合、api_v3になる。"
         client_credential_user_id: "クライアントがこのアプリケーションを使用するときに偽装するためのオプションのユーザーIDです。 パブリックアクセスのみを許可するには空のままにします"
-        register_intro: "OpenProject用のOAuth APIクライアントアプリケーションを開発している場合は、このフォームを使用してすべてのユーザーが使用できるように登録できます。"
+        register_intro: "Yojana用のOAuth APIクライアントアプリケーションを開発している場合は、このフォームを使用してすべてのユーザーが使用できるように登録できます。"
         default_scopes: ""
     header:
       builtin_applications: 内蔵OAuthアプリケーション
@@ -5154,17 +5154,17 @@ ja:
     empty_application_lists: OAuthアプリケーションは登録されていません。
     client_id: "クライアントID"
     client_secret_notice: >
-      クライアントシークレットを表示できる唯一の瞬間です。書き留めて安全に保管してください。 これはパスワードとして扱われるべきであり、後でOpenProjectによって検索することはできません。
+      クライアントシークレットを表示できる唯一の瞬間です。書き留めて安全に保管してください。 これはパスワードとして扱われるべきであり、後でYojanaによって検索することはできません。
     authorization_dialog:
       authorize: "承認"
       cancel: "承認を取り消して拒否します。"
       prompt_html: "<strong>%{application_name}</strong>に自分のアカウント<em>%{login}</em>を使用する権限を与えますか？"
       title: "%{application_name}を承認します"
       wants_to_access_html: >
-        このアプリケーションはあなたのOpenProjectアカウントへのアクセスを要求します。 <br/> <strong>次の権限が要求されています：</strong>
+        このアプリケーションはあなたのYojanaアカウントへのアクセスを要求します。 <br/> <strong>次の権限が要求されています：</strong>
     scopes:
       api_v3: "Full API v3アクセス"
-      api_v3_text: "アプリケーションはアクションを実行するためのOpenProject API v3へのフルアクセスが許可されます。"
+      api_v3_text: "アプリケーションはアクションを実行するためのYojana API v3へのフルアクセスが許可されます。"
     grants:
       created_date: "に承認済み"
       scopes: "権限"
@@ -5179,7 +5179,7 @@ ja:
     client_credentials_impersonation_set_to: "クライアントの資格情報をユーザーに設定"
     client_credentials_impersonation_warning: "注意：このアプリケーションで「クライアント認証情報」フローを使用しているクライアントは、このユーザーの権限を持ちます。"
     client_credentials_impersonation_html: >
-      デフォルトでは、OpenProjectは %{authorization_code_flow_link} を介してOAuth 2.0認証を提供します。 オプションで %{client_credentials_flow_link} を有効にすることもできますが、その代わりにユーザーに代わってリクエストが実行されるようにする必要があります。
+      デフォルトでは、Yojanaは %{authorization_code_flow_link} を介してOAuth 2.0認証を提供します。 オプションで %{client_credentials_flow_link} を有効にすることもできますが、その代わりにユーザーに代わってリクエストが実行されるようにする必要があります。
     authorization_error: "認証エラーが発生しました。"
     revoke_my_application_confirmation: "本当にこのアプリケーションを削除しますか？ これにより %{token_count} が無効になります。"
     my_registered_applications: "登録済みのOAuthアプリケーション"
@@ -5208,20 +5208,20 @@ ja:
         内部エラー：既存のトークンがない状態で refresh_token を呼び出しました。
       refresh_token_updated_failed: "OAuthClientTokenの更新中のエラー"
       oauth_client_not_found_explanation: >
-        このエラーは、OpenProject で client_id と client_secret を更新したが、OAuth2 プロバイダの 'Return URI' フィールドを更新していない場合に表示されます。
+        このエラーは、Yojana で client_id と client_secret を更新したが、OAuth2 プロバイダの 'Return URI' フィールドを更新していない場合に表示されます。
       oauth_code_not_present: "OAuth2 の 'code' が 'callback' エンドポイント (redirect_uri) に見つかりません。"
       oauth_code_not_present_explanation: >
         このエラーは、OAuth2プロバイダで間違ったresponse_typeを選択した場合に表示されます。response_type は 'code' あるいはそれに類するものでなければなりません。
       oauth_state_not_present: "OAuth2の'state'が'callback'エンドポイント(redirect_uri)に見つかりません。"
       oauth_state_not_present_explanation: >
-        state' は、OAuth2 認証に成功した後、OpenProject に続行先を指示するために使用します。state' が見つからない場合は、セットアップ中に表示される可能性のある内部エラーです。システム管理者に連絡してください。
+        state' は、OAuth2 認証に成功した後、Yojana に続行先を指示するために使用します。state' が見つからない場合は、セットアップ中に表示される可能性のある内部エラーです。システム管理者に連絡してください。
       rack_oauth2:
         client_secret_invalid: "クライアントの秘密が無効です (client_secret_invalid)"
         invalid_request: >
           OAuth2 認証サーバーが 'invalid_request' で応答しました。このエラーは、複数回認証しようとした場合や、技術的な問題が発生した場合に表示されます。
         invalid_response: "OAuth2 認証サーバーから無効な応答が返されました（invalid_response）"
         invalid_grant: "OAuth2認証サーバーが再認証を要求してきます（invalid_grant）。"
-        invalid_client: "OAuth2 認証サーバーが OpenProject を認識しません (invalid_client)。"
+        invalid_client: "OAuth2 認証サーバーが Yojana を認識しません (invalid_client)。"
         unauthorized_client: "OAuth2 認証サーバーがグラントタイプ (unauthorized_client) を拒否します"
         unsupported_grant_type: "OAuth2認証サーバーが再認証を要求してきます(unsupported_grant_type)。"
         invalid_scope: "リクエストされたリソースにアクセスする権限がありません（無効なスコープ）。"
@@ -5234,18 +5234,18 @@ ja:
   you: あなた
   link: リンク
   plugin_openproject_auth_plugins:
-    name: "OpenProject Auth プラグイン"
-    description: "OpenProjectにおける認証のためのOmniAuthストラテジープロバイダの統合。"
+    name: "Yojana Auth プラグイン"
+    description: "Yojanaにおける認証のためのOmniAuthストラテジープロバイダの統合。"
   plugin_openproject_auth_saml:
     name: "OmniAuth SAML / シングルサインオン"
-    description: "OmniAuthSAMLプロバイダをOpenProjectに追加"
+    description: "OmniAuthSAMLプロバイダをYojanaに追加"
   enterprise_plans:
     legacy_enterprise: "エンタープライズ・プラン"
   token:
     hashed_token:
       display_value_placeholder: "***"
   external_link_warning:
-    title: "Leaving OpenProject"
-    warning_message: "You are about to leave OpenProject and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies."
+    title: "Leaving Yojana"
+    warning_message: "You are about to leave Yojana and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies."
     continue_message: "Are you sure you want to proceed to the following external link?"
     continue_button: "Continue to external website"

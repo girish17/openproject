@@ -5,8 +5,8 @@ set -e
 
 
 DUMPFILE="${1:?Pass the dump file to anonymize as first argument}"
-if [ -f "$HOME/openproject/dev/Gemfile" ]; then
-  OPENPROJECT_DEV_DIR="$HOME/openproject/dev"
+if [ -f "$HOME/girish17/yojana/Gemfile" ]; then
+  OPENPROJECT_DEV_DIR="$HOME/girish17/yojana"
 elif [ -f "$HOME/openproject/Gemfile" ]; then
   OPENPROJECT_DEV_DIR="$HOME/openproject"
 # maybe parent directory of this script is an OpenProject repository?

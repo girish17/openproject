@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -53,7 +53,7 @@ ja:
         新しいバックアップは以前のバックアップを上書きします。1日に作成できるバックアップの数には限りがあります。
       last_backup: 前回のバックアップ
       last_backup_from: 前回のバックアップ日
-      title: OpenProject のバックアップ
+      title: Yojana のバックアップ
       options: オプション
       include_attachments: 添付ファイルを含める
       download_backup: バックアップのダウンロード
@@ -506,7 +506,7 @@ ja:
         next: "次へ"
         got_it: "了承"
       steps:
-        help_menu: "ヘルプ(?)メニューは、<b>その他のヘルプリソースを</b>提供します。ここでは、ユーザーガイド、役立つハウツービデオなどを見つけることができます。 <br> OpenProjectでの作業をお楽しみください！"
+        help_menu: "ヘルプ(?)メニューは、<b>その他のヘルプリソースを</b>提供します。ここでは、ユーザーガイド、役立つハウツービデオなどを見つけることができます。 <br> Yojanaでの作業をお楽しみください！"
         members: "新しい<b>メンバーを</b>プロジェクトに招待する。"
         quick_add_button: "ヘッダーナビゲーションにあるプラス（＋）アイコンをクリックして、<b>新規プロジェクトを作成</b>したり、<b>同僚を招待</b>したりできます。"
         sidebar_arrow: "プロジェクトの<b>メインメニューに</b>戻るには、左上の矢印を使います。"

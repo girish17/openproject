@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -111,12 +111,12 @@ cs:
         link: "webhook"
     mcp_configurations:
       index:
-        description: "The model context protocol allows AI agents to provide its users with tools and resources exposed by this OpenProject instance."
+        description: "The model context protocol allows AI agents to provide its users with tools and resources exposed by this Yojana instance."
         resources_heading: "Resources"
-        resources_description: "OpenProject implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
+        resources_description: "Yojana implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
         resources_submit: "Update resources"
         tools_heading: "Tools"
-        tools_description: "OpenProject implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url)."
+        tools_description: "Yojana implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url)."
         tools_submit: "Update tools"
       multi_update:
         success: "MCP configurations were updated successfully."
@@ -147,13 +147,13 @@ cs:
       edit:
         label_delete_scim_client: "Delete SCIM client"
       form:
-        auth_provider_description: "This is the service that users added by the SCIM provider will use to authenticate in OpenProject."
-        authentication_method_description_html: "This is how the SCIM client authenticates at OpenProject. Please ensure that OAuth tokens include the <code>scim_v2</code> scope."
+        auth_provider_description: "This is the service that users added by the SCIM provider will use to authenticate in Yojana."
+        authentication_method_description_html: "This is how the SCIM client authenticates at Yojana. Please ensure that OAuth tokens include the <code>scim_v2</code> scope."
         description: "Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options."
         jwt_sub_description: "For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case."
         name_description: "Choose a name that will help other admins better understand why this client was configured."
       index:
-        description: "SCIM clients configured here are able to interact with OpenProject SCIM server API to provision, update, and deprovision user accounts and groups."
+        description: "SCIM clients configured here are able to interact with Yojana SCIM server API to provision, update, and deprovision user accounts and groups."
         label_create_button: "Add SCIM client"
       new:
         title: "New SCIM client"
@@ -161,14 +161,14 @@ cs:
         confirm_button: "Zrušit"
         title: "Odvolat statický token"
         heading: "Opravdu chcete zrušit tento token?"
-        description: "The SCIM client that uses this token will no longer be able to access OpenProject's SCIM server API."
+        description: "The SCIM client that uses this token will no longer be able to access Yojana's SCIM server API."
       table_component:
         blank_slate:
           title: "No SCIM clients configured yet"
           description: "Add clients to see them here"
         user_count: "Uživatelé"
       token_list_component:
-        description: "The tokens you generate here can be passed by a SCIM client to access the OpenProject SCIM API."
+        description: "The tokens you generate here can be passed by a SCIM client to access the Yojana SCIM API."
         heading: "Tokeny"
         label_add_token: "Token"
         label_aria_add_token: "Přidat token"
@@ -229,38 +229,38 @@ cs:
       name: Rozhodčí název spojení LDAP
       host: LDAP název hostitele nebo IP adresa
       login_map: Atribut klíč v LDAP, který se používá k identifikaci jedinečného přihlášení uživatele. Obvykle se jedná o `uid` nebo `samAccountName`.
-      generic_map: Klíč atributů v LDAP, který je namapován k atributu OpenProject `%{attribute}`
-      admin_map_html: "Volitelně: Atribut klíč v LDAP, který <strong>pokud je přítomen</strong> , označí uživatele OpenProject admin. Nechte prázdné, pokud máte pochybnosti."
+      generic_map: Klíč atributů v LDAP, který je namapován k atributu Yojana `%{attribute}`
+      admin_map_html: "Volitelně: Atribut klíč v LDAP, který <strong>pokud je přítomen</strong> , označí uživatele Yojana admin. Nechte prázdné, pokud máte pochybnosti."
       system_user_dn_html: |
         Enter the DN of the system user used for read-only access.
         <br>
-        Example: uid=openproject,ou=system,dc=example,dc=com
+        Example: uid=yojana,ou=system,dc=example,dc=com
       system_user_password: Vložte vázané heslo systémového uživatele
       base_dn: |
-        Zadejte základní DN podstromu v LDAP chcete, aby OpenProject hledal uživatele a skupiny.
-        OpenProject bude filtrovat pouze pro zadaná uživatelská jména v tomto podstromku.
+        Zadejte základní DN podstromu v LDAP chcete, aby Yojana hledal uživatele a skupiny.
+        Yojana bude filtrovat pouze pro zadaná uživatelská jména v tomto podstromku.
         Příklad: ou=users,dc=example,dc=com
       filter_string: |
         Přidejte volitelný filtr RFC4515, který se použije na výsledky vrácené pro uživatele filtrované v LDAP.
-        Toto lze použít k omezení sady uživatelů, kteří jsou nalezeni v OpenProject pro ověřování a synchronizaci skupin.
+        Toto lze použít k omezení sady uživatelů, kteří jsou nalezeni v Yojana pro ověřování a synchronizaci skupin.
       filter_string_concat: |
-        OpenProject bude vždy filtrovat přihlašovací atribut, který poskytuje uživatel pro identifikaci záznamu. Pokud zde zadáte filtr,
+        Yojana bude vždy filtrovat přihlašovací atribut, který poskytuje uživatel pro identifikaci záznamu. Pokud zde zadáte filtr,
         bude spojen s AND. Ve výchozím nastavení se jako filtr použije catch-all (objectClass=*).
       onthefly_register: |
-        Pokud zaškrtnete toto políčko, OpenProject automaticky vytvoří nové uživatele z jejich LDAP položek
-        při prvním ověření OpenProject.
-        Ponechte toto nezaškrtnuté pro povolení pouze existujících účtů v OpenProject pro ověření pomocí LDAP!
+        Pokud zaškrtnete toto políčko, Yojana automaticky vytvoří nové uživatele z jejich LDAP položek
+        při prvním ověření Yojana.
+        Ponechte toto nezaškrtnuté pro povolení pouze existujících účtů v Yojana pro ověření pomocí LDAP!
     connection_encryption: "Šifrování připojení"
     encryption_details: "Možnosti LDAPS / STARTTLS"
     system_account: "Systémový účet"
     system_account_legend: |
-      OpenProject vyžaduje přístup pouze pro čtení prostřednictvím systémového účtu pro vyhledávání uživatelů a skupin ve stromu LDAP.
+      Yojana vyžaduje přístup pouze pro čtení prostřednictvím systémového účtu pro vyhledávání uživatelů a skupin ve stromu LDAP.
       Zadejte prosím přístupové údaje pro tohoto systémového uživatele v následující sekci.
     ldap_details: "Podrobnosti LDAP"
     user_settings: "Mapování atributů"
     user_settings_legend: |
-      Následující pole se týkají toho, jak jsou uživatelé vytvářeni v OpenProject ze záznamů LDAP a
-      jaké atributy LDAP se používají k definování atributů uživatele OpenProject (mapování atributů).
+      Následující pole se týkají toho, jak jsou uživatelé vytvářeni v Yojana ze záznamů LDAP a
+      jaké atributy LDAP se používají k definování atributů uživatele Yojana (mapování atributů).
     tls_mode:
       plain: "žádný"
       simple_tls: "LDAPS"
@@ -1524,7 +1524,7 @@ cs:
         confirmation: "neshoduje se s %{attribute}."
         could_not_be_copied: "%{dependency} nemůže být (zcela) zkopírován."
         does_not_exist: "neexistuje."
-        error_enterprise_only: "%{action} is only available in the OpenProject Enterprise edition."
+        error_enterprise_only: "%{action} is only available in the Yojana Enterprise edition."
         error_unauthorized: "není přístupný."
         error_readonly: "se pokusil být napsán, ale není zapisovatelný."
         error_conflict: "Informace mezitím aktualizoval alespoň jeden další uživatel."
@@ -2190,7 +2190,7 @@ cs:
       heading_reset: "Resetovat záložní token"
       heading_create: "Vytvořit záložní token"
       implications: >
-        Povolení záloh umožní každému uživateli s požadovaným oprávněním a tímto záložním tokenem stáhnout zálohu obsahující všechna data této OpenProject instalace. To zahrnuje údaje všech ostatních uživatelů.
+        Povolení záloh umožní každému uživateli s požadovaným oprávněním a tímto záložním tokenem stáhnout zálohu obsahující všechna data této Yojana instalace. To zahrnuje údaje všech ostatních uživatelů.
       info: >
         Budete muset vygenerovat token zálohy, abyste mohli vytvořit zálohu. Pokaždé, když chcete požádat o zálohu, budete muset tento token poskytnout.  Pro zakázání záloh tomuto uživateli můžete odstranit token zálohy
       verification: >
@@ -2590,7 +2590,7 @@ cs:
         Already have a token? Add it using the button below to upgrade to the booked Enterprise plan.
       hide_banner: "Hide this banner"
       homescreen_description: >
-        Enterprise plans extend the Community edition of OpenProject with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running OpenProject in a mission-critical environment.
+        Enterprise plans extend the Community edition of Yojana with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running Yojana in a mission-critical environment.
       homescreen_subline: By upgrading, you will also be supporting an open source project.
       baseline_comparison:
         description: Zvýraznit změny provedené v tomto seznamu od té doby v minulosti.
@@ -2603,7 +2603,7 @@ cs:
         premium_features: "Doplňky Enterprise Edice"
         premium_features_text: "Agile desky, vlastní téma a logo, grafy, inteligentní pracovní postupy s vlastními akcemi, fulltextové vyhledávání příloh pracovního balíčku a vícenásobný výběr vlastních polí."
         professional_support: "Profesionální podpora"
-        professional_support_text: "Získejte spolehlivou, vysoce profesionální podporu od seniorních podpůrných inženýrů s odbornými znalostmi o používání OpenProject."
+        professional_support_text: "Získejte spolehlivou, vysoce profesionální podporu od seniorních podpůrných inženýrů s odbornými znalostmi o používání Yojana."
       work_package_subject_generation:
         description: "Vytváření automaticky generovaných předmětů pomocí odkazovaných atributů a textu."
       customize_life_cycle:
@@ -2635,29 +2635,29 @@ cs:
       define_custom_style:
         title: "Custom color theme and logo"
         more_info: "Poznámka: použité logo bude veřejně přístupné."
-        description: Přizpůsobte si instalaci OpenProject vlastním logem a barvami.
+        description: Přizpůsobte si instalaci Yojana vlastním logem a barvami.
       custom_actions:
         title: "Vlastní akce"
         description: "Vlastní akce jsou zkratky jedním kliknutím na sadu předem definovaných akcí, které můžete zpřístupnit na základě stavu některých pracovních balíčků. role, typ nebo projekt."
       mcp_server:
-        description: "Integrate AI agents with your OpenProject instance through MCP."
+        description: "Integrate AI agents with your Yojana instance through MCP."
       nextcloud_sso:
         title: "Single Sign-On for Nextcloud Storage"
         description: "Enable seamless and secure authentication for your Nextcloud storage with Single Sign-On. Simplify access management and enhance user convenience."
       scim_api:
         title: "SCIM clients"
-        description: "Automate user management in OpenProject by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan."
+        description: "Automate user management in Yojana by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan."
       sso_auth_providers:
         title: "Single Sign-On (SSO)"
         description: "Enable users to log in via external SSO providers using SAML or OpenID Connect for seamless access and integration with existing identity systems."
       virus_scanning:
-        description: "Zajistěte, aby nahrané soubory v OpenProjectu byly před zpřístupněním ostatním uživatelům zkontrolovány na přítomnost virů."
+        description: "Zajistěte, aby nahrané soubory v Yojanau byly před zpřístupněním ostatním uživatelům zkontrolovány na přítomnost virů."
       project_creation_wizard:
         description: "Generate a step-by-step wizard to help project managers fill out a project initiation request."
       placeholder_users:
         title: Placeholder uživatel
         description: >
-          Placeholder uživatelé jsou způsob, jak přiřadit pracovní balíčky uživatelům, kteří nejsou součástí vašeho projektu. Mohou být užiteční v řadě scénářů; například, pokud potřebujete sledovat úkoly u zdroje, který ještě nejsou pojmenovány nebo dostupné, nebo pokud nechcete této osobě umožnit přístup k OpenProject ale stále chcete sledovat úkoly, které jim byly přiděleny.
+          Placeholder uživatelé jsou způsob, jak přiřadit pracovní balíčky uživatelům, kteří nejsou součástí vašeho projektu. Mohou být užiteční v řadě scénářů; například, pokud potřebujete sledovat úkoly u zdroje, který ještě nejsou pojmenovány nebo dostupné, nebo pokud nechcete této osobě umožnit přístup k Yojana ale stále chcete sledovat úkoly, které jim byly přiděleny.
       internal_comments:
         title: Internal comments
         description: "Internal comments allow an internal team to communicate amongst themselves privately. These are only visible to certain project roles and will never be visible publicly."
@@ -2683,16 +2683,16 @@ cs:
       request_again: "Request again"
       resend_action: "Resend confirmation email"
       welcome_title: "Quick feature overview"
-      welcome_description: "Získejte rychlý přehled o řízení projektu a týmové spolupráci s OpenProject Enterprise edion."
+      welcome_description: "Získejte rychlý přehled o řízení projektu a týmové spolupráci s Yojana Enterprise edion."
       confirmation_info: >
-        We sent you an email on %{date} to %{email} with all the information to start the free trial of OpenProject Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
+        We sent you an email on %{date} to %{email} with all the information to start the free trial of Yojana Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
       confirmation_subline: >
         Please, check your inbox and follow the steps to start your 14-day free trial.
       domain_caption: The token will be valid for your currently configured host name.
       receive_newsletter_html: >
-        I want to receive the OpenProject <a target="_blank" href="https://www.openproject.org/newsletter/">newsletter</a>.
+        I want to receive the Yojana <a target="_blank" href="https://www.yojana.girishm.info/newsletter/">newsletter</a>.
       consent_html: >
-        I agree with the <a target="_blank" href="https://www.openproject.org/terms-of-service/">terms of service</a> and the <a target="_blank" href="https://www.openproject.org/data-privacy-and-security/">privacy policy</a>.
+        I agree with the <a target="_blank" href="https://www.yojana.girishm.info/terms-of-service/">terms of service</a> and the <a target="_blank" href="https://www.yojana.girishm.info/data-privacy-and-security/">privacy policy</a>.
   email_calendar_updates:
     state:
       disabled: "Disabled."
@@ -2725,7 +2725,7 @@ cs:
   error_check_user_and_role: "Vyberte uživatele a roli."
   error_code: "Chyba %{code}"
   error_color_could_not_be_saved: "Barvu nelze uložit"
-  error_cookie_missing: "OpenProject cookie chybí. Ujistěte se, že jsou soubory cookie povoleny, protože aplikace nebude správně fungovat."
+  error_cookie_missing: "Yojana cookie chybí. Ujistěte se, že jsou soubory cookie povoleny, protože aplikace nebude správně fungovat."
   error_custom_option_not_found: "Nastavení neexistuje."
   error_enterprise_plan_needed: "You need the %{plan} enterprise plan to perform this action."
   error_enterprise_activation_user_limit: "Váš účet nebyl aktivován (dosažen limit počtu uživatelů). Prosím obraťte se na správce pro získání přístupu."
@@ -2743,7 +2743,7 @@ cs:
   error_work_package_not_found_in_project: "Pracovný balíček nebyl nalezen, nebo nepatří k tomuto projektu"
   error_work_package_id_not_found: "Pracovní balíček nebyl nalezen."
   error_must_be_project_member: "musí být členem projektu"
-  error_migrations_are_pending: "Vaše instalace OpenProject čeká na migraci databáze. Pravděpodobně jste při poslední aktualizaci zmeškali migrace. Pro správnou aktualizaci vaší instalace prosím zkontrolujte průvodce aktualizací."
+  error_migrations_are_pending: "Vaše instalace Yojana čeká na migraci databáze. Pravděpodobně jste při poslední aktualizaci zmeškali migrace. Pro správnou aktualizaci vaší instalace prosím zkontrolujte průvodce aktualizací."
   error_migrations_visit_upgrade_guides: "Navštivte prosím naši dokumentaci průvodce aktualizací"
   error_no_default_work_package_status: 'Žádný výchozí stav pracovního balíčku není definovaný. Prosím zkontrolujte konfiguraci (v "Administrace -> Stav pracovního balíčku").'
   error_no_type_in_project: "Neexistuje žádný typ provázaný s tímto projektem. Prosím zkontrolujte nastavení projektu."
@@ -2854,7 +2854,7 @@ cs:
     failed: "Při pokusu o export pracovních balíčků došlo k chybě: %{message}"
     demo:
       heading: "Demo PDF"
-      footer: "Generated by OpenProject"
+      footer: "Generated by Yojana"
       button_text: Generate Demo PDF
     errors:
       embedded_table_with_too_many_columns: "This embedded work package table could not fit on the page, please reduce the number of columns."
@@ -2945,7 +2945,7 @@ cs:
       no_visible_projects: "V této instanci nejsou žádné viditelné projekty."
       users: "Poslední registrovaní uživatelé v této instalaci."
     blocks:
-      community: "OpenProject komunita"
+      community: "Yojana komunita"
       upsell:
         title: "Upgradovat na Enterprise Edici"
       new_features:
@@ -2959,7 +2959,7 @@ cs:
           new_features_list:
             line_0: Automated project initiation (Enterprise add-on).
             line_1: "Meetings: add new or existing work packages as outcomes."
-            line_2: "Meetings: show iCal responses in OpenProject."
+            line_2: "Meetings: show iCal responses in Yojana."
             line_3: "Recurring meetings: duplicate agenda items to the next occurrence."
             line_4: "Release to Community: Attribute highlighting."
             line_5: Warning before opening external links in user-provided content (Enterprise add-on).
@@ -2972,7 +2972,7 @@ cs:
       impressum: "Právní ustanovení"
       glossary: "Glossary"
       shortcuts: "Klávesové zkratky"
-      blog: "OpenProject blog"
+      blog: "Yojana blog"
       forums: "Komunitní fórum"
       security_alerts: "Security alerts"
       newsletter: "Newsletter"
@@ -2985,7 +2985,7 @@ cs:
       default_attribute_written: "Zápis atributů pouze pro čtení"
       progress_mode_changed_to_status_based: "Výpočet průběhu byl aktualizován"
       status_changed: "Stav '%{status_name}'"
-      system_update: "Aktualizace systému OpenProject:"
+      system_update: "Aktualizace systému Yojana:"
       work_package_duplicate_closed: "Aktualizován duplikát pracovního balíčku:"
       total_percent_complete_mode_changed_to_work_weighted_average: "Výpočet % úplných celků nyní vážený Prací."
       total_percent_complete_mode_changed_to_simple_average: "Výpočet % úplných celků nyní na základě jednoduchého průměru pouze % úplných hodnot."
@@ -3041,7 +3041,7 @@ cs:
       label: "Add…"
   my_account:
     access_tokens:
-      description: "Provider tokens are issued by OpenProject, allowing other applications to access it. Client tokens are issued by other applications, allowing OpenProject to access them."
+      description: "Provider tokens are issued by Yojana, allowing other applications to access it. Client tokens are issued by other applications, allowing Yojana to access them."
       no_results:
         title: "Žádné přístupové tokeny k zobrazení"
         description: "Všechny byly zakázány. Znovu povoleny mohou být v nabídce administrace."
@@ -3070,7 +3070,7 @@ cs:
         blank_title: "No iCalendar token"
         title: "iCalendar"
         table_title: "iCalendar tokens"
-        text_hint_link: "iCalendar tokens allow users to [subscribe to OpenProject calendars](docs_url) and view up-to-date work package information from external clients."
+        text_hint_link: "iCalendar tokens allow users to [subscribe to Yojana calendars](docs_url) and view up-to-date work package information from external clients."
         disabled_text: "iCalendar odběr není administrátorem povolen. Pro použití této funkce kontaktujte svého správce."
       oauth_application:
         active_tokens: "Active tokens"
@@ -3079,14 +3079,14 @@ cs:
         last_used_at: "Last used at"
         title: "OAuth"
         table_title: "OAuth application tokens"
-        text_hint: "OAuth application tokens allow third-party applications to connect with this OpenProject instance."
+        text_hint: "OAuth application tokens allow third-party applications to connect with this Yojana instance."
       oauth_client:
         blank_description: "There are no OAuth client tokens yet."
         blank_title: "No OAuth client tokens"
         failed: "An error occurred and the token couldn't be removed. Please try again later."
         integration_type: "Integration type"
         table_title: "OAuth client tokens"
-        text_hint: "OAuth client tokens allow this OpenProject instance to connect with external applications, such as file storages."
+        text_hint: "OAuth client tokens allow this Yojana instance to connect with external applications, such as file storages."
         title: "OAuth"
         remove_token: "Do you really want to remove this token? You will need to login again on %{integration}."
         removed: "OAuth client token successfully removed"
@@ -3097,7 +3097,7 @@ cs:
         blank_title: "No RSS token"
         title: "RSS"
         table_title: "RSS tokens"
-        text_hint: "RSS tokens allow users to keep up with the latest changes in this OpenProject instance via an external RSS reader."
+        text_hint: "RSS tokens allow users to keep up with the latest changes in this Yojana instance via an external RSS reader."
         static_token_name: "RSS token"
         disabled_text: "RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature."
       storages:
@@ -3272,7 +3272,7 @@ cs:
   label_custom_field_plural: "Vlastní pole"
   label_custom_field_default_type: "Prázdný typ"
   label_custom_style: "Design"
-  label_custom_style_description: "Vyberte si, jak bude OpenProject vypadat pomocí motivů, zvolte si výchozí barvy, které chcete v aplikaci používat, a jak budou vypadat exporty."
+  label_custom_style_description: "Vyberte si, jak bude Yojana vypadat pomocí motivů, zvolte si výchozí barvy, které chcete v aplikaci používat, a jak budou vypadat exporty."
   label_dashboard: "Dashboard"
   label_database_version: "Verze PostgreSQL"
   label_date: "Datum"
@@ -3544,7 +3544,7 @@ cs:
   label_open_menu: "Otevřít nabídku"
   label_open_work_packages: "otevřené"
   label_open_work_packages_plural: "otevřené"
-  label_openproject_website: "Webové stránky OpenProject"
+  label_openproject_website: "Webové stránky Yojana"
   label_optional_description: "Popis"
   label_options: "Možnosti"
   label_other: "Ostatní"
@@ -3878,7 +3878,7 @@ cs:
       created_at: "Vytvořeno v %{timestamp} uživatelem %{user} "
       login_to_see_all: "Přihlaste se pro zobrazení všech oznámení."
       mentioned: "Byli jste <b>zmíněni v komentáři</b>"
-      mentioned_by: "%{user} vás zmínil v komentáři OpenProject"
+      mentioned_by: "%{user} vás zmínil v komentáři Yojana"
       more_to_see:
         one: "Máte ještě 1 pracovní balíček s notifikací."
         few: "Existuje ještě  %{count}  pracovních balíčků s oznámeními."
@@ -3949,8 +3949,8 @@ cs:
   mail_body_backup_token_reset_user_info: Váš záložní token byl resetován.
   mail_body_backup_token_info: Předchozí token již není platný.
   mail_body_backup_waiting_period: Nový token bude povolen za %{hours} hodin.
-  mail_body_backup_token_warning: Pokud jste to nebyl Vy, přihlaste se okamžitě do OpenProject a resetujte jej .
-  mail_body_incoming_email_error: E-mail odeslaný na OpenProject nelze zpracovat
+  mail_body_backup_token_warning: Pokud jste to nebyl Vy, přihlaste se okamžitě do Yojana a resetujte jej .
+  mail_body_incoming_email_error: E-mail odeslaný na Yojana nelze zpracovat
   mail_body_incoming_email_error_in_reply_to: "V %{received_at} %{from_email} napsal/a"
   mail_body_incoming_email_error_logs: "Protokoly"
   mail_body_lost_password: "Pro změnu vašeho hesla klikněte na následující odkaz:"
@@ -3959,14 +3959,14 @@ cs:
     body: "Váš účet na %{app_title} je připojen k externímu poskytovateli ověřování (%{name})."
     subtext: "Hesla pro externí účet nelze změnit v aplikaci. Použijte prosím ztracené heslo poskytovatele ověření."
   mail_body_register: "Vítejte v %{app_title}. Aktivujte svůj účet kliknutím na tento odkaz:"
-  mail_body_register_header_title: "Pozvánka do projektu OpenProject"
+  mail_body_register_header_title: "Pozvánka do projektu Yojana"
   mail_body_register_user: "Vážený %{name},"
   mail_body_register_links_html: |
     Prohlédněte si prosím náš YouTube kanál (%{youtube_link}), kde poskytneme webinář (%{webinar_link})
-    a videa "Začínáme" (%{get_started_link}), abychom učinili vaše první kroky v OpenProject co nejjednodušší.
+    a videa "Začínáme" (%{get_started_link}), abychom učinili vaše první kroky v Yojana co nejjednodušší.
     <br />
     Pokud máte nějaké další dotazy, podívejte se do dokumentace (%{documentation_link}) nebo kontaktujte svého správce.
-  mail_body_register_closing: "Team OpenProject "
+  mail_body_register_closing: "Team Yojana "
   mail_body_register_ending: "S pozdravem,"
   mail_body_reminder: "%{count} pracovních balíčků, které máte přiřazeny, mají termín během následujících %{days} dnů:"
   mail_body_group_reminder: '%{count} pracovních balíčků, které jsou přiřazeny ke skupině "%{group}", má termín splatnosti během následujících %{days} dnů:'
@@ -3975,7 +3975,7 @@ cs:
   mail_subject_account_activation_request: "Žádost o aktivaci účtu %{value}"
   mail_subject_backup_ready: "Vaše záloha je připravena"
   mail_subject_backup_token_reset: "Resetovat token zálohy"
-  mail_subject_incoming_email_error: "E-mail odeslaný na OpenProject nelze zpracovat"
+  mail_subject_incoming_email_error: "E-mail odeslaný na Yojana nelze zpracovat"
   mail_subject_lost_password: "Vaše heslo %{value}"
   mail_subject_register: "Aktivace vašeho účtu %{value}"
   mail_subject_wiki_content_added: "'%{id}' wiki stránka byla přidána"
@@ -4004,13 +4004,13 @@ cs:
   mail_user_activation_limit_reached:
     subject: Dosažen limit aktivace uživatelů
     message: |
-      Nový uživatel (%{email}) se pokusil vytvořit účet v prostředí OpenProject spravovaném vámi (%{host}). Uživatel nemůže aktivovat svůj účet, protože bylo dosaženo limitu v počtu uživatelů.
+      Nový uživatel (%{email}) se pokusil vytvořit účet v prostředí Yojana spravovaném vámi (%{host}). Uživatel nemůže aktivovat svůj účet, protože bylo dosaženo limitu v počtu uživatelů.
     steps:
       label: "Chcete-li umožnit uživateli přihlášení můžete buď: "
       a: "Upgrade plánu plateb ([here](upgrade_url))" #here turned into a link
       b: "Zamknutí nebo odstranění existujícího uživatele ([here](users_url))" #here turned into a link
   more_actions: "Další funkce"
-  noscript_description: "Musíte aktivovat JavaScript pro použití OpenProject!"
+  noscript_description: "Musíte aktivovat JavaScript pro použití Yojana!"
   noscript_heading: "Javascript zakázán"
   noscript_learn_more: "Více informací"
   notice_accessibility_mode: Režim usnadnění přístupu může být povolen v [nastavení účtu](url).
@@ -4088,7 +4088,7 @@ cs:
   notice_wont_delete_auth_source: Připojení LDAP nemůže být odstraněno, dokud ho stále používají uživatelé.
   notice_project_cannot_update_custom_fields: "Nemůžete aktualizovat dostupné vlastní pole projektu. Projekt je neplatný: %{errors}"
   notice_attachment_migration_wiki_page: >
-    Tato stránka byla generována automaticky během aktualizace OpenProject. Obsahuje všechny přílohy dříve přidružené k %{container_type} "%{container_name}".
+    Tato stránka byla generována automaticky během aktualizace Yojana. Obsahuje všechny přílohy dříve přidružené k %{container_type} "%{container_name}".
   #Default format for numbers
   number:
     format:
@@ -4113,7 +4113,7 @@ cs:
           tb: "TB"
   onboarding:
     heading_getting_started: "Získejte přehled"
-    text_getting_started_description: "Získejte rychlý přehled o řízení projektu a spolupráci týmu s OpenProject. Toto video můžete restartovat z nabídky nápovědy."
+    text_getting_started_description: "Získejte rychlý přehled o řízení projektu a spolupráci týmu s Yojana. Toto video můžete restartovat z nabídky nápovědy."
     welcome: "Vítejte v %{app_title}"
     select_language: "Vyberte prosím svůj jazyk"
   permission_add_work_package_comments: "Přidat komentáře"
@@ -4206,7 +4206,7 @@ cs:
   permission_view_all_principals_explanation: >
     Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
   permission_view_project: "Zobrazit projekty"
-  permission_view_changesets: "Zobrazit revize repozitáře v OpenProject"
+  permission_view_changesets: "Zobrazit revize repozitáře v Yojana"
   permission_view_internal_comments: "View internal comments"
   permission_view_commit_author_statistics: "Zobrazit statistiky autora commitu"
   permission_view_dashboards: "Zobrazit dashboardy"
@@ -4331,7 +4331,7 @@ cs:
     destroy:
       confirmation: "Pokud budete pokračovat, bude trvale odstraněn spravovaný repozitář."
       info: "Smazání repozitáře je nevratná akce."
-      info_not_managed: "Poznámka: Toto NEBUDE smazat obsah tohoto repositáře, protože není spravován OpenProject."
+      info_not_managed: "Poznámka: Toto NEBUDE smazat obsah tohoto repositáře, protože není spravován Yojana."
       managed_path_note: "Následující adresář bude smazán: %{path}"
       repository_verification: "Zadejte identifikátor projektu %{identifier} pro ověření odstranění jeho repozitáře."
       subtitle: "Opravdu chcete odstranit %{repository_type} z projektu %{project_name}.?"
@@ -4345,8 +4345,8 @@ cs:
       empty_repository: "Repozitář existuje, ale je prázdný. Zatím neobsahuje žádné revize."
       exists_on_filesystem: "Složka repozitáře již v souborovém systému existuje."
       filesystem_access_failed: "Došlo k chybě při přístupu k repozitáři v souborovém systému: %{message}"
-      not_manageable: "Tento dodavatel repozitáře nemůže být spravován OpenProject."
-      path_permission_failed: "Nastala chyba při vytváření následující cesty: %{path}. Ujistěte se, že OpenProject může zapisovat do této složky."
+      not_manageable: "Tento dodavatel repozitáře nemůže být spravován Yojana."
+      path_permission_failed: "Nastala chyba při vytváření následující cesty: %{path}. Ujistěte se, že Yojana může zapisovat do této složky."
       unauthorized: "Nemáte oprávnění k přístupu k repozitáři, nebo jsou přihlašovací údaje neplatné."
       unavailable: "Repozitář není k dispozici."
       exception_title: "Nelze získat přístup k repozitáři: %{message}"
@@ -4363,9 +4363,9 @@ cs:
         path_encoding: "Přepsat kódování Gitu (výchozí: UTF-8)"
       local_title: "Propojit existující místní Git repozitář"
       local_url: "Lokální URL"
-      local_introduction: "Pokud máte existující lokální Git repozitář, můžete jej propojit s OpenProject pro přístup do aplikace."
-      managed_introduction: "Nechat OpenProject automaticky vytvářet a integrovat místní Git repozitář."
-      managed_title: "Git repositář začleněn do OpenProject"
+      local_introduction: "Pokud máte existující lokální Git repozitář, můžete jej propojit s Yojana pro přístup do aplikace."
+      managed_introduction: "Nechat Yojana automaticky vytvářet a integrovat místní Git repozitář."
+      managed_title: "Git repositář začleněn do Yojana"
       managed_url: "Spravovaná URL"
       path: "Cesta k repozitáři Git"
       path_encoding: "Kódování trasy"
@@ -4382,24 +4382,24 @@ cs:
     scm_types:
       local: "Propojit existující místní úložiště"
       existing: "Odkaz na existující repozitář"
-      managed: "Vytvořit nový repositář v OpenProject"
+      managed: "Vytvořit nový repositář v Yojana"
     storage:
       not_available: "Pro tento repositář není k dispozici spotřeba úložiště disku."
       update_timeout: "Uchovávejte poslední požadované informace o úložišti po dobu N minut.\nPři počítání požadovaného místa na disku v úložišti může být nákladné, zvýšit tuto hodnotu, aby se snížil vliv na výkon."
-      oauth_application_details: "Tajná hodnota klienta nebude po zavření tohoto okna přístupná. Zkopírujte tyto hodnoty do Nextcloud OpenProject Integration nastavení:"
+      oauth_application_details: "Tajná hodnota klienta nebude po zavření tohoto okna přístupná. Zkopírujte tyto hodnoty do Nextcloud Yojana Integration nastavení:"
       oauth_application_details_link_text: "Přejít na stránku nastavení"
       setup_documentation_details: "Pokud potřebujete pomoci s nastavením nového úložiště souborů, prosím zkonzultujte dokumentaci: "
       setup_documentation_details_link_text: "File storages setup"
       show_warning_details: "Pro použití tohoto úložiště souborů nezapomeňte aktivovat modul a konkrétní úložiště v nastavení projektu každého požadovaného projektu."
     subversion:
       existing_title: "Existující repozitář Subversion"
-      existing_introduction: "Pokud máte existující repozitář s podverzí, můžete jej propojit s OpenProject pro přístup do aplikace."
+      existing_introduction: "Pokud máte existující repozitář s podverzí, můžete jej propojit s Yojana pro přístup do aplikace."
       existing_url: "Existující URL"
       instructions:
         managed_url: "Toto je URL spravovaného (lokálního) úložiště subverzí."
         url: "Zadejte adresu URL úložiště. Může se zaměřit na lokální repositář (počínaje %{local_proto} ), nebo na vzdálený repositář.\nJsou podporovány následující schémata URL:"
-      managed_title: "Repozitář subverzí začleněn do OpenProject"
-      managed_introduction: "Nechat OpenProject automaticky vytvářet a integrovat místní úložiště podverzí."
+      managed_title: "Repozitář subverzí začleněn do Yojana"
+      managed_introduction: "Nechat Yojana automaticky vytvářet a integrovat místní úložiště podverzí."
       managed_url: "Spravovaná URL"
       password: "Heslo repozitáře"
       username: "Uživatelské jméno repositáře"
@@ -4432,7 +4432,7 @@ cs:
   setting_apiv3_cors_enabled: "Povolit CORS"
   setting_apiv3_cors_origins: "API V3 Cross-Origin Resource Sharing (CORS) povolené počátky"
   setting_apiv3_cors_origins_text_html: >
-    Pokud je funkce CORS povolena, je to původ, který má přístup k OpenProject API. <br/> Zkontrolujte <a href="%{origin_link}" target="_blank">Dokumentaci na záhlaví Origin</a> o tom, jak specifikovat očekávané hodnoty.
+    Pokud je funkce CORS povolena, je to původ, který má přístup k Yojana API. <br/> Zkontrolujte <a href="%{origin_link}" target="_blank">Dokumentaci na záhlaví Origin</a> o tom, jak specifikovat očekávané hodnoty.
   setting_apiv3_write_readonly_attributes: "Přístup k atributům pouze pro čtení"
   setting_apiv3_write_readonly_attributes_instructions: >
     If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
@@ -4629,7 +4629,7 @@ cs:
       omniauth_direct_login_hint_html: >
         If this option is active, login requests will redirect to the configured omniauth provider. The login dropdown and sign-in page will be disabled. <br/> <strong>Note:</strong> Unless you also disable password logins, with this option enabled, users can still log in internally by visiting the <code>%{internal_path}</code> login page.
       remapping_existing_users_hint: >
-        If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the OpenProject instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
+        If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the Yojana instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
     attachments:
       whitelist_text_html: >
         Definujte seznam platných přípon souborů a/nebo mime typů pro nahrané soubory. <br/> Zadejte přípony souborů (např. <code>%{ext_example}</code>) nebo mime typy (např. ., <code>%{mime_example}</code>). <br/> Ponechte prázdné pro nahrání jakéhokoli typu souboru. Povoleno více hodnot (jeden řádek pro každou hodnotu).
@@ -4653,7 +4653,7 @@ cs:
         clamav_socket_html: Zadejte soket démona clamd, např. %{example}.
         clamav_host_html: Zadejte název hostitele a port démona clamd oddělený dvojtečkou. např. %{example}
         description_html: >
-          Vyberte režim, ve kterém by měla fungovat integrace antivirového scanneru. <br/> <ul> <li><strong>%{disabled_option}</strong>: Nahrané soubory nejsou naskenovány pro viry.</li> <li><strong>%{socket_option}</strong>: Nastavili jste ClamAV na stejném serveru jako OpenProject a scan daemon clamd běží na pozadí</li> <li><strong>%{host_option}</strong>: Vysíláte soubory do externího hostitele pro skenování virů.</li> </ul>
+          Vyberte režim, ve kterém by měla fungovat integrace antivirového scanneru. <br/> <ul> <li><strong>%{disabled_option}</strong>: Nahrané soubory nejsou naskenovány pro viry.</li> <li><strong>%{socket_option}</strong>: Nastavili jste ClamAV na stejném serveru jako Yojana a scan daemon clamd běží na pozadí</li> <li><strong>%{host_option}</strong>: Vysíláte soubory do externího hostitele pro skenování virů.</li> </ul>
     brute_force_prevention: "Automatizované blokování uživatelů"
     date_format:
       first_date_of_week_and_year_set: >
@@ -4661,8 +4661,8 @@ cs:
       first_week_of_year_text_html: >
         Vyberte datum v lednu, které je obsaženo v prvním týdnu roku. Tato hodnota spolu s prvním dnem v týdnu určuje celkový počet týdnů v roce. Více informací naleznete v naší <a href="%{link}" target="_blank">dokumentaci</a> k tomuto tématu.
     experimental:
-      save_confirmation: Pozor! Riziko ztráty dat! Aktivujte experimentální funkce, pokud vám nevadí rozbít instalaci OpenProject a ztratit všechna data.
-      warning_toast: Příznaky funkcí jsou nastavení, která aktivují funkce, které jsou stále ve vývoji. Používají se pouze pro testovací účely. Nikdy nebudou aktivovány v instalacích OpenProject s významnými daty. Tyto funkce pravděpodobně naruší vaše data. Použijte je na vlastní riziko.
+      save_confirmation: Pozor! Riziko ztráty dat! Aktivujte experimentální funkce, pokud vám nevadí rozbít instalaci Yojana a ztratit všechna data.
+      warning_toast: Příznaky funkcí jsou nastavení, která aktivují funkce, které jsou stále ve vývoji. Používají se pouze pro testovací účely. Nikdy nebudou aktivovány v instalacích Yojana s významnými daty. Tyto funkce pravděpodobně naruší vaše data. Použijte je na vlastní riziko.
       feature_flags: Značky funkcí
     general: "Obecné"
     highlighting:
@@ -4673,7 +4673,7 @@ cs:
         type: "Celý řádek podle typu"
         priority: "Celý řádek podle priority"
     icalendar:
-      enable_subscriptions_text_html: Umožňuje uživatelům s nezbytnými oprávněními přihlásit se do OpenProject kalendářů a získat přístup k informacím o pracovním balíčku prostřednictvím externího klienta kalendáře. <strong>Poznámka:</strong> Před povolením si prosím přečtěte <a href="%{link}" target="_blank">podrobnosti o odběru</a>.
+      enable_subscriptions_text_html: Umožňuje uživatelům s nezbytnými oprávněními přihlásit se do Yojana kalendářů a získat přístup k informacím o pracovním balíčku prostřednictvím externího klienta kalendáře. <strong>Poznámka:</strong> Před povolením si prosím přečtěte <a href="%{link}" target="_blank">podrobnosti o odběru</a>.
     language_name_being_default: "%{language_name} (výchozí)"
     notifications:
       events_explanation: "Určuje, pro kterou událost je odeslán e-mail. Pracovní balíčky jsou z tohoto seznamu vyloučeny, protože oznámení pro ně mohou být nastavena speciálně pro každého uživatele."
@@ -4707,7 +4707,7 @@ cs:
               description: "Add all the project attributes in a section inside the right side panel in the project overview."
     project_initiation_request:
       header_description: >
-        OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
+        Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
       status:
         submitted: "%{wizard_name} has been submitted"
         submitted_description: "Click the button below to go to the work package for the submission process."
@@ -4720,7 +4720,7 @@ cs:
         project_mandate: "Open project mandate"
       blankslate:
         title: "Initiation request not enabled"
-        description: "OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard."
+        description: "Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard."
       disable_dialog:
         title: "Disable project initiation request"
         heading: "Disable this project initiation request?"
@@ -4801,7 +4801,7 @@ cs:
       sentence_connector: "a"
       skip_last_comma: "nepravda"
   text_accessibility_hint: "Režim přístupnosti je navržen pro uživatele, kteří jsou slepí, motoricky znevýhodněni nebo mají špatný zrak. Pro posledně jmenované prvky jsou zvlášť zvýrazněny. Upozorňujeme, že modul Backlogs není v tomto režimu k dispozici."
-  text_access_token_hint: "Přístupové tokeny vám umožňují udělit externím aplikacím přístup ke zdrojům v OpenProject."
+  text_access_token_hint: "Přístupové tokeny vám umožňují udělit externím aplikacím přístup ke zdrojům v Yojana."
   text_analyze: "Další analýza: %{subject}"
   text_are_you_sure: "Jste si jisti?"
   open_link_in_a_new_tab: "Open link in a new tab"
@@ -4900,7 +4900,7 @@ cs:
   text_no_notes: "Pro tento pracovní balíček nejsou k dispozici žádné komentáře."
   text_notice_too_many_values_are_inperformant: "Poznámka: Zobrazení více než 100 položek na stránku může zvýšit dobu načítání stránky."
   text_notice_security_badge_displayed_html: >
-    Poznámka: Pokud je povoleno, bude zobrazen odznak se stavem instalace v <a href="%{information_panel_path}">%{information_panel_label}</a> administrativním panelu, a na domovské stránce. Zobrazuje se pouze administrátorům. <br/> Odznak zkontroluje vaši aktuální verzi OpenProject proti oficiální databázi OpenProject release, aby vás upozornil na jakékoliv aktualizace nebo známá slabá místa. Pro více informací o tom, co kontrola stanoví, jaké údaje jsou potřebné k poskytnutí dostupných aktualizací, a jak tuto kontrolu zakázat, navštivte <a href="%{more_info_url}">konfigurační dokumentaci</a>.
+    Poznámka: Pokud je povoleno, bude zobrazen odznak se stavem instalace v <a href="%{information_panel_path}">%{information_panel_label}</a> administrativním panelu, a na domovské stránce. Zobrazuje se pouze administrátorům. <br/> Odznak zkontroluje vaši aktuální verzi Yojana proti oficiální databázi Yojana release, aby vás upozornil na jakékoliv aktualizace nebo známá slabá místa. Pro více informací o tom, co kontrola stanoví, jaké údaje jsou potřebné k poskytnutí dostupných aktualizací, a jak tuto kontrolu zakázat, navštivte <a href="%{more_info_url}">konfigurační dokumentaci</a>.
   text_own_membership_delete_confirmation: "Chystáte se odebrat si některá nebo všechna svá oprávnění, potom již nemusíte být schopni upravit tento projekt.\nOpravdu chcete pokračovat?"
   text_permanent_delete_confirmation_checkbox_label: "Beru na vědomí, že toto vymazání nelze vzít zpět."
   text_permanent_remove_confirmation_checkbox_label: "I understand that this removal cannot be reversed"
@@ -4910,7 +4910,7 @@ cs:
   text_reassign: "Přiřadit k pracovnímu balíčku:"
   text_regexp_info: "např. ^[A-Z0-9]+$"
   text_regexp_multiline: 'regex je použit v režimu více řádků. např.: ^---\s+'
-  text_repository_usernames_mapping: "Vyberte nebo aktualizujte mapovaný uživatel OpenProject ke každému uživatelskému jménu nalezenému v protokolu repozitáře.\nUživatelé se stejným OpenProject a repozitářovým jménem nebo e-mailem jsou automaticky mapováni."
+  text_repository_usernames_mapping: "Vyberte nebo aktualizujte mapovaný uživatel Yojana ke každému uživatelskému jménu nalezenému v protokolu repozitáře.\nUživatelé se stejným Yojana a repozitářovým jménem nebo e-mailem jsou automaticky mapováni."
   text_status_changed_by_changeset: "Aplikováno v sadě změn %{value}."
   text_table_difference_description: "V této tabulce je zobrazeno jediné %{entries} . Rozdíl mezi dvěma položkami můžete zobrazit prvním výběrem zaškrtávacích polí v tabulce. Při kliknutí na tlačítko níže jsou rozdíly zobrazeny."
   text_time_logged_by_changeset: "Aplikováno v sadě změn %{value}."
@@ -4985,7 +4985,7 @@ cs:
     authentication_provider: "Zprostředkovatel ověřování"
     identity_url_text: "Interní jedinečný identifikátor poskytnutý poskytovatelem ověřování."
     authentication_settings_disabled_due_to_external_authentication: >
-      Tento uživatel se ověřuje prostřednictvím externího poskytovatele ověření, takže v OpenProject není žádné heslo, které by se mělo změnit.
+      Tento uživatel se ověřuje prostřednictvím externího poskytovatele ověření, takže v Yojana není žádné heslo, které by se mělo změnit.
     authorization_rejected: "Nejste oprávněn se přihlásit."
     assign_random_password: "Přiřadit náhodné heslo (odesláno uživateli e-mailem)"
     blocked: "dočasně uzamčen"
@@ -5021,7 +5021,7 @@ cs:
   warning: Varování
   warning_attachments_not_saved: "%{count} soubor(ů) nelze uložit."
   warning_imminent_user_limit: >
-    Pozvali jste více uživatelů, než je podporováno vaším aktuálním předplaceným plánem. Pozvaní uživatelé nemusí být schopni se připojit do OpenProject prostředí. Prosím <a href="%{upgrade_url}">upgradujte váš plán</a> nebo zablokujte stávající uživatele, aby se pozvaní a registrovaní uživatelé mohli připojit.
+    Pozvali jste více uživatelů, než je podporováno vaším aktuálním předplaceným plánem. Pozvaní uživatelé nemusí být schopni se připojit do Yojana prostředí. Prosím <a href="%{upgrade_url}">upgradujte váš plán</a> nebo zablokujte stávající uživatele, aby se pozvaní a registrovaní uživatelé mohli připojit.
   warning_registration_token_expired: |
     Platnost aktivačního emailu vypršela. Poslali jsme vám nový %{email}. Klikněte prosím na odkaz uvnitř pro aktivaci vašeho účtu.
   warning_user_limit_reached: >
@@ -5029,7 +5029,7 @@ cs:
   warning_user_limit_reached_admin: >
     Přidáním dalších uživatelů překročíte aktuální limit. <a href="%{upgrade_url}">upgradujte svůj plán</a>, abyste mohli zajistit, že externí uživatelé budou mít přístup k této instanci.
   warning_user_limit_reached_instructions: >
-    Limit počtu uživatelů (%{current}/%{max} aktivních uživatelů) dosažen. Prosím kontaktujte sales@openproject.com a upgradujte vaši Enterprise Edition a přidejte další uživatele.
+    Limit počtu uživatelů (%{current}/%{max} aktivních uživatelů) dosažen. Prosím kontaktujte sales@girishm.info a upgradujte vaši Enterprise Edition a přidejte další uživatele.
   warning_protocol_mismatch_html: >
 
   warning_bar:
@@ -5302,7 +5302,7 @@ cs:
         confidential: "Zkontrolujte, zda bude aplikace použita tam, kde může být klient tajný. Domácí mobilní aplikace a aplikace na jednu stránku jsou považovány za nedůvěrné."
         scopes: "Zkontrolujte rozsah, ke kterému chcete aplikaci udělit přístup. Pokud není zaškrtnutý rozsah, api_v3 se předpokládá."
         client_credential_user_id: "Volitelné uživatelské ID pro osobu, když klient používá tuto aplikaci. Ponechte prázdné pro povolení pouze veřejného přístupu"
-        register_intro: "Pokud vytváříte klientskou aplikaci OAuth API pro OpenProject, můžete ji zaregistrovat pomocí tohoto formuláře pro všechny uživatele."
+        register_intro: "Pokud vytváříte klientskou aplikaci OAuth API pro Yojana, můžete ji zaregistrovat pomocí tohoto formuláře pro všechny uživatele."
         default_scopes: ""
     header:
       builtin_applications: Vestavěná aplikace
@@ -5310,17 +5310,17 @@ cs:
     empty_application_lists: Žádná aplikace OAuth nebyla zaregistrována.
     client_id: "ID klienta"
     client_secret_notice: >
-      Toto je jediná doba, kdy můžeme vytisknout klientské tajemství, prosím všimněte si jej a udržte ho v bezpečí. S ním by mělo být zacházeno jako s heslem a OpenProject jej nemůže získat později.
+      Toto je jediná doba, kdy můžeme vytisknout klientské tajemství, prosím všimněte si jej a udržte ho v bezpečí. S ním by mělo být zacházeno jako s heslem a Yojana jej nemůže získat později.
     authorization_dialog:
       authorize: "Autorizovat"
       cancel: "Zrušit a zamítnout autorizaci."
       prompt_html: "Autorizovat <strong>%{application_name}</strong> k použití vašeho účtu <em>%{login}</em>?"
       title: "Autorizovat %{application_name}"
       wants_to_access_html: >
-        Tato aplikace požaduje přístup k vašemu OpenProject účtu. <br/> <strong>Požádala o následující oprávnění:</strong>
+        Tato aplikace požaduje přístup k vašemu Yojana účtu. <br/> <strong>Požádala o následující oprávnění:</strong>
     scopes:
       api_v3: "Plný přístup k API v3"
-      api_v3_text: "Aplikace získá plný přístup ke čtení a zápisu do OpenProject API, aby mohla provádět akce vaším jménem."
+      api_v3_text: "Aplikace získá plný přístup ke čtení a zápisu do Yojana API, aby mohla provádět akce vaším jménem."
     grants:
       created_date: "Schváleno dne"
       scopes: "Práva"
@@ -5338,7 +5338,7 @@ cs:
     client_credentials_impersonation_set_to: "Přihlašovací údaje klienta jsou nastaveny na"
     client_credentials_impersonation_warning: "Poznámka: Klienti používající tok 'Klientské přihlašovací údaje' v této aplikaci budou mít práva tohoto uživatele"
     client_credentials_impersonation_html: >
-      Ve výchozím nastavení OpenProject poskytuje OAuth 2.0 autorizaci přes %{authorization_code_flow_link}. Můžete volitelně povolit %{client_credentials_flow_link}, ale musíte poskytnout uživateli, na jehož jménem budou žádosti provedeny.
+      Ve výchozím nastavení Yojana poskytuje OAuth 2.0 autorizaci přes %{authorization_code_flow_link}. Můžete volitelně povolit %{client_credentials_flow_link}, ale musíte poskytnout uživateli, na jehož jménem budou žádosti provedeny.
     authorization_error: "Došlo k chybě autorizace."
     revoke_my_application_confirmation: "Opravdu chcete odstranit tuto aplikaci? Tato akce zruší %{token_count} aktivních aplikací."
     my_registered_applications: "Registrované OAuth aplikace"
@@ -5367,20 +5367,20 @@ cs:
         Vnitřní chyba: Volané obnovení_tokenu bez dříve existujícího tokenu.
       refresh_token_updated_failed: "Chyba při aktualizaci OAuthClientTokenu"
       oauth_client_not_found_explanation: >
-        Tato chyba se objeví po aktualizaci klient_id a klient_tajného v OpenProject, ale neaktualizovali pole 'Vrátit URI' v OAuth2.
+        Tato chyba se objeví po aktualizaci klient_id a klient_tajného v Yojana, ale neaktualizovali pole 'Vrátit URI' v OAuth2.
       oauth_code_not_present: "OAuth2 'code' nebyl nalezen v koncovém bodě 'callback' (redirect_uri)."
       oauth_code_not_present_explanation: >
         This error appears if you have selected the wrong response_type in the OAuth2 provider. Response_type should be 'code' or similar.
       oauth_state_not_present: "OAuth2 'state' nebylo nalezeno v koncovém bodě 'callback' (redirect_uri)."
       oauth_state_not_present_explanation: >
-        The 'state' is used to indicate to OpenProject where to continue after a successful OAuth2 authorization. A missing 'state' is an internal error that may appear during setup. Please contact your system administrator.
+        The 'state' is used to indicate to Yojana where to continue after a successful OAuth2 authorization. A missing 'state' is an internal error that may appear during setup. Please contact your system administrator.
       rack_oauth2:
         client_secret_invalid: "Tajný klíč klienta je neplatný (klient_secret_invalid)"
         invalid_request: >
           OAuth2 Authorization Server odpověděl s 'invalid_request'. Tato chyba se objeví, pokud se pokoušíte vícenásobně autorizovat nebo v případě technických problémů.
         invalid_response: "OAuth2 Authorization Server poskytl neplatnou odpověď (invalid_response)"
         invalid_grant: "Autorizační server OAuth2 vás žádá, abyste znovu autorizovali (invalid_grant)."
-        invalid_client: "Autorizační server OAuth2 nerozpozná OpenProject (invalid_client)."
+        invalid_client: "Autorizační server OAuth2 nerozpozná Yojana (invalid_client)."
         unauthorized_client: "Autorizační server OAuth2 odmítá typ grantu (neautorized_client)"
         unsupported_grant_type: "Autorizační server OAuth2 vás žádá o opětovné autorizaci (unsupported_grant_type)."
         invalid_scope: "Nemáte oprávnění k přístupu k požadovanému zdroji (invalid_scope)."
@@ -5393,18 +5393,18 @@ cs:
   you: vy
   link: odkaz
   plugin_openproject_auth_plugins:
-    name: "OpenProject Auth pluginy"
-    description: "Integration of OmniAuth strategy providers for authentication in OpenProject."
+    name: "Yojana Auth pluginy"
+    description: "Integration of OmniAuth strategy providers for authentication in Yojana."
   plugin_openproject_auth_saml:
     name: "OmniAuth SAML / Single-Sign On"
-    description: "Přidá poskytovatele SAML OmniAuth do OpenProject"
+    description: "Přidá poskytovatele SAML OmniAuth do Yojana"
   enterprise_plans:
     legacy_enterprise: "Enterprise Plan"
   token:
     hashed_token:
       display_value_placeholder: "***"
   external_link_warning:
-    title: "Leaving OpenProject"
-    warning_message: "You are about to leave OpenProject and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies."
+    title: "Leaving Yojana"
+    warning_message: "You are about to leave Yojana and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies."
     continue_message: "Are you sure you want to proceed to the following external link?"
     continue_button: "Continue to external website"

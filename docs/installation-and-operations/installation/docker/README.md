@@ -35,7 +35,7 @@ OpenProject provides two container flavors with a number of target tags:
 - **slim**:  Contains just the application image and application server used for starting behind a proxy, or within the [OpenProject for Docker compose](../docker-compose/) or [OpenProject Helm chart](../helm-chart/) installation methods. We recommend using this image for production systems.
 - **all-in-one**: Starts internal PostgreSQL, memcached servers alongside the application in order to provide a quick-start for testing or getting started with OpenProject. The lower part of this documentation focused on this installation method.
 
-OpenProject follows semantic versioning, and tags are pushed on [Docker Hub openproject/openproject](https://hub.docker.com/r/openproject/openproject/tags) in the following way:
+OpenProject follows semantic versioning, and tags are pushed on [Docker Hub girish17/yojana](https://hub.docker.com/r/girish17/yojana/tags) in the following way:
 
 - `X.Y.Z`, `X.Y.Z-slim` : **non-floating** tags to provide exactly one release of OpenProject, and you have to update these tags when a new release is made.
 - `X.Y`, `X.Y-slim` **floating** tags that get pushed whenever a new patch release is made. Please keep in mind that in case of urgent fixes, database migrations might still occur in patch releases, so you need to be able to run the seeder/migrations job. Refer to the installation method of your choice for information on how to do that.
@@ -75,7 +75,7 @@ docker run -it -p 8080:80 \
   -e OPENPROJECT_HOST__NAME=localhost:8080 \
   -e OPENPROJECT_HTTPS=false \
   -e OPENPROJECT_DEFAULT__LANGUAGE=en \
-  openproject/openproject:17
+  girish17/yojana:17
 ```
 
 Explanation of the used configuration values:
@@ -105,7 +105,7 @@ docker run -d -p 8080:80 \
   -e SECRET_KEY_BASE=secret \
   -e OPENPROJECT_HOST__NAME=localhost:8080 \
   -e OPENPROJECT_HTTPS=false \
-  openproject/openproject:17
+  girish17/yojana:17
 ```
 
 **Note**: We've had reports of people being unable to start OpenProject this way
@@ -137,7 +137,7 @@ docker run -d -p 8080:80 --name openproject \
   -e SECRET_KEY_BASE=secret \
   -v /var/lib/openproject/pgdata:/var/openproject/pgdata \
   -v /var/lib/openproject/assets:/var/openproject/assets \
-  openproject/openproject:17
+  girish17/yojana:17
 ```
 
 Please make sure you set the correct public facing hostname in `OPENPROJECT_HOST__NAME`. If you don't have a load-balancing or proxying web server in front of your docker container,
@@ -394,7 +394,7 @@ end
 **3. Create the `Dockerfile`** in the same folder. The contents have to look like this:
 
 ```dockerfile
-FROM openproject/openproject:17
+FROM girish17/yojana:17
 
 # If installing a local plugin (using `path:` in the `Gemfile.plugins` above),
 # you will have to copy the plugin code into the container here and use the
@@ -418,7 +418,7 @@ All the Dockerfile does is copy your custom plugins gemfile into the image, inst
 If you are using the `-slim` tag you will need to do the following to add your plugin.
 
 ```dockerfile
-FROM openproject/openproject:17 AS plugin
+FROM girish17/yojana:17 AS plugin
 
 # If installing a local plugin (using `path:` in the `Gemfile.plugins` above),
 # you will have to copy the plugin code into the container here and use the
@@ -433,7 +433,7 @@ COPY Gemfile.plugins /app/
 RUN bundle config unset deployment && bundle install && bundle config set deployment 'true'
 RUN ./docker/prod/setup/precompile-assets.sh
 
-FROM openproject/openproject:17-slim
+FROM girish17/yojana:17-slim
 
 COPY --from=plugin /usr/bin/git /usr/bin/git
 COPY --chown=$APP_USER:$APP_USER --from=plugin /app/vendor/bundle /app/vendor/bundle
@@ -457,7 +457,7 @@ The `-t` option is the tag for your image. You can choose what ever you want.
 **5. Run the image**
 
 You can run the image just like the normal OpenProject image (as shown [here](#quick-start)).
-You just have to use your chosen tag instead of `openproject/openproject:17`.
+You just have to use your chosen tag instead of `girish17/yojana:17`.
 To just give it a quick try you can run this:
 
 ```shell
@@ -480,10 +480,10 @@ sudo docker run -it -p 8080:80 \
   -e OPENPROJECT_DEFAULT__LANGUAGE=en \
   --mount type=bind,source=$(pwd)/my_root.crt,target=/tmp/my_root.crt \ #mount my_root.crt to /tmp
   -e SSL_CERT_FILE=/tmp/my_root.crt \ #set the SSL_CERT_FILE to the path of my_root.crt
-  openproject/openproject:17
+  girish17/yojana:17
 ```
 
-The second way would be to build a new image of the ```openproject/openproject:17``` or the ```-slim``` image.
+The second way would be to build a new image of the ```girish17/yojana:17``` or the ```-slim``` image.
 
 **1. Create a new folder** with any name, for instance `custom-openproject`. Change into that folder.
 
@@ -492,7 +492,7 @@ The second way would be to build a new image of the ```openproject/openproject:1
 **3. Create the `Dockerfile`** in the same folder. The contents have to look like this:
 
 ```dockerfile
-FROM openproject/openproject:17
+FROM girish17/yojana:17
 
 COPY ./my_root.crt /usr/local/share/ca-certificates/
 RUN update-ca-certificates
@@ -501,7 +501,7 @@ RUN update-ca-certificates
 If you are using the -slim tag, you will need to do the following to import your root certificate:
 
 ```dockerfile
-FROM openproject/openproject:17-slim
+FROM girish17/yojana:17-slim
 
 USER root
 COPY ./smtp.local_rootCA.crt /usr/local/share/ca-certificates/
@@ -519,7 +519,7 @@ The `-t` option is the tag for your image. You can choose what ever you want.
 
 **5. Run the image**
 
-You can run the image just like the normal OpenProject image (as shown [here](#quick-start)). You just have to use your chosen tag instead of ```openproject/openproject:17```
+You can run the image just like the normal OpenProject image (as shown [here](#quick-start)). You just have to use your chosen tag instead of ```girish17/yojana:17```
 
 ## Offline/air-gapped installation
 
@@ -531,7 +531,7 @@ The installation works the same as described above. The only difference is that 
 On a system that has access to the internet run the following.
 
 ```shell
-docker pull openproject/openproject:17 && docker save openproject/openproject:17 | gzip > openproject-stable.tar.gz
+docker pull girish17/yojana:17 && docker save girish17/yojana:17 | gzip > openproject-stable.tar.gz
 ```
 
 This creates a compressed archive containing the latest OpenProject docker image.
@@ -732,12 +732,12 @@ Once this has finished you should see something like this when running `docker s
 docker service ls
 ID                  NAME                 MODE                REPLICAS            IMAGE                      PORTS
 kpdoc86ggema        openproject_cache    replicated          1/1                 memcached:latest
-qrd8rx6ybg90        openproject_cron     replicated          1/1                 openproject/openproject:17
+qrd8rx6ybg90        openproject_cron     replicated          1/1                 girish17/yojana:17
 cvgd4c4at61i        openproject_db       replicated          1/1                 postgres:13
-uvtfnc9dnlbn        openproject_proxy    replicated          1/1                 openproject/openproject:17   *:8080->80/tcp
-g8e3lannlpb8        openproject_seeder   replicated          0/1                 openproject/openproject:17
-canb3m7ilkjn        openproject_web      replicated          1/1                 openproject/openproject:17
-7ovn0sbu8a7w        openproject_worker   replicated          1/1                 openproject/openproject:17
+uvtfnc9dnlbn        openproject_proxy    replicated          1/1                 girish17/yojana:17   *:8080->80/tcp
+g8e3lannlpb8        openproject_seeder   replicated          0/1                 girish17/yojana:17
+canb3m7ilkjn        openproject_web      replicated          1/1                 girish17/yojana:17
+7ovn0sbu8a7w        openproject_worker   replicated          1/1                 girish17/yojana:17
 ```
 
 You can now access OpenProject under `http://0.0.0.0:8080`.
@@ -775,12 +775,12 @@ This will take a moment to converge. Once done you should see something like the
 docker service ls
 ID                  NAME                 MODE                REPLICAS            IMAGE                      PORTS
 kpdoc86ggema        openproject_cache    replicated          1/1                 memcached:latest
-qrd8rx6ybg90        openproject_cron     replicated          1/1                 openproject/openproject:17
+qrd8rx6ybg90        openproject_cron     replicated          1/1                 girish17/yojana:17
 cvgd4c4at61i        openproject_db       replicated          1/1                 postgres:10
-uvtfnc9dnlbn        openproject_proxy    replicated          2/2                 openproject/openproject:17   *:8080->80/tcp
-g8e3lannlpb8        openproject_seeder   replicated          0/1                 openproject/openproject:17
-canb3m7ilkjn        openproject_web      replicated          6/6                 openproject/openproject:17
-7ovn0sbu8a7w        openproject_worker   replicated          1/1                 openproject/openproject:17
+uvtfnc9dnlbn        openproject_proxy    replicated          2/2                 girish17/yojana:17   *:8080->80/tcp
+g8e3lannlpb8        openproject_seeder   replicated          0/1                 girish17/yojana:17
+canb3m7ilkjn        openproject_web      replicated          6/6                 girish17/yojana:17
+7ovn0sbu8a7w        openproject_worker   replicated          1/1                 girish17/yojana:17
 ```
 
 Docker swarm handles the networking necessary to distribute the load among the nodes.

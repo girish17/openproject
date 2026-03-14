@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -111,12 +111,12 @@ hu:
         link: "webhook"
     mcp_configurations:
       index:
-        description: "The model context protocol allows AI agents to provide its users with tools and resources exposed by this OpenProject instance."
+        description: "The model context protocol allows AI agents to provide its users with tools and resources exposed by this Yojana instance."
         resources_heading: "Resources"
-        resources_description: "OpenProject implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
+        resources_description: "Yojana implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
         resources_submit: "Update resources"
         tools_heading: "Tools"
-        tools_description: "OpenProject implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url)."
+        tools_description: "Yojana implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url)."
         tools_submit: "Update tools"
       multi_update:
         success: "MCP configurations were updated successfully."
@@ -147,13 +147,13 @@ hu:
       edit:
         label_delete_scim_client: "Delete SCIM client"
       form:
-        auth_provider_description: "This is the service that users added by the SCIM provider will use to authenticate in OpenProject."
-        authentication_method_description_html: "This is how the SCIM client authenticates at OpenProject. Please ensure that OAuth tokens include the <code>scim_v2</code> scope."
+        auth_provider_description: "This is the service that users added by the SCIM provider will use to authenticate in Yojana."
+        authentication_method_description_html: "This is how the SCIM client authenticates at Yojana. Please ensure that OAuth tokens include the <code>scim_v2</code> scope."
         description: "Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options."
         jwt_sub_description: "For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case."
         name_description: "Choose a name that will help other admins better understand why this client was configured."
       index:
-        description: "SCIM clients configured here are able to interact with OpenProject SCIM server API to provision, update, and deprovision user accounts and groups."
+        description: "SCIM clients configured here are able to interact with Yojana SCIM server API to provision, update, and deprovision user accounts and groups."
         label_create_button: "Add SCIM client"
       new:
         title: "New SCIM client"
@@ -161,14 +161,14 @@ hu:
         confirm_button: "Visszavonás"
         title: "Revoke static token"
         heading: "Are you sure you want to revoke this token?"
-        description: "The SCIM client that uses this token will no longer be able to access OpenProject's SCIM server API."
+        description: "The SCIM client that uses this token will no longer be able to access Yojana's SCIM server API."
       table_component:
         blank_slate:
           title: "No SCIM clients configured yet"
           description: "Add clients to see them here"
         user_count: "Felhasználók"
       token_list_component:
-        description: "The tokens you generate here can be passed by a SCIM client to access the OpenProject SCIM API."
+        description: "The tokens you generate here can be passed by a SCIM client to access the Yojana SCIM API."
         heading: "Tokens"
         label_add_token: "Token"
         label_aria_add_token: "Add token"
@@ -229,37 +229,37 @@ hu:
       name: Az LDAP kapcsolat tetszőleges neve
       host: LDAP Kiszolgáló neve vagy IP címe
       login_map: Az LDAP attribútumkulcsa, amelyet az egyedi felhasználói bejelentkezés azonosítására használnak. Ez általában `uid` vagy` samAccountName`.
-      generic_map: Az LDAP attribútumkulcsa, amely az OpenProject %{attribute} attribútumhoz van leképezve
-      admin_map_html: "Opcionális: Az LDAP attribútumkulcsa, amely a <strong> ha van </strong> jelöli az OpenProject felhasználó adminisztrátorát. Hagyja üresen ha kétséges."
+      generic_map: Az LDAP attribútumkulcsa, amely az Yojana %{attribute} attribútumhoz van leképezve
+      admin_map_html: "Opcionális: Az LDAP attribútumkulcsa, amely a <strong> ha van </strong> jelöli az Yojana felhasználó adminisztrátorát. Hagyja üresen ha kétséges."
       system_user_dn_html: |
         Enter the DN of the system user used for read-only access.
         <br>
-        Example: uid=openproject,ou=system,dc=example,dc=com
+        Example: uid=yojana,ou=system,dc=example,dc=com
       system_user_password: Adja meg a rendszergazda bind jelszavát
       base_dn: |
-        Írja be annak az alrésznek az alap DN-jét az LDAP-ban, amelyben az OpenProject felhasználókat és csoportokat szeretne keresni.
-        Az OpenProject csak ebben a részfában biztosítja a megadott felhasználóneveket.
+        Írja be annak az alrésznek az alap DN-jét az LDAP-ban, amelyben az Yojana felhasználókat és csoportokat szeretne keresni.
+        Az Yojana csak ebben a részfában biztosítja a megadott felhasználóneveket.
         Példa: ou = felhasználók, dc = példa, dc = com
       filter_string: |
         Adjon hozzá egy opcionális RFC4515 szűrőt az LDAP -ban szűrt felhasználók számára visszaadott eredményekhez.
-        Ezzel korlátozhatja az OpenProject által hitelesítésre és csoportszinkronizálásra talált felhasználók körét.
+        Ezzel korlátozhatja az Yojana által hitelesítésre és csoportszinkronizálásra talált felhasználók körét.
       filter_string_concat: |
-        Az OpenProject mindig szűri a felhasználó által megadott bejelentkezési attribútumot a rekord azonosítására. Ha itt megad egy szűrőt,
+        Az Yojana mindig szűri a felhasználó által megadott bejelentkezési attribútumot a rekord azonosítására. Ha itt megad egy szűrőt,
         ÉS -sel lesz összekapcsolva. Alapértelmezés szerint a mindenre kiterjedő (objectClass =*) lesz szűrő.
       onthefly_register: |
-        Ha bejelöli ezt a négyzetet, az OpenProject automatikusan új felhasználókat hoz létre az LDAP bejegyzéseikből
-        amikor először hitelesítenek az OpenProject segítségével.
-        Ha ezt nem jelöli, akkor az OpenProject már létező fiókjai csak az LDAP segítségével hitelesíthetők!
+        Ha bejelöli ezt a négyzetet, az Yojana automatikusan új felhasználókat hoz létre az LDAP bejegyzéseikből
+        amikor először hitelesítenek az Yojana segítségével.
+        Ha ezt nem jelöli, akkor az Yojana már létező fiókjai csak az LDAP segítségével hitelesíthetők!
     connection_encryption: "Kapcsolat titkosítása"
     encryption_details: "LDAPS / STARTTLS beállítások"
     system_account: "Rendszer fiók"
     system_account_legend: |
-      Az OpenProject csak olvasható hozzáférést igényel egy rendszerfiókon keresztül az LDAP-fában lévő felhasználók és csoportok kereséséhez.
+      Az Yojana csak olvasható hozzáférést igényel egy rendszerfiókon keresztül az LDAP-fában lévő felhasználók és csoportok kereséséhez.
       A következő szakaszban adja meg a rendszerfelhasználó bind hitelesítő adatait.
     ldap_details: "LDAP részletek"
     user_settings: "Attribútum-leképezés"
     user_settings_legend: |
-      Az alábbi mezők a felhasználók létrehozásához kapcsolódnak LDAP bejegyzések alapján az OpenProject-ben, és ahhoz mely LDAP tulajdonságok lesznek felhasználva OpenProject felhasználó tulajdonságainak deffiniálásakor (tulajdonság társítás).
+      Az alábbi mezők a felhasználók létrehozásához kapcsolódnak LDAP bejegyzések alapján az Yojana-ben, és ahhoz mely LDAP tulajdonságok lesznek felhasználva Yojana felhasználó tulajdonságainak deffiniálásakor (tulajdonság társítás).
     tls_mode:
       plain: "Egyik sem"
       simple_tls: "LDAPS"
@@ -1505,7 +1505,7 @@ hu:
         confirmation: "%{attribute} nem egyezik."
         could_not_be_copied: "A (z) %{dependency} nem másolható (teljesen)."
         does_not_exist: "nem létezik."
-        error_enterprise_only: "%{action} is only available in the OpenProject Enterprise edition."
+        error_enterprise_only: "%{action} is only available in the Yojana Enterprise edition."
         error_unauthorized: "lehet, hogy nem érhető el."
         error_readonly: "írása megkísérelve, de nem írható."
         error_conflict: "Az adatokat frissítette egy másik felhasználó időközben."
@@ -2133,7 +2133,7 @@ hu:
       heading_reset: "Visszaállítási kulcs törlése"
       heading_create: "Visszaállítási kulcs létrehozása"
       implications: >
-        A biztonsági mentések engedélyezésével a szükséges jogosultságokkal és ezzel a biztonsági mentési jogkivonattal rendelkező felhasználók letölthetnek egy biztonsági másolatot, amely tartalmazza az OpenProject telepítés összes adatát. Ez magában foglalja az összes többi felhasználó adatait.
+        A biztonsági mentések engedélyezésével a szükséges jogosultságokkal és ezzel a biztonsági mentési jogkivonattal rendelkező felhasználók letölthetnek egy biztonsági másolatot, amely tartalmazza az Yojana telepítés összes adatát. Ez magában foglalja az összes többi felhasználó adatait.
       info: >
         A biztonsági mentés létrehozásához biztonsági másolatot kell generálnia. Minden alkalommal, amikor biztonsági másolatot szeretne kérni, meg kell adnia ezt a tokent. A biztonsági mentés törlésével letilthatja a biztonsági mentést ennél a felhasználónál.
       verification: >
@@ -2493,7 +2493,7 @@ hu:
         Already have a token? Add it using the button below to upgrade to the booked Enterprise plan.
       hide_banner: "Hide this banner"
       homescreen_description: >
-        Enterprise plans extend the Community edition of OpenProject with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running OpenProject in a mission-critical environment.
+        Enterprise plans extend the Community edition of Yojana with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running Yojana in a mission-critical environment.
       homescreen_subline: By upgrading, you will also be supporting an open source project.
       baseline_comparison:
         description: Highlight changes made to this list since any point in the past.
@@ -2506,7 +2506,7 @@ hu:
         premium_features: "Enterprise add-ons"
         premium_features_text: "Agilis táblák, egyedi téma és embléma, grafikonok, intelligens munkafolyamatok egyéni műveletekkel, teljes szövegű keresés a munkacsomag mellékletekhez és több kiválasztott egyéni mező."
         professional_support: "Szakmai támogatás"
-        professional_support_text: "Megbízható támogatást kaphat a vezető támogató mérnököktől, akik szakértő ismeretekkel rendelkeznek az OpenProject futtatásáról üzleti szempontból kritikus környezetben."
+        professional_support_text: "Megbízható támogatást kaphat a vezető támogató mérnököktől, akik szakértő ismeretekkel rendelkeznek az Yojana futtatásáról üzleti szempontból kritikus környezetben."
       work_package_subject_generation:
         description: "Create automatically generated subjects using referenced attributes and text."
       customize_life_cycle:
@@ -2538,29 +2538,29 @@ hu:
       define_custom_style:
         title: "Custom color theme and logo"
         more_info: "Megjegyzés: a használt logó nyilvánosan elérhető lesz."
-        description: Testreszabhatja OpenProject telepítését saját logójával és színeivel.
+        description: Testreszabhatja Yojana telepítését saját logójával és színeivel.
       custom_actions:
         title: "Egyéni műveletek"
         description: "Az egyéni műveletek egy kattintással elérhető parancsikonok előre meghatározott műveletek csoportjához, amelyeket állapot, szerep, típus vagy projekt alapján elérhetővé tehet bizonyos munkacsomagokon."
       mcp_server:
-        description: "Integrate AI agents with your OpenProject instance through MCP."
+        description: "Integrate AI agents with your Yojana instance through MCP."
       nextcloud_sso:
         title: "Single Sign-On for Nextcloud Storage"
         description: "Enable seamless and secure authentication for your Nextcloud storage with Single Sign-On. Simplify access management and enhance user convenience."
       scim_api:
         title: "SCIM clients"
-        description: "Automate user management in OpenProject by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan."
+        description: "Automate user management in Yojana by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan."
       sso_auth_providers:
         title: "Single Sign-On (SSO)"
         description: "Enable users to log in via external SSO providers using SAML or OpenID Connect for seamless access and integration with existing identity systems."
       virus_scanning:
-        description: "Ensure uploaded files in OpenProject are scanned for viruses before being accessible by other users."
+        description: "Ensure uploaded files in Yojana are scanned for viruses before being accessible by other users."
       project_creation_wizard:
         description: "Generate a step-by-step wizard to help project managers fill out a project initiation request."
       placeholder_users:
         title: Teszt felhasználók
         description: >
-          Placeholder users are a way to assign work packages to users who are not part of your project. They can be useful in a range of scenarios; for example, if you need to track tasks for a resource that is not yet named or available, or if you don’t want to give that person access to OpenProject but still want to track tasks assigned to them.
+          Placeholder users are a way to assign work packages to users who are not part of your project. They can be useful in a range of scenarios; for example, if you need to track tasks for a resource that is not yet named or available, or if you don’t want to give that person access to Yojana but still want to track tasks assigned to them.
       internal_comments:
         title: Internal comments
         description: "Internal comments allow an internal team to communicate amongst themselves privately. These are only visible to certain project roles and will never be visible publicly."
@@ -2584,16 +2584,16 @@ hu:
       request_again: "Request again"
       resend_action: "Resend confirmation email"
       welcome_title: "Quick feature overview"
-      welcome_description: "Get a quick overview of project management and team collaboration with OpenProject Enterprise edition."
+      welcome_description: "Get a quick overview of project management and team collaboration with Yojana Enterprise edition."
       confirmation_info: >
-        We sent you an email on %{date} to %{email} with all the information to start the free trial of OpenProject Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
+        We sent you an email on %{date} to %{email} with all the information to start the free trial of Yojana Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
       confirmation_subline: >
         Please, check your inbox and follow the steps to start your 14-day free trial.
       domain_caption: The token will be valid for your currently configured host name.
       receive_newsletter_html: >
-        I want to receive the OpenProject <a target="_blank" href="https://www.openproject.org/newsletter/">newsletter</a>.
+        I want to receive the Yojana <a target="_blank" href="https://www.yojana.girishm.info/newsletter/">newsletter</a>.
       consent_html: >
-        I agree with the <a target="_blank" href="https://www.openproject.org/terms-of-service/">terms of service</a> and the <a target="_blank" href="https://www.openproject.org/data-privacy-and-security/">privacy policy</a>.
+        I agree with the <a target="_blank" href="https://www.yojana.girishm.info/terms-of-service/">terms of service</a> and the <a target="_blank" href="https://www.yojana.girishm.info/data-privacy-and-security/">privacy policy</a>.
   email_calendar_updates:
     state:
       disabled: "Disabled."
@@ -2626,7 +2626,7 @@ hu:
   error_check_user_and_role: "Légy szíves válassz felhasználót és szerepkört"
   error_code: "Hibakód: %{code}"
   error_color_could_not_be_saved: "A szín nem menthető"
-  error_cookie_missing: "Hiányzó OpenProject cookie. Ellenőrizze, hogy böngészőjében a cookie-k használata engedélyezve van, mert anélkül ez az alkalmazás nem tud megfelelően működni."
+  error_cookie_missing: "Hiányzó Yojana cookie. Ellenőrizze, hogy böngészőjében a cookie-k használata engedélyezve van, mert anélkül ez az alkalmazás nem tud megfelelően működni."
   error_custom_option_not_found: "A beállítás nem létezik."
   error_enterprise_plan_needed: "You need the %{plan} enterprise plan to perform this action."
   error_enterprise_activation_user_limit: "Fiókját nem lehet aktiválni (elérte a felhasználói korlátot). Kérjük, lépjen kapcsolatba rendszergazdájával a hozzáféréshez."
@@ -2755,7 +2755,7 @@ hu:
     failed: "An error has occurred while trying to export the work packages: %{message}"
     demo:
       heading: "Demo PDF"
-      footer: "Generated by OpenProject"
+      footer: "Generated by Yojana"
       button_text: Generate Demo PDF
     errors:
       embedded_table_with_too_many_columns: "This embedded work package table could not fit on the page, please reduce the number of columns."
@@ -2846,7 +2846,7 @@ hu:
       no_visible_projects: "Ebben a példányban nincsenek látható projektek."
       users: "Legújabb regisztrált felhasználók ebben az esetben."
     blocks:
-      community: "OpenProject Közösség"
+      community: "Yojana Közösség"
       upsell:
         title: "Váltás Vállalati Verzióra"
       new_features:
@@ -2860,7 +2860,7 @@ hu:
           new_features_list:
             line_0: Automated project initiation (Enterprise add-on).
             line_1: "Meetings: add new or existing work packages as outcomes."
-            line_2: "Meetings: show iCal responses in OpenProject."
+            line_2: "Meetings: show iCal responses in Yojana."
             line_3: "Recurring meetings: duplicate agenda items to the next occurrence."
             line_4: "Release to Community: Attribute highlighting."
             line_5: Warning before opening external links in user-provided content (Enterprise add-on).
@@ -2873,7 +2873,7 @@ hu:
       impressum: "Jogi nyilatkozat"
       glossary: "Szószedet"
       shortcuts: "Parancsikonok"
-      blog: "OpenProject blog"
+      blog: "Yojana blog"
       forums: "Közösségi fórum"
       security_alerts: "Security alerts"
       newsletter: "Newsletter"
@@ -2886,7 +2886,7 @@ hu:
       default_attribute_written: "Read-only attributes written"
       progress_mode_changed_to_status_based: "Progress calculation updated"
       status_changed: "Status '%{status_name}'"
-      system_update: "OpenProject rendszerfrissítés:"
+      system_update: "Yojana rendszerfrissítés:"
       work_package_duplicate_closed: "Duplicate work package updated:"
       total_percent_complete_mode_changed_to_work_weighted_average: "Calculation of % Complete totals now weighted by Work."
       total_percent_complete_mode_changed_to_simple_average: "Calculation of % Complete totals now based on a simple average of only % Complete values."
@@ -2942,7 +2942,7 @@ hu:
       label: "Add…"
   my_account:
     access_tokens:
-      description: "Provider tokens are issued by OpenProject, allowing other applications to access it. Client tokens are issued by other applications, allowing OpenProject to access them."
+      description: "Provider tokens are issued by Yojana, allowing other applications to access it. Client tokens are issued by other applications, allowing Yojana to access them."
       no_results:
         title: "Nincs megjeleníthető fiók"
         description: "Mindenki le lett tiltva. Újra engedélyezhetők az adminisztrációs menüben."
@@ -2962,7 +2962,7 @@ hu:
         blank_title: "No API token"
         title: "API"
         table_title: "API tokens"
-        text_hint: "API tokens allow third-party applications to communicate with this OpenProject instance via REST APIs."
+        text_hint: "API tokens allow third-party applications to communicate with this Yojana instance via REST APIs."
         static_token_name: "API token"
         disabled_text: "API tokens are not enabled by the administrator. Please contact your administrator to use this feature."
         add_button: "API token"
@@ -2971,7 +2971,7 @@ hu:
         blank_title: "No iCalendar token"
         title: "iCalendar"
         table_title: "iCalendar tokens"
-        text_hint_link: "iCalendar tokens allow users to [subscribe to OpenProject calendars](docs_url) and view up-to-date work package information from external clients."
+        text_hint_link: "iCalendar tokens allow users to [subscribe to Yojana calendars](docs_url) and view up-to-date work package information from external clients."
         disabled_text: "iCalendar subscriptions are not enabled by the administrator. Please contact your administrator to use this feature."
       oauth_application:
         active_tokens: "Active tokens"
@@ -2980,14 +2980,14 @@ hu:
         last_used_at: "Last used at"
         title: "OAuth"
         table_title: "OAuth application tokens"
-        text_hint: "OAuth application tokens allow third-party applications to connect with this OpenProject instance."
+        text_hint: "OAuth application tokens allow third-party applications to connect with this Yojana instance."
       oauth_client:
         blank_description: "There are no OAuth client tokens yet."
         blank_title: "No OAuth client tokens"
         failed: "An error occurred and the token couldn't be removed. Please try again later."
         integration_type: "Integration type"
         table_title: "OAuth client tokens"
-        text_hint: "OAuth client tokens allow this OpenProject instance to connect with external applications, such as file storages."
+        text_hint: "OAuth client tokens allow this Yojana instance to connect with external applications, such as file storages."
         title: "OAuth"
         remove_token: "Do you really want to remove this token? You will need to login again on %{integration}."
         removed: "OAuth client token successfully removed"
@@ -2998,7 +2998,7 @@ hu:
         blank_title: "No RSS token"
         title: "RSS"
         table_title: "RSS tokens"
-        text_hint: "RSS tokens allow users to keep up with the latest changes in this OpenProject instance via an external RSS reader."
+        text_hint: "RSS tokens allow users to keep up with the latest changes in this Yojana instance via an external RSS reader."
         static_token_name: "RSS token"
         disabled_text: "RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature."
       storages:
@@ -3173,7 +3173,7 @@ hu:
   label_custom_field_plural: "Választható mezők"
   label_custom_field_default_type: "Üres típus"
   label_custom_style: "Kinézet"
-  label_custom_style_description: "Choose how OpenProject looks to you with themes, select your default colors to use in the app and how exports look like."
+  label_custom_style_description: "Choose how Yojana looks to you with themes, select your default colors to use in the app and how exports look like."
   label_dashboard: "Vezérlőpult"
   label_database_version: "PostgreSQL verzió"
   label_date: "dátum"
@@ -3445,7 +3445,7 @@ hu:
   label_open_menu: "Menü megnyitása"
   label_open_work_packages: "nyitott"
   label_open_work_packages_plural: "nyitott"
-  label_openproject_website: "OpenProject honlap"
+  label_openproject_website: "Yojana honlap"
   label_optional_description: "Leírás"
   label_options: "Beállítások"
   label_other: "Egyéb"
@@ -3848,8 +3848,8 @@ hu:
   mail_body_backup_token_reset_user_info: A visszaállítási kulcs törölve.
   mail_body_backup_token_info: Az előző kulcs elavult.
   mail_body_backup_waiting_period: A visszaállítási kulcs még %{hours} óráig érvényes.
-  mail_body_backup_token_warning: "Ha nem te voltál, azonnal jelentkezz be az OpenProject szolgáltatásba, és állítsd újra.\n"
-  mail_body_incoming_email_error: Az OpenProjectnek küldött e-mailt nem sikerült feldolgozni.
+  mail_body_backup_token_warning: "Ha nem te voltál, azonnal jelentkezz be az Yojana szolgáltatásba, és állítsd újra.\n"
+  mail_body_incoming_email_error: Az Yojananek küldött e-mailt nem sikerült feldolgozni.
   mail_body_incoming_email_error_in_reply_to: "%{received_at} %{from_email} írta"
   mail_body_incoming_email_error_logs: "Naplók"
   mail_body_lost_password: "A jelszó módosításához kattintson az alábbi linkre:"
@@ -3862,10 +3862,10 @@ hu:
   mail_body_register_user: "Kedves %{name},"
   mail_body_register_links_html: |
     Nyugodtan böngésszen YouTube-csatornánkon (%{youtube_link}), ahol webináriumot biztosítunk (%{webinar_link})
-    és „Kezdő lépések” videók (%{get_started_link}), hogy a lehető legegyszerűbbé tegye az OpenProject első lépéseit.
+    és „Kezdő lépések” videók (%{get_started_link}), hogy a lehető legegyszerűbbé tegye az Yojana első lépéseit.
     <br />
     Ha további kérdései vannak, tekintse meg dokumentációnkat (%{documentation_link}), vagy forduljon rendszergazdájához.
-  mail_body_register_closing: "Az OpenProject csapata"
+  mail_body_register_closing: "Az Yojana csapata"
   mail_body_register_ending: "Maradj kapcsolatban! Üdvözlettel,"
   mail_body_reminder: "Ön rendelt  %{count} munkacsomag(ok) a következő  %{days}  napokon esedékesek:"
   mail_body_group_reminder: 'A "%{group}" csoporthoz rendelt %{count} feladat határidős az elkövetkező %{days} napban:'
@@ -3874,7 +3874,7 @@ hu:
   mail_subject_account_activation_request: "%{value} fiók aktiválásának kérése"
   mail_subject_backup_ready: "A biztonsági mentés elkészült"
   mail_subject_backup_token_reset: "Biztonsági mentés token visszaállítás"
-  mail_subject_incoming_email_error: "Az OpenProjectnek küldött e-mailt nem sikerült feldolgozni."
+  mail_subject_incoming_email_error: "Az Yojananek küldött e-mailt nem sikerült feldolgozni."
   mail_subject_lost_password: "A jelszavad %{value}"
   mail_subject_register: "A %{value} fiókód aktiválása"
   mail_subject_wiki_content_added: "'%{id}' wiki oldal hozzáadva"
@@ -3903,13 +3903,13 @@ hu:
   mail_user_activation_limit_reached:
     subject: A felhasználó aktiválási korlátját elérte
     message: |
-      Egy új felhasználó (%{email}) megpróbált létrehozni egy fiókot az Ön által kezelt OpenProject környezetben (%{host}). A felhasználó nem tudja aktiválni fiókját, mivel elérte a felhasználói korlátot.
+      Egy új felhasználó (%{email}) megpróbált létrehozni egy fiókot az Ön által kezelt Yojana környezetben (%{host}). A felhasználó nem tudja aktiválni fiókját, mivel elérte a felhasználói korlátot.
     steps:
       label: "A felhasználó bejelentkezéséhez a következőket teheti: "
       a: "Fizetés módjának frissítése ([here](upgrade_url))" #here turned into a link
       b: "Felhasználó zárolása vagy törlése ([here](users_url))" #here turned into a link
   more_actions: "További funkciók"
-  noscript_description: "Engedélyezze a JavaScriptet, hogy használni tudja az OpenProjectet !"
+  noscript_description: "Engedélyezze a JavaScriptet, hogy használni tudja az Yojanaet !"
   noscript_heading: "JavaScript le van tiltva"
   noscript_learn_more: "További információ"
   notice_accessibility_mode: A kisegítő lehetőségek mód bekapcsolható a [felhasználói fiók beállításaiban](url).
@@ -3987,7 +3987,7 @@ hu:
   notice_wont_delete_auth_source: The LDAP connection cannot be deleted as long as there are still users using it.
   notice_project_cannot_update_custom_fields: "Nem tudod firssíteni a projekt egyedi mezőit. A projekt érvénytelen: %{errors}"
   notice_attachment_migration_wiki_page: >
-    Ez az oldal automatikusan jött létre az OpenProject frissítésekor. Tartalmazza az összes mellékletet az alábbiakhoz: %{container_type} %{container_name}.
+    Ez az oldal automatikusan jött létre az Yojana frissítésekor. Tartalmazza az összes mellékletet az alábbiakhoz: %{container_type} %{container_name}.
   #Default format for numbers
   number:
     format:
@@ -4010,7 +4010,7 @@ hu:
           tb: "TB"
   onboarding:
     heading_getting_started: "Áttekintés"
-    text_getting_started_description: "Get a quick overview of project management and team collaboration with OpenProject. You can restart this video from the help menu."
+    text_getting_started_description: "Get a quick overview of project management and team collaboration with Yojana. You can restart this video from the help menu."
     welcome: "Üdvözli a %{app_title}"
     select_language: "Kéjük válasszon nyelvet"
   permission_add_work_package_comments: "Add comments"
@@ -4103,7 +4103,7 @@ hu:
   permission_view_all_principals_explanation: >
     Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
   permission_view_project: "View projects"
-  permission_view_changesets: "Tároló verziók megtekintése az OpenProject-ben"
+  permission_view_changesets: "Tároló verziók megtekintése az Yojana-ben"
   permission_view_internal_comments: "View internal comments"
   permission_view_commit_author_statistics: "Szerző,statisztika megtekintése"
   permission_view_dashboards: "View dashboards"
@@ -4228,7 +4228,7 @@ hu:
     destroy:
       confirmation: "Ha folytatja, a kezelt tároló véglegesen törlésre kerül."
       info: "A tároló törlése visszafordíthatatlan művelet."
-      info_not_managed: "Megjegyzés: Ez NEM törli a tároló tartalmát, mivel nem az OpenProject által kezelt."
+      info_not_managed: "Megjegyzés: Ez NEM törli a tároló tartalmát, mivel nem az Yojana által kezelt."
       managed_path_note: "Az következő könyvtár törlésre kerül: %{path}"
       repository_verification: "Írja be a projekt azonosítót %{identifier} a tároló törlésének megerősítéséhez."
       subtitle: "Biztosan törli a %{project_name} projekthez tartozó %{repository_type}-t?"
@@ -4242,8 +4242,8 @@ hu:
       empty_repository: "A tároló létezik, de üres. Nem tartalmaz egy revíziót sem."
       exists_on_filesystem: "A tároló könyvtár már létezik a fájlrendszeren."
       filesystem_access_failed: "Hiba merült fel a tároló fájlrendszeren való elérésekor: %{message}"
-      not_manageable: "A tároló típusa OpenProjecttel nem kezelhető."
-      path_permission_failed: "Hiba merült fel a következő létrehozásakor: %{path}. Kérem, biztosítsa az OpenProject írási jogát a könyvtárban."
+      not_manageable: "A tároló típusa Yojanatel nem kezelhető."
+      path_permission_failed: "Hiba merült fel a következő létrehozásakor: %{path}. Kérem, biztosítsa az Yojana írási jogát a könyvtárban."
       unauthorized: "Nincs jogosultsága elérni a tárolót vagy a hitelesítő adatai hibásak."
       unavailable: "A tároló nem érhető el."
       exception_title: "A tároló nem elérhető: %{message}"
@@ -4260,9 +4260,9 @@ hu:
         path_encoding: "Git útvonal kódolásának felülírása (Alapértelmezett: UTF-8)"
       local_title: "Hivatkozás egy meglévő helyi tárolóra"
       local_url: "Helyi URL"
-      local_introduction: "Ha rendelkezik meglévő helyi Git tárolóval, akkor az OpenProject alkalmazáson belül kapcsolódhat hozzá."
-      managed_introduction: "Engedélyezze, hogy az OpenProject automatikusan létrehozza és integrálja a helyi Git tárolót."
-      managed_title: "Git tároló integrálva az OpenProject-be"
+      local_introduction: "Ha rendelkezik meglévő helyi Git tárolóval, akkor az Yojana alkalmazáson belül kapcsolódhat hozzá."
+      managed_introduction: "Engedélyezze, hogy az Yojana automatikusan létrehozza és integrálja a helyi Git tárolót."
+      managed_title: "Git tároló integrálva az Yojana-be"
       managed_url: "Kezelt URL"
       path: "Git tároló elérési útja"
       path_encoding: "Elérési út kódolás"
@@ -4279,24 +4279,24 @@ hu:
     scm_types:
       local: "Hivatkozás egy meglévő helyi tárolóra"
       existing: "Hivatkozás egy meglévő tárolóra"
-      managed: "Új tároló létrehozása az OpenProject-ben"
+      managed: "Új tároló létrehozása az Yojana-ben"
     storage:
       not_available: "A lemez felhasználási adatai nem érhetőek el a tárolón."
       update_timeout: "Tartsa meg az utolsó szükséges lemezterület-információt egy tárolóhoz N percig. Mivel egy tároló szükséges lemezterületének kiszámítása erőforrás igényes lehet, növelje ezt az értéket a teljesítmény növelésének érdekében."
-      oauth_application_details: "Az ablak bezárása után az ügyfél titkos értéke nem lesz többé elérhető. Kérjük, másolja be ezeket az értékeket a Nextcloud OpenProject Integration beállításaiba:"
+      oauth_application_details: "Az ablak bezárása után az ügyfél titkos értéke nem lesz többé elérhető. Kérjük, másolja be ezeket az értékeket a Nextcloud Yojana Integration beállításaiba:"
       oauth_application_details_link_text: "Menjen a beállítások oldalra"
       setup_documentation_details: "Ha segítségre van szüksége egy új fájltároló beállításához, kérjük, ellenőrizze a dokumentációt:"
       setup_documentation_details_link_text: "File storages setup"
       show_warning_details: "To use this file storage remember to activate the module and the specific storage in the project settings of each desired project."
     subversion:
       existing_title: "Meglévő Subversion tároló"
-      existing_introduction: "Ha rendelkezik meglévő Subversion tárolóval, akkor az OpenProject segítségével kapcsolódhat hozzá az alkalmazáson belül."
+      existing_introduction: "Ha rendelkezik meglévő Subversion tárolóval, akkor az Yojana segítségével kapcsolódhat hozzá az alkalmazáson belül."
       existing_url: "Létező URL"
       instructions:
         managed_url: "Ez egy hivatkozás kezelt (helyi) Subversion tárolóra."
         url: "Adja meg az tároló URL-jét. Ez akár egy helyi tároló is lehet (kezdődő %{local_proto} ), vagy egy távoli cím. A következő URL-sémák támogatottak:"
-      managed_title: "Subversion tároló integrálva az OpenProject-be"
-      managed_introduction: "Hagyja, hogy az OpenProject hozza létre, és integrálja a helyi Subversion tárolót automatikusan."
+      managed_title: "Subversion tároló integrálva az Yojana-be"
+      managed_introduction: "Hagyja, hogy az Yojana hozza létre, és integrálja a helyi Subversion tárolót automatikusan."
       managed_url: "Kezelt URL"
       password: "Tároló jelszava"
       username: "Tároló felhasználónév"
@@ -4329,7 +4329,7 @@ hu:
   setting_apiv3_cors_enabled: "A CORS engedélyezése"
   setting_apiv3_cors_origins: "API V3 Cross-Origin Resource Sharing (CORS) engedélyezett származások"
   setting_apiv3_cors_origins_text_html: >
-    Ha a CORS engedélyezve van, ezek azok az eredetiek, amelyek hozzáférhetnek az OpenProject API-hoz. <br/> Kérjük, olvassa el a <a href="%{origin_link}" target="_blank">Dokumentáció az Origin fejlécről</a> című dokumentumot az elvárt értékek megadásáról.
+    Ha a CORS engedélyezve van, ezek azok az eredetiek, amelyek hozzáférhetnek az Yojana API-hoz. <br/> Kérjük, olvassa el a <a href="%{origin_link}" target="_blank">Dokumentáció az Origin fejlécről</a> című dokumentumot az elvárt értékek megadásáról.
   setting_apiv3_write_readonly_attributes: "Write access to read-only attributes"
   setting_apiv3_write_readonly_attributes_instructions: >
     If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
@@ -4526,7 +4526,7 @@ hu:
       omniauth_direct_login_hint_html: >
         If this option is active, login requests will redirect to the configured omniauth provider. The login dropdown and sign-in page will be disabled. <br/> <strong>Note:</strong> Unless you also disable password logins, with this option enabled, users can still log in internally by visiting the <code>%{internal_path}</code> login page.
       remapping_existing_users_hint: >
-        If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the OpenProject instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
+        If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the Yojana instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
     attachments:
       whitelist_text_html: >
         Határozza meg a feltöltött fájlok érvényes fájlkiterjesztéseinek és/vagy mime típusainak listáját. <br/> Adjon meg fájlkiterjesztéseket (pl. <code>%{ext_example} </code>) vagy mime típusokat (pl. <code>%{mime_example} </code>). <br/> Hagyja üresen, ha bármilyen fájltípust szeretne feltölteni. Több érték megengedett (egy sor minden értékhez).
@@ -4550,7 +4550,7 @@ hu:
         clamav_socket_html: Enter the socket to the clamd daemon, e.g., %{example}
         clamav_host_html: Enter the hostname and port to the clamd daemon separated by colon. e.g., %{example}
         description_html: >
-          Select the mode in which the antivirus scanner integration should operate. <br/> <ul> <li><strong>%{disabled_option}</strong>: Uploaded files are not scanned for viruses.</li> <li><strong>%{socket_option}</strong>: You have set up ClamAV on the same server as OpenProject and the scan daemon clamd is running in the background</li> <li><strong>%{host_option}</strong>: You are streaming files to an external virus scanning host.</li> </ul>
+          Select the mode in which the antivirus scanner integration should operate. <br/> <ul> <li><strong>%{disabled_option}</strong>: Uploaded files are not scanned for viruses.</li> <li><strong>%{socket_option}</strong>: You have set up ClamAV on the same server as Yojana and the scan daemon clamd is running in the background</li> <li><strong>%{host_option}</strong>: You are streaming files to an external virus scanning host.</li> </ul>
     brute_force_prevention: "Felhasználó automatikus blokkolása"
     date_format:
       first_date_of_week_and_year_set: >
@@ -4558,8 +4558,8 @@ hu:
       first_week_of_year_text_html: >
         Select the date of January that is contained in the first week of the year. This value together with first day of the week determines the total number of weeks in a year. For more information, please see our <a href="%{link}" target="_blank">documentation</a> on this topic.
     experimental:
-      save_confirmation: Caution! Risk of data loss! Only activate experimental features if you do not mind breaking your OpenProject installation and losing all of its data.
-      warning_toast: Feature flags are settings that activate features that are still under development. They shall only be used for testing purposes. They shall never be activated on OpenProject installations holding important data. These features will very likely corrupt your data. Use them at your own risk.
+      save_confirmation: Caution! Risk of data loss! Only activate experimental features if you do not mind breaking your Yojana installation and losing all of its data.
+      warning_toast: Feature flags are settings that activate features that are still under development. They shall only be used for testing purposes. They shall never be activated on Yojana installations holding important data. These features will very likely corrupt your data. Use them at your own risk.
       feature_flags: Feature flags
     general: "Általános"
     highlighting:
@@ -4570,7 +4570,7 @@ hu:
         type: "Teljes sor típus szerint"
         priority: "Teljes sor prioritás szerint"
     icalendar:
-      enable_subscriptions_text_html: Allows users with the necessary permissions to subscribe to OpenProject calendars and access work package information via an external calendar client. <strong>Note:</strong> Please read about <a href="%{link}" target="_blank">iCalendar subscriptions</a> to understand potential security risks before enabling this.
+      enable_subscriptions_text_html: Allows users with the necessary permissions to subscribe to Yojana calendars and access work package information via an external calendar client. <strong>Note:</strong> Please read about <a href="%{link}" target="_blank">iCalendar subscriptions</a> to understand potential security risks before enabling this.
     language_name_being_default: "%{language_name} (default)"
     notifications:
       events_explanation: "Azt szabályozza, hogy melyik eseményhez küldjön e -mailt. A munkacsomagok nem tartoznak ebbe a listába, mivel a rájuk vonatkozó értesítések kifejezetten minden felhasználó számára konfigurálhatók.\n"
@@ -4604,7 +4604,7 @@ hu:
               description: "Add all the project attributes in a section inside the right side panel in the project overview."
     project_initiation_request:
       header_description: >
-        OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
+        Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
       status:
         submitted: "%{wizard_name} has been submitted"
         submitted_description: "Click the button below to go to the work package for the submission process."
@@ -4617,7 +4617,7 @@ hu:
         project_mandate: "Open project mandate"
       blankslate:
         title: "Initiation request not enabled"
-        description: "OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard."
+        description: "Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard."
       disable_dialog:
         title: "Disable project initiation request"
         heading: "Disable this project initiation request?"
@@ -4698,7 +4698,7 @@ hu:
       sentence_connector: "és"
       skip_last_comma: "hamis"
   text_accessibility_hint: "A kisegítő lehetőségek mód vakok és gyengén látók illetve mozgásukban korlátozottak számára lett tervezve. Gyengénlátók számára a fókuszált elemek kivételes kiemeléssel jelennek meg. Vegye figyelembe, hogy a \"Backlogs\" modul nem érhető el ebben a módban."
-  text_access_token_hint: "Hozzáférés tokennel lehetővé teszi, hogy külső alkalmazások hozzáférhessenek az OpenProject forrásaihoz."
+  text_access_token_hint: "Hozzáférés tokennel lehetővé teszi, hogy külső alkalmazások hozzáférhessenek az Yojana forrásaihoz."
   text_analyze: "További elemzése: %{subject}"
   text_are_you_sure: "Biztos vagy benne?"
   open_link_in_a_new_tab: "Open link in a new tab"
@@ -4797,7 +4797,7 @@ hu:
   text_no_notes: "Ehhez a munkacsomaghoz nincsenek megjegyzések."
   text_notice_too_many_values_are_inperformant: "Megjegyzés: Az oldalanként több mint 100 elem megjelenítésekor az oldal betöltési ideje  növekedhet."
   text_notice_security_badge_displayed_html: >
-    Megjegyzés: ha engedélyezve van, akkor a telepítési állapotot jelző jelvény jelenik meg a <a href="%{information_panel_path}">%{information_panel_label} </a> adminisztrációs panelen és a kezdőlapon. Csak a rendszergazdák számára jelenik meg. <br/> A jelvény ellenőrzi az aktuális OpenProject verziót a hivatalos OpenProject kiadási adatbázishoz képest, hogy figyelmeztesse Önt minden frissítésre vagy ismert biztonsági résre. Ha többet szeretne megtudni arról, hogy mit tartalmaz az ellenőrzés, milyen adatokra van szükség az elérhető frissítésekhez, és hogyan tilthatja le ezt az ellenőrzést, keresse fel a <a href="%{more_info_url}"> konfigurációs dokumentációt </a>.
+    Megjegyzés: ha engedélyezve van, akkor a telepítési állapotot jelző jelvény jelenik meg a <a href="%{information_panel_path}">%{information_panel_label} </a> adminisztrációs panelen és a kezdőlapon. Csak a rendszergazdák számára jelenik meg. <br/> A jelvény ellenőrzi az aktuális Yojana verziót a hivatalos Yojana kiadási adatbázishoz képest, hogy figyelmeztesse Önt minden frissítésre vagy ismert biztonsági résre. Ha többet szeretne megtudni arról, hogy mit tartalmaz az ellenőrzés, milyen adatokra van szükség az elérhető frissítésekhez, és hogyan tilthatja le ezt az ellenőrzést, keresse fel a <a href="%{more_info_url}"> konfigurációs dokumentációt </a>.
   text_own_membership_delete_confirmation: "Értesítem arról, hogy eltávolít néhány vagy az összes jogosultságot, és ezt követően már nem lehet szerkeszteni ezt a projektet. Biztosan folytatni kívánja?"
   text_permanent_delete_confirmation_checkbox_label: "I understand that this deletion cannot be reversed"
   text_permanent_remove_confirmation_checkbox_label: "I understand that this removal cannot be reversed"
@@ -4916,7 +4916,7 @@ hu:
   warning: Figyelem
   warning_attachments_not_saved: "%{count} fájl nem menthető."
   warning_imminent_user_limit: >
-    Több olyan felhasználót hívott meg, akiket a jelenlegi beállítás támogat. A meghívott felhasználók nem tudnak csatlakozni az OpenProject környezetéhez. Kérjük, <a href="%{upgrade_url}"> frissítse a beállítást </a>, vagy blokkolja a meglévő felhasználókat, hogy engedélyezhesse a meghívott és regisztrált felhasználók csatlakozását.
+    Több olyan felhasználót hívott meg, akiket a jelenlegi beállítás támogat. A meghívott felhasználók nem tudnak csatlakozni az Yojana környezetéhez. Kérjük, <a href="%{upgrade_url}"> frissítse a beállítást </a>, vagy blokkolja a meglévő felhasználókat, hogy engedélyezhesse a meghívott és regisztrált felhasználók csatlakozását.
   warning_registration_token_expired: |
     Az aktiváló e-mail lejárt. Új levelet küldtünk Önnek %{email} részére.
     Kérjük, kattintson a belsejében lévő linkre a fiók aktiválásához.
@@ -4925,7 +4925,7 @@ hu:
   warning_user_limit_reached_admin: >
     Adding additional users will exceed the current limit. Please <a href="%{upgrade_url}">upgrade your plan</a> to be able to ensure external users are able to access this instance.
   warning_user_limit_reached_instructions: >
-    You reached your user limit (%{current}/%{max} active users). Please contact sales@openproject.com to upgrade your Enterprise edition plan and add additional users.
+    You reached your user limit (%{current}/%{max} active users). Please contact sales@girishm.info to upgrade your Enterprise edition plan and add additional users.
   warning_protocol_mismatch_html: >
 
   warning_bar:
@@ -5198,7 +5198,7 @@ hu:
         confidential: "Ellenőrizze, hogy az alkalmazást olyan helyen használják-e, ahol az ügyféltitkot bizalmasan lehet kezelni. A natív mobilalkalmazások és az egyoldalas alkalmazások feltételezhetően nem bizalmasak."
         scopes: "Ellenőrizze azokat a hatóköröket, amelyekhez az alkalmazás hozzáférést biztosít. Ha nem ellenőrzi a hatókört, akkor az api_v3 feltételezzük."
         client_credential_user_id: "Választható felhasználói azonosító, amelyet az ügyfelek az alkalmazás használatakor megszemélyesíthetnek. Üresen hagyva csak nyilvános hozzáférést engedélyez\n"
-        register_intro: "Ha OAuth API kliensalkalmazást fejleszt az OpenProject számára, akkor ezen az űrlapon regisztrálhatja azt, hogy minden felhasználó használhassa."
+        register_intro: "Ha OAuth API kliensalkalmazást fejleszt az Yojana számára, akkor ezen az űrlapon regisztrálhatja azt, hogy minden felhasználó használhassa."
         default_scopes: ""
     header:
       builtin_applications: Built-in OAuth applications
@@ -5206,17 +5206,17 @@ hu:
     empty_application_lists: No OAuth applications have been registered.
     client_id: "Ügyfél azonosító"
     client_secret_notice: >
-      Ez az egyetlen alkalom, amikor kinyomtathatjuk az ügyfél titkát, jegyezze fel és tartsa biztonságban. Jelszóként kell kezelni, és az OpenProject később nem tudja lekérni.
+      Ez az egyetlen alkalom, amikor kinyomtathatjuk az ügyfél titkát, jegyezze fel és tartsa biztonságban. Jelszóként kell kezelni, és az Yojana később nem tudja lekérni.
     authorization_dialog:
       authorize: "Engedélyez"
       cancel: "Az engedély visszavonása és megtagadása.\n"
       prompt_html: "Engedélyezze <strong>%{application_name}</strong> hogy használhassa a felhasználó<em>%{login}</em>"
       title: "Engedélyezze %{application_name}"
       wants_to_access_html: >
-        Ez az alkalmazás hozzáférést kér az Ön OpenProject-fiókjához. <br/> <strong>A következő jogosultságokat kérte:</strong>
+        Ez az alkalmazás hozzáférést kér az Ön Yojana-fiókjához. <br/> <strong>A következő jogosultságokat kérte:</strong>
     scopes:
       api_v3: "Teljes API v3 hozzáférés"
-      api_v3_text: "Az alkalmazás teljes olvasási és írási hozzáférést kap az OpenProject API v3 verzióhoz az Ön nevében végzett műveletek elvégzéséhez."
+      api_v3_text: "Az alkalmazás teljes olvasási és írási hozzáférést kap az Yojana API v3 verzióhoz az Ön nevében végzett műveletek elvégzéséhez."
     grants:
       created_date: "Elfogadva "
       scopes: "Jogosultságok"
@@ -5232,7 +5232,7 @@ hu:
     client_credentials_impersonation_set_to: "Az ügyfél hitelesítő adathoz felhasználó beállítása\n"
     client_credentials_impersonation_warning: "Megjegyzés: Az ebben az alkalmazásban az „Ügyféladatok” folyamatot használó ügyfelek jogosultak lesznek erre a felhasználóra\n"
     client_credentials_impersonation_html: >
-      Alapértelmezés szerint az OpenProject az OAuth 2.0 engedélyezést a %{authorization_code_flow_link} segítségével biztosítja. Opcionálisan engedélyezheti a %{client_credentials_flow_link} opciót, de meg kell adnia egy felhasználót, akinek a nevében a kérések végrehajtásra kerülnek.
+      Alapértelmezés szerint az Yojana az OAuth 2.0 engedélyezést a %{authorization_code_flow_link} segítségével biztosítja. Opcionálisan engedélyezheti a %{client_credentials_flow_link} opciót, de meg kell adnia egy felhasználót, akinek a nevében a kérések végrehajtásra kerülnek.
     authorization_error: "Engedélyezési hiba történt."
     revoke_my_application_confirmation: "Tényleg el akarja távolítani ezt az alkalmazást? Ez visszavonja az aktív %{token_count} értéket.\n"
     my_registered_applications: "Regisztrált OAuth alkalmazások"
@@ -5261,20 +5261,20 @@ hu:
         Internal error: Called refresh_token without a previously existing token.
       refresh_token_updated_failed: "Error during update of OAuthClientToken"
       oauth_client_not_found_explanation: >
-        This error appears after you have updated the client_id and client_secret in OpenProject, but haven't updated the 'Return URI' field in the OAuth2 provider.
+        This error appears after you have updated the client_id and client_secret in Yojana, but haven't updated the 'Return URI' field in the OAuth2 provider.
       oauth_code_not_present: "OAuth2 'code' not found in 'callback' endpoint (redirect_uri)."
       oauth_code_not_present_explanation: >
         This error appears if you have selected the wrong response_type in the OAuth2 provider. Response_type should be 'code' or similar.
       oauth_state_not_present: "OAuth2 'state' not found in 'callback' endpoint (redirect_uri)."
       oauth_state_not_present_explanation: >
-        The 'state' is used to indicate to OpenProject where to continue after a successful OAuth2 authorization. A missing 'state' is an internal error that may appear during setup. Please contact your system administrator.
+        The 'state' is used to indicate to Yojana where to continue after a successful OAuth2 authorization. A missing 'state' is an internal error that may appear during setup. Please contact your system administrator.
       rack_oauth2:
         client_secret_invalid: "Client secret is invalid (client_secret_invalid)"
         invalid_request: >
           OAuth2 Authorization Server responded with 'invalid_request'. This error appears if you try to authorize multiple times or in case of technical issues.
         invalid_response: "OAuth2 Authorization Server provided an invalid response (invalid_response)"
         invalid_grant: "The OAuth2 Authorization Server asks you to reauthorize (invalid_grant)."
-        invalid_client: "The OAuth2 Authorization Server doesn't recognize OpenProject (invalid_client)."
+        invalid_client: "The OAuth2 Authorization Server doesn't recognize Yojana (invalid_client)."
         unauthorized_client: "The OAuth2 Authorization Server rejects the grant type (unauthorized_client)"
         unsupported_grant_type: "The OAuth2 Authorization Server asks you to reauthorize (unsupported_grant_type)."
         invalid_scope: "You are not allowed to access the requested resource (invalid_scope)."
@@ -5287,18 +5287,18 @@ hu:
   you: te
   link: link
   plugin_openproject_auth_plugins:
-    name: "OpenProject Auth Plugins"
-    description: "Integration of OmniAuth strategy providers for authentication in OpenProject."
+    name: "Yojana Auth Plugins"
+    description: "Integration of OmniAuth strategy providers for authentication in Yojana."
   plugin_openproject_auth_saml:
     name: "OmniAuth SAML / Single-Sign On"
-    description: "Adds the OmniAuth SAML provider to OpenProject"
+    description: "Adds the OmniAuth SAML provider to Yojana"
   enterprise_plans:
     legacy_enterprise: "Enterprise Plan"
   token:
     hashed_token:
       display_value_placeholder: "***"
   external_link_warning:
-    title: "Leaving OpenProject"
-    warning_message: "You are about to leave OpenProject and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies."
+    title: "Leaving Yojana"
+    warning_message: "You are about to leave Yojana and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies."
     continue_message: "Are you sure you want to proceed to the following external link?"
     continue_button: "Continue to external website"

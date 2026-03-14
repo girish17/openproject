@@ -90,7 +90,7 @@ To run the migration script within the container, now simply run the following c
 docker run -it \
   -e MYSQL_DATABASE_URL="mysql://user:password@localhost:3306/dbname" \
   -e DATABASE_URL="postgresql://openproject:<PASSWORD>@localhost:5432/openproject" \
-  openproject/openproject:latest
+  girish17/yojana:latest
 ```
 
 This will perform all necessary steps to perform the migration. Afterwards, simply remove the `MYSQL_DATABASE_URL` environment variable again and start your container as usual.

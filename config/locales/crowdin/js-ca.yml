@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -52,7 +52,7 @@ ca:
         Una nova còpia de seguretat substituirà tots els anteriors. Només es pot sol·licitar un nombre limitat de còpies de seguretat per dia.
       last_backup: Última còpia de seguretat
       last_backup_from: Última còpia de seguretat de
-      title: Còpia de seguretat d'OpenProject
+      title: Còpia de seguretat d'Yojana
       options: Opcions
       include_attachments: Incloure fitxers adjunts
       download_backup: Descarregar còpia de seguretat
@@ -505,7 +505,7 @@ ca:
         next: "Següent"
         got_it: "D'acord"
       steps:
-        help_menu: "El menú d'Ajuda (?) proveeix <b>recursos d'ajuda addicionals</b>. Aquí podràs trobar la guia d'usuari, vídeos explicatius i molt més. <br> Gaudeix del teu treball amb OpenProject!"
+        help_menu: "El menú d'Ajuda (?) proveeix <b>recursos d'ajuda addicionals</b>. Aquí podràs trobar la guia d'usuari, vídeos explicatius i molt més. <br> Gaudeix del teu treball amb Yojana!"
         members: "Convida nous <b>membres</b> a afegir-se al teu projecte."
         quick_add_button: "Fes clic a la icona de més (+) en la navegació superior per <b>crear un nou projecte</b> o <b>convidar companys de feina</b>."
         sidebar_arrow: "Utilitza la fletxa de retorn a la cantonada esquerra per tornar al <b>menú principal</b> del projecte."

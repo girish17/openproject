@@ -17,8 +17,8 @@ en:
         authn_requests_signed: Sign SAML AuthnRequests
         want_assertions_signed: Require signed responses
         want_assertions_encrypted: Require encrypted responses
-        certificate: Certificate used by OpenProject for SAML requests
-        private_key: Corresponding private key for OpenProject SAML requests
+        certificate: Certificate used by Yojana for SAML requests
+        private_key: Corresponding private key for Yojana SAML requests
         signature_method: Signature algorithm
         digest_method: Digest algorithm
         format: "Format"
@@ -36,7 +36,7 @@ en:
     info:
       title: "SAML Protocol Configuration Parameters"
       description: >
-        Use these parameters to configure your identity provider connection to OpenProject.
+        Use these parameters to configure your identity provider connection to Yojana.
     metadata_parser:
       success: "Successfully updated the configuration using the identity provider metadata."
       invalid_url: "Provided metadata URL is invalid. Provide a HTTP(s) URL."
@@ -46,8 +46,8 @@ en:
       label_empty_description: "Add a provider to see them here."
       label_automatic_configuration: Automatic configuration
       label_metadata: Metadata
-      label_metadata_endpoint: OpenProject metadata endpoint
-      label_openproject_information: OpenProject information
+      label_metadata_endpoint: Yojana metadata endpoint
+      label_openproject_information: Yojana information
       label_configuration_details: "Identity provider endpoints and certificates"
       label_configuration_encryption: "Signatures and Encryption"
       label_add_new: New SAML identity provider
@@ -64,16 +64,16 @@ en:
       attribute_mapping: Attribute mapping
       attribute_mapping_text: >
         The following fields control which attributes provided by the SAML identity provider
-        are used to provide user attributes in OpenProject
+        are used to provide user attributes in Yojana
       metadata:
-        dialog: "This is the URL where the OpenProject SAML metadata is available. Optionally use it to configure your identity provider:"
+        dialog: "This is the URL where the Yojana SAML metadata is available. Optionally use it to configure your identity provider:"
       upsell:
         title: "Single Sign-On (SSO) with SAML"
-        description: Connect OpenProject to a SAML identity provider
+        description: Connect Yojana to a SAML identity provider
       request_attributes:
         title: 'Requested attributes'
         legend: >
-          These attributes are added to the SAML XML metadata to signify to the identify provider which attributes OpenProject requires.
+          These attributes are added to the SAML XML metadata to signify to the identify provider which attributes Yojana requires.
           You may still need to explicitly configure your identity provider to send these attributes. Please refer to your IdP's documentation.
         name: 'Requested attribute key'
         format: 'Attribute format'
@@ -88,8 +88,8 @@ en:
         configuration: "Configure the endpoint URLs for the identity provider, certificates, and further SAML options."
         configuration_metadata: "This information has been pre-filled using the supplied metadata. In most cases, they do not require editing."
         encryption: "Configure assertion signatures and encryption for SAML requests and responses."
-        encryption_form: "You may optionally want to encrypt the assertion response, or have requests from OpenProject signed."
-        mapping: "Manually adjust the mapping between the SAML response and user attributes in OpenProject."
+        encryption_form: "You may optionally want to encrypt the assertion response, or have requests from Yojana signed."
+        mapping: "Manually adjust the mapping between the SAML response and user attributes in Yojana."
         requested_attributes: "Define the set of attributes to be requested in the SAML request sent to your identity provider."
       seeded_from_env: "This provider was seeded from the environment configuration. It cannot be edited."
     settings:
@@ -110,7 +110,7 @@ en:
       limit_self_registration: >
         If enabled users can only register using this provider if the self registration setting allows for it.
       sp_entity_id: >
-        The entity ID of the service provider (SP). Sometimes also referred to as Audience. This is the unique client identifier of the OpenProject instance.
+        The entity ID of the service provider (SP). Sometimes also referred to as Audience. This is the unique client identifier of the Yojana instance.
       idp_sso_service_url: >
         The URL of the identity provider login endpoint.
       idp_slo_service_url: >
@@ -121,11 +121,11 @@ en:
       name_identifier_format: >
         Set the name identifier format to be used for the SAML assertion.
       sp_metadata_endpoint: >
-        This is the URL where the OpenProject SAML metadata is available.
+        This is the URL where the Yojana SAML metadata is available.
         Optionally use it to configure your identity provider.
       mapping: >
-        Configure the mapping between the SAML response and user attributes in OpenProject.
-        You can configure multiple attribute names to look for. OpenProject will choose the first available attribute
+        Configure the mapping between the SAML response and user attributes in Yojana.
+        You can configure multiple attribute names to look for. Yojana will choose the first available attribute
         from the SAML response.
       mapping_login: >
         SAML attributes from the response used for the login.
@@ -140,25 +140,25 @@ en:
       request_uid: >
         SAML attribute to request for the internal user ID. By default, the name_id will be used for this field.
       requested_attributes: >
-        These attributes are added to the SAML request XML to communicate to the identity provider which attributes OpenProject requires.
+        These attributes are added to the SAML request XML to communicate to the identity provider which attributes Yojana requires.
       requested_format: >
         The format of the requested attribute. This is used to specify the format of the attribute in the SAML request.
         Please see [documentation on configuring requested attributes](docs_url) for more information.
       authn_requests_signed: >
-        If checked, OpenProject will sign the SAML AuthnRequest. You will have to provide a signing certificate and private key using the fields below.
+        If checked, Yojana will sign the SAML AuthnRequest. You will have to provide a signing certificate and private key using the fields below.
       want_assertions_signed: >
-        If checked, OpenProject will required signed responses from the identity provider using its own certificate keypair.
-        OpenProject will verify the signature against the certificate from the basic configuration section.
+        If checked, Yojana will required signed responses from the identity provider using its own certificate keypair.
+        Yojana will verify the signature against the certificate from the basic configuration section.
       want_assertions_encrypted: >
         If enabled, require the identity provider to encrypt the assertion response using the certificate pair that you provide.
       certificate: >
-        Enter the X509 PEM-formatted certificate used by OpenProject for signing SAML requests.
+        Enter the X509 PEM-formatted certificate used by Yojana for signing SAML requests.
       private_key: >
         Enter the X509 PEM-formatted private key for the above certificate. This needs to be an RSA private key.
       signature_method: >
-        Select the signature algorithm to use for the SAML request signature performed by OpenProject (Default: %{default_option}).
+        Select the signature algorithm to use for the SAML request signature performed by Yojana (Default: %{default_option}).
       digest_method: >
-        Select the digest algorithm to use for the SAML request signature performed by OpenProject (Default: %{default_option}).
+        Select the digest algorithm to use for the SAML request signature performed by Yojana (Default: %{default_option}).
       icon: >
         Optionally provide a public URL to an icon graphic that will be displayed next to the provider name.
       metadata_for_idp: >

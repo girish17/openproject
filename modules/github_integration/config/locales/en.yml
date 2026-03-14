@@ -50,15 +50,15 @@ en:
   notice_deploy_target_created: Deploy target created
   notice_deploy_target_destroyed: Deploy target deleted
   plugin_openproject_github_integration:
-    name: "OpenProject GitHub Integration"
-    description: "Integrates OpenProject and GitHub for a better workflow"
+    name: "Yojana GitHub Integration"
+    description: "Integrates Yojana and GitHub for a better workflow"
 
   project_module_github: "GitHub"
   permission_show_github_content: "Show GitHub content"
-  permission_introspection: Read running OpenProject core version and build SHA
+  permission_introspection: Read running Yojana core version and build SHA
   text_deploy_target_type_info: >
-    So far we only support OpenProject itself.
+    So far we only support Yojana itself.
   text_deploy_target_api_key_info: >
-    An OpenProject [API key](docs_url)
+    An Yojana [API key](docs_url)
     belonging to a user who has the global introspection permission.
   text_pull_request_deployed_to: "%{pr_link} deployed to %{deploy_target_link}"

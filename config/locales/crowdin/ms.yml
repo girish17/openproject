@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -111,12 +111,12 @@ ms:
         link: "webhook"
     mcp_configurations:
       index:
-        description: "The model context protocol allows AI agents to provide its users with tools and resources exposed by this OpenProject instance."
+        description: "The model context protocol allows AI agents to provide its users with tools and resources exposed by this Yojana instance."
         resources_heading: "Resources"
-        resources_description: "OpenProject implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
+        resources_description: "Yojana implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
         resources_submit: "Update resources"
         tools_heading: "Tools"
-        tools_description: "OpenProject implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url)."
+        tools_description: "Yojana implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url)."
         tools_submit: "Update tools"
       multi_update:
         success: "MCP configurations were updated successfully."
@@ -147,13 +147,13 @@ ms:
       edit:
         label_delete_scim_client: "Delete SCIM client"
       form:
-        auth_provider_description: "This is the service that users added by the SCIM provider will use to authenticate in OpenProject."
-        authentication_method_description_html: "This is how the SCIM client authenticates at OpenProject. Please ensure that OAuth tokens include the <code>scim_v2</code> scope."
+        auth_provider_description: "This is the service that users added by the SCIM provider will use to authenticate in Yojana."
+        authentication_method_description_html: "This is how the SCIM client authenticates at Yojana. Please ensure that OAuth tokens include the <code>scim_v2</code> scope."
         description: "Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options."
         jwt_sub_description: "For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case."
         name_description: "Choose a name that will help other admins better understand why this client was configured."
       index:
-        description: "SCIM clients configured here are able to interact with OpenProject SCIM server API to provision, update, and deprovision user accounts and groups."
+        description: "SCIM clients configured here are able to interact with Yojana SCIM server API to provision, update, and deprovision user accounts and groups."
         label_create_button: "Add SCIM client"
       new:
         title: "New SCIM client"
@@ -161,14 +161,14 @@ ms:
         confirm_button: "Tarik balik"
         title: "Revoke static token"
         heading: "Adakah anda pasti anda mahu membatalkan token ini?"
-        description: "The SCIM client that uses this token will no longer be able to access OpenProject's SCIM server API."
+        description: "The SCIM client that uses this token will no longer be able to access Yojana's SCIM server API."
       table_component:
         blank_slate:
           title: "No SCIM clients configured yet"
           description: "Add clients to see them here"
         user_count: "Pengguna-pengguna"
       token_list_component:
-        description: "The tokens you generate here can be passed by a SCIM client to access the OpenProject SCIM API."
+        description: "The tokens you generate here can be passed by a SCIM client to access the Yojana SCIM API."
         heading: "Tokens"
         label_add_token: "Token"
         label_aria_add_token: "Add token"
@@ -229,37 +229,37 @@ ms:
       name: Nama arbitrari sambungan LDAP
       host: Nama hos atau alamat IP LDAP
       login_map: Kunci atribut dalam LDAP yang digunakan untuk mengenal pasti log masuk pengguna yang unik. Biasanya, ini akan menjadi `uid` atau `samAccountName`.
-      generic_map: Kunci atribut LDAP yang telah dipetakan ke atribut `%{attribute}` OpenProject
-      admin_map_html: "Pilihan: Kunci atribut LDAP yang <strong>jika hadir</strong> menandakan pengguna OpenProject sebagai pentadbir. Biarkan kosong jika ragu-ragu."
+      generic_map: Kunci atribut LDAP yang telah dipetakan ke atribut `%{attribute}` Yojana
+      admin_map_html: "Pilihan: Kunci atribut LDAP yang <strong>jika hadir</strong> menandakan pengguna Yojana sebagai pentadbir. Biarkan kosong jika ragu-ragu."
       system_user_dn_html: |
         Enter the DN of the system user used for read-only access.
         <br>
-        Example: uid=openproject,ou=system,dc=example,dc=com
+        Example: uid=yojana,ou=system,dc=example,dc=com
       system_user_password: Masukkan kata laluan ikatan bagi pengguna sistem
       base_dn: |
-        Masukkan pangkalan DN dari subpokok LDAP yang anda mahukan di OpenProject untuk mencari pengguna dan kumpulan.
-        OpenProject akan menyaring nama pengguna yang disediakan di subpokok ini sahaja.
+        Masukkan pangkalan DN dari subpokok LDAP yang anda mahukan di Yojana untuk mencari pengguna dan kumpulan.
+        Yojana akan menyaring nama pengguna yang disediakan di subpokok ini sahaja.
         Contoh: ou=pengguna,dc=contoh,dc=com
       filter_string: |
         Tambah penyaring RFC4515 secara pilihan untuk digunakan pada hasil yang dikembalikan untuk pengguna yang disaring dalam LDAP.
-        Ini boleh digunakan untuk mengehadkan set pengguna yang ditemui oleh OpenProject untuk pengesahan dan sinkronisasi kumpulan.
+        Ini boleh digunakan untuk mengehadkan set pengguna yang ditemui oleh Yojana untuk pengesahan dan sinkronisasi kumpulan.
       filter_string_concat: |
-        OpenProject akan sentiasa menyaring atribut log masuk yang disediakan oleh pengguna untuk mengenal pasti rekod. Jika anda menyediakan penyaringan di sini, ia akan digabungkan ke satu AND. Secara default, tangkap semua (objekKelas=*) akan digunakan sebagai penyaring.
+        Yojana akan sentiasa menyaring atribut log masuk yang disediakan oleh pengguna untuk mengenal pasti rekod. Jika anda menyediakan penyaringan di sini, ia akan digabungkan ke satu AND. Secara default, tangkap semua (objekKelas=*) akan digunakan sebagai penyaring.
       onthefly_register: |
-        Jika anda menandakan kotak ini, OpenProject akan mencipta pengguna baharu secara automatik daripada entri LDAP mereka
-        apabila mereka pertama kali mengesahkan dengan OpenProject.
-        Biarkan kotak ini kosong untuk hanya membenarkan akaun sedia ada dalam OpenProject untuk mengesahkan melalui LDAP!
+        Jika anda menandakan kotak ini, Yojana akan mencipta pengguna baharu secara automatik daripada entri LDAP mereka
+        apabila mereka pertama kali mengesahkan dengan Yojana.
+        Biarkan kotak ini kosong untuk hanya membenarkan akaun sedia ada dalam Yojana untuk mengesahkan melalui LDAP!
     connection_encryption: "Penyulitan sambungan"
     encryption_details: "pilihan-pilihan LDAPS/STARTTTLS"
     system_account: "Akaun sistem"
     system_account_legend: |
-      OpenProject memerlukan akses baca-sahaja melalui akaun sistem untuk pencarian pengguna dan kumpulan dalam pokok LDAP anda.
+      Yojana memerlukan akses baca-sahaja melalui akaun sistem untuk pencarian pengguna dan kumpulan dalam pokok LDAP anda.
       Sila tetapkan kelayakan ikatan bagi pengguna sistem tersebut dalam bahagian berikutnya.
     ldap_details: "Butiran LDAP"
     user_settings: "Pemetaan atribut"
     user_settings_legend: |
-      Ruang berikut berkaitan tentang bagaimana pengguna dicipta dalam OpenProject daripada entri LDAP dan
-      atribut LDAP apa yang digunakan untuk menentukan atribut pengguna OpenProject (pemetaan atribut)
+      Ruang berikut berkaitan tentang bagaimana pengguna dicipta dalam Yojana daripada entri LDAP dan
+      atribut LDAP apa yang digunakan untuk menentukan atribut pengguna Yojana (pemetaan atribut)
     tls_mode:
       plain: "tiada"
       simple_tls: "LDAPS"
@@ -1495,7 +1495,7 @@ ms:
         confirmation: "tidak sepadan dengan %{attribute}."
         could_not_be_copied: "%{dependency} tidak dapat disalin (sepenuhnya)."
         does_not_exist: "tidak wujud."
-        error_enterprise_only: "%{action} is only available in the OpenProject Enterprise edition."
+        error_enterprise_only: "%{action} is only available in the Yojana Enterprise edition."
         error_unauthorized: "tidak boleh diakses."
         error_readonly: "telah cuba untuk menulis tetapi tidak dapat ditulis."
         error_conflict: "Sementara itu, maklumat telah dikemas kini oleh sekurang-kurangnya salah satu pengguna lain."
@@ -2104,7 +2104,7 @@ ms:
       heading_reset: "Set semula token sandaran"
       heading_create: "Cipta token sandaran"
       implications: >
-        Mengaktifkan sandaran akan membenarkan mana-mana pengguna dengan kebenaran yang diperlukan, dan token sandaran ini untuk memuat turun sandaran yang mengandungi semua data pemasangan OpenProject ini. Ini termasuk data semua pengguna.
+        Mengaktifkan sandaran akan membenarkan mana-mana pengguna dengan kebenaran yang diperlukan, dan token sandaran ini untuk memuat turun sandaran yang mengandungi semua data pemasangan Yojana ini. Ini termasuk data semua pengguna.
       info: >
         Anda perlu menghasilkan token sandaran untuk dapat mencipta sandaran. Setiap kali anda ingin meminta sandaran anda perlu menyediakan token ini. Anda boleh memadam token sandaran tersebut untuk menyahdayakan sandaran untuk pengguna ini.
       verification: >
@@ -2444,7 +2444,7 @@ ms:
         Already have a token? Add it using the button below to upgrade to the booked Enterprise plan.
       hide_banner: "Hide this banner"
       homescreen_description: >
-        Enterprise plans extend the Community edition of OpenProject with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running OpenProject in a mission-critical environment.
+        Enterprise plans extend the Community edition of Yojana with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running Yojana in a mission-critical environment.
       homescreen_subline: By upgrading, you will also be supporting an open source project.
       baseline_comparison:
         description: Sorotkan perubahan yang dibuat ke senarai ini pada bila-bila masa lalu.
@@ -2457,7 +2457,7 @@ ms:
         premium_features: "Tambahan Enterprise"
         premium_features_text: "Board Agile, tema tersuai dan logo, graf, aliran kerja yang cerdas dengan tindakan tersuai, carian teks penuh untuk lampiran pakej kerja dan pelbagai pilihan ruang tersuai."
         professional_support: "Sokongan profesional"
-        professional_support_text: "Dapatkan sokongan yang boleh dipercayai, sokongan peribadi yang berkualiti tinggi daripada jurutera sokongan berpengalaman dengan pengetahuan pakar tentang menjalankan OpenProject dalam persekitaran perniagaan yang kritikal."
+        professional_support_text: "Dapatkan sokongan yang boleh dipercayai, sokongan peribadi yang berkualiti tinggi daripada jurutera sokongan berpengalaman dengan pengetahuan pakar tentang menjalankan Yojana dalam persekitaran perniagaan yang kritikal."
       work_package_subject_generation:
         description: "Create automatically generated subjects using referenced attributes and text."
       customize_life_cycle:
@@ -2489,29 +2489,29 @@ ms:
       define_custom_style:
         title: "Custom color theme and logo"
         more_info: "Perhatian: logo yang digunakan akan boleh diakses secara umum."
-        description: Ubah suai pemasangan OpenProject dengan logo dan warna anda sendiri.
+        description: Ubah suai pemasangan Yojana dengan logo dan warna anda sendiri.
       custom_actions:
         title: "Tindakan tersuai"
         description: "Tindakan tersuai adalah pintasan satu klik ke satu set tindakan yang telah ditetapkan yang anda boleh sediakan untuk pakej kerja tertentu berdasarkan status, peranan, jenis atau projek."
       mcp_server:
-        description: "Integrate AI agents with your OpenProject instance through MCP."
+        description: "Integrate AI agents with your Yojana instance through MCP."
       nextcloud_sso:
         title: "Single Sign-On for Nextcloud Storage"
         description: "Enable seamless and secure authentication for your Nextcloud storage with Single Sign-On. Simplify access management and enhance user convenience."
       scim_api:
         title: "SCIM clients"
-        description: "Automate user management in OpenProject by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan."
+        description: "Automate user management in Yojana by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan."
       sso_auth_providers:
         title: "Single Sign-On (SSO)"
         description: "Enable users to log in via external SSO providers using SAML or OpenID Connect for seamless access and integration with existing identity systems."
       virus_scanning:
-        description: "Pastikan fail yang dimuat naik dalam OpenProject diimbas untuk virus sebelum boleh diakses oleh pengguna lain."
+        description: "Pastikan fail yang dimuat naik dalam Yojana diimbas untuk virus sebelum boleh diakses oleh pengguna lain."
       project_creation_wizard:
         description: "Generate a step-by-step wizard to help project managers fill out a project initiation request."
       placeholder_users:
         title: Pengguna placeholder
         description: >
-          Pengguna placeholder ialah satu cara untuk memperuntukkan pakej kerja kepada pengguna yang bukan sebahagian daripada projek anda. Ianya berguna dalam pelbagai senario; contohnya, jika anda perlu menjejaki tugas untuk sumber yang masih belum dinamakan atau disediakan, atau jika anda tidak ingin memberikan akses kepada seseorang di OpenProject, tetapi masih hendak menjejaki tugas yang telah diperuntukkan ke mereka.
+          Pengguna placeholder ialah satu cara untuk memperuntukkan pakej kerja kepada pengguna yang bukan sebahagian daripada projek anda. Ianya berguna dalam pelbagai senario; contohnya, jika anda perlu menjejaki tugas untuk sumber yang masih belum dinamakan atau disediakan, atau jika anda tidak ingin memberikan akses kepada seseorang di Yojana, tetapi masih hendak menjejaki tugas yang telah diperuntukkan ke mereka.
       internal_comments:
         title: Internal comments
         description: "Internal comments allow an internal team to communicate amongst themselves privately. These are only visible to certain project roles and will never be visible publicly."
@@ -2534,16 +2534,16 @@ ms:
       request_again: "Request again"
       resend_action: "Resend confirmation email"
       welcome_title: "Quick feature overview"
-      welcome_description: "Dapatkan gambaran keseluruhan ringkas pengurusan projek dan kolaborasi kumpulan dengan OpenProject edisi Enterprise."
+      welcome_description: "Dapatkan gambaran keseluruhan ringkas pengurusan projek dan kolaborasi kumpulan dengan Yojana edisi Enterprise."
       confirmation_info: >
-        We sent you an email on %{date} to %{email} with all the information to start the free trial of OpenProject Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
+        We sent you an email on %{date} to %{email} with all the information to start the free trial of Yojana Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
       confirmation_subline: >
         Please, check your inbox and follow the steps to start your 14-day free trial.
       domain_caption: The token will be valid for your currently configured host name.
       receive_newsletter_html: >
-        I want to receive the OpenProject <a target="_blank" href="https://www.openproject.org/newsletter/">newsletter</a>.
+        I want to receive the Yojana <a target="_blank" href="https://www.yojana.girishm.info/newsletter/">newsletter</a>.
       consent_html: >
-        I agree with the <a target="_blank" href="https://www.openproject.org/terms-of-service/">terms of service</a> and the <a target="_blank" href="https://www.openproject.org/data-privacy-and-security/">privacy policy</a>.
+        I agree with the <a target="_blank" href="https://www.yojana.girishm.info/terms-of-service/">terms of service</a> and the <a target="_blank" href="https://www.yojana.girishm.info/data-privacy-and-security/">privacy policy</a>.
   email_calendar_updates:
     state:
       disabled: "Disabled."
@@ -2576,7 +2576,7 @@ ms:
   error_check_user_and_role: "Sila pilih pengguna dan peranan."
   error_code: "Ralat %{code}"
   error_color_could_not_be_saved: "Warna tidak dapat disimpan"
-  error_cookie_missing: "Kuki OpenProject tidak ditemui. Sila pastikan bahawa kuki telah diaktifkan, kerana aplikasi ini tidak akan berfungsi dengan betul tanpanya."
+  error_cookie_missing: "Kuki Yojana tidak ditemui. Sila pastikan bahawa kuki telah diaktifkan, kerana aplikasi ini tidak akan berfungsi dengan betul tanpanya."
   error_custom_option_not_found: "Pilihan tidak wujud."
   error_enterprise_plan_needed: "You need the %{plan} enterprise plan to perform this action."
   error_enterprise_activation_user_limit: "Akaun anda tidak dapat diaktifkan (had pengguna dicapai). Sila hubungi pentadbir anda  untuk dapatkan akses."
@@ -2594,7 +2594,7 @@ ms:
   error_work_package_not_found_in_project: "Pakej kerja tidak ditemui atau tidak tergolong dalam projek ini"
   error_work_package_id_not_found: "Pakej kerja tidak ditemui."
   error_must_be_project_member: "perlu menjadi ahli projek"
-  error_migrations_are_pending: "Pemasangan OpenProject anda mempunyai migrasi pangkalan data yang belum selesai. Anda mungkin telah terlepas menjalankan migrasi semasa naik taraf terakhir anda. Sila semak panduan menaik taraf untuk menaikkan taraf pemasangan anda dengan betul."
+  error_migrations_are_pending: "Pemasangan Yojana anda mempunyai migrasi pangkalan data yang belum selesai. Anda mungkin telah terlepas menjalankan migrasi semasa naik taraf terakhir anda. Sila semak panduan menaik taraf untuk menaikkan taraf pemasangan anda dengan betul."
   error_migrations_visit_upgrade_guides: "Sila kunjungi dokumentasi panduan naik taraf kami"
   error_no_default_work_package_status: 'Tiada status pakej kerja default telah ditetapkan. Sila semak konfigurasi anda (Pergi ke "Pentadbiran -> Status pakej kerja").'
   error_no_type_in_project: "Tiada jenis yang berkaitan dengan projek ini. Sila semak tetapan Projek."
@@ -2705,7 +2705,7 @@ ms:
     failed: "Ralat telah berlaku semasa cuba mengeksport pakej kerja: %{message}"
     demo:
       heading: "Demo PDF"
-      footer: "Generated by OpenProject"
+      footer: "Generated by Yojana"
       button_text: Generate Demo PDF
     errors:
       embedded_table_with_too_many_columns: "This embedded work package table could not fit on the page, please reduce the number of columns."
@@ -2796,7 +2796,7 @@ ms:
       no_visible_projects: "Tiada projek yang dapat dilihat dalam contoh ini."
       users: "Pengguna berdaftar terbaru dalam contoh ini"
     blocks:
-      community: "Komuniti OpenProject"
+      community: "Komuniti Yojana"
       upsell:
         title: "Naik taraf ke edisi Enterprise"
       new_features:
@@ -2810,7 +2810,7 @@ ms:
           new_features_list:
             line_0: Automated project initiation (Enterprise add-on).
             line_1: "Meetings: add new or existing work packages as outcomes."
-            line_2: "Meetings: show iCal responses in OpenProject."
+            line_2: "Meetings: show iCal responses in Yojana."
             line_3: "Recurring meetings: duplicate agenda items to the next occurrence."
             line_4: "Release to Community: Attribute highlighting."
             line_5: Warning before opening external links in user-provided content (Enterprise add-on).
@@ -2823,7 +2823,7 @@ ms:
       impressum: "Notis undang-undang"
       glossary: "Glosari"
       shortcuts: "Pintasan"
-      blog: "Blog OpenProject"
+      blog: "Blog Yojana"
       forums: "Forum komuniti"
       security_alerts: "Security alerts"
       newsletter: "Newsletter"
@@ -2836,7 +2836,7 @@ ms:
       default_attribute_written: "Atribut baca-sahaja ditulis"
       progress_mode_changed_to_status_based: "Pengiraan perkembangan dikemas kini"
       status_changed: "Status '%{status_name}'"
-      system_update: "Kemas kini sistem OpenProject:"
+      system_update: "Kemas kini sistem Yojana:"
       work_package_duplicate_closed: "Pakej kerja pendua dikemas kini:"
       total_percent_complete_mode_changed_to_work_weighted_average: "Pengiraan % Jumlah lengkap kini ditimbang mengikut Kerja."
       total_percent_complete_mode_changed_to_simple_average: "Pengiraan % Jumlah lengkap sekarang berdasarkan purata mudah hanya % nilai Lengkap."
@@ -2892,7 +2892,7 @@ ms:
       label: "Add…"
   my_account:
     access_tokens:
-      description: "Provider tokens are issued by OpenProject, allowing other applications to access it. Client tokens are issued by other applications, allowing OpenProject to access them."
+      description: "Provider tokens are issued by Yojana, allowing other applications to access it. Client tokens are issued by other applications, allowing Yojana to access them."
       no_results:
         title: "Tiada token akses untuk dipaparkan"
         description: "Semuanya telah dinyahdayakan. Mereka boleh didayakan semula dalam menu pentadbiran."
@@ -2912,7 +2912,7 @@ ms:
         blank_title: "No API token"
         title: "API"
         table_title: "API tokens"
-        text_hint: "Token API membenarkan aplikasi pihak ketiga untuk berkomunikasi dengan OpenProject ini, contohnya, melalui REST API."
+        text_hint: "Token API membenarkan aplikasi pihak ketiga untuk berkomunikasi dengan Yojana ini, contohnya, melalui REST API."
         static_token_name: "API token"
         disabled_text: "Token API tidak didayakan oleh pentadbir. Sila hubungi pentadbir anda untuk menggunakan fitur ini."
         add_button: "API token"
@@ -2921,7 +2921,7 @@ ms:
         blank_title: "No iCalendar token"
         title: "iCalendar"
         table_title: "iCalendar tokens"
-        text_hint_link: "iCalendar tokens allow users to [subscribe to OpenProject calendars](docs_url) and view up-to-date work package information from external clients."
+        text_hint_link: "iCalendar tokens allow users to [subscribe to Yojana calendars](docs_url) and view up-to-date work package information from external clients."
         disabled_text: "Langganan iCalendar tidak didayakan oleh pentadbir. Sila hubungi pentadbir anda untuk menggunakan fitur ini."
       oauth_application:
         active_tokens: "Active tokens"
@@ -2930,14 +2930,14 @@ ms:
         last_used_at: "Last used at"
         title: "OAuth"
         table_title: "OAuth application tokens"
-        text_hint: "OAuth application tokens allow third-party applications to connect with this OpenProject instance."
+        text_hint: "OAuth application tokens allow third-party applications to connect with this Yojana instance."
       oauth_client:
         blank_description: "There are no OAuth client tokens yet."
         blank_title: "No OAuth client tokens"
         failed: "An error occurred and the token couldn't be removed. Please try again later."
         integration_type: "Integration type"
         table_title: "OAuth client tokens"
-        text_hint: "OAuth client tokens allow this OpenProject instance to connect with external applications, such as file storages."
+        text_hint: "OAuth client tokens allow this Yojana instance to connect with external applications, such as file storages."
         title: "OAuth"
         remove_token: "Do you really want to remove this token? You will need to login again on %{integration}."
         removed: "OAuth client token successfully removed"
@@ -2948,7 +2948,7 @@ ms:
         blank_title: "No RSS token"
         title: "RSS"
         table_title: "RSS tokens"
-        text_hint: "RSS tokens allow users to keep up with the latest changes in this OpenProject instance via an external RSS reader."
+        text_hint: "RSS tokens allow users to keep up with the latest changes in this Yojana instance via an external RSS reader."
         static_token_name: "RSS token"
         disabled_text: "RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature."
       storages:
@@ -3123,7 +3123,7 @@ ms:
   label_custom_field_plural: "Ruangan tersuai"
   label_custom_field_default_type: "Jenis kosong"
   label_custom_style: "Reka bentuk"
-  label_custom_style_description: "Pilih cara OpenProject melihat kepada anda dengan tema, pilih warna lalai anda untuk digunakan dalam apl dan rupa eksport."
+  label_custom_style_description: "Pilih cara Yojana melihat kepada anda dengan tema, pilih warna lalai anda untuk digunakan dalam apl dan rupa eksport."
   label_dashboard: "Papan Pemuka"
   label_database_version: "Versi PostgreSQL"
   label_date: "Tarikh"
@@ -3395,7 +3395,7 @@ ms:
   label_open_menu: "Buka menu"
   label_open_work_packages: "buka"
   label_open_work_packages_plural: "buka"
-  label_openproject_website: "Laman web OpenProject"
+  label_openproject_website: "Laman web Yojana"
   label_optional_description: "Deskripsi"
   label_options: "Pilihan"
   label_other: "Lain-lain"
@@ -3797,8 +3797,8 @@ ms:
   mail_body_backup_token_reset_user_info: Token sandaran anda telah ditetapkan semula.
   mail_body_backup_token_info: Token sebelumnya sudah tidak sah.
   mail_body_backup_waiting_period: Token baharu akan diaktifkan dalam %{hours} jam.
-  mail_body_backup_token_warning: Jika ini bukan anda, log masuk ke OpenProject dengan serta merta dan tetapkannya semula.
-  mail_body_incoming_email_error: E-mel yang anda hantar ke OpenProject tidak boleh diproses.
+  mail_body_backup_token_warning: Jika ini bukan anda, log masuk ke Yojana dengan serta merta dan tetapkannya semula.
+  mail_body_incoming_email_error: E-mel yang anda hantar ke Yojana tidak boleh diproses.
   mail_body_incoming_email_error_in_reply_to: "Di %{received_at} %{from_email} menulis"
   mail_body_incoming_email_error_logs: "Log"
   mail_body_lost_password: "Untuk menukar kata laluan, klik pautan berikut:"
@@ -3811,10 +3811,10 @@ ms:
   mail_body_register_user: "Kepada %{name},"
   mail_body_register_links_html: |
     Dengan rasa lapang, sila melayari saluran Youtube kami (%{youtube_link}), di mana kami akan menyediakan webinar (%{webinar_link})
-    dan video-video "Mari bermula" (%{get_started_link}) untuk membuat langkah pertama anda di OpenProject dengan mudah.
+    dan video-video "Mari bermula" (%{get_started_link}) untuk membuat langkah pertama anda di Yojana dengan mudah.
     <br />
     Jika anda mempunyai sebarang soalan, rujuklah dokumentasi kami (%{documentation_link}) atau hubungi pentadbir anda.
-  mail_body_register_closing: "Pasukan OpenProject anda"
+  mail_body_register_closing: "Pasukan Yojana anda"
   mail_body_register_ending: "Kekal berhubung! Yang benar, "
   mail_body_reminder: "%{count} pakej kerja yang ditugaskan kepada anda akan tamat dalam masa %{days} hari yang akan datang:"
   mail_body_group_reminder: '%{count} pakej kerja yang ditugaskan kepada kumpulan "%{group}" akan tamat dalam masa %{days} hari yang akan datang:'
@@ -3823,7 +3823,7 @@ ms:
   mail_subject_account_activation_request: "Permintaan pengaktifan akaun %{value}"
   mail_subject_backup_ready: "Sandaran anda telah siap"
   mail_subject_backup_token_reset: "Tetapkan semula token sandaran"
-  mail_subject_incoming_email_error: "E-mel yang anda hantar ke OpenProject tidak boleh diproses"
+  mail_subject_incoming_email_error: "E-mel yang anda hantar ke Yojana tidak boleh diproses"
   mail_subject_lost_password: "Kata laluan %{value} anda"
   mail_subject_register: "Pengaktifan akaun %{value} anda"
   mail_subject_wiki_content_added: "Halaman wiki '%{id}' telah ditambah"
@@ -3852,14 +3852,14 @@ ms:
   mail_user_activation_limit_reached:
     subject: Had pengaktifan pengguna dicapai
     message: |
-      Pengguna baharu (%{email}) telah cuba mencipta satu akaun pada persekitaran OpenProject yang anda uruskan (%{host}).
+      Pengguna baharu (%{email}) telah cuba mencipta satu akaun pada persekitaran Yojana yang anda uruskan (%{host}).
       Pengguna tersebut tidak dapat mengaktifkan akaun mereka kerana had pengguna telah dicapai.
     steps:
       label: "Untuk membenarkan pengguna untuk daftar masuk, anda juga boleh: "
       a: "Naik taraf pelan pembayaran anda ([di sini](upgrade_url))" #here turned into a link
       b: "Kunci atau padam pengguna sedia ada ([di sini](users_url))" #here turned into a link
   more_actions: "Lebih banyak fungsi"
-  noscript_description: "Anda perlu mengaktifkan JavaScript untuk menggunakan OpenProject!"
+  noscript_description: "Anda perlu mengaktifkan JavaScript untuk menggunakan Yojana!"
   noscript_heading: "JavaScript dinyahdayakan"
   noscript_learn_more: "Ketahui lebih lanjut"
   notice_accessibility_mode: Mod kebolehcapaian boleh didayakan dalam [tetapan akaun](url) anda.
@@ -3936,7 +3936,7 @@ ms:
   notice_wont_delete_auth_source: Sambungan LDAP tidak boleh dipadam sekiranya masih ada pengguna yang menggunakannya.
   notice_project_cannot_update_custom_fields: "Anda tidak boleh mengemas kini ruang tersuai tersedia projek. Projek tersebut tidak sah: %{errors}"
   notice_attachment_migration_wiki_page: >
-    Halaman ini dijanakan secara automatik semasa penaiktarafan OpenProject. Ia mengandungi semua lampiran yang sebelum ini berkaitan dengan %{container_type} "%{container_name}".
+    Halaman ini dijanakan secara automatik semasa penaiktarafan Yojana. Ia mengandungi semua lampiran yang sebelum ini berkaitan dengan %{container_type} "%{container_name}".
   #Default format for numbers
   number:
     format:
@@ -3958,7 +3958,7 @@ ms:
           tb: "TB"
   onboarding:
     heading_getting_started: "Dapatkan gambaran keseluruhan"
-    text_getting_started_description: "Dapatkan gambaran ringkas pengurusan projek dan kolaborasi kumpulan dengan OpenProject. Anda boleh mula semula video ini di menu bantuan."
+    text_getting_started_description: "Dapatkan gambaran ringkas pengurusan projek dan kolaborasi kumpulan dengan Yojana. Anda boleh mula semula video ini di menu bantuan."
     welcome: "Selamat datang ke %{app_title}"
     select_language: "Sila pilih bahasa anda"
   permission_add_work_package_comments: "Add comments"
@@ -4051,7 +4051,7 @@ ms:
   permission_view_all_principals_explanation: >
     Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
   permission_view_project: "Lihat projek"
-  permission_view_changesets: "Lihat semakan repositori dalam OpenProject"
+  permission_view_changesets: "Lihat semakan repositori dalam Yojana"
   permission_view_internal_comments: "View internal comments"
   permission_view_commit_author_statistics: "Lihat statistik pengarang komit"
   permission_view_dashboards: "Lihat papan pemuka"
@@ -4176,7 +4176,7 @@ ms:
     destroy:
       confirmation: "Jika anda teruskan, ini akan memadamkan repositori yang diuruskan selama-lamanya."
       info: "Memadam repositori tersebut adalah tindakan yang tidak dapat dipulihkan."
-      info_not_managed: "Perhatian: Ini TIDAK akan memadam kandungan repositori, kerana ia bukan diuruskan oleh OpenProject."
+      info_not_managed: "Perhatian: Ini TIDAK akan memadam kandungan repositori, kerana ia bukan diuruskan oleh Yojana."
       managed_path_note: "Direktori berikut akan dipadamkan: %{path}"
       repository_verification: "Masukkan pengenal projek %{identifier} untuk mengesahkan pemadaman repositorinya."
       subtitle: "Adakah anda benar-benar ingin memadam %{repository_type} projek %{project_name}?"
@@ -4190,8 +4190,8 @@ ms:
       empty_repository: "Repositori tersebut wujud, tetapi kosong. Ia tidak mengandungi sebarang semakan lagi."
       exists_on_filesystem: "Direktori repositori telah wujud dalam sistem fail."
       filesystem_access_failed: "Satu ralat berlaku semasa mengakses repositori dalam sistem fail: %{message}"
-      not_manageable: "Vendor repositori ini tidak boleh diuruskan oleh OpenProject."
-      path_permission_failed: "Ralat berlaku semasa percubaan membuat laluan berikut: %{path}. Sila pastikan OpenProject boleh menulis pada folder tersebut."
+      not_manageable: "Vendor repositori ini tidak boleh diuruskan oleh Yojana."
+      path_permission_failed: "Ralat berlaku semasa percubaan membuat laluan berikut: %{path}. Sila pastikan Yojana boleh menulis pada folder tersebut."
       unauthorized: "Anda tidak dibenarkan untuk mengakses repositori atau kelayakan tersebut tidak sah."
       unavailable: "Repositori tersebut tidak tersedia."
       exception_title: "Tidak boleh mengakses repositori tersebut: %{message}"
@@ -4208,9 +4208,9 @@ ms:
         path_encoding: "Mengatasi pengekodan laluan Git (Default: UTF-8)"
       local_title: "Pautkan repositori Git lokal sedia ada"
       local_url: "URL lokal"
-      local_introduction: "JIka anda mempunyai repositori Git sedia ada, anda boleh pautkan ia dengan OpenProject untuk mengaksesnya dari dalam aplikasi."
-      managed_introduction: "Biarkan OpenProject mencipta dan mengintegrasikan repositori Git lokal secara automatik."
-      managed_title: "Repositori Git diintegrasikan ke dalam OpenProject"
+      local_introduction: "JIka anda mempunyai repositori Git sedia ada, anda boleh pautkan ia dengan Yojana untuk mengaksesnya dari dalam aplikasi."
+      managed_introduction: "Biarkan Yojana mencipta dan mengintegrasikan repositori Git lokal secara automatik."
+      managed_title: "Repositori Git diintegrasikan ke dalam Yojana"
       managed_url: "URL yang diuruskan"
       path: "Laluan ke repositori Git"
       path_encoding: "Laluan pengekodan"
@@ -4227,24 +4227,24 @@ ms:
     scm_types:
       local: "Pautkan repositori lokal sedia ada"
       existing: "Pautkan repositori lokal"
-      managed: "Cipta repositori baharu dalam OpenProject"
+      managed: "Cipta repositori baharu dalam Yojana"
     storage:
       not_available: "Penggunaan storan cakera tidak tersedia untuk repositori."
       update_timeout: "Simpan informasi ruang cakera terakhir yang diperlukan untuk repositori selama N minit.\nMemandangkan pengiraan ruang cakera yang diperlukan bagi repositori mungkin mahal, tinggikan nilai ini untuk mengurangkan kesan prestasinya."
-      oauth_application_details: "Nilai rahsia pelanggan tidak akan dapat untuk diakses lagi setelah anda menutup tetingkap ini. Sila salin nilai-nilai ini ke tetapan Integrasi Nextcloud OpenProject:"
+      oauth_application_details: "Nilai rahsia pelanggan tidak akan dapat untuk diakses lagi setelah anda menutup tetingkap ini. Sila salin nilai-nilai ini ke tetapan Integrasi Nextcloud Yojana:"
       oauth_application_details_link_text: "Pergi ke halaman tetapan"
       setup_documentation_details: "Jika anda memerlukan bantuan mengkonfigurasikan storan fail baharu, sila lihat dokumentasi berikut:"
       setup_documentation_details_link_text: "File storages setup"
       show_warning_details: "Untuk gunakan storan fail ini, ingat untuk mengaktifkan modul dan storan khusus di tetapan projek setiap projek yang dikehendaki."
     subversion:
       existing_title: "Repositori Subversion sedia ada"
-      existing_introduction: "Jika anda mempunyai repositori Subversion sedia ada, anda boleh pautkan ia dengan OpenProject untuk mengaksesnya dari dalam aplikasi."
+      existing_introduction: "Jika anda mempunyai repositori Subversion sedia ada, anda boleh pautkan ia dengan Yojana untuk mengaksesnya dari dalam aplikasi."
       existing_url: "URL sedia ada"
       instructions:
         managed_url: "Ini ialah URL repositori Subversion yang telah dikendalikan (lokal)."
         url: "Masukkan URL repositori. Ia mungkin sama ada menyasarkan repositori lokal (bermula dengan %{local_proto} ), atau repositori jauh.\nSkim URL yang disokong adalah seperti berikut:"
-      managed_title: "Repositori Subversion diintegrasikan ke OpenProject"
-      managed_introduction: "Biarkan OpenProject mencipta dan mengintegrasikan repositori Subversion lokal secara automatik."
+      managed_title: "Repositori Subversion diintegrasikan ke Yojana"
+      managed_introduction: "Biarkan Yojana mencipta dan mengintegrasikan repositori Subversion lokal secara automatik."
       managed_url: "URL yang diuruskan"
       password: "Kata Laluan Repositori "
       username: " Nama Pengguna Repositori"
@@ -4277,7 +4277,7 @@ ms:
   setting_apiv3_cors_enabled: "Aktifkan CORS"
   setting_apiv3_cors_origins: "Asal yang dibenarkan Perkongsian Sumber Rentas Asal (CORS) API V3 "
   setting_apiv3_cors_origins_text_html: >
-    Jika CORS telah dibenarkan, ini ialah asal yang dibenarkan untuk mengakses API OpenProject. <br/> Sila semak dokumentasi <a href="%{origin_link}" target="_blank">di pengepala Asal </a> untuk cara nyatakan nilai-nilai yang dijangkakan.
+    Jika CORS telah dibenarkan, ini ialah asal yang dibenarkan untuk mengakses API Yojana. <br/> Sila semak dokumentasi <a href="%{origin_link}" target="_blank">di pengepala Asal </a> untuk cara nyatakan nilai-nilai yang dijangkakan.
   setting_apiv3_write_readonly_attributes: "Tulis akses pada atribut baca-sahaja"
   setting_apiv3_write_readonly_attributes_instructions: >
     If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
@@ -4474,7 +4474,7 @@ ms:
       omniauth_direct_login_hint_html: >
         Jika pilihan ini aktif, permintaan log masuk akan mengubah hala ke penyedia omniaut yang dikonfigurasikan. Halaman lungsur turun dan log masuk log masuk akan dilumpuhkan. <br/> <strong>Nota:</strong> Melainkan anda juga melumpuhkan log masuk kata laluan, dengan pilihan ini didayakan, pengguna masih boleh log masuk secara dalaman dengan melawati halaman log masuk <code>%{internal_path}</code>.
       remapping_existing_users_hint: >
-        If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the OpenProject instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
+        If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the Yojana instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
     attachments:
       whitelist_text_html: >
         Jelaskan senarai sambungan fail yang sah dan/atau jenis mime bagi fail yang telah dimuat naik. <br/> Masukkan sambungan fail (cth., <code>%{ext_example}</code>) atau jenis mime (cth., <code>%{mime_example}</code>). <br/> Tinggalkan kosong untuk benarkan sebarang jenis fail untuk dimuat naik. Pelbagai nilai juga dibenarkan. (satu baris untuk setiap nilai)
@@ -4498,7 +4498,7 @@ ms:
         clamav_socket_html: Masukkan soket ke clamd daemon, cth., %{example}
         clamav_host_html: Masukkan nama hos dan port ke clamd daemon dipisahkan dengan kolon. cth., %{example}
         description_html: >
-          Pilih mod di mana integrasi pengimbas antivirus perlu dioperasikan. <br/> <ul> <li><strong>%{disabled_option}</strong>: Fail yang telah dimuat naik belum diimbas untuk virus.</li> <li><strong>%{socket_option}</strong>: Anda telah tetapkan ClamAV di server sama seperti OpenProject dan imbasan daemon clamd sedang dilancarkan di latar belakang </li> <li><strong>%{host_option}</strong>: Anda sedang strim fail ke hos imbasan virus luaran.</li> </ul>
+          Pilih mod di mana integrasi pengimbas antivirus perlu dioperasikan. <br/> <ul> <li><strong>%{disabled_option}</strong>: Fail yang telah dimuat naik belum diimbas untuk virus.</li> <li><strong>%{socket_option}</strong>: Anda telah tetapkan ClamAV di server sama seperti Yojana dan imbasan daemon clamd sedang dilancarkan di latar belakang </li> <li><strong>%{host_option}</strong>: Anda sedang strim fail ke hos imbasan virus luaran.</li> </ul>
     brute_force_prevention: "Penyekatan pengguna secara automatik"
     date_format:
       first_date_of_week_and_year_set: >
@@ -4506,8 +4506,8 @@ ms:
       first_week_of_year_text_html: >
         Pilih tarikh pada Januari yang mengandungi minggu pertama dari tahun tersebut. Nilai ini sekali dengan hari pertama dari minggu tersebut menentukan jumlah mingguan dalam setahun. Untuk maklumat lanjut, sila lihat <a href="%{link}" target="_blank">dokumentasi kami</a>bagi topik ini.
     experimental:
-      save_confirmation: Awas! Risiko kehilangan data! Hanyalah aktifkan fitur eksperimen jika anda tidak keberatan melanggar pemasangan OpenProject anda dan kehilangan kesemua datanya.
-      warning_toast: Bendera fitur ialah tetapan yang mengaktifkan fitur yang masih dalam pembangunan. Ia hanyalah patut digunakan atas tujuan pemeriksaan. Ia tidak boleh diaktifkan pada pemasangan OpenProject yang memegang data penting. Fitur ini kemungkinan besar akan merosakkan data anda. Gunakannya dengan risiko anda sendiri.
+      save_confirmation: Awas! Risiko kehilangan data! Hanyalah aktifkan fitur eksperimen jika anda tidak keberatan melanggar pemasangan Yojana anda dan kehilangan kesemua datanya.
+      warning_toast: Bendera fitur ialah tetapan yang mengaktifkan fitur yang masih dalam pembangunan. Ia hanyalah patut digunakan atas tujuan pemeriksaan. Ia tidak boleh diaktifkan pada pemasangan Yojana yang memegang data penting. Fitur ini kemungkinan besar akan merosakkan data anda. Gunakannya dengan risiko anda sendiri.
       feature_flags: Bendera fitur
     general: "Umum"
     highlighting:
@@ -4518,7 +4518,7 @@ ms:
         type: "Keseluruhan baris mengikut Jenis"
         priority: "Keseluruhan baris mengikut Keutamaan"
     icalendar:
-      enable_subscriptions_text_html: "Benarkan pengguna dengan kebenaran yang diperlukan untuk melanggan kalendar OpenProject dan akses maklumat pakej kerja melalui kalendar pelanggan luaran.\n<strong>Perhatian:</strong> Sila baca tentang <a href=\"%{link}\" target=\"_blank\">langganan iCalendar</a> untuk fahami tentang potensi risiko keselamatan sebelum membenarkannya."
+      enable_subscriptions_text_html: "Benarkan pengguna dengan kebenaran yang diperlukan untuk melanggan kalendar Yojana dan akses maklumat pakej kerja melalui kalendar pelanggan luaran.\n<strong>Perhatian:</strong> Sila baca tentang <a href=\"%{link}\" target=\"_blank\">langganan iCalendar</a> untuk fahami tentang potensi risiko keselamatan sebelum membenarkannya."
     language_name_being_default: "%{language_name} (default)"
     notifications:
       events_explanation: "Tetapkan mana-mana peristiwa untuk e-mel dihantar keluar. Pakej kerja dikecualikan daripada senarai ini kerana pemberitahuannya boleh dikonfigurasikan khusus ke setiap pengguna."
@@ -4552,7 +4552,7 @@ ms:
               description: "Add all the project attributes in a section inside the right side panel in the project overview."
     project_initiation_request:
       header_description: >
-        OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
+        Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
       status:
         submitted: "%{wizard_name} has been submitted"
         submitted_description: "Click the button below to go to the work package for the submission process."
@@ -4565,7 +4565,7 @@ ms:
         project_mandate: "Open project mandate"
       blankslate:
         title: "Initiation request not enabled"
-        description: "OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard."
+        description: "Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard."
       disable_dialog:
         title: "Disable project initiation request"
         heading: "Disable this project initiation request?"
@@ -4646,7 +4646,7 @@ ms:
       sentence_connector: "dan"
       skip_last_comma: "palsu"
   text_accessibility_hint: "Mod kebolehcapaian direka untuk pengguna yang buta, kurang upaya atau yang mempunyai masalah penglihatan. Untuk yang kemudian, unsur yang difokuskan ditekankan secara khusus. Harap maklum, modul Tunggakan tersebut tidak tersedia dalam mod ini."
-  text_access_token_hint: "Token akses membenarkan anda untuk memberikan aplikasi luaran akses kepada sumber data OpenProject."
+  text_access_token_hint: "Token akses membenarkan anda untuk memberikan aplikasi luaran akses kepada sumber data Yojana."
   text_analyze: "Analisis selanjutnya: %{subject}"
   text_are_you_sure: "Adakah anda pasti?"
   open_link_in_a_new_tab: "Open link in a new tab"
@@ -4745,7 +4745,7 @@ ms:
   text_no_notes: "Tiada komen yang tersedia untuk pakej kerja ini."
   text_notice_too_many_values_are_inperformant: "Perhatian: Memaparkan lebih daripada 100 item setiap halaman akan meningkatkan masa muat halaman."
   text_notice_security_badge_displayed_html: >
-    Perhatian: jika dibenarkan, ini akan paparkan lambang bersertaan status pemasangan di <a href="%{information_panel_path}">%{information_panel_label}</a> panel pentadbiran, dan di halaman utama. Ia hanya akan dipaparkan ke para pentadbir sahaja. <br/> Lambang tersebut akan menyemak versi OpenProject terkini anda terhadap pangkalan data keluaran rasmi OpenProject untuk memaklumkan anda tentang sebarang kemas kini atau kelemahan yang diketahui. Untuk maklumat lanjut bagi penyediaan semakan, data apa yang diperlukan untuk menyediakan kemas kini tersedia, dan bagaimana untuk menyahaktifkan semakan ini, sila kunjungi <a href="%{more_info_url}">dokumentasi konfigurasi</a>.
+    Perhatian: jika dibenarkan, ini akan paparkan lambang bersertaan status pemasangan di <a href="%{information_panel_path}">%{information_panel_label}</a> panel pentadbiran, dan di halaman utama. Ia hanya akan dipaparkan ke para pentadbir sahaja. <br/> Lambang tersebut akan menyemak versi Yojana terkini anda terhadap pangkalan data keluaran rasmi Yojana untuk memaklumkan anda tentang sebarang kemas kini atau kelemahan yang diketahui. Untuk maklumat lanjut bagi penyediaan semakan, data apa yang diperlukan untuk menyediakan kemas kini tersedia, dan bagaimana untuk menyahaktifkan semakan ini, sila kunjungi <a href="%{more_info_url}">dokumentasi konfigurasi</a>.
   text_own_membership_delete_confirmation: "Anda akan mengeluarkan beberapa atau semua kebenaran anda dan mungkin tidak lagi dapat mengedit projek ini selepas itu.\nAdakah anda pasti anda ingin teruskan?"
   text_permanent_delete_confirmation_checkbox_label: "I understand that this deletion cannot be reversed"
   text_permanent_remove_confirmation_checkbox_label: "I understand that this removal cannot be reversed"
@@ -4755,7 +4755,7 @@ ms:
   text_reassign: "Tugaskan semula ke pakej kerja:"
   text_regexp_info: "cth. ^[A-Z0-9]+$"
   text_regexp_multiline: 'Regex digunakan dalam mod berbilang baris. cth., ^---\s+'
-  text_repository_usernames_mapping: "Pilih atau kemas kini pengguna OpenProject yang dipetakan ke setiap nama pengguna yang ditemui dalam log repositori.\nPengguna dengan OpenProject dan nama pengguna repositori atau e-mel yang sama dipetakan secara automatik. "
+  text_repository_usernames_mapping: "Pilih atau kemas kini pengguna Yojana yang dipetakan ke setiap nama pengguna yang ditemui dalam log repositori.\nPengguna dengan Yojana dan nama pengguna repositori atau e-mel yang sama dipetakan secara automatik. "
   text_status_changed_by_changeset: "Dilaksanakan dalam set perubahan %{value}."
   text_table_difference_description: "Dalam jadual ini, %{entries} yang tunggal dipaparkan. Anda boleh lihat perbezaan antara mana-mana dua entri dengan mula memilih kotak penyemakan dalam jadual. Apabila butang di bawah jadual ditekan, perbezaan akan ditunjukkan."
   text_time_logged_by_changeset: "Dilaksanakan dalam set perubahan %{value}."
@@ -4830,7 +4830,7 @@ ms:
     authentication_provider: "Penyedia Pengesahan"
     identity_url_text: "Pengenal unik dalaman disediakan oleh pemberi pengesahan."
     authentication_settings_disabled_due_to_external_authentication: >
-      Pengguna ini mengesahkan melalui penyedia pengesahan luaran, jadi tiada kata laluan dalam OpenProject untuk diubah.
+      Pengguna ini mengesahkan melalui penyedia pengesahan luaran, jadi tiada kata laluan dalam Yojana untuk diubah.
     authorization_rejected: "Anda tidak dibenarkan untuk daftar masuk."
     assign_random_password: "Tetapkan kata laluan rawak (dihantar ke pengguna melalui e-mel)"
     blocked: "dikunci sementara"
@@ -4863,7 +4863,7 @@ ms:
   warning: Amaran
   warning_attachments_not_saved: "%{count} fail tidak dapat disimpan."
   warning_imminent_user_limit: >
-    Anda menjemput pengguna lebih dari yang disokong pelan semasa anda. Pengguna yang dijemput mungkin tidak dapat sertai persekitaran OpenProject anda. Sila <a href="%{upgrade_url}">naik taraf pelan anda</a> atau sekat pengguna sedia ada untuk membenarkan pengguna yang dijemput dan berdaftar untuk menyertai.
+    Anda menjemput pengguna lebih dari yang disokong pelan semasa anda. Pengguna yang dijemput mungkin tidak dapat sertai persekitaran Yojana anda. Sila <a href="%{upgrade_url}">naik taraf pelan anda</a> atau sekat pengguna sedia ada untuk membenarkan pengguna yang dijemput dan berdaftar untuk menyertai.
   warning_registration_token_expired: |
     Pengaktifan e-mel telah tamat tempoh. Kami telah hantar yang baharu kepada anda di %{email}.
     Sila klik pautan di dalamnya untuk mengaktifkan akaun anda.
@@ -4872,7 +4872,7 @@ ms:
   warning_user_limit_reached_admin: >
     Menambah pengguna tambahan akan melebihi had semasa. Sila <a href="%{upgrade_url}">naik taraf pelan anda</a> bagi memastikan pengguna luaran dapat mengakses contoh ini.
   warning_user_limit_reached_instructions: >
-    Anda telah mencapai had pengguna anda (%{current}/%{max} pengguna aktif). Sila hubungi sales@openproject.com untuk menaik taraf pelan edisi Enterprise anda dan tambah pengguna tambahan.
+    Anda telah mencapai had pengguna anda (%{current}/%{max} pengguna aktif). Sila hubungi sales@girishm.info untuk menaik taraf pelan edisi Enterprise anda dan tambah pengguna tambahan.
   warning_protocol_mismatch_html: >
 
   warning_bar:
@@ -5145,7 +5145,7 @@ ms:
         confidential: "Semak jika aplikasi akan digunakan dimana rahsia pelanggan boleh dikekalkan sulit. Aplikasi mudah alih asal dan Single Page Apps dianggap sebagai tidak sulit."
         scopes: "Tandakan skop yang anda mahu untuk berikan akses ke aplikasi tersebut. Jika tiada skop ditandakan, api_v3 akan diandaikan."
         client_credential_user_id: "ID pengguna pilihan untuk menyamar apabila pelanggan menggunakan aplikasi ini. Tinggalkan kosong untuk benarkan akses awam sahaja."
-        register_intro: "Jika anda sedang membangunkan aplikasi pelanggan API OAuth untuk OpenProject, anda boleh mendaftarkannya menggunakan borang ini untuk semua pengguna menggunakannya."
+        register_intro: "Jika anda sedang membangunkan aplikasi pelanggan API OAuth untuk Yojana, anda boleh mendaftarkannya menggunakan borang ini untuk semua pengguna menggunakannya."
         default_scopes: ""
     header:
       builtin_applications: Aplikasi OAuth terbina dalam
@@ -5153,17 +5153,17 @@ ms:
     empty_application_lists: Tiada aplikasi OAuth telah didaftarkan.
     client_id: "ID pelanggan"
     client_secret_notice: >
-      Ini adalah satu-satunya masa di mana kita boleh mencetak rahsia pelanggan, sila catat dan simpankan ia dengan selamat. Ia perlu diperlakukan sebagai sebuah kata laluan dan tidak boleh dipulihkan oleh OpenProject pada masa kemudian.
+      Ini adalah satu-satunya masa di mana kita boleh mencetak rahsia pelanggan, sila catat dan simpankan ia dengan selamat. Ia perlu diperlakukan sebagai sebuah kata laluan dan tidak boleh dipulihkan oleh Yojana pada masa kemudian.
     authorization_dialog:
       authorize: "Benarkan"
       cancel: "Batal dan nafikan kebenaran."
       prompt_html: "Benarkan <strong>%{application_name}</strong> untuk menggunakan akaun anda <em>%{login}</em>?"
       title: "Benarkan %{application_name}"
       wants_to_access_html: >
-        Aplikasi ini meminta akses ke akaun OpenProject anda. <br/> <strong>Ia telah meminta kebenaran yang berikut:</strong>
+        Aplikasi ini meminta akses ke akaun Yojana anda. <br/> <strong>Ia telah meminta kebenaran yang berikut:</strong>
     scopes:
       api_v3: "Akses API v3 penuh"
-      api_v3_text: "Aplikasi akan menerima akses penuh baca & tulis di OpenProject API v3 untuk melaksanakan tindakan bagi pihak anda."
+      api_v3_text: "Aplikasi akan menerima akses penuh baca & tulis di Yojana API v3 untuk melaksanakan tindakan bagi pihak anda."
     grants:
       created_date: "Diluluskan pada"
       scopes: "Kebenaran"
@@ -5178,7 +5178,7 @@ ms:
     client_credentials_impersonation_set_to: "Pengguna kelayakan pelanggan ditetapkan kepada"
     client_credentials_impersonation_warning: "Perhatian: Pelanggan yang menggunakan aliran 'Kelayakan Pelanggan' dalam aplikasi ini akan mempunyai hak pengguna ini."
     client_credentials_impersonation_html: >
-      Secara default, OpenProject menyediakan kebenaran OAuth 2.0 melalui %{authorization_code_flow_link}. Anda boleh memilih untuk mengaktifkan %{client_credentials_flow_link}, tetapi anda mesti menyediakan pengguna yang akan mewakili permintaan.
+      Secara default, Yojana menyediakan kebenaran OAuth 2.0 melalui %{authorization_code_flow_link}. Anda boleh memilih untuk mengaktifkan %{client_credentials_flow_link}, tetapi anda mesti menyediakan pengguna yang akan mewakili permintaan.
     authorization_error: "Sebuah ralat kebenaran telah berlaku."
     revoke_my_application_confirmation: "Adakah anda benar-benar mahu memadam aplikasi ini? Ini akan menarik balik %{token_count} yang aktif darinya."
     my_registered_applications: "Aplikasi OAuth berdaftar"
@@ -5213,14 +5213,14 @@ ms:
         Ralat ini muncul jika anda telah memilih response_type yang salah dalam pembekal OAuth2. Response_type perlu 'kod' atau serupa.
       oauth_state_not_present: "'Kondisi' OAuth2 tidak ditemui dalam titik terakhir 'panggilan balik' (ubah hala_url)."
       oauth_state_not_present_explanation: >
-        'Kondisi' digunakan untuk menunjukkan ke OpenProject tempat untuk meneruskan selepas kebenaran OAuth2 berjaya. Ketiadaan 'kondisi' adalah ralat dalaman yang mungkin muncul semasa penyediaan. Sila hubungi pentadbir sistem anda.
+        'Kondisi' digunakan untuk menunjukkan ke Yojana tempat untuk meneruskan selepas kebenaran OAuth2 berjaya. Ketiadaan 'kondisi' adalah ralat dalaman yang mungkin muncul semasa penyediaan. Sila hubungi pentadbir sistem anda.
       rack_oauth2:
         client_secret_invalid: "Rahsia pelanggan adalah tidak sah (rahsia_pelanggan_tidak sah)"
         invalid_request: >
           Server Pengesahan OAuth2 menjawab dengan 'permintaan_tidak sah'. Ralat ini muncul jika anda cuba untuk mendapatkan kebenaran beberapa kali atau dalam kes masalah teknikal.
         invalid_response: "Server Pengesahan OAuth2 menyediakan tindak balas yang tidak sah (respons_tidak sah)"
         invalid_grant: "Server Pengesahan OAuth2 tersebut meminta anda untuk mengesahkan semula (pemberian_tidak sah)."
-        invalid_client: "Server Pengesahan OAuth2 tidak mengenali OpenProject (pelanggan_tidak sah)."
+        invalid_client: "Server Pengesahan OAuth2 tidak mengenali Yojana (pelanggan_tidak sah)."
         unauthorized_client: "Server Pengesahan OAuth2 tersebut menolak jenis pemberian (pelanggan_tidak berkebenaran)"
         unsupported_grant_type: "Server Pengesahan OAuth2 tersebut meminta anda untuk mengesahkan semula (jenis_pemberian_tidak disokong)."
         invalid_scope: "Anda tidak dibenarkan untuk mengakses sumber yang diminta (skop_tidak sah)."
@@ -5233,18 +5233,18 @@ ms:
   you: anda
   link: pautan
   plugin_openproject_auth_plugins:
-    name: "Plugin Auth OpenProject"
-    description: "Integrasi penyedia strategi OmniAuth untuk pengesahan dalam OpenProject."
+    name: "Plugin Auth Yojana"
+    description: "Integrasi penyedia strategi OmniAuth untuk pengesahan dalam Yojana."
   plugin_openproject_auth_saml:
     name: "SAML OmniAuth / Daftar Masuk Tunggal"
-    description: "Tambah penyediaan SAML OmniAuth ke OpenProject"
+    description: "Tambah penyediaan SAML OmniAuth ke Yojana"
   enterprise_plans:
     legacy_enterprise: "Enterprise Plan"
   token:
     hashed_token:
       display_value_placeholder: "***"
   external_link_warning:
-    title: "Leaving OpenProject"
-    warning_message: "You are about to leave OpenProject and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies."
+    title: "Leaving Yojana"
+    warning_message: "You are about to leave Yojana and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies."
     continue_message: "Are you sure you want to proceed to the following external link?"
     continue_button: "Continue to external website"

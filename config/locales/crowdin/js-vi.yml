@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -505,7 +505,7 @@ vi:
         next: "Tiếp"
         got_it: "Hiểu rồi"
       steps:
-        help_menu: "Menu Trợ giúp (?) cung cấp <b>các tài nguyên trợ giúp bổ sung</b>. Tại đây bạn có thể tìm thấy hướng dẫn người dùng, video hướng dẫn hữu ích và nhiều hơn nữa. <br> Chúc bạn làm việc vui vẻ với OpenProject!"
+        help_menu: "Menu Trợ giúp (?) cung cấp <b>các tài nguyên trợ giúp bổ sung</b>. Tại đây bạn có thể tìm thấy hướng dẫn người dùng, video hướng dẫn hữu ích và nhiều hơn nữa. <br> Chúc bạn làm việc vui vẻ với Yojana!"
         members: "Mời <b>thành viên</b> mới tham gia dự án của bạn."
         quick_add_button: "Nhấp vào biểu tượng dấu cộng (+) trong điều hướng tiêu đề để <b>tạo dự án mới</b> hoặc để <b>mời đồng nghiệp</b>."
         sidebar_arrow: "Sử dụng mũi tên quay lại ở góc trên cùng bên trái để quay lại <b>menu chính</b> của dự án."
