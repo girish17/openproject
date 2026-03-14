@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -57,7 +57,7 @@ ro:
         '
       last_backup: Ultima copie de rezervă
       last_backup_from: Ultima copie de rezervă
-      title: Copie de rezervă OpenProject
+      title: Copie de rezervă Yojana
       options: Opțiuni
       include_attachments: Include atașamente
       download_backup: Descarcă backup
@@ -494,12 +494,18 @@ ro:
         next: Înainte
         got_it: Am înțeles
       steps:
-        help_menu: Meniul Ajutor (?) oferă <b>resurse suplimentare de ajutor</b>. Aici puteți găsi un ghid de utilizator, un ghid util pentru videoclipuri și multe altele. <br> Bucurați-vă de munca dumneavoastră cu OpenProject!
-        members: Invitați noi <b>membri</b> să se alăture proiectului dumneavoastră.
-        quick_add_button: Dă click pe pictograma plus (+) din antetul navigării pentru a <b>crea un nou proiect</b> sau <b>invita colaboratori</b>.
-        sidebar_arrow: Folosește săgeata de întoarcere din colțul din stânga sus pentru a te întoarce în meniul <b>al proiectului</b>.
-        welcome: Take a three-minute introduction tour to learn the most <b>important features</b>. <br> We recommend completing the steps until the end. You can restart the tour any time.
-        wiki: În cadrul <b>Wiki</b> puteți documenta și împărtăși cunoștințe împreună cu echipa dumneavoastră.
+        help_menu: "Meniul Ajutor (?) oferă <b>resurse suplimentare de ajutor</b>. Aici puteți găsi un ghid de utilizator, un ghid util pentru videoclipuri și multe altele. <br> Bucurați-vă de munca dumneavoastră cu Yojana!"
+        members: "Invitați noi <b>membri</b> să se alăture proiectului dumneavoastră."
+        quick_add_button: "Dă click pe pictograma plus (+) din antetul navigării pentru a <b>crea un nou proiect</b> sau <b>invita colaboratori</b>."
+        sidebar_arrow: "Folosește săgeata de întoarcere din colțul din stânga sus pentru a te întoarce în meniul <b>al proiectului</b>."
+        welcome: "Take a three-minute introduction tour to learn the most <b>important features</b>. <br> We recommend completing the steps until the end. You can restart the tour any time."
+        wiki: "În cadrul <b>Wiki</b> puteți documenta și împărtăși cunoștințe împreună cu echipa dumneavoastră."
+        backlogs:
+          overview: "Gestionează-ți munca în vizualizarea <b>backlogs</b>."
+          sprints: "În dreapta aveți lista de rezultate și erorile restante, în stânga aveți sprintele respective. Aici poți crea <b>epicuri, povestiri pentru utilizatori și erori</b>, prioritizează prin drag & drop și adaugă-le la un sprint."
+          task_board_arrow: "Pentru a vedea <b>panoul de sarcini</b>, deschideți meniul Sprint..."
+          task_board_select: "... și selectați intrarea <b>Task board</b>."
+          task_board: "Grupul de lucru vizualizează progresul <b>pentru această iterație</b>. Dă click pe pictograma plus (+) de lângă o cerință de utilizator pentru a adăuga sarcini noi sau impedimente. <br> Starea poate fi actualizată cu glisare și plasare."
         boards:
           overview: Selectează secțiunile <b></b> pentru a schimba vizualizarea și administrarea proiectului tău folosind vizualizarea secțiunilor agile.
           lists_kanban: Aici puteţi crea mai multe liste (coloane) în cadrul secţiunii. Această funcţie vă permite să creaţi o <b>tabelă Kanban</b>, de exemplu.

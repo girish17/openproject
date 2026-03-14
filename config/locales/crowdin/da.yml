@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -348,13 +348,13 @@ da:
         unknown_name: Unknown
     mcp_configurations:
       index:
-        description: The model context protocol allows AI agents to provide its users with tools and resources exposed by this OpenProject instance. This feature is still in beta.
-        resources_heading: Resources
-        resources_description: OpenProject implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url).
-        resources_submit: Update resources
-        tools_heading: Tools
-        tools_description: OpenProject implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url).
-        tools_submit: Update tools
+        description: "The model context protocol allows AI agents to provide its users with tools and resources exposed by this Yojana instance."
+        resources_heading: "Resources"
+        resources_description: "Yojana implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
+        resources_submit: "Update resources"
+        tools_heading: "Tools"
+        tools_description: "Yojana implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url)."
+        tools_submit: "Update tools"
       multi_update:
         success: MCP configurations were updated successfully.
       server_form:
@@ -397,31 +397,31 @@ da:
       edit:
         label_delete_scim_client: Delete SCIM client
       form:
-        auth_provider_description: This is the service that users added by the SCIM provider will use to authenticate in OpenProject.
-        authentication_method_description_html: This is how the SCIM client authenticates at OpenProject. Please ensure that OAuth tokens include the <code>scim_v2</code> scope.
-        description: Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options.
-        jwt_sub_description: For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case.
-        name_description: Choose a name that will help other admins better understand why this client was configured.
+        auth_provider_description: "This is the service that users added by the SCIM provider will use to authenticate in Yojana."
+        authentication_method_description_html: "This is how the SCIM client authenticates at Yojana. Please ensure that OAuth tokens include the <code>scim_v2</code> scope."
+        description: "Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options."
+        jwt_sub_description: "For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case."
+        name_description: "Choose a name that will help other admins better understand why this client was configured."
       index:
-        description: SCIM clients configured here are able to interact with OpenProject SCIM server API to provision, update, and deprovision user accounts and groups.
-        label_create_button: Add SCIM client
+        description: "SCIM clients configured here are able to interact with Yojana SCIM server API to provision, update, and deprovision user accounts and groups."
+        label_create_button: "Add SCIM client"
       new:
         title: New SCIM client
       revoke_static_token_dialog_component:
-        confirm_button: Revoke
-        title: Revoke static token
-        heading: Are you sure you want to revoke this token?
-        description: The SCIM client that uses this token will no longer be able to access OpenProject's SCIM server API.
+        confirm_button: "Revoke"
+        title: "Revoke static token"
+        heading: "Are you sure you want to revoke this token?"
+        description: "The SCIM client that uses this token will no longer be able to access Yojana's SCIM server API."
       table_component:
         blank_slate:
           title: No SCIM clients configured yet
           description: Add clients to see them here
         user_count: Brugere
       token_list_component:
-        description: The tokens you generate here can be passed by a SCIM client to access the OpenProject SCIM API.
-        heading: Tokens
-        label_add_token: Token
-        label_aria_add_token: Add token
+        description: "The tokens you generate here can be passed by a SCIM client to access the Yojana SCIM API."
+        heading: "Tokens"
+        label_add_token: "Token"
+        label_aria_add_token: "Add token"
       token_table_component:
         blank_slate:
           title: No tokens have been created yet
@@ -564,37 +564,36 @@ da:
       name: Vilkårlig navn på LDAP- forbindelsen
       host: LDAP værtsnavn eller IP-adresse
       login_map: Attributnøglen i LDAP, der bruges til at identificere det unikke bruger-login. Normalt vil dette være 'uid' eller 'samAccountName'.
-      generic_map: Attributten i LDAP, der er knyttet til attributten OpenProject `%{attribute}`
-      admin_map_html: 'Valgfri: Attribut nøglen i LDAP, som <strong>, hvis nuværende</strong> markerer OpenProject brugeren en admin. Efterlad blank når du er i tvivl.'
+      generic_map: Attributten i LDAP, der er knyttet til attributten Yojana `%{attribute}`
+      admin_map_html: "Valgfri: Attribut nøglen i LDAP, som <strong>, hvis nuværende</strong> markerer Yojana brugeren en admin. Efterlad blank når du er i tvivl."
       system_user_dn_html: |
         Enter the DN of the system user used for read-only access.
         <br>
-        Example: uid=openproject,ou=system,dc=example,dc=com
+        Example: uid=yojana,ou=system,dc=example,dc=com
       system_user_password: Indtast bind kodeordet for systembrugeren
       base_dn: |
-        Indtast Base DN for undertræet i LDAP, du vil have OpenProject til at søge efter brugere og grupper.
-        OpenProject vil kun filtrere for angivne brugernavne i dette undertræ.
+        Indtast Base DN for undertræet i LDAP, du vil have Yojana til at søge efter brugere og grupper.
+        Yojana vil kun filtrere for angivne brugernavne i dette undertræ.
         Eksempel: ou=users,dc=example,dc=com
       filter_string: |
         Add an optional RFC4515 filter to apply to the results returned for users filtered in the LDAP.
-        This can be used to restrict the set of users that are found by OpenProject for authentication and group synchronization.
+        This can be used to restrict the set of users that are found by Yojana for authentication and group synchronization.
       filter_string_concat: |
-        OpenProject will always filter for the login attribute provided by the user to identify the record. If you provide a filter here,
+        Yojana will always filter for the login attribute provided by the user to identify the record. If you provide a filter here,
         it will be concatenated with an AND. By default, a catch-all (objectClass=*) will be used as a filter.
       onthefly_register: |
-        Hvis du markerer dette felt, vil OpenProject automatisk oprette nye brugere fra deres LDAP-poster, når de først autentificerer med OpenProject.
-        Undlad at markere dette for kun at tillade eksisterende konti i OpenProject at godkende via LDAP!
-    connection_encryption: Forbindelseskryptering
-    encryption_details: LDAPS / STARTTLS options
-    system_account: System konto
+        Hvis du markerer dette felt, vil Yojana automatisk oprette nye brugere fra deres LDAP-poster, når de først autentificerer med Yojana.
+        Undlad at markere dette for kun at tillade eksisterende konti i Yojana at godkende via LDAP!
+    connection_encryption: "Forbindelseskryptering"
+    encryption_details: "LDAPS / STARTTLS options"
+    system_account: "System konto"
     system_account_legend: |
-      OpenProject kræver skrivebeskyttet adgang gennem en systemkonto for at slå brugere og grupper op i dit LDAP-træ.
+      Yojana kræver skrivebeskyttet adgang gennem en systemkonto for at slå brugere og grupper op i dit LDAP-træ.
       Angiv venligst de bind legitimationsoplysninger for denne systembruger i følgende afsnit.
-    ldap_details: LDAP detaljer
-    user_settings: Attribut kortlægning
-    user_settings_legend: 'Følgende felter er relateret til, hvordan brugere oprettes i OpenProject fra LDAP-indgange og hvilke LDAP-attributter der bruges til at definere attributterne for en OpenProject bruger (attributkortlægning).
-
-      '
+    ldap_details: "LDAP detaljer"
+    user_settings: "Attribut kortlægning"
+    user_settings_legend: |
+      Følgende felter er relateret til, hvordan brugere oprettes i Yojana fra LDAP-indgange og hvilke LDAP-attributter der bruges til at definere attributterne for en Yojana bruger (attributkortlægning).
     tls_mode:
       plain: ingen
       simple_tls: LDAPS
@@ -2134,18 +2133,17 @@ da:
         circular_dependency: Denne relation vil skabe en cirkulær afhængighed.
         confirmation: matcher ikke %{attribute}.
         could_not_be_copied: "%{dependency} could not be (fully) copied."
-        datetime_must_be_in_future: must be in the future.
-        does_not_exist: findes ikke.
-        error_enterprise_only: "%{action} is only available in the OpenProject Enterprise edition."
-        error_unauthorized: kan muligvis ikke tilgås.
-        error_readonly: was attempted to be written but is not writable.
-        error_conflict: Oplysning er opdateret af mindst én anden bruger i mellemtiden.
-        error_not_found: not found.
-        email: is not a valid email address.
-        empty: må ikke være tomt.
-        enterprise_plan_required: requires at least the %{plan_name}.
-        even: skal være lige.
-        exclusion: er reserveret.
+        does_not_exist: "findes ikke."
+        error_enterprise_only: "%{action} is only available in the Yojana Enterprise edition."
+        error_unauthorized: "kan muligvis ikke tilgås."
+        error_readonly: "was attempted to be written but is not writable."
+        error_conflict: "Oplysning er opdateret af mindst én anden bruger i mellemtiden."
+        error_not_found: "not found."
+        email: "is not a valid email address."
+        empty: "må ikke være tomt."
+        enterprise_plan_required: "requires at least the %{plan_name}."
+        even: "skal være lige."
+        exclusion: "er reserveret."
         feature_disabled: is not available.
         feature_disabled_for_project: is disabled for this project.
         file_too_large: er for stor (maks. størrelse er %{count} Bytes).
@@ -2800,17 +2798,14 @@ da:
     reset_token:
       action_create: Opret
       action_reset: Nulstil
-      heading_reset: Nulstil sikkerhedskopi token
-      heading_create: Opret sikkerhedskopi token
-      implications: 'Aktivering af sikkerhedskopier vil tillade enhver bruger med de nødvendige tilladelser og denne sikkerhedskopi token til at downloade en sikkerhedskopi, der indeholder alle data fra denne OpenProject installation. Dette omfatter data fra alle andre brugere.
-
-        '
-      info: 'Du bliver nødt til at generere en backup token for at kunne oprette en backup. Hver gang du ønsker at anmode om en sikkerhedskopi, bliver du nødt til at give denne token. Du kan slette sikkerhedskopi token for at deaktivere sikkerhedskopier for denne bruger.
-
-        '
-      verification_html: 'Enter %{word} to confirm you want to %{action} the backup token.
-
-        '
+      heading_reset: "Nulstil sikkerhedskopi token"
+      heading_create: "Opret sikkerhedskopi token"
+      implications: >
+        Aktivering af sikkerhedskopier vil tillade enhver bruger med de nødvendige tilladelser og denne sikkerhedskopi token til at downloade en sikkerhedskopi, der indeholder alle data fra denne Yojana installation. Dette omfatter data fra alle andre brugere.
+      info: >
+        Du bliver nødt til at generere en backup token for at kunne oprette en backup. Hver gang du ønsker at anmode om en sikkerhedskopi, bliver du nødt til at give denne token. Du kan slette sikkerhedskopi token for at deaktivere sikkerhedskopier for denne bruger.
+      verification: >
+        Indtast %{word} for at bekræfte, at du ønsker at %{action} backup token.
       verification_word_reset: nulstil
       verification_word_create: opret
       warning: 'Når du opretter en ny token, vil du kun få lov til at anmode om en backup efter 24 timer. Dette er en sikkerhedsforanstaltning. Derefter kan du anmode om en sikkerhedskopi når som helst ved hjælp af dette token.
@@ -3159,29 +3154,26 @@ da:
       title: Enterprise add-on
       plan_title: Enterprise %{plan} add-on
       plan_name: "%{plan} enterprise plan"
-      trial_text: This feature is included in your active Enterprise trial.
-      plan_text_html: Available starting with the %{plan_name}.
-      unlimited: Ubegrænset
-      already_have_token: 'Already have a token? Add it using the button below to upgrade to the booked Enterprise plan.
-
-        '
-      hide_banner: Hide this banner
-      homescreen_description: 'Enterprise plans extend the Community edition of OpenProject with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running OpenProject in a mission-critical environment.
-
-        '
+      plan_text_html: "Available starting with the %{plan_name}."
+      unlimited: "Ubegrænset"
+      already_have_token: >
+        Already have a token? Add it using the button below to upgrade to the booked Enterprise plan.
+      hide_banner: "Hide this banner"
+      homescreen_description: >
+        Enterprise plans extend the Community edition of Yojana with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running Yojana in a mission-critical environment.
       homescreen_subline: By upgrading, you will also be supporting an open source project.
       baseline_comparison:
         description: Highlight changes made to this list since any point in the past.
       benefits:
-        description: What are the benefits of the Enterprise on-premises edition?
-        high_security: Sikkerheds funktioner
-        high_security_text: Single sign on (SAML, OpenID Connect, CAS), LDAP groups.
-        installation: Installations support
-        installation_text: Erfarne software ingeniører guide dig gennem den komplette installation og setup proces i din egen infrastruktur.
-        premium_features: Enterprise add-ons
-        premium_features_text: Agile tavler, brugerdefineret tema og logo, grafer, intelligente arbejdsgange med brugerdefinerede handlinger, fuld tekst søgning efter vedhæftede filer arbejde og multi-valgs brugerdefinerede felter.
-        professional_support: Professionel support
-        professional_support_text: Få pålidelig, høj-touch support fra senior support ingeniører med ekspert viden om at køre OpenProject i forretningskritiske miljøer.
+        description: "What are the benefits of the Enterprise on-premises edition?"
+        high_security: "Sikkerheds funktioner"
+        high_security_text: "Single sign on (SAML, OpenID Connect, CAS), LDAP groups."
+        installation: "Installations support"
+        installation_text: "Erfarne software ingeniører guide dig gennem den komplette installation og setup proces i din egen infrastruktur."
+        premium_features: "Enterprise add-ons"
+        premium_features_text: "Agile tavler, brugerdefineret tema og logo, grafer, intelligente arbejdsgange med brugerdefinerede handlinger, fuld tekst søgning efter vedhæftede filer arbejde og multi-valgs brugerdefinerede felter."
+        professional_support: "Professionel support"
+        professional_support_text: "Få pålidelig, høj-touch support fra senior support ingeniører med ekspert viden om at køre Yojana i forretningskritiske miljøer."
       work_package_subject_generation:
         description: Create automatically generated subjects using referenced attributes and text.
       customize_life_cycle:
@@ -3211,34 +3203,31 @@ da:
       calculated_values:
         description: Calculated values allow you to create a mathematical formula based attribute using numeric values and other project attributes and custom fields.
       define_custom_style:
-        title: Custom color theme and logo
-        more_info: 'Note: the used logo will be publicly accessible.'
-        description: Customize your OpenProject installation with your own logo and colors.
+        title: "Custom color theme and logo"
+        more_info: "Note: the used logo will be publicly accessible."
+        description: Customize your Yojana installation with your own logo and colors.
       custom_actions:
         title: Brugerdefinerede handlinger
         description: Custom actions are one-click shortcuts to a set of pre-defined actions that you can make available on certain work packages based on status, role, type or project.
       mcp_server:
-        description: Bring OpenProject into your AI workflows with a secure MCP server.
-      meeting_templates:
-        description: Define meeting templates with a set agenda structure and save time by reusing them when creating new meetings.
+        description: "Integrate AI agents with your Yojana instance through MCP."
       nextcloud_sso:
         title: Single Sign-On for Nextcloud Storage
         description: Enable seamless and secure authentication for your Nextcloud storage with Single Sign-On. Simplify access management and enhance user convenience.
       scim_api:
-        title: SCIM clients
-        description: Automate user management in OpenProject by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan.
+        title: "SCIM clients"
+        description: "Automate user management in Yojana by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan."
       sso_auth_providers:
         title: Single Sign-On (SSO)
         description: Enable users to log in via external SSO providers using SAML or OpenID Connect for seamless access and integration with existing identity systems.
       virus_scanning:
-        description: Ensure uploaded files in OpenProject are scanned for viruses before being accessible by other users.
+        description: "Ensure uploaded files in Yojana are scanned for viruses before being accessible by other users."
       project_creation_wizard:
         description: Generate a step-by-step wizard to help project managers fill out a project initiation request.
       placeholder_users:
         title: Pladsholder brugere
-        description: 'Placeholder users are a way to assign work packages to users who are not part of your project. They can be useful in a range of scenarios; for example, if you need to track tasks for a resource that is not yet named or available, or if you don’t want to give that person access to OpenProject but still want to track tasks assigned to them.
-
-          '
+        description: >
+          Placeholder users are a way to assign work packages to users who are not part of your project. They can be useful in a range of scenarios; for example, if you need to track tasks for a resource that is not yet named or available, or if you don’t want to give that person access to Yojana but still want to track tasks assigned to them.
       internal_comments:
         title: Internal comments
         description: Internal comments allow an internal team to communicate amongst themselves privately. These are only visible to certain project roles and will never be visible publicly.
@@ -3253,26 +3242,25 @@ da:
         other: "%{count} days left of %{trial_plan} trial token"
       description_html: You have access to all %{trial_plan} features.
     trial:
-      not_found: You have requested a trial token, but that request is no longer available. Please try again.
-      wait_for_confirmation: We sent you an email to confirm your address in order to retrieve a trial token.
-      already_retrieved: 'Your trial enterprise token was already retrieved. Please check your emails for the token being attached. Please reach out to our support team if you need a new one.
-
-        '
-      successfully_saved: Your trial enterprise token has been successfully retrieved.
-      token_sent: Trial token requested
-      request_again: Request again
-      resend_action: Resend confirmation email
-      welcome_title: Quick feature overview
-      welcome_description: Get a quick overview of project management and team collaboration with OpenProject Enterprise edition.
-      confirmation_info: 'We sent you an email on %{date} to %{email} with all the information to start the free trial of OpenProject Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
-
-        '
-      confirmation_subline: 'Please, check your inbox and follow the steps to start your 14-day free trial.
-
-        '
+      not_found: "You have requested a trial token, but that request is no longer available. Please try again."
+      wait_for_confirmation: "We sent you an email to confirm your address in order to retrieve a trial token."
+      already_retrieved: >
+        Your trial enterprise token was already retrieved. Please check your emails for the token being attached. Please reach out to our support team if you need a new one.
+      successfully_saved: "Your trial enterprise token has been successfully retrieved."
+      token_sent: "Trial token requested"
+      request_again: "Request again"
+      resend_action: "Resend confirmation email"
+      welcome_title: "Quick feature overview"
+      welcome_description: "Get a quick overview of project management and team collaboration with Yojana Enterprise edition."
+      confirmation_info: >
+        We sent you an email on %{date} to %{email} with all the information to start the free trial of Yojana Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
+      confirmation_subline: >
+        Please, check your inbox and follow the steps to start your 14-day free trial.
       domain_caption: The token will be valid for your currently configured host name.
-      receive_newsletter: I want to receive the OpenProject [newsletter](newsletter_url).
-      consent: I agree with the [terms of service](tos_url) and the [privacy policy](privacy_url).
+      receive_newsletter_html: >
+        I want to receive the Yojana <a target="_blank" href="https://www.yojana.girishm.info/newsletter/">newsletter</a>.
+      consent_html: >
+        I agree with the <a target="_blank" href="https://www.yojana.girishm.info/terms-of-service/">terms of service</a> and the <a target="_blank" href="https://www.yojana.girishm.info/data-privacy-and-security/">privacy policy</a>.
   email_calendar_updates:
     state:
       disabled: Disabled.
@@ -3296,51 +3284,51 @@ da:
   error_can_not_delete_in_use_archived_undisclosed: There are also work packages in archived projects. You need to ask an administrator to perform the deletion to see which projects are affected.
   error_can_not_delete_in_use_archived_work_packages: 'There are also work packages in archived projects. You need to reactivate the following projects first, before you can change the attribute of the respective work packages: %{archived_projects_urls}'
   error_can_not_delete_type:
-    explanation: This type contains work packages and cannot be deleted. You can see all affected work packages in <a target="_blank" href="%{url}">this view</a>.
-  error_can_not_delete_standard_type: Standardtyper kan  ikke slettes.
-  error_can_not_invite_user: Failed to send invitation to user.
-  error_can_not_remove_role: Denne rolle er i brug og kan ikke slettes.
-  error_can_not_reopen_work_package_on_closed_version: En arbejdspakke der er knyttet til en lukket version kan ikke åbnes igen
-  error_can_not_find_all_resources: Could not find all related resources to this request.
-  error_can_not_unarchive_project: 'Dette projekt kan ikke fjernes fra arkivering: %{errors}'
-  error_check_user_and_role: Vælg venligst en bruger og en rolle.
-  error_code: Error %{code}
-  error_color_could_not_be_saved: Farve kan ikke gemmes
-  error_cookie_missing: The OpenProject cookie is missing. Please ensure that cookies are enabled, as this application will not properly function without.
-  error_custom_option_not_found: Option does not exist.
-  error_enterprise_plan_needed: You need the %{plan} enterprise plan to perform this action.
-  error_enterprise_activation_user_limit: Your account could not be activated (user limit reached). Please contact your administrator to gain access.
-  error_enterprise_token_invalid_domain: The Enterprise edition is not active. Your Enterprise token's domain (%{actual}) does not match the system's host name (%{expected}).
-  error_failed_to_delete_entry: Failed to delete this entry.
-  error_in_dependent: 'Error attempting to alter dependent object: %{dependent_class} #%{related_id} - %{related_subject}: %{error}'
-  error_in_new_dependent: 'Error attempting to create dependent object: %{dependent_class} - %{related_subject}: %{error}'
-  error_invalid_selected_value: Invalid selected value.
-  error_journal_attribute_not_present: Journal does not contain attribute %{attribute}.
-  error_pdf_export_too_many_columns: Too many columns selected for the PDF export. Please reduce the number of columns.
-  error_pdf_date_range_too_long: The selected work package date range exceeds the allowable PDF export limit. Please condense the range to a maximum of %{years} years.
-  error_pdf_failed_to_export: 'The PDF export could not be saved: %{error}'
-  error_token_authenticity: Unable to verify Cross-Site Request Forgery token. Did you try to submit data on multiple browsers or tabs? Please close all tabs and try again.
-  error_reminder_not_found: The reminder was not found or was already notified about.
-  error_work_package_not_found_in_project: Arbejdspakken er ikke fundet, eller den hører ikke til dette projekt
-  error_work_package_id_not_found: The work package was not found.
-  error_must_be_project_member: skal være et medlem af projektet
-  error_migrations_are_pending: Your OpenProject installation has pending database migrations. You have likely missed running the migrations on your last upgrade. Please check the upgrade guide to properly upgrade your installation.
-  error_migrations_visit_upgrade_guides: Please visit our upgrade guide documentation
-  error_no_default_work_package_status: Der er ikke angivet en status som standard for denne arbejdspakke. Tjek venligst din opsætning (gå til "Administration > Status for arbejdspakker").
-  error_no_type_in_project: Der er ikke tilknyttet en type til dette projekt. Tjek venligst projektindstillingerne.
-  error_omniauth_registration_timed_out: Registrering via en ekstern godkendelsestjeneste er udløbet. Prøv venligst igen.
-  error_omniauth_invalid_auth: The authentication information returned from the identity provider was invalid. Please contact your administrator for further help.
-  error_password_change_failed: An error occurred when trying to change the password.
-  error_scm_command_failed: 'Der opstod en fejl da du forsøgte at tilgå projektarkivet: %{value}'
-  error_scm_not_found: Indholdet eller ændring findes ikke i projektarkivet.
-  error_type_could_not_be_saved: Typen kan ikke gemmes
-  error_unable_delete_status: Arbejdspakkens status kan ikke slettes da den bruges af mindst én pakke.
-  error_unable_delete_default_status: Det er ikke muligt at slette forhåndsværdien for arbejdspakkens status. Vælg venligst en anden status for arbejdspakken før den nuværende slettes.
-  error_unable_to_connect: Kan ikke forbinde til (%{value})
-  error_unable_delete_wiki: Unable to delete the wiki page.
-  error_unable_update_wiki: Unable to update the wiki page.
-  error_workflow_copy_source: Vælg venlist en type eller rolle for kilden
-  error_workflow_copy_target: Vælg venligst type(r) og rolle(r) for mål
+    explanation: 'This type contains work packages and cannot be deleted. You can see all affected work packages in <a target="_blank" href="%{url}">this view</a>.'
+  error_can_not_delete_standard_type: "Standardtyper kan  ikke slettes."
+  error_can_not_invite_user: "Failed to send invitation to user."
+  error_can_not_remove_role: "Denne rolle er i brug og kan ikke slettes."
+  error_can_not_reopen_work_package_on_closed_version: "En arbejdspakke der er knyttet til en lukket version kan ikke åbnes igen"
+  error_can_not_find_all_resources: "Could not find all related resources to this request."
+  error_can_not_unarchive_project: "Dette projekt kan ikke fjernes fra arkivering: %{errors}"
+  error_check_user_and_role: "Vælg venligst en bruger og en rolle."
+  error_code: "Error %{code}"
+  error_color_could_not_be_saved: "Farve kan ikke gemmes"
+  error_cookie_missing: "The Yojana cookie is missing. Please ensure that cookies are enabled, as this application will not properly function without."
+  error_custom_option_not_found: "Option does not exist."
+  error_enterprise_plan_needed: "You need the %{plan} enterprise plan to perform this action."
+  error_enterprise_activation_user_limit: "Your account could not be activated (user limit reached). Please contact your administrator to gain access."
+  error_enterprise_token_invalid_domain: "The Enterprise edition is not active. Your Enterprise token's domain (%{actual}) does not match the system's host name (%{expected})."
+  error_failed_to_delete_entry: "Failed to delete this entry."
+  error_in_dependent: "Error attempting to alter dependent object: %{dependent_class} #%{related_id} - %{related_subject}: %{error}"
+  error_in_new_dependent: "Error attempting to create dependent object: %{dependent_class} - %{related_subject}: %{error}"
+  error_invalid_selected_value: "Invalid selected value."
+  error_journal_attribute_not_present: "Journal does not contain attribute %{attribute}."
+  error_pdf_export_too_many_columns: "Too many columns selected for the PDF export. Please reduce the number of columns."
+  error_pdf_date_range_too_long: "The selected work package date range exceeds the allowable PDF export limit. Please condense the range to a maximum of %{years} years."
+  error_pdf_failed_to_export: "The PDF export could not be saved: %{error}"
+  error_token_authenticity: "Unable to verify Cross-Site Request Forgery token. Did you try to submit data on multiple browsers or tabs? Please close all tabs and try again."
+  error_reminder_not_found: "The reminder was not found or was already notified about."
+  error_work_package_not_found_in_project: "Arbejdspakken er ikke fundet, eller den hører ikke til dette projekt"
+  error_work_package_id_not_found: "The work package was not found."
+  error_must_be_project_member: "skal være et medlem af projektet"
+  error_migrations_are_pending: "Your Yojana installation has pending database migrations. You have likely missed running the migrations on your last upgrade. Please check the upgrade guide to properly upgrade your installation."
+  error_migrations_visit_upgrade_guides: "Please visit our upgrade guide documentation"
+  error_no_default_work_package_status: 'Der er ikke angivet en status som standard for denne arbejdspakke. Tjek venligst din opsætning (gå til "Administration > Status for arbejdspakker").'
+  error_no_type_in_project: "Der er ikke tilknyttet en type til dette projekt. Tjek venligst projektindstillingerne."
+  error_omniauth_registration_timed_out: "Registrering via en ekstern godkendelsestjeneste er udløbet. Prøv venligst igen."
+  error_omniauth_invalid_auth: "The authentication information returned from the identity provider was invalid. Please contact your administrator for further help."
+  error_password_change_failed: "An error occurred when trying to change the password."
+  error_scm_command_failed: "Der opstod en fejl da du forsøgte at tilgå projektarkivet: %{value}"
+  error_scm_not_found: "Indholdet eller ændring findes ikke i projektarkivet."
+  error_type_could_not_be_saved: "Typen kan ikke gemmes"
+  error_unable_delete_status: "Arbejdspakkens status kan ikke slettes da den bruges af mindst én pakke."
+  error_unable_delete_default_status: "Det er ikke muligt at slette forhåndsværdien for arbejdspakkens status. Vælg venligst en anden status for arbejdspakken før den nuværende slettes."
+  error_unable_to_connect: "Kan ikke forbinde til (%{value})"
+  error_unable_delete_wiki: "Unable to delete the wiki page."
+  error_unable_update_wiki: "Unable to update the wiki page."
+  error_workflow_copy_source: "Vælg venlist en type eller rolle for kilden"
+  error_workflow_copy_target: "Vælg venligst type(r) og rolle(r) for mål"
   error_menu_item_not_created: Menupunktet kunne ikke tilføjes
   error_menu_item_not_saved: Menupunktet kunne ikke gemmes
   error_wiki_root_menu_item_conflict: 'Can''t rename "%{old_name}" to "%{new_name}" due to a conflict in the resulting menu item with the existing menu item "%{existing_caption}" (%{existing_identifier}).
@@ -3435,8 +3423,8 @@ da:
     succeeded: Export completed
     failed: 'An error has occurred while trying to export the work packages: %{message}'
     demo:
-      heading: Demo PDF
-      footer: Generated by OpenProject
+      heading: "Demo PDF"
+      footer: "Generated by Yojana"
       button_text: Generate Demo PDF
     errors:
       embedded_table_with_too_many_columns: This embedded work package table could not fit on the page, please reduce the number of columns.
@@ -3557,7 +3545,7 @@ da:
         no_results_subtext: Add one or multiple projects as favorite through their overview or in a project list.
       users: Nyeste registrerede brugere i denne omgang.
     blocks:
-      community: OpenProject community
+      community: "Yojana community"
       upsell:
         title: Upgrade to Enterprise edition
       new_features:
@@ -3569,40 +3557,38 @@ da:
 
             '
           new_features_list:
-            line_0: XWiki integration (Corporate plan).
-            line_1: Sprint goals.
-            line_2: "'All sprints' overview page."
-            line_3: Display backlog buckets in work packages and work package tables.
-            line_4: Improved support for project-based (semantic) identifiers.
-            line_5: Convert meeting agenda items into work packages.
-            line_6: Configure cost types per project.
+            line_0: Automated project initiation (Enterprise add-on).
+            line_1: "Meetings: add new or existing work packages as outcomes."
+            line_2: "Meetings: show iCal responses in Yojana."
+            line_3: "Recurring meetings: duplicate agenda items to the next occurrence."
+            line_4: "Release to Community: Attribute highlighting."
+            line_5: Warning before opening external links in user-provided content (Enterprise add-on).
+            line_6: Improved performance and user experience, including the Activity tab and Documents module.
     links:
-      upgrade_enterprise_edition: Upgrade to Enterprise edition
-      postgres_migration: Migrating your installation to PostgreSQL
-      user_guides: Brugervejledninger
-      faq: Spørgsmål & Svar
-      impressum: Legal notice
-      glossary: Ordliste
-      shortcuts: Genveje 
-      blog: OpenProject blog
-      forums: Community forum
-      security_alerts: Security alerts
-      newsletter: Newsletter
+      upgrade_enterprise_edition: "Upgrade to Enterprise edition"
+      postgres_migration: "Migrating your installation to PostgreSQL"
+      user_guides: "Brugervejledninger"
+      faq: "Spørgsmål & Svar"
+      impressum: "Legal notice"
+      glossary: "Ordliste"
+      shortcuts: "Genveje "
+      blog: "Yojana blog"
+      forums: "Community forum"
+      security_alerts: "Security alerts"
+      newsletter: "Newsletter"
   image_conversion:
     imagemagick: Imagemagick
   journals:
     changes_retracted: Ændringerne blev trukket tilbage.
     caused_changes:
-      budget_deleted: Budget has been deleted
-      dates_changed: Dates changed
-      default_attribute_written: Read-only attributes written
-      import: Imported
-      progress_mode_changed_to_status_based: Progress calculation updated
-      status_changed: Status '%{status_name}'
-      system_update: 'OpenProject system update:'
-      work_package_duplicate_closed: 'Duplicate work package updated:'
-      total_percent_complete_mode_changed_to_work_weighted_average: Calculation of % Complete totals now weighted by Work.
-      total_percent_complete_mode_changed_to_simple_average: Calculation of % Complete totals now based on a simple average of only % Complete values.
+      dates_changed: "Dates changed"
+      default_attribute_written: "Read-only attributes written"
+      progress_mode_changed_to_status_based: "Progress calculation updated"
+      status_changed: "Status '%{status_name}'"
+      system_update: "Yojana system update:"
+      work_package_duplicate_closed: "Duplicate work package updated:"
+      total_percent_complete_mode_changed_to_work_weighted_average: "Calculation of % Complete totals now weighted by Work."
+      total_percent_complete_mode_changed_to_simple_average: "Calculation of % Complete totals now based on a simple average of only % Complete values."
     cause_descriptions:
       import:
         header: changes by %{author}
@@ -3666,7 +3652,7 @@ da:
         notifications: Notification settings
         email_reminders: Email reminders
     access_tokens:
-      description: Provider tokens are issued by OpenProject, allowing other applications to access it. Client tokens are issued by other applications, allowing OpenProject to access them.
+      description: "Provider tokens are issued by Yojana, allowing other applications to access it. Client tokens are issued by other applications, allowing Yojana to access them."
       no_results:
         title: Ingen adgangstegn til at vise
         description: De er alle blevet deaktiveret. De kan genaktiveres i administrationsmenuen.
@@ -3682,49 +3668,49 @@ da:
         provider:
           title: Provider tokens
       token/api:
-        blank_description: There is no API token yet. You can create one using the button below.
-        blank_title: No API token
-        title: API
-        table_title: API tokens
-        text_hint: API tokens allow third-party applications to communicate with this OpenProject instance via REST APIs.
-        static_token_name: API token
-        disabled_text: API tokens are not enabled by the administrator. Please contact your administrator to use this feature.
-        add_button: API token
+        blank_description: "There is no API token yet. You can create one using the button below."
+        blank_title: "No API token"
+        title: "API"
+        table_title: "API tokens"
+        text_hint: "API tokens allow third-party applications to communicate with this Yojana instance via REST APIs."
+        static_token_name: "API token"
+        disabled_text: "API tokens are not enabled by the administrator. Please contact your administrator to use this feature."
+        add_button: "API token"
       ical:
-        blank_description: To add an iCalendar token, subscribe to a new or existing calendar from within the Calendar module of a project. You must have the necessary permissions.
-        blank_title: No iCalendar token
-        title: iCalendar
-        table_title: iCalendar tokens
-        text_hint_link: iCalendar tokens allow users to [subscribe to OpenProject calendars](docs_url) and view up-to-date work package information from external clients.
-        disabled_text: iCalendar subscriptions are not enabled by the administrator. Please contact your administrator to use this feature.
+        blank_description: "To add an iCalendar token, subscribe to a new or existing calendar from within the Calendar module of a project. You must have the necessary permissions."
+        blank_title: "No iCalendar token"
+        title: "iCalendar"
+        table_title: "iCalendar tokens"
+        text_hint_link: "iCalendar tokens allow users to [subscribe to Yojana calendars](docs_url) and view up-to-date work package information from external clients."
+        disabled_text: "iCalendar subscriptions are not enabled by the administrator. Please contact your administrator to use this feature."
       oauth_application:
-        active_tokens: Active tokens
-        blank_description: There is no third-party application access configured and active for you.
-        blank_title: No OAuth application token
-        last_refreshed_at: Last refreshed at
-        title: OAuth
-        table_title: OAuth application tokens
-        text_hint: OAuth application tokens allow third-party applications to connect with this OpenProject instance.
+        active_tokens: "Active tokens"
+        blank_description: "There is no third-party application access configured and active for you."
+        blank_title: "No OAuth application token"
+        last_used_at: "Last used at"
+        title: "OAuth"
+        table_title: "OAuth application tokens"
+        text_hint: "OAuth application tokens allow third-party applications to connect with this Yojana instance."
       oauth_client:
-        blank_description: There are no OAuth client tokens yet.
-        blank_title: No OAuth client tokens
-        failed: An error occurred and the token couldn't be removed. Please try again later.
-        integration_type: Integration type
-        table_title: OAuth client tokens
-        text_hint: OAuth client tokens allow this OpenProject instance to connect with external applications, such as file storages.
-        title: OAuth
-        remove_token: Do you really want to remove this token? You will need to login again on %{integration}.
-        removed: OAuth client token successfully removed
-        unknown_integration: Unknown
+        blank_description: "There are no OAuth client tokens yet."
+        blank_title: "No OAuth client tokens"
+        failed: "An error occurred and the token couldn't be removed. Please try again later."
+        integration_type: "Integration type"
+        table_title: "OAuth client tokens"
+        text_hint: "OAuth client tokens allow this Yojana instance to connect with external applications, such as file storages."
+        title: "OAuth"
+        remove_token: "Do you really want to remove this token? You will need to login again on %{integration}."
+        removed: "OAuth client token successfully removed"
+        unknown_integration: "Unknown"
       token/rss:
-        add_button: RSS token
-        blank_description: There is no RSS token yet. You can create one using the button below.
-        blank_title: No RSS token
-        title: RSS
-        table_title: RSS tokens
-        text_hint: RSS tokens allow users to keep up with the latest changes in this OpenProject instance via an external RSS reader.
-        static_token_name: RSS token
-        disabled_text: RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature.
+        add_button: "RSS token"
+        blank_description: "There is no RSS token yet. You can create one using the button below."
+        blank_title: "No RSS token"
+        title: "RSS"
+        table_title: "RSS tokens"
+        text_hint: "RSS tokens allow users to keep up with the latest changes in this Yojana instance via an external RSS reader."
+        static_token_name: "RSS token"
+        disabled_text: "RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature."
       storages:
         unknown_storage: Unknown storage
     email_reminders:
@@ -3948,51 +3934,48 @@ da:
   label_collapse: Fold sammen
   label_collapsed_click_to_show: Collapsed. Click to show
   label_configuration: opsætning
-  label_comment_add: Tilføj kommentar
-  label_comment_added: Kommentar tilføjet
-  label_comment_delete: Slet kommentarer
-  label_comment_plural: Kommentarer
-  label_commits_per_author: Bidrag efter forfatter
-  label_commits_per_month: Bidrag efter måned
-  label_confirmation: Bekræftelse
-  label_contains: indeholder
-  label_starts_with: starts with
-  label_content: Indhold
-  label_color_plural: Farver
-  label_copied: kopieret
-  label_copy_same_as_target: Samme som mål
-  label_copy_source: Kilde
-  label_copy_target: Mål
-  label_copy_workflow_from: Kopier arbejdsgang fra
-  label_copy_workflow_from_type: Copy to another type
-  label_copy_workflow_from_role: Copy to other roles
-  label_copy_project: Kopier projekt
-  label_core_version: Kerneversion
-  label_core_build: Core build
-  label_created_by: Created by %{user}
-  label_current_status: Nuværende status
-  label_current_version: Nuværende version
-  label_custom_field_add_no_type: Add this field to a work package type
-  label_custom_field_new: Nyt selvvalgt felt
-  label_custom_field_plural: Selvvalgte felter
-  label_custom_field_default_type: Tom typebetegnelse
-  label_custom_style: Design
-  label_custom_style_description: Choose how OpenProject looks to you with themes, select your default colors to use in the app and how exports look like.
-  label_dashboard: Dashboard
-  label_database_version: PostgreSQL version
-  label_date: Dato
-  label_dates: Datoer
-  label_date_and_time: Date and time
-  label_date_format: Datoformat
-  label_date_from: Fra
-  label_date_from_to: Fra %{start} til %{end}
-  label_date_to: Til
-  label_day_plural: dage
-  label_default: Forhåndsvalgt
-  label_delete_user: Delete user
-  label_delete_project: Delete project
-  label_delete: Slet
-  label_deleted: slettet
+  label_comment_add: "Tilføj kommentar"
+  label_comment_added: "Kommentar tilføjet"
+  label_comment_delete: "Slet kommentarer"
+  label_comment_plural: "Kommentarer"
+  label_commits_per_author: "Bidrag efter forfatter"
+  label_commits_per_month: "Bidrag efter måned"
+  label_confirmation: "Bekræftelse"
+  label_contains: "indeholder"
+  label_content: "Indhold"
+  label_color_plural: "Farver"
+  label_copied: "kopieret"
+  label_copy_same_as_target: "Samme som mål"
+  label_copy_source: "Kilde"
+  label_copy_target: "Mål"
+  label_copy_workflow_from: "Kopier arbejdsgang fra"
+  label_copy_project: "Kopier projekt"
+  label_core_version: "Kerneversion"
+  label_core_build: "Core build"
+  label_created_by: "Created by %{user}"
+  label_current_status: "Nuværende status"
+  label_current_version: "Nuværende version"
+  label_custom_field_add_no_type: "Add this field to a work package type"
+  label_custom_field_new: "Nyt selvvalgt felt"
+  label_custom_field_plural: "Selvvalgte felter"
+  label_custom_field_default_type: "Tom typebetegnelse"
+  label_custom_style: "Design"
+  label_custom_style_description: "Choose how Yojana looks to you with themes, select your default colors to use in the app and how exports look like."
+  label_dashboard: "Dashboard"
+  label_database_version: "PostgreSQL version"
+  label_date: "Dato"
+  label_dates: "Datoer"
+  label_date_and_time: "Date and time"
+  label_date_format: "Datoformat"
+  label_date_from: "Fra"
+  label_date_from_to: "Fra %{start} til %{end}"
+  label_date_to: "Til"
+  label_day_plural: "dage"
+  label_default: "Forhåndsvalgt"
+  label_delete_user: "Delete user"
+  label_delete_project: "Delete project"
+  label_delete: "Slet"
+  label_deleted: "slettet"
   label_deleted_custom_field: "(slettet selvvalgt felt)"
   label_deleted_custom_item: "(deleted item)"
   label_deleted_custom_option: "(deleted option)"
@@ -4246,61 +4229,53 @@ da:
   label_not_found: not found
   label_none: ingen
   label_none_parentheses: "(ingen)"
-  label_not_contains: indeholder ikke
-  label_not_equals: er ikke
-  label_life_cycle_step_plural: Project life cycle
-  label_on: på
-  label_operator_all: is not empty
-  label_operator_none: is empty
-  label_operator_equals_or: is (OR)
-  label_operator_equals_all: is (AND)
-  label_operator_shared_with_user_any: alle
-  label_open: åben
-  label_closed: lukket
-  label_open_menu: Åbn menuen
-  label_open_work_packages: åbn
-  label_open_work_packages_plural: åbn
-  label_openproject_website: OpenProject website
-  label_optional_description: Beskrivelse
-  label_options: Muligheder
-  label_other: Andet
-  label_overall_activity: Samlet aktivitet
-  label_overview: Overblik
-  label_page_title: Page title
-  label_parent_group_caption: 'Setting a parent group will make this group a subgroup of the selected parent group. This will also inherit all memberships, including permissions of the parent group.
-
-    '
-  label_part_of: del af
-  label_password_lost: Glemt din adgangskode?
-  label_password_rule_lowercase: Små bogstaver
-  label_password_rule_numeric: Tal
-  label_password_rule_special: Specialtegn
-  label_password_rule_uppercase: Store bogstaver
-  label_password_requirement_lowercase: Must contain at least one lowercase character.
-  label_password_requirement_numeric: Must contain at least one numeric character.
-  label_password_requirement_special: Must contain at least one special character.
-  label_password_requirement_uppercase: Must contain at least one uppercase character.
-  label_path_encoding: Indkod sti for arkivering
-  label_per_page: 'Per side:'
-  label_people: Personer
-  label_permissions: Tilladelser
-  label_permissions_report: Oversigt over tilladelser
-  label_personalize_page: Tilpas denne side
-  label_placeholder_user: Pladsholder bruger
-  label_placeholder_user_new: Ny pladsholderbruger
-  label_placeholder_user_plural: Pladsholder brugere
-  label_planning: Planlæg
-  label_please_login: Log venligst ind
-  label_plugins: Tilføjelsesprogrammer
-  label_portfolio_plural: Portfolios
-  label_modules_and_plugins: Modules and Plugins
-  label_precedes: kommer før
-  label_preferences: Indstillinger
-  label_preview: Forhåndsvisning
-  label_preview_not_available: Preview not available
-  label_previous: Foregående
-  label_previous_week: Foregående uge
-  label_previous_year: Previous year
+  label_not_contains: "indeholder ikke"
+  label_not_equals: "er ikke"
+  label_life_cycle_step_plural: "Project life cycle"
+  label_on: "på"
+  label_operator_all: "is not empty"
+  label_operator_none: "is empty"
+  label_operator_equals_or: "is (OR)"
+  label_operator_equals_all: "is (AND)"
+  label_operator_shared_with_user_any: "alle"
+  label_open: "åben"
+  label_closed: "lukket"
+  label_open_menu: "Åbn menuen"
+  label_open_work_packages: "åbn"
+  label_open_work_packages_plural: "åbn"
+  label_openproject_website: "Yojana website"
+  label_optional_description: "Beskrivelse"
+  label_options: "Muligheder"
+  label_other: "Andet"
+  label_overall_activity: "Samlet aktivitet"
+  label_overview: "Overblik"
+  label_page_title: "Page title"
+  label_part_of: "del af"
+  label_password_lost: "Glemt din adgangskode?"
+  label_password_rule_lowercase: "Små bogstaver"
+  label_password_rule_numeric: "Tal"
+  label_password_rule_special: "Specialtegn"
+  label_password_rule_uppercase: "Store bogstaver"
+  label_path_encoding: "Indkod sti for arkivering"
+  label_per_page: "Per side:"
+  label_people: "Personer"
+  label_permissions: "Tilladelser"
+  label_permissions_report: "Oversigt over tilladelser"
+  label_personalize_page: "Tilpas denne side"
+  label_placeholder_user: "Pladsholder bruger"
+  label_placeholder_user_new: "Ny pladsholderbruger"
+  label_placeholder_user_plural: "Pladsholder brugere"
+  label_planning: "Planlæg"
+  label_please_login: "Log venligst ind"
+  label_plugins: "Tilføjelsesprogrammer"
+  label_portfolio_plural: "Portfolios"
+  label_modules_and_plugins: "Modules and Plugins"
+  label_precedes: "kommer før"
+  label_preferences: "Indstillinger"
+  label_preview: "Forhåndsvisning"
+  label_preview_not_available: "Preview not available"
+  label_previous: "Foregående"
+  label_previous_week: "Foregående uge"
   label_principal_invite_via_email: " eller invitér nye brugere via e-mail"
   label_principal_search: Tilføj eksisterende brugere eller grupper
   label_privacy_policy: Data privacy and security policy
@@ -4701,11 +4676,11 @@ da:
   mail_body_backup_token_reset_user_info: Your backup token has been reset.
   mail_body_backup_token_info: The previous token is no longer valid.
   mail_body_backup_waiting_period: The new token will be enabled in %{hours} hours.
-  mail_body_backup_token_warning: If this wasn't you, login to OpenProject immediately and reset it again.
-  mail_body_incoming_email_error: The email you sent to OpenProject could not be processed.
-  mail_body_incoming_email_error_in_reply_to: At %{received_at} %{from_email} wrote
-  mail_body_incoming_email_error_logs: Logs
-  mail_body_lost_password: 'Klik på dette link for at ændre din adgangskode:'
+  mail_body_backup_token_warning: If this wasn't you, login to Yojana immediately and reset it again.
+  mail_body_incoming_email_error: The email you sent to Yojana could not be processed.
+  mail_body_incoming_email_error_in_reply_to: "At %{received_at} %{from_email} wrote"
+  mail_body_incoming_email_error_logs: "Logs"
+  mail_body_lost_password: "Klik på dette link for at ændre din adgangskode:"
   mail_password_change_not_possible:
     title: Password change not possible
     body: Your account at %{app_title} is connected to an external authentication provider (%{name}).
@@ -4715,21 +4690,21 @@ da:
   mail_body_register_user: 'Dear %{name}, '
   mail_body_register_links_html: |
     Please feel free to browse our youtube channel (%{youtube_link}) where we provide a webinar (%{webinar_link})
-    and “Get started” videos (%{get_started_link}) to make your first steps in OpenProject as easy as possible.
+    and “Get started” videos (%{get_started_link}) to make your first steps in Yojana as easy as possible.
     <br />
     If you have any further questions, consult our documentation (%{documentation_link}) or contact your administrator.
-  mail_body_register_closing: Your OpenProject team
-  mail_body_register_ending: Stay connected! Kind regards,
+  mail_body_register_closing: "Your Yojana team"
+  mail_body_register_ending: "Stay connected! Kind regards,"
   mail_body_reminder: "%{count} arbejdspakke(r), der er tilknyttet dig, udløber indenfor de næste %{days} dage:"
   mail_body_group_reminder: '%{count} arbejdspakke(r) som er tildelt "%{group}" har deadline indenfor %{days} dage:'
   mail_body_wiki_page_added: Wiki-siden '%{id}' er blevet tilføjet af %{author}.
   mail_body_wiki_page_updated: Wiki-siden '%{id}' er blevet opdateret af %{author}.
   mail_subject_account_activation_request: "%{value} anmodninger om kontoaktivering"
-  mail_subject_backup_ready: Your backup is ready
-  mail_subject_backup_token_reset: Backup token reset
-  mail_subject_incoming_email_error: An email you sent to OpenProject could not be processed
-  mail_subject_lost_password: Din %{value} adgangskode
-  mail_subject_register: Din %{value} kontoaktivering
+  mail_subject_backup_ready: "Your backup is ready"
+  mail_subject_backup_token_reset: "Backup token reset"
+  mail_subject_incoming_email_error: "An email you sent to Yojana could not be processed"
+  mail_subject_lost_password: "Din %{value} adgangskode"
+  mail_subject_register: "Din %{value} kontoaktivering"
   mail_subject_wiki_content_added: "'%{id}' wikisider er blevet tilføjet"
   mail_subject_wiki_content_updated: "'%{id}' wikiside er blevet opdateret"
   mail_member_added_project:
@@ -4755,17 +4730,17 @@ da:
       roles: 'Du har nu følgende roller:'
   mail_user_activation_limit_reached:
     subject: User activation limit reached
-    message_html: |
-      A new user (%{email}) tried to create an account on an OpenProject environment that you manage (%{host}).
+    message: |
+      A new user (%{email}) tried to create an account on an Yojana environment that you manage (%{host}).
       The user cannot activate their account since the user limit has been reached.
     steps:
-      a: Upgrade your payment plan ([here](upgrade_url))
-      b: Lock or delete an existing user ([here](users_url))
-      label: 'To allow the user to sign in you can either: '
-  more_actions: Flere funktioner
-  noscript_description: Du skal aktivere JavaScript for at bruge OpenProject!
-  noscript_heading: JavaScript deaktiveret
-  noscript_learn_more: Få mere at vide
+      label: "To allow the user to sign in you can either: "
+      a: "Upgrade your payment plan ([here](upgrade_url))" #here turned into a link
+      b: "Lock or delete an existing user ([here](users_url))" #here turned into a link
+  more_actions: "Flere funktioner"
+  noscript_description: "Du skal aktivere JavaScript for at bruge Yojana!"
+  noscript_heading: "JavaScript deaktiveret"
+  noscript_learn_more: "Få mere at vide"
   notice_accessibility_mode: The accessibility mode can be enabled in your [account settings](url).
   notice_account_activated: Din konto er blevet aktiveret. Du kan nu logge ind.
   notice_account_already_activated: Denne konto er allerede blevet aktiveret.
@@ -4841,10 +4816,10 @@ da:
   notice_automatic_set_of_standard_type: Fastsæt typen automatisk.
   notice_logged_out: Du er blevet logget ud.
   notice_wont_delete_auth_source: The LDAP connection cannot be deleted as long as there are still users using it.
-  notice_project_cannot_update_custom_fields: 'You cannot update the project''s available custom fields. The project is invalid: %{errors}'
-  notice_attachment_migration_wiki_page: 'This page was generated automatically during the update of OpenProject. It contains all attachments previously associated with the %{container_type} "%{container_name}".
-
-    '
+  notice_project_cannot_update_custom_fields: "You cannot update the project's available custom fields. The project is invalid: %{errors}"
+  notice_attachment_migration_wiki_page: >
+    This page was generated automatically during the update of Yojana. It contains all attachments previously associated with the %{container_type} "%{container_name}".
+  #Default format for numbers
   number:
     format:
       delimiter: ","
@@ -4865,138 +4840,127 @@ da:
           mb: MB
           tb: TB
   onboarding:
-    heading_getting_started: Get an overview
-    text_getting_started_description: Get a quick overview of project management and team collaboration with OpenProject. You can restart this video from the help menu.
-    welcome: Welcome to %{app_title}
-    select_language: Please select your language
-  open_project:
-    common:
-      work_package_card_component:
-        drag_handle:
-          label: Drag to reorder
-        menu:
-          label_actions: Work package actions
-        parent: Parent
-        undisclosed: Undisclosed
-  permission_add_work_package_comments: Add comments
-  permission_add_work_packages: Tilføj arbejdspakker
-  permission_add_messages: Send beskeder
-  permission_add_project: Create projects
-  permission_add_portfolios: Create portfolios
-  permission_add_programs: Create programs
-  permission_add_work_package_attachments: Add attachments
-  permission_add_work_package_attachments_explanation: Allows adding attachments without Edit work packages permission
-  permission_add_internal_comments: Write internal comments
-  permission_archive_project: Archive project
-  permission_create_user: Create users
-  permission_manage_user: Edit users
-  permission_manage_placeholder_user: Opret, rediger og slet brugere af pladsholdere
-  permission_add_subprojects: Opret underprojekter
-  permission_add_work_package_watchers: Tilføj tilsynsførende
-  permission_assign_versions: Assign versions
-  permission_browse_repository: Read-only access to repository (browse and checkout)
-  permission_change_work_package_status: Change work package status
-  permission_change_work_package_status_explanation: Allows changing status without Edit work packages permission
-  permission_comment_news: Kommenter nyheder
-  permission_commit_access: Read/write access to repository (commit)
-  permission_copy_projects: Kopiér projekter
-  permission_copy_projects_explanation: In template projects, this permission has a secondary function, it allows the creation of new projects derived from the template.
-  permission_copy_work_packages: Duplicate work packages
-  permission_create_backup: Create backups
-  permission_delete_work_package_watchers: Slet tilsynsførende
-  permission_delete_work_packages: Slet arbejdspakker
-  permission_delete_messages: Slet meddelelser
-  permission_delete_own_messages: Slet egne meddelelser
-  permission_delete_reportings: Slet rapporteringer
-  permission_delete_timelines: Slet tidslinjer
-  permission_edit_work_package_comments: Moderate comments
-  permission_edit_work_package_comments_explanation: 'Caution: Users with this permission are able to edit anyone''s comment.'
-  permission_edit_work_packages: Rediger arbejdspakker
-  permission_edit_messages: Rediger meddelelser
-  permission_edit_own_internal_comments: Edit own internal comments
-  permission_edit_own_work_package_comments: Edit own comments
-  permission_edit_own_messages: Rediger egne meddelelser
-  permission_edit_own_time_entries: Rediger egne tidsregistringer
-  permission_edit_others_internal_comments: Moderate internal comments
-  permission_edit_others_internal_comments_explanation: 'Caution: Users with this permission are able to edit other users'' internal comments.'
-  permission_edit_project: Rediger projekt
-  permission_edit_project_attributes: Edit project attributes
-  permission_edit_project_phases: Edit project phases
-  permission_edit_reportings: Rediger rapporteringer
-  permission_edit_time_entries: Edit time logs for other users
-  permission_edit_timelines: Rediger tidslinjer
-  permission_edit_wiki_pages: Rediger wiki-sider
-  permission_export_work_packages: Eksportér arbejdspakker
-  permission_export_projects: Export projects
-  permission_invite_members_by_email: Invite members by email
-  permission_invite_members_by_email_explanation: 'Allows users to invite new members by email. Invited users will receive an email with a link to set their password and activate their account. Depends on the permission to manage members
-
-    '
-  permission_log_own_time: Log own time
-  permission_log_time: Log time for other users
-  permission_manage_forums: Administrer fora
-  permission_manage_categories: Administrer kategorier for arbejdspakker
-  permission_manage_dashboards: Manage dashboards
-  permission_manage_work_package_relations: Administrer forbindelser for arbejdspakker
-  permission_manage_members: Administrer medlemmer
-  permission_manage_news: Administrer nyheder
-  permission_manage_project_activities: Administrer projektets aktiviteter
-  permission_manage_public_queries: Manage public views
-  permission_manage_repository: Administrer projektarkiv
-  permission_manage_subtasks: Manage work package hierarchies
-  permission_manage_versions: Administrer versioner
-  permission_manage_wiki: Administrer wiki
-  permission_manage_own_working_times: Manage own working times
-  permission_manage_own_working_times_explanation: 'Allows users to manage their own working times, and personal non-working days.
-
-    '
-  permission_manage_working_times: Manage working times for all users
-  permission_manage_working_times_explanation: 'Allows users to manage working times for all users, including personal non-working days.
-
-    '
-  permission_move_work_packages: Flyt arbejdspakker
-  permission_save_queries: Save views
-  permission_search_project: Search project
-  permission_select_custom_fields: Select custom fields
-  permission_select_project_custom_fields: Select project attributes
-  permission_select_project_phases: Select project phases
-  permission_select_project_phases_explanation: Activate/Deactivate the phases in a project. Enables the user to select the life cycle appropriate for the project as inactive phases will not be visible in the project overview page nor the project list.
-  permission_select_project_modules: Vælg projektmoduler
-  permission_share_work_packages: Share work packages
-  permission_manage_types: Vælg typer
-  permission_manage_own_reminders: Create own reminders
-  permission_view_all_principals: View all users and groups
-  permission_view_all_principals_explanation: 'Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
-
-    '
-  permission_view_project: View projects
-  permission_view_changesets: View repository revisions in OpenProject
-  permission_view_internal_comments: View internal comments
-  permission_view_commit_author_statistics: Vis statistik for tilknyttet forfatter
-  permission_view_dashboards: View dashboards
-  permission_view_work_package_watchers: Se liste over tilsynsførende
-  permission_view_work_packages: View work packages
-  permission_view_messages: Vis meddelelser
-  permission_view_news: View news
-  permission_view_members: Vis medlemmer
-  permission_view_reportings: Vis rapporteringer
-  permission_view_shared_work_packages: View work package shares
-  permission_view_time_entries: Vis anvendt tid
-  permission_view_timelines: Vis tidslinjer
-  permission_view_user_email: View users' mail addresses
-  permission_view_wiki_edits: Vis wiki-historik
-  permission_view_wiki_pages: Vis wiki
-  permission_work_package_assigned: Become assignee/responsible
-  permission_work_package_assigned_explanation: Work packages can be assigned to users and groups in possession of this role in the respective project
-  permission_view_project_activity: View project activity
-  permission_view_project_attributes: View project attributes
-  permission_view_project_phases: View project phases
-  permission_save_bcf_queries: Save BCF queries
-  permission_manage_public_bcf_queries: Manage public BCF queries
-  permission_edit_attribute_help_texts: Edit attribute help texts
-  permission_manage_public_project_queries: Manage public project lists
-  permission_view_project_query: View project query
-  permission_edit_project_query: Edit project query
+    heading_getting_started: "Get an overview"
+    text_getting_started_description: "Get a quick overview of project management and team collaboration with Yojana. You can restart this video from the help menu."
+    welcome: "Welcome to %{app_title}"
+    select_language: "Please select your language"
+  permission_add_work_package_comments: "Add comments"
+  permission_add_work_packages: "Tilføj arbejdspakker"
+  permission_add_messages: "Send beskeder"
+  permission_add_project: "Create projects"
+  permission_add_portfolios: "Create portfolios"
+  permission_add_programs: "Create programs"
+  permission_add_work_package_attachments: "Add attachments"
+  permission_add_work_package_attachments_explanation: "Allows adding attachments without Edit work packages permission"
+  permission_add_internal_comments: "Write internal comments"
+  permission_archive_project: "Archive project"
+  permission_create_user: "Create users"
+  permission_manage_user: "Edit users"
+  permission_manage_placeholder_user: "Opret, rediger og slet brugere af pladsholdere"
+  permission_add_subprojects: "Opret underprojekter"
+  permission_add_work_package_watchers: "Tilføj tilsynsførende"
+  permission_assign_versions: "Assign versions"
+  permission_browse_repository: "Read-only access to repository (browse and checkout)"
+  permission_change_wiki_parent_page: "Skift overordnet wiki-side"
+  permission_change_work_package_status: "Change work package status"
+  permission_change_work_package_status_explanation: "Allows changing status without Edit work packages permission"
+  permission_comment_news: "Kommenter nyheder"
+  permission_commit_access: "Read/write access to repository (commit)"
+  permission_copy_projects: "Kopiér projekter"
+  permission_copy_projects_explanation: "In template projects, this permission has a secondary function, it allows the creation of new projects derived from the template."
+  permission_copy_work_packages: "Duplicate work packages"
+  permission_create_backup: "Create backups"
+  permission_delete_work_package_watchers: "Slet tilsynsførende"
+  permission_delete_work_packages: "Slet arbejdspakker"
+  permission_delete_messages: "Slet meddelelser"
+  permission_delete_own_messages: "Slet egne meddelelser"
+  permission_delete_reportings: "Slet rapporteringer"
+  permission_delete_timelines: "Slet tidslinjer"
+  permission_delete_wiki_pages: "Slet wiki-sider"
+  permission_delete_wiki_pages_attachments: "Slet vedhæftninger"
+  permission_edit_work_package_comments: "Moderate comments"
+  permission_edit_work_package_comments_explanation: "Caution: Users with this permission are able to edit anyone's comment."
+  permission_edit_work_packages: "Rediger arbejdspakker"
+  permission_edit_messages: "Rediger meddelelser"
+  permission_edit_own_internal_comments: "Edit own internal comments"
+  permission_edit_own_work_package_comments: "Edit own comments"
+  permission_edit_own_messages: "Rediger egne meddelelser"
+  permission_edit_own_time_entries: "Rediger egne tidsregistringer"
+  permission_edit_others_internal_comments: "Moderate internal comments"
+  permission_edit_others_internal_comments_explanation: "Caution: Users with this permission are able to edit other users' internal comments."
+  permission_edit_project: "Rediger projekt"
+  permission_edit_project_attributes: "Edit project attributes"
+  permission_edit_project_phases: "Edit project phases"
+  permission_edit_reportings: "Rediger rapporteringer"
+  permission_edit_time_entries: "Edit time logs for other users"
+  permission_edit_timelines: "Rediger tidslinjer"
+  permission_edit_wiki_pages: "Rediger wiki-sider"
+  permission_export_work_packages: "Eksportér arbejdspakker"
+  permission_export_projects: "Export projects"
+  permission_export_wiki_pages: "Eksporter wiki-sider"
+  permission_invite_members_by_email: "Invite members by email"
+  permission_invite_members_by_email_explanation: >
+    Allows users to invite new members by email. Invited users will receive an email with a link to set their password and activate their account. Depends on the permission to manage members
+  permission_list_attachments: "Oplist vedhæftninger"
+  permission_log_own_time: "Log own time"
+  permission_log_time: "Log time for other users"
+  permission_manage_forums: "Administrer fora"
+  permission_manage_categories: "Administrer kategorier for arbejdspakker"
+  permission_manage_dashboards: "Manage dashboards"
+  permission_manage_work_package_relations: "Administrer forbindelser for arbejdspakker"
+  permission_manage_members: "Administrer medlemmer"
+  permission_manage_news: "Administrer nyheder"
+  permission_manage_project_activities: "Administrer projektets aktiviteter"
+  permission_manage_public_queries: "Manage public views"
+  permission_manage_repository: "Administrer projektarkiv"
+  permission_manage_subtasks: "Manage work package hierarchies"
+  permission_manage_versions: "Administrer versioner"
+  permission_manage_wiki: "Administrer wiki"
+  permission_manage_wiki_menu: "Administrer wiki-menu"
+  permission_move_work_packages: "Flyt arbejdspakker"
+  permission_protect_wiki_pages: "Beskyt wiki-sider"
+  permission_rename_wiki_pages: "Omdøb wiki-sider"
+  permission_save_queries: "Save views"
+  permission_search_project: "Search project"
+  permission_select_custom_fields: "Select custom fields"
+  permission_select_project_custom_fields: "Select project attributes"
+  permission_select_project_phases: "Select project phases"
+  permission_select_project_phases_explanation: "Activate/Deactivate the phases in a project. Enables the user to select the life cycle appropriate for the project as inactive phases will not be visible in the project overview page nor the project list."
+  permission_select_project_modules: "Vælg projektmoduler"
+  permission_share_work_packages: "Share work packages"
+  permission_manage_types: "Vælg typer"
+  permission_manage_own_reminders: "Create own reminders"
+  permission_view_all_principals: "View all users and groups"
+  permission_view_all_principals_explanation: >
+    Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
+  permission_view_project: "View projects"
+  permission_view_changesets: "View repository revisions in Yojana"
+  permission_view_internal_comments: "View internal comments"
+  permission_view_commit_author_statistics: "Vis statistik for tilknyttet forfatter"
+  permission_view_dashboards: "View dashboards"
+  permission_view_work_package_watchers: "Se liste over tilsynsførende"
+  permission_view_work_packages: "View work packages"
+  permission_view_messages: "Vis meddelelser"
+  permission_view_news: "View news"
+  permission_view_members: "Vis medlemmer"
+  permission_view_reportings: "Vis rapporteringer"
+  permission_view_shared_work_packages: "View work package shares"
+  permission_view_time_entries: "Vis anvendt tid"
+  permission_view_timelines: "Vis tidslinjer"
+  permission_view_user_email: "View users' mail addresses"
+  permission_view_wiki_edits: "Vis wiki-historik"
+  permission_view_wiki_pages: "Vis wiki"
+  permission_work_package_assigned: "Become assignee/responsible"
+  permission_work_package_assigned_explanation: "Work packages can be assigned to users and groups in possession of this role in the respective project"
+  permission_view_project_activity: "View project activity"
+  permission_view_project_attributes: "View project attributes"
+  permission_view_project_phases: "View project phases"
+  permission_save_bcf_queries: "Save BCF queries"
+  permission_manage_public_bcf_queries: "Manage public BCF queries"
+  permission_edit_attribute_help_texts: "Edit attribute help texts"
+  permission_manage_public_project_queries: "Manage public project lists"
+  permission_view_project_query: "View project query"
+  permission_edit_project_query: "Edit project query"
   placeholders:
     default: "-"
     templated_hint: Automatically generated through type %{type}
@@ -5094,49 +5058,50 @@ da:
     create_successful: Repositoriet er blevet registreret.
     delete_sucessful: Repositoriet er blevet slettet.
     destroy:
-      confirmation: Fortsætter du, vil dette permanent slette det administrerede repositorie.
-      info: Sletning af repositoriet kan ikke fortrydes.
-      info_not_managed: 'Bemærk: Indholdet af dette repositorie slette IKKE, da det ikke administreres af OpenProject.'
-      managed_path_note: 'Følgende mappe slettes: %{path}'
-      repository_verification_html: Enter the project's identifier %{identifier} to verify the deletion of its repository.
-      subtitle: Slet %{repository_type} for projektet %{project_name}, sikker?
-      subtitle_not_managed_html: Do you really want to remove the linked %{repository_type} %{url} from the project %{project_name}?
-      title_html: Delete the %{repository_type}
-      title_not_managed: Fjern det lænkede %{repository_type}?
+      confirmation: "Fortsætter du, vil dette permanent slette det administrerede repositorie."
+      info: "Sletning af repositoriet kan ikke fortrydes."
+      info_not_managed: "Bemærk: Indholdet af dette repositorie slette IKKE, da det ikke administreres af Yojana."
+      managed_path_note: "Følgende mappe slettes: %{path}"
+      repository_verification: "Angiv projekts identifikator %{identifier} for at bekræfte sletningen af dets repositorie."
+      subtitle: "Slet %{repository_type} for projektet %{project_name}, sikker?"
+      subtitle_not_managed: "Fjern den lænkede %{repository_type} %{url} fra projekt %{project_name}, sikker?"
+      title: "Slet %{repository_type}"
+      title_not_managed: "Fjern det lænkede %{repository_type}?"
     errors:
-      build_failed: Kan ikke oprette repositoriet med den valgte konfiguration. %{reason}
-      managed_delete: Kan ikke slette det administrerede repositorie.
-      managed_delete_local: 'Kan ikke slette det lokale repositorie fra filsystemet på ''%{path}'': %{error_message}'
-      empty_repository: Repositoriet findes, men er tomt. Det indeholder endnu ingen revideringer.
-      exists_on_filesystem: Repositoriemappen findes allerede på disken.
-      filesystem_access_failed: 'En fejl opstod under tilgang til repositoriet på disken: %{message}'
-      not_manageable: Denne repositorieleverandør kan ikke administreres af OpenProject.
-      path_permission_failed: 'En fejl opstod under forsøget på at oprette følgende sti: %{path}. Sørg venligst for, at OpenProject har skrivetilladelse til den pågældende mappe.'
-      unauthorized: Du har ikke tilladelse - eller legitimationsoplysningerne er ugyldige - til at tilgå repositoriet.
-      unavailable: Repositoriet er utilgængeligt.
-      exception_title: 'Kan ikke tilgå repositoriet: %{message}'
-      disabled_or_unknown_type: Den valgte type %{type} er inaktiv eller ikke længere tilgængelig for SCM-leverandør %{vendor}.
-      disabled_or_unknown_vendor: SCM-leverandør %{vendor} er inaktiv eller ikke længere tilgængelig.
-      remote_call_failed: 'Kald af den administrerede fjernhåndtering mislykkedes med beskeden ''%{message}'' (kode: %{code})'
-      remote_invalid_response: Modtog et ugyldigt svar fra den administrerede fjernhåndtering.
-      remote_save_failed: Could not save the repository with the parameters retrieved from the remote.
+      build_failed: "Kan ikke oprette repositoriet med den valgte konfiguration. %{reason}"
+      managed_delete: "Kan ikke slette det administrerede repositorie."
+      managed_delete_local: "Kan ikke slette det lokale repositorie fra filsystemet på '%{path}': %{error_message}"
+      empty_repository: "Repositoriet findes, men er tomt. Det indeholder endnu ingen revideringer."
+      exists_on_filesystem: "Repositoriemappen findes allerede på disken."
+      filesystem_access_failed: "En fejl opstod under tilgang til repositoriet på disken: %{message}"
+      not_manageable: "Denne repositorieleverandør kan ikke administreres af Yojana."
+      path_permission_failed: "En fejl opstod under forsøget på at oprette følgende sti: %{path}. Sørg venligst for, at Yojana har skrivetilladelse til den pågældende mappe."
+      unauthorized: "Du har ikke tilladelse - eller legitimationsoplysningerne er ugyldige - til at tilgå repositoriet."
+      unavailable: "Repositoriet er utilgængeligt."
+      exception_title: "Kan ikke tilgå repositoriet: %{message}"
+      disabled_or_unknown_type: "Den valgte type %{type} er inaktiv eller ikke længere tilgængelig for SCM-leverandør %{vendor}."
+      disabled_or_unknown_vendor: "SCM-leverandør %{vendor} er inaktiv eller ikke længere tilgængelig."
+      remote_call_failed: "Kald af den administrerede fjernhåndtering mislykkedes med beskeden '%{message}' (kode: %{code})"
+      remote_invalid_response: "Modtog et ugyldigt svar fra den administrerede fjernhåndtering."
+      remote_save_failed: "Could not save the repository with the parameters retrieved from the remote."
     git:
       instructions:
-        managed_url: Dette er URL'en til det administrerede (lokale) Git-repositorie.
-        path: Specify the path to your local Git repository ( e.g., %{example_path} ). You can also use remote repositories which are cloned to a local copy by using a value starting with http(s):// or file://.
-        path_encoding: 'Tilsidesæt Git-stikodning (standard: UTF-8)'
-      local_title: Link eksisterende lokalt Git-repositorie
-      local_url: Lokal URL
-      local_introduction: Har du et eksisterende underversions-repositorie, kan du lænke dette med OpenProject for at kunne tilgå det indefra applikationen.
-      managed_introduction: Lad OpenProject oprette og integrere et lokalt Git-repositorie automatisk.
-      managed_title: Git-repositorie integreret i OpenProject
-      managed_url: Administreret URL
-      path: Sti til Git-repositorie
-      path_encoding: Indkod sti for arkivering
-    go_to_revision: Gå til revision
-    managed_remote: Administrerede repositorier for denne leverandør håndteres eksternt.
-    managed_remote_note: Oplysninger om dette repositories URL og sti er ikke tilgængelig forud for dets oprettelse.
-    managed_url: Administreret URL
+        managed_url: "Dette er URL'en til det administrerede (lokale) Git-repositorie."
+        path: >-
+          Specify the path to your local Git repository ( e.g., %{example_path} ). You can also use remote repositories which are cloned to a local copy by using a value starting with http(s):// or file://.
+        path_encoding: "Tilsidesæt Git-stikodning (standard: UTF-8)"
+      local_title: "Link eksisterende lokalt Git-repositorie"
+      local_url: "Lokal URL"
+      local_introduction: "Har du et eksisterende underversions-repositorie, kan du lænke dette med Yojana for at kunne tilgå det indefra applikationen."
+      managed_introduction: "Lad Yojana oprette og integrere et lokalt Git-repositorie automatisk."
+      managed_title: "Git-repositorie integreret i Yojana"
+      managed_url: "Administreret URL"
+      path: "Sti til Git-repositorie"
+      path_encoding: "Indkod sti for arkivering"
+    go_to_revision: "Gå til revision"
+    managed_remote: "Administrerede repositorier for denne leverandør håndteres eksternt."
+    managed_remote_note: "Oplysninger om dette repositories URL og sti er ikke tilgængelig forud for dets oprettelse."
+    managed_url: "Administreret URL"
     settings:
       automatic_managed_repos_disabled: Deaktivér automatisk oprettelse
       automatic_managed_repos: Automatisk oprettelse af administrerede repositorier
@@ -5144,206 +5109,179 @@ da:
     scm_vendor: Kildekontrolsadministrationssystem
     scm_type: Repositorietype
     scm_types:
-      local: Sammenkæd eksisterende lokalrepositorie
-      existing: Sammenkæd eksisterende repositorie
-      managed: Opret nyt repositorie i OpenProject
+      local: "Sammenkæd eksisterende lokalrepositorie"
+      existing: "Sammenkæd eksisterende repositorie"
+      managed: "Opret nyt repositorie i Yojana"
     storage:
-      not_available: Disklagerpladsforbrug er ikke tilgængelig for dette repositorie.
-      update_timeout: |-
-        Behold de seneste, nødvendige disklagerpladsoplysninger for et repositorie i N minutter.
-        Da opgørelsen af påkrævet disklagerplads for et repositorie kan være bekosteligt, forøg denne værdi for at reducere følgevirkninger på ydeevnen.
-      oauth_application_details_html: 'The client secret value will not be accessible again after you close this window. Please copy these values into the Nextcloud OpenProject Integration settings:'
-      oauth_application_details_link_text: Go to settings page
-      setup_documentation_details: 'If you need help configuring a new file storage please check the documentation: '
-      setup_documentation_details_link_text: File storages setup
-      show_warning_details: To use this file storage remember to activate the module and the specific storage in the project settings of each desired project.
+      not_available: "Disklagerpladsforbrug er ikke tilgængelig for dette repositorie."
+      update_timeout: "Behold de seneste, nødvendige disklagerpladsoplysninger for et repositorie i N minutter.\nDa opgørelsen af påkrævet disklagerplads for et repositorie kan være bekosteligt, forøg denne værdi for at reducere følgevirkninger på ydeevnen."
+      oauth_application_details: "The client secret value will not be accessible again after you close this window. Please copy these values into the Nextcloud Yojana Integration settings:"
+      oauth_application_details_link_text: "Go to settings page"
+      setup_documentation_details: "If you need help configuring a new file storage please check the documentation: "
+      setup_documentation_details_link_text: "File storages setup"
+      show_warning_details: "To use this file storage remember to activate the module and the specific storage in the project settings of each desired project."
     subversion:
-      existing_title: Eksisterende underversions-repositorie
-      existing_introduction: Hvis du har et eksisterende underversions-repositorie, kan du sammenkæde dette med OpenProject for at få adgang til det indefra applikationen.
-      existing_url: Existing URL
+      existing_title: "Eksisterende underversions-repositorie"
+      existing_introduction: "Hvis du har et eksisterende underversions-repositorie, kan du sammenkæde dette med Yojana for at få adgang til det indefra applikationen."
+      existing_url: "Existing URL"
       instructions:
-        managed_url: Dette er URL'en på det administrerede (lokale) underversions-repositorie.
-        url: |-
-          Angiv repositorie-URL'en. Dette kan enten målrette et lokalt repositorie (startende med %{local_proto}) eller et eksternt repositorie.
-          De følgende URL-skemaer understøttes:
-      managed_title: Underversions-repositorie integreret i OpenProject
-      managed_introduction: Lad OpenProject oprette og integrere et lokalt underversions-repositorie automatisk.
-      managed_url: Administreret URL
-      password: Repositorie-adgangskode
-      username: Repositorie-brugernavn
-    truncated: Sorry, we had to truncate this directory to %{limit} files. %{truncated} entries were omitted from the list.
+        managed_url: "Dette er URL'en på det administrerede (lokale) underversions-repositorie."
+        url: "Angiv repositorie-URL'en. Dette kan enten målrette et lokalt repositorie (startende med %{local_proto}) eller et eksternt repositorie.\nDe følgende URL-skemaer understøttes:"
+      managed_title: "Underversions-repositorie integreret i Yojana"
+      managed_introduction: "Lad Yojana oprette og integrere et lokalt underversions-repositorie automatisk."
+      managed_url: "Administreret URL"
+      password: "Repositorie-adgangskode"
+      username: "Repositorie-brugernavn"
+    truncated: "Sorry, we had to truncate this directory to %{limit} files. %{truncated} entries were omitted from the list."
     named_repository: "%{vendor_name}-repositorie"
     update_settings_successful: Indstillingerne er blevet gemt succesfuldt.
     url: URL til repositorie
     warnings:
       cannot_annotate: Denne fil kan ikke kommenteres.
   scheduling:
-    manual: set to Manual
-    automatic: set to Automatic
-  search_input_placeholder: Søg ...
-  setting_allowed_link_protocols: Allowed link protocols
-  setting_allowed_link_protocols_text_html: Allow these protocols to be rendered as links in work package descriptions, long text fields and comments. For example, %{tel_code} or %{element_code}. Enter one protocol per line. <br/> Protocols %{http_code}, %{https_code}, and %{mailto_code} are always allowed.
-  setting_capture_external_links: Capture external links
-  setting_capture_external_links_text: 'When enabled, all external links in formatted text will redirect through a warning page before leaving the application. This helps protect users from potentially malicious external websites.
-
-    '
-  setting_capture_external_links_require_login: Require users to be logged in
-  setting_capture_external_links_require_login_text: 'When enabled, users wanting to click on external links need to be logged in before being able to continue.
-
-    '
-  setting_after_first_login_redirect_url: First login redirect
-  setting_after_first_login_redirect_url_text_html: 'Set a path to redirect users after their first login. If empty, redirects to the home page for the onboarding tour. <br/> Example: <code>/my/page</code>
-
-    '
-  setting_after_login_default_redirect_url: After login redirect
-  setting_after_login_default_redirect_url_example_html: 'Set a default path to redirect users after login, if no back link was provided. Redirects to home page if not set. <br/> Example: %{example_code}
-
-    '
-  setting_apiv3_cors_title: Cross-Origin Resource Sharing (CORS)
-  setting_apiv3_cors_enabled: Enable CORS
-  setting_apiv3_cors_origins: API V3 Cross-Origin Resource Sharing (CORS) allowed origins
-  setting_apiv3_cors_origins_instructions_html: 'If CORS is enabled, these are the origins that are allowed to access OpenProject API. <br/> Please check the [Documentation on the Origin header](docs_url) on how to specify the expected values.
-
-    '
-  setting_apiv3_write_readonly_attributes: Write access to read-only attributes
-  setting_apiv3_write_readonly_attributes_instructions: 'If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
-
-    '
-  setting_apiv3_write_readonly_attributes_warning: 'This setting has a use-case for e.g., importing data, but allows administrators to impersonate the creation of items as other users. All creation requests are being logged however with the true author.
-
-    '
-  setting_apiv3_write_readonly_attributes_additional_html: 'For more information on attributes and supported resources, please see the [API documentation](api_documentation_link).
-
-    '
-  setting_apiv3_max_page_size: Maximum API page size
-  setting_apiv3_max_page_size_instructions: 'Set the maximum page size the API will respond with. It will not be possible to perform API requests that return more values on a single page.
-
-    '
-  setting_apiv3_max_page_size_warning: 'Please only change this value if you are sure why you need it. Setting to a high value will result in significant performance impacts, while a value lower than the per page options will cause errors in paginated views.
-
-    '
-  setting_apiv3_docs: Documentation
-  setting_apiv3_docs_enabled: Enable docs page
-  setting_apiv3_docs_enabled_instructions_html: 'If the docs page is enabled you can get an interactive view of the APIv3 documentation under <a href="%{link}" target="_blank">%{link}</a>.
-
-    '
-  setting_apiv3_docs_enabled_instructions_warning: 'Please be aware that enabling the API docs on a production system may expose sensitive information or result in accidental loss of data when not being careful. We recommend to only enable this setting for development purposes.
-
-    '
-  setting_attachment_whitelist: Attachment upload whitelist
-  setting_email_delivery_method: Email delivery method
-  setting_emails_salutation: Address user in emails with
-  setting_oauth_allow_remapping_of_existing_users: Allow remapping of existing users
-  setting_sendmail_location: Location of the sendmail executable
-  setting_sendmail_arguments: Arguments for sendmail
-  setting_smtp_enable_starttls_auto: Automatically use STARTTLS if available
-  setting_smtp_ssl: Use SSL connection
-  setting_smtp_address: SMTP server
-  setting_smtp_port: SMTP port
-  setting_smtp_authentication: SMTP authentication
-  setting_smtp_user_name: SMTP username
-  setting_smtp_password: SMTP password
-  setting_smtp_domain: SMTP HELO domain
-  setting_activity_days_default: Dage, der vises under projektaktivitet
-  setting_api_tokens_enabled: Enable API tokens
-  setting_api_tokens_enabled_caption: 'Decide whether users can create personal API tokens in their account settings. These tokens can be used to access the different APIs of OpenProject, such as APIv3 and MCP.
-
-    '
-  setting_app_subtitle: Appens undertitel
-  setting_app_title: Appens titel
-  setting_organization_name: Organization name
-  setting_attachment_max_size: Maksimal størrelse for vedhæftning
-  setting_show_work_package_attachments: Show attachments in the files tab by default
-  setting_antivirus_scan_mode: Scan mode
-  setting_antivirus_scan_action: Infected file action
-  setting_autofetch_changesets: Autohent repositorie-ændringer
-  setting_autologin: Autologin
-  setting_available_languages: Tilgængelige sprog
-  setting_bcc_recipients: Anonymiserede modtagere (bcc)
-  setting_brute_force_block_after_failed_logins: Blokér bruger efter dette antal mislykkede forsøg på login
-  setting_brute_force_block_minutes: Periode, brugeren vil være blokeret
-  setting_cache_formatted_text: Gem tekstformat i cache
-  setting_use_wysiwyg_description: Select to enable CKEditor5 WYSIWYG editor for all users by default. CKEditor has limited functionality for GFM Markdown.
-  setting_column_options: Default work package lists columns
-  setting_commit_fix_keywords: Tilpasser nøgleord
-  setting_commit_logs_encoding: Udfør kodning af meddelelser
-  setting_commit_logtime_activity_id: Aktivitet til tidsregistrering
-  setting_commit_logtime_enabled: Aktivér tidsregistrering
-  setting_commit_ref_keywords: Fastslår forbindelser mellem nøgleord
-  setting_consent_time: Consent time
-  setting_consent_info: Consent information text
-  setting_consent_required: Consent required
-  setting_consent_decline_mail: Consent contact mail address
-  setting_cross_project_work_package_relations: Tillad forbindelser mellem arbejdspakker på tværs af projekter
-  setting_csv_escape_formulas: Escape formulas in CSV exports
-  setting_csv_escape_formulas_text: 'Escape spreadsheet formulas in CSV exports by prefixing cells that begin with characters such as =, +, -, or @ with a single quote. This mitigates CSV formula injection when exported files are opened in spreadsheet applications such as Excel. This comes at the downside of modifying the string values inside the CSV, so you may want to disable this if downstream tools require the exact, unescaped cell values.
-
-    '
-  setting_first_week_of_year: Første uge i året indeholder
-  setting_date_format: Dato
-  setting_default_language: Forhåndsvalgt sprog
-  setting_default_projects_modules: Forhåndsvalgt aktive moduler for nye projekter
-  setting_default_projects_public: Nye projekter er på forhånd sat som offentlige
-  setting_disable_password_login: Disable password authentication
-  setting_diff_max_lines_displayed: Højeste antal viste linjer for afvigelser
-  setting_omniauth_direct_login_provider: Direct login SSO provider
-  setting_display_subprojects_work_packages: Vælg altid at vise underprojekters arbejdspakker ved hovedprojektet
-  setting_duration_format: Duration format
-  setting_duration_format_hours_only: Hours only
-  setting_duration_format_days_and_hours: Days and hours
-  setting_duration_format_instructions: This defines how Work, Remaining work, and Time spent durations are displayed.
-  setting_emails_footer: Mailsignatur
-  setting_emails_header: Mailhoved
-  setting_email_login: Use email as login
-  setting_enabled_scm: Aktiver SCM
-  setting_enabled_projects_columns: Columns in a projects list displayed by default
-  setting_feeds_enabled: Aktiver feeds
-  setting_ical_enabled: Enable iCalendar subscriptions
-  setting_feeds_limit: Grænse for indhold af feeds
-  setting_file_max_size_displayed: Maksimal størrelse af tekstfiler, der vises inline
-  setting_host_name: Værtsnavn
-  setting_collaborative_editing_hocuspocus_url: Hocuspocus server URL
-  setting_collaborative_editing_hocuspocus_secret: Hocuspocus server secret
-  setting_hours_per_day: Hours per day
-  setting_hours_per_day_explanation: This defines what is considered a "day" when displaying duration in days and hours (for example, if a day is 8 hours, 32 hours would be 4 days).
-  setting_invitation_expiration_days: Activation email expires after
-  setting_invitation_expiration_days_caption: Number of days after which the activation email expires.
-  setting_work_package_done_ratio: Progress calculation mode
-  setting_work_package_done_ratio_field: Work-based
-  setting_work_package_done_ratio_field_caption_html: "<i>% Complete</i> can be freely set to any value. If you optionally enter a value for <i>Work</i>, <i>Remaining work</i> will automatically be derived."
-  setting_work_package_done_ratio_status: Status-based
-  setting_work_package_done_ratio_status_caption_html: Each status has a <i>% Complete</i> value associated with it. Changing status will change <i>% Complete</i>.
-  setting_work_package_done_ratio_explanation_html: 'In <b>work-based</b> mode, % Complete can be freely set to any value. If you optionally enter a value for Work, Remaining work will automatically be derived. In <b>status-based</b> mode, each status has a % Complete value associated with it. Changing status will change % Complete.
-
-    '
-  setting_work_package_properties: Egenskaber for arbejdspakke
-  setting_work_package_startdate_is_adddate: Brug dags dato som start for nye arbejdspakker
-  setting_work_packages_projects_export_limit: Work packages / Projects export limit
-  setting_work_packages_projects_export_limit_text: 'Maximum number of work packages or projects that can be included in a single export. Larger exports are truncated to this limit.
-
-    '
-  setting_journal_aggregation_time_minutes: Aggregation period
-  setting_log_requesting_user: Log bruger-login, navn og mail-adresse ved hver forespørgsel
-  setting_login_required: Godkendelse påkrævet
-  setting_login_required_caption: When checked, all requests to the application have to be authenticated.
-  setting_lost_password: Enable password reset
-  setting_lost_password_caption: When checked, allow users to reset their own passwords.
-  setting_mail_from: Mailadresse for udsendelse
-  setting_mail_handler_api_key: API-nøgle
-  setting_mail_handler_body_delimiters: Afkort mails efter en af disse linier
-  setting_mail_handler_body_delimiter_regex: Truncate emails matching this regex
-  setting_mail_handler_ignore_filenames: Ignored mail attachments
-  setting_new_project_user_role_id: Rolle givet til bruger der opretter projekt uden at være administrator
-  setting_new_project_user_role_id_caption: 'Only roles that include the permissions to edit project attributes and to manage members are listed, so that the creator can complete the project setup.
-
-    '
-  setting_new_project_send_confirmation_email: Send notification to author when creating a new project
-  setting_new_project_notification_text: Notification text
-  setting_password_active_rules: Password requirements
-  setting_password_count_former_banned: Antal af senest anvendte adgangskoder, der ikke må genbruges
-  setting_password_days_valid: Antal dage, inden tvungen ændring af adgangskode
-  setting_password_min_length: Mindste længde
-  setting_per_page_options: Mulige objekter per side
+    manual: "set to Manual"
+    automatic: "set to Automatic"
+  search_input_placeholder: "Søg ..."
+  setting_allowed_link_protocols: "Allowed link protocols"
+  setting_allowed_link_protocols_text_html: >-
+    Allow these protocols to be rendered as links in work package descriptions, long text fields and comments. For example, %{tel_code} or %{element_code}. Enter one protocol per line. <br/> Protocols %{http_code}, %{https_code}, and %{mailto_code} are always allowed.
+  setting_capture_external_links: "Capture external links"
+  setting_capture_external_links_text: >
+    When enabled, all external links in formatted text will redirect through a warning page before leaving the application. This helps protect users from potentially malicious external websites.
+  setting_capture_external_links_require_login: "Require users to be logged in"
+  setting_capture_external_links_require_login_text: >
+    When enabled, users wanting to click on external links need to be logged in before being able to continue.
+  setting_after_first_login_redirect_url: "First login redirect"
+  setting_after_first_login_redirect_url_text_html: >
+    Set a path to redirect users after their first login. If empty, redirects to the home page for the onboarding tour. <br/> Example: <code>/my/page</code>
+  setting_after_login_default_redirect_url: "After login redirect"
+  setting_after_login_default_redirect_url_text_html: >
+    Set a default path to redirect users after login, if no back link was provided. Redirects to home page if not set. <br/> Example: <code>/my/page</code>
+  setting_apiv3_cors_title: "Cross-Origin Resource Sharing (CORS)"
+  setting_apiv3_cors_enabled: "Enable CORS"
+  setting_apiv3_cors_origins: "API V3 Cross-Origin Resource Sharing (CORS) allowed origins"
+  setting_apiv3_cors_origins_text_html: >
+    If CORS is enabled, these are the origins that are allowed to access Yojana API. <br/> Please check the <a href="%{origin_link}" target="_blank">Documentation on the Origin header</a> on how to specify the expected values.
+  setting_apiv3_write_readonly_attributes: "Write access to read-only attributes"
+  setting_apiv3_write_readonly_attributes_instructions: >
+    If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
+  setting_apiv3_write_readonly_attributes_warning: >
+    This setting has a use-case for e.g., importing data, but allows administrators to impersonate the creation of items as other users. All creation requests are being logged however with the true author.
+  setting_apiv3_write_readonly_attributes_additional: >
+    For more information on attributes and supported resources, please see the %{api_documentation_link}.
+  setting_apiv3_max_page_size: "Maximum API page size"
+  setting_apiv3_max_page_size_instructions: >
+    Set the maximum page size the API will respond with. It will not be possible to perform API requests that return more values on a single page.
+  setting_apiv3_max_page_size_warning: >
+    Please only change this value if you are sure why you need it. Setting to a high value will result in significant performance impacts, while a value lower than the per page options will cause errors in paginated views.
+  setting_apiv3_docs: "Documentation"
+  setting_apiv3_docs_enabled: "Enable docs page"
+  setting_apiv3_docs_enabled_instructions_html: >
+    If the docs page is enabled you can get an interactive view of the APIv3 documentation under <a href="%{link}" target="_blank">%{link}</a>.
+  setting_apiv3_docs_enabled_instructions_warning: >
+    Please be aware that enabling the API docs on a production system may expose sensitive information or result in accidental loss of data when not being careful. We recommend to only enable this setting for development purposes.
+  setting_attachment_whitelist: "Attachment upload whitelist"
+  setting_email_delivery_method: "Email delivery method"
+  setting_emails_salutation: "Address user in emails with"
+  setting_oauth_allow_remapping_of_existing_users: "Allow remapping of existing users"
+  setting_sendmail_location: "Location of the sendmail executable"
+  setting_sendmail_arguments: "Arguments for sendmail"
+  setting_smtp_enable_starttls_auto: "Automatically use STARTTLS if available"
+  setting_smtp_ssl: "Use SSL connection"
+  setting_smtp_address: "SMTP server"
+  setting_smtp_port: "SMTP port"
+  setting_smtp_authentication: "SMTP authentication"
+  setting_smtp_user_name: "SMTP username"
+  setting_smtp_password: "SMTP password"
+  setting_smtp_domain: "SMTP HELO domain"
+  setting_activity_days_default: "Dage, der vises under projektaktivitet"
+  setting_app_subtitle: "Appens undertitel"
+  setting_app_title: "Appens titel"
+  setting_attachment_max_size: "Maksimal størrelse for vedhæftning"
+  setting_show_work_package_attachments: "Show attachments in the files tab by default"
+  setting_antivirus_scan_mode: "Scan mode"
+  setting_antivirus_scan_action: "Infected file action"
+  setting_autofetch_changesets: "Autohent repositorie-ændringer"
+  setting_autologin: "Autologin"
+  setting_available_languages: "Tilgængelige sprog"
+  setting_bcc_recipients: "Anonymiserede modtagere (bcc)"
+  setting_brute_force_block_after_failed_logins: "Blokér bruger efter dette antal mislykkede forsøg på login"
+  setting_brute_force_block_minutes: "Periode, brugeren vil være blokeret"
+  setting_cache_formatted_text: "Gem tekstformat i cache"
+  setting_use_wysiwyg_description: "Select to enable CKEditor5 WYSIWYG editor for all users by default. CKEditor has limited functionality for GFM Markdown."
+  setting_column_options: "Default work package lists columns"
+  setting_commit_fix_keywords: "Tilpasser nøgleord"
+  setting_commit_logs_encoding: "Udfør kodning af meddelelser"
+  setting_commit_logtime_activity_id: "Aktivitet til tidsregistrering"
+  setting_commit_logtime_enabled: "Aktivér tidsregistrering"
+  setting_commit_ref_keywords: "Fastslår forbindelser mellem nøgleord"
+  setting_consent_time: "Consent time"
+  setting_consent_info: "Consent information text"
+  setting_consent_required: "Consent required"
+  setting_consent_decline_mail: "Consent contact mail address"
+  setting_cross_project_work_package_relations: "Tillad forbindelser mellem arbejdspakker på tværs af projekter"
+  setting_first_week_of_year: "Første uge i året indeholder"
+  setting_date_format: "Dato"
+  setting_default_language: "Forhåndsvalgt sprog"
+  setting_default_projects_modules: "Forhåndsvalgt aktive moduler for nye projekter"
+  setting_default_projects_public: "Nye projekter er på forhånd sat som offentlige"
+  setting_disable_password_login: "Disable password authentication"
+  setting_diff_max_lines_displayed: "Højeste antal viste linjer for afvigelser"
+  setting_omniauth_direct_login_provider: "Direct login SSO provider"
+  setting_display_subprojects_work_packages: "Vælg altid at vise underprojekters arbejdspakker ved hovedprojektet"
+  setting_duration_format: "Duration format"
+  setting_duration_format_hours_only: "Hours only"
+  setting_duration_format_days_and_hours: "Days and hours"
+  setting_duration_format_instructions: "This defines how Work, Remaining work, and Time spent durations are displayed."
+  setting_emails_footer: "Mailsignatur"
+  setting_emails_header: "Mailhoved"
+  setting_email_login: "Use email as login"
+  setting_enabled_scm: "Aktiver SCM"
+  setting_enabled_projects_columns: "Columns in a projects list displayed by default"
+  setting_feeds_enabled: "Aktiver feeds"
+  setting_ical_enabled: "Enable iCalendar subscriptions"
+  setting_feeds_limit: "Grænse for indhold af feeds"
+  setting_file_max_size_displayed: "Maksimal størrelse af tekstfiler, der vises inline"
+  setting_host_name: "Værtsnavn"
+  setting_collaborative_editing_hocuspocus_url: "Hocuspocus server URL"
+  setting_collaborative_editing_hocuspocus_secret: "Hocuspocus server secret"
+  setting_hours_per_day: "Hours per day"
+  setting_hours_per_day_explanation: >-
+    This defines what is considered a "day" when displaying duration in days and hours (for example, if a day is 8 hours, 32 hours would be 4 days).
+  setting_invitation_expiration_days: "Activation email expires after"
+  setting_invitation_expiration_days_caption: "Number of days after which the activation email expires."
+  setting_work_package_done_ratio: "Progress calculation mode"
+  setting_work_package_done_ratio_field: "Work-based"
+  setting_work_package_done_ratio_field_caption_html: >-
+    <i>% Complete</i> can be freely set to any value. If you optionally enter a value for <i>Work</i>, <i>Remaining work</i> will automatically be derived.
+  setting_work_package_done_ratio_status: "Status-based"
+  setting_work_package_done_ratio_status_caption_html: >-
+    Each status has a <i>% Complete</i> value associated with it. Changing status will change <i>% Complete</i>.
+  setting_work_package_done_ratio_explanation_html: >
+    In <b>work-based</b> mode, % Complete can be freely set to any value. If you optionally enter a value for Work, Remaining work will automatically be derived. In <b>status-based</b> mode, each status has a % Complete value associated with it. Changing status will change % Complete.
+  setting_work_package_properties: "Egenskaber for arbejdspakke"
+  setting_work_package_startdate_is_adddate: "Brug dags dato som start for nye arbejdspakker"
+  setting_work_packages_projects_export_limit: "Work packages / Projects export limit"
+  setting_journal_aggregation_time_minutes: "User actions aggregated within"
+  setting_log_requesting_user: "Log bruger-login, navn og mail-adresse ved hver forespørgsel"
+  setting_login_required: "Godkendelse påkrævet"
+  setting_login_required_caption: "When checked, all requests to the application have to be authenticated."
+  setting_lost_password: "Enable password reset"
+  setting_lost_password_caption: "When checked, allow users to reset their own passwords."
+  setting_mail_from: "Mailadresse for udsendelse"
+  setting_mail_handler_api_key: "API-nøgle"
+  setting_mail_handler_body_delimiters: "Afkort mails efter en af disse linier"
+  setting_mail_handler_body_delimiter_regex: "Truncate emails matching this regex"
+  setting_mail_handler_ignore_filenames: "Ignored mail attachments"
+  setting_new_project_user_role_id: "Rolle givet til bruger der opretter projekt uden at være administrator"
+  setting_new_project_send_confirmation_email: "Send notification to author when creating a new project"
+  setting_new_project_notification_text: "Notification text"
+  setting_password_active_rules: "Aktive typer af tegn"
+  setting_password_count_former_banned: "Antal af senest anvendte adgangskoder, der ikke må genbruges"
+  setting_password_days_valid: "Antal dage, inden tvungen ændring af adgangskode"
+  setting_password_min_length: "Mindste længde"
+  setting_password_min_adhered_rules: "Mindste antal krævede typer"
+  setting_per_page_options: "Mulige objekter per side"
   setting_percent_complete_on_status_closed: "% Complete when status is closed"
   setting_percent_complete_on_status_closed_no_change: No change
   setting_percent_complete_on_status_closed_no_change_caption_html: The value of <i>% Complete</i> will not change even when a work package is closed.
@@ -5419,15 +5357,13 @@ da:
       not_writable: The setting is not writable and can only be changed by a sysadmin.
       failed_to_update: 'Setting ''%{name}'' could not be updated: %{message}'
     authentication:
-      login: Login
-      registration: Registration
-      sso: Single Sign-On (SSO)
-      omniauth_direct_login_hint_html: 'If this option is active, login requests will redirect to the configured omniauth provider. The login dropdown and sign-in page will be disabled. <br/> <strong>Note:</strong> Unless you also disable password logins, with this option enabled, users can still log in internally by visiting the <code>%{internal_path}</code> login page.
-
-        '
-      remapping_existing_users_hint: 'If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the OpenProject instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
-
-        '
+      login: "Login"
+      registration: "Registration"
+      sso: "Single Sign-On (SSO)"
+      omniauth_direct_login_hint_html: >
+        If this option is active, login requests will redirect to the configured omniauth provider. The login dropdown and sign-in page will be disabled. <br/> <strong>Note:</strong> Unless you also disable password logins, with this option enabled, users can still log in internally by visiting the <code>%{internal_path}</code> login page.
+      remapping_existing_users_hint: >
+        If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the Yojana instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
     attachments:
       whitelist_text_html: 'Define a list of valid file extensions and/or mime types for uploaded files. <br/> Enter file extensions (e.g., <code>%{ext_example}</code>) or mime types (e.g., <code>%{mime_example}</code>). <br/> Leave empty to allow any file type to be uploaded. Multiple values allowed (one line for each value).
 
@@ -5456,10 +5392,9 @@ da:
       modes:
         clamav_socket_html: Enter the socket to the clamd daemon, e.g., %{example}
         clamav_host_html: Enter the hostname and port to the clamd daemon separated by colon. e.g., %{example}
-        description_html: 'Select the mode in which the antivirus scanner integration should operate. <br/> <ul> <li><strong>%{disabled_option}</strong>: Uploaded files are not scanned for viruses.</li> <li><strong>%{socket_option}</strong>: You have set up ClamAV on the same server as OpenProject and the scan daemon clamd is running in the background</li> <li><strong>%{host_option}</strong>: You are streaming files to an external virus scanning host.</li> </ul>
-
-          '
-    brute_force_prevention: Automatiseret brugerblokering
+        description_html: >
+          Select the mode in which the antivirus scanner integration should operate. <br/> <ul> <li><strong>%{disabled_option}</strong>: Uploaded files are not scanned for viruses.</li> <li><strong>%{socket_option}</strong>: You have set up ClamAV on the same server as Yojana and the scan daemon clamd is running in the background</li> <li><strong>%{host_option}</strong>: You are streaming files to an external virus scanning host.</li> </ul>
+    brute_force_prevention: "Automatiseret brugerblokering"
     date_format:
       first_date_of_week_and_year_set: 'If either options "%{day_of_week_setting_name}" or "%{first_week_setting_name}" are set, the other has to be set as well to avoid inconsistencies in the frontend.
 
@@ -5468,8 +5403,8 @@ da:
 
         '
     experimental:
-      save_confirmation: Caution! Risk of data loss! Only activate experimental features if you do not mind breaking your OpenProject installation and losing all of its data.
-      warning_toast: Feature flags are settings that activate features that are still under development. They shall only be used for testing purposes. They shall never be activated on OpenProject installations holding important data. These features will very likely corrupt your data. Use them at your own risk.
+      save_confirmation: Caution! Risk of data loss! Only activate experimental features if you do not mind breaking your Yojana installation and losing all of its data.
+      warning_toast: Feature flags are settings that activate features that are still under development. They shall only be used for testing purposes. They shall never be activated on Yojana installations holding important data. These features will very likely corrupt your data. Use them at your own risk.
       feature_flags: Feature flags
     general: Generelle
     highlighting:
@@ -5480,7 +5415,7 @@ da:
         type: Entire row by Type
         priority: Entire row by Priority
     icalendar:
-      enable_subscriptions_text_html: Allows users with the necessary permissions to subscribe to OpenProject calendars and access work package information via an external calendar client. <strong>Note:</strong> Please read about <a href="%{link}" target="_blank">iCalendar subscriptions</a> to understand potential security risks before enabling this.
+      enable_subscriptions_text_html: Allows users with the necessary permissions to subscribe to Yojana calendars and access work package information via an external calendar client. <strong>Note:</strong> Please read about <a href="%{link}" target="_blank">iCalendar subscriptions</a> to understand potential security risks before enabling this.
     language_name_being_default: "%{language_name} (default)"
     notifications:
       events_explanation: Governs for which event an email is sent out. Work packages are excluded from this list as the notifications for them can be configured specifically for every user.
@@ -5514,9 +5449,8 @@ da:
               label: Side panel
               description: Add all the project attributes in a section inside the right side panel in the project overview.
     project_initiation_request:
-      header_description: 'OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
-
-        '
+      header_description: >
+        Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
       status:
         submitted: "%{wizard_name} has been submitted"
         submitted_description: Click the button below to go to the work package for the submission process.
@@ -5528,8 +5462,8 @@ da:
         project_creation_wizard: Open project creation wizard
         project_mandate: Open project mandate
       blankslate:
-        title: Initiation request not enabled
-        description: OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard.
+        title: "Initiation request not enabled"
+        description: "Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard."
       disable_dialog:
         title: Disable project initiation request
         heading: Disable this project initiation request?
@@ -5634,22 +5568,21 @@ da:
   status_deleted: slettet
   support:
     array:
-      sentence_connector: og
-      skip_last_comma: forkert
-  text_accessibility_hint: The accessibility mode is designed for users who are blind, motorically handicaped or have a bad eyesight. For the latter focused elements are specially highlighted. Please notice, that the Backlogs module is not available in this mode.
-  text_access_token_hint: Adgangstegn tillader dig at tildele eksterne applikationer adgang til ressourcer i OpenProject.
-  text_analyze: 'Yderligere gennemgang: %{subject}'
-  text_are_you_sure: Er du sikker?
-  open_link_in_a_new_tab: Open link in a new tab
-  text_are_you_sure_continue: Are you sure you want to continue?
-  text_are_you_sure_with_children: Slet arbejdspakker og alle underordnede pakker?
-  text_are_you_sure_with_project_custom_fields: Deleting this attribute will also delete its values in all projects. Are you sure you want to do this?
-  text_are_you_sure_with_project_life_cycle_step: Deleting this phase will also delete its usages in all projects. Are you sure you want to do this?
-  text_assign_to_project: Tilknyt til projektet
-  text_form_configuration: 'You can customize which fields will be displayed in work package forms. You can freely group the fields to reflect the needs for your domain.
-
-    '
-  text_form_configuration_required_attribute: Attribute is marked required and thus always shown
+      sentence_connector: "og"
+      skip_last_comma: "forkert"
+  text_accessibility_hint: "The accessibility mode is designed for users who are blind, motorically handicaped or have a bad eyesight. For the latter focused elements are specially highlighted. Please notice, that the Backlogs module is not available in this mode."
+  text_access_token_hint: "Adgangstegn tillader dig at tildele eksterne applikationer adgang til ressourcer i Yojana."
+  text_analyze: "Yderligere gennemgang: %{subject}"
+  text_are_you_sure: "Er du sikker?"
+  open_link_in_a_new_tab: "Open link in a new tab"
+  text_are_you_sure_continue: "Are you sure you want to continue?"
+  text_are_you_sure_with_children: "Slet arbejdspakker og alle underordnede pakker?"
+  text_are_you_sure_with_project_custom_fields: "Deleting this attribute will also delete its values in all projects. Are you sure you want to do this?"
+  text_are_you_sure_with_project_life_cycle_step: "Deleting this phase will also delete its usages in all projects. Are you sure you want to do this?"
+  text_assign_to_project: "Tilknyt til projektet"
+  text_form_configuration: >
+    You can customize which fields will be displayed in work package forms. You can freely group the fields to reflect the needs for your domain.
+  text_form_configuration_required_attribute: "Attribute is marked required and thus always shown"
   text_caracters_maximum: "%{count} tegn som maksimum."
   text_caracters_minimum: Skal være mindst %{count} tegn lang.
   text_comma_separated: Flere værdier tilladt (adskilt med komma).
@@ -5749,39 +5682,30 @@ da:
   text_line_separated: Flere værdier tilladt (én linje for hver værdi).
   text_load_default_configuration: Hent forhåndsvalgt opsætning
   text_no_roles_defined: Der er ikke defineret nogle roller.
-  text_no_access_tokens_configurable: Der er ingen adgangstegn, som kan konfigureres.
-  text_no_configuration_data: Roller, typer, statusser for arbejdspakker og arbejdsgange er endnu ikke sat op. Det anbefales stærkt at hente forhåndsopsætningen. Du vil kunne ændre den når den er indlæst.
-  text_no_notes: Der er ingen kommentarer tilgængelige til denne arbejdspakke.
-  text_notice_too_many_values_are_inperformant: 'Bemærk: Det kan forøge indlæsningstiden hvis der skal vises mere end 100 tegn pr side.'
-  text_notice_security_badge_displayed_html: 'Note: if enabled, this will display a badge with your installation status in the <a href="%{information_panel_path}">%{information_panel_label}</a> administration panel, and on the home page. It is displayed to administrators only. <br/> The badge will check your current OpenProject version against the official OpenProject release database to alert you of any updates or known vulnerabilities. For more information on what the check provides, what data is needed to provide available updates, and how to disable this check, please visit <a href="%{more_info_url}">the configuration documentation</a>.
-
-    '
-  text_own_membership_delete_confirmation: |-
-    Du er ved at fjerne nogle af, eller alle dine tilladelser og vil muligvis ikke kunne redigere projektet herefter.
-    Er du sikker på, du vil fortsætte?
-  text_permanent_delete_confirmation_checkbox_label: I understand that this deletion cannot be reversed
-  text_permanent_remove_confirmation_checkbox_label: I understand that this removal cannot be reversed
-  text_plugin_assets_writable: Brug af plugin forudsætter at dette arkiv er skrivbart
-  text_powered_by: Drevet af %{link}
-  text_project_identifier_info: Kun små bogstaver (a-z), tal, - og _ er tilladt; først tegn skal være et bogstav.
-  text_project_identifier_description: The project identifier is prepended to all work package IDs. If the identifier is "PROJ" for example, the work package identifier will be "PROJ-12" or "PROJ-246".
-  text_project_identifier_url_description: The project identifier is included in the URL of the project.
-  text_project_identifier_handle_format: Must start with a letter and contain only uppercase letters, numbers, and underscores (max 10 characters).
-  text_project_identifier_format: Must start with a lowercase letter. Only lowercase letters (a-z), numbers, dashes and underscores are allowed.
-  text_reassign: 'Gentildel til arbejdspakke:'
-  text_regexp_multiline: The regex is applied in a multi-line mode. e.g., ^---\s+
-  text_rename_wiki_page: Rename wiki page
-  text_repository_usernames_mapping: |-
-    Vælg eller opdatér den OpenProject-bruger, der er tilknyttet hvert brugernavn i loggen for projektarkivet.
-    Brugere med det samme brugernavn eller mailadresse i OpenProject og i projektarkivet vil automatisk blive tilknyttet.
-  text_status_changed_by_changeset: Indføjet i pakken af ændringer, %{value}.
-  text_table_difference_description: In this table the single %{entries} are shown. You can view the difference between any two entries by first selecting the according checkboxes in the table. When clicking on the button below the table the differences are shown.
-  text_time_logged_by_changeset: Indføjet i pakken af ændringer, %{value}.
-  text_tip_work_package_begin_day: arbejdspakker, der begynder denne dag
-  text_tip_work_package_begin_end_day: arbejdspakker, der begynder eller slutter denne dag
-  text_tip_work_package_end_day: arbejdspakker, der slutter denne dag
-  text_type_no_workflow: Ingen arbejdsgang er defineret for denne type
-  text_unallowed_characters: Ikke-tilladte tegn
+  text_no_access_tokens_configurable: "Der er ingen adgangstegn, som kan konfigureres."
+  text_no_configuration_data: "Roller, typer, statusser for arbejdspakker og arbejdsgange er endnu ikke sat op. Det anbefales stærkt at hente forhåndsopsætningen. Du vil kunne ændre den når den er indlæst."
+  text_no_notes: "Der er ingen kommentarer tilgængelige til denne arbejdspakke."
+  text_notice_too_many_values_are_inperformant: "Bemærk: Det kan forøge indlæsningstiden hvis der skal vises mere end 100 tegn pr side."
+  text_notice_security_badge_displayed_html: >
+    Note: if enabled, this will display a badge with your installation status in the <a href="%{information_panel_path}">%{information_panel_label}</a> administration panel, and on the home page. It is displayed to administrators only. <br/> The badge will check your current Yojana version against the official Yojana release database to alert you of any updates or known vulnerabilities. For more information on what the check provides, what data is needed to provide available updates, and how to disable this check, please visit <a href="%{more_info_url}">the configuration documentation</a>.
+  text_own_membership_delete_confirmation: "Du er ved at fjerne nogle af, eller alle dine tilladelser og vil muligvis ikke kunne redigere projektet herefter.\nEr du sikker på, du vil fortsætte?"
+  text_permanent_delete_confirmation_checkbox_label: "I understand that this deletion cannot be reversed"
+  text_permanent_remove_confirmation_checkbox_label: "I understand that this removal cannot be reversed"
+  text_plugin_assets_writable: "Brug af plugin forudsætter at dette arkiv er skrivbart"
+  text_powered_by: "Drevet af %{link}"
+  text_project_identifier_info: "Kun små bogstaver (a-z), tal, - og _ er tilladt; først tegn skal være et bogstav."
+  text_reassign: "Gentildel til arbejdspakke:"
+  text_regexp_info: "fx ^[A-Z0-9]+$"
+  text_regexp_multiline: 'The regex is applied in a multi-line mode. e.g., ^---\s+'
+  text_repository_usernames_mapping: "Vælg eller opdatér den Yojana-bruger, der er tilknyttet hvert brugernavn i loggen for projektarkivet.\nBrugere med det samme brugernavn eller mailadresse i Yojana og i projektarkivet vil automatisk blive tilknyttet."
+  text_status_changed_by_changeset: "Indføjet i pakken af ændringer, %{value}."
+  text_table_difference_description: "In this table the single %{entries} are shown. You can view the difference between any two entries by first selecting the according checkboxes in the table. When clicking on the button below the table the differences are shown."
+  text_time_logged_by_changeset: "Indføjet i pakken af ændringer, %{value}."
+  text_tip_work_package_begin_day: "arbejdspakker, der begynder denne dag"
+  text_tip_work_package_begin_end_day: "arbejdspakker, der begynder eller slutter denne dag"
+  text_tip_work_package_end_day: "arbejdspakker, der slutter denne dag"
+  text_type_no_workflow: "Ingen arbejdsgang er defineret for denne type"
+  text_unallowed_characters: "Ikke-tilladte tegn"
   text_user_invited: Brugeren er blevet inviteret og afventer registrering.
   text_user_wrote: "%{value} skrev:"
   text_wrote: wrote
@@ -5843,18 +5767,17 @@ da:
     help_and_support: Help and support
   total_progress: Samlet fremgang
   user:
-    all: alle
-    active: aktiv
-    activate: Aktivér
-    activate_and_reset_failed_logins: Aktiver og nulstil mislykkede forsøg på at logge ind
-    authentication_provider: Godkendelsetjeneste
-    identity_url_text: The internal unique identifier provided by the authentication provider.
-    authentication_settings_disabled_due_to_external_authentication: 'Denne bruger logger på gennem en ekstern godkendelsestjeneste, så der er ikke en OpenProject-adgangskode, der kan ændres.
-
-      '
-    authorization_rejected: Du har ikke adgang til at logge ind.
-    assign_random_password: Tildel tilfældig adgangskode (tilsendt bruger via e-mail)
-    blocked: Midlertid spærret
+    all: "alle"
+    active: "aktiv"
+    activate: "Aktivér"
+    activate_and_reset_failed_logins: "Aktiver og nulstil mislykkede forsøg på at logge ind"
+    authentication_provider: "Godkendelsetjeneste"
+    identity_url_text: "The internal unique identifier provided by the authentication provider."
+    authentication_settings_disabled_due_to_external_authentication: >
+      Denne bruger logger på gennem en ekstern godkendelsestjeneste, så der er ikke en Yojana-adgangskode, der kan ændres.
+    authorization_rejected: "Du har ikke adgang til at logge ind."
+    assign_random_password: "Tildel tilfældig adgangskode (tilsendt bruger via e-mail)"
+    blocked: "Midlertid spærret"
     blocked_num_failed_logins:
       one: midlertidigt låst (ét mislykket log ind-forsøg)
       other: midlertidigt låst (%{count} mislykkede log ind-forsøg)
@@ -5885,13 +5808,18 @@ da:
   note_password_login_disabled_link: Password login has been disabled through a [configuration setting](configuration_url).
   warning: Advarsel
   warning_attachments_not_saved: "%{count} file(r) kunne ikke gemmes."
-  warning_imminent_user_limit_html: 'You invited more users than are supported by your current plan. Invited users may not be able to join your OpenProject environment. Please [upgrade your plan](upgrade_url) or block existing users in order to allow invited and registered users to join.
-
-    '
+  warning_imminent_user_limit: >
+    You invited more users than are supported by your current plan. Invited users may not be able to join your Yojana environment. Please <a href="%{upgrade_url}">upgrade your plan</a> or block existing users in order to allow invited and registered users to join.
   warning_registration_token_expired: |
     The activation email has expired. We sent you a new one to %{email}.
     Please click the link inside of it to activate your account.
-  warning_user_limit_reached: 'Adding additional users will exceed the current limit. Please contact an administrator to increase the user limit to ensure external users are able to access this instance.
+  warning_user_limit_reached: >
+    Adding additional users will exceed the current limit. Please contact an administrator to increase the user limit to ensure external users are able to access this instance.
+  warning_user_limit_reached_admin: >
+    Adding additional users will exceed the current limit. Please <a href="%{upgrade_url}">upgrade your plan</a> to be able to ensure external users are able to access this instance.
+  warning_user_limit_reached_instructions: >
+    You reached your user limit (%{current}/%{max} active users). Please contact sales@girishm.info to upgrade your Enterprise edition plan and add additional users.
+  warning_protocol_mismatch_html: >
 
     '
   warning_user_limit_reached_admin_html: 'Adding additional users will exceed the current limit. Please [upgrade your plan](upgrade_url) to be able to ensure external users are able to access this instance.
@@ -6183,56 +6111,48 @@ da:
       non_confidential: Non confidential
       default_scopes: "(Default scopes)"
       instructions:
-        enabled: Enable this application, allowing users to perform authorization grants with it.
-        name: The name of your application. This will be displayed to other users upon authorization.
-        redirect_uri_html: 'The allowed URLs authorized users can be redirected to. One entry per line. <br/> If you''re registering a desktop application, use the following URL.
-
-          '
-        confidential: Check if the application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are assumed non-confidential.
-        scopes: Check the scopes you want the application to grant access to. If no scope is checked, api_v3 is assumed.
-        client_credential_user_id: Optional user ID to impersonate when clients use this application. Leave empty to allow public access only
-        register_intro: If you are developing an OAuth API client application for OpenProject, you can register it using this form for all users to use.
-        default_scopes: ''
+        enabled: "Enable this application, allowing users to perform authorization grants with it."
+        name: "The name of your application. This will be displayed to other users upon authorization."
+        redirect_uri_html: >
+          The allowed URLs authorized users can be redirected to. One entry per line. <br/> If you're registering a desktop application, use the following URL.
+        confidential: "Check if the application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are assumed non-confidential."
+        scopes: "Check the scopes you want the application to grant access to. If no scope is checked, api_v3 is assumed."
+        client_credential_user_id: "Optional user ID to impersonate when clients use this application. Leave empty to allow public access only"
+        register_intro: "If you are developing an OAuth API client application for Yojana, you can register it using this form for all users to use."
+        default_scopes: ""
     header:
       builtin_applications: Built-in OAuth applications
       other_applications: Other OAuth applications
     empty_application_lists: No OAuth applications have been registered.
-    client_id: Client ID
-    client_secret_notice: 'This is the only time we can print the client secret, please note it down and keep it secure. It should be treated as a password and cannot be retrieved by OpenProject at a later time.
-
-      '
+    client_id: "Client ID"
+    client_secret_notice: >
+      This is the only time we can print the client secret, please note it down and keep it secure. It should be treated as a password and cannot be retrieved by Yojana at a later time.
     authorization_dialog:
-      authorize: Authorize
-      cancel: Cancel and deny authorization.
-      prompt_html: Authorize <strong>%{application_name}</strong> to use your account <em>%{login}</em>?
-      title: Authorize %{application_name}
-      wants_to_access_html: 'This application requests access to your OpenProject account. <br/> <strong>It has requested the following permissions:</strong>
-
-        '
+      authorize: "Authorize"
+      cancel: "Cancel and deny authorization."
+      prompt_html: "Authorize <strong>%{application_name}</strong> to use your account <em>%{login}</em>?"
+      title: "Authorize %{application_name}"
+      wants_to_access_html: >
+        This application requests access to your Yojana account. <br/> <strong>It has requested the following permissions:</strong>
     scopes:
-      api_v3: Full API v3 access
-      api_v3_text: Application will receive full read & write access to the OpenProject API v3 to perform actions on your behalf.
-      mcp: Access to MCP
-      mcp_text: Application will receive access to the OpenProject MCP endpoints. They are a limited subset of APIv3, that's tailored for usage with AI agents.
+      api_v3: "Full API v3 access"
+      api_v3_text: "Application will receive full read & write access to the Yojana API v3 to perform actions on your behalf."
     grants:
       created_date: Approved on
       scopes: Tilladelser
       successful_application_revocation: Revocation of application %{application_name} successful.
       none_given: No OAuth applications have been granted access to your user account.
     flows:
-      authorization_code: Authorization code flow
-      client_credentials: Client credentials flow
-    client_credentials: User used for Client credentials
-    client_credentials_impersonation_set_to: Client credentials user set to
-    client_credentials_impersonation_warning: 'Note: Clients using the ''Client credentials'' flow in this application will have the rights of this user'
-    client_credentials_impersonation_html: 'By default, OpenProject provides OAuth 2.0 authorization via %{authorization_code_flow_link}. You can optionally enable %{client_credentials_flow_link}, but you must provide a user on whose behalf requests will be performed.
-
-      '
-    confirm_revoke_my_application:
-      one: Do you really want to remove this application? This will revoke one token active for it.
-      other: Do you really want to remove this application? This will revoke %{count} tokens active for it.
-    authorization_error: An authorization error has occurred.
-    my_registered_applications: Registered OAuth applications
+      authorization_code: "Authorization code flow"
+      client_credentials: "Client credentials flow"
+    client_credentials: "User used for Client credentials"
+    client_credentials_impersonation_set_to: "Client credentials user set to"
+    client_credentials_impersonation_warning: "Note: Clients using the 'Client credentials' flow in this application will have the rights of this user"
+    client_credentials_impersonation_html: >
+      By default, Yojana provides OAuth 2.0 authorization via %{authorization_code_flow_link}. You can optionally enable %{client_credentials_flow_link}, but you must provide a user on whose behalf requests will be performed.
+    authorization_error: "An authorization error has occurred."
+    revoke_my_application_confirmation: "Do you really want to remove this application? This will revoke %{token_count} active for it."
+    my_registered_applications: "Registered OAuth applications"
   oauth_client:
     urn_connection_status:
       connected: Connected
@@ -6245,41 +6165,36 @@ da:
       label_request_token: Request token
       label_refresh_token: Refresh token
     errors:
-      oauth_authorization_code_grant_had_errors: OAuth2 Authorization grant unsuccessful
-      oauth_reported: OAuth2 provider reported
-      oauth_returned_error: OAuth2 returned an error
-      oauth_returned_json_error: OAuth2 returned a JSON error
-      oauth_returned_http_error: OAuth2 returned a network error
-      oauth_returned_standard_error: OAuth2 returned an internal error
-      wrong_token_type_returned: OAuth2 returned a wrong type of token, expecting AccessToken::Bearer
-      oauth_issue_contact_admin: OAuth2 reported an error. Please contact your system administrator.
-      oauth_client_not_found: OAuth2 client not found in 'callback' endpoint (redirect_uri).
-      refresh_token_called_without_existing_token: 'Internal error: Called refresh_token without a previously existing token.
-
-        '
-      refresh_token_updated_failed: Error during update of OAuthClientToken
-      oauth_client_not_found_explanation: 'This error appears after you have updated the client_id and client_secret in OpenProject, but haven''t updated the ''Return URI'' field in the OAuth2 provider.
-
-        '
-      oauth_code_not_present: OAuth2 'code' not found in 'callback' endpoint (redirect_uri).
-      oauth_code_not_present_explanation: 'This error appears if you have selected the wrong response_type in the OAuth2 provider. Response_type should be ''code'' or similar.
-
-        '
-      oauth_state_not_present: OAuth2 'state' not found in 'callback' endpoint (redirect_uri).
-      oauth_state_not_present_explanation: 'The ''state'' is used to indicate to OpenProject where to continue after a successful OAuth2 authorization. A missing ''state'' is an internal error that may appear during setup. Please contact your system administrator.
-
-        '
+      oauth_authorization_code_grant_had_errors: "OAuth2 Authorization grant unsuccessful"
+      oauth_reported: "OAuth2 provider reported"
+      oauth_returned_error: "OAuth2 returned an error"
+      oauth_returned_json_error: "OAuth2 returned a JSON error"
+      oauth_returned_http_error: "OAuth2 returned a network error"
+      oauth_returned_standard_error: "OAuth2 returned an internal error"
+      wrong_token_type_returned: "OAuth2 returned a wrong type of token, expecting AccessToken::Bearer"
+      oauth_issue_contact_admin: "OAuth2 reported an error. Please contact your system administrator."
+      oauth_client_not_found: "OAuth2 client not found in 'callback' endpoint (redirect_uri)."
+      refresh_token_called_without_existing_token: >
+        Internal error: Called refresh_token without a previously existing token.
+      refresh_token_updated_failed: "Error during update of OAuthClientToken"
+      oauth_client_not_found_explanation: >
+        This error appears after you have updated the client_id and client_secret in Yojana, but haven't updated the 'Return URI' field in the OAuth2 provider.
+      oauth_code_not_present: "OAuth2 'code' not found in 'callback' endpoint (redirect_uri)."
+      oauth_code_not_present_explanation: >
+        This error appears if you have selected the wrong response_type in the OAuth2 provider. Response_type should be 'code' or similar.
+      oauth_state_not_present: "OAuth2 'state' not found in 'callback' endpoint (redirect_uri)."
+      oauth_state_not_present_explanation: >
+        The 'state' is used to indicate to Yojana where to continue after a successful OAuth2 authorization. A missing 'state' is an internal error that may appear during setup. Please contact your system administrator.
       rack_oauth2:
-        client_secret_invalid: Client secret is invalid (client_secret_invalid)
-        invalid_request: 'OAuth2 Authorization Server responded with ''invalid_request''. This error appears if you try to authorize multiple times or in case of technical issues.
-
-          '
-        invalid_response: OAuth2 Authorization Server provided an invalid response (invalid_response)
-        invalid_grant: The OAuth2 Authorization Server asks you to reauthorize (invalid_grant).
-        invalid_client: The OAuth2 Authorization Server doesn't recognize OpenProject (invalid_client).
-        unauthorized_client: The OAuth2 Authorization Server rejects the grant type (unauthorized_client)
-        unsupported_grant_type: The OAuth2 Authorization Server asks you to reauthorize (unsupported_grant_type).
-        invalid_scope: You are not allowed to access the requested resource (invalid_scope).
+        client_secret_invalid: "Client secret is invalid (client_secret_invalid)"
+        invalid_request: >
+          OAuth2 Authorization Server responded with 'invalid_request'. This error appears if you try to authorize multiple times or in case of technical issues.
+        invalid_response: "OAuth2 Authorization Server provided an invalid response (invalid_response)"
+        invalid_grant: "The OAuth2 Authorization Server asks you to reauthorize (invalid_grant)."
+        invalid_client: "The OAuth2 Authorization Server doesn't recognize Yojana (invalid_client)."
+        unauthorized_client: "The OAuth2 Authorization Server rejects the grant type (unauthorized_client)"
+        unsupported_grant_type: "The OAuth2 Authorization Server asks you to reauthorize (unsupported_grant_type)."
+        invalid_scope: "You are not allowed to access the requested resource (invalid_scope)."
   http:
     request:
       failed_authorization: The server side request failed authorizing itself.
@@ -6289,18 +6204,18 @@ da:
   you: you
   link: link
   plugin_openproject_auth_plugins:
-    name: OpenProject Auth Plugins
-    description: Integration of OmniAuth strategy providers for authentication in OpenProject.
+    name: "Yojana Auth Plugins"
+    description: "Integration of OmniAuth strategy providers for authentication in Yojana."
   plugin_openproject_auth_saml:
-    name: OmniAuth SAML / Single-Sign On
-    description: Adds the OmniAuth SAML provider to OpenProject
+    name: "OmniAuth SAML / Single-Sign On"
+    description: "Adds the OmniAuth SAML provider to Yojana"
   enterprise_plans:
     legacy_enterprise: Enterprise Plan
   token:
     hashed_token:
       display_value_placeholder: "***"
   external_link_warning:
-    title: Leaving OpenProject
-    warning_message: You are about to leave OpenProject and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies.
-    continue_message: Are you sure you want to proceed to the following external link?
-    continue_button: Continue to external website
+    title: "Leaving Yojana"
+    warning_message: "You are about to leave Yojana and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies."
+    continue_message: "Are you sure you want to proceed to the following external link?"
+    continue_button: "Continue to external website"

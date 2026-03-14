@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -57,7 +57,7 @@ zh-CN:
         '
       last_backup: 上次备份
       last_backup_from: 上次备份自
-      title: 备份 OpenProject
+      title: 备份 Yojana
       options: 选项
       include_attachments: 包含附件
       download_backup: 下载备份
@@ -494,12 +494,18 @@ zh-CN:
         next: 下一个
         got_it: 已知晓
       steps:
-        help_menu: 帮助 (?) 菜单中提供了<b>其他帮助资源</b>。您可以在这里找到用户指南、实用的使用方法视频等内容。<br>使用 OpenProject 尽情享受您的工作吧！
-        members: 邀请新<b>成员</b>加入您的项目。
-        quick_add_button: 点击标题导航中的加号 (+) 图标可<b>创建新项目</b>或<b>邀请同事</b>。
-        sidebar_arrow: 使用左上角的返回箭头可返回到项目的<b>主菜单</b>。
-        welcome: 通过三分钟的导览了解<b>最重要的功能</b> 。<br>我们建议您完成所有步骤。您可以随时重新浏览介绍。
-        wiki: 在 <b>维基</b> 中，您可以记录并与您的团队共享知识。
+        help_menu: "帮助 (?) 菜单中提供了<b>其他帮助资源</b>。您可以在这里找到用户指南、实用的使用方法视频等内容。<br>使用 Yojana 尽情享受您的工作吧！"
+        members: "邀请新<b>成员</b>加入您的项目。"
+        quick_add_button: "点击标题导航中的加号 (+) 图标可<b>创建新项目</b>或<b>邀请同事</b>。"
+        sidebar_arrow: "使用左上角的返回箭头可返回到项目的<b>主菜单</b>。"
+        welcome: "通过三分钟的导览了解<b>最重要的功能</b> 。<br>我们建议您完成所有步骤。您可以随时重新浏览介绍。"
+        wiki: "在 <b>维基</b> 中，您可以记录并与您的团队共享知识。"
+        backlogs:
+          overview: "在<b>待办清单</b>视图中管理您的工作。"
+          sprints: "右侧为产品待办清单和缺陷待办清单，左侧为各自的冲刺 (Sprint)。在这里，您可以创建<b>长篇故事、用户故事和错误</b>，通过拖放来确定优先级，以及将它们添加到冲刺 (sprint) 中。"
+          task_board_arrow: "要查看您的<b>任务面板</b>，请打开冲刺 (sprint) 下拉菜单…"
+          task_board_select: "…并选择<b>任务面板</b>条目。"
+          task_board: "任务面板可以将<b>此冲刺 (sprint) 的进度</b>可视化。点击用户故事旁边的加号 (+) 图标可添加新任务或障碍。<br>状态可以通过拖放更新。"
         boards:
           overview: 选择<b>面板</b>以切换视图并使用敏捷面板视图管理您的项目。
           lists_kanban: 在此，您可以在面板中创建多个列表（列）。例如，此功使让您可以创建<b>看板面板</b>。

@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -57,7 +57,7 @@ ms:
         '
       last_backup: Sandaran terakhir
       last_backup_from: Sandaran terakhir daripada
-      title: Sandaran OpenProject
+      title: Sandaran Yojana
       options: Pilihan
       include_attachments: Sertakan lampiran
       download_backup: Muat turun sandaran
@@ -494,12 +494,18 @@ ms:
         next: Seterusnya
         got_it: Faham
       steps:
-        help_menu: Menu Bantuan (?) menyediakan <b>sumber bantuan tambahan</b>. Di sini anda akan menjumpai panduan pengguna, video panduan dan lebih lagi. <br> Nikmati kerja anda di OpenProject!
-        members: Jemput <b>ahli</b> baharu untuk sertai projek anda.
-        quick_add_button: Klik ikon tambah (+) dalam navigasi pengepala untuk <b>cipta projek baharu</b> atau untuk <b>jemput rakan sekerja</b>.
-        sidebar_arrow: Guna anak panah kembali di sudut kiri atas untuk kembali ke <b>menu utama</b> projek.
-        welcome: Ikuti lawatan pengenalan selama tiga minit untuk mempelajari <b>ciri penting</b> yang paling. <br> Kami mengesyorkan anda melengkapkan langkah sehingga tamat. Anda boleh memulakan semula lawatan pada bila-bila masa.
-        wiki: Dalam <b>wiki</b> anda boleh mendokumentasikan dan kongsi pengetahuan bersama pasukan anda.
+        help_menu: "Menu Bantuan (?) menyediakan <b>sumber bantuan tambahan</b>. Di sini anda akan menjumpai panduan pengguna, video panduan dan lebih lagi. <br> Nikmati kerja anda di Yojana!"
+        members: "Jemput <b>ahli</b> baharu untuk sertai projek anda."
+        quick_add_button: "Klik ikon tambah (+) dalam navigasi pengepala untuk <b>cipta projek baharu</b> atau untuk <b>jemput rakan sekerja</b>."
+        sidebar_arrow: "Guna anak panah kembali di sudut kiri atas untuk kembali ke <b>menu utama</b> projek."
+        welcome: "Ikuti lawatan pengenalan selama tiga minit untuk mempelajari <b>ciri penting</b> yang paling. <br> Kami mengesyorkan anda melengkapkan langkah sehingga tamat. Anda boleh memulakan semula lawatan pada bila-bila masa."
+        wiki: "Dalam <b>wiki</b> anda boleh mendokumentasikan dan kongsi pengetahuan bersama pasukan anda."
+        backlogs:
+          overview: "Kendalikan kerja anda dalam paparan <b>tunggakan</b>."
+          sprints: "Di kanan anda mempunyai tunggakan produk dan tunggakan bug, di kiri anda mempunyai pecutan yang berkenaan. Di sini anda boleh mencipta <b>epik, cerita pengguna, dan bug</b>, utamakan dengan menarik & melepaskan dan tambah mereka ke pecutan."
+          task_board_arrow: "Untuk lihat <b>papan tugasan</b> anda, buka pecutan drop-down..."
+          task_board_select: "...dan pilih entri <b>papan tugasan</b>."
+          task_board: "Papan tugasan menggambarkan secara visual <b>perkembangan untuk pecutan ini</b>. Klik ikon tambah (+) di sebelah cerita pengguna untuk tambah tugasan baru atau halangan. <br> Status tersebut boleh dikemas kini dengan tarik dan lepas."
         boards:
           overview: Pilih <b>board</b> untuk tukar paparan dan uruskan projek anda menggunakan paparan board agile.
           lists_kanban: Disini anda boleh mencipta pelbagai senarai (kolum) dalam board anda. Fitur ini membenarkan anda untuk mencipta, sebagai contoh, <b>board Kanban</b>.
@@ -598,6 +604,17 @@ ms:
     breadcrumb: Breadcrumb
     text_data_lost: Semua data yang dimasukkan akan hilang.
     text_user_wrote: "%{value} menulis:"
+    types:
+      attribute_groups:
+        error_duplicate_group_name: "Nama %{group} digunakan lebih dari sekali. Nama kumpulan mestilah unik."
+        error_no_table_configured: "Sila konfigurasi jadual untuk %{group}."
+        reset_title: "Set semula konfigurasi borang"
+        confirm_reset: >
+          Amaran: Adakah anda pasti anda ingin set semula konfigurasi borang? Ini akan set semula atribut kumpulan asal mereka dan menyahdayakan SEMUA ruang tersuai.
+        upgrade_to_ee: "Naik taraf edisi Enterprise di premis"
+        upgrade_to_ee_text: "Wah! Jika anda perlukan tambahan ini anda sungguh pro! Bolehkah anda menyokong kami, pembangun Yojana, dengan menjadi pelanggan edisi Enterprise?"
+        more_information: "Maklumat lanjut"
+        nevermind: "Tidak mengapa"
     time_entry:
       work_package_required: Memerlukan pemilihan pakej kerja dahulu.
       title: Masa log

@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -57,7 +57,7 @@ nl:
         '
       last_backup: Laatste back-up
       last_backup_from: Laatste back-up van
-      title: OpenProject back-uppen
+      title: Yojana back-uppen
       options: Opties
       include_attachments: Inclusief bijlagen
       download_backup: Back-up downloaden
@@ -494,12 +494,18 @@ nl:
         next: Volgende
         got_it: Begrepen
       steps:
-        help_menu: Het Help (?) menu biedt <b>extra hulpbronnen</b>. Hier vindt u een gebruikershandleiding, handige how-to videos en meer. <br> Veel plezier met uw werk met OpenProject!
-        members: Nodig nieuwe <b>leden</b> uit om deel te nemen aan uw project.
-        quick_add_button: Klik op het plus (+) pictogram in de koptekst navigatie om <b>een nieuw project te maken</b> of <b>collega's uit te nodigen</b>.
-        sidebar_arrow: Gebruik de terug pijl in de linkerbovenhoek om terug te keren naar het project <b>hoofdmenu</b>.
-        welcome: Take a three-minute introduction tour to learn the most <b>important features</b>. <br> We recommend completing the steps until the end. You can restart the tour any time.
-        wiki: Binnen de <b>wiki</b> kunt u kennis delen en documenteren met uw team.
+        help_menu: "Het Help (?) menu biedt <b>extra hulpbronnen</b>. Hier vindt u een gebruikershandleiding, handige how-to videos en meer. <br> Veel plezier met uw werk met Yojana!"
+        members: "Nodig nieuwe <b>leden</b> uit om deel te nemen aan uw project."
+        quick_add_button: "Klik op het plus (+) pictogram in de koptekst navigatie om <b>een nieuw project te maken</b> of <b>collega's uit te nodigen</b>."
+        sidebar_arrow: "Gebruik de terug pijl in de linkerbovenhoek om terug te keren naar het project <b>hoofdmenu</b>."
+        welcome: "Take a three-minute introduction tour to learn the most <b>important features</b>. <br> We recommend completing the steps until the end. You can restart the tour any time."
+        wiki: "Binnen de <b>wiki</b> kunt u kennis delen en documenteren met uw team."
+        backlogs:
+          overview: "Beheer uw werk in de <b>backlogs</b> weergave."
+          sprints: "Aan de rechterkant hebt u de product backlog en de bug backlog, aan de linkerkant de respectievelijke sprints. Hier kunt u <b>epics, user stories en bugs</b> maken, prioriteren door ze te slepen en ze toevoegen aan een sprint."
+          task_board_arrow: "Om uw <b>taakbord</b>te zien, opent u de sprint drop-down..."
+          task_board_select: "...en selecteer het <b>taakbord</b> item."
+          task_board: "Het taakbord geeft de <b>vooruitgang voor deze sprint</b> weer. Klik op het plus (+) pictogram naast een verhaal om nieuwe taken of belemmeringen toe te voegen. <br> De status kan worden bijgewerkt door slepen en neerzetten."
         boards:
           overview: Selecteer <b>borden</b> om het overzicht te verschuiven en uw project te beheren met behulp van de agile borden weergave.
           lists_kanban: Hier kunt u meerdere lijsten (kolommen) binnen uw bord maken. Met deze functie kunt u bijvoorbeeld een <b>Kanban board</b>maken.

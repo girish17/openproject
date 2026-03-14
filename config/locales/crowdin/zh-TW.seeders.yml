@@ -141,7 +141,7 @@ zh-TW:
                 options:
                   name: 開始
                   text: |
-                    我們很高興您加入！我們建議您嘗試幾件事情來開始使用 OpenProject。
+                    我們很高興您加入！我們建議您嘗試幾件事情來開始使用 Yojana。
 
                     使用我們的 [Guided Tour]({{opSetting:base_url}}/projects/demo-project/work_packages/?start_onboarding_tour=true) 探索最重要的功能。
 
@@ -154,7 +154,7 @@ zh-TW:
                     5.*啟動進一步的模組*： &rightarrow; 前往 [專案設定 &rightarrow; 模組]({{opSetting:base_url}}/projects/demo-project/settings/modules)。
                     6.*完成專案中的任務*： &rightarrow; 到 [Work packages &rightarrow; Tasks]({{opSetting:base_url}}/projects/demo-project/work_packages/details/##wp.id:set_date_and_location_of_conference/overview?query_id=##query.id:demo_project__query__tasks).
 
-                    您可在此找到我們的 [使用者指南](https://www.openproject.org/docs/user-guide/)。
+                    您可在此找到我們的 [使用者指南](https://www.yojana.girishm.info/docs/user-guide/)。
                     如果您有任何問題或需要支援，請告知我們。聯絡我們：[support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
@@ -218,7 +218,7 @@ zh-TW:
 
             以 Markdown 格式檢視
 
-            更多資訊請參閱：https://www.openproject.org/docs/user-guide/wiki/
+            更多資訊請參閱：https://www.yojana.girishm.info/docs/user-guide/wiki/
         scrum-project:
           name: Scrum 專案
           status_explanation: 所有任務皆依計劃進行，相關人員知道他們的任務，系統完成設定。
@@ -320,7 +320,7 @@ zh-TW:
                 options:
                   name: 開始
                   text: |
-                    我們很高興您加入！我們建議您嘗試幾個步驟來開始使用 OpenProject。
+                    我們很高興您加入！我們建議您嘗試幾個步驟來開始使用 Yojana。
 
                     _嘗試以下步驟：_
 
@@ -332,7 +332,7 @@ zh-TW:
                     6.*建立 Sprint wiki*： &rightarrow; 轉到 [Backlogs]({{opSetting:base_url}}/projects/your-scrum-project/backlogs)，然後在 sprint 中從右邊的下拉式功能表開啟 sprint wiki。您可以根據需要編輯 [wiki 模板]({{opSetting:base_url}}/projects/your-scrum-project/wiki/) 。
                     7.*啟動更多模組*： &rightarrow; 進入 [專案設定 &rightarrow; 模組]({{opSetting:base_url}}/projects/your-scrum-project/settings/modules).
 
-                    在這裡您可以找到我們的 [使用者指南](https://www.openproject.org/docs/user-guide/)。
+                    在這裡您可以找到我們的 [使用者指南](https://www.yojana.girishm.info/docs/user-guide/)。
                     如果您有任何問題或需要支援，請告訴我們。聯絡我們：[support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
@@ -495,19 +495,19 @@ zh-TW:
         item_6:
           name: 錯誤
       welcome:
-        title: 歡迎使用OpenProject
+        title: 歡迎使用Yojana
         text: |
-          OpenProject 是領先的開放原始碼專案管理軟體。它支援傳統、敏捷以及混合式專案管理，並讓您完全控制您的資料。
+          Yojana 是領先的開放原始碼專案管理軟體。它支援傳統、敏捷以及混合式專案管理，並讓您完全控制您的資料。
 
           核心功能和用例：
 
-          * 專案組合管理](https://www.openproject.org/collaboration-software-features/project-portfolio-management/)
-          * 專案規劃與排程](https://www.openproject.org/collaboration-software-features/project-planning-scheduling/)
-          * 任務管理與問題追蹤](https://www.openproject.org/collaboration-software-features/task-management/)
-          * [Agile Boards (Scrum and Kanban)](https://www.openproject.org/collaboration-software-features/agile-project-management/)
-          * 需求管理與發行規劃](https://www.openproject.org/collaboration-software-features/product-development/)
-          * [時間與成本追蹤、預算](https://www.openproject.org/collaboration-software-features/time-tracking/)
-          * [團隊協作與文件](https://www.openproject.org/collaboration-software-features/team-collaboration/)
+          * 專案組合管理](https://www.yojana.girishm.info/collaboration-software-features/project-portfolio-management/)
+          * 專案規劃與排程](https://www.yojana.girishm.info/collaboration-software-features/project-planning-scheduling/)
+          * 任務管理與問題追蹤](https://www.yojana.girishm.info/collaboration-software-features/task-management/)
+          * [Agile Boards (Scrum and Kanban)](https://www.yojana.girishm.info/collaboration-software-features/agile-project-management/)
+          * 需求管理與發行規劃](https://www.yojana.girishm.info/collaboration-software-features/product-development/)
+          * [時間與成本追蹤、預算](https://www.yojana.girishm.info/collaboration-software-features/time-tracking/)
+          * [團隊協作與文件](https://www.yojana.girishm.info/collaboration-software-features/team-collaboration/)
 
           歡迎來到專案管理的未來。
 

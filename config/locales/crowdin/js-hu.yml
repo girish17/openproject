@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -59,9 +59,7 @@ hu:
         '
       last_backup: 'Utolsó biztonsági mentés:'
       last_backup_from: 'Legutóbbi biztonsági mentés: '
-      title: 'Az OpenProject biztonsági mentése
-
-        '
+      title: "Az Yojana biztonsági mentése\n"
       options: Beállítások
       include_attachments: 'Mellékletek csatolása
 
@@ -506,12 +504,18 @@ hu:
         next: " Következő"
         got_it: Rendben
       steps:
-        help_menu: The Help (?) menu provides <b>additional help resources</b>. Here you can find a user guide, helpful how-to videos and more. <br> Enjoy your work with OpenProject!
-        members: Új <b>tagok</b> meghívása, hogy a projekthez csatlakozzanak.
-        quick_add_button: Kattintson a fejlécben található (+) ikonra hogy   <b>create a new project</b> vagy  <b>invite coworkers</b>.
-        sidebar_arrow: Használja a vissza nyilat bal felül hogy visszatérjen a projektekhez <b>main menu</b>..
-        welcome: Take a three-minute introduction tour to learn the most <b>important features</b>. <br> We recommend completing the steps until the end. You can restart the tour any time.
-        wiki: A <b>Wiki</b> modulban tudását dokumentálhatja és megoszthatja a csapatával.
+        help_menu: "The Help (?) menu provides <b>additional help resources</b>. Here you can find a user guide, helpful how-to videos and more. <br> Enjoy your work with Yojana!"
+        members: "Új <b>tagok</b> meghívása, hogy a projekthez csatlakozzanak."
+        quick_add_button: "Kattintson a fejlécben található (+) ikonra hogy   <b>create a new project</b> vagy  <b>invite coworkers</b>."
+        sidebar_arrow: "Használja a vissza nyilat bal felül hogy visszatérjen a projektekhez <b>main menu</b>.."
+        welcome: "Take a three-minute introduction tour to learn the most <b>important features</b>. <br> We recommend completing the steps until the end. You can restart the tour any time."
+        wiki: "A <b>Wiki</b> modulban tudását dokumentálhatja és megoszthatja a csapatával."
+        backlogs:
+          overview: "Munka kezelése a <b>backlogs</b>  nézetben"
+          sprints: "Jobbra a termék- és a hibatár, balra pedig a megfelelő sprintek. Itt létrehozhatsz <b>képeket, felhasználói történeteket és hibákat</b>, drag & drop segítségével priorizálhatsz, és hozzáadhatod őket egy sprinthez.\n"
+          task_board_arrow: "A <b>Feladatlap</b> megjelenítéséhez nyissa meg a Sprint legördülő listát..."
+          task_board_select: "... és válassza ki a <b>Feladatlap</b> bejegyzést."
+          task_board: "A feladattábla megjeleníti <b> a sprint haladását </b>. Új feladatok vagy akadályok hozzáadásához kattintson a felhasználói történet melletti plusz (+) ikonra. <br> Az állapot húzással frissíthető.\n"
         boards:
           overview: 'Válassza a <b>táblák</b> lehetőséget a nézetváltáshoz, és kezelje projektjét az agilis táblák nézetben.
 

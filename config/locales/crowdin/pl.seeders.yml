@@ -141,7 +141,7 @@ pl:
                 options:
                   name: Pierwsze kroki
                   text: |
-                    Cieszymy się, że dołączasz! Sugerujemy na początek spróbować kilku rzeczy w OpenProject.
+                    Cieszymy się, że dołączasz! Sugerujemy na początek spróbować kilku rzeczy w Yojana.
 
                     Odkryj najważniejsze funkcje za pomocą naszej [Wycieczki z przewodnikiem]({{opSetting:base_url}}/projects/demo-project/work_packages/?start_onboarding_tour=true).
 
@@ -154,7 +154,7 @@ pl:
                     5. *Aktywuj dalsze moduły*: &rightarrow; Przejdź do strony [Ustawienia projektu &rightarrow; Moduły]({{opSetting:base_url}}/projects/demo-project/settings/modules).
                     6. *Ukończ swoje zadania w projekcie*: &rightarrow; Przejdź do strony [Pakiety robocze &rightarrow; Zadania]({{opSetting:base_url}}/projects/demo-project/work_packages/details/##wp.id:set_date_and_location_of_conference/overview?query_id=##query.id:demo_project__query__tasks).
 
-                    Tutaj znajdziesz nasze [przewodniki](https://www.openproject.org/docs/user-guide/).
+                    Tutaj znajdziesz nasze [przewodniki](https://www.yojana.girishm.info/docs/user-guide/).
                     Daj nam znać, jeśli masz pytania lub potrzebujesz pomocy. Skontaktuj się z nami: [support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
@@ -211,7 +211,7 @@ pl:
             * Wyświetlić historię zmian
             * Wyświetlić jako znaczniki języka Markdown
 
-            Więcej informacji: [https://www.openproject.org/docs/user-guide/wiki/](https://www.openproject.org/docs/user-guide/wiki/)
+            Więcej informacji: [https://www.yojana.girishm.info/docs/user-guide/wiki/](https://www.yojana.girishm.info/docs/user-guide/wiki/)
         scrum-project:
           name: Projekt Scrum
           status_explanation: Wszystkie zadania są zaplanowane. Odpowiedni ludzie znają swoje zadania. System jest całkowicie skonfigurowany.
@@ -313,7 +313,7 @@ pl:
                 options:
                   name: Pierwsze kroki
                   text: |
-                    Cieszymy się, że do nas dołączasz! Sugerujemy wypróbowanie kilku rzeczy, aby rozpocząć pracę w OpenProject.
+                    Cieszymy się, że do nas dołączasz! Sugerujemy wypróbowanie kilku rzeczy, aby rozpocząć pracę w Yojana.
 
                     _Spróbuj wykonać następujące kroki:_
 
@@ -325,7 +325,7 @@ pl:
                     6. *Utwórz stronę wiki sprintu*: &rightarrow; Przejdź do obszaru [Backlogi]({{opSetting:base_url}}/projects/your-scrum-project/backlogs) i otwórz stronę wiki sprintu z prawego menu rozwijanego w sprincie. Możesz edytować [szablon wiki]({{opSetting:base_url}}/projects/your-scrum-project/wiki/) w zależności od potrzeb.
                     7. *Aktywuj kolejne moduły*: &rightarrow; Przejdź do obszaru [Ustawienia projektu &rightarrow; Moduły]({{opSetting:base_url}}/projects/your-scrum-project/settings/modules).
 
-                    Tutaj znajdziesz nasze [instrukcje obsługi](https://www.openproject.org/docs/user-guide/).
+                    Tutaj znajdziesz nasze [instrukcje obsługi](https://www.yojana.girishm.info/docs/user-guide/).
                     Daj nam znać, jeśli masz jakieś pytania lub potrzebujesz pomocy. Skontaktuj się z nami: [support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
@@ -488,19 +488,19 @@ pl:
         item_6:
           name: Błąd
       welcome:
-        title: Witamy w OpenProject!
+        title: Witamy w Yojana!
         text: |
-          OpenProject jest czołowym oprogramowaniem open source do zarządzania projektami. Obsługuje klasyczne, zwinne oraz hybrydowe zarządzanie projektami i zapewnia pełną kontrolę nad danymi.
+          Yojana jest czołowym oprogramowaniem open source do zarządzania projektami. Obsługuje klasyczne, zwinne oraz hybrydowe zarządzanie projektami i zapewnia pełną kontrolę nad danymi.
 
           Podstawowe funkcje i przypadki stosowania:
 
-          * [Zarządzanie portfelem projektów](https://www.openproject.org/collaboration-software-features/project-portfolio-management/)
-          * [Planowanie projektów i tworzenie ich harmonogramów](https://www.openproject.org/collaboration-software-features/project-planning-scheduling/)
-          * [Zarządzanie zadaniami i śledzenie problemów](https://www.openproject.org/collaboration-software-features/task-management/)
-          * [Tablice zwinne (Scrum i Kanban)](https://www.openproject.org/collaboration-software-features/agile-project-management/)
-          * [Zarządzanie wymaganiami i planowanie wersji](https://www.openproject.org/collaboration-software-features/product-development/)
-          * [Śledzenie czasu i kosztów, budżety](https://www.openproject.org/collaboration-software-features/time tracking/)
-          * [Współpraca zespołowa i dokumentacja](https://www.openproject.org/collaboration-software-features/team-collaboration/)
+          * [Zarządzanie portfelem projektów](https://www.yojana.girishm.info/collaboration-software-features/project-portfolio-management/)
+          * [Planowanie projektów i tworzenie ich harmonogramów](https://www.yojana.girishm.info/collaboration-software-features/project-planning-scheduling/)
+          * [Zarządzanie zadaniami i śledzenie problemów](https://www.yojana.girishm.info/collaboration-software-features/task-management/)
+          * [Tablice zwinne (Scrum i Kanban)](https://www.yojana.girishm.info/collaboration-software-features/agile-project-management/)
+          * [Zarządzanie wymaganiami i planowanie wersji](https://www.yojana.girishm.info/collaboration-software-features/product-development/)
+          * [Śledzenie czasu i kosztów, budżety](https://www.yojana.girishm.info/collaboration-software-features/time tracking/)
+          * [Współpraca zespołowa i dokumentacja](https://www.yojana.girishm.info/collaboration-software-features/team-collaboration/)
 
           Witamy w przyszłości zarządzania projektami.
 

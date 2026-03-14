@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -341,13 +341,13 @@ vi:
         unknown_name: Unknown
     mcp_configurations:
       index:
-        description: The model context protocol allows AI agents to provide its users with tools and resources exposed by this OpenProject instance. This feature is still in beta.
-        resources_heading: Tài nguyên
-        resources_description: OpenProject implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url).
-        resources_submit: Cập nhật tài nguyên
-        tools_heading: Công cụ
-        tools_description: OpenProject cung cấp các công cụ sau đây. Mỗi công cụ có thể được kích hoạt, đổi tên và mô tả theo ý muốn của bạn. Để biết thêm thông tin, vui lòng tham khảo [tài liệu về các công cụ MCP](docs_url).
-        tools_submit: Cập nhật công cụ
+        description: "Giao thức bối cảnh mô hình cho phép các tác nhân AI cung cấp cho người dùng của mình các công cụ và tài nguyên được cung cấp bởi phiên bản Yojana này."
+        resources_heading: "Tài nguyên"
+        resources_description: "Yojana implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
+        resources_submit: "Cập nhật tài nguyên"
+        tools_heading: "Công cụ"
+        tools_description: "Yojana cung cấp các công cụ sau đây. Mỗi công cụ có thể được kích hoạt, đổi tên và mô tả theo ý muốn của bạn. Để biết thêm thông tin, vui lòng tham khảo [tài liệu về các công cụ MCP](docs_url)."
+        tools_submit: "Cập nhật công cụ"
       multi_update:
         success: Cấu hình MCP đã được cập nhật thành công.
       server_form:
@@ -390,31 +390,31 @@ vi:
       edit:
         label_delete_scim_client: Xóa ứng dụng khách SCIM
       form:
-        auth_provider_description: Đây là dịch vụ mà người dùng được nhà cung cấp SCIM thêm vào sẽ sử dụng để xác thực trong OpenProject.
-        authentication_method_description_html: Đây là cách ứng dụng khách SCIM xác thực tại OpenProject. Vui lòng đảm bảo rằng mã thông báo OAuth bao gồm phạm vi <code>scim_v2</code>.
-        description: Vui lòng tham khảo [documentation on configuring SCIM clients](docs_url) của chúng tôi để biết thêm thông tin về các tùy chọn cấu hình này.
-        jwt_sub_description: 'Ví dụ: đối với Keycloak, đây là UUID của tài khoản dịch vụ được liên kết với máy khách SCIM. Hãy tham khảo [our documentation](docs_url) để tìm hiểu cách tìm xác nhận quyền sở hữu chủ đề cho trường hợp sử dụng của bạn.'
-        name_description: Chọn một tên sẽ giúp các quản trị viên khác hiểu rõ hơn lý do tại sao ứng dụng khách này được định cấu hình.
+        auth_provider_description: "Đây là dịch vụ mà người dùng được nhà cung cấp SCIM thêm vào sẽ sử dụng để xác thực trong Yojana."
+        authentication_method_description_html: "Đây là cách ứng dụng khách SCIM xác thực tại Yojana. Vui lòng đảm bảo rằng mã thông báo OAuth bao gồm phạm vi <code>scim_v2</code>."
+        description: "Vui lòng tham khảo [documentation on configuring SCIM clients](docs_url) của chúng tôi để biết thêm thông tin về các tùy chọn cấu hình này."
+        jwt_sub_description: "Ví dụ: đối với Keycloak, đây là UUID của tài khoản dịch vụ được liên kết với máy khách SCIM. Hãy tham khảo [our documentation](docs_url) để tìm hiểu cách tìm xác nhận quyền sở hữu chủ đề cho trường hợp sử dụng của bạn."
+        name_description: "Chọn một tên sẽ giúp các quản trị viên khác hiểu rõ hơn lý do tại sao ứng dụng khách này được định cấu hình."
       index:
-        description: Các máy khách SCIM được định cấu hình ở đây có thể tương tác với API máy chủ OpenProject SCIM để cung cấp, cập nhật và hủy cấp phép các tài khoản và nhóm người dùng.
-        label_create_button: Thêm ứng dụng khách SCIM
+        description: "Các máy khách SCIM được định cấu hình ở đây có thể tương tác với API máy chủ Yojana SCIM để cung cấp, cập nhật và hủy cấp phép các tài khoản và nhóm người dùng."
+        label_create_button: "Thêm ứng dụng khách SCIM"
       new:
         title: Khách hàng SCIM mới
       revoke_static_token_dialog_component:
-        confirm_button: Thu hồi
-        title: Thu hồi mã thông báo tĩnh
-        heading: Bạn có chắc chắn muốn thu hồi mã thông báo này không?
-        description: Ứng dụng khách SCIM sử dụng mã thông báo này sẽ không thể truy cập API máy chủ SCIM của OpenProject nữa.
+        confirm_button: "Thu hồi"
+        title: "Thu hồi mã thông báo tĩnh"
+        heading: "Bạn có chắc chắn muốn thu hồi mã thông báo này không?"
+        description: "Ứng dụng khách SCIM sử dụng mã thông báo này sẽ không thể truy cập API máy chủ SCIM của Yojana nữa."
       table_component:
         blank_slate:
           title: Chưa có máy khách SCIM nào được định cấu hình
           description: Thêm khách hàng để xem họ ở đây
         user_count: người dùng
       token_list_component:
-        description: Mã thông báo bạn tạo ở đây có thể được máy khách SCIM chuyển để truy cập API OpenProject SCIM.
-        heading: mã thông báo
-        label_add_token: mã thông báo
-        label_aria_add_token: Thêm mã thông báo
+        description: "Mã thông báo bạn tạo ở đây có thể được máy khách SCIM chuyển để truy cập API Yojana SCIM."
+        heading: "mã thông báo"
+        label_add_token: "mã thông báo"
+        label_aria_add_token: "Thêm mã thông báo"
       token_table_component:
         blank_slate:
           title: Chưa có mã thông báo nào được tạo
@@ -554,40 +554,38 @@ vi:
       name: Tên tùy ý của kết nối LDAP
       host: Tên máy chủ LDAP hoặc địa chỉ IP
       login_map: Khóa thuộc tính trong LDAP được sử dụng để xác định thông tin đăng nhập người dùng duy nhất. Thông thường, đây sẽ là `uid` hoặc` samAccountName`.
-      generic_map: |-
-        84/5000
-        Khóa thuộc tính trong LDAP được ánh xạ tới thuộc tính `%{attribute}` của OpenProject
-      admin_map_html: 'Tùy chọn: Khóa thuộc tính trong LDAP mà <strong>nếu có</strong> đánh dấu người dùng OpenProject là quản trị viên. Để trống khi nghi ngờ.'
+      generic_map: "84/5000\nKhóa thuộc tính trong LDAP được ánh xạ tới thuộc tính `%{attribute}` của Yojana"
+      admin_map_html: "Tùy chọn: Khóa thuộc tính trong LDAP mà <strong>nếu có</strong> đánh dấu người dùng Yojana là quản trị viên. Để trống khi nghi ngờ."
       system_user_dn_html: |
         Nhập DN của người dùng hệ thống được sử dụng để truy cập chỉ đọc.
         <br>
-        Ví dụ: uid=openproject,ou=system,dc=example,dc=com
+        Ví dụ: uid=yojana,ou=system,dc=example,dc=com
       system_user_password: Nhập mật khẩu liên kết của người dùng hệ thống
       base_dn: |
-        Nhập Base DN của cây con trong LDAP mà bạn muốn OpenProject tìm kiếm người dùng và nhóm.
-        OpenProject sẽ chỉ lọc tên người dùng được cung cấp trong cây con này.
+        Nhập Base DN của cây con trong LDAP mà bạn muốn Yojana tìm kiếm người dùng và nhóm.
+        Yojana sẽ chỉ lọc tên người dùng được cung cấp trong cây con này.
         Ví dụ: ou=users,dc=example,dc=com
       filter_string: |
         Thêm bộ lọc RFC4515 tùy chọn để áp dụng cho kết quả trả về cho người dùng được lọc trong LDAP.
-        Điều này có thể được sử dụng để hạn chế nhóm người dùng được OpenProject tìm thấy để xác thực và đồng bộ hóa nhóm.
+        Điều này có thể được sử dụng để hạn chế nhóm người dùng được Yojana tìm thấy để xác thực và đồng bộ hóa nhóm.
       filter_string_concat: |
-        OpenProject sẽ luôn lọc thuộc tính đăng nhập do người dùng cung cấp để xác định bản ghi. Nếu bạn cung cấp bộ lọc ở đây,
+        Yojana sẽ luôn lọc thuộc tính đăng nhập do người dùng cung cấp để xác định bản ghi. Nếu bạn cung cấp bộ lọc ở đây,
         nó sẽ được nối với AND. Theo mặc định, tổng hợp (objectClass=*) sẽ được sử dụng làm bộ lọc.
       onthefly_register: |
-        Nếu bạn chọn hộp này, OpenProject sẽ tự động tạo người dùng mới từ các mục LDAP của họ
-        khi họ xác thực lần đầu bằng OpenProject.
-        Bỏ chọn mục này để chỉ cho phép các tài khoản hiện có trong OpenProject xác thực thông qua LDAP!
-    connection_encryption: Mã hóa kết nối
-    encryption_details: Tùy chọn LDAPS / STARTTLS
-    system_account: Tài khoản hệ thống
+        Nếu bạn chọn hộp này, Yojana sẽ tự động tạo người dùng mới từ các mục LDAP của họ
+        khi họ xác thực lần đầu bằng Yojana.
+        Bỏ chọn mục này để chỉ cho phép các tài khoản hiện có trong Yojana xác thực thông qua LDAP!
+    connection_encryption: "Mã hóa kết nối"
+    encryption_details: "Tùy chọn LDAPS / STARTTLS"
+    system_account: "Tài khoản hệ thống"
     system_account_legend: |
-      OpenProject yêu cầu quyền truy cập chỉ đọc thông qua tài khoản hệ thống để tra cứu người dùng và nhóm trong cây LDAP của bạn.
+      Yojana yêu cầu quyền truy cập chỉ đọc thông qua tài khoản hệ thống để tra cứu người dùng và nhóm trong cây LDAP của bạn.
       Vui lòng chỉ định thông tin xác thực liên kết cho người dùng hệ thống đó trong phần sau.
     ldap_details: 'Chi tiết LDAP '
     user_settings: Ánh xạ thuộc tính
     user_settings_legend: |
-      Các trường sau đây liên quan đến cách người dùng được tạo trong OpenProject từ các mục nhập LDAP và
-      thuộc tính LDAP nào được sử dụng để xác định thuộc tính của người dùng OpenProject (ánh xạ thuộc tính).
+      Các trường sau đây liên quan đến cách người dùng được tạo trong Yojana từ các mục nhập LDAP và
+      thuộc tính LDAP nào được sử dụng để xác định thuộc tính của người dùng Yojana (ánh xạ thuộc tính).
     tls_mode:
       plain: không có
       simple_tls: LDAPS
@@ -2115,18 +2113,17 @@ vi:
         circular_dependency: Mối quan hệ này sẽ tạo ra sự phụ thuộc vòng tròn.
         confirmation: không khớp %{attribute}.
         could_not_be_copied: "%{dependency} không thể sao chép (đầy đủ)."
-        datetime_must_be_in_future: phải ở tương lai.
-        does_not_exist: không tồn tại
-        error_enterprise_only: "%{action} chỉ có trong phiên bản OpenProject Enterprise."
-        error_unauthorized: Có thể không được truy cập.
-        error_readonly: đã được cố gắng viết nhưng không thể ghi được.
-        error_conflict: Thông tin đã được cập nhật bởi ít nhất một người dùng khác trong thời gian chờ đợi.
-        error_not_found: không tìm thấy.
-        email: không phải là một địa chỉ email hợp lệ.
-        empty: không thể để trống
-        enterprise_plan_required: yêu cầu ít nhất %{plan_name}.
-        even: phải chẵn.
-        exclusion: được bảo lưu.
+        does_not_exist: "không tồn tại"
+        error_enterprise_only: "%{action} chỉ có trong phiên bản Yojana Enterprise."
+        error_unauthorized: "Có thể không được truy cập."
+        error_readonly: "đã được cố gắng viết nhưng không thể ghi được."
+        error_conflict: "Thông tin đã được cập nhật bởi ít nhất một người dùng khác trong thời gian chờ đợi."
+        error_not_found: "không tìm thấy."
+        email: "không phải là một địa chỉ email hợp lệ."
+        empty: "không thể để trống"
+        enterprise_plan_required: "yêu cầu ít nhất %{plan_name}."
+        even: "phải chẵn."
+        exclusion: "được bảo lưu."
         feature_disabled: không có sẵn.
         feature_disabled_for_project: đã bị vô hiệu hóa cho dự án này.
         file_too_large: quá lớn (kích thước tối đa là %{count} bytes)
@@ -3100,29 +3097,26 @@ vi:
       title: Tiện ích bổ sung dành cho doanh nghiệp
       plan_title: Tiện ích bổ sung %{plan} dành cho doanh nghiệp
       plan_name: "%{plan} kế hoạch doanh nghiệp"
-      trial_text: This feature is included in your active Enterprise trial.
-      plan_text_html: Có sẵn bắt đầu với %{plan_name}.
-      unlimited: Không giới hạn
-      already_have_token: 'Bạn đã có mã thông báo chưa? Thêm nó bằng nút bên dưới để nâng cấp lên gói Enterprise đã đặt.
-
-        '
-      hide_banner: Ẩn biểu ngữ này
-      homescreen_description: 'Các gói doanh nghiệp mở rộng phiên bản Cộng đồng của OpenProject với [Enterprise add-ons](enterprise_url) bổ sung và hỗ trợ chuyên nghiệp, lý tưởng cho các tổ chức chạy OpenProject trong môi trường quan trọng.
-
-        '
+      plan_text_html: "Có sẵn bắt đầu với %{plan_name}."
+      unlimited: "Không giới hạn"
+      already_have_token: >
+        Bạn đã có mã thông báo chưa? Thêm nó bằng nút bên dưới để nâng cấp lên gói Enterprise đã đặt.
+      hide_banner: "Ẩn biểu ngữ này"
+      homescreen_description: >
+        Các gói doanh nghiệp mở rộng phiên bản Cộng đồng của Yojana với [Enterprise add-ons](enterprise_url) bổ sung và hỗ trợ chuyên nghiệp, lý tưởng cho các tổ chức chạy Yojana trong môi trường quan trọng.
       homescreen_subline: Bằng cách nâng cấp, bạn cũng sẽ hỗ trợ một dự án nguồn mở.
       baseline_comparison:
         description: Đánh dấu những thay đổi được thực hiện trong danh sách này kể từ bất kỳ thời điểm nào trong quá khứ.
       benefits:
-        description: Lợi ích của phiên bản Enterprise tại chỗ là gì?
-        high_security: Tính năng bảo mật
-        high_security_text: Đăng nhập một lần (SAML, OpenID Connect, CAS), nhóm LDAP.
-        installation: Hỗ trợ cài đặt
-        installation_text: Các kỹ sư phần mềm có kinh nghiệm sẽ hướng dẫn bạn thực hiện quá trình cài đặt và thiết lập hoàn chỉnh trong cơ sở hạ tầng của riêng bạn.
-        premium_features: Tiện ích bổ sung dành cho doanh nghiệp
-        premium_features_text: Bảng linh hoạt, chủ đề và logo tùy chỉnh, đồ thị, quy trình làm việc thông minh với các hành động tùy chỉnh, tìm kiếm toàn văn cho tệp đính kèm gói công việc và các trường tùy chỉnh nhiều lựa chọn.
-        professional_support: Hỗ trợ chuyên nghiệp
-        professional_support_text: Nhận được sự hỗ trợ đáng tin cậy, liên tục từ các kỹ sư hỗ trợ cấp cao có kiến ​​thức chuyên môn về việc chạy OpenProject trong các môi trường quan trọng trong kinh doanh.
+        description: "Lợi ích của phiên bản Enterprise tại chỗ là gì?"
+        high_security: "Tính năng bảo mật"
+        high_security_text: "Đăng nhập một lần (SAML, OpenID Connect, CAS), nhóm LDAP."
+        installation: "Hỗ trợ cài đặt"
+        installation_text: "Các kỹ sư phần mềm có kinh nghiệm sẽ hướng dẫn bạn thực hiện quá trình cài đặt và thiết lập hoàn chỉnh trong cơ sở hạ tầng của riêng bạn."
+        premium_features: "Tiện ích bổ sung dành cho doanh nghiệp"
+        premium_features_text: "Bảng linh hoạt, chủ đề và logo tùy chỉnh, đồ thị, quy trình làm việc thông minh với các hành động tùy chỉnh, tìm kiếm toàn văn cho tệp đính kèm gói công việc và các trường tùy chỉnh nhiều lựa chọn."
+        professional_support: "Hỗ trợ chuyên nghiệp"
+        professional_support_text: "Nhận được sự hỗ trợ đáng tin cậy, liên tục từ các kỹ sư hỗ trợ cấp cao có kiến ​​thức chuyên môn về việc chạy Yojana trong các môi trường quan trọng trong kinh doanh."
       work_package_subject_generation:
         description: Tạo chủ đề được tạo tự động bằng cách sử dụng các thuộc tính và văn bản được tham chiếu.
       customize_life_cycle:
@@ -3152,34 +3146,31 @@ vi:
       calculated_values:
         description: Các giá trị được tính toán cho phép bạn tạo thuộc tính dựa trên công thức toán học bằng cách sử dụng các giá trị số cũng như các thuộc tính dự án và trường tùy chỉnh khác.
       define_custom_style:
-        title: Chủ đề và logo màu tùy chỉnh
-        more_info: 'Lưu ý: logo được sử dụng sẽ có thể truy cập công khai.'
-        description: Tùy chỉnh cài đặt OpenProject bằng logo và màu sắc của riêng bạn.
+        title: "Chủ đề và logo màu tùy chỉnh"
+        more_info: "Lưu ý: logo được sử dụng sẽ có thể truy cập công khai."
+        description: Tùy chỉnh cài đặt Yojana bằng logo và màu sắc của riêng bạn.
       custom_actions:
         title: Hành động tùy chỉnh
         description: Hành động tùy chỉnh là các phím tắt bằng một cú nhấp chuột tới một tập hợp các hành động được xác định trước mà bạn có thể cung cấp trên các gói công việc nhất định dựa trên trạng thái, vai trò, loại hoặc dự án.
       mcp_server:
-        description: Bring OpenProject into your AI workflows with a secure MCP server.
-      meeting_templates:
-        description: Define meeting templates with a set agenda structure and save time by reusing them when creating new meetings.
+        description: "Tích hợp các tác nhân AI với phiên bản Yojana của bạn thông qua MCP."
       nextcloud_sso:
         title: Đăng nhập một lần để lưu trữ Nextcloud
         description: Cho phép xác thực liền mạch và an toàn cho bộ lưu trữ Nextcloud của bạn bằng Đăng nhập một lần. Đơn giản hóa việc quản lý truy cập và nâng cao sự thuận tiện cho người dùng.
       scim_api:
-        title: khách hàng SCIM
-        description: Tự động hóa việc quản lý người dùng trong OpenProject bằng cách tích hợp liền mạch các dịch vụ nhận dạng bên ngoài như Microsoft Entra hoặc Keycloak thông qua API máy chủ SCIM của chúng tôi. Có sẵn bắt đầu với gói doanh nghiệp Enterprise.
+        title: "khách hàng SCIM"
+        description: "Tự động hóa việc quản lý người dùng trong Yojana bằng cách tích hợp liền mạch các dịch vụ nhận dạng bên ngoài như Microsoft Entra hoặc Keycloak thông qua API máy chủ SCIM của chúng tôi. Có sẵn bắt đầu với gói doanh nghiệp Enterprise."
       sso_auth_providers:
         title: Đăng nhập một lần (SSO)
         description: Cho phép người dùng đăng nhập thông qua các nhà cung cấp SSO bên ngoài bằng SAML hoặc OpenID Connect để truy cập và tích hợp liền mạch với các hệ thống nhận dạng hiện có.
       virus_scanning:
-        description: Đảm bảo các tệp được tải lên trong OpenProject được quét vi-rút trước khi người dùng khác có thể truy cập được.
+        description: "Đảm bảo các tệp được tải lên trong Yojana được quét vi-rút trước khi người dùng khác có thể truy cập được."
       project_creation_wizard:
         description: Tạo một trình hướng dẫn từng bước để hỗ trợ các nhà quản lý dự án điền vào đơn yêu cầu khởi tạo dự án.
       placeholder_users:
         title: Người dùng giữ chỗ
-        description: 'Người dùng giữ chỗ là một cách để gán các gói công việc cho những người dùng không thuộc dự án của bạn. Chúng có thể hữu ích trong nhiều tình huống khác nhau; ví dụ: nếu bạn cần theo dõi các nhiệm vụ cho một tài nguyên chưa được đặt tên hoặc chưa có sẵn hoặc nếu bạn không muốn cấp cho người đó quyền truy cập vào OpenProject nhưng vẫn muốn theo dõi các nhiệm vụ được giao cho họ.
-
-          '
+        description: >
+          Người dùng giữ chỗ là một cách để gán các gói công việc cho những người dùng không thuộc dự án của bạn. Chúng có thể hữu ích trong nhiều tình huống khác nhau; ví dụ: nếu bạn cần theo dõi các nhiệm vụ cho một tài nguyên chưa được đặt tên hoặc chưa có sẵn hoặc nếu bạn không muốn cấp cho người đó quyền truy cập vào Yojana nhưng vẫn muốn theo dõi các nhiệm vụ được giao cho họ.
       internal_comments:
         title: Bình luận nội bộ
         description: Nhận xét nội bộ cho phép một nhóm nội bộ liên lạc riêng tư với nhau. Những thông tin này chỉ hiển thị với một số vai trò dự án nhất định và sẽ không bao giờ hiển thị công khai.
@@ -3193,26 +3184,25 @@ vi:
         other: "%{count} ngày còn lại của %{trial_plan} mã thông báo dùng thử"
       description_html: You have access to all %{trial_plan} features.
     trial:
-      not_found: Bạn đã yêu cầu mã thông báo dùng thử nhưng yêu cầu đó không còn nữa. Vui lòng thử lại.
-      wait_for_confirmation: Chúng tôi đã gửi cho bạn một email để xác nhận địa chỉ của bạn nhằm lấy mã thông báo dùng thử.
-      already_retrieved: 'Mã thông báo doanh nghiệp dùng thử của bạn đã được truy xuất. Vui lòng kiểm tra email của bạn để biết mã thông báo được đính kèm. Vui lòng liên hệ với nhóm hỗ trợ của chúng tôi nếu bạn cần một cái mới.
-
-        '
-      successfully_saved: Mã thông báo doanh nghiệp dùng thử của bạn đã được truy xuất thành công.
-      token_sent: Đã yêu cầu mã thông báo dùng thử
-      request_again: Yêu cầu lại
-      resend_action: Gửi lại email xác nhận
-      welcome_title: Tổng quan về tính năng nhanh
-      welcome_description: Nhận tổng quan nhanh về quản lý dự án và cộng tác nhóm với phiên bản OpenProject Enterprise.
-      confirmation_info: 'Chúng tôi đã gửi cho bạn email theo số %{date} tới %{email} kèm theo tất cả thông tin để bắt đầu dùng thử miễn phí OpenProject Enterprise. Vui lòng kiểm tra hộp thư đến của bạn và nhấp vào liên kết xác nhận được cung cấp để bắt đầu dùng thử miễn phí 14 ngày.
-
-        '
-      confirmation_subline: 'Vui lòng kiểm tra hộp thư đến của bạn và làm theo các bước để bắt đầu dùng thử miễn phí 14 ngày.
-
-        '
+      not_found: "Bạn đã yêu cầu mã thông báo dùng thử nhưng yêu cầu đó không còn nữa. Vui lòng thử lại."
+      wait_for_confirmation: "Chúng tôi đã gửi cho bạn một email để xác nhận địa chỉ của bạn nhằm lấy mã thông báo dùng thử."
+      already_retrieved: >
+        Mã thông báo doanh nghiệp dùng thử của bạn đã được truy xuất. Vui lòng kiểm tra email của bạn để biết mã thông báo được đính kèm. Vui lòng liên hệ với nhóm hỗ trợ của chúng tôi nếu bạn cần một cái mới.
+      successfully_saved: "Mã thông báo doanh nghiệp dùng thử của bạn đã được truy xuất thành công."
+      token_sent: "Đã yêu cầu mã thông báo dùng thử"
+      request_again: "Yêu cầu lại"
+      resend_action: "Gửi lại email xác nhận"
+      welcome_title: "Tổng quan về tính năng nhanh"
+      welcome_description: "Nhận tổng quan nhanh về quản lý dự án và cộng tác nhóm với phiên bản Yojana Enterprise."
+      confirmation_info: >
+        Chúng tôi đã gửi cho bạn email theo số %{date} tới %{email} kèm theo tất cả thông tin để bắt đầu dùng thử miễn phí Yojana Enterprise. Vui lòng kiểm tra hộp thư đến của bạn và nhấp vào liên kết xác nhận được cung cấp để bắt đầu dùng thử miễn phí 14 ngày.
+      confirmation_subline: >
+        Vui lòng kiểm tra hộp thư đến của bạn và làm theo các bước để bắt đầu dùng thử miễn phí 14 ngày.
       domain_caption: Mã thông báo sẽ hợp lệ cho tên máy chủ hiện được định cấu hình của bạn.
-      receive_newsletter: I want to receive the OpenProject [newsletter](newsletter_url).
-      consent: I agree with the [terms of service](tos_url) and the [privacy policy](privacy_url).
+      receive_newsletter_html: >
+        Tôi muốn nhận bản tin Yojana <a target="_blank" href="https://www.yojana.girishm.info/newsletter/"></a>.
+      consent_html: >
+        Tôi đồng ý với <a target="_blank" href="https://www.yojana.girishm.info/terms-of-service/">điều khoản dịch vụ</a> và <a target="_blank" href="https://www.yojana.girishm.info/data-privacy-and-security/">chính sách quyền riêng tư</a>.
   email_calendar_updates:
     state:
       disabled: Tàn tật.
@@ -3236,51 +3226,51 @@ vi:
   error_can_not_delete_in_use_archived_undisclosed: Ngoài ra còn có các gói công việc trong các dự án lưu trữ. Bạn cần yêu cầu quản trị viên thực hiện việc xóa để xem dự án nào bị ảnh hưởng.
   error_can_not_delete_in_use_archived_work_packages: 'Ngoài ra còn có các gói công việc trong các dự án lưu trữ. Trước tiên, bạn cần kích hoạt lại các dự án sau trước khi có thể thay đổi thuộc tính của các gói công việc tương ứng: %{archived_projects_urls}'
   error_can_not_delete_type:
-    explanation: Loại này chứa các gói công việc và không thể bị xóa. Bạn có thể xem tất cả các gói công việc bị ảnh hưởng trong <a target="_blank" href="%{url}">cái nhìn này</a>.
-  error_can_not_delete_standard_type: Kiểu chuẩn không thể bị xóa.
-  error_can_not_invite_user: Gửi lời mời không thành công.
-  error_can_not_remove_role: Vai trò này đang được sử dụng và không thể bị xóa.
-  error_can_not_reopen_work_package_on_closed_version: Không thể mở lại cho một work package đã được gán cho một phiên bản đã đóng
-  error_can_not_find_all_resources: Không thể tìm thấy tất cả các tài nguyên liên quan đến yêu cầu này.
-  error_can_not_unarchive_project: 'Dự án này không thể lưu trữ: %{errors}'
-  error_check_user_and_role: Hãy chọn người dùng và một vai trò.
-  error_code: Lỗi %{code}
-  error_color_could_not_be_saved: Không thể lưu màu
-  error_cookie_missing: Cookie OpenProject bị thiếu. Hãy đảm bảo rằng cookie đã được bật vì ứng dụng này sẽ không hoạt động bình thường nếu không có cookie.
-  error_custom_option_not_found: Tùy chọn không tồn tại.
-  error_enterprise_plan_needed: Bạn cần có gói doanh nghiệp %{plan} để thực hiện hành động này.
-  error_enterprise_activation_user_limit: Không thể kích hoạt tài khoản của bạn (đã đạt đến giới hạn người dùng). Vui lòng liên hệ với quản trị viên của bạn để có quyền truy cập.
-  error_enterprise_token_invalid_domain: Phiên bản Enterprise không hoạt động. Miền mã thông báo Doanh nghiệp của bạn (%{actual}) không khớp với tên máy chủ của hệ thống (%{expected}).
-  error_failed_to_delete_entry: Không xóa được mục này.
-  error_in_dependent: 'Lỗi khi cố gắng thay đổi đối tượng phụ thuộc: %{dependent_class} #%{related_id} - %{related_subject}: %{error}'
-  error_in_new_dependent: 'Lỗi khi tạo đối tượng phụ thuộc: %{dependent_class} - %{related_subject}: %{error}'
-  error_invalid_selected_value: Giá trị đã chọn không hợp lệ.
-  error_journal_attribute_not_present: Tạp chí không chứa thuộc tính %{attribute}.
-  error_pdf_export_too_many_columns: Đã chọn quá nhiều cột để xuất PDF. Vui lòng giảm số lượng cột.
-  error_pdf_date_range_too_long: Phạm vi ngày của gói công việc đã chọn vượt quá giới hạn xuất PDF cho phép. Vui lòng thu gọn phạm vi tối đa %{years} năm.
-  error_pdf_failed_to_export: 'Không thể lưu bản xuất PDF: %{error}'
-  error_token_authenticity: Không thể xác minh mã thông báo giả mạo yêu cầu trên nhiều trang web. Bạn đã thử gửi dữ liệu trên nhiều trình duyệt hoặc tab chưa? Vui lòng đóng tất cả các tab và thử lại.
-  error_reminder_not_found: Không tìm thấy lời nhắc hoặc đã được thông báo về nó.
-  error_work_package_not_found_in_project: Work package không được tìm thấy hoặc không thuộc về dự án này
-  error_work_package_id_not_found: Gói công việc không được tìm thấy.
-  error_must_be_project_member: phải là thành viên dự án
-  error_migrations_are_pending: Bản cài đặt OpenProject của bạn có quá trình di chuyển cơ sở dữ liệu đang chờ xử lý. Bạn có thể đã bỏ lỡ quá trình di chuyển trong lần nâng cấp gần đây nhất của mình. Vui lòng kiểm tra hướng dẫn nâng cấp để nâng cấp đúng cách cài đặt của bạn.
-  error_migrations_visit_upgrade_guides: Vui lòng truy cập tài liệu hướng dẫn nâng cấp của chúng tôi
-  error_no_default_work_package_status: Không có tình trạng mặc định được định nghĩa cho work package. Vui lòng kiểm tra cấu hình của bạn (đi đến "Quản lý-> các trạng thái của work package").
-  error_no_type_in_project: Không có kiểu được liên kết với dự án này. Hãy kiểm tra lại phần "Thiết Lập Dự Án".
-  error_omniauth_registration_timed_out: Đăng ký thông qua một nhà cung cấp bên ngoài xác thực hết thời gian. Xin vui lòng thử lại.
-  error_omniauth_invalid_auth: Thông tin xác thực được trả về từ nhà cung cấp danh tính không hợp lệ. Vui lòng liên hệ với quản trị viên của bạn để được trợ giúp thêm.
-  error_password_change_failed: Đã xảy ra lỗi khi cố gắng thay đổi mật khẩu.
-  error_scm_command_failed: 'Lỗi xảy ra khi truy cập vào kho lưu trữ: %{value}'
-  error_scm_not_found: Mục hay revision không được tìm thấy trong kho.
-  error_type_could_not_be_saved: Không thể lưu loại
-  error_unable_delete_status: Trạng thái work package không thể bị xóa vì nó được sử dụng bởi ít nhất 1 work package.
-  error_unable_delete_default_status: Không thể xoá tình trạng mặc định của work package. Vui lòng chọn tình trạng work package khác trước khi xóa một trong hiện tại.
-  error_unable_to_connect: Không thể kết nối (%{value})
-  error_unable_delete_wiki: Không thể xóa trang wiki.
-  error_unable_update_wiki: Không thể cập nhật trang wiki.
-  error_workflow_copy_source: Vui lòng chọn loại nguồn hoặc vai trò
-  error_workflow_copy_target: Vui lòng chọn loại(s) và vai trò(s) mục tiêu
+    explanation: 'Loại này chứa các gói công việc và không thể bị xóa. Bạn có thể xem tất cả các gói công việc bị ảnh hưởng trong <a target="_blank" href="%{url}">cái nhìn này</a>.'
+  error_can_not_delete_standard_type: "Kiểu chuẩn không thể bị xóa."
+  error_can_not_invite_user: "Gửi lời mời không thành công."
+  error_can_not_remove_role: "Vai trò này đang được sử dụng và không thể bị xóa."
+  error_can_not_reopen_work_package_on_closed_version: "Không thể mở lại cho một work package đã được gán cho một phiên bản đã đóng"
+  error_can_not_find_all_resources: "Không thể tìm thấy tất cả các tài nguyên liên quan đến yêu cầu này."
+  error_can_not_unarchive_project: "Dự án này không thể lưu trữ: %{errors}"
+  error_check_user_and_role: "Hãy chọn người dùng và một vai trò."
+  error_code: "Lỗi %{code}"
+  error_color_could_not_be_saved: "Không thể lưu màu"
+  error_cookie_missing: "Cookie Yojana bị thiếu. Hãy đảm bảo rằng cookie đã được bật vì ứng dụng này sẽ không hoạt động bình thường nếu không có cookie."
+  error_custom_option_not_found: "Tùy chọn không tồn tại."
+  error_enterprise_plan_needed: "Bạn cần có gói doanh nghiệp %{plan} để thực hiện hành động này."
+  error_enterprise_activation_user_limit: "Không thể kích hoạt tài khoản của bạn (đã đạt đến giới hạn người dùng). Vui lòng liên hệ với quản trị viên của bạn để có quyền truy cập."
+  error_enterprise_token_invalid_domain: "Phiên bản Enterprise không hoạt động. Miền mã thông báo Doanh nghiệp của bạn (%{actual}) không khớp với tên máy chủ của hệ thống (%{expected})."
+  error_failed_to_delete_entry: "Không xóa được mục này."
+  error_in_dependent: "Lỗi khi cố gắng thay đổi đối tượng phụ thuộc: %{dependent_class} #%{related_id} - %{related_subject}: %{error}"
+  error_in_new_dependent: "Lỗi khi tạo đối tượng phụ thuộc: %{dependent_class} - %{related_subject}: %{error}"
+  error_invalid_selected_value: "Giá trị đã chọn không hợp lệ."
+  error_journal_attribute_not_present: "Tạp chí không chứa thuộc tính %{attribute}."
+  error_pdf_export_too_many_columns: "Đã chọn quá nhiều cột để xuất PDF. Vui lòng giảm số lượng cột."
+  error_pdf_date_range_too_long: "Phạm vi ngày của gói công việc đã chọn vượt quá giới hạn xuất PDF cho phép. Vui lòng thu gọn phạm vi tối đa %{years} năm."
+  error_pdf_failed_to_export: "Không thể lưu bản xuất PDF: %{error}"
+  error_token_authenticity: "Không thể xác minh mã thông báo giả mạo yêu cầu trên nhiều trang web. Bạn đã thử gửi dữ liệu trên nhiều trình duyệt hoặc tab chưa? Vui lòng đóng tất cả các tab và thử lại."
+  error_reminder_not_found: "Không tìm thấy lời nhắc hoặc đã được thông báo về nó."
+  error_work_package_not_found_in_project: "Work package không được tìm thấy hoặc không thuộc về dự án này"
+  error_work_package_id_not_found: "Gói công việc không được tìm thấy."
+  error_must_be_project_member: "phải là thành viên dự án"
+  error_migrations_are_pending: "Bản cài đặt Yojana của bạn có quá trình di chuyển cơ sở dữ liệu đang chờ xử lý. Bạn có thể đã bỏ lỡ quá trình di chuyển trong lần nâng cấp gần đây nhất của mình. Vui lòng kiểm tra hướng dẫn nâng cấp để nâng cấp đúng cách cài đặt của bạn."
+  error_migrations_visit_upgrade_guides: "Vui lòng truy cập tài liệu hướng dẫn nâng cấp của chúng tôi"
+  error_no_default_work_package_status: 'Không có tình trạng mặc định được định nghĩa cho work package. Vui lòng kiểm tra cấu hình của bạn (đi đến "Quản lý-> các trạng thái của work package").'
+  error_no_type_in_project: "Không có kiểu được liên kết với dự án này. Hãy kiểm tra lại phần \"Thiết Lập Dự Án\"."
+  error_omniauth_registration_timed_out: "Đăng ký thông qua một nhà cung cấp bên ngoài xác thực hết thời gian. Xin vui lòng thử lại."
+  error_omniauth_invalid_auth: "Thông tin xác thực được trả về từ nhà cung cấp danh tính không hợp lệ. Vui lòng liên hệ với quản trị viên của bạn để được trợ giúp thêm."
+  error_password_change_failed: "Đã xảy ra lỗi khi cố gắng thay đổi mật khẩu."
+  error_scm_command_failed: "Lỗi xảy ra khi truy cập vào kho lưu trữ: %{value}"
+  error_scm_not_found: "Mục hay revision không được tìm thấy trong kho."
+  error_type_could_not_be_saved: "Không thể lưu loại"
+  error_unable_delete_status: "Trạng thái work package không thể bị xóa vì nó được sử dụng bởi ít nhất 1 work package."
+  error_unable_delete_default_status: "Không thể xoá tình trạng mặc định của work package. Vui lòng chọn tình trạng work package khác trước khi xóa một trong hiện tại."
+  error_unable_to_connect: "Không thể kết nối (%{value})"
+  error_unable_delete_wiki: "Không thể xóa trang wiki."
+  error_unable_update_wiki: "Không thể cập nhật trang wiki."
+  error_workflow_copy_source: "Vui lòng chọn loại nguồn hoặc vai trò"
+  error_workflow_copy_target: "Vui lòng chọn loại(s) và vai trò(s) mục tiêu"
   error_menu_item_not_created: Không thể thêm mục trình đơn
   error_menu_item_not_saved: Không thể lưu mục trình đơn
   error_wiki_root_menu_item_conflict: 'Không thể đổi tên "%{old_name}" thành "%{new_name}" do xung đột giữa mục menu kết quả với mục menu hiện có "%{existing_caption}" (%{existing_identifier}).
@@ -3375,8 +3365,8 @@ vi:
     succeeded: Đã xuất xong
     failed: 'Đã xảy ra lỗi khi cố gắng xuất các gói công việc: %{message}'
     demo:
-      heading: Bản demo PDF
-      footer: Được tạo bởi OpenProject
+      heading: "Bản demo PDF"
+      footer: "Được tạo bởi Yojana"
       button_text: Tạo bản PDF demo
     errors:
       embedded_table_with_too_many_columns: Bảng gói công việc được nhúng này không thể vừa trên trang, vui lòng giảm số lượng cột.
@@ -3495,7 +3485,7 @@ vi:
         no_results_subtext: Add one or multiple projects as favorite through their overview or in a project list.
       users: Người dùng đã đăng ký mới nhất trong trường hợp này.
     blocks:
-      community: Cộng đồng OpenProject
+      community: "Cộng đồng Yojana"
       upsell:
         title: Nâng cấp lên phiên bản Enterprise
       new_features:
@@ -3507,40 +3497,38 @@ vi:
 
             '
           new_features_list:
-            line_0: XWiki integration (Corporate plan).
-            line_1: Sprint goals.
-            line_2: "'All sprints' overview page."
-            line_3: Display backlog buckets in work packages and work package tables.
-            line_4: Improved support for project-based (semantic) identifiers.
-            line_5: Convert meeting agenda items into work packages.
-            line_6: Configure cost types per project.
+            line_0: Khởi tạo dự án tự động (Phần mở rộng doanh nghiệp).
+            line_1: "Họp: Thêm các gói công việc mới hoặc hiện có làm kết quả."
+            line_2: "Họp: Hiển thị phản hồi iCal trong Yojana."
+            line_3: "Cuộc họp định kỳ: Sao chép các mục trong chương trình nghị sự sang lần họp tiếp theo."
+            line_4: "Phát hành cho cộng đồng: Tính năng làm nổi bật thuộc tính."
+            line_5: Cảnh báo trước khi mở các liên kết bên ngoài trong nội dung do người dùng cung cấp (Phần mở rộng doanh nghiệp).
+            line_6: Cải thiện hiệu suất và trải nghiệm người dùng, bao gồm tab Hoạt động và mô-đun Tài liệu.
     links:
-      upgrade_enterprise_edition: Nâng cấp lên phiên bản Enterprise
-      postgres_migration: Di chuyển cài đặt của bạn sang PostgreSQL
-      user_guides: Hướng dẫn sử dụng
-      faq: Câu hỏi thường gặp
-      impressum: Thông báo pháp lý
-      glossary: Thuật ngữ
-      shortcuts: phím tắt
-      blog: OpenProject blog
-      forums: diễn đàn cộng đồng
-      security_alerts: Cảnh báo bảo mật
-      newsletter: Bản tin
+      upgrade_enterprise_edition: "Nâng cấp lên phiên bản Enterprise"
+      postgres_migration: "Di chuyển cài đặt của bạn sang PostgreSQL"
+      user_guides: "Hướng dẫn sử dụng"
+      faq: "Câu hỏi thường gặp"
+      impressum: "Thông báo pháp lý"
+      glossary: "Thuật ngữ"
+      shortcuts: "phím tắt"
+      blog: "Yojana blog"
+      forums: "diễn đàn cộng đồng"
+      security_alerts: "Cảnh báo bảo mật"
+      newsletter: "Bản tin"
   image_conversion:
     imagemagick: Phép thuật tưởng tượng
   journals:
     changes_retracted: Những thay đổi đã bị rút lại
     caused_changes:
-      budget_deleted: Budget has been deleted
-      dates_changed: Ngày đã thay đổi
-      default_attribute_written: Thuộc tính chỉ đọc được viết
-      import: Imported
-      progress_mode_changed_to_status_based: Đã cập nhật tính toán tiến độ
-      status_changed: Trạng thái '%{status_name}'
-      system_update: 'Cập nhật hệ thống OpenProject:'
-      work_package_duplicate_closed: 'Gói công việc trùng lặp được cập nhật:'
-      total_percent_complete_mode_changed_to_work_weighted_average: Tính toán % tổng số hoàn thành hiện được tính theo Công việc.
-      total_percent_complete_mode_changed_to_simple_average: Tính toán tổng số % Hoàn thành hiện dựa trên mức trung bình đơn giản chỉ là các giá trị % Hoàn thành.
+      dates_changed: "Ngày đã thay đổi"
+      default_attribute_written: "Thuộc tính chỉ đọc được viết"
+      progress_mode_changed_to_status_based: "Đã cập nhật tính toán tiến độ"
+      status_changed: "Trạng thái '%{status_name}'"
+      system_update: "Cập nhật hệ thống Yojana:"
+      work_package_duplicate_closed: "Gói công việc trùng lặp được cập nhật:"
+      total_percent_complete_mode_changed_to_work_weighted_average: "Tính toán % tổng số hoàn thành hiện được tính theo Công việc."
+      total_percent_complete_mode_changed_to_simple_average: "Tính toán tổng số % Hoàn thành hiện dựa trên mức trung bình đơn giản chỉ là các giá trị % Hoàn thành."
     cause_descriptions:
       import:
         header: changes by %{author}
@@ -3604,7 +3592,7 @@ vi:
         notifications: Notification thiết lập
         email_reminders: Email reminders
     access_tokens:
-      description: Mã thông báo của nhà cung cấp được OpenProject phát hành, cho phép các ứng dụng khác truy cập vào nó. Mã thông báo của khách hàng được phát hành bởi các ứng dụng khác, cho phép OpenProject truy cập chúng.
+      description: "Mã thông báo của nhà cung cấp được Yojana phát hành, cho phép các ứng dụng khác truy cập vào nó. Mã thông báo của khách hàng được phát hành bởi các ứng dụng khác, cho phép Yojana truy cập chúng."
       no_results:
         title: Không có mã thông báo truy cập để hiển thị
         description: Tất cả đều đã bị vô hiệu hóa. Chúng có thể được kích hoạt lại trong menu quản trị.
@@ -3620,49 +3608,49 @@ vi:
         provider:
           title: Mã thông báo của nhà cung cấp
       token/api:
-        blank_description: Chưa có mã thông báo API. Bạn có thể tạo một cái bằng cách sử dụng nút bên dưới.
-        blank_title: Không có mã thông báo API
-        title: API
-        table_title: Mã thông báo API
-        text_hint: Mã thông báo API cho phép các ứng dụng của bên thứ ba giao tiếp với phiên bản OpenProject này thông qua API REST.
-        static_token_name: Mã thông báo API
-        disabled_text: Mã thông báo API không được quản trị viên bật. Vui lòng liên hệ với quản trị viên của bạn để sử dụng tính năng này.
-        add_button: Token API
+        blank_description: "Chưa có mã thông báo API. Bạn có thể tạo một cái bằng cách sử dụng nút bên dưới."
+        blank_title: "Không có mã thông báo API"
+        title: "API"
+        table_title: "Mã thông báo API"
+        text_hint: "Mã thông báo API cho phép các ứng dụng của bên thứ ba giao tiếp với phiên bản Yojana này thông qua API REST."
+        static_token_name: "Mã thông báo API"
+        disabled_text: "Mã thông báo API không được quản trị viên bật. Vui lòng liên hệ với quản trị viên của bạn để sử dụng tính năng này."
+        add_button: "Token API"
       ical:
-        blank_description: Để thêm mã thông báo iCalendar, hãy đăng ký lịch mới hoặc lịch hiện có từ trong mô-đun Lịch của dự án. Bạn phải có các quyền cần thiết.
-        blank_title: Không có mã thông báo iCalendar
-        title: iCalendar
-        table_title: mã thông báo iCalendar
-        text_hint_link: Mã thông báo iCalendar cho phép người dùng [subscribe to OpenProject calendars](docs_url) và xem thông tin gói công việc cập nhật từ các máy khách bên ngoài.
-        disabled_text: Quản trị viên không kích hoạt đăng ký iCalendar. Vui lòng liên hệ với quản trị viên của bạn để sử dụng tính năng này.
+        blank_description: "Để thêm mã thông báo iCalendar, hãy đăng ký lịch mới hoặc lịch hiện có từ trong mô-đun Lịch của dự án. Bạn phải có các quyền cần thiết."
+        blank_title: "Không có mã thông báo iCalendar"
+        title: "iCalendar"
+        table_title: "mã thông báo iCalendar"
+        text_hint_link: "Mã thông báo iCalendar cho phép người dùng [subscribe to Yojana calendars](docs_url) và xem thông tin gói công việc cập nhật từ các máy khách bên ngoài."
+        disabled_text: "Quản trị viên không kích hoạt đăng ký iCalendar. Vui lòng liên hệ với quản trị viên của bạn để sử dụng tính năng này."
       oauth_application:
-        active_tokens: Mã thông báo hoạt động
-        blank_description: Không có quyền truy cập ứng dụng của bên thứ ba nào được định cấu hình và hoạt động cho bạn.
-        blank_title: Không có mã thông báo ứng dụng OAuth
-        last_refreshed_at: Last refreshed at
-        title: OAuth
-        table_title: Mã thông báo ứng dụng OAuth
-        text_hint: Mã thông báo ứng dụng OAuth cho phép ứng dụng của bên thứ ba kết nối với phiên bản OpenProject này.
+        active_tokens: "Mã thông báo hoạt động"
+        blank_description: "Không có quyền truy cập ứng dụng của bên thứ ba nào được định cấu hình và hoạt động cho bạn."
+        blank_title: "Không có mã thông báo ứng dụng OAuth"
+        last_used_at: "Được sử dụng lần cuối vào lúc"
+        title: "OAuth"
+        table_title: "Mã thông báo ứng dụng OAuth"
+        text_hint: "Mã thông báo ứng dụng OAuth cho phép ứng dụng của bên thứ ba kết nối với phiên bản Yojana này."
       oauth_client:
-        blank_description: Chưa có mã thông báo ứng dụng khách OAuth nào.
-        blank_title: Không có mã thông báo ứng dụng khách OAuth
-        failed: Đã xảy ra lỗi và không thể xóa mã thông báo. Vui lòng thử lại sau.
-        integration_type: Kiểu tích hợp
-        table_title: Mã thông báo ứng dụng khách OAuth
-        text_hint: Mã thông báo ứng dụng khách OAuth cho phép phiên bản OpenProject này kết nối với các ứng dụng bên ngoài, chẳng hạn như kho lưu trữ tệp.
-        title: OAuth
-        remove_token: Bạn có thực sự muốn xóa mã thông báo này không? Bạn sẽ cần phải đăng nhập lại vào %{integration}.
-        removed: Đã xóa thành công mã thông báo ứng dụng khách OAuth
-        unknown_integration: không rõ
+        blank_description: "Chưa có mã thông báo ứng dụng khách OAuth nào."
+        blank_title: "Không có mã thông báo ứng dụng khách OAuth"
+        failed: "Đã xảy ra lỗi và không thể xóa mã thông báo. Vui lòng thử lại sau."
+        integration_type: "Kiểu tích hợp"
+        table_title: "Mã thông báo ứng dụng khách OAuth"
+        text_hint: "Mã thông báo ứng dụng khách OAuth cho phép phiên bản Yojana này kết nối với các ứng dụng bên ngoài, chẳng hạn như kho lưu trữ tệp."
+        title: "OAuth"
+        remove_token: "Bạn có thực sự muốn xóa mã thông báo này không? Bạn sẽ cần phải đăng nhập lại vào %{integration}."
+        removed: "Đã xóa thành công mã thông báo ứng dụng khách OAuth"
+        unknown_integration: "không rõ"
       token/rss:
-        add_button: Token RSS
-        blank_description: Chưa có mã thông báo RSS. Bạn có thể tạo một cái bằng cách sử dụng nút bên dưới.
-        blank_title: Không có mã thông báo RSS
-        title: RSS
-        table_title: Mã thông báo RSS
-        text_hint: Mã thông báo RSS cho phép người dùng cập nhật những thay đổi mới nhất trong phiên bản OpenProject này thông qua trình đọc RSS bên ngoài.
-        static_token_name: mã thông báo RSS
-        disabled_text: Mã thông báo RSS không được quản trị viên kích hoạt. Vui lòng liên hệ với quản trị viên của bạn để sử dụng tính năng này.
+        add_button: "Token RSS"
+        blank_description: "Chưa có mã thông báo RSS. Bạn có thể tạo một cái bằng cách sử dụng nút bên dưới."
+        blank_title: "Không có mã thông báo RSS"
+        title: "RSS"
+        table_title: "Mã thông báo RSS"
+        text_hint: "Mã thông báo RSS cho phép người dùng cập nhật những thay đổi mới nhất trong phiên bản Yojana này thông qua trình đọc RSS bên ngoài."
+        static_token_name: "mã thông báo RSS"
+        disabled_text: "Mã thông báo RSS không được quản trị viên kích hoạt. Vui lòng liên hệ với quản trị viên của bạn để sử dụng tính năng này."
       storages:
         unknown_storage: Bộ nhớ không xác định
     email_reminders:
@@ -3886,51 +3874,48 @@ vi:
   label_collapse: Thu gọn
   label_collapsed_click_to_show: Thu gọn. Nhấn vào đây để hiển thị
   label_configuration: cấu hình
-  label_comment_add: Thêm bình luận
-  label_comment_added: Đã thêm bình luận
-  label_comment_delete: Xóa bình luận
-  label_comment_plural: Bình luận
-  label_commits_per_author: Cam kết cho mỗi tác giả
-  label_commits_per_month: Commits mỗi tháng
-  label_confirmation: xác nhận
-  label_contains: bao gồm
-  label_starts_with: starts with
-  label_content: Nội dung
-  label_color_plural: Màu sắc
-  label_copied: đã sao chép
-  label_copy_same_as_target: Giống như mục tiêu
-  label_copy_source: Nguồn
-  label_copy_target: Mục tiêu
-  label_copy_workflow_from: Sao chép quy trình từ
-  label_copy_workflow_from_type: Copy to another type
-  label_copy_workflow_from_role: Copy to other roles
-  label_copy_project: Sao chép dự án
-  label_core_version: Phiên bản lõi
-  label_core_build: Xây dựng cốt lõi
-  label_created_by: Được tạo bởi %{user}
-  label_current_status: Tình trạng hiện tại
-  label_current_version: Phiên bản hiện tại
-  label_custom_field_add_no_type: Thêm trường này vào một loại work package
-  label_custom_field_new: Thêm mục tùy biến
-  label_custom_field_plural: Trường tùy chỉnh
-  label_custom_field_default_type: Kiểu rỗng
-  label_custom_style: Thiết kế
-  label_custom_style_description: Chọn cách OpenProject hiển thị với bạn bằng các chủ đề, chọn màu mặc định để sử dụng trong ứng dụng và cách xuất sẽ trông như thế nào.
-  label_dashboard: Trang tổng quan
-  label_database_version: Phiên bản PostgreSQL
-  label_date: ngày
-  label_dates: ngày tháng
-  label_date_and_time: Ngày và giờ
-  label_date_format: Định dạng ngày
-  label_date_from: Từ
-  label_date_from_to: Từ %{start} tới %{end}
-  label_date_to: Đến
-  label_day_plural: ngày
-  label_default: Mặc định
-  label_delete_user: Xóa người dùng
-  label_delete_project: Xóa dự án
-  label_delete: xóa
-  label_deleted: đã xóa
+  label_comment_add: "Thêm bình luận"
+  label_comment_added: "Đã thêm bình luận"
+  label_comment_delete: "Xóa bình luận"
+  label_comment_plural: "Bình luận"
+  label_commits_per_author: "Cam kết cho mỗi tác giả"
+  label_commits_per_month: "Commits mỗi tháng"
+  label_confirmation: "xác nhận"
+  label_contains: "bao gồm"
+  label_content: "Nội dung"
+  label_color_plural: "Màu sắc"
+  label_copied: "đã sao chép"
+  label_copy_same_as_target: "Giống như mục tiêu"
+  label_copy_source: "Nguồn"
+  label_copy_target: "Mục tiêu"
+  label_copy_workflow_from: "Sao chép quy trình từ"
+  label_copy_project: "Sao chép dự án"
+  label_core_version: "Phiên bản lõi"
+  label_core_build: "Xây dựng cốt lõi"
+  label_created_by: "Được tạo bởi %{user}"
+  label_current_status: "Tình trạng hiện tại"
+  label_current_version: "Phiên bản hiện tại"
+  label_custom_field_add_no_type: "Thêm trường này vào một loại work package"
+  label_custom_field_new: "Thêm mục tùy biến"
+  label_custom_field_plural: "Trường tùy chỉnh"
+  label_custom_field_default_type: "Kiểu rỗng"
+  label_custom_style: "Thiết kế"
+  label_custom_style_description: "Chọn cách Yojana hiển thị với bạn bằng các chủ đề, chọn màu mặc định để sử dụng trong ứng dụng và cách xuất sẽ trông như thế nào."
+  label_dashboard: "Trang tổng quan"
+  label_database_version: "Phiên bản PostgreSQL"
+  label_date: "ngày"
+  label_dates: "ngày tháng"
+  label_date_and_time: "Ngày và giờ"
+  label_date_format: "Định dạng ngày"
+  label_date_from: "Từ"
+  label_date_from_to: "Từ %{start} tới %{end}"
+  label_date_to: "Đến"
+  label_day_plural: "ngày"
+  label_default: "Mặc định"
+  label_delete_user: "Xóa người dùng"
+  label_delete_project: "Xóa dự án"
+  label_delete: "xóa"
+  label_deleted: "đã xóa"
   label_deleted_custom_field: "(đã xóa các mục tùy chỉnh)"
   label_deleted_custom_item: "(mục đã bị xóa)"
   label_deleted_custom_option: "(tùy chọn đã xóa)"
@@ -4184,66 +4169,58 @@ vi:
   label_not_found: không tìm thấy
   label_none: không
   label_none_parentheses: "(trống)"
-  label_not_contains: không chứa
-  label_not_equals: không là
-  label_life_cycle_step_plural: Vòng đời dự án
-  label_on: trên
-  label_operator_all: không trống
-  label_operator_none: trống rỗng
-  label_operator_equals_or: là (HOẶC)
-  label_operator_equals_all: là (VÀ)
-  label_operator_shared_with_user_any: bất kỳ
-  label_open: mở
-  label_closed: đóng cửa
-  label_open_menu: Mở trình đơn
-  label_open_work_packages: mở
-  label_open_work_packages_plural: mở
-  label_openproject_website: Trang web OpenProject
-  label_optional_description: mô tả
-  label_options: Tuỳ chọn
-  label_other: khác
-  label_overall_activity: Tổng thể hoạt động
-  label_overview: Tổng quan
-  label_page_title: Tiêu đề trang
-  label_parent_group_caption: 'Setting a parent group will make this group a subgroup of the selected parent group. This will also inherit all memberships, including permissions of the parent group.
-
-    '
-  label_part_of: một phần của
-  label_password_lost: Quên Mật Khẩu?
-  label_password_rule_lowercase: Chữ thường
-  label_password_rule_numeric: Kiểu số
-  label_password_rule_special: Ký tự đặc biệt
-  label_password_rule_uppercase: Chữ hoa
-  label_password_requirement_lowercase: Must contain at least one lowercase character.
-  label_password_requirement_numeric: Must contain at least one numeric character.
-  label_password_requirement_special: Must contain at least one special character.
-  label_password_requirement_uppercase: Must contain at least one uppercase character.
-  label_path_encoding: Mã hóa đường dẫn
-  label_per_page: 'Mỗi trang:'
-  label_people: mọi người
-  label_permissions: Phân Quyền
-  label_permissions_report: Báo cáo phân quyền
-  label_personalize_page: Cá nhân hoá các trang này
-  label_placeholder_user: Người dùng giữ chỗ
-  label_placeholder_user_new: Người dùng giữ chỗ mới
-  label_placeholder_user_plural: Người dùng giữ chỗ
-  label_planning: Lập kế hoạch
-  label_please_login: Vui lòng đăng nhập
-  label_plugins: Plugins
-  label_portfolio_plural: danh mục đầu tư
-  label_modules_and_plugins: Mô-đun và Plugin
-  label_precedes: trước
-  label_preferences: Tùy chỉnh
-  label_preview: Xem trước
-  label_preview_not_available: Xem trước không có sẵn
-  label_previous: Trước đó
-  label_previous_week: Tuần trước
-  label_previous_year: Previous year
-  label_principal_invite_via_email: hoặc mời người dùng mới qua email
-  label_principal_search: Thêm người dùng hoặc nhóm hiện có
-  label_privacy_policy: Chính sách bảo mật và quyền riêng tư dữ liệu
-  label_product_version: Phiên bản sản phẩm
-  label_profile: Hồ sơ
+  label_not_contains: "không chứa"
+  label_not_equals: "không là"
+  label_life_cycle_step_plural: "Vòng đời dự án"
+  label_on: "trên"
+  label_operator_all: "không trống"
+  label_operator_none: "trống rỗng"
+  label_operator_equals_or: "là (HOẶC)"
+  label_operator_equals_all: "là (VÀ)"
+  label_operator_shared_with_user_any: "bất kỳ"
+  label_open: "mở"
+  label_closed: "đóng cửa"
+  label_open_menu: "Mở trình đơn"
+  label_open_work_packages: "mở"
+  label_open_work_packages_plural: "mở"
+  label_openproject_website: "Trang web Yojana"
+  label_optional_description: "mô tả"
+  label_options: "Tuỳ chọn"
+  label_other: "khác"
+  label_overall_activity: "Tổng thể hoạt động"
+  label_overview: "Tổng quan"
+  label_page_title: "Tiêu đề trang"
+  label_part_of: "một phần của"
+  label_password_lost: "Quên Mật Khẩu?"
+  label_password_rule_lowercase: "Chữ thường"
+  label_password_rule_numeric: "Kiểu số"
+  label_password_rule_special: "Ký tự đặc biệt"
+  label_password_rule_uppercase: "Chữ hoa"
+  label_path_encoding: "Mã hóa đường dẫn"
+  label_per_page: "Mỗi trang:"
+  label_people: "mọi người"
+  label_permissions: "Phân Quyền"
+  label_permissions_report: "Báo cáo phân quyền"
+  label_personalize_page: "Cá nhân hoá các trang này"
+  label_placeholder_user: "Người dùng giữ chỗ"
+  label_placeholder_user_new: "Người dùng giữ chỗ mới"
+  label_placeholder_user_plural: "Người dùng giữ chỗ"
+  label_planning: "Lập kế hoạch"
+  label_please_login: "Vui lòng đăng nhập"
+  label_plugins: "Plugins"
+  label_portfolio_plural: "danh mục đầu tư"
+  label_modules_and_plugins: "Mô-đun và Plugin"
+  label_precedes: "trước"
+  label_preferences: "Tùy chỉnh"
+  label_preview: "Xem trước"
+  label_preview_not_available: "Xem trước không có sẵn"
+  label_previous: "Trước đó"
+  label_previous_week: "Tuần trước"
+  label_principal_invite_via_email: "hoặc mời người dùng mới qua email"
+  label_principal_search: "Thêm người dùng hoặc nhóm hiện có"
+  label_privacy_policy: "Chính sách bảo mật và quyền riêng tư dữ liệu"
+  label_product_version: "Phiên bản sản phẩm"
+  label_profile: "Hồ sơ"
   label_percent_complete: "% Hoàn thành"
   label_progress_tracking: Theo dõi tiến độ
   label_project: dự án
@@ -4634,11 +4611,11 @@ vi:
   mail_body_backup_token_reset_user_info: Token sao lưu của bạn đã được thiết lập lại.
   mail_body_backup_token_info: Token trước đó không còn hiệu lực.
   mail_body_backup_waiting_period: Mã token sao lưu sẽ được kích hoạt trong %{hours} giờ.
-  mail_body_backup_token_warning: Nếu đây không phải là bạn, hãy đăng nhập vào OpenProject ngay lập tức và thiết lập lại lại.
-  mail_body_incoming_email_error: Không thể xử lý email bạn gửi tới OpenProject.
-  mail_body_incoming_email_error_in_reply_to: Tại %{received_at} %{from_email} đã viết
-  mail_body_incoming_email_error_logs: Nhật ký
-  mail_body_lost_password: 'Để thay đổi mật khẩu của bạn, hãy nhấp vào liên kết sau:'
+  mail_body_backup_token_warning: Nếu đây không phải là bạn, hãy đăng nhập vào Yojana ngay lập tức và thiết lập lại lại.
+  mail_body_incoming_email_error: Không thể xử lý email bạn gửi tới Yojana.
+  mail_body_incoming_email_error_in_reply_to: "Tại %{received_at} %{from_email} đã viết"
+  mail_body_incoming_email_error_logs: "Nhật ký"
+  mail_body_lost_password: "Để thay đổi mật khẩu của bạn, hãy nhấp vào liên kết sau:"
   mail_password_change_not_possible:
     title: Không thể thay đổi mật khẩu
     body: Tài khoản của bạn tại %{app_title} được kết nối với nhà cung cấp xác thực bên ngoài (%{name}).
@@ -4648,23 +4625,23 @@ vi:
   mail_body_register_user: Kính gửi %{name},
   mail_body_register_links_html: |
     Vui lòng duyệt qua kênh youtube của chúng tôi (%{youtube_link}) nơi chúng tôi cung cấp hội thảo trên web (%{webinar_link})
-    và video “Bắt đầu” (%{get_started_link}) để thực hiện các bước đầu tiên của bạn trong OpenProject dễ dàng nhất có thể.
+    và video “Bắt đầu” (%{get_started_link}) để thực hiện các bước đầu tiên của bạn trong Yojana dễ dàng nhất có thể.
     <br />
     Nếu bạn có thêm bất kỳ câu hỏi nào, hãy tham khảo tài liệu của chúng tôi (%{documentation_link}) hoặc liên hệ với quản trị viên của bạn.
-  mail_body_register_closing: Nhóm OpenProject của bạn
-  mail_body_register_ending: Luôn kết nối! Trân trọng,
+  mail_body_register_closing: "Nhóm Yojana của bạn"
+  mail_body_register_ending: "Luôn kết nối! Trân trọng,"
   mail_body_reminder: "%{count} gói công việc được giao cho bạn sẽ đến hạn trong %{days} ngày tới:"
   mail_body_group_reminder: '%{count}  gói công việc được gán cho nhóm "%{group}" là do %{days} ngày tiếp theo:'
   mail_body_wiki_page_added: Trang wiki '%{id}' đã được thêm bởi %{author}.
   mail_body_wiki_page_updated: Trang wiki '%{id}' đã được cập nhật bởi %{author}.
   mail_subject_account_activation_request: "%{value} yêu cầu kích hoạt tài khoản"
-  mail_subject_backup_ready: Bản sao lưu của bạn đã sẵn sàng
-  mail_subject_backup_token_reset: Đặt lại mã thông báo dự phòng
-  mail_subject_incoming_email_error: Không thể xử lý email bạn gửi tới OpenProject
-  mail_subject_lost_password: Mật khẩu %{value} của bạn
-  mail_subject_register: Kích hoạt tài khoản %{value} của bạn
-  mail_subject_wiki_content_added: Trang wiki '%{id}' đã được thêm
-  mail_subject_wiki_content_updated: Trang wiki '%{id}' đã được cập nhật
+  mail_subject_backup_ready: "Bản sao lưu của bạn đã sẵn sàng"
+  mail_subject_backup_token_reset: "Đặt lại mã thông báo dự phòng"
+  mail_subject_incoming_email_error: "Không thể xử lý email bạn gửi tới Yojana"
+  mail_subject_lost_password: "Mật khẩu %{value} của bạn"
+  mail_subject_register: "Kích hoạt tài khoản %{value} của bạn"
+  mail_subject_wiki_content_added: "Trang wiki '%{id}' đã được thêm"
+  mail_subject_wiki_content_updated: "Trang wiki '%{id}' đã được cập nhật"
   mail_member_added_project:
     subject: "%{project} - Bạn đã được thêm vào làm thành viên"
     body:
@@ -4696,17 +4673,17 @@ vi:
       roles: 'Bây giờ bạn có các vai trò sau:'
   mail_user_activation_limit_reached:
     subject: Đã đạt đến giới hạn kích hoạt người dùng
-    message_html: |
-      A new user (%{email}) tried to create an account on an OpenProject environment that you manage (%{host}).
-      The user cannot activate their account since the user limit has been reached.
+    message: |
+      Một người dùng mới (%{email}) đã cố gắng tạo tài khoản trên môi trường Yojana mà bạn quản lý (%{host}).
+      Người dùng không thể kích hoạt tài khoản của họ vì đã đạt đến giới hạn người dùng.
     steps:
-      a: Nâng cấp gói thanh toán của bạn ([here](upgrade_url))
-      b: Khóa hoặc xóa người dùng hiện tại ([here](users_url))
-      label: 'Để cho phép người dùng đăng nhập, bạn có thể:'
-  more_actions: Nhiều chức năng hơn
-  noscript_description: Bạn cần kích hoạt JavaScript để sử dụng OpenProject!
-  noscript_heading: Đã tắt JavaScript
-  noscript_learn_more: Tìm hiểu thêm
+      label: "Để cho phép người dùng đăng nhập, bạn có thể:"
+      a: "Nâng cấp gói thanh toán của bạn ([here](upgrade_url))" #here turned into a link
+      b: "Khóa hoặc xóa người dùng hiện tại ([here](users_url))" #here turned into a link
+  more_actions: "Nhiều chức năng hơn"
+  noscript_description: "Bạn cần kích hoạt JavaScript để sử dụng Yojana!"
+  noscript_heading: "Đã tắt JavaScript"
+  noscript_learn_more: "Tìm hiểu thêm"
   notice_accessibility_mode: Chế độ tiếp cận có thể được kích hoạt trong [tài khoản settings](url) của bạn.
   notice_account_activated: Tài khoản của bạn đã được kích hoạt. Bây giờ bạn có thể đăng nhập.
   notice_account_already_activated: Tài khoản đã được kích hoạt.
@@ -4782,10 +4759,10 @@ vi:
   notice_automatic_set_of_standard_type: Đặt loại tiêu chuẩn tự động.
   notice_logged_out: Bạn đã đăng xuất.
   notice_wont_delete_auth_source: Không thể xóa kết nối LDAP miễn là vẫn còn người dùng sử dụng nó.
-  notice_project_cannot_update_custom_fields: 'Bạn không thể cập nhật các mục tùy chỉnh có sẵn của dự án. Dự án không hợp lệ: %{errors}'
-  notice_attachment_migration_wiki_page: 'Trang này được tạo ra tự động trong quá trình Cập Nhật của OpenProject. Nó chứa tất cả các tập tin đính kèm trước đó liên kết với %{container_type} "%{container_name}".
-
-    '
+  notice_project_cannot_update_custom_fields: "Bạn không thể cập nhật các mục tùy chỉnh có sẵn của dự án. Dự án không hợp lệ: %{errors}"
+  notice_attachment_migration_wiki_page: >
+    Trang này được tạo ra tự động trong quá trình Cập Nhật của Yojana. Nó chứa tất cả các tập tin đính kèm trước đó liên kết với %{container_type} "%{container_name}".
+  #Default format for numbers
   number:
     format:
       delimiter: ","
@@ -4805,138 +4782,127 @@ vi:
           mb: MB
           tb: bệnh lao
   onboarding:
-    heading_getting_started: Nhận một cái nhìn tổng quan
-    text_getting_started_description: Nhận tổng quan nhanh về quản lý dự án và cộng tác nhóm với OpenProject. Bạn có thể khởi động lại video này từ menu trợ giúp.
-    welcome: Chào mừng đến với %{app_title}
-    select_language: Vui lòng chọn ngôn ngữ của bạn
-  open_project:
-    common:
-      work_package_card_component:
-        drag_handle:
-          label: Drag to reorder
-        menu:
-          label_actions: Gói công việc (Work Package) actions
-        parent: Parent
-        undisclosed: Undisclosed
-  permission_add_work_package_comments: Thêm nhận xét
-  permission_add_work_packages: Thêm mới Gói công việc
-  permission_add_messages: Đăng tin nhắn
-  permission_add_project: Tạo dự án
-  permission_add_portfolios: Tạo danh mục đầu tư
-  permission_add_programs: Tạo chương trình
-  permission_add_work_package_attachments: Tệp đính kèm
-  permission_add_work_package_attachments_explanation: Cho phép thêm tệp đính kèm mà không có quyền Chỉnh sửa gói công việc
-  permission_add_internal_comments: Viết bình luận nội bộ
-  permission_archive_project: Lưu trữ dự án
-  permission_create_user: Tạo người dùng
-  permission_manage_user: Chỉnh sửa người dùng
-  permission_manage_placeholder_user: Tạo, chỉnh sửa và xóa người dùng giữ chỗ
-  permission_add_subprojects: Tạo Dự án con
-  permission_add_work_package_watchers: Thêm người theo dõi
-  permission_assign_versions: Chỉ định phiên bản
-  permission_browse_repository: Quyền truy cập chỉ đọc vào kho lưu trữ (duyệt và kiểm tra)
-  permission_change_work_package_status: Thay đổi trạng thái gói công việc
-  permission_change_work_package_status_explanation: Cho phép thay đổi trạng thái mà không có quyền Chỉnh sửa gói công việc
-  permission_comment_news: Chú thích vào tin mới
-  permission_commit_access: Quyền truy cập đọc/ghi vào kho lưu trữ (cam kết)
-  permission_copy_projects: Sao chép dự án
-  permission_copy_projects_explanation: Trong các dự án mẫu, quyền này có chức năng phụ, nó cho phép tạo các dự án mới bắt nguồn từ mẫu.
-  permission_copy_work_packages: Gói công việc trùng lặp
-  permission_create_backup: Tạo bản sao lưu
-  permission_delete_work_package_watchers: Xóa người xem
-  permission_delete_work_packages: Xóa gói công việc
-  permission_delete_messages: Xóa tin nhắn
-  permission_delete_own_messages: Xóa tin nhắn của tôi
-  permission_delete_reportings: Xóa các báo cáo
-  permission_delete_timelines: Xóa dòng thời gian
-  permission_edit_work_package_comments: Kiểm duyệt bình luận
-  permission_edit_work_package_comments_explanation: 'Thận trọng: Người dùng có quyền này có thể chỉnh sửa nhận xét của bất kỳ ai.'
-  permission_edit_work_packages: Chỉnh sửa gói công việc
-  permission_edit_messages: Chỉnh sửa tin nhắn
-  permission_edit_own_internal_comments: Chỉnh sửa nhận xét nội bộ của riêng mình
-  permission_edit_own_work_package_comments: Chỉnh sửa nhận xét của chính mình
-  permission_edit_own_messages: Chỉnh sửa tin nhắn riêng
-  permission_edit_own_time_entries: Chỉnh sửa nhật ký thời gian của riêng bạn
-  permission_edit_others_internal_comments: Bình luận nội bộ vừa phải
-  permission_edit_others_internal_comments_explanation: 'Thận trọng: Người dùng có quyền này có thể chỉnh sửa nhận xét nội bộ của người dùng khác.'
-  permission_edit_project: Chỉnh sửa dự án
-  permission_edit_project_attributes: Chỉnh sửa thuộc tính dự án
-  permission_edit_project_phases: Chỉnh sửa các giai đoạn dự án
-  permission_edit_reportings: Chỉnh sửa báo cáo
-  permission_edit_time_entries: Chỉnh sửa nhật ký thời gian cho người dùng khác
-  permission_edit_timelines: Chỉnh sửa dòng thời gian
-  permission_edit_wiki_pages: Chỉnh sửa trang wiki
-  permission_export_work_packages: Xuất gói công việc
-  permission_export_projects: Dự án xuất khẩu
-  permission_invite_members_by_email: Mời thành viên qua email
-  permission_invite_members_by_email_explanation: 'Cho phép người dùng mời thành viên mới qua email. Người dùng được mời sẽ nhận được email có liên kết để đặt mật khẩu và kích hoạt tài khoản của họ. Phụ thuộc vào quyền quản lý thành viên
-
-    '
-  permission_log_own_time: Đăng nhập thời gian riêng
-  permission_log_time: Đăng nhập thời gian cho người dùng khác
-  permission_manage_forums: Quản lý diễn đàn
-  permission_manage_categories: Quản lý danh mục gói công việc
-  permission_manage_dashboards: Quản lý trang tổng quan
-  permission_manage_work_package_relations: Quản lý quan hệ gói công việc
-  permission_manage_members: Quản lý thành viên
-  permission_manage_news: Quản lý tin tức
-  permission_manage_project_activities: Quản lý hoạt động dự án
-  permission_manage_public_queries: Quản lý truy vấn công cộng
-  permission_manage_repository: Quản lý kho lưu trữ
-  permission_manage_subtasks: Quản lý phân cấp gói công việc
-  permission_manage_versions: Quản lý phiên bản
-  permission_manage_wiki: Quản lý wiki
-  permission_manage_own_working_times: Manage own working times
-  permission_manage_own_working_times_explanation: 'Allows users to manage their own working times, and personal non-working days.
-
-    '
-  permission_manage_working_times: Manage working times for all users
-  permission_manage_working_times_explanation: 'Allows users to manage working times for all users, including personal non-working days.
-
-    '
-  permission_move_work_packages: Di chuyển gói công việc
-  permission_save_queries: Lưu các chế độ xem
-  permission_search_project: Tìm kiếm dự án
-  permission_select_custom_fields: Chọn trường tùy chỉnh
-  permission_select_project_custom_fields: Chọn thuộc tính dự án
-  permission_select_project_phases: Chọn giai đoạn dự án
-  permission_select_project_phases_explanation: Kích hoạt/hủy kích hoạt các giai đoạn trong dự án. Cho phép người dùng chọn vòng đời phù hợp cho dự án vì các giai đoạn không hoạt động sẽ không hiển thị trên trang tổng quan dự án cũng như danh sách dự án.
-  permission_select_project_modules: Chọn mô-đun dự án
-  permission_share_work_packages: Chia sẻ gói công việc
-  permission_manage_types: Chọn loại
-  permission_manage_own_reminders: Tạo lời nhắc riêng
-  permission_view_all_principals: Xem tất cả người dùng và nhóm
-  permission_view_all_principals_explanation: 'Cho phép người dùng xem tất cả người dùng và nhóm trong hệ thống, ngay cả khi họ không phải là thành viên của bất kỳ dự án hoặc nhóm nào đã tham gia.
-
-    '
-  permission_view_project: Xem dự án
-  permission_view_changesets: Xem các bản sửa đổi kho lưu trữ trong OpenProject
-  permission_view_internal_comments: Xem bình luận nội bộ
-  permission_view_commit_author_statistics: Xem số liệu thống kê về tác giả cam kết
-  permission_view_dashboards: Xem trang tổng quan
-  permission_view_work_package_watchers: Xem danh sách người theo dõi
-  permission_view_work_packages: Xem các gói công việc
-  permission_view_messages: Xem tin nhắn
-  permission_view_news: Xem tin tức
-  permission_view_members: Xem thành viên
-  permission_view_reportings: Xem báo cáo
-  permission_view_shared_work_packages: Xem chia sẻ gói công việc
-  permission_view_time_entries: Xem thời gian đã sử dụng
-  permission_view_timelines: Xem dòng thời gian
-  permission_view_user_email: Xem địa chỉ thư của người dùng
-  permission_view_wiki_edits: Xem lịch sử wiki
-  permission_view_wiki_pages: Xem wiki
-  permission_work_package_assigned: Trở thành người được giao/chịu trách nhiệm
-  permission_work_package_assigned_explanation: Các gói công việc có thể được chỉ định cho người dùng và nhóm có vai trò này trong dự án tương ứng
-  permission_view_project_activity: Xem hoạt động dự án
-  permission_view_project_attributes: Xem thuộc tính dự án
-  permission_view_project_phases: Xem các giai đoạn dự án
-  permission_save_bcf_queries: Lưu truy vấn BCF
-  permission_manage_public_bcf_queries: Quản lý truy vấn BCF công khai
-  permission_edit_attribute_help_texts: Chỉnh sửa văn bản trợ giúp thuộc tính
-  permission_manage_public_project_queries: Quản lý danh sách dự án công
-  permission_view_project_query: Xem truy vấn dự án
-  permission_edit_project_query: Chỉnh sửa truy vấn dự án
+    heading_getting_started: "Nhận một cái nhìn tổng quan"
+    text_getting_started_description: "Nhận tổng quan nhanh về quản lý dự án và cộng tác nhóm với Yojana. Bạn có thể khởi động lại video này từ menu trợ giúp."
+    welcome: "Chào mừng đến với %{app_title}"
+    select_language: "Vui lòng chọn ngôn ngữ của bạn"
+  permission_add_work_package_comments: "Thêm nhận xét"
+  permission_add_work_packages: "Thêm mới Gói công việc"
+  permission_add_messages: "Đăng tin nhắn"
+  permission_add_project: "Tạo dự án"
+  permission_add_portfolios: "Tạo danh mục đầu tư"
+  permission_add_programs: "Tạo chương trình"
+  permission_add_work_package_attachments: "Tệp đính kèm"
+  permission_add_work_package_attachments_explanation: "Cho phép thêm tệp đính kèm mà không có quyền Chỉnh sửa gói công việc"
+  permission_add_internal_comments: "Viết bình luận nội bộ"
+  permission_archive_project: "Lưu trữ dự án"
+  permission_create_user: "Tạo người dùng"
+  permission_manage_user: "Chỉnh sửa người dùng"
+  permission_manage_placeholder_user: "Tạo, chỉnh sửa và xóa người dùng giữ chỗ"
+  permission_add_subprojects: "Tạo Dự án con"
+  permission_add_work_package_watchers: "Thêm người theo dõi"
+  permission_assign_versions: "Chỉ định phiên bản"
+  permission_browse_repository: "Quyền truy cập chỉ đọc vào kho lưu trữ (duyệt và kiểm tra)"
+  permission_change_wiki_parent_page: "Thay đổi trang wiki cha"
+  permission_change_work_package_status: "Thay đổi trạng thái gói công việc"
+  permission_change_work_package_status_explanation: "Cho phép thay đổi trạng thái mà không có quyền Chỉnh sửa gói công việc"
+  permission_comment_news: "Chú thích vào tin mới"
+  permission_commit_access: "Quyền truy cập đọc/ghi vào kho lưu trữ (cam kết)"
+  permission_copy_projects: "Sao chép dự án"
+  permission_copy_projects_explanation: "Trong các dự án mẫu, quyền này có chức năng phụ, nó cho phép tạo các dự án mới bắt nguồn từ mẫu."
+  permission_copy_work_packages: "Gói công việc trùng lặp"
+  permission_create_backup: "Tạo bản sao lưu"
+  permission_delete_work_package_watchers: "Xóa người xem"
+  permission_delete_work_packages: "Xóa gói công việc"
+  permission_delete_messages: "Xóa tin nhắn"
+  permission_delete_own_messages: "Xóa tin nhắn của tôi"
+  permission_delete_reportings: "Xóa các báo cáo"
+  permission_delete_timelines: "Xóa dòng thời gian"
+  permission_delete_wiki_pages: "Xóa các trang wiki"
+  permission_delete_wiki_pages_attachments: "Xóa tệp đính kèm"
+  permission_edit_work_package_comments: "Kiểm duyệt bình luận"
+  permission_edit_work_package_comments_explanation: "Thận trọng: Người dùng có quyền này có thể chỉnh sửa nhận xét của bất kỳ ai."
+  permission_edit_work_packages: "Chỉnh sửa gói công việc"
+  permission_edit_messages: "Chỉnh sửa tin nhắn"
+  permission_edit_own_internal_comments: "Chỉnh sửa nhận xét nội bộ của riêng mình"
+  permission_edit_own_work_package_comments: "Chỉnh sửa nhận xét của chính mình"
+  permission_edit_own_messages: "Chỉnh sửa tin nhắn riêng"
+  permission_edit_own_time_entries: "Chỉnh sửa nhật ký thời gian của riêng bạn"
+  permission_edit_others_internal_comments: "Bình luận nội bộ vừa phải"
+  permission_edit_others_internal_comments_explanation: "Thận trọng: Người dùng có quyền này có thể chỉnh sửa nhận xét nội bộ của người dùng khác."
+  permission_edit_project: "Chỉnh sửa dự án"
+  permission_edit_project_attributes: "Chỉnh sửa thuộc tính dự án"
+  permission_edit_project_phases: "Chỉnh sửa các giai đoạn dự án"
+  permission_edit_reportings: "Chỉnh sửa báo cáo"
+  permission_edit_time_entries: "Chỉnh sửa nhật ký thời gian cho người dùng khác"
+  permission_edit_timelines: "Chỉnh sửa dòng thời gian"
+  permission_edit_wiki_pages: "Chỉnh sửa trang wiki"
+  permission_export_work_packages: "Xuất gói công việc"
+  permission_export_projects: "Dự án xuất khẩu"
+  permission_export_wiki_pages: "Xuất trang wiki"
+  permission_invite_members_by_email: "Mời thành viên qua email"
+  permission_invite_members_by_email_explanation: >
+    Cho phép người dùng mời thành viên mới qua email. Người dùng được mời sẽ nhận được email có liên kết để đặt mật khẩu và kích hoạt tài khoản của họ. Phụ thuộc vào quyền quản lý thành viên
+  permission_list_attachments: "Liệt kê tệp đính kèm"
+  permission_log_own_time: "Đăng nhập thời gian riêng"
+  permission_log_time: "Đăng nhập thời gian cho người dùng khác"
+  permission_manage_forums: "Quản lý diễn đàn"
+  permission_manage_categories: "Quản lý danh mục gói công việc"
+  permission_manage_dashboards: "Quản lý trang tổng quan"
+  permission_manage_work_package_relations: "Quản lý quan hệ gói công việc"
+  permission_manage_members: "Quản lý thành viên"
+  permission_manage_news: "Quản lý tin tức"
+  permission_manage_project_activities: "Quản lý hoạt động dự án"
+  permission_manage_public_queries: "Quản lý truy vấn công cộng"
+  permission_manage_repository: "Quản lý kho lưu trữ"
+  permission_manage_subtasks: "Quản lý phân cấp gói công việc"
+  permission_manage_versions: "Quản lý phiên bản"
+  permission_manage_wiki: "Quản lý wiki"
+  permission_manage_wiki_menu: "Quản lý menu wiki"
+  permission_move_work_packages: "Di chuyển gói công việc"
+  permission_protect_wiki_pages: "Bảo vệ các trang wiki"
+  permission_rename_wiki_pages: "Đổi tên các trang wiki"
+  permission_save_queries: "Lưu các chế độ xem"
+  permission_search_project: "Tìm kiếm dự án"
+  permission_select_custom_fields: "Chọn trường tùy chỉnh"
+  permission_select_project_custom_fields: "Chọn thuộc tính dự án"
+  permission_select_project_phases: "Chọn giai đoạn dự án"
+  permission_select_project_phases_explanation: "Kích hoạt/hủy kích hoạt các giai đoạn trong dự án. Cho phép người dùng chọn vòng đời phù hợp cho dự án vì các giai đoạn không hoạt động sẽ không hiển thị trên trang tổng quan dự án cũng như danh sách dự án."
+  permission_select_project_modules: "Chọn mô-đun dự án"
+  permission_share_work_packages: "Chia sẻ gói công việc"
+  permission_manage_types: "Chọn loại"
+  permission_manage_own_reminders: "Tạo lời nhắc riêng"
+  permission_view_all_principals: "Xem tất cả người dùng và nhóm"
+  permission_view_all_principals_explanation: >
+    Cho phép người dùng xem tất cả người dùng và nhóm trong hệ thống, ngay cả khi họ không phải là thành viên của bất kỳ dự án hoặc nhóm nào đã tham gia.
+  permission_view_project: "Xem dự án"
+  permission_view_changesets: "Xem các bản sửa đổi kho lưu trữ trong Yojana"
+  permission_view_internal_comments: "Xem bình luận nội bộ"
+  permission_view_commit_author_statistics: "Xem số liệu thống kê về tác giả cam kết"
+  permission_view_dashboards: "Xem trang tổng quan"
+  permission_view_work_package_watchers: "Xem danh sách người theo dõi"
+  permission_view_work_packages: "Xem các gói công việc"
+  permission_view_messages: "Xem tin nhắn"
+  permission_view_news: "Xem tin tức"
+  permission_view_members: "Xem thành viên"
+  permission_view_reportings: "Xem báo cáo"
+  permission_view_shared_work_packages: "Xem chia sẻ gói công việc"
+  permission_view_time_entries: "Xem thời gian đã sử dụng"
+  permission_view_timelines: "Xem dòng thời gian"
+  permission_view_user_email: "Xem địa chỉ thư của người dùng"
+  permission_view_wiki_edits: "Xem lịch sử wiki"
+  permission_view_wiki_pages: "Xem wiki"
+  permission_work_package_assigned: "Trở thành người được giao/chịu trách nhiệm"
+  permission_work_package_assigned_explanation: "Các gói công việc có thể được chỉ định cho người dùng và nhóm có vai trò này trong dự án tương ứng"
+  permission_view_project_activity: "Xem hoạt động dự án"
+  permission_view_project_attributes: "Xem thuộc tính dự án"
+  permission_view_project_phases: "Xem các giai đoạn dự án"
+  permission_save_bcf_queries: "Lưu truy vấn BCF"
+  permission_manage_public_bcf_queries: "Quản lý truy vấn BCF công khai"
+  permission_edit_attribute_help_texts: "Chỉnh sửa văn bản trợ giúp thuộc tính"
+  permission_manage_public_project_queries: "Quản lý danh sách dự án công"
+  permission_view_project_query: "Xem truy vấn dự án"
+  permission_edit_project_query: "Chỉnh sửa truy vấn dự án"
   placeholders:
     default: "-"
     templated_hint: Automatically generated through type %{type}
@@ -5040,49 +5006,50 @@ vi:
     create_successful: Kho lưu trữ đã được đăng ký.
     delete_sucessful: Kho lưu trữ đã bị xóa.
     destroy:
-      confirmation: Nếu bạn tiếp tục, thao tác này sẽ xóa vĩnh viễn kho lưu trữ được quản lý.
-      info: Xóa kho lưu trữ là một hành động không thể đảo ngược.
-      info_not_managed: 'Lưu ý: Thao tác này sẽ KHÔNG xóa nội dung của kho lưu trữ này vì nó không được OpenProject quản lý.'
-      managed_path_note: 'Thư mục sau sẽ bị xóa: %{path}'
-      repository_verification_html: Enter the project's identifier %{identifier} to verify the deletion of its repository.
-      subtitle: Bạn có thực sự muốn xóa %{repository_type} của dự án %{project_name} không?
-      subtitle_not_managed_html: Do you really want to remove the linked %{repository_type} %{url} from the project %{project_name}?
-      title_html: Delete the %{repository_type}
-      title_not_managed: Xóa %{repository_type} được liên kết?
+      confirmation: "Nếu bạn tiếp tục, thao tác này sẽ xóa vĩnh viễn kho lưu trữ được quản lý."
+      info: "Xóa kho lưu trữ là một hành động không thể đảo ngược."
+      info_not_managed: "Lưu ý: Thao tác này sẽ KHÔNG xóa nội dung của kho lưu trữ này vì nó không được Yojana quản lý."
+      managed_path_note: "Thư mục sau sẽ bị xóa: %{path}"
+      repository_verification: "Nhập mã định danh của dự án %{identifier} để xác minh việc xóa kho lưu trữ của dự án."
+      subtitle: "Bạn có thực sự muốn xóa %{repository_type} của dự án %{project_name} không?"
+      subtitle_not_managed: "Bạn có thực sự muốn xóa %{repository_type} %{url} được liên kết khỏi dự án %{project_name} không?"
+      title: "Xóa %{repository_type}"
+      title_not_managed: "Xóa %{repository_type} được liên kết?"
     errors:
-      build_failed: Không thể tạo kho lưu trữ với cấu hình đã chọn. %{reason}
-      managed_delete: Không thể xóa kho lưu trữ được quản lý.
-      managed_delete_local: 'Không thể xóa kho lưu trữ cục bộ trên hệ thống tệp tại ''%{path}'': %{error_message}'
-      empty_repository: Kho lưu trữ tồn tại nhưng trống rỗng. Nó chưa chứa bất kỳ sửa đổi nào.
-      exists_on_filesystem: Thư mục kho lưu trữ đã tồn tại trong hệ thống tập tin.
-      filesystem_access_failed: 'Đã xảy ra lỗi khi truy cập kho lưu trữ trong hệ thống tệp: %{message}'
-      not_manageable: OpenProject không thể quản lý nhà cung cấp kho lưu trữ này.
-      path_permission_failed: 'Đã xảy ra lỗi khi tạo đường dẫn sau: %{path}. Hãy đảm bảo rằng OpenProject có thể ghi vào thư mục đó.'
-      unauthorized: Bạn không được phép truy cập vào kho lưu trữ hoặc thông tin xác thực không hợp lệ.
-      unavailable: Kho lưu trữ không có sẵn.
-      exception_title: 'Không thể truy cập kho lưu trữ: %{message}'
-      disabled_or_unknown_type: Loại đã chọn %{type} bị vô hiệu hóa hoặc không còn khả dụng cho nhà cung cấp SCM %{vendor}.
-      disabled_or_unknown_vendor: Nhà cung cấp SCM %{vendor} đã bị vô hiệu hóa hoặc không còn khả dụng.
-      remote_call_failed: 'Gọi điều khiển từ xa được quản lý không thành công với thông báo ''%{message}'' (Mã: %{code})'
-      remote_invalid_response: Đã nhận được phản hồi không hợp lệ từ điều khiển từ xa được quản lý.
-      remote_save_failed: Không thể lưu kho lưu trữ với các tham số được truy xuất từ ​​​​điều khiển từ xa.
+      build_failed: "Không thể tạo kho lưu trữ với cấu hình đã chọn. %{reason}"
+      managed_delete: "Không thể xóa kho lưu trữ được quản lý."
+      managed_delete_local: "Không thể xóa kho lưu trữ cục bộ trên hệ thống tệp tại '%{path}': %{error_message}"
+      empty_repository: "Kho lưu trữ tồn tại nhưng trống rỗng. Nó chưa chứa bất kỳ sửa đổi nào."
+      exists_on_filesystem: "Thư mục kho lưu trữ đã tồn tại trong hệ thống tập tin."
+      filesystem_access_failed: "Đã xảy ra lỗi khi truy cập kho lưu trữ trong hệ thống tệp: %{message}"
+      not_manageable: "Yojana không thể quản lý nhà cung cấp kho lưu trữ này."
+      path_permission_failed: "Đã xảy ra lỗi khi tạo đường dẫn sau: %{path}. Hãy đảm bảo rằng Yojana có thể ghi vào thư mục đó."
+      unauthorized: "Bạn không được phép truy cập vào kho lưu trữ hoặc thông tin xác thực không hợp lệ."
+      unavailable: "Kho lưu trữ không có sẵn."
+      exception_title: "Không thể truy cập kho lưu trữ: %{message}"
+      disabled_or_unknown_type: "Loại đã chọn %{type} bị vô hiệu hóa hoặc không còn khả dụng cho nhà cung cấp SCM %{vendor}."
+      disabled_or_unknown_vendor: "Nhà cung cấp SCM %{vendor} đã bị vô hiệu hóa hoặc không còn khả dụng."
+      remote_call_failed: "Gọi điều khiển từ xa được quản lý không thành công với thông báo '%{message}' (Mã: %{code})"
+      remote_invalid_response: "Đã nhận được phản hồi không hợp lệ từ điều khiển từ xa được quản lý."
+      remote_save_failed: "Không thể lưu kho lưu trữ với các tham số được truy xuất từ ​​​​điều khiển từ xa."
     git:
       instructions:
-        managed_url: Đây là URL của kho lưu trữ Git (cục bộ) được quản lý.
-        path: Chỉ định đường dẫn đến repository Git của bạn (ví dụ, %{example_path}). Bạn cũng có thể sử dụng các remote repositories mà được nhân bản với một bản sao cục bộ bằng cách sử dụng một giá trị bắt đầu với http(s) :// hoặc file://.
-        path_encoding: 'Ghi đè mã hóa đường dẫn Git (Mặc định: UTF-8)'
-      local_title: Liên kết kho lưu trữ Git cục bộ hiện có
-      local_url: URL địa phương
-      local_introduction: Nếu bạn có kho lưu trữ Git cục bộ hiện có, bạn có thể liên kết nó với OpenProject để truy cập nó từ bên trong ứng dụng.
-      managed_introduction: Hãy để OpenProject tự động tạo và tích hợp kho lưu trữ Git cục bộ.
-      managed_title: Kho lưu trữ Git được tích hợp vào OpenProject
-      managed_url: URL được quản lý
-      path: Đường dẫn đến kho Git
-      path_encoding: Mã hóa đường dẫn
-    go_to_revision: Đi đến bản sửa đổi
-    managed_remote: Các kho lưu trữ được quản lý cho nhà cung cấp này được xử lý từ xa.
-    managed_remote_note: Thông tin về URL và đường dẫn của kho lưu trữ này không có sẵn trước khi tạo.
-    managed_url: URL được quản lý
+        managed_url: "Đây là URL của kho lưu trữ Git (cục bộ) được quản lý."
+        path: >-
+          Chỉ định đường dẫn đến repository Git của bạn (ví dụ, %{example_path}). Bạn cũng có thể sử dụng các remote repositories mà được nhân bản với một bản sao cục bộ bằng cách sử dụng một giá trị bắt đầu với http(s) :// hoặc file://.
+        path_encoding: "Ghi đè mã hóa đường dẫn Git (Mặc định: UTF-8)"
+      local_title: "Liên kết kho lưu trữ Git cục bộ hiện có"
+      local_url: "URL địa phương"
+      local_introduction: "Nếu bạn có kho lưu trữ Git cục bộ hiện có, bạn có thể liên kết nó với Yojana để truy cập nó từ bên trong ứng dụng."
+      managed_introduction: "Hãy để Yojana tự động tạo và tích hợp kho lưu trữ Git cục bộ."
+      managed_title: "Kho lưu trữ Git được tích hợp vào Yojana"
+      managed_url: "URL được quản lý"
+      path: "Đường dẫn đến kho Git"
+      path_encoding: "Mã hóa đường dẫn"
+    go_to_revision: "Đi đến bản sửa đổi"
+    managed_remote: "Các kho lưu trữ được quản lý cho nhà cung cấp này được xử lý từ xa."
+    managed_remote_note: "Thông tin về URL và đường dẫn của kho lưu trữ này không có sẵn trước khi tạo."
+    managed_url: "URL được quản lý"
     settings:
       automatic_managed_repos_disabled: Tắt tính năng tạo tự động
       automatic_managed_repos: Tự động tạo các kho lưu trữ được quản lý
@@ -5090,206 +5057,179 @@ vi:
     scm_vendor: Hệ thống quản lý kiểm soát nguồn
     scm_type: Loại kho lưu trữ
     scm_types:
-      local: Liên kết kho lưu trữ cục bộ hiện có
-      existing: Liên kết kho lưu trữ hiện có
-      managed: Tạo kho lưu trữ mới trong OpenProject
+      local: "Liên kết kho lưu trữ cục bộ hiện có"
+      existing: "Liên kết kho lưu trữ hiện có"
+      managed: "Tạo kho lưu trữ mới trong Yojana"
     storage:
-      not_available: Mức tiêu thụ dung lượng ổ đĩa không có sẵn cho kho lưu trữ này.
-      update_timeout: |-
-        Giữ thông tin dung lượng ổ đĩa cần thiết cuối cùng cho kho lưu trữ trong N phút.
-        Vì việc tính dung lượng đĩa cần thiết của kho lưu trữ có thể tốn kém nên hãy tăng giá trị này để giảm tác động đến hiệu suất.
-      oauth_application_details_html: 'The client secret value will not be accessible again after you close this window. Please copy these values into the Nextcloud OpenProject Integration thiết lập:'
-      oauth_application_details_link_text: Đi tới trang cài đặt
-      setup_documentation_details: 'Nếu bạn cần trợ giúp định cấu hình bộ lưu trữ tệp mới, vui lòng kiểm tra tài liệu:'
-      setup_documentation_details_link_text: Thiết lập kho lưu trữ tập tin
-      show_warning_details: Để sử dụng bộ lưu trữ tệp này, hãy nhớ kích hoạt mô-đun và bộ lưu trữ cụ thể trong cài đặt dự án của từng dự án mong muốn.
+      not_available: "Mức tiêu thụ dung lượng ổ đĩa không có sẵn cho kho lưu trữ này."
+      update_timeout: "Giữ thông tin dung lượng ổ đĩa cần thiết cuối cùng cho kho lưu trữ trong N phút.\nVì việc tính dung lượng đĩa cần thiết của kho lưu trữ có thể tốn kém nên hãy tăng giá trị này để giảm tác động đến hiệu suất."
+      oauth_application_details: "Giá trị bí mật của máy khách sẽ không thể truy cập lại được sau khi bạn đóng cửa sổ này. Vui lòng sao chép các giá trị này vào cài đặt Tích hợp Nextcloud Yojana:"
+      oauth_application_details_link_text: "Đi tới trang cài đặt"
+      setup_documentation_details: "Nếu bạn cần trợ giúp định cấu hình bộ lưu trữ tệp mới, vui lòng kiểm tra tài liệu:"
+      setup_documentation_details_link_text: "Thiết lập kho lưu trữ tập tin"
+      show_warning_details: "Để sử dụng bộ lưu trữ tệp này, hãy nhớ kích hoạt mô-đun và bộ lưu trữ cụ thể trong cài đặt dự án của từng dự án mong muốn."
     subversion:
-      existing_title: Kho lưu trữ Subversion hiện có
-      existing_introduction: Nếu bạn có kho lưu trữ Subversion hiện có, bạn có thể liên kết nó với OpenProject để truy cập nó từ bên trong ứng dụng.
-      existing_url: URL hiện tại
+      existing_title: "Kho lưu trữ Subversion hiện có"
+      existing_introduction: "Nếu bạn có kho lưu trữ Subversion hiện có, bạn có thể liên kết nó với Yojana để truy cập nó từ bên trong ứng dụng."
+      existing_url: "URL hiện tại"
       instructions:
-        managed_url: Đây là URL của kho lưu trữ Subversion (cục bộ) được quản lý.
-        url: |-
-          Nhập URL kho lưu trữ. Điều này có thể nhắm mục tiêu kho lưu trữ cục bộ (bắt đầu bằng %{local_proto} ) hoặc kho lưu trữ từ xa.
-          Các lược đồ URL sau được hỗ trợ:
-      managed_title: Kho lưu trữ Subversion được tích hợp vào OpenProject
-      managed_introduction: Hãy để OpenProject tự động tạo và tích hợp kho lưu trữ Subversion cục bộ.
-      managed_url: URL được quản lý
-      password: Mật khẩu kho lưu trữ
-      username: Tên người dùng kho lưu trữ
-    truncated: Rất tiếc, chúng tôi đã phải cắt bớt thư mục này thành các tệp %{limit}. %{truncated} mục nhập đã bị bỏ qua khỏi danh sách.
-    named_repository: kho lưu trữ %{vendor_name}
-    update_settings_successful: Các cài đặt đã được lưu thành công.
-    url: URL tới kho lưu trữ
+        managed_url: "Đây là URL của kho lưu trữ Subversion (cục bộ) được quản lý."
+        url: "Nhập URL kho lưu trữ. Điều này có thể nhắm mục tiêu kho lưu trữ cục bộ (bắt đầu bằng %{local_proto} ) hoặc kho lưu trữ từ xa.\nCác lược đồ URL sau được hỗ trợ:"
+      managed_title: "Kho lưu trữ Subversion được tích hợp vào Yojana"
+      managed_introduction: "Hãy để Yojana tự động tạo và tích hợp kho lưu trữ Subversion cục bộ."
+      managed_url: "URL được quản lý"
+      password: "Mật khẩu kho lưu trữ"
+      username: "Tên người dùng kho lưu trữ"
+    truncated: "Rất tiếc, chúng tôi đã phải cắt bớt thư mục này thành các tệp %{limit}. %{truncated} mục nhập đã bị bỏ qua khỏi danh sách."
+    named_repository: "kho lưu trữ %{vendor_name}"
+    update_settings_successful: "Các cài đặt đã được lưu thành công."
+    url: "URL tới kho lưu trữ"
     warnings:
       cannot_annotate: Tập tin này không thể được chú thích.
   scheduling:
-    manual: đặt thành Thủ công
-    automatic: đặt thành Tự động
-  search_input_placeholder: Tìm kiếm ...
-  setting_allowed_link_protocols: Giao thức liên kết được phép
-  setting_allowed_link_protocols_text_html: 'Cho phép các giao thức này được hiển thị dưới dạng liên kết trong mô tả gói công việc, trường văn bản dài và nhận xét. Ví dụ: %{tel_code} hoặc %{element_code}. Nhập một giao thức trên mỗi dòng. <br/> Giao thức %{http_code}, %{https_code} và %{mailto_code} luôn được cho phép.'
-  setting_capture_external_links: Chụp các liên kết bên ngoài
-  setting_capture_external_links_text: 'Khi tính năng này được kích hoạt, tất cả các liên kết ngoài trong văn bản định dạng sẽ được chuyển hướng qua một trang cảnh báo trước khi rời khỏi ứng dụng. Điều này giúp bảo vệ người dùng khỏi các trang web bên ngoài có thể chứa mã độc hại.
-
-    '
-  setting_capture_external_links_require_login: Require users to be logged in
-  setting_capture_external_links_require_login_text: 'When enabled, users wanting to click on external links need to be logged in before being able to continue.
-
-    '
-  setting_after_first_login_redirect_url: Chuyển hướng đăng nhập lần đầu
-  setting_after_first_login_redirect_url_text_html: 'Đặt đường dẫn để chuyển hướng người dùng sau lần đăng nhập đầu tiên của họ. Nếu trống, hãy chuyển hướng đến trang chủ để xem chuyến tham quan giới thiệu. <br/> Ví dụ: <code>/my/page</code>
-
-    '
-  setting_after_login_default_redirect_url: Sau khi đăng nhập chuyển hướng
-  setting_after_login_default_redirect_url_example_html: 'Set a default path to redirect users after login, if no back link was provided. Redirects to home page if not set. <br/> Example: %{example_code}
-
-    '
-  setting_apiv3_cors_title: Chia sẻ tài nguyên chéo nguồn gốc (CORS)
-  setting_apiv3_cors_enabled: Kích hoạt CORS
-  setting_apiv3_cors_origins: Nguồn gốc được phép chia sẻ tài nguyên chéo nguồn gốc (CORS) của API V3
-  setting_apiv3_cors_origins_instructions_html: 'If CORS is enabled, these are the origins that are allowed to access OpenProject API. <br/> Please check the [Documentation on the Origin header](docs_url) on how to specify the expected values.
-
-    '
-  setting_apiv3_write_readonly_attributes: Viết quyền truy cập vào các thuộc tính chỉ đọc
-  setting_apiv3_write_readonly_attributes_instructions: 'Nếu được bật, API sẽ cho phép quản trị viên ghi các thuộc tính tĩnh chỉ đọc trong quá trình tạo, chẳng hạn như createAt và tác giả.
-
-    '
-  setting_apiv3_write_readonly_attributes_warning: 'Cài đặt này có một trường hợp sử dụng chẳng hạn như nhập dữ liệu nhưng cho phép quản trị viên mạo danh việc tạo các mục như những người dùng khác. Tuy nhiên, tất cả các yêu cầu tạo đang được ghi lại với tác giả thực sự.
-
-    '
-  setting_apiv3_write_readonly_attributes_additional_html: 'For more information on attributes and supported resources, please see the [API documentation](api_documentation_link).
-
-    '
-  setting_apiv3_max_page_size: Kích thước trang API tối đa
-  setting_apiv3_max_page_size_instructions: 'Đặt kích thước trang tối đa mà API sẽ phản hồi. Sẽ không thể thực hiện các yêu cầu API trả về nhiều giá trị hơn trên một trang.
-
-    '
-  setting_apiv3_max_page_size_warning: 'Vui lòng chỉ thay đổi giá trị này nếu bạn chắc chắn tại sao mình cần nó. Việc đặt thành giá trị cao sẽ dẫn đến tác động đáng kể đến hiệu suất, trong khi giá trị thấp hơn tùy chọn trên mỗi trang sẽ gây ra lỗi trong chế độ xem phân trang.
-
-    '
-  setting_apiv3_docs: tài liệu
-  setting_apiv3_docs_enabled: Bật trang tài liệu
-  setting_apiv3_docs_enabled_instructions_html: 'Nếu trang tài liệu được kích hoạt, bạn có thể xem tài liệu APIv3 tương tác tại <a href="%{link}" target="_blank">%{link}</a>.
-
-    '
-  setting_apiv3_docs_enabled_instructions_warning: 'Xin lưu ý rằng việc bật tài liệu API trên hệ thống sản xuất có thể làm lộ thông tin nhạy cảm hoặc vô tình làm mất dữ liệu khi bạn không cẩn thận. Chúng tôi khuyên bạn chỉ nên bật cài đặt này cho mục đích phát triển.
-
-    '
-  setting_attachment_whitelist: Danh sách trắng tải lên tệp đính kèm
-  setting_email_delivery_method: Cách gửi email
-  setting_emails_salutation: Địa chỉ người dùng trong email với
-  setting_oauth_allow_remapping_of_existing_users: Cho phép ánh xạ lại người dùng hiện tại
-  setting_sendmail_location: Vị trí của tệp thực thi sendmail (đường dẫn)
-  setting_sendmail_arguments: Đối số cho sendmail
-  setting_smtp_enable_starttls_auto: Tự động sử dụng STARTTLS nếu hiện hữu
-  setting_smtp_ssl: Sử dụng kết nối SSL
-  setting_smtp_address: Máy chủ SMTP
-  setting_smtp_port: Cổng SMTP
-  setting_smtp_authentication: Xác thực SMTP
-  setting_smtp_user_name: Tên truy cập SMTP
-  setting_smtp_password: Mật khẩu SMTP
-  setting_smtp_domain: Tên miền SMTP HELO
-  setting_activity_days_default: Ngày hiển thị trên hoạt động dự án
-  setting_api_tokens_enabled: Enable API tokens
-  setting_api_tokens_enabled_caption: 'Decide whether users can create personal API tokens in their account thiết lập. These tokens can be used to access the different APIs of OpenProject, such as APIv3 and MCP.
-
-    '
-  setting_app_subtitle: phụ đề ứng dụng
-  setting_app_title: Tiêu đề ứng dụng
-  setting_organization_name: Organization name
-  setting_attachment_max_size: Tệp đính kèm tối đa. kích cỡ
-  setting_show_work_package_attachments: Hiển thị tệp đính kèm trong tab tệp theo mặc định
-  setting_antivirus_scan_mode: Chế độ quét
-  setting_antivirus_scan_action: Hành động tập tin bị nhiễm
-  setting_autofetch_changesets: Tự động tìm nạp thay đổi kho lưu trữ
-  setting_autologin: Tự động đăng nhập
-  setting_available_languages: Ngôn ngữ có sẵn
-  setting_bcc_recipients: Người nhận bản sao mù (bcc)
-  setting_brute_force_block_after_failed_logins: Chặn người dùng sau số lần đăng nhập thất bại này
-  setting_brute_force_block_minutes: Thời gian người dùng bị chặn
-  setting_cache_formatted_text: Văn bản được định dạng bộ đệm
-  setting_use_wysiwyg_description: Chọn để cho phép bộ soạn thảo CKEditor đối với tất cả người dùng mặc định. CKEditor đã được hạn chế bởi GFM Markdown.
-  setting_column_options: Các cột liệt kê gói công việc mặc định
-  setting_commit_fix_keywords: Đang sửa từ khóa
-  setting_commit_logs_encoding: Cam kết mã hóa tin nhắn
-  setting_commit_logtime_activity_id: Hoạt động cho thời gian đã đăng nhập
-  setting_commit_logtime_enabled: Bật ghi thời gian
-  setting_commit_ref_keywords: Từ khóa tham khảo
-  setting_consent_time: Thời gian đồng ý
-  setting_consent_info: Văn bản thông tin đồng ý
-  setting_consent_required: Cần có sự đồng ý
-  setting_consent_decline_mail: Địa chỉ email liên hệ đồng ý
-  setting_cross_project_work_package_relations: Cho phép quan hệ gói công việc giữa các dự án
-  setting_csv_escape_formulas: Escape formulas in CSV exports
-  setting_csv_escape_formulas_text: 'Escape spreadsheet formulas in CSV exports by prefixing cells that begin with characters such as =, +, -, or @ with a single quote. This mitigates CSV formula injection when exported files are opened in spreadsheet applications such as Excel. This comes at the downside of modifying the string values inside the CSV, so you may want to disable this if downstream tools require the exact, unescaped cell values.
-
-    '
-  setting_first_week_of_year: Tuần đầu tiên trong năm
-  setting_date_format: ngày
-  setting_default_language: Ngôn ngữ mặc định
-  setting_default_projects_modules: Các mô-đun được bật mặc định cho các dự án mới
-  setting_default_projects_public: Các dự án mới được công khai theo mặc định
-  setting_disable_password_login: Vô hiệu hóa xác thực mật khẩu
-  setting_diff_max_lines_displayed: Số dòng khác biệt tối đa được hiển thị
-  setting_omniauth_direct_login_provider: Nhà cung cấp SSO đăng nhập trực tiếp
-  setting_display_subprojects_work_packages: Hiển thị các gói công việc của dự án con trên các dự án chính theo mặc định
-  setting_duration_format: Định dạng thời lượng
-  setting_duration_format_hours_only: Chỉ giờ
-  setting_duration_format_days_and_hours: Ngày và giờ
-  setting_duration_format_instructions: Điều này xác định cách hiển thị Công việc, Công việc còn lại và Khoảng thời gian đã sử dụng.
-  setting_emails_footer: Chân trang email
-  setting_emails_header: Tiêu đề email
-  setting_email_login: Sử dụng email làm thông tin đăng nhập
-  setting_enabled_scm: SCM đã bật
-  setting_enabled_projects_columns: Các cột trong danh sách dự án được hiển thị theo mặc định
-  setting_feeds_enabled: Bật nguồn cấp dữ liệu
-  setting_ical_enabled: Kích hoạt đăng ký iCalendar
-  setting_feeds_limit: Giới hạn nội dung nguồn cấp dữ liệu
-  setting_file_max_size_displayed: Kích thước tối đa của tệp văn bản được hiển thị nội tuyến
-  setting_host_name: Tên máy chủ
-  setting_collaborative_editing_hocuspocus_url: URL máy chủ Hocuspocus
-  setting_collaborative_editing_hocuspocus_secret: Bí mật máy chủ Hocuspocus
-  setting_hours_per_day: Giờ mỗi ngày
-  setting_hours_per_day_explanation: 'Điều này xác định thế nào được coi là "ngày" khi hiển thị thời lượng theo ngày và giờ (ví dụ: nếu một ngày là 8 giờ thì 32 giờ sẽ là 4 ngày).'
-  setting_invitation_expiration_days: Email kích hoạt hết hạn sau
-  setting_invitation_expiration_days_caption: Số ngày sau đó email kích hoạt hết hạn.
-  setting_work_package_done_ratio: Chế độ tính toán tiến độ
-  setting_work_package_done_ratio_field: Dựa trên công việc
-  setting_work_package_done_ratio_field_caption_html: "<i>% Hoàn thành</i> có thể được đặt tùy ý thành bất kỳ giá trị nào. Nếu bạn tùy ý nhập giá trị cho <i>Work</i>, <i>Công việc còn lại</i> sẽ tự động được dẫn xuất."
-  setting_work_package_done_ratio_status: Dựa trên trạng thái
-  setting_work_package_done_ratio_status_caption_html: Mỗi trạng thái có một giá trị <i>% Hoàn thành</i> được liên kết với nó. Việc thay đổi trạng thái sẽ thay đổi <i>% Hoàn thành</i>.
-  setting_work_package_done_ratio_explanation_html: 'Ở chế độ <b>work-based</b>, % Hoàn thành có thể được đặt tùy ý thành bất kỳ giá trị nào. Nếu bạn tùy ý nhập một giá trị cho Công việc, Công việc còn lại sẽ tự động được bắt nguồn. Trong chế độ <b>dựa trên trạng thái</b>, mỗi trạng thái có một giá trị % Hoàn thành được liên kết với trạng thái đó. Việc thay đổi trạng thái sẽ thay đổi % Hoàn thành.
-
-    '
-  setting_work_package_properties: Thuộc tính gói công việc
-  setting_work_package_startdate_is_adddate: Sử dụng ngày hiện tại làm ngày bắt đầu cho các gói công việc mới
-  setting_work_packages_projects_export_limit: Gói công việc / Giới hạn xuất dự án
-  setting_work_packages_projects_export_limit_text: 'Maximum number of work packages or projects that can be included in a single export. Larger exports are truncated to this limit.
-
-    '
-  setting_journal_aggregation_time_minutes: Aggregation period
-  setting_log_requesting_user: Ghi nhật ký thông tin đăng nhập, tên và địa chỉ thư của người dùng cho tất cả các yêu cầu
-  setting_login_required: Yêu cầu xác thực
-  setting_login_required_caption: Khi được chọn, tất cả các yêu cầu tới ứng dụng phải được xác thực.
-  setting_lost_password: Bật đặt lại mật khẩu
-  setting_lost_password_caption: Khi được chọn, hãy cho phép người dùng đặt lại mật khẩu của riêng họ.
-  setting_mail_from: Địa chỉ email phát thải
-  setting_mail_handler_api_key: Khóa API
-  setting_mail_handler_body_delimiters: Cắt bớt email sau một trong những dòng này
-  setting_mail_handler_body_delimiter_regex: Xén các email phù hợp với biểu thức này
-  setting_mail_handler_ignore_filenames: Tập tin đính kèm mail bị bỏ qua
-  setting_new_project_user_role_id: Vai trò được cấp cho người dùng không phải quản trị viên tạo dự án
-  setting_new_project_user_role_id_caption: 'Only roles that include the permissions to edit thuộc tính dự án and to manage members are listed, so that the creator can complete the project setup.
-
-    '
-  setting_new_project_send_confirmation_email: Gửi thông báo cho tác giả khi tạo dự án mới
-  setting_new_project_notification_text: Văn bản thông báo
-  setting_password_active_rules: Password requirements
-  setting_password_count_former_banned: Số lượng mật khẩu được sử dụng gần đây nhất bị cấm sử dụng lại
-  setting_password_days_valid: Số ngày thực hiện thay đổi mật khẩu sau đó
-  setting_password_min_length: Chiều dài tối thiểu
-  setting_per_page_options: Tùy chọn đối tượng trên mỗi trang
+    manual: "đặt thành Thủ công"
+    automatic: "đặt thành Tự động"
+  search_input_placeholder: "Tìm kiếm ..."
+  setting_allowed_link_protocols: "Giao thức liên kết được phép"
+  setting_allowed_link_protocols_text_html: >-
+    Cho phép các giao thức này được hiển thị dưới dạng liên kết trong mô tả gói công việc, trường văn bản dài và nhận xét. Ví dụ: %{tel_code} hoặc %{element_code}. Nhập một giao thức trên mỗi dòng. <br/> Giao thức %{http_code}, %{https_code} và %{mailto_code} luôn được cho phép.
+  setting_capture_external_links: "Chụp các liên kết bên ngoài"
+  setting_capture_external_links_text: >
+    Khi tính năng này được kích hoạt, tất cả các liên kết ngoài trong văn bản định dạng sẽ được chuyển hướng qua một trang cảnh báo trước khi rời khỏi ứng dụng. Điều này giúp bảo vệ người dùng khỏi các trang web bên ngoài có thể chứa mã độc hại.
+  setting_capture_external_links_require_login: "Require users to be logged in"
+  setting_capture_external_links_require_login_text: >
+    When enabled, users wanting to click on external links need to be logged in before being able to continue.
+  setting_after_first_login_redirect_url: "Chuyển hướng đăng nhập lần đầu"
+  setting_after_first_login_redirect_url_text_html: >
+    Đặt đường dẫn để chuyển hướng người dùng sau lần đăng nhập đầu tiên của họ. Nếu trống, hãy chuyển hướng đến trang chủ để xem chuyến tham quan giới thiệu. <br/> Ví dụ: <code>/my/page</code>
+  setting_after_login_default_redirect_url: "Sau khi đăng nhập chuyển hướng"
+  setting_after_login_default_redirect_url_text_html: >
+    Đặt đường dẫn mặc định để chuyển hướng người dùng sau khi đăng nhập, nếu không có liên kết ngược nào được cung cấp. Chuyển hướng đến trang chủ nếu không được thiết lập. <br/> Ví dụ: <code>/my/page</code>
+  setting_apiv3_cors_title: "Chia sẻ tài nguyên chéo nguồn gốc (CORS)"
+  setting_apiv3_cors_enabled: "Kích hoạt CORS"
+  setting_apiv3_cors_origins: "Nguồn gốc được phép chia sẻ tài nguyên chéo nguồn gốc (CORS) của API V3"
+  setting_apiv3_cors_origins_text_html: >
+    Nếu CORS được kích hoạt, đây là các nguồn gốc được phép truy cập API của Yojana. <br/> Vui lòng kiểm tra <a href="%{origin_link}" target="_blank">Tài liệu về Header Origin</a> để biết cách chỉ định các giá trị mong đợi.
+  setting_apiv3_write_readonly_attributes: "Viết quyền truy cập vào các thuộc tính chỉ đọc"
+  setting_apiv3_write_readonly_attributes_instructions: >
+    Nếu được bật, API sẽ cho phép quản trị viên ghi các thuộc tính tĩnh chỉ đọc trong quá trình tạo, chẳng hạn như createAt và tác giả.
+  setting_apiv3_write_readonly_attributes_warning: >
+    Cài đặt này có một trường hợp sử dụng chẳng hạn như nhập dữ liệu nhưng cho phép quản trị viên mạo danh việc tạo các mục như những người dùng khác. Tuy nhiên, tất cả các yêu cầu tạo đang được ghi lại với tác giả thực sự.
+  setting_apiv3_write_readonly_attributes_additional: >
+    Để biết thêm thông tin về các thuộc tính và tài nguyên được hỗ trợ, vui lòng xem %{api_documentation_link}.
+  setting_apiv3_max_page_size: "Kích thước trang API tối đa"
+  setting_apiv3_max_page_size_instructions: >
+    Đặt kích thước trang tối đa mà API sẽ phản hồi. Sẽ không thể thực hiện các yêu cầu API trả về nhiều giá trị hơn trên một trang.
+  setting_apiv3_max_page_size_warning: >
+    Vui lòng chỉ thay đổi giá trị này nếu bạn chắc chắn tại sao mình cần nó. Việc đặt thành giá trị cao sẽ dẫn đến tác động đáng kể đến hiệu suất, trong khi giá trị thấp hơn tùy chọn trên mỗi trang sẽ gây ra lỗi trong chế độ xem phân trang.
+  setting_apiv3_docs: "tài liệu"
+  setting_apiv3_docs_enabled: "Bật trang tài liệu"
+  setting_apiv3_docs_enabled_instructions_html: >
+    Nếu trang tài liệu được kích hoạt, bạn có thể xem tài liệu APIv3 tương tác tại <a href="%{link}" target="_blank">%{link}</a>.
+  setting_apiv3_docs_enabled_instructions_warning: >
+    Xin lưu ý rằng việc bật tài liệu API trên hệ thống sản xuất có thể làm lộ thông tin nhạy cảm hoặc vô tình làm mất dữ liệu khi bạn không cẩn thận. Chúng tôi khuyên bạn chỉ nên bật cài đặt này cho mục đích phát triển.
+  setting_attachment_whitelist: "Danh sách trắng tải lên tệp đính kèm"
+  setting_email_delivery_method: "Cách gửi email"
+  setting_emails_salutation: "Địa chỉ người dùng trong email với"
+  setting_oauth_allow_remapping_of_existing_users: "Cho phép ánh xạ lại người dùng hiện tại"
+  setting_sendmail_location: "Vị trí của tệp thực thi sendmail (đường dẫn)"
+  setting_sendmail_arguments: "Đối số cho sendmail"
+  setting_smtp_enable_starttls_auto: "Tự động sử dụng STARTTLS nếu hiện hữu"
+  setting_smtp_ssl: "Sử dụng kết nối SSL"
+  setting_smtp_address: "Máy chủ SMTP"
+  setting_smtp_port: "Cổng SMTP"
+  setting_smtp_authentication: "Xác thực SMTP"
+  setting_smtp_user_name: "Tên truy cập SMTP"
+  setting_smtp_password: "Mật khẩu SMTP"
+  setting_smtp_domain: "Tên miền SMTP HELO"
+  setting_activity_days_default: "Ngày hiển thị trên hoạt động dự án"
+  setting_app_subtitle: "phụ đề ứng dụng"
+  setting_app_title: "Tiêu đề ứng dụng"
+  setting_attachment_max_size: "Tệp đính kèm tối đa. kích cỡ"
+  setting_show_work_package_attachments: "Hiển thị tệp đính kèm trong tab tệp theo mặc định"
+  setting_antivirus_scan_mode: "Chế độ quét"
+  setting_antivirus_scan_action: "Hành động tập tin bị nhiễm"
+  setting_autofetch_changesets: "Tự động tìm nạp thay đổi kho lưu trữ"
+  setting_autologin: "Tự động đăng nhập"
+  setting_available_languages: "Ngôn ngữ có sẵn"
+  setting_bcc_recipients: "Người nhận bản sao mù (bcc)"
+  setting_brute_force_block_after_failed_logins: "Chặn người dùng sau số lần đăng nhập thất bại này"
+  setting_brute_force_block_minutes: "Thời gian người dùng bị chặn"
+  setting_cache_formatted_text: "Văn bản được định dạng bộ đệm"
+  setting_use_wysiwyg_description: "Chọn để cho phép bộ soạn thảo CKEditor đối với tất cả người dùng mặc định. CKEditor đã được hạn chế bởi GFM Markdown."
+  setting_column_options: "Các cột liệt kê gói công việc mặc định"
+  setting_commit_fix_keywords: "Đang sửa từ khóa"
+  setting_commit_logs_encoding: "Cam kết mã hóa tin nhắn"
+  setting_commit_logtime_activity_id: "Hoạt động cho thời gian đã đăng nhập"
+  setting_commit_logtime_enabled: "Bật ghi thời gian"
+  setting_commit_ref_keywords: "Từ khóa tham khảo"
+  setting_consent_time: "Thời gian đồng ý"
+  setting_consent_info: "Văn bản thông tin đồng ý"
+  setting_consent_required: "Cần có sự đồng ý"
+  setting_consent_decline_mail: "Địa chỉ email liên hệ đồng ý"
+  setting_cross_project_work_package_relations: "Cho phép quan hệ gói công việc giữa các dự án"
+  setting_first_week_of_year: "Tuần đầu tiên trong năm"
+  setting_date_format: "ngày"
+  setting_default_language: "Ngôn ngữ mặc định"
+  setting_default_projects_modules: "Các mô-đun được bật mặc định cho các dự án mới"
+  setting_default_projects_public: "Các dự án mới được công khai theo mặc định"
+  setting_disable_password_login: "Vô hiệu hóa xác thực mật khẩu"
+  setting_diff_max_lines_displayed: "Số dòng khác biệt tối đa được hiển thị"
+  setting_omniauth_direct_login_provider: "Nhà cung cấp SSO đăng nhập trực tiếp"
+  setting_display_subprojects_work_packages: "Hiển thị các gói công việc của dự án con trên các dự án chính theo mặc định"
+  setting_duration_format: "Định dạng thời lượng"
+  setting_duration_format_hours_only: "Chỉ giờ"
+  setting_duration_format_days_and_hours: "Ngày và giờ"
+  setting_duration_format_instructions: "Điều này xác định cách hiển thị Công việc, Công việc còn lại và Khoảng thời gian đã sử dụng."
+  setting_emails_footer: "Chân trang email"
+  setting_emails_header: "Tiêu đề email"
+  setting_email_login: "Sử dụng email làm thông tin đăng nhập"
+  setting_enabled_scm: "SCM đã bật"
+  setting_enabled_projects_columns: "Các cột trong danh sách dự án được hiển thị theo mặc định"
+  setting_feeds_enabled: "Bật nguồn cấp dữ liệu"
+  setting_ical_enabled: "Kích hoạt đăng ký iCalendar"
+  setting_feeds_limit: "Giới hạn nội dung nguồn cấp dữ liệu"
+  setting_file_max_size_displayed: "Kích thước tối đa của tệp văn bản được hiển thị nội tuyến"
+  setting_host_name: "Tên máy chủ"
+  setting_collaborative_editing_hocuspocus_url: "URL máy chủ Hocuspocus"
+  setting_collaborative_editing_hocuspocus_secret: "Bí mật máy chủ Hocuspocus"
+  setting_hours_per_day: "Giờ mỗi ngày"
+  setting_hours_per_day_explanation: >-
+    Điều này xác định thế nào được coi là "ngày" khi hiển thị thời lượng theo ngày và giờ (ví dụ: nếu một ngày là 8 giờ thì 32 giờ sẽ là 4 ngày).
+  setting_invitation_expiration_days: "Email kích hoạt hết hạn sau"
+  setting_invitation_expiration_days_caption: "Số ngày sau đó email kích hoạt hết hạn."
+  setting_work_package_done_ratio: "Chế độ tính toán tiến độ"
+  setting_work_package_done_ratio_field: "Dựa trên công việc"
+  setting_work_package_done_ratio_field_caption_html: >-
+    <i>% Hoàn thành</i> có thể được đặt tùy ý thành bất kỳ giá trị nào. Nếu bạn tùy ý nhập giá trị cho <i>Work</i>, <i>Công việc còn lại</i> sẽ tự động được dẫn xuất.
+  setting_work_package_done_ratio_status: "Dựa trên trạng thái"
+  setting_work_package_done_ratio_status_caption_html: >-
+    Mỗi trạng thái có một giá trị <i>% Hoàn thành</i> được liên kết với nó. Việc thay đổi trạng thái sẽ thay đổi <i>% Hoàn thành</i>.
+  setting_work_package_done_ratio_explanation_html: >
+    Ở chế độ <b>work-based</b>, % Hoàn thành có thể được đặt tùy ý thành bất kỳ giá trị nào. Nếu bạn tùy ý nhập một giá trị cho Công việc, Công việc còn lại sẽ tự động được bắt nguồn. Trong chế độ <b>dựa trên trạng thái</b>, mỗi trạng thái có một giá trị % Hoàn thành được liên kết với trạng thái đó. Việc thay đổi trạng thái sẽ thay đổi % Hoàn thành.
+  setting_work_package_properties: "Thuộc tính gói công việc"
+  setting_work_package_startdate_is_adddate: "Sử dụng ngày hiện tại làm ngày bắt đầu cho các gói công việc mới"
+  setting_work_packages_projects_export_limit: "Gói công việc / Giới hạn xuất dự án"
+  setting_journal_aggregation_time_minutes: "Hành động của người dùng được tổng hợp trong"
+  setting_log_requesting_user: "Ghi nhật ký thông tin đăng nhập, tên và địa chỉ thư của người dùng cho tất cả các yêu cầu"
+  setting_login_required: "Yêu cầu xác thực"
+  setting_login_required_caption: "Khi được chọn, tất cả các yêu cầu tới ứng dụng phải được xác thực."
+  setting_lost_password: "Bật đặt lại mật khẩu"
+  setting_lost_password_caption: "Khi được chọn, hãy cho phép người dùng đặt lại mật khẩu của riêng họ."
+  setting_mail_from: "Địa chỉ email phát thải"
+  setting_mail_handler_api_key: "Khóa API"
+  setting_mail_handler_body_delimiters: "Cắt bớt email sau một trong những dòng này"
+  setting_mail_handler_body_delimiter_regex: "Xén các email phù hợp với biểu thức này"
+  setting_mail_handler_ignore_filenames: "Tập tin đính kèm mail bị bỏ qua"
+  setting_new_project_user_role_id: "Vai trò được cấp cho người dùng không phải quản trị viên tạo dự án"
+  setting_new_project_send_confirmation_email: "Gửi thông báo cho tác giả khi tạo dự án mới"
+  setting_new_project_notification_text: "Văn bản thông báo"
+  setting_password_active_rules: "Lớp nhân vật hoạt động"
+  setting_password_count_former_banned: "Số lượng mật khẩu được sử dụng gần đây nhất bị cấm sử dụng lại"
+  setting_password_days_valid: "Số ngày thực hiện thay đổi mật khẩu sau đó"
+  setting_password_min_length: "Chiều dài tối thiểu"
+  setting_password_min_adhered_rules: "Số lượng lớp học yêu cầu tối thiểu"
+  setting_per_page_options: "Tùy chọn đối tượng trên mỗi trang"
   setting_percent_complete_on_status_closed: "% Hoàn thành khi trạng thái đóng"
   setting_percent_complete_on_status_closed_no_change: Không thay đổi
   setting_percent_complete_on_status_closed_no_change_caption_html: Giá trị của <i>% Complete</i> sẽ không thay đổi ngay cả khi đóng gói công việc.
@@ -5365,15 +5305,13 @@ vi:
       not_writable: Cài đặt này không thể ghi và chỉ có thể được thay đổi bởi quản trị viên hệ thống.
       failed_to_update: 'Không thể cập nhật cài đặt ''%{name}'': %{message}'
     authentication:
-      login: đăng nhập
-      registration: đăng ký
-      sso: Đăng nhập một lần (SSO)
-      omniauth_direct_login_hint_html: 'Nếu tùy chọn này đang hoạt động, yêu cầu đăng nhập sẽ chuyển hướng đến nhà cung cấp omniauth đã định cấu hình. Trang đăng nhập thả xuống và trang đăng nhập sẽ bị vô hiệu hóa. <br/> <strong>Lưu ý:</strong> Trừ khi bạn cũng tắt tính năng đăng nhập bằng mật khẩu, khi bật tùy chọn này, người dùng vẫn có thể đăng nhập nội bộ bằng cách truy cập trang đăng nhập <code>%{internal_path}</code>.
-
-        '
-      remapping_existing_users_hint: 'Nếu được bật, sẽ cho phép mọi nhà cung cấp danh tính được định cấu hình đăng nhập người dùng hiện tại dựa trên tên người dùng của họ, ngay cả khi người dùng chưa từng đăng nhập thông qua nhà cung cấp đó trước đây. Điều này có thể hữu ích khi di chuyển phiên bản OpenProject sang nhà cung cấp SSO mới, nhưng không được khuyến nghị khi sử dụng nhà cung cấp không được tất cả người dùng phiên bản của bạn tin cậy.
-
-        '
+      login: "đăng nhập"
+      registration: "đăng ký"
+      sso: "Đăng nhập một lần (SSO)"
+      omniauth_direct_login_hint_html: >
+        Nếu tùy chọn này đang hoạt động, yêu cầu đăng nhập sẽ chuyển hướng đến nhà cung cấp omniauth đã định cấu hình. Trang đăng nhập thả xuống và trang đăng nhập sẽ bị vô hiệu hóa. <br/> <strong>Lưu ý:</strong> Trừ khi bạn cũng tắt tính năng đăng nhập bằng mật khẩu, khi bật tùy chọn này, người dùng vẫn có thể đăng nhập nội bộ bằng cách truy cập trang đăng nhập <code>%{internal_path}</code>.
+      remapping_existing_users_hint: >
+        Nếu được bật, sẽ cho phép mọi nhà cung cấp danh tính được định cấu hình đăng nhập người dùng hiện tại dựa trên tên người dùng của họ, ngay cả khi người dùng chưa từng đăng nhập thông qua nhà cung cấp đó trước đây. Điều này có thể hữu ích khi di chuyển phiên bản Yojana sang nhà cung cấp SSO mới, nhưng không được khuyến nghị khi sử dụng nhà cung cấp không được tất cả người dùng phiên bản của bạn tin cậy.
     attachments:
       whitelist_text_html: 'Xác định danh sách các phần mở rộng tệp hợp lệ và/hoặc loại mime cho các tệp được tải lên. <br/> Nhập phần mở rộng tệp (ví dụ: <code>%{ext_example}</code>) hoặc loại mime (ví dụ: <code>%{mime_example}</code>). <br/> Để trống để cho phép tải lên mọi loại tệp. Cho phép nhiều giá trị (mỗi giá trị một dòng).
 
@@ -5402,10 +5340,9 @@ vi:
       modes:
         clamav_socket_html: 'Nhập ổ cắm vào daemon ngao, ví dụ: %{example}'
         clamav_host_html: 'Nhập tên máy chủ và cổng vào trình nền Clamd được phân tách bằng dấu hai chấm. ví dụ: %{example}'
-        description_html: 'Chọn chế độ mà tích hợp trình quét antivirus nên hoạt động. <br/> <ul> <li><strong>%{disabled_option}</strong>: Các tệp tải lên sẽ không được quét virus.</li> <li><strong>%{socket_option}</strong>: Bạn đã thiết lập ClamAV trên cùng một máy chủ với OpenProject và daemon quét clamd đang chạy nền</li> <li><strong>%{host_option}</strong>: Bạn đang truyền tệp đến một máy chủ quét virus bên ngoài.</li> </ul>
-
-          '
-    brute_force_prevention: Tự động chặn người dùng
+        description_html: >
+          Chọn chế độ mà tích hợp trình quét antivirus nên hoạt động. <br/> <ul> <li><strong>%{disabled_option}</strong>: Các tệp tải lên sẽ không được quét virus.</li> <li><strong>%{socket_option}</strong>: Bạn đã thiết lập ClamAV trên cùng một máy chủ với Yojana và daemon quét clamd đang chạy nền</li> <li><strong>%{host_option}</strong>: Bạn đang truyền tệp đến một máy chủ quét virus bên ngoài.</li> </ul>
+    brute_force_prevention: "Tự động chặn người dùng"
     date_format:
       first_date_of_week_and_year_set: 'Nếu một trong hai tùy chọn "%{day_of_week_setting_name}" hoặc "%{first_week_setting_name}" được đặt thì tùy chọn còn lại cũng phải được đặt để tránh sự mâu thuẫn ở giao diện người dùng.
 
@@ -5414,8 +5351,8 @@ vi:
 
         '
     experimental:
-      save_confirmation: Thận trọng! Nguy cơ mất dữ liệu! Chỉ kích hoạt các tính năng thử nghiệm nếu bạn không ngại phá vỡ cài đặt OpenProject và mất tất cả dữ liệu của nó.
-      warning_toast: Cờ tính năng là cài đặt kích hoạt các tính năng vẫn đang được phát triển. Chúng chỉ được sử dụng cho mục đích thử nghiệm. Chúng sẽ không bao giờ được kích hoạt trên các bản cài đặt OpenProject chứa dữ liệu quan trọng. Những tính năng này rất có thể sẽ làm hỏng dữ liệu của bạn. Sử dụng chúng có nguy cơ của riêng bạn.
+      save_confirmation: Thận trọng! Nguy cơ mất dữ liệu! Chỉ kích hoạt các tính năng thử nghiệm nếu bạn không ngại phá vỡ cài đặt Yojana và mất tất cả dữ liệu của nó.
+      warning_toast: Cờ tính năng là cài đặt kích hoạt các tính năng vẫn đang được phát triển. Chúng chỉ được sử dụng cho mục đích thử nghiệm. Chúng sẽ không bao giờ được kích hoạt trên các bản cài đặt Yojana chứa dữ liệu quan trọng. Những tính năng này rất có thể sẽ làm hỏng dữ liệu của bạn. Sử dụng chúng có nguy cơ của riêng bạn.
       feature_flags: Cờ tính năng
     general: chung
     highlighting:
@@ -5426,7 +5363,7 @@ vi:
         type: Toàn bộ hàng theo loại
         priority: Toàn bộ hàng theo mức độ ưu tiên
     icalendar:
-      enable_subscriptions_text_html: Cho phép người dùng với quyền cần thiết đăng ký các lịch OpenProject và truy cập thông tin gói công việc qua một ứng dụng lịch bên ngoài. <strong>Lưu ý:</strong> Vui lòng đọc về <a href="%{link}" target="_blank">đăng ký iCalendar</a> để hiểu các rủi ro bảo mật tiềm ẩn trước khi kích hoạt tính năng này.
+      enable_subscriptions_text_html: Cho phép người dùng với quyền cần thiết đăng ký các lịch Yojana và truy cập thông tin gói công việc qua một ứng dụng lịch bên ngoài. <strong>Lưu ý:</strong> Vui lòng đọc về <a href="%{link}" target="_blank">đăng ký iCalendar</a> để hiểu các rủi ro bảo mật tiềm ẩn trước khi kích hoạt tính năng này.
     language_name_being_default: "%{language_name} (mặc định)"
     notifications:
       events_explanation: Quản lý sự kiện mà email được gửi đi. Các gói công việc được loại trừ khỏi danh sách này vì thông báo cho chúng có thể được cấu hình cụ thể cho từng người dùng.
@@ -5460,9 +5397,8 @@ vi:
               label: Bảng điều khiển bên
               description: Thêm tất cả thuộc tính dự án vào một phần bên trong bảng điều khiển bên phải trong phần tổng quan về dự án.
     project_initiation_request:
-      header_description: 'OpenProject có thể tạo trình hướng dẫn từng bước để giúp người quản lý dự án điền vào yêu cầu khởi tạo dự án. Bạn có thể chọn những thuộc tính dự án nào sẽ được đưa vào và kết quả là tạo một tạo phẩm PDF.
-
-        '
+      header_description: >
+        Yojana có thể tạo trình hướng dẫn từng bước để giúp người quản lý dự án điền vào yêu cầu khởi tạo dự án. Bạn có thể chọn những thuộc tính dự án nào sẽ được đưa vào và kết quả là tạo một tạo phẩm PDF.
       status:
         submitted: "%{wizard_name} đã được gửi"
         submitted_description: Nhấp vào nút bên dưới để chuyển đến gói công việc cho quá trình gửi bài.
@@ -5474,8 +5410,8 @@ vi:
         project_creation_wizard: Mở trình hướng dẫn tạo dự án
         project_mandate: Nhiệm vụ mở dự án
       blankslate:
-        title: Yêu cầu bắt đầu không được kích hoạt
-        description: OpenProject có thể tạo trình hướng dẫn từng bước để giúp người quản lý dự án điền vào yêu cầu khởi tạo dự án. Bạn có thể chọn những thuộc tính dự án nào sẽ được đưa vào và những việc cần làm với tài liệu đầu ra. Kích hoạt nó ở đây để bắt đầu cấu hình trình hướng dẫn.
+        title: "Yêu cầu bắt đầu không được kích hoạt"
+        description: "Yojana có thể tạo trình hướng dẫn từng bước để giúp người quản lý dự án điền vào yêu cầu khởi tạo dự án. Bạn có thể chọn những thuộc tính dự án nào sẽ được đưa vào và những việc cần làm với tài liệu đầu ra. Kích hoạt nó ở đây để bắt đầu cấu hình trình hướng dẫn."
       disable_dialog:
         title: Tắt yêu cầu khởi tạo dự án
         heading: Tắt yêu cầu bắt đầu dự án này?
@@ -5582,81 +5518,64 @@ vi:
   status_deleted: đã xóa
   support:
     array:
-      sentence_connector: và
-      skip_last_comma: sai
-  text_accessibility_hint: Chế độ trợ năng được thiết kế dành cho người dùng bị mù, khuyết tật vận động hoặc có thị lực kém. Đối với các yếu tố tập trung sau này được đánh dấu đặc biệt. Xin lưu ý rằng mô-đun Backlogs không khả dụng ở chế độ này.
-  text_access_token_hint: Mã thông báo truy cập cho phép bạn cấp cho các ứng dụng bên ngoài quyền truy cập vào tài nguyên trong OpenProject.
-  text_analyze: 'Phân tích sâu hơn: %{subject}'
-  text_are_you_sure: Bạn có chắc không?
-  open_link_in_a_new_tab: Mở liên kết trong tab mới
-  text_are_you_sure_continue: Bạn có chắc chắn muốn tiếp tục không?
-  text_are_you_sure_with_children: Xóa gói công việc và tất cả các gói công việc con?
-  text_are_you_sure_with_project_custom_fields: Xóa thuộc tính này cũng sẽ xóa các giá trị của nó trong tất cả các dự án. Bạn có chắc chắn muốn làm điều này?
-  text_are_you_sure_with_project_life_cycle_step: Xóa giai đoạn này cũng sẽ xóa việc sử dụng nó trong tất cả các dự án. Bạn có chắc chắn muốn làm điều này?
-  text_assign_to_project: Giao cho dự án
-  text_form_configuration: 'Bạn có thể tùy chỉnh các trường sẽ được hiển thị trong các gói công việc. Bạn có thể tự do nhóm các trường để phản ánh nhu cầu cho tên miền của bạn.
-
-    '
-  text_form_configuration_required_attribute: Thuộc tính được đánh dấu là bắt buộc và do đó luôn được hiển thị
-  text_caracters_maximum: tối đa %{count} ký tự.
-  text_caracters_minimum: Phải dài ít nhất %{count} ký tự.
-  text_comma_separated: Cho phép nhiều giá trị (được phân tách bằng dấu phẩy).
-  text_comment_wiki_page: 'Bình luận cho trang wiki: %{page}'
-  text_custom_field_possible_values_info: Một dòng cho mỗi giá trị
-  text_custom_field_hint_activate_per_project: 'Khi sử dụng trường tùy chỉnh: Hãy nhớ rằng các trường tùy chỉnh cũng cần được kích hoạt cho mỗi dự án.
-
-    '
-  text_custom_field_hint_activate_per_project_and_type: 'Các trường tùy chỉnh cần được kích hoạt cho mỗi loại gói công việc và mỗi dự án.
-
-    '
-  text_project_custom_field_html: 'Phiên bản Enterprise sẽ thêm các phần bổ sung cho các trường tùy chỉnh của dự án: <br> <ul> <li><b>Thêm các trường tùy chỉnh cho dự án vào danh sách Dự án của bạn để tạo cái nhìn tổng quan về danh mục dự án</b></li> </ul>
-
-    '
-  text_custom_logo_instructions: 'Logo tự động chia tỷ lệ để vừa với tiêu đề. Để có kết quả tốt nhất, hãy tải lên biểu tượng màu trắng trên hình ảnh trong suốt có kích thước 130×47px. Bạn có thể thêm bao nhiêu khoảng cách bên trong hình ảnh đó tùy thích.
-
-    '
-  text_custom_logo_mobile_instructions: 'Logo tự động chia tỷ lệ để vừa với tiêu đề. Để có kết quả tốt nhất, hãy tải lên biểu tượng màu trắng trên hình ảnh trong suốt có kích thước 130×33px. Bạn có thể thêm bao nhiêu khoảng cách bên trong hình ảnh đó tùy thích.
-
-    '
-  text_custom_export_logo_instructions: 'Đây là logo xuất hiện trong bản xuất PDF của bạn. Nó cần phải là tệp hình ảnh PNG hoặc JPEG. Nên sử dụng biểu tượng màu đen hoặc màu trên nền trong suốt hoặc trắng.
-
-    '
-  text_custom_export_cover_instructions: 'Đây là hình ảnh xuất hiện dưới nền trang bìa trong bản xuất PDF của bạn. Nó cần phải có kích thước tệp hình ảnh PNG hoặc JPEG có chiều rộng khoảng 800px x chiều cao khoảng 500px.
-
-    '
-  text_custom_export_footer_instructions: 'Xuất PDF sẽ bao gồm một phần tử đồ họa được đặt ở bên trái chân trang. Hình ảnh này phải là tệp PNG hoặc JPEG có chiều rộng khoảng 200 pixel.
-
-    '
-  label_custom_export_font_instructions: 'Tải lên và quản lý phông chữ TrueType (.ttf) tùy chỉnh được sử dụng trong bản xuất PDF của bạn. Để có kết quả tốt nhất, hãy sử dụng các tệp phù hợp từ cùng một họ phông chữ. Nếu không có phông chữ nào được cung cấp thì phông chữ NotoSans mặc định sẽ được sử dụng.
-
-    '
-  label_custom_export_images_instructions: 'Tải lên và quản lý các tệp hình ảnh tùy chỉnh được sử dụng trong bản xuất PDF của bạn.
-
-    '
-  text_custom_export_font_regular_instructions: 'Đây là tập tin phông chữ cho văn bản thông thường. Nó cần phải ở định dạng TTF và được yêu cầu.
-
-    '
-  text_custom_export_font_bold_instructions: 'Đây là tập tin phông chữ cho văn bản in đậm. Nó cần phải ở định dạng TTF.
-
-    '
-  text_custom_export_font_italic_instructions: 'Đây là tập tin phông chữ cho văn bản in nghiêng. Nó cần phải ở định dạng TTF.
-
-    '
-  text_custom_export_font_bold_italic_instructions: 'Đây là tập tin phông chữ cho văn bản in đậm và in nghiêng. Nó cần phải ở định dạng TTF.
-
-    '
-  text_custom_favicon_instructions: 'Đây là biểu tượng nhỏ xuất hiện trong cửa sổ/tab trình duyệt của bạn bên cạnh tiêu đề trang. Nó phải là tệp hình ảnh PNG bình phương có kích thước 32 x 32 pixel với nền trong suốt.
-
-    '
-  text_custom_touch_icon_instructions: 'Đây là biểu tượng xuất hiện trên điện thoại di động hoặc máy tính bảng của bạn khi bạn đặt dấu trang trên màn hình chính. Nó phải là tệp hình ảnh PNG có kích thước 180 x 180 pixel bình phương. Vui lòng đảm bảo nền của hình ảnh không trong suốt, nếu không nó sẽ trông xấu trên iOS.
-
-    '
-  text_database_allows_tsv: Tùy chọn cho phép TSVector của Database
-  text_default_administrator_account_changed: Tài khoản quản trị viên mặc định đã thay đổi
-  text_default_encoding: 'Mặc định: UTF-8'
-  text_destroy: xóa
-  text_destroy_with_associated: 'There are additional objects associated with the gói công việc (work package)(s) that are to be deleted. Those objects are of the following types:'
-  text_destroy_what_to_do: Bạn muốn làm gì?
+      sentence_connector: "và"
+      skip_last_comma: "sai"
+  text_accessibility_hint: "Chế độ trợ năng được thiết kế dành cho người dùng bị mù, khuyết tật vận động hoặc có thị lực kém. Đối với các yếu tố tập trung sau này được đánh dấu đặc biệt. Xin lưu ý rằng mô-đun Backlogs không khả dụng ở chế độ này."
+  text_access_token_hint: "Mã thông báo truy cập cho phép bạn cấp cho các ứng dụng bên ngoài quyền truy cập vào tài nguyên trong Yojana."
+  text_analyze: "Phân tích sâu hơn: %{subject}"
+  text_are_you_sure: "Bạn có chắc không?"
+  open_link_in_a_new_tab: "Mở liên kết trong tab mới"
+  text_are_you_sure_continue: "Bạn có chắc chắn muốn tiếp tục không?"
+  text_are_you_sure_with_children: "Xóa gói công việc và tất cả các gói công việc con?"
+  text_are_you_sure_with_project_custom_fields: "Xóa thuộc tính này cũng sẽ xóa các giá trị của nó trong tất cả các dự án. Bạn có chắc chắn muốn làm điều này?"
+  text_are_you_sure_with_project_life_cycle_step: "Xóa giai đoạn này cũng sẽ xóa việc sử dụng nó trong tất cả các dự án. Bạn có chắc chắn muốn làm điều này?"
+  text_assign_to_project: "Giao cho dự án"
+  text_form_configuration: >
+    Bạn có thể tùy chỉnh các trường sẽ được hiển thị trong các gói công việc. Bạn có thể tự do nhóm các trường để phản ánh nhu cầu cho tên miền của bạn.
+  text_form_configuration_required_attribute: "Thuộc tính được đánh dấu là bắt buộc và do đó luôn được hiển thị"
+  text_caracters_maximum: "tối đa %{count} ký tự."
+  text_caracters_minimum: "Phải dài ít nhất %{count} ký tự."
+  text_comma_separated: "Cho phép nhiều giá trị (được phân tách bằng dấu phẩy)."
+  text_comment_wiki_page: "Bình luận cho trang wiki: %{page}"
+  text_custom_field_possible_values_info: "Một dòng cho mỗi giá trị"
+  text_custom_field_hint_activate_per_project: >
+    Khi sử dụng trường tùy chỉnh: Hãy nhớ rằng các trường tùy chỉnh cũng cần được kích hoạt cho mỗi dự án.
+  text_custom_field_hint_activate_per_project_and_type: >
+    Các trường tùy chỉnh cần được kích hoạt cho mỗi loại gói công việc và mỗi dự án.
+  text_project_custom_field_html: >
+    Phiên bản Enterprise sẽ thêm các phần bổ sung cho các trường tùy chỉnh của dự án: <br> <ul> <li><b>Thêm các trường tùy chỉnh cho dự án vào danh sách Dự án của bạn để tạo cái nhìn tổng quan về danh mục dự án</b></li> </ul>
+  text_custom_logo_instructions: >
+    Logo tự động chia tỷ lệ để vừa với tiêu đề. Để có kết quả tốt nhất, hãy tải lên biểu tượng màu trắng trên hình ảnh trong suốt có kích thước 130×47px. Bạn có thể thêm bao nhiêu khoảng cách bên trong hình ảnh đó tùy thích.
+  text_custom_logo_mobile_instructions: >
+    Logo tự động chia tỷ lệ để vừa với tiêu đề. Để có kết quả tốt nhất, hãy tải lên biểu tượng màu trắng trên hình ảnh trong suốt có kích thước 130×33px. Bạn có thể thêm bao nhiêu khoảng cách bên trong hình ảnh đó tùy thích.
+  text_custom_export_logo_instructions: >
+    Đây là logo xuất hiện trong bản xuất PDF của bạn. Nó cần phải là tệp hình ảnh PNG hoặc JPEG. Nên sử dụng biểu tượng màu đen hoặc màu trên nền trong suốt hoặc trắng.
+  text_custom_export_cover_instructions: >
+    Đây là hình ảnh xuất hiện dưới nền trang bìa trong bản xuất PDF của bạn. Nó cần phải có kích thước tệp hình ảnh PNG hoặc JPEG có chiều rộng khoảng 800px x chiều cao khoảng 500px.
+  text_custom_export_footer_instructions: >
+    Xuất PDF sẽ bao gồm một phần tử đồ họa được đặt ở bên trái chân trang. Hình ảnh này phải là tệp PNG hoặc JPEG có chiều rộng khoảng 200 pixel.
+  label_custom_export_font_instructions: >
+    Tải lên và quản lý phông chữ TrueType (.ttf) tùy chỉnh được sử dụng trong bản xuất PDF của bạn. Để có kết quả tốt nhất, hãy sử dụng các tệp phù hợp từ cùng một họ phông chữ. Nếu không có phông chữ nào được cung cấp thì phông chữ NotoSans mặc định sẽ được sử dụng.
+  label_custom_export_images_instructions: >
+    Tải lên và quản lý các tệp hình ảnh tùy chỉnh được sử dụng trong bản xuất PDF của bạn.
+  text_custom_export_font_regular_instructions: >
+    Đây là tập tin phông chữ cho văn bản thông thường. Nó cần phải ở định dạng TTF và được yêu cầu.
+  text_custom_export_font_bold_instructions: >
+    Đây là tập tin phông chữ cho văn bản in đậm. Nó cần phải ở định dạng TTF.
+  text_custom_export_font_italic_instructions: >
+    Đây là tập tin phông chữ cho văn bản in nghiêng. Nó cần phải ở định dạng TTF.
+  text_custom_export_font_bold_italic_instructions: >
+    Đây là tập tin phông chữ cho văn bản in đậm và in nghiêng. Nó cần phải ở định dạng TTF.
+  text_custom_favicon_instructions: >
+    Đây là biểu tượng nhỏ xuất hiện trong cửa sổ/tab trình duyệt của bạn bên cạnh tiêu đề trang. Nó phải là tệp hình ảnh PNG bình phương có kích thước 32 x 32 pixel với nền trong suốt.
+  text_custom_touch_icon_instructions: >
+    Đây là biểu tượng xuất hiện trên điện thoại di động hoặc máy tính bảng của bạn khi bạn đặt dấu trang trên màn hình chính. Nó phải là tệp hình ảnh PNG có kích thước 180 x 180 pixel bình phương. Vui lòng đảm bảo nền của hình ảnh không trong suốt, nếu không nó sẽ trông xấu trên iOS.
+  text_database_allows_tsv: "Tùy chọn cho phép TSVector của Database"
+  text_default_administrator_account_changed: "Tài khoản quản trị viên mặc định đã thay đổi"
+  text_default_encoding: "Mặc định: UTF-8"
+  text_destroy: "xóa"
+  text_destroy_with_associated: "Có các đối tượng bổ sung liên quan đến (các) gói công việc sẽ bị xóa. Các đối tượng đó có các loại sau:"
+  text_destroy_what_to_do: "Bạn muốn làm gì?"
   text_diff_truncated: "... Sự khác biệt này đã bị cắt bớt vì nó vượt quá kích thước tối đa có thể được hiển thị."
   text_email_delivery_not_configured: |-
     Gửi email không được cấu hình và thông báo bị vô hiệu hóa.
@@ -5697,41 +5616,30 @@ vi:
   text_line_separated: Cho phép nhiều giá trị (mỗi giá trị một dòng).
   text_load_default_configuration: Tải cấu hình mặc định
   text_no_roles_defined: Không có vai trò nào được xác định.
-  text_no_access_tokens_configurable: Không có mã thông báo truy cập nào có thể được cấu hình.
-  text_no_configuration_data: |-
-    Vai trò, loại, trạng thái gói công việc và quy trình làm việc chưa được định cấu hình.
-    Rất khuyến khích tải cấu hình mặc định. Bạn sẽ có thể sửa đổi nó sau khi tải.
-  text_no_notes: Không có bình luận nào cho gói công việc này.
-  text_notice_too_many_values_are_inperformant: 'Lưu ý: Hiển thị hơn 100 mục trên mỗi trang có thể làm tăng thời gian tải trang.'
-  text_notice_security_badge_displayed_html: 'Lưu ý: nếu được kích hoạt, một bảng thông báo về tình trạng của phần mềm sẽ được hiển thị tại trang quản trị <a href="%{information_panel_path}">%{information_panel_label}</a>, và tại trang chủ. Thông tin này chỉ được thấy bởi Quản trị viên. <br/> Bảng thông báo sẽ kiểm tra các thông tin cập nhật từ OpenProject và thông báo về các cập nhật mới hay các lỗi được phát hiện. Để biết thêm chi tiết, vui lòng tham khảo <a href="%{more_info_url}">tài liệu cấu hình</a>.
-
-    '
-  text_own_membership_delete_confirmation: |-
-    Bạn sắp xóa một số hoặc tất cả các quyền của mình và sau đó có thể không chỉnh sửa được dự án này nữa.
-    Bạn có chắc chắn muốn tiếp tục không?
-  text_permanent_delete_confirmation_checkbox_label: Tôi hiểu rằng việc xóa này không thể đảo ngược
-  text_permanent_remove_confirmation_checkbox_label: Tôi hiểu rằng việc xóa này không thể hoàn tác được
-  text_plugin_assets_writable: Thư mục nội dung plugin có thể ghi
-  text_powered_by: Được cung cấp bởi %{link}
-  text_project_identifier_info: Chỉ cho phép chữ cái viết thường (a-z), số, dấu gạch ngang và dấu gạch dưới, phải bắt đầu bằng chữ cái viết thường.
-  text_project_identifier_description: The project identifier is prepended to all gói công việc (work package) IDs. If the identifier is "PROJ" for example, the gói công việc (work package) identifier will be "PROJ-12" or "PROJ-246".
-  text_project_identifier_url_description: The project identifier is included in the URL of the project.
-  text_project_identifier_handle_format: Must start with a letter and contain only uppercase letters, numbers, and underscores (max 10 characters).
-  text_project_identifier_format: Must start with a lowercase letter. Only lowercase letters (a-z), numbers, dashes and underscores are allowed.
-  text_reassign: 'Phân công lại cho gói công việc:'
+  text_no_access_tokens_configurable: "Không có mã thông báo truy cập nào có thể được cấu hình."
+  text_no_configuration_data: "Vai trò, loại, trạng thái gói công việc và quy trình làm việc chưa được định cấu hình.\nRất khuyến khích tải cấu hình mặc định. Bạn sẽ có thể sửa đổi nó sau khi tải."
+  text_no_notes: "Không có bình luận nào cho gói công việc này."
+  text_notice_too_many_values_are_inperformant: "Lưu ý: Hiển thị hơn 100 mục trên mỗi trang có thể làm tăng thời gian tải trang."
+  text_notice_security_badge_displayed_html: >
+    Lưu ý: nếu được kích hoạt, một bảng thông báo về tình trạng của phần mềm sẽ được hiển thị tại trang quản trị <a href="%{information_panel_path}">%{information_panel_label}</a>, và tại trang chủ. Thông tin này chỉ được thấy bởi Quản trị viên. <br/> Bảng thông báo sẽ kiểm tra các thông tin cập nhật từ Yojana và thông báo về các cập nhật mới hay các lỗi được phát hiện. Để biết thêm chi tiết, vui lòng tham khảo <a href="%{more_info_url}">tài liệu cấu hình</a>.
+  text_own_membership_delete_confirmation: "Bạn sắp xóa một số hoặc tất cả các quyền của mình và sau đó có thể không chỉnh sửa được dự án này nữa.\nBạn có chắc chắn muốn tiếp tục không?"
+  text_permanent_delete_confirmation_checkbox_label: "Tôi hiểu rằng việc xóa này không thể đảo ngược"
+  text_permanent_remove_confirmation_checkbox_label: "Tôi hiểu rằng việc xóa này không thể hoàn tác được"
+  text_plugin_assets_writable: "Thư mục nội dung plugin có thể ghi"
+  text_powered_by: "Được cung cấp bởi %{link}"
+  text_project_identifier_info: "Chỉ cho phép chữ cái viết thường (a-z), số, dấu gạch ngang và dấu gạch dưới, phải bắt đầu bằng chữ cái viết thường."
+  text_reassign: "Phân công lại cho gói công việc:"
+  text_regexp_info: "ví dụ. ^[A-Z0-9]+$"
   text_regexp_multiline: 'Biểu thức được áp dụng ở chế độ đa dòng. Ví dụ: ^---\s+'
-  text_rename_wiki_page: Rename wiki page
-  text_repository_usernames_mapping: |-
-    Chọn hoặc cập nhật người dùng OpenProject được ánh xạ tới từng tên người dùng được tìm thấy trong nhật ký kho lưu trữ.
-    Người dùng có cùng tên người dùng hoặc email của OpenProject và kho lưu trữ sẽ được tự động ánh xạ.
-  text_status_changed_by_changeset: Được áp dụng trong bộ thay đổi %{value}.
-  text_table_difference_description: Trong bảng này, đơn %{entries} được hiển thị. Bạn có thể xem sự khác biệt giữa hai mục bất kỳ bằng cách trước tiên chọn các hộp kiểm tương ứng trong bảng. Khi nhấp vào nút bên dưới bảng, sự khác biệt sẽ được hiển thị.
-  text_time_logged_by_changeset: Được áp dụng trong bộ thay đổi %{value}.
-  text_tip_work_package_begin_day: gói công việc bắt đầu từ ngày hôm nay
-  text_tip_work_package_begin_end_day: gói công việc bắt đầu và kết thúc ngày hôm nay
-  text_tip_work_package_end_day: gói công việc kết thúc vào ngày hôm nay
-  text_type_no_workflow: Không có quy trình làm việc nào được xác định cho loại này
-  text_unallowed_characters: Ký tự không được phép
+  text_repository_usernames_mapping: "Chọn hoặc cập nhật người dùng Yojana được ánh xạ tới từng tên người dùng được tìm thấy trong nhật ký kho lưu trữ.\nNgười dùng có cùng tên người dùng hoặc email của Yojana và kho lưu trữ sẽ được tự động ánh xạ."
+  text_status_changed_by_changeset: "Được áp dụng trong bộ thay đổi %{value}."
+  text_table_difference_description: "Trong bảng này, đơn %{entries} được hiển thị. Bạn có thể xem sự khác biệt giữa hai mục bất kỳ bằng cách trước tiên chọn các hộp kiểm tương ứng trong bảng. Khi nhấp vào nút bên dưới bảng, sự khác biệt sẽ được hiển thị."
+  text_time_logged_by_changeset: "Được áp dụng trong bộ thay đổi %{value}."
+  text_tip_work_package_begin_day: "gói công việc bắt đầu từ ngày hôm nay"
+  text_tip_work_package_begin_end_day: "gói công việc bắt đầu và kết thúc ngày hôm nay"
+  text_tip_work_package_end_day: "gói công việc kết thúc vào ngày hôm nay"
+  text_type_no_workflow: "Không có quy trình làm việc nào được xác định cho loại này"
+  text_unallowed_characters: "Ký tự không được phép"
   text_user_invited: Người dùng đã được mời và đang chờ đăng ký.
   text_user_wrote: "%{value} đã viết:"
   text_wrote: đã viết
@@ -5793,18 +5701,17 @@ vi:
     help_and_support: Trợ giúp và hỗ trợ
   total_progress: Tổng tiến độ
   user:
-    all: tất cả
-    active: Đang hoạt động
-    activate: kích hoạt
-    activate_and_reset_failed_logins: Kích hoạt và đặt lại thông tin đăng nhập thất bại
-    authentication_provider: Nhà cung cấp xác thực
-    identity_url_text: Mã định danh duy nhất nội bộ do nhà cung cấp dịch vụ xác thực cung cấp.
-    authentication_settings_disabled_due_to_external_authentication: 'Người dùng này xác thực thông qua nhà cung cấp xác thực bên ngoài, do đó không có mật khẩu nào trong OpenProject cần thay đổi.
-
-      '
-    authorization_rejected: Bạn không được phép đăng nhập.
-    assign_random_password: Gán mật khẩu ngẫu nhiên (gửi cho người dùng qua email)
-    blocked: bị khóa tạm thời
+    all: "tất cả"
+    active: "Đang hoạt động"
+    activate: "kích hoạt"
+    activate_and_reset_failed_logins: "Kích hoạt và đặt lại thông tin đăng nhập thất bại"
+    authentication_provider: "Nhà cung cấp xác thực"
+    identity_url_text: "Mã định danh duy nhất nội bộ do nhà cung cấp dịch vụ xác thực cung cấp."
+    authentication_settings_disabled_due_to_external_authentication: >
+      Người dùng này xác thực thông qua nhà cung cấp xác thực bên ngoài, do đó không có mật khẩu nào trong Yojana cần thay đổi.
+    authorization_rejected: "Bạn không được phép đăng nhập."
+    assign_random_password: "Gán mật khẩu ngẫu nhiên (gửi cho người dùng qua email)"
+    blocked: "bị khóa tạm thời"
     blocked_num_failed_logins:
       other: bị khóa tạm thời (%{count} lần đăng nhập không thành công)
     confirm_status_change: Bạn sắp thay đổi trạng thái '%{name}'. Bạn có chắc chắn muốn tiếp tục không?
@@ -5834,7 +5741,17 @@ vi:
   note_password_login_disabled_link: Password login has been disabled through a [cấu hình setting](cấu hình_url).
   warning: Cảnh báo
   warning_attachments_not_saved: "%{count} tệp không thể lưu được."
-  warning_imminent_user_limit_html: 'You invited more users than are supported by your current plan. Invited users may not be able to join your OpenProject environment. Please [upgrade your plan](upgrade_url) or block existing users in order to allow invited and registered users to join.
+  warning_imminent_user_limit: >
+    Bạn đã mời nhiều người dùng hơn số lượng được hỗ trợ bởi gói hiện tại của bạn. Những người dùng được mời có thể không thể tham gia vào môi trường Yojana của bạn. Vui lòng <a href="%{upgrade_url}">nâng cấp gói của bạn</a> hoặc khóa người dùng hiện tại để cho phép người dùng được mời và đã đăng ký tham gia.
+  warning_registration_token_expired: |
+    Mail kích hoạt đã hết hạn. Sẽ gửi mail mới tới %{email}.
+  warning_user_limit_reached: >
+    Việc thêm người dùng bổ sung sẽ vượt quá giới hạn hiện tại. Vui lòng liên hệ với quản trị viên để tăng giới hạn người dùng nhằm đảm bảo người dùng bên ngoài có thể truy cập phiên bản này.
+  warning_user_limit_reached_admin: >
+    Thêm người dùng bổ sung sẽ vượt quá giới hạn hiện tại. Vui lòng <a href="%{upgrade_url}">nâng cấp gói của bạn</a> để đảm bảo người dùng bên ngoài có thể truy cập vào phiên bản này.
+  warning_user_limit_reached_instructions: >
+    Bạn đã đạt đến giới hạn người dùng của mình (%{current}/%{max} người dùng đang hoạt động). Vui lòng liên hệ sales@girishm.info để nâng cấp gói phiên bản Enterprise của bạn và thêm người dùng bổ sung.
+  warning_protocol_mismatch_html: >
 
     '
   warning_registration_token_expired: 'Mail kích hoạt đã hết hạn. Sẽ gửi mail mới tới %{email}.
@@ -6132,55 +6049,48 @@ vi:
       non_confidential: Không bí mật
       default_scopes: "(Phạm vi mặc định)"
       instructions:
-        enabled: Kích hoạt ứng dụng này, cho phép người dùng thực hiện cấp phép với nó.
-        name: Tên ứng dụng của bạn. Điều này sẽ được hiển thị cho người dùng khác khi ủy quyền.
-        redirect_uri_html: 'Các URL người dùng được ủy quyền có thể được chuyển hướng đến. Mỗi mục nhập trên một dòng. <br/> Nếu bạn đang đăng ký một ứng dụng máy tính để bàn, hãy sử dụng URL sau.
-
-          '
-        confidential: Kiểm tra xem ứng dụng sẽ được sử dụng trong khi thông tin mật của khách hàng vẫn được đảm bảo. Các ứng dụng di động và Ứng dụng web được cho là không bảo mật.
-        scopes: Kiểm tra phạm vi bạn muốn ứng dụng cấp quyền truy cập. Nếu không có phạm vi nào được chọn, api_v3 sẽ được giả sử.
-        client_credential_user_id: ID người dùng tùy chọn để mạo danh khi khách hàng sử dụng ứng dụng này. Để trống để chỉ cho phép truy cập công cộng
-        register_intro: Nếu bạn đang phát triển ứng dụng khách API OAuth cho OpenProject, bạn có thể đăng ký ứng dụng đó bằng biểu mẫu này để tất cả người dùng sử dụng.
-        default_scopes: ''
+        enabled: "Kích hoạt ứng dụng này, cho phép người dùng thực hiện cấp phép với nó."
+        name: "Tên ứng dụng của bạn. Điều này sẽ được hiển thị cho người dùng khác khi ủy quyền."
+        redirect_uri_html: >
+          Các URL người dùng được ủy quyền có thể được chuyển hướng đến. Mỗi mục nhập trên một dòng. <br/> Nếu bạn đang đăng ký một ứng dụng máy tính để bàn, hãy sử dụng URL sau.
+        confidential: "Kiểm tra xem ứng dụng sẽ được sử dụng trong khi thông tin mật của khách hàng vẫn được đảm bảo. Các ứng dụng di động và Ứng dụng web được cho là không bảo mật."
+        scopes: "Kiểm tra phạm vi bạn muốn ứng dụng cấp quyền truy cập. Nếu không có phạm vi nào được chọn, api_v3 sẽ được giả sử."
+        client_credential_user_id: "ID người dùng tùy chọn để mạo danh khi khách hàng sử dụng ứng dụng này. Để trống để chỉ cho phép truy cập công cộng"
+        register_intro: "Nếu bạn đang phát triển ứng dụng khách API OAuth cho Yojana, bạn có thể đăng ký ứng dụng đó bằng biểu mẫu này để tất cả người dùng sử dụng."
+        default_scopes: ""
     header:
       builtin_applications: Các ứng dụng OAuth tích hợp
       other_applications: Các ứng dụng OAuth khác
     empty_application_lists: Không có ứng dụng OAuth nào được đăng ký.
-    client_id: ID người dùng
-    client_secret_notice: 'Đây là lần duy nhất chúng tôi có thể in bí mật của khách hàng, vui lòng ghi lại và giữ an toàn. Nó phải được coi như một mật khẩu và OpenProject không thể lấy lại được sau này.
-
-      '
+    client_id: "ID người dùng"
+    client_secret_notice: >
+      Đây là lần duy nhất chúng tôi có thể in bí mật của khách hàng, vui lòng ghi lại và giữ an toàn. Nó phải được coi như một mật khẩu và Yojana không thể lấy lại được sau này.
     authorization_dialog:
-      authorize: Xác thực
-      cancel: Hủy bỏ và từ chối xác thực.
-      prompt_html: Ủy quyền cho <strong>%{application_name}</strong> sử dụng tài khoản của bạn <em>%{login}</em>?
-      title: Ủy quyền %{application_name}
-      wants_to_access_html: 'Ứng dụng này yêu cầu quyền truy cập vào tài khoản OpenProject của bạn. <br/> <strong>Nó đã yêu cầu các quyền sau:</strong>
-
-        '
+      authorize: "Xác thực"
+      cancel: "Hủy bỏ và từ chối xác thực."
+      prompt_html: "Ủy quyền cho <strong>%{application_name}</strong> sử dụng tài khoản của bạn <em>%{login}</em>?"
+      title: "Ủy quyền %{application_name}"
+      wants_to_access_html: >
+        Ứng dụng này yêu cầu quyền truy cập vào tài khoản Yojana của bạn. <br/> <strong>Nó đã yêu cầu các quyền sau:</strong>
     scopes:
-      api_v3: Truy cập đầy đủ API v3
-      api_v3_text: Ứng dụng sẽ nhận được quyền truy cập đọc và ghi đầy đủ vào OpenProject API v3 để thay mặt bạn thực hiện các hành động.
-      mcp: Access to MCP
-      mcp_text: Application will receive access to the OpenProject MCP endpoints. They are a limited subset of APIv3, that's tailored for usage with AI agents.
+      api_v3: "Truy cập đầy đủ API v3"
+      api_v3_text: "Ứng dụng sẽ nhận được quyền truy cập đọc và ghi đầy đủ vào Yojana API v3 để thay mặt bạn thực hiện các hành động."
     grants:
       created_date: Đã duyệt
       scopes: quyền
       successful_application_revocation: Thu hồi ứng dụng %{application_name} thành công.
       none_given: Không có ứng dụng OAuth nào được cấp quyền truy cập vào tài khoản người dùng của bạn.
     flows:
-      authorization_code: Luồng mã ủy quyền
-      client_credentials: Luồng thông tin xác thực của khách hàng
-    client_credentials: Người dùng được sử dụng cho thông tin xác thực của Khách hàng
-    client_credentials_impersonation_set_to: Người dùng thông tin đăng nhập của khách hàng được đặt thành
-    client_credentials_impersonation_warning: 'Lưu ý: Khách hàng sử dụng luồng ''Thông tin xác thực khách hàng'' trong ứng dụng này sẽ có các quyền của người dùng này'
-    client_credentials_impersonation_html: 'Theo mặc định, OpenProject cung cấp ủy quyền OAuth 2.0 thông qua %{authorization_code_flow_link}. Bạn có thể tùy ý bật %{client_credentials_flow_link}, nhưng bạn phải cung cấp người dùng mà yêu cầu của họ sẽ được thực hiện thay mặt họ.
-
-      '
-    confirm_revoke_my_application:
-      other: Do you really want to remove this application? This will revoke %{count} tokens active for it.
-    authorization_error: Đã xảy ra lỗi ủy quyền.
-    my_registered_applications: Ứng dụng OAuth đã đăng ký
+      authorization_code: "Luồng mã ủy quyền"
+      client_credentials: "Luồng thông tin xác thực của khách hàng"
+    client_credentials: "Người dùng được sử dụng cho thông tin xác thực của Khách hàng"
+    client_credentials_impersonation_set_to: "Người dùng thông tin đăng nhập của khách hàng được đặt thành"
+    client_credentials_impersonation_warning: "Lưu ý: Khách hàng sử dụng luồng 'Thông tin xác thực khách hàng' trong ứng dụng này sẽ có các quyền của người dùng này"
+    client_credentials_impersonation_html: >
+      Theo mặc định, Yojana cung cấp ủy quyền OAuth 2.0 thông qua %{authorization_code_flow_link}. Bạn có thể tùy ý bật %{client_credentials_flow_link}, nhưng bạn phải cung cấp người dùng mà yêu cầu của họ sẽ được thực hiện thay mặt họ.
+    authorization_error: "Đã xảy ra lỗi ủy quyền."
+    revoke_my_application_confirmation: "Bạn có thực sự muốn xóa ứng dụng này? Điều này sẽ thu hồi %{token_count} hoạt động cho nó."
+    my_registered_applications: "Ứng dụng OAuth đã đăng ký"
   oauth_client:
     urn_connection_status:
       connected: đã kết nối
@@ -6193,39 +6103,36 @@ vi:
       label_request_token: Yêu cầu mã thông báo
       label_refresh_token: Làm mới mã thông báo
     errors:
-      oauth_authorization_code_grant_had_errors: Cấp quyền OAuth2 không thành công
-      oauth_reported: Đã báo cáo nhà cung cấp OAuth2
-      oauth_returned_error: OAuth2 trả về lỗi
-      oauth_returned_json_error: OAuth2 trả về lỗi JSON
-      oauth_returned_http_error: OAuth2 trả về lỗi mạng
-      oauth_returned_standard_error: OAuth2 trả về lỗi nội bộ
-      wrong_token_type_returned: OAuth2 trả về sai loại mã thông báo, mong đợi AccessToken::Bearer
-      oauth_issue_contact_admin: OAuth2 đã báo lỗi. Vui lòng liên hệ với quản trị viên hệ thống của bạn.
-      oauth_client_not_found: Không tìm thấy ứng dụng khách OAuth2 trong điểm cuối 'gọi lại' (redirect_uri).
-      refresh_token_called_without_existing_token: 'Lỗi nội bộ: Được gọi là Refresh_token mà không có mã thông báo hiện có trước đó.
-
-        '
-      refresh_token_updated_failed: Lỗi trong quá trình cập nhật OAuthClientToken
-      oauth_client_not_found_explanation: 'Lỗi này xuất hiện sau khi bạn đã cập nhật client_id và client_secret trong OpenProject nhưng chưa cập nhật trường ''Return URI'' trong nhà cung cấp OAuth2.
-
-        '
-      oauth_code_not_present: Không tìm thấy 'mã' OAuth2 trong điểm cuối 'gọi lại' (redirect_uri).
-      oauth_code_not_present_explanation: 'Lỗi này xuất hiện nếu bạn chọn sai loại phản hồi trong nhà cung cấp OAuth2. Response_type phải là ''code'' hoặc tương tự.
-
-        '
-      oauth_state_not_present: Không tìm thấy 'trạng thái' OAuth2 trong điểm cuối 'gọi lại' (redirect_uri).
-      oauth_state_not_present_explanation: "'Trạng thái' được sử dụng để chỉ ra cho OpenProject nơi tiếp tục sau khi ủy quyền OAuth2 thành công. 'Trạng thái' bị thiếu là lỗi nội bộ có thể xuất hiện trong quá trình thiết lập. Vui lòng liên hệ với quản trị viên hệ thống của bạn.\n"
+      oauth_authorization_code_grant_had_errors: "Cấp quyền OAuth2 không thành công"
+      oauth_reported: "Đã báo cáo nhà cung cấp OAuth2"
+      oauth_returned_error: "OAuth2 trả về lỗi"
+      oauth_returned_json_error: "OAuth2 trả về lỗi JSON"
+      oauth_returned_http_error: "OAuth2 trả về lỗi mạng"
+      oauth_returned_standard_error: "OAuth2 trả về lỗi nội bộ"
+      wrong_token_type_returned: "OAuth2 trả về sai loại mã thông báo, mong đợi AccessToken::Bearer"
+      oauth_issue_contact_admin: "OAuth2 đã báo lỗi. Vui lòng liên hệ với quản trị viên hệ thống của bạn."
+      oauth_client_not_found: "Không tìm thấy ứng dụng khách OAuth2 trong điểm cuối 'gọi lại' (redirect_uri)."
+      refresh_token_called_without_existing_token: >
+        Lỗi nội bộ: Được gọi là Refresh_token mà không có mã thông báo hiện có trước đó.
+      refresh_token_updated_failed: "Lỗi trong quá trình cập nhật OAuthClientToken"
+      oauth_client_not_found_explanation: >
+        Lỗi này xuất hiện sau khi bạn đã cập nhật client_id và client_secret trong Yojana nhưng chưa cập nhật trường 'Return URI' trong nhà cung cấp OAuth2.
+      oauth_code_not_present: "Không tìm thấy 'mã' OAuth2 trong điểm cuối 'gọi lại' (redirect_uri)."
+      oauth_code_not_present_explanation: >
+        Lỗi này xuất hiện nếu bạn chọn sai loại phản hồi trong nhà cung cấp OAuth2. Response_type phải là 'code' hoặc tương tự.
+      oauth_state_not_present: "Không tìm thấy 'trạng thái' OAuth2 trong điểm cuối 'gọi lại' (redirect_uri)."
+      oauth_state_not_present_explanation: >
+        'Trạng thái' được sử dụng để chỉ ra cho Yojana nơi tiếp tục sau khi ủy quyền OAuth2 thành công. 'Trạng thái' bị thiếu là lỗi nội bộ có thể xuất hiện trong quá trình thiết lập. Vui lòng liên hệ với quản trị viên hệ thống của bạn.
       rack_oauth2:
-        client_secret_invalid: Bí mật của ứng dụng khách không hợp lệ (client_secret_invalid)
-        invalid_request: 'Máy chủ ủy quyền OAuth2 phản hồi bằng ''invalid_request''. Lỗi này xuất hiện nếu bạn cố gắng ủy quyền nhiều lần hoặc trong trường hợp có vấn đề về kỹ thuật.
-
-          '
-        invalid_response: Máy chủ ủy quyền OAuth2 đã cung cấp phản hồi không hợp lệ (invalid_response)
-        invalid_grant: Máy chủ ủy quyền OAuth2 yêu cầu bạn ủy quyền lại (invalid_grant).
-        invalid_client: Máy chủ ủy quyền OAuth2 không nhận ra OpenProject (invalid_client).
-        unauthorized_client: Máy chủ ủy quyền OAuth2 từ chối loại cấp phép (unauthorized_client)
-        unsupported_grant_type: Máy chủ ủy quyền OAuth2 yêu cầu bạn ủy quyền lại (unsupported_grant_type).
-        invalid_scope: Bạn không được phép truy cập tài nguyên được yêu cầu (invalid_scope).
+        client_secret_invalid: "Bí mật của ứng dụng khách không hợp lệ (client_secret_invalid)"
+        invalid_request: >
+          Máy chủ ủy quyền OAuth2 phản hồi bằng 'invalid_request'. Lỗi này xuất hiện nếu bạn cố gắng ủy quyền nhiều lần hoặc trong trường hợp có vấn đề về kỹ thuật.
+        invalid_response: "Máy chủ ủy quyền OAuth2 đã cung cấp phản hồi không hợp lệ (invalid_response)"
+        invalid_grant: "Máy chủ ủy quyền OAuth2 yêu cầu bạn ủy quyền lại (invalid_grant)."
+        invalid_client: "Máy chủ ủy quyền OAuth2 không nhận ra Yojana (invalid_client)."
+        unauthorized_client: "Máy chủ ủy quyền OAuth2 từ chối loại cấp phép (unauthorized_client)"
+        unsupported_grant_type: "Máy chủ ủy quyền OAuth2 yêu cầu bạn ủy quyền lại (unsupported_grant_type)."
+        invalid_scope: "Bạn không được phép truy cập tài nguyên được yêu cầu (invalid_scope)."
   http:
     request:
       failed_authorization: Yêu cầu phía máy chủ không tự ủy quyền được.
@@ -6235,18 +6142,18 @@ vi:
   you: bạn
   link: liên kết
   plugin_openproject_auth_plugins:
-    name: Plugin xác thực OpenProject
-    description: Tích hợp các nhà cung cấp chiến lược OmniAuth để xác thực trong OpenProject.
+    name: "Plugin xác thực Yojana"
+    description: "Tích hợp các nhà cung cấp chiến lược OmniAuth để xác thực trong Yojana."
   plugin_openproject_auth_saml:
-    name: OmniAuth SAML / Đăng nhập một lần
-    description: Thêm nhà cung cấp SAML OmniAuth vào OpenProject
+    name: "OmniAuth SAML / Đăng nhập một lần"
+    description: "Thêm nhà cung cấp SAML OmniAuth vào Yojana"
   enterprise_plans:
     legacy_enterprise: Kế hoạch doanh nghiệp
   token:
     hashed_token:
       display_value_placeholder: "***"
   external_link_warning:
-    title: Rời khỏi OpenProject
-    warning_message: Bạn sắp rời khỏi OpenProject và truy cập vào một trang web bên ngoài. Xin lưu ý rằng các trang web bên ngoài không nằm dưới sự kiểm soát của chúng tôi và có thể có các chính sách bảo mật và an ninh khác nhau.
-    continue_message: Bạn có chắc chắn muốn tiếp tục đến liên kết bên ngoài sau đây không?
-    continue_button: Tiếp tục đến trang web bên ngoài
+    title: "Rời khỏi Yojana"
+    warning_message: "Bạn sắp rời khỏi Yojana và truy cập vào một trang web bên ngoài. Xin lưu ý rằng các trang web bên ngoài không nằm dưới sự kiểm soát của chúng tôi và có thể có các chính sách bảo mật và an ninh khác nhau."
+    continue_message: "Bạn có chắc chắn muốn tiếp tục đến liên kết bên ngoài sau đây không?"
+    continue_button: "Tiếp tục đến trang web bên ngoài"

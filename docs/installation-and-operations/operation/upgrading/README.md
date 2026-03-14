@@ -131,7 +131,7 @@ docker-compose up -d
 ```
 
 Please note that you can override the `TAG` that is used to pull the OpenProject image from
-the [Docker Hub](https://hub.docker.com/r/openproject/openproject/).
+the [Docker Hub](https://hub.docker.com/r/girish17/yojana/).
 
 ### All-in-one container
 
@@ -140,8 +140,8 @@ When using the all-in-one docker container, you need to perform the following st
 1. First, pull the latest version of the image:
 
 ```shell
-docker pull openproject/openproject:VERSION
-# e.g. docker pull openproject/openproject:17
+docker pull girish17/yojana:VERSION
+# e.g. docker pull girish17/yojana:17
 ```
 
 Then stop and remove your existing container (we assume that you are running with the recommended production setup here):
@@ -155,7 +155,7 @@ Finally, re-launch the container in the same way you launched it previously.
 This time, it will use the new image:
 
 ```shell
-docker run -d ... openproject/openproject:VERSION
+docker run -d ... girish17/yojana:VERSION
 ```
 
 #### I have already started OpenProject without mounted volumes. How do I save my data during an update?

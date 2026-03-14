@@ -2,9 +2,9 @@
 ---
 en:
   plugin_openproject_two_factor_authentication:
-    name: "OpenProject Two-factor authentication"
+    name: "Yojana Two-factor authentication"
     description: >-
-      This OpenProject plugin authenticates your users using two-factor authentication by means of
+      This Yojana plugin authenticates your users using two-factor authentication by means of
       one-time password through the TOTP standard (Google Authenticator) or sent to the user's cell
       phone via SMS or voice call.
 
@@ -81,6 +81,9 @@ en:
       text_2fa_enabled: "Upon every login, this user will be requested to enter a OTP token from their default 2FA device."
       text_2fa_disabled: "The user did not set up a 2FA device through their 'My account page'"
       only_sms_allowed: "Only SMS delivery can be set up for other users."
+    upsell:
+      title: "Two-factor authentication"
+      description: "Strenghten the security of your Yojana instance by offering (or enforcing) two-factor authentification to all project members."
     backup_codes:
       singular: Backup code
       plural: Backup codes

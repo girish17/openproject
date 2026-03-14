@@ -141,7 +141,7 @@ de:
                 options:
                   name: Erste Schritte
                   text: |
-                    Wir freuen uns, dass Sie dabei sind. Wir empfehlen die folgenden Punkte auszuprobieren, um in OpenProject loszulegen.
+                    Wir freuen uns, dass Sie dabei sind. Wir empfehlen die folgenden Punkte auszuprobieren, um in Yojana loszulegen.
 
                     Entdecken Sie die wichtigsten Funktionen mit unserer [geführten Tour]({{opSetting:base_url}}/projects/demo-project/work_packages/?start_onboarding_tour=true).
 
@@ -154,7 +154,7 @@ de:
                     5. *Weitere Module aktivieren*: &rightarrow; Gehen Sie zu [Projekteinstellungen &rightarrow; Modules]({{opSetting:base_url}}/projects/demo-project/settings/modules).
                     6. *Aufgaben im Projekt erledigen*: &rightarrow; Gehe zu [Arbeitspakete &rightarrow; Tasks]({{opSetting:base_url}}/projects/demo-project/work_packages/details/##wp.id:set_date_and_location_of_conference/overview?query_id=##query.id:demo_project__query__tasks).
 
-                    Hier finden Sie unsere [User Guides](https://www.openproject.org/docs/user-guide/).
+                    Hier finden Sie unsere [User Guides](https://www.yojana.girishm.info/docs/user-guide/).
                     Bitte kontaktieren Sie uns gerne bei offenen Fragen haben wenn Sie Unterstützung benötigen: [Support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
@@ -211,7 +211,7 @@ de:
             * Änderungshistorie anzeigen
             * Als Markdown anzeigen
 
-            Weitere Informationen: [https://www.openproject.org/de/docs/nutzungshandbuch/wiki/](https://www.openproject.org/de/docs/nutzungshandbuch/wiki/)
+            Weitere Informationen: [https://www.yojana.girishm.info/de/docs/nutzungshandbuch/wiki/](https://www.yojana.girishm.info/de/docs/nutzungshandbuch/wiki/)
         scrum-project:
           name: Scrum-Projekt
           status_explanation: Alle Aufgaben sind im Zeitplan. Die Beteiligten kennen ihre Aufgaben. Das System ist komplett eingerichtet.
@@ -313,7 +313,7 @@ de:
                 options:
                   name: Erste Schritte
                   text: |
-                    Wir freuen uns, dass Sie dabei sind! Wir schlagen vor, dass Sie den unten aufgeführten ersten Schritten in OpenProject folgen.
+                    Wir freuen uns, dass Sie dabei sind! Wir schlagen vor, dass Sie den unten aufgeführten ersten Schritten in Yojana folgen.
 
                     _Probieren Sie die folgenden Schritte:_
 
@@ -325,7 +325,7 @@ de:
                     6. *Erstellen Sie ein Sprint-Wiki*: &rightarrow; Navigieren Sie zu [Backlogs]({{opSetting:base_url}}/projects/your-scrum-project/backlogs) und öffnen Sie das Sprint-Wiki aus dem rechten Dropdown-Menü des Sprints. Sie können das [Wiki Template]({{opSetting:base_url}}/projects/your-scrum-project/wiki/) basierend auf Ihren Anforderungen bearbeiten.
                     7. *Aktivieren Sie zusätzliche Module*: &rightarrow; Wechseln Sie zu [Projektkonfiguration &rightarrow; Module]({{opSetting:base_url}}/projects/your-scrum-project/settings/modules).
 
-                    Zusätzlich finden Sie hier unser [Nutzungshandbuch](https://www.openproject.org/de/docs/nutzungshandbuch/).
+                    Zusätzlich finden Sie hier unser [Nutzungshandbuch](https://www.yojana.girishm.info/de/docs/nutzungshandbuch/).
                     Lassen Sie uns gerne wissen, wenn Sie Fragen haben oder Unterstützung benötigen. Kontaktieren Sie uns: [support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
@@ -488,19 +488,19 @@ de:
         item_6:
           name: Bug
       welcome:
-        title: Willkommen bei OpenProject!
+        title: Willkommen bei Yojana!
         text: |
-          OpenProject ist die führende Software für Open Source Projektmanagement. Es unterstützt das klassische und agile sowie das hybride Projektmanagement und gibt Ihnen die volle Kontrolle über Ihre Daten.
+          Yojana ist die führende Software für Open Source Projektmanagement. Es unterstützt das klassische und agile sowie das hybride Projektmanagement und gibt Ihnen die volle Kontrolle über Ihre Daten.
 
           Kernfunktionen und Anwendungsfälle:
 
-          * [Projektportfolio Management](https://www.openproject.org/de/projektmanagement-funktionen/projektportfolio-management/)
-          * [Projektplanung](https://www.openproject.org/de/projektmanagement-funktionen/projektplanung/)
-          * [Aufgaben-Management und Problemverfolgung](https://www.openproject.org/de/projektmanagement-funktionen/aufgabenverwaltung/)
-          * [Agile Boards (Scrum und Kanban)](https://www.openproject.org/de/projektmanagement-funktionen/agiles-projektmanagement/)
-          * [Anforderungs-Management und Release-Planung](https://www.openproject.org/de/projektmanagement-funktionen/produktentwicklung/)
-          * [Zeit- und Kostenerfassung, Budgets](https://www.openproject.org/de/projektmanagement-funktionen/zeiterfassung/)
-          * [Team-Zusammenarbeit und Dokumentation](https://www.openproject.org/de/projektmanagement-funktionen/team-kollaboration/)
+          * [Projektportfolio Management](https://www.yojana.girishm.info/de/projektmanagement-funktionen/projektportfolio-management/)
+          * [Projektplanung](https://www.yojana.girishm.info/de/projektmanagement-funktionen/projektplanung/)
+          * [Aufgaben-Management und Problemverfolgung](https://www.yojana.girishm.info/de/projektmanagement-funktionen/aufgabenverwaltung/)
+          * [Agile Boards (Scrum und Kanban)](https://www.yojana.girishm.info/de/projektmanagement-funktionen/agiles-projektmanagement/)
+          * [Anforderungs-Management und Release-Planung](https://www.yojana.girishm.info/de/projektmanagement-funktionen/produktentwicklung/)
+          * [Zeit- und Kostenerfassung, Budgets](https://www.yojana.girishm.info/de/projektmanagement-funktionen/zeiterfassung/)
+          * [Team-Zusammenarbeit und Dokumentation](https://www.yojana.girishm.info/de/projektmanagement-funktionen/team-kollaboration/)
 
           Willkommen in der Zukunft des Projektmanagements.
 

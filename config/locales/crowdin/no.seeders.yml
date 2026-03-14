@@ -141,7 +141,7 @@
                 options:
                   name: Komme i gang
                   text: |
-                    Vi er glade for at du ble med! Vi foreslår å prøve noen ting for å komme i gang i OpenProject.
+                    Vi er glade for at du ble med! Vi foreslår å prøve noen ting for å komme i gang i Yojana.
 
                     Oppdag de viktigste funksjonene med vår [Guided Tour]({{opSetting:base_url}}/projects/demo-project/work_packages/?start_onboarding_tour=true).
 
@@ -154,7 +154,7 @@
                     5. *Aktiver ytterligere moduler*: &rightarrow; Gå til [Project settings &rightarrow; Modules]({{opSetting:base_url}}/projects/projects/settings/modules).
                     6. *Fullfør oppgavene i prosjektet: &rightarrow; Gå til [Arbeidspakker &rightarrow; Tasks]({{opSetting:base_url}}/projects/demo-project/work_packages/details/##wp.id:set_date_and_location_of_conference/overview?query_id=##query.id:demo_project__query__tasks).
 
-                    Her finner du våre brukerveiledninger](https://www.openproject.org/docs/user-guide/).
+                    Her finner du våre brukerveiledninger](https://www.yojana.girishm.info/docs/user-guide/).
                     Vennligst gi oss beskjed om du har spørsmål eller trenger støtte. Kontakt oss: [support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
@@ -211,7 +211,7 @@
             * Se endringshistorien
             * Vis som Markdown
 
-            Mer informasjon: [https://www.openproject.org/docs/user-guide/wiki/](https://www.openproject.org/docs/user-guide/wiki/)
+            Mer informasjon: [https://www.yojana.girishm.info/docs/user-guide/wiki/](https://www.yojana.girishm.info/docs/user-guide/wiki/)
         scrum-project:
           name: Scrum prosjekt
           status_explanation: Alle oppgaver er i rute. Personene som er involvert kjenner sine oppgaver. Systemet er ferdig satt opp.
@@ -312,7 +312,7 @@
                 options:
                   name: Komme i gang
                   text: |
-                    Vi er glad for at du er med! Vi foreslår å prøve et par ting for å komme i gang i OpenProject.
+                    Vi er glad for at du er med! Vi foreslår å prøve et par ting for å komme i gang i Yojana.
 
                     _Prøv følgende trinn:_[Backlogs]. *Inviter nye medlemmer til prosjektet ditt*: &rightarrow; Gå til [Members]({{opSetting:base_url}}/projects/your-scrum-project/members) i prosjektmenyen.
                     2. *Vis dine produkt backlog og print backlogs*: &rightarrow; Gå til [Backlogs]({{opSetting:base_url}}/projects/your-scrum-project/backlogs) i prosjektmenyen.
@@ -484,19 +484,19 @@
         item_6:
           name: Avvik
       welcome:
-        title: Velkommen til OpenProject!
+        title: Velkommen til Yojana!
         text: |
-          OpenProject er den ledende programvaren for prosjektstyring med åpen kildekode. Det støtter klassisk, dynamisk og hybrid prosjektstyring og gir deg full kontroll over dine data.
+          Yojana er den ledende programvaren for prosjektstyring med åpen kildekode. Det støtter klassisk, dynamisk og hybrid prosjektstyring og gir deg full kontroll over dine data.
 
           Kjernefunksjoner og bruk kasser:
 
-          * [Prosjektportefølje Administrasjon](https://www.openproject.org/collaboration-software-features/project-portfolio-management/)
-          * [Prosjektplanlegging og Tidsstyring](https://www.openproject.org/collaboration-software-features/project-planning-scheduling/)
+          * [Prosjektportefølje Administrasjon](https://www.yojana.girishm.info/collaboration-software-features/project-portfolio-management/)
+          * [Prosjektplanlegging og Tidsstyring](https://www.yojana.girishm.info/collaboration-software-features/project-planning-scheduling/)
           * [Oppgavestyring og sporing av utfordringer](https://www.open.org/collaboration-software-features/task-management/)
-          * [Dynamiske tavler (Scrum og Kanban)](https://www.openproject.org/collaboration-software-features/agile-project-management/)
-          * [Håndtering av krav og Planlegging av utgivelser](https://www.openproject.org/collaboration-software-features/product-development/)
-          * [Tid og kostnadssporing, Budsjetter](https://www.openproject.org/collaboration-software-funksjoner/tidsporing/)
-          * [Samarbeid i team og  Dokumentasjon](https://www.openproject.org/samarbeidsprogramvare -funksjoner/team-samarbeid
+          * [Dynamiske tavler (Scrum og Kanban)](https://www.yojana.girishm.info/collaboration-software-features/agile-project-management/)
+          * [Håndtering av krav og Planlegging av utgivelser](https://www.yojana.girishm.info/collaboration-software-features/product-development/)
+          * [Tid og kostnadssporing, Budsjetter](https://www.yojana.girishm.info/collaboration-software-funksjoner/tidsporing/)
+          * [Samarbeid i team og  Dokumentasjon](https://www.yojana.girishm.info/samarbeidsprogramvare -funksjoner/team-samarbeid
 
           Velkommen til fremtidig prosjektstyring.
 

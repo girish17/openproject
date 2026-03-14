@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -348,13 +348,13 @@ es:
         unknown_name: Desconocido
     mcp_configurations:
       index:
-        description: El protocolo de contexto de modelo (MCP, por sus siglas en inglés) permite a los agentes de IA proporcionar a sus usuarios herramientas y recursos expuestos por esta instancia de OpenProject. Esta función aún se encuentra en fase beta.
-        resources_heading: Recursos
-        resources_description: OpenProject implementa los siguientes recursos. Cada uno de ellos puede habilitarse, renombrarse y describirse como usted desee. Para más información, consulte la [documentación sobre recursos del MCP](docs_url).
-        resources_submit: Actualizar recursos
-        tools_heading: Herramientas
-        tools_description: OpenProject implementa las siguientes herramientas. Cada una de ellas puede habilitarse, renombrarse y describirse como usted desee. Para más información, consulte la [documentación sobre herramientas del MCP](docs_url).
-        tools_submit: Actualizar herramientas
+        description: "El protocolo de contexto de modelo (MCP, por sus siglas en inglés) permite a los agentes de IA proporcionar a sus usuarios herramientas y recursos expuestos por esta instancia de Yojana."
+        resources_heading: "Recursos"
+        resources_description: "Yojana implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
+        resources_submit: "Actualizar recursos"
+        tools_heading: "Herramientas"
+        tools_description: "Yojana implementa las siguientes herramientas. Cada una de ellas puede habilitarse, renombrarse y describirse como usted desee. Para más información, consulte la [documentación sobre herramientas del MCP](docs_url)."
+        tools_submit: "Actualizar herramientas"
       multi_update:
         success: Las configuraciones del MCP se actualizaron correctamente.
       server_form:
@@ -397,31 +397,31 @@ es:
       edit:
         label_delete_scim_client: Eliminar cliente SCIM
       form:
-        auth_provider_description: Este es el servicio que los usuarios añadidos por el proveedor SCIM utilizarán para autenticarse en OpenProject.
-        authentication_method_description_html: Así es como el cliente SCIM se autentica en OpenProject. Asegúrese de que los tokens OAuth incluyen el ámbito <code>scim_v2</code>.
-        description: Consulte nuestra [documentación sobre la configuración de clientes SCIM](docs_url) para obtener más información sobre estas opciones de configuración.
-        jwt_sub_description: Por ejemplo, para Keycloak, se trata del UUID de la cuenta de servicio asociada al cliente SCIM. Consulte [nuestra documentación](docs_url) para saber cómo encontrar la reclamación del asunto para su caso de uso.
-        name_description: Elija un nombre que ayude a otros administradores a entender mejor por qué se configuró este cliente.
+        auth_provider_description: "Este es el servicio que los usuarios añadidos por el proveedor SCIM utilizarán para autenticarse en Yojana."
+        authentication_method_description_html: "Así es como el cliente SCIM se autentica en Yojana. Asegúrese de que los tokens OAuth incluyen el ámbito <code>scim_v2</code>."
+        description: "Consulte nuestra [documentación sobre la configuración de clientes SCIM](docs_url) para obtener más información sobre estas opciones de configuración."
+        jwt_sub_description: "Por ejemplo, para Keycloak, se trata del UUID de la cuenta de servicio asociada al cliente SCIM. Consulte [nuestra documentación](docs_url) para saber cómo encontrar la reclamación del asunto para su caso de uso."
+        name_description: "Elija un nombre que ayude a otros administradores a entender mejor por qué se configuró este cliente."
       index:
-        description: Los clientes SCIM configurados aquí pueden interactuar con la API del servidor SCIM de OpenProject para aprovisionar, actualizar y desaprovisionar cuentas y grupos de usuarios.
-        label_create_button: Añadir cliente SCIM
+        description: "Los clientes SCIM configurados aquí pueden interactuar con la API del servidor SCIM de Yojana para aprovisionar, actualizar y desaprovisionar cuentas y grupos de usuarios."
+        label_create_button: "Añadir cliente SCIM"
       new:
         title: Nuevo cliente SCIM
       revoke_static_token_dialog_component:
         confirm_button: Revocar
         title: Revocar token estático
         heading: "¿Seguro que desea revocar este token?"
-        description: El cliente SCIM que utilice este token ya no podrá acceder a la API del servidor SCIM de OpenProject.
+        description: "El cliente SCIM que utilice este token ya no podrá acceder a la API del servidor SCIM de Yojana."
       table_component:
         blank_slate:
           title: Aún no se ha configurado ningún cliente SCIM
           description: Añada clientes para verlos aquí
         user_count: Usuarios
       token_list_component:
-        description: Los tokens que genere aquí pueden ser pasados por un cliente SCIM para acceder a la API SCIM de OpenProject.
-        heading: Tokens
-        label_add_token: Token
-        label_aria_add_token: Añadir token
+        description: "Los tokens que genere aquí pueden ser pasados por un cliente SCIM para acceder a la API SCIM de Yojana."
+        heading: "Tokens"
+        label_add_token: "Token"
+        label_aria_add_token: "Añadir token"
       token_table_component:
         blank_slate:
           title: Aún no se ha creado ningún token
@@ -569,7 +569,7 @@ es:
       system_user_dn_html: |
         Introduzca el ND del usuario del sistema utilizado para el acceso de solo lectura.
         <br>
-        Ejemplo: uid=openproject,ou=system,dc=ejemplo,dc=com
+        Ejemplo: uid=yojana,ou=system,dc=ejemplo,dc=com
       system_user_password: Ingrese la contraseña de enlace del usuario del sistema
       base_dn: |
         Ingrese el DN base del subárbol en LDAP que desea que el proyecto abierto busque para usuarios y grupos.
@@ -577,9 +577,9 @@ es:
         Ejemplo ou=users,dc=example,dc=com
       filter_string: |
         Permite añadir un filtro RFC4515 opcional para aplicar los resultados mostrados de los usuarios filtrados en LDAP.
-        Esta opción se puede usar para restringir el conjunto de usuarios mostrados por OpenProject para la sincronización de grupos y autenticación.
+        Esta opción se puede usar para restringir el conjunto de usuarios mostrados por Yojana para la sincronización de grupos y autenticación.
       filter_string_concat: |
-        OpenProject siempre filtrará el atributo de inicio de sesión proporcionado por el usuario para identificar el registro. Si especifica un filtro aquí,
+        Yojana siempre filtrará el atributo de inicio de sesión proporcionado por el usuario para identificar el registro. Si especifica un filtro aquí,
         se concatenará con un operador AND. De forma predeterminada, se usará un valor de comodín (objectClass=*) como filtro.
       onthefly_register: |
         Si marca esta casilla, el proyecto abierto creará automáticamente nuevos usuarios a partir de sus entradas LDAP cuando se autentican por primera vez con el proyecto abierto.
@@ -2130,18 +2130,17 @@ es:
         circular_dependency: Esta relación podría crear una dependencia circular.
         confirmation: no coincide con %{attribute}.
         could_not_be_copied: "%{dependency} no se pudo copiar (en su totalidad)."
-        datetime_must_be_in_future: debe ser en el futuro.
-        does_not_exist: no existe.
-        error_enterprise_only: "%{action} solo está disponible en OpenProject Enterprise."
-        error_unauthorized: no se puede acceder.
-        error_readonly: se intentó escribir pero no se puede escribir.
-        error_conflict: La información ha sido actualizada por al menos otro usuario mientras tanto.
-        error_not_found: no encontrado.
-        email: no es una dirección de correo válida.
-        empty: No puede estar vacío.
-        enterprise_plan_required: requiere al menos el plan %{plan_name}.
-        even: debe ser incluido.
-        exclusion: está reservado.
+        does_not_exist: "no existe."
+        error_enterprise_only: "%{action} solo está disponible en Yojana Enterprise."
+        error_unauthorized: "no se puede acceder."
+        error_readonly: "se intentó escribir pero no se puede escribir."
+        error_conflict: "La información ha sido actualizada por al menos otro usuario mientras tanto."
+        error_not_found: "no encontrado."
+        email: "no es una dirección de correo válida."
+        empty: "No puede estar vacío."
+        enterprise_plan_required: "requiere al menos el plan %{plan_name}."
+        even: "debe ser incluido."
+        exclusion: "está reservado."
         feature_disabled: no está disponible.
         feature_disabled_for_project: está desactivado para este proyecto.
         file_too_large: es demasiado grande (el tamaño máximo es de %{count} Bytes).
@@ -2794,17 +2793,14 @@ es:
     reset_token:
       action_create: Crear
       action_reset: Reiniciar
-      heading_reset: Restablecer token de copias de seguridad
-      heading_create: Crear token de copias de seguridad
-      implications: 'Al habilitar las copias de seguridad, cualquier usuario con los permisos necesarios y este token de copias de seguridad podrá descargar una copia de seguridad que contenga todos los datos de esta instalación de OpenProject, incluidos los datos del resto de los usuarios.
-
-        '
-      info: 'Para crear una copia de seguridad, necesita generar un token de copias de seguridad. Cada vez que quiera solicitar una copia de seguridad, tendrá que especificar este token. Puede eliminar el token de copias de seguridad para deshabilitar las copias de seguridad para este usuario.
-
-        '
-      verification_html: 'Escribe %{word} para confirmar que quieres %{action} el token de copia de seguridad.
-
-        '
+      heading_reset: "Restablecer token de copias de seguridad"
+      heading_create: "Crear token de copias de seguridad"
+      implications: >
+        Al habilitar las copias de seguridad, cualquier usuario con los permisos necesarios y este token de copias de seguridad podrá descargar una copia de seguridad que contenga todos los datos de esta instalación de Yojana, incluidos los datos del resto de los usuarios.
+      info: >
+        Para crear una copia de seguridad, necesita generar un token de copias de seguridad. Cada vez que quiera solicitar una copia de seguridad, tendrá que especificar este token. Puede eliminar el token de copias de seguridad para deshabilitar las copias de seguridad para este usuario.
+      verification: >
+        Escriba %{word} para confirmar que quiere %{action} el token de copias de seguridad.
       verification_word_reset: restablecer
       verification_word_create: crear
       warning: 'Como medida de seguridad, deberá esperar 24 horas después de crear un token para solicitar una copia de seguridad. Después de ese período, podrá solicitar una copia de seguridad en cualquier momento usando ese token.
@@ -3148,32 +3144,31 @@ es:
       work_package_sharing: Compartir paquetes de trabajo con usuarios externos
       work_package_subject_generation: Generación de temas del paquete de trabajo
     upsell:
-      buy_now_button: Comprar ahora
-      plans_title: Planes Enterprise
-      title: Extensión Enterprise
-      plan_title: Extensión Enterprise de %{plan}
-      plan_name: Plan Enterprise %{plan}
-      trial_text: Esta función está incluida en su versión de prueba activa de Enterprise.
-      plan_text_html: Disponible a partir del %{plan_name}.
-      unlimited: Ilimitado
-      already_have_token: "¿Ya tiene un token? Añádalo utilizando el botón de abajo para actualizar al plan Enterprise reservado.\n"
-      hide_banner: Ocultar este banner
-      homescreen_description: 'Los planes Enterprise amplían la edición Community de OpenProject con [extensiones Enterprise](enterprise_url) adicionales y asistencia profesional, ideales para organizaciones que ejecutan OpenProject en un entorno de misión crítica.
-
-        '
+      buy_now_button: "Comprar ahora"
+      plans_title: "Planes Enterprise"
+      title: "Extensión Enterprise"
+      plan_title: "Extensión Enterprise de %{plan}"
+      plan_name: "Plan Enterprise %{plan}"
+      plan_text_html: "Disponible a partir del %{plan_name}."
+      unlimited: "Ilimitado"
+      already_have_token: >
+        ¿Ya tiene un token? Añádalo utilizando el botón de abajo para actualizar al plan Enterprise reservado.
+      hide_banner: "Ocultar este banner"
+      homescreen_description: >
+        Los planes Enterprise amplían la edición Community de Yojana con [extensiones Enterprise](enterprise_url) adicionales y asistencia profesional, ideales para organizaciones que ejecutan Yojana en un entorno de misión crítica.
       homescreen_subline: Al mejorar su plan, también estará apoyando un proyecto de código abierto.
       baseline_comparison:
         description: Resalte los cambios realizados en esta lista desde cualquier momento en el pasado.
       benefits:
         description: "¿Cuáles son las ventajas de Enterprise On-Premises?"
-        high_security: Funciones de seguridad
-        high_security_text: Inicio de sesión único (SAML, OpenID Connect, CAS), grupos LDAP.
-        installation: Soporte de instalación
-        installation_text: Nuestros experimentados ingenieros de software le guiarán en todo el proceso de instalación y configuración en su propia infraestructura.
-        premium_features: Extensiones Enterprise
-        premium_features_text: Tableros Agile, tema y logotipo personalizados, gráficos, flujos de trabajo inteligentes con acciones personalizadas, búsqueda de texto completo en archivos adjuntos de paquetes de trabajo y campos personalizados de selección múltiple.
-        professional_support: Soporte profesional
-        professional_support_text: Obtenga ayuda rápida y de confianza de nuestros agentes de soporte con conocimientos especializados sobre cómo ejecutar OpenProject en entornos empresariales críticos.
+        high_security: "Funciones de seguridad"
+        high_security_text: "Inicio de sesión único (SAML, OpenID Connect, CAS), grupos LDAP."
+        installation: "Soporte de instalación"
+        installation_text: "Nuestros experimentados ingenieros de software le guiarán en todo el proceso de instalación y configuración en su propia infraestructura."
+        premium_features: "Extensiones Enterprise"
+        premium_features_text: "Tableros Agile, tema y logotipo personalizados, gráficos, flujos de trabajo inteligentes con acciones personalizadas, búsqueda de texto completo en archivos adjuntos de paquetes de trabajo y campos personalizados de selección múltiple."
+        professional_support: "Soporte profesional"
+        professional_support_text: "Obtenga ayuda rápida y de confianza de nuestros agentes de soporte con conocimientos especializados sobre cómo ejecutar Yojana en entornos empresariales críticos."
       work_package_subject_generation:
         description: Cree asuntos generados automáticamente utilizando atributos y texto referenciados.
       customize_life_cycle:
@@ -3203,34 +3198,31 @@ es:
       calculated_values:
         description: Los valores calculados le permiten crear un atributo basado en fórmulas matemáticas utilizando valores numéricos y otros atributos del proyecto y campos personalizados.
       define_custom_style:
-        title: Tema de color y logotipo personalizados
-        more_info: 'Nota: El logotipo utilizado será de acceso público.'
-        description: Personalice su instalación de OpenProject con su logotipo y colores.
+        title: "Tema de color y logotipo personalizados"
+        more_info: "Nota: El logotipo utilizado será de acceso público."
+        description: Personalice su instalación de Yojana con su logotipo y colores.
       custom_actions:
         title: Acciones personalizadas
         description: Las acciones personalizadas son accesos directos con un solo clic a un conjunto de acciones predefinidas que puede mostrar en determinados paquetes de trabajo según el estado, rol, tipo o proyecto.
       mcp_server:
-        description: Incorpore OpenProject a sus flujos de trabajo de IA con un servidor MCP seguro.
-      meeting_templates:
-        description: Defina plantillas de reuniones con una estructura de orden del día fija y ahorre tiempo reutilizándolas al crear nuevas reuniones.
+        description: "Integre agentes de IA con su instancia de Yojana a través del protocolo de contexto de modelo (MCP)."
       nextcloud_sso:
         title: Inicio de sesión único para almacenamiento en la nube
         description: Habilite una autenticación fluida y segura para su almacenamiento Nextcloud con el inicio de sesión único. Simplifique la gestión del acceso y mejore la comodidad de los usuarios.
       scim_api:
-        title: Clientes SCIM
-        description: Automatice la gestión de usuarios en OpenProject integrando a la perfección servicios de identidad externos como Microsoft Entra o Keycloak a través de nuestra API del servidor SCIM. Disponible a partir del plan corporativo Enterprise.
+        title: "Clientes SCIM"
+        description: "Automatice la gestión de usuarios en Yojana integrando a la perfección servicios de identidad externos como Microsoft Entra o Keycloak a través de nuestra API del servidor SCIM. Disponible a partir del plan corporativo Enterprise."
       sso_auth_providers:
         title: Inicio de sesión único (SSO)
         description: Permite a los usuarios iniciar sesión a través de proveedores externos de SSO usando SAML u OpenID Connect para un acceso fluido y una integración perfecta con los sistemas de identidad existentes.
       virus_scanning:
-        description: Asegúrese de que los archivos cargados en OpenProject se analizan en busca de virus antes de que otros usuarios puedan acceder a ellos.
+        description: "Asegúrese de que los archivos cargados en Yojana se analizan en busca de virus antes de que otros usuarios puedan acceder a ellos."
       project_creation_wizard:
         description: Genere un asistente paso a paso para ayudar a los gestores de proyectos a completar una solicitud de inicio de proyecto.
       placeholder_users:
         title: Usuarios de marcador de posición
-        description: 'Los usuarios de marcadores de posición son una forma de asignar paquetes de trabajo a usuarios que no son parte de su proyecto. Pueden ser útiles en múltiples escenarios; por ejemplo, si necesita rastrear las tareas de un recurso que aún no está nombrado o disponible, o si no quieres dar acceso a esa persona a OpenProject pero quieres seguir las tareas que se le han asignado.
-
-          '
+        description: >
+          Los usuarios de marcadores de posición son una forma de asignar paquetes de trabajo a usuarios que no son parte de su proyecto. Pueden ser útiles en múltiples escenarios; por ejemplo, si necesita rastrear las tareas de un recurso que aún no está nombrado o disponible, o si no quieres dar acceso a esa persona a Yojana pero quieres seguir las tareas que se le han asignado.
       internal_comments:
         title: Comentarios internos
         description: Los comentarios internos permiten a un equipo interno comunicarse entre sí de forma privada. Solo son visibles para determinados roles del proyecto y nunca serán visibles públicamente.
@@ -3245,26 +3237,25 @@ es:
         other: Quedan %{count} días del token de prueba de %{trial_plan}
       description_html: Tienes acceso a todas las funciones de %{trial_plan}.
     trial:
-      not_found: Ha solicitado un token de prueba, pero esa solicitud ya no está disponible. Inténtelo de nuevo.
-      wait_for_confirmation: Le hemos enviado un correo electrónico para que confirme su dirección con el fin de recuperar un token de prueba.
-      already_retrieved: 'Su token de prueba de Enterprise ya se ha recuperado. Busque en sus correos electrónicos el token adjuntado. Póngase en contacto con nuestro equipo de Soporte si necesita uno nuevo.
-
-        '
-      successfully_saved: Su token de prueba de Enterprise se ha recuperado correctamente.
-      token_sent: Token de prueba solicitado
-      request_again: Solicitar de nuevo
-      resend_action: Reenviar correo electrónico de confirmación
-      welcome_title: Resumen rápido de funciones
-      welcome_description: Obtenga un resumen rápido de la gestión de proyectos y la colaboración en equipo con Enterprise Edition de OpenProject.
-      confirmation_info: 'Le enviamos un correo electrónico el %{date} a la dirección %{email} con toda la información para iniciar la prueba gratuita de OpenProject Enterprise. Revise su bandeja de entrada y haga clic en el enlace de confirmación proporcionado para iniciar su prueba gratuita de 14 días.
-
-        '
-      confirmation_subline: 'Revise su bandeja de entrada y siga los pasos para iniciar su prueba gratuita de 14 días.
-
-        '
+      not_found: "Ha solicitado un token de prueba, pero esa solicitud ya no está disponible. Inténtelo de nuevo."
+      wait_for_confirmation: "Le hemos enviado un correo electrónico para que confirme su dirección con el fin de recuperar un token de prueba."
+      already_retrieved: >
+        Su token de prueba de Enterprise ya se ha recuperado. Busque en sus correos electrónicos el token adjuntado. Póngase en contacto con nuestro equipo de Soporte si necesita uno nuevo.
+      successfully_saved: "Su token de prueba de Enterprise se ha recuperado correctamente."
+      token_sent: "Token de prueba solicitado"
+      request_again: "Solicitar de nuevo"
+      resend_action: "Reenviar correo electrónico de confirmación"
+      welcome_title: "Resumen rápido de funciones"
+      welcome_description: "Obtenga un resumen rápido de la gestión de proyectos y la colaboración en equipo con Enterprise Edition de Yojana."
+      confirmation_info: >
+        Le enviamos un correo electrónico el %{date} a la dirección %{email} con toda la información para iniciar la prueba gratuita de Yojana Enterprise. Revise su bandeja de entrada y haga clic en el enlace de confirmación proporcionado para iniciar su prueba gratuita de 14 días.
+      confirmation_subline: >
+        Revise su bandeja de entrada y siga los pasos para iniciar su prueba gratuita de 14 días.
       domain_caption: El token será válido para su nombre de host configurado actualmente.
-      receive_newsletter: Quiero recibir el boletín de OpenProject [boletín](newsletter_url).
-      consent: Acepto los [términos del servicio](tos_url) y la [política de privacidad](privacy_url).
+      receive_newsletter_html: >
+        Quiero recibir el <a target="_blank" href="https://www.yojana.girishm.info/newsletter/">boletín</a> de Yojana.
+      consent_html: >
+        Acepto los <a target="_blank" href="https://www.yojana.girishm.info/terms-of-service/">términos del servicio</a> y la <a target="_blank" href="https://www.yojana.girishm.info/data-privacy-and-security/">política de privacidad</a>.
   email_calendar_updates:
     state:
       disabled: Deshabilitado.
@@ -3288,51 +3279,51 @@ es:
   error_can_not_delete_in_use_archived_undisclosed: También hay paquetes de trabajo en proyectos archivados. Debe pedir a un administrador que realice la eliminación para ver qué proyectos se ven afectados.
   error_can_not_delete_in_use_archived_work_packages: 'Hay paquetes de trabajo en los proyectos archivados. Necesita reactivar los proyectos siguientes para cambiar el atributo de los paquetes de trabajo correspondientes: %{archived_projects_urls}'
   error_can_not_delete_type:
-    explanation: Este tipo contiene paquetes de trabajo y no se puede eliminar. Puede ver todos los paquetes de trabajo afectados en <a target="_blank" href="%{url}">esta vista</a>.
-  error_can_not_delete_standard_type: Tipos estándar no se pueden borrar.
-  error_can_not_invite_user: Error al enviar la invitación al usuario.
-  error_can_not_remove_role: Este rol esta en uso y no puede ser eliminado
-  error_can_not_reopen_work_package_on_closed_version: No se puede volver a abrir un paquete de trabajo asignado a una versión cerrada
-  error_can_not_find_all_resources: No se encontraron todos los recursos relacionados con esta solicitud.
-  error_can_not_unarchive_project: 'Este proyecto no se puede recuperar: %{errors}'
-  error_check_user_and_role: Por favor elige un usuario y un rol.
-  error_code: Error %{code}
-  error_color_could_not_be_saved: No se pudo guardar el color
-  error_cookie_missing: No se encuentra la cookie de OpenProject. Por favor asegúrese de que las cookies están habilitadas, ya que sin ellas esta aplicación no funcionará correctamente.
-  error_custom_option_not_found: Esta opción no existe.
-  error_enterprise_plan_needed: Necesita el plan Enterprise %{plan} para realizar esta acción.
-  error_enterprise_activation_user_limit: Su cuenta no puede ser activada (se alcanzó el límite del usuario). Por favor, contacte su administrador para obtener acceso.
-  error_enterprise_token_invalid_domain: Enterprise no está activo. Su dominio del token de Enterprise (%{actual}) no coincide con el nombre de host del sistema (%{expected}).
-  error_failed_to_delete_entry: No se puede eliminar esta entrada.
-  error_in_dependent: 'Error al intentar alterar el objeto dependiente: %{dependent_class} #%{related_id} - %{related_subject}: %{error}'
-  error_in_new_dependent: 'Error al crear el objeto dependiente: %{dependent_class} - %{related_subject}: %{error}'
-  error_invalid_selected_value: El valor seleccionado no es válido.
-  error_journal_attribute_not_present: El diario no contiene el atributo %{attribute}.
-  error_pdf_export_too_many_columns: Demasiadas columnas seleccionadas para la exportación de PDF. Reduzca el número de columnas.
-  error_pdf_date_range_too_long: El intervalo de fechas del paquete de trabajo seleccionado supera el límite permitido para la exportación a PDF. Reduzca el intervalo a un máximo de %{years} años.
-  error_pdf_failed_to_export: 'No se ha podido guardar la exportación PDF: %{error}'
-  error_token_authenticity: No se puede verificar el token de falsificación de solicitud entre sitios. ¿Intentó enviar datos en varios navegadores o pestañas? Cierre de todas las pestañas y vuelva a intentarlo.
-  error_reminder_not_found: No se ha encontrado el recordatorio o ya se ha notificado.
-  error_work_package_not_found_in_project: El paquete de trabajo no se ha encontrado o no pertenece a este proyecto
-  error_work_package_id_not_found: No se ha encontrado el paquete de trabajo.
-  error_must_be_project_member: debe ser miembro del proyecto
-  error_migrations_are_pending: Su instalación de OpenProject tiene migraciones de bases de datos pendientes. Es probable que haya pasado por alto la ejecución de las migraciones en la última actualización. Consulte la guía de actualización para actualizar correctamente su instalación.
-  error_migrations_visit_upgrade_guides: Visite la documentación de la Guía de actualización
-  error_no_default_work_package_status: Ningún estado del paquete trabajo predeterminado está definido. Por favor, compruebe su configuración (ir a "Administración-> Situación del paquete de trabajo").
-  error_no_type_in_project: Ningún tipo se asocia a este proyecto. Por favor, Compruebe la configuración del proyecto.
-  error_omniauth_registration_timed_out: El registro mediante un proveedor de autenticación externa expiró. Por favor inténtelo nuevamente.
-  error_omniauth_invalid_auth: La información de autenticación proporcionada por el proveedor de identidades no era válida. Póngase en contacto con el administrador para obtener ayuda.
-  error_password_change_failed: Se produjo un error al intentar cambiar la contraseña.
-  error_scm_command_failed: 'Se produjo un error al intentar acceder al repositorio: %{value}'
-  error_scm_not_found: La entrada o la revisión no se encontró en el repositorio.
-  error_type_could_not_be_saved: No se pudo guardar el tipo
-  error_unable_delete_status: El estado del paquete de trabajo no se puede eliminar ya que esta siendo utilizado por al menos un paquete de trabajo.
-  error_unable_delete_default_status: No se puede eliminar el estado del paquete trabajo por defecto. Por favor, seleccione otro estado de trabajo predeterminado antes de eliminar el actual.
-  error_unable_to_connect: No se puede conectar (%{value})
-  error_unable_delete_wiki: No se puede eliminar la página wiki.
-  error_unable_update_wiki: No se puede actualizar la página wiki.
-  error_workflow_copy_source: Por favor, seleccione un tipo de fuente o rol
-  error_workflow_copy_target: Por favor, seleccione tipo(s) de objetivos y role(s)
+    explanation: 'Este tipo contiene paquetes de trabajo y no se puede eliminar. Puede ver todos los paquetes de trabajo afectados en <a target="_blank" href="%{url}">esta vista</a>.'
+  error_can_not_delete_standard_type: "Tipos estándar no se pueden borrar."
+  error_can_not_invite_user: "Error al enviar la invitación al usuario."
+  error_can_not_remove_role: "Este rol esta en uso y no puede ser eliminado"
+  error_can_not_reopen_work_package_on_closed_version: "No se puede volver a abrir un paquete de trabajo asignado a una versión cerrada"
+  error_can_not_find_all_resources: "No se encontraron todos los recursos relacionados con esta solicitud."
+  error_can_not_unarchive_project: "Este proyecto no se puede recuperar: %{errors}"
+  error_check_user_and_role: "Por favor elige un usuario y un rol."
+  error_code: "Error %{code}"
+  error_color_could_not_be_saved: "No se pudo guardar el color"
+  error_cookie_missing: "No se encuentra la cookie de Yojana. Por favor asegúrese de que las cookies están habilitadas, ya que sin ellas esta aplicación no funcionará correctamente."
+  error_custom_option_not_found: "Esta opción no existe."
+  error_enterprise_plan_needed: "Necesita el plan Enterprise %{plan} para realizar esta acción."
+  error_enterprise_activation_user_limit: "Su cuenta no puede ser activada (se alcanzó el límite del usuario). Por favor, contacte su administrador para obtener acceso."
+  error_enterprise_token_invalid_domain: "Enterprise no está activo. Su dominio del token de Enterprise (%{actual}) no coincide con el nombre de host del sistema (%{expected})."
+  error_failed_to_delete_entry: "No se puede eliminar esta entrada."
+  error_in_dependent: "Error al intentar alterar el objeto dependiente: %{dependent_class} #%{related_id} - %{related_subject}: %{error}"
+  error_in_new_dependent: "Error al crear el objeto dependiente: %{dependent_class} - %{related_subject}: %{error}"
+  error_invalid_selected_value: "El valor seleccionado no es válido."
+  error_journal_attribute_not_present: "El diario no contiene el atributo %{attribute}."
+  error_pdf_export_too_many_columns: "Demasiadas columnas seleccionadas para la exportación de PDF. Reduzca el número de columnas."
+  error_pdf_date_range_too_long: "El intervalo de fechas del paquete de trabajo seleccionado supera el límite permitido para la exportación a PDF. Reduzca el intervalo a un máximo de %{years} años."
+  error_pdf_failed_to_export: "No se ha podido guardar la exportación PDF: %{error}"
+  error_token_authenticity: "No se puede verificar el token de falsificación de solicitud entre sitios. ¿Intentó enviar datos en varios navegadores o pestañas? Cierre de todas las pestañas y vuelva a intentarlo."
+  error_reminder_not_found: "No se ha encontrado el recordatorio o ya se ha notificado."
+  error_work_package_not_found_in_project: "El paquete de trabajo no se ha encontrado o no pertenece a este proyecto"
+  error_work_package_id_not_found: "No se ha encontrado el paquete de trabajo."
+  error_must_be_project_member: "debe ser miembro del proyecto"
+  error_migrations_are_pending: "Su instalación de Yojana tiene migraciones de bases de datos pendientes. Es probable que haya pasado por alto la ejecución de las migraciones en la última actualización. Consulte la guía de actualización para actualizar correctamente su instalación."
+  error_migrations_visit_upgrade_guides: "Visite la documentación de la Guía de actualización"
+  error_no_default_work_package_status: 'Ningún estado del paquete trabajo predeterminado está definido. Por favor, compruebe su configuración (ir a "Administración-> Situación del paquete de trabajo").'
+  error_no_type_in_project: "Ningún tipo se asocia a este proyecto. Por favor, Compruebe la configuración del proyecto."
+  error_omniauth_registration_timed_out: "El registro mediante un proveedor de autenticación externa expiró. Por favor inténtelo nuevamente."
+  error_omniauth_invalid_auth: "La información de autenticación proporcionada por el proveedor de identidades no era válida. Póngase en contacto con el administrador para obtener ayuda."
+  error_password_change_failed: "Se produjo un error al intentar cambiar la contraseña."
+  error_scm_command_failed: "Se produjo un error al intentar acceder al repositorio: %{value}"
+  error_scm_not_found: "La entrada o la revisión no se encontró en el repositorio."
+  error_type_could_not_be_saved: "No se pudo guardar el tipo"
+  error_unable_delete_status: "El estado del paquete de trabajo no se puede eliminar ya que esta siendo utilizado por al menos un paquete de trabajo."
+  error_unable_delete_default_status: "No se puede eliminar el estado del paquete trabajo por defecto. Por favor, seleccione otro estado de trabajo predeterminado antes de eliminar el actual."
+  error_unable_to_connect: "No se puede conectar (%{value})"
+  error_unable_delete_wiki: "No se puede eliminar la página wiki."
+  error_unable_update_wiki: "No se puede actualizar la página wiki."
+  error_workflow_copy_source: "Por favor, seleccione un tipo de fuente o rol"
+  error_workflow_copy_target: "Por favor, seleccione tipo(s) de objetivos y role(s)"
   error_menu_item_not_created: No se pudo agregar el elemento de menú
   error_menu_item_not_saved: Elemento de menú no podría ser guardado
   error_wiki_root_menu_item_conflict: 'No se puede renombrar "%{old_name}" a "%{new_name}" debido a un conflicto en el elemento de menú resultante con el elemento de menú existente "%{existing_caption}" (%{existing_identifier}).
@@ -3427,8 +3418,8 @@ es:
     succeeded: Exportación completada
     failed: 'Se ha producido un error al intentar exportar los paquetes de trabajo: %{message}'
     demo:
-      heading: PDF de demostración
-      footer: Generado por OpenProject
+      heading: "PDF de demostración"
+      footer: "Generado por Yojana"
       button_text: Generar PDF de demostración
     errors:
       embedded_table_with_too_many_columns: Esta tabla de paquetes de trabajo incrustada no cabía en la página, reduzca el número de columnas.
@@ -3549,7 +3540,7 @@ es:
         no_results_subtext: Añada uno o varios proyectos como favoritos a través del resumen del proyecto o en una lista de proyectos.
       users: Usuarios registrados mas recientes en esta instancia.
     blocks:
-      community: OpenProject Community
+      community: "Yojana Community"
       upsell:
         title: Actualizar a la edición Enterprise
       new_features:
@@ -3561,40 +3552,38 @@ es:
 
             '
           new_features_list:
-            line_0: XWiki integration (Corporate plan).
-            line_1: Sprint goals.
-            line_2: "'All sprints' overview page."
-            line_3: Display backlog buckets in work packages and work package tables.
-            line_4: Improved support for project-based (semantic) identifiers.
-            line_5: Convert meeting agenda items into work packages.
-            line_6: Configure cost types per project.
+            line_0: Inicio automatizado de proyectos (extensión Enterprise).
+            line_1: "Reuniones: añada paquetes de trabajo nuevos o existentes como resultados."
+            line_2: "Reuniones: muestre las respuestas de iCal en Yojana."
+            line_3: "Reuniones periódicas: duplique los puntos del orden del día para el siguiente evento."
+            line_4: "Lanzamiento para la versión Community: resaltado de atributos."
+            line_5: Advertencia antes de abrir enlaces externos en el contenido que ha proporcionado un usuario (extensión Enterprise).
+            line_6: Mejora del rendimiento y de la experiencia de usuario, incluida la pestaña Actividad y el módulo Documentos.
     links:
-      upgrade_enterprise_edition: Actualizar a Enterprise
-      postgres_migration: Migrando su instalación a PostgreSQL
-      user_guides: Guia de usuario
-      faq: Preguntas Frecuentes
-      impressum: Aviso legal
-      glossary: Glosario
-      shortcuts: Accesos directos
-      blog: Blog de OpenProject
-      forums: Foro de Community
-      security_alerts: Alertas de seguridad
-      newsletter: Boletín de noticias
+      upgrade_enterprise_edition: "Actualizar a Enterprise"
+      postgres_migration: "Migrando su instalación a PostgreSQL"
+      user_guides: "Guia de usuario"
+      faq: "Preguntas Frecuentes"
+      impressum: "Aviso legal"
+      glossary: "Glosario"
+      shortcuts: "Accesos directos"
+      blog: "Blog de Yojana"
+      forums: "Foro de Community"
+      security_alerts: "Alertas de seguridad"
+      newsletter: "Boletín de noticias"
   image_conversion:
     imagemagick: Imagemagick
   journals:
     changes_retracted: Se deshicieron los cambios.
     caused_changes:
-      budget_deleted: Se ha eliminado el presupuesto
-      dates_changed: Cambio de fechas
-      default_attribute_written: Atributos de solo lectura escritos
-      import: Importado
-      progress_mode_changed_to_status_based: Cálculo del progreso actualizado
-      status_changed: Estado «%{status_name}»
-      system_update: 'Actualización del sistema OpenProject:'
-      work_package_duplicate_closed: 'Paquete de trabajo duplicado actualizado:'
-      total_percent_complete_mode_changed_to_work_weighted_average: El cálculo de los totales de % completado ahora se pondera por Trabajo.
-      total_percent_complete_mode_changed_to_simple_average: El cálculo de los totales de % completado se basa ahora en una media simple de solo los valores de % completado.
+      dates_changed: "Cambio de fechas"
+      default_attribute_written: "Atributos de solo lectura escritos"
+      progress_mode_changed_to_status_based: "Cálculo del progreso actualizado"
+      status_changed: "Estado «%{status_name}»"
+      system_update: "Actualización del sistema Yojana:"
+      work_package_duplicate_closed: "Paquete de trabajo duplicado actualizado:"
+      total_percent_complete_mode_changed_to_work_weighted_average: "El cálculo de los totales de % completado ahora se pondera por Trabajo."
+      total_percent_complete_mode_changed_to_simple_average: "El cálculo de los totales de % completado se basa ahora en una media simple de solo los valores de % completado."
     cause_descriptions:
       import:
         header: cambios de %{author}
@@ -3658,7 +3647,7 @@ es:
         notifications: Ajustes de notificación
         email_reminders: Recordatorios por correo electrónico
     access_tokens:
-      description: Los tokens de proveedor son emitidos por OpenProject y permiten a otras aplicaciones acceder a él. Los tokens de cliente son emitidos por otras aplicaciones y permiten a OpenProject acceder a ellos.
+      description: "Los tokens de proveedor son emitidos por Yojana y permiten a otras aplicaciones acceder a él. Los tokens de cliente son emitidos por otras aplicaciones y permiten a Yojana acceder a ellos."
       no_results:
         title: Ningún token de acceso que mostrar
         description: Todos ellos han sido desabilitados. Pueden ser rehabilitados en el menú de administración.
@@ -3674,49 +3663,49 @@ es:
         provider:
           title: Tokens de proveedor
       token/api:
-        blank_description: Aún no hay tokens API. Puede crear uno utilizando el botón de abajo.
-        blank_title: No hay tokens API
-        title: API
-        table_title: Tokens API
-        text_hint: Los tokens API permiten a las aplicaciones de terceros comunicarse con esta instancia de OpenProject a través de las API REST.
-        static_token_name: Token API
-        disabled_text: Los tokens API no están habilitados por el administrador. Póngase en contacto con su administrador para utilizar esta función.
-        add_button: Token API
+        blank_description: "Aún no hay tokens API. Puede crear uno utilizando el botón de abajo."
+        blank_title: "No hay tokens API"
+        title: "API"
+        table_title: "Tokens API"
+        text_hint: "Los tokens API permiten a las aplicaciones de terceros comunicarse con esta instancia de Yojana a través de las API REST."
+        static_token_name: "Token API"
+        disabled_text: "Los tokens API no están habilitados por el administrador. Póngase en contacto con su administrador para utilizar esta función."
+        add_button: "Token API"
       ical:
-        blank_description: Para añadir un token de iCalendar, suscríbase a un calendario nuevo o existente desde el módulo Calendario de un proyecto. Debe disponer de los permisos necesarios.
-        blank_title: No hay token de iCalendar
-        title: iCalendar
-        table_title: Tokens de iCalendar
-        text_hint_link: Los tokens iCalendar permiten a los usuarios [suscribirse a calendarios de OpenProject](docs_url) y ver la información actualizada de los paquetes de trabajo des de clientes externos.
-        disabled_text: Las suscripciones a iCalendar no están habilitadas por el administrador. Póngase en contacto con su administrador para utilizar esta función.
+        blank_description: "Para añadir un token de iCalendar, suscríbase a un calendario nuevo o existente desde el módulo Calendario de un proyecto. Debe disponer de los permisos necesarios."
+        blank_title: "No hay token de iCalendar"
+        title: "iCalendar"
+        table_title: "Tokens de iCalendar"
+        text_hint_link: "Los tokens iCalendar permiten a los usuarios [suscribirse a calendarios de Yojana](docs_url) y ver la información actualizada de los paquetes de trabajo des de clientes externos."
+        disabled_text: "Las suscripciones a iCalendar no están habilitadas por el administrador. Póngase en contacto con su administrador para utilizar esta función."
       oauth_application:
-        active_tokens: Tokens activos
-        blank_description: No hay ningún acceso a aplicaciones de terceros configurado y activo para usted.
-        blank_title: No hay token de aplicación OAuth
-        last_refreshed_at: Última actualización el
-        title: OAuth
-        table_title: Tokens de aplicación OAuth
-        text_hint: Los tokens de aplicación OAuth permiten a las aplicaciones de terceros conectarse con esta instancia de OpenProject.
+        active_tokens: "Tokens activos"
+        blank_description: "No hay ningún acceso a aplicaciones de terceros configurado y activo para usted."
+        blank_title: "No hay token de aplicación OAuth"
+        last_used_at: "Utilizado por última vez el"
+        title: "OAuth"
+        table_title: "Tokens de aplicación OAuth"
+        text_hint: "Los tokens de aplicación OAuth permiten a las aplicaciones de terceros conectarse con esta instancia de Yojana."
       oauth_client:
-        blank_description: Aún no hay tokens de cliente de OAuth.
-        blank_title: No hay tokens de cliente de OAuth
-        failed: Se ha producido un error y no se ha podido eliminar el token. Inténtelo de nuevo más tarde.
-        integration_type: Tipo de integración
-        table_title: Tokens de cliente de OAuth
-        text_hint: Los tokens de cliente de OAuth permiten a esta instancia de OpenProject conectarse con aplicaciones externas, como almacenamientos de archivos.
-        title: OAuth
+        blank_description: "Aún no hay tokens de cliente de OAuth."
+        blank_title: "No hay tokens de cliente de OAuth"
+        failed: "Se ha producido un error y no se ha podido eliminar el token. Inténtelo de nuevo más tarde."
+        integration_type: "Tipo de integración"
+        table_title: "Tokens de cliente de OAuth"
+        text_hint: "Los tokens de cliente de OAuth permiten a esta instancia de Yojana conectarse con aplicaciones externas, como almacenamientos de archivos."
+        title: "OAuth"
         remove_token: "¿Seguro que desea eliminar este token? Tendrá que volver a iniciar sesión en %{integration}."
         removed: Token de cliente de OAuth eliminado con éxito
         unknown_integration: Desconocido
       token/rss:
-        add_button: Token RSS
-        blank_description: Aún no hay tokens RSS. Puede crear uno utilizando el botón de abajo.
-        blank_title: No hay tokens RSS
-        title: RSS
-        table_title: Tokens RSS
-        text_hint: Los tokens RSS permiten a los usuarios mantenerse al día con los últimos cambios en esta instancia de OpenProject mediante un lector RSS externo.
-        static_token_name: Token RSS
-        disabled_text: Los tokens RSS no están habilitados por el administrador. Póngase en contacto con su administrador para utilizar esta función.
+        add_button: "Token RSS"
+        blank_description: "Aún no hay tokens RSS. Puede crear uno utilizando el botón de abajo."
+        blank_title: "No hay tokens RSS"
+        title: "RSS"
+        table_title: "Tokens RSS"
+        text_hint: "Los tokens RSS permiten a los usuarios mantenerse al día con los últimos cambios en esta instancia de Yojana mediante un lector RSS externo."
+        static_token_name: "Token RSS"
+        disabled_text: "Los tokens RSS no están habilitados por el administrador. Póngase en contacto con su administrador para utilizar esta función."
       storages:
         unknown_storage: Almacenamiento desconocido
     email_reminders:
@@ -3940,51 +3929,48 @@ es:
   label_collapse: Colapsar
   label_collapsed_click_to_show: Contraído. Haga clic para mostrar
   label_configuration: configuracion
-  label_comment_add: Añadir un comentario
-  label_comment_added: Comentario añadido
-  label_comment_delete: Eliminar comentarios
-  label_comment_plural: Comentarios
-  label_commits_per_author: Compromisos por autor
-  label_commits_per_month: Compromisos por mes
-  label_confirmation: Confirmación
-  label_contains: contiene
-  label_starts_with: empieza por
-  label_content: Contenido
-  label_color_plural: Colores
-  label_copied: copiado
-  label_copy_same_as_target: Igual al destino
-  label_copy_source: Fuente
-  label_copy_target: Objetivo
-  label_copy_workflow_from: Copiar flujo de trabajo desde
-  label_copy_workflow_from_type: Copiar a otro tipo
-  label_copy_workflow_from_role: Copiar a otros roles
-  label_copy_project: Copiar proyecto
-  label_core_version: Versión base
-  label_core_build: Núcleo base
-  label_created_by: Creado por %{user}
-  label_current_status: Estado actual
-  label_current_version: Version actual
-  label_custom_field_add_no_type: Agregue este campo a un tipo de paquete de trabajo
-  label_custom_field_new: Nuevo campo personalizado
-  label_custom_field_plural: Campos personalizados
-  label_custom_field_default_type: Tipo vacío
-  label_custom_style: Diseño
-  label_custom_style_description: Elija el aspecto que OpenProject le ofrece con los temas, seleccione los colores predeterminados que desea utilizar en la aplicación y el aspecto de las exportaciones.
-  label_dashboard: Paneles de control
-  label_database_version: Versión de PostgreSQL
-  label_date: Fecha
-  label_dates: Fechas
-  label_date_and_time: Fecha y hora
-  label_date_format: Formato de fecha
-  label_date_from: De
-  label_date_from_to: De %{start} al %{end}
-  label_date_to: Para
-  label_day_plural: días
-  label_default: Por defecto
-  label_delete_user: Eliminar usuario
-  label_delete_project: Eliminar proyecto
-  label_delete: Eliminar
-  label_deleted: borrado
+  label_comment_add: "Añadir un comentario"
+  label_comment_added: "Comentario añadido"
+  label_comment_delete: "Eliminar comentarios"
+  label_comment_plural: "Comentarios"
+  label_commits_per_author: "Compromisos por autor"
+  label_commits_per_month: "Compromisos por mes"
+  label_confirmation: "Confirmación"
+  label_contains: "contiene"
+  label_content: "Contenido"
+  label_color_plural: "Colores"
+  label_copied: "copiado"
+  label_copy_same_as_target: "Igual al destino"
+  label_copy_source: "Fuente"
+  label_copy_target: "Objetivo"
+  label_copy_workflow_from: "Copiar flujo de trabajo desde"
+  label_copy_project: "Copiar proyecto"
+  label_core_version: "Versión base"
+  label_core_build: "Núcleo base"
+  label_created_by: "Creado por %{user}"
+  label_current_status: "Estado actual"
+  label_current_version: "Version actual"
+  label_custom_field_add_no_type: "Agregue este campo a un tipo de paquete de trabajo"
+  label_custom_field_new: "Nuevo campo personalizado"
+  label_custom_field_plural: "Campos personalizados"
+  label_custom_field_default_type: "Tipo vacío"
+  label_custom_style: "Diseño"
+  label_custom_style_description: "Elija el aspecto que Yojana le ofrece con los temas, seleccione los colores predeterminados que desea utilizar en la aplicación y el aspecto de las exportaciones."
+  label_dashboard: "Paneles de control"
+  label_database_version: "Versión de PostgreSQL"
+  label_date: "Fecha"
+  label_dates: "Fechas"
+  label_date_and_time: "Fecha y hora"
+  label_date_format: "Formato de fecha"
+  label_date_from: "De"
+  label_date_from_to: "De %{start} al %{end}"
+  label_date_to: "Para"
+  label_day_plural: "días"
+  label_default: "Por defecto"
+  label_delete_user: "Eliminar usuario"
+  label_delete_project: "Eliminar proyecto"
+  label_delete: "Eliminar"
+  label_deleted: "borrado"
   label_deleted_custom_field: "(campo personalizado borrado)"
   label_deleted_custom_item: "(elemento eliminado)"
   label_deleted_custom_option: "(opción eliminada)"
@@ -4238,61 +4224,53 @@ es:
   label_not_found: no encontrado
   label_none: ninguno
   label_none_parentheses: "(ninguno)"
-  label_not_contains: no contiene
-  label_not_equals: no es
-  label_life_cycle_step_plural: Ciclo de vida del proyecto
-  label_on: en
-  label_operator_all: no está vacío
-  label_operator_none: está vacío
-  label_operator_equals_or: es (OR)
-  label_operator_equals_all: es (AND)
-  label_operator_shared_with_user_any: cualquiera
-  label_open: abierto
-  label_closed: cerrado
-  label_open_menu: Abrir menú
-  label_open_work_packages: abierto
-  label_open_work_packages_plural: abierto
-  label_openproject_website: Sitio web de OpenProject
-  label_optional_description: Descripción
-  label_options: Opciones
-  label_other: Otros
-  label_overall_activity: Actividad general
-  label_overview: Resumen
-  label_page_title: Título de la página
-  label_parent_group_caption: 'Si estableces un grupo principal, este grupo se convertirá en un subgrupo del grupo principal seleccionado. Además, heredará todas las pertenencias, incluidos los permisos, del grupo principal.
-
-    '
-  label_part_of: parte de
-  label_password_lost: Contraseña perdida
-  label_password_rule_lowercase: Minúscula
-  label_password_rule_numeric: Caracteres numéricos
-  label_password_rule_special: Caracteres especiales
-  label_password_rule_uppercase: Mayúscula
-  label_password_requirement_lowercase: Debe contener al menos un carácter en minúscula.
-  label_password_requirement_numeric: Debe contener al menos un carácter numérico.
-  label_password_requirement_special: Debe contener al menos un carácter especial.
-  label_password_requirement_uppercase: Debe contener al menos un carácter en mayúscula.
-  label_path_encoding: Ruta de codificación
-  label_per_page: 'Por página:'
-  label_people: Personas
-  label_permissions: Permisos
-  label_permissions_report: Informe de permisos
-  label_personalize_page: Personalizar esta página
-  label_placeholder_user: Usuario de marcador de posición
-  label_placeholder_user_new: Nuevo usuario de marcador de posición
-  label_placeholder_user_plural: Usuarios de marcador de posición
-  label_planning: Planificación
-  label_please_login: Por favor, identifíquese
-  label_plugins: Extensiones
-  label_portfolio_plural: Carteras
-  label_modules_and_plugins: Módulos y Extensiones
-  label_precedes: precede
-  label_preferences: Preferencias
-  label_preview: Vista preliminar
-  label_preview_not_available: Vista previa no disponible
-  label_previous: Anterior
-  label_previous_week: Semana anterior
-  label_previous_year: Año anterior
+  label_not_contains: "no contiene"
+  label_not_equals: "no es"
+  label_life_cycle_step_plural: "Ciclo de vida del proyecto"
+  label_on: "en"
+  label_operator_all: "no está vacío"
+  label_operator_none: "está vacío"
+  label_operator_equals_or: "es (OR)"
+  label_operator_equals_all: "es (AND)"
+  label_operator_shared_with_user_any: "cualquiera"
+  label_open: "abierto"
+  label_closed: "cerrado"
+  label_open_menu: "Abrir menú"
+  label_open_work_packages: "abierto"
+  label_open_work_packages_plural: "abierto"
+  label_openproject_website: "Sitio web de Yojana"
+  label_optional_description: "Descripción"
+  label_options: "Opciones"
+  label_other: "Otros"
+  label_overall_activity: "Actividad general"
+  label_overview: "Resumen"
+  label_page_title: "Título de la página"
+  label_part_of: "parte de"
+  label_password_lost: "Contraseña perdida"
+  label_password_rule_lowercase: "Minúscula"
+  label_password_rule_numeric: "Caracteres numéricos"
+  label_password_rule_special: "Caracteres especiales"
+  label_password_rule_uppercase: "Mayúscula"
+  label_path_encoding: "Ruta de codificación"
+  label_per_page: "Por página:"
+  label_people: "Personas"
+  label_permissions: "Permisos"
+  label_permissions_report: "Informe de permisos"
+  label_personalize_page: "Personalizar esta página"
+  label_placeholder_user: "Usuario de marcador de posición"
+  label_placeholder_user_new: "Nuevo usuario de marcador de posición"
+  label_placeholder_user_plural: "Usuarios de marcador de posición"
+  label_planning: "Planificación"
+  label_please_login: "Por favor, identifíquese"
+  label_plugins: "Extensiones"
+  label_portfolio_plural: "Carteras"
+  label_modules_and_plugins: "Módulos y Extensiones"
+  label_precedes: "precede"
+  label_preferences: "Preferencias"
+  label_preview: "Vista preliminar"
+  label_preview_not_available: "Vista previa no disponible"
+  label_previous: "Anterior"
+  label_previous_week: "Semana anterior"
   label_principal_invite_via_email: " o invitar nuevos usuarios vía email"
   label_principal_search: Añadir usuarios o grupos existentes
   label_privacy_policy: Política de privacidad y seguridad de datos
@@ -4693,11 +4671,11 @@ es:
   mail_body_backup_token_reset_user_info: Se ha restablecido su token de copias de seguridad.
   mail_body_backup_token_info: El token anterior ya no es válido.
   mail_body_backup_waiting_period: El nuevo token se habilitará en %{hours} horas.
-  mail_body_backup_token_warning: Si no lo ha solicitado, inicie sesión en OpenProject de inmediato y vuelva a restablecerlo.
-  mail_body_incoming_email_error: El correo electrónico que enviaste a OpenProject no pudo ser procesado.
-  mail_body_incoming_email_error_in_reply_to: El %{received_at} %{from_email} escribió
-  mail_body_incoming_email_error_logs: Registros
-  mail_body_lost_password: 'Para cambiar su contraseña, haga clic en el siguiente enlace:'
+  mail_body_backup_token_warning: Si no lo ha solicitado, inicie sesión en Yojana de inmediato y vuelva a restablecerlo.
+  mail_body_incoming_email_error: El correo electrónico que enviaste a Yojana no pudo ser procesado.
+  mail_body_incoming_email_error_in_reply_to: "El %{received_at} %{from_email} escribió"
+  mail_body_incoming_email_error_logs: "Registros"
+  mail_body_lost_password: "Para cambiar su contraseña, haga clic en el siguiente enlace:"
   mail_password_change_not_possible:
     title: No es posible cambiar la contraseña
     body: Su cuenta en %{app_title} está conectada a un proveedor de autenticación externo (%{name}).
@@ -4707,21 +4685,21 @@ es:
   mail_body_register_user: Estimado/a %{name},
   mail_body_register_links_html: |
     Le invitamos a explorar nuestro canal de YouTube (%{youtube_link}), donde encontrará un seminario web (%{webinar_link})
-    y vídeos de introducción (%{get_started_link}) para que empiece a usar OpenProject de la forma más fácil posible.
+    y vídeos de introducción (%{get_started_link}) para que empiece a usar Yojana de la forma más fácil posible.
     <br />
     Si tiene alguna pregunta, consulte la documentación (%{documentation_link}) o póngase en contacto con el administrador.
-  mail_body_register_closing: Tu equipo de OpenProject
+  mail_body_register_closing: "Tu equipo de Yojana"
   mail_body_register_ending: "¡Mantente conectado! Saludos,"
   mail_body_reminder: "%{count} paquete(s) de trabajo que le fueron asignados vencen en los próximos %{days}:"
-  mail_body_group_reminder: "%{count} paquete(s) de trabajo asignado(s) al grupo “%{group}” vencerán en los próximos %{days} días:"
-  mail_body_wiki_page_added: La página wiki "%{id}" ha sido añadida por %{author}.
-  mail_body_wiki_page_updated: La página wiki "%{id}" ha sido actualizada por %{author}.
-  mail_subject_account_activation_request: solicitud de activación de cuenta de %{value}
-  mail_subject_backup_ready: La copia de seguridad está preparada
-  mail_subject_backup_token_reset: Resetear token de respaldo
-  mail_subject_incoming_email_error: Un correo electrónico que enviaste a OpenProject no pudo ser procesado.
-  mail_subject_lost_password: Su contraseña %{value}
-  mail_subject_register: La activación de la cuenta %{value}
+  mail_body_group_reminder: '%{count} paquete(s) de trabajo asignado(s) al grupo “%{group}” vencerán en los próximos %{days} días:'
+  mail_body_wiki_page_added: "La página wiki \"%{id}\" ha sido añadida por %{author}."
+  mail_body_wiki_page_updated: "La página wiki \"%{id}\" ha sido actualizada por %{author}."
+  mail_subject_account_activation_request: "solicitud de activación de cuenta de %{value}"
+  mail_subject_backup_ready: "La copia de seguridad está preparada"
+  mail_subject_backup_token_reset: "Resetear token de respaldo"
+  mail_subject_incoming_email_error: "Un correo electrónico que enviaste a Yojana no pudo ser procesado."
+  mail_subject_lost_password: "Su contraseña %{value}"
+  mail_subject_register: "La activación de la cuenta %{value}"
   mail_subject_wiki_content_added: "'%{id}' wiki página ha sido agregada"
   mail_subject_wiki_content_updated: "'%{id}' wiki página ha sido actualizada"
   mail_member_added_project:
@@ -4751,13 +4729,13 @@ es:
       Un nuevo usuario (%{email}) intento crear una cuenta en el ambiente de Proyecto Abierto que usted administra (%{host}).
       El usuario no puede activar su cuenta debido a que el límite del usuario ha sido alcanzado.
     steps:
-      a: Mejore su plan de pago ([here](upgrade_url))
-      b: Bloquear o eliminar un usuario existente ([here](users_url))
-      label: 'Para permitir al usuario ingresar, usted puede: '
-  more_actions: Más funciones
-  noscript_description: Necesita activar JavaScript para poder usar OpenProject!
-  noscript_heading: JavaScript desactivado
-  noscript_learn_more: Más información
+      label: "Para permitir al usuario ingresar, usted puede: "
+      a: "Mejore su plan de pago ([here](upgrade_url))" #here turned into a link
+      b: "Bloquear o eliminar un usuario existente ([here](users_url))" #here turned into a link
+  more_actions: "Más funciones"
+  noscript_description: "Necesita activar JavaScript para poder usar Yojana!"
+  noscript_heading: "JavaScript desactivado"
+  noscript_learn_more: "Más información"
   notice_accessibility_mode: El modo de accesibilidad puede ser habilitado a través de tu cuenta [settings](url).
   notice_account_activated: Su cuenta ha sido activada. Ahora puede iniciar sesión.
   notice_account_already_activated: La Cuenta ya había sido activada.
@@ -4833,10 +4811,10 @@ es:
   notice_automatic_set_of_standard_type: Establecer tipo estándar automáticamente.
   notice_logged_out: Has cerrado la sesion.
   notice_wont_delete_auth_source: La conexión LDAP no puede eliminarse mientras siga habiendo usuarios que la utilicen.
-  notice_project_cannot_update_custom_fields: 'No se pueden actualizar campos personalizados disponibles del proyecto. El proyecto es inválido: %{errors}'
-  notice_attachment_migration_wiki_page: 'Esta página se generó automáticamente al actualizar OpenProject. Contiene todos los datos adjuntos que estaban asociados anteriormente al %{container_type} "%{container_name}".
-
-    '
+  notice_project_cannot_update_custom_fields: "No se pueden actualizar campos personalizados disponibles del proyecto. El proyecto es inválido: %{errors}"
+  notice_attachment_migration_wiki_page: >
+    Esta página se generó automáticamente al actualizar Yojana. Contiene todos los datos adjuntos que estaban asociados anteriormente al %{container_type} "%{container_name}".
+  #Default format for numbers
   number:
     format:
       delimiter: ","
@@ -4857,138 +4835,127 @@ es:
           mb: MB
           tb: TB
   onboarding:
-    heading_getting_started: Obtener información general
-    text_getting_started_description: Obtenga un resumen rápido sobre la gestión de proyectos y la colaboración en equipo con OpenProject. Puedes volver a ver este video des del menú de ayuda.
-    welcome: Bienvenido a %{app_title}
-    select_language: Seleccione su idioma
-  open_project:
-    common:
-      work_package_card_component:
-        drag_handle:
-          label: Arrastra para reordenar
-        menu:
-          label_actions: Acciones del paquete de trabajo
-        parent: Principal
-        undisclosed: No revelado
-  permission_add_work_package_comments: Añadir comentarios
-  permission_add_work_packages: Añadir paquetes de trabajo
-  permission_add_messages: Publicar mensajes
-  permission_add_project: Crear proyectos
-  permission_add_portfolios: Crear portafolios
-  permission_add_programs: Crear programas
-  permission_add_work_package_attachments: Añadir archivos adjuntos
-  permission_add_work_package_attachments_explanation: Permite añadir archivos adjuntos sin el permiso Editar paquetes de trabajo
-  permission_add_internal_comments: Escribir comentarios internos
-  permission_archive_project: Archivar proyecto
-  permission_create_user: Crear usuarios
-  permission_manage_user: Editar usuarios
-  permission_manage_placeholder_user: Crear, editar y eliminar usuarios de marcador de posición
-  permission_add_subprojects: Crear subproyectos
-  permission_add_work_package_watchers: Agregar observadores
-  permission_assign_versions: Asignar versiones
-  permission_browse_repository: Permiso de solo lectura sobre el repositorio (Navegación y checkout)
-  permission_change_work_package_status: Cambiar el estado del paquete de trabajo
-  permission_change_work_package_status_explanation: Permite cambiar el estado sin el permiso Editar paquetes de trabajo
-  permission_comment_news: Comentar noticias
-  permission_commit_access: Permiso de escritura sobre el repositorio (commit)
-  permission_copy_projects: Copiar proyectos
-  permission_copy_projects_explanation: En los proyectos de plantilla, este permiso tiene una función secundaria, permite la creación de nuevos proyectos derivados de la plantilla.
-  permission_copy_work_packages: Duplicar paquetes de trabajo
-  permission_create_backup: Crear copias de seguridad
-  permission_delete_work_package_watchers: Eliminar los observadores
-  permission_delete_work_packages: Eliminar paquetes de trabajo
-  permission_delete_messages: Eliminar mensajes
-  permission_delete_own_messages: Borrar los mensajes propios
-  permission_delete_reportings: Eliminar reportes
-  permission_delete_timelines: Eliminar cronogramas
-  permission_edit_work_package_comments: Moderar comentarios
-  permission_edit_work_package_comments_explanation: 'Precaución: Los usuarios con este permiso pueden editar los comentarios de cualquier persona.'
-  permission_edit_work_packages: Editar paquetes de trabajo
-  permission_edit_messages: Editar mensajes
-  permission_edit_own_internal_comments: Editar comentarios internos propios
-  permission_edit_own_work_package_comments: Editar comentarios propios
-  permission_edit_own_messages: Editar mensajes propios
-  permission_edit_own_time_entries: Editar registros de tiempo propios
-  permission_edit_others_internal_comments: Moderar comentarios internos
-  permission_edit_others_internal_comments_explanation: 'Precaución: Los usuarios con este permiso pueden editar los comentarios internos de otros usuarios.'
-  permission_edit_project: Editar proyecto
-  permission_edit_project_attributes: Editar atributos del proyecto
-  permission_edit_project_phases: Editar fases del proyecto
-  permission_edit_reportings: Editar reportes
-  permission_edit_time_entries: Editar registros de tiempo para otros usuarios
-  permission_edit_timelines: Editar cronogramas
-  permission_edit_wiki_pages: Editar wiki página
-  permission_export_work_packages: Exportar Paquetes de Trabajo
-  permission_export_projects: Exportar proyectos
-  permission_invite_members_by_email: Invitar a miembros por correo electrónico
-  permission_invite_members_by_email_explanation: 'Permite a los usuarios invitar a nuevos miembros por correo electrónico. Los usuarios invitados recibirán un correo electrónico con un enlace para establecer su contraseña y activar su cuenta. Depende del permiso para gestionar miembros
-
-    '
-  permission_log_own_time: Registrar tiempo para uno mismo
-  permission_log_time: Registrar tiempo para otros usuarios
-  permission_manage_forums: Administrar foros
-  permission_manage_categories: Administrar categorías del paquete de trabajo
-  permission_manage_dashboards: Administrar tableros de control
-  permission_manage_work_package_relations: Gestionar las relaciones del paquete de trabajo
-  permission_manage_members: Gestión de Miembros
-  permission_manage_news: Administrar noticias
-  permission_manage_project_activities: Gestionar actividades del proyecto
-  permission_manage_public_queries: Administrar vistas públicas
-  permission_manage_repository: Gestionar repositorio
-  permission_manage_subtasks: Administrar jerarquías de paquetes de trabajo
-  permission_manage_versions: Administrar versiones
-  permission_manage_wiki: Administrar wiki
-  permission_manage_own_working_times: Gestiona tu propio horario de trabajo
-  permission_manage_own_working_times_explanation: 'Permite a los usuarios gestionar sus propios horarios de trabajo y sus días libres.
-
-    '
-  permission_manage_working_times: Gestiona los horarios de trabajo de todos los usuarios
-  permission_manage_working_times_explanation: 'Permite gestionar los horarios de trabajo de todos los usuarios, incluidos los días libres personales.
-
-    '
-  permission_move_work_packages: Mover paquetes de trabajo
-  permission_save_queries: Guardar vistas
-  permission_search_project: Buscar proyecto
-  permission_select_custom_fields: Seleccionar campos personalizados
-  permission_select_project_custom_fields: Seleccione los atributos del proyecto
-  permission_select_project_phases: Seleccione las fases del proyecto
-  permission_select_project_phases_explanation: Activar/desactivar las fases de un proyecto. Permite al usuario seleccionar el ciclo de vida adecuado para el proyecto, ya que las fases inactivas no serán visibles en la página de resumen del proyecto ni en la lista de proyectos.
-  permission_select_project_modules: Seleccionar módulos de proyecto
-  permission_share_work_packages: Compartir paquetes de trabajo
-  permission_manage_types: Seleccionar Tipos
-  permission_manage_own_reminders: Crear recordatorios propios
-  permission_view_all_principals: Ver todos los usuarios y grupos
-  permission_view_all_principals_explanation: 'Permite a los usuarios ver todos los usuarios y grupos del sistema, incluso si no son miembros de ningún proyecto o grupo al que se hayan unido.
-
-    '
-  permission_view_project: Ver proyectos
-  permission_view_changesets: Ver las revisiones del repositorio en OpenProject
-  permission_view_internal_comments: Ver comentarios internos
-  permission_view_commit_author_statistics: Ver estadísticas del commit del autor
-  permission_view_dashboards: Ver paneles de control
-  permission_view_work_package_watchers: Ver lista de observadores
-  permission_view_work_packages: Ver paquetes de trabajo
-  permission_view_messages: Ver mensajes
-  permission_view_news: Ver noticias
-  permission_view_members: Ver miembros
-  permission_view_reportings: Ver reportes
-  permission_view_shared_work_packages: Ver paquetes de trabajo compartidos
-  permission_view_time_entries: Ver tiempo invertido
-  permission_view_timelines: Ver cronogramas
-  permission_view_user_email: Ver las direcciones de correo de los usuarios
-  permission_view_wiki_edits: Ver historial wiki
-  permission_view_wiki_pages: Ver wiki
-  permission_work_package_assigned: Hazte asignado/responsable
-  permission_work_package_assigned_explanation: Los paquetes de trabajo se pueden asignar a usuarios y grupos con este papel en los proyectos correspondientes
-  permission_view_project_activity: Ver la actividad del proyecto
-  permission_view_project_attributes: Ver atributos del proyecto
-  permission_view_project_phases: Ver las fases del proyecto
-  permission_save_bcf_queries: Guardar consultas BCF
-  permission_manage_public_bcf_queries: Administrar consultas BCF públicas
-  permission_edit_attribute_help_texts: Editar textos de ayuda de atributos
-  permission_manage_public_project_queries: Administrar listas públicas de proyectos
-  permission_view_project_query: Ver vistas de proyecto
-  permission_edit_project_query: Editar vistas de proyecto
+    heading_getting_started: "Obtener información general"
+    text_getting_started_description: "Obtenga un resumen rápido sobre la gestión de proyectos y la colaboración en equipo con Yojana. Puedes volver a ver este video des del menú de ayuda."
+    welcome: "Bienvenido a %{app_title}"
+    select_language: "Seleccione su idioma"
+  permission_add_work_package_comments: "Añadir comentarios"
+  permission_add_work_packages: "Añadir paquetes de trabajo"
+  permission_add_messages: "Publicar mensajes"
+  permission_add_project: "Crear proyectos"
+  permission_add_portfolios: "Crear portafolios"
+  permission_add_programs: "Crear programas"
+  permission_add_work_package_attachments: "Añadir archivos adjuntos"
+  permission_add_work_package_attachments_explanation: "Permite añadir archivos adjuntos sin el permiso Editar paquetes de trabajo"
+  permission_add_internal_comments: "Escribir comentarios internos"
+  permission_archive_project: "Archivar proyecto"
+  permission_create_user: "Crear usuarios"
+  permission_manage_user: "Editar usuarios"
+  permission_manage_placeholder_user: "Crear, editar y eliminar usuarios de marcador de posición"
+  permission_add_subprojects: "Crear subproyectos"
+  permission_add_work_package_watchers: "Agregar observadores"
+  permission_assign_versions: "Asignar versiones"
+  permission_browse_repository: "Permiso de solo lectura sobre el repositorio (Navegación y checkout)"
+  permission_change_wiki_parent_page: "Cambiar wiki pagina madre"
+  permission_change_work_package_status: "Cambiar el estado del paquete de trabajo"
+  permission_change_work_package_status_explanation: "Permite cambiar el estado sin el permiso Editar paquetes de trabajo"
+  permission_comment_news: "Comentar noticias"
+  permission_commit_access: "Permiso de escritura sobre el repositorio (commit)"
+  permission_copy_projects: "Copiar proyectos"
+  permission_copy_projects_explanation: "En los proyectos de plantilla, este permiso tiene una función secundaria, permite la creación de nuevos proyectos derivados de la plantilla."
+  permission_copy_work_packages: "Duplicar paquetes de trabajo"
+  permission_create_backup: "Crear copias de seguridad"
+  permission_delete_work_package_watchers: "Eliminar los observadores"
+  permission_delete_work_packages: "Eliminar paquetes de trabajo"
+  permission_delete_messages: "Eliminar mensajes"
+  permission_delete_own_messages: "Borrar los mensajes propios"
+  permission_delete_reportings: "Eliminar reportes"
+  permission_delete_timelines: "Eliminar cronogramas"
+  permission_delete_wiki_pages: "Eliminar wiki página"
+  permission_delete_wiki_pages_attachments: "Eliminar adjuntos"
+  permission_edit_work_package_comments: "Moderar comentarios"
+  permission_edit_work_package_comments_explanation: "Precaución: Los usuarios con este permiso pueden editar los comentarios de cualquier persona."
+  permission_edit_work_packages: "Editar paquetes de trabajo"
+  permission_edit_messages: "Editar mensajes"
+  permission_edit_own_internal_comments: "Editar comentarios internos propios"
+  permission_edit_own_work_package_comments: "Editar comentarios propios"
+  permission_edit_own_messages: "Editar mensajes propios"
+  permission_edit_own_time_entries: "Editar registros de tiempo propios"
+  permission_edit_others_internal_comments: "Moderar comentarios internos"
+  permission_edit_others_internal_comments_explanation: "Precaución: Los usuarios con este permiso pueden editar los comentarios internos de otros usuarios."
+  permission_edit_project: "Editar proyecto"
+  permission_edit_project_attributes: "Editar atributos del proyecto"
+  permission_edit_project_phases: "Editar fases del proyecto"
+  permission_edit_reportings: "Editar reportes"
+  permission_edit_time_entries: "Editar registros de tiempo para otros usuarios"
+  permission_edit_timelines: "Editar cronogramas"
+  permission_edit_wiki_pages: "Editar wiki página"
+  permission_export_work_packages: "Exportar Paquetes de Trabajo"
+  permission_export_projects: "Exportar proyectos"
+  permission_export_wiki_pages: "Exportar wiki página"
+  permission_invite_members_by_email: "Invitar a miembros por correo electrónico"
+  permission_invite_members_by_email_explanation: >
+    Permite a los usuarios invitar a nuevos miembros por correo electrónico. Los usuarios invitados recibirán un correo electrónico con un enlace para establecer su contraseña y activar su cuenta. Depende del permiso para gestionar miembros
+  permission_list_attachments: "Lista archivos adjuntos"
+  permission_log_own_time: "Registrar tiempo para uno mismo"
+  permission_log_time: "Registrar tiempo para otros usuarios"
+  permission_manage_forums: "Administrar foros"
+  permission_manage_categories: "Administrar categorías del paquete de trabajo"
+  permission_manage_dashboards: "Administrar tableros de control"
+  permission_manage_work_package_relations: "Gestionar las relaciones del paquete de trabajo"
+  permission_manage_members: "Gestión de Miembros"
+  permission_manage_news: "Administrar noticias"
+  permission_manage_project_activities: "Gestionar actividades del proyecto"
+  permission_manage_public_queries: "Administrar vistas públicas"
+  permission_manage_repository: "Gestionar repositorio"
+  permission_manage_subtasks: "Administrar jerarquías de paquetes de trabajo"
+  permission_manage_versions: "Administrar versiones"
+  permission_manage_wiki: "Administrar wiki"
+  permission_manage_wiki_menu: "Administrar menú wiki"
+  permission_move_work_packages: "Mover paquetes de trabajo"
+  permission_protect_wiki_pages: "Proteger páginas wiki"
+  permission_rename_wiki_pages: "Renombrar páginas wiki"
+  permission_save_queries: "Guardar vistas"
+  permission_search_project: "Buscar proyecto"
+  permission_select_custom_fields: "Seleccionar campos personalizados"
+  permission_select_project_custom_fields: "Seleccione los atributos del proyecto"
+  permission_select_project_phases: "Seleccione las fases del proyecto"
+  permission_select_project_phases_explanation: "Activar/desactivar las fases de un proyecto. Permite al usuario seleccionar el ciclo de vida adecuado para el proyecto, ya que las fases inactivas no serán visibles en la página de resumen del proyecto ni en la lista de proyectos."
+  permission_select_project_modules: "Seleccionar módulos de proyecto"
+  permission_share_work_packages: "Compartir paquetes de trabajo"
+  permission_manage_types: "Seleccionar Tipos"
+  permission_manage_own_reminders: "Crear recordatorios propios"
+  permission_view_all_principals: "Ver todos los usuarios y grupos"
+  permission_view_all_principals_explanation: >
+    Permite a los usuarios ver todos los usuarios y grupos del sistema, incluso si no son miembros de ningún proyecto o grupo al que se hayan unido.
+  permission_view_project: "Ver proyectos"
+  permission_view_changesets: "Ver las revisiones del repositorio en Yojana"
+  permission_view_internal_comments: "Ver comentarios internos"
+  permission_view_commit_author_statistics: "Ver estadísticas del commit del autor"
+  permission_view_dashboards: "Ver paneles de control"
+  permission_view_work_package_watchers: "Ver lista de observadores"
+  permission_view_work_packages: "Ver paquetes de trabajo"
+  permission_view_messages: "Ver mensajes"
+  permission_view_news: "Ver noticias"
+  permission_view_members: "Ver miembros"
+  permission_view_reportings: "Ver reportes"
+  permission_view_shared_work_packages: "Ver paquetes de trabajo compartidos"
+  permission_view_time_entries: "Ver tiempo invertido"
+  permission_view_timelines: "Ver cronogramas"
+  permission_view_user_email: "Ver las direcciones de correo de los usuarios"
+  permission_view_wiki_edits: "Ver historial wiki"
+  permission_view_wiki_pages: "Ver wiki"
+  permission_work_package_assigned: "Hazte asignado/responsable"
+  permission_work_package_assigned_explanation: "Los paquetes de trabajo se pueden asignar a usuarios y grupos con este papel en los proyectos correspondientes"
+  permission_view_project_activity: "Ver la actividad del proyecto"
+  permission_view_project_attributes: "Ver atributos del proyecto"
+  permission_view_project_phases: "Ver las fases del proyecto"
+  permission_save_bcf_queries: "Guardar consultas BCF"
+  permission_manage_public_bcf_queries: "Administrar consultas BCF públicas"
+  permission_edit_attribute_help_texts: "Editar textos de ayuda de atributos"
+  permission_manage_public_project_queries: "Administrar listas públicas de proyectos"
+  permission_view_project_query: "Ver vistas de proyecto"
+  permission_edit_project_query: "Editar vistas de proyecto"
   placeholders:
     default: "-"
     templated_hint: Generado automáticamente a través del tipo %{type}
@@ -5090,49 +5057,50 @@ es:
     create_successful: El repositorio ha sido registrado.
     delete_sucessful: El repositorio ha sido eliminado.
     destroy:
-      confirmation: Si continúa, se borarrá definitivamente el repositorio gestionado.
-      info: La eliminación del repositorio no se puede deshacer.
-      info_not_managed: 'Nota: Esto NO borrará el contenido de este repositorio, ya que no es gestionado por OpenProject.'
-      managed_path_note: 'Se borrará el directorio siguiente: %{path}'
-      repository_verification_html: Introduce el identificador del proyecto %{identifier} para confirmar la eliminación de su repositorio.
+      confirmation: "Si continúa, se borarrá definitivamente el repositorio gestionado."
+      info: "La eliminación del repositorio no se puede deshacer."
+      info_not_managed: "Nota: Esto NO borrará el contenido de este repositorio, ya que no es gestionado por Yojana."
+      managed_path_note: "Se borrará el directorio siguiente: %{path}"
+      repository_verification: "Intruduzca el identificador del proyecto %{identifier} para confirmar la eliminación de su repositorio."
       subtitle: "¿Esta seguro de que desea eliminar el tipo %{repository_type} del proyecto %{project_name}?"
       subtitle_not_managed_html: "¿De verdad quieres eliminar el enlace %{repository_type} %{url} del proyecto %{project_name}?"
       title_html: Eliminar el %{repository_type}
       title_not_managed: Eliminar el %{repository_type} linkado?
     errors:
-      build_failed: No se puede crear el repositorio con la configuración seleccionada. %{reason}
-      managed_delete: No fue posible eliminar el repositorio gestionado.
-      managed_delete_local: 'No se pudo eliminar el repositorio local del sistema de ficheros ''%{path}'': %{error_message}'
-      empty_repository: El repositorio existe, pero está vacío. No contiene revisiones aún.
-      exists_on_filesystem: El directorio del repositorio ya existe en el sistema de ficheros.
-      filesystem_access_failed: 'Se produjo un error al acceder al repositorio en el sistema de ficheros: %{message}'
-      not_manageable: Este proveedor de repositorios no puede ser gestionado por OpenProject.
-      path_permission_failed: 'Error al intentar crear la siguiente ruta: %{path}. Por favor asegúrese de que OpenProject puede escribir en esa carpeta.'
-      unauthorized: Usted no está autorizado a acceder al repositorio o las credenciales no son válidas.
-      unavailable: El repositorio no está disponible.
-      exception_title: 'No se puede acceder al repositorio: %{message}'
-      disabled_or_unknown_type: El tipo seleccionado %{type} es inválido o ya no está disponible para el proveedor SCM %{vendor}.
-      disabled_or_unknown_vendor: El proveedor SCM %{vendor} es inválido o ya no está disponible.
-      remote_call_failed: 'La llamada al remoto administrado falló con el siguiente mensaje de respuesta ''%{message}'' (Código: %{code})'
-      remote_invalid_response: Recibida respuesta incorrecta recivida desde el remoto administrado.
-      remote_save_failed: No se pudo guardar el repositorio con los parámetros obtenidos desde el remoto.
+      build_failed: "No se puede crear el repositorio con la configuración seleccionada. %{reason}"
+      managed_delete: "No fue posible eliminar el repositorio gestionado."
+      managed_delete_local: "No se pudo eliminar el repositorio local del sistema de ficheros '%{path}': %{error_message}"
+      empty_repository: "El repositorio existe, pero está vacío. No contiene revisiones aún."
+      exists_on_filesystem: "El directorio del repositorio ya existe en el sistema de ficheros."
+      filesystem_access_failed: "Se produjo un error al acceder al repositorio en el sistema de ficheros: %{message}"
+      not_manageable: "Este proveedor de repositorios no puede ser gestionado por Yojana."
+      path_permission_failed: "Error al intentar crear la siguiente ruta: %{path}. Por favor asegúrese de que Yojana puede escribir en esa carpeta."
+      unauthorized: "Usted no está autorizado a acceder al repositorio o las credenciales no son válidas."
+      unavailable: "El repositorio no está disponible."
+      exception_title: "No se puede acceder al repositorio: %{message}"
+      disabled_or_unknown_type: "El tipo seleccionado %{type} es inválido o ya no está disponible para el proveedor SCM %{vendor}."
+      disabled_or_unknown_vendor: "El proveedor SCM %{vendor} es inválido o ya no está disponible."
+      remote_call_failed: "La llamada al remoto administrado falló con el siguiente mensaje de respuesta '%{message}' (Código: %{code})"
+      remote_invalid_response: "Recibida respuesta incorrecta recivida desde el remoto administrado."
+      remote_save_failed: "No se pudo guardar el repositorio con los parámetros obtenidos desde el remoto."
     git:
       instructions:
-        managed_url: Esta es la URL del repositorio Git (local) administrado.
-        path: Especifique la ruta de acceso al repositorio Git (por ejemplo, %{example_path}). También puede usar repositorios remotos que se clonen en una copia local con un valor que empiece por http(s):// o file://.
-        path_encoding: 'Reemplazar Git vía codificación (por defecto: UTF-8)'
-      local_title: Enlace de repositorio Git local existente
-      local_url: URL local
-      local_introduction: Si tienes un repositorio Git local existente, puede enlazarlo con OpenProject para acceder a él desde dentro de la aplicación.
-      managed_introduction: Permitir que OpenProject cree e integre un repositorio Git local automáticamente.
-      managed_title: Repositorios Git integrados en OpenProject
-      managed_url: URL Administrada
-      path: Ruta de acceso al repositorio Git
-      path_encoding: Ruta de codificación
-    go_to_revision: Ir a la revisión
-    managed_remote: Los repositorios administrados para este proveedor son gestionados de forma remota.
-    managed_remote_note: La información sobre la URL y la ruta de este repositorio no están disponibles antes de su creación.
-    managed_url: URL Administrada
+        managed_url: "Esta es la URL del repositorio Git (local) administrado."
+        path: >-
+          Especifique la ruta de acceso al repositorio Git (por ejemplo, %{example_path}). También puede usar repositorios remotos que se clonen en una copia local con un valor que empiece por http(s):// o file://.
+        path_encoding: "Reemplazar Git vía codificación (por defecto: UTF-8)"
+      local_title: "Enlace de repositorio Git local existente"
+      local_url: "URL local"
+      local_introduction: "Si tienes un repositorio Git local existente, puede enlazarlo con Yojana para acceder a él desde dentro de la aplicación."
+      managed_introduction: "Permitir que Yojana cree e integre un repositorio Git local automáticamente."
+      managed_title: "Repositorios Git integrados en Yojana"
+      managed_url: "URL Administrada"
+      path: "Ruta de acceso al repositorio Git"
+      path_encoding: "Ruta de codificación"
+    go_to_revision: "Ir a la revisión"
+    managed_remote: "Los repositorios administrados para este proveedor son gestionados de forma remota."
+    managed_remote_note: "La información sobre la URL y la ruta de este repositorio no están disponibles antes de su creación."
+    managed_url: "URL Administrada"
     settings:
       automatic_managed_repos_disabled: Desactivar la creación automática
       automatic_managed_repos: Creación automática de repositorios gestionados
@@ -5140,202 +5108,179 @@ es:
     scm_vendor: Sistema de gestión de control de fuente
     scm_type: Tipo de repositorio
     scm_types:
-      local: Enlazar repositorio local existente
-      existing: Enlazar repositorio existente
-      managed: Crear un nuevo repositorio en OpenProject
+      local: "Enlazar repositorio local existente"
+      existing: "Enlazar repositorio existente"
+      managed: "Crear un nuevo repositorio en Yojana"
     storage:
-      not_available: Consumo de almacenamiento de disco no está disponible para este repositorio.
-      update_timeout: Mantener la última información de espacio de disco requerida para un repositorio de N minutos. Contar el espacio de disco requerido de un repositorio puede ser costoso, aumente este valor para reducir el impacto en el rendimiento.
-      oauth_application_details_html: 'No podrás volver a acceder al valor del secreto de cliente una vez que cierres esta ventana. Copia estos valores en la configuración de la integración de Nextcloud con OpenProject:'
-      oauth_application_details_link_text: Ir a la página de configuración
-      setup_documentation_details: 'Si necesita ayuda para configurar un nuevo almacenamiento de archivos, compruebe la documentación: '
-      setup_documentation_details_link_text: Configuración de almacenamiento de archivos
-      show_warning_details: Para utilizar este almacenamiento recuerde activar el módulo y el almacenamiento específico en la configuración de cada proyecto deseado.
+      not_available: "Consumo de almacenamiento de disco no está disponible para este repositorio."
+      update_timeout: "Mantener la última información de espacio de disco requerida para un repositorio de N minutos. Contar el espacio de disco requerido de un repositorio puede ser costoso, aumente este valor para reducir el impacto en el rendimiento."
+      oauth_application_details: "La clave secreta de cliente no será accesible una vez se cierre esta ventana. Por favor, copie estos valores en la configuración de la integración de Yojana en Nextcloud:"
+      oauth_application_details_link_text: "Ir a la página de configuración"
+      setup_documentation_details: "Si necesita ayuda para configurar un nuevo almacenamiento de archivos, compruebe la documentación: "
+      setup_documentation_details_link_text: "Configuración de almacenamiento de archivos"
+      show_warning_details: "Para utilizar este almacenamiento recuerde activar el módulo y el almacenamiento específico en la configuración de cada proyecto deseado."
     subversion:
-      existing_title: Subversion existentes de repositorio
-      existing_introduction: Si tienes una Subversion de repositorio existente, puede enlazarlo con OpenProject para acceder a él desde dentro de la aplicación.
-      existing_url: URL existente
+      existing_title: "Subversion existentes de repositorio"
+      existing_introduction: "Si tienes una Subversion de repositorio existente, puede enlazarlo con Yojana para acceder a él desde dentro de la aplicación."
+      existing_url: "URL existente"
       instructions:
         managed_url: Esta es la URL de las Subversion de repositorio administradas (local).
         url: "Introduzca la URL del repositorio. Esta puede apuntar ya sea un repositorio local (a partir de %{local_proto}), o un repositorio remoto. \nLos siguientes esquemas URL son compatibles:"
-      managed_title: Subversiones de repositorio integradas en OpenProject
-      managed_introduction: Permitir que OpenProject cree e integre una Subversion de repositorio local automáticamente.
-      managed_url: URL Administrada
-      password: Contraseña del repositorio
-      username: Nombre de usuario del repositorio
-    truncated: Lo sentimos, pero hemos tenido que truncar este directorio hasta %{limit} archivos. %{truncated} entradas de la lista han sido omitidas.
-    named_repository: Repositorio de %{vendor_name}
-    update_settings_successful: La configuración se guardó correctamente.
-    url: URL al repositorio
+      managed_title: "Subversiones de repositorio integradas en Yojana"
+      managed_introduction: "Permitir que Yojana cree e integre una Subversion de repositorio local automáticamente."
+      managed_url: "URL Administrada"
+      password: "Contraseña del repositorio"
+      username: "Nombre de usuario del repositorio"
+    truncated: "Lo sentimos, pero hemos tenido que truncar este directorio hasta %{limit} archivos. %{truncated} entradas de la lista han sido omitidas."
+    named_repository: "Repositorio de %{vendor_name}"
+    update_settings_successful: "La configuración se guardó correctamente."
+    url: "URL al repositorio"
     warnings:
       cannot_annotate: No se pueden realizar notas sobre este fichero.
   scheduling:
-    manual: establecer en Manual
-    automatic: establecer en Automático
-  search_input_placeholder: Buscar...
-  setting_allowed_link_protocols: Protocolos de enlace permitidos
-  setting_allowed_link_protocols_text_html: Permita que estos protocolos se muestren como enlaces en las descripciones de los paquetes de trabajo, los campos de texto largos y los comentarios. Por ejemplo, %{tel_code} o %{element_code}. Introduzca un protocolo por línea. <br/> Los protocolos %{http_code}, %{https_code} y %{mailto_code} siempre están permitidos.
-  setting_capture_external_links: Detección de enlaces externos
-  setting_capture_external_links_text: 'Cuando esta función está habilitada, todos los enlaces externos en texto formateado redirigirán a una página de advertencia antes de salir de la aplicación. Esto ayuda a proteger a los usuarios de sitios web externos potencialmente maliciosos.
-
-    '
-  setting_capture_external_links_require_login: Requerir que los usuarios inicien sesión
-  setting_capture_external_links_require_login_text: 'Cuando esta función está habilitada, los usuarios que deseen hacer clic en enlaces externos deben iniciar sesión antes de poder continuar.
-
-    '
-  setting_after_first_login_redirect_url: Primera redirección de inicio de sesión
-  setting_after_first_login_redirect_url_text_html: 'Establezca una ruta para redirigir a los usuarios tras su primer inicio de sesión. Si está vacía, redirige a la página de inicio del recorrido de incorporación. <br/> Ejemplo: <code>/my/page</code>
-
-    '
-  setting_after_login_default_redirect_url: Después de la redirección de inicio de sesión
-  setting_after_login_default_redirect_url_example_html: 'Establezca una ruta por defecto para redirigir a los usuarios tras el inicio de sesión, si no se ha proporcionado un enlace de vuelta. Redirige a la página de inicio si no se establece. <br/> Ejemplo: %{example_code}
-
-    '
-  setting_apiv3_cors_title: Intercambio de recursos entre orígenes (CORS)
-  setting_apiv3_cors_enabled: Habilitar CORS
-  setting_apiv3_cors_origins: Orígenes permitidos de la API de CORS (uso compartido de recursos entre orígenes) V3
-  setting_apiv3_cors_origins_instructions_html: 'Si CORS está habilitado, estos son los orígenes a los que se les permite acceder a la API de OpenProject. <br/> Consulta la [documentación sobre el encabezado Origin](docs_url) para saber cómo especificar los valores esperados.
-
-    '
-  setting_apiv3_write_readonly_attributes: Acceso de escritura a atributos de solo lectura
-  setting_apiv3_write_readonly_attributes_instructions: 'Si se activa, la API permitirá a los administradores escribir atributos estáticos de solo lectura durante la creación, como createdAt y author.
-
-    '
-  setting_apiv3_write_readonly_attributes_warning: 'Este ajuste tiene un caso de uso para, por ejemplo, la importación de datos, pero permite a los administradores suplantar la creación de elementos como otros usuarios. Sin embargo, todas las solicitudes de creación se registran con el verdadero autor.
-
-    '
-  setting_apiv3_write_readonly_attributes_additional_html: 'Para obtener más información sobre los atributos y los recursos compatibles, consulta la [documentación de la API](api_documentation_link).
-
-    '
-  setting_apiv3_max_page_size: Tamaño máximo de página API
-  setting_apiv3_max_page_size_instructions: 'Establezca el tamaño máximo de página con el que responderá la API. No se podrán realizar solicitudes a la API que devuelvan más valores en una sola página.
-
-    '
-  setting_apiv3_max_page_size_warning: 'Por favor, cambie este valor solo si sabe con certeza por qué lo necesita. Un ajuste alto impactará significativamente el rendimiento, mientras que un valor inferior a las opciones por página causará errores en las vistas paginadas.
-
-    '
-  setting_apiv3_docs: Documentación
-  setting_apiv3_docs_enabled: Activar página de documentos
-  setting_apiv3_docs_enabled_instructions_html: 'Si la página de documentos está habilitada, puede obtener una vista interactiva de la documentación de APIv3 en <a href="%{link}" target="_blank">%{link}</a>.
-
-    '
-  setting_apiv3_docs_enabled_instructions_warning: 'Ten en cuenta que habilitar la documentación de la API en un sistema de producción puede exponer información confidencial o provocar la pérdida accidental de datos si no se tiene cuidado. Recomendamos habilitar esta configuración solo con fines de desarrollo.
-
-    '
-  setting_attachment_whitelist: Lista de permitidos de carga de archivos adjuntos
-  setting_email_delivery_method: Método de envío de correo electrónico
-  setting_emails_salutation: Dirigirse al usuario en los correos como
-  setting_oauth_allow_remapping_of_existing_users: Permitir la reasignación de usuarios existentes
-  setting_sendmail_location: Ubicación del ejecutable de sendmail
-  setting_sendmail_arguments: Argumentos para sendmail
-  setting_smtp_enable_starttls_auto: Usar STARTTLS automáticamente si está disponible
-  setting_smtp_ssl: Usar conexión SSL
-  setting_smtp_address: Servidor SMTP
-  setting_smtp_port: Puerto SMTP
-  setting_smtp_authentication: Autenticación SMTP
-  setting_smtp_user_name: Nombre de usuario SMTP
-  setting_smtp_password: Contraseña SMTP
-  setting_smtp_domain: Dominio SMTP HELO
-  setting_activity_days_default: Días mostrados en actividad de proyecto
-  setting_api_tokens_enabled: Habilitar tokens API
-  setting_api_tokens_enabled_caption: 'Decida si los usuarios pueden crear tokens API personales en la configuración de sus cuentas. Estos tokens se pueden utilizar para acceder a las diferentes API de OpenProject, como APIv3 y MCP.
-
-    '
-  setting_app_subtitle: Subtítulo de aplicación
-  setting_app_title: Título de aplicación
-  setting_organization_name: Nombre de la organización
-  setting_attachment_max_size: Tamaño máximo de adjunto
-  setting_show_work_package_attachments: Mostrar archivos adjuntos en la pestaña de archivos por defecto
-  setting_antivirus_scan_mode: Modo de escaneo
-  setting_antivirus_scan_action: Acción del archivo infectado
-  setting_autofetch_changesets: Recopilación automática de cambios del repositorio
-  setting_autologin: Inicio de sesión automático
-  setting_available_languages: Idiomas disponibles
-  setting_bcc_recipients: Destinatarios con copia carbon oculta (cco)
-  setting_brute_force_block_after_failed_logins: Bloquear al usuario después de este número de intentos de login fallidos
-  setting_brute_force_block_minutes: Tiempo que el usuario estará bloqueado
-  setting_cache_formatted_text: Texto formateado del cache
-  setting_use_wysiwyg_description: Seleccione esta opción para habilitar el editor WYSIWYG de CKEditor 5 de forma predeterminada para todos los usuarios. CKEditor tiene funciones limitadas para la versión GFM de Markdown.
-  setting_column_options: Columnas de listas del paquete de trabajo por defecto
-  setting_commit_fix_keywords: Reparando palabras clave
-  setting_commit_logs_encoding: Codificación de mensajes de compromiso
-  setting_commit_logtime_activity_id: Actividad para tiempo registrado
-  setting_commit_logtime_enabled: Activar registro de tiempo
-  setting_commit_ref_keywords: Referenciando palabras clave
-  setting_consent_time: Tiempo de consentimiento
-  setting_consent_info: Texto de información de consentimiento
-  setting_consent_required: Se requiere consentimiento
-  setting_consent_decline_mail: Consentimiento de la dirección de correo electrónico
-  setting_cross_project_work_package_relations: Permitir relaciones cruzadas en paquetes de trabajo de proyecto
-  setting_csv_escape_formulas: Fórmulas de escape en las exportaciones CSV
-  setting_csv_escape_formulas_text: 'Para evitar que las fórmulas de las hojas de cálculo se incluyan en las exportaciones CSV, añade una comilla simple delante de las celdas que empiecen con caracteres como =, +, - o @. Esto evita la inserción de fórmulas en el CSV cuando los archivos exportados se abren en aplicaciones de hojas de cálculo como Excel. La desventaja es que se modifican los valores de las cadenas dentro del CSV, así que quizá quieras desactivar esta opción si las herramientas posteriores necesitan los valores exactos de las celdas, sin escapar.
-
-    '
-  setting_first_week_of_year: La primera semana del año contiene
-  setting_date_format: Fecha
-  setting_default_language: Idioma predeterminado
-  setting_default_projects_modules: Modulos activados por defecto para nuevos proyectos
-  setting_default_projects_public: Nuevos proyectos son públicos por defecto
-  setting_disable_password_login: Desactivar la autenticación por contraseña
-  setting_diff_max_lines_displayed: Cantidad máxima de diferencias de lineas mostradas
-  setting_omniauth_direct_login_provider: Proveedor de SSO de inicio de sesión directo
-  setting_display_subprojects_work_packages: Mostrar paquetes de trabajo de subproyectos en proyectos principales por defecto
-  setting_duration_format: Formato de la duración
-  setting_duration_format_hours_only: Sólo horas
-  setting_duration_format_days_and_hours: Días y horas
-  setting_duration_format_instructions: Define cómo se muestran las duraciones de Trabajo, Trabajo restante y Tiempo empleado.
-  setting_emails_footer: Pie de correos electronicos
-  setting_emails_header: Encabezado de correos electrónicos
-  setting_email_login: Usar correo electrónico como nombre de usuario
-  setting_enabled_scm: SCM activado
-  setting_enabled_projects_columns: Columnas de una lista de proyectos mostradas por defecto
-  setting_feeds_enabled: Activar Feeds
-  setting_ical_enabled: Habilitar las suscripciones a iCalendar
-  setting_feeds_limit: Limite de contenido de feed
-  setting_file_max_size_displayed: Tamaño máximo de archivos de texto mostrado en linea
-  setting_host_name: Nombre de host
-  setting_collaborative_editing_hocuspocus_url: URL del servidor Hocuspocus
-  setting_collaborative_editing_hocuspocus_secret: Secreto del servidor Hocuspocus
-  setting_hours_per_day: Horas al día
-  setting_hours_per_day_explanation: Define lo que se considera un "día" cuando se muestra la duración en días y horas (por ejemplo, si un día tiene 8 horas, 32 horas serían 4 días).
-  setting_invitation_expiration_days: El correo electrónico de activación caduca después de
-  setting_invitation_expiration_days_caption: Número de días tras los cuales caduca el correo electrónico de activación.
-  setting_work_package_done_ratio: Modo de cálculo del progreso
-  setting_work_package_done_ratio_field: Basado en el trabajo
-  setting_work_package_done_ratio_field_caption_html: "<i>% completado</i> puede fijarse libremente en cualquier valor. Si introduce opcionalmente un valor para <i>Trabajo</i>, se derivará automáticamente <i>Trabajo restante</i>."
-  setting_work_package_done_ratio_status: Basado en el estado
-  setting_work_package_done_ratio_status_caption_html: Cada estado tiene asociado un valor de <i>% completado</i>. El cambio de estado modificará el <i>% completado</i>.
-  setting_work_package_done_ratio_explanation_html: 'En el modo <b>basado en trabajo</b>, el % completado puede fijarse libremente en cualquier valor. Si introduce opcionalmente un valor para Trabajo, se derivará automáticamente Trabajo restante. En el modo <b>basado en estados</b>, cada estado tiene asociado un valor de % completado. Si cambia de estado, cambiará el % completado.
-
-    '
-  setting_work_package_properties: Propiedades de paquete de trabajo
-  setting_work_package_startdate_is_adddate: Usar fecha actual como fecha de inicio para nuevos paquetes de trabajo
-  setting_work_packages_projects_export_limit: Fecha límite para exportar paquete de trabajo o proyectos
-  setting_work_packages_projects_export_limit_text: 'Número máximo de paquetes de trabajo o proyectos que se pueden incluir en una sola exportación. Las exportaciones más grandes se truncan hasta este límite.
-
-    '
-  setting_journal_aggregation_time_minutes: Período de agregación
-  setting_log_requesting_user: Registrar inicio de sesión de usuario, nombre, y dirección de correo para todas las solicitudes
-  setting_login_required: Autentificación requerida
-  setting_login_required_caption: Cuando está marcada, todas las solicitudes a la aplicación tienen que autentificarse.
-  setting_lost_password: Activar restablecimiento de contraseña
-  setting_lost_password_caption: Si está marcada, permite a los usuarios restablecer sus propias contraseñas.
-  setting_mail_from: Dirección de correo electrónico de emision
-  setting_mail_handler_api_key: Clave API
-  setting_mail_handler_body_delimiters: Truncar los correos electrónicos después de una de estas líneas
-  setting_mail_handler_body_delimiter_regex: Truncar correos que coincidan con esta expresión regular
-  setting_mail_handler_ignore_filenames: Archivos adjuntos de email ignorados
-  setting_new_project_user_role_id: Papel ortorgado a usuario no administrador que crea un proyecto
-  setting_new_project_user_role_id_caption: 'Solo se muestran los roles que incluyen los permisos para editar los atributos del proyecto y gestionar a los miembros, de modo que el creador pueda completar la configuración del proyecto.
-
-    '
-  setting_new_project_send_confirmation_email: Enviar notificación al autor al crear un nuevo proyecto
-  setting_new_project_notification_text: Texto de la notificación
-  setting_password_active_rules: Requisitos de la contraseña
-  setting_password_count_former_banned: Numero de contraseñas usadas mas recientemente bloqueadas para re-uso
-  setting_password_days_valid: Número de días, después de que sea necesario imponer un cambio de contraseña
-  setting_password_min_length: Longitud mínima
-  setting_per_page_options: Objetos por página de opciones
+    manual: "establecer en Manual"
+    automatic: "establecer en Automático"
+  search_input_placeholder: "Buscar..."
+  setting_allowed_link_protocols: "Protocolos de enlace permitidos"
+  setting_allowed_link_protocols_text_html: >-
+    Permita que estos protocolos se muestren como enlaces en las descripciones de los paquetes de trabajo, los campos de texto largos y los comentarios. Por ejemplo, %{tel_code} o %{element_code}. Introduzca un protocolo por línea. <br/> Los protocolos %{http_code}, %{https_code} y %{mailto_code} siempre están permitidos.
+  setting_capture_external_links: "Detección de enlaces externos"
+  setting_capture_external_links_text: >
+    Cuando esta función está habilitada, todos los enlaces externos en texto formateado redirigirán a una página de advertencia antes de salir de la aplicación. Esto ayuda a proteger a los usuarios de sitios web externos potencialmente maliciosos.
+  setting_capture_external_links_require_login: "Require users to be logged in"
+  setting_capture_external_links_require_login_text: >
+    When enabled, users wanting to click on external links need to be logged in before being able to continue.
+  setting_after_first_login_redirect_url: "Primera redirección de inicio de sesión"
+  setting_after_first_login_redirect_url_text_html: >
+    Establezca una ruta para redirigir a los usuarios tras su primer inicio de sesión. Si está vacía, redirige a la página de inicio del recorrido de incorporación. <br/> Ejemplo: <code>/my/page</code>
+  setting_after_login_default_redirect_url: "Después de la redirección de inicio de sesión"
+  setting_after_login_default_redirect_url_text_html: >
+    Establezca una ruta por defecto para redirigir a los usuarios tras el inicio de sesión, si no se ha proporcionado un enlace de vuelta. Redirige a la página de inicio si no se establece. <br/> Ejemplo: <code>/my/page</code>
+  setting_apiv3_cors_title: "Intercambio de recursos entre orígenes (CORS)"
+  setting_apiv3_cors_enabled: "Habilitar CORS"
+  setting_apiv3_cors_origins: "Orígenes permitidos de la API de CORS (uso compartido de recursos entre orígenes) V3"
+  setting_apiv3_cors_origins_text_html: >
+    Si CORS está habilitado, estos son los orígenes que tienen permiso para acceder a la API de Yojana. <br/> Consulte la <a href="%{origin_link}" target="_blank">documentación sobre el encabezado Origin</a> para obtener información sobre cómo especificar los valores esperados.
+  setting_apiv3_write_readonly_attributes: "Acceso de escritura a atributos de solo lectura"
+  setting_apiv3_write_readonly_attributes_instructions: >
+    Si se activa, la API permitirá a los administradores escribir atributos estáticos de solo lectura durante la creación, como createdAt y author.
+  setting_apiv3_write_readonly_attributes_warning: >
+    Este ajuste tiene un caso de uso para, por ejemplo, la importación de datos, pero permite a los administradores suplantar la creación de elementos como otros usuarios. Sin embargo, todas las solicitudes de creación se registran con el verdadero autor.
+  setting_apiv3_write_readonly_attributes_additional: >
+    Para obtener más información sobre los atributos y los recursos admitidos, consulte el enlace %{api_documentation_link}.
+  setting_apiv3_max_page_size: "Tamaño máximo de página API"
+  setting_apiv3_max_page_size_instructions: >
+    Establezca el tamaño máximo de página con el que responderá la API. No se podrán realizar solicitudes a la API que devuelvan más valores en una sola página.
+  setting_apiv3_max_page_size_warning: >
+    Por favor, cambie este valor solo si sabe con certeza por qué lo necesita. Un ajuste alto impactará significativamente el rendimiento, mientras que un valor inferior a las opciones por página causará errores en las vistas paginadas.
+  setting_apiv3_docs: "Documentación"
+  setting_apiv3_docs_enabled: "Activar página de documentos"
+  setting_apiv3_docs_enabled_instructions_html: >
+    Si la página de documentos está habilitada, puede obtener una vista interactiva de la documentación de APIv3 en <a href="%{link}" target="_blank">%{link}</a>.
+  setting_apiv3_docs_enabled_instructions_warning: >
+    Ten en cuenta que habilitar la documentación de la API en un sistema de producción puede exponer información confidencial o provocar la pérdida accidental de datos si no se tiene cuidado. Recomendamos habilitar esta configuración solo con fines de desarrollo.
+  setting_attachment_whitelist: "Lista de permitidos de carga de archivos adjuntos"
+  setting_email_delivery_method: "Método de envío de correo electrónico"
+  setting_emails_salutation: "Dirigirse al usuario en los correos como"
+  setting_oauth_allow_remapping_of_existing_users: "Permitir la reasignación de usuarios existentes"
+  setting_sendmail_location: "Ubicación del ejecutable de sendmail"
+  setting_sendmail_arguments: "Argumentos para sendmail"
+  setting_smtp_enable_starttls_auto: "Usar STARTTLS automáticamente si está disponible"
+  setting_smtp_ssl: "Usar conexión SSL"
+  setting_smtp_address: "Servidor SMTP"
+  setting_smtp_port: "Puerto SMTP"
+  setting_smtp_authentication: "Autenticación SMTP"
+  setting_smtp_user_name: "Nombre de usuario SMTP"
+  setting_smtp_password: "Contraseña SMTP"
+  setting_smtp_domain: "Dominio SMTP HELO"
+  setting_activity_days_default: "Días mostrados en actividad de proyecto"
+  setting_app_subtitle: "Subtítulo de aplicación"
+  setting_app_title: "Título de aplicación"
+  setting_attachment_max_size: "Tamaño máximo de adjunto"
+  setting_show_work_package_attachments: "Mostrar archivos adjuntos en la pestaña de archivos por defecto"
+  setting_antivirus_scan_mode: "Modo de escaneo"
+  setting_antivirus_scan_action: "Acción del archivo infectado"
+  setting_autofetch_changesets: "Recopilación automática de cambios del repositorio"
+  setting_autologin: "Inicio de sesión automático"
+  setting_available_languages: "Idiomas disponibles"
+  setting_bcc_recipients: "Destinatarios con copia carbon oculta (cco)"
+  setting_brute_force_block_after_failed_logins: "Bloquear al usuario después de este número de intentos de login fallidos"
+  setting_brute_force_block_minutes: "Tiempo que el usuario estará bloqueado"
+  setting_cache_formatted_text: "Texto formateado del cache"
+  setting_use_wysiwyg_description: "Seleccione esta opción para habilitar el editor WYSIWYG de CKEditor 5 de forma predeterminada para todos los usuarios. CKEditor tiene funciones limitadas para la versión GFM de Markdown."
+  setting_column_options: "Columnas de listas del paquete de trabajo por defecto"
+  setting_commit_fix_keywords: "Reparando palabras clave"
+  setting_commit_logs_encoding: "Codificación de mensajes de compromiso"
+  setting_commit_logtime_activity_id: "Actividad para tiempo registrado"
+  setting_commit_logtime_enabled: "Activar registro de tiempo"
+  setting_commit_ref_keywords: "Referenciando palabras clave"
+  setting_consent_time: "Tiempo de consentimiento"
+  setting_consent_info: "Texto de información de consentimiento"
+  setting_consent_required: "Se requiere consentimiento"
+  setting_consent_decline_mail: "Consentimiento de la dirección de correo electrónico"
+  setting_cross_project_work_package_relations: "Permitir relaciones cruzadas en paquetes de trabajo de proyecto"
+  setting_first_week_of_year: "La primera semana del año contiene"
+  setting_date_format: "Fecha"
+  setting_default_language: "Idioma predeterminado"
+  setting_default_projects_modules: "Modulos activados por defecto para nuevos proyectos"
+  setting_default_projects_public: "Nuevos proyectos son públicos por defecto"
+  setting_disable_password_login: "Desactivar la autenticación por contraseña"
+  setting_diff_max_lines_displayed: "Cantidad máxima de diferencias de lineas mostradas"
+  setting_omniauth_direct_login_provider: "Proveedor de SSO de inicio de sesión directo"
+  setting_display_subprojects_work_packages: "Mostrar paquetes de trabajo de subproyectos en proyectos principales por defecto"
+  setting_duration_format: "Formato de la duración"
+  setting_duration_format_hours_only: "Sólo horas"
+  setting_duration_format_days_and_hours: "Días y horas"
+  setting_duration_format_instructions: "Define cómo se muestran las duraciones de Trabajo, Trabajo restante y Tiempo empleado."
+  setting_emails_footer: "Pie de correos electronicos"
+  setting_emails_header: "Encabezado de correos electrónicos"
+  setting_email_login: "Usar correo electrónico como nombre de usuario"
+  setting_enabled_scm: "SCM activado"
+  setting_enabled_projects_columns: "Columnas de una lista de proyectos mostradas por defecto"
+  setting_feeds_enabled: "Activar Feeds"
+  setting_ical_enabled: "Habilitar las suscripciones a iCalendar"
+  setting_feeds_limit: "Limite de contenido de feed"
+  setting_file_max_size_displayed: "Tamaño máximo de archivos de texto mostrado en linea"
+  setting_host_name: "Nombre de host"
+  setting_collaborative_editing_hocuspocus_url: "URL del servidor Hocuspocus"
+  setting_collaborative_editing_hocuspocus_secret: "Secreto del servidor Hocuspocus"
+  setting_hours_per_day: "Horas al día"
+  setting_hours_per_day_explanation: >-
+    Define lo que se considera un "día" cuando se muestra la duración en días y horas (por ejemplo, si un día tiene 8 horas, 32 horas serían 4 días).
+  setting_invitation_expiration_days: "El correo electrónico de activación caduca después de"
+  setting_invitation_expiration_days_caption: "Número de días tras los cuales caduca el correo electrónico de activación."
+  setting_work_package_done_ratio: "Modo de cálculo del progreso"
+  setting_work_package_done_ratio_field: "Basado en el trabajo"
+  setting_work_package_done_ratio_field_caption_html: >-
+    <i>% completado</i> puede fijarse libremente en cualquier valor. Si introduce opcionalmente un valor para <i>Trabajo</i>, se derivará automáticamente <i>Trabajo restante</i>.
+  setting_work_package_done_ratio_status: "Basado en el estado"
+  setting_work_package_done_ratio_status_caption_html: >-
+    Cada estado tiene asociado un valor de <i>% completado</i>. El cambio de estado modificará el <i>% completado</i>.
+  setting_work_package_done_ratio_explanation_html: >
+    En el modo <b>basado en trabajo</b>, el % completado puede fijarse libremente en cualquier valor. Si introduce opcionalmente un valor para Trabajo, se derivará automáticamente Trabajo restante. En el modo <b>basado en estados</b>, cada estado tiene asociado un valor de % completado. Si cambia de estado, cambiará el % completado.
+  setting_work_package_properties: "Propiedades de paquete de trabajo"
+  setting_work_package_startdate_is_adddate: "Usar fecha actual como fecha de inicio para nuevos paquetes de trabajo"
+  setting_work_packages_projects_export_limit: "Fecha límite para exportar paquete de trabajo o proyectos"
+  setting_journal_aggregation_time_minutes: "Acciones de usuario agregadas dentro de"
+  setting_log_requesting_user: "Registrar inicio de sesión de usuario, nombre, y dirección de correo para todas las solicitudes"
+  setting_login_required: "Autentificación requerida"
+  setting_login_required_caption: "Cuando está marcada, todas las solicitudes a la aplicación tienen que autentificarse."
+  setting_lost_password: "Activar restablecimiento de contraseña"
+  setting_lost_password_caption: "Si está marcada, permite a los usuarios restablecer sus propias contraseñas."
+  setting_mail_from: "Dirección de correo electrónico de emision"
+  setting_mail_handler_api_key: "Clave API"
+  setting_mail_handler_body_delimiters: "Truncar los correos electrónicos después de una de estas líneas"
+  setting_mail_handler_body_delimiter_regex: "Truncar correos que coincidan con esta expresión regular"
+  setting_mail_handler_ignore_filenames: "Archivos adjuntos de email ignorados"
+  setting_new_project_user_role_id: "Papel ortorgado a usuario no administrador que crea un proyecto"
+  setting_new_project_send_confirmation_email: "Enviar notificación al autor al crear un nuevo proyecto"
+  setting_new_project_notification_text: "Texto de la notificación"
+  setting_password_active_rules: "Activar clases de personajes"
+  setting_password_count_former_banned: "Numero de contraseñas usadas mas recientemente bloqueadas para re-uso"
+  setting_password_days_valid: "Número de días, después de que sea necesario imponer un cambio de contraseña"
+  setting_password_min_length: "Longitud mínima"
+  setting_password_min_adhered_rules: "Numero mínimo de clases requeridas"
+  setting_per_page_options: "Objetos por página de opciones"
   setting_percent_complete_on_status_closed: "% completado cuando el estado es cerrado"
   setting_percent_complete_on_status_closed_no_change: Sin cambios
   setting_percent_complete_on_status_closed_no_change_caption_html: El valor de <i>% completado</i> no cambiará aunque se cierre un paquete de trabajo.
@@ -5411,15 +5356,13 @@ es:
       not_writable: La configuración no es modificable y solo puede cambiarla un administrador del sistema.
       failed_to_update: 'No se pudo actualizar la configuración de «%{name}»: %{message}'
     authentication:
-      login: Iniciar sesión
-      registration: Registro
-      sso: Inicio de sesión único (SSO)
-      omniauth_direct_login_hint_html: 'Si esta opción está activa, las solicitudes de inicio de sesión se redirigirán al proveedor omniauth configurado. El menú desplegable de inicio de sesión y la página de inicio de sesión se desactivarán. <br/> <strong>Nota:</strong> A menos que también deshabilite los inicios de sesión con contraseña, con esta opción activada, los usuarios podrán seguir iniciando sesión internamente visitando la página de inicio de sesión <code>%{internal_path}</code>.
-
-        '
-      remapping_existing_users_hint: 'Si está habilitado, permite a cualquier proveedor de identidad configurado iniciar sesión a los usuarios existentes basándose en su nombre de usuario, incluso si el usuario nunca ha iniciado sesión a través de ese proveedor anteriormente. Esto puede ser útil al migrar la instancia de OpenProject a un nuevo proveedor de SSO, pero no se recomienda cuando se usa un proveedor que no es confiable para todos los usuarios de su instancia.
-
-        '
+      login: "Iniciar sesión"
+      registration: "Registro"
+      sso: "Inicio de sesión único (SSO)"
+      omniauth_direct_login_hint_html: >
+        Si esta opción está activa, las solicitudes de inicio de sesión se redirigirán al proveedor omniauth configurado. El menú desplegable de inicio de sesión y la página de inicio de sesión se desactivarán. <br/> <strong>Nota:</strong> A menos que también deshabilite los inicios de sesión con contraseña, con esta opción activada, los usuarios podrán seguir iniciando sesión internamente visitando la página de inicio de sesión <code>%{internal_path}</code>.
+      remapping_existing_users_hint: >
+        Si está habilitado, permite a cualquier proveedor de identidad configurado iniciar sesión a los usuarios existentes basándose en su nombre de usuario, incluso si el usuario nunca ha iniciado sesión a través de ese proveedor anteriormente. Esto puede ser útil al migrar la instancia de Yojana a un nuevo proveedor de SSO, pero no se recomienda cuando se usa un proveedor que no es confiable para todos los usuarios de su instancia.
     attachments:
       whitelist_text_html: 'Define una lista de extensiones de archivo válidas o tipos MIME para los archivos cargados. <br/> Escriba las extensiones de archivo (por ejemplo, <code>%{ext_example}</code>) o tipos MIME (<code>%{mime_example}</code>). <br/> Deje vacío este campo para que pueda cargarse cualquier tipo de archivo. Se permiten varios valores (una línea para cada valor).
 
@@ -5448,10 +5391,9 @@ es:
       modes:
         clamav_socket_html: Introduzca el socket al daemon clamd, por ejemplo, %{example}
         clamav_host_html: Introduzca el nombre de host y el puerto al daemon clamd separados por dos puntos. Por ejemplo, %{example}
-        description_html: 'Seleccione el modo en el que debe funcionar la integración del escáner antivirus. <br/> <ul> <li><strong>%{disabled_option}</strong>: Los archivos cargados no se analizan en busca de virus.</li> <li><strong>%{socket_option}</strong>: Ha configurado ClamAV en el mismo servidor que OpenProject y el daemon de análisis clamd se está ejecutando en segundo plano.</li> <li><strong>%{host_option}</strong>: Está transmitiendo archivos a un host externo de análisis de virus.</li> </ul>
-
-          '
-    brute_force_prevention: Bloqueo automático de usuarios
+        description_html: >
+          Seleccione el modo en el que debe funcionar la integración del escáner antivirus. <br/> <ul> <li><strong>%{disabled_option}</strong>: Los archivos cargados no se analizan en busca de virus.</li> <li><strong>%{socket_option}</strong>: Ha configurado ClamAV en el mismo servidor que Yojana y el daemon de análisis clamd se está ejecutando en segundo plano.</li> <li><strong>%{host_option}</strong>: Está transmitiendo archivos a un host externo de análisis de virus.</li> </ul>
+    brute_force_prevention: "Bloqueo automático de usuarios"
     date_format:
       first_date_of_week_and_year_set: 'Si se establece una de las opciones «%{day_of_week_setting_name}» o «%{first_week_setting_name}», también debe establecerse la otra para evitar incoherencias en el front-end.
 
@@ -5460,8 +5402,8 @@ es:
 
         '
     experimental:
-      save_confirmation: "¡Precaución! ¡Riesgo de pérdida de datos! Active las funciones experimentales solo si no le importa romper su instalación de OpenProject y perder todos sus datos."
-      warning_toast: Las banderas de funciones son ajustes que activan características que aún están en desarrollo. Solo se utilizarán con fines de prueba. Nunca deberán activarse en instalaciones de OpenProject que contengan datos importantes. Es muy probable que estas características corrompan sus datos. Utilícelas bajo su propia responsabilidad.
+      save_confirmation: '¡Precaución! ¡Riesgo de pérdida de datos! Active las funciones experimentales solo si no le importa romper su instalación de Yojana y perder todos sus datos.'
+      warning_toast: Las banderas de funciones son ajustes que activan características que aún están en desarrollo. Solo se utilizarán con fines de prueba. Nunca deberán activarse en instalaciones de Yojana que contengan datos importantes. Es muy probable que estas características corrompan sus datos. Utilícelas bajo su propia responsabilidad.
       feature_flags: Banderas de características
     general: General
     highlighting:
@@ -5472,7 +5414,7 @@ es:
         type: Toda la fila por tipo
         priority: Toda la fila por prioridad
     icalendar:
-      enable_subscriptions_text_html: Permite a los usuarios con los permisos necesarios suscribirse a los calendarios de OpenProject y acceder a la información de los paquetes de trabajo a través de un cliente de calendario externo. <strong>Nota:</strong> Lea sobre <a href="%{link}" target="_blank">suscripciones a iCalendar</a> para comprender los posibles riesgos de seguridad antes de habilitarlo.
+      enable_subscriptions_text_html: Permite a los usuarios con los permisos necesarios suscribirse a los calendarios de Yojana y acceder a la información de los paquetes de trabajo a través de un cliente de calendario externo. <strong>Nota:</strong> Lea sobre <a href="%{link}" target="_blank">suscripciones a iCalendar</a> para comprender los posibles riesgos de seguridad antes de habilitarlo.
     language_name_being_default: "%{language_name} (por defecto)"
     notifications:
       events_explanation: Controla para qué evento se envía un correo electrónico. Los paquetes de trabajo se excluyen de esta lista, ya que las notificaciones para estos se pueden configurar específicamente por usuario.
@@ -5506,9 +5448,8 @@ es:
               label: Panel lateral
               description: Añadir todos los atributos del proyecto en una sección dentro del panel lateral derecho en la descripción del proyecto.
     project_initiation_request:
-      header_description: 'OpenProject puede generar un asistente paso a paso para ayudar a los gestores de proyectos a completar una solicitud de inicio de proyecto. Puedes elegir qué atributos del proyecto deben incluirse y crear un archivo PDF como resultado.
-
-        '
+      header_description: >
+        Yojana puede generar un asistente paso a paso para ayudar a los gestores de proyectos a completar una solicitud de inicio de proyecto. Puedes elegir qué atributos del proyecto deben incluirse y crear un archivo PDF como resultado.
       status:
         submitted: Se ha enviado %{wizard_name}
         submitted_description: Haz clic en el botón de abajo para ir al paquete de trabajo para el proceso de envío.
@@ -5520,8 +5461,8 @@ es:
         project_creation_wizard: Abrir el asistente de creación de proyectos
         project_mandate: Abrir mandato del proyecto
       blankslate:
-        title: Solicitud de inicio no habilitada
-        description: OpenProject puede generar un asistente paso a paso para ayudar a los gestores de proyectos a completar una solicitud de inicio de proyecto. Puedes elegir qué atributos del proyecto deben incluirse y qué hacer con el documento resultante. Habilítalo aquí para comenzar a configurar el asistente.
+        title: "Solicitud de inicio no habilitada"
+        description: "Yojana puede generar un asistente paso a paso para ayudar a los gestores de proyectos a completar una solicitud de inicio de proyecto. Puedes elegir qué atributos del proyecto deben incluirse y qué hacer con el documento resultante. Habilítalo aquí para comenzar a configurar el asistente."
       disable_dialog:
         title: Desactivar solicitud de inicio de proyecto
         heading: "¿Desactivar la solicitud de inicio de proyecto?"
@@ -5627,10 +5568,10 @@ es:
   support:
     array:
       sentence_connector: "y"
-      skip_last_comma: falso
-  text_accessibility_hint: El modo de accesibilidad está diseñado para los usuarios ciegos, con dificultades motoras o con la vista mala. Para estos últimos, los elementos enfocados se destacan aún más. Tenga en cuenta que el módulo Backlog no está disponible en este modo.
-  text_access_token_hint: Los tokens de acceso te permiten dar permisos de acceso sobre los recursos de OpenProject a aplicaciones externas.
-  text_analyze: 'Análisis futuro: %{subject}'
+      skip_last_comma: "falso"
+  text_accessibility_hint: "El modo de accesibilidad está diseñado para los usuarios ciegos, con dificultades motoras o con la vista mala. Para estos últimos, los elementos enfocados se destacan aún más. Tenga en cuenta que el módulo Backlog no está disponible en este modo."
+  text_access_token_hint: "Los tokens de acceso te permiten dar permisos de acceso sobre los recursos de Yojana a aplicaciones externas."
+  text_analyze: "Análisis futuro: %{subject}"
   text_are_you_sure: "¿Estás seguro?"
   open_link_in_a_new_tab: Abrir vínculo en un nuevo panel
   text_are_you_sure_continue: "¿Seguro que quiere continuar?"
@@ -5741,37 +5682,30 @@ es:
   text_line_separated: Múltiples valores permitidos (una línea para cada valor).
   text_load_default_configuration: Cargar la configuración predeterminada
   text_no_roles_defined: No hay ningun rol definido.
-  text_no_access_tokens_configurable: No hay ningun token de acceso que pueda ser configurado.
-  text_no_configuration_data: Roles, tipos, estado de petición y flujo de trabajo no han sido configurados. Se recomienda cargar la configuración por defecto. Podrá modificarla cuando haya sido cargada.
-  text_no_notes: No hay comentarios disponibles para este paquete de trabajo.
-  text_notice_too_many_values_are_inperformant: 'Nota: Si se muestran más de 100 elementos por página puede incrementar el tiempo de carga de la página.'
-  text_notice_security_badge_displayed_html: 'Nota: al activarse, se mostrará una insignia con el estado de instalación en el <a href="%{information_panel_path}">%{information_panel_label}</a> panel de administración, y en la página principal. Solamente será visible para administradores. <br/> La insignia comprobará tu versión actual de OpenProject comparada con la base de datos oficial de OpenProject para alertarte de cualquier actualización o vulnerabilidad. Para más información sobre las funciones de la comprobación, los datos necesarios para conseguir actualizaciones disponibles, o para desactivar esta comprobación, por favor visita <a href="%{more_info_url}">la documentación de configuración</a>.
-
-    '
-  text_own_membership_delete_confirmation: |-
-    Estás a punto de eliminar algunos o todos tus permisos, y podrías no poder volver a editar este proyecto.
-    ¿Estás seguro/a de que quieres continuar?
-  text_permanent_delete_confirmation_checkbox_label: Entiendo que esta eliminación no se puede revertir
-  text_permanent_remove_confirmation_checkbox_label: Entiendo que esta eliminación no se puede revertir
-  text_plugin_assets_writable: Directorio de extensiones activos escribible
-  text_powered_by: Con tecnología de %{link}
-  text_project_identifier_info: Se permiten sólo letras minúsculas (a-z), números, guiones y guiones bajos, debe comenzar con una letra minúscula.
-  text_project_identifier_description: El identificador del proyecto se antepone a todos los identificadores de los paquetes de trabajo. Si el identificador es «PROJ», por ejemplo, el identificador del paquete de trabajo será «PROJ-12» o «PROJ-246».
-  text_project_identifier_url_description: El identificador del proyecto aparece en la URL del proyecto.
-  text_project_identifier_handle_format: Debe empezar por una letra y contener solo letras mayúsculas, números y guiones bajos (máximo 10 caracteres).
-  text_project_identifier_format: Debe empezar con una letra minúscula. Solo se permiten letras minúsculas (a-z), números, guiones y guiones bajos.
-  text_reassign: 'Reasignar al paquete de trabajo:'
-  text_regexp_multiline: La expresión regular se aplica en modo multilínea. Por ejemplo, ^---\s+
-  text_rename_wiki_page: Renombrar página wiki
-  text_repository_usernames_mapping: Seleccione o actualize el usuario de OpenProject asignado a cada nombre en el registro del repositorio. Los usuarios con el mismo nombre o email serán mapeados automáticamente.
-  text_status_changed_by_changeset: Aplicado en el conjunto de cambios %{value}.
-  text_table_difference_description: En esta tabla, se muestran %{entries} individuales. Puede ver la diferencia entre dos entradas cualesquiera seleccionando primero los cuadros de verificación adecuados en la tabla. Al hacer clic en el botón bajo la tabla, se muestran las diferencias.
-  text_time_logged_by_changeset: Aplicado en el conjunto de cambios %{value}.
-  text_tip_work_package_begin_day: paquete de trabajo comienza este día
-  text_tip_work_package_begin_end_day: paquete de trabajo comienza y termina este día
-  text_tip_work_package_end_day: paquete de trabajo finalizado este día
-  text_type_no_workflow: No hay flujo de trabajo definido para este tipo
-  text_unallowed_characters: Caracteres no permitidos
+  text_no_access_tokens_configurable: "No hay ningun token de acceso que pueda ser configurado."
+  text_no_configuration_data: "Roles, tipos, estado de petición y flujo de trabajo no han sido configurados. Se recomienda cargar la configuración por defecto. Podrá modificarla cuando haya sido cargada."
+  text_no_notes: "No hay comentarios disponibles para este paquete de trabajo."
+  text_notice_too_many_values_are_inperformant: "Nota: Si se muestran más de 100 elementos por página puede incrementar el tiempo de carga de la página."
+  text_notice_security_badge_displayed_html: >
+    Nota: al activarse, se mostrará una insignia con el estado de instalación en el <a href="%{information_panel_path}">%{information_panel_label}</a> panel de administración, y en la página principal. Solamente será visible para administradores. <br/> La insignia comprobará tu versión actual de Yojana comparada con la base de datos oficial de Yojana para alertarte de cualquier actualización o vulnerabilidad. Para más información sobre las funciones de la comprobación, los datos necesarios para conseguir actualizaciones disponibles, o para desactivar esta comprobación, por favor visita <a href="%{more_info_url}">la documentación de configuración</a>.
+  text_own_membership_delete_confirmation: "Estás a punto de eliminar algunos o todos tus permisos, y podrías no poder volver a editar este proyecto.\n¿Estás seguro/a de que quieres continuar?"
+  text_permanent_delete_confirmation_checkbox_label: "Entiendo que esta eliminación no se puede revertir"
+  text_permanent_remove_confirmation_checkbox_label: "Entiendo que esta eliminación no se puede revertir"
+  text_plugin_assets_writable: "Directorio de extensiones activos escribible"
+  text_powered_by: "Con tecnología de %{link}"
+  text_project_identifier_info: "Se permiten sólo letras minúsculas (a-z), números, guiones y guiones bajos, debe comenzar con una letra minúscula."
+  text_reassign: "Reasignar al paquete de trabajo:"
+  text_regexp_info: "eg. ^[A-Z0-9]+$"
+  text_regexp_multiline: 'La expresión regular se aplica en modo multilínea. Por ejemplo, ^---\s+'
+  text_repository_usernames_mapping: "Seleccione o actualize el usuario de Yojana asignado a cada nombre en el registro del repositorio. Los usuarios con el mismo nombre o email serán mapeados automáticamente."
+  text_status_changed_by_changeset: "Aplicado en el conjunto de cambios %{value}."
+  text_table_difference_description: "En esta tabla, se muestran %{entries} individuales. Puede ver la diferencia entre dos entradas cualesquiera seleccionando primero los cuadros de verificación adecuados en la tabla. Al hacer clic en el botón bajo la tabla, se muestran las diferencias."
+  text_time_logged_by_changeset: "Aplicado en el conjunto de cambios %{value}."
+  text_tip_work_package_begin_day: "paquete de trabajo comienza este día"
+  text_tip_work_package_begin_end_day: "paquete de trabajo comienza y termina este día"
+  text_tip_work_package_end_day: "paquete de trabajo finalizado este día"
+  text_type_no_workflow: "No hay flujo de trabajo definido para este tipo"
+  text_unallowed_characters: "Caracteres no permitidos"
   text_user_invited: El usuario ha sido invitado y esta a la espera del registro.
   text_user_wrote: "%{value} escribió:"
   text_wrote: escribió
@@ -5833,18 +5767,17 @@ es:
     help_and_support: Ayuda y soporte
   total_progress: Progreso total
   user:
-    all: todos
-    active: activo
-    activate: Activar
-    activate_and_reset_failed_logins: Activar y restablecer los inicios de sesión fallidos
-    authentication_provider: Proveedor de autenticación
-    identity_url_text: El identificador único interno proporcionado por el proveedor de autenticación.
-    authentication_settings_disabled_due_to_external_authentication: 'Este usuario se autentica mediante un proveedor de autenticación externa, así que no hay ninguna contraseña en OpenProject para ser cambiada.
-
-      '
-    authorization_rejected: No tienes permitido iniciar sesion.
-    assign_random_password: Asignar contraseña aleatoria (Enviar al usuario vía email)
-    blocked: bloqueado temporalmente
+    all: "todos"
+    active: "activo"
+    activate: "Activar"
+    activate_and_reset_failed_logins: "Activar y restablecer los inicios de sesión fallidos"
+    authentication_provider: "Proveedor de autenticación"
+    identity_url_text: "El identificador único interno proporcionado por el proveedor de autenticación."
+    authentication_settings_disabled_due_to_external_authentication: >
+      Este usuario se autentica mediante un proveedor de autenticación externa, así que no hay ninguna contraseña en Yojana para ser cambiada.
+    authorization_rejected: "No tienes permitido iniciar sesion."
+    assign_random_password: "Asignar contraseña aleatoria (Enviar al usuario vía email)"
+    blocked: "bloqueado temporalmente"
     blocked_num_failed_logins:
       one: bloqueado temporalmente (un intento fallido de inicio de sesión)
       other: bloqueada temporalmente (%{count} intentos fallidos de inicio de sesión)
@@ -5875,7 +5808,17 @@ es:
   note_password_login_disabled_link: El inicio de sesión con contraseña se ha desactivado a través de un [ajuste de configuración](configuration_url).
   warning: Alerta
   warning_attachments_not_saved: "%{count} archivo(s) no podrán ser salvados."
-  warning_imminent_user_limit_html: 'Has invitado a más usuarios de los que admite tu plan actual. Es posible que los usuarios invitados no puedan unirse a tu entorno de OpenProject. [Mejora tu plan](upgrade_url) o bloquea a los usuarios existentes para que los usuarios invitados y registrados puedan unirse.
+  warning_imminent_user_limit: >
+    Usted ha invitado a más usuarios de los que soporta su plan actual. Es posible que los usuarios invitados no puedan unirse a su ambiente de Proyecto Abierto. Por favor<a href="%{upgrade_url}"> actualice su plan </a> o bloquee los usuarios existentes para permitir que los usuarios invitados y registrados se unan.
+  warning_registration_token_expired: |
+    El e-mail de activación ha expirado. Le enviaremos uno nuevo a %{email}. Por favor haga click en el enlace incluido en el mismo para activar su cuenta.
+  warning_user_limit_reached: >
+    Añadir usuarios adicionales excederá el límite actual. Póngase en contacto con un administrador para aumentar el límite de usuario para asegurar que los usuarios externos puedan acceder a esta instancia.
+  warning_user_limit_reached_admin: >
+    Añadir usuarios adicionales excederá el límite actual. Por favor, <a href="%{upgrade_url}">actualice su plan</a> para asegurar que los usuarios externos puedan acceder a esta instancia.
+  warning_user_limit_reached_instructions: >
+    Has alcanzado el límite de usuarios (%{current}/%{max} usuarios activos). Por favor, contacta con sales@girishm.info para mejorar tu plan de Enterprise y añadir usuarios adicionales.
+  warning_protocol_mismatch_html: >
 
     '
   warning_registration_token_expired: 'El e-mail de activación ha expirado. Le enviaremos uno nuevo a %{email}. Por favor haga click en el enlace incluido en el mismo para activar su cuenta.
@@ -6173,32 +6116,29 @@ es:
       non_confidential: No confidencial
       default_scopes: "(Ámbitos por defecto)"
       instructions:
-        enabled: Habilite esta aplicación, permitiendo a los usuarios realizar concesiones de autorización con ella.
-        name: El nombre de tu aplicación. Se mostrará a otros usuarios tras previa autorización.
-        redirect_uri_html: 'Las URLs permitidas a las que los usuarios autorizados serán redirigidos. Una entrada por línea. <br/> Si estás registrando una aplicación de escritorio, usa la siguiente URL.
-
-          '
-        confidential: Comprueba que la aplicación puede ser usada en donde la clave de cliente secreta puede seguir siendo confidencial. Las aplicaciones nativas del móvil y las aplicaciones de páginas particulares se consideran no confidenciales.
-        scopes: Marque los ámbitos a los que desea que la aplicación otorgue acceso. Si no se verifica el alcance, api_v3 se supone.
-        client_credential_user_id: ID de usuario opcional para representar a clientes que usan esta aplicación. No necesita rellenarse si permites un acceso público
-        register_intro: Si estás desarrollando una aplicación de cliente API de OAuth para OpenProject, puedes registrarla usando este formulario para todos los usuarios.
-        default_scopes: ''
+        enabled: "Habilite esta aplicación, permitiendo a los usuarios realizar concesiones de autorización con ella."
+        name: "El nombre de tu aplicación. Se mostrará a otros usuarios tras previa autorización."
+        redirect_uri_html: >
+          Las URLs permitidas a las que los usuarios autorizados serán redirigidos. Una entrada por línea. <br/> Si estás registrando una aplicación de escritorio, usa la siguiente URL.
+        confidential: "Comprueba que la aplicación puede ser usada en donde la clave de cliente secreta puede seguir siendo confidencial. Las aplicaciones nativas del móvil y las aplicaciones de páginas particulares se consideran no confidenciales."
+        scopes: "Marque los ámbitos a los que desea que la aplicación otorgue acceso. Si no se verifica el alcance, api_v3 se supone."
+        client_credential_user_id: "ID de usuario opcional para representar a clientes que usan esta aplicación. No necesita rellenarse si permites un acceso público"
+        register_intro: "Si estás desarrollando una aplicación de cliente API de OAuth para Yojana, puedes registrarla usando este formulario para todos los usuarios."
+        default_scopes: ""
     header:
       builtin_applications: Aplicaciones OAuth integradas
       other_applications: Otras aplicaciones OAuth
     empty_application_lists: No se ha registrado ninguna aplicación OAuth.
-    client_id: ID de cliente
-    client_secret_notice: 'Esta es la única vez que podremos imprimirte la clave de cliente secreta, por favor apúntalo y mantenlo en un lugar seguro. Debe tratarse como una contraseña y no puede ser recuperado de OpenProject más adelante.
-
-      '
+    client_id: "ID de cliente"
+    client_secret_notice: >
+      Esta es la única vez que podremos imprimirte la clave de cliente secreta, por favor apúntalo y mantenlo en un lugar seguro. Debe tratarse como una contraseña y no puede ser recuperado de Yojana más adelante.
     authorization_dialog:
       authorize: Autorizar
       cancel: Cancelar y rechazar autorización.
       prompt_html: "¿Quieres autorizar a <strong>%{application_name}</strong> para usar tu cuenta <em>%{login}</em>?"
-      title: Autorizar %{application_name}
-      wants_to_access_html: 'Esta aplicación solicita acceso a tu cuenta OpenProject. <br/><strong>Se han solicitado los siguientes permisos:</strong>
-
-        '
+      title: "Autorizar %{application_name}"
+      wants_to_access_html: >
+        Esta aplicación solicita acceso a tu cuenta Yojana. <br/><strong>Se han solicitado los siguientes permisos:</strong>
     scopes:
       api_v3: Acceso API v3 completo
       api_v3_text: "La aplicación recibirá acceso completo de lectura y escritura al Proyecto Abierto API v3 \npara realizar acciones en su nombre."
@@ -6210,19 +6150,16 @@ es:
       successful_application_revocation: Revocación con éxito de la aplicación %{application_name}.
       none_given: No se ha concedido el acceso a tu cuenta de usuario a las aplicaciones OAuth.
     flows:
-      authorization_code: Flujo de código de autorización
-      client_credentials: Flujo de credenciales del Cliente
-    client_credentials: Usuario empleado para credenciales de Cliente
-    client_credentials_impersonation_set_to: Usuario de credenciales de Cliente establecido como
-    client_credentials_impersonation_warning: 'Nota: los Clientes usando el flujo ''credenciales de Cliente'' de esta aplicación tendrá los derechos de este usuario'
-    client_credentials_impersonation_html: 'Por defecto, OpenProject proporciona autorización a OAuth 2.0 a través de %{authorization_code_flow_link}. Puedes activar %{client_credentials_flow_link} de manera óptima, aunque necesitas aportar un usuario en cuya representación se harán las peticiones.
-
-      '
-    confirm_revoke_my_application:
-      one: "¿Seguro que quieres eliminar esta aplicación? Eso suspenderá un token activo para realizarse."
-      other: "¿Seguro que quieres eliminar esta aplicación? Eso suspenderá %{count} tokens activos para realizarse."
-    authorization_error: Se ha generado un error de autorización.
-    my_registered_applications: Aplicaciones OAuth Registradas
+      authorization_code: "Flujo de código de autorización"
+      client_credentials: "Flujo de credenciales del Cliente"
+    client_credentials: "Usuario empleado para credenciales de Cliente"
+    client_credentials_impersonation_set_to: "Usuario de credenciales de Cliente establecido como"
+    client_credentials_impersonation_warning: "Nota: los Clientes usando el flujo 'credenciales de Cliente' de esta aplicación tendrá los derechos de este usuario"
+    client_credentials_impersonation_html: >
+      Por defecto, Yojana proporciona autorización a OAuth 2.0 a través de %{authorization_code_flow_link}. Puedes activar %{client_credentials_flow_link} de manera óptima, aunque necesitas aportar un usuario en cuya representación se harán las peticiones.
+    authorization_error: "Se ha generado un error de autorización."
+    revoke_my_application_confirmation: "¿Seguro que quieres eliminar esta aplicación? Eso suspenderá %{token_count} activos para realizarse."
+    my_registered_applications: "Aplicaciones OAuth Registradas"
   oauth_client:
     urn_connection_status:
       connected: Conectado
@@ -6235,41 +6172,36 @@ es:
       label_request_token: Solicitar token
       label_refresh_token: Regenerar token
     errors:
-      oauth_authorization_code_grant_had_errors: Error al conceder la autorización de OAuth2
-      oauth_reported: 'Proveedor reportado del OAuth2 '
-      oauth_returned_error: 'Hay un error en el OAuth2 '
-      oauth_returned_json_error: 'Hay un error de JSON en el OAuth2 '
-      oauth_returned_http_error: 'Hay un error de red en el OAuth2 '
-      oauth_returned_standard_error: 'Hay un error interno en el OAuth2 '
-      wrong_token_type_returned: Tipo de token incorrecto en el OAuth2, se espera un AccessToken::Bearer
-      oauth_issue_contact_admin: Hay un error en el OAuth2. Por favor, consulte con el administrador del sistema.
-      oauth_client_not_found: Cliente del OAuth2 no encontrado en el punto final 'callback' (redirect_uri).
-      refresh_token_called_without_existing_token: 'Error interno: Se ha solicitado una regeneración del token sin haber un token existente.
-
-        '
-      refresh_token_updated_failed: Error durante la actualización del OAuthClientToken
-      oauth_client_not_found_explanation: 'Este error aparece después de haber actualizado el client_id y el client_secret en OpenProject, pero no haber actualizado el campo ''Return URI'' en el proveedor OAuth2.
-
-        '
+      oauth_authorization_code_grant_had_errors: "Error al conceder la autorización de OAuth2"
+      oauth_reported: "Proveedor reportado del OAuth2 "
+      oauth_returned_error: "Hay un error en el OAuth2 "
+      oauth_returned_json_error: "Hay un error de JSON en el OAuth2 "
+      oauth_returned_http_error: "Hay un error de red en el OAuth2 "
+      oauth_returned_standard_error: "Hay un error interno en el OAuth2 "
+      wrong_token_type_returned: "Tipo de token incorrecto en el OAuth2, se espera un AccessToken::Bearer"
+      oauth_issue_contact_admin: "Hay un error en el OAuth2. Por favor, consulte con el administrador del sistema."
+      oauth_client_not_found: "Cliente del OAuth2 no encontrado en el punto final 'callback' (redirect_uri)."
+      refresh_token_called_without_existing_token: >
+        Error interno: Se ha solicitado una regeneración del token sin haber un token existente.
+      refresh_token_updated_failed: "Error durante la actualización del OAuthClientToken"
+      oauth_client_not_found_explanation: >
+        Este error aparece después de haber actualizado el client_id y el client_secret en Yojana, pero no haber actualizado el campo 'Return URI' en el proveedor OAuth2.
       oauth_code_not_present: "'Código' OAuth2 no encontrado en el punto final 'callback' (redirect_uri)."
-      oauth_code_not_present_explanation: 'Este error aparece si se ha seleccionado el response_type incorrecto en el proveedor OAuth2. El response_type debe ser ''Código'' o similar.
-
-        '
-      oauth_state_not_present: El 'estado' del OAuth2 no encontrado en el punto final 'callback' (redirect_uri).
-      oauth_state_not_present_explanation: 'El ''estado'' se utiliza para indicar a OpenProject donde continuar después de autentificar correctamente el OAuth2. Sin el ''estado'' es probable que se produzca un error durante la configuración. Por favor, contacte con su administrador de sistema.
-
-        '
+      oauth_code_not_present_explanation: >
+        Este error aparece si se ha seleccionado el response_type incorrecto en el proveedor OAuth2. El response_type debe ser 'Código' o similar.
+      oauth_state_not_present: "El 'estado' del OAuth2 no encontrado en el punto final 'callback' (redirect_uri)."
+      oauth_state_not_present_explanation: >
+        El 'estado' se utiliza para indicar a Yojana donde continuar después de autentificar correctamente el OAuth2. Sin el 'estado' es probable que se produzca un error durante la configuración. Por favor, contacte con su administrador de sistema.
       rack_oauth2:
-        client_secret_invalid: La clave de cliente secreta no es válida (client_secret_invalid)
-        invalid_request: 'El servidor de autorización de OAuth2 respondió con ''invalid_request''. Este error aparece si intenta autorizar varias veces o en caso de problemas técnicos.
-
-          '
-        invalid_response: El servidor de autorización de OAuth2 respondió de forma inválida (invalid_request)
-        invalid_grant: El servidor de autorización de OAuth2 necesita que se autorice de nuevo (invalid_grant)
-        invalid_client: El servidor de autorización de OAuth2 no reconoce OpenProject (invalid_client).
-        unauthorized_client: El servidor de autorización de OAuth2 no acepta el tipo de garantía (unauthorized_client)
-        unsupported_grant_type: El servidor de autorización de OAuth2 pide que actualice de nuevo (unsupported_grant_type)
-        invalid_scope: No tienes permisos para acceder a este recurso (invalid_scope).
+        client_secret_invalid: "La clave de cliente secreta no es válida (client_secret_invalid)"
+        invalid_request: >
+          El servidor de autorización de OAuth2 respondió con 'invalid_request'. Este error aparece si intenta autorizar varias veces o en caso de problemas técnicos.
+        invalid_response: "El servidor de autorización de OAuth2 respondió de forma inválida (invalid_request)"
+        invalid_grant: "El servidor de autorización de OAuth2 necesita que se autorice de nuevo (invalid_grant)"
+        invalid_client: "El servidor de autorización de OAuth2 no reconoce Yojana (invalid_client)."
+        unauthorized_client: "El servidor de autorización de OAuth2 no acepta el tipo de garantía (unauthorized_client)"
+        unsupported_grant_type: "El servidor de autorización de OAuth2 pide que actualice de nuevo (unsupported_grant_type)"
+        invalid_scope: "No tienes permisos para acceder a este recurso (invalid_scope)."
   http:
     request:
       failed_authorization: La solicitud por parte del servidor no se pudo autorizar a sí misma.
@@ -6279,18 +6211,18 @@ es:
   you: su usuario
   link: enlace
   plugin_openproject_auth_plugins:
-    name: Plugins Auth de OpenProject
-    description: Integración de los proveedores de estrategia de OmniAuth para la autentificación en OpenProject.
+    name: "Plugins Auth de Yojana"
+    description: "Integración de los proveedores de estrategia de OmniAuth para la autentificación en Yojana."
   plugin_openproject_auth_saml:
-    name: OmniAuth SAML / Inicio de sesión único
-    description: Añade el proveedor OmniAuth SAML a OpenProject
+    name: "OmniAuth SAML / Inicio de sesión único"
+    description: "Añade el proveedor OmniAuth SAML a Yojana"
   enterprise_plans:
     legacy_enterprise: Plan Enterprise
   token:
     hashed_token:
       display_value_placeholder: "***"
   external_link_warning:
-    title: Salir de OpenProject
-    warning_message: Está a punto de salir de OpenProject y visitar un sitio web externo. Tenga en cuenta que los sitios web externos no están bajo nuestro control y pueden tener políticas de privacidad y seguridad diferentes.
+    title: "Salir de Yojana"
+    warning_message: "Está a punto de salir de Yojana y visitar un sitio web externo. Tenga en cuenta que los sitios web externos no están bajo nuestro control y pueden tener políticas de privacidad y seguridad diferentes."
     continue_message: "¿Seguro que desea visitar el siguiente enlace externo?"
     continue_button: Continuar al sitio web externo

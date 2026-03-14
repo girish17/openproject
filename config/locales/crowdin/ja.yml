@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -341,13 +341,13 @@ ja:
         unknown_name: Unknown
     mcp_configurations:
       index:
-        description: The model context protocol allows AI agents to provide its users with tools and resources exposed by this OpenProject instance. This feature is still in beta.
-        resources_heading: Resources
-        resources_description: OpenProject implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url).
-        resources_submit: Update resources
-        tools_heading: Tools
-        tools_description: OpenProject implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url).
-        tools_submit: Update tools
+        description: "The model context protocol allows AI agents to provide its users with tools and resources exposed by this Yojana instance."
+        resources_heading: "Resources"
+        resources_description: "Yojana implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
+        resources_submit: "Update resources"
+        tools_heading: "Tools"
+        tools_description: "Yojana implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url)."
+        tools_submit: "Update tools"
       multi_update:
         success: MCP configurations were updated successfully.
       server_form:
@@ -390,31 +390,31 @@ ja:
       edit:
         label_delete_scim_client: SCIM クライアントを削除
       form:
-        auth_provider_description: これは、SCIMプロバイダが追加したユーザーがOpenProjectでの認証に使用するサービスです。
-        authentication_method_description_html: これは SCIM クライアントが OpenProject で認証する方法です。OAuth トークンに <code>scim_v2</code> スコープが含まれていることを確認してください。
-        description: 設定オプションの詳細については、[SCIM クライアントの設定に関するドキュメント](docs_url)を参照してください。
-        jwt_sub_description: 例えば、Keycloakの場合、これはSCIMクライアントに関連付けられたサービスアカウントのUUIDです。あなたのユースケースにあった Subject claim を見つける方法については [ドキュメント](docs_url) を参照してください。
-        name_description: 他の管理者がこのクライアントが設定された理由を理解するのに役立つ名前を選択してください。
+        auth_provider_description: "これは、SCIMプロバイダが追加したユーザーがYojanaでの認証に使用するサービスです。"
+        authentication_method_description_html: "これは SCIM クライアントが Yojana で認証する方法です。OAuth トークンに <code>scim_v2</code> スコープが含まれていることを確認してください。"
+        description: "設定オプションの詳細については、[SCIM クライアントの設定に関するドキュメント](docs_url)を参照してください。"
+        jwt_sub_description: "例えば、Keycloakの場合、これはSCIMクライアントに関連付けられたサービスアカウントのUUIDです。あなたのユースケースにあった Subject claim を見つける方法については [ドキュメント](docs_url) を参照してください。"
+        name_description: "他の管理者がこのクライアントが設定された理由を理解するのに役立つ名前を選択してください。"
       index:
-        description: ここで設定されたSCIMクライアントは、OpenProjectのSCIMサーバー APIと相互作用して、ユーザーアカウントとグループのプロビジョニング、更新、およびデプロビジョニングを行うことができます。
-        label_create_button: SCIMクライアントを追加
+        description: "ここで設定されたSCIMクライアントは、YojanaのSCIMサーバー APIと相互作用して、ユーザーアカウントとグループのプロビジョニング、更新、およびデプロビジョニングを行うことができます。"
+        label_create_button: "SCIMクライアントを追加"
       new:
         title: 新しいSCIMクライアント
       revoke_static_token_dialog_component:
-        confirm_button: 取り消す
-        title: 静的トークンを取り消す
-        heading: このトークンを取り消してもよろしいですか？
-        description: このトークンを使用する SCIM クライアントは、OpenProject の SCIM サーバ API にアクセスできなくなります。
+        confirm_button: "取り消す"
+        title: "静的トークンを取り消す"
+        heading: "このトークンを取り消してもよろしいですか？"
+        description: "このトークンを使用する SCIM クライアントは、Yojana の SCIM サーバ API にアクセスできなくなります。"
       table_component:
         blank_slate:
           title: SCIMクライアントがまだ設定されていません
           description: ここに表示するクライアントを追加
         user_count: ユーザー
       token_list_component:
-        description: ここで生成されたトークンは、OpenProject SCIM API にアクセスするために、SCIM クライアントによって渡すことができます。
-        heading: トークン
-        label_add_token: トークン
-        label_aria_add_token: トークンを追加
+        description: "ここで生成されたトークンは、Yojana SCIM API にアクセスするために、SCIM クライアントによって渡すことができます。"
+        heading: "トークン"
+        label_add_token: "トークン"
+        label_aria_add_token: "トークンを追加"
       token_table_component:
         blank_slate:
           title: トークンはまだ作成されていません
@@ -554,38 +554,36 @@ ja:
       name: LDAP接続の任意の名称
       host: LDAPのホスト名または IP アドレス
       login_map: ユーザー固有のログイン情報を識別するために使用されるLDAPの属性キーです。通常は、`uid` または `samAccountName` になります。
-      generic_map: OpenProject`%{attribute}`属性にマップされているLDAPの属性キーです。
-      admin_map_html: 'オプション: LDAPの属性キー。 <strong>存在する場合</strong> はOpenProjectユーザーを管理者としてマークします。疑わしい場合は空のままにします。'
+      generic_map: Yojana`%{attribute}`属性にマップされているLDAPの属性キーです。
+      admin_map_html: "オプション: LDAPの属性キー。 <strong>存在する場合</strong> はYojanaユーザーを管理者としてマークします。疑わしい場合は空のままにします。"
       system_user_dn_html: |
         読み取り専用アクセスに使用するシステムユーザの DN を入力します。
         <br>
-        例: uid=openproject,ou=system,dc=example,dc=com
+        例: uid=yojana,ou=system,dc=example,dc=com
       system_user_password: システムユーザーの Bind パスワードを入力してください
       base_dn: |
-        OpenProjectがユーザーとグループを探すように、サブツリーのベースDNをLDAPに入力します。
-        OpenProject は、このサブツリー内の指定されたユーザー名のみをフィルタリングします。
+        Yojanaがユーザーとグループを探すように、サブツリーのベースDNをLDAPに入力します。
+        Yojana は、このサブツリー内の指定されたユーザー名のみをフィルタリングします。
         例: ou=users,dc=example,dc=com
       filter_string: |
         LDAPでフィルタされたユーザーに対して返された結果に適用するオプションのRFC4515フィルタを追加します。
-        これは、OpenProjectによって検出された認証とグループ同期のためのユーザーのセットを制限するために使用することができます。
-      filter_string_concat: |2
+        これは、Yojanaによって検出された認証とグループ同期のためのユーザーのセットを制限するために使用することができます。
+      filter_string_concat: |
 
-        OpenProjectはレコードを識別するために、ユーザーが提供するログイン属性を常にフィルタリングします。ここにフィルタを指定すると、
+        Yojanaはレコードを識別するために、ユーザーが提供するログイン属性を常にフィルタリングします。ここにフィルタを指定すると、
         ANDで連結されます。デフォルトではキャッチオール（objectClass = *）がフィルタとして使用されます。
-      onthefly_register: 'チェックを入れると、OpenProjectは初回認証時に自動的にLDAPエントリーに新規ユーザー登録します。LDAPの既存ユーザーのみ許可する場合はチェックを外してください。
-
-        '
-    connection_encryption: 接続の暗号化
-    encryption_details: LDAPS / STARTLSオプション
-    system_account: システムアカウント
+      onthefly_register: |
+        チェックを入れると、Yojanaは初回認証時に自動的にLDAPエントリーに新規ユーザー登録します。LDAPの既存ユーザーのみ許可する場合はチェックを外してください。
+    connection_encryption: "接続の暗号化"
+    encryption_details: "LDAPS / STARTLSオプション"
+    system_account: "システムアカウント"
     system_account_legend: |
-      OpenProject は、LDAP ツリー内のユーザーとグループを検索するために、システムアカウントを介して読み取り専用アクセスを必要とします。
+      Yojana は、LDAP ツリー内のユーザーとグループを検索するために、システムアカウントを介して読み取り専用アクセスを必要とします。
       次のセクションで、システムユーザのバインド資格情報を指定してください。
-    ldap_details: LDAPに関する詳細
-    user_settings: 属性のマッピング
-    user_settings_legend: '以下のフィールドは、LDAPエントリからOpenProjectのユーザーの作成方法とアトリビュートマッピングに関連しています。
-
-      '
+    ldap_details: "LDAPに関する詳細"
+    user_settings: "属性のマッピング"
+    user_settings_legend: |
+      以下のフィールドは、LDAPエントリからYojanaのユーザーの作成方法とアトリビュートマッピングに関連しています。
     tls_mode:
       plain: なし
       simple_tls: LDAP
@@ -2116,18 +2114,17 @@ ja:
         circular_dependency: この関係は循環依存になります。
         confirmation: は%{attribute} と一致しません。
         could_not_be_copied: "%{dependency} を（完全に）コピーできませんでした。"
-        datetime_must_be_in_future: 未来に違いないわ。
-        does_not_exist: は存在しません。
-        error_enterprise_only: "%{action} is only available in the OpenProject Enterprise edition."
-        error_unauthorized: アクセスできません。
-        error_readonly: 書けませんでした。
-        error_conflict: 別のユーザーが同時にデータを更新しています。
-        error_not_found: 見つかりません。
-        email: は有効なメールアドレスではありません。
-        empty: は空にすることができません。
-        enterprise_plan_required: 少なくとも %{plan_name} が必要です。
-        even: は偶数にしてください。
-        exclusion: は予約されています。
+        does_not_exist: "は存在しません。"
+        error_enterprise_only: "%{action} is only available in the Yojana Enterprise edition."
+        error_unauthorized: "アクセスできません。"
+        error_readonly: "書けませんでした。"
+        error_conflict: "別のユーザーが同時にデータを更新しています。"
+        error_not_found: "見つかりません。"
+        email: "は有効なメールアドレスではありません。"
+        empty: "は空にすることができません。"
+        enterprise_plan_required: "少なくとも %{plan_name} が必要です。"
+        even: "は偶数にしてください。"
+        exclusion: "は予約されています。"
         feature_disabled: は利用できません。
         feature_disabled_for_project: is disabled for this project.
         file_too_large: は大きすぎます (最大サイズは%{count}バイト)
@@ -2762,17 +2759,14 @@ ja:
     reset_token:
       action_create: 作成
       action_reset: リセット
-      heading_reset: バックアップトークンをリセットする
-      heading_create: バックアップトークンを作成する
-      implications: 'バックアップを有効にすると、必要な権限とこのバックアップトークンを持つすべてのユーザーが、この OpenProject にインストールされたすべてのデータを含むバックアップをダウンロードできるようになります。これには、他のすべてのユーザーのデータも含まれます。
-
-        '
-      info: 'バックアップを作成するためには、バックアップトークンを生成する必要があります。バックアップを要求するたびに、このトークンを指定する必要があります。バックアップトークンを削除すると、このユーザーのバックアップを無効にすることができます。
-
-        '
-      verification_html: 'Enter %{word} to confirm you want to %{action} the backup token.
-
-        '
+      heading_reset: "バックアップトークンをリセットする"
+      heading_create: "バックアップトークンを作成する"
+      implications: >
+        バックアップを有効にすると、必要な権限とこのバックアップトークンを持つすべてのユーザーが、この Yojana にインストールされたすべてのデータを含むバックアップをダウンロードできるようになります。これには、他のすべてのユーザーのデータも含まれます。
+      info: >
+        バックアップを作成するためには、バックアップトークンを生成する必要があります。バックアップを要求するたびに、このトークンを指定する必要があります。バックアップトークンを削除すると、このユーザーのバックアップを無効にすることができます。
+      verification: >
+        %{word} と入力して、バックアップトークンを %{action} することを確認します。
       verification_word_reset: リセット
       verification_word_create: 作成
       warning: '新しいトークンを作成すると、24時間経過後にバックアップをリクエストできます。これは安全対策のためです。その後は、そのトークンを使っていつでもバックアップをリクエストすることができます。
@@ -3103,27 +3097,25 @@ ja:
       plan_name: "%{plan}のエンタープライズプラン"
       trial_text: This feature is included in your active Enterprise trial.
       plan_text_html: "%{plan_name} から利用できます。"
-      unlimited: 無制限です
-      already_have_token: 'すでにトークンをお持ちですか？予約済みのエンタープライズプランにアップグレードするには、下のボタンを使用して追加してください。
-
-        '
-      hide_banner: このバナーを非表示
-      homescreen_description: 'Enterprise plans extend the Community edition of OpenProject with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running OpenProject in a mission-critical environment.
-
-        '
+      unlimited: "無制限です"
+      already_have_token: >
+        すでにトークンをお持ちですか？予約済みのエンタープライズプランにアップグレードするには、下のボタンを使用して追加してください。
+      hide_banner: "このバナーを非表示"
+      homescreen_description: >
+        Enterprise plans extend the Community edition of Yojana with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running Yojana in a mission-critical environment.
       homescreen_subline: アップグレードすることで、オープンソースプロジェクトをサポートすることもできます。
       baseline_comparison:
         description: 過去の任意の点からこのリストに加えられた変更を強調表示します。
       benefits:
-        description: オンプレミス版エンタープライズエディションのメリット
-        high_security: セキュリティ機能
-        high_security_text: シングルサインオン(SAML, OpenID Connect, CAS), LDAP グループ。
-        installation: インストールのサポート
-        installation_text: 経験豊富なソフトウェアエンジニアが、独自のインフラストラクチャの完全なインストールとセットアッププロセスをガイドします。
-        premium_features: エンタープライズアドオン
-        premium_features_text: アジャイルボード、カスタムテーマとロゴ、グラフ、カスタムアクションとインテリジェントワークフロー、ワークパッケージの添付ファイルとマルチセレクトカスタムフィールドのフルテキスト検索。
-        professional_support: プロフェッショナルサポート
-        professional_support_text: OpenProjectをビジネスに不可欠な環境で実行することについての専門知識を持つ上級サポートエンジニアから信頼性の高いハイタッチサポートを受けましょう。
+        description: "オンプレミス版エンタープライズエディションのメリット"
+        high_security: "セキュリティ機能"
+        high_security_text: "シングルサインオン(SAML, OpenID Connect, CAS), LDAP グループ。"
+        installation: "インストールのサポート"
+        installation_text: "経験豊富なソフトウェアエンジニアが、独自のインフラストラクチャの完全なインストールとセットアッププロセスをガイドします。"
+        premium_features: "エンタープライズアドオン"
+        premium_features_text: "アジャイルボード、カスタムテーマとロゴ、グラフ、カスタムアクションとインテリジェントワークフロー、ワークパッケージの添付ファイルとマルチセレクトカスタムフィールドのフルテキスト検索。"
+        professional_support: "プロフェッショナルサポート"
+        professional_support_text: "Yojanaをビジネスに不可欠な環境で実行することについての専門知識を持つ上級サポートエンジニアから信頼性の高いハイタッチサポートを受けましょう。"
       work_package_subject_generation:
         description: 参照された属性とテキストを使用して自動生成された件名を作成します。
       customize_life_cycle:
@@ -3153,34 +3145,31 @@ ja:
       calculated_values:
         description: Calculated values allow you to create a mathematical formula based attribute using numeric values and other project attributes and custom fields.
       define_custom_style:
-        title: カスタムカラーテーマとロゴ
-        more_info: 注:使用されたロゴは一般公開されます。
-        description: 独自のロゴと色でOpenProjectのインストールをカスタマイズします。
+        title: "カスタムカラーテーマとロゴ"
+        more_info: "注:使用されたロゴは一般公開されます。"
+        description: 独自のロゴと色でYojanaのインストールをカスタマイズします。
       custom_actions:
         title: カスタムアクション
         description: カスタムアクションは、ステータスに基づいて特定のワークパッケージで利用できる、事前に定義されたアクションです。
       mcp_server:
-        description: Bring OpenProject into your AI workflows with a secure MCP server.
-      meeting_templates:
-        description: Define meeting templates with a set agenda structure and save time by reusing them when creating new meetings.
+        description: "Integrate AI agents with your Yojana instance through MCP."
       nextcloud_sso:
         title: Nextcloudストレージへのシングルサインオン
         description: シングルサインオンでNextcloudストレージのシームレスかつセキュアな認証を可能にします。アクセス管理を簡素化し、ユーザーの利便性を向上させます。
       scim_api:
-        title: SCIMクライアント
-        description: Microsoft EntraやKeycloakなどの外部アイデンティティサービスをSCIM Server API経由でシームレスに統合することで、OpenProjectのユーザー管理を自動化します。 エンタープライズ企業プランから利用できます。
+        title: "SCIMクライアント"
+        description: "Microsoft EntraやKeycloakなどの外部アイデンティティサービスをSCIM Server API経由でシームレスに統合することで、Yojanaのユーザー管理を自動化します。 エンタープライズ企業プランから利用できます。"
       sso_auth_providers:
         title: シングルサインオン(SSO)
         description: SAML または OpenID Connect を使用して外部の SSO プロバイダ経由でログインし、既存の ID システムとのシームレスなアクセスと統合を可能にします。
       virus_scanning:
-        description: 他のユーザーがアクセスできるようになる前に、OpenProjectにアップロードされたファイルがウイルスでスキャンされていることを確認してください。
+        description: "他のユーザーがアクセスできるようになる前に、Yojanaにアップロードされたファイルがウイルスでスキャンされていることを確認してください。"
       project_creation_wizard:
         description: Generate a step-by-step wizard to help project managers fill out a project initiation request.
       placeholder_users:
         title: プレースホルダー ユーザー
-        description: 'プレースホルダー・ユーザーは、プロジェクトに参加していないユーザーにワーク・パッケージを割り当てる方法です。例えば、まだ名前も決まっていない、利用可能でもないリソースのタスクを追跡する必要がある場合や、その人にOpenProjectへのアクセス権を与えたくないが、その人に割り当てられたタスクを追跡したい場合などです。
-
-          '
+        description: >
+          プレースホルダー・ユーザーは、プロジェクトに参加していないユーザーにワーク・パッケージを割り当てる方法です。例えば、まだ名前も決まっていない、利用可能でもないリソースのタスクを追跡する必要がある場合や、その人にYojanaへのアクセス権を与えたくないが、その人に割り当てられたタスクを追跡したい場合などです。
       internal_comments:
         title: 内部コメント
         description: 内部コメントは、社内チームがプライベートにコミュニケーションを取ることを可能にします。これらは特定のプロジェクトの役割にのみ表示され、公開されることはありません。
@@ -3194,26 +3183,25 @@ ja:
         other: "%{count} 日後 %{trial_plan} トライアルトークンです"
       description_html: You have access to all %{trial_plan} features.
     trial:
-      not_found: トライアルトークンをリクエストしましたが、そのリクエストはもう利用できません。もう一度やり直してください。
-      wait_for_confirmation: トライアルトークンを取得するために、あなたのアドレスを確認するためのメールを送信しました。
-      already_retrieved: '試用版のエンタープライズトークンはすでに取得されています。添付されているトークンのメールを確認してください。 新しいものが必要な場合は、サポートチームまでご連絡ください。
-
-        '
-      successfully_saved: トライアルエンタープライズトークンの取得に成功しました。
-      token_sent: トライアルトークンがリクエストされました
-      request_again: 再度リクエストする
-      resend_action: 確認メールを再送信する
-      welcome_title: クイック機能の概要
-      welcome_description: OpenProject Enterprise版のプロジェクト管理とチームコラボレーションの概要を簡単にご確認ください。
-      confirmation_info: 'OpenProject Enterpriseの無料トライアルを開始するために、すべての情報を %{date} にメールを %{email} に送信しました。 14日間の無料トライアルを開始するには、受信トレイを確認し、確認リンクをクリックしてください。
-
-        '
-      confirmation_subline: '受信トレイを確認し、手順に従って14日間の無料トライアルを開始してください。
-
-        '
+      not_found: "トライアルトークンをリクエストしましたが、そのリクエストはもう利用できません。もう一度やり直してください。"
+      wait_for_confirmation: "トライアルトークンを取得するために、あなたのアドレスを確認するためのメールを送信しました。"
+      already_retrieved: >
+        試用版のエンタープライズトークンはすでに取得されています。添付されているトークンのメールを確認してください。 新しいものが必要な場合は、サポートチームまでご連絡ください。
+      successfully_saved: "トライアルエンタープライズトークンの取得に成功しました。"
+      token_sent: "トライアルトークンがリクエストされました"
+      request_again: "再度リクエストする"
+      resend_action: "確認メールを再送信する"
+      welcome_title: "クイック機能の概要"
+      welcome_description: "Yojana Enterprise版のプロジェクト管理とチームコラボレーションの概要を簡単にご確認ください。"
+      confirmation_info: >
+        Yojana Enterpriseの無料トライアルを開始するために、すべての情報を %{date} にメールを %{email} に送信しました。 14日間の無料トライアルを開始するには、受信トレイを確認し、確認リンクをクリックしてください。
+      confirmation_subline: >
+        受信トレイを確認し、手順に従って14日間の無料トライアルを開始してください。
       domain_caption: このトークンは、現在設定されているホスト名に対して有効です。
-      receive_newsletter: I want to receive the OpenProject [newsletter](newsletter_url).
-      consent: I agree with the [terms of service](tos_url) and the [privacy policy](privacy_url).
+      receive_newsletter_html: >
+        Yojana <a target="_blank" href="https://www.yojana.girishm.info/newsletter/">ニュースレター</a> を受け取りたい。
+      consent_html: >
+        <a target="_blank" href="https://www.yojana.girishm.info/terms-of-service/">サービス規約</a> および <a target="_blank" href="https://www.yojana.girishm.info/data-privacy-and-security/">プライバシーポリシー</a>に同意します。
   email_calendar_updates:
     state:
       disabled: 無効だ。
@@ -3237,41 +3225,41 @@ ja:
   error_can_not_delete_in_use_archived_undisclosed: アーカイブされたプロジェクトにもワークパッケージがあります。どのプロジェクトが影響を受けるかは、管理者に削除の実行を依頼する必要があります。
   error_can_not_delete_in_use_archived_work_packages: 'アーカイブされたプロジェクトにもワークパッケージがあります。 対応するワークパッケージの属性を変更する前に、まず以下のプロジェクトを再度有効にする必要があります: %{archived_projects_urls}'
   error_can_not_delete_type:
-    explanation: このタイプはワークパッケージを含み、削除できない。<a target="_blank" href="%{url}">このビューでは</a>、影響を受けるすべてのワークパッケージを見ることができます。
-  error_can_not_delete_standard_type: 標準型は削除できません。
-  error_can_not_invite_user: ユーザーへの招待状の送信に失敗しました。
-  error_can_not_remove_role: このロールは使用されています。削除できません。
-  error_can_not_reopen_work_package_on_closed_version: 終了したバージョンにひも付けられたワークパッケージは再度開くことはできません。
-  error_can_not_find_all_resources: この要求に、すべての関連リソースを見つけられませんでした。
-  error_can_not_unarchive_project: 'このプロジェクトはアーカイブを戻すことができません: %{errors}'
-  error_check_user_and_role: ユーザーとロールを選択してください。
-  error_code: エラー %{code}
-  error_color_could_not_be_saved: 色を保存できませんでした。
-  error_cookie_missing: OpenProject のcookieが見つかりません。cookieが有効であることを確認してください。そうしないとこのアプリケーションは正しく動作しません。
-  error_custom_option_not_found: オプションが存在しません。
-  error_enterprise_plan_needed: この操作を実行するには、 %{plan} エンタープライズプランが必要です。
-  error_enterprise_activation_user_limit: あなたのアカウントを有効にすることができませんでした（ユーザー制限に達しました）。アクセスするには管理者に連絡してください。
-  error_enterprise_token_invalid_domain: Enterprise Edition がアクティブではありません。Enterprise トークンのドメイン (%{actual}) がシステムのホスト名(%{expected}) と一致しません。
-  error_failed_to_delete_entry: このエントリを削除できませんでした。
-  error_in_dependent: '依存オブジェクトを変更しようとしてエラーが発生しました: %{dependent_class} #%{related_id} - %{related_subject}: %{error}'
-  error_in_new_dependent: '依存オブジェクトの作成エラー: %{dependent_class} - %{related_subject}: %{error}'
-  error_invalid_selected_value: 選択された値が無効です。
-  error_journal_attribute_not_present: ジャーナルには属性%{attribute}は含まれていません。
-  error_pdf_export_too_many_columns: PDF エクスポート用に選択された列が多すぎます。 列の数を減らしてください。
-  error_pdf_date_range_too_long: The selected work package date range exceeds the allowable PDF export limit. Please condense the range to a maximum of %{years} years.
-  error_pdf_failed_to_export: PDFエクスポートを保存できませんでした： %{error}
-  error_token_authenticity: クロスサイトリクエスト偽造トークンを確認できません。 複数のブラウザやタブでデータを送信しようとしましたか？ すべてのタブを閉じてもう一度やり直してください。
-  error_reminder_not_found: リマインダーが見つからないか、すでに通知されています。
-  error_work_package_not_found_in_project: ワークパッケージが見つからないか、このプロジェクトに属していません。
-  error_work_package_id_not_found: ワークパッケージが見つかりません。
-  error_must_be_project_member: プロジェクトのメンバーである必要があります。
-  error_migrations_are_pending: OpenProject のインストールはデータベースの移行が保留中です。前回のアップグレード時に移行の実行を行っていない可能性があります。アップグレードガイドを確認して、適切にインストールをアップグレードしてください。
-  error_migrations_visit_upgrade_guides: アップグレードガイドのドキュメントをご覧ください
-  error_no_default_work_package_status: "｀ワークパッケージ目の既定のステータスが定義されていません。 設定をご確認してください（管理→ワークパッケージステータス）。"
-  error_no_type_in_project: このプロジェクトには関連付けられているワークパッケージの種類がありません。プロジェクトの設定をご確認してください。
-  error_omniauth_registration_timed_out: 外部認証プロバイダーを経由して登録がタイムアウトしました。もう一度やり直してください。
-  error_omniauth_invalid_auth: IDプロバイダーから返された認証情報が無効です。詳細については管理者に連絡してください
-  error_password_change_failed: パスワードの変更中にエラーが発生しました。
+    explanation: 'このタイプはワークパッケージを含み、削除できない。<a target="_blank" href="%{url}">このビューでは</a>、影響を受けるすべてのワークパッケージを見ることができます。'
+  error_can_not_delete_standard_type: "標準型は削除できません。"
+  error_can_not_invite_user: "ユーザーへの招待状の送信に失敗しました。"
+  error_can_not_remove_role: "このロールは使用されています。削除できません。"
+  error_can_not_reopen_work_package_on_closed_version: "終了したバージョンにひも付けられたワークパッケージは再度開くことはできません。"
+  error_can_not_find_all_resources: "この要求に、すべての関連リソースを見つけられませんでした。"
+  error_can_not_unarchive_project: "このプロジェクトはアーカイブを戻すことができません: %{errors}"
+  error_check_user_and_role: "ユーザーとロールを選択してください。"
+  error_code: "エラー %{code}"
+  error_color_could_not_be_saved: "色を保存できませんでした。"
+  error_cookie_missing: "Yojana のcookieが見つかりません。cookieが有効であることを確認してください。そうしないとこのアプリケーションは正しく動作しません。"
+  error_custom_option_not_found: "オプションが存在しません。"
+  error_enterprise_plan_needed: "この操作を実行するには、 %{plan} エンタープライズプランが必要です。"
+  error_enterprise_activation_user_limit: "あなたのアカウントを有効にすることができませんでした（ユーザー制限に達しました）。アクセスするには管理者に連絡してください。"
+  error_enterprise_token_invalid_domain: "Enterprise Edition がアクティブではありません。Enterprise トークンのドメイン (%{actual}) がシステムのホスト名(%{expected}) と一致しません。"
+  error_failed_to_delete_entry: "このエントリを削除できませんでした。"
+  error_in_dependent: "依存オブジェクトを変更しようとしてエラーが発生しました: %{dependent_class} #%{related_id} - %{related_subject}: %{error}"
+  error_in_new_dependent: "依存オブジェクトの作成エラー: %{dependent_class} - %{related_subject}: %{error}"
+  error_invalid_selected_value: "選択された値が無効です。"
+  error_journal_attribute_not_present: "ジャーナルには属性%{attribute}は含まれていません。"
+  error_pdf_export_too_many_columns: "PDF エクスポート用に選択された列が多すぎます。 列の数を減らしてください。"
+  error_pdf_date_range_too_long: "The selected work package date range exceeds the allowable PDF export limit. Please condense the range to a maximum of %{years} years."
+  error_pdf_failed_to_export: "PDFエクスポートを保存できませんでした： %{error}"
+  error_token_authenticity: "クロスサイトリクエスト偽造トークンを確認できません。 複数のブラウザやタブでデータを送信しようとしましたか？ すべてのタブを閉じてもう一度やり直してください。"
+  error_reminder_not_found: "リマインダーが見つからないか、すでに通知されています。"
+  error_work_package_not_found_in_project: "ワークパッケージが見つからないか、このプロジェクトに属していません。"
+  error_work_package_id_not_found: "ワークパッケージが見つかりません。"
+  error_must_be_project_member: "プロジェクトのメンバーである必要があります。"
+  error_migrations_are_pending: "Yojana のインストールはデータベースの移行が保留中です。前回のアップグレード時に移行の実行を行っていない可能性があります。アップグレードガイドを確認して、適切にインストールをアップグレードしてください。"
+  error_migrations_visit_upgrade_guides: "アップグレードガイドのドキュメントをご覧ください"
+  error_no_default_work_package_status: '｀ワークパッケージ目の既定のステータスが定義されていません。 設定をご確認してください（管理→ワークパッケージステータス）。'
+  error_no_type_in_project: "このプロジェクトには関連付けられているワークパッケージの種類がありません。プロジェクトの設定をご確認してください。"
+  error_omniauth_registration_timed_out: "外部認証プロバイダーを経由して登録がタイムアウトしました。もう一度やり直してください。"
+  error_omniauth_invalid_auth: "IDプロバイダーから返された認証情報が無効です。詳細については管理者に連絡してください"
+  error_password_change_failed: "パスワードの変更中にエラーが発生しました。"
   error_scm_command_failed: "「%{value}」リポジトリにアクセスしようとしてエラーが発生しました。"
   error_scm_not_found: リポジトリに、エントリ/リビジョンが存在しません。
   error_type_could_not_be_saved: ワークパッケージの種類を保存できませんでした。
@@ -3376,8 +3364,8 @@ ja:
     succeeded: エクスポート完了
     failed: 'ワークパッケージのエクスポート中にエラーが発生しました: %{message}'
     demo:
-      heading: デモPDF
-      footer: OpenProject によって生成
+      heading: "デモPDF"
+      footer: "Yojana によって生成"
       button_text: デモPDFを生成
     errors:
       embedded_table_with_too_many_columns: この埋め込まれたワークパッケージテーブルはページに収まりませんでした。列数を減らしてください。
@@ -3496,7 +3484,7 @@ ja:
         no_results_subtext: Add one or multiple projects as favorite through their overview or in a project list.
       users: このサイトの最新の登録ユーザー。
     blocks:
-      community: OpenProject コミュニティ
+      community: "Yojana コミュニティ"
       upsell:
         title: エンタープライズ版にアップグレード
       new_features:
@@ -3508,39 +3496,37 @@ ja:
 
             '
           new_features_list:
-            line_0: XWiki integration (Corporate plan).
-            line_1: Sprint goals.
-            line_2: "'All sprints' overview page."
-            line_3: Display backlog buckets in work packages and work package tables.
-            line_4: Improved support for project-based (semantic) identifiers.
-            line_5: Convert meeting agenda items into work packages.
-            line_6: Configure cost types per project.
+            line_0: Automated project initiation (Enterprise add-on).
+            line_1: "Meetings: add new or existing work packages as outcomes."
+            line_2: "Meetings: show iCal responses in Yojana."
+            line_3: "Recurring meetings: duplicate agenda items to the next occurrence."
+            line_4: "Release to Community: Attribute highlighting."
+            line_5: Warning before opening external links in user-provided content (Enterprise add-on).
+            line_6: Improved performance and user experience, including the Activity tab and Documents module.
     links:
-      upgrade_enterprise_edition: エンタープライズ版にアップグレード
-      postgres_migration: PostgreSQL にインストールを移行しています
-      user_guides: ユーザーガイド
-      faq: FAQ
-      impressum: 法的情報
-      glossary: 用語集
-      shortcuts: ショートカット
-      blog: OpenProject ブログ
-      forums: コミュニティ フォーラム
-      security_alerts: セキュリティアラート
-      newsletter: ニュースレター
+      upgrade_enterprise_edition: "エンタープライズ版にアップグレード"
+      postgres_migration: "PostgreSQL にインストールを移行しています"
+      user_guides: "ユーザーガイド"
+      faq: "FAQ"
+      impressum: "法的情報"
+      glossary: "用語集"
+      shortcuts: "ショートカット"
+      blog: "Yojana ブログ"
+      forums: "コミュニティ フォーラム"
+      security_alerts: "セキュリティアラート"
+      newsletter: "ニュースレター"
   image_conversion:
     imagemagick: Imagemagick
   journals:
     changes_retracted: 変更は取り下げられました。
     caused_changes:
-      budget_deleted: Budget has been deleted
-      dates_changed: 日付を変更
-      default_attribute_written: 読み取り専用属性が書き込まれました
-      import: Imported
-      progress_mode_changed_to_status_based: 進捗の計算が更新されました
-      status_changed: 状態 '%{status_name}'
-      system_update: OpenProject システムの更新：
-      work_package_duplicate_closed: 重複ワークパッケージの更新：
-      total_percent_complete_mode_changed_to_work_weighted_average: 作業で加重された全体合計の%を計算します。
+      dates_changed: "日付を変更"
+      default_attribute_written: "読み取り専用属性が書き込まれました"
+      progress_mode_changed_to_status_based: "進捗の計算が更新されました"
+      status_changed: "状態 '%{status_name}'"
+      system_update: "Yojana システムの更新："
+      work_package_duplicate_closed: "重複ワークパッケージの更新："
+      total_percent_complete_mode_changed_to_work_weighted_average: "作業で加重された全体合計の%を計算します。"
       total_percent_complete_mode_changed_to_simple_average: "%の計算 完全な合計は、単純な平均のみに基づいています。"
     cause_descriptions:
       import:
@@ -3605,7 +3591,7 @@ ja:
         notifications: Notification settings
         email_reminders: Email reminders
     access_tokens:
-      description: Provider tokens are issued by OpenProject, allowing other applications to access it. Client tokens are issued by other applications, allowing OpenProject to access them.
+      description: "Provider tokens are issued by Yojana, allowing other applications to access it. Client tokens are issued by other applications, allowing Yojana to access them."
       no_results:
         title: 表示するアクセス トークンはありません
         description: すべてが無効になっています。管理メニューで再度有効にすることができます。
@@ -3621,49 +3607,49 @@ ja:
         provider:
           title: Provider tokens
       token/api:
-        blank_description: There is no API token yet. You can create one using the button below.
-        blank_title: No API token
-        title: API
-        table_title: API tokens
-        text_hint: API トークンを使用すると、サードパーティのアプリケーションが REST API 経由でこの OpenProject サイトと通信できます。
-        static_token_name: API token
-        disabled_text: API トークンは管理者によって有効化されていません。この機能を使用するには管理者に問い合わせてください。
-        add_button: API token
+        blank_description: "There is no API token yet. You can create one using the button below."
+        blank_title: "No API token"
+        title: "API"
+        table_title: "API tokens"
+        text_hint: "API トークンを使用すると、サードパーティのアプリケーションが REST API 経由でこの Yojana サイトと通信できます。"
+        static_token_name: "API token"
+        disabled_text: "API トークンは管理者によって有効化されていません。この機能を使用するには管理者に問い合わせてください。"
+        add_button: "API token"
       ical:
-        blank_description: To add an iCalendar token, subscribe to a new or existing calendar from within the Calendar module of a project. You must have the necessary permissions.
-        blank_title: No iCalendar token
-        title: iCalendar
-        table_title: iCalendar tokens
-        text_hint_link: iCalendar tokens allow users to [subscribe to OpenProject calendars](docs_url) and view up-to-date work package information from external clients.
-        disabled_text: iCalendar サブスクリプションは管理者によって有効になっていません。この機能を使用するには管理者に問い合わせてください。
+        blank_description: "To add an iCalendar token, subscribe to a new or existing calendar from within the Calendar module of a project. You must have the necessary permissions."
+        blank_title: "No iCalendar token"
+        title: "iCalendar"
+        table_title: "iCalendar tokens"
+        text_hint_link: "iCalendar tokens allow users to [subscribe to Yojana calendars](docs_url) and view up-to-date work package information from external clients."
+        disabled_text: "iCalendar サブスクリプションは管理者によって有効になっていません。この機能を使用するには管理者に問い合わせてください。"
       oauth_application:
-        active_tokens: Active tokens
-        blank_description: There is no third-party application access configured and active for you.
-        blank_title: No OAuth application token
-        last_refreshed_at: Last refreshed at
-        title: OAuth
-        table_title: OAuth application tokens
-        text_hint: OAuth application tokens allow third-party applications to connect with this OpenProject instance.
+        active_tokens: "Active tokens"
+        blank_description: "There is no third-party application access configured and active for you."
+        blank_title: "No OAuth application token"
+        last_used_at: "Last used at"
+        title: "OAuth"
+        table_title: "OAuth application tokens"
+        text_hint: "OAuth application tokens allow third-party applications to connect with this Yojana instance."
       oauth_client:
-        blank_description: There are no OAuth client tokens yet.
-        blank_title: No OAuth client tokens
-        failed: An error occurred and the token couldn't be removed. Please try again later.
-        integration_type: Integration type
-        table_title: OAuth client tokens
-        text_hint: OAuth client tokens allow this OpenProject instance to connect with external applications, such as file storages.
-        title: OAuth
-        remove_token: Do you really want to remove this token? You will need to login again on %{integration}.
-        removed: OAuth client token successfully removed
-        unknown_integration: Unknown
+        blank_description: "There are no OAuth client tokens yet."
+        blank_title: "No OAuth client tokens"
+        failed: "An error occurred and the token couldn't be removed. Please try again later."
+        integration_type: "Integration type"
+        table_title: "OAuth client tokens"
+        text_hint: "OAuth client tokens allow this Yojana instance to connect with external applications, such as file storages."
+        title: "OAuth"
+        remove_token: "Do you really want to remove this token? You will need to login again on %{integration}."
+        removed: "OAuth client token successfully removed"
+        unknown_integration: "Unknown"
       token/rss:
-        add_button: RSS token
-        blank_description: There is no RSS token yet. You can create one using the button below.
-        blank_title: No RSS token
-        title: RSS
-        table_title: RSS tokens
-        text_hint: RSS tokens allow users to keep up with the latest changes in this OpenProject instance via an external RSS reader.
-        static_token_name: RSS token
-        disabled_text: RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature.
+        add_button: "RSS token"
+        blank_description: "There is no RSS token yet. You can create one using the button below."
+        blank_title: "No RSS token"
+        title: "RSS"
+        table_title: "RSS tokens"
+        text_hint: "RSS tokens allow users to keep up with the latest changes in this Yojana instance via an external RSS reader."
+        static_token_name: "RSS token"
+        disabled_text: "RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature."
       storages:
         unknown_storage: 不明なストレージ
     email_reminders:
@@ -3887,43 +3873,40 @@ ja:
   label_collapse: 折りたたむ
   label_collapsed_click_to_show: 折りたたまれました。クリックすると表示
   label_configuration: 設定
-  label_comment_add: コメントを追加
-  label_comment_added: コメントを追加された。
-  label_comment_delete: コメントを削除
-  label_comment_plural: コメント
-  label_commits_per_author: 掲載者別のコミット
-  label_commits_per_month: 月別のコミット
-  label_confirmation: 確認のため再入力
-  label_contains: 含む
-  label_starts_with: starts with
-  label_content: 内容
-  label_color_plural: 色
-  label_copied: コピー
-  label_copy_same_as_target: コピー先と同様
-  label_copy_source: コピー元
-  label_copy_target: コピー先
-  label_copy_workflow_from: ワークフローをここからコピー
-  label_copy_workflow_from_type: Copy to another type
-  label_copy_workflow_from_role: Copy to other roles
-  label_copy_project: プロジェクトをコピー
-  label_core_version: メインのバージョン
-  label_core_build: コアビルド
-  label_created_by: 作成者： %{user}
-  label_current_status: 現在のステータス
-  label_current_version: 最新版
-  label_custom_field_add_no_type: このフィールドをワークパッケージタイプに追加
-  label_custom_field_new: 新規カスタムフィールド
-  label_custom_field_plural: カスタムフィールド
-  label_custom_field_default_type: 空の種類
-  label_custom_style: デザイン
-  label_custom_style_description: OpenProjectがテーマでどのように見えるかを選択し、アプリで使用するデフォルトの色を選択し、エクスポートがどのように見えるかを選択します。
-  label_dashboard: ダッシュボード
-  label_database_version: PostgreSQL バージョン
-  label_date: 日付
-  label_dates: 日付
-  label_date_and_time: 日付と時刻
-  label_date_format: 日付の形式
-  label_date_from: '日付指定: '
+  label_comment_add: "コメントを追加"
+  label_comment_added: "コメントを追加された。"
+  label_comment_delete: "コメントを削除"
+  label_comment_plural: "コメント"
+  label_commits_per_author: "掲載者別のコミット"
+  label_commits_per_month: "月別のコミット"
+  label_confirmation: "確認のため再入力"
+  label_contains: "含む"
+  label_content: "内容"
+  label_color_plural: "色"
+  label_copied: "コピー"
+  label_copy_same_as_target: "コピー先と同様"
+  label_copy_source: "コピー元"
+  label_copy_target: "コピー先"
+  label_copy_workflow_from: "ワークフローをここからコピー"
+  label_copy_project: "プロジェクトをコピー"
+  label_core_version: "メインのバージョン"
+  label_core_build: "コアビルド"
+  label_created_by: "作成者： %{user}"
+  label_current_status: "現在のステータス"
+  label_current_version: "最新版"
+  label_custom_field_add_no_type: "このフィールドをワークパッケージタイプに追加"
+  label_custom_field_new: "新規カスタムフィールド"
+  label_custom_field_plural: "カスタムフィールド"
+  label_custom_field_default_type: "空の種類"
+  label_custom_style: "デザイン"
+  label_custom_style_description: "Yojanaがテーマでどのように見えるかを選択し、アプリで使用するデフォルトの色を選択し、エクスポートがどのように見えるかを選択します。"
+  label_dashboard: "ダッシュボード"
+  label_database_version: "PostgreSQL バージョン"
+  label_date: "日付"
+  label_dates: "日付"
+  label_date_and_time: "日付と時刻"
+  label_date_format: "日付の形式"
+  label_date_from: "日付指定: "
   label_date_from_to: "%{start} ～%{end}"
   label_date_to: から
   label_day_plural: 日
@@ -4185,61 +4168,53 @@ ja:
   label_not_found: 存在しません
   label_none: なし
   label_none_parentheses: "(なし)"
-  label_not_contains: 含まない
-  label_not_equals: 等しくない
-  label_life_cycle_step_plural: プロジェクトのライフ サイクル
-  label_on: オン
-  label_operator_all: 空ではありません
-  label_operator_none: が空です
-  label_operator_equals_or: は (OR)
-  label_operator_equals_all: は (AND)
-  label_operator_shared_with_user_any: 全て
-  label_open: 未完了
-  label_closed: 完了
-  label_open_menu: メニューを開く
-  label_open_work_packages: 未完了
-  label_open_work_packages_plural: 未完了
-  label_openproject_website: OpenProjectのWebサイト
-  label_optional_description: 説明
-  label_options: オプション
-  label_other: その他
-  label_overall_activity: 全ての活動
-  label_overview: 概要
-  label_page_title: ページタイトル
-  label_parent_group_caption: 'Setting a parent group will make this group a subgroup of the selected parent group. This will also inherit all memberships, including permissions of the parent group.
-
-    '
-  label_part_of: 以下の一部：
-  label_password_lost: パスワードの再発行
-  label_password_rule_lowercase: 小文字
-  label_password_rule_numeric: 数値文字
-  label_password_rule_special: 特殊文字
-  label_password_rule_uppercase: 大文字
-  label_password_requirement_lowercase: Must contain at least one lowercase character.
-  label_password_requirement_numeric: Must contain at least one numeric character.
-  label_password_requirement_special: Must contain at least one special character.
-  label_password_requirement_uppercase: Must contain at least one uppercase character.
-  label_path_encoding: パスのエンコード
-  label_per_page: 'ページあたり:'
-  label_people: 人
-  label_permissions: 権限
-  label_permissions_report: 権限のレポート
-  label_personalize_page: このページを個人用にカスタマイズする
-  label_placeholder_user: プレースホルダー ユーザー
-  label_placeholder_user_new: 新しいプレースホルダー ユーザー
-  label_placeholder_user_plural: プレースホルダー ユーザー
-  label_planning: 計画
-  label_please_login: ログインしてください。
-  label_plugins: プラグイン
-  label_portfolio_plural: Portfolios
-  label_modules_and_plugins: モジュールとプラグイン
-  label_precedes: 次の項目に先行
-  label_preferences: 設定
-  label_preview: プレビュー
-  label_preview_not_available: プレビューは利用できません
-  label_previous: 前へ
-  label_previous_week: 先週
-  label_previous_year: Previous year
+  label_not_contains: "含まない"
+  label_not_equals: "等しくない"
+  label_life_cycle_step_plural: "プロジェクトのライフ サイクル"
+  label_on: "オン"
+  label_operator_all: "空ではありません"
+  label_operator_none: "が空です"
+  label_operator_equals_or: "は (OR)"
+  label_operator_equals_all: "は (AND)"
+  label_operator_shared_with_user_any: "全て"
+  label_open: "未完了"
+  label_closed: "完了"
+  label_open_menu: "メニューを開く"
+  label_open_work_packages: "未完了"
+  label_open_work_packages_plural: "未完了"
+  label_openproject_website: "YojanaのWebサイト"
+  label_optional_description: "説明"
+  label_options: "オプション"
+  label_other: "その他"
+  label_overall_activity: "全ての活動"
+  label_overview: "概要"
+  label_page_title: "ページタイトル"
+  label_part_of: "以下の一部："
+  label_password_lost: "パスワードの再発行"
+  label_password_rule_lowercase: "小文字"
+  label_password_rule_numeric: "数値文字"
+  label_password_rule_special: "特殊文字"
+  label_password_rule_uppercase: "大文字"
+  label_path_encoding: "パスのエンコード"
+  label_per_page: "ページあたり:"
+  label_people: "人"
+  label_permissions: "権限"
+  label_permissions_report: "権限のレポート"
+  label_personalize_page: "このページを個人用にカスタマイズする"
+  label_placeholder_user: "プレースホルダー ユーザー"
+  label_placeholder_user_new: "新しいプレースホルダー ユーザー"
+  label_placeholder_user_plural: "プレースホルダー ユーザー"
+  label_planning: "計画"
+  label_please_login: "ログインしてください。"
+  label_plugins: "プラグイン"
+  label_portfolio_plural: "Portfolios"
+  label_modules_and_plugins: "モジュールとプラグイン"
+  label_precedes: "次の項目に先行"
+  label_preferences: "設定"
+  label_preview: "プレビュー"
+  label_preview_not_available: "プレビューは利用できません"
+  label_previous: "前へ"
+  label_previous_week: "先週"
   label_principal_invite_via_email: " またはメールで新しいユーザを招待"
   label_principal_search: 既存のユーザーまたはグループを追加する
   label_privacy_policy: データのプライバシーとセキュリティポリシー
@@ -4635,8 +4610,8 @@ ja:
   mail_body_backup_token_reset_user_info: バックアップトークンがリセットされました。
   mail_body_backup_token_info: 以前のトークンは無効になりました。
   mail_body_backup_waiting_period: 新しいトークンは %{hours} 時間後に有効になります。
-  mail_body_backup_token_warning: これがあなたでなかった場合、すぐに OpenProject にログインして、再度リセットしてください。
-  mail_body_incoming_email_error: OpenProjectに送信したメールを処理できませんでした。
+  mail_body_backup_token_warning: これがあなたでなかった場合、すぐに Yojana にログインして、再度リセットしてください。
+  mail_body_incoming_email_error: Yojanaに送信したメールを処理できませんでした。
   mail_body_incoming_email_error_in_reply_to: "%{received_at} に %{from_email} が書きました"
   mail_body_incoming_email_error_logs: ログ
   mail_body_lost_password: 'パスワードを変更するには、以下のリンクをクリックしてください:'
@@ -4649,19 +4624,19 @@ ja:
   mail_body_register_user: "%{name}さん"
   mail_body_register_links_html: |
     当社のYouTubeチャンネル（%{youtube_link}）を自由に閲覧してください。ここでは、ウェビナー（%{webinar_link}）
-    および「はじめの一歩」動画（%{get_started_link}）を提供し、OpenProjectでの最初のステップをできるだけ簡単にするためのサポートを提供しています。
+    および「はじめの一歩」動画（%{get_started_link}）を提供し、Yojanaでの最初のステップをできるだけ簡単にするためのサポートを提供しています。
     <br />
     さらに質問がある場合は、ドキュメント（%{documentation_link}）を参照するか、管理者にお問い合わせください。
-  mail_body_register_closing: あなたのOpenProjectチーム
-  mail_body_register_ending: 連絡をお待ちしています！よろしくお願いいたします。
-  mail_body_reminder: 担当している %{count}件 のワークパッケージが %{days} 日内に期限を迎えます：
-  mail_body_group_reminder: グループ "%{group}" に割り当てられた %{count} 件のワークパッケージが %{days} 日内に期限を迎えます
+  mail_body_register_closing: "あなたのYojanaチーム"
+  mail_body_register_ending: "連絡をお待ちしています！よろしくお願いいたします。"
+  mail_body_reminder: "担当している %{count}件 のワークパッケージが %{days} 日内に期限を迎えます："
+  mail_body_group_reminder: 'グループ "%{group}" に割り当てられた %{count} 件のワークパッケージが %{days} 日内に期限を迎えます'
   mail_body_wiki_page_added: "%{author} によってWikiページ' %{id} 'が追加されました。"
   mail_body_wiki_page_updated: "%{author} によってWikiページ' %{id} 'が更新されました。"
   mail_subject_account_activation_request: "%{value} アカウントの承認要求"
-  mail_subject_backup_ready: バックアップの準備ができました
-  mail_subject_backup_token_reset: バックアップトークンのリセット
-  mail_subject_incoming_email_error: OpenProjectに送信したメールを処理できませんでした
+  mail_subject_backup_ready: "バックアップの準備ができました"
+  mail_subject_backup_token_reset: "バックアップトークンのリセット"
+  mail_subject_incoming_email_error: "Yojanaに送信したメールを処理できませんでした"
   mail_subject_lost_password: "%{value} パスワード再発行"
   mail_subject_register: "%{value} アカウント登録の確認"
   mail_subject_wiki_content_added: Wikiページ'%{id}'が追加されました
@@ -4689,17 +4664,17 @@ ja:
       roles: 次のロールがあります：
   mail_user_activation_limit_reached:
     subject: ユーザーのアクティブ化の上限に達しました。
-    message_html: |
-      A new user (%{email}) tried to create an account on an OpenProject environment that you manage (%{host}).
-      The user cannot activate their account since the user limit has been reached.
+    message: |
+      新しいユーザー（%{email}）が管理しているYojanaの環境（%{host})）上にアカウントを作成しようとしました。
+      ユーザーの制限に達しているため、ユーザーは自分のアカウントをアクティブ化できません。
     steps:
-      a: お支払いプランをアップグレードします。 ([ここ](upgrade_url))
-      b: 既存のユーザーをロックまたは削除する ([ここ](users_url))
-      label: 'ユーザーがサインインできるようにするには、次のいずれかを行います: '
-  more_actions: 他の機能
-  noscript_description: OpenProjectを使用するためにJavaScriptを有効にする必要があります！
-  noscript_heading: JavaScriptは無効されています。
-  noscript_learn_more: もっと詳しく
+      label: "ユーザーがサインインできるようにするには、次のいずれかを行います: "
+      a: "お支払いプランをアップグレードします。 ([ここ](upgrade_url))" #here turned into a link
+      b: "既存のユーザーをロックまたは削除する ([ここ](users_url))" #here turned into a link
+  more_actions: "他の機能"
+  noscript_description: "Yojanaを使用するためにJavaScriptを有効にする必要があります！"
+  noscript_heading: "JavaScriptは無効されています。"
+  noscript_learn_more: "もっと詳しく"
   notice_accessibility_mode: アクセシビリティモードを [アカウント設定](url) で有効にすることができます。
   notice_account_activated: アカウントが有効になりました。ログインできます。
   notice_account_already_activated: アカウントは既にアクティブにされています。
@@ -4773,10 +4748,10 @@ ja:
   notice_automatic_set_of_standard_type: 自動的に標準型を設定します。
   notice_logged_out: ログアウトしました。
   notice_wont_delete_auth_source: ユーザーがまだ使用している限り、LDAP 接続は削除できません。
-  notice_project_cannot_update_custom_fields: 'プロジェクトの有効なカスタムフィールドを更新できません。プロジェクトは無効です: %{errors}'
-  notice_attachment_migration_wiki_page: 'このページは、OpenProject の更新時に自動的に生成されました。%{container_type} "%{container_name}" と関連付けられていたすべての添付ファイルが含まれています。
-
-    '
+  notice_project_cannot_update_custom_fields: "プロジェクトの有効なカスタムフィールドを更新できません。プロジェクトは無効です: %{errors}"
+  notice_attachment_migration_wiki_page: >
+    このページは、Yojana の更新時に自動的に生成されました。%{container_type} "%{container_name}" と関連付けられていたすべての添付ファイルが含まれています。
+  #Default format for numbers
   number:
     format:
       delimiter: ","
@@ -4796,138 +4771,127 @@ ja:
           mb: MB
           tb: TB
   onboarding:
-    heading_getting_started: 概要を取得
-    text_getting_started_description: OpenProject とのプロジェクト管理とチームのコラボレーションの概要を簡単に取得します。ヘルプメニューからこのビデオを再起動できます。
+    heading_getting_started: "概要を取得"
+    text_getting_started_description: "Yojana とのプロジェクト管理とチームのコラボレーションの概要を簡単に取得します。ヘルプメニューからこのビデオを再起動できます。"
     welcome: "%{app_title} へようこそ"
-    select_language: 言語を選択してください
-  open_project:
-    common:
-      work_package_card_component:
-        drag_handle:
-          label: Drag to reorder
-        menu:
-          label_actions: Work package actions
-        parent: Parent
-        undisclosed: Undisclosed
-  permission_add_work_package_comments: コメントの追加
-  permission_add_work_packages: ワークパッケージの追加
-  permission_add_messages: メッセージの投稿
-  permission_add_project: プロジェクトの作成
-  permission_add_portfolios: ポートフォリオを作成
-  permission_add_programs: プログラムの作成
-  permission_add_work_package_attachments: 添付ファイルを追加
-  permission_add_work_package_attachments_explanation: ワークパッケージの編集権限なしで添付ファイルを追加できます
-  permission_add_internal_comments: 内部コメントの追加
-  permission_archive_project: プロジェクトをアーカイブ
-  permission_create_user: ユーザーの作成
-  permission_manage_user: ユーザーの編集
-  permission_manage_placeholder_user: プレースホルダーユーザーの作成、編集、削除
-  permission_add_subprojects: 子プロジェクトの追加
-  permission_add_work_package_watchers: ウォッチャーの追加
-  permission_assign_versions: バージョンの割り当て
-  permission_browse_repository: リポジトリに読み取り専用のアクセス (参照およびチェックアウト)
-  permission_change_work_package_status: ワークパッケージのステータス変更
-  permission_change_work_package_status_explanation: ワークパッケージの編集権限なしで状態を変更できます
-  permission_comment_news: ニュースへのコメント
-  permission_commit_access: リポジトリに読み取り/書き込みアクセス (コミット)
-  permission_copy_projects: プロジェクトのコピー
-  permission_copy_projects_explanation: In template projects, this permission has a secondary function, it allows the creation of new projects derived from the template.
-  permission_copy_work_packages: ワークパッケージの重複
-  permission_create_backup: バックアップの作成
-  permission_delete_work_package_watchers: ウォッチャーの削除
-  permission_delete_work_packages: ワークパッケージの削除
-  permission_delete_messages: メッセージの削除
-  permission_delete_own_messages: 自身が投稿したメッセージの削除
-  permission_delete_reportings: レポートの削除
-  permission_delete_timelines: タイムラインの削除
-  permission_edit_work_package_comments: コメントの承認
-  permission_edit_work_package_comments_explanation: '注意: この権限を持つユーザは誰のコメントも編集できます。'
-  permission_edit_work_packages: ワークパッケージの編集
-  permission_edit_messages: メッセージの編集
-  permission_edit_own_internal_comments: 自分がした内部コメントの編集
-  permission_edit_own_work_package_comments: 自分がしたコメントの編集
-  permission_edit_own_messages: 自分の投稿したメッセージの編集
-  permission_edit_own_time_entries: 自分が記入した作業時間の編集
-  permission_edit_others_internal_comments: 内部コメントの承認
-  permission_edit_others_internal_comments_explanation: 注意:この権限を持つユーザーは、他のユーザーの内部コメントを編集することができます。
-  permission_edit_project: プロジェクトの編集
-  permission_edit_project_attributes: プロジェクト属性の編集
-  permission_edit_project_phases: プロジェクトフェーズの編集
-  permission_edit_reportings: レポートの編集
-  permission_edit_time_entries: 他のユーザーの作業時間を編集
-  permission_edit_timelines: タイムラインの編集
-  permission_edit_wiki_pages: Wikiページの編集
-  permission_export_work_packages: ワークパッケージのエクスポート
-  permission_export_projects: Export projects
-  permission_invite_members_by_email: Invite members by email
-  permission_invite_members_by_email_explanation: 'Allows users to invite new members by email. Invited users will receive an email with a link to set their password and activate their account. Depends on the permission to manage members
-
-    '
-  permission_log_own_time: 作業時間の記録
-  permission_log_time: 他のユーザーの作業時間
-  permission_manage_forums: フォーラムの管理
-  permission_manage_categories: ワークパッケージのカテゴリの管理
-  permission_manage_dashboards: ダッシュボードの管理
-  permission_manage_work_package_relations: ワークパッケージの関係の管理
-  permission_manage_members: メンバーの管理
-  permission_manage_news: ニュースの管理
-  permission_manage_project_activities: プロジェクト活動の管理
-  permission_manage_public_queries: 公開ビューの管理
-  permission_manage_repository: リポジトリの管理
-  permission_manage_subtasks: ワークパッケージ階層の管理
-  permission_manage_versions: バージョンの管理
-  permission_manage_wiki: Wiki の管理
-  permission_manage_own_working_times: Manage own working times
-  permission_manage_own_working_times_explanation: 'Allows users to manage their own working times, and personal non-working days.
-
-    '
-  permission_manage_working_times: Manage working times for all users
-  permission_manage_working_times_explanation: 'Allows users to manage working times for all users, including personal non-working days.
-
-    '
-  permission_move_work_packages: ワークパッケージの移動
-  permission_save_queries: ビューを保存
-  permission_search_project: プロジェクトを検索
-  permission_select_custom_fields: カスタムフィールドの選択
-  permission_select_project_custom_fields: プロジェクト属性の選択
-  permission_select_project_phases: プロジェクトフェーズの選択
-  permission_select_project_phases_explanation: プロジェクトのフェーズを有効/無効にします。 アクティブでないフェーズとしてプロジェクトに適したライフサイクルを選択できるようにすると、プロジェクト概要ページやプロジェクト リストには表示されません。
-  permission_select_project_modules: プロジェクトでモジュールの選択
-  permission_share_work_packages: ワークパッケージを共有
-  permission_manage_types: ワークパッケージのタイプを選択
-  permission_manage_own_reminders: 自分のリマインダーを作成する
-  permission_view_all_principals: View all users and groups
-  permission_view_all_principals_explanation: 'Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
-
-    '
-  permission_view_project: プロジェクトを表示
-  permission_view_changesets: OpenProject にリポジトリのリビジョンを表示
-  permission_view_internal_comments: 内部コメントの閲覧
-  permission_view_commit_author_statistics: コミット作成者の統計情報の閲覧
-  permission_view_dashboards: ダッシュボードを表示
-  permission_view_work_package_watchers: ウォッチャー一覧の閲覧
-  permission_view_work_packages: ワークパッケージの表示
-  permission_view_messages: メッセージの閲覧
-  permission_view_news: ニュースの閲覧
-  permission_view_members: メンバーを表示
-  permission_view_reportings: レポートの閲覧
-  permission_view_shared_work_packages: ワークパッケージの共有を表示
-  permission_view_time_entries: 作業時間記録の閲覧
-  permission_view_timelines: タイムラインの閲覧
-  permission_view_user_email: ユーザーのメールアドレス閲覧
-  permission_view_wiki_edits: Wiki履歴の閲覧
-  permission_view_wiki_pages: Wikiの閲覧
-  permission_work_package_assigned: 担当者/責任者になる
-  permission_work_package_assigned_explanation: それぞれのプロジェクトで、ワークパッケージはこの役割をもつユーザーおよびグループに割り当てることができます。
-  permission_view_project_activity: プロジェクトのアクティビティを表示
-  permission_view_project_attributes: プロジェクト属性の閲覧
-  permission_view_project_phases: プロジェクトのフェーズを表示
-  permission_save_bcf_queries: BCF クエリを保存
-  permission_manage_public_bcf_queries: 公開BCFクエリの管理
-  permission_edit_attribute_help_texts: 属性のヘルプテキストを編集
-  permission_manage_public_project_queries: 公開プロジェクトリストの管理
-  permission_view_project_query: プロジェクトのクエリを表示
-  permission_edit_project_query: プロジェクトのクエリを編集
+    select_language: "言語を選択してください"
+  permission_add_work_package_comments: "コメントの追加"
+  permission_add_work_packages: "ワークパッケージの追加"
+  permission_add_messages: "メッセージの投稿"
+  permission_add_project: "プロジェクトの作成"
+  permission_add_portfolios: "ポートフォリオを作成"
+  permission_add_programs: "プログラムの作成"
+  permission_add_work_package_attachments: "添付ファイルを追加"
+  permission_add_work_package_attachments_explanation: "ワークパッケージの編集権限なしで添付ファイルを追加できます"
+  permission_add_internal_comments: "内部コメントの追加"
+  permission_archive_project: "プロジェクトをアーカイブ"
+  permission_create_user: "ユーザーの作成"
+  permission_manage_user: "ユーザーの編集"
+  permission_manage_placeholder_user: "プレースホルダーユーザーの作成、編集、削除"
+  permission_add_subprojects: "子プロジェクトの追加"
+  permission_add_work_package_watchers: "ウォッチャーの追加"
+  permission_assign_versions: "バージョンの割り当て"
+  permission_browse_repository: "リポジトリに読み取り専用のアクセス (参照およびチェックアウト)"
+  permission_change_wiki_parent_page: "親Wikiページの変更"
+  permission_change_work_package_status: "ワークパッケージのステータス変更"
+  permission_change_work_package_status_explanation: "ワークパッケージの編集権限なしで状態を変更できます"
+  permission_comment_news: "ニュースへのコメント"
+  permission_commit_access: "リポジトリに読み取り/書き込みアクセス (コミット)"
+  permission_copy_projects: "プロジェクトのコピー"
+  permission_copy_projects_explanation: "In template projects, this permission has a secondary function, it allows the creation of new projects derived from the template."
+  permission_copy_work_packages: "ワークパッケージの重複"
+  permission_create_backup: "バックアップの作成"
+  permission_delete_work_package_watchers: "ウォッチャーの削除"
+  permission_delete_work_packages: "ワークパッケージの削除"
+  permission_delete_messages: "メッセージの削除"
+  permission_delete_own_messages: "自身が投稿したメッセージの削除"
+  permission_delete_reportings: "レポートの削除"
+  permission_delete_timelines: "タイムラインの削除"
+  permission_delete_wiki_pages: "Wikiページの削除"
+  permission_delete_wiki_pages_attachments: "添付ファイルの削除"
+  permission_edit_work_package_comments: "コメントの承認"
+  permission_edit_work_package_comments_explanation: "注意: この権限を持つユーザは誰のコメントも編集できます。"
+  permission_edit_work_packages: "ワークパッケージの編集"
+  permission_edit_messages: "メッセージの編集"
+  permission_edit_own_internal_comments: "自分がした内部コメントの編集"
+  permission_edit_own_work_package_comments: "自分がしたコメントの編集"
+  permission_edit_own_messages: "自分の投稿したメッセージの編集"
+  permission_edit_own_time_entries: "自分が記入した作業時間の編集"
+  permission_edit_others_internal_comments: "内部コメントの承認"
+  permission_edit_others_internal_comments_explanation: "注意:この権限を持つユーザーは、他のユーザーの内部コメントを編集することができます。"
+  permission_edit_project: "プロジェクトの編集"
+  permission_edit_project_attributes: "プロジェクト属性の編集"
+  permission_edit_project_phases: "プロジェクトフェーズの編集"
+  permission_edit_reportings: "レポートの編集"
+  permission_edit_time_entries: "他のユーザーの作業時間を編集"
+  permission_edit_timelines: "タイムラインの編集"
+  permission_edit_wiki_pages: "Wikiページの編集"
+  permission_export_work_packages: "ワークパッケージのエクスポート"
+  permission_export_projects: "Export projects"
+  permission_export_wiki_pages: "Wikiページのエクスポート"
+  permission_invite_members_by_email: "Invite members by email"
+  permission_invite_members_by_email_explanation: >
+    Allows users to invite new members by email. Invited users will receive an email with a link to set their password and activate their account. Depends on the permission to manage members
+  permission_list_attachments: "添付ファイルの一覧表"
+  permission_log_own_time: "作業時間の記録"
+  permission_log_time: "他のユーザーの作業時間"
+  permission_manage_forums: "フォーラムの管理"
+  permission_manage_categories: "ワークパッケージのカテゴリの管理"
+  permission_manage_dashboards: "ダッシュボードの管理"
+  permission_manage_work_package_relations: "ワークパッケージの関係の管理"
+  permission_manage_members: "メンバーの管理"
+  permission_manage_news: "ニュースの管理"
+  permission_manage_project_activities: "プロジェクト活動の管理"
+  permission_manage_public_queries: "公開ビューの管理"
+  permission_manage_repository: "リポジトリの管理"
+  permission_manage_subtasks: "ワークパッケージ階層の管理"
+  permission_manage_versions: "バージョンの管理"
+  permission_manage_wiki: "Wiki の管理"
+  permission_manage_wiki_menu: "Wikiメニューの管理"
+  permission_move_work_packages: "ワークパッケージの移動"
+  permission_protect_wiki_pages: "Wikiページの凍結"
+  permission_rename_wiki_pages: "Wikiページ名の変更"
+  permission_save_queries: "ビューを保存"
+  permission_search_project: "プロジェクトを検索"
+  permission_select_custom_fields: "カスタムフィールドの選択"
+  permission_select_project_custom_fields: "プロジェクト属性の選択"
+  permission_select_project_phases: "プロジェクトフェーズの選択"
+  permission_select_project_phases_explanation: "プロジェクトのフェーズを有効/無効にします。 アクティブでないフェーズとしてプロジェクトに適したライフサイクルを選択できるようにすると、プロジェクト概要ページやプロジェクト リストには表示されません。"
+  permission_select_project_modules: "プロジェクトでモジュールの選択"
+  permission_share_work_packages: "ワークパッケージを共有"
+  permission_manage_types: "ワークパッケージのタイプを選択"
+  permission_manage_own_reminders: "自分のリマインダーを作成する"
+  permission_view_all_principals: "View all users and groups"
+  permission_view_all_principals_explanation: >
+    Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
+  permission_view_project: "プロジェクトを表示"
+  permission_view_changesets: "Yojana にリポジトリのリビジョンを表示"
+  permission_view_internal_comments: "内部コメントの閲覧"
+  permission_view_commit_author_statistics: "コミット作成者の統計情報の閲覧"
+  permission_view_dashboards: "ダッシュボードを表示"
+  permission_view_work_package_watchers: "ウォッチャー一覧の閲覧"
+  permission_view_work_packages: "ワークパッケージの表示"
+  permission_view_messages: "メッセージの閲覧"
+  permission_view_news: "ニュースの閲覧"
+  permission_view_members: "メンバーを表示"
+  permission_view_reportings: "レポートの閲覧"
+  permission_view_shared_work_packages: "ワークパッケージの共有を表示"
+  permission_view_time_entries: "作業時間記録の閲覧"
+  permission_view_timelines: "タイムラインの閲覧"
+  permission_view_user_email: "ユーザーのメールアドレス閲覧"
+  permission_view_wiki_edits: "Wiki履歴の閲覧"
+  permission_view_wiki_pages: "Wikiの閲覧"
+  permission_work_package_assigned: "担当者/責任者になる"
+  permission_work_package_assigned_explanation: "それぞれのプロジェクトで、ワークパッケージはこの役割をもつユーザーおよびグループに割り当てることができます。"
+  permission_view_project_activity: "プロジェクトのアクティビティを表示"
+  permission_view_project_attributes: "プロジェクト属性の閲覧"
+  permission_view_project_phases: "プロジェクトのフェーズを表示"
+  permission_save_bcf_queries: "BCF クエリを保存"
+  permission_manage_public_bcf_queries: "公開BCFクエリの管理"
+  permission_edit_attribute_help_texts: "属性のヘルプテキストを編集"
+  permission_manage_public_project_queries: "公開プロジェクトリストの管理"
+  permission_view_project_query: "プロジェクトのクエリを表示"
+  permission_edit_project_query: "プロジェクトのクエリを編集"
   placeholders:
     default: "-"
     templated_hint: Automatically generated through type %{type}
@@ -5029,49 +4993,50 @@ ja:
     create_successful: リポジトリは登録されています。
     delete_sucessful: リポジトリは削除されました。
     destroy:
-      confirmation: 続行した場合、管理リポジトリは削除されます。
-      info: リポジトリの削除は復元できない操作です。
-      info_not_managed: '注: これは、このリポジトリの内容を削除しません。OpenProject によって管理されていません。'
-      managed_path_note: '次のディレクトリが消去されます: %{path}'
-      repository_verification_html: Enter the project's identifier %{identifier} to verify the deletion of its repository.
-      subtitle: プロジェクト %{project_name} の %{repository_type} を削除してもよろしいですか？
-      subtitle_not_managed_html: Do you really want to remove the linked %{repository_type} %{url} from the project %{project_name}?
-      title_html: Delete the %{repository_type}
-      title_not_managed: リンクされた %{repository_type} を削除しますか？
+      confirmation: "続行した場合、管理リポジトリは削除されます。"
+      info: "リポジトリの削除は復元できない操作です。"
+      info_not_managed: "注: これは、このリポジトリの内容を削除しません。Yojana によって管理されていません。"
+      managed_path_note: "次のディレクトリが消去されます: %{path}"
+      repository_verification: "リポジトリの削除を確認するため、プロジェクトの識別子 %{identifier} を入力してください。"
+      subtitle: "プロジェクト %{project_name} の %{repository_type} を削除してもよろしいですか？"
+      subtitle_not_managed: "プロジェクト %{project_name} からリンクされた %{repository_type} %{url} を削除してもよろしいですか？"
+      title: "%{repository_type} を削除"
+      title_not_managed: "リンクされた %{repository_type} を削除しますか？"
     errors:
-      build_failed: 選択した構成のリポジトリを作成することができません。%{reason}
-      managed_delete: 管理リポジトリを削除できません。
-      managed_delete_local: 'ファイルシステム上のローカル リポジトリを削除できません ''%{path}'': %{error_message}'
-      empty_repository: リポジトリは存在しますが、空です。まだリビジョンを含んでいません。
-      exists_on_filesystem: リポジトリのディレクトリは、既にファイルシステムに存在します。
-      filesystem_access_failed: 'ファイルシステム上のリポジトリへのアクセス中にエラーが発生しました: %{message}'
-      not_manageable: OpenProject によって、このリポジトリ ベンダーを管理できません。
-      path_permission_failed: '次のパスを作成しようとしてエラーが発生しました: %{path}。OpenProject がそのフォルダーに書き込むことができることを確認してください。'
-      unauthorized: リポジトリにアクセスする承認がないか、認証情報が有効ではありません。
-      unavailable: リポジトリが利用できません。
-      exception_title: 'リポジトリにアクセスできません: %{message}'
-      disabled_or_unknown_type: 選択した種類 %{type} は無効、または SCM ベンダー %{vendor} でもう利用できません。
-      disabled_or_unknown_vendor: SCM ベンダー %{vendor} が無効または利用できません。
-      remote_call_failed: '管理リモートの呼び出しに失敗しました。メッセージ ''%{message}'' (コード: %{code})'
-      remote_invalid_response: 管理リモートから無効なレスポンスを受信しました。
-      remote_save_failed: リモートから取得したパラメーターで、リポジトリを保存できませんでした。
+      build_failed: "選択した構成のリポジトリを作成することができません。%{reason}"
+      managed_delete: "管理リポジトリを削除できません。"
+      managed_delete_local: "ファイルシステム上のローカル リポジトリを削除できません '%{path}': %{error_message}"
+      empty_repository: "リポジトリは存在しますが、空です。まだリビジョンを含んでいません。"
+      exists_on_filesystem: "リポジトリのディレクトリは、既にファイルシステムに存在します。"
+      filesystem_access_failed: "ファイルシステム上のリポジトリへのアクセス中にエラーが発生しました: %{message}"
+      not_manageable: "Yojana によって、このリポジトリ ベンダーを管理できません。"
+      path_permission_failed: "次のパスを作成しようとしてエラーが発生しました: %{path}。Yojana がそのフォルダーに書き込むことができることを確認してください。"
+      unauthorized: "リポジトリにアクセスする承認がないか、認証情報が有効ではありません。"
+      unavailable: "リポジトリが利用できません。"
+      exception_title: "リポジトリにアクセスできません: %{message}"
+      disabled_or_unknown_type: "選択した種類 %{type} は無効、または SCM ベンダー %{vendor} でもう利用できません。"
+      disabled_or_unknown_vendor: "SCM ベンダー %{vendor} が無効または利用できません。"
+      remote_call_failed: "管理リモートの呼び出しに失敗しました。メッセージ '%{message}' (コード: %{code})"
+      remote_invalid_response: "管理リモートから無効なレスポンスを受信しました。"
+      remote_save_failed: "リモートから取得したパラメーターで、リポジトリを保存できませんでした。"
     git:
       instructions:
-        managed_url: これは、管理 (ローカル) Git リポジトリの URL です。
-        path: ローカル Git リポジトリへのパスを指定します (例えば、%{example_path} )。また http(s):// または file:// で始まる値を使用してローカルコピーにクローンを作成したリモートリポジトリも使用できます。
-        path_encoding: 'Git パス エンコーディングを上書き (デフォルト: UTF-8)'
-      local_title: 既存のローカル Git リポジトリのリンク
-      local_url: ローカル URL
-      local_introduction: 既存のローカル Git リポジトリがある場合は、アプリケーション内からアクセスするために、OpenProject  とリンクできます。
-      managed_introduction: OpenProject が、自動的にローカル Git リポジトリを作成して統合します。
-      managed_title: Git リポジトリを OpenProject に統合しました
-      managed_url: 管理用 URL
-      path: Git リポジトリのパス
-      path_encoding: パスのエンコード
-    go_to_revision: リビジョンに移動
-    managed_remote: このベンダーの管理リポジトリはリモートで処理されます。
-    managed_remote_note: このリポジトリの URL とパスの情報は、作成前に使用できません。
-    managed_url: 管理用 URL
+        managed_url: "これは、管理 (ローカル) Git リポジトリの URL です。"
+        path: >-
+          ローカル Git リポジトリへのパスを指定します (例えば、%{example_path} )。また http(s):// または file:// で始まる値を使用してローカルコピーにクローンを作成したリモートリポジトリも使用できます。
+        path_encoding: "Git パス エンコーディングを上書き (デフォルト: UTF-8)"
+      local_title: "既存のローカル Git リポジトリのリンク"
+      local_url: "ローカル URL"
+      local_introduction: "既存のローカル Git リポジトリがある場合は、アプリケーション内からアクセスするために、Yojana  とリンクできます。"
+      managed_introduction: "Yojana が、自動的にローカル Git リポジトリを作成して統合します。"
+      managed_title: "Git リポジトリを Yojana に統合しました"
+      managed_url: "管理用 URL"
+      path: "Git リポジトリのパス"
+      path_encoding: "パスのエンコード"
+    go_to_revision: "リビジョンに移動"
+    managed_remote: "このベンダーの管理リポジトリはリモートで処理されます。"
+    managed_remote_note: "このリポジトリの URL とパスの情報は、作成前に使用できません。"
+    managed_url: "管理用 URL"
     settings:
       automatic_managed_repos_disabled: 自動作成しない
       automatic_managed_repos: 管理リポジトリの自動作成
@@ -5079,288 +5044,256 @@ ja:
     scm_vendor: ソースコントロール管理システム
     scm_type: リポジトリの種類
     scm_types:
-      local: 既存のローカルリポジトリのリンク
-      existing: 既存のリポジトリのリンク
-      managed: OpenProject に新しいリポジトリを作成
+      local: "既存のローカルリポジトリのリンク"
+      existing: "既存のリポジトリのリンク"
+      managed: "Yojana に新しいリポジトリを作成"
     storage:
-      not_available: このリポジトリのディスク ストレージ消費量は利用できません。
-      update_timeout: |-
-        最後のリポジトリに必要なディスク容量の情報を N 分間保持します。
-        リポジトリの必要なディスク容量を計算するにはコストがかかるため、パフォーマンスへの影響を減らすにはこの値を増やしてください。
-      oauth_application_details_html: 'The client secret value will not be accessible again after you close this window. Please copy these values into the Nextcloud OpenProject Integration settings:'
-      oauth_application_details_link_text: 設定ページに移動
-      setup_documentation_details: '新しいファイルストレージの設定にヘルプが必要な場合は、ドキュメントを確認してください。 '
-      setup_documentation_details_link_text: ファイルストレージのセットアップ
-      show_warning_details: このファイルストレージを使用するには、各プロジェクトのプロジェクト設定でモジュールと特定のストレージを有効にする必要があります。
+      not_available: "このリポジトリのディスク ストレージ消費量は利用できません。"
+      update_timeout: "最後のリポジトリに必要なディスク容量の情報を N 分間保持します。\nリポジトリの必要なディスク容量を計算するにはコストがかかるため、パフォーマンスへの影響を減らすにはこの値を増やしてください。"
+      oauth_application_details: "このウィンドウを閉じた後、クライアントの秘密の値にはアクセスできません。これらの値をNextcloudのYojana統合設定にコピーしてください："
+      oauth_application_details_link_text: "設定ページに移動"
+      setup_documentation_details: "新しいファイルストレージの設定にヘルプが必要な場合は、ドキュメントを確認してください。 "
+      setup_documentation_details_link_text: "ファイルストレージのセットアップ"
+      show_warning_details: "このファイルストレージを使用するには、各プロジェクトのプロジェクト設定でモジュールと特定のストレージを有効にする必要があります。"
     subversion:
-      existing_title: 既存の Subversion リポジトリ
-      existing_introduction: 既存のローカル Subversion リポジトリがある場合は、アプリケーション内からアクセスするために、OpenProject とリンクできます。
-      existing_url: 既存のURL
+      existing_title: "既存の Subversion リポジトリ"
+      existing_introduction: "既存のローカル Subversion リポジトリがある場合は、アプリケーション内からアクセスするために、Yojana とリンクできます。"
+      existing_url: "既存のURL"
       instructions:
-        managed_url: これは、管理 (ローカル) Subversion リポジトリの URL です。
-        url: |-
-          リポジトリの URL を入力してください。これはローカル リポジトリ (%{local_proto} で始まる)、またはリモート リポジトリを対象にすることができます。
-          次の URL スキームがサポートされています:
-      managed_title: Subversion リポジトリを OpenProject に統合しました
-      managed_introduction: OpenProject が、自動的にローカル Subversion リポジトリを作成して統合します。
-      managed_url: 管理 URL
-      password: リポジトリのパスワード
-      username: リポジトリのユーザ名
-    truncated: 申し訳ありません。 このディレクトリを %{limit} ファイルに切り捨てる必要がありました。%{truncated} エントリがリストから除外されました。
+        managed_url: "これは、管理 (ローカル) Subversion リポジトリの URL です。"
+        url: "リポジトリの URL を入力してください。これはローカル リポジトリ (%{local_proto} で始まる)、またはリモート リポジトリを対象にすることができます。\n次の URL スキームがサポートされています:"
+      managed_title: "Subversion リポジトリを Yojana に統合しました"
+      managed_introduction: "Yojana が、自動的にローカル Subversion リポジトリを作成して統合します。"
+      managed_url: "管理 URL"
+      password: "リポジトリのパスワード"
+      username: "リポジトリのユーザ名"
+    truncated: "申し訳ありません。 このディレクトリを %{limit} ファイルに切り捨てる必要がありました。%{truncated} エントリがリストから除外されました。"
     named_repository: "%{vendor_name} リポジトリ"
     update_settings_successful: 設定を保存しました。
     url: リポジトリの URL
     warnings:
       cannot_annotate: このファイルに注釈を付けることはできません。
   scheduling:
-    manual: 手動
-    automatic: 自動
-  search_input_placeholder: 検索…
-  setting_allowed_link_protocols: 許可されたリンクプロトコル
-  setting_allowed_link_protocols_text_html: これらのプロトコルを、ワークパッケージの説明、長文フィールド、およびコメント内でリンクとして表示できるようにします。例えば、%{tel_code} や %{element_code} などです。1行に1つのプロトコルを入力してください。<br/> %{http_code}、%{https_code}、および %{mailto_code} のプロトコルは常に許可されています。
-  setting_capture_external_links: Capture external links
-  setting_capture_external_links_text: 'When enabled, all external links in formatted text will redirect through a warning page before leaving the application. This helps protect users from potentially malicious external websites.
-
-    '
-  setting_capture_external_links_require_login: Require users to be logged in
-  setting_capture_external_links_require_login_text: 'When enabled, users wanting to click on external links need to be logged in before being able to continue.
-
-    '
-  setting_after_first_login_redirect_url: 最初のログインリダイレクト
-  setting_after_first_login_redirect_url_text_html: '最初のログイン後にユーザーをリダイレクトするパスを設定します。空の場合は、オンボーディングツアーのホームページにリダイレクトします。 <br/> 例: <code>/my/page</code>
-
-    '
-  setting_after_login_default_redirect_url: ログインリダイレクト後
-  setting_after_login_default_redirect_url_example_html: 'Set a default path to redirect users after login, if no back link was provided. Redirects to home page if not set. <br/> Example: %{example_code}
-
-    '
-  setting_apiv3_cors_title: クロスオリジン資源共有 (CORS)
-  setting_apiv3_cors_enabled: CORSを有効にする
-  setting_apiv3_cors_origins: API V3のオリジン間リソース共有 (CORS) が許可されています
-  setting_apiv3_cors_origins_instructions_html: 'If CORS is enabled, these are the origins that are allowed to access OpenProject API. <br/> Please check the [Documentation on the Origin header](docs_url) on how to specify the expected values.
-
-    '
-  setting_apiv3_write_readonly_attributes: 読み取り専用属性への書き込み権限
-  setting_apiv3_write_readonly_attributes_instructions: 'If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
-
-    '
-  setting_apiv3_write_readonly_attributes_warning: 'This setting has a use-case for e.g., importing data, but allows administrators to impersonate the creation of items as other users. All creation requests are being logged however with the true author.
-
-    '
-  setting_apiv3_write_readonly_attributes_additional_html: 'For more information on attributes and supported resources, please see the [API documentation](api_documentation_link).
-
-    '
-  setting_apiv3_max_page_size: API ページの最大サイズ
-  setting_apiv3_max_page_size_instructions: 'Set the maximum page size the API will respond with. It will not be possible to perform API requests that return more values on a single page.
-
-    '
-  setting_apiv3_max_page_size_warning: 'Please only change this value if you are sure why you need it. Setting to a high value will result in significant performance impacts, while a value lower than the per page options will cause errors in paginated views.
-
-    '
-  setting_apiv3_docs: 文章
-  setting_apiv3_docs_enabled: ドキュメントページを有効にする
-  setting_apiv3_docs_enabled_instructions_html: 'Docsページが有効になっている場合は、 <a href="%{link}" target="_blank">%{link}</a> の下でAPIv3 ドキュメントのインタラクティブなビューを取得できます。
-
-    '
-  setting_apiv3_docs_enabled_instructions_warning: 'Please be aware that enabling the API docs on a production system may expose sensitive information or result in accidental loss of data when not being careful. We recommend to only enable this setting for development purposes.
-
-    '
-  setting_attachment_whitelist: 添付ファイルのアップロードホワイトリスト
-  setting_email_delivery_method: メールの配信方法
-  setting_emails_salutation: メール中のアドレス ユーザー
-  setting_oauth_allow_remapping_of_existing_users: 既存のユーザーの再マッピングを許可する
-  setting_sendmail_location: Sendmail の実行可能ファイルの場所
-  setting_sendmail_arguments: Arguments for sendmail
-  setting_smtp_enable_starttls_auto: 利用可能な場合、STARTTLS を自動的に使用する
-  setting_smtp_ssl: SSL接続を使用する
-  setting_smtp_address: SMTPサーバ
-  setting_smtp_port: SMTPポート
-  setting_smtp_authentication: SMTP認証
-  setting_smtp_user_name: SMTPユーザ名
-  setting_smtp_password: SMTPパスワード
-  setting_smtp_domain: SMTP HELO ドメイン
-  setting_activity_days_default: プロジェクトの活動ページに表示される日数
-  setting_api_tokens_enabled: Enable API tokens
-  setting_api_tokens_enabled_caption: 'Decide whether users can create personal API tokens in their account settings. These tokens can be used to access the different APIs of OpenProject, such as APIv3 and MCP.
-
-    '
-  setting_app_subtitle: アプリケーションのサブタイトル
-  setting_app_title: アプリケーションのタイトル
-  setting_organization_name: Organization name
-  setting_attachment_max_size: 添付ファイルの最大サイズ
-  setting_show_work_package_attachments: デフォルトで添付ファイルをファイルタブに表示
-  setting_antivirus_scan_mode: スキャンモード
-  setting_antivirus_scan_action: 感染したファイルのアクション
-  setting_autofetch_changesets: リポジトリの変更を自動取得
-  setting_autologin: 自動ログイン
-  setting_available_languages: 利用できる言語
-  setting_bcc_recipients: 宛先を非表示(bcc)
-  setting_brute_force_block_after_failed_logins: ユーザーをロックさせるログイン失敗回数
-  setting_brute_force_block_minutes: ユーザーがロックされている期間
-  setting_cache_formatted_text: 書式化されたテキストをキャッシュする
-  setting_use_wysiwyg_description: すべてのユーザーに対してデフォルトで CKEditor5 WYSIWYGエディタ を有効にする場合に選択します。 CKEditor は GFM Markdown の機能が制限されています。
-  setting_column_options: デフォルトのワークパッケージは列を一覧表示します
-  setting_commit_fix_keywords: 修正用キーワード
-  setting_commit_logs_encoding: メッセージのエンコードをコミット
-  setting_commit_logtime_activity_id: コミット時に作業時間を記録する
-  setting_commit_logtime_enabled: 作業時間記録を有効にする
-  setting_commit_ref_keywords: 参照用キーワード
-  setting_consent_time: 同意時間
-  setting_consent_info: 同意文
-  setting_consent_required: 同意を求める
-  setting_consent_decline_mail: 連絡先メールアドレスに同意します。
-  setting_cross_project_work_package_relations: 他プロジェクトとの間にワークパッケージの関連付けを許可する
-  setting_csv_escape_formulas: Escape formulas in CSV exports
-  setting_csv_escape_formulas_text: 'Escape spreadsheet formulas in CSV exports by prefixing cells that begin with characters such as =, +, -, or @ with a single quote. This mitigates CSV formula injection when exported files are opened in spreadsheet applications such as Excel. This comes at the downside of modifying the string values inside the CSV, so you may want to disable this if downstream tools require the exact, unescaped cell values.
-
-    '
-  setting_first_week_of_year: 年の最初の週に含む
-  setting_date_format: 日付
-  setting_default_language: デフォルトの言語
-  setting_default_projects_modules: 新規プロジェクトにおいてデフォルトで有効になるモジュール
-  setting_default_projects_public: デフォルトで新しいプロジェクトは公開にする
-  setting_disable_password_login: パスワード認証を無効にする
-  setting_diff_max_lines_displayed: 差分の表示行数の上限
-  setting_omniauth_direct_login_provider: ダイレクトログインの SSO プロバイダー
-  setting_display_subprojects_work_packages: デフォルトで子プロジェクトのワークパッケージを親プロジェクトに表示する
-  setting_duration_format: 期間の形式
-  setting_duration_format_hours_only: 時間のみ
-  setting_duration_format_days_and_hours: 日数と時間
-  setting_duration_format_instructions: 全体作業、残り作業、および経過時間の表示方法を定義します。
-  setting_emails_footer: 電子メールのフッター
-  setting_emails_header: 電子メールのヘッダー
-  setting_email_login: メールアドレスをログインに使用する
-  setting_enabled_scm: 使用するバージョン管理システム
-  setting_enabled_projects_columns: デフォルトで表示されるプロジェクト リストの列
-  setting_feeds_enabled: フィードを有効にする
-  setting_ical_enabled: iCalendar サブスクリプションを有効にする
-  setting_feeds_limit: フィードの項目数の上限
-  setting_file_max_size_displayed: 画面表示するテキストファイルの最大サイズ
-  setting_host_name: ホスト名
-  setting_collaborative_editing_hocuspocus_url: HocuspocusサーバーのURL
-  setting_collaborative_editing_hocuspocus_secret: Hocuspocus サーバーのシークレット
-  setting_hours_per_day: 1日あたりの時間
-  setting_hours_per_day_explanation: 1営業日あたりの稼働時間を定義します (例えば、 1日が8時間で32時間稼働した場合は4日間です)。
-  setting_invitation_expiration_days: アクティベーションのメールは次で有効期限切れ
-  setting_invitation_expiration_days_caption: 有効化メールの有効期限が切れる日数です。
-  setting_work_package_done_ratio: 進行状況計算モード
-  setting_work_package_done_ratio_field: ワークベース
-  setting_work_package_done_ratio_field_caption_html: "<i>Complete %</i>は自由に設定できる。オプションで<i>予定時間に</i>値を入力すると、自動的に<i>残時間が</i>導き出される。"
-  setting_work_package_done_ratio_status: ステータスベース
-  setting_work_package_done_ratio_status_caption_html: 各ステータスには、 <i>% Complete</i> の値があります。ステータスを変更すると、 <i>% Complete</i> が変わります。
-  setting_work_package_done_ratio_explanation_html: "<b>ワーク・ベース・</b>モードでは、完了(%)は自由に設定することができます。 オプションで「作業」に値を入力すると、自動的に「残時間」が導き出されます。 <b>ステータス・ベース・</b>モードでは、各ステータスに 完了(%) の値が関連付けられます。 ステータスを変更すると、完了(%) も変更される。\n"
-  setting_work_package_properties: 項目名
-  setting_work_package_startdate_is_adddate: 今日の日付を新しいワークパッケージの開始日とする
-  setting_work_packages_projects_export_limit: ワークパッケージ/プロジェクトのエクスポート制限
-  setting_work_packages_projects_export_limit_text: 'Maximum number of work packages or projects that can be included in a single export. Larger exports are truncated to this limit.
-
-    '
-  setting_journal_aggregation_time_minutes: Aggregation period
-  setting_log_requesting_user: 全てのリクエストに対し、ユーザのログイン名、名前、メールアドレスをログに記録する
-  setting_login_required: 認証が必要
-  setting_login_required_caption: チェックすると、アプリケーションへのすべてのリクエストが認証される必要があります。
-  setting_lost_password: パスワードのリセットを有効にする
-  setting_lost_password_caption: チェックすると、ユーザーが自分のパスワードをリセットできるようになります。
-  setting_mail_from: 送信元のメールアドレス
-  setting_mail_handler_api_key: APIキー
-  setting_mail_handler_body_delimiters: メール本文から一致する行以降を切り捨てる
-  setting_mail_handler_body_delimiter_regex: この正規表現に一致するメールを切り捨てる
-  setting_mail_handler_ignore_filenames: 無視するメールの添付ファイル
-  setting_new_project_user_role_id: システム管理者以外のプロジェクト作成者に設定するロール
-  setting_new_project_user_role_id_caption: 'Only roles that include the permissions to edit project attributes and to manage members are listed, so that the creator can complete the project setup.
-
-    '
-  setting_new_project_send_confirmation_email: Send notification to author when creating a new project
-  setting_new_project_notification_text: Notification text
-  setting_password_active_rules: Password requirements
-  setting_password_count_former_banned: 再利用を禁止される最近使用済みパスワードの数
-  setting_password_days_valid: パスワードを強制変更させる経過日数
-  setting_password_min_length: 最短長
-  setting_per_page_options: オプションページごとの項目数
-  setting_percent_complete_on_status_closed: ワークパッケージが終了したときの処理
-  setting_percent_complete_on_status_closed_no_change: 変更なし
-  setting_percent_complete_on_status_closed_no_change_caption_html: ワークパッケージが閉じられても、<i>完了</i>率の値は変わりません。
-  setting_percent_complete_on_status_closed_set_100p: 自動的に100%に設定
-  setting_percent_complete_on_status_closed_set_100p_caption: 終了したワークパッケージは完了したとみなされます。
-  setting_plain_text_mail: テキストメール（HTMLなし）
-  setting_protocol: プロトコル
-  setting_project_gantt_query: プロジェクトポートフォリオガントビュー
-  setting_project_gantt_query_text: プロジェクトの概要ページからガントチャートを表示するために使用するクエリを変更できます。
-  setting_security_badge_displayed: セキュリティバッジを表示する
-  setting_registration_footer: 登録フッター
-  setting_registration_footer_caption: このテキストは登録ページのフッターに表示されます。HTMLエディタを使用して、選択した言語ごとにテキストをフォーマットしてください。
-  setting_repositories_automatic_managed_vendor: 自動リポジトリ ベンダー種類
-  setting_repositories_encodings: リポジトリのエンコーディング
-  setting_repository_storage_cache_minutes: リポジトリ ディスクサイズのキャッシュ
-  setting_repository_checkout_display: チェックアウトの手順を表示
-  setting_repository_checkout_base_url: チェック アウト ベース URL
-  setting_repository_checkout_text: チェックアウトの手順テキスト
-  setting_repository_log_display_limit: ログファイルに出力されるリビジョンの最大数
-  setting_repository_truncate_at: リポジトリブラウザーで表示するファイルの最大数
-  setting_self_registration: ユーザーよるアカウント登録
-  setting_self_registration_caption: 'ユーザーの自己登録メカニズムを選択する。オプションによっては、ユーザが自分のアカウントをこのサイトにアクティベートできるものもあるので、選択する設定には注意してください。
-
-    '
-  setting_self_registration_warning: 'ユーザーは自分のアカウントを有効にすることができます。これにより、すべての公開プロジェクトとそのコンテンツにアクセスできるようになります。公開プロジェクトでは、機密データや個人データが公開されないようにしてください。
-
-    '
-  setting_self_registration_disabled: 無効
-  setting_self_registration_disabled_caption: 'アカウントを単独で登録することはできません。新しいアカウントを作成できるのは、管理者と新規ユーザーを作成するグローバル権限を持つユーザーのみです。
-
-    '
-  setting_self_registration_activation_by_email: メールアドレスによるアカウントの有効化
-  setting_self_registration_activation_by_email_caption: 'ユーザーは自分で登録し、メールアドレスを確認した後、アカウントを有効化できます。管理者は有効化プロセスに対してモデレーション権限を持っていません。
-
-    '
-  setting_self_registration_automatic_activation: 自動アカウントの有効化
-  setting_self_registration_automatic_activation_caption: 'ユーザーは自分で登録することができます。彼らのアカウントはさらなるアクションなしで即座にアクティブになります。管理者はアクティベーションプロセスに対するモデレーションコントロールを持っていません。
-
-    '
-  setting_self_registration_manual_activation: 手動アカウントの有効化
-  setting_self_registration_manual_activation_caption: 'ユーザーは自分で登録することができます。ユーザーのアカウントは、管理者またはユーザーを作成または管理するグローバル権限を持つユーザーがアクティベートするまで保留状態になります。
-
-    '
-  setting_session_ttl: Session expiration time after inactivity
-  setting_session_ttl_hint: 5未満の値は無効にすると同様
-  setting_session_ttl_enabled: セッションの有効期限
-  setting_start_of_week: 週の開始
-  setting_sys_api_enabled: リポジトリ管理Webサービスを有効にする
-  setting_sys_api_description: リポジトリ管理Webサービスは、リポジトリへのアクセスの統合およびユーザー認証を提供します。
-  setting_time_format: 時間
-  setting_total_percent_complete_mode: 完了率階層合計の計算
-  setting_total_percent_complete_mode_work_weighted_average: 予定時間によるウェイト
-  setting_total_percent_complete_mode_work_weighted_average_caption_html: "<i>総完了</i>率は、階層内の各ワークパッケージの<i>作業に対して</i>重み付けされる。<i>作業の</i>ないワークパッケージは無視される。"
-  setting_total_percent_complete_mode_simple_average: 単純平均
-  setting_total_percent_complete_mode_simple_average_caption_html: "<i>作業は</i>無視され、<i>合計完了率は</i>階層内のワークパッケージの<i>完了(%)の</i>単純平均値となります。"
-  setting_accessibility_mode_for_anonymous: 匿名ユーザ向けにアクセシビリティモードを有効
-  setting_user_format: ユーザー名の形式
-  setting_user_default_timezone: ユーザーのデフォルトのタイム ゾーン
-  setting_users_deletable_by_admins: 管理者によるユーザアカウント削除を許可
-  setting_users_deletable_by_self: 自分のアカウント削除を許可
-  setting_welcome_text: ようこそブロックのテキスト
-  setting_welcome_title: ようこそブロックのタイトル
-  setting_welcome_on_homescreen: ホーム画面にようこそブロックを表示
-  setting_work_packages_identifier_classic: Instance-wide numerical sequence (default)
-  setting_work_packages_identifier_classic_caption: 'Every work package gets a sequential number starting with 1 (for example, #1234). The numbers are unique within the instance and remain the same even if work packages are moved between projects.'
-  setting_work_packages_identifier_semantic: Project-based semantic identifiers (Beta)
-  setting_work_packages_identifier_semantic_caption: Every project has a unique project identifier prefixed to a number (for example, PROJ-11). The numbering of each project starts at 1. If a work package is moved to another project, a new identifier is generated but the old one will continue to function.
-  setting_work_package_list_default_highlighting_mode: デフォルトの強調表示モード
-  setting_work_package_list_default_highlighted_attributes: デフォルトのインライン強調表示属性
-  setting_working_days: 営業日
+    manual: "手動"
+    automatic: "自動"
+  search_input_placeholder: "検索…"
+  setting_allowed_link_protocols: "許可されたリンクプロトコル"
+  setting_allowed_link_protocols_text_html: >-
+    これらのプロトコルを、ワークパッケージの説明、長文フィールド、およびコメント内でリンクとして表示できるようにします。例えば、%{tel_code} や %{element_code} などです。1行に1つのプロトコルを入力してください。<br/> %{http_code}、%{https_code}、および %{mailto_code} のプロトコルは常に許可されています。
+  setting_capture_external_links: "Capture external links"
+  setting_capture_external_links_text: >
+    When enabled, all external links in formatted text will redirect through a warning page before leaving the application. This helps protect users from potentially malicious external websites.
+  setting_capture_external_links_require_login: "Require users to be logged in"
+  setting_capture_external_links_require_login_text: >
+    When enabled, users wanting to click on external links need to be logged in before being able to continue.
+  setting_after_first_login_redirect_url: "最初のログインリダイレクト"
+  setting_after_first_login_redirect_url_text_html: >
+    最初のログイン後にユーザーをリダイレクトするパスを設定します。空の場合は、オンボーディングツアーのホームページにリダイレクトします。 <br/> 例: <code>/my/page</code>
+  setting_after_login_default_redirect_url: "ログインリダイレクト後"
+  setting_after_login_default_redirect_url_text_html: >
+    バックリンクが指定されていない場合、ログイン後にユーザーをリダイレクトするデフォルトのパスを設定します。 設定されていない場合はホームページにリダイレクトします。 <br/> 例: <code>/my/page</code>
+  setting_apiv3_cors_title: "クロスオリジン資源共有 (CORS)"
+  setting_apiv3_cors_enabled: "CORSを有効にする"
+  setting_apiv3_cors_origins: "API V3のオリジン間リソース共有 (CORS) が許可されています"
+  setting_apiv3_cors_origins_text_html: >
+    CORS が有効になっている場合、これらは Yojana API へのアクセスが許可されている起源です。 <br/> 期待される値を指定する方法については、 <a href="%{origin_link}" target="_blank">Origin ヘッダー</a> のドキュメントを確認してください。
+  setting_apiv3_write_readonly_attributes: "読み取り専用属性への書き込み権限"
+  setting_apiv3_write_readonly_attributes_instructions: >
+    If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
+  setting_apiv3_write_readonly_attributes_warning: >
+    This setting has a use-case for e.g., importing data, but allows administrators to impersonate the creation of items as other users. All creation requests are being logged however with the true author.
+  setting_apiv3_write_readonly_attributes_additional: >
+    For more information on attributes and supported resources, please see the %{api_documentation_link}.
+  setting_apiv3_max_page_size: "API ページの最大サイズ"
+  setting_apiv3_max_page_size_instructions: >
+    Set the maximum page size the API will respond with. It will not be possible to perform API requests that return more values on a single page.
+  setting_apiv3_max_page_size_warning: >
+    Please only change this value if you are sure why you need it. Setting to a high value will result in significant performance impacts, while a value lower than the per page options will cause errors in paginated views.
+  setting_apiv3_docs: "文章"
+  setting_apiv3_docs_enabled: "ドキュメントページを有効にする"
+  setting_apiv3_docs_enabled_instructions_html: >
+    Docsページが有効になっている場合は、 <a href="%{link}" target="_blank">%{link}</a> の下でAPIv3 ドキュメントのインタラクティブなビューを取得できます。
+  setting_apiv3_docs_enabled_instructions_warning: >
+    Please be aware that enabling the API docs on a production system may expose sensitive information or result in accidental loss of data when not being careful. We recommend to only enable this setting for development purposes.
+  setting_attachment_whitelist: "添付ファイルのアップロードホワイトリスト"
+  setting_email_delivery_method: "メールの配信方法"
+  setting_emails_salutation: "メール中のアドレス ユーザー"
+  setting_oauth_allow_remapping_of_existing_users: "既存のユーザーの再マッピングを許可する"
+  setting_sendmail_location: "Sendmail の実行可能ファイルの場所"
+  setting_sendmail_arguments: "Arguments for sendmail"
+  setting_smtp_enable_starttls_auto: "利用可能な場合、STARTTLS を自動的に使用する"
+  setting_smtp_ssl: "SSL接続を使用する"
+  setting_smtp_address: "SMTPサーバ"
+  setting_smtp_port: "SMTPポート"
+  setting_smtp_authentication: "SMTP認証"
+  setting_smtp_user_name: "SMTPユーザ名"
+  setting_smtp_password: "SMTPパスワード"
+  setting_smtp_domain: "SMTP HELO ドメイン"
+  setting_activity_days_default: "プロジェクトの活動ページに表示される日数"
+  setting_app_subtitle: "アプリケーションのサブタイトル"
+  setting_app_title: "アプリケーションのタイトル"
+  setting_attachment_max_size: "添付ファイルの最大サイズ"
+  setting_show_work_package_attachments: "デフォルトで添付ファイルをファイルタブに表示"
+  setting_antivirus_scan_mode: "スキャンモード"
+  setting_antivirus_scan_action: "感染したファイルのアクション"
+  setting_autofetch_changesets: "リポジトリの変更を自動取得"
+  setting_autologin: "自動ログイン"
+  setting_available_languages: "利用できる言語"
+  setting_bcc_recipients: "宛先を非表示(bcc)"
+  setting_brute_force_block_after_failed_logins: "ユーザーをロックさせるログイン失敗回数"
+  setting_brute_force_block_minutes: "ユーザーがロックされている期間"
+  setting_cache_formatted_text: "書式化されたテキストをキャッシュする"
+  setting_use_wysiwyg_description: "すべてのユーザーに対してデフォルトで CKEditor5 WYSIWYGエディタ を有効にする場合に選択します。 CKEditor は GFM Markdown の機能が制限されています。"
+  setting_column_options: "デフォルトのワークパッケージは列を一覧表示します"
+  setting_commit_fix_keywords: "修正用キーワード"
+  setting_commit_logs_encoding: "メッセージのエンコードをコミット"
+  setting_commit_logtime_activity_id: "コミット時に作業時間を記録する"
+  setting_commit_logtime_enabled: "作業時間記録を有効にする"
+  setting_commit_ref_keywords: "参照用キーワード"
+  setting_consent_time: "同意時間"
+  setting_consent_info: "同意文"
+  setting_consent_required: "同意を求める"
+  setting_consent_decline_mail: "連絡先メールアドレスに同意します。"
+  setting_cross_project_work_package_relations: "他プロジェクトとの間にワークパッケージの関連付けを許可する"
+  setting_first_week_of_year: "年の最初の週に含む"
+  setting_date_format: "日付"
+  setting_default_language: "デフォルトの言語"
+  setting_default_projects_modules: "新規プロジェクトにおいてデフォルトで有効になるモジュール"
+  setting_default_projects_public: "デフォルトで新しいプロジェクトは公開にする"
+  setting_disable_password_login: "パスワード認証を無効にする"
+  setting_diff_max_lines_displayed: "差分の表示行数の上限"
+  setting_omniauth_direct_login_provider: "ダイレクトログインの SSO プロバイダー"
+  setting_display_subprojects_work_packages: "デフォルトで子プロジェクトのワークパッケージを親プロジェクトに表示する"
+  setting_duration_format: "期間の形式"
+  setting_duration_format_hours_only: "時間のみ"
+  setting_duration_format_days_and_hours: "日数と時間"
+  setting_duration_format_instructions: "全体作業、残り作業、および経過時間の表示方法を定義します。"
+  setting_emails_footer: "電子メールのフッター"
+  setting_emails_header: "電子メールのヘッダー"
+  setting_email_login: "メールアドレスをログインに使用する"
+  setting_enabled_scm: "使用するバージョン管理システム"
+  setting_enabled_projects_columns: "デフォルトで表示されるプロジェクト リストの列"
+  setting_feeds_enabled: "フィードを有効にする"
+  setting_ical_enabled: "iCalendar サブスクリプションを有効にする"
+  setting_feeds_limit: "フィードの項目数の上限"
+  setting_file_max_size_displayed: "画面表示するテキストファイルの最大サイズ"
+  setting_host_name: "ホスト名"
+  setting_collaborative_editing_hocuspocus_url: "HocuspocusサーバーのURL"
+  setting_collaborative_editing_hocuspocus_secret: "Hocuspocus サーバーのシークレット"
+  setting_hours_per_day: "1日あたりの時間"
+  setting_hours_per_day_explanation: >-
+    1営業日あたりの稼働時間を定義します (例えば、 1日が8時間で32時間稼働した場合は4日間です)。
+  setting_invitation_expiration_days: "アクティベーションのメールは次で有効期限切れ"
+  setting_invitation_expiration_days_caption: "有効化メールの有効期限が切れる日数です。"
+  setting_work_package_done_ratio: "進行状況計算モード"
+  setting_work_package_done_ratio_field: "ワークベース"
+  setting_work_package_done_ratio_field_caption_html: >-
+    <i>Complete %</i>は自由に設定できる。オプションで<i>予定時間に</i>値を入力すると、自動的に<i>残時間が</i>導き出される。
+  setting_work_package_done_ratio_status: "ステータスベース"
+  setting_work_package_done_ratio_status_caption_html: >-
+    各ステータスには、 <i>% Complete</i> の値があります。ステータスを変更すると、 <i>% Complete</i> が変わります。
+  setting_work_package_done_ratio_explanation_html: >
+    <b>ワーク・ベース・</b>モードでは、完了(%)は自由に設定することができます。 オプションで「作業」に値を入力すると、自動的に「残時間」が導き出されます。 <b>ステータス・ベース・</b>モードでは、各ステータスに 完了(%) の値が関連付けられます。 ステータスを変更すると、完了(%) も変更される。
+  setting_work_package_properties: "項目名"
+  setting_work_package_startdate_is_adddate: "今日の日付を新しいワークパッケージの開始日とする"
+  setting_work_packages_projects_export_limit: "ワークパッケージ/プロジェクトのエクスポート制限"
+  setting_journal_aggregation_time_minutes: "以下で集計されたユーザーアクション"
+  setting_log_requesting_user: "全てのリクエストに対し、ユーザのログイン名、名前、メールアドレスをログに記録する"
+  setting_login_required: "認証が必要"
+  setting_login_required_caption: "チェックすると、アプリケーションへのすべてのリクエストが認証される必要があります。"
+  setting_lost_password: "パスワードのリセットを有効にする"
+  setting_lost_password_caption: "チェックすると、ユーザーが自分のパスワードをリセットできるようになります。"
+  setting_mail_from: "送信元のメールアドレス"
+  setting_mail_handler_api_key: "APIキー"
+  setting_mail_handler_body_delimiters: "メール本文から一致する行以降を切り捨てる"
+  setting_mail_handler_body_delimiter_regex: "この正規表現に一致するメールを切り捨てる"
+  setting_mail_handler_ignore_filenames: "無視するメールの添付ファイル"
+  setting_new_project_user_role_id: "システム管理者以外のプロジェクト作成者に設定するロール"
+  setting_new_project_send_confirmation_email: "Send notification to author when creating a new project"
+  setting_new_project_notification_text: "Notification text"
+  setting_password_active_rules: "有効な文字の種類"
+  setting_password_count_former_banned: "再利用を禁止される最近使用済みパスワードの数"
+  setting_password_days_valid: "パスワードを強制変更させる経過日数"
+  setting_password_min_length: "最短長"
+  setting_password_min_adhered_rules: "最小限の必要な文字の種類"
+  setting_per_page_options: "オプションページごとの項目数"
+  setting_percent_complete_on_status_closed: "ワークパッケージが終了したときの処理"
+  setting_percent_complete_on_status_closed_no_change: "変更なし"
+  setting_percent_complete_on_status_closed_no_change_caption_html: >-
+    ワークパッケージが閉じられても、<i>完了</i>率の値は変わりません。
+  setting_percent_complete_on_status_closed_set_100p: "自動的に100%に設定"
+  setting_percent_complete_on_status_closed_set_100p_caption: >-
+    終了したワークパッケージは完了したとみなされます。
+  setting_plain_text_mail: "テキストメール（HTMLなし）"
+  setting_protocol: "プロトコル"
+  setting_project_gantt_query: "プロジェクトポートフォリオガントビュー"
+  setting_project_gantt_query_text: "プロジェクトの概要ページからガントチャートを表示するために使用するクエリを変更できます。"
+  setting_security_badge_displayed: "セキュリティバッジを表示する"
+  setting_registration_footer: "登録フッター"
+  setting_registration_footer_caption: "このテキストは登録ページのフッターに表示されます。HTMLエディタを使用して、選択した言語ごとにテキストをフォーマットしてください。"
+  setting_repositories_automatic_managed_vendor: "自動リポジトリ ベンダー種類"
+  setting_repositories_encodings: "リポジトリのエンコーディング"
+  setting_repository_storage_cache_minutes: "リポジトリ ディスクサイズのキャッシュ"
+  setting_repository_checkout_display: "チェックアウトの手順を表示"
+  setting_repository_checkout_base_url: "チェック アウト ベース URL"
+  setting_repository_checkout_text: "チェックアウトの手順テキスト"
+  setting_repository_log_display_limit: "ログファイルに出力されるリビジョンの最大数"
+  setting_repository_truncate_at: "リポジトリブラウザーで表示するファイルの最大数"
+  setting_rest_api_enabled: "RESTによるWebサービスを有効にする"
+  setting_self_registration: "ユーザーよるアカウント登録"
+  setting_self_registration_caption: >
+    ユーザーの自己登録メカニズムを選択する。オプションによっては、ユーザが自分のアカウントをこのサイトにアクティベートできるものもあるので、選択する設定には注意してください。
+  setting_self_registration_warning: >
+    ユーザーは自分のアカウントを有効にすることができます。これにより、すべての公開プロジェクトとそのコンテンツにアクセスできるようになります。公開プロジェクトでは、機密データや個人データが公開されないようにしてください。
+  setting_self_registration_disabled: "無効"
+  setting_self_registration_disabled_caption: >
+    アカウントを単独で登録することはできません。新しいアカウントを作成できるのは、管理者と新規ユーザーを作成するグローバル権限を持つユーザーのみです。
+  setting_self_registration_activation_by_email: "メールアドレスによるアカウントの有効化"
+  setting_self_registration_activation_by_email_caption: >
+    ユーザーは自分で登録し、メールアドレスを確認した後、アカウントを有効化できます。管理者は有効化プロセスに対してモデレーション権限を持っていません。
+  setting_self_registration_automatic_activation: "自動アカウントの有効化"
+  setting_self_registration_automatic_activation_caption: >
+    ユーザーは自分で登録することができます。彼らのアカウントはさらなるアクションなしで即座にアクティブになります。管理者はアクティベーションプロセスに対するモデレーションコントロールを持っていません。
+  setting_self_registration_manual_activation: "手動アカウントの有効化"
+  setting_self_registration_manual_activation_caption: >
+    ユーザーは自分で登録することができます。ユーザーのアカウントは、管理者またはユーザーを作成または管理するグローバル権限を持つユーザーがアクティベートするまで保留状態になります。
+  setting_session_ttl: "Session expiration time after inactivity"
+  setting_session_ttl_hint: "5未満の値は無効にすると同様"
+  setting_session_ttl_enabled: "セッションの有効期限"
+  setting_start_of_week: "週の開始"
+  setting_sys_api_enabled: "リポジトリ管理Webサービスを有効にする"
+  setting_sys_api_description: "リポジトリ管理Webサービスは、リポジトリへのアクセスの統合およびユーザー認証を提供します。"
+  setting_time_format: "時間"
+  setting_total_percent_complete_mode: "完了率階層合計の計算"
+  setting_total_percent_complete_mode_work_weighted_average: "予定時間によるウェイト"
+  setting_total_percent_complete_mode_work_weighted_average_caption_html: >-
+    <i>総完了</i>率は、階層内の各ワークパッケージの<i>作業に対して</i>重み付けされる。<i>作業の</i>ないワークパッケージは無視される。
+  setting_total_percent_complete_mode_simple_average: "単純平均"
+  setting_total_percent_complete_mode_simple_average_caption_html: >-
+    <i>作業は</i>無視され、<i>合計完了率は</i>階層内のワークパッケージの<i>完了(%)の</i>単純平均値となります。
+  setting_accessibility_mode_for_anonymous: "匿名ユーザ向けにアクセシビリティモードを有効"
+  setting_user_format: "ユーザー名の形式"
+  setting_user_default_timezone: "ユーザーのデフォルトのタイム ゾーン"
+  setting_users_deletable_by_admins: "管理者によるユーザアカウント削除を許可"
+  setting_users_deletable_by_self: "自分のアカウント削除を許可"
+  setting_welcome_text: "ようこそブロックのテキスト"
+  setting_welcome_title: "ようこそブロックのタイトル"
+  setting_welcome_on_homescreen: "ホーム画面にようこそブロックを表示"
+  setting_work_package_list_default_highlighting_mode: "デフォルトの強調表示モード"
+  setting_work_package_list_default_highlighted_attributes: "デフォルトのインライン強調表示属性"
+  setting_working_days: "営業日"
   settings:
     errors:
       not_writable: The setting is not writable and can only be changed by a sysadmin.
       failed_to_update: 'Setting ''%{name}'' could not be updated: %{message}'
     authentication:
-      login: ログイン
-      registration: 参加登録
-      sso: シングルサインオン（SSO）
-      omniauth_direct_login_hint_html: 'このオプションが有効な場合、ログイン要求は設定された omniauth プロバイダにリダイレクトされます。ログインドロップダウンとサインインページは無効になります。 <br/> <strong>注意:</strong>パスワードログインも無効にしない限り、このオプションを有効にした場合でも、ユーザは内部的に <code>%{internal_path}</code>ログインページにアクセスしてログインすることができます。
-
-        '
-      remapping_existing_users_hint: 'If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the OpenProject instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
-
-        '
+      login: "ログイン"
+      registration: "参加登録"
+      sso: "シングルサインオン（SSO）"
+      omniauth_direct_login_hint_html: >
+        このオプションが有効な場合、ログイン要求は設定された omniauth プロバイダにリダイレクトされます。ログインドロップダウンとサインインページは無効になります。 <br/> <strong>注意:</strong>パスワードログインも無効にしない限り、このオプションを有効にした場合でも、ユーザは内部的に <code>%{internal_path}</code>ログインページにアクセスしてログインすることができます。
+      remapping_existing_users_hint: >
+        If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the Yojana instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
     attachments:
       whitelist_text_html: 'アップロードされたファイルに有効なファイル拡張子および/または MIME タイプのリストを定義します。 <br/> ファイル拡張子（例． <code>%{ext_example}</code>)またはMIMEタイプ(例、 <code>%{mime_example}</code>). <br/> 任意のファイル タイプをアップロードできるようにするには、空のままにします。複数の値を指定できます (各値に 1 行)。
 
@@ -5389,10 +5322,9 @@ ja:
       modes:
         clamav_socket_html: クラムデーモンのソケットを入力します。例えば、 %{example}
         clamav_host_html: ホスト名とポートをコロンで区切って入力します。例： %{example}
-        description_html: 'アンチウイルススキャナの統合が動作するモードを選択します。 <br/> <ul> <li><strong>%{disabled_option}</strong>:アップロードされたファイルはウイルススキャンされません。</li> <li><strong>%{socket_option}</strong>:OpenProject と同じサーバに ClamAV をセットアップし、スキャンデーモン clamd がバックグラウンドで動作している。</li> <li><strong>%{host_option}</strong>:外部のウイルススキャンホストにファイルをストリーミングしている。</li> </ul>
-
-          '
-    brute_force_prevention: 自動的にユーザをロック
+        description_html: >
+          アンチウイルススキャナの統合が動作するモードを選択します。 <br/> <ul> <li><strong>%{disabled_option}</strong>:アップロードされたファイルはウイルススキャンされません。</li> <li><strong>%{socket_option}</strong>:Yojana と同じサーバに ClamAV をセットアップし、スキャンデーモン clamd がバックグラウンドで動作している。</li> <li><strong>%{host_option}</strong>:外部のウイルススキャンホストにファイルをストリーミングしている。</li> </ul>
+    brute_force_prevention: "自動的にユーザをロック"
     date_format:
       first_date_of_week_and_year_set: 'オプション "%{day_of_week_setting_name}" または "%{first_week_setting_name}" が設定されている場合、フロントエンドでの不整合を避けるために、もう一方も設定する必要があります。
 
@@ -5401,8 +5333,8 @@ ja:
 
         '
     experimental:
-      save_confirmation: 注意! データ損失のリスク! OpenProjectのインストールを中断し、すべてのデータを失うことを気にしない場合にのみ、実験的な機能を有効にしてください。
-      warning_toast: 機能フラグは、開発中の機能を有効にする設定です。これらはテスト目的のみに使用されます。 重要なデータを保持しているOpenProjectインストールでは、これらの機能は、データが破損する可能性が高いです。自己責任で使用してください。
+      save_confirmation: 注意! データ損失のリスク! Yojanaのインストールを中断し、すべてのデータを失うことを気にしない場合にのみ、実験的な機能を有効にしてください。
+      warning_toast: 機能フラグは、開発中の機能を有効にする設定です。これらはテスト目的のみに使用されます。 重要なデータを保持しているYojanaインストールでは、これらの機能は、データが破損する可能性が高いです。自己責任で使用してください。
       feature_flags: 機能フラグ
     general: 概要
     highlighting:
@@ -5413,7 +5345,7 @@ ja:
         type: タイプごとの行全体
         priority: 優先度別に行全体
     icalendar:
-      enable_subscriptions_text_html: 必要な権限を持つユーザーが、OpenProject のカレンダーを購読し、外部のカレンダークライアントを介してワークパッケージ情報にアクセスできるようにします。<strong>注意:</strong>この機能を有効にする前に、<a href="%{link}" target="_blank">iCalendar サブスクリプションについてを</a>読み、潜在的なセキュリティリスクを理解してください。
+      enable_subscriptions_text_html: 必要な権限を持つユーザーが、Yojana のカレンダーを購読し、外部のカレンダークライアントを介してワークパッケージ情報にアクセスできるようにします。<strong>注意:</strong>この機能を有効にする前に、<a href="%{link}" target="_blank">iCalendar サブスクリプションについてを</a>読み、潜在的なセキュリティリスクを理解してください。
     language_name_being_default: "%{language_name} (デフォルト)"
     notifications:
       events_explanation: メールが送信されるイベントを管理します。 ワークパッケージはすべてのユーザーに特に設定できるため、リストから除外されます。
@@ -5447,9 +5379,8 @@ ja:
               label: Side panel
               description: Add all the project attributes in a section inside the right side panel in the project overview.
     project_initiation_request:
-      header_description: 'OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
-
-        '
+      header_description: >
+        Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
       status:
         submitted: "%{wizard_name} has been submitted"
         submitted_description: Click the button below to go to the work package for the submission process.
@@ -5461,8 +5392,8 @@ ja:
         project_creation_wizard: Open project creation wizard
         project_mandate: Open project mandate
       blankslate:
-        title: Initiation request not enabled
-        description: OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard.
+        title: "Initiation request not enabled"
+        description: "Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard."
       disable_dialog:
         title: Disable project initiation request
         heading: Disable this project initiation request?
@@ -5567,24 +5498,23 @@ ja:
   status_deleted: 削除されました
   support:
     array:
-      sentence_connector: 及び
-      skip_last_comma: 偽
-  text_accessibility_hint: アクセシビリティ モードは目の不自由な人、視覚障害者、視力が悪いユーザーのためにデザインされています。後者向けには、フォーカスされた要素が特に強調表示されます。バックログ モジュールはこのモードで使用できないことにご注意ください。
-  text_access_token_hint: アクセストークンで、外部アプリケーションが OpenProject のリソースへのアクセスを許可することができます。
-  text_analyze: 'さらに分析: %{subject}'
-  text_are_you_sure: よろしいですか？
-  open_link_in_a_new_tab: Open link in a new tab
-  text_are_you_sure_continue: 続行してもよろしいですか？
-  text_are_you_sure_with_children: ワークパッケージと子項目を削除してもよろしいですか？
-  text_are_you_sure_with_project_custom_fields: この属性を削除すると、すべてのプロジェクトの値も削除されます。よろしいですか？
-  text_are_you_sure_with_project_life_cycle_step: このフェーズを削除すると、すべてのプロジェクトでの使用も削除されます。よろしいですか？
-  text_assign_to_project: プロジェクト自体に割り当てする
-  text_form_configuration: 'ワークパッケージのフォームに表示されるフィールドをカスタマイズできます。自由にフィールドをグループ化して、あなたのドメインのニーズを反映できます。
-
-    '
-  text_form_configuration_required_attribute: 属性が必須とマークされています。 したがって常に示されます
-  text_caracters_maximum: 最大%{count}文字です。
-  text_caracters_minimum: 最低%{count}文字の長さが必要です。
+      sentence_connector: "及び"
+      skip_last_comma: "偽"
+  text_accessibility_hint: "アクセシビリティ モードは目の不自由な人、視覚障害者、視力が悪いユーザーのためにデザインされています。後者向けには、フォーカスされた要素が特に強調表示されます。バックログ モジュールはこのモードで使用できないことにご注意ください。"
+  text_access_token_hint: "アクセストークンで、外部アプリケーションが Yojana のリソースへのアクセスを許可することができます。"
+  text_analyze: "さらに分析: %{subject}"
+  text_are_you_sure: "よろしいですか？"
+  open_link_in_a_new_tab: "Open link in a new tab"
+  text_are_you_sure_continue: "続行してもよろしいですか？"
+  text_are_you_sure_with_children: "ワークパッケージと子項目を削除してもよろしいですか？"
+  text_are_you_sure_with_project_custom_fields: "この属性を削除すると、すべてのプロジェクトの値も削除されます。よろしいですか？"
+  text_are_you_sure_with_project_life_cycle_step: "このフェーズを削除すると、すべてのプロジェクトでの使用も削除されます。よろしいですか？"
+  text_assign_to_project: "プロジェクト自体に割り当てする"
+  text_form_configuration: >
+    ワークパッケージのフォームに表示されるフィールドをカスタマイズできます。自由にフィールドをグループ化して、あなたのドメインのニーズを反映できます。
+  text_form_configuration_required_attribute: "属性が必須とマークされています。 したがって常に示されます"
+  text_caracters_maximum: "最大%{count}文字です。"
+  text_caracters_minimum: "最低%{count}文字の長さが必要です。"
   text_comma_separated: "（カンマで区切ることで）複数の値を設定できます。"
   text_comment_wiki_page: 'Wiki ページへのコメント: %{page}'
   text_custom_field_possible_values_info: 選択肢の値は1行に1個ずつ記述してください。
@@ -5682,41 +5612,30 @@ ja:
   text_line_separated: "(1行ごとに書くことで)複数の値を設定できます。"
   text_load_default_configuration: デフォルト設定をロード
   text_no_roles_defined: 役割が定義されていません。
-  text_no_access_tokens_configurable: 設定できるアクセストークンがありません。
-  text_no_configuration_data: |-
-    ロール、ワークパッケージのステータスとタイプ、ワークフローが未設定です。
-    デフォルト設定のロードを強くお勧めします。ロードした後、それを修正することができます。
-  text_no_notes: このワークパッケージに有効なコメントはありません.
-  text_notice_too_many_values_are_inperformant: '注: 1ページあたり100以上の項目を表示すると読み込み時間が増加することがあります。'
-  text_notice_security_badge_displayed_html: '602/5000 注：有効にすると、<a href="%{information_panel_path}">%{information_panel_label}</a>管理パネルとホームページに、インストールステータスのバッジが表示されます。 管理者のみに表示されます。 <br/>バッジは、最新のOpenProjectバージョンを公式のOpenProjectリリースデータベースと照合して、アップデートや既知の脆弱性について警告します。 チェックの内容、利用可能なアップデートを提供するために必要なデータ、およびこのチェックを無効にする方法の詳細については、<a href="%{more_info_url}">設定ドキュメント</a>をご覧ください。
-
-    '
-  text_own_membership_delete_confirmation: |-
-    一部またはすべての権限を自分自身から剥奪しようとしているため、このプロジェクトを編集できなくなる可能性があります。
-    本当に続けますか？
-  text_permanent_delete_confirmation_checkbox_label: 私は、この削除は取り消すことができないことを理解しています。
-  text_permanent_remove_confirmation_checkbox_label: I understand that this removal cannot be reversed
-  text_plugin_assets_writable: プラグインの「assets」ディレクトリが書き込み可能
-  text_powered_by: Powered by %{link}
-  text_project_identifier_info: アルファベット小文字(a-z)・数字・ハイフン・アンダースコアが使えます。アルファベット小文字で始まる必要があります。
-  text_project_identifier_description: The project identifier is prepended to all work package IDs. If the identifier is "PROJ" for example, the work package identifier will be "PROJ-12" or "PROJ-246".
-  text_project_identifier_url_description: The project identifier is included in the URL of the project.
-  text_project_identifier_handle_format: Must start with a letter and contain only uppercase letters, numbers, and underscores (max 10 characters).
-  text_project_identifier_format: Must start with a lowercase letter. Only lowercase letters (a-z), numbers, dashes and underscores are allowed.
-  text_reassign: 'ワークパッケージへの再割り当て:'
-  text_regexp_multiline: 正規表現は、複数行モードで適用されます。例えば、^---\s+
-  text_rename_wiki_page: Rename wiki page
-  text_repository_usernames_mapping: |-
-    リポジトリのログから検出されたユーザ名をどのOpenProjectユーザに関連づけるかを選択してください。
-    ログ上のユーザ名またはメールアドレスがOpenProjectのユーザと一致する場合は自動的に関連づけます。
-  text_status_changed_by_changeset: 変更履歴%{value}で適用されました。
-  text_table_difference_description: この表には、単一の %{entries} が表示されています。 まず、表の対応するチェックボックスを選択して、両者の項目の違いを見ることができます。 表の下のボタンをクリックすると、違いが表示されます。
-  text_time_logged_by_changeset: 変更履歴 %{value} で適用されました。
-  text_tip_work_package_begin_day: この日に開始する作業
-  text_tip_work_package_begin_end_day: この日に開始・終了する作業
-  text_tip_work_package_end_day: この日に終了する作業
-  text_type_no_workflow: このワークパッケージの種類に対してワークフローが定義されていません。
-  text_unallowed_characters: 次の文字は使用できません。
+  text_no_access_tokens_configurable: "設定できるアクセストークンがありません。"
+  text_no_configuration_data: "ロール、ワークパッケージのステータスとタイプ、ワークフローが未設定です。\nデフォルト設定のロードを強くお勧めします。ロードした後、それを修正することができます。"
+  text_no_notes: "このワークパッケージに有効なコメントはありません."
+  text_notice_too_many_values_are_inperformant: "注: 1ページあたり100以上の項目を表示すると読み込み時間が増加することがあります。"
+  text_notice_security_badge_displayed_html: >
+    602/5000 注：有効にすると、<a href="%{information_panel_path}">%{information_panel_label}</a>管理パネルとホームページに、インストールステータスのバッジが表示されます。 管理者のみに表示されます。 <br/>バッジは、最新のYojanaバージョンを公式のYojanaリリースデータベースと照合して、アップデートや既知の脆弱性について警告します。 チェックの内容、利用可能なアップデートを提供するために必要なデータ、およびこのチェックを無効にする方法の詳細については、<a href="%{more_info_url}">設定ドキュメント</a>をご覧ください。
+  text_own_membership_delete_confirmation: "一部またはすべての権限を自分自身から剥奪しようとしているため、このプロジェクトを編集できなくなる可能性があります。\n本当に続けますか？"
+  text_permanent_delete_confirmation_checkbox_label: "私は、この削除は取り消すことができないことを理解しています。"
+  text_permanent_remove_confirmation_checkbox_label: "I understand that this removal cannot be reversed"
+  text_plugin_assets_writable: "プラグインの「assets」ディレクトリが書き込み可能"
+  text_powered_by: "Powered by %{link}"
+  text_project_identifier_info: "アルファベット小文字(a-z)・数字・ハイフン・アンダースコアが使えます。アルファベット小文字で始まる必要があります。"
+  text_reassign: "ワークパッケージへの再割り当て:"
+  text_regexp_info: "例) ^[A-Z0-9]+$"
+  text_regexp_multiline: '正規表現は、複数行モードで適用されます。例えば、^---\s+'
+  text_repository_usernames_mapping: "リポジトリのログから検出されたユーザ名をどのYojanaユーザに関連づけるかを選択してください。\nログ上のユーザ名またはメールアドレスがYojanaのユーザと一致する場合は自動的に関連づけます。"
+  text_status_changed_by_changeset: "変更履歴%{value}で適用されました。"
+  text_table_difference_description: "この表には、単一の %{entries} が表示されています。 まず、表の対応するチェックボックスを選択して、両者の項目の違いを見ることができます。 表の下のボタンをクリックすると、違いが表示されます。"
+  text_time_logged_by_changeset: "変更履歴 %{value} で適用されました。"
+  text_tip_work_package_begin_day: "この日に開始する作業"
+  text_tip_work_package_begin_end_day: "この日に開始・終了する作業"
+  text_tip_work_package_end_day: "この日に終了する作業"
+  text_type_no_workflow: "このワークパッケージの種類に対してワークフローが定義されていません。"
+  text_unallowed_characters: "次の文字は使用できません。"
   text_user_invited: ユーザは招待されて、登録は保留中です。
   text_user_wrote: "%{value}が書き込みました："
   text_wrote: と書いた。
@@ -5778,18 +5697,17 @@ ja:
     help_and_support: ヘルプとサポート
   total_progress: 全体の進行状況
   user:
-    all: 全て
-    active: アクティブ
-    activate: 有効にする
-    activate_and_reset_failed_logins: 有効にして、ログリン失敗回数をリセットする
-    authentication_provider: 認証プロバイダー
-    identity_url_text: 認証プロバイダが提供する内部一意識別子。
-    authentication_settings_disabled_due_to_external_authentication: '外部認証プロバイダー経由でこのユーザを認証しますので、OpenProjectではパスワードの変更ができません。
-
-      '
-    authorization_rejected: ログインすることはできません。
-    assign_random_password: ランダムパスワードを設定 (メールでユーザに送信されます)
-    blocked: 一時的ロック
+    all: "全て"
+    active: "アクティブ"
+    activate: "有効にする"
+    activate_and_reset_failed_logins: "有効にして、ログリン失敗回数をリセットする"
+    authentication_provider: "認証プロバイダー"
+    identity_url_text: "認証プロバイダが提供する内部一意識別子。"
+    authentication_settings_disabled_due_to_external_authentication: >
+      外部認証プロバイダー経由でこのユーザを認証しますので、Yojanaではパスワードの変更ができません。
+    authorization_rejected: "ログインすることはできません。"
+    assign_random_password: "ランダムパスワードを設定 (メールでユーザに送信されます)"
+    blocked: "一時的ロック"
     blocked_num_failed_logins:
       other: 一時的にロックされています（ログインに %{count} 回失敗しました）
     confirm_status_change: "'%{name}' のステータスを変更しようとしています。続行してもよろしいですか?"
@@ -5819,7 +5737,17 @@ ja:
   note_password_login_disabled_link: Password login has been disabled through a [configuration setting](configuration_url).
   warning: 注意
   warning_attachments_not_saved: "%{count} 件のファイルを保存できませんでした。"
-  warning_imminent_user_limit_html: 'You invited more users than are supported by your current plan. Invited users may not be able to join your OpenProject environment. Please [upgrade your plan](upgrade_url) or block existing users in order to allow invited and registered users to join.
+  warning_imminent_user_limit: >
+    現在のプランでサポートされているユーザーよりも多くのユーザーを招待しました。 招待されたユーザーは、Yojana環境に参加できない場合があります。 招待者と登録ユーザーが参加できるようにするには、<a href="%{upgrade_url}">プランをアップグレード</a>するか、既存のユーザーをブロックしてください。
+  warning_registration_token_expired: |
+    アクティベーションメールの有効期限が切れています。%{email} に新しいメールを送りました。メール内のリンクをクリックして、アカウントを有効にしてください。
+  warning_user_limit_reached: >
+    ユーザーを追加すると、現在の制限を超えます。外部ユーザがこのサイトにアクセスできるようにするため、ユーザ制限を増やすには管理者に連絡してください。
+  warning_user_limit_reached_admin: >
+    ユーザーを追加すると、現在の制限を超えます。外部ユーザーがこのサイトにアクセスできるように、<a href="%{upgrade_url}">プランをアップグレードして</a>ください。
+  warning_user_limit_reached_instructions: >
+    ユーザー制限(%{current}/%{max} アクティブユーザー)に達しました。 sales@girishm.info に連絡してEnterprise Editionプランをアップグレードし、ユーザーを追加してください。
+  warning_protocol_mismatch_html: >
 
     '
   warning_registration_token_expired: 'アクティベーションメールの有効期限が切れています。%{email} に新しいメールを送りました。メール内のリンクをクリックして、アカウントを有効にしてください。
@@ -6117,55 +6045,48 @@ ja:
       non_confidential: 非公開
       default_scopes: "(既定の範囲)"
       instructions:
-        enabled: このアプリケーションを有効にし、ユーザがこのアプリケーションで認証付与を実行できるようにする。
-        name: アプリケーションの名前。これは承認時に他のユーザーに表示されます。
-        redirect_uri_html: '許可されたURLで承認されたユーザーにリダイレクトできます。 1行に1エントリ。<br/>デスクトップアプリケーションを登録する場合は、次のURLを使用してください。
-
-          '
-        confidential: クライアントシークレットを機密にできる場所でアプリケーションが使用されるかどうかを確認します。 ネイティブモバイルアプリとシングルページアプリは機密とはみなされません。
-        scopes: アプリケーションにアクセスを許可するスコープをチェックします。チェックされていない場合、api_v3になる。
-        client_credential_user_id: クライアントがこのアプリケーションを使用するときに偽装するためのオプションのユーザーIDです。 パブリックアクセスのみを許可するには空のままにします
-        register_intro: OpenProject用のOAuth APIクライアントアプリケーションを開発している場合は、このフォームを使用してすべてのユーザーが使用できるように登録できます。
-        default_scopes: ''
+        enabled: "このアプリケーションを有効にし、ユーザがこのアプリケーションで認証付与を実行できるようにする。"
+        name: "アプリケーションの名前。これは承認時に他のユーザーに表示されます。"
+        redirect_uri_html: >
+          許可されたURLで承認されたユーザーにリダイレクトできます。 1行に1エントリ。<br/>デスクトップアプリケーションを登録する場合は、次のURLを使用してください。
+        confidential: "クライアントシークレットを機密にできる場所でアプリケーションが使用されるかどうかを確認します。 ネイティブモバイルアプリとシングルページアプリは機密とはみなされません。"
+        scopes: "アプリケーションにアクセスを許可するスコープをチェックします。チェックされていない場合、api_v3になる。"
+        client_credential_user_id: "クライアントがこのアプリケーションを使用するときに偽装するためのオプションのユーザーIDです。 パブリックアクセスのみを許可するには空のままにします"
+        register_intro: "Yojana用のOAuth APIクライアントアプリケーションを開発している場合は、このフォームを使用してすべてのユーザーが使用できるように登録できます。"
+        default_scopes: ""
     header:
       builtin_applications: 内蔵OAuthアプリケーション
       other_applications: その他のOAuthアプリケーション
     empty_application_lists: OAuthアプリケーションは登録されていません。
-    client_id: クライアントID
-    client_secret_notice: 'クライアントシークレットを表示できる唯一の瞬間です。書き留めて安全に保管してください。 これはパスワードとして扱われるべきであり、後でOpenProjectによって検索することはできません。
-
-      '
+    client_id: "クライアントID"
+    client_secret_notice: >
+      クライアントシークレットを表示できる唯一の瞬間です。書き留めて安全に保管してください。 これはパスワードとして扱われるべきであり、後でYojanaによって検索することはできません。
     authorization_dialog:
       authorize: 承認
       cancel: 承認を取り消して拒否します。
       prompt_html: "<strong>%{application_name}</strong>に自分のアカウント<em>%{login}</em>を使用する権限を与えますか？"
       title: "%{application_name}を承認します"
-      wants_to_access_html: 'このアプリケーションはあなたのOpenProjectアカウントへのアクセスを要求します。 <br/> <strong>次の権限が要求されています：</strong>
-
-        '
+      wants_to_access_html: >
+        このアプリケーションはあなたのYojanaアカウントへのアクセスを要求します。 <br/> <strong>次の権限が要求されています：</strong>
     scopes:
-      api_v3: Full API v3アクセス
-      api_v3_text: アプリケーションはアクションを実行するためのOpenProject API v3へのフルアクセスが許可されます。
-      mcp: Access to MCP
-      mcp_text: Application will receive access to the OpenProject MCP endpoints. They are a limited subset of APIv3, that's tailored for usage with AI agents.
+      api_v3: "Full API v3アクセス"
+      api_v3_text: "アプリケーションはアクションを実行するためのYojana API v3へのフルアクセスが許可されます。"
     grants:
       created_date: に承認済み
       scopes: 権限
       successful_application_revocation: アプリケーション %{application_name} の取り消しに成功しました。
       none_given: ユーザーアカウントへのアクセスがOAuthアプリケーションに許可されていません。
     flows:
-      authorization_code: 認証コードの流れ
-      client_credentials: クライアントの資格情報のフロー
-    client_credentials: クライアントの資格情報を使用するユーザー
-    client_credentials_impersonation_set_to: クライアントの資格情報をユーザーに設定
-    client_credentials_impersonation_warning: 注意：このアプリケーションで「クライアント認証情報」フローを使用しているクライアントは、このユーザーの権限を持ちます。
-    client_credentials_impersonation_html: 'デフォルトでは、OpenProjectは %{authorization_code_flow_link} を介してOAuth 2.0認証を提供します。 オプションで %{client_credentials_flow_link} を有効にすることもできますが、その代わりにユーザーに代わってリクエストが実行されるようにする必要があります。
-
-      '
-    confirm_revoke_my_application:
-      other: Do you really want to remove this application? This will revoke %{count} tokens active for it.
-    authorization_error: 認証エラーが発生しました。
-    my_registered_applications: 登録済みのOAuthアプリケーション
+      authorization_code: "認証コードの流れ"
+      client_credentials: "クライアントの資格情報のフロー"
+    client_credentials: "クライアントの資格情報を使用するユーザー"
+    client_credentials_impersonation_set_to: "クライアントの資格情報をユーザーに設定"
+    client_credentials_impersonation_warning: "注意：このアプリケーションで「クライアント認証情報」フローを使用しているクライアントは、このユーザーの権限を持ちます。"
+    client_credentials_impersonation_html: >
+      デフォルトでは、Yojanaは %{authorization_code_flow_link} を介してOAuth 2.0認証を提供します。 オプションで %{client_credentials_flow_link} を有効にすることもできますが、その代わりにユーザーに代わってリクエストが実行されるようにする必要があります。
+    authorization_error: "認証エラーが発生しました。"
+    revoke_my_application_confirmation: "本当にこのアプリケーションを削除しますか？ これにより %{token_count} が無効になります。"
+    my_registered_applications: "登録済みのOAuthアプリケーション"
   oauth_client:
     urn_connection_status:
       connected: 接続しました
@@ -6178,41 +6099,36 @@ ja:
       label_request_token: リクエストトークン
       label_refresh_token: リフレッシュ・トークン
     errors:
-      oauth_authorization_code_grant_had_errors: OAuth2認証に失敗しました
-      oauth_reported: OAuth2プロバイダが報告されました
-      oauth_returned_error: OAuth2 がエラーを返しました。
-      oauth_returned_json_error: OAuth2がJSONエラーを返した
-      oauth_returned_http_error: OAuth2がネットワークエラーを返した
-      oauth_returned_standard_error: OAuth2 が内部エラーを返しました。
-      wrong_token_type_returned: OAuth2が間違ったトークンのタイプを返しました。
-      oauth_issue_contact_admin: OAuth2がエラーを報告しました。システム管理者に連絡してください。
-      oauth_client_not_found: callback' エンドポイント (redirect_uri) に OAuth2 クライアントが見つかりません。
-      refresh_token_called_without_existing_token: '内部エラー：既存のトークンがない状態で refresh_token を呼び出しました。
-
-        '
-      refresh_token_updated_failed: OAuthClientTokenの更新中のエラー
-      oauth_client_not_found_explanation: 'このエラーは、OpenProject で client_id と client_secret を更新したが、OAuth2 プロバイダの ''Return URI'' フィールドを更新していない場合に表示されます。
-
-        '
-      oauth_code_not_present: OAuth2 の 'code' が 'callback' エンドポイント (redirect_uri) に見つかりません。
-      oauth_code_not_present_explanation: 'このエラーは、OAuth2プロバイダで間違ったresponse_typeを選択した場合に表示されます。response_type は ''code'' あるいはそれに類するものでなければなりません。
-
-        '
-      oauth_state_not_present: OAuth2の'state'が'callback'エンドポイント(redirect_uri)に見つかりません。
-      oauth_state_not_present_explanation: 'state'' は、OAuth2 認証に成功した後、OpenProject に続行先を指示するために使用します。state'' が見つからない場合は、セットアップ中に表示される可能性のある内部エラーです。システム管理者に連絡してください。
-
-        '
+      oauth_authorization_code_grant_had_errors: "OAuth2認証に失敗しました"
+      oauth_reported: "OAuth2プロバイダが報告されました"
+      oauth_returned_error: "OAuth2 がエラーを返しました。"
+      oauth_returned_json_error: "OAuth2がJSONエラーを返した"
+      oauth_returned_http_error: "OAuth2がネットワークエラーを返した"
+      oauth_returned_standard_error: "OAuth2 が内部エラーを返しました。"
+      wrong_token_type_returned: "OAuth2が間違ったトークンのタイプを返しました。"
+      oauth_issue_contact_admin: "OAuth2がエラーを報告しました。システム管理者に連絡してください。"
+      oauth_client_not_found: "callback' エンドポイント (redirect_uri) に OAuth2 クライアントが見つかりません。"
+      refresh_token_called_without_existing_token: >
+        内部エラー：既存のトークンがない状態で refresh_token を呼び出しました。
+      refresh_token_updated_failed: "OAuthClientTokenの更新中のエラー"
+      oauth_client_not_found_explanation: >
+        このエラーは、Yojana で client_id と client_secret を更新したが、OAuth2 プロバイダの 'Return URI' フィールドを更新していない場合に表示されます。
+      oauth_code_not_present: "OAuth2 の 'code' が 'callback' エンドポイント (redirect_uri) に見つかりません。"
+      oauth_code_not_present_explanation: >
+        このエラーは、OAuth2プロバイダで間違ったresponse_typeを選択した場合に表示されます。response_type は 'code' あるいはそれに類するものでなければなりません。
+      oauth_state_not_present: "OAuth2の'state'が'callback'エンドポイント(redirect_uri)に見つかりません。"
+      oauth_state_not_present_explanation: >
+        state' は、OAuth2 認証に成功した後、Yojana に続行先を指示するために使用します。state' が見つからない場合は、セットアップ中に表示される可能性のある内部エラーです。システム管理者に連絡してください。
       rack_oauth2:
-        client_secret_invalid: クライアントの秘密が無効です (client_secret_invalid)
-        invalid_request: 'OAuth2 認証サーバーが ''invalid_request'' で応答しました。このエラーは、複数回認証しようとした場合や、技術的な問題が発生した場合に表示されます。
-
-          '
-        invalid_response: OAuth2 認証サーバーから無効な応答が返されました（invalid_response）
-        invalid_grant: OAuth2認証サーバーが再認証を要求してきます（invalid_grant）。
-        invalid_client: OAuth2 認証サーバーが OpenProject を認識しません (invalid_client)。
-        unauthorized_client: OAuth2 認証サーバーがグラントタイプ (unauthorized_client) を拒否します
-        unsupported_grant_type: OAuth2認証サーバーが再認証を要求してきます(unsupported_grant_type)。
-        invalid_scope: リクエストされたリソースにアクセスする権限がありません（無効なスコープ）。
+        client_secret_invalid: "クライアントの秘密が無効です (client_secret_invalid)"
+        invalid_request: >
+          OAuth2 認証サーバーが 'invalid_request' で応答しました。このエラーは、複数回認証しようとした場合や、技術的な問題が発生した場合に表示されます。
+        invalid_response: "OAuth2 認証サーバーから無効な応答が返されました（invalid_response）"
+        invalid_grant: "OAuth2認証サーバーが再認証を要求してきます（invalid_grant）。"
+        invalid_client: "OAuth2 認証サーバーが Yojana を認識しません (invalid_client)。"
+        unauthorized_client: "OAuth2 認証サーバーがグラントタイプ (unauthorized_client) を拒否します"
+        unsupported_grant_type: "OAuth2認証サーバーが再認証を要求してきます(unsupported_grant_type)。"
+        invalid_scope: "リクエストされたリソースにアクセスする権限がありません（無効なスコープ）。"
   http:
     request:
       failed_authorization: サーバー側の要求は自身を承認できませんでした。
@@ -6222,18 +6138,18 @@ ja:
   you: あなた
   link: リンク
   plugin_openproject_auth_plugins:
-    name: OpenProject Auth プラグイン
-    description: OpenProjectにおける認証のためのOmniAuthストラテジープロバイダの統合。
+    name: "Yojana Auth プラグイン"
+    description: "Yojanaにおける認証のためのOmniAuthストラテジープロバイダの統合。"
   plugin_openproject_auth_saml:
-    name: OmniAuth SAML / シングルサインオン
-    description: OmniAuthSAMLプロバイダをOpenProjectに追加
+    name: "OmniAuth SAML / シングルサインオン"
+    description: "OmniAuthSAMLプロバイダをYojanaに追加"
   enterprise_plans:
     legacy_enterprise: エンタープライズ・プラン
   token:
     hashed_token:
       display_value_placeholder: "***"
   external_link_warning:
-    title: Leaving OpenProject
-    warning_message: You are about to leave OpenProject and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies.
-    continue_message: Are you sure you want to proceed to the following external link?
-    continue_button: Continue to external website
+    title: "Leaving Yojana"
+    warning_message: "You are about to leave Yojana and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies."
+    continue_message: "Are you sure you want to proceed to the following external link?"
+    continue_button: "Continue to external website"

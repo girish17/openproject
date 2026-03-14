@@ -67,7 +67,7 @@ if [[ ! "$SKIP_STEP_1" = "true" ]]; then
   echo
   echo "1.2) Starting OpenProject 7"
   if [[ ! `docker ps | grep $OP7_CONTAINER` ]]; then
-    docker run --rm -d --name $OP7_CONTAINER openproject/openproject:7 bash -c 'sleep 7200'
+    docker run --rm -d --name $OP7_CONTAINER girish17/yojana:7 bash -c 'sleep 7200'
     if [[ $? -gt 0 ]]; then exit 1; fi
     echo "  OpenProject started"
   else
@@ -77,7 +77,7 @@ if [[ ! "$SKIP_STEP_1" = "true" ]]; then
   echo
   echo "1.3) Starting OpenProject 8"
   if [[ ! `docker ps | grep $OP8_CONTAINER` ]]; then
-    docker run --rm -d --name $OP8_CONTAINER openproject/openproject:8-mysql # can use `run -it` directly because the image doesn't support it yet in version 8
+    docker run --rm -d --name $OP8_CONTAINER girish17/yojana:8-mysql # can use `run -it` directly because the image doesn't support it yet in version 8
     if [[ $? -gt 0 ]]; then exit 1; fi
     echo "  OpenProject started"
   else
@@ -228,7 +228,7 @@ docker run \
   -e MYSQL_DATABASE_URL="mysql2://$MYSQL_USER:$MYSQL_PWD@$DOCKER_HOST_IP:$MYSQL_PORT/$DATABASE" \
   -e DATABASE_URL="postgresql://postgres:postgres@$DOCKER_HOST_IP:$POSTGRES_PORT/$DATABASE" \
   -e FORCE_YES=true \
-  -t openproject/openproject:b007c71494a76924396ad0b168ba733471e3e326 \
+  -t girish17/yojana:b007c71494a76924396ad0b168ba733471e3e326 \
   > migration.log &
 
 # wait for migration to finish...
@@ -303,14 +303,14 @@ fi
 echo
 echo "2.9) Migrating from 10 to current ($CURRENT_OP_MAJOR_VERSION)"
 
-docker pull openproject/openproject:$CURRENT_OP_MAJOR_VERSION
+docker pull girish17/yojana:$CURRENT_OP_MAJOR_VERSION
 
 docker run \
   --rm \
   -v $PWD:/data \
   --name migrate10tocurrent \
   -e DATABASE_URL="postgresql://postgres:postgres@$DOCKER_HOST_IP:$POSTGRES_PORT/$DATABASE" \
-  -it openproject/openproject:$CURRENT_OP_MAJOR_VERSION \
+  -it girish17/yojana:$CURRENT_OP_MAJOR_VERSION \
   bundle exec rake db:migrate > migration.log
 
 MIGRATION_STATUS=$?
@@ -345,7 +345,7 @@ docker run \
   --rm \
   -e PGPASSWORD=postgres \
   -v /tmp:/data \
-  -it openproject/openproject:$CURRENT_OP_MAJOR_VERSION pg_dump \
+  -it girish17/yojana:$CURRENT_OP_MAJOR_VERSION pg_dump \
     -h $DOCKER_HOST_IP \
     -p $POSTGRES_PORT \
     -U postgres \

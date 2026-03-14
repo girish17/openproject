@@ -141,7 +141,7 @@ it:
                 options:
                   name: Per cominciare
                   text: |
-                    Siamo lieti che ti sia unito! Suggeriamo di provare un paio di cose per iniziare con OpenProject.
+                    Siamo lieti che ti sia unito! Suggeriamo di provare un paio di cose per iniziare con Yojana.
 
                     Scopri le funzionalità più importanti con il nostro [Tour Guidato]({{opSetting:base_url}}/projects/demo-project/work_packages/?start_onboarding_tour=true).
 
@@ -154,7 +154,7 @@ it:
                     5. *Attiva altri moduli*: &rightarrow; Vai in [Impostazioni del progetto &rightarrow; Moduli]({{opSetting:base_url}}/projects/demo-project/settings/modules).
                     6. *Completa i tuoi incarichi nel progetto*: &rightarrow; Vai ai [Pacchetti di lavoro &rightarrow; Incarichi]({{opSetting:base_url}}/projects/demo-project/work_packages/details/##wp.id:set_date_and_location_of_conference/overview?query_id=##query.id:demo_project__query__tasks).
 
-                    Qui troverai le nostre [Guide per l'Utente](https://www.openproject.org/docs/user-guide/).
+                    Qui troverai le nostre [Guide per l'Utente](https://www.yojana.girishm.info/docs/user-guide/).
                     Sei pregato di contattarci se hai domande o necessiti di supporto. Contattaci a: [support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
@@ -211,7 +211,7 @@ it:
             * Visualizzare la cronologia delle modifiche
             * Visualizzare come Markdown
 
-            Maggiori informazioni: [https://www.openproject.org/docs/user-guide/wiki/](https://www.openproject.org/docs/user-guide/wiki/)
+            Maggiori informazioni: [https://www.yojana.girishm.info/docs/user-guide/wiki/](https://www.yojana.girishm.info/docs/user-guide/wiki/)
         scrum-project:
           name: Progetto Scrum
           status_explanation: Tutti gli incarichi sono in programma. Le persone coinvolte conoscono i propri compiti. Il sistema è completamente configurato.
@@ -313,7 +313,7 @@ it:
                 options:
                   name: Per cominciare
                   text: |
-                    Siamo lieti di averti tra noi! Ti suggeriamo di provare alcune cose per iniziare con OpenProject.
+                    Siamo lieti di averti tra noi! Ti suggeriamo di provare alcune cose per iniziare con Yojana.
 
                     _Prova i seguenti passaggi:_
 
@@ -325,7 +325,7 @@ it:
                     6. *Crea una wiki di Sprint*: &rightarrow; Vai a [Backlogs]({{opSetting:base_url}}/projects/your-scrum-project/backlogs) e apri la wiki dello sprint dal menu a discesa a destra in uno sprint. Puoi modificare il [modello wiki]({{opSetting:base_url}}/projects/your-scrum-project/wiki/) in base alle tue esigenze.
                     7. *Attiva ulteriori moduli*: &rightarrow; Vai su [Impostazioni progetto &rightarrow; Moduli]({{opSetting:base_url}}/projects/your-scrum-project/settings/modules).
 
-                    Qui troverai le nostre [Guide per l'utente](https://www.openproject.org/docs/user-guide/).
+                    Qui troverai le nostre [Guide per l'utente](https://www.yojana.girishm.info/docs/user-guide/).
                     Facci sapere se hai domande o se hai bisogno di supporto. Contattaci su: [support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
@@ -488,19 +488,19 @@ it:
         item_6:
           name: Bug
       welcome:
-        title: Benvenuto su OpenProject!
+        title: Benvenuto su Yojana!
         text: |
-          OpenProject è il principale software di gestione dei progetti open source. Supporta la gestione dei progetti classica, agile e ibrida e ti dà il pieno controllo sui tuoi dati.
+          Yojana è il principale software di gestione dei progetti open source. Supporta la gestione dei progetti classica, agile e ibrida e ti dà il pieno controllo sui tuoi dati.
 
           Funzionalità principali e casi d'uso:
 
-          * [Gestione del portfolio di progetti](https://www.openproject.org/collaboration-software-features/project-portfolio-management/)
-          * [Pianificazione e programmazione del progetto](https://www.openproject.org/collaboration-software-features/project-planning-scheduling/)
-          * [Gestione delle attività e monitoraggio dei problemi](https://www.openproject.org/collaboration-software-features/task-management/)
-          * [Bacheche Agile (Scrum e Kanban)](https://www.openproject.org/collaboration-software-features/agile-project-management/)
-          * [Gestione dei requisiti e pianificazione del rilascio](https://www.openproject.org/collaboration-software-features/product-development/)
-          * [Monitoraggio di tempi e costi, budget](https://www.openproject.org/collaboration-software-features/time-tracking/)
-          * [Collaborazione e documentazione del team](https://www.openproject.org/collaboration-software-features/team-collaboration/)
+          * [Gestione del portfolio di progetti](https://www.yojana.girishm.info/collaboration-software-features/project-portfolio-management/)
+          * [Pianificazione e programmazione del progetto](https://www.yojana.girishm.info/collaboration-software-features/project-planning-scheduling/)
+          * [Gestione delle attività e monitoraggio dei problemi](https://www.yojana.girishm.info/collaboration-software-features/task-management/)
+          * [Bacheche Agile (Scrum e Kanban)](https://www.yojana.girishm.info/collaboration-software-features/agile-project-management/)
+          * [Gestione dei requisiti e pianificazione del rilascio](https://www.yojana.girishm.info/collaboration-software-features/product-development/)
+          * [Monitoraggio di tempi e costi, budget](https://www.yojana.girishm.info/collaboration-software-features/time-tracking/)
+          * [Collaborazione e documentazione del team](https://www.yojana.girishm.info/collaboration-software-features/team-collaboration/)
 
           Benvenuti nel futuro della gestione dei progetti.
 

@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -348,13 +348,13 @@
         unknown_name: Unknown
     mcp_configurations:
       index:
-        description: The model context protocol allows AI agents to provide its users with tools and resources exposed by this OpenProject instance. This feature is still in beta.
-        resources_heading: Resources
-        resources_description: OpenProject implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url).
-        resources_submit: Update resources
-        tools_heading: Tools
-        tools_description: OpenProject implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url).
-        tools_submit: Update tools
+        description: "The model context protocol allows AI agents to provide its users with tools and resources exposed by this Yojana instance."
+        resources_heading: "Resources"
+        resources_description: "Yojana implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
+        resources_submit: "Update resources"
+        tools_heading: "Tools"
+        tools_description: "Yojana implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url)."
+        tools_submit: "Update tools"
       multi_update:
         success: MCP configurations were updated successfully.
       server_form:
@@ -397,31 +397,31 @@
       edit:
         label_delete_scim_client: Delete SCIM client
       form:
-        auth_provider_description: This is the service that users added by the SCIM provider will use to authenticate in OpenProject.
-        authentication_method_description_html: This is how the SCIM client authenticates at OpenProject. Please ensure that OAuth tokens include the <code>scim_v2</code> scope.
-        description: Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options.
-        jwt_sub_description: For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case.
-        name_description: Choose a name that will help other admins better understand why this client was configured.
+        auth_provider_description: "This is the service that users added by the SCIM provider will use to authenticate in Yojana."
+        authentication_method_description_html: "This is how the SCIM client authenticates at Yojana. Please ensure that OAuth tokens include the <code>scim_v2</code> scope."
+        description: "Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options."
+        jwt_sub_description: "For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case."
+        name_description: "Choose a name that will help other admins better understand why this client was configured."
       index:
-        description: SCIM clients configured here are able to interact with OpenProject SCIM server API to provision, update, and deprovision user accounts and groups.
-        label_create_button: Add SCIM client
+        description: "SCIM clients configured here are able to interact with Yojana SCIM server API to provision, update, and deprovision user accounts and groups."
+        label_create_button: "Add SCIM client"
       new:
         title: New SCIM client
       revoke_static_token_dialog_component:
-        confirm_button: Tilbakekall
-        title: Revoke static token
-        heading: Er du sikker på at du vil oppheve denne nøkkelen?
-        description: The SCIM client that uses this token will no longer be able to access OpenProject's SCIM server API.
+        confirm_button: "Tilbakekall"
+        title: "Revoke static token"
+        heading: "Er du sikker på at du vil oppheve denne nøkkelen?"
+        description: "The SCIM client that uses this token will no longer be able to access Yojana's SCIM server API."
       table_component:
         blank_slate:
           title: No SCIM clients configured yet
           description: Add clients to see them here
         user_count: Brukere
       token_list_component:
-        description: The tokens you generate here can be passed by a SCIM client to access the OpenProject SCIM API.
-        heading: Tokens
-        label_add_token: Token
-        label_aria_add_token: Add token
+        description: "The tokens you generate here can be passed by a SCIM client to access the Yojana SCIM API."
+        heading: "Tokens"
+        label_add_token: "Token"
+        label_aria_add_token: "Add token"
       token_table_component:
         blank_slate:
           title: No tokens have been created yet
@@ -564,38 +564,38 @@
       name: Tabellnavn på LDAP-tilkoblingen
       host: LDAP-vertsnavn eller IP-adresse
       login_map: Egenskapsnøkkelen i LDAP som brukes til å identifisere den unike brukerinnloggingen. Vanligvis vil dette være `uid` eller `samAccountName`.
-      generic_map: Egenskapsnøkkelen i LDAP som er knyttet til OpenProject `%{attribute}`-egenskap
-      admin_map_html: 'Valgfritt: Egenskapsnøkkelen i LDAP som, <strong>hvis denne finnes</strong>, markerer OpenProject-brukeren som en administrator. La stå tom når du er i tvil.'
+      generic_map: Egenskapsnøkkelen i LDAP som er knyttet til Yojana `%{attribute}`-egenskap
+      admin_map_html: "Valgfritt: Egenskapsnøkkelen i LDAP som, <strong>hvis denne finnes</strong>, markerer Yojana-brukeren som en administrator. La stå tom når du er i tvil."
       system_user_dn_html: |
         Enter the DN of the system user used for read-only access.
         <br>
-        Example: uid=openproject,ou=system,dc=example,dc=com
+        Example: uid=yojana,ou=system,dc=example,dc=com
       system_user_password: Skriv inn bind passordet til system brukeren
       base_dn: |
-        Skriv inn Base DN av undertreet i LDAP der du vil OpenProject skal se etter brukere og grupper.
-        OpenProject vil bare filtrere etter gjeldende brukernavn i dette undertreet.
+        Skriv inn Base DN av undertreet i LDAP der du vil Yojana skal se etter brukere og grupper.
+        Yojana vil bare filtrere etter gjeldende brukernavn i dette undertreet.
         Eksempel: ou=users,dc=example,dc=com
       filter_string: |
         Legg til et valgfritt RFC4515 filter som gjelder for resultatene returnert for brukere filtrert i LDAP.
-        Dette kan brukes til å begrense settet med brukere som finnes av OpenProject for synkronisering i gruppe.
+        Dette kan brukes til å begrense settet med brukere som finnes av Yojana for synkronisering i gruppe.
       filter_string_concat: |
-        OpenProject vil alltid filtrere for påloggingsegenskapen som brukeren har gitt for å identifisere posten. Dersom du angir et filter her, vil
+        Yojana vil alltid filtrere for påloggingsegenskapen som brukeren har gitt for å identifisere posten. Dersom du angir et filter her, vil
         det koples til en AND. Som standard vil en catch-all (objectClass=*) bli brukt som et filter.
       onthefly_register: |
-        Hvis du huker av denne boksen vil OpenProject automatisk opprette en ny bruker fra deres LDAP opplysninger når de første gang autentiseres med OpenProject.
+        Hvis du huker av denne boksen vil Yojana automatisk opprette en ny bruker fra deres LDAP opplysninger når de første gang autentiseres med Yojana.
 
-        La denne stå åpen om du kun vil tillate eksisterende kontoer i OpenProject å autentisere via LDAP!
-    connection_encryption: Kryptering av forbindelse
-    encryption_details: LDAPS / STARTTLS alternativer
-    system_account: Systemkonto
+        La denne stå åpen om du kun vil tillate eksisterende kontoer i Yojana å autentisere via LDAP!
+    connection_encryption: "Kryptering av forbindelse"
+    encryption_details: "LDAPS / STARTTLS alternativer"
+    system_account: "Systemkonto"
     system_account_legend: |
-      OpenProject krever kun lesetilgang gjennom systemkonto for å slå opp brukere og grupper i LDAP-treet.
+      Yojana krever kun lesetilgang gjennom systemkonto for å slå opp brukere og grupper i LDAP-treet.
       Vennligst spesifiser bind legitimasjonen for den systembrukeren i den følgende seksjonen.
     ldap_details: LDAP detaljer
     user_settings: Tilordning av egenskap
     user_settings_legend: |
-      Følgende felt er relatert til hvordan brukere opprettes i OpenProject fra LDAP-oppføringer og
-      hvilke LDAP-egenskaper som brukes til å definere egenskaper til en OpenProject-bruker (egenskapstilordning).
+      Følgende felt er relatert til hvordan brukere opprettes i Yojana fra LDAP-oppføringer og
+      hvilke LDAP-egenskaper som brukes til å definere egenskaper til en Yojana-bruker (egenskapstilordning).
     tls_mode:
       plain: ingen
       simple_tls: LDAPS
@@ -2133,18 +2133,17 @@
         circular_dependency: En slik relasjon ville lage en sirkulær avhengighet.
         confirmation: samsvarer ikke med %{attribute}.
         could_not_be_copied: "%{dependency} kunne ikke kopieres (fullstendig)."
-        datetime_must_be_in_future: must be in the future.
-        does_not_exist: finnes ikke.
-        error_enterprise_only: "%{action} is only available in the OpenProject Enterprise edition."
-        error_unauthorized: kan ikke nås
-        error_readonly: ble forsøkt skrevet til, men er skrivebeskyttet
-        error_conflict: Informasjonen har blitt oppdatert av minst en annen bruker i mellomtiden.
-        error_not_found: not found.
-        email: er ikke en gyldig e-postadresse.
-        empty: kan ikke være tomt.
-        enterprise_plan_required: requires at least the %{plan_name}.
-        even: må være partall
-        exclusion: er reservert.
+        does_not_exist: "finnes ikke."
+        error_enterprise_only: "%{action} is only available in the Yojana Enterprise edition."
+        error_unauthorized: "kan ikke nås"
+        error_readonly: "ble forsøkt skrevet til, men er skrivebeskyttet"
+        error_conflict: "Informasjonen har blitt oppdatert av minst en annen bruker i mellomtiden."
+        error_not_found: "not found."
+        email: "er ikke en gyldig e-postadresse."
+        empty: "kan ikke være tomt."
+        enterprise_plan_required: "requires at least the %{plan_name}."
+        even: "må være partall"
+        exclusion: "er reservert."
         feature_disabled: is not available.
         feature_disabled_for_project: is disabled for this project.
         file_too_large: er for stor (maks størrelse er %{count} Bytes).
@@ -2799,17 +2798,14 @@
     reset_token:
       action_create: Opprett
       action_reset: Nullstill
-      heading_reset: Tilbakestill sikkerhetskopieringsnøkkel
-      heading_create: Opprett sikkerhetskopieringsnøkkel
-      implications: 'Aktivering av sikkerhetskopier vil tillate brukeren med de nødvendige tillatelser, og denne sikkerhetskopinøkkelen å laste ned en sikkerhetskopi som inneholder alle data fra denne OpenProject installasjonen. Dette inkluderer data for alle andre brukere.
-
-        '
-      info: 'Du må generere en sikkerhetskopinøkkel for å kunne opprette en sikkerhetskopi. Hver gang du vil be om en sikkerhetskopi må du oppgi denne nøkkelen. Du kan slette sikkerhetskopinøkkelen for å deaktivere sikkerhetskopier for denne brukeren.
-
-        '
-      verification_html: 'Enter %{word} to confirm you want to %{action} the backup token.
-
-        '
+      heading_reset: "Tilbakestill sikkerhetskopieringsnøkkel"
+      heading_create: "Opprett sikkerhetskopieringsnøkkel"
+      implications: >
+        Aktivering av sikkerhetskopier vil tillate brukeren med de nødvendige tillatelser, og denne sikkerhetskopinøkkelen å laste ned en sikkerhetskopi som inneholder alle data fra denne Yojana installasjonen. Dette inkluderer data for alle andre brukere.
+      info: >
+        Du må generere en sikkerhetskopinøkkel for å kunne opprette en sikkerhetskopi. Hver gang du vil be om en sikkerhetskopi må du oppgi denne nøkkelen. Du kan slette sikkerhetskopinøkkelen for å deaktivere sikkerhetskopier for denne brukeren.
+      verification: >
+        Angi %{word} for å bekrefte at du vil %{action} sikkerhetskopinøkkelen.
       verification_word_reset: tilbakestill
       verification_word_create: opprett
       warning: 'Når du har opprettet en ny nøkkel vil det gå 24 timer før du kan opprette en backup.  Dette er av hensyn til sikkerheten.  Etter dette kan du ta en sikkerhetskopi når som helst ved hjelp av nøkkelen.
@@ -3158,29 +3154,26 @@
       title: Enterprise programtillegg
       plan_title: Enterprise %{plan} add-on
       plan_name: "%{plan} enterprise plan"
-      trial_text: This feature is included in your active Enterprise trial.
-      plan_text_html: Available starting with the %{plan_name}.
-      unlimited: Ubegrenset
-      already_have_token: 'Already have a token? Add it using the button below to upgrade to the booked Enterprise plan.
-
-        '
-      hide_banner: Skjul banneret
-      homescreen_description: 'Enterprise plans extend the Community edition of OpenProject with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running OpenProject in a mission-critical environment.
-
-        '
+      plan_text_html: "Available starting with the %{plan_name}."
+      unlimited: "Ubegrenset"
+      already_have_token: >
+        Already have a token? Add it using the button below to upgrade to the booked Enterprise plan.
+      hide_banner: "Skjul banneret"
+      homescreen_description: >
+        Enterprise plans extend the Community edition of Yojana with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running Yojana in a mission-critical environment.
       homescreen_subline: By upgrading, you will also be supporting an open source project.
       baseline_comparison:
         description: Marker endringer som er gjort på denne listen tidligere.
       benefits:
-        description: Hva er fordelene ved Enterprise on-premises-utgaven?
-        high_security: Sikkerhetsfunksjoner
-        high_security_text: Engangs pålogging (SAML, OpenID Connect, CAS), LDAP-grupper.
-        installation: Installasjons støtte
-        installation_text: Erfarne programvareingeniører veileder deg gjennom hele installerings- og installasjonsprosessen på din egen infrastruktur.
-        premium_features: Enterprise tillegg
-        premium_features_text: Dynamiske tavler, egendefinert tema og logo, grafer, intelligente arbeidsprosesser med egendefinerte handlinger, fulltekst søk etter vedlegg til arbeidspakke og tilpassede felter.
-        professional_support: Profesjonell hjelp
-        professional_support_text: Få pålitelig, høykvalitets støtte fra seniorstøtteteknikere med ekspertkunnskap om å drive OpenProject i forretningskritiske omgivelser.
+        description: "Hva er fordelene ved Enterprise on-premises-utgaven?"
+        high_security: "Sikkerhetsfunksjoner"
+        high_security_text: "Engangs pålogging (SAML, OpenID Connect, CAS), LDAP-grupper."
+        installation: "Installasjons støtte"
+        installation_text: "Erfarne programvareingeniører veileder deg gjennom hele installerings- og installasjonsprosessen på din egen infrastruktur."
+        premium_features: "Enterprise tillegg"
+        premium_features_text: "Dynamiske tavler, egendefinert tema og logo, grafer, intelligente arbeidsprosesser med egendefinerte handlinger, fulltekst søk etter vedlegg til arbeidspakke og tilpassede felter."
+        professional_support: "Profesjonell hjelp"
+        professional_support_text: "Få pålitelig, høykvalitets støtte fra seniorstøtteteknikere med ekspertkunnskap om å drive Yojana i forretningskritiske omgivelser."
       work_package_subject_generation:
         description: Create automatically generated subjects using referenced attributes and text.
       customize_life_cycle:
@@ -3210,34 +3203,31 @@
       calculated_values:
         description: Calculated values allow you to create a mathematical formula based attribute using numeric values and other project attributes and custom fields.
       define_custom_style:
-        title: Custom color theme and logo
-        more_info: 'Merk: den brukte logoen vil være offentlig tilgjengelig.'
-        description: Tilpass OpenProject-installasjonen med din egen logo og farger.
+        title: "Custom color theme and logo"
+        more_info: "Merk: den brukte logoen vil være offentlig tilgjengelig."
+        description: Tilpass Yojana-installasjonen med din egen logo og farger.
       custom_actions:
         title: Tilpassede handlinger
         description: Egendefinerte handlinger er snarveier med ett klikk til en rekke forhåndsdefinerte handlinger som du kan gjøre tilgjengelige på visse arbeidspakker basert på status, rolle, type eller prosjekt.
       mcp_server:
-        description: Bring OpenProject into your AI workflows with a secure MCP server.
-      meeting_templates:
-        description: Define meeting templates with a set agenda structure and save time by reusing them when creating new meetings.
+        description: "Integrate AI agents with your Yojana instance through MCP."
       nextcloud_sso:
         title: Single Sign-On for Nextcloud Storage
         description: Enable seamless and secure authentication for your Nextcloud storage with Single Sign-On. Simplify access management and enhance user convenience.
       scim_api:
-        title: SCIM clients
-        description: Automate user management in OpenProject by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan.
+        title: "SCIM clients"
+        description: "Automate user management in Yojana by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan."
       sso_auth_providers:
         title: Single Sign-On (SSO)
         description: Enable users to log in via external SSO providers using SAML or OpenID Connect for seamless access and integration with existing identity systems.
       virus_scanning:
-        description: Sikre at opplastede filer i OpenProject blir skannet for virus før de er tilgjengelige for andre brukere.
+        description: "Sikre at opplastede filer i Yojana blir skannet for virus før de er tilgjengelige for andre brukere."
       project_creation_wizard:
         description: Generate a step-by-step wizard to help project managers fill out a project initiation request.
       placeholder_users:
         title: Plassholder brukere
-        description: 'Plassholderbrukere er en måte å tilknytte arbeidspakker til brukere som ikke er med i prosjektet. De kan være nyttige i en rekke scenarioer; for eksempel hvis du må spore oppgaver for en ressurs som ennå ikke er navngitt eller tilgjengelig, eller hvis du ikke vil gi den personen tilgang til OpenProject, men fortsatt vil spore oppgaver tilordnet dem.
-
-          '
+        description: >
+          Plassholderbrukere er en måte å tilknytte arbeidspakker til brukere som ikke er med i prosjektet. De kan være nyttige i en rekke scenarioer; for eksempel hvis du må spore oppgaver for en ressurs som ennå ikke er navngitt eller tilgjengelig, eller hvis du ikke vil gi den personen tilgang til Yojana, men fortsatt vil spore oppgaver tilordnet dem.
       internal_comments:
         title: Internal comments
         description: Internal comments allow an internal team to communicate amongst themselves privately. These are only visible to certain project roles and will never be visible publicly.
@@ -3252,26 +3242,25 @@
         other: "%{count} days left of %{trial_plan} trial token"
       description_html: You have access to all %{trial_plan} features.
     trial:
-      not_found: You have requested a trial token, but that request is no longer available. Please try again.
-      wait_for_confirmation: We sent you an email to confirm your address in order to retrieve a trial token.
-      already_retrieved: 'Your trial enterprise token was already retrieved. Please check your emails for the token being attached. Please reach out to our support team if you need a new one.
-
-        '
-      successfully_saved: Your trial enterprise token has been successfully retrieved.
-      token_sent: Trial token requested
-      request_again: Request again
-      resend_action: Resend confirmation email
-      welcome_title: Quick feature overview
-      welcome_description: Få en rask oversikt over prosjektledelse og teamsamarbeid med OpenProject Enterprise-utgaven.
-      confirmation_info: 'We sent you an email on %{date} to %{email} with all the information to start the free trial of OpenProject Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
-
-        '
-      confirmation_subline: 'Please, check your inbox and follow the steps to start your 14-day free trial.
-
-        '
+      not_found: "You have requested a trial token, but that request is no longer available. Please try again."
+      wait_for_confirmation: "We sent you an email to confirm your address in order to retrieve a trial token."
+      already_retrieved: >
+        Your trial enterprise token was already retrieved. Please check your emails for the token being attached. Please reach out to our support team if you need a new one.
+      successfully_saved: "Your trial enterprise token has been successfully retrieved."
+      token_sent: "Trial token requested"
+      request_again: "Request again"
+      resend_action: "Resend confirmation email"
+      welcome_title: "Quick feature overview"
+      welcome_description: "Få en rask oversikt over prosjektledelse og teamsamarbeid med Yojana Enterprise-utgaven."
+      confirmation_info: >
+        We sent you an email on %{date} to %{email} with all the information to start the free trial of Yojana Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
+      confirmation_subline: >
+        Please, check your inbox and follow the steps to start your 14-day free trial.
       domain_caption: The token will be valid for your currently configured host name.
-      receive_newsletter: I want to receive the OpenProject [newsletter](newsletter_url).
-      consent: I agree with the [terms of service](tos_url) and the [privacy policy](privacy_url).
+      receive_newsletter_html: >
+        I want to receive the Yojana <a target="_blank" href="https://www.yojana.girishm.info/newsletter/">newsletter</a>.
+      consent_html: >
+        I agree with the <a target="_blank" href="https://www.yojana.girishm.info/terms-of-service/">terms of service</a> and the <a target="_blank" href="https://www.yojana.girishm.info/data-privacy-and-security/">privacy policy</a>.
   email_calendar_updates:
     state:
       disabled: Disabled.
@@ -3295,51 +3284,51 @@
   error_can_not_delete_in_use_archived_undisclosed: Det finnes også arbeidspakker i arkiverte prosjekter. Du må be en administrator om å gjennomføre slettingen for å se hvilke prosjekter som blir berørt.
   error_can_not_delete_in_use_archived_work_packages: 'Det er også arbeidspakker i prosjekter som er arkivert. Du må reaktivere følgende prosjekter først, før du kan endre attributtet for de respektive arbeidspakkene: %{archived_projects_urls}'
   error_can_not_delete_type:
-    explanation: Denne typen inneholder arbeidspakker og kan ikke slettes. Du kan se alle berørte arbeidspakker i <a target="_blank" href="%{url}">denne visningen</a>.
-  error_can_not_delete_standard_type: Standardtyper kan ikke slettes.
-  error_can_not_invite_user: Kunne ikke sende invitasjon til bruker.
-  error_can_not_remove_role: Denne rollen er i bruk og kan ikke slettes.
-  error_can_not_reopen_work_package_on_closed_version: En arbeidspakke tilknyttet en lukket versjon kan ikke gjenåpnes
-  error_can_not_find_all_resources: Kunne ikke finne alle relaterte ressurser til denne forespørselen.
-  error_can_not_unarchive_project: 'Prosjektet kan ikke avarkiveres: %{errors}'
-  error_check_user_and_role: Velg en bruker og en rolle.
-  error_code: Feil %{code}
-  error_color_could_not_be_saved: Farger kunne ikke lagres
-  error_cookie_missing: Cookie OpenProject mangler. Kontroller at informasjonskapsler er aktivert, dette programmet fungerer ikke riktig uten.
-  error_custom_option_not_found: Alternativet finnes ikke.
-  error_enterprise_plan_needed: You need the %{plan} enterprise plan to perform this action.
-  error_enterprise_activation_user_limit: Kontoen din kan ikke aktiveres (brukergrensen er nådd). Kontakt systemansvarlig for å få tilgang.
-  error_enterprise_token_invalid_domain: Enterprise utgaven er ikke aktiv. Din Enterprise nøkkels domene (%{actual}) samsvarer ikke med systemets vertsnavn (%{expected}).
-  error_failed_to_delete_entry: Kan ikke slette denne oppføringen.
-  error_in_dependent: 'Feil ved endring av avhengig objekt: %{dependent_class} #%{related_id} - %{related_subject}: %{error}'
-  error_in_new_dependent: 'Feil ved opprettelse av avhengig objekt: %{dependent_class} - %{related_subject}: %{error}'
-  error_invalid_selected_value: Ugyldig valgt verdi.
-  error_journal_attribute_not_present: Journal inneholder ikke attributt %{attribute}.
-  error_pdf_export_too_many_columns: For mange kolonner valgt for PDF eksport. Reduser antall kolonner.
-  error_pdf_date_range_too_long: The selected work package date range exceeds the allowable PDF export limit. Please condense the range to a maximum of %{years} years.
-  error_pdf_failed_to_export: 'PDF-eksporten kunne ikke lagres: %{error}'
-  error_token_authenticity: Kan ikke bekrefte Cross-Site Request Forgery token. Har du prøvd å sende inn data i flere nettlesere eller faner? Vennligst lukk alle fanene og prøv igjen.
-  error_reminder_not_found: The reminder was not found or was already notified about.
-  error_work_package_not_found_in_project: Arbeidspakken ble ikke funnet eller tilhører ikke dette prosjektet
-  error_work_package_id_not_found: Arbeidspakken ble ikke funnet.
-  error_must_be_project_member: må være prosjektmedlem
-  error_migrations_are_pending: Din OpenProject installasjon har ventende databaseoverføringer. Du har sannsynligvis gått tilbake til overføringene på din siste oppgradering. Vennligst sjekk oppgraderings guiden for å oppgradere installasjonen din ordentlig.
-  error_migrations_visit_upgrade_guides: Vennligst besøk vår veiledning/dokumentasjon for oppgradering
-  error_no_default_work_package_status: Standard status for arbeidspakke er ikke definert. Vennligst kontrollèr innstillingene (Gå til "Administrasjon -> Status for arbeidspakker").
-  error_no_type_in_project: Prosjektet mangler en tilknyttet type. Vennligst kontrollèr Prosjektinnstillinger.
-  error_omniauth_registration_timed_out: Det oppstod tidsavbrudd under registrering via ekstern autentiseringstjeneste. Vennligst forsøk igjen.
-  error_omniauth_invalid_auth: Påloggingsinformasjonen er ugyldig.  Vennligst kontakt administrator for ytterligere hjelp.
-  error_password_change_failed: Det oppstod en feil under forsøk på å endre passordet.
-  error_scm_command_failed: 'Det oppstod en feil ved forsøk på å åpne pakkebrønnen: %{value}'
-  error_scm_not_found: Oppføringen eller revisjonen ble ikke funnet i pakkebrønnen.
-  error_type_could_not_be_saved: Type kunne ikke lagres
-  error_unable_delete_status: Arbeidspakken kan ikke bli slettet siden den benyttes av minst en annen arbeidspakke.
-  error_unable_delete_default_status: Kunne ikke slette standard status for arbeidspakke. Vennligst velg en annen standard status før du sletter den gjeldende.
-  error_unable_to_connect: Kunne ikke koble til (%{value})
-  error_unable_delete_wiki: Kunne ikke slette wiki-siden.
-  error_unable_update_wiki: Kunne ikke oppdatere wiki-siden.
-  error_workflow_copy_source: Vennligst velg en kildetype eller rolle
-  error_workflow_copy_target: Vennligst velg måltype(r) og rolle(r)
+    explanation: 'Denne typen inneholder arbeidspakker og kan ikke slettes. Du kan se alle berørte arbeidspakker i <a target="_blank" href="%{url}">denne visningen</a>.'
+  error_can_not_delete_standard_type: "Standardtyper kan ikke slettes."
+  error_can_not_invite_user: "Kunne ikke sende invitasjon til bruker."
+  error_can_not_remove_role: "Denne rollen er i bruk og kan ikke slettes."
+  error_can_not_reopen_work_package_on_closed_version: "En arbeidspakke tilknyttet en lukket versjon kan ikke gjenåpnes"
+  error_can_not_find_all_resources: "Kunne ikke finne alle relaterte ressurser til denne forespørselen."
+  error_can_not_unarchive_project: "Prosjektet kan ikke avarkiveres: %{errors}"
+  error_check_user_and_role: "Velg en bruker og en rolle."
+  error_code: "Feil %{code}"
+  error_color_could_not_be_saved: "Farger kunne ikke lagres"
+  error_cookie_missing: "Cookie Yojana mangler. Kontroller at informasjonskapsler er aktivert, dette programmet fungerer ikke riktig uten."
+  error_custom_option_not_found: "Alternativet finnes ikke."
+  error_enterprise_plan_needed: "You need the %{plan} enterprise plan to perform this action."
+  error_enterprise_activation_user_limit: "Kontoen din kan ikke aktiveres (brukergrensen er nådd). Kontakt systemansvarlig for å få tilgang."
+  error_enterprise_token_invalid_domain: "Enterprise utgaven er ikke aktiv. Din Enterprise nøkkels domene (%{actual}) samsvarer ikke med systemets vertsnavn (%{expected})."
+  error_failed_to_delete_entry: "Kan ikke slette denne oppføringen."
+  error_in_dependent: "Feil ved endring av avhengig objekt: %{dependent_class} #%{related_id} - %{related_subject}: %{error}"
+  error_in_new_dependent: "Feil ved opprettelse av avhengig objekt: %{dependent_class} - %{related_subject}: %{error}"
+  error_invalid_selected_value: "Ugyldig valgt verdi."
+  error_journal_attribute_not_present: "Journal inneholder ikke attributt %{attribute}."
+  error_pdf_export_too_many_columns: "For mange kolonner valgt for PDF eksport. Reduser antall kolonner."
+  error_pdf_date_range_too_long: "The selected work package date range exceeds the allowable PDF export limit. Please condense the range to a maximum of %{years} years."
+  error_pdf_failed_to_export: "PDF-eksporten kunne ikke lagres: %{error}"
+  error_token_authenticity: "Kan ikke bekrefte Cross-Site Request Forgery token. Har du prøvd å sende inn data i flere nettlesere eller faner? Vennligst lukk alle fanene og prøv igjen."
+  error_reminder_not_found: "The reminder was not found or was already notified about."
+  error_work_package_not_found_in_project: "Arbeidspakken ble ikke funnet eller tilhører ikke dette prosjektet"
+  error_work_package_id_not_found: "Arbeidspakken ble ikke funnet."
+  error_must_be_project_member: "må være prosjektmedlem"
+  error_migrations_are_pending: "Din Yojana installasjon har ventende databaseoverføringer. Du har sannsynligvis gått tilbake til overføringene på din siste oppgradering. Vennligst sjekk oppgraderings guiden for å oppgradere installasjonen din ordentlig."
+  error_migrations_visit_upgrade_guides: "Vennligst besøk vår veiledning/dokumentasjon for oppgradering"
+  error_no_default_work_package_status: 'Standard status for arbeidspakke er ikke definert. Vennligst kontrollèr innstillingene (Gå til "Administrasjon -> Status for arbeidspakker").'
+  error_no_type_in_project: "Prosjektet mangler en tilknyttet type. Vennligst kontrollèr Prosjektinnstillinger."
+  error_omniauth_registration_timed_out: "Det oppstod tidsavbrudd under registrering via ekstern autentiseringstjeneste. Vennligst forsøk igjen."
+  error_omniauth_invalid_auth: "Påloggingsinformasjonen er ugyldig.  Vennligst kontakt administrator for ytterligere hjelp."
+  error_password_change_failed: "Det oppstod en feil under forsøk på å endre passordet."
+  error_scm_command_failed: "Det oppstod en feil ved forsøk på å åpne pakkebrønnen: %{value}"
+  error_scm_not_found: "Oppføringen eller revisjonen ble ikke funnet i pakkebrønnen."
+  error_type_could_not_be_saved: "Type kunne ikke lagres"
+  error_unable_delete_status: "Arbeidspakken kan ikke bli slettet siden den benyttes av minst en annen arbeidspakke."
+  error_unable_delete_default_status: "Kunne ikke slette standard status for arbeidspakke. Vennligst velg en annen standard status før du sletter den gjeldende."
+  error_unable_to_connect: "Kunne ikke koble til (%{value})"
+  error_unable_delete_wiki: "Kunne ikke slette wiki-siden."
+  error_unable_update_wiki: "Kunne ikke oppdatere wiki-siden."
+  error_workflow_copy_source: "Vennligst velg en kildetype eller rolle"
+  error_workflow_copy_target: "Vennligst velg måltype(r) og rolle(r)"
   error_menu_item_not_created: Menyelement kunne ikke opprettes
   error_menu_item_not_saved: Menyelementet kunne ikke lagres
   error_wiki_root_menu_item_conflict: 'Kan ikke endre navn fra %{old_name} til %{new_name} pga en konflikt mellom det resulterende menyelementet og eksisterende menyelementet "%{existing_caption}" (%{existing_identifier}).
@@ -3434,8 +3423,8 @@
     succeeded: Eksport fullført
     failed: 'Det oppstod en feil ved forsøk på å eksportere arbeidspakker: %{message}'
     demo:
-      heading: Demo PDF
-      footer: Generated by OpenProject
+      heading: "Demo PDF"
+      footer: "Generated by Yojana"
       button_text: Generate Demo PDF
     errors:
       embedded_table_with_too_many_columns: This embedded work package table could not fit on the page, please reduce the number of columns.
@@ -3556,7 +3545,7 @@
         no_results_subtext: Add one or multiple projects as favorite through their overview or in a project list.
       users: Nyeste registrerte brukere i denne forekomsten.
     blocks:
-      community: OpenProject fellesskap
+      community: "Yojana fellesskap"
       upsell:
         title: Oppgrader til Enterprise utgaven
       new_features:
@@ -3568,40 +3557,38 @@
 
             '
           new_features_list:
-            line_0: XWiki integration (Corporate plan).
-            line_1: Sprint goals.
-            line_2: "'All sprints' overview page."
-            line_3: Display backlog buckets in work packages and work package tables.
-            line_4: Improved support for project-based (semantic) identifiers.
-            line_5: Convert meeting agenda items into work packages.
-            line_6: Configure cost types per project.
+            line_0: Automated project initiation (Enterprise add-on).
+            line_1: "Meetings: add new or existing work packages as outcomes."
+            line_2: "Meetings: show iCal responses in Yojana."
+            line_3: "Recurring meetings: duplicate agenda items to the next occurrence."
+            line_4: "Release to Community: Attribute highlighting."
+            line_5: Warning before opening external links in user-provided content (Enterprise add-on).
+            line_6: Improved performance and user experience, including the Activity tab and Documents module.
     links:
-      upgrade_enterprise_edition: Oppgrader til Enterprise utgaven
-      postgres_migration: Overføre installasjonen til PostgreSQL
-      user_guides: Brukerveiledning
-      faq: FAQ
-      impressum: Juridisk merknad
-      glossary: Ordliste
-      shortcuts: Snarveier
-      blog: OpenProject blogg
-      forums: Brukerforum
-      security_alerts: Security alerts
-      newsletter: Newsletter
+      upgrade_enterprise_edition: "Oppgrader til Enterprise utgaven"
+      postgres_migration: "Overføre installasjonen til PostgreSQL"
+      user_guides: "Brukerveiledning"
+      faq: "FAQ"
+      impressum: "Juridisk merknad"
+      glossary: "Ordliste"
+      shortcuts: "Snarveier"
+      blog: "Yojana blogg"
+      forums: "Brukerforum"
+      security_alerts: "Security alerts"
+      newsletter: "Newsletter"
   image_conversion:
     imagemagick: Imagemagick
   journals:
     changes_retracted: Endringene er trukket tilbake.
     caused_changes:
-      budget_deleted: Budget has been deleted
-      dates_changed: Datoer endret
-      default_attribute_written: Skrivebeskyttet attributter skrevet
-      import: Imported
-      progress_mode_changed_to_status_based: Fremdriftsberegning oppdatert
-      status_changed: Status '%{status_name}'
-      system_update: 'OpenProject system oppdatering:'
-      work_package_duplicate_closed: 'Duplicate work package updated:'
-      total_percent_complete_mode_changed_to_work_weighted_average: Beregning av % Komplette totaler er nå vektet av arbeid.
-      total_percent_complete_mode_changed_to_simple_average: Beregning av % fullstendige summer nå basert på et enkelt gjennomsnitt av bare % fullført verdier.
+      dates_changed: "Datoer endret"
+      default_attribute_written: "Skrivebeskyttet attributter skrevet"
+      progress_mode_changed_to_status_based: "Fremdriftsberegning oppdatert"
+      status_changed: "Status '%{status_name}'"
+      system_update: "Yojana system oppdatering:"
+      work_package_duplicate_closed: "Duplicate work package updated:"
+      total_percent_complete_mode_changed_to_work_weighted_average: "Beregning av % Komplette totaler er nå vektet av arbeid."
+      total_percent_complete_mode_changed_to_simple_average: "Beregning av % fullstendige summer nå basert på et enkelt gjennomsnitt av bare % fullført verdier."
     cause_descriptions:
       import:
         header: changes by %{author}
@@ -3665,7 +3652,7 @@
         notifications: Notification settings
         email_reminders: Email reminders
     access_tokens:
-      description: Provider tokens are issued by OpenProject, allowing other applications to access it. Client tokens are issued by other applications, allowing OpenProject to access them.
+      description: "Provider tokens are issued by Yojana, allowing other applications to access it. Client tokens are issued by other applications, allowing Yojana to access them."
       no_results:
         title: Ingen tilgangsnøkler å vise
         description: Alle disse er deaktivert. De kan reaktiveres i administrasjonsmenyen.
@@ -3681,49 +3668,49 @@
         provider:
           title: Provider tokens
       token/api:
-        blank_description: There is no API token yet. You can create one using the button below.
-        blank_title: No API token
-        title: API
-        table_title: API tokens
-        text_hint: API-tokens tillater tredjepartsapplikasjoner å kommunisere med denne OpenProject instansen via REST APIs.
-        static_token_name: API token
-        disabled_text: API-nøkler er ikke aktivert av administratoren. Kontakt systemansvarlig for å bruke denne funksjonen.
-        add_button: API token
+        blank_description: "There is no API token yet. You can create one using the button below."
+        blank_title: "No API token"
+        title: "API"
+        table_title: "API tokens"
+        text_hint: "API-tokens tillater tredjepartsapplikasjoner å kommunisere med denne Yojana instansen via REST APIs."
+        static_token_name: "API token"
+        disabled_text: "API-nøkler er ikke aktivert av administratoren. Kontakt systemansvarlig for å bruke denne funksjonen."
+        add_button: "API token"
       ical:
-        blank_description: To add an iCalendar token, subscribe to a new or existing calendar from within the Calendar module of a project. You must have the necessary permissions.
-        blank_title: No iCalendar token
-        title: iCalendar
-        table_title: iCalendar tokens
-        text_hint_link: iCalendar tokens allow users to [subscribe to OpenProject calendars](docs_url) and view up-to-date work package information from external clients.
-        disabled_text: iCalendar-abonnement er ikke aktivert av administratoren. Vennligst kontakt systemansvarlig for å bruke denne funksjonen.
+        blank_description: "To add an iCalendar token, subscribe to a new or existing calendar from within the Calendar module of a project. You must have the necessary permissions."
+        blank_title: "No iCalendar token"
+        title: "iCalendar"
+        table_title: "iCalendar tokens"
+        text_hint_link: "iCalendar tokens allow users to [subscribe to Yojana calendars](docs_url) and view up-to-date work package information from external clients."
+        disabled_text: "iCalendar-abonnement er ikke aktivert av administratoren. Vennligst kontakt systemansvarlig for å bruke denne funksjonen."
       oauth_application:
-        active_tokens: Active tokens
-        blank_description: There is no third-party application access configured and active for you.
-        blank_title: No OAuth application token
-        last_refreshed_at: Last refreshed at
-        title: OAuth
-        table_title: OAuth application tokens
-        text_hint: OAuth application tokens allow third-party applications to connect with this OpenProject instance.
+        active_tokens: "Active tokens"
+        blank_description: "There is no third-party application access configured and active for you."
+        blank_title: "No OAuth application token"
+        last_used_at: "Last used at"
+        title: "OAuth"
+        table_title: "OAuth application tokens"
+        text_hint: "OAuth application tokens allow third-party applications to connect with this Yojana instance."
       oauth_client:
-        blank_description: There are no OAuth client tokens yet.
-        blank_title: No OAuth client tokens
-        failed: An error occurred and the token couldn't be removed. Please try again later.
-        integration_type: Integration type
-        table_title: OAuth client tokens
-        text_hint: OAuth client tokens allow this OpenProject instance to connect with external applications, such as file storages.
-        title: OAuth
-        remove_token: Do you really want to remove this token? You will need to login again on %{integration}.
-        removed: OAuth client token successfully removed
-        unknown_integration: Unknown
+        blank_description: "There are no OAuth client tokens yet."
+        blank_title: "No OAuth client tokens"
+        failed: "An error occurred and the token couldn't be removed. Please try again later."
+        integration_type: "Integration type"
+        table_title: "OAuth client tokens"
+        text_hint: "OAuth client tokens allow this Yojana instance to connect with external applications, such as file storages."
+        title: "OAuth"
+        remove_token: "Do you really want to remove this token? You will need to login again on %{integration}."
+        removed: "OAuth client token successfully removed"
+        unknown_integration: "Unknown"
       token/rss:
-        add_button: RSS token
-        blank_description: There is no RSS token yet. You can create one using the button below.
-        blank_title: No RSS token
-        title: RSS
-        table_title: RSS tokens
-        text_hint: RSS tokens allow users to keep up with the latest changes in this OpenProject instance via an external RSS reader.
-        static_token_name: RSS token
-        disabled_text: RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature.
+        add_button: "RSS token"
+        blank_description: "There is no RSS token yet. You can create one using the button below."
+        blank_title: "No RSS token"
+        title: "RSS"
+        table_title: "RSS tokens"
+        text_hint: "RSS tokens allow users to keep up with the latest changes in this Yojana instance via an external RSS reader."
+        static_token_name: "RSS token"
+        disabled_text: "RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature."
       storages:
         unknown_storage: Ukjent lagring
     email_reminders:
@@ -3947,51 +3934,48 @@
   label_collapse: Skjul
   label_collapsed_click_to_show: Samlet. Klikk for å vise
   label_configuration: konfigurasjon
-  label_comment_add: Legg til en kommentar
-  label_comment_added: Kommentar lagt til
-  label_comment_delete: Slett kommentarer
-  label_comment_plural: Kommentarer
-  label_commits_per_author: Bidrag pr. forfatter
-  label_commits_per_month: Bidrag pr. måned
-  label_confirmation: Bekreftelse
-  label_contains: inneholder
-  label_starts_with: starts with
-  label_content: Innhold
-  label_color_plural: Farger
-  label_copied: kopiert
-  label_copy_same_as_target: Samme som mål
-  label_copy_source: Kilde
-  label_copy_target: Mål
-  label_copy_workflow_from: Kopier arbeidsflyt fra
-  label_copy_workflow_from_type: Copy to another type
-  label_copy_workflow_from_role: Copy to other roles
-  label_copy_project: Kopier prosjekt
-  label_core_version: Kildeversjon
-  label_core_build: Core build
-  label_created_by: Opprettet av %{user}
-  label_current_status: Gjeldende status
-  label_current_version: Gjeldende versjon
-  label_custom_field_add_no_type: Legg dette feltet til en arbeidspakketype
-  label_custom_field_new: Nytt egendefinert felt
-  label_custom_field_plural: Egendefinerte felter
-  label_custom_field_default_type: Tom type
-  label_custom_style: Design
-  label_custom_style_description: Velg hvordan OpenProject ser ut med temaer, velg dine standardfarger som skal brukes i appen og hvordan eksporten ser ut.
-  label_dashboard: Kontrollsenter
-  label_database_version: PostgreSQL versjon
-  label_date: Dato
-  label_dates: Datoer
-  label_date_and_time: Dato og tid
-  label_date_format: Datoformat
-  label_date_from: Fra
-  label_date_from_to: Fra %{start} til %{end}
-  label_date_to: Til
-  label_day_plural: dager
-  label_default: Standard
-  label_delete_user: Slett bruker
-  label_delete_project: Slett prosjekt
-  label_delete: Slett
-  label_deleted: slettet
+  label_comment_add: "Legg til en kommentar"
+  label_comment_added: "Kommentar lagt til"
+  label_comment_delete: "Slett kommentarer"
+  label_comment_plural: "Kommentarer"
+  label_commits_per_author: "Bidrag pr. forfatter"
+  label_commits_per_month: "Bidrag pr. måned"
+  label_confirmation: "Bekreftelse"
+  label_contains: "inneholder"
+  label_content: "Innhold"
+  label_color_plural: "Farger"
+  label_copied: "kopiert"
+  label_copy_same_as_target: "Samme som mål"
+  label_copy_source: "Kilde"
+  label_copy_target: "Mål"
+  label_copy_workflow_from: "Kopier arbeidsflyt fra"
+  label_copy_project: "Kopier prosjekt"
+  label_core_version: "Kildeversjon"
+  label_core_build: "Core build"
+  label_created_by: "Opprettet av %{user}"
+  label_current_status: "Gjeldende status"
+  label_current_version: "Gjeldende versjon"
+  label_custom_field_add_no_type: "Legg dette feltet til en arbeidspakketype"
+  label_custom_field_new: "Nytt egendefinert felt"
+  label_custom_field_plural: "Egendefinerte felter"
+  label_custom_field_default_type: "Tom type"
+  label_custom_style: "Design"
+  label_custom_style_description: "Velg hvordan Yojana ser ut med temaer, velg dine standardfarger som skal brukes i appen og hvordan eksporten ser ut."
+  label_dashboard: "Kontrollsenter"
+  label_database_version: "PostgreSQL versjon"
+  label_date: "Dato"
+  label_dates: "Datoer"
+  label_date_and_time: "Dato og tid"
+  label_date_format: "Datoformat"
+  label_date_from: "Fra"
+  label_date_from_to: "Fra %{start} til %{end}"
+  label_date_to: "Til"
+  label_day_plural: "dager"
+  label_default: "Standard"
+  label_delete_user: "Slett bruker"
+  label_delete_project: "Slett prosjekt"
+  label_delete: "Slett"
+  label_deleted: "slettet"
   label_deleted_custom_field: "(slettet egendefinert felt)"
   label_deleted_custom_item: "(deleted item)"
   label_deleted_custom_option: "(slettet alternativ)"
@@ -4245,61 +4229,53 @@
   label_not_found: ikke funnet
   label_none: ingen
   label_none_parentheses: "(ingen)"
-  label_not_contains: inneholder ikke
-  label_not_equals: er ikke
-  label_life_cycle_step_plural: Project life cycle
-  label_on: på
-  label_operator_all: er ikke tom
-  label_operator_none: er tom
-  label_operator_equals_or: is (OR)
-  label_operator_equals_all: is (AND)
-  label_operator_shared_with_user_any: hvilken som helst
-  label_open: åpne
-  label_closed: lukket
-  label_open_menu: Åpne meny
-  label_open_work_packages: åpne
-  label_open_work_packages_plural: åpne
-  label_openproject_website: OpenProject nettsted
-  label_optional_description: Beskrivelse
-  label_options: Alternativer
-  label_other: Øvrig
-  label_overall_activity: Samlet aktivitet
-  label_overview: Oversikt
-  label_page_title: Sidetittel
-  label_parent_group_caption: 'Setting a parent group will make this group a subgroup of the selected parent group. This will also inherit all memberships, including permissions of the parent group.
-
-    '
-  label_part_of: del av
-  label_password_lost: Glemt passord?
-  label_password_rule_lowercase: Små bokstaver
-  label_password_rule_numeric: Numeriske tegn
-  label_password_rule_special: Spesialtegn
-  label_password_rule_uppercase: Store bokstaver
-  label_password_requirement_lowercase: Must contain at least one lowercase character.
-  label_password_requirement_numeric: Must contain at least one numeric character.
-  label_password_requirement_special: Must contain at least one special character.
-  label_password_requirement_uppercase: Must contain at least one uppercase character.
-  label_path_encoding: Koding av sti
-  label_per_page: 'Pr. side:'
-  label_people: Personer
-  label_permissions: Tilganger
-  label_permissions_report: Tilgangsrapport
-  label_personalize_page: Tilpass denne siden
-  label_placeholder_user: Plassholder bruker
-  label_placeholder_user_new: Ny plassholderbruker
-  label_placeholder_user_plural: Plassholder brukere
-  label_planning: Planlegging
-  label_please_login: Vennligst logg på
-  label_plugins: Programtillegg
-  label_portfolio_plural: Portfolios
-  label_modules_and_plugins: Moduler og utvidelser
-  label_precedes: kommer før
-  label_preferences: Innstillinger
-  label_preview: Forhåndsvis
-  label_preview_not_available: Forhåndsvisning ikke tilgjengelig
-  label_previous: Forrige
-  label_previous_week: Forrige uke
-  label_previous_year: Previous year
+  label_not_contains: "inneholder ikke"
+  label_not_equals: "er ikke"
+  label_life_cycle_step_plural: "Project life cycle"
+  label_on: "på"
+  label_operator_all: "er ikke tom"
+  label_operator_none: "er tom"
+  label_operator_equals_or: "is (OR)"
+  label_operator_equals_all: "is (AND)"
+  label_operator_shared_with_user_any: "hvilken som helst"
+  label_open: "åpne"
+  label_closed: "lukket"
+  label_open_menu: "Åpne meny"
+  label_open_work_packages: "åpne"
+  label_open_work_packages_plural: "åpne"
+  label_openproject_website: "Yojana nettsted"
+  label_optional_description: "Beskrivelse"
+  label_options: "Alternativer"
+  label_other: "Øvrig"
+  label_overall_activity: "Samlet aktivitet"
+  label_overview: "Oversikt"
+  label_page_title: "Sidetittel"
+  label_part_of: "del av"
+  label_password_lost: "Glemt passord?"
+  label_password_rule_lowercase: "Små bokstaver"
+  label_password_rule_numeric: "Numeriske tegn"
+  label_password_rule_special: "Spesialtegn"
+  label_password_rule_uppercase: "Store bokstaver"
+  label_path_encoding: "Koding av sti"
+  label_per_page: "Pr. side:"
+  label_people: "Personer"
+  label_permissions: "Tilganger"
+  label_permissions_report: "Tilgangsrapport"
+  label_personalize_page: "Tilpass denne siden"
+  label_placeholder_user: "Plassholder bruker"
+  label_placeholder_user_new: "Ny plassholderbruker"
+  label_placeholder_user_plural: "Plassholder brukere"
+  label_planning: "Planlegging"
+  label_please_login: "Vennligst logg på"
+  label_plugins: "Programtillegg"
+  label_portfolio_plural: "Portfolios"
+  label_modules_and_plugins: "Moduler og utvidelser"
+  label_precedes: "kommer før"
+  label_preferences: "Innstillinger"
+  label_preview: "Forhåndsvis"
+  label_preview_not_available: "Forhåndsvisning ikke tilgjengelig"
+  label_previous: "Forrige"
+  label_previous_week: "Forrige uke"
   label_principal_invite_via_email: " eller inviter nye brukere via e-post"
   label_principal_search: Legg til eksisterende brukere eller grupper
   label_privacy_policy: Data personvern og sikkerhetspolicy
@@ -4700,11 +4676,11 @@
   mail_body_backup_token_reset_user_info: Din sikkerhetskopi-nøkkel har blitt tilbakestilt.
   mail_body_backup_token_info: Den forrige nøkkelen er ikke lenger gyldig.
   mail_body_backup_waiting_period: Den nye nøkkelen vil være aktivert i %{hours} timer.
-  mail_body_backup_token_warning: Hvis dette ikke var deg, logg inn på OpenProject umiddelbart og tilbakestill det igjen.
-  mail_body_incoming_email_error: E-posten du sendte til OpenProject kunne ikke behandles.
-  mail_body_incoming_email_error_in_reply_to: På %{received_at} skrev  %{from_email}
-  mail_body_incoming_email_error_logs: Logger
-  mail_body_lost_password: 'Trykk på følgende lenke for å endre passordet ditt:'
+  mail_body_backup_token_warning: Hvis dette ikke var deg, logg inn på Yojana umiddelbart og tilbakestill det igjen.
+  mail_body_incoming_email_error: E-posten du sendte til Yojana kunne ikke behandles.
+  mail_body_incoming_email_error_in_reply_to: "På %{received_at} skrev  %{from_email}"
+  mail_body_incoming_email_error_logs: "Logger"
+  mail_body_lost_password: "Trykk på følgende lenke for å endre passordet ditt:"
   mail_password_change_not_possible:
     title: Endre passord ikke mulig
     body: Kontoen din på %{app_title} er koblet til en ekstern autentiseringsleverandør (%{name}).
@@ -4714,23 +4690,23 @@
   mail_body_register_user: Kjære %{name},
   mail_body_register_links_html: |
     Du må gjerne ta en titt på vår youtube kanal (%{youtube_link}) hvor vi tilbyr et webinar (%{webinar_link})
-    og "Kom i gang"-videoer (%{get_started_link}) for å gjøre dine første skritt i OpenProject så enkle som mulig.
+    og "Kom i gang"-videoer (%{get_started_link}) for å gjøre dine første skritt i Yojana så enkle som mulig.
     <br />
     Hvis du har ytterligere spørsmål, se vår dokumentasjon (%{documentation_link}) eller kontakt din administrator.
-  mail_body_register_closing: Din OpenProject gruppe
-  mail_body_register_ending: Hold kontakt! Vennlig hilsen,
+  mail_body_register_closing: "Din Yojana gruppe"
+  mail_body_register_ending: "Hold kontakt! Vennlig hilsen,"
   mail_body_reminder: "%{count} arbeidspakke(r) som er tildelt deg forfaller de neste %{days} dager:"
   mail_body_group_reminder: '%{count} arbeidspakke(r) som er tilordnet gruppen "%{group}" forfaller de neste %{days} dagene:'
   mail_body_wiki_page_added: Wiki-siden '%{id}' er opprettet av %{author}.
   mail_body_wiki_page_updated: Wiki-siden '%{id}' har blitt oppdatert av %{author}.
   mail_subject_account_activation_request: "%{value} forespørsler om kontoaktivering"
-  mail_subject_backup_ready: Sikkerhetskopien er klar
-  mail_subject_backup_token_reset: Resett sikkerhetskopierings-nøkkel
-  mail_subject_incoming_email_error: En e-post du sendte til OpenProject kunne ikke behandles
-  mail_subject_lost_password: Ditt %{value} passord
-  mail_subject_register: Din %{value} kontoaktivering
-  mail_subject_wiki_content_added: Wiki-siden '%{id}' er lagt til
-  mail_subject_wiki_content_updated: Wiki-siden '%{id}' er oppdatert
+  mail_subject_backup_ready: "Sikkerhetskopien er klar"
+  mail_subject_backup_token_reset: "Resett sikkerhetskopierings-nøkkel"
+  mail_subject_incoming_email_error: "En e-post du sendte til Yojana kunne ikke behandles"
+  mail_subject_lost_password: "Ditt %{value} passord"
+  mail_subject_register: "Din %{value} kontoaktivering"
+  mail_subject_wiki_content_added: "Wiki-siden '%{id}' er lagt til"
+  mail_subject_wiki_content_updated: "Wiki-siden '%{id}' er oppdatert"
   mail_member_added_project:
     subject: "%{project} – Du har blitt lagt til som medlem"
     body:
@@ -4754,17 +4730,17 @@
       roles: 'Du har nå følgende roller:'
   mail_user_activation_limit_reached:
     subject: Grensen for brukeraktivering er nådd
-    message_html: |
-      A new user (%{email}) tried to create an account on an OpenProject environment that you manage (%{host}).
-      The user cannot activate their account since the user limit has been reached.
+    message: |
+      En ny bruker (%{email}) prøvde å opprette en konto på et Yojana miljø som du administrerer (%{host}).
+      Brukeren kan ikke aktivere sin konto siden brukergrensen er nådd.
     steps:
-      a: Oppgrader din betalingsplan ([here](upgrade_url))
-      b: Lås eller slett en eksisterende bruker ([here](users_url))
-      label: 'For at brukeren skal kunne logge på kan du enten: '
-  more_actions: Flere funksjoner
-  noscript_description: Du må aktivere JavaScript for å bruke OpenProject!
-  noscript_heading: JavaScript deaktivert
-  noscript_learn_more: Mer informasjon
+      label: "For at brukeren skal kunne logge på kan du enten: "
+      a: "Oppgrader din betalingsplan ([here](upgrade_url))" #here turned into a link
+      b: "Lås eller slett en eksisterende bruker ([here](users_url))" #here turned into a link
+  more_actions: "Flere funksjoner"
+  noscript_description: "Du må aktivere JavaScript for å bruke Yojana!"
+  noscript_heading: "JavaScript deaktivert"
+  noscript_learn_more: "Mer informasjon"
   notice_accessibility_mode: Tilgjengelighetsmodus kan aktiveres i dine [kontoinnstillinger](url).
   notice_account_activated: Din konto er aktivert. Du kan nå logge inn.
   notice_account_already_activated: Kontoen er allerede aktivert.
@@ -4840,10 +4816,10 @@
   notice_automatic_set_of_standard_type: Sett standardtype automatisk.
   notice_logged_out: Du ble logget av.
   notice_wont_delete_auth_source: LDAP-tilkoblingen kan ikke slettes så lenge det fortsatt er brukere som bruker den.
-  notice_project_cannot_update_custom_fields: 'Du kan ikke oppdatere prosjektets tilgjengelige egendefinerte felter. Prosjektet er ugyldig: %{errors}'
-  notice_attachment_migration_wiki_page: 'Denne siden ble automatisk generert under oppdateringen av OpenProject. Den inneholder alle vedlegg tidligere knyttet til %{container_type} "%{container_name}".
-
-    '
+  notice_project_cannot_update_custom_fields: "Du kan ikke oppdatere prosjektets tilgjengelige egendefinerte felter. Prosjektet er ugyldig: %{errors}"
+  notice_attachment_migration_wiki_page: >
+    Denne siden ble automatisk generert under oppdateringen av Yojana. Den inneholder alle vedlegg tidligere knyttet til %{container_type} "%{container_name}".
+  #Default format for numbers
   number:
     format:
       delimiter: ";"
@@ -4864,138 +4840,127 @@
           mb: MB
           tb: TB
   onboarding:
-    heading_getting_started: Få en oversikt
-    text_getting_started_description: Få en rask oversikt over prosjektledelse og teamsamarbeid med OpenProject. Du kan starte denne videoen på nytt fra hjelp-menyen.
-    welcome: Velkommen til %{app_title}
-    select_language: Vennligst velg språk
-  open_project:
-    common:
-      work_package_card_component:
-        drag_handle:
-          label: Drag to reorder
-        menu:
-          label_actions: Work package actions
-        parent: Parent
-        undisclosed: Undisclosed
-  permission_add_work_package_comments: Add comments
-  permission_add_work_packages: Legg til arbeidspakker
-  permission_add_messages: Skriv meldinger
-  permission_add_project: Opprett prosjekt
-  permission_add_portfolios: Create portfolios
-  permission_add_programs: Create programs
-  permission_add_work_package_attachments: Legg til vedlegg
-  permission_add_work_package_attachments_explanation: Tillater å legge til vedlegg uten å redigere arbeidspakke-tillatelse
-  permission_add_internal_comments: Write internal comments
-  permission_archive_project: Arkiver prosjekt
-  permission_create_user: Opprett brukere
-  permission_manage_user: Rediger brukere
-  permission_manage_placeholder_user: Opprette, rediger og slett plassholderbrukere
-  permission_add_subprojects: Opprett underprosjekt
-  permission_add_work_package_watchers: Legg til overvåker
-  permission_assign_versions: Tilordne versjoner
-  permission_browse_repository: Skrivebeskyttet tilgang til arkivet (bla og utsjekking)
-  permission_change_work_package_status: Endre status på arbeidspakke
-  permission_change_work_package_status_explanation: Tillater endring av status uten å legge til arbeidspakker
-  permission_comment_news: Kommenter nyheter
-  permission_commit_access: Lese/skrive tilgang til kodelageret (standard)
-  permission_copy_projects: Kopier prosjekter
-  permission_copy_projects_explanation: In template projects, this permission has a secondary function, it allows the creation of new projects derived from the template.
-  permission_copy_work_packages: Duplicate work packages
-  permission_create_backup: Opprett sikkerhetskopier
-  permission_delete_work_package_watchers: Slett overvåkere
-  permission_delete_work_packages: Slett arbeidspakker
-  permission_delete_messages: Slett meldinger
-  permission_delete_own_messages: Slette egne meldinger
-  permission_delete_reportings: Slett rapporteringer
-  permission_delete_timelines: Slett tidslinjer
-  permission_edit_work_package_comments: Moderate comments
-  permission_edit_work_package_comments_explanation: 'Caution: Users with this permission are able to edit anyone''s comment.'
-  permission_edit_work_packages: Rediger arbeidspakker
-  permission_edit_messages: Rediger meldinger
-  permission_edit_own_internal_comments: Edit own internal comments
-  permission_edit_own_work_package_comments: Edit own comments
-  permission_edit_own_messages: Rediger egne meldinger
-  permission_edit_own_time_entries: Rediger egne tidsrapporter
-  permission_edit_others_internal_comments: Moderate internal comments
-  permission_edit_others_internal_comments_explanation: 'Caution: Users with this permission are able to edit other users'' internal comments.'
-  permission_edit_project: Rediger prosjekt
-  permission_edit_project_attributes: Rediger prosjektattributter
-  permission_edit_project_phases: Edit project phases
-  permission_edit_reportings: Rediger rapporteringer
-  permission_edit_time_entries: Rediger tidslogger for andre brukere
-  permission_edit_timelines: Rediger tidslinjer
-  permission_edit_wiki_pages: Rediger wiki-sider
-  permission_export_work_packages: Eksporter arbeidspakker
-  permission_export_projects: Export projects
-  permission_invite_members_by_email: Invite members by email
-  permission_invite_members_by_email_explanation: 'Allows users to invite new members by email. Invited users will receive an email with a link to set their password and activate their account. Depends on the permission to manage members
-
-    '
-  permission_log_own_time: Logg egen tid
-  permission_log_time: Logg tid for andre brukere
-  permission_manage_forums: Administrere forum
-  permission_manage_categories: Administrere kategorier for arbeidspakker
-  permission_manage_dashboards: Behandle dashbord
-  permission_manage_work_package_relations: Administrere relasjoner for arbeidspakker
-  permission_manage_members: Administrere medlemmer
-  permission_manage_news: Administrere nyheter
-  permission_manage_project_activities: Administrere prosjektaktiviteter
-  permission_manage_public_queries: Administrer offentlige visninger
-  permission_manage_repository: Administrere pakkebrønner
-  permission_manage_subtasks: Administrere arbeidspakkehierarkier
-  permission_manage_versions: Administrere versjoner
-  permission_manage_wiki: Administrere wiki
-  permission_manage_own_working_times: Manage own working times
-  permission_manage_own_working_times_explanation: 'Allows users to manage their own working times, and personal non-working days.
-
-    '
-  permission_manage_working_times: Manage working times for all users
-  permission_manage_working_times_explanation: 'Allows users to manage working times for all users, including personal non-working days.
-
-    '
-  permission_move_work_packages: Flytt arbeidspakker
-  permission_save_queries: Lagre visninger
-  permission_search_project: Søk i prosjekt
-  permission_select_custom_fields: Velg egendefinerte felt
-  permission_select_project_custom_fields: Velg prosjektegenskaper
-  permission_select_project_phases: Select project phases
-  permission_select_project_phases_explanation: Activate/Deactivate the phases in a project. Enables the user to select the life cycle appropriate for the project as inactive phases will not be visible in the project overview page nor the project list.
-  permission_select_project_modules: Velg prosjektmoduler
-  permission_share_work_packages: Del arbeidspakker
-  permission_manage_types: Velg typer
-  permission_manage_own_reminders: Create own reminders
-  permission_view_all_principals: View all users and groups
-  permission_view_all_principals_explanation: 'Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
-
-    '
-  permission_view_project: Vis prosjekter
-  permission_view_changesets: Se revideringer av lagringssteder i OpenProject
-  permission_view_internal_comments: View internal comments
-  permission_view_commit_author_statistics: Vis statistikk over forfatterbidrag
-  permission_view_dashboards: Vis dashbord
-  permission_view_work_package_watchers: Vis liste over overvåkere
-  permission_view_work_packages: Vis arbeidspakker
-  permission_view_messages: Vis meldinger
-  permission_view_news: Vis nyheter
-  permission_view_members: Vis medlemmer
-  permission_view_reportings: Vis rapporteringer
-  permission_view_shared_work_packages: Vis delte arbeidspakke
-  permission_view_time_entries: Vis tidsbruk
-  permission_view_timelines: Vis tidslinjer
-  permission_view_user_email: Vis brukernes postadresser
-  permission_view_wiki_edits: Vis wiki-historikk
-  permission_view_wiki_pages: Vis wiki
-  permission_work_package_assigned: Bli utførende/ansvarlig
-  permission_work_package_assigned_explanation: Arbeidspakker kan tildeles brukere og grupper med denne rollen i det respektive prosjektet
-  permission_view_project_activity: Vis prosjektaktivitet
-  permission_view_project_attributes: Vis prosjektattributter
-  permission_view_project_phases: View project phases
-  permission_save_bcf_queries: Lagre BCF-spørringer
-  permission_manage_public_bcf_queries: Administrere offentlige BCF-spørringer
-  permission_edit_attribute_help_texts: Rediger hjelpetekster for egenskap
-  permission_manage_public_project_queries: Administrere offentlige prosjektlister
-  permission_view_project_query: Vis prosjektspørring
-  permission_edit_project_query: Rediger prosjektspørring
+    heading_getting_started: "Få en oversikt"
+    text_getting_started_description: "Få en rask oversikt over prosjektledelse og teamsamarbeid med Yojana. Du kan starte denne videoen på nytt fra hjelp-menyen."
+    welcome: "Velkommen til %{app_title}"
+    select_language: "Vennligst velg språk"
+  permission_add_work_package_comments: "Add comments"
+  permission_add_work_packages: "Legg til arbeidspakker"
+  permission_add_messages: "Skriv meldinger"
+  permission_add_project: "Opprett prosjekt"
+  permission_add_portfolios: "Create portfolios"
+  permission_add_programs: "Create programs"
+  permission_add_work_package_attachments: "Legg til vedlegg"
+  permission_add_work_package_attachments_explanation: "Tillater å legge til vedlegg uten å redigere arbeidspakke-tillatelse"
+  permission_add_internal_comments: "Write internal comments"
+  permission_archive_project: "Arkiver prosjekt"
+  permission_create_user: "Opprett brukere"
+  permission_manage_user: "Rediger brukere"
+  permission_manage_placeholder_user: "Opprette, rediger og slett plassholderbrukere"
+  permission_add_subprojects: "Opprett underprosjekt"
+  permission_add_work_package_watchers: "Legg til overvåker"
+  permission_assign_versions: "Tilordne versjoner"
+  permission_browse_repository: "Skrivebeskyttet tilgang til arkivet (bla og utsjekking)"
+  permission_change_wiki_parent_page: "Endre overordnet wiki-side"
+  permission_change_work_package_status: "Endre status på arbeidspakke"
+  permission_change_work_package_status_explanation: "Tillater endring av status uten å legge til arbeidspakker"
+  permission_comment_news: "Kommenter nyheter"
+  permission_commit_access: "Lese/skrive tilgang til kodelageret (standard)"
+  permission_copy_projects: "Kopier prosjekter"
+  permission_copy_projects_explanation: "In template projects, this permission has a secondary function, it allows the creation of new projects derived from the template."
+  permission_copy_work_packages: "Duplicate work packages"
+  permission_create_backup: "Opprett sikkerhetskopier"
+  permission_delete_work_package_watchers: "Slett overvåkere"
+  permission_delete_work_packages: "Slett arbeidspakker"
+  permission_delete_messages: "Slett meldinger"
+  permission_delete_own_messages: "Slette egne meldinger"
+  permission_delete_reportings: "Slett rapporteringer"
+  permission_delete_timelines: "Slett tidslinjer"
+  permission_delete_wiki_pages: "Slett wiki-sider"
+  permission_delete_wiki_pages_attachments: "Slett vedlegg"
+  permission_edit_work_package_comments: "Moderate comments"
+  permission_edit_work_package_comments_explanation: "Caution: Users with this permission are able to edit anyone's comment."
+  permission_edit_work_packages: "Rediger arbeidspakker"
+  permission_edit_messages: "Rediger meldinger"
+  permission_edit_own_internal_comments: "Edit own internal comments"
+  permission_edit_own_work_package_comments: "Edit own comments"
+  permission_edit_own_messages: "Rediger egne meldinger"
+  permission_edit_own_time_entries: "Rediger egne tidsrapporter"
+  permission_edit_others_internal_comments: "Moderate internal comments"
+  permission_edit_others_internal_comments_explanation: "Caution: Users with this permission are able to edit other users' internal comments."
+  permission_edit_project: "Rediger prosjekt"
+  permission_edit_project_attributes: "Rediger prosjektattributter"
+  permission_edit_project_phases: "Edit project phases"
+  permission_edit_reportings: "Rediger rapporteringer"
+  permission_edit_time_entries: "Rediger tidslogger for andre brukere"
+  permission_edit_timelines: "Rediger tidslinjer"
+  permission_edit_wiki_pages: "Rediger wiki-sider"
+  permission_export_work_packages: "Eksporter arbeidspakker"
+  permission_export_projects: "Export projects"
+  permission_export_wiki_pages: "Eksportèr wiki-sider"
+  permission_invite_members_by_email: "Invite members by email"
+  permission_invite_members_by_email_explanation: >
+    Allows users to invite new members by email. Invited users will receive an email with a link to set their password and activate their account. Depends on the permission to manage members
+  permission_list_attachments: "List vedlegg"
+  permission_log_own_time: "Logg egen tid"
+  permission_log_time: "Logg tid for andre brukere"
+  permission_manage_forums: "Administrere forum"
+  permission_manage_categories: "Administrere kategorier for arbeidspakker"
+  permission_manage_dashboards: "Behandle dashbord"
+  permission_manage_work_package_relations: "Administrere relasjoner for arbeidspakker"
+  permission_manage_members: "Administrere medlemmer"
+  permission_manage_news: "Administrere nyheter"
+  permission_manage_project_activities: "Administrere prosjektaktiviteter"
+  permission_manage_public_queries: "Administrer offentlige visninger"
+  permission_manage_repository: "Administrere pakkebrønner"
+  permission_manage_subtasks: "Administrere arbeidspakkehierarkier"
+  permission_manage_versions: "Administrere versjoner"
+  permission_manage_wiki: "Administrere wiki"
+  permission_manage_wiki_menu: "Administrere wiki-meny"
+  permission_move_work_packages: "Flytt arbeidspakker"
+  permission_protect_wiki_pages: "Beskytt wiki-sider"
+  permission_rename_wiki_pages: "Gi nytt navn til wiki-sider"
+  permission_save_queries: "Lagre visninger"
+  permission_search_project: "Søk i prosjekt"
+  permission_select_custom_fields: "Velg egendefinerte felt"
+  permission_select_project_custom_fields: "Velg prosjektegenskaper"
+  permission_select_project_phases: "Select project phases"
+  permission_select_project_phases_explanation: "Activate/Deactivate the phases in a project. Enables the user to select the life cycle appropriate for the project as inactive phases will not be visible in the project overview page nor the project list."
+  permission_select_project_modules: "Velg prosjektmoduler"
+  permission_share_work_packages: "Del arbeidspakker"
+  permission_manage_types: "Velg typer"
+  permission_manage_own_reminders: "Create own reminders"
+  permission_view_all_principals: "View all users and groups"
+  permission_view_all_principals_explanation: >
+    Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
+  permission_view_project: "Vis prosjekter"
+  permission_view_changesets: "Se revideringer av lagringssteder i Yojana"
+  permission_view_internal_comments: "View internal comments"
+  permission_view_commit_author_statistics: "Vis statistikk over forfatterbidrag"
+  permission_view_dashboards: "Vis dashbord"
+  permission_view_work_package_watchers: "Vis liste over overvåkere"
+  permission_view_work_packages: "Vis arbeidspakker"
+  permission_view_messages: "Vis meldinger"
+  permission_view_news: "Vis nyheter"
+  permission_view_members: "Vis medlemmer"
+  permission_view_reportings: "Vis rapporteringer"
+  permission_view_shared_work_packages: "Vis delte arbeidspakke"
+  permission_view_time_entries: "Vis tidsbruk"
+  permission_view_timelines: "Vis tidslinjer"
+  permission_view_user_email: "Vis brukernes postadresser"
+  permission_view_wiki_edits: "Vis wiki-historikk"
+  permission_view_wiki_pages: "Vis wiki"
+  permission_work_package_assigned: "Bli utførende/ansvarlig"
+  permission_work_package_assigned_explanation: "Arbeidspakker kan tildeles brukere og grupper med denne rollen i det respektive prosjektet"
+  permission_view_project_activity: "Vis prosjektaktivitet"
+  permission_view_project_attributes: "Vis prosjektattributter"
+  permission_view_project_phases: "View project phases"
+  permission_save_bcf_queries: "Lagre BCF-spørringer"
+  permission_manage_public_bcf_queries: "Administrere offentlige BCF-spørringer"
+  permission_edit_attribute_help_texts: "Rediger hjelpetekster for egenskap"
+  permission_manage_public_project_queries: "Administrere offentlige prosjektlister"
+  permission_view_project_query: "Vis prosjektspørring"
+  permission_edit_project_query: "Rediger prosjektspørring"
   placeholders:
     default: "-"
     templated_hint: Automatically generated through type %{type}
@@ -5099,49 +5064,50 @@
     create_successful: Datakatalogen er registrert.
     delete_sucessful: Arkivet har blitt slettet.
     destroy:
-      confirmation: Hvis du fortsetter, vil dette slette et gjeldende kodelager.
-      info: Sletting av kodelageret kan ikke angres.
-      info_not_managed: 'Merk: Dette vil ikke slette innholdet i dette kodelageret, da det ikke administreres av OpenProject.'
-      managed_path_note: 'Den følgende mappen vil bli slettet: %{path}'
-      repository_verification_html: Enter the project's identifier %{identifier} to verify the deletion of its repository.
-      subtitle: Vil du virkelig slette %{repository_type} i prosjektet %{project_name}-?
-      subtitle_not_managed_html: Do you really want to remove the linked %{repository_type} %{url} from the project %{project_name}?
-      title_html: Delete the %{repository_type}
-      title_not_managed: Fjerne den koblede %{repository_type}?
+      confirmation: "Hvis du fortsetter, vil dette slette et gjeldende kodelager."
+      info: "Sletting av kodelageret kan ikke angres."
+      info_not_managed: "Merk: Dette vil ikke slette innholdet i dette kodelageret, da det ikke administreres av Yojana."
+      managed_path_note: "Den følgende mappen vil bli slettet: %{path}"
+      repository_verification: "Skriv inn prosjektets identifikator %{identifier} for å bekrefte sletting av depotet."
+      subtitle: "Vil du virkelig slette %{repository_type} i prosjektet %{project_name}-?"
+      subtitle_not_managed: "Vil du virkelig fjerne den koblede %{repository_type} %{url} fra prosjektet %{project_name}?"
+      title: "Slett %{repository_type}"
+      title_not_managed: "Fjerne den koblede %{repository_type}?"
     errors:
-      build_failed: Kan ikke opprette kodelager med den valgte konfigurasjonen. %{reason}
-      managed_delete: Kan ikke slette det administrerte kodelageret.
-      managed_delete_local: 'Kan ikke slette det lokale kodelageret i filsystemet på ''%{path}'': %{error_message}'
-      empty_repository: Kodelageret eksisterer, men er tomt. Det inneholder ingen versjoner ennå.
-      exists_on_filesystem: Arkivmappen finnes allerede i filsystemet.
-      filesystem_access_failed: 'En feil oppstod under tilgang til kodelageret i filsystemet: %{message}'
-      not_manageable: Denne kodelager-leverandøren kan ikke administreres av OpenProject.
-      path_permission_failed: 'En feil oppstod under oppretting av følgende sti: %{path}. Kontroller at OpenProject kan skrive til denne mappen.'
-      unauthorized: Du har ikke tilgang til kodelageret eller informasjonen er ugyldig.
-      unavailable: Kodelageret er ikke tilgjengelig.
-      exception_title: 'Kan ikke aksessere kodelageret: %{message}'
-      disabled_or_unknown_type: Den valgte typen %{type} er deaktivert eller ikke lenger tilgjengelig for SCM leverandøren %{vendor}.
-      disabled_or_unknown_vendor: SCM leverandør %{vendor} er deaktivert eller ikke lenger tilgjengelig.
-      remote_call_failed: 'Oppkoblingen den forespurte eksterne som ble håndtert mislyktes med meldingen ''%{message}'' (kode: %{code})'
-      remote_invalid_response: Mottok et ugyldig svar fra den forespurte eksterne.
-      remote_save_failed: Kunne ikke lagre kodelageret med parametrene hentet eksternt.
+      build_failed: "Kan ikke opprette kodelager med den valgte konfigurasjonen. %{reason}"
+      managed_delete: "Kan ikke slette det administrerte kodelageret."
+      managed_delete_local: "Kan ikke slette det lokale kodelageret i filsystemet på '%{path}': %{error_message}"
+      empty_repository: "Kodelageret eksisterer, men er tomt. Det inneholder ingen versjoner ennå."
+      exists_on_filesystem: "Arkivmappen finnes allerede i filsystemet."
+      filesystem_access_failed: "En feil oppstod under tilgang til kodelageret i filsystemet: %{message}"
+      not_manageable: "Denne kodelager-leverandøren kan ikke administreres av Yojana."
+      path_permission_failed: "En feil oppstod under oppretting av følgende sti: %{path}. Kontroller at Yojana kan skrive til denne mappen."
+      unauthorized: "Du har ikke tilgang til kodelageret eller informasjonen er ugyldig."
+      unavailable: "Kodelageret er ikke tilgjengelig."
+      exception_title: "Kan ikke aksessere kodelageret: %{message}"
+      disabled_or_unknown_type: "Den valgte typen %{type} er deaktivert eller ikke lenger tilgjengelig for SCM leverandøren %{vendor}."
+      disabled_or_unknown_vendor: "SCM leverandør %{vendor} er deaktivert eller ikke lenger tilgjengelig."
+      remote_call_failed: "Oppkoblingen den forespurte eksterne som ble håndtert mislyktes med meldingen '%{message}' (kode: %{code})"
+      remote_invalid_response: "Mottok et ugyldig svar fra den forespurte eksterne."
+      remote_save_failed: "Kunne ikke lagre kodelageret med parametrene hentet eksternt."
     git:
       instructions:
-        managed_url: Dette er URL-adressen til den administrerte (lokale) Git-arkivet.
-        path: Angi banen til ditt lokale register ( f.eks %{example_path} ). Du kan også bruke eksterne kodelager som er klonet til en lokal kopi ved å bruke en verdi som begynner med http(s):// eller file://.
-        path_encoding: 'Overstyr Git bane koding (Standard: UTF-8)'
-      local_title: Koble til eksisterende lokalt Git register
-      local_url: Lokal URL
-      local_introduction: Hvis du allerede har et lokalt Git-arkiv, kan du koble det med OpenProject til å få tilgang til det fra programmet.
-      managed_introduction: La OpenProject opprette og integrere et lokalt Git-arkiv automatisk.
-      managed_title: Git kodelager integrert i OpenProject
-      managed_url: Administrert URL
-      path: Sti til Git kodelageret
-      path_encoding: Koding av sti
-    go_to_revision: Gå til revisjon
-    managed_remote: Administrerte oppbevaringssted for denne leverandøren håndteres eksternt.
-    managed_remote_note: Informasjon om URL-en og stien til dette kodelageret er ikke tilgjengelig før det opprettes.
-    managed_url: Administrert URL
+        managed_url: "Dette er URL-adressen til den administrerte (lokale) Git-arkivet."
+        path: >-
+          Angi banen til ditt lokale register ( f.eks %{example_path} ). Du kan også bruke eksterne kodelager som er klonet til en lokal kopi ved å bruke en verdi som begynner med http(s):// eller file://.
+        path_encoding: "Overstyr Git bane koding (Standard: UTF-8)"
+      local_title: "Koble til eksisterende lokalt Git register"
+      local_url: "Lokal URL"
+      local_introduction: "Hvis du allerede har et lokalt Git-arkiv, kan du koble det med Yojana til å få tilgang til det fra programmet."
+      managed_introduction: "La Yojana opprette og integrere et lokalt Git-arkiv automatisk."
+      managed_title: "Git kodelager integrert i Yojana"
+      managed_url: "Administrert URL"
+      path: "Sti til Git kodelageret"
+      path_encoding: "Koding av sti"
+    go_to_revision: "Gå til revisjon"
+    managed_remote: "Administrerte oppbevaringssted for denne leverandøren håndteres eksternt."
+    managed_remote_note: "Informasjon om URL-en og stien til dette kodelageret er ikke tilgjengelig før det opprettes."
+    managed_url: "Administrert URL"
     settings:
       automatic_managed_repos_disabled: Deaktivere automatisk opprettelse
       automatic_managed_repos: Automatisk oppretting av administrerte kodelagre
@@ -5149,206 +5115,179 @@
     scm_vendor: Styringssystem for kildekontroll
     scm_type: Kodelager type
     scm_types:
-      local: Koble til eksisterende lokalt kodelager
-      existing: Koble til eksisterende kodelager
-      managed: Opprett et nytt kodelager i OpenProject
+      local: "Koble til eksisterende lokalt kodelager"
+      existing: "Koble til eksisterende kodelager"
+      managed: "Opprett et nytt kodelager i Yojana"
     storage:
-      not_available: Ledig lagring er ikke tilgjengelig for dette kodelageret.
-      update_timeout: |-
-        Behold den siste nødvendige lagringsplassinformasjonen i et sted i N minutter.
-        Når det kreves diskplass i et lagringssted, kan det være kostbart å øke denne verdien for å redusere ytelsesbelastningen.
-      oauth_application_details_html: 'The client secret value will not be accessible again after you close this window. Please copy these values into the Nextcloud OpenProject Integration settings:'
-      oauth_application_details_link_text: Gå til innstillingssiden
-      setup_documentation_details: 'Hvis du trenger hjelp til å konfigurere en ny fillagring, bør du kontrollere dokumentasjonen: '
-      setup_documentation_details_link_text: File storages setup
-      show_warning_details: For å bruke denne fillagringen, husk å aktivere modulen og spesifikk lagring i prosjektinnstillingene for hvert ønsket prosjekt.
+      not_available: "Ledig lagring er ikke tilgjengelig for dette kodelageret."
+      update_timeout: "Behold den siste nødvendige lagringsplassinformasjonen i et sted i N minutter.\nNår det kreves diskplass i et lagringssted, kan det være kostbart å øke denne verdien for å redusere ytelsesbelastningen."
+      oauth_application_details: "Den hemmelige verdien for klienten blir ikke tilgjengelig igjen etter at du har lukket dette vinduet. Kopier disse verdiene inn i Nextcloud Yojana integrasjonsinnstillinger:"
+      oauth_application_details_link_text: "Gå til innstillingssiden"
+      setup_documentation_details: "Hvis du trenger hjelp til å konfigurere en ny fillagring, bør du kontrollere dokumentasjonen: "
+      setup_documentation_details_link_text: "File storages setup"
+      show_warning_details: "For å bruke denne fillagringen, husk å aktivere modulen og spesifikk lagring i prosjektinnstillingene for hvert ønsket prosjekt."
     subversion:
-      existing_title: Eksisterende subversion kodelager
-      existing_introduction: Hvis du allerede har et lokalt Git-arkiv, kan du koble det med OpenProject til å få tilgang til det fra programmet.
-      existing_url: Eksisterende URL
+      existing_title: "Eksisterende subversion kodelager"
+      existing_introduction: "Hvis du allerede har et lokalt Git-arkiv, kan du koble det med Yojana til å få tilgang til det fra programmet."
+      existing_url: "Eksisterende URL"
       instructions:
-        managed_url: Dette er URL-adressen til den administrerte (lokale) underversjonens arkiv.
-        url: |-
-          Angi kodlelagerets URL. Dette kan enten målet et lokalt depot (starter med %{local_proto} ), eller et eksternt depot.
-          Følgende URL-ordninger støttes:
-      managed_title: Underversjonsarkivet er integrert i OpenProject
-      managed_introduction: ''
-      managed_url: Administrert URL
-      password: Kodelager passord
-      username: Repo brukernavn
-    truncated: Beklager, men vi måtte avkorte denne mappen til %{limit}. %{truncated} oppføringer ble utelatt fra listen.
+        managed_url: "Dette er URL-adressen til den administrerte (lokale) underversjonens arkiv."
+        url: "Angi kodlelagerets URL. Dette kan enten målet et lokalt depot (starter med %{local_proto} ), eller et eksternt depot.\nFølgende URL-ordninger støttes:"
+      managed_title: "Underversjonsarkivet er integrert i Yojana"
+      managed_introduction: ""
+      managed_url: "Administrert URL"
+      password: "Kodelager passord"
+      username: "Repo brukernavn"
+    truncated: "Beklager, men vi måtte avkorte denne mappen til %{limit}. %{truncated} oppføringer ble utelatt fra listen."
     named_repository: "%{vendor_name} kodelager"
     update_settings_successful: Innstillingene har blitt lagret.
     url: URL-adressen til kodelager
     warnings:
       cannot_annotate: Denne filen kan ikke kommenteres.
   scheduling:
-    manual: set to Manual
-    automatic: set to Automatic
-  search_input_placeholder: Søk...
-  setting_allowed_link_protocols: Allowed link protocols
-  setting_allowed_link_protocols_text_html: Allow these protocols to be rendered as links in work package descriptions, long text fields and comments. For example, %{tel_code} or %{element_code}. Enter one protocol per line. <br/> Protocols %{http_code}, %{https_code}, and %{mailto_code} are always allowed.
-  setting_capture_external_links: Capture external links
-  setting_capture_external_links_text: 'When enabled, all external links in formatted text will redirect through a warning page before leaving the application. This helps protect users from potentially malicious external websites.
-
-    '
-  setting_capture_external_links_require_login: Require users to be logged in
-  setting_capture_external_links_require_login_text: 'When enabled, users wanting to click on external links need to be logged in before being able to continue.
-
-    '
-  setting_after_first_login_redirect_url: First login redirect
-  setting_after_first_login_redirect_url_text_html: 'Set a path to redirect users after their first login. If empty, redirects to the home page for the onboarding tour. <br/> Example: <code>/my/page</code>
-
-    '
-  setting_after_login_default_redirect_url: After login redirect
-  setting_after_login_default_redirect_url_example_html: 'Set a default path to redirect users after login, if no back link was provided. Redirects to home page if not set. <br/> Example: %{example_code}
-
-    '
-  setting_apiv3_cors_title: Cross-Origin Resource Sharing (CORS)
-  setting_apiv3_cors_enabled: Aktiver CORS
-  setting_apiv3_cors_origins: API V3 Cross-Origin Resource Sharing (CORS) tillatte opprinnelser
-  setting_apiv3_cors_origins_instructions_html: 'If CORS is enabled, these are the origins that are allowed to access OpenProject API. <br/> Please check the [Documentation on the Origin header](docs_url) on how to specify the expected values.
-
-    '
-  setting_apiv3_write_readonly_attributes: Skrivetilgang til skrivebeskyttede egenskaper
-  setting_apiv3_write_readonly_attributes_instructions: 'If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
-
-    '
-  setting_apiv3_write_readonly_attributes_warning: 'This setting has a use-case for e.g., importing data, but allows administrators to impersonate the creation of items as other users. All creation requests are being logged however with the true author.
-
-    '
-  setting_apiv3_write_readonly_attributes_additional_html: 'For more information on attributes and supported resources, please see the [API documentation](api_documentation_link).
-
-    '
-  setting_apiv3_max_page_size: Maksimal størrelse på API side
-  setting_apiv3_max_page_size_instructions: 'Set the maximum page size the API will respond with. It will not be possible to perform API requests that return more values on a single page.
-
-    '
-  setting_apiv3_max_page_size_warning: 'Please only change this value if you are sure why you need it. Setting to a high value will result in significant performance impacts, while a value lower than the per page options will cause errors in paginated views.
-
-    '
-  setting_apiv3_docs: Dokumentasjon
-  setting_apiv3_docs_enabled: Aktiver dokumenter
-  setting_apiv3_docs_enabled_instructions_html: 'Hvis dokumenter er aktivert, kan du få en interaktiv visning av APIv3 dokumentasjonen under <a href="%{link}" target="_blank">%{link}</a>.
-
-    '
-  setting_apiv3_docs_enabled_instructions_warning: 'Please be aware that enabling the API docs on a production system may expose sensitive information or result in accidental loss of data when not being careful. We recommend to only enable this setting for development purposes.
-
-    '
-  setting_attachment_whitelist: Last opp hviteliste for vedlegg
-  setting_email_delivery_method: Leveringsmetode for e-post
-  setting_emails_salutation: Adresser bruker i e-post med
-  setting_oauth_allow_remapping_of_existing_users: Allow remapping of existing users
-  setting_sendmail_location: Plasseringen av sendmail kjørbar
-  setting_sendmail_arguments: Arguments for sendmail
-  setting_smtp_enable_starttls_auto: Bruk STARTTLS automatisk hvis tilgjengelig
-  setting_smtp_ssl: Bruk SSL-tilkobling
-  setting_smtp_address: SMTP-server
-  setting_smtp_port: SMTP-port
-  setting_smtp_authentication: SMTP-Autentisering
-  setting_smtp_user_name: SMTP Brukernavn
-  setting_smtp_password: SMTP passord
-  setting_smtp_domain: SMTP HELO domene
-  setting_activity_days_default: Dager som vises i prosjektaktivitet
-  setting_api_tokens_enabled: Enable API tokens
-  setting_api_tokens_enabled_caption: 'Decide whether users can create personal API tokens in their account settings. These tokens can be used to access the different APIs of OpenProject, such as APIv3 and MCP.
-
-    '
-  setting_app_subtitle: Undertittel for applikasjon
-  setting_app_title: Applikasjonsnavn
-  setting_organization_name: Organization name
-  setting_attachment_max_size: Maksstørrelse for vedlegg
-  setting_show_work_package_attachments: Vis vedlegg i fil-fanen som standard
-  setting_antivirus_scan_mode: Skannemodus
-  setting_antivirus_scan_action: Handling for infisert fil
-  setting_autofetch_changesets: Autofetch kodelagerendringer
-  setting_autologin: Autoinnlogging
-  setting_available_languages: Tilgjengelige språk
-  setting_bcc_recipients: Blindkopi-mottakere (bcc)
-  setting_brute_force_block_after_failed_logins: Blokker bruker etter antall mislykkede påloggingsforsøk
-  setting_brute_force_block_minutes: Tiden brukeren er blokkert for
-  setting_cache_formatted_text: Mellomlagring av formattert tekst
-  setting_use_wysiwyg_description: Velg for å aktivere CKEditor5 WYSIWYG editor for alle brukere som standard. CKEditor har begrenset funksjonalitet for GFM Markdown.
-  setting_column_options: 'Standard kolonner arbeidspakkelister '
-  setting_commit_fix_keywords: Retting av nøkkelord
-  setting_commit_logs_encoding: Lagre meldingskoding
-  setting_commit_logtime_activity_id: Aktivitet for tidsrapport
-  setting_commit_logtime_enabled: Aktiver logging av tidsbruk
-  setting_commit_ref_keywords: Nøkkelordhenvisninger
-  setting_consent_time: Samtykke tid
-  setting_consent_info: Samtykke informasjonstekst
-  setting_consent_required: Samtykke kreves
-  setting_consent_decline_mail: Samtykke e-postadresse for kontakt
-  setting_cross_project_work_package_relations: Tillat relasjoner mellom arbeidspakker i ulike prosjekter
-  setting_csv_escape_formulas: Escape formulas in CSV exports
-  setting_csv_escape_formulas_text: 'Escape spreadsheet formulas in CSV exports by prefixing cells that begin with characters such as =, +, -, or @ with a single quote. This mitigates CSV formula injection when exported files are opened in spreadsheet applications such as Excel. This comes at the downside of modifying the string values inside the CSV, so you may want to disable this if downstream tools require the exact, unescaped cell values.
-
-    '
-  setting_first_week_of_year: Første uke i år inneholder
-  setting_date_format: Dato
-  setting_default_language: Standardspråk
-  setting_default_projects_modules: Standardaktiverte moduler for nye prosjekter
-  setting_default_projects_public: Nye prosjekter er offentlige som standard
-  setting_disable_password_login: Disable password authentication
-  setting_diff_max_lines_displayed: Maks antall linjeforskjeller som vises
-  setting_omniauth_direct_login_provider: Direct login SSO provider
-  setting_display_subprojects_work_packages: Vis arbeidspakker for underprosjekter som standard for hovedprosjekter
-  setting_duration_format: Varighetsformat
-  setting_duration_format_hours_only: Kun timer
-  setting_duration_format_days_and_hours: Dager og timer
-  setting_duration_format_instructions: Dette definerer hvordan arbeid, gjenstående arbeid og varighet på brukt tid vises.
-  setting_emails_footer: Bunntekst for e-post
-  setting_emails_header: Topptekst for e-post
-  setting_email_login: Bruk e-post som innlogging
-  setting_enabled_scm: SCM aktivert
-  setting_enabled_projects_columns: Kolonner i en prosjektliste som vises som standard
-  setting_feeds_enabled: Aktiver Feeds
-  setting_ical_enabled: Aktiver iCalendar abonnementer
-  setting_feeds_limit: Innholdsgrense for Feed
-  setting_file_max_size_displayed: Maks størrelse på tekstfiler som vises inline
-  setting_host_name: Vertsnavn
-  setting_collaborative_editing_hocuspocus_url: Hocuspocus server URL
-  setting_collaborative_editing_hocuspocus_secret: Hocuspocus server secret
-  setting_hours_per_day: Timer per dag
-  setting_hours_per_day_explanation: Dette vil definere hva som anses som en "dag" når varigheten vises i dager og timer (for eksempel hvis dagen er 8 timer, vil 32 timer være 4 dager).
-  setting_invitation_expiration_days: Aktiverings e-post utløper etter
-  setting_invitation_expiration_days_caption: Number of days after which the activation email expires.
-  setting_work_package_done_ratio: Beregning av fremdriftsmodus
-  setting_work_package_done_ratio_field: Arbeidsbasert
-  setting_work_package_done_ratio_field_caption_html: "<i>% Fullført</i> kan fritt settes til en verdi. Hvis du eventuelt angir en verdi for <i>Arbeid</i>, vil <i>gjenstående arbeid</i> automatisk bli hentet."
-  setting_work_package_done_ratio_status: Statusbasert
-  setting_work_package_done_ratio_status_caption_html: Hver status har en <i>% Fullstendig</i> -verdi knyttet til den. Endring av status vil endre <i>% Fullstendig</i>.
-  setting_work_package_done_ratio_explanation_html: 'I <b>arbeidsbasert</b> modus kan % Komplett settes til enhver verdi. Hvis du eventuelt angir en verdi for arbeidet, vil det gjenstående arbeidet automatisk bli hentet ut. I <b>-statusbasert</b> -modus har hver status en % Komplett verdi knyttet til den. Endring av status vil endre % Komplett.
-
-    '
-  setting_work_package_properties: Egenskaper for arbeidspakke
-  setting_work_package_startdate_is_adddate: Bruk gjeldende dato som startdato for nye arbeidspakker
-  setting_work_packages_projects_export_limit: Eksportgrense for arbeidspakker/prosjekter
-  setting_work_packages_projects_export_limit_text: 'Maximum number of work packages or projects that can be included in a single export. Larger exports are truncated to this limit.
-
-    '
-  setting_journal_aggregation_time_minutes: Aggregation period
-  setting_log_requesting_user: Logg brukernavn, navn og e-postadresse for alle forespørsler
-  setting_login_required: Autentisering er påkrevd
-  setting_login_required_caption: When checked, all requests to the application have to be authenticated.
-  setting_lost_password: Enable password reset
-  setting_lost_password_caption: When checked, allow users to reset their own passwords.
-  setting_mail_from: Utgående e-postadresse
-  setting_mail_handler_api_key: API-nøkkel
-  setting_mail_handler_body_delimiters: Avkort e-post etter en av disse linjene
-  setting_mail_handler_body_delimiter_regex: Avkort e-post som samsvarer med denne regex
-  setting_mail_handler_ignore_filenames: Ignorert e-postvedlegg
-  setting_new_project_user_role_id: Rolle gitt til en ikke-administrativ bruker som oppretter et prosjekt
-  setting_new_project_user_role_id_caption: 'Only roles that include the permissions to edit project attributes and to manage members are listed, so that the creator can complete the project setup.
-
-    '
-  setting_new_project_send_confirmation_email: Send notification to author when creating a new project
-  setting_new_project_notification_text: Notification text
-  setting_password_active_rules: Password requirements
-  setting_password_count_former_banned: Antall nylig brukte passord som er blokkert for gjenbruk
-  setting_password_days_valid: Antall dager før bruker er tvunget til å bytte passord
-  setting_password_min_length: Minimumslengde
-  setting_per_page_options: Alternativer for oppføringer pr. side
+    manual: "set to Manual"
+    automatic: "set to Automatic"
+  search_input_placeholder: "Søk..."
+  setting_allowed_link_protocols: "Allowed link protocols"
+  setting_allowed_link_protocols_text_html: >-
+    Allow these protocols to be rendered as links in work package descriptions, long text fields and comments. For example, %{tel_code} or %{element_code}. Enter one protocol per line. <br/> Protocols %{http_code}, %{https_code}, and %{mailto_code} are always allowed.
+  setting_capture_external_links: "Capture external links"
+  setting_capture_external_links_text: >
+    When enabled, all external links in formatted text will redirect through a warning page before leaving the application. This helps protect users from potentially malicious external websites.
+  setting_capture_external_links_require_login: "Require users to be logged in"
+  setting_capture_external_links_require_login_text: >
+    When enabled, users wanting to click on external links need to be logged in before being able to continue.
+  setting_after_first_login_redirect_url: "First login redirect"
+  setting_after_first_login_redirect_url_text_html: >
+    Set a path to redirect users after their first login. If empty, redirects to the home page for the onboarding tour. <br/> Example: <code>/my/page</code>
+  setting_after_login_default_redirect_url: "After login redirect"
+  setting_after_login_default_redirect_url_text_html: >
+    Set a default path to redirect users after login, if no back link was provided. Redirects to home page if not set. <br/> Example: <code>/my/page</code>
+  setting_apiv3_cors_title: "Cross-Origin Resource Sharing (CORS)"
+  setting_apiv3_cors_enabled: "Aktiver CORS"
+  setting_apiv3_cors_origins: "API V3 Cross-Origin Resource Sharing (CORS) tillatte opprinnelser"
+  setting_apiv3_cors_origins_text_html: >
+    Hvis CORS er aktivert, er dette opprinnelsen som har tilgang til Yojana API. <br/> Kontroller <a href="%{origin_link}" target="_blank">Dokumentasjonen på Origin header</a> på hvordan angi de forventede verdiene.
+  setting_apiv3_write_readonly_attributes: "Skrivetilgang til skrivebeskyttede egenskaper"
+  setting_apiv3_write_readonly_attributes_instructions: >
+    If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
+  setting_apiv3_write_readonly_attributes_warning: >
+    This setting has a use-case for e.g., importing data, but allows administrators to impersonate the creation of items as other users. All creation requests are being logged however with the true author.
+  setting_apiv3_write_readonly_attributes_additional: >
+    For more information on attributes and supported resources, please see the %{api_documentation_link}.
+  setting_apiv3_max_page_size: "Maksimal størrelse på API side"
+  setting_apiv3_max_page_size_instructions: >
+    Set the maximum page size the API will respond with. It will not be possible to perform API requests that return more values on a single page.
+  setting_apiv3_max_page_size_warning: >
+    Please only change this value if you are sure why you need it. Setting to a high value will result in significant performance impacts, while a value lower than the per page options will cause errors in paginated views.
+  setting_apiv3_docs: "Dokumentasjon"
+  setting_apiv3_docs_enabled: "Aktiver dokumenter"
+  setting_apiv3_docs_enabled_instructions_html: >
+    Hvis dokumenter er aktivert, kan du få en interaktiv visning av APIv3 dokumentasjonen under <a href="%{link}" target="_blank">%{link}</a>.
+  setting_apiv3_docs_enabled_instructions_warning: >
+    Please be aware that enabling the API docs on a production system may expose sensitive information or result in accidental loss of data when not being careful. We recommend to only enable this setting for development purposes.
+  setting_attachment_whitelist: "Last opp hviteliste for vedlegg"
+  setting_email_delivery_method: "Leveringsmetode for e-post"
+  setting_emails_salutation: "Adresser bruker i e-post med"
+  setting_oauth_allow_remapping_of_existing_users: "Allow remapping of existing users"
+  setting_sendmail_location: "Plasseringen av sendmail kjørbar"
+  setting_sendmail_arguments: "Arguments for sendmail"
+  setting_smtp_enable_starttls_auto: "Bruk STARTTLS automatisk hvis tilgjengelig"
+  setting_smtp_ssl: "Bruk SSL-tilkobling"
+  setting_smtp_address: "SMTP-server"
+  setting_smtp_port: "SMTP-port"
+  setting_smtp_authentication: "SMTP-Autentisering"
+  setting_smtp_user_name: "SMTP Brukernavn"
+  setting_smtp_password: "SMTP passord"
+  setting_smtp_domain: "SMTP HELO domene"
+  setting_activity_days_default: "Dager som vises i prosjektaktivitet"
+  setting_app_subtitle: "Undertittel for applikasjon"
+  setting_app_title: "Applikasjonsnavn"
+  setting_attachment_max_size: "Maksstørrelse for vedlegg"
+  setting_show_work_package_attachments: "Vis vedlegg i fil-fanen som standard"
+  setting_antivirus_scan_mode: "Skannemodus"
+  setting_antivirus_scan_action: "Handling for infisert fil"
+  setting_autofetch_changesets: "Autofetch kodelagerendringer"
+  setting_autologin: "Autoinnlogging"
+  setting_available_languages: "Tilgjengelige språk"
+  setting_bcc_recipients: "Blindkopi-mottakere (bcc)"
+  setting_brute_force_block_after_failed_logins: "Blokker bruker etter antall mislykkede påloggingsforsøk"
+  setting_brute_force_block_minutes: "Tiden brukeren er blokkert for"
+  setting_cache_formatted_text: "Mellomlagring av formattert tekst"
+  setting_use_wysiwyg_description: "Velg for å aktivere CKEditor5 WYSIWYG editor for alle brukere som standard. CKEditor har begrenset funksjonalitet for GFM Markdown."
+  setting_column_options: "Standard kolonner arbeidspakkelister "
+  setting_commit_fix_keywords: "Retting av nøkkelord"
+  setting_commit_logs_encoding: "Lagre meldingskoding"
+  setting_commit_logtime_activity_id: "Aktivitet for tidsrapport"
+  setting_commit_logtime_enabled: "Aktiver logging av tidsbruk"
+  setting_commit_ref_keywords: "Nøkkelordhenvisninger"
+  setting_consent_time: "Samtykke tid"
+  setting_consent_info: "Samtykke informasjonstekst"
+  setting_consent_required: "Samtykke kreves"
+  setting_consent_decline_mail: "Samtykke e-postadresse for kontakt"
+  setting_cross_project_work_package_relations: "Tillat relasjoner mellom arbeidspakker i ulike prosjekter"
+  setting_first_week_of_year: "Første uke i år inneholder"
+  setting_date_format: "Dato"
+  setting_default_language: "Standardspråk"
+  setting_default_projects_modules: "Standardaktiverte moduler for nye prosjekter"
+  setting_default_projects_public: "Nye prosjekter er offentlige som standard"
+  setting_disable_password_login: "Disable password authentication"
+  setting_diff_max_lines_displayed: "Maks antall linjeforskjeller som vises"
+  setting_omniauth_direct_login_provider: "Direct login SSO provider"
+  setting_display_subprojects_work_packages: "Vis arbeidspakker for underprosjekter som standard for hovedprosjekter"
+  setting_duration_format: "Varighetsformat"
+  setting_duration_format_hours_only: "Kun timer"
+  setting_duration_format_days_and_hours: "Dager og timer"
+  setting_duration_format_instructions: "Dette definerer hvordan arbeid, gjenstående arbeid og varighet på brukt tid vises."
+  setting_emails_footer: "Bunntekst for e-post"
+  setting_emails_header: "Topptekst for e-post"
+  setting_email_login: "Bruk e-post som innlogging"
+  setting_enabled_scm: "SCM aktivert"
+  setting_enabled_projects_columns: "Kolonner i en prosjektliste som vises som standard"
+  setting_feeds_enabled: "Aktiver Feeds"
+  setting_ical_enabled: "Aktiver iCalendar abonnementer"
+  setting_feeds_limit: "Innholdsgrense for Feed"
+  setting_file_max_size_displayed: "Maks størrelse på tekstfiler som vises inline"
+  setting_host_name: "Vertsnavn"
+  setting_collaborative_editing_hocuspocus_url: "Hocuspocus server URL"
+  setting_collaborative_editing_hocuspocus_secret: "Hocuspocus server secret"
+  setting_hours_per_day: "Timer per dag"
+  setting_hours_per_day_explanation: >-
+    Dette vil definere hva som anses som en "dag" når varigheten vises i dager og timer (for eksempel hvis dagen er 8 timer, vil 32 timer være 4 dager).
+  setting_invitation_expiration_days: "Aktiverings e-post utløper etter"
+  setting_invitation_expiration_days_caption: "Number of days after which the activation email expires."
+  setting_work_package_done_ratio: "Beregning av fremdriftsmodus"
+  setting_work_package_done_ratio_field: "Arbeidsbasert"
+  setting_work_package_done_ratio_field_caption_html: >-
+    <i>% Fullført</i> kan fritt settes til en verdi. Hvis du eventuelt angir en verdi for <i>Arbeid</i>, vil <i>gjenstående arbeid</i> automatisk bli hentet.
+  setting_work_package_done_ratio_status: "Statusbasert"
+  setting_work_package_done_ratio_status_caption_html: >-
+    Hver status har en <i>% Fullstendig</i> -verdi knyttet til den. Endring av status vil endre <i>% Fullstendig</i>.
+  setting_work_package_done_ratio_explanation_html: >
+    I <b>arbeidsbasert</b> modus kan % Komplett settes til enhver verdi. Hvis du eventuelt angir en verdi for arbeidet, vil det gjenstående arbeidet automatisk bli hentet ut. I <b>-statusbasert</b> -modus har hver status en % Komplett verdi knyttet til den. Endring av status vil endre % Komplett.
+  setting_work_package_properties: "Egenskaper for arbeidspakke"
+  setting_work_package_startdate_is_adddate: "Bruk gjeldende dato som startdato for nye arbeidspakker"
+  setting_work_packages_projects_export_limit: "Eksportgrense for arbeidspakker/prosjekter"
+  setting_journal_aggregation_time_minutes: "Brukers handlinger aggregert innenfor"
+  setting_log_requesting_user: "Logg brukernavn, navn og e-postadresse for alle forespørsler"
+  setting_login_required: "Autentisering er påkrevd"
+  setting_login_required_caption: "When checked, all requests to the application have to be authenticated."
+  setting_lost_password: "Enable password reset"
+  setting_lost_password_caption: "When checked, allow users to reset their own passwords."
+  setting_mail_from: "Utgående e-postadresse"
+  setting_mail_handler_api_key: "API-nøkkel"
+  setting_mail_handler_body_delimiters: "Avkort e-post etter en av disse linjene"
+  setting_mail_handler_body_delimiter_regex: "Avkort e-post som samsvarer med denne regex"
+  setting_mail_handler_ignore_filenames: "Ignorert e-postvedlegg"
+  setting_new_project_user_role_id: "Rolle gitt til en ikke-administrativ bruker som oppretter et prosjekt"
+  setting_new_project_send_confirmation_email: "Send notification to author when creating a new project"
+  setting_new_project_notification_text: "Notification text"
+  setting_password_active_rules: "Aktive tegnklasser"
+  setting_password_count_former_banned: "Antall nylig brukte passord som er blokkert for gjenbruk"
+  setting_password_days_valid: "Antall dager før bruker er tvunget til å bytte passord"
+  setting_password_min_length: "Minimumslengde"
+  setting_password_min_adhered_rules: "Minste antall obligatoriske tegnklasser"
+  setting_per_page_options: "Alternativer for oppføringer pr. side"
   setting_percent_complete_on_status_closed: "% Komplett når statusen er lukket"
   setting_percent_complete_on_status_closed_no_change: Ingen endring
   setting_percent_complete_on_status_closed_no_change_caption_html: Verdien av <i>% Fullfør</i> vil ikke endres selv når en arbeidspakke er lukket.
@@ -5424,15 +5363,13 @@
       not_writable: The setting is not writable and can only be changed by a sysadmin.
       failed_to_update: 'Setting ''%{name}'' could not be updated: %{message}'
     authentication:
-      login: Brukernavn
-      registration: Registration
-      sso: Single Sign-On (SSO)
-      omniauth_direct_login_hint_html: 'If this option is active, login requests will redirect to the configured omniauth provider. The login dropdown and sign-in page will be disabled. <br/> <strong>Note:</strong> Unless you also disable password logins, with this option enabled, users can still log in internally by visiting the <code>%{internal_path}</code> login page.
-
-        '
-      remapping_existing_users_hint: 'If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the OpenProject instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
-
-        '
+      login: "Brukernavn"
+      registration: "Registration"
+      sso: "Single Sign-On (SSO)"
+      omniauth_direct_login_hint_html: >
+        If this option is active, login requests will redirect to the configured omniauth provider. The login dropdown and sign-in page will be disabled. <br/> <strong>Note:</strong> Unless you also disable password logins, with this option enabled, users can still log in internally by visiting the <code>%{internal_path}</code> login page.
+      remapping_existing_users_hint: >
+        If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the Yojana instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
     attachments:
       whitelist_text_html: 'Definer en liste over gydlige fil-typer og/eller mime typer for opplastingsfiler.<br/>Sett inn fil-typer (f.eks. <code>%{ext_example}</code>) eller mime typer (f.eks. <code>%{mime_example}</code>).<br/> La stå tom for å godta at alle filtyper kan lastes opp.  Flere verdier er tillatt (en linje for hver verdi).
 
@@ -5461,10 +5398,9 @@
       modes:
         clamav_socket_html: Skriv inn kontakten for clamd daemon, f.eks %{example}
         clamav_host_html: Angi vertsnavn og port til clamd daemon separert med kolon. F.eks. %{example}
-        description_html: 'Velg modusen for integrasjon av antivirusskanner. <br/> <ul> <li><strong>%{disabled_option}</strong>: Opplastede filer blir ikke skannet for virus.</li> <li><strong>%{socket_option}</strong>: Du har konfigurert ClamAV på samme server som OpenProject og skanningen daemon clamd kjører i bakgrunnen</li> <li><strong>%{host_option}</strong>: Du sender filer til en ekstern virusskanningsvert.</li> </ul>
-
-          '
-    brute_force_prevention: Automatisk blokkering av brukere
+        description_html: >
+          Velg modusen for integrasjon av antivirusskanner. <br/> <ul> <li><strong>%{disabled_option}</strong>: Opplastede filer blir ikke skannet for virus.</li> <li><strong>%{socket_option}</strong>: Du har konfigurert ClamAV på samme server som Yojana og skanningen daemon clamd kjører i bakgrunnen</li> <li><strong>%{host_option}</strong>: Du sender filer til en ekstern virusskanningsvert.</li> </ul>
+    brute_force_prevention: "Automatisk blokkering av brukere"
     date_format:
       first_date_of_week_and_year_set: 'Hvis enten alternativene "%{day_of_week_setting_name}" eller "%{first_week_setting_name}" er satt, må den andre settes i tillegg for å unngå avvik i frontend.
 
@@ -5473,8 +5409,8 @@
 
         '
     experimental:
-      save_confirmation: Forsiktig! Risiko for tap av data! Bare aktiver eksperimentelle funksjoner hvis du ikke er redd for å ødelegge OpenProject installasjonen og miste all dataene.
-      warning_toast: Funksjonsflagg er innstillinger som aktiverer funksjoner som fortsatt er under utvikling. De skal bare brukes til testformål. De skal aldri aktiveres på OpenProject installasjoner som holder viktige data. Disse funksjonene vil sannsynligvis forstyrre dine data. Bruk dem på din egen risiko.
+      save_confirmation: Forsiktig! Risiko for tap av data! Bare aktiver eksperimentelle funksjoner hvis du ikke er redd for å ødelegge Yojana installasjonen og miste all dataene.
+      warning_toast: Funksjonsflagg er innstillinger som aktiverer funksjoner som fortsatt er under utvikling. De skal bare brukes til testformål. De skal aldri aktiveres på Yojana installasjoner som holder viktige data. Disse funksjonene vil sannsynligvis forstyrre dine data. Bruk dem på din egen risiko.
       feature_flags: Funksjonsflagg
     general: Generell
     highlighting:
@@ -5485,7 +5421,7 @@
         type: Hele raden etter type
         priority: Hele raden etter prioritet
     icalendar:
-      enable_subscriptions_text_html: Tillater brukere med nødvendige tillatelser til å abonnere på OpenProject kalendere og få tilgang til arbeidspakkeinformasjon via en ekstern kalenderklient. <strong>Merk:</strong> Vennligst les <a href="%{link}" target="_blank">iCalendar-abonnementer</a> for å forstå potensielle sikkerhetsrisikoer før dette aktiveres.
+      enable_subscriptions_text_html: Tillater brukere med nødvendige tillatelser til å abonnere på Yojana kalendere og få tilgang til arbeidspakkeinformasjon via en ekstern kalenderklient. <strong>Merk:</strong> Vennligst les <a href="%{link}" target="_blank">iCalendar-abonnementer</a> for å forstå potensielle sikkerhetsrisikoer før dette aktiveres.
     language_name_being_default: "%{language_name} (standard)"
     notifications:
       events_explanation: Styrer hvilket  arrangement det sendes ut en e-post til. Arbeidspakker er utelatt fra denne listen siden varsler for dem kan konfigureres spesifikt for hver bruker.
@@ -5519,9 +5455,8 @@
               label: Side panel
               description: Add all the project attributes in a section inside the right side panel in the project overview.
     project_initiation_request:
-      header_description: 'OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
-
-        '
+      header_description: >
+        Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
       status:
         submitted: "%{wizard_name} has been submitted"
         submitted_description: Click the button below to go to the work package for the submission process.
@@ -5533,8 +5468,8 @@
         project_creation_wizard: Open project creation wizard
         project_mandate: Open project mandate
       blankslate:
-        title: Initiation request not enabled
-        description: OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard.
+        title: "Initiation request not enabled"
+        description: "Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard."
       disable_dialog:
         title: Disable project initiation request
         heading: Disable this project initiation request?
@@ -5639,81 +5574,64 @@
   status_deleted: slettet
   support:
     array:
-      sentence_connector: og
-      skip_last_comma: usant
-  text_accessibility_hint: Tilgjengelighetsmodus er laget for brukere som er blinde, motorisk svekkede eller har dårlige øyne. For de sistnevnte fokuserte elementene er det spesielt uthevet. Vær oppmerksom på at modulen for logger er ikke tilgjengelig i denne modusen.
-  text_access_token_hint: Tilgang til nøkler tillater deg å gi eksterne applikasjoner tilgang til ressurser i OpenProject.
-  text_analyze: 'Videre analyse: %{subject}'
-  text_are_you_sure: Er du sikker?
-  open_link_in_a_new_tab: Open link in a new tab
-  text_are_you_sure_continue: Er du sikker på at du vil fortsette?
-  text_are_you_sure_with_children: Slette arbeidspakken og alle underordnede arbeidspakker?
-  text_are_you_sure_with_project_custom_fields: Hvis du sletter dette attributtet, slettes også dets verdier i alle prosjekter. Er du sikker på at du vil gjøre dette?
-  text_are_you_sure_with_project_life_cycle_step: Deleting this phase will also delete its usages in all projects. Are you sure you want to do this?
-  text_assign_to_project: Tildel til prosjektet
-  text_form_configuration: 'Du kan tilpasse hvilke felt som vises i skjemaer for arbeidspakker. Du kan fritt gruppere feltene for å reflektere behovene for ditt domene.
-
-    '
-  text_form_configuration_required_attribute: Egenskapen er markert som nødvendig, og vises derfor alltid
-  text_caracters_maximum: Maks %{count} tegn.
-  text_caracters_minimum: Må bestå av minimum %{count} tegn.
-  text_comma_separated: Flere verdier er tillatt (separeres med komma).
-  text_comment_wiki_page: 'Kommenter wiki-siden: %{page}'
-  text_custom_field_possible_values_info: En verdi pr. linje
-  text_custom_field_hint_activate_per_project: 'Når du bruker egendefinerte felt: Husk at egendefinerte felter må aktiveres per prosjekt, også.
-
-    '
-  text_custom_field_hint_activate_per_project_and_type: 'Egendefinerte felt må aktiveres per arbeidspakketype og per prosjekt.
-
-    '
-  text_project_custom_field_html: 'Enterprise utgaven vil legge til disse ekstra utvidelsene for prosjektets egendefinerte felter: <br> <ul> <li><b>Legg til egendefinerte felt for prosjekter i din prosjektliste for å opprette en prosjektporteføljevisning</b></li> </ul>
-
-    '
-  text_custom_logo_instructions: 'The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×47px image. You can add as much spacing inside that image as you like.
-
-    '
-  text_custom_logo_mobile_instructions: 'The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×33px image. You can add as much spacing inside that image as you like.
-
-    '
-  text_custom_export_logo_instructions: 'Dette er logoen som vises i din PDF-eksport. Det må være en PNG eller JPEG bildefil. En svart eller farget logo på gjennomsiktig eller hvit bakgrunn anbefales.
-
-    '
-  text_custom_export_cover_instructions: 'Dette er bildet som vises i bakgrunnen for en omslagsside i din PDF-eksport. Det må være en ca 800px bredde med 500px høydestørrelse PNG eller JPEG bildefil.
-
-    '
-  text_custom_export_footer_instructions: 'PDF exports will include a graphical element positioned to the left of the footer. This image must be a PNG or JPEG file with approximately 200 pixels in width.
-
-    '
-  label_custom_export_font_instructions: 'Upload and manage custom TrueType (.ttf) fonts used in your PDF exports. For best results, use matching files from the same font family. If no font is provided, the default NotoSans font will be used.
-
-    '
-  label_custom_export_images_instructions: 'Upload and manage custom image files used in your PDF exports.
-
-    '
-  text_custom_export_font_regular_instructions: 'This is the font file for regular text. It needs to be in TTF format and is required.
-
-    '
-  text_custom_export_font_bold_instructions: 'This is the font file for bold text. It needs to be in TTF format.
-
-    '
-  text_custom_export_font_italic_instructions: 'This is the font file for italic text. It needs to be in TTF format.
-
-    '
-  text_custom_export_font_bold_italic_instructions: 'This is the font file for bold and italic text. It needs to be in TTF format.
-
-    '
-  text_custom_favicon_instructions: 'Dette er det lille ikonet som vises i nettleservinduet/fanen ved siden av sidens tittel. Det må være et kvadrat 32 piksler stor PNG-bildefil med gjennomsiktig bakgrunn.
-
-    '
-  text_custom_touch_icon_instructions: 'Dette er ikonet som vises i mobilen eller nettbrettet når du plasserer et bokmerke på startsiden din. Den må være en firkant 180 av 180 piksler stor PNG-bildefil. Sørg for at bakgrunnen for bildet ikke er gjennomsiktig, ellers vil den se dårlig ut på iOS.
-
-    '
-  text_database_allows_tsv: Databasen tillater TSVector (valgfritt)
-  text_default_administrator_account_changed: Standard administratorkonto er endret
-  text_default_encoding: 'Standard: UTF-8'
-  text_destroy: Slett
-  text_destroy_with_associated: 'There are additional objects associated with the work package(s) that are to be deleted. Those objects are of the following types:'
-  text_destroy_what_to_do: Hva vil du gjøre?
+      sentence_connector: "og"
+      skip_last_comma: "usant"
+  text_accessibility_hint: "Tilgjengelighetsmodus er laget for brukere som er blinde, motorisk svekkede eller har dårlige øyne. For de sistnevnte fokuserte elementene er det spesielt uthevet. Vær oppmerksom på at modulen for logger er ikke tilgjengelig i denne modusen."
+  text_access_token_hint: "Tilgang til nøkler tillater deg å gi eksterne applikasjoner tilgang til ressurser i Yojana."
+  text_analyze: "Videre analyse: %{subject}"
+  text_are_you_sure: "Er du sikker?"
+  open_link_in_a_new_tab: "Open link in a new tab"
+  text_are_you_sure_continue: "Er du sikker på at du vil fortsette?"
+  text_are_you_sure_with_children: "Slette arbeidspakken og alle underordnede arbeidspakker?"
+  text_are_you_sure_with_project_custom_fields: "Hvis du sletter dette attributtet, slettes også dets verdier i alle prosjekter. Er du sikker på at du vil gjøre dette?"
+  text_are_you_sure_with_project_life_cycle_step: "Deleting this phase will also delete its usages in all projects. Are you sure you want to do this?"
+  text_assign_to_project: "Tildel til prosjektet"
+  text_form_configuration: >
+    Du kan tilpasse hvilke felt som vises i skjemaer for arbeidspakker. Du kan fritt gruppere feltene for å reflektere behovene for ditt domene.
+  text_form_configuration_required_attribute: "Egenskapen er markert som nødvendig, og vises derfor alltid"
+  text_caracters_maximum: "Maks %{count} tegn."
+  text_caracters_minimum: "Må bestå av minimum %{count} tegn."
+  text_comma_separated: "Flere verdier er tillatt (separeres med komma)."
+  text_comment_wiki_page: "Kommenter wiki-siden: %{page}"
+  text_custom_field_possible_values_info: "En verdi pr. linje"
+  text_custom_field_hint_activate_per_project: >
+    Når du bruker egendefinerte felt: Husk at egendefinerte felter må aktiveres per prosjekt, også.
+  text_custom_field_hint_activate_per_project_and_type: >
+    Egendefinerte felt må aktiveres per arbeidspakketype og per prosjekt.
+  text_project_custom_field_html: >
+    Enterprise utgaven vil legge til disse ekstra utvidelsene for prosjektets egendefinerte felter: <br> <ul> <li><b>Legg til egendefinerte felt for prosjekter i din prosjektliste for å opprette en prosjektporteføljevisning</b></li> </ul>
+  text_custom_logo_instructions: >
+    The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×47px image. You can add as much spacing inside that image as you like.
+  text_custom_logo_mobile_instructions: >
+    The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×33px image. You can add as much spacing inside that image as you like.
+  text_custom_export_logo_instructions: >
+    Dette er logoen som vises i din PDF-eksport. Det må være en PNG eller JPEG bildefil. En svart eller farget logo på gjennomsiktig eller hvit bakgrunn anbefales.
+  text_custom_export_cover_instructions: >
+    Dette er bildet som vises i bakgrunnen for en omslagsside i din PDF-eksport. Det må være en ca 800px bredde med 500px høydestørrelse PNG eller JPEG bildefil.
+  text_custom_export_footer_instructions: >
+    PDF exports will include a graphical element positioned to the left of the footer. This image must be a PNG or JPEG file with approximately 200 pixels in width.
+  label_custom_export_font_instructions: >
+    Upload and manage custom TrueType (.ttf) fonts used in your PDF exports. For best results, use matching files from the same font family. If no font is provided, the default NotoSans font will be used.
+  label_custom_export_images_instructions: >
+    Upload and manage custom image files used in your PDF exports.
+  text_custom_export_font_regular_instructions: >
+    This is the font file for regular text. It needs to be in TTF format and is required.
+  text_custom_export_font_bold_instructions: >
+    This is the font file for bold text. It needs to be in TTF format.
+  text_custom_export_font_italic_instructions: >
+    This is the font file for italic text. It needs to be in TTF format.
+  text_custom_export_font_bold_italic_instructions: >
+    This is the font file for bold and italic text. It needs to be in TTF format.
+  text_custom_favicon_instructions: >
+    Dette er det lille ikonet som vises i nettleservinduet/fanen ved siden av sidens tittel. Det må være et kvadrat 32 piksler stor PNG-bildefil med gjennomsiktig bakgrunn.
+  text_custom_touch_icon_instructions: >
+    Dette er ikonet som vises i mobilen eller nettbrettet når du plasserer et bokmerke på startsiden din. Den må være en firkant 180 av 180 piksler stor PNG-bildefil. Sørg for at bakgrunnen for bildet ikke er gjennomsiktig, ellers vil den se dårlig ut på iOS.
+  text_database_allows_tsv: "Databasen tillater TSVector (valgfritt)"
+  text_default_administrator_account_changed: "Standard administratorkonto er endret"
+  text_default_encoding: "Standard: UTF-8"
+  text_destroy: "Slett"
+  text_destroy_with_associated: "Det er andre objekter tilknyttet arbeidspakken(e) som er i ferd med å bli slettet. Disse objektene er av følgende typer:"
+  text_destroy_what_to_do: "Hva vil du gjøre?"
   text_diff_truncated: "... Denne diff ble forkortet fordi den overstiger maksimalgrensen for hva som kan vises."
   text_email_delivery_not_configured: |-
     E-postlevering er ikke konfigurert, og varsler er deaktivert.
@@ -5754,41 +5672,30 @@
   text_line_separated: Flere verdier tillatt (en verdi pr. linje).
   text_load_default_configuration: Last inn standardoppsettet
   text_no_roles_defined: Det er ingen roller definert.
-  text_no_access_tokens_configurable: Det finnes ingen tilgangsnøkler som kan konfigureres.
-  text_no_configuration_data: |-
-    Roller, typer, arbeidspakkestatuser og arbeidsflyt har ikke blitt satt opp ennå.
-    Det er sterkt anbefalt å laste standardoppsettet. Du kan redigere disse når de er lastet inn.
-  text_no_notes: Det er ingen kommentarer tilgjengelig for denne arbeidspakken.
-  text_notice_too_many_values_are_inperformant: 'Merk: Visning av mer enn 100 elementer pr. side kan medføre at siden bruker lenger tid på å laste.'
-  text_notice_security_badge_displayed_html: 'Merk: Hvis aktivert, vil dette vise et merke med din installasjonsstatus i <a href="%{information_panel_path}">%{information_panel_label}</a> administrasjonspanel, og på hjemmesiden. Det er kun vist til administratorer. <br/> Merket sjekker din nåværende OpenProject versjon mot den offisielle OpenProject utgivelsesdatabasen for å varsle deg om oppdateringer og kjente sårbarheter. For mer informasjon om hva som finnes av kontrollen, hvilke data som er nødvendig for å framskaffe tilgjengelige oppdateringer, og hvordan denne sjekken kan deaktiveres, besøk <a href="%{more_info_url}">konfigurasjonsdokumentasjonen</a>.
-
-    '
-  text_own_membership_delete_confirmation: |-
-    Du er i ferd med å fjerne noen eller alle dine egne rettigheter og du vil kanskje ikke kunne redigere dette prosjektet etterpå.
-    Er du sikker på at du vil fortsette?
-  text_permanent_delete_confirmation_checkbox_label: I understand that this deletion cannot be reversed
-  text_permanent_remove_confirmation_checkbox_label: I understand that this removal cannot be reversed
-  text_plugin_assets_writable: Mappen for programtillegg er skrivbar
-  text_powered_by: Driftes med %{link}
-  text_project_identifier_info: Kun små bokstaver (a-z), tall, bindestrek og understrek er tillatt. Første tegn må være liten bokstav.
-  text_project_identifier_description: The project identifier is prepended to all work package IDs. If the identifier is "PROJ" for example, the work package identifier will be "PROJ-12" or "PROJ-246".
-  text_project_identifier_url_description: The project identifier is included in the URL of the project.
-  text_project_identifier_handle_format: Must start with a letter and contain only uppercase letters, numbers, and underscores (max 10 characters).
-  text_project_identifier_format: Must start with a lowercase letter. Only lowercase letters (a-z), numbers, dashes and underscores are allowed.
-  text_reassign: 'Tilordne til arbeidspakke:'
-  text_regexp_multiline: Denne regexen brukes i flerlinjemodus. f.eks ^---\s+
-  text_rename_wiki_page: Rename wiki page
-  text_repository_usernames_mapping: |-
-    Velg eller oppdater OpenProject-brukeren knyttet til hvert enkelt brukernavn i pakkebrønn-loggen.
-    Brukere med samme OpenProject- og pakkebrønn-brukernavn eller e-post tilknyttes automatisk.
-  text_status_changed_by_changeset: Benyttet i changeset %{value}.
-  text_table_difference_description: I denne tabellen blir den enkelte %{entries} vist. Du kan se forskjellen mellom to oppføringer ved å først velge de tilhørende avmerkingsboksene i tabellen. Når du klikker på knappen nedenfor vil du se forskjellene i tabellen.
-  text_time_logged_by_changeset: Benyttet i changeset %{value}.
-  text_tip_work_package_begin_day: arbeidspakker som påbegynnes denne dagen
-  text_tip_work_package_begin_end_day: arbeidspakker som begynner eller slutter denne dagen
-  text_tip_work_package_end_day: arbeidspakker som avsluttes denne dagen
-  text_type_no_workflow: Ingen arbeidsflyt er definert for denne typen
-  text_unallowed_characters: Ikke-tillatte tegn
+  text_no_access_tokens_configurable: "Det finnes ingen tilgangsnøkler som kan konfigureres."
+  text_no_configuration_data: "Roller, typer, arbeidspakkestatuser og arbeidsflyt har ikke blitt satt opp ennå.\nDet er sterkt anbefalt å laste standardoppsettet. Du kan redigere disse når de er lastet inn."
+  text_no_notes: "Det er ingen kommentarer tilgjengelig for denne arbeidspakken."
+  text_notice_too_many_values_are_inperformant: "Merk: Visning av mer enn 100 elementer pr. side kan medføre at siden bruker lenger tid på å laste."
+  text_notice_security_badge_displayed_html: >
+    Merk: Hvis aktivert, vil dette vise et merke med din installasjonsstatus i <a href="%{information_panel_path}">%{information_panel_label}</a> administrasjonspanel, og på hjemmesiden. Det er kun vist til administratorer. <br/> Merket sjekker din nåværende Yojana versjon mot den offisielle Yojana utgivelsesdatabasen for å varsle deg om oppdateringer og kjente sårbarheter. For mer informasjon om hva som finnes av kontrollen, hvilke data som er nødvendig for å framskaffe tilgjengelige oppdateringer, og hvordan denne sjekken kan deaktiveres, besøk <a href="%{more_info_url}">konfigurasjonsdokumentasjonen</a>.
+  text_own_membership_delete_confirmation: "Du er i ferd med å fjerne noen eller alle dine egne rettigheter og du vil kanskje ikke kunne redigere dette prosjektet etterpå.\nEr du sikker på at du vil fortsette?"
+  text_permanent_delete_confirmation_checkbox_label: "I understand that this deletion cannot be reversed"
+  text_permanent_remove_confirmation_checkbox_label: "I understand that this removal cannot be reversed"
+  text_plugin_assets_writable: "Mappen for programtillegg er skrivbar"
+  text_powered_by: "Driftes med %{link}"
+  text_project_identifier_info: "Kun små bokstaver (a-z), tall, bindestrek og understrek er tillatt. Første tegn må være liten bokstav."
+  text_reassign: "Tilordne til arbeidspakke:"
+  text_regexp_info: "f.eks. ^[A-Z0-9]+$"
+  text_regexp_multiline: 'Denne regexen brukes i flerlinjemodus. f.eks ^---\s+'
+  text_repository_usernames_mapping: "Velg eller oppdater Yojana-brukeren knyttet til hvert enkelt brukernavn i pakkebrønn-loggen.\nBrukere med samme Yojana- og pakkebrønn-brukernavn eller e-post tilknyttes automatisk."
+  text_status_changed_by_changeset: "Benyttet i changeset %{value}."
+  text_table_difference_description: "I denne tabellen blir den enkelte %{entries} vist. Du kan se forskjellen mellom to oppføringer ved å først velge de tilhørende avmerkingsboksene i tabellen. Når du klikker på knappen nedenfor vil du se forskjellene i tabellen."
+  text_time_logged_by_changeset: "Benyttet i changeset %{value}."
+  text_tip_work_package_begin_day: "arbeidspakker som påbegynnes denne dagen"
+  text_tip_work_package_begin_end_day: "arbeidspakker som begynner eller slutter denne dagen"
+  text_tip_work_package_end_day: "arbeidspakker som avsluttes denne dagen"
+  text_type_no_workflow: "Ingen arbeidsflyt er definert for denne typen"
+  text_unallowed_characters: "Ikke-tillatte tegn"
   text_user_invited: Brukeren har blitt invitert og venter på å bli registrert.
   text_user_wrote: "%{value} skrev:"
   text_wrote: wrote
@@ -5850,18 +5757,17 @@
     help_and_support: Hjelp og support
   total_progress: Total fremdrift
   user:
-    all: alle
-    active: aktiv
-    activate: Aktiver
-    activate_and_reset_failed_logins: Aktiver og nullstill mislykkede innlogginger
-    authentication_provider: Autentiseringstjeneste
-    identity_url_text: Den interne unike identifikatoren som tilbys av autentiseringsleverandøren.
-    authentication_settings_disabled_due_to_external_authentication: 'Denne brukeren autentiseres via en ekstern autentiseringstjeneste, og passord kan derfor ikke endres i OpenProject.
-
-      '
-    authorization_rejected: Du har ikke tilgang til å logge på.
-    assign_random_password: Tilordne et tilfeldig passord (sendt til brukeren via e-post)
-    blocked: midlertidig låst
+    all: "alle"
+    active: "aktiv"
+    activate: "Aktiver"
+    activate_and_reset_failed_logins: "Aktiver og nullstill mislykkede innlogginger"
+    authentication_provider: "Autentiseringstjeneste"
+    identity_url_text: "Den interne unike identifikatoren som tilbys av autentiseringsleverandøren."
+    authentication_settings_disabled_due_to_external_authentication: >
+      Denne brukeren autentiseres via en ekstern autentiseringstjeneste, og passord kan derfor ikke endres i Yojana.
+    authorization_rejected: "Du har ikke tilgang til å logge på."
+    assign_random_password: "Tilordne et tilfeldig passord (sendt til brukeren via e-post)"
+    blocked: "midlertidig låst"
     blocked_num_failed_logins:
       one: midlertidig utesteng (ett mislykkede pålogginger)
       other: midlertidig låst (%{count} mislykkede innloggingsforsøk)
@@ -5892,13 +5798,18 @@
   note_password_login_disabled_link: Password login has been disabled through a [configuration setting](configuration_url).
   warning: Advarsel
   warning_attachments_not_saved: "%{count} fil(er) kunne ikke lagres."
-  warning_imminent_user_limit_html: 'You invited more users than are supported by your current plan. Invited users may not be able to join your OpenProject environment. Please [upgrade your plan](upgrade_url) or block existing users in order to allow invited and registered users to join.
-
-    '
+  warning_imminent_user_limit: >
+    Du har invitert flere brukere en planen din tillater.  Inviterte bruker vil kanksje ikke være i stand til å bli med i ditt Yojana miljø.  Vennligst <a href="%{upgrade_url}"> oppgrader din plan</a> eller blokker eksisterende brukere for å tillate inviterte og registrerte brukere å bli med.
   warning_registration_token_expired: |
     Aktiverings-eposten har utløpt.  Vi sendte deg en ny til %{email}.
     Venligst bruk linken i den til å aktivere kontoen din.
-  warning_user_limit_reached: 'Å legg til ekstra brukere vil overskride gjeldende grense. Vennligst kontakt en administrator for å øke brukergrensen for å sikre at eksterne brukere har tilgang til denne forekomsten.
+  warning_user_limit_reached: >
+    Å legg til ekstra brukere vil overskride gjeldende grense. Vennligst kontakt en administrator for å øke brukergrensen for å sikre at eksterne brukere har tilgang til denne forekomsten.
+  warning_user_limit_reached_admin: >
+    Å legg til ekstra brukere vil overskride gjeldende grense. Vennligst <a href="%{upgrade_url}">oppgrader planen din</a> for å sikre at eksterne brukere har tilgang til denne forekomsten.
+  warning_user_limit_reached_instructions: >
+    Du har nådd din brukergrense (%{current}/%{max} aktive brukere). Vennligst kontakt sales@girishm.info for å oppgradere din Enterprise edition plan og legg til flere brukere.
+  warning_protocol_mismatch_html: >
 
     '
   warning_user_limit_reached_admin_html: 'Adding additional users will exceed the current limit. Please [upgrade your plan](upgrade_url) to be able to ensure external users are able to access this instance.
@@ -6190,56 +6101,48 @@
       non_confidential: Ikke konfidensiell
       default_scopes: "(Standard omfang)"
       instructions:
-        enabled: Enable this application, allowing users to perform authorization grants with it.
-        name: Navnet på søknaden. Dette vises til andre brukere etter autorisasjon.
-        redirect_uri_html: 'De tillatte nettadresser autoriserte brukere kan bli omdirigert til. Én oppføring per linje. <br/> Hvis du registrerer et skrivebordsprogram, bruk følgende URL.
-
-          '
-        confidential: Sjekk om programmet vil bli brukt der klienthemmeligheten kan holdes konfidensielt. Personlige mobilapper og enkle sideapper antas å være ikke-konfidensielle.
-        scopes: Merk av hvilke omfang som du ønsker applikasjonen skal gi tilgang til. Hvis det ikke er merket, antas api_v3.
-        client_credential_user_id: Valgfri bruker-ID å gi seg selv når klienter bruker dette programmet. La stå tomt for å kun tillate offentlig tilgang
-        register_intro: Hvis du utvikler en OAuth API-klient-app for OpenProject, kan du registrere den ved hjelp av dette skjemaet for alle brukere.
-        default_scopes: ''
+        enabled: "Enable this application, allowing users to perform authorization grants with it."
+        name: "Navnet på søknaden. Dette vises til andre brukere etter autorisasjon."
+        redirect_uri_html: >
+          De tillatte nettadresser autoriserte brukere kan bli omdirigert til. Én oppføring per linje. <br/> Hvis du registrerer et skrivebordsprogram, bruk følgende URL.
+        confidential: "Sjekk om programmet vil bli brukt der klienthemmeligheten kan holdes konfidensielt. Personlige mobilapper og enkle sideapper antas å være ikke-konfidensielle."
+        scopes: "Merk av hvilke omfang som du ønsker applikasjonen skal gi tilgang til. Hvis det ikke er merket, antas api_v3."
+        client_credential_user_id: "Valgfri bruker-ID å gi seg selv når klienter bruker dette programmet. La stå tomt for å kun tillate offentlig tilgang"
+        register_intro: "Hvis du utvikler en OAuth API-klient-app for Yojana, kan du registrere den ved hjelp av dette skjemaet for alle brukere."
+        default_scopes: ""
     header:
       builtin_applications: Built-in OAuth applications
       other_applications: Other OAuth applications
     empty_application_lists: No OAuth applications have been registered.
-    client_id: Klient ID
-    client_secret_notice: 'Dette er eneste gang vi kan skrive ut klientens hemmelighet, merk den ned og hold den sikker. Den skal behandles som et passord og kan ikke hentes av OpenProject på et senere tidspunkt.
-
-      '
+    client_id: "Klient ID"
+    client_secret_notice: >
+      Dette er eneste gang vi kan skrive ut klientens hemmelighet, merk den ned og hold den sikker. Den skal behandles som et passord og kan ikke hentes av Yojana på et senere tidspunkt.
     authorization_dialog:
-      authorize: Godkjenn
-      cancel: Avbryt og avslå autorisasjon.
-      prompt_html: Godkjenn <strong>%{application_name}</strong> for å bruke din konto <em>%{login}</em>?
-      title: Godkjenn %{application_name}
-      wants_to_access_html: 'Denne applikasjonen ber om tilgang til din OpenProject konto. <br/> <strong>Den har bedt om følgende tillatelser:</strong>
-
-        '
+      authorize: "Godkjenn"
+      cancel: "Avbryt og avslå autorisasjon."
+      prompt_html: "Godkjenn <strong>%{application_name}</strong> for å bruke din konto <em>%{login}</em>?"
+      title: "Godkjenn %{application_name}"
+      wants_to_access_html: >
+        Denne applikasjonen ber om tilgang til din Yojana konto. <br/> <strong>Den har bedt om følgende tillatelser:</strong>
     scopes:
-      api_v3: Full API v3 tilgang
-      api_v3_text: Applikasjonen vil få full lese/skrive tilgang til OpenProject API v3, og kan utføre handlinger på dine vegne.
-      mcp: Access to MCP
-      mcp_text: Application will receive access to the OpenProject MCP endpoints. They are a limited subset of APIv3, that's tailored for usage with AI agents.
+      api_v3: "Full API v3 tilgang"
+      api_v3_text: "Applikasjonen vil få full lese/skrive tilgang til Yojana API v3, og kan utføre handlinger på dine vegne."
     grants:
       created_date: Godkjent den
       scopes: Tilganger
       successful_application_revocation: Tilbaketrekking av appen %{application_name} vellykket.
       none_given: Ingen OAuth-applikasjoner har blitt gitt tilgang til brukerkontoen din.
     flows:
-      authorization_code: Autorisasjon kode flyt
-      client_credentials: Kundens innloggingsflyt
-    client_credentials: Brukeren brukes til klientpåloggingsinformasjon
-    client_credentials_impersonation_set_to: Klientens påloggingsinformasjon satt til
-    client_credentials_impersonation_warning: 'Merk: Klienter som bruker "Klient-legitimasjonsflyten" i denne applikasjonen vil ha rettighetene til denne brukeren'
-    client_credentials_impersonation_html: 'Som standard gir OpenProject OAuth 2.0 autorisasjon via %{authorization_code_flow_link}. Du kan eventuelt aktivere %{client_credentials_flow_link}, men du må oppgi en bruker som forespørselen blir utført på vegne av.
-
-      '
-    confirm_revoke_my_application:
-      one: Do you really want to remove this application? This will revoke one token active for it.
-      other: Do you really want to remove this application? This will revoke %{count} tokens active for it.
-    authorization_error: Det oppstod en godkjenningsfeil.
-    my_registered_applications: Registrerte OAuth-søknader
+      authorization_code: "Autorisasjon kode flyt"
+      client_credentials: "Kundens innloggingsflyt"
+    client_credentials: "Brukeren brukes til klientpåloggingsinformasjon"
+    client_credentials_impersonation_set_to: "Klientens påloggingsinformasjon satt til"
+    client_credentials_impersonation_warning: "Merk: Klienter som bruker \"Klient-legitimasjonsflyten\" i denne applikasjonen vil ha rettighetene til denne brukeren"
+    client_credentials_impersonation_html: >
+      Som standard gir Yojana OAuth 2.0 autorisasjon via %{authorization_code_flow_link}. Du kan eventuelt aktivere %{client_credentials_flow_link}, men du må oppgi en bruker som forespørselen blir utført på vegne av.
+    authorization_error: "Det oppstod en godkjenningsfeil."
+    revoke_my_application_confirmation: "Vil du virkelig fjerne denne applikasjonen? Dette vil fjerne %{token_count} aktive nøkler for den."
+    my_registered_applications: "Registrerte OAuth-søknader"
   oauth_client:
     urn_connection_status:
       connected: Tilkoblet
@@ -6252,41 +6155,36 @@
       label_request_token: Be om nøkkel
       label_refresh_token: Oppdater nøkkel
     errors:
-      oauth_authorization_code_grant_had_errors: OAuth2 autoriseringsprosess mislyktes
-      oauth_reported: OAuth2 leverandør rapportert
-      oauth_returned_error: OAuth2 returnerte en feil
-      oauth_returned_json_error: OAuth2 returnerte en JSON-feil
-      oauth_returned_http_error: OAuth2 returnerte en nettverksfeil
-      oauth_returned_standard_error: OAuth2 returnerte en intern feil
-      wrong_token_type_returned: OAuth2 returnerte en feil type nøkkel, forventet AccessToken:Bearer
-      oauth_issue_contact_admin: OAuth2 rapporterte en feil. Kontakt din systemadministrator.
-      oauth_client_not_found: OAuth2 klient ble ikke funnet i 'callback' endepunkt (redirect_uri).
-      refresh_token_called_without_existing_token: 'Intern feil: Utkalt refresh_token uten en tidligere nøkkel.
-
-        '
-      refresh_token_updated_failed: Feil under oppdatering av OAuthentToken
-      oauth_client_not_found_explanation: 'Dette feilen vises etter at du har oppdatert klient_id og client_secret i OpenProject, men ikke har oppdatert feltet ''Returner URI'' i OAuth2 leverandøren.
-
-        '
-      oauth_code_not_present: OAuth2 'code' ble ikke funnet i 'callback' endepunkt (redirect_uri).
-      oauth_code_not_present_explanation: 'Denne feilen vises hvis du har valgt feil response_type i OAuth2-leverandøren. Response_type bør være ''kode'' eller lignende.
-
-        '
-      oauth_state_not_present: OAuth2 'state' fant ikke i 'callback' endepunkt (redirect_uri).
-      oauth_state_not_present_explanation: 'State'' brukes til å indikere til OpenProject der man skal fortsette etter en vellykket OAuth2 autorisasjon. En manglende ''state'' er en intern feil som kan dukke opp under konfigurasjonen. Kontakt systemansvarlig.
-
-        '
+      oauth_authorization_code_grant_had_errors: "OAuth2 autoriseringsprosess mislyktes"
+      oauth_reported: "OAuth2 leverandør rapportert"
+      oauth_returned_error: "OAuth2 returnerte en feil"
+      oauth_returned_json_error: "OAuth2 returnerte en JSON-feil"
+      oauth_returned_http_error: "OAuth2 returnerte en nettverksfeil"
+      oauth_returned_standard_error: "OAuth2 returnerte en intern feil"
+      wrong_token_type_returned: "OAuth2 returnerte en feil type nøkkel, forventet AccessToken:Bearer"
+      oauth_issue_contact_admin: "OAuth2 rapporterte en feil. Kontakt din systemadministrator."
+      oauth_client_not_found: "OAuth2 klient ble ikke funnet i 'callback' endepunkt (redirect_uri)."
+      refresh_token_called_without_existing_token: >
+        Intern feil: Utkalt refresh_token uten en tidligere nøkkel.
+      refresh_token_updated_failed: "Feil under oppdatering av OAuthentToken"
+      oauth_client_not_found_explanation: >
+        Dette feilen vises etter at du har oppdatert klient_id og client_secret i Yojana, men ikke har oppdatert feltet 'Returner URI' i OAuth2 leverandøren.
+      oauth_code_not_present: "OAuth2 'code' ble ikke funnet i 'callback' endepunkt (redirect_uri)."
+      oauth_code_not_present_explanation: >
+        Denne feilen vises hvis du har valgt feil response_type i OAuth2-leverandøren. Response_type bør være 'kode' eller lignende.
+      oauth_state_not_present: "OAuth2 'state' fant ikke i 'callback' endepunkt (redirect_uri)."
+      oauth_state_not_present_explanation: >
+        State' brukes til å indikere til Yojana der man skal fortsette etter en vellykket OAuth2 autorisasjon. En manglende 'state' er en intern feil som kan dukke opp under konfigurasjonen. Kontakt systemansvarlig.
       rack_oauth2:
-        client_secret_invalid: Klient-hemmlighet er ugyldig (client_secret_invalid)
-        invalid_request: 'OAuth2 Authorization Server svarte med ''invalid_request''. Det feilen oppstår hvis du prøver å autorisere flere ganger eller hvis det oppstår tekniske problemer.
-
-          '
-        invalid_response: OAuth2 Autoriseringsserver ga et ugyldig svar (invalid_response)
-        invalid_grant: Autorisasjonsserveren OAuth2 ber deg om å reautorisere (invalid_grant).
-        invalid_client: OAuth2 autorisasjonsserveren gjenkjenner ikke OpenProject (invalid_client).
-        unauthorized_client: OAuth2 autorisasjonsserveren avviser godkjenningstypen (uautorisert_client)
-        unsupported_grant_type: Autorisasjonsserveren OAuth2 ber deg om å reautorisere (unsupported_grant_type).
-        invalid_scope: Du har ikke tilgang til den forespurte ressursen (invalid_scope).
+        client_secret_invalid: "Klient-hemmlighet er ugyldig (client_secret_invalid)"
+        invalid_request: >
+          OAuth2 Authorization Server svarte med 'invalid_request'. Det feilen oppstår hvis du prøver å autorisere flere ganger eller hvis det oppstår tekniske problemer.
+        invalid_response: "OAuth2 Autoriseringsserver ga et ugyldig svar (invalid_response)"
+        invalid_grant: "Autorisasjonsserveren OAuth2 ber deg om å reautorisere (invalid_grant)."
+        invalid_client: "OAuth2 autorisasjonsserveren gjenkjenner ikke Yojana (invalid_client)."
+        unauthorized_client: "OAuth2 autorisasjonsserveren avviser godkjenningstypen (uautorisert_client)"
+        unsupported_grant_type: "Autorisasjonsserveren OAuth2 ber deg om å reautorisere (unsupported_grant_type)."
+        invalid_scope: "Du har ikke tilgang til den forespurte ressursen (invalid_scope)."
   http:
     request:
       failed_authorization: Serverside-forespørselen mislyktes med å autorisere seg selv.
@@ -6296,18 +6194,18 @@
   you: du
   link: kobling
   plugin_openproject_auth_plugins:
-    name: OpenProject Auth utvidelse
-    description: Integrering av OmniAuth strategileverandører for autentisering i Openproject.
+    name: "Yojana Auth utvidelse"
+    description: "Integrering av OmniAuth strategileverandører for autentisering i Openproject."
   plugin_openproject_auth_saml:
-    name: OmniAuth SAML / Enkeltpålogging på
-    description: Legger til OmniAuth SAML leverandør til OpenProject
+    name: "OmniAuth SAML / Enkeltpålogging på"
+    description: "Legger til OmniAuth SAML leverandør til Yojana"
   enterprise_plans:
     legacy_enterprise: Enterprise Plan
   token:
     hashed_token:
       display_value_placeholder: "***"
   external_link_warning:
-    title: Leaving OpenProject
-    warning_message: You are about to leave OpenProject and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies.
-    continue_message: Are you sure you want to proceed to the following external link?
-    continue_button: Continue to external website
+    title: "Leaving Yojana"
+    warning_message: "You are about to leave Yojana and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies."
+    continue_message: "Are you sure you want to proceed to the following external link?"
+    continue_button: "Continue to external website"

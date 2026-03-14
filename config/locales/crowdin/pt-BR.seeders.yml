@@ -141,7 +141,7 @@ pt-BR:
                 options:
                   name: Guia de introdução
                   text: |
-                    Estamos felizes que você tenha se juntado a nós! Aqui estão algumas sugestões para começar a usar o OpenProject.
+                    Estamos felizes que você tenha se juntado a nós! Aqui estão algumas sugestões para começar a usar o Yojana.
 
                     Descubra os principais recursos com o nosso [Tour Guiado]({{opSetting:base_url}}/projects/demo-project/work_packages/?start_onboarding_tour=true).
 
@@ -211,7 +211,7 @@ pt-BR:
             * Visualizar o histórico de alterações
             * Visualizar como Markdown
 
-            Mais informações: [https://www.openproject.org/docs/user-guide/wiki/](https://www.openproject.org/docs/user-guide/wiki/)
+            Mais informações: [https://www.yojana.girishm.info/docs/user-guide/wiki/](https://www.yojana.girishm.info/docs/user-guide/wiki/)
         scrum-project:
           name: Projeto Scrum
           status_explanation: Todas as tarefas estão dentro do cronograma, e os envolvidos conhecem suas atribuições. O sistema está completamente configurado.
@@ -311,7 +311,7 @@ pt-BR:
                 options:
                   name: Guia de introdução
                   text: |
-                    Ficamos felizes que você tenha se juntado! Sugerimos que você tente algumas coisas para começar no OpenProject.
+                    Ficamos felizes que você tenha se juntado! Sugerimos que você tente algumas coisas para começar no Yojana.
 
                     _Tente as seguintes etapas:_
 
@@ -323,7 +323,7 @@ pt-BR:
                     6. *Crie um wiki da Sprint*: &rightarrow; Vá para [Backlogs]({{opSetting:base_url}}/projects/your-scrum-project/backlogs) e abra o wiki da sprint no menu suspenso direito em uma sprint. Você pode editar o [modelo wiki]({{opSetting:base_url}}/projects/your-scrum-project/wiki/) com base em suas necessidades.
                     7. *Ative mais módulos*: &rightarrow; Vá para [Configurações do projeto &rightarrow; Módulos]({{opSetting:base_url}}/projects/your-scrum-project/settings/modules).
 
-                    Aqui você encontrará nossos [Guias do Usuário] (https://www.openproject.org/docs/user-guide/).
+                    Aqui você encontrará nossos [Guias do Usuário] (https://www.yojana.girishm.info/docs/user-guide/).
 
                     Avise-nos se tiver alguma dúvida ou precisar de suporte. Entre em contato conosco: [support[at]openproject.com](mailto:support@openproject.com).
               item_5:
@@ -487,19 +487,19 @@ pt-BR:
         item_6:
           name: Bug
       welcome:
-        title: Boas-vindas ao OpenProject!
+        title: Boas-vindas ao Yojana!
         text: |
-          O OpenProject é o principal software de gestão de projetos de código aberto. Ele dá suporte à gestão de projetos clássica, ágil e híbrida e dá a você o controlo total sobre os seus dados.
+          O Yojana é o principal software de gestão de projetos de código aberto. Ele dá suporte à gestão de projetos clássica, ágil e híbrida e dá a você o controlo total sobre os seus dados.
 
           Características principais e casos de uso:
 
-          * [Gestão de portfólio de projetos](https://www.openproject.org/collaboration-software-features/project-portfolio-management/)
-          * [Planejamento e programação de projetos](https://www.openproject.org/collaboration-software-features/project-planning-scheduling/)
-          * [Gestão de tarefas e acompanhamento de problemas](https://www.openproject.org/collaboration-software-features/task-management/)
-          * [Quadros Agile (Scrum e Kanban)](https://www.openproject.org/collaboration-software-features/agile-project-management/)
-          * [Gestão de requisitos e planejamento de versões](https://www.openproject.org/collaboration-software-features/product-development/)
-          * [Controlo de tempo e de custos, orçamentos](https://www.openproject.org/collaboration-software-features/time-tracking/)
-          * [Colaboração em equipe e documentação](https://www.openproject.org/collaboration-software-features/team-collaboration/)
+          * [Gestão de portfólio de projetos](https://www.yojana.girishm.info/collaboration-software-features/project-portfolio-management/)
+          * [Planejamento e programação de projetos](https://www.yojana.girishm.info/collaboration-software-features/project-planning-scheduling/)
+          * [Gestão de tarefas e acompanhamento de problemas](https://www.yojana.girishm.info/collaboration-software-features/task-management/)
+          * [Quadros Agile (Scrum e Kanban)](https://www.yojana.girishm.info/collaboration-software-features/agile-project-management/)
+          * [Gestão de requisitos e planejamento de versões](https://www.yojana.girishm.info/collaboration-software-features/product-development/)
+          * [Controlo de tempo e de custos, orçamentos](https://www.yojana.girishm.info/collaboration-software-features/time-tracking/)
+          * [Colaboração em equipe e documentação](https://www.yojana.girishm.info/collaboration-software-features/team-collaboration/)
 
           Boas-vindas ao futuro da gestão de projetos.
 

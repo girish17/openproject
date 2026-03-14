@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -348,13 +348,13 @@ nl:
         unknown_name: Unknown
     mcp_configurations:
       index:
-        description: The model context protocol allows AI agents to provide its users with tools and resources exposed by this OpenProject instance. This feature is still in beta.
-        resources_heading: Resources
-        resources_description: OpenProject implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url).
-        resources_submit: Update resources
-        tools_heading: Tools
-        tools_description: OpenProject implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url).
-        tools_submit: Update tools
+        description: "The model context protocol allows AI agents to provide its users with tools and resources exposed by this Yojana instance."
+        resources_heading: "Resources"
+        resources_description: "Yojana implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
+        resources_submit: "Update resources"
+        tools_heading: "Tools"
+        tools_description: "Yojana implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url)."
+        tools_submit: "Update tools"
       multi_update:
         success: MCP configurations were updated successfully.
       server_form:
@@ -397,31 +397,31 @@ nl:
       edit:
         label_delete_scim_client: Delete SCIM client
       form:
-        auth_provider_description: This is the service that users added by the SCIM provider will use to authenticate in OpenProject.
-        authentication_method_description_html: This is how the SCIM client authenticates at OpenProject. Please ensure that OAuth tokens include the <code>scim_v2</code> scope.
-        description: Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options.
-        jwt_sub_description: For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case.
-        name_description: Choose a name that will help other admins better understand why this client was configured.
+        auth_provider_description: "This is the service that users added by the SCIM provider will use to authenticate in Yojana."
+        authentication_method_description_html: "This is how the SCIM client authenticates at Yojana. Please ensure that OAuth tokens include the <code>scim_v2</code> scope."
+        description: "Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options."
+        jwt_sub_description: "For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case."
+        name_description: "Choose a name that will help other admins better understand why this client was configured."
       index:
-        description: SCIM clients configured here are able to interact with OpenProject SCIM server API to provision, update, and deprovision user accounts and groups.
-        label_create_button: Add SCIM client
+        description: "SCIM clients configured here are able to interact with Yojana SCIM server API to provision, update, and deprovision user accounts and groups."
+        label_create_button: "Add SCIM client"
       new:
         title: New SCIM client
       revoke_static_token_dialog_component:
-        confirm_button: Intrekken
-        title: Revoke static token
-        heading: Weet u zeker dat u deze token wilt intrekken?
-        description: The SCIM client that uses this token will no longer be able to access OpenProject's SCIM server API.
+        confirm_button: "Intrekken"
+        title: "Revoke static token"
+        heading: "Weet u zeker dat u deze token wilt intrekken?"
+        description: "The SCIM client that uses this token will no longer be able to access Yojana's SCIM server API."
       table_component:
         blank_slate:
           title: No SCIM clients configured yet
           description: Add clients to see them here
         user_count: Gebruikers
       token_list_component:
-        description: The tokens you generate here can be passed by a SCIM client to access the OpenProject SCIM API.
-        heading: Tokens
-        label_add_token: Token
-        label_aria_add_token: Add token
+        description: "The tokens you generate here can be passed by a SCIM client to access the Yojana SCIM API."
+        heading: "Tokens"
+        label_add_token: "Token"
+        label_aria_add_token: "Add token"
       token_table_component:
         blank_slate:
           title: No tokens have been created yet
@@ -564,36 +564,35 @@ nl:
       name: Willekeurige naam van de LDAP-verbinding
       host: LDAP hostnaam of IP-adres
       login_map: De attribuut sleutel in LDAP, gebruikt om de unieke gebruiker inlog te identificeren. Meestal zal dit `uid` of `samAccountName` zijn.
-      generic_map: De attribuut sleutel in LDAP die is toegewezen aan het OpenProject `%{attribute}` attribuut
-      admin_map_html: 'Optioneel: De attribuut sleutel in LDAP dat <strong>indien aanwezig</strong> de OpenProject gebruiker markeert als een beheerder. Laat leeg bij twijfel.'
+      generic_map: De attribuut sleutel in LDAP die is toegewezen aan het Yojana `%{attribute}` attribuut
+      admin_map_html: "Optioneel: De attribuut sleutel in LDAP dat <strong>indien aanwezig</strong> de Yojana gebruiker markeert als een beheerder. Laat leeg bij twijfel."
       system_user_dn_html: |
         Enter the DN of the system user used for read-only access.
         <br>
-        Example: uid=openproject,ou=system,dc=example,dc=com
+        Example: uid=yojana,ou=system,dc=example,dc=com
       system_user_password: Voer het bindwachtwoord van de systeemgebruiker in
       base_dn: |
-        Voer de Basis DN in van de subboom in LDAP waar u wilt dat OpenProject zoekt naar gebruikers en groepen. OpenProject zal filteren op opgegeven gebruikersnamen in deze subboom alleen.
+        Voer de Basis DN in van de subboom in LDAP waar u wilt dat Yojana zoekt naar gebruikers en groepen. Yojana zal filteren op opgegeven gebruikersnamen in deze subboom alleen.
         Voorbeeld: ou=users,dc=example,dc=com
       filter_string: |
         Voeg een optioneel RFC4515 filter toe om toe te passen op de resultaten van gebruikers die gefilterd zijn in het LDAP.
-        Dit kan worden gebruikt om de set gebruikers te beperken die gevonden zijn in OpenProject voor authenticatie en groepssynchronisatie.
+        Dit kan worden gebruikt om de set gebruikers te beperken die gevonden zijn in Yojana voor authenticatie en groepssynchronisatie.
       filter_string_concat: |
-        OpenProject zal altijd filteren op het login attribuut dat door de gebruiker wordt opgegeven om het record te identificeren. Als je hier een filter opgeeft,
+        Yojana zal altijd filteren op het login attribuut dat door de gebruiker wordt opgegeven om het record te identificeren. Als je hier een filter opgeeft,
         het wordt samengevoegd met een AND. Standaard wordt een catch-all (objectClass=*) gebruikt als een filter.
       onthefly_register: |
-        Als u dit selectievakje aanvinkt, zal OpenProject automatisch nieuwe gebruikers aanmaken van hun LDAP-items wanneer ze eerst verifiëren met OpenProject.
-        Laat dit uitgevinkt om alleen bestaande accounts in OpenProject te laten verifiëren via LDAP!
-    connection_encryption: Verbinding encryptie
-    encryption_details: LDAPS / STARTTLS options
-    system_account: Systeem account
+        Als u dit selectievakje aanvinkt, zal Yojana automatisch nieuwe gebruikers aanmaken van hun LDAP-items wanneer ze eerst verifiëren met Yojana.
+        Laat dit uitgevinkt om alleen bestaande accounts in Yojana te laten verifiëren via LDAP!
+    connection_encryption: "Verbinding encryptie"
+    encryption_details: "LDAPS / STARTTLS options"
+    system_account: "Systeem account"
     system_account_legend: |
-      OpenProject vereist alleen-lezen toegang via een systeemaccount om gebruikers en groepen in uw LDAP-boomstructuur op te zoeken.
+      Yojana vereist alleen-lezen toegang via een systeemaccount om gebruikers en groepen in uw LDAP-boomstructuur op te zoeken.
       Specificeer a.u.b. de bindgegevens voor deze systeemgebruiker in de volgende sectie.
-    ldap_details: LDAP details
-    user_settings: Attribuut toewijzen
-    user_settings_legend: 'De volgende velden zijn gerelateerd aan hoe gebruikers worden aangemaakt in OpenProject van LDAP items en welke LDAP attributen worden gebruikt om de attributen van een OpenProject gebruiker te definiëren (attribuut toewijzing).
-
-      '
+    ldap_details: "LDAP details"
+    user_settings: "Attribuut toewijzen"
+    user_settings_legend: |
+      De volgende velden zijn gerelateerd aan hoe gebruikers worden aangemaakt in Yojana van LDAP items en welke LDAP attributen worden gebruikt om de attributen van een Yojana gebruiker te definiëren (attribuut toewijzing).
     tls_mode:
       plain: geen
       simple_tls: LDAPS
@@ -2133,18 +2132,17 @@ nl:
         circular_dependency: Deze relatie zou een circulaire afhankelijkheid creëren.
         confirmation: komt niet overeen met %{attribute}.
         could_not_be_copied: "%{dependency} kon niet (volledig) worden gekopieerd."
-        datetime_must_be_in_future: must be in the future.
-        does_not_exist: bestaat niet.
-        error_enterprise_only: "%{action} is only available in the OpenProject Enterprise edition."
-        error_unauthorized: geen toegang.
-        error_readonly: werd geprobeerd te schrijven maar is niet schrijfbaar.
-        error_conflict: Informatie is in de tussentijd door ten minste één andere gebruiker bijgewerkt.
-        error_not_found: niet gevonden.
-        email: is geen geldig e-mailadres.
-        empty: mag niet leeg zijn.
-        enterprise_plan_required: requires at least the %{plan_name}.
-        even: moet gelijk zijn.
-        exclusion: is gereserveerd.
+        does_not_exist: "bestaat niet."
+        error_enterprise_only: "%{action} is only available in the Yojana Enterprise edition."
+        error_unauthorized: "geen toegang."
+        error_readonly: "werd geprobeerd te schrijven maar is niet schrijfbaar."
+        error_conflict: "Informatie is in de tussentijd door ten minste één andere gebruiker bijgewerkt."
+        error_not_found: "niet gevonden."
+        email: "is geen geldig e-mailadres."
+        empty: "mag niet leeg zijn."
+        enterprise_plan_required: "requires at least the %{plan_name}."
+        even: "moet gelijk zijn."
+        exclusion: "is gereserveerd."
         feature_disabled: is not available.
         feature_disabled_for_project: is disabled for this project.
         file_too_large: is te groot (maximum grootte is %{count} Bytes).
@@ -2797,17 +2795,14 @@ nl:
     reset_token:
       action_create: Maken
       action_reset: Herstel
-      heading_reset: Reset back-up token
-      heading_create: Back-up token maken
-      implications: 'Back-ups inschakelen zal elke gebruiker met de vereiste machtigingen en deze back-up token toestaan om een back-up te downloaden met alle gegevens van deze OpenProject installatie. Dit omvat de gegevens van alle andere gebruikers.
-
-        '
-      info: 'U moet een  back-up token genereren om een back-up te kunnen maken. Elke keer dat je een back-up wilt aanvragen, moet je deze back-up token opgeven. U kunt het back-up token verwijderen om back-ups voor deze gebruiker uit te schakelen.
-
-        '
-      verification_html: 'Enter %{word} to confirm you want to %{action} the backup token.
-
-        '
+      heading_reset: "Reset back-up token"
+      heading_create: "Back-up token maken"
+      implications: >
+        Back-ups inschakelen zal elke gebruiker met de vereiste machtigingen en deze back-up token toestaan om een back-up te downloaden met alle gegevens van deze Yojana installatie. Dit omvat de gegevens van alle andere gebruikers.
+      info: >
+        U moet een  back-up token genereren om een back-up te kunnen maken. Elke keer dat je een back-up wilt aanvragen, moet je deze back-up token opgeven. U kunt het back-up token verwijderen om back-ups voor deze gebruiker uit te schakelen.
+      verification: >
+        Voer %{word} in om te bevestigen dat u de back-up token %{action} wilt gebruiken.
       verification_word_reset: reset
       verification_word_create: aanmaken
       warning: 'Wanneer je een nieuwe code aanmaakt, mag je pas na 24 uur een back-up aanvragen. Dit is een veiligheidsmaatregel. Hierna kunt u op elk gewenst moment een back-up vragen met dat token.
@@ -3156,29 +3151,26 @@ nl:
       title: Enterprise add-on
       plan_title: Enterprise %{plan} add-on
       plan_name: "%{plan} enterprise plan"
-      trial_text: This feature is included in your active Enterprise trial.
-      plan_text_html: Available starting with the %{plan_name}.
-      unlimited: Onbeperkt
-      already_have_token: 'Already have a token? Add it using the button below to upgrade to the booked Enterprise plan.
-
-        '
-      hide_banner: Hide this banner
-      homescreen_description: 'Enterprise plans extend the Community edition of OpenProject with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running OpenProject in a mission-critical environment.
-
-        '
+      plan_text_html: "Available starting with the %{plan_name}."
+      unlimited: "Onbeperkt"
+      already_have_token: >
+        Already have a token? Add it using the button below to upgrade to the booked Enterprise plan.
+      hide_banner: "Hide this banner"
+      homescreen_description: >
+        Enterprise plans extend the Community edition of Yojana with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running Yojana in a mission-critical environment.
       homescreen_subline: By upgrading, you will also be supporting an open source project.
       baseline_comparison:
         description: Markeer wijzigingen die sindsdien in deze lijst zijn aangebracht.
       benefits:
-        description: What are the benefits of the Enterprise on-premises edition?
-        high_security: Beveiliging functies
-        high_security_text: Single sign on (SAML, OpenID Connect, CAS), LDAP groups.
-        installation: Installatie ondersteuning
-        installation_text: Ervaren softwareingenieurs begeleiden u door het volledige installatieproces in uw eigen infrastructuur.
-        premium_features: Enterprise add-ons
-        premium_features_text: Agile borden, aangepast thema en logo, grafieken, intelligente workflows met aangepaste acties, volledige tekst zoeken voor werkpakket bijlagen en meervoudige aangepaste velden.
-        professional_support: Professionele ondersteuning
-        professional_support_text: Krijg betrouwbare, krachtige ondersteuning van ervaren ondersteunende ingenieurs met deskundige kennis over het functioneren van OpenProject in zakelijke kritieke omgevingen.
+        description: "What are the benefits of the Enterprise on-premises edition?"
+        high_security: "Beveiliging functies"
+        high_security_text: "Single sign on (SAML, OpenID Connect, CAS), LDAP groups."
+        installation: "Installatie ondersteuning"
+        installation_text: "Ervaren softwareingenieurs begeleiden u door het volledige installatieproces in uw eigen infrastructuur."
+        premium_features: "Enterprise add-ons"
+        premium_features_text: "Agile borden, aangepast thema en logo, grafieken, intelligente workflows met aangepaste acties, volledige tekst zoeken voor werkpakket bijlagen en meervoudige aangepaste velden."
+        professional_support: "Professionele ondersteuning"
+        professional_support_text: "Krijg betrouwbare, krachtige ondersteuning van ervaren ondersteunende ingenieurs met deskundige kennis over het functioneren van Yojana in zakelijke kritieke omgevingen."
       work_package_subject_generation:
         description: Maak automatisch gegenereerde onderwerpen met behulp van kenmerken en tekst waarnaar verwezen wordt.
       customize_life_cycle:
@@ -3208,34 +3200,31 @@ nl:
       calculated_values:
         description: Calculated values allow you to create a mathematical formula based attribute using numeric values and other project attributes and custom fields.
       define_custom_style:
-        title: Custom color theme and logo
-        more_info: 'Opmerking: het gebruikte logo is openbaar toegankelijk.'
-        description: Pas uw OpenProject installatie aan met uw eigen logo en kleuren.
+        title: "Custom color theme and logo"
+        more_info: "Opmerking: het gebruikte logo is openbaar toegankelijk."
+        description: Pas uw Yojana installatie aan met uw eigen logo en kleuren.
       custom_actions:
         title: Aangepaste acties
         description: Aangepaste acties zijn met één klik snelkoppelingen naar een aantal vooraf gedefinieerde acties die u op bepaalde werkpakketten op basis van status beschikbaar kunt maken rol, type of project.
       mcp_server:
-        description: Bring OpenProject into your AI workflows with a secure MCP server.
-      meeting_templates:
-        description: Define meeting templates with a set agenda structure and save time by reusing them when creating new meetings.
+        description: "Integrate AI agents with your Yojana instance through MCP."
       nextcloud_sso:
         title: Single Sign-On for Nextcloud Storage
         description: Enable seamless and secure authentication for your Nextcloud storage with Single Sign-On. Simplify access management and enhance user convenience.
       scim_api:
-        title: SCIM clients
-        description: Automate user management in OpenProject by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan.
+        title: "SCIM clients"
+        description: "Automate user management in Yojana by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan."
       sso_auth_providers:
         title: Single Sign-On (SSO)
         description: Enable users to log in via external SSO providers using SAML or OpenID Connect for seamless access and integration with existing identity systems.
       virus_scanning:
-        description: Ensure uploaded files in OpenProject are scanned for viruses before being accessible by other users.
+        description: "Ensure uploaded files in Yojana are scanned for viruses before being accessible by other users."
       project_creation_wizard:
         description: Generate a step-by-step wizard to help project managers fill out a project initiation request.
       placeholder_users:
         title: Tijdelijke gebruikers
-        description: 'Tijdelijke gebruikers zijn een manier om werkpakketten toe te wijzen aan gebruikers die geen deel uitmaken van uw project. Ze kunnen nuttig zijn in een reeks van scenario''s; Bijvoorbeeld, als u de taken wilt bijhouden van een bron die nog niet genoemd of beschikbaar is, of als je die persoon geen toegang wilt geven tot OpenProject maar toch de taken wilt bijhouden die aan hen zijn toegewezen.
-
-          '
+        description: >
+          Tijdelijke gebruikers zijn een manier om werkpakketten toe te wijzen aan gebruikers die geen deel uitmaken van uw project. Ze kunnen nuttig zijn in een reeks van scenario's; Bijvoorbeeld, als u de taken wilt bijhouden van een bron die nog niet genoemd of beschikbaar is, of als je die persoon geen toegang wilt geven tot Yojana maar toch de taken wilt bijhouden die aan hen zijn toegewezen.
       internal_comments:
         title: Internal comments
         description: Internal comments allow an internal team to communicate amongst themselves privately. These are only visible to certain project roles and will never be visible publicly.
@@ -3250,26 +3239,25 @@ nl:
         other: "%{count} days left of %{trial_plan} trial token"
       description_html: You have access to all %{trial_plan} features.
     trial:
-      not_found: You have requested a trial token, but that request is no longer available. Please try again.
-      wait_for_confirmation: We sent you an email to confirm your address in order to retrieve a trial token.
-      already_retrieved: 'Your trial enterprise token was already retrieved. Please check your emails for the token being attached. Please reach out to our support team if you need a new one.
-
-        '
-      successfully_saved: Your trial enterprise token has been successfully retrieved.
-      token_sent: Trial token requested
-      request_again: Request again
-      resend_action: Resend confirmation email
-      welcome_title: Quick feature overview
-      welcome_description: Get a quick overview of project management and team collaboration with OpenProject Enterprise edition.
-      confirmation_info: 'We sent you an email on %{date} to %{email} with all the information to start the free trial of OpenProject Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
-
-        '
-      confirmation_subline: 'Please, check your inbox and follow the steps to start your 14-day free trial.
-
-        '
+      not_found: "You have requested a trial token, but that request is no longer available. Please try again."
+      wait_for_confirmation: "We sent you an email to confirm your address in order to retrieve a trial token."
+      already_retrieved: >
+        Your trial enterprise token was already retrieved. Please check your emails for the token being attached. Please reach out to our support team if you need a new one.
+      successfully_saved: "Your trial enterprise token has been successfully retrieved."
+      token_sent: "Trial token requested"
+      request_again: "Request again"
+      resend_action: "Resend confirmation email"
+      welcome_title: "Quick feature overview"
+      welcome_description: "Get a quick overview of project management and team collaboration with Yojana Enterprise edition."
+      confirmation_info: >
+        We sent you an email on %{date} to %{email} with all the information to start the free trial of Yojana Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
+      confirmation_subline: >
+        Please, check your inbox and follow the steps to start your 14-day free trial.
       domain_caption: The token will be valid for your currently configured host name.
-      receive_newsletter: I want to receive the OpenProject [newsletter](newsletter_url).
-      consent: I agree with the [terms of service](tos_url) and the [privacy policy](privacy_url).
+      receive_newsletter_html: >
+        I want to receive the Yojana <a target="_blank" href="https://www.yojana.girishm.info/newsletter/">newsletter</a>.
+      consent_html: >
+        I agree with the <a target="_blank" href="https://www.yojana.girishm.info/terms-of-service/">terms of service</a> and the <a target="_blank" href="https://www.yojana.girishm.info/data-privacy-and-security/">privacy policy</a>.
   email_calendar_updates:
     state:
       disabled: Disabled.
@@ -3293,51 +3281,51 @@ nl:
   error_can_not_delete_in_use_archived_undisclosed: There are also work packages in archived projects. You need to ask an administrator to perform the deletion to see which projects are affected.
   error_can_not_delete_in_use_archived_work_packages: 'There are also work packages in archived projects. You need to reactivate the following projects first, before you can change the attribute of the respective work packages: %{archived_projects_urls}'
   error_can_not_delete_type:
-    explanation: Dit type bevat werkpakketten en kan niet worden verwijderd. Je kunt alle betrokken werkpakketten zien in <a target="_blank" href="%{url}">deze weergave</a>.
-  error_can_not_delete_standard_type: Standaard types kunnen niet worden verwijderd.
-  error_can_not_invite_user: Het versturen van de uitnodiging naar de gebruiker is mislukt.
-  error_can_not_remove_role: Deze rol is in gebruik en kan niet worden verwijderd.
-  error_can_not_reopen_work_package_on_closed_version: Een werkpakket toegewezen aan een gesloten versie kan niet worden heropend
-  error_can_not_find_all_resources: Kon niet alle gerelateerde bronnen vinden voor dit verzoek.
-  error_can_not_unarchive_project: 'Dit project kan niet worden gedearchiveerd: %{errors}'
-  error_check_user_and_role: Kies een gebruiker en een rol.
-  error_code: Fout %{code}
-  error_color_could_not_be_saved: Kleur kon niet opgeslagen worden
-  error_cookie_missing: De cookie voor OpenProject ontbreekt. Zorg ervoor dat cookies zijn ingeschakeld aangezien deze toepassing anders niet goed zal functioneren.
-  error_custom_option_not_found: Optie bestaat niet.
-  error_enterprise_plan_needed: You need the %{plan} enterprise plan to perform this action.
-  error_enterprise_activation_user_limit: Uw account kon niet worden geactiveerd (gebruikerslimiet bereikt). Neem contact op met uw beheerder om toegang te krijgen.
-  error_enterprise_token_invalid_domain: The Enterprise edition is not active. Your Enterprise token's domain (%{actual}) does not match the system's host name (%{expected}).
-  error_failed_to_delete_entry: Fout bij het verwijderen van deze ingave.
-  error_in_dependent: 'Fout bij poging tot wijziging van afhankelijke object: %{dependent_class} #%{related_id} - %{related_subject}: %{error}'
-  error_in_new_dependent: 'Fout bij het maken van afhankelijke object: %{dependent_class} - %{related_subject}: %{error}'
-  error_invalid_selected_value: De geselecteerde waarde is ongeldig.
-  error_journal_attribute_not_present: Dagboek bevat geen kenmerk %{attribute}.
-  error_pdf_export_too_many_columns: Te veel kolommen geselecteerd voor het exporteren naar PDF. Beperk het aantal kolommen.
-  error_pdf_date_range_too_long: The selected work package date range exceeds the allowable PDF export limit. Please condense the range to a maximum of %{years} years.
-  error_pdf_failed_to_export: De pdf export kan niet worden opgeslagen:%{error}
-  error_token_authenticity: Niet in staat om de Cross-Site Request Forgery token te valideren. Heeft u geprobeert gegevens op meerdere browsers of tabbladen wilt indienen? Sluit alle tabbladen en probeer het opnieuw.
-  error_reminder_not_found: The reminder was not found or was already notified about.
-  error_work_package_not_found_in_project: Het werkpakket werd niet gevonden of maakt geen deel uit van dit project
-  error_work_package_id_not_found: Het werkpakket is niet gevonden.
-  error_must_be_project_member: moet een project lid zijn
-  error_migrations_are_pending: Uw OpenProject installatie heeft database migraties in afwachting. U heeft waarschijnlijk de migraties gemist tijdens uw laatste upgrade. Controleer a.u.b. de upgrade gids om uw installatie goed bij te werken.
-  error_migrations_visit_upgrade_guides: Bezoek onze upgrade gids a.u.b.
-  error_no_default_work_package_status: Geen standaard werkpakket status is gedefinieerd. Controleer uw configuratie (Ga naar 'Administratie-> werkpakket statussen').
-  error_no_type_in_project: Er is geen type gekoppeld aan dit project. Controleer de projectinstellingen.
-  error_omniauth_registration_timed_out: De registratie via een externe authenticatie-provider is verlopen. Probeer het opnieuw.
-  error_omniauth_invalid_auth: De verificatie-informatie van de identiteitsprovider was ongeldig. Neem contact op met uw beheerder voor verdere hulp.
-  error_password_change_failed: Er is een fout opgetreden tijdens het wijzigen van het wachtwoord.
-  error_scm_command_failed: 'Er is een fout opgetreden tijdens het proberen om toegang te krijgen tot de repository: %{value}'
-  error_scm_not_found: De vermelding of de herziening werd niet gevonden in de repository.
-  error_type_could_not_be_saved: Type kan niet worden opgeslagen
-  error_unable_delete_status: De status van het werkpakket kan niet worden verwijderd omdat het door minstens één werkpakket wordt gebruikt.
-  error_unable_delete_default_status: Niet in staat de status van het standaard werkpakket te verwijderen. Gelieve een andere status van het standaard werkpakket te selecteren alvorens de huidige te verwijderen.
-  error_unable_to_connect: Kan geen verbinding maken (%{value})
-  error_unable_delete_wiki: Niet in staat om de wiki-pagina te verwijderen.
-  error_unable_update_wiki: Kan de wiki-pagina niet bijwerken.
-  error_workflow_copy_source: Selecteer een type rijbron of rol
-  error_workflow_copy_target: Selecteer (de) type(n) en rol(len)
+    explanation: 'Dit type bevat werkpakketten en kan niet worden verwijderd. Je kunt alle betrokken werkpakketten zien in <a target="_blank" href="%{url}">deze weergave</a>.'
+  error_can_not_delete_standard_type: "Standaard types kunnen niet worden verwijderd."
+  error_can_not_invite_user: "Het versturen van de uitnodiging naar de gebruiker is mislukt."
+  error_can_not_remove_role: "Deze rol is in gebruik en kan niet worden verwijderd."
+  error_can_not_reopen_work_package_on_closed_version: "Een werkpakket toegewezen aan een gesloten versie kan niet worden heropend"
+  error_can_not_find_all_resources: "Kon niet alle gerelateerde bronnen vinden voor dit verzoek."
+  error_can_not_unarchive_project: "Dit project kan niet worden gedearchiveerd: %{errors}"
+  error_check_user_and_role: "Kies een gebruiker en een rol."
+  error_code: "Fout %{code}"
+  error_color_could_not_be_saved: "Kleur kon niet opgeslagen worden"
+  error_cookie_missing: "De cookie voor Yojana ontbreekt. Zorg ervoor dat cookies zijn ingeschakeld aangezien deze toepassing anders niet goed zal functioneren."
+  error_custom_option_not_found: "Optie bestaat niet."
+  error_enterprise_plan_needed: "You need the %{plan} enterprise plan to perform this action."
+  error_enterprise_activation_user_limit: "Uw account kon niet worden geactiveerd (gebruikerslimiet bereikt). Neem contact op met uw beheerder om toegang te krijgen."
+  error_enterprise_token_invalid_domain: "The Enterprise edition is not active. Your Enterprise token's domain (%{actual}) does not match the system's host name (%{expected})."
+  error_failed_to_delete_entry: "Fout bij het verwijderen van deze ingave."
+  error_in_dependent: "Fout bij poging tot wijziging van afhankelijke object: %{dependent_class} #%{related_id} - %{related_subject}: %{error}"
+  error_in_new_dependent: "Fout bij het maken van afhankelijke object: %{dependent_class} - %{related_subject}: %{error}"
+  error_invalid_selected_value: "De geselecteerde waarde is ongeldig."
+  error_journal_attribute_not_present: "Dagboek bevat geen kenmerk %{attribute}."
+  error_pdf_export_too_many_columns: "Te veel kolommen geselecteerd voor het exporteren naar PDF. Beperk het aantal kolommen."
+  error_pdf_date_range_too_long: "The selected work package date range exceeds the allowable PDF export limit. Please condense the range to a maximum of %{years} years."
+  error_pdf_failed_to_export: "De pdf export kan niet worden opgeslagen:%{error}"
+  error_token_authenticity: "Niet in staat om de Cross-Site Request Forgery token te valideren. Heeft u geprobeert gegevens op meerdere browsers of tabbladen wilt indienen? Sluit alle tabbladen en probeer het opnieuw."
+  error_reminder_not_found: "The reminder was not found or was already notified about."
+  error_work_package_not_found_in_project: "Het werkpakket werd niet gevonden of maakt geen deel uit van dit project"
+  error_work_package_id_not_found: "Het werkpakket is niet gevonden."
+  error_must_be_project_member: "moet een project lid zijn"
+  error_migrations_are_pending: "Uw Yojana installatie heeft database migraties in afwachting. U heeft waarschijnlijk de migraties gemist tijdens uw laatste upgrade. Controleer a.u.b. de upgrade gids om uw installatie goed bij te werken."
+  error_migrations_visit_upgrade_guides: "Bezoek onze upgrade gids a.u.b."
+  error_no_default_work_package_status: 'Geen standaard werkpakket status is gedefinieerd. Controleer uw configuratie (Ga naar ''Administratie-> werkpakket statussen'').'
+  error_no_type_in_project: "Er is geen type gekoppeld aan dit project. Controleer de projectinstellingen."
+  error_omniauth_registration_timed_out: "De registratie via een externe authenticatie-provider is verlopen. Probeer het opnieuw."
+  error_omniauth_invalid_auth: "De verificatie-informatie van de identiteitsprovider was ongeldig. Neem contact op met uw beheerder voor verdere hulp."
+  error_password_change_failed: "Er is een fout opgetreden tijdens het wijzigen van het wachtwoord."
+  error_scm_command_failed: "Er is een fout opgetreden tijdens het proberen om toegang te krijgen tot de repository: %{value}"
+  error_scm_not_found: "De vermelding of de herziening werd niet gevonden in de repository."
+  error_type_could_not_be_saved: "Type kan niet worden opgeslagen"
+  error_unable_delete_status: "De status van het werkpakket kan niet worden verwijderd omdat het door minstens één werkpakket wordt gebruikt."
+  error_unable_delete_default_status: "Niet in staat de status van het standaard werkpakket te verwijderen. Gelieve een andere status van het standaard werkpakket te selecteren alvorens de huidige te verwijderen."
+  error_unable_to_connect: "Kan geen verbinding maken (%{value})"
+  error_unable_delete_wiki: "Niet in staat om de wiki-pagina te verwijderen."
+  error_unable_update_wiki: "Kan de wiki-pagina niet bijwerken."
+  error_workflow_copy_source: "Selecteer een type rijbron of rol"
+  error_workflow_copy_target: "Selecteer (de) type(n) en rol(len)"
   error_menu_item_not_created: Menu-item kan niet worden toegevoegd
   error_menu_item_not_saved: Menu-item kan niet worden opgeslagen
   error_wiki_root_menu_item_conflict: 'Kan "%{old_name}" niet naar "%{new_name}" hernoemen vanwege een conflict in het resulterende menu-item met het bestaande menu-item. "%{existing_caption}" (%{existing_identifier}).
@@ -3432,8 +3420,8 @@ nl:
     succeeded: Export completed
     failed: 'An error has occurred while trying to export the work packages: %{message}'
     demo:
-      heading: Demo PDF
-      footer: Generated by OpenProject
+      heading: "Demo PDF"
+      footer: "Generated by Yojana"
       button_text: Generate Demo PDF
     errors:
       embedded_table_with_too_many_columns: This embedded work package table could not fit on the page, please reduce the number of columns.
@@ -3554,7 +3542,7 @@ nl:
         no_results_subtext: Add one or multiple projects as favorite through their overview or in a project list.
       users: Nieuwste geregistreerde gebruikers in deze instantie.
     blocks:
-      community: OpenProject gemeenschap
+      community: "Yojana gemeenschap"
       upsell:
         title: Upgrade naar Enterprise-editie
       new_features:
@@ -3566,40 +3554,38 @@ nl:
 
             '
           new_features_list:
-            line_0: XWiki integration (Corporate plan).
-            line_1: Sprint goals.
-            line_2: "'All sprints' overview page."
-            line_3: Display backlog buckets in work packages and work package tables.
-            line_4: Improved support for project-based (semantic) identifiers.
-            line_5: Convert meeting agenda items into work packages.
-            line_6: Configure cost types per project.
+            line_0: Automated project initiation (Enterprise add-on).
+            line_1: "Meetings: add new or existing work packages as outcomes."
+            line_2: "Meetings: show iCal responses in Yojana."
+            line_3: "Recurring meetings: duplicate agenda items to the next occurrence."
+            line_4: "Release to Community: Attribute highlighting."
+            line_5: Warning before opening external links in user-provided content (Enterprise add-on).
+            line_6: Improved performance and user experience, including the Activity tab and Documents module.
     links:
-      upgrade_enterprise_edition: Upgrade naar Enterprise-editie
-      postgres_migration: Uw installatie overzetten naar PostgreSQL
-      user_guides: Gebruikershandleidingen
-      faq: Veelgestelde vragen (FAQ)
-      impressum: Juridische mededeling
-      glossary: Woordenlijst
-      shortcuts: Snelkoppelingen
-      blog: OpenProject blog
-      forums: Gemeenschapsforum
-      security_alerts: Security alerts
-      newsletter: Newsletter
+      upgrade_enterprise_edition: "Upgrade naar Enterprise-editie"
+      postgres_migration: "Uw installatie overzetten naar PostgreSQL"
+      user_guides: "Gebruikershandleidingen"
+      faq: "Veelgestelde vragen (FAQ)"
+      impressum: "Juridische mededeling"
+      glossary: "Woordenlijst"
+      shortcuts: "Snelkoppelingen"
+      blog: "Yojana blog"
+      forums: "Gemeenschapsforum"
+      security_alerts: "Security alerts"
+      newsletter: "Newsletter"
   image_conversion:
     imagemagick: Imagemagick
   journals:
     changes_retracted: De wijzigingen werden teruggedraaid.
     caused_changes:
-      budget_deleted: Budget has been deleted
-      dates_changed: Data gewijzigd
-      default_attribute_written: Alleen-lezen kenmerken geschreven
-      import: Imported
-      progress_mode_changed_to_status_based: Voortgangsberekening bijgewerkt
-      status_changed: Status '%{status_name}'
-      system_update: 'OpenProject systeemupdate:'
-      work_package_duplicate_closed: 'Duplicate work package updated:'
-      total_percent_complete_mode_changed_to_work_weighted_average: Calculation of % Complete totals now weighted by Work.
-      total_percent_complete_mode_changed_to_simple_average: Calculation of % Complete totals now based on a simple average of only % Complete values.
+      dates_changed: "Data gewijzigd"
+      default_attribute_written: "Alleen-lezen kenmerken geschreven"
+      progress_mode_changed_to_status_based: "Voortgangsberekening bijgewerkt"
+      status_changed: "Status '%{status_name}'"
+      system_update: "Yojana systeemupdate:"
+      work_package_duplicate_closed: "Duplicate work package updated:"
+      total_percent_complete_mode_changed_to_work_weighted_average: "Calculation of % Complete totals now weighted by Work."
+      total_percent_complete_mode_changed_to_simple_average: "Calculation of % Complete totals now based on a simple average of only % Complete values."
     cause_descriptions:
       import:
         header: changes by %{author}
@@ -3663,7 +3649,7 @@ nl:
         notifications: Notification settings
         email_reminders: Email reminders
     access_tokens:
-      description: Provider tokens are issued by OpenProject, allowing other applications to access it. Client tokens are issued by other applications, allowing OpenProject to access them.
+      description: "Provider tokens are issued by Yojana, allowing other applications to access it. Client tokens are issued by other applications, allowing Yojana to access them."
       no_results:
         title: Geen toegangstokens weer te geven
         description: Alle van hen zijn uitgeschakeld. Zij kunnen opnieuw worden ingeschakeld in het administratie menu.
@@ -3679,49 +3665,49 @@ nl:
         provider:
           title: Provider tokens
       token/api:
-        blank_description: There is no API token yet. You can create one using the button below.
-        blank_title: No API token
-        title: API
-        table_title: API tokens
-        text_hint: API tokens allow third-party applications to communicate with this OpenProject instance via REST APIs.
-        static_token_name: API token
-        disabled_text: API tokens are not enabled by the administrator. Please contact your administrator to use this feature.
-        add_button: API token
+        blank_description: "There is no API token yet. You can create one using the button below."
+        blank_title: "No API token"
+        title: "API"
+        table_title: "API tokens"
+        text_hint: "API tokens allow third-party applications to communicate with this Yojana instance via REST APIs."
+        static_token_name: "API token"
+        disabled_text: "API tokens are not enabled by the administrator. Please contact your administrator to use this feature."
+        add_button: "API token"
       ical:
-        blank_description: To add an iCalendar token, subscribe to a new or existing calendar from within the Calendar module of a project. You must have the necessary permissions.
-        blank_title: No iCalendar token
-        title: iCalendar
-        table_title: iCalendar tokens
-        text_hint_link: iCalendar tokens allow users to [subscribe to OpenProject calendars](docs_url) and view up-to-date work package information from external clients.
-        disabled_text: iCalendar subscriptions are not enabled by the administrator. Please contact your administrator to use this feature.
+        blank_description: "To add an iCalendar token, subscribe to a new or existing calendar from within the Calendar module of a project. You must have the necessary permissions."
+        blank_title: "No iCalendar token"
+        title: "iCalendar"
+        table_title: "iCalendar tokens"
+        text_hint_link: "iCalendar tokens allow users to [subscribe to Yojana calendars](docs_url) and view up-to-date work package information from external clients."
+        disabled_text: "iCalendar subscriptions are not enabled by the administrator. Please contact your administrator to use this feature."
       oauth_application:
-        active_tokens: Active tokens
-        blank_description: There is no third-party application access configured and active for you.
-        blank_title: No OAuth application token
-        last_refreshed_at: Last refreshed at
-        title: OAuth
-        table_title: OAuth application tokens
-        text_hint: OAuth application tokens allow third-party applications to connect with this OpenProject instance.
+        active_tokens: "Active tokens"
+        blank_description: "There is no third-party application access configured and active for you."
+        blank_title: "No OAuth application token"
+        last_used_at: "Last used at"
+        title: "OAuth"
+        table_title: "OAuth application tokens"
+        text_hint: "OAuth application tokens allow third-party applications to connect with this Yojana instance."
       oauth_client:
-        blank_description: There are no OAuth client tokens yet.
-        blank_title: No OAuth client tokens
-        failed: An error occurred and the token couldn't be removed. Please try again later.
-        integration_type: Integration type
-        table_title: OAuth client tokens
-        text_hint: OAuth client tokens allow this OpenProject instance to connect with external applications, such as file storages.
-        title: OAuth
-        remove_token: Do you really want to remove this token? You will need to login again on %{integration}.
-        removed: OAuth client token successfully removed
-        unknown_integration: Unknown
+        blank_description: "There are no OAuth client tokens yet."
+        blank_title: "No OAuth client tokens"
+        failed: "An error occurred and the token couldn't be removed. Please try again later."
+        integration_type: "Integration type"
+        table_title: "OAuth client tokens"
+        text_hint: "OAuth client tokens allow this Yojana instance to connect with external applications, such as file storages."
+        title: "OAuth"
+        remove_token: "Do you really want to remove this token? You will need to login again on %{integration}."
+        removed: "OAuth client token successfully removed"
+        unknown_integration: "Unknown"
       token/rss:
-        add_button: RSS token
-        blank_description: There is no RSS token yet. You can create one using the button below.
-        blank_title: No RSS token
-        title: RSS
-        table_title: RSS tokens
-        text_hint: RSS tokens allow users to keep up with the latest changes in this OpenProject instance via an external RSS reader.
-        static_token_name: RSS token
-        disabled_text: RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature.
+        add_button: "RSS token"
+        blank_description: "There is no RSS token yet. You can create one using the button below."
+        blank_title: "No RSS token"
+        title: "RSS"
+        table_title: "RSS tokens"
+        text_hint: "RSS tokens allow users to keep up with the latest changes in this Yojana instance via an external RSS reader."
+        static_token_name: "RSS token"
+        disabled_text: "RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature."
       storages:
         unknown_storage: Onbekende opslag
     email_reminders:
@@ -3945,51 +3931,48 @@ nl:
   label_collapse: Samenvouwen
   label_collapsed_click_to_show: Samengevouwen. Klik om te tonen
   label_configuration: configuratie
-  label_comment_add: Een opmerking toevoegen
-  label_comment_added: Opmerking toegevoegd
-  label_comment_delete: Opmerkingen verwijderen
-  label_comment_plural: Opmerkingen
-  label_commits_per_author: Bijdragen per auteur
-  label_commits_per_month: Bijdragen per maand
-  label_confirmation: Bevestiging
-  label_contains: bevat
-  label_starts_with: starts with
-  label_content: Inhoud
-  label_color_plural: Kleuren
-  label_copied: gekopieerd
-  label_copy_same_as_target: Zelfde als doel
-  label_copy_source: Bron
-  label_copy_target: Doel
-  label_copy_workflow_from: Kopieer workflow van
-  label_copy_workflow_from_type: Copy to another type
-  label_copy_workflow_from_role: Copy to other roles
-  label_copy_project: Project kopiëren
-  label_core_version: Core-versie
-  label_core_build: Core build
-  label_created_by: Created by %{user}
-  label_current_status: Huidige status
-  label_current_version: Huidige versie
-  label_custom_field_add_no_type: Voegt dit veld toe aan een werkpakket type
-  label_custom_field_new: Nieuw aangepast veld
-  label_custom_field_plural: Aangepaste velden
-  label_custom_field_default_type: Leeg type
-  label_custom_style: Ontwerp
-  label_custom_style_description: Choose how OpenProject looks to you with themes, select your default colors to use in the app and how exports look like.
-  label_dashboard: Dashboard
-  label_database_version: PostgreSQL versie
-  label_date: Datum
-  label_dates: Datums
-  label_date_and_time: Datum en tijd
-  label_date_format: Datumnotatie
-  label_date_from: Van
-  label_date_from_to: Van %{start} tot %{end}
-  label_date_to: Aan
-  label_day_plural: dagen
-  label_default: Standaard
-  label_delete_user: Gebruiker verwijderen
-  label_delete_project: Verwijder project
-  label_delete: Verwijderen
-  label_deleted: verwijderd
+  label_comment_add: "Een opmerking toevoegen"
+  label_comment_added: "Opmerking toegevoegd"
+  label_comment_delete: "Opmerkingen verwijderen"
+  label_comment_plural: "Opmerkingen"
+  label_commits_per_author: "Bijdragen per auteur"
+  label_commits_per_month: "Bijdragen per maand"
+  label_confirmation: "Bevestiging"
+  label_contains: "bevat"
+  label_content: "Inhoud"
+  label_color_plural: "Kleuren"
+  label_copied: "gekopieerd"
+  label_copy_same_as_target: "Zelfde als doel"
+  label_copy_source: "Bron"
+  label_copy_target: "Doel"
+  label_copy_workflow_from: "Kopieer workflow van"
+  label_copy_project: "Project kopiëren"
+  label_core_version: "Core-versie"
+  label_core_build: "Core build"
+  label_created_by: "Created by %{user}"
+  label_current_status: "Huidige status"
+  label_current_version: "Huidige versie"
+  label_custom_field_add_no_type: "Voegt dit veld toe aan een werkpakket type"
+  label_custom_field_new: "Nieuw aangepast veld"
+  label_custom_field_plural: "Aangepaste velden"
+  label_custom_field_default_type: "Leeg type"
+  label_custom_style: "Ontwerp"
+  label_custom_style_description: "Choose how Yojana looks to you with themes, select your default colors to use in the app and how exports look like."
+  label_dashboard: "Dashboard"
+  label_database_version: "PostgreSQL versie"
+  label_date: "Datum"
+  label_dates: "Datums"
+  label_date_and_time: "Datum en tijd"
+  label_date_format: "Datumnotatie"
+  label_date_from: "Van"
+  label_date_from_to: "Van %{start} tot %{end}"
+  label_date_to: "Aan"
+  label_day_plural: "dagen"
+  label_default: "Standaard"
+  label_delete_user: "Gebruiker verwijderen"
+  label_delete_project: "Verwijder project"
+  label_delete: "Verwijderen"
+  label_deleted: "verwijderd"
   label_deleted_custom_field: "(verwijderde aangepast veld)"
   label_deleted_custom_item: "(deleted item)"
   label_deleted_custom_option: "(verwijderde optie)"
@@ -4243,61 +4226,53 @@ nl:
   label_not_found: niet gevonden
   label_none: geen
   label_none_parentheses: "(geen)"
-  label_not_contains: bevat geen
-  label_not_equals: is niet
-  label_life_cycle_step_plural: Project life cycle
-  label_on: op
-  label_operator_all: is niet leeg
-  label_operator_none: is leeg
-  label_operator_equals_or: is (OR)
-  label_operator_equals_all: is (AND)
-  label_operator_shared_with_user_any: elke
-  label_open: open
-  label_closed: gesloten
-  label_open_menu: Menu openen
-  label_open_work_packages: Open
-  label_open_work_packages_plural: Open
-  label_openproject_website: OpenProject website
-  label_optional_description: Omschrijving
-  label_options: Opties
-  label_other: Overige
-  label_overall_activity: Totale activiteit
-  label_overview: Overzicht
-  label_page_title: Pagina titel
-  label_parent_group_caption: 'Setting a parent group will make this group a subgroup of the selected parent group. This will also inherit all memberships, including permissions of the parent group.
-
-    '
-  label_part_of: onderdeel van
-  label_password_lost: Wachtwoord vergeten?
-  label_password_rule_lowercase: Kleine letters
-  label_password_rule_numeric: Numerieke tekens
-  label_password_rule_special: Speciale tekens
-  label_password_rule_uppercase: Hoofdletters
-  label_password_requirement_lowercase: Must contain at least one lowercase character.
-  label_password_requirement_numeric: Must contain at least one numeric character.
-  label_password_requirement_special: Must contain at least one special character.
-  label_password_requirement_uppercase: Must contain at least one uppercase character.
-  label_path_encoding: Pad codering
-  label_per_page: 'Per pagina:'
-  label_people: Mensen
-  label_permissions: Machtigingen
-  label_permissions_report: Machtigingen verslag
-  label_personalize_page: Personaliseer deze pagina
-  label_placeholder_user: Tijdelijke gebruiker
-  label_placeholder_user_new: Nieuwe tijdelijke gebruiker
-  label_placeholder_user_plural: Tijdelijke gebruikers
-  label_planning: Planning
-  label_please_login: Log in a.u.b.
-  label_plugins: Plug-ins
-  label_portfolio_plural: Portfolios
-  label_modules_and_plugins: Modules en Plugins
-  label_precedes: voorafgaand aan
-  label_preferences: Voorkeuren
-  label_preview: Voorbeeld
-  label_preview_not_available: Voorbeeld niet beschikbaar
-  label_previous: Vorige
-  label_previous_week: Vorige week
-  label_previous_year: Previous year
+  label_not_contains: "bevat geen"
+  label_not_equals: "is niet"
+  label_life_cycle_step_plural: "Project life cycle"
+  label_on: "op"
+  label_operator_all: "is niet leeg"
+  label_operator_none: "is leeg"
+  label_operator_equals_or: "is (OR)"
+  label_operator_equals_all: "is (AND)"
+  label_operator_shared_with_user_any: "elke"
+  label_open: "open"
+  label_closed: "gesloten"
+  label_open_menu: "Menu openen"
+  label_open_work_packages: "Open"
+  label_open_work_packages_plural: "Open"
+  label_openproject_website: "Yojana website"
+  label_optional_description: "Omschrijving"
+  label_options: "Opties"
+  label_other: "Overige"
+  label_overall_activity: "Totale activiteit"
+  label_overview: "Overzicht"
+  label_page_title: "Pagina titel"
+  label_part_of: "onderdeel van"
+  label_password_lost: "Wachtwoord vergeten?"
+  label_password_rule_lowercase: "Kleine letters"
+  label_password_rule_numeric: "Numerieke tekens"
+  label_password_rule_special: "Speciale tekens"
+  label_password_rule_uppercase: "Hoofdletters"
+  label_path_encoding: "Pad codering"
+  label_per_page: "Per pagina:"
+  label_people: "Mensen"
+  label_permissions: "Machtigingen"
+  label_permissions_report: "Machtigingen verslag"
+  label_personalize_page: "Personaliseer deze pagina"
+  label_placeholder_user: "Tijdelijke gebruiker"
+  label_placeholder_user_new: "Nieuwe tijdelijke gebruiker"
+  label_placeholder_user_plural: "Tijdelijke gebruikers"
+  label_planning: "Planning"
+  label_please_login: "Log in a.u.b."
+  label_plugins: "Plug-ins"
+  label_portfolio_plural: "Portfolios"
+  label_modules_and_plugins: "Modules en Plugins"
+  label_precedes: "voorafgaand aan"
+  label_preferences: "Voorkeuren"
+  label_preview: "Voorbeeld"
+  label_preview_not_available: "Voorbeeld niet beschikbaar"
+  label_previous: "Vorige"
+  label_previous_week: "Vorige week"
   label_principal_invite_via_email: " of nieuwe gebruikers uitnodigen via e-mail"
   label_principal_search: Bestaande gebruikers of groepen toevoegen
   label_privacy_policy: Gegevensprivacy en veiligheidsbeleid
@@ -4698,11 +4673,11 @@ nl:
   mail_body_backup_token_reset_user_info: Uw back-up token is gereset.
   mail_body_backup_token_info: Het vorige token is niet langer geldig.
   mail_body_backup_waiting_period: Het nieuwe token zal ingeschakeld worden in %{hours} uur.
-  mail_body_backup_token_warning: Als u dit niet was, log dan onmiddellijk in op OpenProject en reset het opnieuw.
-  mail_body_incoming_email_error: De e-mail die u naar OpenProject heeft verzonden kon niet worden verwerkt.
-  mail_body_incoming_email_error_in_reply_to: Op %{received_at} %{from_email} geschreven
-  mail_body_incoming_email_error_logs: Logboeken
-  mail_body_lost_password: 'Om uw wachtwoord te wijzigen, klikt u op op de volgende link:'
+  mail_body_backup_token_warning: Als u dit niet was, log dan onmiddellijk in op Yojana en reset het opnieuw.
+  mail_body_incoming_email_error: De e-mail die u naar Yojana heeft verzonden kon niet worden verwerkt.
+  mail_body_incoming_email_error_in_reply_to: "Op %{received_at} %{from_email} geschreven"
+  mail_body_incoming_email_error_logs: "Logboeken"
+  mail_body_lost_password: "Om uw wachtwoord te wijzigen, klikt u op op de volgende link:"
   mail_password_change_not_possible:
     title: Wachtwoord wijzigen niet mogelijk
     body: Your account at %{app_title} is connected to an external authentication provider (%{name}).
@@ -4712,21 +4687,21 @@ nl:
   mail_body_register_user: Beste %{name},
   mail_body_register_links_html: |
     Blader gerust door ons youtube kanaal (%{youtube_link}) waar we een webinar (%{webinar_link})
-    en "Aan de slag gaan" video's (%{get_started_link}) voorzien om uw eerste stappen in OpenProject zo eenvoudig mogelijk te maken.
+    en "Aan de slag gaan" video's (%{get_started_link}) voorzien om uw eerste stappen in Yojana zo eenvoudig mogelijk te maken.
     <br />
     Als u nog vragen heeft, raadpleeg dan onze documentatie (%{documentation_link}) of neem contact op met uw beheerder.
-  mail_body_register_closing: Jouw OpenProject team
-  mail_body_register_ending: Blijf op de hoogte! Met vriendelijke groet,
+  mail_body_register_closing: "Jouw Yojana team"
+  mail_body_register_ending: "Blijf op de hoogte! Met vriendelijke groet,"
   mail_body_reminder: "%{count} werkpakket(ten) die aan u zijn toegewezen bereiken in de volgende %{days} dagen hun uiterste datum:"
   mail_body_group_reminder: '%{count} werkpakket(ten) die zijn toegewezen aan groep "%{group}" zullen in de komende %{days} dagen klaar zijn:'
   mail_body_wiki_page_added: De '%{id}' wikipagina is toegevoegd door %{author}.
   mail_body_wiki_page_updated: De '%{id}' wikipagina is bijgewerkt door %{author}.
   mail_subject_account_activation_request: "%{value} account aanvraag dient geactiveerd te worden"
-  mail_subject_backup_ready: Je back-up is klaar
-  mail_subject_backup_token_reset: Back-up token restten
-  mail_subject_incoming_email_error: Een e-mail die u naar OpenProject heeft verzonden kon niet worden verwerkt
-  mail_subject_lost_password: Uw wachtwoord %{value}
-  mail_subject_register: Uw %{value} account activatie
+  mail_subject_backup_ready: "Je back-up is klaar"
+  mail_subject_backup_token_reset: "Back-up token restten"
+  mail_subject_incoming_email_error: "Een e-mail die u naar Yojana heeft verzonden kon niet worden verwerkt"
+  mail_subject_lost_password: "Uw wachtwoord %{value}"
+  mail_subject_register: "Uw %{value} account activatie"
   mail_subject_wiki_content_added: "'%{id}' wikipagina is toegevoegd"
   mail_subject_wiki_content_updated: "'%{id}' wikipagina is bijgewerkt"
   mail_member_added_project:
@@ -4752,17 +4727,16 @@ nl:
       roles: 'U heeft nu de volgende rollen:'
   mail_user_activation_limit_reached:
     subject: Activering gebruikerslimiet bereikt
-    message_html: |
-      A new user (%{email}) tried to create an account on an OpenProject environment that you manage (%{host}).
-      The user cannot activate their account since the user limit has been reached.
+    message: |
+      Een nieuwe gebruiker (%{email}) heeft geprobeerd om een account in een Yojana omgeving dat u beheerd (%{host}) te maken. De gebruiker kan het account niet activeren omdat het maximum aantal gebruikers is bereikt.
     steps:
-      a: Upgrade uw abbonement ([here](upgrade_url))
-      b: Vergrendelen of verwijderen van een bestaande gebruiker ([here](users_url))
-      label: 'Als u wilt dat de gebruiker ja inloggen kunt in u: '
-  more_actions: Meer functies
-  noscript_description: U moet JavaScript activeren om OpenProject te kunnen gebruiken!
-  noscript_heading: JavaScript uitgeschakeld
-  noscript_learn_more: Meer informatie
+      label: "Als u wilt dat de gebruiker ja inloggen kunt in u: "
+      a: "Upgrade uw abbonement ([here](upgrade_url))" #here turned into a link
+      b: "Vergrendelen of verwijderen van een bestaande gebruiker ([here](users_url))" #here turned into a link
+  more_actions: "Meer functies"
+  noscript_description: "U moet JavaScript activeren om Yojana te kunnen gebruiken!"
+  noscript_heading: "JavaScript uitgeschakeld"
+  noscript_learn_more: "Meer informatie"
   notice_accessibility_mode: De toegankelijkheidsmodus kan worden ingeschakeld in de [settings](url) van uw account.
   notice_account_activated: Uw account is geactiveerd. U kunt nu inloggen.
   notice_account_already_activated: Het account is al geactiveerd.
@@ -4836,10 +4810,10 @@ nl:
   notice_automatic_set_of_standard_type: Standaardtype automatisch ingesteld.
   notice_logged_out: U bent uitgelogd.
   notice_wont_delete_auth_source: The LDAP connection cannot be deleted as long as there are still users using it.
-  notice_project_cannot_update_custom_fields: 'U kunt de beschikbare aangepaste projectvelden niet bijwerken. Het project is ongeldig: %{errors}'
-  notice_attachment_migration_wiki_page: 'Deze pagina is automatisch gegenereerd tijdens het bijwerken van OpenProject. Het bevat alle bijlagen die eerder gekoppeld waren aan de %{container_type} "%{container_name}".
-
-    '
+  notice_project_cannot_update_custom_fields: "U kunt de beschikbare aangepaste projectvelden niet bijwerken. Het project is ongeldig: %{errors}"
+  notice_attachment_migration_wiki_page: >
+    Deze pagina is automatisch gegenereerd tijdens het bijwerken van Yojana. Het bevat alle bijlagen die eerder gekoppeld waren aan de %{container_type} "%{container_name}".
+  #Default format for numbers
   number:
     format:
       delimiter: ","
@@ -4860,138 +4834,127 @@ nl:
           mb: MB
           tb: TB
   onboarding:
-    heading_getting_started: Krijg een overzicht
-    text_getting_started_description: Krijg een snel overzicht van projectbeheer en teamsamenwerking met OpenProject. U kunt deze video opnieuw starten vanuit het helpmenu.
-    welcome: Welkom bij %{app_title}
-    select_language: Gelieve uw taal te kiezen
-  open_project:
-    common:
-      work_package_card_component:
-        drag_handle:
-          label: Drag to reorder
-        menu:
-          label_actions: Work package actions
-        parent: Parent
-        undisclosed: Undisclosed
-  permission_add_work_package_comments: Add comments
-  permission_add_work_packages: Werkpakketten toevoegen
-  permission_add_messages: Berichten posten
-  permission_add_project: Projecten aanmaken
-  permission_add_portfolios: Create portfolios
-  permission_add_programs: Create programs
-  permission_add_work_package_attachments: Bijlagen toevoegen
-  permission_add_work_package_attachments_explanation: Allows adding attachments without Edit work packages permission
-  permission_add_internal_comments: Write internal comments
-  permission_archive_project: Project archiveren
-  permission_create_user: Gebruikers aanmaken
-  permission_manage_user: Gebruikers bewerken
-  permission_manage_placeholder_user: Maak, bewerk en verwijder tijdelijke gebruikers
-  permission_add_subprojects: Subprojecten maken
-  permission_add_work_package_watchers: Kijkers toevoegen
-  permission_assign_versions: Versies toewijzen
-  permission_browse_repository: Alleen-lezen toegang tot opslagplaats (bladeren en uitchecken)
-  permission_change_work_package_status: Change work package status
-  permission_change_work_package_status_explanation: Allows changing status without Edit work packages permission
-  permission_comment_news: Opmerking nieuws
-  permission_commit_access: Lees/schrijf toegang tot opslagplaats (bevestig)
-  permission_copy_projects: Kopiëren van projecten
-  permission_copy_projects_explanation: In template projects, this permission has a secondary function, it allows the creation of new projects derived from the template.
-  permission_copy_work_packages: Duplicate work packages
-  permission_create_backup: Back-ups maken
-  permission_delete_work_package_watchers: Kijkers verwijderen
-  permission_delete_work_packages: Werkpakketten verwijderen
-  permission_delete_messages: Berichten verwijderen
-  permission_delete_own_messages: Eigen berichten verwijderen
-  permission_delete_reportings: Rapporteringen verwijderen
-  permission_delete_timelines: Tijdlijnen verwijderen
-  permission_edit_work_package_comments: Moderate comments
-  permission_edit_work_package_comments_explanation: 'Caution: Users with this permission are able to edit anyone''s comment.'
-  permission_edit_work_packages: Werkpakketten bewerken
-  permission_edit_messages: Berichten bewerken
-  permission_edit_own_internal_comments: Edit own internal comments
-  permission_edit_own_work_package_comments: Edit own comments
-  permission_edit_own_messages: Eigen berichten bewerken
-  permission_edit_own_time_entries: Bewerk de logboeken van de eigen tijd
-  permission_edit_others_internal_comments: Moderate internal comments
-  permission_edit_others_internal_comments_explanation: 'Caution: Users with this permission are able to edit other users'' internal comments.'
-  permission_edit_project: Project bewerken
-  permission_edit_project_attributes: Bewerk project kenmerken
-  permission_edit_project_phases: Edit project phases
-  permission_edit_reportings: Rapporteringen bewerken
-  permission_edit_time_entries: Bewerk tijdregistraties voor andere gebruikers
-  permission_edit_timelines: Bewerken van tijdlijnen
-  permission_edit_wiki_pages: Wiki pagina's bewerken
-  permission_export_work_packages: Werkpakketten exporteren
-  permission_export_projects: Export projects
-  permission_invite_members_by_email: Invite members by email
-  permission_invite_members_by_email_explanation: 'Allows users to invite new members by email. Invited users will receive an email with a link to set their password and activate their account. Depends on the permission to manage members
-
-    '
-  permission_log_own_time: Eigen tijd registreren
-  permission_log_time: Log tijd voor andere gebruikers
-  permission_manage_forums: Forum beheren
-  permission_manage_categories: Werkpakket Categorieën beheren
-  permission_manage_dashboards: Dashboards beheren
-  permission_manage_work_package_relations: Werkpakket relaties beheren
-  permission_manage_members: Beheer gebruikers
-  permission_manage_news: Beheren van nieuws
-  permission_manage_project_activities: Projectactiviteiten beheren
-  permission_manage_public_queries: Openbare overzichten beheren
-  permission_manage_repository: Repository beheren
-  permission_manage_subtasks: Beheer werkpakket hiërarchieën
-  permission_manage_versions: Versies beheren
-  permission_manage_wiki: Wiki beheren
-  permission_manage_own_working_times: Manage own working times
-  permission_manage_own_working_times_explanation: 'Allows users to manage their own working times, and personal non-working days.
-
-    '
-  permission_manage_working_times: Manage working times for all users
-  permission_manage_working_times_explanation: 'Allows users to manage working times for all users, including personal non-working days.
-
-    '
-  permission_move_work_packages: Werkpakketten verplaatsen
-  permission_save_queries: Weergaves opslaan
-  permission_search_project: Search project
-  permission_select_custom_fields: Aangepaste velden selecteren
-  permission_select_project_custom_fields: Selecteer project kenmerk
-  permission_select_project_phases: Select project phases
-  permission_select_project_phases_explanation: Activate/Deactivate the phases in a project. Enables the user to select the life cycle appropriate for the project as inactive phases will not be visible in the project overview page nor the project list.
-  permission_select_project_modules: Selecteer project modules
-  permission_share_work_packages: Share work packages
-  permission_manage_types: Selecteer typen
-  permission_manage_own_reminders: Create own reminders
-  permission_view_all_principals: View all users and groups
-  permission_view_all_principals_explanation: 'Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
-
-    '
-  permission_view_project: Bekijk projecten
-  permission_view_changesets: Bekijk opslagplaats wijzigingen in OpenProject
-  permission_view_internal_comments: View internal comments
-  permission_view_commit_author_statistics: Bekijk de commit auteur statistieken
-  permission_view_dashboards: View dashboards
-  permission_view_work_package_watchers: Lijst van de watchers weergave
-  permission_view_work_packages: Bekijk werkpakketten
-  permission_view_messages: Berichten weergeven
-  permission_view_news: Nieuws weergeven
-  permission_view_members: Bekijk leden
-  permission_view_reportings: Weergave rapporteringen
-  permission_view_shared_work_packages: View work package shares
-  permission_view_time_entries: Verbruikte tijd weergeven
-  permission_view_timelines: Weergave tijdlijnen
-  permission_view_user_email: View users' mail addresses
-  permission_view_wiki_edits: Wiki weergavegeschiedenis
-  permission_view_wiki_pages: Weergave wiki
-  permission_work_package_assigned: Toewijzer/verantwoordelijk worden
-  permission_work_package_assigned_explanation: Werkpakketten kunnen worden toegewezen aan gebruikers en groepen met deze rol in het respectieve project
-  permission_view_project_activity: Projectactiviteit bekijken
-  permission_view_project_attributes: Toon project kenmerken
-  permission_view_project_phases: View project phases
-  permission_save_bcf_queries: Save BCF queries
-  permission_manage_public_bcf_queries: Manage public BCF queries
-  permission_edit_attribute_help_texts: De helpteksten van attributen bewerken
-  permission_manage_public_project_queries: Manage public project lists
-  permission_view_project_query: View project query
-  permission_edit_project_query: Edit project query
+    heading_getting_started: "Krijg een overzicht"
+    text_getting_started_description: "Krijg een snel overzicht van projectbeheer en teamsamenwerking met Yojana. U kunt deze video opnieuw starten vanuit het helpmenu."
+    welcome: "Welkom bij %{app_title}"
+    select_language: "Gelieve uw taal te kiezen"
+  permission_add_work_package_comments: "Add comments"
+  permission_add_work_packages: "Werkpakketten toevoegen"
+  permission_add_messages: "Berichten posten"
+  permission_add_project: "Projecten aanmaken"
+  permission_add_portfolios: "Create portfolios"
+  permission_add_programs: "Create programs"
+  permission_add_work_package_attachments: "Bijlagen toevoegen"
+  permission_add_work_package_attachments_explanation: "Allows adding attachments without Edit work packages permission"
+  permission_add_internal_comments: "Write internal comments"
+  permission_archive_project: "Project archiveren"
+  permission_create_user: "Gebruikers aanmaken"
+  permission_manage_user: "Gebruikers bewerken"
+  permission_manage_placeholder_user: "Maak, bewerk en verwijder tijdelijke gebruikers"
+  permission_add_subprojects: "Subprojecten maken"
+  permission_add_work_package_watchers: "Kijkers toevoegen"
+  permission_assign_versions: "Versies toewijzen"
+  permission_browse_repository: "Alleen-lezen toegang tot opslagplaats (bladeren en uitchecken)"
+  permission_change_wiki_parent_page: "Bovenliggende wiki-pagina wijzigen"
+  permission_change_work_package_status: "Change work package status"
+  permission_change_work_package_status_explanation: "Allows changing status without Edit work packages permission"
+  permission_comment_news: "Opmerking nieuws"
+  permission_commit_access: "Lees/schrijf toegang tot opslagplaats (bevestig)"
+  permission_copy_projects: "Kopiëren van projecten"
+  permission_copy_projects_explanation: "In template projects, this permission has a secondary function, it allows the creation of new projects derived from the template."
+  permission_copy_work_packages: "Duplicate work packages"
+  permission_create_backup: "Back-ups maken"
+  permission_delete_work_package_watchers: "Kijkers verwijderen"
+  permission_delete_work_packages: "Werkpakketten verwijderen"
+  permission_delete_messages: "Berichten verwijderen"
+  permission_delete_own_messages: "Eigen berichten verwijderen"
+  permission_delete_reportings: "Rapporteringen verwijderen"
+  permission_delete_timelines: "Tijdlijnen verwijderen"
+  permission_delete_wiki_pages: "Wiki pagina's verwijderen"
+  permission_delete_wiki_pages_attachments: "Bijlagen verwijderen"
+  permission_edit_work_package_comments: "Moderate comments"
+  permission_edit_work_package_comments_explanation: "Caution: Users with this permission are able to edit anyone's comment."
+  permission_edit_work_packages: "Werkpakketten bewerken"
+  permission_edit_messages: "Berichten bewerken"
+  permission_edit_own_internal_comments: "Edit own internal comments"
+  permission_edit_own_work_package_comments: "Edit own comments"
+  permission_edit_own_messages: "Eigen berichten bewerken"
+  permission_edit_own_time_entries: "Bewerk de logboeken van de eigen tijd"
+  permission_edit_others_internal_comments: "Moderate internal comments"
+  permission_edit_others_internal_comments_explanation: "Caution: Users with this permission are able to edit other users' internal comments."
+  permission_edit_project: "Project bewerken"
+  permission_edit_project_attributes: "Bewerk project kenmerken"
+  permission_edit_project_phases: "Edit project phases"
+  permission_edit_reportings: "Rapporteringen bewerken"
+  permission_edit_time_entries: "Bewerk tijdregistraties voor andere gebruikers"
+  permission_edit_timelines: "Bewerken van tijdlijnen"
+  permission_edit_wiki_pages: "Wiki pagina's bewerken"
+  permission_export_work_packages: "Werkpakketten exporteren"
+  permission_export_projects: "Export projects"
+  permission_export_wiki_pages: "Wiki pagina's exporteren"
+  permission_invite_members_by_email: "Invite members by email"
+  permission_invite_members_by_email_explanation: >
+    Allows users to invite new members by email. Invited users will receive an email with a link to set their password and activate their account. Depends on the permission to manage members
+  permission_list_attachments: "Bijlagen weergeven"
+  permission_log_own_time: "Eigen tijd registreren"
+  permission_log_time: "Log tijd voor andere gebruikers"
+  permission_manage_forums: "Forum beheren"
+  permission_manage_categories: "Werkpakket Categorieën beheren"
+  permission_manage_dashboards: "Dashboards beheren"
+  permission_manage_work_package_relations: "Werkpakket relaties beheren"
+  permission_manage_members: "Beheer gebruikers"
+  permission_manage_news: "Beheren van nieuws"
+  permission_manage_project_activities: "Projectactiviteiten beheren"
+  permission_manage_public_queries: "Openbare overzichten beheren"
+  permission_manage_repository: "Repository beheren"
+  permission_manage_subtasks: "Beheer werkpakket hiërarchieën"
+  permission_manage_versions: "Versies beheren"
+  permission_manage_wiki: "Wiki beheren"
+  permission_manage_wiki_menu: "Wiki menu beheren"
+  permission_move_work_packages: "Werkpakketten verplaatsen"
+  permission_protect_wiki_pages: "Wiki-pagina's beveiligen"
+  permission_rename_wiki_pages: "Wiki-pagina's wijzigen"
+  permission_save_queries: "Weergaves opslaan"
+  permission_search_project: "Search project"
+  permission_select_custom_fields: "Aangepaste velden selecteren"
+  permission_select_project_custom_fields: "Selecteer project kenmerk"
+  permission_select_project_phases: "Select project phases"
+  permission_select_project_phases_explanation: "Activate/Deactivate the phases in a project. Enables the user to select the life cycle appropriate for the project as inactive phases will not be visible in the project overview page nor the project list."
+  permission_select_project_modules: "Selecteer project modules"
+  permission_share_work_packages: "Share work packages"
+  permission_manage_types: "Selecteer typen"
+  permission_manage_own_reminders: "Create own reminders"
+  permission_view_all_principals: "View all users and groups"
+  permission_view_all_principals_explanation: >
+    Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
+  permission_view_project: "Bekijk projecten"
+  permission_view_changesets: "Bekijk opslagplaats wijzigingen in Yojana"
+  permission_view_internal_comments: "View internal comments"
+  permission_view_commit_author_statistics: "Bekijk de commit auteur statistieken"
+  permission_view_dashboards: "View dashboards"
+  permission_view_work_package_watchers: "Lijst van de watchers weergave"
+  permission_view_work_packages: "Bekijk werkpakketten"
+  permission_view_messages: "Berichten weergeven"
+  permission_view_news: "Nieuws weergeven"
+  permission_view_members: "Bekijk leden"
+  permission_view_reportings: "Weergave rapporteringen"
+  permission_view_shared_work_packages: "View work package shares"
+  permission_view_time_entries: "Verbruikte tijd weergeven"
+  permission_view_timelines: "Weergave tijdlijnen"
+  permission_view_user_email: "View users' mail addresses"
+  permission_view_wiki_edits: "Wiki weergavegeschiedenis"
+  permission_view_wiki_pages: "Weergave wiki"
+  permission_work_package_assigned: "Toewijzer/verantwoordelijk worden"
+  permission_work_package_assigned_explanation: "Werkpakketten kunnen worden toegewezen aan gebruikers en groepen met deze rol in het respectieve project"
+  permission_view_project_activity: "Projectactiviteit bekijken"
+  permission_view_project_attributes: "Toon project kenmerken"
+  permission_view_project_phases: "View project phases"
+  permission_save_bcf_queries: "Save BCF queries"
+  permission_manage_public_bcf_queries: "Manage public BCF queries"
+  permission_edit_attribute_help_texts: "De helpteksten van attributen bewerken"
+  permission_manage_public_project_queries: "Manage public project lists"
+  permission_view_project_query: "View project query"
+  permission_edit_project_query: "Edit project query"
   placeholders:
     default: "-"
     templated_hint: Automatically generated through type %{type}
@@ -5091,49 +5054,50 @@ nl:
     create_successful: De opslagplaats is geregistreerd.
     delete_sucessful: De opslagplaats is verwijderd.
     destroy:
-      confirmation: Als u doorgaat, wordt de beheerde opslagplaats permanent verwijderd.
-      info: Het verwijderen van de opslagplaats is een onomkeerbare actie.
-      info_not_managed: 'Opmerking: Dit zal niet de inhoud verwijderen van deze opslagplaats, aangezien het niet wordt beheerd door OpenProject.'
-      managed_path_note: 'De volgende doelmap wordt gewist: %{path}'
-      repository_verification_html: Enter the project's identifier %{identifier} to verify the deletion of its repository.
-      subtitle: Wil je echt de %{repository_type} van het project %{project_name} verwijderen?
-      subtitle_not_managed_html: Do you really want to remove the linked %{repository_type} %{url} from the project %{project_name}?
-      title_html: Delete the %{repository_type}
-      title_not_managed: De gekoppelde %{repository_type} verwijderen?
+      confirmation: "Als u doorgaat, wordt de beheerde opslagplaats permanent verwijderd."
+      info: "Het verwijderen van de opslagplaats is een onomkeerbare actie."
+      info_not_managed: "Opmerking: Dit zal niet de inhoud verwijderen van deze opslagplaats, aangezien het niet wordt beheerd door Yojana."
+      managed_path_note: "De volgende doelmap wordt gewist: %{path}"
+      repository_verification: "Voer het project identificatienummer %{identifier} in om de verwijdering van de opslagplaats te verifiëren."
+      subtitle: "Wil je echt de %{repository_type} van het project %{project_name} verwijderen?"
+      subtitle_not_managed: "Wilt u echt de gekoppelde %{repository_type} %{url} van het project %{project_name} verwijderen?"
+      title: "Verwijder de %{repository_type}"
+      title_not_managed: "De gekoppelde %{repository_type} verwijderen?"
     errors:
-      build_failed: Niet mogelijk om de opslagplaats met de geselecteerde configuratie te creëren. %{reason}
-      managed_delete: Niet mogelijk om de beheerde opslagplaats te verwijderen.
-      managed_delete_local: 'Niet mogelijk om de lokale opslagplaats te verwijderen op het bestandssysteem ''%{path}'': %{error_message}'
-      empty_repository: De opslagplaats bestaat, maar is leeg. Het bevat nog niet alle revisies.
-      exists_on_filesystem: De opslagplaats doelmap bestaat al in het bestandssysteem.
-      filesystem_access_failed: 'Er is een fout opgetreden tijdens het toegang verkrijgen tot de opslagplaats in het bestandssysteem: %{message}'
-      not_manageable: Deze opslagplaats leverancier kan niet worden beheerd door OpenProject.
-      path_permission_failed: 'Er is een fout opgetreden tijdens het maken van het volgende pad: %{path}. Zorg ervoor dat OpenProject naar die map kan schrijven.'
-      unauthorized: U bent niet gemachtigd voor toegang tot de opslagplaats of de gebruikersnaam en wachtwoordcombinatie is ongeldig.
-      unavailable: De opslagplaats is niet beschikbaar.
-      exception_title: 'Geen toegang tot de opslagplaats: %{message}'
-      disabled_or_unknown_type: Het geselecteerde type %{type} is uitgeschakeld of niet langer beschikbaar voor de SCM leverancier %{vendor}.
-      disabled_or_unknown_vendor: De SCM leverancier %{vendor} is uitgeschakeld of niet meer beschikbaar.
-      remote_call_failed: 'Aanroepen van de beheerde afstandsbediening is mislukt door ''%{message}'' (Code: %{code})'
-      remote_invalid_response: Een ongeldig antwoord ontvangen in de beheerde afstandsbediening.
-      remote_save_failed: Kan het archief niet opslaan met de parameters die zijn ontvangen van de afstandsbediening.
+      build_failed: "Niet mogelijk om de opslagplaats met de geselecteerde configuratie te creëren. %{reason}"
+      managed_delete: "Niet mogelijk om de beheerde opslagplaats te verwijderen."
+      managed_delete_local: "Niet mogelijk om de lokale opslagplaats te verwijderen op het bestandssysteem '%{path}': %{error_message}"
+      empty_repository: "De opslagplaats bestaat, maar is leeg. Het bevat nog niet alle revisies."
+      exists_on_filesystem: "De opslagplaats doelmap bestaat al in het bestandssysteem."
+      filesystem_access_failed: "Er is een fout opgetreden tijdens het toegang verkrijgen tot de opslagplaats in het bestandssysteem: %{message}"
+      not_manageable: "Deze opslagplaats leverancier kan niet worden beheerd door Yojana."
+      path_permission_failed: "Er is een fout opgetreden tijdens het maken van het volgende pad: %{path}. Zorg ervoor dat Yojana naar die map kan schrijven."
+      unauthorized: "U bent niet gemachtigd voor toegang tot de opslagplaats of de gebruikersnaam en wachtwoordcombinatie is ongeldig."
+      unavailable: "De opslagplaats is niet beschikbaar."
+      exception_title: "Geen toegang tot de opslagplaats: %{message}"
+      disabled_or_unknown_type: "Het geselecteerde type %{type} is uitgeschakeld of niet langer beschikbaar voor de SCM leverancier %{vendor}."
+      disabled_or_unknown_vendor: "De SCM leverancier %{vendor} is uitgeschakeld of niet meer beschikbaar."
+      remote_call_failed: "Aanroepen van de beheerde afstandsbediening is mislukt door '%{message}' (Code: %{code})"
+      remote_invalid_response: "Een ongeldig antwoord ontvangen in de beheerde afstandsbediening."
+      remote_save_failed: "Kan het archief niet opslaan met de parameters die zijn ontvangen van de afstandsbediening."
     git:
       instructions:
-        managed_url: Dit is de URL van de beheerde (lokale) Git repository.
-        path: Specificeer het pad naar je lokale Git repository (bijvoorbeeld %{example_path}). Ook kunt u remote repositories die naar een lokale kopie worden gekloond met behulp van een waarde beginnen met http (s) :// of file://.
-        path_encoding: 'Overschrijven Git pad codering (standaard: UTF-8)'
-      local_title: Koppeling van de bestaande lokale Git repository
-      local_url: Lokale URL
-      local_introduction: Als u een bestaande lokale Git repository hebt, kunt u deze koppelen met OpenProject om deze te openen van binnen de toepassing.
-      managed_introduction: Laat OpenProject een lokaal Git repository automatisch aanmaken en integreren.
-      managed_title: Git repository geïntegreerd in OpenProject
-      managed_url: Beheerde URL
-      path: Pad naar Git repository
-      path_encoding: Pad codering
-    go_to_revision: Ga naar revisie
-    managed_remote: Beheerde repositories voor deze leverancier worden op afstand behandeld.
-    managed_remote_note: Informatie over de URL en het pad van deze repository is niet beschikbaar voorafgaand aan haar oprichting.
-    managed_url: Beheerde URL
+        managed_url: "Dit is de URL van de beheerde (lokale) Git repository."
+        path: >-
+          Specificeer het pad naar je lokale Git repository (bijvoorbeeld %{example_path}). Ook kunt u remote repositories die naar een lokale kopie worden gekloond met behulp van een waarde beginnen met http (s) :// of file://.
+        path_encoding: "Overschrijven Git pad codering (standaard: UTF-8)"
+      local_title: "Koppeling van de bestaande lokale Git repository"
+      local_url: "Lokale URL"
+      local_introduction: "Als u een bestaande lokale Git repository hebt, kunt u deze koppelen met Yojana om deze te openen van binnen de toepassing."
+      managed_introduction: "Laat Yojana een lokaal Git repository automatisch aanmaken en integreren."
+      managed_title: "Git repository geïntegreerd in Yojana"
+      managed_url: "Beheerde URL"
+      path: "Pad naar Git repository"
+      path_encoding: "Pad codering"
+    go_to_revision: "Ga naar revisie"
+    managed_remote: "Beheerde repositories voor deze leverancier worden op afstand behandeld."
+    managed_remote_note: "Informatie over de URL en het pad van deze repository is niet beschikbaar voorafgaand aan haar oprichting."
+    managed_url: "Beheerde URL"
     settings:
       automatic_managed_repos_disabled: Uitschakelen van automatisch aanmaken
       automatic_managed_repos: Automatische aanmaken van beheerde repositories
@@ -5141,202 +5105,179 @@ nl:
     scm_vendor: Broncontrole managementsysteem
     scm_type: Repository type
     scm_types:
-      local: Koppel een bestaand lokaal repository
-      existing: Koppel een bestaand repository
-      managed: Maak nieuwe repository aan in OpenProject
+      local: "Koppel een bestaand lokaal repository"
+      existing: "Koppel een bestaand repository"
+      managed: "Maak nieuwe repository aan in Yojana"
     storage:
-      not_available: Schijf opslag consumptie is niet beschikbaar voor deze repository.
-      update_timeout: Houd de laatste vereiste vrije schijfruimte voor een repository voor N minuten. Als het tellen van de vereiste schijfruimte van een repository kostbaar is, verhoog dit getal om invloed op de prestaties verminderen.
-      oauth_application_details_html: 'The client secret value will not be accessible again after you close this window. Please copy these values into the Nextcloud OpenProject Integration settings:'
-      oauth_application_details_link_text: Ga naar instellingen pagina
-      setup_documentation_details: 'Als u hulp nodig heeft bij het configureren van een nieuw bestand controleer dan de documentatie: '
-      setup_documentation_details_link_text: File storages setup
-      show_warning_details: Als u deze bestandsopslag wilt gebruiken, moet u de module en de specifieke opslag activeren in de projectinstellingen van elk gewenst project.
+      not_available: "Schijf opslag consumptie is niet beschikbaar voor deze repository."
+      update_timeout: "Houd de laatste vereiste vrije schijfruimte voor een repository voor N minuten. Als het tellen van de vereiste schijfruimte van een repository kostbaar is, verhoog dit getal om invloed op de prestaties verminderen."
+      oauth_application_details: "De klantgeheim waarde zal niet meer toegankelijk zijn nadat u dit venster sluit. Kopieer deze waarden in de Nextcloud Yojana integratie-instellingen:"
+      oauth_application_details_link_text: "Ga naar instellingen pagina"
+      setup_documentation_details: "Als u hulp nodig heeft bij het configureren van een nieuw bestand controleer dan de documentatie: "
+      setup_documentation_details_link_text: "File storages setup"
+      show_warning_details: "Als u deze bestandsopslag wilt gebruiken, moet u de module en de specifieke opslag activeren in de projectinstellingen van elk gewenst project."
     subversion:
-      existing_title: Bestaande Subversion-repository
-      existing_introduction: Als u een bestaand Subversion repository hebt, kunt u deze koppelen met OpenProject om deze te openen van binnen de toepassing.
-      existing_url: Bestaande URL
+      existing_title: "Bestaande Subversion-repository"
+      existing_introduction: "Als u een bestaand Subversion repository hebt, kunt u deze koppelen met Yojana om deze te openen van binnen de toepassing."
+      existing_url: "Bestaande URL"
       instructions:
-        managed_url: Dit is de URL van de beheerde (lokale) Subversion-repository.
-        url: 'Voer de URL in van de repository. Dit kan ook gericht zijn op een lokaal repository (beginnend met %{local_proto}), of een remote repository. De volgende URL-schema''s worden ondersteund:'
-      managed_title: Geïntegreerd Subversion-repository in OpenProject
-      managed_introduction: Laat OpenProject een lokale Subversion repository automatisch aanmaken en integreren.
-      managed_url: Beheerde URL
-      password: Repository wachtwoord
-      username: Repository-gebruikersnaam
-    truncated: Onze excuses, we hebben de map beperkt tot %{limit} bestanden. De %{truncated} bestanden zijn verwijderd uit de lijst.
+        managed_url: "Dit is de URL van de beheerde (lokale) Subversion-repository."
+        url: "Voer de URL in van de repository. Dit kan ook gericht zijn op een lokaal repository (beginnend met %{local_proto}), of een remote repository. De volgende URL-schema's worden ondersteund:"
+      managed_title: "Geïntegreerd Subversion-repository in Yojana"
+      managed_introduction: "Laat Yojana een lokale Subversion repository automatisch aanmaken en integreren."
+      managed_url: "Beheerde URL"
+      password: "Repository wachtwoord"
+      username: "Repository-gebruikersnaam"
+    truncated: "Onze excuses, we hebben de map beperkt tot %{limit} bestanden. De %{truncated} bestanden zijn verwijderd uit de lijst."
     named_repository: "%{vendor_name} repository"
     update_settings_successful: De instellingen zijn met succes opgeslagen
     url: URL van de repository
     warnings:
       cannot_annotate: Dit bestand kan niet geannoteerd worden.
   scheduling:
-    manual: set to Manual
-    automatic: set to Automatic
-  search_input_placeholder: Zoeken ...
-  setting_allowed_link_protocols: Allowed link protocols
-  setting_allowed_link_protocols_text_html: Allow these protocols to be rendered as links in work package descriptions, long text fields and comments. For example, %{tel_code} or %{element_code}. Enter one protocol per line. <br/> Protocols %{http_code}, %{https_code}, and %{mailto_code} are always allowed.
-  setting_capture_external_links: Capture external links
-  setting_capture_external_links_text: 'When enabled, all external links in formatted text will redirect through a warning page before leaving the application. This helps protect users from potentially malicious external websites.
-
-    '
-  setting_capture_external_links_require_login: Require users to be logged in
-  setting_capture_external_links_require_login_text: 'When enabled, users wanting to click on external links need to be logged in before being able to continue.
-
-    '
-  setting_after_first_login_redirect_url: First login redirect
-  setting_after_first_login_redirect_url_text_html: 'Set a path to redirect users after their first login. If empty, redirects to the home page for the onboarding tour. <br/> Example: <code>/my/page</code>
-
-    '
-  setting_after_login_default_redirect_url: After login redirect
-  setting_after_login_default_redirect_url_example_html: 'Set a default path to redirect users after login, if no back link was provided. Redirects to home page if not set. <br/> Example: %{example_code}
-
-    '
-  setting_apiv3_cors_title: Cross-Origin Resource Sharing (CORS)
-  setting_apiv3_cors_enabled: Inschakelen CORS
-  setting_apiv3_cors_origins: API V3 Cross-Origin Resource Sharing (CORS) toegestane oorsprong
-  setting_apiv3_cors_origins_instructions_html: 'If CORS is enabled, these are the origins that are allowed to access OpenProject API. <br/> Please check the [Documentation on the Origin header](docs_url) on how to specify the expected values.
-
-    '
-  setting_apiv3_write_readonly_attributes: Schrijftoegang tot alleen-lezen attributen
-  setting_apiv3_write_readonly_attributes_instructions: 'If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
-
-    '
-  setting_apiv3_write_readonly_attributes_warning: 'This setting has a use-case for e.g., importing data, but allows administrators to impersonate the creation of items as other users. All creation requests are being logged however with the true author.
-
-    '
-  setting_apiv3_write_readonly_attributes_additional_html: 'For more information on attributes and supported resources, please see the [API documentation](api_documentation_link).
-
-    '
-  setting_apiv3_max_page_size: Maximale API pagina grootte
-  setting_apiv3_max_page_size_instructions: 'Set the maximum page size the API will respond with. It will not be possible to perform API requests that return more values on a single page.
-
-    '
-  setting_apiv3_max_page_size_warning: 'Please only change this value if you are sure why you need it. Setting to a high value will result in significant performance impacts, while a value lower than the per page options will cause errors in paginated views.
-
-    '
-  setting_apiv3_docs: Documentatie
-  setting_apiv3_docs_enabled: Documentenpagina inschakelen
-  setting_apiv3_docs_enabled_instructions_html: 'Als de documentenpagina is ingeschakeld, kunt u een interactieve weergave krijgen van de APIv3 documentatie onder <a href="%{link}" target="_blank">%{link}</a>.
-
-    '
-  setting_apiv3_docs_enabled_instructions_warning: 'Please be aware that enabling the API docs on a production system may expose sensitive information or result in accidental loss of data when not being careful. We recommend to only enable this setting for development purposes.
-
-    '
-  setting_attachment_whitelist: Bijlage upload whitelist
-  setting_email_delivery_method: Kies verzendmethode
-  setting_emails_salutation: Address user in emails with
-  setting_oauth_allow_remapping_of_existing_users: Allow remapping of existing users
-  setting_sendmail_location: Locatie van het uitvoerbare sendmail
-  setting_sendmail_arguments: Arguments for sendmail
-  setting_smtp_enable_starttls_auto: Gebruik STARTTLS automatisch wanneer deze beschikbaar is
-  setting_smtp_ssl: SSL-verbinding gebruikt
-  setting_smtp_address: SMTP server
-  setting_smtp_port: SMTP-port
-  setting_smtp_authentication: SMTP-authenticatie
-  setting_smtp_user_name: SMTP gebruikersnaam
-  setting_smtp_password: SMTP wachtwoord
-  setting_smtp_domain: SMTP HELO domein
-  setting_activity_days_default: Dagen weergegeven op projectactiviteit
-  setting_api_tokens_enabled: Enable API tokens
-  setting_api_tokens_enabled_caption: 'Decide whether users can create personal API tokens in their account settings. These tokens can be used to access the different APIs of OpenProject, such as APIv3 and MCP.
-
-    '
-  setting_app_subtitle: Applicatie ondertitel
-  setting_app_title: Toepassingsnaam
-  setting_organization_name: Organization name
-  setting_attachment_max_size: Bijlage max. grootte
-  setting_show_work_package_attachments: Bijlagen standaard in het tabblad bestanden weergeven
-  setting_antivirus_scan_mode: Scanmodus
-  setting_antivirus_scan_action: Infected file action
-  setting_autofetch_changesets: Haal automatisch repository wijzigingen op
-  setting_autologin: AutoLogin
-  setting_available_languages: Beschikbare talen
-  setting_bcc_recipients: Geadresseerden voor blind carbon copy (bcc)
-  setting_brute_force_block_after_failed_logins: Gebruiker blokkeren na dit aantal mislukte inlogpogingen
-  setting_brute_force_block_minutes: De gebruiker is geblokkeerd voor tijd
-  setting_cache_formatted_text: Cache opgemaakte tekst
-  setting_use_wysiwyg_description: Wilt u CKEditor5 WYSIWYG editor voor alle gebruikers standaard ingeschakeld. CKEditor heeft een beperkte functionaliteit voor GFM Markdown.
-  setting_column_options: Default work package lists columns
-  setting_commit_fix_keywords: Vaststelling van trefwoorden
-  setting_commit_logs_encoding: Commit berichten coderen
-  setting_commit_logtime_activity_id: Activiteit voor geregistreerde tijd
-  setting_commit_logtime_enabled: Tijd-logboekregistratie inschakelen
-  setting_commit_ref_keywords: Refererende trefwoorden
-  setting_consent_time: Toestemming tijd
-  setting_consent_info: Toestemming informatie tekst
-  setting_consent_required: Toestemming vereist
-  setting_consent_decline_mail: Toestemming contact e-mailadres
-  setting_cross_project_work_package_relations: Sta werkpakketten over meerdere projecten toe
-  setting_csv_escape_formulas: Escape formulas in CSV exports
-  setting_csv_escape_formulas_text: 'Escape spreadsheet formulas in CSV exports by prefixing cells that begin with characters such as =, +, -, or @ with a single quote. This mitigates CSV formula injection when exported files are opened in spreadsheet applications such as Excel. This comes at the downside of modifying the string values inside the CSV, so you may want to disable this if downstream tools require the exact, unescaped cell values.
-
-    '
-  setting_first_week_of_year: De eerste week in het jaar bevat
-  setting_date_format: Datum
-  setting_default_language: Standaard taal
-  setting_default_projects_modules: Standaard actieve modules voor nieuwe projecten
-  setting_default_projects_public: Nieuwe projecten zijn standaard publiek
-  setting_disable_password_login: Disable password authentication
-  setting_diff_max_lines_displayed: Maximaal aantal afwijkende regels getoond
-  setting_omniauth_direct_login_provider: Direct login SSO provider
-  setting_display_subprojects_work_packages: Toon standaard de werkpakketten van onderliggende projecten bij hoofdprojecten
-  setting_duration_format: Duration format
-  setting_duration_format_hours_only: Alleen uren
-  setting_duration_format_days_and_hours: Days and hours
-  setting_duration_format_instructions: This defines how Work, Remaining work, and Time spent durations are displayed.
-  setting_emails_footer: Voettekst e-mails
-  setting_emails_header: Koptekst e-mails
-  setting_email_login: Gebruik e-mail als inlog
-  setting_enabled_scm: SCM Ingeschakeld
-  setting_enabled_projects_columns: Columns in a projects list displayed by default
-  setting_feeds_enabled: Feeds inschakelen
-  setting_ical_enabled: iCalendar abonnementen inschakelen
-  setting_feeds_limit: Feed inhoud limiet
-  setting_file_max_size_displayed: Maximale grootte van tekstbestanden inline weergegeven
-  setting_host_name: Hostnaam
-  setting_collaborative_editing_hocuspocus_url: Hocuspocus server URL
-  setting_collaborative_editing_hocuspocus_secret: Hocuspocus server secret
-  setting_hours_per_day: Uren per dag
-  setting_hours_per_day_explanation: This defines what is considered a "day" when displaying duration in days and hours (for example, if a day is 8 hours, 32 hours would be 4 days).
-  setting_invitation_expiration_days: Activatie e-mail verloopt na
-  setting_invitation_expiration_days_caption: Number of days after which the activation email expires.
-  setting_work_package_done_ratio: Progress calculation mode
-  setting_work_package_done_ratio_field: Work-based
-  setting_work_package_done_ratio_field_caption_html: "<i>% Complete</i> can be freely set to any value. If you optionally enter a value for <i>Work</i>, <i>Remaining work</i> will automatically be derived."
-  setting_work_package_done_ratio_status: Status-based
-  setting_work_package_done_ratio_status_caption_html: Each status has a <i>% Complete</i> value associated with it. Changing status will change <i>% Complete</i>.
-  setting_work_package_done_ratio_explanation_html: 'In <b>work-based</b> mode, % Complete can be freely set to any value. If you optionally enter a value for Work, Remaining work will automatically be derived. In <b>status-based</b> mode, each status has a % Complete value associated with it. Changing status will change % Complete.
-
-    '
-  setting_work_package_properties: Werkpakketeigenschappen
-  setting_work_package_startdate_is_adddate: Huidige datum als begindatum voor nieuwe werkpakketten gebruiken
-  setting_work_packages_projects_export_limit: Werkpakketten / Projecten exportlimiet
-  setting_work_packages_projects_export_limit_text: 'Maximum number of work packages or projects that can be included in a single export. Larger exports are truncated to this limit.
-
-    '
-  setting_journal_aggregation_time_minutes: Aggregation period
-  setting_log_requesting_user: Gebruikerslogin, naam en e-mailadres voor alle aanvragen vastleggen
-  setting_login_required: Verificatie vereist
-  setting_login_required_caption: When checked, all requests to the application have to be authenticated.
-  setting_lost_password: Enable password reset
-  setting_lost_password_caption: When checked, allow users to reset their own passwords.
-  setting_mail_from: Emissie e-mailadres
-  setting_mail_handler_api_key: API-sleutel
-  setting_mail_handler_body_delimiters: Afkappen e-mails na een van deze lijnen
-  setting_mail_handler_body_delimiter_regex: E-mails die overeenkomen met deze regex afkappen
-  setting_mail_handler_ignore_filenames: Genegeerde e-mailbijlagen
-  setting_new_project_user_role_id: Rol gegeven aan een niet-admin-gebruiker die een project maakt
-  setting_new_project_user_role_id_caption: 'Only roles that include the permissions to edit project attributes and to manage members are listed, so that the creator can complete the project setup.
-
-    '
-  setting_new_project_send_confirmation_email: Send notification to author when creating a new project
-  setting_new_project_notification_text: Notification text
-  setting_password_active_rules: Password requirements
-  setting_password_count_former_banned: Nummer van meest recent gebruikte wachtwoorden verboden voor hergebruik
-  setting_password_days_valid: Aantal dagen waarna een wachtwoordwijziging afdwingen
-  setting_password_min_length: Minimale lengte
-  setting_per_page_options: Objecten per Pagina-opties
+    manual: "set to Manual"
+    automatic: "set to Automatic"
+  search_input_placeholder: "Zoeken ..."
+  setting_allowed_link_protocols: "Allowed link protocols"
+  setting_allowed_link_protocols_text_html: >-
+    Allow these protocols to be rendered as links in work package descriptions, long text fields and comments. For example, %{tel_code} or %{element_code}. Enter one protocol per line. <br/> Protocols %{http_code}, %{https_code}, and %{mailto_code} are always allowed.
+  setting_capture_external_links: "Capture external links"
+  setting_capture_external_links_text: >
+    When enabled, all external links in formatted text will redirect through a warning page before leaving the application. This helps protect users from potentially malicious external websites.
+  setting_capture_external_links_require_login: "Require users to be logged in"
+  setting_capture_external_links_require_login_text: >
+    When enabled, users wanting to click on external links need to be logged in before being able to continue.
+  setting_after_first_login_redirect_url: "First login redirect"
+  setting_after_first_login_redirect_url_text_html: >
+    Set a path to redirect users after their first login. If empty, redirects to the home page for the onboarding tour. <br/> Example: <code>/my/page</code>
+  setting_after_login_default_redirect_url: "After login redirect"
+  setting_after_login_default_redirect_url_text_html: >
+    Set a default path to redirect users after login, if no back link was provided. Redirects to home page if not set. <br/> Example: <code>/my/page</code>
+  setting_apiv3_cors_title: "Cross-Origin Resource Sharing (CORS)"
+  setting_apiv3_cors_enabled: "Inschakelen CORS"
+  setting_apiv3_cors_origins: "API V3 Cross-Origin Resource Sharing (CORS) toegestane oorsprong"
+  setting_apiv3_cors_origins_text_html: >
+    Als CORS is ingeschakeld, zijn dit de oorsprong die toegang heeft tot Yojana API. <br/> Bekijk de <a href="%{origin_link}" target="_blank">Documentatie op de Oorsprongshoofd</a> over hoe u de verwachte waarden kunt opgeven.
+  setting_apiv3_write_readonly_attributes: "Schrijftoegang tot alleen-lezen attributen"
+  setting_apiv3_write_readonly_attributes_instructions: >
+    If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
+  setting_apiv3_write_readonly_attributes_warning: >
+    This setting has a use-case for e.g., importing data, but allows administrators to impersonate the creation of items as other users. All creation requests are being logged however with the true author.
+  setting_apiv3_write_readonly_attributes_additional: >
+    For more information on attributes and supported resources, please see the %{api_documentation_link}.
+  setting_apiv3_max_page_size: "Maximale API pagina grootte"
+  setting_apiv3_max_page_size_instructions: >
+    Set the maximum page size the API will respond with. It will not be possible to perform API requests that return more values on a single page.
+  setting_apiv3_max_page_size_warning: >
+    Please only change this value if you are sure why you need it. Setting to a high value will result in significant performance impacts, while a value lower than the per page options will cause errors in paginated views.
+  setting_apiv3_docs: "Documentatie"
+  setting_apiv3_docs_enabled: "Documentenpagina inschakelen"
+  setting_apiv3_docs_enabled_instructions_html: >
+    Als de documentenpagina is ingeschakeld, kunt u een interactieve weergave krijgen van de APIv3 documentatie onder <a href="%{link}" target="_blank">%{link}</a>.
+  setting_apiv3_docs_enabled_instructions_warning: >
+    Please be aware that enabling the API docs on a production system may expose sensitive information or result in accidental loss of data when not being careful. We recommend to only enable this setting for development purposes.
+  setting_attachment_whitelist: "Bijlage upload whitelist"
+  setting_email_delivery_method: "Kies verzendmethode"
+  setting_emails_salutation: "Address user in emails with"
+  setting_oauth_allow_remapping_of_existing_users: "Allow remapping of existing users"
+  setting_sendmail_location: "Locatie van het uitvoerbare sendmail"
+  setting_sendmail_arguments: "Arguments for sendmail"
+  setting_smtp_enable_starttls_auto: "Gebruik STARTTLS automatisch wanneer deze beschikbaar is"
+  setting_smtp_ssl: "SSL-verbinding gebruikt"
+  setting_smtp_address: "SMTP server"
+  setting_smtp_port: "SMTP-port"
+  setting_smtp_authentication: "SMTP-authenticatie"
+  setting_smtp_user_name: "SMTP gebruikersnaam"
+  setting_smtp_password: "SMTP wachtwoord"
+  setting_smtp_domain: "SMTP HELO domein"
+  setting_activity_days_default: "Dagen weergegeven op projectactiviteit"
+  setting_app_subtitle: "Applicatie ondertitel"
+  setting_app_title: "Toepassingsnaam"
+  setting_attachment_max_size: "Bijlage max. grootte"
+  setting_show_work_package_attachments: "Bijlagen standaard in het tabblad bestanden weergeven"
+  setting_antivirus_scan_mode: "Scanmodus"
+  setting_antivirus_scan_action: "Infected file action"
+  setting_autofetch_changesets: "Haal automatisch repository wijzigingen op"
+  setting_autologin: "AutoLogin"
+  setting_available_languages: "Beschikbare talen"
+  setting_bcc_recipients: "Geadresseerden voor blind carbon copy (bcc)"
+  setting_brute_force_block_after_failed_logins: "Gebruiker blokkeren na dit aantal mislukte inlogpogingen"
+  setting_brute_force_block_minutes: "De gebruiker is geblokkeerd voor tijd"
+  setting_cache_formatted_text: "Cache opgemaakte tekst"
+  setting_use_wysiwyg_description: "Wilt u CKEditor5 WYSIWYG editor voor alle gebruikers standaard ingeschakeld. CKEditor heeft een beperkte functionaliteit voor GFM Markdown."
+  setting_column_options: "Default work package lists columns"
+  setting_commit_fix_keywords: "Vaststelling van trefwoorden"
+  setting_commit_logs_encoding: "Commit berichten coderen"
+  setting_commit_logtime_activity_id: "Activiteit voor geregistreerde tijd"
+  setting_commit_logtime_enabled: "Tijd-logboekregistratie inschakelen"
+  setting_commit_ref_keywords: "Refererende trefwoorden"
+  setting_consent_time: "Toestemming tijd"
+  setting_consent_info: "Toestemming informatie tekst"
+  setting_consent_required: "Toestemming vereist"
+  setting_consent_decline_mail: "Toestemming contact e-mailadres"
+  setting_cross_project_work_package_relations: "Sta werkpakketten over meerdere projecten toe"
+  setting_first_week_of_year: "De eerste week in het jaar bevat"
+  setting_date_format: "Datum"
+  setting_default_language: "Standaard taal"
+  setting_default_projects_modules: "Standaard actieve modules voor nieuwe projecten"
+  setting_default_projects_public: "Nieuwe projecten zijn standaard publiek"
+  setting_disable_password_login: "Disable password authentication"
+  setting_diff_max_lines_displayed: "Maximaal aantal afwijkende regels getoond"
+  setting_omniauth_direct_login_provider: "Direct login SSO provider"
+  setting_display_subprojects_work_packages: "Toon standaard de werkpakketten van onderliggende projecten bij hoofdprojecten"
+  setting_duration_format: "Duration format"
+  setting_duration_format_hours_only: "Alleen uren"
+  setting_duration_format_days_and_hours: "Days and hours"
+  setting_duration_format_instructions: "This defines how Work, Remaining work, and Time spent durations are displayed."
+  setting_emails_footer: "Voettekst e-mails"
+  setting_emails_header: "Koptekst e-mails"
+  setting_email_login: "Gebruik e-mail als inlog"
+  setting_enabled_scm: "SCM Ingeschakeld"
+  setting_enabled_projects_columns: "Columns in a projects list displayed by default"
+  setting_feeds_enabled: "Feeds inschakelen"
+  setting_ical_enabled: "iCalendar abonnementen inschakelen"
+  setting_feeds_limit: "Feed inhoud limiet"
+  setting_file_max_size_displayed: "Maximale grootte van tekstbestanden inline weergegeven"
+  setting_host_name: "Hostnaam"
+  setting_collaborative_editing_hocuspocus_url: "Hocuspocus server URL"
+  setting_collaborative_editing_hocuspocus_secret: "Hocuspocus server secret"
+  setting_hours_per_day: "Uren per dag"
+  setting_hours_per_day_explanation: >-
+    This defines what is considered a "day" when displaying duration in days and hours (for example, if a day is 8 hours, 32 hours would be 4 days).
+  setting_invitation_expiration_days: "Activatie e-mail verloopt na"
+  setting_invitation_expiration_days_caption: "Number of days after which the activation email expires."
+  setting_work_package_done_ratio: "Progress calculation mode"
+  setting_work_package_done_ratio_field: "Work-based"
+  setting_work_package_done_ratio_field_caption_html: >-
+    <i>% Complete</i> can be freely set to any value. If you optionally enter a value for <i>Work</i>, <i>Remaining work</i> will automatically be derived.
+  setting_work_package_done_ratio_status: "Status-based"
+  setting_work_package_done_ratio_status_caption_html: >-
+    Each status has a <i>% Complete</i> value associated with it. Changing status will change <i>% Complete</i>.
+  setting_work_package_done_ratio_explanation_html: >
+    In <b>work-based</b> mode, % Complete can be freely set to any value. If you optionally enter a value for Work, Remaining work will automatically be derived. In <b>status-based</b> mode, each status has a % Complete value associated with it. Changing status will change % Complete.
+  setting_work_package_properties: "Werkpakketeigenschappen"
+  setting_work_package_startdate_is_adddate: "Huidige datum als begindatum voor nieuwe werkpakketten gebruiken"
+  setting_work_packages_projects_export_limit: "Werkpakketten / Projecten exportlimiet"
+  setting_journal_aggregation_time_minutes: "Gebruikersacties geaggregeerd binnen"
+  setting_log_requesting_user: "Gebruikerslogin, naam en e-mailadres voor alle aanvragen vastleggen"
+  setting_login_required: "Verificatie vereist"
+  setting_login_required_caption: "When checked, all requests to the application have to be authenticated."
+  setting_lost_password: "Enable password reset"
+  setting_lost_password_caption: "When checked, allow users to reset their own passwords."
+  setting_mail_from: "Emissie e-mailadres"
+  setting_mail_handler_api_key: "API-sleutel"
+  setting_mail_handler_body_delimiters: "Afkappen e-mails na een van deze lijnen"
+  setting_mail_handler_body_delimiter_regex: "E-mails die overeenkomen met deze regex afkappen"
+  setting_mail_handler_ignore_filenames: "Genegeerde e-mailbijlagen"
+  setting_new_project_user_role_id: "Rol gegeven aan een niet-admin-gebruiker die een project maakt"
+  setting_new_project_send_confirmation_email: "Send notification to author when creating a new project"
+  setting_new_project_notification_text: "Notification text"
+  setting_password_active_rules: "Actieve tekenklassen"
+  setting_password_count_former_banned: "Nummer van meest recent gebruikte wachtwoorden verboden voor hergebruik"
+  setting_password_days_valid: "Aantal dagen waarna een wachtwoordwijziging afdwingen"
+  setting_password_min_length: "Minimale lengte"
+  setting_password_min_adhered_rules: "Minimum aantal vereiste klassen"
+  setting_per_page_options: "Objecten per Pagina-opties"
   setting_percent_complete_on_status_closed: "% Complete when status is closed"
   setting_percent_complete_on_status_closed_no_change: No change
   setting_percent_complete_on_status_closed_no_change_caption_html: The value of <i>% Complete</i> will not change even when a work package is closed.
@@ -5412,15 +5353,13 @@ nl:
       not_writable: The setting is not writable and can only be changed by a sysadmin.
       failed_to_update: 'Setting ''%{name}'' could not be updated: %{message}'
     authentication:
-      login: Inloggen
-      registration: Registration
-      sso: Single Sign-On (SSO)
-      omniauth_direct_login_hint_html: 'If this option is active, login requests will redirect to the configured omniauth provider. The login dropdown and sign-in page will be disabled. <br/> <strong>Note:</strong> Unless you also disable password logins, with this option enabled, users can still log in internally by visiting the <code>%{internal_path}</code> login page.
-
-        '
-      remapping_existing_users_hint: 'If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the OpenProject instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
-
-        '
+      login: "Inloggen"
+      registration: "Registration"
+      sso: "Single Sign-On (SSO)"
+      omniauth_direct_login_hint_html: >
+        If this option is active, login requests will redirect to the configured omniauth provider. The login dropdown and sign-in page will be disabled. <br/> <strong>Note:</strong> Unless you also disable password logins, with this option enabled, users can still log in internally by visiting the <code>%{internal_path}</code> login page.
+      remapping_existing_users_hint: >
+        If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the Yojana instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
     attachments:
       whitelist_text_html: 'Definieer een lijst met geldige bestandsextensies en/of MIME-types voor geüploade bestanden. <br/> Vul de bestandsextensies in (bijv. <code>%{ext_example}</code>) of MIME-types (bijv. ., <code>%{mime_example}</code>). <br/> Laat leeg om elk bestandstype te kunnen uploaden. Meerdere waarden toegestaan (één regel voor elke waarde).
 
@@ -5449,10 +5388,9 @@ nl:
       modes:
         clamav_socket_html: Enter the socket to the clamd daemon, e.g., %{example}
         clamav_host_html: Enter the hostname and port to the clamd daemon separated by colon. e.g., %{example}
-        description_html: 'Select the mode in which the antivirus scanner integration should operate. <br/> <ul> <li><strong>%{disabled_option}</strong>: Uploaded files are not scanned for viruses.</li> <li><strong>%{socket_option}</strong>: You have set up ClamAV on the same server as OpenProject and the scan daemon clamd is running in the background</li> <li><strong>%{host_option}</strong>: You are streaming files to an external virus scanning host.</li> </ul>
-
-          '
-    brute_force_prevention: Automatische gebruiker blokkering
+        description_html: >
+          Select the mode in which the antivirus scanner integration should operate. <br/> <ul> <li><strong>%{disabled_option}</strong>: Uploaded files are not scanned for viruses.</li> <li><strong>%{socket_option}</strong>: You have set up ClamAV on the same server as Yojana and the scan daemon clamd is running in the background</li> <li><strong>%{host_option}</strong>: You are streaming files to an external virus scanning host.</li> </ul>
+    brute_force_prevention: "Automatische gebruiker blokkering"
     date_format:
       first_date_of_week_and_year_set: 'Als ofwel opties "%{day_of_week_setting_name}" of "%{first_week_setting_name}" zijn ingesteld, Ook het andere moet worden vastgesteld om inconsistenties op het frontend te voorkomen.
 
@@ -5461,8 +5399,8 @@ nl:
 
         '
     experimental:
-      save_confirmation: Caution! Risk of data loss! Only activate experimental features if you do not mind breaking your OpenProject installation and losing all of its data.
-      warning_toast: Feature flags are settings that activate features that are still under development. They shall only be used for testing purposes. They shall never be activated on OpenProject installations holding important data. These features will very likely corrupt your data. Use them at your own risk.
+      save_confirmation: Caution! Risk of data loss! Only activate experimental features if you do not mind breaking your Yojana installation and losing all of its data.
+      warning_toast: Feature flags are settings that activate features that are still under development. They shall only be used for testing purposes. They shall never be activated on Yojana installations holding important data. These features will very likely corrupt your data. Use them at your own risk.
       feature_flags: Functievlaggen
     general: Algemeen
     highlighting:
@@ -5473,7 +5411,7 @@ nl:
         type: Hele rij per Type
         priority: Hele rij door prioriteit
     icalendar:
-      enable_subscriptions_text_html: Allows users with the necessary permissions to subscribe to OpenProject calendars and access work package information via an external calendar client. <strong>Note:</strong> Please read about <a href="%{link}" target="_blank">iCalendar subscriptions</a> to understand potential security risks before enabling this.
+      enable_subscriptions_text_html: Allows users with the necessary permissions to subscribe to Yojana calendars and access work package information via an external calendar client. <strong>Note:</strong> Please read about <a href="%{link}" target="_blank">iCalendar subscriptions</a> to understand potential security risks before enabling this.
     language_name_being_default: "%{language_name} (default)"
     notifications:
       events_explanation: Bepaalt voor welke gebeurtenis een e-mail wordt verzonden. Werkpakketten worden uitgesloten van deze lijst omdat de meldingen ervoor kunnen worden geconfigureerd voor elke gebruiker.
@@ -5507,9 +5445,8 @@ nl:
               label: Side panel
               description: Add all the project attributes in a section inside the right side panel in the project overview.
     project_initiation_request:
-      header_description: 'OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
-
-        '
+      header_description: >
+        Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
       status:
         submitted: "%{wizard_name} has been submitted"
         submitted_description: Click the button below to go to the work package for the submission process.
@@ -5521,8 +5458,8 @@ nl:
         project_creation_wizard: Open project creation wizard
         project_mandate: Open project mandate
       blankslate:
-        title: Initiation request not enabled
-        description: OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard.
+        title: "Initiation request not enabled"
+        description: "Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard."
       disable_dialog:
         title: Disable project initiation request
         heading: Disable this project initiation request?
@@ -5627,81 +5564,64 @@ nl:
   status_deleted: verwijderd
   support:
     array:
-      sentence_connector: en
-      skip_last_comma: onwaar
-  text_accessibility_hint: De toegankelijkheid-modus is ontworpen voor gebruikers die blind, motorisch gehandicapte of een slecht gezichtsvermogen hebben. Voor de laatste gericht zijn elementen speciaal gemarkeerd. Let op, dat de backlog-module is niet beschikbaar in deze modus.
-  text_access_token_hint: Toegangstokens kunnen u externe toepassingen toegang verlenen tot bronnen in OpenProject.
-  text_analyze: 'Verdere analyse: %{subject}'
-  text_are_you_sure: Weet u het zeker?
-  open_link_in_a_new_tab: Open link in a new tab
-  text_are_you_sure_continue: Weet u zeker dat u wilt doorgaan?
-  text_are_you_sure_with_children: Verwijder werk pakket en alle kinderen daarvan?
-  text_are_you_sure_with_project_custom_fields: Deleting this attribute will also delete its values in all projects. Are you sure you want to do this?
-  text_are_you_sure_with_project_life_cycle_step: Deleting this phase will also delete its usages in all projects. Are you sure you want to do this?
-  text_assign_to_project: Wijs aan project toe
-  text_form_configuration: 'U kunt aanpassen welke velden worden weergegeven in pakket werkformulieren. U kunt deze velden vrij groeperen om de weergave aan uw eigen behoeften aan te passen.
-
-    '
-  text_form_configuration_required_attribute: Kenmerk is gemarkeerd als vereist en wordt dus altijd getoond
-  text_caracters_maximum: maximaal %{count} tekens.
-  text_caracters_minimum: Moet ten minste %{count} tekens lang zijn.
-  text_comma_separated: Meerdere waarden toegestaan (door komma's gescheiden).
-  text_comment_wiki_page: 'Reactie op de wiki-pagina: %{page}'
-  text_custom_field_possible_values_info: Één regel voor elke waarde
-  text_custom_field_hint_activate_per_project: 'Bij het gebruik van aangepaste velden: Houd er rekening mee dat aangepaste velden moeten worden geactiveerd per project.
-
-    '
-  text_custom_field_hint_activate_per_project_and_type: 'Aangepaste velden moeten worden geactiveerd per werkpakket type en per project.
-
-    '
-  text_project_custom_field_html: 'The Enterprise edition will add these additional add-ons for projects'' custom fields: <br> <ul> <li><b>Add custom fields for projects to your Project list to create a project portfolio view</b></li> </ul>
-
-    '
-  text_custom_logo_instructions: 'The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×47px image. You can add as much spacing inside that image as you like.
-
-    '
-  text_custom_logo_mobile_instructions: 'The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×33px image. You can add as much spacing inside that image as you like.
-
-    '
-  text_custom_export_logo_instructions: 'This is the logo that appears in your PDF exports. It needs to be a PNG or JPEG image file. A black or colored logo on transparent or white background is recommended.
-
-    '
-  text_custom_export_cover_instructions: 'This is the image that appears in the background of a cover page in your PDF exports. It needs to be an about 800px width by 500px height sized PNG or JPEG image file.
-
-    '
-  text_custom_export_footer_instructions: 'PDF exports will include a graphical element positioned to the left of the footer. This image must be a PNG or JPEG file with approximately 200 pixels in width.
-
-    '
-  label_custom_export_font_instructions: 'Upload and manage custom TrueType (.ttf) fonts used in your PDF exports. For best results, use matching files from the same font family. If no font is provided, the default NotoSans font will be used.
-
-    '
-  label_custom_export_images_instructions: 'Upload and manage custom image files used in your PDF exports.
-
-    '
-  text_custom_export_font_regular_instructions: 'This is the font file for regular text. It needs to be in TTF format and is required.
-
-    '
-  text_custom_export_font_bold_instructions: 'This is the font file for bold text. It needs to be in TTF format.
-
-    '
-  text_custom_export_font_italic_instructions: 'This is the font file for italic text. It needs to be in TTF format.
-
-    '
-  text_custom_export_font_bold_italic_instructions: 'This is the font file for bold and italic text. It needs to be in TTF format.
-
-    '
-  text_custom_favicon_instructions: 'This is the tiny icon that appears in your browser window/tab next to the page''s title. It needs to be a squared 32 by 32 pixels sized PNG image file with a transparent background.
-
-    '
-  text_custom_touch_icon_instructions: 'This is the icon that appears in your mobile or tablet when you place a bookmark on your homescreen. It needs to be a squared 180 by 180 pixels sized PNG image file. Please make sure the image''s background is not transparent otherwise it will look bad on iOS.
-
-    '
-  text_database_allows_tsv: De database ondersteund TSVector (optioneel)
-  text_default_administrator_account_changed: Standaard beheerdersaccount gewijzigd
-  text_default_encoding: 'Standaardinstelling: UTF-8'
-  text_destroy: Verwijderen
-  text_destroy_with_associated: 'There are additional objects associated with the work package(s) that are to be deleted. Those objects are of the following types:'
-  text_destroy_what_to_do: Wat wilt u doen?
+      sentence_connector: "en"
+      skip_last_comma: "onwaar"
+  text_accessibility_hint: "De toegankelijkheid-modus is ontworpen voor gebruikers die blind, motorisch gehandicapte of een slecht gezichtsvermogen hebben. Voor de laatste gericht zijn elementen speciaal gemarkeerd. Let op, dat de backlog-module is niet beschikbaar in deze modus."
+  text_access_token_hint: "Toegangstokens kunnen u externe toepassingen toegang verlenen tot bronnen in Yojana."
+  text_analyze: "Verdere analyse: %{subject}"
+  text_are_you_sure: "Weet u het zeker?"
+  open_link_in_a_new_tab: "Open link in a new tab"
+  text_are_you_sure_continue: "Weet u zeker dat u wilt doorgaan?"
+  text_are_you_sure_with_children: "Verwijder werk pakket en alle kinderen daarvan?"
+  text_are_you_sure_with_project_custom_fields: "Deleting this attribute will also delete its values in all projects. Are you sure you want to do this?"
+  text_are_you_sure_with_project_life_cycle_step: "Deleting this phase will also delete its usages in all projects. Are you sure you want to do this?"
+  text_assign_to_project: "Wijs aan project toe"
+  text_form_configuration: >
+    U kunt aanpassen welke velden worden weergegeven in pakket werkformulieren. U kunt deze velden vrij groeperen om de weergave aan uw eigen behoeften aan te passen.
+  text_form_configuration_required_attribute: "Kenmerk is gemarkeerd als vereist en wordt dus altijd getoond"
+  text_caracters_maximum: "maximaal %{count} tekens."
+  text_caracters_minimum: "Moet ten minste %{count} tekens lang zijn."
+  text_comma_separated: "Meerdere waarden toegestaan (door komma's gescheiden)."
+  text_comment_wiki_page: "Reactie op de wiki-pagina: %{page}"
+  text_custom_field_possible_values_info: "Één regel voor elke waarde"
+  text_custom_field_hint_activate_per_project: >
+    Bij het gebruik van aangepaste velden: Houd er rekening mee dat aangepaste velden moeten worden geactiveerd per project.
+  text_custom_field_hint_activate_per_project_and_type: >
+    Aangepaste velden moeten worden geactiveerd per werkpakket type en per project.
+  text_project_custom_field_html: >
+    The Enterprise edition will add these additional add-ons for projects' custom fields: <br> <ul> <li><b>Add custom fields for projects to your Project list to create a project portfolio view</b></li> </ul>
+  text_custom_logo_instructions: >
+    The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×47px image. You can add as much spacing inside that image as you like.
+  text_custom_logo_mobile_instructions: >
+    The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×33px image. You can add as much spacing inside that image as you like.
+  text_custom_export_logo_instructions: >
+    This is the logo that appears in your PDF exports. It needs to be a PNG or JPEG image file. A black or colored logo on transparent or white background is recommended.
+  text_custom_export_cover_instructions: >
+    This is the image that appears in the background of a cover page in your PDF exports. It needs to be an about 800px width by 500px height sized PNG or JPEG image file.
+  text_custom_export_footer_instructions: >
+    PDF exports will include a graphical element positioned to the left of the footer. This image must be a PNG or JPEG file with approximately 200 pixels in width.
+  label_custom_export_font_instructions: >
+    Upload and manage custom TrueType (.ttf) fonts used in your PDF exports. For best results, use matching files from the same font family. If no font is provided, the default NotoSans font will be used.
+  label_custom_export_images_instructions: >
+    Upload and manage custom image files used in your PDF exports.
+  text_custom_export_font_regular_instructions: >
+    This is the font file for regular text. It needs to be in TTF format and is required.
+  text_custom_export_font_bold_instructions: >
+    This is the font file for bold text. It needs to be in TTF format.
+  text_custom_export_font_italic_instructions: >
+    This is the font file for italic text. It needs to be in TTF format.
+  text_custom_export_font_bold_italic_instructions: >
+    This is the font file for bold and italic text. It needs to be in TTF format.
+  text_custom_favicon_instructions: >
+    This is the tiny icon that appears in your browser window/tab next to the page's title. It needs to be a squared 32 by 32 pixels sized PNG image file with a transparent background.
+  text_custom_touch_icon_instructions: >
+    This is the icon that appears in your mobile or tablet when you place a bookmark on your homescreen. It needs to be a squared 180 by 180 pixels sized PNG image file. Please make sure the image's background is not transparent otherwise it will look bad on iOS.
+  text_database_allows_tsv: "De database ondersteund TSVector (optioneel)"
+  text_default_administrator_account_changed: "Standaard beheerdersaccount gewijzigd"
+  text_default_encoding: "Standaardinstelling: UTF-8"
+  text_destroy: "Verwijderen"
+  text_destroy_with_associated: "Er zijn extra objecten gerelateerd aan het/de te verwijderen werkpakket(ten). Deze objecten zijn van de soorten:"
+  text_destroy_what_to_do: "Wat wilt u doen?"
   text_diff_truncated: "... deze diff is truncated vanwege dat de maximale grote is overschreden om te tonen."
   text_email_delivery_not_configured: |-
     E-mailbezorging is niet geconfigureerd, en meldingen zijn uitgeschakeld.
@@ -5742,39 +5662,30 @@ nl:
   text_line_separated: Meerdere waarden toegestaan (één regel voor elke waarde).
   text_load_default_configuration: De standaardconfiguratie laden
   text_no_roles_defined: Er zijn geen rollen gedefinieerd.
-  text_no_access_tokens_configurable: Er zijn geen toegangstokens die kunnen worden geconfigureerd.
-  text_no_configuration_data: |-
-    Rollen, types, werkpakket statussen en workflow zijn nog niet geconfigureerd.
-    Het wordt ten zeerste aangeraden om de standaard configuratie te laden. U kunt deze wijzigen zodra het is geladen.
-  text_no_notes: Er is geen commentaar beschikbaar voor dit werkpakket.
-  text_notice_too_many_values_are_inperformant: 'Opmerking: Meer dan 100 items per pagina weergeven kan de laadtijd van de pagina verhogen.'
-  text_notice_security_badge_displayed_html: 'Opmerking: indien ingeschakeld zal dit een badge weergeven met uw installatiestatus in de <a href="%{information_panel_path}">%{information_panel_label}</a> administratie paneel, en op de homepage. Deze wordt alleen getoond aan beheerders. <br/> De badge zal uw huidige OpenProject versie controleren tegen de officiële OpenProject-database om u te waarschuwen voor updates of bekende kwetsbaarheden. Voor meer informatie over wat de controle biedt, welke gegevens nodig zijn om beschikbare updates te verstrekken en hoe deze controle kan worden uitgeschakeld, bezoek <a href="%{more_info_url}">de configuratiedocumentatie</a>.
-
-    '
-  text_own_membership_delete_confirmation: |-
-    U staat op het punt om enkele of alle van uw machtigingen te verwijderen en kan dit project daarna mogelijk niet meer bewerken.
-    Weet u zeker dat u wilt doorgaan?
-  text_permanent_delete_confirmation_checkbox_label: I understand that this deletion cannot be reversed
-  text_permanent_remove_confirmation_checkbox_label: I understand that this removal cannot be reversed
-  text_plugin_assets_writable: Plugin directory schrijfbaar
-  text_powered_by: Powered by %{link}
-  text_project_identifier_info: Alleen kleine letters (a-z), cijfers, streepjes en underscores (_) zijn toegestaan, moet beginnen met een kleine letter.
-  text_project_identifier_description: The project identifier is prepended to all work package IDs. If the identifier is "PROJ" for example, the work package identifier will be "PROJ-12" or "PROJ-246".
-  text_project_identifier_url_description: The project identifier is included in the URL of the project.
-  text_project_identifier_handle_format: Must start with a letter and contain only uppercase letters, numbers, and underscores (max 10 characters).
-  text_project_identifier_format: Must start with a lowercase letter. Only lowercase letters (a-z), numbers, dashes and underscores are allowed.
-  text_reassign: 'Opnieuw toewijzen aan werkpakket:'
-  text_regexp_multiline: De regex wordt toegepast in een modus met meerdere regels. bijvoorbeeld, ^---\s+
-  text_rename_wiki_page: Rename wiki page
-  text_repository_usernames_mapping: Selecteer of update de gebruiker van de OpenProject gelinkt aan elke gebruikersnaam gevonden in het repository log. Gebruikers met de zelfde OpenProject en repository gebruikersnaam of e-mail worden automatisch gelinkt.
-  text_status_changed_by_changeset: Toegepast in changeset %{value}.
-  text_table_difference_description: In deze tabel worden de enkele %{entries} weergegeven. U kunt het verschil tussen twee vermeldingen bekijken door eerst de bijhorende selectievakjes te selecteren in de tabel. Bij het klikken op de knop onder de tabel worden de verschillen weergegeven.
-  text_time_logged_by_changeset: Toegepast in changeset %{value}.
-  text_tip_work_package_begin_day: werkpakket om deze dag te beginnen
-  text_tip_work_package_begin_end_day: werkpakket om deze dag te beginnen en te eindigen
-  text_tip_work_package_end_day: werkpakket om deze dag te eindigen
-  text_type_no_workflow: Geen workflow gedefinieerd voor dit type
-  text_unallowed_characters: Ongeldige tekens
+  text_no_access_tokens_configurable: "Er zijn geen toegangstokens die kunnen worden geconfigureerd."
+  text_no_configuration_data: "Rollen, types, werkpakket statussen en workflow zijn nog niet geconfigureerd.\nHet wordt ten zeerste aangeraden om de standaard configuratie te laden. U kunt deze wijzigen zodra het is geladen."
+  text_no_notes: "Er is geen commentaar beschikbaar voor dit werkpakket."
+  text_notice_too_many_values_are_inperformant: "Opmerking: Meer dan 100 items per pagina weergeven kan de laadtijd van de pagina verhogen."
+  text_notice_security_badge_displayed_html: >
+    Opmerking: indien ingeschakeld zal dit een badge weergeven met uw installatiestatus in de <a href="%{information_panel_path}">%{information_panel_label}</a> administratie paneel, en op de homepage. Deze wordt alleen getoond aan beheerders. <br/> De badge zal uw huidige Yojana versie controleren tegen de officiële Yojana-database om u te waarschuwen voor updates of bekende kwetsbaarheden. Voor meer informatie over wat de controle biedt, welke gegevens nodig zijn om beschikbare updates te verstrekken en hoe deze controle kan worden uitgeschakeld, bezoek <a href="%{more_info_url}">de configuratiedocumentatie</a>.
+  text_own_membership_delete_confirmation: "U staat op het punt om enkele of alle van uw machtigingen te verwijderen en kan dit project daarna mogelijk niet meer bewerken.\nWeet u zeker dat u wilt doorgaan?"
+  text_permanent_delete_confirmation_checkbox_label: "I understand that this deletion cannot be reversed"
+  text_permanent_remove_confirmation_checkbox_label: "I understand that this removal cannot be reversed"
+  text_plugin_assets_writable: "Plugin directory schrijfbaar"
+  text_powered_by: "Powered by %{link}"
+  text_project_identifier_info: "Alleen kleine letters (a-z), cijfers, streepjes en underscores (_) zijn toegestaan, moet beginnen met een kleine letter."
+  text_reassign: "Opnieuw toewijzen aan werkpakket:"
+  text_regexp_info: "bijv. ^[A-Z0-9]+$"
+  text_regexp_multiline: 'De regex wordt toegepast in een modus met meerdere regels. bijvoorbeeld, ^---\s+'
+  text_repository_usernames_mapping: "Selecteer of update de gebruiker van de Yojana gelinkt aan elke gebruikersnaam gevonden in het repository log. Gebruikers met de zelfde Yojana en repository gebruikersnaam of e-mail worden automatisch gelinkt."
+  text_status_changed_by_changeset: "Toegepast in changeset %{value}."
+  text_table_difference_description: "In deze tabel worden de enkele %{entries} weergegeven. U kunt het verschil tussen twee vermeldingen bekijken door eerst de bijhorende selectievakjes te selecteren in de tabel. Bij het klikken op de knop onder de tabel worden de verschillen weergegeven."
+  text_time_logged_by_changeset: "Toegepast in changeset %{value}."
+  text_tip_work_package_begin_day: "werkpakket om deze dag te beginnen"
+  text_tip_work_package_begin_end_day: "werkpakket om deze dag te beginnen en te eindigen"
+  text_tip_work_package_end_day: "werkpakket om deze dag te eindigen"
+  text_type_no_workflow: "Geen workflow gedefinieerd voor dit type"
+  text_unallowed_characters: "Ongeldige tekens"
   text_user_invited: De gebruiker is uitgenodigd en is in afwachting van de registratie.
   text_user_wrote: "%{value} schreef:"
   text_wrote: wrote
@@ -5836,18 +5747,17 @@ nl:
     help_and_support: Hulp en ondersteuning
   total_progress: Totaal vorderingen
   user:
-    all: alle
-    active: actief
-    activate: Activeren
-    activate_and_reset_failed_logins: Activeren en opnieuw instellen van mislukte aanmeldingen
-    authentication_provider: Verificatieprovider
-    identity_url_text: The internal unique identifier provided by the authentication provider.
-    authentication_settings_disabled_due_to_external_authentication: 'Deze gebruiker wordt geverifieerd via een externe-verificatieprovider, dus er is geen wachtwoord in OpenProject wat moet worden veranderd.
-
-      '
-    authorization_rejected: U bent niet toegestaan aan te melden.
-    assign_random_password: Toewijzen van willekeurig wachtwoord (verzonden naar de gebruiker via e-mail)
-    blocked: tijdelijk geblokkeerd
+    all: "alle"
+    active: "actief"
+    activate: "Activeren"
+    activate_and_reset_failed_logins: "Activeren en opnieuw instellen van mislukte aanmeldingen"
+    authentication_provider: "Verificatieprovider"
+    identity_url_text: "The internal unique identifier provided by the authentication provider."
+    authentication_settings_disabled_due_to_external_authentication: >
+      Deze gebruiker wordt geverifieerd via een externe-verificatieprovider, dus er is geen wachtwoord in Yojana wat moet worden veranderd.
+    authorization_rejected: "U bent niet toegestaan aan te melden."
+    assign_random_password: "Toewijzen van willekeurig wachtwoord (verzonden naar de gebruiker via e-mail)"
+    blocked: "tijdelijk geblokkeerd"
     blocked_num_failed_logins:
       one: tijdelijk geblokkeerd (een mislukte login poging)
       other: tijdelijk geblokkeerd (%{count} mislukte login pogingen)
@@ -5878,7 +5788,17 @@ nl:
   note_password_login_disabled_link: Password login has been disabled through a [configuration setting](configuration_url).
   warning: Waarschuwing
   warning_attachments_not_saved: "%{count} bestanden kunnen niet worden opgeslagen."
-  warning_imminent_user_limit_html: 'You invited more users than are supported by your current plan. Invited users may not be able to join your OpenProject environment. Please [upgrade your plan](upgrade_url) or block existing users in order to allow invited and registered users to join.
+  warning_imminent_user_limit: >
+    U heeft meer gebruikers uitgenodigd dan wordt ondersteund in uw huidig abbonement. Uitgenodigde gebruikers kunnen mogelijk niet kunnen inloggen in uw Yojana omgeving. Voer een <a href="%{upgrade_url}">verhoging van het abbonement uit</a> of blokkeer bestaande gebruikers zodat nieuwe gebruikers kunnen inloggen.
+  warning_registration_token_expired: |
+    De activatie e-mail is verlopen. Wij sturen u een nieuwe activatie e-mail naar %{email} gestuurd. Klik op de link in de activatie e-mail om uw account te activeren.
+  warning_user_limit_reached: >
+    Adding additional users will exceed the current limit. Please contact an administrator to increase the user limit to ensure external users are able to access this instance.
+  warning_user_limit_reached_admin: >
+    Adding additional users will exceed the current limit. Please <a href="%{upgrade_url}">upgrade your plan</a> to be able to ensure external users are able to access this instance.
+  warning_user_limit_reached_instructions: >
+    You reached your user limit (%{current}/%{max} active users). Please contact sales@girishm.info to upgrade your Enterprise edition plan and add additional users.
+  warning_protocol_mismatch_html: >
 
     '
   warning_registration_token_expired: 'De activatie e-mail is verlopen. Wij sturen u een nieuwe activatie e-mail naar %{email} gestuurd. Klik op de link in de activatie e-mail om uw account te activeren.
@@ -6176,56 +6096,48 @@ nl:
       non_confidential: Non confidential
       default_scopes: "(Standaard scopen)"
       instructions:
-        enabled: Enable this application, allowing users to perform authorization grants with it.
-        name: De naam van uw applicatie. Dit wordt getoond aan andere gebruikers bij autorisatie.
-        redirect_uri_html: 'De toegestane URLs waar toegestane gebruikers kunnen worden doorgestuurd naar. Eén item per regel. <br/> Als u een desktop-applicatie registreert, gebruik dan de volgende URL.
-
-          '
-        confidential: Controleer of de toepassing zal worden gebruikt waar het cliëntgeheim vertrouwelijk kan worden gehouden. Native mobiele apps en Single Page Apps worden verondersteld niet-vertrouwelijk.
-        scopes: Controleer de toepassingsgebieden waartoe u toegang wilt geven. Als geen bereik is geselecteerd, wordt api_v3 aangenomen.
-        client_credential_user_id: Optionele gebruikersID om te impersoneren wanneer klanten deze applicatie gebruiken. Laat leeg om alleen openbare toegang toe te staan
-        register_intro: Als u een OAuth API client applicatie voor OpenProject ontwikkelt, kunt u het registreren met dit formulier voor alle gebruikers om te gebruiken.
-        default_scopes: ''
+        enabled: "Enable this application, allowing users to perform authorization grants with it."
+        name: "De naam van uw applicatie. Dit wordt getoond aan andere gebruikers bij autorisatie."
+        redirect_uri_html: >
+          De toegestane URLs waar toegestane gebruikers kunnen worden doorgestuurd naar. Eén item per regel. <br/> Als u een desktop-applicatie registreert, gebruik dan de volgende URL.
+        confidential: "Controleer of de toepassing zal worden gebruikt waar het cliëntgeheim vertrouwelijk kan worden gehouden. Native mobiele apps en Single Page Apps worden verondersteld niet-vertrouwelijk."
+        scopes: "Controleer de toepassingsgebieden waartoe u toegang wilt geven. Als geen bereik is geselecteerd, wordt api_v3 aangenomen."
+        client_credential_user_id: "Optionele gebruikersID om te impersoneren wanneer klanten deze applicatie gebruiken. Laat leeg om alleen openbare toegang toe te staan"
+        register_intro: "Als u een OAuth API client applicatie voor Yojana ontwikkelt, kunt u het registreren met dit formulier voor alle gebruikers om te gebruiken."
+        default_scopes: ""
     header:
       builtin_applications: Built-in OAuth applications
       other_applications: Other OAuth applications
     empty_application_lists: No OAuth applications have been registered.
-    client_id: Client ID
-    client_secret_notice: 'Dit is de enige keer dat we het cliënt geheim kunnen drukken, let het op en houd het veilig. Het moet als wachtwoord worden behandeld en kan niet later door OpenProject worden opgehaald.
-
-      '
+    client_id: "Client ID"
+    client_secret_notice: >
+      Dit is de enige keer dat we het cliënt geheim kunnen drukken, let het op en houd het veilig. Het moet als wachtwoord worden behandeld en kan niet later door Yojana worden opgehaald.
     authorization_dialog:
-      authorize: Autoriseer
-      cancel: Annuleren en weigeren van de authorisatie.
-      prompt_html: Autoriseer <strong>%{application_name}</strong> om uw account <em>%{login}</em> te gebruiken?
-      title: Autoriseer %{application_name}
-      wants_to_access_html: 'Deze applicatie vraagt toegang tot uw OpenProject account. <br/> <strong>heeft de volgende machtigingen aangevraagd:</strong>
-
-        '
+      authorize: "Autoriseer"
+      cancel: "Annuleren en weigeren van de authorisatie."
+      prompt_html: "Autoriseer <strong>%{application_name}</strong> om uw account <em>%{login}</em> te gebruiken?"
+      title: "Autoriseer %{application_name}"
+      wants_to_access_html: >
+        Deze applicatie vraagt toegang tot uw Yojana account. <br/> <strong>heeft de volgende machtigingen aangevraagd:</strong>
     scopes:
-      api_v3: Volledige API v3 toegang
-      api_v3_text: Toepassing zal volledige lees- en schrijftoegang krijgen tot de OpenProject API v3 om namens u acties uit te voeren.
-      mcp: Access to MCP
-      mcp_text: Application will receive access to the OpenProject MCP endpoints. They are a limited subset of APIv3, that's tailored for usage with AI agents.
+      api_v3: "Volledige API v3 toegang"
+      api_v3_text: "Toepassing zal volledige lees- en schrijftoegang krijgen tot de Yojana API v3 om namens u acties uit te voeren."
     grants:
       created_date: Goedgekeurd op
       scopes: Machtigingen
       successful_application_revocation: Intrekking van toepassing %{application_name} succesvol.
       none_given: Geen OAuth-toepassingen zijn toegang verleend tot uw gebruikersaccount.
     flows:
-      authorization_code: Autorisatiecode stroom
-      client_credentials: Client referenties stroom
-    client_credentials: Gebruiker gebruikt voor Client referenties
-    client_credentials_impersonation_set_to: Klant referentiegebruiker ingesteld op
-    client_credentials_impersonation_warning: 'Opmerking: Clienten die gebruik maken van de ''Client referenties'' stroom in deze applicatie zullen de rechten van deze gebruiker hebben'
-    client_credentials_impersonation_html: 'Standaard biedt OpenProject OAuth 2.0 autorisatie via %{authorization_code_flow_link}. U kunt optioneel %{client_credentials_flow_link} inschakelen, maar u moet een gebruiker geven wier verzoeken namens zullen worden uitgevoerd.
-
-      '
-    confirm_revoke_my_application:
-      one: Do you really want to remove this application? This will revoke one token active for it.
-      other: Do you really want to remove this application? This will revoke %{count} tokens active for it.
-    authorization_error: Er is een autorisatiefout opgetreden.
-    my_registered_applications: Geregistreerde OAuth toepassingen
+      authorization_code: "Autorisatiecode stroom"
+      client_credentials: "Client referenties stroom"
+    client_credentials: "Gebruiker gebruikt voor Client referenties"
+    client_credentials_impersonation_set_to: "Klant referentiegebruiker ingesteld op"
+    client_credentials_impersonation_warning: "Opmerking: Clienten die gebruik maken van de 'Client referenties' stroom in deze applicatie zullen de rechten van deze gebruiker hebben"
+    client_credentials_impersonation_html: >
+      Standaard biedt Yojana OAuth 2.0 autorisatie via %{authorization_code_flow_link}. U kunt optioneel %{client_credentials_flow_link} inschakelen, maar u moet een gebruiker geven wier verzoeken namens zullen worden uitgevoerd.
+    authorization_error: "Er is een autorisatiefout opgetreden."
+    revoke_my_application_confirmation: "Weet u zeker dat u deze applicatie wilt verwijderen? Dit zal %{token_count} actief voor deze verwijderen."
+    my_registered_applications: "Geregistreerde OAuth toepassingen"
   oauth_client:
     urn_connection_status:
       connected: Verbonden
@@ -6238,41 +6150,36 @@ nl:
       label_request_token: Verzoek token
       label_refresh_token: Token vernieuwen
     errors:
-      oauth_authorization_code_grant_had_errors: OAuth2 Authorization grant unsuccessful
-      oauth_reported: OAuth2 leverancier gerapporteerd
-      oauth_returned_error: OAuth2 heeft een fout teruggestuurd
-      oauth_returned_json_error: OAuth2 heeft een JSON-fout teruggestuurd
-      oauth_returned_http_error: OAuth2 heeft een netwerkfout teruggestuurd
-      oauth_returned_standard_error: OAuth2 stuurde een interne fout terug
-      wrong_token_type_returned: OAuth2 gaf een verkeerd type token, verwacht AccessToken::Bearer
-      oauth_issue_contact_admin: OAuth2 meldt een fout. Neem contact op met uw systeembeheerder.
-      oauth_client_not_found: OAuth2 client niet gevonden in 'callback' eindpunt (redirect_uri).
-      refresh_token_called_without_existing_token: 'Interne fout: Vernieuw token zonder eerder bestaande token.
-
-        '
-      refresh_token_updated_failed: Fout tijdens het bijwerken van OAuthClientToken
-      oauth_client_not_found_explanation: 'Deze fout verschijnt nadat u de client_id en client_secret in OpenProject hebt bijgewerkt, maar heeft het ''Return URI'' veld niet bijgewerkt in de OAuth2 provider.
-
-        '
-      oauth_code_not_present: OAuth2 'code' niet gevonden in 'callback' eindpunt (redirect_uri).
-      oauth_code_not_present_explanation: 'Deze fout wordt weergegeven als u het verkeerde response_type in de OAuth2 provider hebt geselecteerd. Response_type moet ''code'' zijn of gelijkwaardig.
-
-        '
-      oauth_state_not_present: OAuth2 'staat' niet gevonden in 'callback' eindpunt (redirect_uri).
-      oauth_state_not_present_explanation: 'De ''staat'' wordt gebruikt om aan te geven aan OpenProject waar verder te gaan na een succesvolle OAuth2 autorisatie. Een ontbrekende ''staat'' is een interne fout die kan verschijnen tijdens het instellen. Neem contact op met de systeembeheerder.
-
-        '
+      oauth_authorization_code_grant_had_errors: "OAuth2 Authorization grant unsuccessful"
+      oauth_reported: "OAuth2 leverancier gerapporteerd"
+      oauth_returned_error: "OAuth2 heeft een fout teruggestuurd"
+      oauth_returned_json_error: "OAuth2 heeft een JSON-fout teruggestuurd"
+      oauth_returned_http_error: "OAuth2 heeft een netwerkfout teruggestuurd"
+      oauth_returned_standard_error: "OAuth2 stuurde een interne fout terug"
+      wrong_token_type_returned: "OAuth2 gaf een verkeerd type token, verwacht AccessToken::Bearer"
+      oauth_issue_contact_admin: "OAuth2 meldt een fout. Neem contact op met uw systeembeheerder."
+      oauth_client_not_found: "OAuth2 client niet gevonden in 'callback' eindpunt (redirect_uri)."
+      refresh_token_called_without_existing_token: >
+        Interne fout: Vernieuw token zonder eerder bestaande token.
+      refresh_token_updated_failed: "Fout tijdens het bijwerken van OAuthClientToken"
+      oauth_client_not_found_explanation: >
+        Deze fout verschijnt nadat u de client_id en client_secret in Yojana hebt bijgewerkt, maar heeft het 'Return URI' veld niet bijgewerkt in de OAuth2 provider.
+      oauth_code_not_present: "OAuth2 'code' niet gevonden in 'callback' eindpunt (redirect_uri)."
+      oauth_code_not_present_explanation: >
+        Deze fout wordt weergegeven als u het verkeerde response_type in de OAuth2 provider hebt geselecteerd. Response_type moet 'code' zijn of gelijkwaardig.
+      oauth_state_not_present: "OAuth2 'staat' niet gevonden in 'callback' eindpunt (redirect_uri)."
+      oauth_state_not_present_explanation: >
+        De 'staat' wordt gebruikt om aan te geven aan Yojana waar verder te gaan na een succesvolle OAuth2 autorisatie. Een ontbrekende 'staat' is een interne fout die kan verschijnen tijdens het instellen. Neem contact op met de systeembeheerder.
       rack_oauth2:
-        client_secret_invalid: Klant geheim is ongeldig (client_secret_invalid)
-        invalid_request: 'OAuth2 Authorization Server reageerde met ''invalid_request''. Deze fout verschijnt als je meerdere keren probeert te autoriseren of in geval van technische problemen.
-
-          '
-        invalid_response: OAuth2 Autorisatie Server gaf een ongeldig antwoord (invalid_response)
-        invalid_grant: De OAuth2 Autorisatie Server vraagt u om opnieuw te autoriseren (invalid_grant).
-        invalid_client: De OAuth2 Authorization Server herkent OpenProject (invalid_client) niet.
-        unauthorized_client: De OAuth2 Autorisatie Server verwerpt het subsidietype (unauthorized_client)
-        unsupported_grant_type: De OAuth2 Autorisatie Server vraagt u om opnieuw toestemming (niet-supported_grant_type).
-        invalid_scope: Je hebt geen toegang tot de gevraagde bron (ongeldig_scope).
+        client_secret_invalid: "Klant geheim is ongeldig (client_secret_invalid)"
+        invalid_request: >
+          OAuth2 Authorization Server reageerde met 'invalid_request'. Deze fout verschijnt als je meerdere keren probeert te autoriseren of in geval van technische problemen.
+        invalid_response: "OAuth2 Autorisatie Server gaf een ongeldig antwoord (invalid_response)"
+        invalid_grant: "De OAuth2 Autorisatie Server vraagt u om opnieuw te autoriseren (invalid_grant)."
+        invalid_client: "De OAuth2 Authorization Server herkent Yojana (invalid_client) niet."
+        unauthorized_client: "De OAuth2 Autorisatie Server verwerpt het subsidietype (unauthorized_client)"
+        unsupported_grant_type: "De OAuth2 Autorisatie Server vraagt u om opnieuw toestemming (niet-supported_grant_type)."
+        invalid_scope: "Je hebt geen toegang tot de gevraagde bron (ongeldig_scope)."
   http:
     request:
       failed_authorization: De serveraanvraag kan zichzelf niet autoriseren.
@@ -6282,18 +6189,18 @@ nl:
   you: jij
   link: link
   plugin_openproject_auth_plugins:
-    name: OpenProject Auth Plugins
-    description: Integration of OmniAuth strategy providers for authentication in OpenProject.
+    name: "Yojana Auth Plugins"
+    description: "Integration of OmniAuth strategy providers for authentication in Yojana."
   plugin_openproject_auth_saml:
-    name: OmniAuth SAML / Single-Sign On
-    description: Adds the OmniAuth SAML provider to OpenProject
+    name: "OmniAuth SAML / Single-Sign On"
+    description: "Adds the OmniAuth SAML provider to Yojana"
   enterprise_plans:
     legacy_enterprise: Enterprise Plan
   token:
     hashed_token:
       display_value_placeholder: "***"
   external_link_warning:
-    title: Leaving OpenProject
-    warning_message: You are about to leave OpenProject and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies.
-    continue_message: Are you sure you want to proceed to the following external link?
-    continue_button: Continue to external website
+    title: "Leaving Yojana"
+    warning_message: "You are about to leave Yojana and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies."
+    continue_message: "Are you sure you want to proceed to the following external link?"
+    continue_button: "Continue to external website"

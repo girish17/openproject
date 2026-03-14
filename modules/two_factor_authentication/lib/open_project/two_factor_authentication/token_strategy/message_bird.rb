@@ -46,7 +46,7 @@ module OpenProject::TwoFactorAuthentication
       ##
       # TODO ensure the originator cannot be larger than 11 characters
       def originator
-        "OpenProject"
+        "Yojana"
       end
 
       def send_voice

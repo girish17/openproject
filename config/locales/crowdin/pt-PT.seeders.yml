@@ -141,7 +141,7 @@ pt-PT:
                 options:
                   name: Por onde começar
                   text: |
-                    Estamos contentes por se juntar a nós! Sugerimos que experimente algumas coisas para começar a utilizar o OpenProject.
+                    Estamos contentes por se juntar a nós! Sugerimos que experimente algumas coisas para começar a utilizar o Yojana.
 
                     Descubra as funcionalidades mais importantes com a nossa [Visita guiada]({{opSetting:base_url}}/projects/demo-project/work_packages/?start_onboarding_tour=true).
 
@@ -154,7 +154,7 @@ pt-PT:
                     5. *Ative outros módulos*: &rightarrow; Aceda a [Definições do projeto &rightarrow; Módulos]({{opSetting:base_url}}/projects/demo-project/settings/modules).
                     6. *Conclua as suas tarefas no projeto*: &rightarrow; Aceda a [Pacotes de trabalho &rightarrow; Tarefas]({{opSetting:base_url}}/projects/demo-project/work_packages/details/##wp.id:set_date_and_location_of_conference/overview?query_id=##query.id:demo_project__query__tasks).
 
-                    Aqui encontra os nossos [Guias do utilizador](https://www.openproject.org/docs/user-guide/).
+                    Aqui encontra os nossos [Guias do utilizador](https://www.yojana.girishm.info/docs/user-guide/).
                     Informe-nos se tiver alguma dúvida ou precisar de apoio. Contacte-nos: [support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
@@ -211,7 +211,7 @@ pt-PT:
             * Ver o histórico de alterações
             * Ver como Markdown
 
-            Mais informações: [https://www.openproject.org/docs/user-guide/wiki/](https://www.openproject.org/docs/user-guide/wiki/)
+            Mais informações: [https://www.yojana.girishm.info/docs/user-guide/wiki/](https://www.yojana.girishm.info/docs/user-guide/wiki/)
         scrum-project:
           name: Projeto Scrum
           status_explanation: Todas as tarefas estão agendadas. As pessoas envolvidas conhecem as suas tarefas. O sistema está configurado por completo.
@@ -313,7 +313,7 @@ pt-PT:
                 options:
                   name: Por onde começar
                   text: |
-                    Estamos contentes por se ter juntado a nós! Sugerimos que experimente algumas coisas para começar a usar o OpenProject.
+                    Estamos contentes por se ter juntado a nós! Sugerimos que experimente algumas coisas para começar a usar o Yojana.
 
                     _Experimente os seguintes passos:_
 
@@ -325,7 +325,7 @@ pt-PT:
                     6. *Criar uma wiki do Sprint*: &rightarrow; Aceda a [Backlogs]({{opSetting:base_url}}/projects/your-scrum-project/backlogs) e abra a wiki do sprint a partir do menu pendente do lado direito num sprint. Pode editar o [modelo da wiki]({{opSetting:base_url}}/projects/your-scrum-project/wiki/) mediante as suas necessidades.
                     7. *Ativar mais módulos*: &rightarrow; Aceda a [Definições do projeto &rightarrow; Módulos]({{opSetting:base_url}}/projects/your-scrum-project/settings/modules).
 
-                    Aqui encontra as nossas [Guias do Utilizador](https://www.openproject.org/docs/user-guide/).
+                    Aqui encontra as nossas [Guias do Utilizador](https://www.yojana.girishm.info/docs/user-guide/).
                     Informe-nos se tiver alguma dúvida ou precisar de apoio. Contacte-nos: [support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
@@ -488,19 +488,19 @@ pt-PT:
         item_6:
           name: Bug
       welcome:
-        title: Damos-lhe as boas-vindas ao OpenProject!
+        title: Damos-lhe as boas-vindas ao Yojana!
         text: |
-          O OpenProject é o principal software de gestão de projetos de código aberto. Suporta a gestão de projetos clássica, ágil e híbrida e dá-lhe controlo total sobre os seus dados.
+          O Yojana é o principal software de gestão de projetos de código aberto. Suporta a gestão de projetos clássica, ágil e híbrida e dá-lhe controlo total sobre os seus dados.
 
           Características principais e casos de utilização:
 
-          * [Gestão de portefólio de projetos](https://www.openproject.org/collaboration-software-features/project-portfolio-management/)
-          * [Planeamento e programação de projetos](https://www.openproject.org/collaboration-software-features/project-planning-scheduling/)
-          * [Gestão de tarefas e acompanhamento de problemas](https://www.openproject.org/collaboration-software-features/task-management/)
-          * [Quadros Agile (Scrum e Kanban)](https://www.openproject.org/collaboration-software-features/agile-project-management/)
-          * [Gestão de requisitos e planeamento de versões](https://www.openproject.org/collaboration-software-features/product-development/)
-          * [Controlo de tempo e de custos, orçamentos](https://www.openproject.org/collaboration-software-features/time-tracking/)
-          * [Colaboração em equipa e documentação](https://www.openproject.org/collaboration-software-features/team-collaboration/)
+          * [Gestão de portefólio de projetos](https://www.yojana.girishm.info/collaboration-software-features/project-portfolio-management/)
+          * [Planeamento e programação de projetos](https://www.yojana.girishm.info/collaboration-software-features/project-planning-scheduling/)
+          * [Gestão de tarefas e acompanhamento de problemas](https://www.yojana.girishm.info/collaboration-software-features/task-management/)
+          * [Quadros Agile (Scrum e Kanban)](https://www.yojana.girishm.info/collaboration-software-features/agile-project-management/)
+          * [Gestão de requisitos e planeamento de versões](https://www.yojana.girishm.info/collaboration-software-features/product-development/)
+          * [Controlo de tempo e de custos, orçamentos](https://www.yojana.girishm.info/collaboration-software-features/time-tracking/)
+          * [Colaboração em equipa e documentação](https://www.yojana.girishm.info/collaboration-software-features/team-collaboration/)
 
           Damos-lhe as boas-vindas ao futuro da gestão de projetos.
 

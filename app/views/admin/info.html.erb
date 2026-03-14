@@ -58,12 +58,14 @@ See COPYRIGHT and LICENSE files for more details.
       scheme: :warning,
       icon: :alert
     )) do
-      link_translate(
-            :"admin.info.database_deprecation_html",
-            links: {
-              upgrade_guide: %i[postgres_17_upgrade]
-            }
-          )
+      <<~STR.html_safe
+        Starting with Yojana 16.0, PostgreSQL 16 is required to use Yojana.
+        Your installation will remain functional with your current database, but anticipate incompatability
+        in future releases.
+        <br/>
+        We have prepared #{static_link_to(:postgres_17_upgrade, label: 'upgrade guides for all installation methods')}.
+        You can perform the upgrade ahead of the next release at any time by following the guides.
+      STR
     end
     component.with_attribute(key: "Deprecation warning", value:)
   end

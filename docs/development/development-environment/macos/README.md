@@ -28,7 +28,7 @@ their homepage.
 Use [rbenv](https://github.com/rbenv/rbenv) and [ruby-build](https://github.com/rbenv/ruby-build#readme) to install
 Ruby. We always require the latest ruby versions, and you can check which version is required
 by [checking the Gemfile](https://github.com/opf/openproject/blob/dev/Gemfile#L31) for the `ruby "~> X.Y"` statement. At
-the time of writing, this version is "4.0.2"
+the time of writing, this version is "3.4.9"
 
 #### Install rbenv and ruby-build
 
@@ -48,18 +48,18 @@ With both installed, we can now install the actual ruby version.
 You can check available ruby versions with `rbenv install --list`.
 
 We suggest you install the version we require in [.ruby-version](https://github.com/opf/openproject/blob/dev/.ruby-version).
-Read the first line e.g. `4.0.2` and install that version.
+Read the first line e.g. `3.4.9` and install that version.
 
 ```shell
 # Install the required version as read from the .ruby-version file
-rbenv install 4.0.2
+rbenv install 3.4.9
 ```
 
 This might take a while depending on whether ruby is built from source. After it is complete, you need to tell rbenv to
 globally activate this version
 
 ```shell
-rbenv global 4.0.2
+rbenv global 3.4.9
 ```
 
 You also need to install [bundler](https://github.com/bundler/bundler/), the ruby gem bundler.
@@ -115,11 +115,11 @@ nodenv init
 
 You can find the latest LTS version here: [nodejs.org/en/download](https://nodejs.org/en/download/)
 
-At the time of writing this is v22.22.3. Install and activate it with:
+At the time of writing this is v22.22.1. Install and activate it with:
 
 ```shell
-nodenv install 22.22.3
-nodenv global 22.22.3
+nodenv install 22.22.1
+nodenv global 22.22.1
 ```
 
 #### Update NPM to the latest version
@@ -134,13 +134,13 @@ You should now have an active ruby and node installation. Verify that it works w
 
 ```shell
 $ ruby --version
-ruby 4.0.2 (2026-03-17 revision d3da9fec82) +PRISM [arm64-darwin25]
+ruby 3.4.9 (2025-10-08 revision 7a5688e2a2) +PRISM [arm64-darwin25]4]
 
 $ bundler --version
 4.0.3
 
 node --version
-v22.22.3
+v22.22.1
 
 npm --version
 10.9.8

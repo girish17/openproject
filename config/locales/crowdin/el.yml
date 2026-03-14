@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -348,13 +348,13 @@ el:
         unknown_name: Unknown
     mcp_configurations:
       index:
-        description: The model context protocol allows AI agents to provide its users with tools and resources exposed by this OpenProject instance. This feature is still in beta.
-        resources_heading: Resources
-        resources_description: OpenProject implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url).
-        resources_submit: Update resources
-        tools_heading: Tools
-        tools_description: OpenProject implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url).
-        tools_submit: Update tools
+        description: "The model context protocol allows AI agents to provide its users with tools and resources exposed by this Yojana instance."
+        resources_heading: "Resources"
+        resources_description: "Yojana implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
+        resources_submit: "Update resources"
+        tools_heading: "Tools"
+        tools_description: "Yojana implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url)."
+        tools_submit: "Update tools"
       multi_update:
         success: MCP configurations were updated successfully.
       server_form:
@@ -397,31 +397,31 @@ el:
       edit:
         label_delete_scim_client: Delete SCIM client
       form:
-        auth_provider_description: This is the service that users added by the SCIM provider will use to authenticate in OpenProject.
-        authentication_method_description_html: This is how the SCIM client authenticates at OpenProject. Please ensure that OAuth tokens include the <code>scim_v2</code> scope.
-        description: Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options.
-        jwt_sub_description: For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case.
-        name_description: Choose a name that will help other admins better understand why this client was configured.
+        auth_provider_description: "This is the service that users added by the SCIM provider will use to authenticate in Yojana."
+        authentication_method_description_html: "This is how the SCIM client authenticates at Yojana. Please ensure that OAuth tokens include the <code>scim_v2</code> scope."
+        description: "Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options."
+        jwt_sub_description: "For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case."
+        name_description: "Choose a name that will help other admins better understand why this client was configured."
       index:
-        description: SCIM clients configured here are able to interact with OpenProject SCIM server API to provision, update, and deprovision user accounts and groups.
-        label_create_button: Add SCIM client
+        description: "SCIM clients configured here are able to interact with Yojana SCIM server API to provision, update, and deprovision user accounts and groups."
+        label_create_button: "Add SCIM client"
       new:
         title: New SCIM client
       revoke_static_token_dialog_component:
-        confirm_button: Ανάκληση
-        title: Revoke static token
-        heading: Are you sure you want to revoke this token?
-        description: The SCIM client that uses this token will no longer be able to access OpenProject's SCIM server API.
+        confirm_button: "Ανάκληση"
+        title: "Revoke static token"
+        heading: "Are you sure you want to revoke this token?"
+        description: "The SCIM client that uses this token will no longer be able to access Yojana's SCIM server API."
       table_component:
         blank_slate:
           title: No SCIM clients configured yet
           description: Add clients to see them here
         user_count: Χρήστες
       token_list_component:
-        description: The tokens you generate here can be passed by a SCIM client to access the OpenProject SCIM API.
-        heading: Tokens
-        label_add_token: Token
-        label_aria_add_token: Add token
+        description: "The tokens you generate here can be passed by a SCIM client to access the Yojana SCIM API."
+        heading: "Tokens"
+        label_add_token: "Token"
+        label_aria_add_token: "Add token"
       token_table_component:
         blank_slate:
           title: No tokens have been created yet
@@ -564,37 +564,34 @@ el:
       name: Αυθαίρετο όνομα της σύνδεσης LDAP
       host: Όνομα εξυπηρετητή LDAP ή διεύθυνση IP
       login_map: Το κλειδί χαρακτηριστικού στο LDAP που χρησιμοποιείται για να αναγνωριστεί η μοναδική σύνδεση χρήστη. Συνήθως, αυτό θα είναι το `uid` ή το `samAccountName`.
-      generic_map: Το κλειδί χαρακτηριστικού στο LDAP είναι χαρτογραφημένο στο χαρακτηριστικό του OpenProject `%{attribute}`
-      admin_map_html: 'Προαιρετικό: Το κλειδί χαρακτηριστικού στο LDAP που <strong>αν υπάρχει</strong> επισημαίνει τον χρήστη OpenProject ως διαχειριστή. Αφήστε το κενό αν αμφιβάλλετε.'
+      generic_map: Το κλειδί χαρακτηριστικού στο LDAP είναι χαρτογραφημένο στο χαρακτηριστικό του Yojana `%{attribute}`
+      admin_map_html: "Προαιρετικό: Το κλειδί χαρακτηριστικού στο LDAP που <strong>αν υπάρχει</strong> επισημαίνει τον χρήστη Yojana ως διαχειριστή. Αφήστε το κενό αν αμφιβάλλετε."
       system_user_dn_html: |
         Enter the DN of the system user used for read-only access.
         <br>
-        Example: uid=openproject,ou=system,dc=example,dc=com
+        Example: uid=yojana,ou=system,dc=example,dc=com
       system_user_password: Εισάγετε τον δεσμευτικό κωδικό πρόσβασης του χρήστη συστήματος
       base_dn: |
-        Εισάγετε το Base DN του υποδέντρου στο LDAP που θέλετε το OpenProject να αναζητήσει χρήστες και ομάδες.
-        Το OpenProject θα φιλτράρει τα δοθέντα ονόματα χρηστών μόνο σε αυτό το υποδέντρο.
+        Εισάγετε το Base DN του υποδέντρου στο LDAP που θέλετε το Yojana να αναζητήσει χρήστες και ομάδες.
+        Το Yojana θα φιλτράρει τα δοθέντα ονόματα χρηστών μόνο σε αυτό το υποδέντρο.
         Παράδειγμα: ou=users,dc=example,dc=com
-      filter_string: 'Προσθέστε ένα προαιρετικό φίλτρο RFC4515 για εφαρμογή στα αποτελέσματα που επιστρέφονται για χρήστες που φιλτράρονται στο LDAP. Αυτό μπορεί να χρησιμοποιηθεί για τον περιορισμό του συνόλου των χρηστών που βρίσκονται στο OpenProject για έλεγχο ταυτότητας και συγχρονισμό ομάδας.
-
-        '
-      filter_string_concat: 'Το OpenProject θα φιλτράρει πάντα το χαρακτηριστικό σύνδεσης που παρέχεται από τον χρήστη για να αναγνωρίσει την εγγραφή. Εάν παρέχετε ένα φίλτρο εδώ, θα συνδυαστεί με ένα AND. Από προεπιλογή, ένα catch-all (objectClass = *) θα χρησιμοποιηθεί ως φίλτρο.
-
-        '
+      filter_string: |
+        Προσθέστε ένα προαιρετικό φίλτρο RFC4515 για εφαρμογή στα αποτελέσματα που επιστρέφονται για χρήστες που φιλτράρονται στο LDAP. Αυτό μπορεί να χρησιμοποιηθεί για τον περιορισμό του συνόλου των χρηστών που βρίσκονται στο Yojana για έλεγχο ταυτότητας και συγχρονισμό ομάδας.
+      filter_string_concat: |
+        Το Yojana θα φιλτράρει πάντα το χαρακτηριστικό σύνδεσης που παρέχεται από τον χρήστη για να αναγνωρίσει την εγγραφή. Εάν παρέχετε ένα φίλτρο εδώ, θα συνδυαστεί με ένα AND. Από προεπιλογή, ένα catch-all (objectClass = *) θα χρησιμοποιηθεί ως φίλτρο.
       onthefly_register: |
-        Αν επιλέξετε αυτό το κουτί, το OpenProject θα δημιουργεί αυτόματα καινούργιους χρήστες από τις καταχωρήσεις του LDAP όταν ταυτοποιούνται για πρώτη φορά στο OpenProject.
-        Αφήστε το μη επιλεγμένο για να επιτρέψετε μόνο στους υπάρχοντες λογαριασμούς στο OpenProject να ταυτοποιηθούν μέσω LDAP!
-    connection_encryption: Κρυπτογράφηση σύνδεσης
-    encryption_details: LDAPS / STARTTLS options
-    system_account: Λογαριασμός συστήματος
+        Αν επιλέξετε αυτό το κουτί, το Yojana θα δημιουργεί αυτόματα καινούργιους χρήστες από τις καταχωρήσεις του LDAP όταν ταυτοποιούνται για πρώτη φορά στο Yojana.
+        Αφήστε το μη επιλεγμένο για να επιτρέψετε μόνο στους υπάρχοντες λογαριασμούς στο Yojana να ταυτοποιηθούν μέσω LDAP!
+    connection_encryption: "Κρυπτογράφηση σύνδεσης"
+    encryption_details: "LDAPS / STARTTLS options"
+    system_account: "Λογαριασμός συστήματος"
     system_account_legend: |
-      Το OpenProject απαιτεί πρόσβαση ανάγνωσης-μόνο μέσω ενός λογαριασμού συστήματος για να αναζητά χρήστες και ομάδες στο LDAP δέντρο σας.
+      Το Yojana απαιτεί πρόσβαση ανάγνωσης-μόνο μέσω ενός λογαριασμού συστήματος για να αναζητά χρήστες και ομάδες στο LDAP δέντρο σας.
       Παρακαλούμε προσδιορίστε τα διαπιστευτήρια δέσμευσης για αυτόν τον χρήστη συστήματος στην παρακάτω ενότητα.
-    ldap_details: Λεπτομέρειες LDAP
-    user_settings: Χαρτογράφηση χαρακτηριστικού
-    user_settings_legend: 'Τα ακόλουθα πεδία σχετίζονται με το πως οι χρήστες δημιουργούνται στο OpenProject από τις καταχωρήσεις LDAP και ποια χαρακτηριστικά LDAP χρησιμοποιούνται για να ορίσουν τα χαρακτηριστικά ενός χρήστη OpenProject (χαρτογράφηση χαρακτηριστικού).
-
-      '
+    ldap_details: "Λεπτομέρειες LDAP"
+    user_settings: "Χαρτογράφηση χαρακτηριστικού"
+    user_settings_legend: |
+      Τα ακόλουθα πεδία σχετίζονται με το πως οι χρήστες δημιουργούνται στο Yojana από τις καταχωρήσεις LDAP και ποια χαρακτηριστικά LDAP χρησιμοποιούνται για να ορίσουν τα χαρακτηριστικά ενός χρήστη Yojana (χαρτογράφηση χαρακτηριστικού).
     tls_mode:
       plain: κανένα
       simple_tls: LDAPS
@@ -2134,18 +2131,17 @@ el:
         circular_dependency: Αυτή η σχέση θα δημιουργήσει κυκλική εξάρτηση.
         confirmation: δεν ταιριάζει με %{attribute}.
         could_not_be_copied: "%{dependency} δεν μπόρεσε να αντιγραφεί (πλήρως)."
-        datetime_must_be_in_future: must be in the future.
-        does_not_exist: δεν υπάρχει.
-        error_enterprise_only: "%{action} is only available in the OpenProject Enterprise edition."
-        error_unauthorized: δεν είναι δυνατή η πρόσβαση.
-        error_readonly: επιχειρήθηκε να εγγραφεί αλλά δεν ήταν εγγράψιμο.
-        error_conflict: Οι πληροφορίες ενημερώθηκαν από τουλάχιστον έναν ακόμα χρήστη στο εν τω μεταξύ.
-        error_not_found: not found.
-        email: is not a valid email address.
-        empty: δεν μπορεί να είναι κενό.
-        enterprise_plan_required: requires at least the %{plan_name}.
-        even: πρέπει να είναι άρτιος.
-        exclusion: είναι δεσμευμένο.
+        does_not_exist: "δεν υπάρχει."
+        error_enterprise_only: "%{action} is only available in the Yojana Enterprise edition."
+        error_unauthorized: "δεν είναι δυνατή η πρόσβαση."
+        error_readonly: "επιχειρήθηκε να εγγραφεί αλλά δεν ήταν εγγράψιμο."
+        error_conflict: "Οι πληροφορίες ενημερώθηκαν από τουλάχιστον έναν ακόμα χρήστη στο εν τω μεταξύ."
+        error_not_found: "not found."
+        email: "is not a valid email address."
+        empty: "δεν μπορεί να είναι κενό."
+        enterprise_plan_required: "requires at least the %{plan_name}."
+        even: "πρέπει να είναι άρτιος."
+        exclusion: "είναι δεσμευμένο."
         feature_disabled: is not available.
         feature_disabled_for_project: is disabled for this project.
         file_too_large: είναι πολύ μεγάλο (το μέγιστο μέγεθος είναι %{count} Bytes).
@@ -2800,17 +2796,14 @@ el:
     reset_token:
       action_create: Δημιουργία
       action_reset: Επαναφορά
-      heading_reset: Επαναφορά token αντιγράφου ασφαλείας
-      heading_create: Δημιουργία token αντιγράφου ασφαλείας
-      implications: 'Enabling backups will allow any user with the required permissions and this backup token to download a backup containing all data of this OpenProject installation. This includes the data of all other users.
-
-        '
-      info: 'You will need to generate a backup token to be able to create a backup. Each time you want to request a backup you will have to provide this token. You can delete the backup token to disable backups for this user.
-
-        '
-      verification_html: 'Enter %{word} to confirm you want to %{action} the backup token.
-
-        '
+      heading_reset: "Επαναφορά token αντιγράφου ασφαλείας"
+      heading_create: "Δημιουργία token αντιγράφου ασφαλείας"
+      implications: >
+        Enabling backups will allow any user with the required permissions and this backup token to download a backup containing all data of this Yojana installation. This includes the data of all other users.
+      info: >
+        You will need to generate a backup token to be able to create a backup. Each time you want to request a backup you will have to provide this token. You can delete the backup token to disable backups for this user.
+      verification: >
+        Enter %{word} to confirm you want to %{action} the backup token.
       verification_word_reset: επαναφορά
       verification_word_create: δημιουργία
       warning: 'When you create a new token you will only be allowed to request a backup after 24 hours. This is a safety measure. After that you can request a backup any time using that token.
@@ -3159,29 +3152,26 @@ el:
       title: Enterprise add-on
       plan_title: Enterprise %{plan} add-on
       plan_name: "%{plan} enterprise plan"
-      trial_text: This feature is included in your active Enterprise trial.
-      plan_text_html: Available starting with the %{plan_name}.
-      unlimited: Απεριόριστα
-      already_have_token: 'Already have a token? Add it using the button below to upgrade to the booked Enterprise plan.
-
-        '
-      hide_banner: Hide this banner
-      homescreen_description: 'Enterprise plans extend the Community edition of OpenProject with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running OpenProject in a mission-critical environment.
-
-        '
+      plan_text_html: "Available starting with the %{plan_name}."
+      unlimited: "Απεριόριστα"
+      already_have_token: >
+        Already have a token? Add it using the button below to upgrade to the booked Enterprise plan.
+      hide_banner: "Hide this banner"
+      homescreen_description: >
+        Enterprise plans extend the Community edition of Yojana with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running Yojana in a mission-critical environment.
       homescreen_subline: By upgrading, you will also be supporting an open source project.
       baseline_comparison:
         description: Highlight changes made to this list since any point in the past.
       benefits:
-        description: What are the benefits of the Enterprise on-premises edition?
-        high_security: Χαρακτηριστικά ασφαλείας
-        high_security_text: Single sign on (SAML, OpenID Connect, CAS), LDAP groups.
-        installation: Υποστήριξη εγκατάστασης
-        installation_text: Οι έμπειροι μηχανικοί λογισμικού σας καθοδηγούν στην πλήρη διαδικασία εγκατάστασης και εγκατάστασης στη δική σας υποδομή.
-        premium_features: Enterprise add-ons
-        premium_features_text: Agile πίνακες, προσαρμοσμένα θέματα και λογότυπα, γραφήματα, έξυπνες ροές εργασίας με προσαρμοσμένες ενέργειες, αναζήτηση κειμένου για συνημμένα πακέτων εργασίας και πολλαπλή επιλογή προσαρμοσμένων πεδίων.
-        professional_support: Επαγγελματική υποστήριξη
-        professional_support_text: Αποκτήστε αξιόπιστη, high-touch υποστήριξη από ανώτερους μηχανικούς υποστήριξης με εξειδικευμένες γνώσεις σχετικά με τη λειτουργία του OpenProject σε κρίσιμα επιχειρηματικά περιβάλλοντα.
+        description: "What are the benefits of the Enterprise on-premises edition?"
+        high_security: "Χαρακτηριστικά ασφαλείας"
+        high_security_text: "Single sign on (SAML, OpenID Connect, CAS), LDAP groups."
+        installation: "Υποστήριξη εγκατάστασης"
+        installation_text: "Οι έμπειροι μηχανικοί λογισμικού σας καθοδηγούν στην πλήρη διαδικασία εγκατάστασης και εγκατάστασης στη δική σας υποδομή."
+        premium_features: "Enterprise add-ons"
+        premium_features_text: "Agile πίνακες, προσαρμοσμένα θέματα και λογότυπα, γραφήματα, έξυπνες ροές εργασίας με προσαρμοσμένες ενέργειες, αναζήτηση κειμένου για συνημμένα πακέτων εργασίας και πολλαπλή επιλογή προσαρμοσμένων πεδίων."
+        professional_support: "Επαγγελματική υποστήριξη"
+        professional_support_text: "Αποκτήστε αξιόπιστη, high-touch υποστήριξη από ανώτερους μηχανικούς υποστήριξης με εξειδικευμένες γνώσεις σχετικά με τη λειτουργία του Yojana σε κρίσιμα επιχειρηματικά περιβάλλοντα."
       work_package_subject_generation:
         description: Create automatically generated subjects using referenced attributes and text.
       customize_life_cycle:
@@ -3211,34 +3201,31 @@ el:
       calculated_values:
         description: Calculated values allow you to create a mathematical formula based attribute using numeric values and other project attributes and custom fields.
       define_custom_style:
-        title: Custom color theme and logo
-        more_info: 'Note: the used logo will be publicly accessible.'
-        description: Customize your OpenProject installation with your own logo and colors.
+        title: "Custom color theme and logo"
+        more_info: "Note: the used logo will be publicly accessible."
+        description: Customize your Yojana installation with your own logo and colors.
       custom_actions:
         title: Προσαρμοσμένες ενέργειες
         description: Οι προσαρμοσμένες ενέργειες είναι συντομεύσεις με ένα κλικ προς ένα σύνολο προκαθορισμένων ενεργειών που μπορείτε να διαθέσετε σε συγκεκριμένα πακέτα εργασίας με βάση την κατάσταση, ρόλος, τύπος ή έργο.
       mcp_server:
-        description: Bring OpenProject into your AI workflows with a secure MCP server.
-      meeting_templates:
-        description: Define meeting templates with a set agenda structure and save time by reusing them when creating new meetings.
+        description: "Integrate AI agents with your Yojana instance through MCP."
       nextcloud_sso:
         title: Single Sign-On for Nextcloud Storage
         description: Enable seamless and secure authentication for your Nextcloud storage with Single Sign-On. Simplify access management and enhance user convenience.
       scim_api:
-        title: SCIM clients
-        description: Automate user management in OpenProject by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan.
+        title: "SCIM clients"
+        description: "Automate user management in Yojana by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan."
       sso_auth_providers:
         title: Single Sign-On (SSO)
         description: Enable users to log in via external SSO providers using SAML or OpenID Connect for seamless access and integration with existing identity systems.
       virus_scanning:
-        description: Ensure uploaded files in OpenProject are scanned for viruses before being accessible by other users.
+        description: "Ensure uploaded files in Yojana are scanned for viruses before being accessible by other users."
       project_creation_wizard:
         description: Generate a step-by-step wizard to help project managers fill out a project initiation request.
       placeholder_users:
         title: Placeholder χρήστες
-        description: 'Placeholder users are a way to assign work packages to users who are not part of your project. They can be useful in a range of scenarios; for example, if you need to track tasks for a resource that is not yet named or available, or if you don’t want to give that person access to OpenProject but still want to track tasks assigned to them.
-
-          '
+        description: >
+          Placeholder users are a way to assign work packages to users who are not part of your project. They can be useful in a range of scenarios; for example, if you need to track tasks for a resource that is not yet named or available, or if you don’t want to give that person access to Yojana but still want to track tasks assigned to them.
       internal_comments:
         title: Internal comments
         description: Internal comments allow an internal team to communicate amongst themselves privately. These are only visible to certain project roles and will never be visible publicly.
@@ -3253,26 +3240,25 @@ el:
         other: "%{count} days left of %{trial_plan} trial token"
       description_html: You have access to all %{trial_plan} features.
     trial:
-      not_found: You have requested a trial token, but that request is no longer available. Please try again.
-      wait_for_confirmation: We sent you an email to confirm your address in order to retrieve a trial token.
-      already_retrieved: 'Your trial enterprise token was already retrieved. Please check your emails for the token being attached. Please reach out to our support team if you need a new one.
-
-        '
-      successfully_saved: Your trial enterprise token has been successfully retrieved.
-      token_sent: Trial token requested
-      request_again: Request again
-      resend_action: Resend confirmation email
-      welcome_title: Quick feature overview
-      welcome_description: Get a quick overview of project management and team collaboration with OpenProject Enterprise edition.
-      confirmation_info: 'We sent you an email on %{date} to %{email} with all the information to start the free trial of OpenProject Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
-
-        '
-      confirmation_subline: 'Please, check your inbox and follow the steps to start your 14-day free trial.
-
-        '
+      not_found: "You have requested a trial token, but that request is no longer available. Please try again."
+      wait_for_confirmation: "We sent you an email to confirm your address in order to retrieve a trial token."
+      already_retrieved: >
+        Your trial enterprise token was already retrieved. Please check your emails for the token being attached. Please reach out to our support team if you need a new one.
+      successfully_saved: "Your trial enterprise token has been successfully retrieved."
+      token_sent: "Trial token requested"
+      request_again: "Request again"
+      resend_action: "Resend confirmation email"
+      welcome_title: "Quick feature overview"
+      welcome_description: "Get a quick overview of project management and team collaboration with Yojana Enterprise edition."
+      confirmation_info: >
+        We sent you an email on %{date} to %{email} with all the information to start the free trial of Yojana Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
+      confirmation_subline: >
+        Please, check your inbox and follow the steps to start your 14-day free trial.
       domain_caption: The token will be valid for your currently configured host name.
-      receive_newsletter: I want to receive the OpenProject [newsletter](newsletter_url).
-      consent: I agree with the [terms of service](tos_url) and the [privacy policy](privacy_url).
+      receive_newsletter_html: >
+        I want to receive the Yojana <a target="_blank" href="https://www.yojana.girishm.info/newsletter/">newsletter</a>.
+      consent_html: >
+        I agree with the <a target="_blank" href="https://www.yojana.girishm.info/terms-of-service/">terms of service</a> and the <a target="_blank" href="https://www.yojana.girishm.info/data-privacy-and-security/">privacy policy</a>.
   email_calendar_updates:
     state:
       disabled: Disabled.
@@ -3296,51 +3282,51 @@ el:
   error_can_not_delete_in_use_archived_undisclosed: There are also work packages in archived projects. You need to ask an administrator to perform the deletion to see which projects are affected.
   error_can_not_delete_in_use_archived_work_packages: 'There are also work packages in archived projects. You need to reactivate the following projects first, before you can change the attribute of the respective work packages: %{archived_projects_urls}'
   error_can_not_delete_type:
-    explanation: This type contains work packages and cannot be deleted. You can see all affected work packages in <a target="_blank" href="%{url}">this view</a>.
-  error_can_not_delete_standard_type: Οι κανονικοί τύποι δεν μπορούν να διαγραφούν.
-  error_can_not_invite_user: Αποτυχία αποστολής πρόσκλησης στο χρήστη.
-  error_can_not_remove_role: Αυτός ο ρόλος χρησιμοποιείται και δεν μπορεί να διαγραφεί.
-  error_can_not_reopen_work_package_on_closed_version: Τα πακέτα εργασίας που έχουν ανατεθεί σε κλειστή έκδοση δεν μπορούν να ανοιχτούν ξανά
-  error_can_not_find_all_resources: Δεν ήταν δυνατό να βρεθούν όλοι οι πόροι που σχετίζονται με αυτό το αίτημα.
-  error_can_not_unarchive_project: 'Αυτό το έργο δεν μπορεί να αρχειοθετηθεί: %{errors}'
-  error_check_user_and_role: Παρακαλούμε επιλέξτε ένα χρήστη και ένα ρόλο.
-  error_code: Σφάλμα %{code}
-  error_color_could_not_be_saved: Το χρώμα δεν ήταν δυνατό να αποθηκευθεί
-  error_cookie_missing: Τα cookie του OpenProject λείπουν. Παρακαλούμε σιγουρευτείτε ότι τα cookies είναι ενεργοποιημένα, καθώς αυτή η εφαρμογή δεν θα μπορεί να λειτουργήσει σωστά χωρίς αυτά.
-  error_custom_option_not_found: Η επιλογή δεν υπάρχει.
-  error_enterprise_plan_needed: You need the %{plan} enterprise plan to perform this action.
-  error_enterprise_activation_user_limit: Ο λογαριασμός σας δεν ήταν δυνατό να ενεργοποιηθεί (επετεύχθη το όριο χρηστών). Παρακαλούμε επικοινωνήστε με τον διαχειριστή σας για να αποκτήσετε πρόσβαση.
-  error_enterprise_token_invalid_domain: The Enterprise edition is not active. Your Enterprise token's domain (%{actual}) does not match the system's host name (%{expected}).
-  error_failed_to_delete_entry: Αποτυχία διαγραφής αυτής της καταχώρησης.
-  error_in_dependent: 'Παρουσιάστηκε σφάλμα στην προσπάθεια αλλαγής του εξαρτώμενου αντικειμένου: %{dependent_class} #%{related_id} - %{related_subject}: %{error}'
-  error_in_new_dependent: 'Error attempting to create dependent object: %{dependent_class} - %{related_subject}: %{error}'
-  error_invalid_selected_value: Η επιλεγμένη τιμή δεν είναι έγκυρη.
-  error_journal_attribute_not_present: Το ημερολόγιο δεν περιέχει το χαρακτηριστικό %{attribute}.
-  error_pdf_export_too_many_columns: Επιλέχθηκαν πάρα πολλές στήλες για εξαγωγή σε PDF. Παρακαλούμε μειώστε τον αριθμό των στηλών.
-  error_pdf_date_range_too_long: The selected work package date range exceeds the allowable PDF export limit. Please condense the range to a maximum of %{years} years.
-  error_pdf_failed_to_export: 'Η εξαγωγή σε PDF δεν ήταν δυνατό να αποθηκευτεί: %{error}'
-  error_token_authenticity: Δεν ήταν δυνατή η επαλήθευση του Cross-Site Request Forgery token. Προσπαθήσατε να υποβάλετε δεδομένα σε πολλαπλούς περιηγητές ή καρτέλες; Παρακαλούμε κλείστε όλες τις καρτέλες και δοκιμάστε ξανά.
-  error_reminder_not_found: The reminder was not found or was already notified about.
-  error_work_package_not_found_in_project: Το πακέτο εργασίας δεν βρέθηκε ή δεν ανοίκει σε αυτό το έργο
-  error_work_package_id_not_found: The work package was not found.
-  error_must_be_project_member: πρέπει να είναι μέλος έργου
-  error_migrations_are_pending: Η εγκατάσταση OpenProject σας έχει μεταφορές βάσης δεδομένων που εκκρεμούν. Πιθανότατα δεν τρέξατε τις μεταφορές κατά τη διάρκεια της προηγούμενης αναβάθμιση. Παρακαλούμε ελέγξτε τον οδηγό αναβάθμισης για να αναβαθμίσετε την εγκατάσταση σας σωστά.
-  error_migrations_visit_upgrade_guides: Παρακαλούμε επισκεφθείτε την τεκμηρίωση οδηγού αναβάθμισης
-  error_no_default_work_package_status: Δεν έχει οριστεί η προεπιλογή κατάστασης πακέτων εργασίας. Παρακαλώ ελέγξτε τις ρυθμίσεις σας (Μεταβείτε στην "Διαχείριση -> Κατάσταση Πακέτων Εργασίας").
-  error_no_type_in_project: Δεν υπάρχει τύπος που σχετίζεται με αυτό το έργο. Παρακαλώ ελέγξτε τις Ρυθμίσεις του Έργου.
-  error_omniauth_registration_timed_out: Η εγγραφή μέσω ενός εξωτερικού παρόχου ταυτοποίησης έληξε. Παρακαλούμε προσπαθήστε ξανά.
-  error_omniauth_invalid_auth: Οι πληροφορίες ελέγχου ταυτότητας που επιστράφηκαν από τον πάροχο ταυτότητας δεν ήταν έγκυρες. Επικοινωνήστε με το διαχειριστή σας για περαιτέρω βοήθεια.
-  error_password_change_failed: An error occurred when trying to change the password.
-  error_scm_command_failed: 'Παρουσιάστηκε σφάλμα κατά την προσπάθεια πρόσβασης στο αποθετήριο: %{value}'
-  error_scm_not_found: Η καταχώρηση ή η αναθεώρηση δεν βρέθηκε στο αποθετήριο.
-  error_type_could_not_be_saved: Ο τύπος δεν ήταν δυνατό να αποθηκευθεί
-  error_unable_delete_status: Η κατάσταση του πακέτου εργασίας δεν ήταν δυνατό να διαγραφεί καθώς χρησιμοποιείται σε τουλάχιστον ένα πακέτο εργασίας.
-  error_unable_delete_default_status: Δεν ήταν δυνατή η διαγραφή της προεπιλεγμένης κατάστασης πακέτου εργασίας. Παρακαλούμε επιλέξτε άλλη προεπιλεγμένη κατάσταση πακέτου εργασίας πριν διαγράψετε την τρέχουσα.
-  error_unable_to_connect: Δεν ήταν δυνατή η σύνδεση (%{value})
-  error_unable_delete_wiki: Δεν ήταν δυνατή η διαγραφή της σελίδας wiki.
-  error_unable_update_wiki: Δεν ήταν δυνατή η ενημέρωση της σελίδας wiki.
-  error_workflow_copy_source: Παρακαλούμε επιλέξτε μια πηγή τύπου ή ρόλου
-  error_workflow_copy_target: Παρακαλούμε επιλέξτε τύπο(-ους) και ρόλο(-ους)
+    explanation: 'This type contains work packages and cannot be deleted. You can see all affected work packages in <a target="_blank" href="%{url}">this view</a>.'
+  error_can_not_delete_standard_type: "Οι κανονικοί τύποι δεν μπορούν να διαγραφούν."
+  error_can_not_invite_user: "Αποτυχία αποστολής πρόσκλησης στο χρήστη."
+  error_can_not_remove_role: "Αυτός ο ρόλος χρησιμοποιείται και δεν μπορεί να διαγραφεί."
+  error_can_not_reopen_work_package_on_closed_version: "Τα πακέτα εργασίας που έχουν ανατεθεί σε κλειστή έκδοση δεν μπορούν να ανοιχτούν ξανά"
+  error_can_not_find_all_resources: "Δεν ήταν δυνατό να βρεθούν όλοι οι πόροι που σχετίζονται με αυτό το αίτημα."
+  error_can_not_unarchive_project: "Αυτό το έργο δεν μπορεί να αρχειοθετηθεί: %{errors}"
+  error_check_user_and_role: "Παρακαλούμε επιλέξτε ένα χρήστη και ένα ρόλο."
+  error_code: "Σφάλμα %{code}"
+  error_color_could_not_be_saved: "Το χρώμα δεν ήταν δυνατό να αποθηκευθεί"
+  error_cookie_missing: "Τα cookie του Yojana λείπουν. Παρακαλούμε σιγουρευτείτε ότι τα cookies είναι ενεργοποιημένα, καθώς αυτή η εφαρμογή δεν θα μπορεί να λειτουργήσει σωστά χωρίς αυτά."
+  error_custom_option_not_found: "Η επιλογή δεν υπάρχει."
+  error_enterprise_plan_needed: "You need the %{plan} enterprise plan to perform this action."
+  error_enterprise_activation_user_limit: "Ο λογαριασμός σας δεν ήταν δυνατό να ενεργοποιηθεί (επετεύχθη το όριο χρηστών). Παρακαλούμε επικοινωνήστε με τον διαχειριστή σας για να αποκτήσετε πρόσβαση."
+  error_enterprise_token_invalid_domain: "The Enterprise edition is not active. Your Enterprise token's domain (%{actual}) does not match the system's host name (%{expected})."
+  error_failed_to_delete_entry: "Αποτυχία διαγραφής αυτής της καταχώρησης."
+  error_in_dependent: "Παρουσιάστηκε σφάλμα στην προσπάθεια αλλαγής του εξαρτώμενου αντικειμένου: %{dependent_class} #%{related_id} - %{related_subject}: %{error}"
+  error_in_new_dependent: "Error attempting to create dependent object: %{dependent_class} - %{related_subject}: %{error}"
+  error_invalid_selected_value: "Η επιλεγμένη τιμή δεν είναι έγκυρη."
+  error_journal_attribute_not_present: "Το ημερολόγιο δεν περιέχει το χαρακτηριστικό %{attribute}."
+  error_pdf_export_too_many_columns: "Επιλέχθηκαν πάρα πολλές στήλες για εξαγωγή σε PDF. Παρακαλούμε μειώστε τον αριθμό των στηλών."
+  error_pdf_date_range_too_long: "The selected work package date range exceeds the allowable PDF export limit. Please condense the range to a maximum of %{years} years."
+  error_pdf_failed_to_export: "Η εξαγωγή σε PDF δεν ήταν δυνατό να αποθηκευτεί: %{error}"
+  error_token_authenticity: "Δεν ήταν δυνατή η επαλήθευση του Cross-Site Request Forgery token. Προσπαθήσατε να υποβάλετε δεδομένα σε πολλαπλούς περιηγητές ή καρτέλες; Παρακαλούμε κλείστε όλες τις καρτέλες και δοκιμάστε ξανά."
+  error_reminder_not_found: "The reminder was not found or was already notified about."
+  error_work_package_not_found_in_project: "Το πακέτο εργασίας δεν βρέθηκε ή δεν ανοίκει σε αυτό το έργο"
+  error_work_package_id_not_found: "The work package was not found."
+  error_must_be_project_member: "πρέπει να είναι μέλος έργου"
+  error_migrations_are_pending: "Η εγκατάσταση Yojana σας έχει μεταφορές βάσης δεδομένων που εκκρεμούν. Πιθανότατα δεν τρέξατε τις μεταφορές κατά τη διάρκεια της προηγούμενης αναβάθμιση. Παρακαλούμε ελέγξτε τον οδηγό αναβάθμισης για να αναβαθμίσετε την εγκατάσταση σας σωστά."
+  error_migrations_visit_upgrade_guides: "Παρακαλούμε επισκεφθείτε την τεκμηρίωση οδηγού αναβάθμισης"
+  error_no_default_work_package_status: 'Δεν έχει οριστεί η προεπιλογή κατάστασης πακέτων εργασίας. Παρακαλώ ελέγξτε τις ρυθμίσεις σας (Μεταβείτε στην "Διαχείριση -> Κατάσταση Πακέτων Εργασίας").'
+  error_no_type_in_project: "Δεν υπάρχει τύπος που σχετίζεται με αυτό το έργο. Παρακαλώ ελέγξτε τις Ρυθμίσεις του Έργου."
+  error_omniauth_registration_timed_out: "Η εγγραφή μέσω ενός εξωτερικού παρόχου ταυτοποίησης έληξε. Παρακαλούμε προσπαθήστε ξανά."
+  error_omniauth_invalid_auth: "Οι πληροφορίες ελέγχου ταυτότητας που επιστράφηκαν από τον πάροχο ταυτότητας δεν ήταν έγκυρες. Επικοινωνήστε με το διαχειριστή σας για περαιτέρω βοήθεια."
+  error_password_change_failed: "An error occurred when trying to change the password."
+  error_scm_command_failed: "Παρουσιάστηκε σφάλμα κατά την προσπάθεια πρόσβασης στο αποθετήριο: %{value}"
+  error_scm_not_found: "Η καταχώρηση ή η αναθεώρηση δεν βρέθηκε στο αποθετήριο."
+  error_type_could_not_be_saved: "Ο τύπος δεν ήταν δυνατό να αποθηκευθεί"
+  error_unable_delete_status: "Η κατάσταση του πακέτου εργασίας δεν ήταν δυνατό να διαγραφεί καθώς χρησιμοποιείται σε τουλάχιστον ένα πακέτο εργασίας."
+  error_unable_delete_default_status: "Δεν ήταν δυνατή η διαγραφή της προεπιλεγμένης κατάστασης πακέτου εργασίας. Παρακαλούμε επιλέξτε άλλη προεπιλεγμένη κατάσταση πακέτου εργασίας πριν διαγράψετε την τρέχουσα."
+  error_unable_to_connect: "Δεν ήταν δυνατή η σύνδεση (%{value})"
+  error_unable_delete_wiki: "Δεν ήταν δυνατή η διαγραφή της σελίδας wiki."
+  error_unable_update_wiki: "Δεν ήταν δυνατή η ενημέρωση της σελίδας wiki."
+  error_workflow_copy_source: "Παρακαλούμε επιλέξτε μια πηγή τύπου ή ρόλου"
+  error_workflow_copy_target: "Παρακαλούμε επιλέξτε τύπο(-ους) και ρόλο(-ους)"
   error_menu_item_not_created: Δεν ήταν δυνατή η προσθήκη του αντικειμένου μενού
   error_menu_item_not_saved: Δεν ήταν δυνατή η αποθήκευση του αντικειμένου μενού
   error_wiki_root_menu_item_conflict: 'Δεν είναι δυνατή η μετονομασία από "%{old_name}" σε "%{new_name}" λόγω μιας σύγκρουσης του αντικειμένου μενού που προκύπτει με ένα υπάρχον αντικείμενο μενού "%{existing_caption}" (%{existing_identifier}).
@@ -3435,8 +3421,8 @@ el:
     succeeded: Export completed
     failed: 'An error has occurred while trying to export the work packages: %{message}'
     demo:
-      heading: Demo PDF
-      footer: Generated by OpenProject
+      heading: "Demo PDF"
+      footer: "Generated by Yojana"
       button_text: Generate Demo PDF
     errors:
       embedded_table_with_too_many_columns: This embedded work package table could not fit on the page, please reduce the number of columns.
@@ -3557,7 +3543,7 @@ el:
         no_results_subtext: Add one or multiple projects as favorite through their overview or in a project list.
       users: Νεότεροι εγγεγραμμένοι χρήστες αυτού του στιγμιότυπου της εφαρμογής.
     blocks:
-      community: Κοινότητα OpenProject
+      community: "Κοινότητα Yojana"
       upsell:
         title: Upgrade to Enterprise edition
       new_features:
@@ -3569,40 +3555,38 @@ el:
 
             '
           new_features_list:
-            line_0: XWiki integration (Corporate plan).
-            line_1: Sprint goals.
-            line_2: "'All sprints' overview page."
-            line_3: Display backlog buckets in work packages and work package tables.
-            line_4: Improved support for project-based (semantic) identifiers.
-            line_5: Convert meeting agenda items into work packages.
-            line_6: Configure cost types per project.
+            line_0: Automated project initiation (Enterprise add-on).
+            line_1: "Meetings: add new or existing work packages as outcomes."
+            line_2: "Meetings: show iCal responses in Yojana."
+            line_3: "Recurring meetings: duplicate agenda items to the next occurrence."
+            line_4: "Release to Community: Attribute highlighting."
+            line_5: Warning before opening external links in user-provided content (Enterprise add-on).
+            line_6: Improved performance and user experience, including the Activity tab and Documents module.
     links:
-      upgrade_enterprise_edition: Upgrade to Enterprise edition
-      postgres_migration: Μεταφορά της εγκατάστασης σας σε PostgreSQL
-      user_guides: Εγχειρίδια χρηστών
-      faq: Συχνές Ερωτήσεις
-      impressum: Νομική Ειδοποίηση
-      glossary: Γλωσσάριο
-      shortcuts: Συντομεύσεις
-      blog: OpenProject blog
-      forums: Φόρουμ κοινότητας
-      security_alerts: Security alerts
-      newsletter: Newsletter
+      upgrade_enterprise_edition: "Upgrade to Enterprise edition"
+      postgres_migration: "Μεταφορά της εγκατάστασης σας σε PostgreSQL"
+      user_guides: "Εγχειρίδια χρηστών"
+      faq: "Συχνές Ερωτήσεις"
+      impressum: "Νομική Ειδοποίηση"
+      glossary: "Γλωσσάριο"
+      shortcuts: "Συντομεύσεις"
+      blog: "Yojana blog"
+      forums: "Φόρουμ κοινότητας"
+      security_alerts: "Security alerts"
+      newsletter: "Newsletter"
   image_conversion:
     imagemagick: Imagemagick
   journals:
     changes_retracted: Οι αλλαγές αποσύρθηκαν.
     caused_changes:
-      budget_deleted: Budget has been deleted
-      dates_changed: Dates changed
-      default_attribute_written: Read-only attributes written
-      import: Imported
-      progress_mode_changed_to_status_based: Progress calculation updated
-      status_changed: Status '%{status_name}'
-      system_update: 'OpenProject system update:'
-      work_package_duplicate_closed: 'Duplicate work package updated:'
-      total_percent_complete_mode_changed_to_work_weighted_average: Calculation of % Complete totals now weighted by Work.
-      total_percent_complete_mode_changed_to_simple_average: Calculation of % Complete totals now based on a simple average of only % Complete values.
+      dates_changed: "Dates changed"
+      default_attribute_written: "Read-only attributes written"
+      progress_mode_changed_to_status_based: "Progress calculation updated"
+      status_changed: "Status '%{status_name}'"
+      system_update: "Yojana system update:"
+      work_package_duplicate_closed: "Duplicate work package updated:"
+      total_percent_complete_mode_changed_to_work_weighted_average: "Calculation of % Complete totals now weighted by Work."
+      total_percent_complete_mode_changed_to_simple_average: "Calculation of % Complete totals now based on a simple average of only % Complete values."
     cause_descriptions:
       import:
         header: changes by %{author}
@@ -3666,7 +3650,7 @@ el:
         notifications: Notification settings
         email_reminders: Email reminders
     access_tokens:
-      description: Provider tokens are issued by OpenProject, allowing other applications to access it. Client tokens are issued by other applications, allowing OpenProject to access them.
+      description: "Provider tokens are issued by Yojana, allowing other applications to access it. Client tokens are issued by other applications, allowing Yojana to access them."
       no_results:
         title: Δεν υπάρχουν token πρόσβασης για εμφάνιση
         description: Όλα έχουν απενεργοποιηθεί. Μπορούν να επανενεργοποιηθούν από το μενού διαχείρισης.
@@ -3682,49 +3666,49 @@ el:
         provider:
           title: Provider tokens
       token/api:
-        blank_description: There is no API token yet. You can create one using the button below.
-        blank_title: No API token
-        title: API
-        table_title: API tokens
-        text_hint: API tokens allow third-party applications to communicate with this OpenProject instance via REST APIs.
-        static_token_name: API token
-        disabled_text: API tokens are not enabled by the administrator. Please contact your administrator to use this feature.
-        add_button: API token
+        blank_description: "There is no API token yet. You can create one using the button below."
+        blank_title: "No API token"
+        title: "API"
+        table_title: "API tokens"
+        text_hint: "API tokens allow third-party applications to communicate with this Yojana instance via REST APIs."
+        static_token_name: "API token"
+        disabled_text: "API tokens are not enabled by the administrator. Please contact your administrator to use this feature."
+        add_button: "API token"
       ical:
-        blank_description: To add an iCalendar token, subscribe to a new or existing calendar from within the Calendar module of a project. You must have the necessary permissions.
-        blank_title: No iCalendar token
-        title: iCalendar
-        table_title: iCalendar tokens
-        text_hint_link: iCalendar tokens allow users to [subscribe to OpenProject calendars](docs_url) and view up-to-date work package information from external clients.
-        disabled_text: iCalendar subscriptions are not enabled by the administrator. Please contact your administrator to use this feature.
+        blank_description: "To add an iCalendar token, subscribe to a new or existing calendar from within the Calendar module of a project. You must have the necessary permissions."
+        blank_title: "No iCalendar token"
+        title: "iCalendar"
+        table_title: "iCalendar tokens"
+        text_hint_link: "iCalendar tokens allow users to [subscribe to Yojana calendars](docs_url) and view up-to-date work package information from external clients."
+        disabled_text: "iCalendar subscriptions are not enabled by the administrator. Please contact your administrator to use this feature."
       oauth_application:
-        active_tokens: Active tokens
-        blank_description: There is no third-party application access configured and active for you.
-        blank_title: No OAuth application token
-        last_refreshed_at: Last refreshed at
-        title: OAuth
-        table_title: OAuth application tokens
-        text_hint: OAuth application tokens allow third-party applications to connect with this OpenProject instance.
+        active_tokens: "Active tokens"
+        blank_description: "There is no third-party application access configured and active for you."
+        blank_title: "No OAuth application token"
+        last_used_at: "Last used at"
+        title: "OAuth"
+        table_title: "OAuth application tokens"
+        text_hint: "OAuth application tokens allow third-party applications to connect with this Yojana instance."
       oauth_client:
-        blank_description: There are no OAuth client tokens yet.
-        blank_title: No OAuth client tokens
-        failed: An error occurred and the token couldn't be removed. Please try again later.
-        integration_type: Integration type
-        table_title: OAuth client tokens
-        text_hint: OAuth client tokens allow this OpenProject instance to connect with external applications, such as file storages.
-        title: OAuth
-        remove_token: Do you really want to remove this token? You will need to login again on %{integration}.
-        removed: OAuth client token successfully removed
-        unknown_integration: Unknown
+        blank_description: "There are no OAuth client tokens yet."
+        blank_title: "No OAuth client tokens"
+        failed: "An error occurred and the token couldn't be removed. Please try again later."
+        integration_type: "Integration type"
+        table_title: "OAuth client tokens"
+        text_hint: "OAuth client tokens allow this Yojana instance to connect with external applications, such as file storages."
+        title: "OAuth"
+        remove_token: "Do you really want to remove this token? You will need to login again on %{integration}."
+        removed: "OAuth client token successfully removed"
+        unknown_integration: "Unknown"
       token/rss:
-        add_button: RSS token
-        blank_description: There is no RSS token yet. You can create one using the button below.
-        blank_title: No RSS token
-        title: RSS
-        table_title: RSS tokens
-        text_hint: RSS tokens allow users to keep up with the latest changes in this OpenProject instance via an external RSS reader.
-        static_token_name: RSS token
-        disabled_text: RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature.
+        add_button: "RSS token"
+        blank_description: "There is no RSS token yet. You can create one using the button below."
+        blank_title: "No RSS token"
+        title: "RSS"
+        table_title: "RSS tokens"
+        text_hint: "RSS tokens allow users to keep up with the latest changes in this Yojana instance via an external RSS reader."
+        static_token_name: "RSS token"
+        disabled_text: "RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature."
       storages:
         unknown_storage: Unknown storage
     email_reminders:
@@ -3948,51 +3932,48 @@ el:
   label_collapse: Σύμπτυξη
   label_collapsed_click_to_show: Συμπτυγμένα. Κάντε κλικ για εμφάνιση
   label_configuration: διαμόρφωση
-  label_comment_add: Προσθέστε ένα σχόλιο
-  label_comment_added: Το σχόλιο προστέθηκε
-  label_comment_delete: Διαγραφή σχολίων
-  label_comment_plural: Σχόλια
-  label_commits_per_author: Δεσμεύσεις ανά συγγραφέα
-  label_commits_per_month: Δεσμεύσεις ανά μήνα
-  label_confirmation: Επιβεβαίωση
-  label_contains: περιέχει
-  label_starts_with: starts with
-  label_content: Περιεχόμενο
-  label_color_plural: Χρώματα
-  label_copied: αντιγράφηκε
-  label_copy_same_as_target: Ίδιο με του στόχου
-  label_copy_source: Πηγή
-  label_copy_target: Στόχος
-  label_copy_workflow_from: Αντιγραφή ροής εργασίας από
-  label_copy_workflow_from_type: Copy to another type
-  label_copy_workflow_from_role: Copy to other roles
-  label_copy_project: Αντιγραφή έργου
-  label_core_version: Βασική έκδοση
-  label_core_build: Core build
-  label_created_by: Created by %{user}
-  label_current_status: Τρέχουσα κατάσταση
-  label_current_version: Τρέχουσα έκδοση
-  label_custom_field_add_no_type: Προσθέστε αυτό το πεδίο σε έναν τύπο πακέτου εργασίας
-  label_custom_field_new: Νέο προσαρμοσμένο πεδίο
-  label_custom_field_plural: Προσαρμοσμένα πεδία
-  label_custom_field_default_type: Άδειος τύπος
-  label_custom_style: Σχεδιασμός
-  label_custom_style_description: Choose how OpenProject looks to you with themes, select your default colors to use in the app and how exports look like.
-  label_dashboard: Πίνακας Ελέγχου
-  label_database_version: Έκδοση PostgreSQL
-  label_date: Ημερομηνία
-  label_dates: Ημερομηνίες
-  label_date_and_time: Ημερομηνία και ώρα
-  label_date_format: Μορφηποίηση ημερομηνίας
-  label_date_from: Από
-  label_date_from_to: Από %{start} έως %{end}
-  label_date_to: Έως
-  label_day_plural: ημέρες
-  label_default: Προεπιλογή
-  label_delete_user: Διαγραφή Χρήστη
-  label_delete_project: Διαγραφή έργου
-  label_delete: Διαγραφή
-  label_deleted: διαγραμμένο
+  label_comment_add: "Προσθέστε ένα σχόλιο"
+  label_comment_added: "Το σχόλιο προστέθηκε"
+  label_comment_delete: "Διαγραφή σχολίων"
+  label_comment_plural: "Σχόλια"
+  label_commits_per_author: "Δεσμεύσεις ανά συγγραφέα"
+  label_commits_per_month: "Δεσμεύσεις ανά μήνα"
+  label_confirmation: "Επιβεβαίωση"
+  label_contains: "περιέχει"
+  label_content: "Περιεχόμενο"
+  label_color_plural: "Χρώματα"
+  label_copied: "αντιγράφηκε"
+  label_copy_same_as_target: "Ίδιο με του στόχου"
+  label_copy_source: "Πηγή"
+  label_copy_target: "Στόχος"
+  label_copy_workflow_from: "Αντιγραφή ροής εργασίας από"
+  label_copy_project: "Αντιγραφή έργου"
+  label_core_version: "Βασική έκδοση"
+  label_core_build: "Core build"
+  label_created_by: "Created by %{user}"
+  label_current_status: "Τρέχουσα κατάσταση"
+  label_current_version: "Τρέχουσα έκδοση"
+  label_custom_field_add_no_type: "Προσθέστε αυτό το πεδίο σε έναν τύπο πακέτου εργασίας"
+  label_custom_field_new: "Νέο προσαρμοσμένο πεδίο"
+  label_custom_field_plural: "Προσαρμοσμένα πεδία"
+  label_custom_field_default_type: "Άδειος τύπος"
+  label_custom_style: "Σχεδιασμός"
+  label_custom_style_description: "Choose how Yojana looks to you with themes, select your default colors to use in the app and how exports look like."
+  label_dashboard: "Πίνακας Ελέγχου"
+  label_database_version: "Έκδοση PostgreSQL"
+  label_date: "Ημερομηνία"
+  label_dates: "Ημερομηνίες"
+  label_date_and_time: "Ημερομηνία και ώρα"
+  label_date_format: "Μορφηποίηση ημερομηνίας"
+  label_date_from: "Από"
+  label_date_from_to: "Από %{start} έως %{end}"
+  label_date_to: "Έως"
+  label_day_plural: "ημέρες"
+  label_default: "Προεπιλογή"
+  label_delete_user: "Διαγραφή Χρήστη"
+  label_delete_project: "Διαγραφή έργου"
+  label_delete: "Διαγραφή"
+  label_deleted: "διαγραμμένο"
   label_deleted_custom_field: "(διαγραμμένο προσαρμοσμένο πεδίο)"
   label_deleted_custom_item: "(deleted item)"
   label_deleted_custom_option: "(διαγραμμένη επιλογή)"
@@ -4246,61 +4227,53 @@ el:
   label_not_found: δεν βρέθηκε
   label_none: κανένα
   label_none_parentheses: "(κανένα)"
-  label_not_contains: δεν περιέχει
-  label_not_equals: δεν είναι
-  label_life_cycle_step_plural: Project life cycle
-  label_on: σε
-  label_operator_all: is not empty
-  label_operator_none: is empty
-  label_operator_equals_or: is (OR)
-  label_operator_equals_all: is (AND)
-  label_operator_shared_with_user_any: οποιoδήποτε
-  label_open: ανοιχτό
-  label_closed: κλειστό
-  label_open_menu: Άνοιγμα μενού
-  label_open_work_packages: ανοιχτό
-  label_open_work_packages_plural: ανοιχτό
-  label_openproject_website: Ιστοσελίδα OpenProject
-  label_optional_description: Περιγραφή
-  label_options: Επιλογές
-  label_other: Άλλο
-  label_overall_activity: Συνολική δραστηριότητα
-  label_overview: Επισκόπηση
-  label_page_title: Τίτλος σελίδας
-  label_parent_group_caption: 'Setting a parent group will make this group a subgroup of the selected parent group. This will also inherit all memberships, including permissions of the parent group.
-
-    '
-  label_part_of: μέρος του
-  label_password_lost: Ξεχάσατε τον κωδικό σας;
-  label_password_rule_lowercase: Πεζά
-  label_password_rule_numeric: Αριθμητικοί Χαρακτήρες
-  label_password_rule_special: Ειδικοί Χαρακτήρες
-  label_password_rule_uppercase: Κεφαλαία
-  label_password_requirement_lowercase: Must contain at least one lowercase character.
-  label_password_requirement_numeric: Must contain at least one numeric character.
-  label_password_requirement_special: Must contain at least one special character.
-  label_password_requirement_uppercase: Must contain at least one uppercase character.
-  label_path_encoding: Κωδικοποίηση μονοπατιού
-  label_per_page: 'Ανά σελίδα:'
-  label_people: Άτομα
-  label_permissions: Δικαιώματα
-  label_permissions_report: Αναφορά δικαιωμάτων
-  label_personalize_page: Προσωποποίηση αυτής της σελίδας
-  label_placeholder_user: Placeholder χρήστης
-  label_placeholder_user_new: Νέος placeholder χρήστης
-  label_placeholder_user_plural: Placeholder χρήστες
-  label_planning: Σχεδιασμός
-  label_please_login: Παρακαλούμε συνδεθείτε
-  label_plugins: Πρόσθετα
-  label_portfolio_plural: Portfolios
-  label_modules_and_plugins: Ενότητες και Πρόσθετα
-  label_precedes: προηγείται
-  label_preferences: Προτιμήσεις
-  label_preview: Προεπισκόπηση
-  label_preview_not_available: Preview not available
-  label_previous: Προηγούμενο
-  label_previous_week: Προηγούμενη εβδομάδα
-  label_previous_year: Previous year
+  label_not_contains: "δεν περιέχει"
+  label_not_equals: "δεν είναι"
+  label_life_cycle_step_plural: "Project life cycle"
+  label_on: "σε"
+  label_operator_all: "is not empty"
+  label_operator_none: "is empty"
+  label_operator_equals_or: "is (OR)"
+  label_operator_equals_all: "is (AND)"
+  label_operator_shared_with_user_any: "οποιoδήποτε"
+  label_open: "ανοιχτό"
+  label_closed: "κλειστό"
+  label_open_menu: "Άνοιγμα μενού"
+  label_open_work_packages: "ανοιχτό"
+  label_open_work_packages_plural: "ανοιχτό"
+  label_openproject_website: "Ιστοσελίδα Yojana"
+  label_optional_description: "Περιγραφή"
+  label_options: "Επιλογές"
+  label_other: "Άλλο"
+  label_overall_activity: "Συνολική δραστηριότητα"
+  label_overview: "Επισκόπηση"
+  label_page_title: "Τίτλος σελίδας"
+  label_part_of: "μέρος του"
+  label_password_lost: "Ξεχάσατε τον κωδικό σας;"
+  label_password_rule_lowercase: "Πεζά"
+  label_password_rule_numeric: "Αριθμητικοί Χαρακτήρες"
+  label_password_rule_special: "Ειδικοί Χαρακτήρες"
+  label_password_rule_uppercase: "Κεφαλαία"
+  label_path_encoding: "Κωδικοποίηση μονοπατιού"
+  label_per_page: "Ανά σελίδα:"
+  label_people: "Άτομα"
+  label_permissions: "Δικαιώματα"
+  label_permissions_report: "Αναφορά δικαιωμάτων"
+  label_personalize_page: "Προσωποποίηση αυτής της σελίδας"
+  label_placeholder_user: "Placeholder χρήστης"
+  label_placeholder_user_new: "Νέος placeholder χρήστης"
+  label_placeholder_user_plural: "Placeholder χρήστες"
+  label_planning: "Σχεδιασμός"
+  label_please_login: "Παρακαλούμε συνδεθείτε"
+  label_plugins: "Πρόσθετα"
+  label_portfolio_plural: "Portfolios"
+  label_modules_and_plugins: "Ενότητες και Πρόσθετα"
+  label_precedes: "προηγείται"
+  label_preferences: "Προτιμήσεις"
+  label_preview: "Προεπισκόπηση"
+  label_preview_not_available: "Preview not available"
+  label_previous: "Προηγούμενο"
+  label_previous_week: "Προηγούμενη εβδομάδα"
   label_principal_invite_via_email: " ή προσκαλέστε καινούργιους χρήστες μέσω email"
   label_principal_search: Προσθήκη υπαρχόντων χρηστών ή ομάδων
   label_privacy_policy: Ιδιωτικότητα δεδομένων και πολιτική ασφαλείας
@@ -4701,11 +4674,11 @@ el:
   mail_body_backup_token_reset_user_info: Your backup token has been reset.
   mail_body_backup_token_info: The previous token is no longer valid.
   mail_body_backup_waiting_period: The new token will be enabled in %{hours} hours.
-  mail_body_backup_token_warning: If this wasn't you, login to OpenProject immediately and reset it again.
-  mail_body_incoming_email_error: The email you sent to OpenProject could not be processed.
-  mail_body_incoming_email_error_in_reply_to: At %{received_at} %{from_email} wrote
-  mail_body_incoming_email_error_logs: Logs
-  mail_body_lost_password: 'Για να αλλάξετε τον κωδικό πρόσβασης, πατήστε τον ακόλουθο σύνδεσμο:'
+  mail_body_backup_token_warning: If this wasn't you, login to Yojana immediately and reset it again.
+  mail_body_incoming_email_error: The email you sent to Yojana could not be processed.
+  mail_body_incoming_email_error_in_reply_to: "At %{received_at} %{from_email} wrote"
+  mail_body_incoming_email_error_logs: "Logs"
+  mail_body_lost_password: "Για να αλλάξετε τον κωδικό πρόσβασης, πατήστε τον ακόλουθο σύνδεσμο:"
   mail_password_change_not_possible:
     title: Password change not possible
     body: Your account at %{app_title} is connected to an external authentication provider (%{name}).
@@ -4715,23 +4688,23 @@ el:
   mail_body_register_user: Αγαπητέ/ή %{name},
   mail_body_register_links_html: |
     Please feel free to browse our youtube channel (%{youtube_link}) where we provide a webinar (%{webinar_link})
-    and “Get started” videos (%{get_started_link}) to make your first steps in OpenProject as easy as possible.
+    and “Get started” videos (%{get_started_link}) to make your first steps in Yojana as easy as possible.
     <br />
     If you have any further questions, consult our documentation (%{documentation_link}) or contact your administrator.
-  mail_body_register_closing: Η ομάδα OpenProject σας
-  mail_body_register_ending: Μείνετε συνδεδεμένοι! Με εκτίμηση,
+  mail_body_register_closing: "Η ομάδα Yojana σας"
+  mail_body_register_ending: "Μείνετε συνδεδεμένοι! Με εκτίμηση,"
   mail_body_reminder: "%{count} πακέτο(τα) εργασίας που έχουν ανατεθεί σε εσάς έχουν προθεσμία στις επόμενες %{days} ημέρες:"
   mail_body_group_reminder: '%{count} πακέτα εργασίας που έχουν ανατεθεί στην ομάδα "%{group}" έχουν προθεσμία στις επόμενες %{days} ημέρες:'
-  mail_body_wiki_page_added: Η σελίδα wiki '%{id}' προστέθηκε από τον %{author}.
-  mail_body_wiki_page_updated: Η σελίδα wiki '%{id}' ενημερώθηκε από τον %{author}.
-  mail_subject_account_activation_request: Αίτηση ενεργοποίησης του λογαριασμού %{value}
-  mail_subject_backup_ready: Το αντίγραφο ασφαλείας σας είναι έτοιμο
-  mail_subject_backup_token_reset: Backup token reset
-  mail_subject_incoming_email_error: An email you sent to OpenProject could not be processed
-  mail_subject_lost_password: Ο %{value} κωδικός σας
-  mail_subject_register: Ενεργοποίηση του %{value} λογαριασμού σας
-  mail_subject_wiki_content_added: προστέθηκε η σελίδα wiki '%{id}'
-  mail_subject_wiki_content_updated: ενημερώθηκε η σελίδα wiki '%{id}'
+  mail_body_wiki_page_added: "Η σελίδα wiki '%{id}' προστέθηκε από τον %{author}."
+  mail_body_wiki_page_updated: "Η σελίδα wiki '%{id}' ενημερώθηκε από τον %{author}."
+  mail_subject_account_activation_request: "Αίτηση ενεργοποίησης του λογαριασμού %{value}"
+  mail_subject_backup_ready: "Το αντίγραφο ασφαλείας σας είναι έτοιμο"
+  mail_subject_backup_token_reset: "Backup token reset"
+  mail_subject_incoming_email_error: "An email you sent to Yojana could not be processed"
+  mail_subject_lost_password: "Ο %{value} κωδικός σας"
+  mail_subject_register: "Ενεργοποίηση του %{value} λογαριασμού σας"
+  mail_subject_wiki_content_added: "προστέθηκε η σελίδα wiki '%{id}'"
+  mail_subject_wiki_content_updated: "ενημερώθηκε η σελίδα wiki '%{id}'"
   mail_member_added_project:
     subject: "%{project} - You have been added as a member"
     body:
@@ -4755,17 +4728,16 @@ el:
       roles: 'Πλέον έχετε τους ακόλουθους ρόλους:'
   mail_user_activation_limit_reached:
     subject: Επετεύχθη το όριο ενεργοποίησης χρηστών
-    message_html: |
-      A new user (%{email}) tried to create an account on an OpenProject environment that you manage (%{host}).
-      The user cannot activate their account since the user limit has been reached.
+    message: |
+      Ένας νέο χρήστης (%{email}) προσπάθησε να δημιουργήσει λογαριασμό σε ένα περιβάλλον Yojana που διαχειρίζεστε (%{host}). Ο χρήστης δεν μπόρεσε να ενεργοποιήσει τον λογαριασμό του καθώς το όριο των χρηστών έχει επιτευχθεί.
     steps:
-      a: Αναβαθμίστε το σχέδιο πληρωμής σας ([εδώ](upgrade_url))
-      b: Κλειδώστε ή διαγράψτε έναν υπάρχων χρήστη ([εδώ](users_url))
-      label: 'Για να επιτρέψετε στο χρήστη να συνδεθεί μπορείτε είτε να: '
-  more_actions: Περισσότερες λειτουργίες
-  noscript_description: Πρέπει να ενεργοποιήσετε την JavaScript για να χρησιμοποιήσετε το OpenProject!
-  noscript_heading: Η JavaScript είναι απενεργοποιημένη
-  noscript_learn_more: Μάθετε περισσότερα
+      label: "Για να επιτρέψετε στο χρήστη να συνδεθεί μπορείτε είτε να: "
+      a: "Αναβαθμίστε το σχέδιο πληρωμής σας ([εδώ](upgrade_url))" #here turned into a link
+      b: "Κλειδώστε ή διαγράψτε έναν υπάρχων χρήστη ([εδώ](users_url))" #here turned into a link
+  more_actions: "Περισσότερες λειτουργίες"
+  noscript_description: "Πρέπει να ενεργοποιήσετε την JavaScript για να χρησιμοποιήσετε το Yojana!"
+  noscript_heading: "Η JavaScript είναι απενεργοποιημένη"
+  noscript_learn_more: "Μάθετε περισσότερα"
   notice_accessibility_mode: Η λειτουργία προσβασιμότητας έχει ενεργοποιηθεί για τις [ρυθμίσεις λογαριασμού](url).
   notice_account_activated: Ο λογαριασμός σας έχει ενεργοποιηθεί. Τώρα μπορείτε να συνδεθείτε.
   notice_account_already_activated: Ο λογαριασμός έχει ήδη ενεργοποιηθεί.
@@ -4841,10 +4813,10 @@ el:
   notice_automatic_set_of_standard_type: Ορισμός κανονικού τύπου αυτόματα.
   notice_logged_out: Έχετε αποσυνδεθεί.
   notice_wont_delete_auth_source: The LDAP connection cannot be deleted as long as there are still users using it.
-  notice_project_cannot_update_custom_fields: 'Δεν μπορείτε να ενημερώσετε τα διαθέσιμα προσαρμοσμένα πεδία του έργου. Το έργο δεν είναι έγκυρο: %{errors}'
-  notice_attachment_migration_wiki_page: 'Αυτή η σελίδα δημιουργήθηκε αυτόματα κατά την διάρκεια της ενημέρωσης του OpenProject. Περιέχει όλα τα συνημμένα που σχετίζονταν προηγουμένως με το %{container_type} "%{container_name}".
-
-    '
+  notice_project_cannot_update_custom_fields: "Δεν μπορείτε να ενημερώσετε τα διαθέσιμα προσαρμοσμένα πεδία του έργου. Το έργο δεν είναι έγκυρο: %{errors}"
+  notice_attachment_migration_wiki_page: >
+    Αυτή η σελίδα δημιουργήθηκε αυτόματα κατά την διάρκεια της ενημέρωσης του Yojana. Περιέχει όλα τα συνημμένα που σχετίζονταν προηγουμένως με το %{container_type} "%{container_name}".
+  #Default format for numbers
   number:
     format:
       delimiter: ","
@@ -4865,138 +4837,127 @@ el:
           mb: MB
           tb: TB
   onboarding:
-    heading_getting_started: Λάβετε μια επισκόπηση
-    text_getting_started_description: Get a quick overview of project management and team collaboration with OpenProject. You can restart this video from the help menu.
-    welcome: Welcome to %{app_title}
-    select_language: Παρακαλούμε επιλέξτε την γλώσσα σας
-  open_project:
-    common:
-      work_package_card_component:
-        drag_handle:
-          label: Drag to reorder
-        menu:
-          label_actions: Work package actions
-        parent: Parent
-        undisclosed: Undisclosed
-  permission_add_work_package_comments: Add comments
-  permission_add_work_packages: Προσθήκη πακέτων εργασίας
-  permission_add_messages: Δημοσίευση μηνυμάτων
-  permission_add_project: Create projects
-  permission_add_portfolios: Create portfolios
-  permission_add_programs: Create programs
-  permission_add_work_package_attachments: Προσθέστε συνημμένα
-  permission_add_work_package_attachments_explanation: Allows adding attachments without Edit work packages permission
-  permission_add_internal_comments: Write internal comments
-  permission_archive_project: Αρχειοθέτηση έργου
-  permission_create_user: Create users
-  permission_manage_user: Edit users
-  permission_manage_placeholder_user: Δημιουργήστε, επεξεργαστείτε και διαγράψτε τους placeholder χρήστες
-  permission_add_subprojects: Δημιουργία υποέργων
-  permission_add_work_package_watchers: Προσθήκη παρατηρητών
-  permission_assign_versions: Ανάθεση εκδόσεων
-  permission_browse_repository: Πρόσβαση ανάγνωσης-μόνο στο αποθετήριο (περιήγηση και ολοκλήρωση παραγγελίας)
-  permission_change_work_package_status: Change work package status
-  permission_change_work_package_status_explanation: Allows changing status without Edit work packages permission
-  permission_comment_news: Σχολιασμός νέων
-  permission_commit_access: Πρόσβαση ανάγνωσης/εγγραφής στο αποθετήριο (δέσμευση)
-  permission_copy_projects: Αντιγραφή έργων
-  permission_copy_projects_explanation: In template projects, this permission has a secondary function, it allows the creation of new projects derived from the template.
-  permission_copy_work_packages: Duplicate work packages
-  permission_create_backup: Create backups
-  permission_delete_work_package_watchers: Διαγραφή παρατηρητών
-  permission_delete_work_packages: Διαγραφή πακέτων εργασίας
-  permission_delete_messages: Διαγραφή μηνυμάτων
-  permission_delete_own_messages: Διαγραφή δικών μου μηνυμάτων
-  permission_delete_reportings: Διαγραφή αναφορών
-  permission_delete_timelines: Διαγραφή χρονοδιαγραμμάτων
-  permission_edit_work_package_comments: Moderate comments
-  permission_edit_work_package_comments_explanation: 'Caution: Users with this permission are able to edit anyone''s comment.'
-  permission_edit_work_packages: Επεξεργασία πακέτων εργασίας
-  permission_edit_messages: Επεξεργασία μηνυμάτων
-  permission_edit_own_internal_comments: Edit own internal comments
-  permission_edit_own_work_package_comments: Edit own comments
-  permission_edit_own_messages: Επεξεργασία δικών μου μηνυμάτων
-  permission_edit_own_time_entries: Επεξεργασία των δικών μου καταγραφών χρόνου
-  permission_edit_others_internal_comments: Moderate internal comments
-  permission_edit_others_internal_comments_explanation: 'Caution: Users with this permission are able to edit other users'' internal comments.'
-  permission_edit_project: Επεξεργασία του έργου
-  permission_edit_project_attributes: Edit project attributes
-  permission_edit_project_phases: Edit project phases
-  permission_edit_reportings: Επεξεργασία αναφορών
-  permission_edit_time_entries: Edit time logs for other users
-  permission_edit_timelines: Επεξεργασία χρονοδιαγραμμάτων
-  permission_edit_wiki_pages: Επεξεργασία σελίδων wiki
-  permission_export_work_packages: Εξαγωγή πακέτων εργασίας
-  permission_export_projects: Export projects
-  permission_invite_members_by_email: Invite members by email
-  permission_invite_members_by_email_explanation: 'Allows users to invite new members by email. Invited users will receive an email with a link to set their password and activate their account. Depends on the permission to manage members
-
-    '
-  permission_log_own_time: Log own time
-  permission_log_time: Log time for other users
-  permission_manage_forums: Διαχείριση των φόρουμ
-  permission_manage_categories: Διαχείριση των κατηγοριών πακέτων εργασίας
-  permission_manage_dashboards: Manage dashboards
-  permission_manage_work_package_relations: Διαχείριση των συσχετίσεων πακέτων εργασίας
-  permission_manage_members: Διαχείριση Μελών
-  permission_manage_news: Διαχείριση νέων
-  permission_manage_project_activities: Διαχείριση δραστηριοτήτων έργου
-  permission_manage_public_queries: Διαχείριση δημόσιων προβολών
-  permission_manage_repository: Διαχείριση αποθετηρίου
-  permission_manage_subtasks: Διαχείριση των ιεραρχιών πακέτων εργασίας
-  permission_manage_versions: Διαχείριση εκδόσεων
-  permission_manage_wiki: Διαχείριση wiki
-  permission_manage_own_working_times: Manage own working times
-  permission_manage_own_working_times_explanation: 'Allows users to manage their own working times, and personal non-working days.
-
-    '
-  permission_manage_working_times: Manage working times for all users
-  permission_manage_working_times_explanation: 'Allows users to manage working times for all users, including personal non-working days.
-
-    '
-  permission_move_work_packages: Μετακίνηση πακέτων εργασίας
-  permission_save_queries: Αποθήκευση προβολών
-  permission_search_project: Search project
-  permission_select_custom_fields: Select custom fields
-  permission_select_project_custom_fields: Select project attributes
-  permission_select_project_phases: Select project phases
-  permission_select_project_phases_explanation: Activate/Deactivate the phases in a project. Enables the user to select the life cycle appropriate for the project as inactive phases will not be visible in the project overview page nor the project list.
-  permission_select_project_modules: Επιλογή ενοτήτων έργου
-  permission_share_work_packages: Share work packages
-  permission_manage_types: Επιλέξτε τύπους
-  permission_manage_own_reminders: Create own reminders
-  permission_view_all_principals: View all users and groups
-  permission_view_all_principals_explanation: 'Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
-
-    '
-  permission_view_project: View projects
-  permission_view_changesets: Προβολή αποθετηρίου των αναθεωρήσεων στο OpenProject
-  permission_view_internal_comments: View internal comments
-  permission_view_commit_author_statistics: Εμφάνιση στατιστικών συγγραφέων δέσμευσης
-  permission_view_dashboards: View dashboards
-  permission_view_work_package_watchers: Προβολή λίστας παρατηρητών
-  permission_view_work_packages: Εμφάνιση πακέτων εργασίας
-  permission_view_messages: Προβολή μηνυμάτων
-  permission_view_news: View news
-  permission_view_members: Εμφάνιση μελών
-  permission_view_reportings: Εμφάνιση αναφορών
-  permission_view_shared_work_packages: View work package shares
-  permission_view_time_entries: Προβολή χρόνου που δαπανήθηκε
-  permission_view_timelines: Προβολή χρονοδιαγραμμάτων
-  permission_view_user_email: View users' mail addresses
-  permission_view_wiki_edits: Προβολή ιστορικού wiki
-  permission_view_wiki_pages: Προβολή wiki
-  permission_work_package_assigned: Become assignee/responsible
-  permission_work_package_assigned_explanation: Τα πακέτα εργασίας μπορούν να ανατεθούν σε χρήστες και ομάδες που έχουν αυτό το ρόλο στο αντίστοιχο έργο
-  permission_view_project_activity: View project activity
-  permission_view_project_attributes: View project attributes
-  permission_view_project_phases: View project phases
-  permission_save_bcf_queries: Save BCF queries
-  permission_manage_public_bcf_queries: Manage public BCF queries
-  permission_edit_attribute_help_texts: Edit attribute help texts
-  permission_manage_public_project_queries: Manage public project lists
-  permission_view_project_query: View project query
-  permission_edit_project_query: Edit project query
+    heading_getting_started: "Λάβετε μια επισκόπηση"
+    text_getting_started_description: "Get a quick overview of project management and team collaboration with Yojana. You can restart this video from the help menu."
+    welcome: "Welcome to %{app_title}"
+    select_language: "Παρακαλούμε επιλέξτε την γλώσσα σας"
+  permission_add_work_package_comments: "Add comments"
+  permission_add_work_packages: "Προσθήκη πακέτων εργασίας"
+  permission_add_messages: "Δημοσίευση μηνυμάτων"
+  permission_add_project: "Create projects"
+  permission_add_portfolios: "Create portfolios"
+  permission_add_programs: "Create programs"
+  permission_add_work_package_attachments: "Προσθέστε συνημμένα"
+  permission_add_work_package_attachments_explanation: "Allows adding attachments without Edit work packages permission"
+  permission_add_internal_comments: "Write internal comments"
+  permission_archive_project: "Αρχειοθέτηση έργου"
+  permission_create_user: "Create users"
+  permission_manage_user: "Edit users"
+  permission_manage_placeholder_user: "Δημιουργήστε, επεξεργαστείτε και διαγράψτε τους placeholder χρήστες"
+  permission_add_subprojects: "Δημιουργία υποέργων"
+  permission_add_work_package_watchers: "Προσθήκη παρατηρητών"
+  permission_assign_versions: "Ανάθεση εκδόσεων"
+  permission_browse_repository: "Πρόσβαση ανάγνωσης-μόνο στο αποθετήριο (περιήγηση και ολοκλήρωση παραγγελίας)"
+  permission_change_wiki_parent_page: "Αλλαγή σελίδας wiki γονέα"
+  permission_change_work_package_status: "Change work package status"
+  permission_change_work_package_status_explanation: "Allows changing status without Edit work packages permission"
+  permission_comment_news: "Σχολιασμός νέων"
+  permission_commit_access: "Πρόσβαση ανάγνωσης/εγγραφής στο αποθετήριο (δέσμευση)"
+  permission_copy_projects: "Αντιγραφή έργων"
+  permission_copy_projects_explanation: "In template projects, this permission has a secondary function, it allows the creation of new projects derived from the template."
+  permission_copy_work_packages: "Duplicate work packages"
+  permission_create_backup: "Create backups"
+  permission_delete_work_package_watchers: "Διαγραφή παρατηρητών"
+  permission_delete_work_packages: "Διαγραφή πακέτων εργασίας"
+  permission_delete_messages: "Διαγραφή μηνυμάτων"
+  permission_delete_own_messages: "Διαγραφή δικών μου μηνυμάτων"
+  permission_delete_reportings: "Διαγραφή αναφορών"
+  permission_delete_timelines: "Διαγραφή χρονοδιαγραμμάτων"
+  permission_delete_wiki_pages: "Διαγραφή σελίδων wiki"
+  permission_delete_wiki_pages_attachments: "Διαγραφή συνημμένων"
+  permission_edit_work_package_comments: "Moderate comments"
+  permission_edit_work_package_comments_explanation: "Caution: Users with this permission are able to edit anyone's comment."
+  permission_edit_work_packages: "Επεξεργασία πακέτων εργασίας"
+  permission_edit_messages: "Επεξεργασία μηνυμάτων"
+  permission_edit_own_internal_comments: "Edit own internal comments"
+  permission_edit_own_work_package_comments: "Edit own comments"
+  permission_edit_own_messages: "Επεξεργασία δικών μου μηνυμάτων"
+  permission_edit_own_time_entries: "Επεξεργασία των δικών μου καταγραφών χρόνου"
+  permission_edit_others_internal_comments: "Moderate internal comments"
+  permission_edit_others_internal_comments_explanation: "Caution: Users with this permission are able to edit other users' internal comments."
+  permission_edit_project: "Επεξεργασία του έργου"
+  permission_edit_project_attributes: "Edit project attributes"
+  permission_edit_project_phases: "Edit project phases"
+  permission_edit_reportings: "Επεξεργασία αναφορών"
+  permission_edit_time_entries: "Edit time logs for other users"
+  permission_edit_timelines: "Επεξεργασία χρονοδιαγραμμάτων"
+  permission_edit_wiki_pages: "Επεξεργασία σελίδων wiki"
+  permission_export_work_packages: "Εξαγωγή πακέτων εργασίας"
+  permission_export_projects: "Export projects"
+  permission_export_wiki_pages: "Εξαγωγή σελίδων wiki"
+  permission_invite_members_by_email: "Invite members by email"
+  permission_invite_members_by_email_explanation: >
+    Allows users to invite new members by email. Invited users will receive an email with a link to set their password and activate their account. Depends on the permission to manage members
+  permission_list_attachments: "Λίστα συνημμένων"
+  permission_log_own_time: "Log own time"
+  permission_log_time: "Log time for other users"
+  permission_manage_forums: "Διαχείριση των φόρουμ"
+  permission_manage_categories: "Διαχείριση των κατηγοριών πακέτων εργασίας"
+  permission_manage_dashboards: "Manage dashboards"
+  permission_manage_work_package_relations: "Διαχείριση των συσχετίσεων πακέτων εργασίας"
+  permission_manage_members: "Διαχείριση Μελών"
+  permission_manage_news: "Διαχείριση νέων"
+  permission_manage_project_activities: "Διαχείριση δραστηριοτήτων έργου"
+  permission_manage_public_queries: "Διαχείριση δημόσιων προβολών"
+  permission_manage_repository: "Διαχείριση αποθετηρίου"
+  permission_manage_subtasks: "Διαχείριση των ιεραρχιών πακέτων εργασίας"
+  permission_manage_versions: "Διαχείριση εκδόσεων"
+  permission_manage_wiki: "Διαχείριση wiki"
+  permission_manage_wiki_menu: "Διαχείριση μενού wiki"
+  permission_move_work_packages: "Μετακίνηση πακέτων εργασίας"
+  permission_protect_wiki_pages: "Προστατέψτε τις σελίδες wiki"
+  permission_rename_wiki_pages: "Μετονομασία σελίδων wiki"
+  permission_save_queries: "Αποθήκευση προβολών"
+  permission_search_project: "Search project"
+  permission_select_custom_fields: "Select custom fields"
+  permission_select_project_custom_fields: "Select project attributes"
+  permission_select_project_phases: "Select project phases"
+  permission_select_project_phases_explanation: "Activate/Deactivate the phases in a project. Enables the user to select the life cycle appropriate for the project as inactive phases will not be visible in the project overview page nor the project list."
+  permission_select_project_modules: "Επιλογή ενοτήτων έργου"
+  permission_share_work_packages: "Share work packages"
+  permission_manage_types: "Επιλέξτε τύπους"
+  permission_manage_own_reminders: "Create own reminders"
+  permission_view_all_principals: "View all users and groups"
+  permission_view_all_principals_explanation: >
+    Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
+  permission_view_project: "View projects"
+  permission_view_changesets: "Προβολή αποθετηρίου των αναθεωρήσεων στο Yojana"
+  permission_view_internal_comments: "View internal comments"
+  permission_view_commit_author_statistics: "Εμφάνιση στατιστικών συγγραφέων δέσμευσης"
+  permission_view_dashboards: "View dashboards"
+  permission_view_work_package_watchers: "Προβολή λίστας παρατηρητών"
+  permission_view_work_packages: "Εμφάνιση πακέτων εργασίας"
+  permission_view_messages: "Προβολή μηνυμάτων"
+  permission_view_news: "View news"
+  permission_view_members: "Εμφάνιση μελών"
+  permission_view_reportings: "Εμφάνιση αναφορών"
+  permission_view_shared_work_packages: "View work package shares"
+  permission_view_time_entries: "Προβολή χρόνου που δαπανήθηκε"
+  permission_view_timelines: "Προβολή χρονοδιαγραμμάτων"
+  permission_view_user_email: "View users' mail addresses"
+  permission_view_wiki_edits: "Προβολή ιστορικού wiki"
+  permission_view_wiki_pages: "Προβολή wiki"
+  permission_work_package_assigned: "Become assignee/responsible"
+  permission_work_package_assigned_explanation: "Τα πακέτα εργασίας μπορούν να ανατεθούν σε χρήστες και ομάδες που έχουν αυτό το ρόλο στο αντίστοιχο έργο"
+  permission_view_project_activity: "View project activity"
+  permission_view_project_attributes: "View project attributes"
+  permission_view_project_phases: "View project phases"
+  permission_save_bcf_queries: "Save BCF queries"
+  permission_manage_public_bcf_queries: "Manage public BCF queries"
+  permission_edit_attribute_help_texts: "Edit attribute help texts"
+  permission_manage_public_project_queries: "Manage public project lists"
+  permission_view_project_query: "View project query"
+  permission_edit_project_query: "Edit project query"
   placeholders:
     default: "-"
     templated_hint: Automatically generated through type %{type}
@@ -5098,49 +5059,50 @@ el:
     create_successful: Το αποθετήριο έχει καταχωρηθεί.
     delete_sucessful: Το αποθετήριο έχει διαγραφεί.
     destroy:
-      confirmation: Αν συνεχίσετε, θα διαγραφεί μόνιμα το αποθετήριο που διαχειρίζεστε.
-      info: Η διαγραφή του αποθετηρίου είναι μια μη αναστρέψιμη ενέργεια.
-      info_not_managed: 'Σημείωση: Αυτό ΔΕΝ θα διαγράψει τα περιεχόμενα αυτού του αποθετηρίου, καθώς δεν το διαχειρίζεται το OpenProject.'
-      managed_path_note: 'Ο ακόλουθος κατάλογος θα διαγραφεί: %{path}'
-      repository_verification_html: Enter the project's identifier %{identifier} to verify the deletion of its repository.
-      subtitle: Είστε βέβαιοι ότι θέλετε να διαγράψετε το %{repository_type} από το έργο %{project_name};
-      subtitle_not_managed_html: Do you really want to remove the linked %{repository_type} %{url} from the project %{project_name}?
-      title_html: Delete the %{repository_type}
-      title_not_managed: Αφαίρεση του συνδεδεμένου %{repository_type};
+      confirmation: "Αν συνεχίσετε, θα διαγραφεί μόνιμα το αποθετήριο που διαχειρίζεστε."
+      info: "Η διαγραφή του αποθετηρίου είναι μια μη αναστρέψιμη ενέργεια."
+      info_not_managed: "Σημείωση: Αυτό ΔΕΝ θα διαγράψει τα περιεχόμενα αυτού του αποθετηρίου, καθώς δεν το διαχειρίζεται το Yojana."
+      managed_path_note: "Ο ακόλουθος κατάλογος θα διαγραφεί: %{path}"
+      repository_verification: "Εισάγετε το αναγνωριστικό του έργου %{identifier} για να επιβεβαιώσετε τη διαγραφή του αποθετηρίου του."
+      subtitle: "Είστε βέβαιοι ότι θέλετε να διαγράψετε το %{repository_type} από το έργο %{project_name};"
+      subtitle_not_managed: "Είστε βέβαιοι ότι θέλετε να αφαιρέσετε το συνδεδεμένο %{repository_type} %{url} από το έργο %{project_name};"
+      title: "Διαγραφή του %{repository_type}"
+      title_not_managed: "Αφαίρεση του συνδεδεμένου %{repository_type};"
     errors:
-      build_failed: Δεν ήταν δυνατή η δημιουργία του αποθετηρίου με την επιλεγμένη διαμόρφωση. %{reason}
-      managed_delete: Δεν ήταν δυνατή η διαγραφή του διαχειριζόμενου αποθετηρίου.
-      managed_delete_local: 'Δεν ήταν δυνατή η διαγραφή του τοπικού αποθετηρίου στο σύστημα αρχείων στο ''%{path}'': %{error_message}'
-      empty_repository: Το αποθετήριο υπάρχει, αλλά είναι άδειο. Δεν περιέχει αναθεωρήσεις ακόμα.
-      exists_on_filesystem: Ο κατάλογος του αποθετηρίου υπάρχει ήδη στο σύστημα αρχείων.
-      filesystem_access_failed: 'Υπήρξε σφάλμα κατά την πρόσβαση του αποθετηρίου στο σύστημα αρχείων: %{message}'
-      not_manageable: Ο προμηθευτής αποθετηρίου δεν είναι δυνατό να διαχειριστεί από το OpenProject.
-      path_permission_failed: 'Παρουσιάστηκε σφάλμα κατά την προσπάθεια δημιουργίας του ακόλουθου μονοπατιού: %{path}. Παρακαλούμε σιγουρευτείτε ότι το OpenProject έχει δικαιώματα εγγραφής στον φάκελο.'
-      unauthorized: Δεν έχει εξουσιοδότηση για πρόσβαση στο αποθετήριο ή τα στοιχεία σύνδεσης δεν είναι έγκυρα.
-      unavailable: Το αποθετήριο δεν είναι διαθέσιμο.
-      exception_title: 'Δεν είναι δυνατή η πρόσβαση στο αποθετήριο: %{message}'
-      disabled_or_unknown_type: Ο επιλεγμένος τύπος %{type} είναι απενεργοποιημένος ή δεν είναι πλέον διαθέσιμος για το SCM vendor %{vendor}.
-      disabled_or_unknown_vendor: Το SCM vendor %{vendor} είναι απενεργοποιημένο ή δεν είναι πλέον διαθέσιμο.
-      remote_call_failed: 'Η κλήση του διαχειριζόμενου απομακρυσμένου εξυπηρετητή απέτυχε με το μήνυμα ''%{message}'' (Κωδικός: %{code})'
-      remote_invalid_response: Λάβαμε μια μη έγκυρη απόκριση από το διαχειριζόμενο απομακρυσμένο εξυπηρετητή.
-      remote_save_failed: Δεν ήταν δυνατή η αποθήκευση του αποθετηρίου με τις παραμέτρους που ανακτήθηκαν από τον απομακρυσμένο εξυπηρετητή.
+      build_failed: "Δεν ήταν δυνατή η δημιουργία του αποθετηρίου με την επιλεγμένη διαμόρφωση. %{reason}"
+      managed_delete: "Δεν ήταν δυνατή η διαγραφή του διαχειριζόμενου αποθετηρίου."
+      managed_delete_local: "Δεν ήταν δυνατή η διαγραφή του τοπικού αποθετηρίου στο σύστημα αρχείων στο '%{path}': %{error_message}"
+      empty_repository: "Το αποθετήριο υπάρχει, αλλά είναι άδειο. Δεν περιέχει αναθεωρήσεις ακόμα."
+      exists_on_filesystem: "Ο κατάλογος του αποθετηρίου υπάρχει ήδη στο σύστημα αρχείων."
+      filesystem_access_failed: "Υπήρξε σφάλμα κατά την πρόσβαση του αποθετηρίου στο σύστημα αρχείων: %{message}"
+      not_manageable: "Ο προμηθευτής αποθετηρίου δεν είναι δυνατό να διαχειριστεί από το Yojana."
+      path_permission_failed: "Παρουσιάστηκε σφάλμα κατά την προσπάθεια δημιουργίας του ακόλουθου μονοπατιού: %{path}. Παρακαλούμε σιγουρευτείτε ότι το Yojana έχει δικαιώματα εγγραφής στον φάκελο."
+      unauthorized: "Δεν έχει εξουσιοδότηση για πρόσβαση στο αποθετήριο ή τα στοιχεία σύνδεσης δεν είναι έγκυρα."
+      unavailable: "Το αποθετήριο δεν είναι διαθέσιμο."
+      exception_title: "Δεν είναι δυνατή η πρόσβαση στο αποθετήριο: %{message}"
+      disabled_or_unknown_type: "Ο επιλεγμένος τύπος %{type} είναι απενεργοποιημένος ή δεν είναι πλέον διαθέσιμος για το SCM vendor %{vendor}."
+      disabled_or_unknown_vendor: "Το SCM vendor %{vendor} είναι απενεργοποιημένο ή δεν είναι πλέον διαθέσιμο."
+      remote_call_failed: "Η κλήση του διαχειριζόμενου απομακρυσμένου εξυπηρετητή απέτυχε με το μήνυμα '%{message}' (Κωδικός: %{code})"
+      remote_invalid_response: "Λάβαμε μια μη έγκυρη απόκριση από το διαχειριζόμενο απομακρυσμένο εξυπηρετητή."
+      remote_save_failed: "Δεν ήταν δυνατή η αποθήκευση του αποθετηρίου με τις παραμέτρους που ανακτήθηκαν από τον απομακρυσμένο εξυπηρετητή."
     git:
       instructions:
-        managed_url: Αυτό είναι το URL του διαχειριζόμενου (τοπικού) αποθετηρίου Git.
-        path: Ορίστε το μονοπάτι του τοπικού σας αποθετηρίου Git (π.χ., %{example_path} ). Μπορείτε να χρησιμοποιείτε απομακρυσμένα αποθετήρια τα οποία έχουν κλωνοποιηθεί σε ένα τοπικό αντίγραφο χρησιμοποιώντας μια τιμή που ξεκινάει με http(s):// ή file://.
-        path_encoding: 'Παράκαμψη του μονοπατιού κωδικοποίησης Git (Προεπιλογή: UTF-8)'
-      local_title: Σύνδεση με υπάρχον τοπικό αποθετήριο Git
-      local_url: Τοπικό URL
-      local_introduction: Αν έχετε ένα υπάρχον τοπικό αποθετήριο Git, μπορείτε να το συνδέσετε με το OpenProject για να αποκτήσετε πρόσβαση σε αυτό μέσα από την εφαρμογή.
-      managed_introduction: Επιτρέψτε στο OpenProject να δημιουργήσει και να ενσωματώσει ένα τοπικό αποθετήριο Git αυτόματα.
-      managed_title: Ενσωματωμένο αποθετήριο Git στο OpenProject
-      managed_url: Διαχειριζόμενο URL
-      path: Μονοπάτι για το αποθετήριο Git
-      path_encoding: Κωδικοποίηση μονοπατιού
-    go_to_revision: Πηγαίνετε στην αναθεώρηση
-    managed_remote: Τα διαχειριζόμενα αποθετήρια για αυτό τον προμηθευτή χειρίζονται απομακρυσμένα.
-    managed_remote_note: Οι πληροφορίες για το URL και το μονοπάτι αυτού του αποθετηρίου δεν είναι διαθέσιμα πριν την δημιουργία του.
-    managed_url: Διαχειριζόμενο URL
+        managed_url: "Αυτό είναι το URL του διαχειριζόμενου (τοπικού) αποθετηρίου Git."
+        path: >-
+          Ορίστε το μονοπάτι του τοπικού σας αποθετηρίου Git (π.χ., %{example_path} ). Μπορείτε να χρησιμοποιείτε απομακρυσμένα αποθετήρια τα οποία έχουν κλωνοποιηθεί σε ένα τοπικό αντίγραφο χρησιμοποιώντας μια τιμή που ξεκινάει με http(s):// ή file://.
+        path_encoding: "Παράκαμψη του μονοπατιού κωδικοποίησης Git (Προεπιλογή: UTF-8)"
+      local_title: "Σύνδεση με υπάρχον τοπικό αποθετήριο Git"
+      local_url: "Τοπικό URL"
+      local_introduction: "Αν έχετε ένα υπάρχον τοπικό αποθετήριο Git, μπορείτε να το συνδέσετε με το Yojana για να αποκτήσετε πρόσβαση σε αυτό μέσα από την εφαρμογή."
+      managed_introduction: "Επιτρέψτε στο Yojana να δημιουργήσει και να ενσωματώσει ένα τοπικό αποθετήριο Git αυτόματα."
+      managed_title: "Ενσωματωμένο αποθετήριο Git στο Yojana"
+      managed_url: "Διαχειριζόμενο URL"
+      path: "Μονοπάτι για το αποθετήριο Git"
+      path_encoding: "Κωδικοποίηση μονοπατιού"
+    go_to_revision: "Πηγαίνετε στην αναθεώρηση"
+    managed_remote: "Τα διαχειριζόμενα αποθετήρια για αυτό τον προμηθευτή χειρίζονται απομακρυσμένα."
+    managed_remote_note: "Οι πληροφορίες για το URL και το μονοπάτι αυτού του αποθετηρίου δεν είναι διαθέσιμα πριν την δημιουργία του."
+    managed_url: "Διαχειριζόμενο URL"
     settings:
       automatic_managed_repos_disabled: Απενεργοποίηση αυτόματης δημιουργίας
       automatic_managed_repos: Αυτόματη δημιουργία των διαχειριζόμενων αποθετηρίων
@@ -5148,204 +5110,179 @@ el:
     scm_vendor: Σύστημα διαχείρισης ελέγχου πηγών
     scm_type: Τύπος αποθετηρίου
     scm_types:
-      local: Σύνδεση με υπάρχον τοπικό αποθετήριο
-      existing: Σύνδεση με υπάρχον αποθετήριο
-      managed: Δημιουργία νέου αποθετηρίου στο OpenProject
+      local: "Σύνδεση με υπάρχον τοπικό αποθετήριο"
+      existing: "Σύνδεση με υπάρχον αποθετήριο"
+      managed: "Δημιουργία νέου αποθετηρίου στο Yojana"
     storage:
-      not_available: Η κατανάλωση χώρου από τον δίσκο δεν είναι δυνατή σε αυτό το αποθετήριο.
-      update_timeout: |-
-        Διατήρηση των τελευταίων πληροφοριών απαιτούμενου χώρου δίσκου για ένα αποθετήριο για Ν λεπτά.
-        Καθώς η μέτρηση του απαιτούμενου χώρου δίσκου για ένα αποθετήριο μπορεί να κοστίζει, αυξήστε αυτή την τιμή για να μειώσετε την επίπτωση στην επίδοση.
-      oauth_application_details_html: 'The client secret value will not be accessible again after you close this window. Please copy these values into the Nextcloud OpenProject Integration settings:'
-      oauth_application_details_link_text: Go to settings page
-      setup_documentation_details: 'If you need help configuring a new file storage please check the documentation: '
-      setup_documentation_details_link_text: File storages setup
-      show_warning_details: To use this file storage remember to activate the module and the specific storage in the project settings of each desired project.
+      not_available: "Η κατανάλωση χώρου από τον δίσκο δεν είναι δυνατή σε αυτό το αποθετήριο."
+      update_timeout: "Διατήρηση των τελευταίων πληροφοριών απαιτούμενου χώρου δίσκου για ένα αποθετήριο για Ν λεπτά.\nΚαθώς η μέτρηση του απαιτούμενου χώρου δίσκου για ένα αποθετήριο μπορεί να κοστίζει, αυξήστε αυτή την τιμή για να μειώσετε την επίπτωση στην επίδοση."
+      oauth_application_details: "The client secret value will not be accessible again after you close this window. Please copy these values into the Nextcloud Yojana Integration settings:"
+      oauth_application_details_link_text: "Go to settings page"
+      setup_documentation_details: "If you need help configuring a new file storage please check the documentation: "
+      setup_documentation_details_link_text: "File storages setup"
+      show_warning_details: "To use this file storage remember to activate the module and the specific storage in the project settings of each desired project."
     subversion:
-      existing_title: Υπάρχον αποθετήριο Subversion
-      existing_introduction: Αν έχετε ένα υπάρχον αποθετήριο Subversion, μπορείτε να το συνδέσετε με το OpenProject για να αποκτήσετε πρόσβαση σε αυτό μέσα από την εφαρμογή.
-      existing_url: Υπάρχον URL
+      existing_title: "Υπάρχον αποθετήριο Subversion"
+      existing_introduction: "Αν έχετε ένα υπάρχον αποθετήριο Subversion, μπορείτε να το συνδέσετε με το Yojana για να αποκτήσετε πρόσβαση σε αυτό μέσα από την εφαρμογή."
+      existing_url: "Υπάρχον URL"
       instructions:
-        managed_url: Αυτό είναι το URL του διαχειριζόμενου (τοπικού) αποθετηρίου Subversion.
-        url: 'Εισάγετε το URL του αποθετηρίου. Αυτό μπορεί είτε να στοχεύει ένα τοπικό αποθετήριο (που αρχίζει με %{local_proto} ), ή ένα απομακρυσμένο αποθετήριο. Υποστηρίζονται τα παρακάτω URL schemes:'
-      managed_title: Ενσωματωμένο αποθετήριο Subversion στο OpenProject
-      managed_introduction: Επιτρέψτε στο OpenProject να δημιουργήσει και να ενσωματώσει ένα τοπικό αποθετήριο Subversion αυτόματα.
-      managed_url: Διαχειριζόμενο URL
-      password: Κωδικός Αποθετηρίου
-      username: Όνομα χρήστη αποθετηρίου
-    truncated: Συγγνώμη, έπρεπε να περικόψουμε αυτό το ευρετήριο σε %{limit} αρχεία. %{truncated} καταχωρήσεις παραλήφθηκαν από τη λίστα.
+        managed_url: "Αυτό είναι το URL του διαχειριζόμενου (τοπικού) αποθετηρίου Subversion."
+        url: "Εισάγετε το URL του αποθετηρίου. Αυτό μπορεί είτε να στοχεύει ένα τοπικό αποθετήριο (που αρχίζει με %{local_proto} ), ή ένα απομακρυσμένο αποθετήριο. Υποστηρίζονται τα παρακάτω URL schemes:"
+      managed_title: "Ενσωματωμένο αποθετήριο Subversion στο Yojana"
+      managed_introduction: "Επιτρέψτε στο Yojana να δημιουργήσει και να ενσωματώσει ένα τοπικό αποθετήριο Subversion αυτόματα."
+      managed_url: "Διαχειριζόμενο URL"
+      password: "Κωδικός Αποθετηρίου"
+      username: "Όνομα χρήστη αποθετηρίου"
+    truncated: "Συγγνώμη, έπρεπε να περικόψουμε αυτό το ευρετήριο σε %{limit} αρχεία. %{truncated} καταχωρήσεις παραλήφθηκαν από τη λίστα."
     named_repository: "%{vendor_name} αποθετήριο"
     update_settings_successful: Οι ρυθμίσεις αποθηκεύτηκαν επιτυχώς.
     url: URL σε αποθετήριο
     warnings:
       cannot_annotate: Αυτό το αρχείο δεν μπορεί να σχολιαστεί.
   scheduling:
-    manual: set to Manual
-    automatic: set to Automatic
-  search_input_placeholder: Αναζήτηση ...
-  setting_allowed_link_protocols: Allowed link protocols
-  setting_allowed_link_protocols_text_html: Allow these protocols to be rendered as links in work package descriptions, long text fields and comments. For example, %{tel_code} or %{element_code}. Enter one protocol per line. <br/> Protocols %{http_code}, %{https_code}, and %{mailto_code} are always allowed.
-  setting_capture_external_links: Capture external links
-  setting_capture_external_links_text: 'When enabled, all external links in formatted text will redirect through a warning page before leaving the application. This helps protect users from potentially malicious external websites.
-
-    '
-  setting_capture_external_links_require_login: Require users to be logged in
-  setting_capture_external_links_require_login_text: 'When enabled, users wanting to click on external links need to be logged in before being able to continue.
-
-    '
-  setting_after_first_login_redirect_url: First login redirect
-  setting_after_first_login_redirect_url_text_html: 'Set a path to redirect users after their first login. If empty, redirects to the home page for the onboarding tour. <br/> Example: <code>/my/page</code>
-
-    '
-  setting_after_login_default_redirect_url: After login redirect
-  setting_after_login_default_redirect_url_example_html: 'Set a default path to redirect users after login, if no back link was provided. Redirects to home page if not set. <br/> Example: %{example_code}
-
-    '
-  setting_apiv3_cors_title: Cross-Origin Resource Sharing (CORS)
-  setting_apiv3_cors_enabled: Ενεργοποίηση CORS
-  setting_apiv3_cors_origins: API V3 Cross-Origin Resource Sharing (CORS) επιτρεπόμενες προελεύσεις
-  setting_apiv3_cors_origins_instructions_html: 'If CORS is enabled, these are the origins that are allowed to access OpenProject API. <br/> Please check the [Documentation on the Origin header](docs_url) on how to specify the expected values.
-
-    '
-  setting_apiv3_write_readonly_attributes: Write access to read-only attributes
-  setting_apiv3_write_readonly_attributes_instructions: 'If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
-
-    '
-  setting_apiv3_write_readonly_attributes_warning: 'This setting has a use-case for e.g., importing data, but allows administrators to impersonate the creation of items as other users. All creation requests are being logged however with the true author.
-
-    '
-  setting_apiv3_write_readonly_attributes_additional_html: 'For more information on attributes and supported resources, please see the [API documentation](api_documentation_link).
-
-    '
-  setting_apiv3_max_page_size: Maximum API page size
-  setting_apiv3_max_page_size_instructions: 'Set the maximum page size the API will respond with. It will not be possible to perform API requests that return more values on a single page.
-
-    '
-  setting_apiv3_max_page_size_warning: 'Please only change this value if you are sure why you need it. Setting to a high value will result in significant performance impacts, while a value lower than the per page options will cause errors in paginated views.
-
-    '
-  setting_apiv3_docs: Τεκμηρίωση
-  setting_apiv3_docs_enabled: Enable docs page
-  setting_apiv3_docs_enabled_instructions_html: 'If the docs page is enabled you can get an interactive view of the APIv3 documentation under <a href="%{link}" target="_blank">%{link}</a>.
-
-    '
-  setting_apiv3_docs_enabled_instructions_warning: 'Please be aware that enabling the API docs on a production system may expose sensitive information or result in accidental loss of data when not being careful. We recommend to only enable this setting for development purposes.
-
-    '
-  setting_attachment_whitelist: Attachment upload whitelist
-  setting_email_delivery_method: Μέθοδος αποστολής email
-  setting_emails_salutation: Address user in emails with
-  setting_oauth_allow_remapping_of_existing_users: Allow remapping of existing users
-  setting_sendmail_location: Τοποθεσία του εκτελέσιμου sendmail
-  setting_sendmail_arguments: Arguments for sendmail
-  setting_smtp_enable_starttls_auto: Αυτόματη χρήση STARTTLS αν είναι διαθέσιμο
-  setting_smtp_ssl: Χρήση σύνδεσης SSL
-  setting_smtp_address: Εξυπηρετητής SMTP
-  setting_smtp_port: Θύρα SMTP
-  setting_smtp_authentication: SMTP ταυτοποίηση
-  setting_smtp_user_name: Ονόμα χρήστη SMTP
-  setting_smtp_password: Κωδικός SMTP
-  setting_smtp_domain: SMTP HELO domain
-  setting_activity_days_default: Ημέρες που εμφανίζονται στη δραστηριότητα έργου
-  setting_api_tokens_enabled: Enable API tokens
-  setting_api_tokens_enabled_caption: 'Decide whether users can create personal API tokens in their account settings. These tokens can be used to access the different APIs of OpenProject, such as APIv3 and MCP.
-
-    '
-  setting_app_subtitle: Υπότιτλος εφαρμογής
-  setting_app_title: Τίτλος εφαρμογής
-  setting_organization_name: Organization name
-  setting_attachment_max_size: Μέγιστο μέγεθος συνημμένων
-  setting_show_work_package_attachments: Show attachments in the files tab by default
-  setting_antivirus_scan_mode: Scan mode
-  setting_antivirus_scan_action: Infected file action
-  setting_autofetch_changesets: Αυτόματη ανάκτηση αλλαγών αποθετηρίου
-  setting_autologin: Αυτόματη σύνδεση
-  setting_available_languages: Διαθέσιμες γλώσσες
-  setting_bcc_recipients: Παραλήπτες blind carbon copy (bcc)
-  setting_brute_force_block_after_failed_logins: Αποκλεισμός χρήστη μετά από τον αριθμό από αποτυχημένες προσπάθειες σύνδεσης
-  setting_brute_force_block_minutes: Χρόνος αποκλεισμού του χρήστη
-  setting_cache_formatted_text: Μορφοποιημένο κείμενο cache
-  setting_use_wysiwyg_description: Επιλέξτε για να ενεργοποιήσετε τον συντάκτη CKEditor5 WYSIWYG για όλους τους χρήστες από προεπιλογή. Ο CKEditor έχει περιορισμένη λειτουργικότητα για GFM Markdown.
-  setting_column_options: Default work package lists columns
-  setting_commit_fix_keywords: Επιδιόρθωση λέξεων-κλειδιά
-  setting_commit_logs_encoding: Κωδικοποίηση μηνυμάτων δέσμευσης
-  setting_commit_logtime_activity_id: Δραστηριότητα για τον καταγεγραμμένο χρόνο
-  setting_commit_logtime_enabled: Ενεργοποίηση καταγραφής χρόνου
-  setting_commit_ref_keywords: Αναφορά σε λέξεις-κλειδιά
-  setting_consent_time: Συγκατάθεση χρόνου
-  setting_consent_info: Κείμενο πληροφοριών συγκατάθεσης
-  setting_consent_required: Απαιτείται συγκατάθεση
-  setting_consent_decline_mail: Συγκατάθεση επικοινωνίας διεύθυνσης email
-  setting_cross_project_work_package_relations: Επιτρέψτε συσχετισμό πακέτων εργασίας μεταξύ έργων
-  setting_csv_escape_formulas: Escape formulas in CSV exports
-  setting_csv_escape_formulas_text: 'Escape spreadsheet formulas in CSV exports by prefixing cells that begin with characters such as =, +, -, or @ with a single quote. This mitigates CSV formula injection when exported files are opened in spreadsheet applications such as Excel. This comes at the downside of modifying the string values inside the CSV, so you may want to disable this if downstream tools require the exact, unescaped cell values.
-
-    '
-  setting_first_week_of_year: Η πρώτη εβδομάδα του έτους περιέχει
-  setting_date_format: Ημερομηνία
-  setting_default_language: Προεπιλεγμένη γλώσσα
-  setting_default_projects_modules: Ενότητα ενεργοποιημένες από προεπιλογή για τα νέα έργα
-  setting_default_projects_public: Τα νέα έργα είναι δημόσια από προεπιλογή
-  setting_disable_password_login: Disable password authentication
-  setting_diff_max_lines_displayed: Εμφανίζεται ο μέγιστος αριθμός γραμμών diff
-  setting_omniauth_direct_login_provider: Direct login SSO provider
-  setting_display_subprojects_work_packages: Εμφάνιση πακέτων εργασίας υποέργων στα κύρια έργα από προεπιλογή
-  setting_duration_format: Duration format
-  setting_duration_format_hours_only: Hours only
-  setting_duration_format_days_and_hours: Days and hours
-  setting_duration_format_instructions: This defines how Work, Remaining work, and Time spent durations are displayed.
-  setting_emails_footer: Υποσέλιδο των email
-  setting_emails_header: Επικεφαλίδα email
-  setting_email_login: Χρησιμοποιήστε email για είσοδο
-  setting_enabled_scm: Ενεργοποίηση SCM
-  setting_enabled_projects_columns: Columns in a projects list displayed by default
-  setting_feeds_enabled: Ενεργοποίηση Τροφοδοσιών
-  setting_ical_enabled: Enable iCalendar subscriptions
-  setting_feeds_limit: Όριο συγκατάθεσης τροφοδοσίας
-  setting_file_max_size_displayed: Μέγιστο μέγεθος αρχείων κειμένου που εμφανίζονται inline
-  setting_host_name: Όνομα εξυπηρετητή
-  setting_collaborative_editing_hocuspocus_url: Hocuspocus server URL
-  setting_collaborative_editing_hocuspocus_secret: Hocuspocus server secret
-  setting_hours_per_day: Hours per day
-  setting_hours_per_day_explanation: This defines what is considered a "day" when displaying duration in days and hours (for example, if a day is 8 hours, 32 hours would be 4 days).
-  setting_invitation_expiration_days: Το μήνυμα ενεργοποίησης λήγει μετά από
-  setting_invitation_expiration_days_caption: Number of days after which the activation email expires.
-  setting_work_package_done_ratio: Progress calculation mode
-  setting_work_package_done_ratio_field: Work-based
-  setting_work_package_done_ratio_field_caption_html: "<i>% Complete</i> can be freely set to any value. If you optionally enter a value for <i>Work</i>, <i>Remaining work</i> will automatically be derived."
-  setting_work_package_done_ratio_status: Status-based
-  setting_work_package_done_ratio_status_caption_html: Each status has a <i>% Complete</i> value associated with it. Changing status will change <i>% Complete</i>.
-  setting_work_package_done_ratio_explanation_html: 'In <b>work-based</b> mode, % Complete can be freely set to any value. If you optionally enter a value for Work, Remaining work will automatically be derived. In <b>status-based</b> mode, each status has a % Complete value associated with it. Changing status will change % Complete.
-
-    '
-  setting_work_package_properties: Ιδιότητες πακέτου εργασίας
-  setting_work_package_startdate_is_adddate: Χρήση σημερινής ημερομηνίας ως ημερομηνία έναρξης για νέα πακέτα εργασίας
-  setting_work_packages_projects_export_limit: Work packages / Projects export limit
-  setting_work_packages_projects_export_limit_text: 'Maximum number of work packages or projects that can be included in a single export. Larger exports are truncated to this limit.
-
-    '
-  setting_journal_aggregation_time_minutes: Aggregation period
-  setting_log_requesting_user: Καταγραφή των στοιχείων εισόδου, του ονόματος και της διεύθυνσης email του χρήστη για όλα τα αιτήματα
-  setting_login_required: Απαιτείται ταυτοποίηση
-  setting_login_required_caption: When checked, all requests to the application have to be authenticated.
-  setting_lost_password: Enable password reset
-  setting_lost_password_caption: When checked, allow users to reset their own passwords.
-  setting_mail_from: Διεύθυνση email μετάδοσης
-  setting_mail_handler_api_key: Κλειδί API
-  setting_mail_handler_body_delimiters: Περικοπή των email μετά από μια από αυτές τις γραμμές
-  setting_mail_handler_body_delimiter_regex: Περικοπή των email που ταιριάζουμε με αυτό το regex
-  setting_mail_handler_ignore_filenames: Συνημμένα mail που αγνοήθηκαν
-  setting_new_project_user_role_id: Ο ρόλος δόθηκε σε μη-διαχειριστή χρήστη ο οποίος δημιουργεί ένα έργο
-  setting_new_project_user_role_id_caption: 'Only roles that include the permissions to edit project attributes and to manage members are listed, so that the creator can complete the project setup.
-
-    '
-  setting_new_project_send_confirmation_email: Send notification to author when creating a new project
-  setting_new_project_notification_text: Notification text
-  setting_password_active_rules: Password requirements
-  setting_password_count_former_banned: Αριθμός των πιο προσφάτως χρησιμοποιημένων κωδικών πρόσβασης που απαγορεύτηκε η επαναχρησιμοποίηση τους
-  setting_password_days_valid: Αριθμός των ημερών, μετά τις οποίες θα επιβληθεί αλλαγή του κωδικού πρόσβασης
-  setting_password_min_length: Ελάχιστο μήκος
-  setting_per_page_options: Αντικείμενα ανά σελίδα επιλογών
+    manual: "set to Manual"
+    automatic: "set to Automatic"
+  search_input_placeholder: "Αναζήτηση ..."
+  setting_allowed_link_protocols: "Allowed link protocols"
+  setting_allowed_link_protocols_text_html: >-
+    Allow these protocols to be rendered as links in work package descriptions, long text fields and comments. For example, %{tel_code} or %{element_code}. Enter one protocol per line. <br/> Protocols %{http_code}, %{https_code}, and %{mailto_code} are always allowed.
+  setting_capture_external_links: "Capture external links"
+  setting_capture_external_links_text: >
+    When enabled, all external links in formatted text will redirect through a warning page before leaving the application. This helps protect users from potentially malicious external websites.
+  setting_capture_external_links_require_login: "Require users to be logged in"
+  setting_capture_external_links_require_login_text: >
+    When enabled, users wanting to click on external links need to be logged in before being able to continue.
+  setting_after_first_login_redirect_url: "First login redirect"
+  setting_after_first_login_redirect_url_text_html: >
+    Set a path to redirect users after their first login. If empty, redirects to the home page for the onboarding tour. <br/> Example: <code>/my/page</code>
+  setting_after_login_default_redirect_url: "After login redirect"
+  setting_after_login_default_redirect_url_text_html: >
+    Set a default path to redirect users after login, if no back link was provided. Redirects to home page if not set. <br/> Example: <code>/my/page</code>
+  setting_apiv3_cors_title: "Cross-Origin Resource Sharing (CORS)"
+  setting_apiv3_cors_enabled: "Ενεργοποίηση CORS"
+  setting_apiv3_cors_origins: "API V3 Cross-Origin Resource Sharing (CORS) επιτρεπόμενες προελεύσεις"
+  setting_apiv3_cors_origins_text_html: >
+    Εάν είναι ενεργοποιημένο το CORS, αυτές είναι οι πηγές που επιτρέπεται να έχουν πρόσβαση στο Yojana API. <br/> Παρακαλώ ελέγξτε το <a href="%{origin_link}" target="_blank">Τεκμηρίωση στην κεφαλίδα προέλευσης</a> για τον τρόπο καθορισμού των αναμενόμενων τιμών.
+  setting_apiv3_write_readonly_attributes: "Write access to read-only attributes"
+  setting_apiv3_write_readonly_attributes_instructions: >
+    If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
+  setting_apiv3_write_readonly_attributes_warning: >
+    This setting has a use-case for e.g., importing data, but allows administrators to impersonate the creation of items as other users. All creation requests are being logged however with the true author.
+  setting_apiv3_write_readonly_attributes_additional: >
+    For more information on attributes and supported resources, please see the %{api_documentation_link}.
+  setting_apiv3_max_page_size: "Maximum API page size"
+  setting_apiv3_max_page_size_instructions: >
+    Set the maximum page size the API will respond with. It will not be possible to perform API requests that return more values on a single page.
+  setting_apiv3_max_page_size_warning: >
+    Please only change this value if you are sure why you need it. Setting to a high value will result in significant performance impacts, while a value lower than the per page options will cause errors in paginated views.
+  setting_apiv3_docs: "Τεκμηρίωση"
+  setting_apiv3_docs_enabled: "Enable docs page"
+  setting_apiv3_docs_enabled_instructions_html: >
+    If the docs page is enabled you can get an interactive view of the APIv3 documentation under <a href="%{link}" target="_blank">%{link}</a>.
+  setting_apiv3_docs_enabled_instructions_warning: >
+    Please be aware that enabling the API docs on a production system may expose sensitive information or result in accidental loss of data when not being careful. We recommend to only enable this setting for development purposes.
+  setting_attachment_whitelist: "Attachment upload whitelist"
+  setting_email_delivery_method: "Μέθοδος αποστολής email"
+  setting_emails_salutation: "Address user in emails with"
+  setting_oauth_allow_remapping_of_existing_users: "Allow remapping of existing users"
+  setting_sendmail_location: "Τοποθεσία του εκτελέσιμου sendmail"
+  setting_sendmail_arguments: "Arguments for sendmail"
+  setting_smtp_enable_starttls_auto: "Αυτόματη χρήση STARTTLS αν είναι διαθέσιμο"
+  setting_smtp_ssl: "Χρήση σύνδεσης SSL"
+  setting_smtp_address: "Εξυπηρετητής SMTP"
+  setting_smtp_port: "Θύρα SMTP"
+  setting_smtp_authentication: "SMTP ταυτοποίηση"
+  setting_smtp_user_name: "Ονόμα χρήστη SMTP"
+  setting_smtp_password: "Κωδικός SMTP"
+  setting_smtp_domain: "SMTP HELO domain"
+  setting_activity_days_default: "Ημέρες που εμφανίζονται στη δραστηριότητα έργου"
+  setting_app_subtitle: "Υπότιτλος εφαρμογής"
+  setting_app_title: "Τίτλος εφαρμογής"
+  setting_attachment_max_size: "Μέγιστο μέγεθος συνημμένων"
+  setting_show_work_package_attachments: "Show attachments in the files tab by default"
+  setting_antivirus_scan_mode: "Scan mode"
+  setting_antivirus_scan_action: "Infected file action"
+  setting_autofetch_changesets: "Αυτόματη ανάκτηση αλλαγών αποθετηρίου"
+  setting_autologin: "Αυτόματη σύνδεση"
+  setting_available_languages: "Διαθέσιμες γλώσσες"
+  setting_bcc_recipients: "Παραλήπτες blind carbon copy (bcc)"
+  setting_brute_force_block_after_failed_logins: "Αποκλεισμός χρήστη μετά από τον αριθμό από αποτυχημένες προσπάθειες σύνδεσης"
+  setting_brute_force_block_minutes: "Χρόνος αποκλεισμού του χρήστη"
+  setting_cache_formatted_text: "Μορφοποιημένο κείμενο cache"
+  setting_use_wysiwyg_description: "Επιλέξτε για να ενεργοποιήσετε τον συντάκτη CKEditor5 WYSIWYG για όλους τους χρήστες από προεπιλογή. Ο CKEditor έχει περιορισμένη λειτουργικότητα για GFM Markdown."
+  setting_column_options: "Default work package lists columns"
+  setting_commit_fix_keywords: "Επιδιόρθωση λέξεων-κλειδιά"
+  setting_commit_logs_encoding: "Κωδικοποίηση μηνυμάτων δέσμευσης"
+  setting_commit_logtime_activity_id: "Δραστηριότητα για τον καταγεγραμμένο χρόνο"
+  setting_commit_logtime_enabled: "Ενεργοποίηση καταγραφής χρόνου"
+  setting_commit_ref_keywords: "Αναφορά σε λέξεις-κλειδιά"
+  setting_consent_time: "Συγκατάθεση χρόνου"
+  setting_consent_info: "Κείμενο πληροφοριών συγκατάθεσης"
+  setting_consent_required: "Απαιτείται συγκατάθεση"
+  setting_consent_decline_mail: "Συγκατάθεση επικοινωνίας διεύθυνσης email"
+  setting_cross_project_work_package_relations: "Επιτρέψτε συσχετισμό πακέτων εργασίας μεταξύ έργων"
+  setting_first_week_of_year: "Η πρώτη εβδομάδα του έτους περιέχει"
+  setting_date_format: "Ημερομηνία"
+  setting_default_language: "Προεπιλεγμένη γλώσσα"
+  setting_default_projects_modules: "Ενότητα ενεργοποιημένες από προεπιλογή για τα νέα έργα"
+  setting_default_projects_public: "Τα νέα έργα είναι δημόσια από προεπιλογή"
+  setting_disable_password_login: "Disable password authentication"
+  setting_diff_max_lines_displayed: "Εμφανίζεται ο μέγιστος αριθμός γραμμών diff"
+  setting_omniauth_direct_login_provider: "Direct login SSO provider"
+  setting_display_subprojects_work_packages: "Εμφάνιση πακέτων εργασίας υποέργων στα κύρια έργα από προεπιλογή"
+  setting_duration_format: "Duration format"
+  setting_duration_format_hours_only: "Hours only"
+  setting_duration_format_days_and_hours: "Days and hours"
+  setting_duration_format_instructions: "This defines how Work, Remaining work, and Time spent durations are displayed."
+  setting_emails_footer: "Υποσέλιδο των email"
+  setting_emails_header: "Επικεφαλίδα email"
+  setting_email_login: "Χρησιμοποιήστε email για είσοδο"
+  setting_enabled_scm: "Ενεργοποίηση SCM"
+  setting_enabled_projects_columns: "Columns in a projects list displayed by default"
+  setting_feeds_enabled: "Ενεργοποίηση Τροφοδοσιών"
+  setting_ical_enabled: "Enable iCalendar subscriptions"
+  setting_feeds_limit: "Όριο συγκατάθεσης τροφοδοσίας"
+  setting_file_max_size_displayed: "Μέγιστο μέγεθος αρχείων κειμένου που εμφανίζονται inline"
+  setting_host_name: "Όνομα εξυπηρετητή"
+  setting_collaborative_editing_hocuspocus_url: "Hocuspocus server URL"
+  setting_collaborative_editing_hocuspocus_secret: "Hocuspocus server secret"
+  setting_hours_per_day: "Hours per day"
+  setting_hours_per_day_explanation: >-
+    This defines what is considered a "day" when displaying duration in days and hours (for example, if a day is 8 hours, 32 hours would be 4 days).
+  setting_invitation_expiration_days: "Το μήνυμα ενεργοποίησης λήγει μετά από"
+  setting_invitation_expiration_days_caption: "Number of days after which the activation email expires."
+  setting_work_package_done_ratio: "Progress calculation mode"
+  setting_work_package_done_ratio_field: "Work-based"
+  setting_work_package_done_ratio_field_caption_html: >-
+    <i>% Complete</i> can be freely set to any value. If you optionally enter a value for <i>Work</i>, <i>Remaining work</i> will automatically be derived.
+  setting_work_package_done_ratio_status: "Status-based"
+  setting_work_package_done_ratio_status_caption_html: >-
+    Each status has a <i>% Complete</i> value associated with it. Changing status will change <i>% Complete</i>.
+  setting_work_package_done_ratio_explanation_html: >
+    In <b>work-based</b> mode, % Complete can be freely set to any value. If you optionally enter a value for Work, Remaining work will automatically be derived. In <b>status-based</b> mode, each status has a % Complete value associated with it. Changing status will change % Complete.
+  setting_work_package_properties: "Ιδιότητες πακέτου εργασίας"
+  setting_work_package_startdate_is_adddate: "Χρήση σημερινής ημερομηνίας ως ημερομηνία έναρξης για νέα πακέτα εργασίας"
+  setting_work_packages_projects_export_limit: "Work packages / Projects export limit"
+  setting_journal_aggregation_time_minutes: "User actions aggregated within"
+  setting_log_requesting_user: "Καταγραφή των στοιχείων εισόδου, του ονόματος και της διεύθυνσης email του χρήστη για όλα τα αιτήματα"
+  setting_login_required: "Απαιτείται ταυτοποίηση"
+  setting_login_required_caption: "When checked, all requests to the application have to be authenticated."
+  setting_lost_password: "Enable password reset"
+  setting_lost_password_caption: "When checked, allow users to reset their own passwords."
+  setting_mail_from: "Διεύθυνση email μετάδοσης"
+  setting_mail_handler_api_key: "Κλειδί API"
+  setting_mail_handler_body_delimiters: "Περικοπή των email μετά από μια από αυτές τις γραμμές"
+  setting_mail_handler_body_delimiter_regex: "Περικοπή των email που ταιριάζουμε με αυτό το regex"
+  setting_mail_handler_ignore_filenames: "Συνημμένα mail που αγνοήθηκαν"
+  setting_new_project_user_role_id: "Ο ρόλος δόθηκε σε μη-διαχειριστή χρήστη ο οποίος δημιουργεί ένα έργο"
+  setting_new_project_send_confirmation_email: "Send notification to author when creating a new project"
+  setting_new_project_notification_text: "Notification text"
+  setting_password_active_rules: "Ενεργές κλάσεις χαρακτήρων"
+  setting_password_count_former_banned: "Αριθμός των πιο προσφάτως χρησιμοποιημένων κωδικών πρόσβασης που απαγορεύτηκε η επαναχρησιμοποίηση τους"
+  setting_password_days_valid: "Αριθμός των ημερών, μετά τις οποίες θα επιβληθεί αλλαγή του κωδικού πρόσβασης"
+  setting_password_min_length: "Ελάχιστο μήκος"
+  setting_password_min_adhered_rules: "Ελάχιστος αριθμός των απαιτούμενων κλάσεων"
+  setting_per_page_options: "Αντικείμενα ανά σελίδα επιλογών"
   setting_percent_complete_on_status_closed: "% Complete when status is closed"
   setting_percent_complete_on_status_closed_no_change: No change
   setting_percent_complete_on_status_closed_no_change_caption_html: The value of <i>% Complete</i> will not change even when a work package is closed.
@@ -5421,15 +5358,13 @@ el:
       not_writable: The setting is not writable and can only be changed by a sysadmin.
       failed_to_update: 'Setting ''%{name}'' could not be updated: %{message}'
     authentication:
-      login: Σύνδεση
-      registration: Registration
-      sso: Single Sign-On (SSO)
-      omniauth_direct_login_hint_html: 'If this option is active, login requests will redirect to the configured omniauth provider. The login dropdown and sign-in page will be disabled. <br/> <strong>Note:</strong> Unless you also disable password logins, with this option enabled, users can still log in internally by visiting the <code>%{internal_path}</code> login page.
-
-        '
-      remapping_existing_users_hint: 'If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the OpenProject instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
-
-        '
+      login: "Σύνδεση"
+      registration: "Registration"
+      sso: "Single Sign-On (SSO)"
+      omniauth_direct_login_hint_html: >
+        If this option is active, login requests will redirect to the configured omniauth provider. The login dropdown and sign-in page will be disabled. <br/> <strong>Note:</strong> Unless you also disable password logins, with this option enabled, users can still log in internally by visiting the <code>%{internal_path}</code> login page.
+      remapping_existing_users_hint: >
+        If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the Yojana instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
     attachments:
       whitelist_text_html: 'Define a list of valid file extensions and/or mime types for uploaded files. <br/> Enter file extensions (e.g., <code>%{ext_example}</code>) or mime types (e.g., <code>%{mime_example}</code>). <br/> Leave empty to allow any file type to be uploaded. Multiple values allowed (one line for each value).
 
@@ -5458,10 +5393,9 @@ el:
       modes:
         clamav_socket_html: Enter the socket to the clamd daemon, e.g., %{example}
         clamav_host_html: Enter the hostname and port to the clamd daemon separated by colon. e.g., %{example}
-        description_html: 'Select the mode in which the antivirus scanner integration should operate. <br/> <ul> <li><strong>%{disabled_option}</strong>: Uploaded files are not scanned for viruses.</li> <li><strong>%{socket_option}</strong>: You have set up ClamAV on the same server as OpenProject and the scan daemon clamd is running in the background</li> <li><strong>%{host_option}</strong>: You are streaming files to an external virus scanning host.</li> </ul>
-
-          '
-    brute_force_prevention: Αυτόματο μπλοκάρισμα χρήστη
+        description_html: >
+          Select the mode in which the antivirus scanner integration should operate. <br/> <ul> <li><strong>%{disabled_option}</strong>: Uploaded files are not scanned for viruses.</li> <li><strong>%{socket_option}</strong>: You have set up ClamAV on the same server as Yojana and the scan daemon clamd is running in the background</li> <li><strong>%{host_option}</strong>: You are streaming files to an external virus scanning host.</li> </ul>
+    brute_force_prevention: "Αυτόματο μπλοκάρισμα χρήστη"
     date_format:
       first_date_of_week_and_year_set: 'If either options "%{day_of_week_setting_name}" or "%{first_week_setting_name}" are set, the other has to be set as well to avoid inconsistencies in the frontend.
 
@@ -5470,8 +5404,8 @@ el:
 
         '
     experimental:
-      save_confirmation: Caution! Risk of data loss! Only activate experimental features if you do not mind breaking your OpenProject installation and losing all of its data.
-      warning_toast: Feature flags are settings that activate features that are still under development. They shall only be used for testing purposes. They shall never be activated on OpenProject installations holding important data. These features will very likely corrupt your data. Use them at your own risk.
+      save_confirmation: Caution! Risk of data loss! Only activate experimental features if you do not mind breaking your Yojana installation and losing all of its data.
+      warning_toast: Feature flags are settings that activate features that are still under development. They shall only be used for testing purposes. They shall never be activated on Yojana installations holding important data. These features will very likely corrupt your data. Use them at your own risk.
       feature_flags: Feature flags
     general: Γενικά
     highlighting:
@@ -5482,7 +5416,7 @@ el:
         type: Ολόκληρη η σειρά ανά Τύπο
         priority: Ολόκληρη η σειρά ανά Προτεραιότητα
     icalendar:
-      enable_subscriptions_text_html: Allows users with the necessary permissions to subscribe to OpenProject calendars and access work package information via an external calendar client. <strong>Note:</strong> Please read about <a href="%{link}" target="_blank">iCalendar subscriptions</a> to understand potential security risks before enabling this.
+      enable_subscriptions_text_html: Allows users with the necessary permissions to subscribe to Yojana calendars and access work package information via an external calendar client. <strong>Note:</strong> Please read about <a href="%{link}" target="_blank">iCalendar subscriptions</a> to understand potential security risks before enabling this.
     language_name_being_default: "%{language_name} (default)"
     notifications:
       events_explanation: Governs for which event an email is sent out. Work packages are excluded from this list as the notifications for them can be configured specifically for every user.
@@ -5516,9 +5450,8 @@ el:
               label: Side panel
               description: Add all the project attributes in a section inside the right side panel in the project overview.
     project_initiation_request:
-      header_description: 'OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
-
-        '
+      header_description: >
+        Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
       status:
         submitted: "%{wizard_name} has been submitted"
         submitted_description: Click the button below to go to the work package for the submission process.
@@ -5530,8 +5463,8 @@ el:
         project_creation_wizard: Open project creation wizard
         project_mandate: Open project mandate
       blankslate:
-        title: Initiation request not enabled
-        description: OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard.
+        title: "Initiation request not enabled"
+        description: "Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard."
       disable_dialog:
         title: Disable project initiation request
         heading: Disable this project initiation request?
@@ -5636,81 +5569,64 @@ el:
   status_deleted: διαγραμμένο
   support:
     array:
-      sentence_connector: και
-      skip_last_comma: ψευδές
-  text_accessibility_hint: Ο τρόπος προσβασιμότητας έχει σχεδιαστεί για χρήστες τυφλούς, με κινητικά προβλήματα ή με κακή όραση. Για τα τελευταία αυτά τα στοιχεία είναι ειδικά επισημασμένα. Σημειώστε ότι η ενότητα Backlogs δεν είναι διαθέσιμη σε αυτή τη λειτουργία.
-  text_access_token_hint: Τα tokens πρόσβασης σας επιτρέπουν να δώσετε πρόσβαση σε εξωτερικές εφαρμογές σε πόρους μέσα στο OpenProject.
-  text_analyze: 'Περαιτέρω ανάλυση: %{subject}'
-  text_are_you_sure: Είστε σίγουρος/η;
-  open_link_in_a_new_tab: Open link in a new tab
-  text_are_you_sure_continue: Are you sure you want to continue?
-  text_are_you_sure_with_children: Διαγραφή πακέτου εργασίας και όλων των πακέτων-παιδιά;
-  text_are_you_sure_with_project_custom_fields: Deleting this attribute will also delete its values in all projects. Are you sure you want to do this?
-  text_are_you_sure_with_project_life_cycle_step: Deleting this phase will also delete its usages in all projects. Are you sure you want to do this?
-  text_assign_to_project: Ανάθεση στο έργο
-  text_form_configuration: 'Μπορείτε να διαμορφώσετε σε ποια πεδία θα εμφανίζονται στις φόρμες πακέτων εργασίας. Μπορείτε ελεύθερα να ομαδοποιήσετε τα πεδία ώστε να αντικατοπτρίζουν τις ανάγκες του τομέα σας.
-
-    '
-  text_form_configuration_required_attribute: Το χαρακτηριστικό είναι μαρκαρισμένο ως υποχρεωτικό και επομένως εμφανίζεται πάντα
-  text_caracters_maximum: μέγιστος αριθμός %{count} χαρακτήρες.
-  text_caracters_minimum: Πρέπει να περιέχει τουλάχιστον %{count} χαρακτήρες.
-  text_comma_separated: Επιτρέπονται πολλαπλές τιμές (χωρισμένες με κόμμα).
-  text_comment_wiki_page: 'Σχολιάστε τη σελίδα wiki: %{page}'
-  text_custom_field_possible_values_info: Μία γραμμή για κάθε τιμή
-  text_custom_field_hint_activate_per_project: 'Όταν χρησιμοποιείτε προσαρμοσμένα πεδία: Θυμηθείτε ότι τα προσαρμοσμένα πεδία πρέπει να ενεργοποιημένα και ανά έργο.
-
-    '
-  text_custom_field_hint_activate_per_project_and_type: 'Τα προσαρμοσμένα πεδία πρέπει να είναι ενεργοποιημένα ανά τύπο πακέτου εργασίας και ανά έργο.
-
-    '
-  text_project_custom_field_html: 'The Enterprise edition will add these additional add-ons for projects'' custom fields: <br> <ul> <li><b>Add custom fields for projects to your Project list to create a project portfolio view</b></li> </ul>
-
-    '
-  text_custom_logo_instructions: 'The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×47px image. You can add as much spacing inside that image as you like.
-
-    '
-  text_custom_logo_mobile_instructions: 'The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×33px image. You can add as much spacing inside that image as you like.
-
-    '
-  text_custom_export_logo_instructions: 'This is the logo that appears in your PDF exports. It needs to be a PNG or JPEG image file. A black or colored logo on transparent or white background is recommended.
-
-    '
-  text_custom_export_cover_instructions: 'This is the image that appears in the background of a cover page in your PDF exports. It needs to be an about 800px width by 500px height sized PNG or JPEG image file.
-
-    '
-  text_custom_export_footer_instructions: 'PDF exports will include a graphical element positioned to the left of the footer. This image must be a PNG or JPEG file with approximately 200 pixels in width.
-
-    '
-  label_custom_export_font_instructions: 'Upload and manage custom TrueType (.ttf) fonts used in your PDF exports. For best results, use matching files from the same font family. If no font is provided, the default NotoSans font will be used.
-
-    '
-  label_custom_export_images_instructions: 'Upload and manage custom image files used in your PDF exports.
-
-    '
-  text_custom_export_font_regular_instructions: 'This is the font file for regular text. It needs to be in TTF format and is required.
-
-    '
-  text_custom_export_font_bold_instructions: 'This is the font file for bold text. It needs to be in TTF format.
-
-    '
-  text_custom_export_font_italic_instructions: 'This is the font file for italic text. It needs to be in TTF format.
-
-    '
-  text_custom_export_font_bold_italic_instructions: 'This is the font file for bold and italic text. It needs to be in TTF format.
-
-    '
-  text_custom_favicon_instructions: 'This is the tiny icon that appears in your browser window/tab next to the page''s title. It needs to be a squared 32 by 32 pixels sized PNG image file with a transparent background.
-
-    '
-  text_custom_touch_icon_instructions: 'This is the icon that appears in your mobile or tablet when you place a bookmark on your homescreen. It needs to be a squared 180 by 180 pixels sized PNG image file. Please make sure the image''s background is not transparent otherwise it will look bad on iOS.
-
-    '
-  text_database_allows_tsv: Η βάση δεδομένων επιτρέπει TSVector (προαιρετικό)
-  text_default_administrator_account_changed: Ο προεπιλεγμένος λογαριασμός του διαχειριστή άλλαξε
-  text_default_encoding: 'Προεπιλογή: UTF-8'
-  text_destroy: Διαγραφή
-  text_destroy_with_associated: 'There are additional objects associated with the work package(s) that are to be deleted. Those objects are of the following types:'
-  text_destroy_what_to_do: Τι θέλετε να κάνετε;
+      sentence_connector: "και"
+      skip_last_comma: "ψευδές"
+  text_accessibility_hint: "Ο τρόπος προσβασιμότητας έχει σχεδιαστεί για χρήστες τυφλούς, με κινητικά προβλήματα ή με κακή όραση. Για τα τελευταία αυτά τα στοιχεία είναι ειδικά επισημασμένα. Σημειώστε ότι η ενότητα Backlogs δεν είναι διαθέσιμη σε αυτή τη λειτουργία."
+  text_access_token_hint: "Τα tokens πρόσβασης σας επιτρέπουν να δώσετε πρόσβαση σε εξωτερικές εφαρμογές σε πόρους μέσα στο Yojana."
+  text_analyze: "Περαιτέρω ανάλυση: %{subject}"
+  text_are_you_sure: "Είστε σίγουρος/η;"
+  open_link_in_a_new_tab: "Open link in a new tab"
+  text_are_you_sure_continue: "Are you sure you want to continue?"
+  text_are_you_sure_with_children: "Διαγραφή πακέτου εργασίας και όλων των πακέτων-παιδιά;"
+  text_are_you_sure_with_project_custom_fields: "Deleting this attribute will also delete its values in all projects. Are you sure you want to do this?"
+  text_are_you_sure_with_project_life_cycle_step: "Deleting this phase will also delete its usages in all projects. Are you sure you want to do this?"
+  text_assign_to_project: "Ανάθεση στο έργο"
+  text_form_configuration: >
+    Μπορείτε να διαμορφώσετε σε ποια πεδία θα εμφανίζονται στις φόρμες πακέτων εργασίας. Μπορείτε ελεύθερα να ομαδοποιήσετε τα πεδία ώστε να αντικατοπτρίζουν τις ανάγκες του τομέα σας.
+  text_form_configuration_required_attribute: "Το χαρακτηριστικό είναι μαρκαρισμένο ως υποχρεωτικό και επομένως εμφανίζεται πάντα"
+  text_caracters_maximum: "μέγιστος αριθμός %{count} χαρακτήρες."
+  text_caracters_minimum: "Πρέπει να περιέχει τουλάχιστον %{count} χαρακτήρες."
+  text_comma_separated: "Επιτρέπονται πολλαπλές τιμές (χωρισμένες με κόμμα)."
+  text_comment_wiki_page: "Σχολιάστε τη σελίδα wiki: %{page}"
+  text_custom_field_possible_values_info: "Μία γραμμή για κάθε τιμή"
+  text_custom_field_hint_activate_per_project: >
+    Όταν χρησιμοποιείτε προσαρμοσμένα πεδία: Θυμηθείτε ότι τα προσαρμοσμένα πεδία πρέπει να ενεργοποιημένα και ανά έργο.
+  text_custom_field_hint_activate_per_project_and_type: >
+    Τα προσαρμοσμένα πεδία πρέπει να είναι ενεργοποιημένα ανά τύπο πακέτου εργασίας και ανά έργο.
+  text_project_custom_field_html: >
+    The Enterprise edition will add these additional add-ons for projects' custom fields: <br> <ul> <li><b>Add custom fields for projects to your Project list to create a project portfolio view</b></li> </ul>
+  text_custom_logo_instructions: >
+    The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×47px image. You can add as much spacing inside that image as you like.
+  text_custom_logo_mobile_instructions: >
+    The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×33px image. You can add as much spacing inside that image as you like.
+  text_custom_export_logo_instructions: >
+    This is the logo that appears in your PDF exports. It needs to be a PNG or JPEG image file. A black or colored logo on transparent or white background is recommended.
+  text_custom_export_cover_instructions: >
+    This is the image that appears in the background of a cover page in your PDF exports. It needs to be an about 800px width by 500px height sized PNG or JPEG image file.
+  text_custom_export_footer_instructions: >
+    PDF exports will include a graphical element positioned to the left of the footer. This image must be a PNG or JPEG file with approximately 200 pixels in width.
+  label_custom_export_font_instructions: >
+    Upload and manage custom TrueType (.ttf) fonts used in your PDF exports. For best results, use matching files from the same font family. If no font is provided, the default NotoSans font will be used.
+  label_custom_export_images_instructions: >
+    Upload and manage custom image files used in your PDF exports.
+  text_custom_export_font_regular_instructions: >
+    This is the font file for regular text. It needs to be in TTF format and is required.
+  text_custom_export_font_bold_instructions: >
+    This is the font file for bold text. It needs to be in TTF format.
+  text_custom_export_font_italic_instructions: >
+    This is the font file for italic text. It needs to be in TTF format.
+  text_custom_export_font_bold_italic_instructions: >
+    This is the font file for bold and italic text. It needs to be in TTF format.
+  text_custom_favicon_instructions: >
+    This is the tiny icon that appears in your browser window/tab next to the page's title. It needs to be a squared 32 by 32 pixels sized PNG image file with a transparent background.
+  text_custom_touch_icon_instructions: >
+    This is the icon that appears in your mobile or tablet when you place a bookmark on your homescreen. It needs to be a squared 180 by 180 pixels sized PNG image file. Please make sure the image's background is not transparent otherwise it will look bad on iOS.
+  text_database_allows_tsv: "Η βάση δεδομένων επιτρέπει TSVector (προαιρετικό)"
+  text_default_administrator_account_changed: "Ο προεπιλεγμένος λογαριασμός του διαχειριστή άλλαξε"
+  text_default_encoding: "Προεπιλογή: UTF-8"
+  text_destroy: "Διαγραφή"
+  text_destroy_with_associated: "Υπάρχουν επιπλέον αντικείμενα μαζί με το πακέτο εργασίας που πρόκειται να διαγραφεί. Τα αντικείμενα αυτά είναι των παρακάτω τύπων:"
+  text_destroy_what_to_do: "Τι θέλετε να κάνετε;"
   text_diff_truncated: "... Αυτό το diff περικόπηκε επειδή υπερβαίνει το μέγιστο μέγεθος που μπορεί να εμφανιστεί."
   text_email_delivery_not_configured: |-
     Η διανομή email δεν είναι διαμορφωμένη και οι ειδοποιήσεις είναι απενεργοποιημένες.
@@ -5751,41 +5667,30 @@ el:
   text_line_separated: Επιτρέπονται πολλαπλές τιμές (μία γραμμή για κάθε τιμή).
   text_load_default_configuration: Φόρτωση προεπιλεγμένων ρυθμίσεων διαμόρφωσης
   text_no_roles_defined: Δεν έχουν οριστεί ρόλοι.
-  text_no_access_tokens_configurable: Δεν υπάρχουν tokens πρόσβασης που μπορούν να διαμορφωθούν.
-  text_no_configuration_data: |-
-    Οι ρόλοι, οι τύποι, η καταστάσεις των πακέτων εργασίας και η ροή εργασίας δεν έχουν ρυθμιστεί ακόμα.
-    Συνιστάται ιδιαίτερα να φορτώσετε τις προεπιλεγμένες ρυθμίσεις. Θα είστε σε θέση να τις τροποποιήσετε μετά τη φόρτωση τους.
-  text_no_notes: Δεν υπάρχουν διαθέσιμα σχόλια για αυτό το πακέτο εργασίας.
-  text_notice_too_many_values_are_inperformant: 'Σημείωση: Η εμφάνιση περισσότερων από 100 αντικειμένων ανά σελίδα μπορεί να αυξήσει τον χρόνο φόρτωσης της σελίδας.'
-  text_notice_security_badge_displayed_html: 'Σημείωση: Εάν ενεργοποιηθεί, θα εμφανιστεί ένα σήμα με την κατάσταση της εγκατάστασής σας στον <a href="%{information_panel_path}">%{information_panel_label}</a> πίνακα διαχείρισης, καθώς και στην αρχική σελίδα. Εμφανίζεται μόνο στους διαχειριστές. <br/> Το σήμα θα ελέγξει την τρέχουσα έκδοση του OpenProject σε σύγκριση με την επίσημη βάση δεδομένων εκδόσεων OpenProject για να σας ειδοποιήσει ενημερώσεις ή γνωστές ευπάθειες. Για περισσότερες πληροφορίες στο τι παρέχει αυτός ο έλεγχος, τι δεδομένα χρειάζονται για να παρέχονται οι διαθέσιμες ενημερώσεις και πως να απενεργοποιήσετε αυτό τον έλεγχο, παρακαλούμε επισκεφθείτε την <a href="%{more_info_url}"> τεκμηρίωση διαμόρφωσης</a>.
-
-    '
-  text_own_membership_delete_confirmation: |-
-    Πρόκειται να αφαιρέσετε μερικά ή όλα τα δικαιώματα και ενδέχεται να μην μπορείτε να επεξεργαστείτε πλέον το έργο μετά από αυτό.
-    Είστε βέβαιοι ότι θέλετε να συνεχίσετε;
-  text_permanent_delete_confirmation_checkbox_label: I understand that this deletion cannot be reversed
-  text_permanent_remove_confirmation_checkbox_label: I understand that this removal cannot be reversed
-  text_plugin_assets_writable: Εγγράψιμος κατάλογος plugin assets
-  text_powered_by: Υποστηρίζεται από %{link}
-  text_project_identifier_info: Επιτρέπονται μόνο πεζά γράμματα (α-ω), αριθμοί, παύλες και κάτω παύλες, πρέπει να αρχίζουν με πεζό γράμμα.
-  text_project_identifier_description: The project identifier is prepended to all work package IDs. If the identifier is "PROJ" for example, the work package identifier will be "PROJ-12" or "PROJ-246".
-  text_project_identifier_url_description: The project identifier is included in the URL of the project.
-  text_project_identifier_handle_format: Must start with a letter and contain only uppercase letters, numbers, and underscores (max 10 characters).
-  text_project_identifier_format: Must start with a lowercase letter. Only lowercase letters (a-z), numbers, dashes and underscores are allowed.
-  text_reassign: 'Επανεκχώρηση στο πακέτα εργασίας:'
-  text_regexp_multiline: Το regex εφαρμόστηκε σε μια λειτουργία πολλαπλών γραμμών. π.χ., ^---\s+
-  text_rename_wiki_page: Rename wiki page
-  text_repository_usernames_mapping: |-
-    Επιλέξτε ή ενημερώστε τον χρήστη OpenProject που αντιστοιχεί σε κάθε όνομα χρήστη στο ιστορικό του αποθετηρίου.
-    Χρήστες με το ίδιο όνομα χρήστη στο OpenProject και το αποθετήριο ή email αντιστοιχίζονται αυτόματα.
-  text_status_changed_by_changeset: Εφαρμόστηκε στις αλλαγές %{value}.
-  text_table_difference_description: Σε αυτό τον πίνακα εμφανίζονται τα μοναδικά %{entries}. Μπορείτε να εμφανίσετε τη διαφορά μεταξύ δύο οποιονδήποτε καταχωρήσεων επιλέγοντας πρώτα τα αντίστοιχα checkboxes στον πίνακα. Όταν κάνετε κλικ στο κουμπί κάτω από τον πίνακα θα εμφανιστούν οι διαφορές.
-  text_time_logged_by_changeset: Εφαρμόστηκε στις αλλαγές %{value}.
-  text_tip_work_package_begin_day: πακέτο εργασίας που ξεκινάει αυτή την ημέρα
-  text_tip_work_package_begin_end_day: πακέτο εργασίας που ξεκινάει και λήγει αυτή την ημέρα
-  text_tip_work_package_end_day: πακέτο εργασίας που λήγει αυτή την ημέρα
-  text_type_no_workflow: Δεν έχει οριστεί ροή εργασίας για αυτό τον τύπο
-  text_unallowed_characters: Μη επιτρεπόμενοι χαρακτήρες
+  text_no_access_tokens_configurable: "Δεν υπάρχουν tokens πρόσβασης που μπορούν να διαμορφωθούν."
+  text_no_configuration_data: "Οι ρόλοι, οι τύποι, η καταστάσεις των πακέτων εργασίας και η ροή εργασίας δεν έχουν ρυθμιστεί ακόμα.\nΣυνιστάται ιδιαίτερα να φορτώσετε τις προεπιλεγμένες ρυθμίσεις. Θα είστε σε θέση να τις τροποποιήσετε μετά τη φόρτωση τους."
+  text_no_notes: "Δεν υπάρχουν διαθέσιμα σχόλια για αυτό το πακέτο εργασίας."
+  text_notice_too_many_values_are_inperformant: "Σημείωση: Η εμφάνιση περισσότερων από 100 αντικειμένων ανά σελίδα μπορεί να αυξήσει τον χρόνο φόρτωσης της σελίδας."
+  text_notice_security_badge_displayed_html: >
+    Σημείωση: Εάν ενεργοποιηθεί, θα εμφανιστεί ένα σήμα με την κατάσταση της εγκατάστασής σας στον <a href="%{information_panel_path}">%{information_panel_label}</a> πίνακα διαχείρισης, καθώς και στην αρχική σελίδα. Εμφανίζεται μόνο στους διαχειριστές. <br/> Το σήμα θα ελέγξει την τρέχουσα έκδοση του Yojana σε σύγκριση με την επίσημη βάση δεδομένων εκδόσεων Yojana για να σας ειδοποιήσει ενημερώσεις ή γνωστές ευπάθειες. Για περισσότερες πληροφορίες στο τι παρέχει αυτός ο έλεγχος, τι δεδομένα χρειάζονται για να παρέχονται οι διαθέσιμες ενημερώσεις και πως να απενεργοποιήσετε αυτό τον έλεγχο, παρακαλούμε επισκεφθείτε την <a href="%{more_info_url}"> τεκμηρίωση διαμόρφωσης</a>.
+  text_own_membership_delete_confirmation: "Πρόκειται να αφαιρέσετε μερικά ή όλα τα δικαιώματα και ενδέχεται να μην μπορείτε να επεξεργαστείτε πλέον το έργο μετά από αυτό.\nΕίστε βέβαιοι ότι θέλετε να συνεχίσετε;"
+  text_permanent_delete_confirmation_checkbox_label: "I understand that this deletion cannot be reversed"
+  text_permanent_remove_confirmation_checkbox_label: "I understand that this removal cannot be reversed"
+  text_plugin_assets_writable: "Εγγράψιμος κατάλογος plugin assets"
+  text_powered_by: "Υποστηρίζεται από %{link}"
+  text_project_identifier_info: "Επιτρέπονται μόνο πεζά γράμματα (α-ω), αριθμοί, παύλες και κάτω παύλες, πρέπει να αρχίζουν με πεζό γράμμα."
+  text_reassign: "Επανεκχώρηση στο πακέτα εργασίας:"
+  text_regexp_info: "π.χ. ^[A-Z0-9]+$"
+  text_regexp_multiline: 'Το regex εφαρμόστηκε σε μια λειτουργία πολλαπλών γραμμών. π.χ., ^---\s+'
+  text_repository_usernames_mapping: "Επιλέξτε ή ενημερώστε τον χρήστη Yojana που αντιστοιχεί σε κάθε όνομα χρήστη στο ιστορικό του αποθετηρίου.\nΧρήστες με το ίδιο όνομα χρήστη στο Yojana και το αποθετήριο ή email αντιστοιχίζονται αυτόματα."
+  text_status_changed_by_changeset: "Εφαρμόστηκε στις αλλαγές %{value}."
+  text_table_difference_description: "Σε αυτό τον πίνακα εμφανίζονται τα μοναδικά %{entries}. Μπορείτε να εμφανίσετε τη διαφορά μεταξύ δύο οποιονδήποτε καταχωρήσεων επιλέγοντας πρώτα τα αντίστοιχα checkboxes στον πίνακα. Όταν κάνετε κλικ στο κουμπί κάτω από τον πίνακα θα εμφανιστούν οι διαφορές."
+  text_time_logged_by_changeset: "Εφαρμόστηκε στις αλλαγές %{value}."
+  text_tip_work_package_begin_day: "πακέτο εργασίας που ξεκινάει αυτή την ημέρα"
+  text_tip_work_package_begin_end_day: "πακέτο εργασίας που ξεκινάει και λήγει αυτή την ημέρα"
+  text_tip_work_package_end_day: "πακέτο εργασίας που λήγει αυτή την ημέρα"
+  text_type_no_workflow: "Δεν έχει οριστεί ροή εργασίας για αυτό τον τύπο"
+  text_unallowed_characters: "Μη επιτρεπόμενοι χαρακτήρες"
   text_user_invited: Ο χρήστης έχει προσκληθεί και εκκρεμεί η εγγραφή του.
   text_user_wrote: "%{value} έγραψε:"
   text_wrote: wrote
@@ -5847,18 +5752,17 @@ el:
     help_and_support: Βοήθεια και υποστήριξη
   total_progress: Συνολική πρόοδος
   user:
-    all: όλα
-    active: ενεργό
-    activate: Ενεργοποίηση
-    activate_and_reset_failed_logins: Ενεργοποιήστε και επαναφέρετε τις αποτυχημένες συνδέσεις
-    authentication_provider: Πάροχος ταυτοποίησης
-    identity_url_text: The internal unique identifier provided by the authentication provider.
-    authentication_settings_disabled_due_to_external_authentication: 'Αυτός ο χρήστης ταυτοποιείται μέσω ενός εξωτερικού παρόχου ταυτοποίησης, οπότε δεν υπάρχει κωδικός στο OpenProject για να αλλαχθεί.
-
-      '
-    authorization_rejected: Δεν σας επιτρέπεται η σύνδεση.
-    assign_random_password: Ανάθεση τυχαίου κωδικού πρόσβασης (αποστέλνεται στο χρήστη μέσω email)
-    blocked: κλειδωμένο προσωρινά
+    all: "όλα"
+    active: "ενεργό"
+    activate: "Ενεργοποίηση"
+    activate_and_reset_failed_logins: "Ενεργοποιήστε και επαναφέρετε τις αποτυχημένες συνδέσεις"
+    authentication_provider: "Πάροχος ταυτοποίησης"
+    identity_url_text: "The internal unique identifier provided by the authentication provider."
+    authentication_settings_disabled_due_to_external_authentication: >
+      Αυτός ο χρήστης ταυτοποιείται μέσω ενός εξωτερικού παρόχου ταυτοποίησης, οπότε δεν υπάρχει κωδικός στο Yojana για να αλλαχθεί.
+    authorization_rejected: "Δεν σας επιτρέπεται η σύνδεση."
+    assign_random_password: "Ανάθεση τυχαίου κωδικού πρόσβασης (αποστέλνεται στο χρήστη μέσω email)"
+    blocked: "κλειδωμένο προσωρινά"
     blocked_num_failed_logins:
       one: κλειδωμένο προσωρινά (μία αποτυχημένη προσπάθεια σύνδεσης)
       other: κλειδωμένο προσωρινά (%{count} αποτυχημένες προσπάθειες σύνδεσης)
@@ -5889,7 +5793,17 @@ el:
   note_password_login_disabled_link: Password login has been disabled through a [configuration setting](configuration_url).
   warning: Προειδοποίηση
   warning_attachments_not_saved: "%{count} αρχείο(α) δεν μπόρεσαν να αποθηκευτούν."
-  warning_imminent_user_limit_html: 'You invited more users than are supported by your current plan. Invited users may not be able to join your OpenProject environment. Please [upgrade your plan](upgrade_url) or block existing users in order to allow invited and registered users to join.
+  warning_imminent_user_limit: >
+    Προσκαλέσατε περισσότερους χρήστες απ'ότι υποστηρίζεται από το τρέχον πλάνο σας. Οι προσκεκλημένοι χρήστες ενδέχεται να μην μπορούν να συμμετάσχουν στο Yojana περιβάλλον σας. Παρακαλούμε <a href="%{upgrade_url}">αναβαθμίστε το πλάνο σας</a> ή αποκλείστε υπάρχοντες χρήστες για να επιτρέψετε στους προσκεκλημένους και εγγεγραμμένους χρήστες να συμμετάσχουν.
+  warning_registration_token_expired: |
+    Το email ενεργοποίησης έχει λήξει. Σας στείλαμε ένα καινούργιο στο %{email}. Παρακαλούμε πατήστε στον σύνδεσμο μέσα σε αυτό για να ενεργοποιήσετε τον λογαριασμό σας.
+  warning_user_limit_reached: >
+    Adding additional users will exceed the current limit. Please contact an administrator to increase the user limit to ensure external users are able to access this instance.
+  warning_user_limit_reached_admin: >
+    Adding additional users will exceed the current limit. Please <a href="%{upgrade_url}">upgrade your plan</a> to be able to ensure external users are able to access this instance.
+  warning_user_limit_reached_instructions: >
+    You reached your user limit (%{current}/%{max} active users). Please contact sales@girishm.info to upgrade your Enterprise edition plan and add additional users.
+  warning_protocol_mismatch_html: >
 
     '
   warning_registration_token_expired: 'Το email ενεργοποίησης έχει λήξει. Σας στείλαμε ένα καινούργιο στο %{email}. Παρακαλούμε πατήστε στον σύνδεσμο μέσα σε αυτό για να ενεργοποιήσετε τον λογαριασμό σας.
@@ -6187,56 +6101,48 @@ el:
       non_confidential: Non confidential
       default_scopes: "(Προεπιλεγμένα φυσικά αντικείμενα)"
       instructions:
-        enabled: Enable this application, allowing users to perform authorization grants with it.
-        name: Το όνομα τις εφαρμογής. Αυτό θα εμφανίζεται στους υπόλοιπους χρήστες μόλις γίνει η εξουσιοδότηση.
-        redirect_uri_html: 'Τα επιτρεπόμενα URLs στα οποία ανακατευθύνονται οι ταυτοποιημένοι χρήστες. <br/> Αν εγγράφεστε από την εφαρμογή υπολογιστή, χρησιμοποιείστε το ακόλουθο URL.
-
-          '
-        confidential: Ελέγξτε εάν η εφαρμογή θα χρησιμοποιηθεί όταν το μυστικό πελάτη μπορεί να παραμείνει εμπιστευτικό. Οι εγγενείς εφαρμογές για κινητά και οι εφαρμογές μιας σελίδας θεωρούνται μη εμπιστευτικές.
-        scopes: Επιλέξτε τα φυσικά αντικείμενα στα οποία θέλετε να δώσει πρόσβαση η εφαρμογή. Αν δεν επιλεγεί κανένα φυσικό αντικείμενο, θα υποτεθεί api_v3.
-        client_credential_user_id: Προαιρετική ταυτότητα χρήστη για να υποδυθεί όταν οι πελάτες χρησιμοποιούν αυτή την εφαρμογή. Αφήστε κενό για να επιτρέψετε μόνο δημόσια πρόσβαση
-        register_intro: Αν αναπτύσσετε μια εφαρμογή πελάτη OAuth API για το OpenProject, μπορείτε να την καταχωρήσετε χρησιμοποιώντας αυτή τη φόρμα για να μπορούν να τη χρησιμοποιήσουν όλοι οι χρήστες.
-        default_scopes: ''
+        enabled: "Enable this application, allowing users to perform authorization grants with it."
+        name: "Το όνομα τις εφαρμογής. Αυτό θα εμφανίζεται στους υπόλοιπους χρήστες μόλις γίνει η εξουσιοδότηση."
+        redirect_uri_html: >
+          Τα επιτρεπόμενα URLs στα οποία ανακατευθύνονται οι ταυτοποιημένοι χρήστες. <br/> Αν εγγράφεστε από την εφαρμογή υπολογιστή, χρησιμοποιείστε το ακόλουθο URL.
+        confidential: "Ελέγξτε εάν η εφαρμογή θα χρησιμοποιηθεί όταν το μυστικό πελάτη μπορεί να παραμείνει εμπιστευτικό. Οι εγγενείς εφαρμογές για κινητά και οι εφαρμογές μιας σελίδας θεωρούνται μη εμπιστευτικές."
+        scopes: "Επιλέξτε τα φυσικά αντικείμενα στα οποία θέλετε να δώσει πρόσβαση η εφαρμογή. Αν δεν επιλεγεί κανένα φυσικό αντικείμενο, θα υποτεθεί api_v3."
+        client_credential_user_id: "Προαιρετική ταυτότητα χρήστη για να υποδυθεί όταν οι πελάτες χρησιμοποιούν αυτή την εφαρμογή. Αφήστε κενό για να επιτρέψετε μόνο δημόσια πρόσβαση"
+        register_intro: "Αν αναπτύσσετε μια εφαρμογή πελάτη OAuth API για το Yojana, μπορείτε να την καταχωρήσετε χρησιμοποιώντας αυτή τη φόρμα για να μπορούν να τη χρησιμοποιήσουν όλοι οι χρήστες."
+        default_scopes: ""
     header:
       builtin_applications: Built-in OAuth applications
       other_applications: Other OAuth applications
     empty_application_lists: No OAuth applications have been registered.
-    client_id: Ταυτότητα Πελάτη
-    client_secret_notice: 'Αυτή είναι η μόνη φορά που μπορούμε να τυπώσουμε το μυστικό πελάτη, παρακαλούμε σημειώστε το και κρατήστε το ασφαλές. Θα πρέπει να το χειρίζεστε ως κωδικό πρόσβασης και δεν μπορεί να ανακτηθεί από το OpenProject αργότερα.
-
-      '
+    client_id: "Ταυτότητα Πελάτη"
+    client_secret_notice: >
+      Αυτή είναι η μόνη φορά που μπορούμε να τυπώσουμε το μυστικό πελάτη, παρακαλούμε σημειώστε το και κρατήστε το ασφαλές. Θα πρέπει να το χειρίζεστε ως κωδικό πρόσβασης και δεν μπορεί να ανακτηθεί από το Yojana αργότερα.
     authorization_dialog:
-      authorize: Εξουσιοδότηση
-      cancel: Ακύρωση και απόρριψη εξουσιοδότησης.
-      prompt_html: Εξουσιοδότηση του <strong>%{application_name}</strong> για να χρησιμοποιήσετε τον λογαριασμό σας <em>%{login}</em>;
-      title: Εξουσιοδότηση %{application_name}
-      wants_to_access_html: 'Αυτή η εφαρμογή ζητάει άδεια πρόσβασης στον OpenProject λογαριασμό σας. <br/> <strong>Έχει ζητήσει τις ακόλουθες άδειες:</strong>
-
-        '
+      authorize: "Εξουσιοδότηση"
+      cancel: "Ακύρωση και απόρριψη εξουσιοδότησης."
+      prompt_html: "Εξουσιοδότηση του <strong>%{application_name}</strong> για να χρησιμοποιήσετε τον λογαριασμό σας <em>%{login}</em>;"
+      title: "Εξουσιοδότηση %{application_name}"
+      wants_to_access_html: >
+        Αυτή η εφαρμογή ζητάει άδεια πρόσβασης στον Yojana λογαριασμό σας. <br/> <strong>Έχει ζητήσει τις ακόλουθες άδειες:</strong>
     scopes:
-      api_v3: Πλήρη πρόσβαση API v3
-      api_v3_text: Η εφαρμογή θα αποκτήσει πλήρη πρόσβαση ανάγνωσης και εγγραφής στο API v3 του OpenProject για να εκτελέσει ενέργειες εκ μέρους σας.
-      mcp: Access to MCP
-      mcp_text: Application will receive access to the OpenProject MCP endpoints. They are a limited subset of APIv3, that's tailored for usage with AI agents.
+      api_v3: "Πλήρη πρόσβαση API v3"
+      api_v3_text: "Η εφαρμογή θα αποκτήσει πλήρη πρόσβαση ανάγνωσης και εγγραφής στο API v3 του Yojana για να εκτελέσει ενέργειες εκ μέρους σας."
     grants:
       created_date: Εγκρίθηκε στις
       scopes: Δικαιώματα
       successful_application_revocation: Η εφαρμογή %{application_name} ανακλήθηκε επιτυχώς.
       none_given: Δεν υπάρχουν OAuth εφαρμογές που να έχουν πρόσβαση στο λογαριασμό σας.
     flows:
-      authorization_code: Ροή κώδικα εξουσιοδότησης
-      client_credentials: Ροή διαπιστευτηρίων πελάτη
-    client_credentials: Ο χρήστης που χρησιμοποιήθηκε για τα διαπιστευτήρια Πελάτη
-    client_credentials_impersonation_set_to: Ο χρήστης διαπιστευτηρίων πελάτη ορίστηκε σε
-    client_credentials_impersonation_warning: 'Σημείωση: Οι πελάτες που χρησιμοποιούν τη ροή ''διαπιστευτήρια Πελάτη'' σε αυτή την εφαρμογή θα έχουν τα δικαιώματα αυτού του χρήστη'
-    client_credentials_impersonation_html: 'Από προεπιλογή, το OpenProject παρέχει ταυτοποίηση OAuth 2.0 μέσω %{authorization_code_flow_link}. Μπορείτε προαιρετικά να ενεργοποιήσετε %{client_credentials_flow_link}, αλλά πρέπει να ορίσετε ένα χρήστη, εκ μέρους του οποίου θα εκτελεστούν τα αιτήματα.
-
-      '
-    confirm_revoke_my_application:
-      one: Do you really want to remove this application? This will revoke one token active for it.
-      other: Do you really want to remove this application? This will revoke %{count} tokens active for it.
-    authorization_error: Παρουσιάστηκε ένα σφάλμα εξουσιοδότησης.
-    my_registered_applications: Καταγεγραμμένες εφαρμογές OAuth
+      authorization_code: "Ροή κώδικα εξουσιοδότησης"
+      client_credentials: "Ροή διαπιστευτηρίων πελάτη"
+    client_credentials: "Ο χρήστης που χρησιμοποιήθηκε για τα διαπιστευτήρια Πελάτη"
+    client_credentials_impersonation_set_to: "Ο χρήστης διαπιστευτηρίων πελάτη ορίστηκε σε"
+    client_credentials_impersonation_warning: "Σημείωση: Οι πελάτες που χρησιμοποιούν τη ροή 'διαπιστευτήρια Πελάτη' σε αυτή την εφαρμογή θα έχουν τα δικαιώματα αυτού του χρήστη"
+    client_credentials_impersonation_html: >
+      Από προεπιλογή, το Yojana παρέχει ταυτοποίηση OAuth 2.0 μέσω %{authorization_code_flow_link}. Μπορείτε προαιρετικά να ενεργοποιήσετε %{client_credentials_flow_link}, αλλά πρέπει να ορίσετε ένα χρήστη, εκ μέρους του οποίου θα εκτελεστούν τα αιτήματα.
+    authorization_error: "Παρουσιάστηκε ένα σφάλμα εξουσιοδότησης."
+    revoke_my_application_confirmation: "Είστε βέβαιοι ότι θέλετε να αφαιρέσετε αυτή την εφαρμογή; Αυτό θα ανακαλέσει %{token_count} που είναι ενεργά για αυτή."
+    my_registered_applications: "Καταγεγραμμένες εφαρμογές OAuth"
   oauth_client:
     urn_connection_status:
       connected: Connected
@@ -6249,41 +6155,36 @@ el:
       label_request_token: Request token
       label_refresh_token: Refresh token
     errors:
-      oauth_authorization_code_grant_had_errors: OAuth2 Authorization grant unsuccessful
-      oauth_reported: OAuth2 provider reported
-      oauth_returned_error: OAuth2 returned an error
-      oauth_returned_json_error: OAuth2 returned a JSON error
-      oauth_returned_http_error: OAuth2 returned a network error
-      oauth_returned_standard_error: OAuth2 returned an internal error
-      wrong_token_type_returned: OAuth2 returned a wrong type of token, expecting AccessToken::Bearer
-      oauth_issue_contact_admin: OAuth2 reported an error. Please contact your system administrator.
-      oauth_client_not_found: OAuth2 client not found in 'callback' endpoint (redirect_uri).
-      refresh_token_called_without_existing_token: 'Internal error: Called refresh_token without a previously existing token.
-
-        '
-      refresh_token_updated_failed: Error during update of OAuthClientToken
-      oauth_client_not_found_explanation: 'This error appears after you have updated the client_id and client_secret in OpenProject, but haven''t updated the ''Return URI'' field in the OAuth2 provider.
-
-        '
-      oauth_code_not_present: OAuth2 'code' not found in 'callback' endpoint (redirect_uri).
-      oauth_code_not_present_explanation: 'This error appears if you have selected the wrong response_type in the OAuth2 provider. Response_type should be ''code'' or similar.
-
-        '
-      oauth_state_not_present: OAuth2 'state' not found in 'callback' endpoint (redirect_uri).
-      oauth_state_not_present_explanation: 'The ''state'' is used to indicate to OpenProject where to continue after a successful OAuth2 authorization. A missing ''state'' is an internal error that may appear during setup. Please contact your system administrator.
-
-        '
+      oauth_authorization_code_grant_had_errors: "OAuth2 Authorization grant unsuccessful"
+      oauth_reported: "OAuth2 provider reported"
+      oauth_returned_error: "OAuth2 returned an error"
+      oauth_returned_json_error: "OAuth2 returned a JSON error"
+      oauth_returned_http_error: "OAuth2 returned a network error"
+      oauth_returned_standard_error: "OAuth2 returned an internal error"
+      wrong_token_type_returned: "OAuth2 returned a wrong type of token, expecting AccessToken::Bearer"
+      oauth_issue_contact_admin: "OAuth2 reported an error. Please contact your system administrator."
+      oauth_client_not_found: "OAuth2 client not found in 'callback' endpoint (redirect_uri)."
+      refresh_token_called_without_existing_token: >
+        Internal error: Called refresh_token without a previously existing token.
+      refresh_token_updated_failed: "Error during update of OAuthClientToken"
+      oauth_client_not_found_explanation: >
+        This error appears after you have updated the client_id and client_secret in Yojana, but haven't updated the 'Return URI' field in the OAuth2 provider.
+      oauth_code_not_present: "OAuth2 'code' not found in 'callback' endpoint (redirect_uri)."
+      oauth_code_not_present_explanation: >
+        This error appears if you have selected the wrong response_type in the OAuth2 provider. Response_type should be 'code' or similar.
+      oauth_state_not_present: "OAuth2 'state' not found in 'callback' endpoint (redirect_uri)."
+      oauth_state_not_present_explanation: >
+        The 'state' is used to indicate to Yojana where to continue after a successful OAuth2 authorization. A missing 'state' is an internal error that may appear during setup. Please contact your system administrator.
       rack_oauth2:
-        client_secret_invalid: Client secret is invalid (client_secret_invalid)
-        invalid_request: 'OAuth2 Authorization Server responded with ''invalid_request''. This error appears if you try to authorize multiple times or in case of technical issues.
-
-          '
-        invalid_response: OAuth2 Authorization Server provided an invalid response (invalid_response)
-        invalid_grant: The OAuth2 Authorization Server asks you to reauthorize (invalid_grant).
-        invalid_client: The OAuth2 Authorization Server doesn't recognize OpenProject (invalid_client).
-        unauthorized_client: The OAuth2 Authorization Server rejects the grant type (unauthorized_client)
-        unsupported_grant_type: The OAuth2 Authorization Server asks you to reauthorize (unsupported_grant_type).
-        invalid_scope: You are not allowed to access the requested resource (invalid_scope).
+        client_secret_invalid: "Client secret is invalid (client_secret_invalid)"
+        invalid_request: >
+          OAuth2 Authorization Server responded with 'invalid_request'. This error appears if you try to authorize multiple times or in case of technical issues.
+        invalid_response: "OAuth2 Authorization Server provided an invalid response (invalid_response)"
+        invalid_grant: "The OAuth2 Authorization Server asks you to reauthorize (invalid_grant)."
+        invalid_client: "The OAuth2 Authorization Server doesn't recognize Yojana (invalid_client)."
+        unauthorized_client: "The OAuth2 Authorization Server rejects the grant type (unauthorized_client)"
+        unsupported_grant_type: "The OAuth2 Authorization Server asks you to reauthorize (unsupported_grant_type)."
+        invalid_scope: "You are not allowed to access the requested resource (invalid_scope)."
   http:
     request:
       failed_authorization: The server side request failed authorizing itself.
@@ -6293,18 +6194,18 @@ el:
   you: εσείς
   link: link
   plugin_openproject_auth_plugins:
-    name: OpenProject Auth Plugins
-    description: Integration of OmniAuth strategy providers for authentication in OpenProject.
+    name: "Yojana Auth Plugins"
+    description: "Integration of OmniAuth strategy providers for authentication in Yojana."
   plugin_openproject_auth_saml:
-    name: OmniAuth SAML / Single-Sign On
-    description: Adds the OmniAuth SAML provider to OpenProject
+    name: "OmniAuth SAML / Single-Sign On"
+    description: "Adds the OmniAuth SAML provider to Yojana"
   enterprise_plans:
     legacy_enterprise: Enterprise Plan
   token:
     hashed_token:
       display_value_placeholder: "***"
   external_link_warning:
-    title: Leaving OpenProject
-    warning_message: You are about to leave OpenProject and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies.
-    continue_message: Are you sure you want to proceed to the following external link?
-    continue_button: Continue to external website
+    title: "Leaving Yojana"
+    warning_message: "You are about to leave Yojana and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies."
+    continue_message: "Are you sure you want to proceed to the following external link?"
+    continue_button: "Continue to external website"

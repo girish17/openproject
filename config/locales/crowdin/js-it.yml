@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -57,7 +57,7 @@ it:
         '
       last_backup: Ultimo backup
       last_backup_from: Ultimo backup da
-      title: Backup OpenProject
+      title: Backup Yojana
       options: Opzioni
       include_attachments: Includi allegati
       download_backup: Scarica backup
@@ -494,12 +494,18 @@ it:
         next: Prossimo
         got_it: Capito
       steps:
-        help_menu: Il menu Aiuto (?) fornisce <b>ulteriori risorse di aiuto</b>. Qui puoi trovare una guida utente, video utili e altro ancora. <br> Goditi il tuo lavoro con OpenProject!
-        members: Invita nuovi <b>membri</b> per entrare al tuo progetto.
-        quick_add_button: Clicca sull'icona più (+) nella navigazione dell'intestazione per <b>creare un nuovo progetto</b> o per <b>invitare colleghi</b>.
-        sidebar_arrow: Utilizza la freccia di ritorno nell'angolo in alto a sinistra per tornare al <b>menu principale</b> del progetto.
-        welcome: Fai un tour introduttivo di tre minuti per apprendere le <b>funzioni importanti</b>. <br> Consigliamo di completare i passaggi fino alla fine. Puoi riavviare il tour in qualsiasi momento.
-        wiki: Nella <b>wiki</b> puoi documentare e condividere la conoscenza con il tuo team.
+        help_menu: "Il menu Aiuto (?) fornisce <b>ulteriori risorse di aiuto</b>. Qui puoi trovare una guida utente, video utili e altro ancora. <br> Goditi il tuo lavoro con Yojana!"
+        members: "Invita nuovi <b>membri</b> per entrare al tuo progetto."
+        quick_add_button: "Clicca sull'icona più (+) nella navigazione dell'intestazione per <b>creare un nuovo progetto</b> o per <b>invitare colleghi</b>."
+        sidebar_arrow: "Utilizza la freccia di ritorno nell'angolo in alto a sinistra per tornare al <b>menu principale</b> del progetto."
+        welcome: "Fai un tour introduttivo di tre minuti per apprendere le <b>funzioni importanti</b>. <br> Consigliamo di completare i passaggi fino alla fine. Puoi riavviare il tour in qualsiasi momento."
+        wiki: "Nella <b>wiki</b> puoi documentare e condividere la conoscenza con il tuo team."
+        backlogs:
+          overview: "Gestisci il tuo lavoro nella vista <b>backlog</b>."
+          sprints: "A destra hai il product backlog e il bug backlog, a sinistra i rispettivi sprint. Qui puoi creare <b>epics, storie utente e bug</b>, assegnare priorità tramite trascinamento e aggiungerli a uno sprint."
+          task_board_arrow: "Per vedere il tuo <b>pannello delle attività</b>, apri il menu a cascata Sprint..."
+          task_board_select: "...e seleziona la voce <b>pannello delle attività</b>."
+          task_board: "Il pannello delle attività visualizza l'<b>avanzamento dello sprint</b>. Fai clic sull'icona più (+) accanto a una storia utente per aggiungere nuove attività o impedimenti. <br> Lo stato può essere aggiornato trascinandolo."
         boards:
           overview: Seleziona <b>board</b> per cambiare visualizzazione e gestire il tuo progetto utilizzando la visualizzazione agile delle schede.
           lists_kanban: Qui puoi creare più liste  (colonne) all'interno della tua board. Questa funzione ti consente di creare una <b>board Kanban</b>, ad esempio.

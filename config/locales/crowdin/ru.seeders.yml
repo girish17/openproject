@@ -141,7 +141,7 @@ ru:
                 options:
                   name: Приступая к работе
                   text: |
-                    Мы рады, что вы присоединились! Мы предлагаем попробовать несколько вещей, чтобы начать работу в OpenProject.
+                    Мы рады, что вы присоединились! Мы предлагаем попробовать несколько вещей, чтобы начать работу в Yojana.
 
                     Узнайте о наиболее важных особенностях нашего [Экскурсия с гидом]({{opSetting:base_url}}/projects/demo-project/work_packages/?start_onboarding_tour=true).
 
@@ -154,7 +154,7 @@ ru:
                     5. *Активировать дополнительные модули*: &rightarrow; Перейдите к [настройкам проекта &rightarrow; Модулей]({{opSetting:base_url}}/projects/demo-project/settings/modules).
                     6. *Завершите ваши задачи в проекте*: &rightarrow; Перейдите в [Пакеты работ &rightarrow; Задачи]({{opSetting:base_url}}/projects/demo-project/work_packages/details/##wp.id:set_date_and_location_of_conference/overview?query_id=##query.id:demo_project__query__tasks).
 
-                    Здесь вы найдете наши [руководства пользователя](https://www.openproject.org/docs/user-guide/).
+                    Здесь вы найдете наши [руководства пользователя](https://www.yojana.girishm.info/docs/user-guide/).
                     Пожалуйста, сообщите нам, если у вас есть какие-либо вопросы или нужна поддержка. Свяжитесь с нами: [support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
@@ -211,7 +211,7 @@ ru:
             * Просмотр истории изменений
             * Просмотр в формате Markdown
 
-            Дополнительная информация: [https://www.openproject.org/docs/user-guide/wiki/](https://www.openproject.org/docs/user-guide/wiki/)
+            Дополнительная информация: [https://www.yojana.girishm.info/docs/user-guide/wiki/](https://www.yojana.girishm.info/docs/user-guide/wiki/)
         scrum-project:
           name: Scrum-проект
           status_explanation: Все задачи выполнены по расписанию. Участвующие в них люди знают свои задачи. Система полностью настроена.
@@ -313,7 +313,7 @@ ru:
                 options:
                   name: Приступая к работе
                   text: |
-                    Мы рады, что Вы присоединились! Мы предлагаем попробовать несколько вещей, чтобы начать работу с OpenProject.
+                    Мы рады, что Вы присоединились! Мы предлагаем попробовать несколько вещей, чтобы начать работу с Yojana.
 
                     _Попробуйте выполнить следующие шаги:_
 
@@ -325,7 +325,7 @@ ru:
                     6. *Создайте вики спринта*: &rightarrow; Перейдите в раздел [Бэклоги]({{opSetting:base_url}}/projects/your-scrum-project/backlogs) и откройте вики спринта из правого выпадающего меню в спринте. Вы можете отредактировать шаблон [wiki]({{opSetting:base_url}}/projects/your-scrum-project/wiki/) в соответствии со своими потребностями.
                     7. *Активируйте дополнительные модули*: &rightarrow; Перейдите в раздел [Настройки проекта &rightarrow; Модули]({{opSetting:base_url}}/projects/your-scrum-project/settings/modules).
 
-                    Здесь Вы найдете наши [руководства пользователя](https://www.openproject.org/docs/user-guide/).
+                    Здесь Вы найдете наши [руководства пользователя](https://www.yojana.girishm.info/docs/user-guide/).
                     Пожалуйста, сообщите нам, если у Вас возникнут вопросы или Вам понадобится поддержка. Свяжитесь с нами: [support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
@@ -488,19 +488,19 @@ ru:
         item_6:
           name: Ошибка
       welcome:
-        title: Добро пожаловать в OpenProject!
+        title: Добро пожаловать в Yojana!
         text: |
-          OpenProject является ведущим программным обеспечением с открытым исходным кодом. Он поддерживает классические, agile и гибридные управления проектами и дает вам полный контроль над вашими данными.
+          Yojana является ведущим программным обеспечением с открытым исходным кодом. Он поддерживает классические, agile и гибридные управления проектами и дает вам полный контроль над вашими данными.
 
           Основные возможности и примеры использования:
 
-          * [Управление портфолио проекта](https://www.openproject.org/collaboration-software-features/project-portfolio-management/)
-          * [Планирование и планирование проектов](https://www.openproject.org/collaboration-software-features/project-planning-scheduling/)
-          * [Отслеживание задач и задач](https://www.openproject.org/collaboration-software-features/task-management/)
-          * [Платы Agile (Scrum and Kanban)](https://www.openproject.org/collaboration-software-features/agile-project-management/)
-          * [Управление требованиями и Планирование релизов](https://www.openproject.org/collaboration-software-features/product-development/)
-          * [Отслеживание времени и затрат, бюджеты](https://www.openproject.org/collaboration-software-features/time-tracking/)
-          * [Team Collaboration and Documentation](https://www.openproject.org/collaboration-software-features/team-collaboration/)
+          * [Управление портфолио проекта](https://www.yojana.girishm.info/collaboration-software-features/project-portfolio-management/)
+          * [Планирование и планирование проектов](https://www.yojana.girishm.info/collaboration-software-features/project-planning-scheduling/)
+          * [Отслеживание задач и задач](https://www.yojana.girishm.info/collaboration-software-features/task-management/)
+          * [Платы Agile (Scrum and Kanban)](https://www.yojana.girishm.info/collaboration-software-features/agile-project-management/)
+          * [Управление требованиями и Планирование релизов](https://www.yojana.girishm.info/collaboration-software-features/product-development/)
+          * [Отслеживание времени и затрат, бюджеты](https://www.yojana.girishm.info/collaboration-software-features/time-tracking/)
+          * [Team Collaboration and Documentation](https://www.yojana.girishm.info/collaboration-software-features/team-collaboration/)
 
           Добро пожаловать в будущее управления проектом.
 

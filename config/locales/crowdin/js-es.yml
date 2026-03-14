@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -55,7 +55,7 @@ es:
         '
       last_backup: Última copia de seguridad
       last_backup_from: Última copia de seguridad de
-      title: Copia de seguridad de OpenProject
+      title: Copia de seguridad de Yojana
       options: Opciones
       include_attachments: Incluir archivos adjuntos
       download_backup: Descargar copia de seguridad
@@ -492,12 +492,18 @@ es:
         next: Siguiente
         got_it: Entendido
       steps:
-        help_menu: El menú Ayuda (?) proporciona <b>recursos de ayuda adicionales</b>. Aquí puedes encontrar una guía de usuario, vídeos explicativos y más. <br> ¡Disfruta de tu trabajo con OpenProject!
-        members: Invitar a nuevos <b>miembros</b> a unirse a tu proyecto.
-        quick_add_button: Haga clic en el icono del signo más (+) en el menú de navegación del encabezado para <b>crear un proyecto</b> o <b>invitar a compañeros</b>.
-        sidebar_arrow: Usa la flecha de retorno en la esquina superior izquierda para regresar al <b>menú principal</b> del proyecto.
-        welcome: Realice un recorrido de introducción de tres minutos para conocer las <b>funciones más importantes</b>. <br> Le recomendamos que complete todos los pasos. Puede volver a iniciar el paseo en cualquier momento.
-        wiki: En la <b>wiki</b>, puede elaborar documentos y compartir conocimientos con su equipo.
+        help_menu: "El menú Ayuda (?) proporciona <b>recursos de ayuda adicionales</b>. Aquí puedes encontrar una guía de usuario, vídeos explicativos y más. <br> ¡Disfruta de tu trabajo con Yojana!"
+        members: "Invitar a nuevos <b>miembros</b> a unirse a tu proyecto."
+        quick_add_button: "Haga clic en el icono del signo más (+) en el menú de navegación del encabezado para <b>crear un proyecto</b> o <b>invitar a compañeros</b>."
+        sidebar_arrow: "Usa la flecha de retorno en la esquina superior izquierda para regresar al <b>menú principal</b> del proyecto."
+        welcome: "Realice un recorrido de introducción de tres minutos para conocer las <b>funciones más importantes</b>. <br> Le recomendamos que complete todos los pasos. Puede volver a iniciar el paseo en cualquier momento."
+        wiki: "En la <b>wiki</b>, puede elaborar documentos y compartir conocimientos con su equipo."
+        backlogs:
+          overview: "Administre su trabajo en la vista de <b>trabajos pendientes</b>."
+          sprints: "A la derecha verá los trabajos pendientes de productos y errores de código, y a la izquierda se muestran los sprints correspondientes. Aquí puede crear <b>épicas, historias de usuario y errores de código</b>, asignar prioridades mediante funciones de arrastrar y colocar, y añadir elementos a un sprint."
+          task_board_arrow: "Para ver el <b>tablero de tareas</b>, abra el menú desplegable sprint…"
+          task_board_select: "… y seleccione la entrada del <b>tablero de tareas</b>."
+          task_board: "En el tablero de tareas, se muestra el <b>progreso de este sprint</b>. Haga clic en el icono del signo más (+) junto a una historia de usuario para añadir nuevas tareas o impedimentos. <br> Puede actualizar el estado mediante las funciones de arrastrar y colocar."
         boards:
           overview: Seleccione los <b>tableros</b> para cambiar la vista y gestione su proyecto con la vista de tableros Agile.
           lists_kanban: Aquí puede crear varias listas (columnas) en el tablero. Por ejemplo, esta función le permite crear un <b>tablero Kanban</b>.

@@ -16,7 +16,7 @@ We released [OpenProject 14.0.0](https://community.openproject.org/versions/1356
 
 ### Docker registry renaming
 
-Starting with OpenProject 14.0, docker images will be published to [openproject/openproject](https://hub.docker.com/r/openproject/openproject) on Docker Hub. If your setup is still using the old image name (openproject/community), you will need to update your configuration to use the new image names.
+Starting with OpenProject 14.0, docker images will be published to [girish17/yojana](https://hub.docker.com/r/girish17/yojana) on Docker Hub. If your setup is still using the old image name (openproject/community), you will need to update your configuration to use the new image names.
 
 All previous images have been pushed there as well, so you can simply update your configuration to use the new image
 name ahead of your update.

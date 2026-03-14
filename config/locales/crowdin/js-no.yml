@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -57,7 +57,7 @@
         '
       last_backup: Siste sikkerhetskopi
       last_backup_from: Siste sikkerhetskopi fra
-      title: Sikkerhetskopier OpenProject
+      title: Sikkerhetskopier Yojana
       options: Alternativer
       include_attachments: Inkluder vedlegg
       download_backup: Last ned sikkerhetskopi
@@ -494,12 +494,18 @@
         next: Neste
         got_it: Forstått
       steps:
-        help_menu: Hjelpemenyen (?) gir <b>ytterligere hjelpemidler</b>. Her kan du finne en brukerveiledning, hjelpevideoer og mer. <br> Nyt ditt arbeid med OpenProject!
-        members: Inviter nye <b>medlemmer</b> til å bli med i prosjektet ditt.
-        quick_add_button: Klikk på plussikonet (+) i toppnavigasjonen til <b>opprette et nytt prosjekt</b> eller for å  <b>inviterer kolleger</b>.
-        sidebar_arrow: Bruk returpilen i øvre venstre hjørne for å gå tilbake til prosjektets <b>hovedmeny</b>.
-        welcome: Take a three-minute introduction tour to learn the most <b>important features</b>. <br> We recommend completing the steps until the end. You can restart the tour any time.
-        wiki: I <b>wiki</b> kan du dokumentere og dele kunnskap sammen med teamet.
+        help_menu: "Hjelpemenyen (?) gir <b>ytterligere hjelpemidler</b>. Her kan du finne en brukerveiledning, hjelpevideoer og mer. <br> Nyt ditt arbeid med Yojana!"
+        members: "Inviter nye <b>medlemmer</b> til å bli med i prosjektet ditt."
+        quick_add_button: "Klikk på plussikonet (+) i toppnavigasjonen til <b>opprette et nytt prosjekt</b> eller for å  <b>inviterer kolleger</b>."
+        sidebar_arrow: "Bruk returpilen i øvre venstre hjørne for å gå tilbake til prosjektets <b>hovedmeny</b>."
+        welcome: "Take a three-minute introduction tour to learn the most <b>important features</b>. <br> We recommend completing the steps until the end. You can restart the tour any time."
+        wiki: "I <b>wiki</b> kan du dokumentere og dele kunnskap sammen med teamet."
+        backlogs:
+          overview: "Administrer arbeidet ditt i <b>- backlogs</b> -visningen."
+          sprints: "Til høyre har du produktet etterslep og feilloggen, til venstre har du de respektive stegene. Her kan du lage <b>epics, brukerhistorier og bugs</b>, prioriterer du via dra og slipp og legge dem til et steg."
+          task_board_arrow: "For å se <b>oppgavetavle</b>, åpne steg fra nedtrekksmenyen..."
+          task_board_select: "...og velg <b>oppgavetavlens</b> oppføring."
+          task_board: "Oppgavetavlen visualiserer <b>fremdriften for denne etappen</b>. Klikk på plussikonet (+) ved siden av en brukerhistorie for å legge til nye oppgaver eller hindringer. <br> Statusen kan oppdateres ved å dra og slipp."
         boards:
           overview: Velg <b>tavler</b> for å skift visningen og administrere prosjektet ved hjelp av den dynamiske tavlevisningen.
           lists_kanban: Her kan du opprette flere lister (kolonner) i tavlen. Denne funksjonen lar deg for eksempel opprette en <b>Kanban tavle</b>.

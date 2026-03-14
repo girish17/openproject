@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -341,13 +341,13 @@ zh-CN:
         unknown_name: 未知
     mcp_configurations:
       index:
-        description: Model Context Protocol 允许 AI 智能体向其用户提供此 OpenProject 实例所公开的工具和资源。此功能仍处于测试阶段。
-        resources_heading: 资源
-        resources_description: OpenProject 实现了以下资源。每种工具都可以根据需要启用、重命名和描述。有关详情，请参阅[关于 MCP 资源的文档](docs_url)。
-        resources_submit: 更新资源
-        tools_heading: 工具
-        tools_description: OpenProject 实现了以下工具。每种工具都可以根据需要启用、重命名和描述。有关详情，请参阅[关于 MCP 工具的文档](docs_url)。
-        tools_submit: 更新工具
+        description: "Model Context Protocol 允许 AI 智能体向其用户提供此 Yojana 实例所公开的工具和资源。"
+        resources_heading: "资源"
+        resources_description: "Yojana implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
+        resources_submit: "更新资源"
+        tools_heading: "工具"
+        tools_description: "Yojana 实现了以下工具。每种工具都可以根据需要启用、重命名和描述。有关详情，请参阅[关于 MCP 工具的文档](docs_url)。"
+        tools_submit: "更新工具"
       multi_update:
         success: MCP 配置已成功更新。
       server_form:
@@ -390,31 +390,31 @@ zh-CN:
       edit:
         label_delete_scim_client: 删除 SCIM 客户端
       form:
-        auth_provider_description: 这是 SCIM 提供商添加的用户在 OpenProject 中进行身份验证时将使用的服务。
-        authentication_method_description_html: 这是 SCIM 客户端在 OpenProject 上进行身份验证的方式。请确保 OAuth 令牌包括 <code>scim_v2</code> 作用域。
-        description: 关于这些配置选项的更多信息，请参阅我们的[SCIM 客户端配置文档](docs_url)。
-        jwt_sub_description: 例如，对于 Keycloak，这是与 SCIM 客户端相关联的服务账户的 UUID。要了解如何找到您的用例的主体声明，请查阅[我们的文档](docs_url)。
-        name_description: 选择一个名称，帮助其他管理员更好地理解配置此客户端的原因。
+        auth_provider_description: "这是 SCIM 提供商添加的用户在 Yojana 中进行身份验证时将使用的服务。"
+        authentication_method_description_html: "这是 SCIM 客户端在 Yojana 上进行身份验证的方式。请确保 OAuth 令牌包括 <code>scim_v2</code> 作用域。"
+        description: "关于这些配置选项的更多信息，请参阅我们的[SCIM 客户端配置文档](docs_url)。"
+        jwt_sub_description: "例如，对于 Keycloak，这是与 SCIM 客户端相关联的服务账户的 UUID。要了解如何找到您的用例的主体声明，请查阅[我们的文档](docs_url)。"
+        name_description: "选择一个名称，帮助其他管理员更好地理解配置此客户端的原因。"
       index:
-        description: 此处配置的 SCIM 客户端能够与 OpenProject SCIM 服务器 API 交互，以提供、更新和取消提供用户帐户和群组。
-        label_create_button: 添加 SCIM 客户端
+        description: "此处配置的 SCIM 客户端能够与 Yojana SCIM 服务器 API 交互，以提供、更新和取消提供用户帐户和群组。"
+        label_create_button: "添加 SCIM 客户端"
       new:
         title: 新增 SCIM 客户端
       revoke_static_token_dialog_component:
-        confirm_button: 撤销
-        title: 撤销静态令牌
-        heading: 确定要撤销此令牌吗？
-        description: 使用此令牌的 SCIM 客户端将无法再访问 OpenProject 的 SCIM 服务器 API。
+        confirm_button: "撤销"
+        title: "撤销静态令牌"
+        heading: "确定要撤销此令牌吗？"
+        description: "使用此令牌的 SCIM 客户端将无法再访问 Yojana 的 SCIM 服务器 API。"
       table_component:
         blank_slate:
           title: 尚未配置 SCIM 客户端
           description: 添加客户端以在此处查看
         user_count: 用户
       token_list_component:
-        description: 您在此处生成的令牌可以通过 SCIM 客户端传递以访问 OpenProject SCIM API。
-        heading: 令牌
-        label_add_token: 令牌
-        label_aria_add_token: 添加令牌
+        description: "您在此处生成的令牌可以通过 SCIM 客户端传递以访问 Yojana SCIM API。"
+        heading: "令牌"
+        label_add_token: "令牌"
+        label_aria_add_token: "添加令牌"
       token_table_component:
         blank_slate:
           title: 尚未创建令牌
@@ -556,37 +556,35 @@ zh-CN:
       name: LDAP 连接的任意名称
       host: LDAP 主机名或 IP 地址
       login_map: LDAP 中用于识别唯一用户登录名的属性键。通常是 `uid` 或 `samAccountName`。
-      generic_map: LDAP 中用于映射到 OpenProject `%{attribute}` 属性的属性键
-      admin_map_html: 可选：LDAP 中将 OpenProject 用户标记为管理员的属性键（<strong>如存在</strong>）。如有疑问，请留空。
+      generic_map: LDAP 中用于映射到 Yojana `%{attribute}` 属性的属性键
+      admin_map_html: "可选：LDAP 中将 Yojana 用户标记为管理员的属性键（<strong>如存在</strong>）。如有疑问，请留空。"
       system_user_dn_html: |
         输入用于只读访问的系统用户 DN。
         <br>
-        例如：uid=openproject,ou=system,dc=example,dc=com
+        例如：uid=yojana,ou=system,dc=example,dc=com
       system_user_password: 输入系统用户的绑定密码
       base_dn: |
-        输入 LDAP 中您希望 OpenProject 查找用户和组的子树的基本 DN。
-        OpenProject 将仅在此子树中筛选提供的用户名。
+        输入 LDAP 中您希望 Yojana 查找用户和组的子树的基本 DN。
+        Yojana 将仅在此子树中筛选提供的用户名。
         示例：ou=users,dc=example,dc=com
       filter_string: |
         添加一个可选的 RFC4515 筛选器以应用于为 LDAP 中的筛选用户返回的结果。
-        这可以用于限制 OpenProject 为身份验证和组同步找到的用户集。
-      filter_string_concat: 'OpenProject 将始终筛选用户提供的登录属性来识别记录。如果您在这里提供筛选器，它将与 AND 串联。默认情况下，将使用“全部捕获”(objectClass=*) 作为筛选器。
-
-        '
+        这可以用于限制 Yojana 为身份验证和组同步找到的用户集。
+      filter_string_concat: |
+        Yojana 将始终筛选用户提供的登录属性来识别记录。如果您在这里提供筛选器，它将与 AND 串联。默认情况下，将使用“全部捕获”(objectClass=*) 作为筛选器。
       onthefly_register: |
-        如果选中此框，OpenProject 将在新用户首次向 OpenProject 验证身份时从其 LDAP 条目创建这些用户。
-        不选中此框则会仅允许 OpenProject 中的现有帐户通过 LDAP 验证身份！
-    connection_encryption: 连接加密
-    encryption_details: LDAPS / STARTTLS 选项
-    system_account: 系统帐户
+        如果选中此框，Yojana 将在新用户首次向 Yojana 验证身份时从其 LDAP 条目创建这些用户。
+        不选中此框则会仅允许 Yojana 中的现有帐户通过 LDAP 验证身份！
+    connection_encryption: "连接加密"
+    encryption_details: "LDAPS / STARTTLS 选项"
+    system_account: "系统帐户"
     system_account_legend: |
-      OpenProject 需要通过系统帐户获取只读权限来查找您的 LDAP 树中的用户和组。
+      Yojana 需要通过系统帐户获取只读权限来查找您的 LDAP 树中的用户和组。
       请在下一部分中为该系统用户指定绑定凭据。
-    ldap_details: LDAP 详细信息
-    user_settings: 属性映射
-    user_settings_legend: '以下字段与在 OpenProject 中从 LDAP 条目创建用户的方式有关并决定用于定义 OpenProject 用户属性的 LDAP 属性（属性映射）。
-
-      '
+    ldap_details: "LDAP 详细信息"
+    user_settings: "属性映射"
+    user_settings_legend: |
+      以下字段与在 Yojana 中从 LDAP 条目创建用户的方式有关并决定用于定义 Yojana 用户属性的 LDAP 属性（属性映射）。
     tls_mode:
       plain: 无
       simple_tls: LDAPS
@@ -2100,31 +2098,31 @@ zh-CN:
         work_package: 工作包
     errors:
       messages:
-        accepted: 必须接受。
-        after: 必须在 %{date} 之后。
-        after_today: 必须是将来的时间
-        after_or_equal_to: 必须后或等于 %{date}。
-        before: 必须在 %{date} 之前。
-        before_or_equal_to: 必须在早于或等于 %{date}
-        blank: 不能为空。
-        blank_nested: 需要设置属性“%{property}”。
-        cannot_delete_mapping: 必需项，不能删除
-        cant_link_a_work_package_with_a_descendant: 工作包无法链接到它的子任务之一。
-        circular_dependency: 这种关系将创建循环依赖项。
-        confirmation: 不匹配 %{attribute}。
-        could_not_be_copied: 无法（完全）复制 %{dependency}。
-        datetime_must_be_in_future: 必须是将来的时间
-        does_not_exist: 不存在。
-        error_enterprise_only: "%{action}仅在 OpenProject 企业版中可用。"
-        error_unauthorized: 无法访问。
-        error_readonly: 曾尝试被写入，但不可写。
-        error_conflict: 在此期间，至少有一位其他用户更新了信息。
-        error_not_found: 未找到。
-        email: 不是一个有效的电子邮件地址。
-        empty: 不能为空。
-        enterprise_plan_required: 至少需要 %{plan_name}。
-        even: 必须是偶数。
-        exclusion: 是保留关键字。
+        accepted: "必须接受。"
+        after: "必须在 %{date} 之后。"
+        after_today: "必须是将来的时间"
+        after_or_equal_to: "必须后或等于 %{date}。"
+        before: "必须在 %{date} 之前。"
+        before_or_equal_to: "必须在早于或等于 %{date}"
+        blank: "不能为空。"
+        blank_nested: "需要设置属性“%{property}”。"
+        cannot_delete_mapping: "必需项，不能删除"
+        is_for_all_cannot_modify: "适用于所有项目，因此不能修改。"
+        cant_link_a_work_package_with_a_descendant: "工作包无法链接到它的子任务之一。"
+        circular_dependency: "这种关系将创建循环依赖项。"
+        confirmation: "不匹配 %{attribute}。"
+        could_not_be_copied: "无法（完全）复制 %{dependency}。"
+        does_not_exist: "不存在。"
+        error_enterprise_only: "%{action}仅在 Yojana 企业版中可用。"
+        error_unauthorized: "无法访问。"
+        error_readonly: "曾尝试被写入，但不可写。"
+        error_conflict: "在此期间，至少有一位其他用户更新了信息。"
+        error_not_found: "未找到。"
+        email: "不是一个有效的电子邮件地址。"
+        empty: "不能为空。"
+        enterprise_plan_required: "至少需要 %{plan_name}。"
+        even: "必须是偶数。"
+        exclusion: "是保留关键字。"
         feature_disabled: 不可用。
         feature_disabled_for_project: 已对此项目禁用。
         file_too_large: 太大 (最大大小为 %{count} 字节)。
@@ -2759,17 +2757,14 @@ zh-CN:
     reset_token:
       action_create: 创建
       action_reset: 重置
-      heading_reset: 重置备份令牌
-      heading_create: 创建备份令牌
-      implications: '启用备份将允许具有所需权限和此备份令牌的任何用户下载包含此 OpenProject 安装的所有数据的备份。这包括所有其他用户的数据。
-
-        '
-      info: '您需要生成备份令牌才能创建备份。每次您要请求备份时，都必须提供此令牌。您可以删除备份令牌以禁用此用户的备份。
-
-        '
-      verification_html: '输入 %{word} 以确认您要%{action}备份令牌。
-
-        '
+      heading_reset: "重置备份令牌"
+      heading_create: "创建备份令牌"
+      implications: >
+        启用备份将允许具有所需权限和此备份令牌的任何用户下载包含此 Yojana 安装的所有数据的备份。这包括所有其他用户的数据。
+      info: >
+        您需要生成备份令牌才能创建备份。每次您要请求备份时，都必须提供此令牌。您可以删除备份令牌以禁用此用户的备份。
+      verification: >
+        输入 %{word} 以确认您要%{action}备份令牌。
       verification_word_reset: 重置
       verification_word_create: 创建
       warning: '创建新令牌时，您只有在 24 小时之后才能请求备份。这是一项安全措施。之后，您可以随时使用该令牌请求备份。
@@ -3098,29 +3093,26 @@ zh-CN:
       title: 企业附加组件
       plan_title: 企业 %{plan} 附加组件
       plan_name: "%{plan} 企业计划"
-      trial_text: 此功能包含在您的有效 Enterprise 试用版中。
-      plan_text_html: 从 %{plan_name} 开始可用。
-      unlimited: 无限制
-      already_have_token: '已经有令牌？使用下方按钮添加以升级到预订的企业版方案。
-
-        '
-      hide_banner: 隐藏此广告
-      homescreen_description: '企业计划通过额外的[企业附加组件](enterprise_url) 和专业支持扩展了OpenProject社区版，是在关键任务环境中运行OpenProject的组织的理想选择。
-
-        '
+      plan_text_html: "从 %{plan_name} 开始可用。"
+      unlimited: "无限制"
+      already_have_token: >
+        已经有令牌？使用下方按钮添加以升级到预订的企业版方案。
+      hide_banner: "隐藏此广告"
+      homescreen_description: >
+        企业计划通过额外的[企业附加组件](enterprise_url) 和专业支持扩展了Yojana社区版，是在关键任务环境中运行Yojana的组织的理想选择。
       homescreen_subline: 通过升级，您也将支持一个开源项目。
       baseline_comparison:
         description: 高亮显示自从过去任意时间点以来对此列表所做的更改。
       benefits:
-        description: Enterprise 本地部署版具有哪些优势？
-        high_security: 安全功能
-        high_security_text: 单点登录（SAML、OpenID Connect、CAS）、LDAP 群组。
-        installation: 安装支持
-        installation_text: 经验丰富的软件工程师将指导您在自己的基础架构中完成整个安装和设置过程。
-        premium_features: Enterprise 附加组件
-        premium_features_text: 敏捷面板、自定义主题与徽标、图表、包含自定义操作的智能工作流、工作包附件全文搜索和多选自定义字段。
-        professional_support: 专业支持
-        professional_support_text: 获取高级支持工程师提供的可靠的个性化支持，他们拥有在关键业务环境中运行 OpenProject 的专业知识。
+        description: "Enterprise 本地部署版具有哪些优势？"
+        high_security: "安全功能"
+        high_security_text: "单点登录（SAML、OpenID Connect、CAS）、LDAP 群组。"
+        installation: "安装支持"
+        installation_text: "经验丰富的软件工程师将指导您在自己的基础架构中完成整个安装和设置过程。"
+        premium_features: "Enterprise 附加组件"
+        premium_features_text: "敏捷面板、自定义主题与徽标、图表、包含自定义操作的智能工作流、工作包附件全文搜索和多选自定义字段。"
+        professional_support: "专业支持"
+        professional_support_text: "获取高级支持工程师提供的可靠的个性化支持，他们拥有在关键业务环境中运行 Yojana 的专业知识。"
       work_package_subject_generation:
         description: 使用引用的属性和文本自动生成主题。
       customize_life_cycle:
@@ -3150,34 +3142,31 @@ zh-CN:
       calculated_values:
         description: 计算值功能允许您使用数值及其他项目属性、自定义字段，创建基于数学公式的属性。
       define_custom_style:
-        title: 自定义颜色主题和 Logo
-        more_info: 注：使用的 Logo 将可公开访问。
-        description: 使用您自己的 Logo 和颜色来自定义 OpenProject 安装。
+        title: "自定义颜色主题和 Logo"
+        more_info: "注：使用的 Logo 将可公开访问。"
+        description: 使用您自己的 Logo 和颜色来自定义 Yojana 安装。
       custom_actions:
         title: 自定义操作
         description: 自定义操作是一键快捷方式，指向一组预定义的操作，您可以根据状态、角色、类型或项目在某些工作包上使用这些操作。
       mcp_server:
-        description: 通过安全的 MCP 服务器将 OpenProject 引入您的 AI 工作流。
-      meeting_templates:
-        description: 定义具有设定的议程结构的会议模板，并在创建新会议时重复使用这些模板，从而节省时间。
+        description: "通过 MCP 将 AI 智能体与 Yojana 实例集成。"
       nextcloud_sso:
         title: Nextcloud存储的单点登录(SSO)
         description: 使用单点登录为您的 Nextcloud 存储启用无缝且安全的身份验证。简化访问管理并提升用户便利性。
       scim_api:
-        title: SCIM 客户端
-        description: 通过我们的 SCIM 服务器 API 无缝集成外部身份服务（例如，Microsoft Entra 或 Keycloak），在 OpenProject 中自动执行用户管理。该功能现已在 Enterprise 公司方案中提供。
+        title: "SCIM 客户端"
+        description: "通过我们的 SCIM 服务器 API 无缝集成外部身份服务（例如，Microsoft Entra 或 Keycloak），在 Yojana 中自动执行用户管理。该功能现已在 Enterprise 公司方案中提供。"
       sso_auth_providers:
         title: 单点登录（SSO）
         description: 允许用户使用 SAML 或 OpenID Connect 通过外部 SSO 提供商登录，以实现无缝访问，并与现有身份系统集成。
       virus_scanning:
-        description: 确保在 OpenProject 中上传的文件在被其他用户访问之前进行病毒扫描。
+        description: "确保在 Yojana 中上传的文件在被其他用户访问之前进行病毒扫描。"
       project_creation_wizard:
         description: 生成分步向导，帮助项目经理填写项目启动请求。
       placeholder_users:
         title: 占位符用户
-        description: '占位符用户是一种将工作包分配给不属于您项目的用户的方法。它们在一系列场景中十分有用；例如，如果您需要跟踪尚未命名或可用资源的任务，或者如果您不想让该人员访问 OpenProject 但仍希望跟踪分配给他们的任务。
-
-          '
+        description: >
+          占位符用户是一种将工作包分配给不属于您项目的用户的方法。它们在一系列场景中十分有用；例如，如果您需要跟踪尚未命名或可用资源的任务，或者如果您不想让该人员访问 Yojana 但仍希望跟踪分配给他们的任务。
       internal_comments:
         title: 内部评论
         description: 内部评论允许内部团队相互私下沟通。这些只对某些项目角色可见，不会公开看到。
@@ -3191,26 +3180,25 @@ zh-CN:
         other: "%{trial_plan} 试用令牌剩余 %{count} 天"
       description_html: 您可以访问 %{trial_plan} 的所有功能。
     trial:
-      not_found: 您已申请试用令牌，但该申请已不再可用。请重试。
-      wait_for_confirmation: 我们向您发送了一封电子邮件来确认地址，以便检索试用令牌。
-      already_retrieved: '您的试用 Enterprise 令牌已被检索。请检查您的电子邮件，查看是否已附上令牌。如果您需要一个新令牌，请联系我们的支持团队。
-
-        '
-      successfully_saved: 您的试用 Enterprise 令牌已成功检索。
-      token_sent: 已申请试用令牌
-      request_again: 再次申请
-      resend_action: 重新发送确认电子邮件
-      welcome_title: 快速功能概览
-      welcome_description: 快速了解 OpenProject Enterprise 版的项目管理和团队协作。
-      confirmation_info: '我们在 %{date} 向您的 %{email} 发送了一封电子邮件，其中包含开始 OpenProject Enterprise 版免费试用需要的所有信息。请检查您的收件箱并点击提供的确认链接以开始您的 14 天免费试用。
-
-        '
-      confirmation_subline: '请检查您的收件箱，并按照步骤开始 14 天免费试用。
-
-        '
+      not_found: "您已申请试用令牌，但该申请已不再可用。请重试。"
+      wait_for_confirmation: "我们向您发送了一封电子邮件来确认地址，以便检索试用令牌。"
+      already_retrieved: >
+        您的试用 Enterprise 令牌已被检索。请检查您的电子邮件，查看是否已附上令牌。如果您需要一个新令牌，请联系我们的支持团队。
+      successfully_saved: "您的试用 Enterprise 令牌已成功检索。"
+      token_sent: "已申请试用令牌"
+      request_again: "再次申请"
+      resend_action: "重新发送确认电子邮件"
+      welcome_title: "快速功能概览"
+      welcome_description: "快速了解 Yojana Enterprise 版的项目管理和团队协作。"
+      confirmation_info: >
+        我们在 %{date} 向您的 %{email} 发送了一封电子邮件，其中包含开始 Yojana Enterprise 版免费试用需要的所有信息。请检查您的收件箱并点击提供的确认链接以开始您的 14 天免费试用。
+      confirmation_subline: >
+        请检查您的收件箱，并按照步骤开始 14 天免费试用。
       domain_caption: 该令牌将对您当前配置的主机名有效。
-      receive_newsletter: 我希望接收 OpenProject [简报](newsletter_url)。
-      consent: 我同意[服务条款](tos_url)和[隐私政策](privacy_url)。
+      receive_newsletter_html: >
+        我希望接收 Yojana <a target="_blank" href="https://www.yojana.girishm.info/newsletter/">简报</a>。
+      consent_html: >
+        我同意<a target="_blank" href="https://www.yojana.girishm.info/terms-of-service/">服务条款</a>和<a target="_blank" href="https://www.yojana.girishm.info/data-privacy-and-security/">隐私政策</a>。
   email_calendar_updates:
     state:
       disabled: 已禁用。
@@ -3234,51 +3222,51 @@ zh-CN:
   error_can_not_delete_in_use_archived_undisclosed: 归档项目中也有工作包。您需要请求管理员执行删除操作，以了解受影响的项目。
   error_can_not_delete_in_use_archived_work_packages: 归档项目中也有工作包。您需要先重新激活以下项目，然后才能更改相应工作包的属性：%{archived_projects_urls}
   error_can_not_delete_type:
-    explanation: 此类型包含工作包，无法删除。您可以在<a target="_blank" href="%{url}">此视图</a>中查看所有受影响的工作包。
-  error_can_not_delete_standard_type: 标准类型不能被删除。
-  error_can_not_invite_user: 无法向用户发送邀请。
-  error_can_not_remove_role: 该角色正在使用，无法删除。
-  error_can_not_reopen_work_package_on_closed_version: 不能重新打开一个已经分配给已关闭版本的工作包
-  error_can_not_find_all_resources: 无法找到与请求相关的所有资源。
-  error_can_not_unarchive_project: 此项目无法取消存档：%{errors}
-  error_check_user_and_role: 请选择用户和角色。
-  error_code: 错误 %{code}
-  error_color_could_not_be_saved: 无法保存颜色
-  error_cookie_missing: OpenProject cookie 丢失。请确保已启用 cookie，因为如果不启用，此应用程序将无法正常运行。
-  error_custom_option_not_found: 选项不存在。
-  error_enterprise_plan_needed: 您需要 %{plan}企业版方案才能执行此操作。
-  error_enterprise_activation_user_limit: 无法激活您的帐户 (已达到用户限制)。请与管理员联系以获取访问权限。
-  error_enterprise_token_invalid_domain: 企业版未激活。您的企业版令牌的域名（%{actual}）与系统的主机名（%{expected}）不匹配。
-  error_failed_to_delete_entry: 无法删除此条目。
-  error_in_dependent: '尝试更改依赖对象时出错：%{dependent_class} #%{related_id} - %{related_subject}：%{error}'
-  error_in_new_dependent: '尝试创建依赖对象时出错：%{dependent_class} - %{related_subject}: %{error}'
-  error_invalid_selected_value: 选中的值无效。
-  error_journal_attribute_not_present: 日志不包含 %{attribute} 属性。
-  error_pdf_export_too_many_columns: 选择 PDF 导出的列太多。请减少列数。
-  error_pdf_date_range_too_long: 所选工作包日期范围超出允许的 PDF 导出限制。请将范围缩减至最多 %{years} 年。
-  error_pdf_failed_to_export: 无法保存被导出的 PDF 文件：%{error}
-  error_token_authenticity: 无法验证跨站请求伪造令牌。您是否曾尝试在多个浏览器或选项卡上提交数据？请关闭所有选项卡并重试。
-  error_reminder_not_found: 未找到提醒或已收到相关提醒的通知。
-  error_work_package_not_found_in_project: 工作包找不到或不属于此项目
-  error_work_package_id_not_found: 工作包未找到
-  error_must_be_project_member: 必须是项目成员
-  error_migrations_are_pending: 您的 OpenProject 安装具有待定的数据库迁移。您可能在上次升级时错过了迁移。请查阅升级指南，正确升级您的安装。
-  error_migrations_visit_upgrade_guides: 请访问我们的升级指南文档
-  error_no_default_work_package_status: 没有定义默认的工作包状态。请检查您的配置 （转到"管理-> 工作包状态"）。
-  error_no_type_in_project: 没有类型与此项目关联。请检查的项目设置。
-  error_omniauth_registration_timed_out: 通过外部身份验证提供程序注册超时。请再试一次。
-  error_omniauth_invalid_auth: 从身份提供程序返回的身份验证信息无效。请联系您的管理员获取更多帮助。
-  error_password_change_failed: 试图更改密码时发生错误。
-  error_scm_command_failed: '当试图访问该存储库时出错: %{value}'
-  error_scm_not_found: 在存储库中未找到的条目或修正版本。
-  error_type_could_not_be_saved: 无法保存类型
-  error_unable_delete_status: 不能删除工作包的状态，因为它由至少一个工作包使用。
-  error_unable_delete_default_status: 无法删除默认工作包的状态。请删除当前之前选择另一个默认工作包状态。
-  error_unable_to_connect: 无法连接 (%{value})
-  error_unable_delete_wiki: 无法删除维基页面。
-  error_unable_update_wiki: 无法更新维基页面。
-  error_workflow_copy_source: 请选择源类型或角色
-  error_workflow_copy_target: 请选择目标类型和角色
+    explanation: '此类型包含工作包，无法删除。您可以在<a target="_blank" href="%{url}">此视图</a>中查看所有受影响的工作包。'
+  error_can_not_delete_standard_type: "标准类型不能被删除。"
+  error_can_not_invite_user: "无法向用户发送邀请。"
+  error_can_not_remove_role: "该角色正在使用，无法删除。"
+  error_can_not_reopen_work_package_on_closed_version: "不能重新打开一个已经分配给已关闭版本的工作包"
+  error_can_not_find_all_resources: "无法找到与请求相关的所有资源。"
+  error_can_not_unarchive_project: "此项目无法取消存档：%{errors}"
+  error_check_user_and_role: "请选择用户和角色。"
+  error_code: "错误 %{code}"
+  error_color_could_not_be_saved: "无法保存颜色"
+  error_cookie_missing: "Yojana cookie 丢失。请确保已启用 cookie，因为如果不启用，此应用程序将无法正常运行。"
+  error_custom_option_not_found: "选项不存在。"
+  error_enterprise_plan_needed: "您需要 %{plan}企业版方案才能执行此操作。"
+  error_enterprise_activation_user_limit: "无法激活您的帐户 (已达到用户限制)。请与管理员联系以获取访问权限。"
+  error_enterprise_token_invalid_domain: "企业版未激活。您的企业版令牌的域名（%{actual}）与系统的主机名（%{expected}）不匹配。"
+  error_failed_to_delete_entry: "无法删除此条目。"
+  error_in_dependent: "尝试更改依赖对象时出错：%{dependent_class} #%{related_id} - %{related_subject}：%{error}"
+  error_in_new_dependent: "尝试创建依赖对象时出错：%{dependent_class} - %{related_subject}: %{error}"
+  error_invalid_selected_value: "选中的值无效。"
+  error_journal_attribute_not_present: "日志不包含 %{attribute} 属性。"
+  error_pdf_export_too_many_columns: "选择 PDF 导出的列太多。请减少列数。"
+  error_pdf_date_range_too_long: "所选工作包日期范围超出允许的 PDF 导出限制。请将范围缩减至最多 %{years} 年。"
+  error_pdf_failed_to_export: "无法保存被导出的 PDF 文件：%{error}"
+  error_token_authenticity: "无法验证跨站请求伪造令牌。您是否曾尝试在多个浏览器或选项卡上提交数据？请关闭所有选项卡并重试。"
+  error_reminder_not_found: "未找到提醒或已收到相关提醒的通知。"
+  error_work_package_not_found_in_project: "工作包找不到或不属于此项目"
+  error_work_package_id_not_found: "工作包未找到"
+  error_must_be_project_member: "必须是项目成员"
+  error_migrations_are_pending: "您的 Yojana 安装具有待定的数据库迁移。您可能在上次升级时错过了迁移。请查阅升级指南，正确升级您的安装。"
+  error_migrations_visit_upgrade_guides: "请访问我们的升级指南文档"
+  error_no_default_work_package_status: '没有定义默认的工作包状态。请检查您的配置 （转到"管理-> 工作包状态"）。'
+  error_no_type_in_project: "没有类型与此项目关联。请检查的项目设置。"
+  error_omniauth_registration_timed_out: "通过外部身份验证提供程序注册超时。请再试一次。"
+  error_omniauth_invalid_auth: "从身份提供程序返回的身份验证信息无效。请联系您的管理员获取更多帮助。"
+  error_password_change_failed: "试图更改密码时发生错误。"
+  error_scm_command_failed: "当试图访问该存储库时出错: %{value}"
+  error_scm_not_found: "在存储库中未找到的条目或修正版本。"
+  error_type_could_not_be_saved: "无法保存类型"
+  error_unable_delete_status: "不能删除工作包的状态，因为它由至少一个工作包使用。"
+  error_unable_delete_default_status: "无法删除默认工作包的状态。请删除当前之前选择另一个默认工作包状态。"
+  error_unable_to_connect: "无法连接 (%{value})"
+  error_unable_delete_wiki: "无法删除维基页面。"
+  error_unable_update_wiki: "无法更新维基页面。"
+  error_workflow_copy_source: "请选择源类型或角色"
+  error_workflow_copy_target: "请选择目标类型和角色"
   error_menu_item_not_created: 不能添加菜单项
   error_menu_item_not_saved: 不能保存菜单项
   error_wiki_root_menu_item_conflict: '无法将 "%{old_name}" 重命名为 "%{new_name}"，因为结果菜单项与现有菜单项 "%{existing_caption}" (%{existing_identifier}) 存在冲突。
@@ -3373,8 +3361,8 @@ zh-CN:
     succeeded: 导出完成
     failed: 在尝试导出工作包时发生错误： %{message}
     demo:
-      heading: 演示 PDF
-      footer: 由 OpenProject 生成
+      heading: "演示 PDF"
+      footer: "由 Yojana 生成"
       button_text: 生成演示 PDF
     errors:
       embedded_table_with_too_many_columns: 此嵌入式工作包表无法放在此页面上，请减少列数。
@@ -3486,14 +3474,11 @@ zh-CN:
         warning: 警告
   homescreen:
     additional:
-      projects: 此 OpenProject 实例中的最新可见项目。
-      no_visible_projects: 这个 OpenProject 中没有可见的项目。
-      favorite_projects:
-        no_results: 您没有收藏的项目
-        no_results_subtext: 通过项目概览或项目列表添加一个或多个项目作为收藏项目。
-      users: 此 OpenProject 实例中的最新注册用户。
+      projects: "此 Yojana 实例中的最新可见项目。"
+      no_visible_projects: "这个 Yojana 中没有可见的项目。"
+      users: "此 Yojana 实例中的最新注册用户。"
     blocks:
-      community: OpenProject 社区
+      community: "Yojana 社区"
       upsell:
         title: 升级到企业版
       new_features:
@@ -3505,40 +3490,38 @@ zh-CN:
 
             '
           new_features_list:
-            line_0: XWiki integration (Corporate plan).
-            line_1: Sprint goals.
-            line_2: "'All sprints' overview page."
-            line_3: Display backlog buckets in work packages and work package tables.
-            line_4: Improved support for project-based (semantic) identifiers.
-            line_5: Convert meeting agenda items into work packages.
-            line_6: Configure cost types per project.
+            line_0: 自动化项目启动（企业版附加组件）。
+            line_1: "会议：添加新工作包或现有工作包作为成果。"
+            line_2: "Meetings: show iCal responses in Yojana."
+            line_3: "定期会议：将议程条目复制到下一事件。"
+            line_4: "发布到社区：特性高亮显示。"
+            line_5: 在打开用户提供内容中的外部链接前发出警告（企业版附加组件）。
+            line_6: 提升了性能和用户体验，包括“活动”选项卡和“文档”模块。
     links:
-      upgrade_enterprise_edition: 升级到企业版
-      postgres_migration: 将您的安装迁移到 PostgreSQL
-      user_guides: 用户指南
-      faq: 常见问题
-      impressum: 法律声明
-      glossary: 术语表
-      shortcuts: 快捷键
-      blog: OpenProject 博客
-      forums: 社区论坛
-      security_alerts: 安全警报
-      newsletter: 简报
+      upgrade_enterprise_edition: "升级到企业版"
+      postgres_migration: "将您的安装迁移到 PostgreSQL"
+      user_guides: "用户指南"
+      faq: "常见问题"
+      impressum: "法律声明"
+      glossary: "术语表"
+      shortcuts: "快捷键"
+      blog: "Yojana 博客"
+      forums: "社区论坛"
+      security_alerts: "安全警报"
+      newsletter: "简报"
   image_conversion:
     imagemagick: Imagemagick软件
   journals:
     changes_retracted: 更改已撤回。
     caused_changes:
-      budget_deleted: 预算已删除
-      dates_changed: 日期已更改
-      default_attribute_written: 已写入只读属性
-      import: 已导入
-      progress_mode_changed_to_status_based: 更新进度计算
-      status_changed: 状态 '%{status_name}'
-      system_update: OpenProject 系统更新：
-      work_package_duplicate_closed: 重复的工作包已更新：
-      total_percent_complete_mode_changed_to_work_weighted_average: 现在按工作加权计算的 完成% 总数。
-      total_percent_complete_mode_changed_to_simple_average: 完成% 总数的计算现在仅基于完成% 值的简单平均值。
+      dates_changed: "日期已更改"
+      default_attribute_written: "已写入只读属性"
+      progress_mode_changed_to_status_based: "更新进度计算"
+      status_changed: "状态 '%{status_name}'"
+      system_update: "Yojana 系统更新："
+      work_package_duplicate_closed: "重复的工作包已更新："
+      total_percent_complete_mode_changed_to_work_weighted_average: "现在按工作加权计算的 完成% 总数。"
+      total_percent_complete_mode_changed_to_simple_average: "完成% 总数的计算现在仅基于完成% 值的简单平均值。"
     cause_descriptions:
       import:
         header: 更改者：%{author}
@@ -3602,7 +3585,7 @@ zh-CN:
         notifications: 通知设置
         email_reminders: 电子邮件提醒
     access_tokens:
-      description: 提供商令牌由 OpenProject 签发，允许其他应用程序访问。客户端令牌由其他应用程序签发，允许 OpenProject 对其进行访问。
+      description: "提供商令牌由 Yojana 签发，允许其他应用程序访问。客户端令牌由其他应用程序签发，允许 Yojana 对其进行访问。"
       no_results:
         title: 没有要显示的访问令牌
         description: 他们都已被禁用。他们可以在管理菜单重新启用。
@@ -3618,49 +3601,49 @@ zh-CN:
         provider:
           title: 提供商令牌
       token/api:
-        blank_description: 目前还没有 API 令牌。您可以使用下方按钮创建一个。
-        blank_title: 没有 API 令牌
-        title: API
-        table_title: API 令牌
-        text_hint: API 令牌允许第三方应用程序通过 REST API 与此 OpenProject 实例通信。
-        static_token_name: API 令牌
-        disabled_text: 管理员未启用 API 令牌。请联系管理员以使用此功能。
-        add_button: API 令牌
+        blank_description: "目前还没有 API 令牌。您可以使用下方按钮创建一个。"
+        blank_title: "没有 API 令牌"
+        title: "API"
+        table_title: "API 令牌"
+        text_hint: "API 令牌允许第三方应用程序通过 REST API 与此 Yojana 实例通信。"
+        static_token_name: "API 令牌"
+        disabled_text: "管理员未启用 API 令牌。请联系管理员以使用此功能。"
+        add_button: "API 令牌"
       ical:
-        blank_description: 要添加 iCalendar 令牌，请从项目的“日历”模块中订阅新日历或现有日历。您必须拥有必要的权限。
-        blank_title: 没有 iCalendar 令牌
-        title: iCalendar
-        table_title: iCalendar 令牌
-        text_hint_link: iCalendar 令牌允许用户[订阅OpenProject日历](docs_url)，并查看来自外部客户端的最新工作包信息。
-        disabled_text: 管理员未启用 iCalendar 订阅。请联系管理员以使用此功能。
+        blank_description: "要添加 iCalendar 令牌，请从项目的“日历”模块中订阅新日历或现有日历。您必须拥有必要的权限。"
+        blank_title: "没有 iCalendar 令牌"
+        title: "iCalendar"
+        table_title: "iCalendar 令牌"
+        text_hint_link: "iCalendar 令牌允许用户[订阅Yojana日历](docs_url)，并查看来自外部客户端的最新工作包信息。"
+        disabled_text: "管理员未启用 iCalendar 订阅。请联系管理员以使用此功能。"
       oauth_application:
-        active_tokens: 有效令牌
-        blank_description: 没有为您配置和激活第三方应用程序访问权限。
-        blank_title: 没有 OAuth 应用程序令牌
-        last_refreshed_at: 最后刷新时间
-        title: OAuth
-        table_title: OAuth 应用程序令牌
-        text_hint: OAuth 应用程序令牌允许第三方应用程序与此 OpenProject 实例关联。
+        active_tokens: "有效令牌"
+        blank_description: "没有为您配置和激活第三方应用程序访问权限。"
+        blank_title: "没有 OAuth 应用程序令牌"
+        last_used_at: "最近使用时间"
+        title: "OAuth"
+        table_title: "OAuth 应用程序令牌"
+        text_hint: "OAuth 应用程序令牌允许第三方应用程序与此 Yojana 实例关联。"
       oauth_client:
-        blank_description: 目前还没有 OAuth 客户端令牌。
-        blank_title: 没有 OAuth 客户端令牌
-        failed: 出错了，无法移除令牌。请稍后再试。
-        integration_type: 集成类型
-        table_title: OAuth 客户端令牌
-        text_hint: OAuth 客户端令牌允许此 OpenProject 实例与文件存储等外部应用程序关联。
-        title: OAuth
-        remove_token: 是否确实要移除此令牌？您需要再次登录 %{integration}。
-        removed: OAuth 客户端令牌已成功移除
-        unknown_integration: 未知
+        blank_description: "目前还没有 OAuth 客户端令牌。"
+        blank_title: "没有 OAuth 客户端令牌"
+        failed: "出错了，无法移除令牌。请稍后再试。"
+        integration_type: "集成类型"
+        table_title: "OAuth 客户端令牌"
+        text_hint: "OAuth 客户端令牌允许此 Yojana 实例与文件存储等外部应用程序关联。"
+        title: "OAuth"
+        remove_token: "是否确实要移除此令牌？您需要再次登录 %{integration}。"
+        removed: "OAuth 客户端令牌已成功移除"
+        unknown_integration: "未知"
       token/rss:
-        add_button: RSS 令牌
-        blank_description: 目前还没有 RSS 令牌。您可以使用下方按钮创建一个。
-        blank_title: 没有 RSS 令牌
-        title: RSS
-        table_title: RSS 令牌
-        text_hint: RSS 令牌允许用户通过外部 RSS 阅读器了解此 OpenProject 实例中的最新变化。
-        static_token_name: RSS 令牌
-        disabled_text: 管理员未启用 RSS 令牌。请联系管理员以使用此功能。
+        add_button: "RSS 令牌"
+        blank_description: "目前还没有 RSS 令牌。您可以使用下方按钮创建一个。"
+        blank_title: "没有 RSS 令牌"
+        title: "RSS"
+        table_title: "RSS 令牌"
+        text_hint: "RSS 令牌允许用户通过外部 RSS 阅读器了解此 Yojana 实例中的最新变化。"
+        static_token_name: "RSS 令牌"
+        disabled_text: "管理员未启用 RSS 令牌。请联系管理员以使用此功能。"
       storages:
         unknown_storage: 未知存储
     email_reminders:
@@ -3884,51 +3867,48 @@ zh-CN:
   label_collapse: 折叠
   label_collapsed_click_to_show: 折叠。点击显示
   label_configuration: 配置
-  label_comment_add: 添加评论
-  label_comment_added: 添加备注
-  label_comment_delete: 删除评论
-  label_comment_plural: 评论
-  label_commits_per_author: 提交每作者
-  label_commits_per_month: 每月提交
-  label_confirmation: 确认
-  label_contains: 包含
-  label_starts_with: 开始为
-  label_content: 内容
-  label_color_plural: 颜色
-  label_copied: 已复制
-  label_copy_same_as_target: 目标相同
-  label_copy_source: 源
-  label_copy_target: 目标
-  label_copy_workflow_from: 复制工作流自
-  label_copy_workflow_from_type: 复制到其他类型
-  label_copy_workflow_from_role: 复制到其他角色
-  label_copy_project: 复制项目
-  label_core_version: 核心版本
-  label_core_build: 核心构建
-  label_created_by: 由 %{user} 创建
-  label_current_status: 当前状态
-  label_current_version: 当前版本
-  label_custom_field_add_no_type: 将此字段添加到工作包类型中
-  label_custom_field_new: 新的自定义字段
-  label_custom_field_plural: 自定义字段
-  label_custom_field_default_type: 空类型
-  label_custom_style: 设计
-  label_custom_style_description: 选择主题来定制OpenProject的外观，选择应用中的默认颜色以及导出的样式。
-  label_dashboard: 仪表板
-  label_database_version: PostgreSQL 版本
-  label_date: 日期
-  label_dates: 日期
-  label_date_and_time: 日期和时间
-  label_date_format: 日期格式
-  label_date_from: 从
-  label_date_from_to: 从 %{start} 到 %{end}
-  label_date_to: 到
-  label_day_plural: 天
-  label_default: 默认
-  label_delete_user: 删除用户
-  label_delete_project: 删除项目
-  label_delete: 删除
-  label_deleted: 已删除
+  label_comment_add: "添加评论"
+  label_comment_added: "添加备注"
+  label_comment_delete: "删除评论"
+  label_comment_plural: "评论"
+  label_commits_per_author: "提交每作者"
+  label_commits_per_month: "每月提交"
+  label_confirmation: "确认"
+  label_contains: "包含"
+  label_content: "内容"
+  label_color_plural: "颜色"
+  label_copied: "已复制"
+  label_copy_same_as_target: "目标相同"
+  label_copy_source: "源"
+  label_copy_target: "目标"
+  label_copy_workflow_from: "复制工作流自"
+  label_copy_project: "复制项目"
+  label_core_version: "核心版本"
+  label_core_build: "核心构建"
+  label_created_by: "由 %{user} 创建"
+  label_current_status: "当前状态"
+  label_current_version: "当前版本"
+  label_custom_field_add_no_type: "将此字段添加到工作包类型中"
+  label_custom_field_new: "新的自定义字段"
+  label_custom_field_plural: "自定义字段"
+  label_custom_field_default_type: "空类型"
+  label_custom_style: "设计"
+  label_custom_style_description: "选择主题来定制Yojana的外观，选择应用中的默认颜色以及导出的样式。"
+  label_dashboard: "仪表板"
+  label_database_version: "PostgreSQL 版本"
+  label_date: "日期"
+  label_dates: "日期"
+  label_date_and_time: "日期和时间"
+  label_date_format: "日期格式"
+  label_date_from: "从"
+  label_date_from_to: "从 %{start} 到 %{end}"
+  label_date_to: "到"
+  label_day_plural: "天"
+  label_default: "默认"
+  label_delete_user: "删除用户"
+  label_delete_project: "删除项目"
+  label_delete: "删除"
+  label_deleted: "已删除"
   label_deleted_custom_field: "（删除自定义字段）"
   label_deleted_custom_item: "(删除项目)"
   label_deleted_custom_option: "（删除的选项）"
@@ -4182,61 +4162,53 @@ zh-CN:
   label_not_found: 未找到
   label_none: 无
   label_none_parentheses: "(无)"
-  label_not_contains: 不包含
-  label_not_equals: 不是
-  label_life_cycle_step_plural: 项目生命周期
-  label_on: 于
-  label_operator_all: 不为空
-  label_operator_none: 为空
-  label_operator_equals_or: 是 (OR)
-  label_operator_equals_all: 是 (AND)
-  label_operator_shared_with_user_any: 任一
-  label_open: 打开
-  label_closed: 已关闭
-  label_open_menu: 打开菜单
-  label_open_work_packages: 打开
-  label_open_work_packages_plural: 打开
-  label_openproject_website: OpenProject 网站
-  label_optional_description: 描述
-  label_options: 选项
-  label_other: 其他
-  label_overall_activity: 总体活动
-  label_overview: 概述
-  label_page_title: 页面标题
-  label_parent_group_caption: '设置父群组将使此群组成为所选父群组的子群组。此群组也将继承父群组的所有成员资格，包括权限。
-
-    '
-  label_part_of: 一部分
-  label_password_lost: 忘记密码？
-  label_password_rule_lowercase: 小写字母
-  label_password_rule_numeric: 数字
-  label_password_rule_special: 特殊字符
-  label_password_rule_uppercase: 大写字母
-  label_password_requirement_lowercase: 必须包含至少一个小写字母。
-  label_password_requirement_numeric: 必须包含数字。
-  label_password_requirement_special: 必须包含特殊字符。
-  label_password_requirement_uppercase: 必须包含大写字母。
-  label_path_encoding: 路径编码
-  label_per_page: 每页：
-  label_people: 人员
-  label_permissions: 权限
-  label_permissions_report: 权限报告
-  label_personalize_page: 对此页面进行个性化设置
-  label_placeholder_user: 占位符用户
-  label_placeholder_user_new: 新占位符用户
-  label_placeholder_user_plural: 占位符用户
-  label_planning: 规划
-  label_please_login: 请登录
-  label_plugins: 插件
-  label_portfolio_plural: 项目组合
-  label_modules_and_plugins: 模块和插件
-  label_precedes: 之前
-  label_preferences: 首选项
-  label_preview: 预览
-  label_preview_not_available: 预览不可用
-  label_previous: 上一个
-  label_previous_week: 前一周
-  label_previous_year: 去年
+  label_not_contains: "不包含"
+  label_not_equals: "不是"
+  label_life_cycle_step_plural: "项目生命周期"
+  label_on: "于"
+  label_operator_all: "不为空"
+  label_operator_none: "为空"
+  label_operator_equals_or: "是 (OR)"
+  label_operator_equals_all: "是 (AND)"
+  label_operator_shared_with_user_any: "任一"
+  label_open: "打开"
+  label_closed: "已关闭"
+  label_open_menu: "打开菜单"
+  label_open_work_packages: "打开"
+  label_open_work_packages_plural: "打开"
+  label_openproject_website: "Yojana 网站"
+  label_optional_description: "描述"
+  label_options: "选项"
+  label_other: "其他"
+  label_overall_activity: "总体活动"
+  label_overview: "概述"
+  label_page_title: "页面标题"
+  label_part_of: "一部分"
+  label_password_lost: "忘记密码？"
+  label_password_rule_lowercase: "小写字母"
+  label_password_rule_numeric: "数字"
+  label_password_rule_special: "特殊字符"
+  label_password_rule_uppercase: "大写字母"
+  label_path_encoding: "路径编码"
+  label_per_page: "每页："
+  label_people: "人员"
+  label_permissions: "权限"
+  label_permissions_report: "权限报告"
+  label_personalize_page: "对此页面进行个性化设置"
+  label_placeholder_user: "占位符用户"
+  label_placeholder_user_new: "新占位符用户"
+  label_placeholder_user_plural: "占位符用户"
+  label_planning: "规划"
+  label_please_login: "请登录"
+  label_plugins: "插件"
+  label_portfolio_plural: "项目组合"
+  label_modules_and_plugins: "模块和插件"
+  label_precedes: "之前"
+  label_preferences: "首选项"
+  label_preview: "预览"
+  label_preview_not_available: "预览不可用"
+  label_previous: "上一个"
+  label_previous_week: "前一周"
   label_principal_invite_via_email: " 或通过电子邮件邀请新用户"
   label_principal_search: 添加现有用户或组
   label_privacy_policy: 数据隐私和安全政策
@@ -4632,8 +4604,8 @@ zh-CN:
   mail_body_backup_token_reset_user_info: 您的备份令牌已重置。
   mail_body_backup_token_info: 之前的令牌不再有效。
   mail_body_backup_waiting_period: 新令牌将在 %{hours} 小时后启用。
-  mail_body_backup_token_warning: 如果不是您在操作，请立即登录 OpenProject 并重置。
-  mail_body_incoming_email_error: 无法处理您发送给 OpenProject 的电子邮件。
+  mail_body_backup_token_warning: 如果不是您在操作，请立即登录 Yojana 并重置。
+  mail_body_incoming_email_error: 无法处理您发送给 Yojana 的电子邮件。
   mail_body_incoming_email_error_in_reply_to: "%{from_email} 在 %{received_at} 撰写"
   mail_body_incoming_email_error_logs: 日志
   mail_body_lost_password: 若要更改你的密码，请单击下面的链接：
@@ -4645,21 +4617,21 @@ zh-CN:
   mail_body_register_header_title: 项目成员邀请电子邮件
   mail_body_register_user: "%{name}，您好："
   mail_body_register_links_html: |
-    请随时浏览我们的 youtube 频道 (%{youtube_link})，在这里我们提供了网络研讨会 (%{webinar_link}) 和“入门”视频 (%{get_started_link})，让您在 OpenProject 中尽可能轻松地迈出第一步。
+    请随时浏览我们的 youtube 频道 (%{youtube_link})，在这里我们提供了网络研讨会 (%{webinar_link}) 和“入门”视频 (%{get_started_link})，让您在 Yojana 中尽可能轻松地迈出第一步。
     <br />
     如果您有任何其他疑问，请参阅我们的文档 (%{documentation_link}) 或与您的管理员联系。
-  mail_body_register_closing: 您的 OpenProject 团队
-  mail_body_register_ending: 保持联系！谨致问候，
+  mail_body_register_closing: "您的 Yojana 团队"
+  mail_body_register_ending: "保持联系！谨致问候，"
   mail_body_reminder: "%{count} 个分配给您的工作包将在 %{days} 天后到期："
   mail_body_group_reminder: "%{count} 个分配给组“%{group}”的工作包将在 %{days} 天后到期："
   mail_body_wiki_page_added: "'%{id}' 维基页面已经由%{author} 添加。"
   mail_body_wiki_page_updated: "'%{id}' 维基页面已经由%{author} 更新。"
   mail_subject_account_activation_request: "%{value} 帐户激活请求"
-  mail_subject_backup_ready: 您的备份已就绪
-  mail_subject_backup_token_reset: 备份令牌重置
-  mail_subject_incoming_email_error: 无法处理您发送给 OpenProject 的电子邮件
-  mail_subject_lost_password: 你的 %{value} 密码
-  mail_subject_register: 您的%{value}帐户激活
+  mail_subject_backup_ready: "您的备份已就绪"
+  mail_subject_backup_token_reset: "备份令牌重置"
+  mail_subject_incoming_email_error: "无法处理您发送给 Yojana 的电子邮件"
+  mail_subject_lost_password: "你的 %{value} 密码"
+  mail_subject_register: "您的%{value}帐户激活"
   mail_subject_wiki_content_added: "'%{id}' 维基页面已添加"
   mail_subject_wiki_content_updated: "'%{id}' 维基页面已更新"
   mail_member_added_project:
@@ -4685,17 +4657,16 @@ zh-CN:
       roles: 您现在具有以下角色：
   mail_user_activation_limit_reached:
     subject: 已达到用户激活限制
-    message_html: |
-      新用户 (%{email}) 试图在您管理的 OpenProject 环境 (%{host}) 上创建帐户。
-      由于已达到用户限制，此用户无法激活其帐户。
+    message: |
+      新用户 (%{email}) 试图在您管理的 Yojana 环境 (%{host}) 上创建帐户。用户无法激活其帐户, 因为已达到用户限制。
     steps:
-      a: "([在这里](upgrade_url)) 升级付款计划"
-      b: "([在这里](users_url)) 锁定或删除现有用户"
-      label: '要允许用户登录, 您可以: '
-  more_actions: 更多功能
-  noscript_description: 您需要激活JavaScript才能使用 OpenProject！
-  noscript_heading: JavaScript 被禁用
-  noscript_learn_more: 了解更多信息
+      label: "要允许用户登录, 您可以: "
+      a: "([在这里](upgrade_url)) 升级付款计划" #here turned into a link
+      b: "([在这里](users_url)) 锁定或删除现有用户" #here turned into a link
+  more_actions: "更多功能"
+  noscript_description: "您需要激活JavaScript才能使用 Yojana！"
+  noscript_heading: "JavaScript 被禁用"
+  noscript_learn_more: "了解更多信息"
   notice_accessibility_mode: 可以在您的 [account settings](url) 中启用辅助功能模式。
   notice_account_activated: 您的帐户已激活。您现在可以登录。
   notice_account_already_activated: 已激活该帐户。
@@ -4775,10 +4746,10 @@ zh-CN:
   notice_automatic_set_of_standard_type: 自动设置标准类型。
   notice_logged_out: 您已被注销。
   notice_wont_delete_auth_source: 只要仍有用户在使用该 LDAP 连接，就无法将其删除。
-  notice_project_cannot_update_custom_fields: 您无法更新项目的可用自定义字段。项目无效：%{errors}
-  notice_attachment_migration_wiki_page: '此页是在更新 OpenProject 时自动生成。它包含以前与 %{container_type} "%{container_name}" 关联的所有附件。
-
-    '
+  notice_project_cannot_update_custom_fields: "您无法更新项目的可用自定义字段。项目无效：%{errors}"
+  notice_attachment_migration_wiki_page: >
+    此页是在更新 Yojana 时自动生成。它包含以前与 %{container_type} "%{container_name}" 关联的所有附件。
+  #Default format for numbers
   number:
     format:
       delimiter: "，"
@@ -4798,138 +4769,127 @@ zh-CN:
           mb: MB
           tb: TB
   onboarding:
-    heading_getting_started: 概览
-    text_getting_started_description: 快速了解 OpenProject 的项目管理和团队协作。您可以从帮助菜单重新启动此视频。
-    welcome: 欢迎使用 %{app_title}
-    select_language: 请选择您的语言
-  open_project:
-    common:
-      work_package_card_component:
-        drag_handle:
-          label: 拖拽排序
-        menu:
-          label_actions: 工作包操作
-        parent: 父
-        undisclosed: 未公开
-  permission_add_work_package_comments: 添加评论
-  permission_add_work_packages: 添加工作包
-  permission_add_messages: 发布消息
-  permission_add_project: 创建项目
-  permission_add_portfolios: 创建项目组合
-  permission_add_programs: 创建计划
-  permission_add_work_package_attachments: 添加附件
-  permission_add_work_package_attachments_explanation: 允许在没有编辑工作包权限的情况下添加附件
-  permission_add_internal_comments: 写内部评论
-  permission_archive_project: 归档项目
-  permission_create_user: 创建用户
-  permission_manage_user: 编辑用户
-  permission_manage_placeholder_user: 创建、编辑和删除占位符用户
-  permission_add_subprojects: 创建子项目
-  permission_add_work_package_watchers: 添加关注者
-  permission_assign_versions: 分配版本
-  permission_browse_repository: 只读访问存储库 (浏览和检出)
-  permission_change_work_package_status: 更改工作包状态
-  permission_change_work_package_status_explanation: 允许在不编辑工作包权限的情况下更改状态
-  permission_comment_news: 评论新闻
-  permission_commit_access: 读/写访问存储库 (提交)
-  permission_copy_projects: 复制项目
-  permission_copy_projects_explanation: 在模板项目中，此权限具有一个辅助功能，即允许通过模板创建新项目。
-  permission_copy_work_packages: 复制工作包
-  permission_create_backup: 创建备份
-  permission_delete_work_package_watchers: 删除关注者
-  permission_delete_work_packages: 删除工作包
-  permission_delete_messages: 删除消息
-  permission_delete_own_messages: 删除自己的消息
-  permission_delete_reportings: 删除报告
-  permission_delete_timelines: 删除时间线
-  permission_edit_work_package_comments: 审核评论
-  permission_edit_work_package_comments_explanation: 注意：拥有此权限的用户可以编辑任何人的评论。
-  permission_edit_work_packages: 编辑工作包
-  permission_edit_messages: 编辑消息
-  permission_edit_own_internal_comments: 编辑自己的内部评论
-  permission_edit_own_work_package_comments: 编辑自己的评论
-  permission_edit_own_messages: 编辑自己的消息
-  permission_edit_own_time_entries: 编辑自己的时间记录
-  permission_edit_others_internal_comments: 审核内部评论
-  permission_edit_others_internal_comments_explanation: 注意：拥有此权限的用户可以编辑其他用户的内部评论。
-  permission_edit_project: 编辑项目
-  permission_edit_project_attributes: 编辑项目属性
-  permission_edit_project_phases: 编辑项目阶段
-  permission_edit_reportings: 编辑报告
-  permission_edit_time_entries: 编辑其他用户的时间日志
-  permission_edit_timelines: 编辑时间线
-  permission_edit_wiki_pages: 编辑维基页面
-  permission_export_work_packages: 导出工作包
-  permission_export_projects: 导出项目
-  permission_invite_members_by_email: 通过电子邮件邀请成员
-  permission_invite_members_by_email_explanation: '允许用户通过电子邮件邀请新会员。邀请用户将收到一封包含链接的电子邮件来设置密码并激活他们的帐户。 依赖于管理会员的权限
-
-    '
-  permission_log_own_time: 记录自己的时间
-  permission_log_time: 记录其他用户的时间
-  permission_manage_forums: 管理论坛
-  permission_manage_categories: 管理工作包类别
-  permission_manage_dashboards: 管理仪表板
-  permission_manage_work_package_relations: 管理工作包的关系
-  permission_manage_members: 管理成员
-  permission_manage_news: 管理新闻
-  permission_manage_project_activities: 管理项目活动
-  permission_manage_public_queries: 管理公共查询
-  permission_manage_repository: 托管存储库
-  permission_manage_subtasks: 管理工作包层次结构
-  permission_manage_versions: 管理版本
-  permission_manage_wiki: 管理维基
-  permission_manage_own_working_times: 管理自己的工作时间
-  permission_manage_own_working_times_explanation: '允许用户管理自己的工作时间和个人非工作日。
-
-    '
-  permission_manage_working_times: 管理所有用户的工作时间
-  permission_manage_working_times_explanation: '允许用户管理所有用户的工作时间，包括个人非工作日。
-
-    '
-  permission_move_work_packages: 移动工作包
-  permission_save_queries: 保存界面设置
-  permission_search_project: 搜索项目
-  permission_select_custom_fields: 选择自定义字段
-  permission_select_project_custom_fields: 选择项目属性
-  permission_select_project_phases: 选择项目阶段
-  permission_select_project_phases_explanation: 激活/停用项目中的阶段。允许户选择适合项目的生命周期，因为非激活的阶段在项目概览页或项目列表中都不可见。
-  permission_select_project_modules: 选择项目模块
-  permission_share_work_packages: 共享工作包
-  permission_manage_types: 选择类型
-  permission_manage_own_reminders: 创建个人提醒事项
-  permission_view_all_principals: 查看所有用户和组
-  permission_view_all_principals_explanation: '允许用户在系统中查看所有用户和组，即使他们不是任何加入的项目或组的成员。
-
-    '
-  permission_view_project: 查看项目
-  permission_view_changesets: 查看 OpenProject 存储库修订
-  permission_view_internal_comments: 查看内部评论
-  permission_view_commit_author_statistics: 查看提交作者统计信息
-  permission_view_dashboards: 查看仪表板
-  permission_view_work_package_watchers: 查看关注者列表
-  permission_view_work_packages: 查看工作包
-  permission_view_messages: 查看消息
-  permission_view_news: 查看新闻
-  permission_view_members: 查看成员
-  permission_view_reportings: 查看报告
-  permission_view_shared_work_packages: 查看工作包共享
-  permission_view_time_entries: 查看消耗时间
-  permission_view_timelines: 查看时间线
-  permission_view_user_email: 查看用户的邮件地址
-  permission_view_wiki_edits: 查看维基历史记录
-  permission_view_wiki_pages: 查看维基
-  permission_work_package_assigned: 成为受理人/责任人
-  permission_work_package_assigned_explanation: 工作包可以分配给在各自项目中拥有此角色的用户和组
-  permission_view_project_activity: 查看项目活动
-  permission_view_project_attributes: 查看项目属性
-  permission_view_project_phases: 查看项目阶段
-  permission_save_bcf_queries: 保存 BCF 查询
-  permission_manage_public_bcf_queries: 管理公开的 BCF 查询
-  permission_edit_attribute_help_texts: 编辑属性帮助文本
-  permission_manage_public_project_queries: 管理公开项目列表
-  permission_view_project_query: 查看项目查询
-  permission_edit_project_query: 编辑项目查询
+    heading_getting_started: "概览"
+    text_getting_started_description: "快速了解 Yojana 的项目管理和团队协作。您可以从帮助菜单重新启动此视频。"
+    welcome: "欢迎使用 %{app_title}"
+    select_language: "请选择您的语言"
+  permission_add_work_package_comments: "添加评论"
+  permission_add_work_packages: "添加工作包"
+  permission_add_messages: "发布消息"
+  permission_add_project: "创建项目"
+  permission_add_portfolios: "创建项目组合"
+  permission_add_programs: "创建计划"
+  permission_add_work_package_attachments: "添加附件"
+  permission_add_work_package_attachments_explanation: "允许在没有编辑工作包权限的情况下添加附件"
+  permission_add_internal_comments: "写内部评论"
+  permission_archive_project: "归档项目"
+  permission_create_user: "创建用户"
+  permission_manage_user: "编辑用户"
+  permission_manage_placeholder_user: "创建、编辑和删除占位符用户"
+  permission_add_subprojects: "创建子项目"
+  permission_add_work_package_watchers: "添加关注者"
+  permission_assign_versions: "分配版本"
+  permission_browse_repository: "只读访问存储库 (浏览和检出)"
+  permission_change_wiki_parent_page: "更改上级维基页面"
+  permission_change_work_package_status: "更改工作包状态"
+  permission_change_work_package_status_explanation: "允许在不编辑工作包权限的情况下更改状态"
+  permission_comment_news: "评论新闻"
+  permission_commit_access: "读/写访问存储库 (提交)"
+  permission_copy_projects: "复制项目"
+  permission_copy_projects_explanation: "在模板项目中，此权限具有一个辅助功能，即允许通过模板创建新项目。"
+  permission_copy_work_packages: "复制工作包"
+  permission_create_backup: "创建备份"
+  permission_delete_work_package_watchers: "删除关注者"
+  permission_delete_work_packages: "删除工作包"
+  permission_delete_messages: "删除消息"
+  permission_delete_own_messages: "删除自己的消息"
+  permission_delete_reportings: "删除报告"
+  permission_delete_timelines: "删除时间线"
+  permission_delete_wiki_pages: "删除维基页面"
+  permission_delete_wiki_pages_attachments: "删除附件"
+  permission_edit_work_package_comments: "审核评论"
+  permission_edit_work_package_comments_explanation: "注意：拥有此权限的用户可以编辑任何人的评论。"
+  permission_edit_work_packages: "编辑工作包"
+  permission_edit_messages: "编辑消息"
+  permission_edit_own_internal_comments: "编辑自己的内部评论"
+  permission_edit_own_work_package_comments: "编辑自己的评论"
+  permission_edit_own_messages: "编辑自己的消息"
+  permission_edit_own_time_entries: "编辑自己的时间记录"
+  permission_edit_others_internal_comments: "审核内部评论"
+  permission_edit_others_internal_comments_explanation: "注意：拥有此权限的用户可以编辑其他用户的内部评论。"
+  permission_edit_project: "编辑项目"
+  permission_edit_project_attributes: "编辑项目属性"
+  permission_edit_project_phases: "编辑项目阶段"
+  permission_edit_reportings: "编辑报告"
+  permission_edit_time_entries: "编辑其他用户的时间日志"
+  permission_edit_timelines: "编辑时间线"
+  permission_edit_wiki_pages: "编辑维基页面"
+  permission_export_work_packages: "导出工作包"
+  permission_export_projects: "导出项目"
+  permission_export_wiki_pages: "导出维基页面"
+  permission_invite_members_by_email: "通过电子邮件邀请成员"
+  permission_invite_members_by_email_explanation: >
+    允许用户通过电子邮件邀请新会员。邀请用户将收到一封包含链接的电子邮件来设置密码并激活他们的帐户。 依赖于管理会员的权限
+  permission_list_attachments: "列出附件"
+  permission_log_own_time: "记录自己的时间"
+  permission_log_time: "记录其他用户的时间"
+  permission_manage_forums: "管理论坛"
+  permission_manage_categories: "管理工作包类别"
+  permission_manage_dashboards: "管理仪表板"
+  permission_manage_work_package_relations: "管理工作包的关系"
+  permission_manage_members: "管理成员"
+  permission_manage_news: "管理新闻"
+  permission_manage_project_activities: "管理项目活动"
+  permission_manage_public_queries: "管理公共查询"
+  permission_manage_repository: "托管存储库"
+  permission_manage_subtasks: "管理工作包层次结构"
+  permission_manage_versions: "管理版本"
+  permission_manage_wiki: "管理维基"
+  permission_manage_wiki_menu: "管理维基菜单"
+  permission_move_work_packages: "移动工作包"
+  permission_protect_wiki_pages: "保护维基页面"
+  permission_rename_wiki_pages: "重命名维基页面"
+  permission_save_queries: "保存界面设置"
+  permission_search_project: "搜索项目"
+  permission_select_custom_fields: "选择自定义字段"
+  permission_select_project_custom_fields: "选择项目属性"
+  permission_select_project_phases: "选择项目阶段"
+  permission_select_project_phases_explanation: "激活/停用项目中的阶段。允许户选择适合项目的生命周期，因为非激活的阶段在项目概览页或项目列表中都不可见。"
+  permission_select_project_modules: "选择项目模块"
+  permission_share_work_packages: "共享工作包"
+  permission_manage_types: "选择类型"
+  permission_manage_own_reminders: "创建个人提醒事项"
+  permission_view_all_principals: "查看所有用户和组"
+  permission_view_all_principals_explanation: >
+    允许用户在系统中查看所有用户和组，即使他们不是任何加入的项目或组的成员。
+  permission_view_project: "查看项目"
+  permission_view_changesets: "查看 Yojana 存储库修订"
+  permission_view_internal_comments: "查看内部评论"
+  permission_view_commit_author_statistics: "查看提交作者统计信息"
+  permission_view_dashboards: "查看仪表板"
+  permission_view_work_package_watchers: "查看关注者列表"
+  permission_view_work_packages: "查看工作包"
+  permission_view_messages: "查看消息"
+  permission_view_news: "查看新闻"
+  permission_view_members: "查看成员"
+  permission_view_reportings: "查看报告"
+  permission_view_shared_work_packages: "查看工作包共享"
+  permission_view_time_entries: "查看消耗时间"
+  permission_view_timelines: "查看时间线"
+  permission_view_user_email: "查看用户的邮件地址"
+  permission_view_wiki_edits: "查看维基历史记录"
+  permission_view_wiki_pages: "查看维基"
+  permission_work_package_assigned: "成为受理人/责任人"
+  permission_work_package_assigned_explanation: "工作包可以分配给在各自项目中拥有此角色的用户和组"
+  permission_view_project_activity: "查看项目活动"
+  permission_view_project_attributes: "查看项目属性"
+  permission_view_project_phases: "查看项目阶段"
+  permission_save_bcf_queries: "保存 BCF 查询"
+  permission_manage_public_bcf_queries: "管理公开的 BCF 查询"
+  permission_edit_attribute_help_texts: "编辑属性帮助文本"
+  permission_manage_public_project_queries: "管理公开项目列表"
+  permission_view_project_query: "查看项目查询"
+  permission_edit_project_query: "编辑项目查询"
   placeholders:
     default: "-"
     templated_hint: 通过“%{type}”类型自动生成
@@ -5027,49 +4987,50 @@ zh-CN:
     create_successful: 存储库已被注册。
     delete_sucessful: 存储库已被删除。
     destroy:
-      confirmation: 如果你继续将永久删除托管的存储库。
-      info: 删除存储库是一个不可逆转的操作。
-      info_not_managed: '注意: 这不会删除该存储库的内容，它不由 OpenProject 托管。'
-      managed_path_note: '以下目录将被删除: %{path}'
-      repository_verification_html: 输入项目的标识符 %{identifier}，以确认删除其仓库。
-      subtitle: 你确定要删除项目 %{project_name} 的 %{repository_type} 吗?
-      subtitle_not_managed_html: 是否确实要从项目 %{project_name} 删除关联的 %{repository_type} %{url}？
-      title_html: 删除 %{repository_type}
-      title_not_managed: 删除链接的 %{repository_type} 吗?
+      confirmation: "如果你继续将永久删除托管的存储库。"
+      info: "删除存储库是一个不可逆转的操作。"
+      info_not_managed: "注意: 这不会删除该存储库的内容，它不由 Yojana 托管。"
+      managed_path_note: "以下目录将被删除: %{path}"
+      repository_verification: "输入项目的标识符 %{identifier}，以确认其存储库中的删除。"
+      subtitle: "你确定要删除项目 %{project_name} 的 %{repository_type} 吗?"
+      subtitle_not_managed: "你真的想要从项目 %{project_name} 删除链接的 %{repository_type} %{url}?"
+      title: "删除 %{repository_type}"
+      title_not_managed: "删除链接的 %{repository_type} 吗?"
     errors:
-      build_failed: 在所选的配置下无法创建存储库。%{reason}
-      managed_delete: 无法删除托管的存储库。
-      managed_delete_local: '无法删除 ''%{path}'' 在文件系统上的本地存储库: %{error_message}'
-      empty_repository: 存储库已存在，不过该库是空的。它还不包括任何版本。
-      exists_on_filesystem: 存储库目录已存在文件系统中。
-      filesystem_access_failed: '访问文件系统中的存储库时出错: %{message}'
-      not_manageable: 该存储库提供商无法被 OpenProject 托管。
-      path_permission_failed: 在创建目录： %{path} 时发生错误。请确定 OpenProject 对该目录有可写权限。
-      unauthorized: 您无权访问存储库或凭据无效。
-      unavailable: 该存储库不可用。
-      exception_title: 不能访问 %{message} 存储库
-      disabled_or_unknown_type: 所选的类型 %{type} 是禁用状态或不再为SCM提供商 %{vendor} 可用。
-      disabled_or_unknown_vendor: SCM提供商 %{vendor} 是被禁用状态或不再可用。
-      remote_call_failed: '调用托管的远程失败消息"%{message}"(代码: %{code})'
-      remote_invalid_response: 从托管远程收到无效的响应。
-      remote_save_failed: 不能从远程数据库中检索的参数保存存储库。
+      build_failed: "在所选的配置下无法创建存储库。%{reason}"
+      managed_delete: "无法删除托管的存储库。"
+      managed_delete_local: "无法删除 '%{path}' 在文件系统上的本地存储库: %{error_message}"
+      empty_repository: "存储库已存在，不过该库是空的。它还不包括任何版本。"
+      exists_on_filesystem: "存储库目录已存在文件系统中。"
+      filesystem_access_failed: "访问文件系统中的存储库时出错: %{message}"
+      not_manageable: "该存储库提供商无法被 Yojana 托管。"
+      path_permission_failed: "在创建目录： %{path} 时发生错误。请确定 Yojana 对该目录有可写权限。"
+      unauthorized: "您无权访问存储库或凭据无效。"
+      unavailable: "该存储库不可用。"
+      exception_title: "不能访问 %{message} 存储库"
+      disabled_or_unknown_type: "所选的类型 %{type} 是禁用状态或不再为SCM提供商 %{vendor} 可用。"
+      disabled_or_unknown_vendor: "SCM提供商 %{vendor} 是被禁用状态或不再可用。"
+      remote_call_failed: "调用托管的远程失败消息\"%{message}\"(代码: %{code})"
+      remote_invalid_response: "从托管远程收到无效的响应。"
+      remote_save_failed: "不能从远程数据库中检索的参数保存存储库。"
     git:
       instructions:
-        managed_url: 这是托管 (本地) 的 Git 存储库的 URL。
-        path: 指定本地 Git 存储库的路径 (例如, %{example_path})。您也可以使用以http(s):// 或file://开始的数值复制到本地副本的远程存储库。
-        path_encoding: '重写 Git 路径编码 (默认: UTF-8)'
-      local_title: 链接现有的本地 Git 存储库
-      local_url: 本地URL
-      local_introduction: 如果您已有本地 Git 存储库，可以将其链接到 OpenProject 来访问。
-      managed_introduction: 让 OpenProject 创建并自动集成一个本地 Git 存储库。
-      managed_title: Git 存储库集成到 OpenProject
-      managed_url: 托管的 URL
-      path: Git 存储库路径
-      path_encoding: 路径编码
-    go_to_revision: 切换到版本
-    managed_remote: 该提供商的托管存储库是远程处理的。
-    managed_remote_note: 此存储库路径与 URL 信息在创建之前不可用。
-    managed_url: 托管的 URL
+        managed_url: "这是托管 (本地) 的 Git 存储库的 URL。"
+        path: >-
+          指定本地 Git 存储库的路径 (例如, %{example_path})。您也可以使用以http(s):// 或file://开始的数值复制到本地副本的远程存储库。
+        path_encoding: "重写 Git 路径编码 (默认: UTF-8)"
+      local_title: "链接现有的本地 Git 存储库"
+      local_url: "本地URL"
+      local_introduction: "如果您已有本地 Git 存储库，可以将其链接到 Yojana 来访问。"
+      managed_introduction: "让 Yojana 创建并自动集成一个本地 Git 存储库。"
+      managed_title: "Git 存储库集成到 Yojana"
+      managed_url: "托管的 URL"
+      path: "Git 存储库路径"
+      path_encoding: "路径编码"
+    go_to_revision: "切换到版本"
+    managed_remote: "该提供商的托管存储库是远程处理的。"
+    managed_remote_note: "此存储库路径与 URL 信息在创建之前不可用。"
+    managed_url: "托管的 URL"
     settings:
       automatic_managed_repos_disabled: 禁用自动创建
       automatic_managed_repos: 自动创建的托管存储库
@@ -5077,286 +5038,256 @@ zh-CN:
     scm_vendor: 源代码、文件版本控制系统
     scm_type: 存储库类型
     scm_types:
-      local: 链接现有的本地存储库
-      existing: 链接现有的存储库
-      managed: 在 OpenProject 中创建新的存储库
+      local: "链接现有的本地存储库"
+      existing: "链接现有的存储库"
+      managed: "在 Yojana 中创建新的存储库"
     storage:
-      not_available: 磁盘存储开销不可用于此存储库。
-      update_timeout: 在 N 分钟内保留存储库最后所需磁盘空间的信息。由于计算存储库所需的磁盘空间可能增加系统开销，增加该值可以减少性能影响。
-      oauth_application_details_html: 关闭此窗口后，将无法再次访问客户端密钥值。请将这些值复制到 Nextcloud OpenProject 集成设置中：
-      oauth_application_details_link_text: 转到设置页面
-      setup_documentation_details: 如果您在配置新文件存储方面需要帮助，请查看文档：
-      setup_documentation_details_link_text: 文件存储设置
-      show_warning_details: 要使用此文件存储，请记得在每个所需项目的项目设置中激活模块和特定存储。
+      not_available: "磁盘存储开销不可用于此存储库。"
+      update_timeout: "在 N 分钟内保留存储库最后所需磁盘空间的信息。由于计算存储库所需的磁盘空间可能增加系统开销，增加该值可以减少性能影响。"
+      oauth_application_details: "关闭此窗口后，将无法再次访问客户端密钥值。请将这些值复制到 Nextcloud Yojana 集成设置中："
+      oauth_application_details_link_text: "转到设置页面"
+      setup_documentation_details: "如果您在配置新文件存储方面需要帮助，请查看文档："
+      setup_documentation_details_link_text: "文件存储设置"
+      show_warning_details: "要使用此文件存储，请记得在每个所需项目的项目设置中激活模块和特定存储。"
     subversion:
-      existing_title: 现有的 Subversion 存储库
-      existing_introduction: 如果您已有本地 Git 存储库，可以将其链接到 OpenProject 来访问。
-      existing_url: 现在的URL
+      existing_title: "现有的 Subversion 存储库"
+      existing_introduction: "如果您已有本地 Git 存储库，可以将其链接到 Yojana 来访问。"
+      existing_url: "现在的URL"
       instructions:
-        managed_url: 这是托管的 (本地) Subversion 存储库的 URL。
-        url: '输入存储库 URL。这可能既指向本地存储库 (以 %{local_proto} 开头) ，或者是一个远程存储库。下面的 URL 方案是被支持的:'
-      managed_title: Subversion 存储库集成到 OpenProject
-      managed_introduction: 让 OpenProject 创建和自动集成一个Subversion本地存储库。
-      managed_url: 托管的 URL
-      password: 存储库密码
-      username: 存储库用户名
-    truncated: 很抱歉，我们不得不将此目录截断为 %{limit} 个文件。列表中已省略 %{truncated} 个条目。
+        managed_url: "这是托管的 (本地) Subversion 存储库的 URL。"
+        url: "输入存储库 URL。这可能既指向本地存储库 (以 %{local_proto} 开头) ，或者是一个远程存储库。下面的 URL 方案是被支持的:"
+      managed_title: "Subversion 存储库集成到 Yojana"
+      managed_introduction: "让 Yojana 创建和自动集成一个Subversion本地存储库。"
+      managed_url: "托管的 URL"
+      password: "存储库密码"
+      username: "存储库用户名"
+    truncated: "很抱歉，我们不得不将此目录截断为 %{limit} 个文件。列表中已省略 %{truncated} 个条目。"
     named_repository: "%{vendor_name} 存储库"
     update_settings_successful: 设置已成功保存。
     url: 版本的 URL
     warnings:
       cannot_annotate: 此文件不能进行注释。
   scheduling:
-    manual: 设为手动
-    automatic: 设为自动
-  search_input_placeholder: 搜索
-  setting_allowed_link_protocols: 允许的链接协议
-  setting_allowed_link_protocols_text_html: 允许这些协议在工作包描述、长文本字段和评论中显示为链接。例如，%{tel_code} 或 %{element_code}。每行输入一个协议。<br/> 协议 %{http_code}、%{https_code} 和 %{mailto_code} 始终允许。
-  setting_capture_external_links: 捕获外部链接
-  setting_capture_external_links_text: '启用后，格式化文本中的所有外部链接在离开应用程序前都会重定向至警告页面。这有助于保护用户免受潜在恶意外部网站的危害。
-
-    '
-  setting_capture_external_links_require_login: 需要用户登录
-  setting_capture_external_links_require_login_text: '启用后，想要点击外部链接的用户需要先登录，然后才能继续操作。
-
-    '
-  setting_after_first_login_redirect_url: 首次登录重定向
-  setting_after_first_login_redirect_url_text_html: '设置用户首次登录后的重定向路径。如果该路径为空，则重定向到主页以进行导览介绍。 <br/> 示例： <code>/my/page</code>
-
-    '
-  setting_after_login_default_redirect_url: 登录后重定向
-  setting_after_login_default_redirect_url_example_html: '设置一个默认路径，用于在没有提供返回链接的情况下登录后重定向用户。如果没有设置，则重定向到首页。<br/>示例：%{example_code}
-
-    '
-  setting_apiv3_cors_title: 跨源资源共享 (CORS)
-  setting_apiv3_cors_enabled: 启用 CORS
-  setting_apiv3_cors_origins: API v3 跨域资源共享 (CORS) 允许的域
-  setting_apiv3_cors_origins_instructions_html: '如果启用了 CORS ，则允许这些源访问 OpenProject API。<br/>请查看[有关源标头的文档](docs_url)，了解如何指定预期值。
-
-    '
-  setting_apiv3_write_readonly_attributes: 对只读属性的写访问权限
-  setting_apiv3_write_readonly_attributes_instructions: '启用后，API 将允许管理员在创建过程中写入静态只读属性，如 createdAt 和 author。
-
-    '
-  setting_apiv3_write_readonly_attributes_warning: '此设置可用于数据导入等用例，但允许管理员以其他用户身份模拟项目创建。不过，所有创建请求都会记录真实作者信息。
-
-    '
-  setting_apiv3_write_readonly_attributes_additional_html: '有关特性和受支持资源的详细信息，请参阅 [API 文档](api_documentation_link)。
-
-    '
-  setting_apiv3_max_page_size: 最大 API 页面大小
-  setting_apiv3_max_page_size_instructions: '设置 API 将响应的最大页面大小。将无法执行在单个页面上返回更多值的 API 请求。
-
-    '
-  setting_apiv3_max_page_size_warning: '请仅在确定有必要的情况下更改该值。如果设置的值过高，会严重影响性能，而如果设置的值低于每页选项，则会导致分页视图出错。
-
-    '
-  setting_apiv3_docs: 文档
-  setting_apiv3_docs_enabled: 启用文档页面
-  setting_apiv3_docs_enabled_instructions_html: '如果启用了文档页面，您可以在此 <a href="%{link}" target="_blank">%{link}</a> 获得 API v3 文档的交互式视图。
-
-    '
-  setting_apiv3_docs_enabled_instructions_warning: '请注意，在生产系统中启用 API 文档时，如果不加小心，可能会暴露敏感信息，或导致数据意外丢失。我们建议仅在开发环境中启用此设置。
-
-    '
-  setting_attachment_whitelist: 附件上传白名单
-  setting_email_delivery_method: 电子邮件发送方法
-  setting_emails_salutation: 电子邮件中的用户地址
-  setting_oauth_allow_remapping_of_existing_users: 允许重新映射现有用户
-  setting_sendmail_location: Sendmail 的执行位置
-  setting_sendmail_arguments: sendmail 的实参
-  setting_smtp_enable_starttls_auto: 如果可用，自动使用 STARTTLS
-  setting_smtp_ssl: 使用 SSL 连接
-  setting_smtp_address: SMTP 服务器
-  setting_smtp_port: SMTP 端口
-  setting_smtp_authentication: SMTP 身份验证
-  setting_smtp_user_name: SMTP 用户名
-  setting_smtp_password: SMTP 密码
-  setting_smtp_domain: SMTP HELO 域
-  setting_activity_days_default: 项目活动显示的天数
-  setting_api_tokens_enabled: 启用 API 令牌
-  setting_api_tokens_enabled_caption: '决定用户是否可以在帐户设置中创建个人 API 令牌。这些令牌可用于访问 OpenProject 的不同 API，如 APIv3 和 MCP。
-
-    '
-  setting_app_subtitle: 应用副标题
-  setting_app_title: 应用程序标题
-  setting_organization_name: 组织名称
-  setting_attachment_max_size: 最大的附件大小
-  setting_show_work_package_attachments: 默认在文件选项卡中显示附件
-  setting_antivirus_scan_mode: 扫描模式
-  setting_antivirus_scan_action: 受感染文件的操作
-  setting_autofetch_changesets: 自动提取存储库更改
-  setting_autologin: 自动登录
-  setting_available_languages: 可用语言
-  setting_bcc_recipients: 密件抄送 (bcc) 收件人
-  setting_brute_force_block_after_failed_logins: 在尝试登录的失败次数达到一定数量后锁定账户
-  setting_brute_force_block_minutes: 账户锁定时长
-  setting_cache_formatted_text: 缓存带格式的文本
-  setting_use_wysiwyg_description: 选择为默认情况下为所有用户启用CKEditor5 所见即所得编辑器。 CKEditor对GFM Markdown的功能有限。
-  setting_column_options: 默认工作包列表列
-  setting_commit_fix_keywords: 固定的关键字
-  setting_commit_logs_encoding: 提交消息编码
-  setting_commit_logtime_activity_id: 记录时间的活动
-  setting_commit_logtime_enabled: 启用时间记录
-  setting_commit_ref_keywords: 引用关键字
-  setting_consent_time: 同意时间
-  setting_consent_info: 同意信息文本
-  setting_consent_required: 需要征得同意
-  setting_consent_decline_mail: 同意联系邮件地址
-  setting_cross_project_work_package_relations: 允许跨项目工作包关系
-  setting_csv_escape_formulas: 在 CSV 导出中转义公式
-  setting_csv_escape_formulas_text: '通过在以 =、+、- 或 @ 等字符开头的小节格前加上单引号，在 CSV 导出中转义电子表格公式。这样，当在 Excel 等电子表格应用程序中打开导出文件时，就能减少 CSV 公式注入。但这样做的缺点是会修改 CSV 内部的字符串值，因此如果下游工具需要精确、未转义的小节格值，则可能需要禁用此功能。
-
-    '
-  setting_first_week_of_year: 全年首周包含
-  setting_date_format: 日期
-  setting_default_language: 默认语言
-  setting_default_projects_modules: 新项目的默认启用模块
-  setting_default_projects_public: 新项目默认公开
-  setting_disable_password_login: 禁用密码验证
-  setting_diff_max_lines_displayed: 最大差异显示行数
-  setting_omniauth_direct_login_provider: 直接登录 SSO 提供商
-  setting_display_subprojects_work_packages: 默认在主项目上显示子项目工作包
-  setting_duration_format: 持续时间格式
-  setting_duration_format_hours_only: 仅限小时
-  setting_duration_format_days_and_hours: 天数和小时数
-  setting_duration_format_instructions: 这定义了如何显示工时、剩余工时和已耗工时
-  setting_emails_footer: 电子邮件页脚
-  setting_emails_header: 电子邮件页眉
-  setting_email_login: 使用电子邮件作为登录名
-  setting_enabled_scm: 启用 SCM
-  setting_enabled_projects_columns: 默认显示的项目列表列
-  setting_feeds_enabled: 启用 Feeds
-  setting_ical_enabled: 启用 iCalendar 订阅
-  setting_feeds_limit: Feed 内容限制
-  setting_file_max_size_displayed: 内联显示的文本文件的最大大小
-  setting_host_name: 主机名
-  setting_collaborative_editing_hocuspocus_url: Hocuspocus 服务器 URL
-  setting_collaborative_editing_hocuspocus_secret: Hocuspocus 服务器密钥
-  setting_hours_per_day: 每天小时数
-  setting_hours_per_day_explanation: 这定义了在以天和小时为单位显示持续时间时，什么是一"天"（例如，如果一天是 8 小时，32 小时就是 4 天）。
-  setting_invitation_expiration_days: 激活电子邮件将在此时间后过期
-  setting_invitation_expiration_days_caption: 激活邮件过期的天数。
-  setting_work_package_done_ratio: 进度计算模式
-  setting_work_package_done_ratio_field: 基于工时
-  setting_work_package_done_ratio_field_caption_html: "<i>完成 %</i> 可以自由设置为任何值。 如果您可选输入一个 <i>工时</i>, <i>剩余工时</i> 将自动生成。"
-  setting_work_package_done_ratio_status: 基于状态
-  setting_work_package_done_ratio_status_caption_html: 每个状态都有一个与之相关的<i>完成%</i>值。更改状态将改变<i>完成%</i>。
-  setting_work_package_done_ratio_explanation_html: '在<b>基于工作的</b>模式下，“完成 %”可以自由设置为任何值。如果选择输入 "工时 "值，则会自动得出 "剩余工时"。在<b>基于状态的</b>模式下，每个状态都有一个与之相关的“完成 %”值。更改状态将改变“完成 %”。
-
-    '
-  setting_work_package_properties: 工作包属性
-  setting_work_package_startdate_is_adddate: 使用当前日期作为新工作包的开始日期
-  setting_work_packages_projects_export_limit: 工作包/项目导出限制
-  setting_work_packages_projects_export_limit_text: '单次导出可包含的最大工作包或项目数。会根据此限制截断较大的导出。
-
-    '
-  setting_journal_aggregation_time_minutes: 聚合周期
-  setting_log_requesting_user: 记录所有请求的用户帐户，名称和邮件地址
-  setting_login_required: 需要身份验证
-  setting_login_required_caption: 如果选中，应用程序的所有请求都必须经过验证。
-  setting_lost_password: 允许重置密码
-  setting_lost_password_caption: 如果选中，允许用户重置自己的密码。
-  setting_mail_from: 发出的电子邮件地址
-  setting_mail_handler_api_key: API 密钥
-  setting_mail_handler_body_delimiters: 在这些行之后截断电子邮件
-  setting_mail_handler_body_delimiter_regex: 清空符合此正则表达式的电子邮件
-  setting_mail_handler_ignore_filenames: 忽略的邮件附件
-  setting_new_project_user_role_id: 给创建项目的非管理员用户的角色
-  setting_new_project_user_role_id_caption: '有编辑项目属性和管理成员权限的角色才会被列出，以便创建者完成项目设置。
-
-    '
-  setting_new_project_send_confirmation_email: 创建新项目时向作者发送通知
-  setting_new_project_notification_text: 通知文本
-  setting_password_active_rules: 密码要求
-  setting_password_count_former_banned: 禁止重复使用最近使用密码的数量
-  setting_password_days_valid: 强制更改密码的天数
-  setting_password_min_length: 最小长度
-  setting_per_page_options: 每页对象选项
-  setting_percent_complete_on_status_closed: 状态关闭时"完成%"的值
-  setting_percent_complete_on_status_closed_no_change: 无变化
-  setting_percent_complete_on_status_closed_no_change_caption_html: 即使工作包关闭，<i>完成%</i>的值也不会改变。
-  setting_percent_complete_on_status_closed_set_100p: 自动设置为 100%
-  setting_percent_complete_on_status_closed_set_100p_caption: 关闭的工作包视为已完成。
-  setting_plain_text_mail: 纯文本邮件 (不含 HTML)
-  setting_protocol: 协议
-  setting_project_gantt_query: 项目组合甘特视图
-  setting_project_gantt_query_text: 您可以从项目概览页面修改用于显示甘特图的查询。
-  setting_security_badge_displayed: 显示安全徽章
-  setting_registration_footer: 注册页脚
-  setting_registration_footer_caption: 此文本显示在注册页面的页脚。使用 HTML 编辑器为每个选定语言格式化文本。
-  setting_repositories_automatic_managed_vendor: 自动存储库提供商类型
-  setting_repositories_encodings: 存储库编码
-  setting_repository_storage_cache_minutes: 存储库磁盘大小缓存
-  setting_repository_checkout_display: 显示检出说明
-  setting_repository_checkout_base_url: 检出根 URL
-  setting_repository_checkout_text: 检出说明文本
-  setting_repository_log_display_limit: 在文件日志中显示的修订版本最大数目
-  setting_repository_truncate_at: 存储库浏览器中显示的最多的文件个数
-  setting_self_registration: 自助注册
-  setting_self_registration_caption: '选择用户的自行注册机制。 请注意您的设置，因为有些选项允许用户在此实例中激活自己的帐户。
-
-    '
-  setting_self_registration_warning: '用户将能够激活自己的帐户。注意，这将使他们能够访问所有公共项目及其内容。 请确保在公共项目中不会暴露任何敏感数据或私人数据。
-
-    '
-  setting_self_registration_disabled: 已禁用
-  setting_self_registration_disabled_caption: '任何账户都不能自行注册。只有管理员和具有创建新用户的全局权限的用户才能创建新账户。
-
-    '
-  setting_self_registration_activation_by_email: 通过电子邮件激活帐户
-  setting_self_registration_activation_by_email_caption: '用户在确认其电子邮件地址后可以自己注册并激活其帐户。管理员对激活过程没有任何管理控制。
-
-    '
-  setting_self_registration_automatic_activation: 自动激活帐户
-  setting_self_registration_automatic_activation_caption: '用户可以自行注册。他们的账户会立即激活，无需进一步操作。管理员对激活过程没有监管。
-
-    '
-  setting_self_registration_manual_activation: 自动激活帐户
-  setting_self_registration_manual_activation_caption: '用户可以自行注册。 他们的帐户会处于待处理状态，直到管理员或拥有全局权限的用户激活它们为止。
-
-    '
-  setting_session_ttl: ''
-  setting_session_ttl_hint: 当设置的值低于5时，其作用类似于禁用。
-  setting_session_ttl_enabled: 会话过期
-  setting_start_of_week: 一周起始日
-  setting_sys_api_enabled: 启用版本库管理 web 服务
-  setting_sys_api_description: 存储库管理网页服务提供了集成的，用户授权的存储库访问。
-  setting_time_format: 时间
-  setting_total_percent_complete_mode: 计算 完成% 层次结构总数
-  setting_total_percent_complete_mode_work_weighted_average: 按工作权重
-  setting_total_percent_complete_mode_work_weighted_average_caption_html: "<i>总完成%</i>将根据层次结构中每个工作包的<i>工时</i>加权计算。没有<i>工时</i>的工作包将被忽略。"
-  setting_total_percent_complete_mode_simple_average: 简单平均值
-  setting_total_percent_complete_mode_simple_average_caption_html: "<i>工时</i> 将被忽略，<i>总完成%</i> 将是层次结构中各工作包的 <i>完成%</i> 值的简单平均值。"
-  setting_accessibility_mode_for_anonymous: 为匿名用户启用辅助功能模式
-  setting_user_format: 用户名格式
-  setting_user_default_timezone: 用户默认时区
-  setting_users_deletable_by_admins: 可由管理员删除用户帐户
-  setting_users_deletable_by_self: 允许用户删除其帐户
-  setting_welcome_text: 欢迎块文本
-  setting_welcome_title: 欢迎块标题
-  setting_welcome_on_homescreen: 在主屏幕上显示欢迎信息
-  setting_work_packages_identifier_classic: 实例范围的数字序列（默认）
-  setting_work_packages_identifier_classic_caption: '每个工作包会获得一个从 1 开始的顺序号（例如 #1234）。这些编号在实例中是唯一的，即使工作包在项目之间移动，编号也不会改变。'
-  setting_work_packages_identifier_semantic: 基于项目的语义标识符（测试版）
-  setting_work_packages_identifier_semantic_caption: 每个项目都有一个唯一的项目标识符，该标识符会附加到一个编号前面（例如 PROJ-11）。每个项目的编号都会从 1 开始。如果工作包移至另一个项目，则会生成新的标识符，但原标识符仍可继续使用。
-  setting_work_package_list_default_highlighting_mode: 默认突出显示模式
-  setting_work_package_list_default_highlighted_attributes: 默认内联突出显示属性
-  setting_working_days: 工作日
+    manual: "设为手动"
+    automatic: "设为自动"
+  search_input_placeholder: "搜索"
+  setting_allowed_link_protocols: "允许的链接协议"
+  setting_allowed_link_protocols_text_html: >-
+    允许这些协议在工作包描述、长文本字段和评论中显示为链接。例如，%{tel_code} 或 %{element_code}。每行输入一个协议。<br/> 协议 %{http_code}、%{https_code} 和 %{mailto_code} 始终允许。
+  setting_capture_external_links: "捕获外部链接"
+  setting_capture_external_links_text: >
+    启用后，格式化文本中的所有外部链接在离开应用程序前都会重定向至警告页面。这有助于保护用户免受潜在恶意外部网站的危害。
+  setting_capture_external_links_require_login: "Require users to be logged in"
+  setting_capture_external_links_require_login_text: >
+    When enabled, users wanting to click on external links need to be logged in before being able to continue.
+  setting_after_first_login_redirect_url: "首次登录重定向"
+  setting_after_first_login_redirect_url_text_html: >
+    设置用户首次登录后的重定向路径。如果该路径为空，则重定向到主页以进行导览介绍。 <br/> 示例： <code>/my/page</code>
+  setting_after_login_default_redirect_url: "登录后重定向"
+  setting_after_login_default_redirect_url_text_html: >
+    设置一个默认路径，用于在没有提供返回链接的情况下登录后重定向用户。如果没有设置，则重定向到主页。<br/>示例：<code>/my/page</code>
+  setting_apiv3_cors_title: "跨源资源共享 (CORS)"
+  setting_apiv3_cors_enabled: "启用 CORS"
+  setting_apiv3_cors_origins: "API v3 跨域资源共享 (CORS) 允许的域"
+  setting_apiv3_cors_origins_text_html: >
+    如果启用了 CORS ，这些是允许访问 Yojana API 的源。<br/>请查看<a href="%{origin_link}" target="_blank">有关“源”标题的文档</a>，了解如何指定预期值。
+  setting_apiv3_write_readonly_attributes: "对只读属性的写访问权限"
+  setting_apiv3_write_readonly_attributes_instructions: >
+    启用后，API 将允许管理员在创建过程中写入静态只读属性，如 createdAt 和 author。
+  setting_apiv3_write_readonly_attributes_warning: >
+    此设置可用于数据导入等用例，但允许管理员以其他用户身份模拟项目创建。不过，所有创建请求都会记录真实作者信息。
+  setting_apiv3_write_readonly_attributes_additional: >
+    有关特性和受支持资源的详细信息，请参阅%{api_documentation_link}。
+  setting_apiv3_max_page_size: "最大 API 页面大小"
+  setting_apiv3_max_page_size_instructions: >
+    设置 API 将响应的最大页面大小。将无法执行在单个页面上返回更多值的 API 请求。
+  setting_apiv3_max_page_size_warning: >
+    请仅在确定有必要的情况下更改该值。如果设置的值过高，会严重影响性能，而如果设置的值低于每页选项，则会导致分页视图出错。
+  setting_apiv3_docs: "文档"
+  setting_apiv3_docs_enabled: "启用文档页面"
+  setting_apiv3_docs_enabled_instructions_html: >
+    如果启用了文档页面，您可以在此 <a href="%{link}" target="_blank">%{link}</a> 获得 API v3 文档的交互式视图。
+  setting_apiv3_docs_enabled_instructions_warning: >
+    请注意，在生产系统中启用 API 文档时，如果不加小心，可能会暴露敏感信息，或导致数据意外丢失。我们建议仅在开发环境中启用此设置。
+  setting_attachment_whitelist: "附件上传白名单"
+  setting_email_delivery_method: "电子邮件发送方法"
+  setting_emails_salutation: "电子邮件中的用户地址"
+  setting_oauth_allow_remapping_of_existing_users: "允许重新映射现有用户"
+  setting_sendmail_location: "Sendmail 的执行位置"
+  setting_sendmail_arguments: "sendmail 的实参"
+  setting_smtp_enable_starttls_auto: "如果可用，自动使用 STARTTLS"
+  setting_smtp_ssl: "使用 SSL 连接"
+  setting_smtp_address: "SMTP 服务器"
+  setting_smtp_port: "SMTP 端口"
+  setting_smtp_authentication: "SMTP 身份验证"
+  setting_smtp_user_name: "SMTP 用户名"
+  setting_smtp_password: "SMTP 密码"
+  setting_smtp_domain: "SMTP HELO 域"
+  setting_activity_days_default: "项目活动显示的天数"
+  setting_app_subtitle: "应用副标题"
+  setting_app_title: "应用程序标题"
+  setting_attachment_max_size: "最大的附件大小"
+  setting_show_work_package_attachments: "默认在文件选项卡中显示附件"
+  setting_antivirus_scan_mode: "扫描模式"
+  setting_antivirus_scan_action: "受感染文件的操作"
+  setting_autofetch_changesets: "自动提取存储库更改"
+  setting_autologin: "自动登录"
+  setting_available_languages: "可用语言"
+  setting_bcc_recipients: "密件抄送 (bcc) 收件人"
+  setting_brute_force_block_after_failed_logins: "在尝试登录的失败次数达到一定数量后锁定账户"
+  setting_brute_force_block_minutes: "账户锁定时长"
+  setting_cache_formatted_text: "缓存带格式的文本"
+  setting_use_wysiwyg_description: "选择为默认情况下为所有用户启用CKEditor5 所见即所得编辑器。 CKEditor对GFM Markdown的功能有限。"
+  setting_column_options: "默认工作包列表列"
+  setting_commit_fix_keywords: "固定的关键字"
+  setting_commit_logs_encoding: "提交消息编码"
+  setting_commit_logtime_activity_id: "记录时间的活动"
+  setting_commit_logtime_enabled: "启用时间记录"
+  setting_commit_ref_keywords: "引用关键字"
+  setting_consent_time: "同意时间"
+  setting_consent_info: "同意信息文本"
+  setting_consent_required: "需要征得同意"
+  setting_consent_decline_mail: "同意联系邮件地址"
+  setting_cross_project_work_package_relations: "允许跨项目工作包关系"
+  setting_first_week_of_year: "全年首周包含"
+  setting_date_format: "日期"
+  setting_default_language: "默认语言"
+  setting_default_projects_modules: "新项目的默认启用模块"
+  setting_default_projects_public: "新项目默认公开"
+  setting_disable_password_login: "禁用密码验证"
+  setting_diff_max_lines_displayed: "最大差异显示行数"
+  setting_omniauth_direct_login_provider: "直接登录 SSO 提供商"
+  setting_display_subprojects_work_packages: "默认在主项目上显示子项目工作包"
+  setting_duration_format: "持续时间格式"
+  setting_duration_format_hours_only: "仅限小时"
+  setting_duration_format_days_and_hours: "天数和小时数"
+  setting_duration_format_instructions: "这定义了如何显示工时、剩余工时和已耗工时"
+  setting_emails_footer: "电子邮件页脚"
+  setting_emails_header: "电子邮件页眉"
+  setting_email_login: "使用电子邮件作为登录名"
+  setting_enabled_scm: "启用 SCM"
+  setting_enabled_projects_columns: "默认显示的项目列表列"
+  setting_feeds_enabled: "启用 Feeds"
+  setting_ical_enabled: "启用 iCalendar 订阅"
+  setting_feeds_limit: "Feed 内容限制"
+  setting_file_max_size_displayed: "内联显示的文本文件的最大大小"
+  setting_host_name: "主机名"
+  setting_collaborative_editing_hocuspocus_url: "Hocuspocus 服务器 URL"
+  setting_collaborative_editing_hocuspocus_secret: "Hocuspocus 服务器密钥"
+  setting_hours_per_day: "每天小时数"
+  setting_hours_per_day_explanation: >-
+    这定义了在以天和小时为单位显示持续时间时，什么是一"天"（例如，如果一天是 8 小时，32 小时就是 4 天）。
+  setting_invitation_expiration_days: "激活电子邮件将在此时间后过期"
+  setting_invitation_expiration_days_caption: "激活邮件过期的天数。"
+  setting_work_package_done_ratio: "进度计算模式"
+  setting_work_package_done_ratio_field: "基于工时"
+  setting_work_package_done_ratio_field_caption_html: >-
+    <i>完成 %</i> 可以自由设置为任何值。 如果您可选输入一个 <i>工时</i>, <i>剩余工时</i> 将自动生成。
+  setting_work_package_done_ratio_status: "基于状态"
+  setting_work_package_done_ratio_status_caption_html: >-
+    每个状态都有一个与之相关的<i>完成%</i>值。更改状态将改变<i>完成%</i>。
+  setting_work_package_done_ratio_explanation_html: >
+    在<b>基于工作的</b>模式下，“完成 %”可以自由设置为任何值。如果选择输入 "工时 "值，则会自动得出 "剩余工时"。在<b>基于状态的</b>模式下，每个状态都有一个与之相关的“完成 %”值。更改状态将改变“完成 %”。
+  setting_work_package_properties: "工作包属性"
+  setting_work_package_startdate_is_adddate: "使用当前日期作为新工作包的开始日期"
+  setting_work_packages_projects_export_limit: "工作包/项目导出限制"
+  setting_journal_aggregation_time_minutes: "聚合该时间内的用户操作"
+  setting_log_requesting_user: "记录所有请求的用户帐户，名称和邮件地址"
+  setting_login_required: "需要身份验证"
+  setting_login_required_caption: "如果选中，应用程序的所有请求都必须经过验证。"
+  setting_lost_password: "允许重置密码"
+  setting_lost_password_caption: "如果选中，允许用户重置自己的密码。"
+  setting_mail_from: "发出的电子邮件地址"
+  setting_mail_handler_api_key: "API 密钥"
+  setting_mail_handler_body_delimiters: "在这些行之后截断电子邮件"
+  setting_mail_handler_body_delimiter_regex: "清空符合此正则表达式的电子邮件"
+  setting_mail_handler_ignore_filenames: "忽略的邮件附件"
+  setting_new_project_user_role_id: "给创建项目的非管理员用户的角色"
+  setting_new_project_send_confirmation_email: "创建新项目时向作者发送通知"
+  setting_new_project_notification_text: "通知文本"
+  setting_password_active_rules: "基本字符类型"
+  setting_password_count_former_banned: "禁止重复使用最近使用密码的数量"
+  setting_password_days_valid: "强制更改密码的天数"
+  setting_password_min_length: "最小长度"
+  setting_password_min_adhered_rules: "所需的最少类型数量"
+  setting_per_page_options: "每页对象选项"
+  setting_percent_complete_on_status_closed: "状态关闭时\"完成%\"的值"
+  setting_percent_complete_on_status_closed_no_change: "无变化"
+  setting_percent_complete_on_status_closed_no_change_caption_html: >-
+    即使工作包关闭，<i>完成%</i>的值也不会改变。
+  setting_percent_complete_on_status_closed_set_100p: "自动设置为 100%"
+  setting_percent_complete_on_status_closed_set_100p_caption: >-
+    关闭的工作包视为已完成。
+  setting_plain_text_mail: "纯文本邮件 (不含 HTML)"
+  setting_protocol: "协议"
+  setting_project_gantt_query: "项目组合甘特视图"
+  setting_project_gantt_query_text: "您可以从项目概览页面修改用于显示甘特图的查询。"
+  setting_security_badge_displayed: "显示安全徽章"
+  setting_registration_footer: "注册页脚"
+  setting_registration_footer_caption: "此文本显示在注册页面的页脚。使用 HTML 编辑器为每个选定语言格式化文本。"
+  setting_repositories_automatic_managed_vendor: "自动存储库提供商类型"
+  setting_repositories_encodings: "存储库编码"
+  setting_repository_storage_cache_minutes: "存储库磁盘大小缓存"
+  setting_repository_checkout_display: "显示检出说明"
+  setting_repository_checkout_base_url: "检出根 URL"
+  setting_repository_checkout_text: "检出说明文本"
+  setting_repository_log_display_limit: "在文件日志中显示的修订版本最大数目"
+  setting_repository_truncate_at: "存储库浏览器中显示的最多的文件个数"
+  setting_rest_api_enabled: "启用 REST Web 服务"
+  setting_self_registration: "自助注册"
+  setting_self_registration_caption: >
+    选择用户的自行注册机制。 请注意您的设置，因为有些选项允许用户在此实例中激活自己的帐户。
+  setting_self_registration_warning: >
+    用户将能够激活自己的帐户。注意，这将使他们能够访问所有公共项目及其内容。 请确保在公共项目中不会暴露任何敏感数据或私人数据。
+  setting_self_registration_disabled: "已禁用"
+  setting_self_registration_disabled_caption: >
+    任何账户都不能自行注册。只有管理员和具有创建新用户的全局权限的用户才能创建新账户。
+  setting_self_registration_activation_by_email: "通过电子邮件激活帐户"
+  setting_self_registration_activation_by_email_caption: >
+    用户在确认其电子邮件地址后可以自己注册并激活其帐户。管理员对激活过程没有任何管理控制。
+  setting_self_registration_automatic_activation: "自动激活帐户"
+  setting_self_registration_automatic_activation_caption: >
+    用户可以自行注册。他们的账户会立即激活，无需进一步操作。管理员对激活过程没有监管。
+  setting_self_registration_manual_activation: "自动激活帐户"
+  setting_self_registration_manual_activation_caption: >
+    用户可以自行注册。 他们的帐户会处于待处理状态，直到管理员或拥有全局权限的用户激活它们为止。
+  setting_session_ttl: ""
+  setting_session_ttl_hint: "当设置的值低于5时，其作用类似于禁用。"
+  setting_session_ttl_enabled: "会话过期"
+  setting_start_of_week: "一周起始日"
+  setting_sys_api_enabled: "启用版本库管理 web 服务"
+  setting_sys_api_description: "存储库管理网页服务提供了集成的，用户授权的存储库访问。"
+  setting_time_format: "时间"
+  setting_total_percent_complete_mode: "计算 完成% 层次结构总数"
+  setting_total_percent_complete_mode_work_weighted_average: "按工作权重"
+  setting_total_percent_complete_mode_work_weighted_average_caption_html: >-
+    <i>总完成%</i>将根据层次结构中每个工作包的<i>工时</i>加权计算。没有<i>工时</i>的工作包将被忽略。
+  setting_total_percent_complete_mode_simple_average: "简单平均值"
+  setting_total_percent_complete_mode_simple_average_caption_html: >-
+    <i>工时</i> 将被忽略，<i>总完成%</i> 将是层次结构中各工作包的 <i>完成%</i> 值的简单平均值。
+  setting_accessibility_mode_for_anonymous: "为匿名用户启用辅助功能模式"
+  setting_user_format: "用户名格式"
+  setting_user_default_timezone: "用户默认时区"
+  setting_users_deletable_by_admins: "可由管理员删除用户帐户"
+  setting_users_deletable_by_self: "允许用户删除其帐户"
+  setting_welcome_text: "欢迎块文本"
+  setting_welcome_title: "欢迎块标题"
+  setting_welcome_on_homescreen: "在主屏幕上显示欢迎信息"
+  setting_work_package_list_default_highlighting_mode: "默认突出显示模式"
+  setting_work_package_list_default_highlighted_attributes: "默认内联突出显示属性"
+  setting_working_days: "工作日"
   settings:
     errors:
       not_writable: 该设置不可写，只能由系统管理员更改。
       failed_to_update: 无法更新设置 '%{name}'：%{message}
     authentication:
-      login: 登录
-      registration: 注册
-      sso: 单点登录（SSO）
-      omniauth_direct_login_hint_html: '如果激活该选项，登录请求将重定向到已配置的 omniauth 提供商。登录下拉菜单和登录页面将被禁用。 <br/> <strong>注意：</strong>除非同时禁用密码登录，否则启用此选项后，用户仍可通过访问 <code>%{internal_path}</code>登录页面。
-
-        '
-      remapping_existing_users_hint: '如果启用，则允许任何已配置的身份提供商基于用户名登录现有用户，即使用户此前从未通过该提供商登录过。在将 OpenProject 实例迁移到新的 SSO 提供商时，此功能会有一定的帮助，但如果使用的提供商并未受到您的实例所有用户的信任，则不建议启用。
-
-        '
+      login: "登录"
+      registration: "注册"
+      sso: "单点登录（SSO）"
+      omniauth_direct_login_hint_html: >
+        如果激活该选项，登录请求将重定向到已配置的 omniauth 提供商。登录下拉菜单和登录页面将被禁用。 <br/> <strong>注意：</strong>除非同时禁用密码登录，否则启用此选项后，用户仍可通过访问 <code>%{internal_path}</code>登录页面。
+      remapping_existing_users_hint: >
+        如果启用，则允许任何已配置的身份提供商基于用户名登录现有用户，即使用户此前从未通过该提供商登录过。在将 Yojana 实例迁移到新的 SSO 提供商时，此功能会有一定的帮助，但如果使用的提供商并未受到您的实例所有用户的信任，则不建议启用。
     attachments:
       whitelist_text_html: '为上传的文件定义有效文件扩展名和/或 MIME 类型列表。<br/>输入文件扩展名（例如 <code>%{ext_example}</code>）或 MIME 类型（例如 <code>%{mime_example}</code>）。<br/>留空以允许上传任何文件类型。允许输入多个值（每个值一行）。
 
@@ -5385,10 +5316,9 @@ zh-CN:
       modes:
         clamav_socket_html: 输入 clamd 守护进程的套接字，例如：%{example}
         clamav_host_html: 输入 clamd 守护进程的主机名和端口，用冒号分隔。例如：%{example}。
-        description_html: '选择防病毒扫描程序集成的运行模式。<br/> <ul> <li><strong>%{disabled_option}</strong>：不对上传的文件进行病毒扫描。</li> <li><strong>%{socket_option}</strong>：您已经在与 OpenProject 相同的服务器上设置了 ClamAV，并且扫描守护程序 clamd 正在后台运行。</li> <li><strong>%{host_option}</strong>：您正在将文件流式传输到外部病毒扫描主机。</li> </ul>
-
-          '
-    brute_force_prevention: 自动帐号锁定
+        description_html: >
+          选择防病毒扫描程序集成的运行模式。<br/> <ul> <li><strong>%{disabled_option}</strong>：不对上传的文件进行病毒扫描。</li> <li><strong>%{socket_option}</strong>：您已经在与 Yojana 相同的服务器上设置了 ClamAV，并且扫描守护程序 clamd 正在后台运行。</li> <li><strong>%{host_option}</strong>：您正在将文件流式传输到外部病毒扫描主机。</li> </ul>
+    brute_force_prevention: "自动帐号锁定"
     date_format:
       first_date_of_week_and_year_set: '如果设置了选项“%{day_of_week_setting_name}”或“%{first_week_setting_name}”，则另一个选项也必须设置，以避免前端出现不一致。
 
@@ -5397,8 +5327,8 @@ zh-CN:
 
         '
     experimental:
-      save_confirmation: 注意！数据存在丢失风险！只有在您不介意破坏 OpenProject 安装并丢失其所有数据的情况下，才激活实验性功能。
-      warning_toast: 功能标志是激活仍在开发中的功能的设置。它们只能用于测试目的。切勿在拥有重要数据的 OpenProject 安装中激活它们。这些功能很可能会破坏您的数据。请自行承担使用它们所带来的风险。
+      save_confirmation: 注意！数据存在丢失风险！只有在您不介意破坏 Yojana 安装并丢失其所有数据的情况下，才激活实验性功能。
+      warning_toast: 功能标志是激活仍在开发中的功能的设置。它们只能用于测试目的。切勿在拥有重要数据的 Yojana 安装中激活它们。这些功能很可能会破坏您的数据。请自行承担使用它们所带来的风险。
       feature_flags: 功能标志
     general: 通用
     highlighting:
@@ -5409,7 +5339,7 @@ zh-CN:
         type: 整行按类型
         priority: 整行按优先级
     icalendar:
-      enable_subscriptions_text_html: 允许具有必要权限的用户通过外部日历客户端订阅 OpenProject 日历并访问工作包信息。<strong>注意</strong>：在启用此功能之前，请阅读关于 <a href="%{link}" target="_blank">iCalendar 订阅</a>的信息以了解潜在的安全风险。
+      enable_subscriptions_text_html: 允许具有必要权限的用户通过外部日历客户端订阅 Yojana 日历并访问工作包信息。<strong>注意</strong>：在启用此功能之前，请阅读关于 <a href="%{link}" target="_blank">iCalendar 订阅</a>的信息以了解潜在的安全风险。
     language_name_being_default: "%{language_name}（默认）"
     notifications:
       events_explanation: 管理针对哪些事件发送电子邮件。此列表中不含工作包，因为可以为每位用户专门配置针对工作包的通知。
@@ -5443,9 +5373,8 @@ zh-CN:
               label: 侧面板
               description: 将所有项目特性添加到项目概览的右侧面板中的一个分区。
     project_initiation_request:
-      header_description: 'OpenProject 可以生成一个分步向导，帮助项目经理填写项目启动请求。您可以选择应包含哪些项目特性，并由此创建一个 PDF 工件。
-
-        '
+      header_description: >
+        Yojana 可以生成一个分步向导，帮助项目经理填写项目启动请求。您可以选择应包含哪些项目特性，并由此创建一个 PDF 工件。
       status:
         submitted: "%{wizard_name} 已提交"
         submitted_description: 点击下方按钮，转到工作包，了解提交流程。
@@ -5457,8 +5386,8 @@ zh-CN:
         project_creation_wizard: 打开项目创建向导
         project_mandate: 打开项目授权
       blankslate:
-        title: 启动请求未启用
-        description: OpenProject 可以生成一个分步向导，帮助项目经理填写项目启动请求。您可以选择应包含哪些项目特性以及如何处理输出文档。请在此处启用以开始配置向导。
+        title: "启动请求未启用"
+        description: "Yojana 可以生成一个分步向导，帮助项目经理填写项目启动请求。您可以选择应包含哪些项目特性以及如何处理输出文档。请在此处启用以开始配置向导。"
       disable_dialog:
         title: 禁用项目启动请求
         heading: 是否禁用此项目启动请求？
@@ -5563,81 +5492,64 @@ zh-CN:
   status_deleted: 已删除
   support:
     array:
-      sentence_connector: 和
-      skip_last_comma: 非
-  text_accessibility_hint: 辅助功能模式设计用于失明、具有行动障碍或视力不佳的用户。为视力不佳的用户特别突出显示关注的元素。请注意，此模式不支持待办清单模块。
-  text_access_token_hint: 访问令牌允许你授予外部应用程序对 OpenProject 资源的访问权限。
-  text_analyze: 进一步分析： %{subject}
-  text_are_you_sure: 是否确定？
-  open_link_in_a_new_tab: 在新标签页打开链接
-  text_are_you_sure_continue: 确定要继续吗？
-  text_are_you_sure_with_children: 删除工作包和所有子工作包吗？
-  text_are_you_sure_with_project_custom_fields: 删除该属性也会删除其在所有项目中的值。您确定要这样做吗？
-  text_are_you_sure_with_project_life_cycle_step: 删除这个阶段也会删除它在所有项目中的使用。您确定要这样做吗？
-  text_assign_to_project: 分配给项目
-  text_form_configuration: '您可以自定义哪些字段将显示在工作包窗体中。您可以自由地对字段进行分组, 以反映您的域的需求。
-
-    '
-  text_form_configuration_required_attribute: 属性是非常需要的，因此一直都会显示。
-  text_caracters_maximum: 最多 %{count} 字符。
-  text_caracters_minimum: 必须至少为 %{count} 个字符长。
-  text_comma_separated: 允许有多个值 （逗号分隔）。
-  text_comment_wiki_page: 维基页面（%{page}）的评论
-  text_custom_field_possible_values_info: 每个值一行
-  text_custom_field_hint_activate_per_project: '使用自定义字段时：请记住，还需要按项目激活自定义字段。
-
-    '
-  text_custom_field_hint_activate_per_project_and_type: '需要按工作包类型和项目激活自定义字段。
-
-    '
-  text_project_custom_field_html: '企业版将为项目的自定义字段添加以下其他附加组件：<br> <ul> <li><b>在项目列表中添加项目自定义字段，以创建项目组合视图</b></li> </ul>
-
-    '
-  text_custom_logo_instructions: '徽标会自动缩放以适应页眉。为获得最佳效果，请上传一个位于透明的 130×47 像素图像上的白色徽标。您可以根据自己的喜好在图像内添加间距。
-
-    '
-  text_custom_logo_mobile_instructions: '徽标会自动缩放以适应页眉。为获得最佳效果，请上传一个位于透明的 130×33 像素图像上的白色徽标。您可以根据自己的喜好在图像内添加间距。
-
-    '
-  text_custom_export_logo_instructions: '这是在 PDF 导出文件中显示的徽标。它需要为 PNG 或 JPEG 图像文件。建议使用带有透明或白色背景的黑色或彩色徽标。
-
-    '
-  text_custom_export_cover_instructions: '这是在您的 PDF 导出的封面页面背景中显示的图像。 它需要是大约800像素宽度 × 500像素高度的 PNG 或 JPEG 图像文件。
-
-    '
-  text_custom_export_footer_instructions: 'PDF 导出将包含位于页脚左侧的图形元素。此图像必须为 PNG 或 JPEG 文件，宽度约为 200 像素。
-
-    '
-  label_custom_export_font_instructions: '上传并管理在您 PDF 导出中使用的自定义 TrueType (.ttf) 字体。为获得最佳效果，请使用同一字体系列中的匹配文件。如果未提供字体，将使用默认的 NotoSans 字体。
-
-    '
-  label_custom_export_images_instructions: '上传并管理在您 PDF 导出中使用的自定义图像文件。
-
-    '
-  text_custom_export_font_regular_instructions: '这是用于常规文本的字体文件。该文件需要为 TTF 格式，且必须提供。
-
-    '
-  text_custom_export_font_bold_instructions: '这是用于粗体文本的字体文件。该文件需要为 TTF 格式。
-
-    '
-  text_custom_export_font_italic_instructions: '这是用于斜体文本的字体文件。该文件需要为 TTF 格式。
-
-    '
-  text_custom_export_font_bold_italic_instructions: '这是用于加粗斜体文本的字体文件。该文件需要为 TTF 格式。
-
-    '
-  text_custom_favicon_instructions: '这是显示在浏览器窗口/选项卡中页面标题旁边的小图标。它是具有透明背景，大小为 32x32 像素的正方形 PNG 图像文件。
-
-    '
-  text_custom_touch_icon_instructions: '这是当您在主屏幕上放置书签时，显示在手机或平板电脑中的图标。它是大小为 180x180 像素的正方形 PNG 图像文件。请确保图像的背景不是透明的，否则在 iOS 上看起来会很糟糕。
-
-    '
-  text_database_allows_tsv: 数据库允许 TSVector (可选)
-  text_default_administrator_account_changed: 更改默认管理员帐户
-  text_default_encoding: 默认值： UTF-8
-  text_destroy: 删除
-  text_destroy_with_associated: 有额外的对象关联到要删除的工作包。这些对象是以下类型：
-  text_destroy_what_to_do: 你想做什么？
+      sentence_connector: "和"
+      skip_last_comma: "非"
+  text_accessibility_hint: "辅助功能模式设计用于失明、具有行动障碍或视力不佳的用户。为视力不佳的用户特别突出显示关注的元素。请注意，此模式不支持待办清单模块。"
+  text_access_token_hint: "访问令牌允许你授予外部应用程序对 Yojana 资源的访问权限。"
+  text_analyze: "进一步分析： %{subject}"
+  text_are_you_sure: "是否确定？"
+  open_link_in_a_new_tab: "在新标签页打开链接"
+  text_are_you_sure_continue: "确定要继续吗？"
+  text_are_you_sure_with_children: "删除工作包和所有子工作包吗？"
+  text_are_you_sure_with_project_custom_fields: "删除该属性也会删除其在所有项目中的值。您确定要这样做吗？"
+  text_are_you_sure_with_project_life_cycle_step: "删除这个阶段也会删除它在所有项目中的使用。您确定要这样做吗？"
+  text_assign_to_project: "分配给项目"
+  text_form_configuration: >
+    您可以自定义哪些字段将显示在工作包窗体中。您可以自由地对字段进行分组, 以反映您的域的需求。
+  text_form_configuration_required_attribute: "属性是非常需要的，因此一直都会显示。"
+  text_caracters_maximum: "最多 %{count} 字符。"
+  text_caracters_minimum: "必须至少为 %{count} 个字符长。"
+  text_comma_separated: "允许有多个值 （逗号分隔）。"
+  text_comment_wiki_page: "维基页面（%{page}）的评论"
+  text_custom_field_possible_values_info: "每个值一行"
+  text_custom_field_hint_activate_per_project: >
+    使用自定义字段时：请记住，还需要按项目激活自定义字段。
+  text_custom_field_hint_activate_per_project_and_type: >
+    需要按工作包类型和项目激活自定义字段。
+  text_project_custom_field_html: >
+    企业版将为项目的自定义字段添加以下其他附加组件：<br> <ul> <li><b>在项目列表中添加项目自定义字段，以创建项目组合视图</b></li> </ul>
+  text_custom_logo_instructions: >
+    徽标会自动缩放以适应页眉。为获得最佳效果，请上传一个位于透明的 130×47 像素图像上的白色徽标。您可以根据自己的喜好在图像内添加间距。
+  text_custom_logo_mobile_instructions: >
+    徽标会自动缩放以适应页眉。为获得最佳效果，请上传一个位于透明的 130×33 像素图像上的白色徽标。您可以根据自己的喜好在图像内添加间距。
+  text_custom_export_logo_instructions: >
+    这是在 PDF 导出文件中显示的徽标。它需要为 PNG 或 JPEG 图像文件。建议使用带有透明或白色背景的黑色或彩色徽标。
+  text_custom_export_cover_instructions: >
+    这是在您的 PDF 导出的封面页面背景中显示的图像。 它需要是大约800像素宽度 × 500像素高度的 PNG 或 JPEG 图像文件。
+  text_custom_export_footer_instructions: >
+    PDF 导出将包含位于页脚左侧的图形元素。此图像必须为 PNG 或 JPEG 文件，宽度约为 200 像素。
+  label_custom_export_font_instructions: >
+    上传并管理在您 PDF 导出中使用的自定义 TrueType (.ttf) 字体。为获得最佳效果，请使用同一字体系列中的匹配文件。如果未提供字体，将使用默认的 NotoSans 字体。
+  label_custom_export_images_instructions: >
+    上传并管理在您 PDF 导出中使用的自定义图像文件。
+  text_custom_export_font_regular_instructions: >
+    这是用于常规文本的字体文件。该文件需要为 TTF 格式，且必须提供。
+  text_custom_export_font_bold_instructions: >
+    这是用于粗体文本的字体文件。该文件需要为 TTF 格式。
+  text_custom_export_font_italic_instructions: >
+    这是用于斜体文本的字体文件。该文件需要为 TTF 格式。
+  text_custom_export_font_bold_italic_instructions: >
+    这是用于加粗斜体文本的字体文件。该文件需要为 TTF 格式。
+  text_custom_favicon_instructions: >
+    这是显示在浏览器窗口/选项卡中页面标题旁边的小图标。它是具有透明背景，大小为 32x32 像素的正方形 PNG 图像文件。
+  text_custom_touch_icon_instructions: >
+    这是当您在主屏幕上放置书签时，显示在手机或平板电脑中的图标。它是大小为 180x180 像素的正方形 PNG 图像文件。请确保图像的背景不是透明的，否则在 iOS 上看起来会很糟糕。
+  text_database_allows_tsv: "数据库允许 TSVector (可选)"
+  text_default_administrator_account_changed: "更改默认管理员帐户"
+  text_default_encoding: "默认值： UTF-8"
+  text_destroy: "删除"
+  text_destroy_with_associated: "有额外的对象关联到要删除的工作包。这些对象是以下类型："
+  text_destroy_what_to_do: "你想做什么？"
   text_diff_truncated: "...这个比较被截断，因为它超出了可显示的最大大小。"
   text_email_delivery_not_configured: |-
     电子邮件传送未配置，通知已禁用。
@@ -5678,41 +5590,30 @@ zh-CN:
   text_line_separated: 允许有多个值 （每行一个值）。
   text_load_default_configuration: 加载默认配置
   text_no_roles_defined: 没有定义的角色。
-  text_no_access_tokens_configurable: 没有可配置的访问令牌。
-  text_no_configuration_data: |-
-    角色、类型、工作包状态和工作流尚未配置。
-    强烈建议加载默认配置。之后您可以再进行修改。
-  text_no_notes: 没有注释可用于此工作包。
-  text_notice_too_many_values_are_inperformant: 注意： 每个页面显示超过 100 个项目会增加页面加载时间。
-  text_notice_security_badge_displayed_html: '注：如果启用，这会在 <a href="%{information_panel_path}">%{information_panel_label}</a> 管理面板中和首页上显示一个包含您的安装状态的徽章。徽章仅向管理员显示。<br/>徽章将根据官方的 OpenProject 版本数据库检查您当前的 OpenProject 版本，提醒您是否存在任何更新或已知漏洞。如需详细了解检查可以提供哪些信息，需要哪些数据来提供可用更新，以及如何禁用此检查，请访问<a href="%{more_info_url}">配置文档</a>。
-
-    '
-  text_own_membership_delete_confirmation: |-
-    您要移除部分或全部权限，并且可能无法在此后编辑这个项目。
-    您确定要继续吗？
-  text_permanent_delete_confirmation_checkbox_label: 我理解这种删除不可逆转
-  text_permanent_remove_confirmation_checkbox_label: 我明白此移除无法撤消
-  text_plugin_assets_writable: 插件资产目录可写
-  text_powered_by: Powered by %{link}
-  text_project_identifier_info: 只有小写字母 (a-z)、 数字、 短划线和下划线被允许，必须以小写字母开头。
-  text_project_identifier_description: 项目标识符将附加到所有工作包 ID 的前面。例如，如果项目标识符为“PROJ”，则工作包标识符将为“PROJ-12”或“PROJ-246”。
-  text_project_identifier_url_description: 项目标识符包含在项目的 URL 中。
-  text_project_identifier_handle_format: 必须以字母开头，且仅包含大写字母、数字和下划线（最多 10 个字符）。
-  text_project_identifier_format: 必须以小写字母开头。仅允许使用小写字母 (a-z)、数字、 短划线和下划线。
-  text_reassign: '重新分配工作包:'
-  text_regexp_multiline: 以多行模式应用正则表达式，如 ^---\s+
-  text_rename_wiki_page: 重命名 Wiki 页面
-  text_repository_usernames_mapping: |-
-    选择或更新每个在存储库日志中发现的用户名所映射到的 OpenProject 用户。
-    使用相同 OpenProject 和存储库用户名或电子邮件的用户已被自动映射。
-  text_status_changed_by_changeset: 被实施在更改集 %{value} 中。
-  text_table_difference_description: 此表单展现了单个%{entries}。您可以先选择多选框，再点击表单下方的按钮来比较两项之间的差异。
-  text_time_logged_by_changeset: 已应用在更改集 %{value} 中。
-  text_tip_work_package_begin_day: 这一天开始的工作包
-  text_tip_work_package_begin_end_day: 这一天开始和结束的工作包
-  text_tip_work_package_end_day: 这一天结束的工作包
-  text_type_no_workflow: 没有为此类型定义的工作流
-  text_unallowed_characters: 不允许的字符
+  text_no_access_tokens_configurable: "没有可配置的访问令牌。"
+  text_no_configuration_data: "角色、类型、工作包状态和工作流尚未配置。\n强烈建议加载默认配置。之后您可以再进行修改。"
+  text_no_notes: "没有注释可用于此工作包。"
+  text_notice_too_many_values_are_inperformant: "注意： 每个页面显示超过 100 个项目会增加页面加载时间。"
+  text_notice_security_badge_displayed_html: >
+    注：如果启用，这会在 <a href="%{information_panel_path}">%{information_panel_label}</a> 管理面板中和首页上显示一个包含您的安装状态的徽章。徽章仅向管理员显示。<br/>徽章将根据官方的 Yojana 版本数据库检查您当前的 Yojana 版本，提醒您是否存在任何更新或已知漏洞。如需详细了解检查可以提供哪些信息，需要哪些数据来提供可用更新，以及如何禁用此检查，请访问<a href="%{more_info_url}">配置文档</a>。
+  text_own_membership_delete_confirmation: "您要移除部分或全部权限，并且可能无法在此后编辑这个项目。\n您确定要继续吗？"
+  text_permanent_delete_confirmation_checkbox_label: "我理解这种删除不可逆转"
+  text_permanent_remove_confirmation_checkbox_label: "我明白此移除无法撤消"
+  text_plugin_assets_writable: "插件资产目录可写"
+  text_powered_by: "Powered by %{link}"
+  text_project_identifier_info: "只有小写字母 (a-z)、 数字、 短划线和下划线被允许，必须以小写字母开头。"
+  text_reassign: "重新分配工作包:"
+  text_regexp_info: "例如 ^ [A-Z0-9]+$"
+  text_regexp_multiline: '以多行模式应用正则表达式，如 ^---\s+'
+  text_repository_usernames_mapping: "选择或更新每个在存储库日志中发现的用户名所映射到的 Yojana 用户。\n使用相同 Yojana 和存储库用户名或电子邮件的用户已被自动映射。"
+  text_status_changed_by_changeset: "被实施在更改集 %{value} 中。"
+  text_table_difference_description: "此表单展现了单个%{entries}。您可以先选择多选框，再点击表单下方的按钮来比较两项之间的差异。"
+  text_time_logged_by_changeset: "已应用在更改集 %{value} 中。"
+  text_tip_work_package_begin_day: "这一天开始的工作包"
+  text_tip_work_package_begin_end_day: "这一天开始和结束的工作包"
+  text_tip_work_package_end_day: "这一天结束的工作包"
+  text_type_no_workflow: "没有为此类型定义的工作流"
+  text_unallowed_characters: "不允许的字符"
   text_user_invited: 用户已被邀请，正在等待注册。
   text_user_wrote: "%{value} 写道："
   text_wrote: 已编写
@@ -5774,18 +5675,17 @@ zh-CN:
     help_and_support: 帮助和支持
   total_progress: 总进度
   user:
-    all: 所有
-    active: 激活
-    activate: 激活
-    activate_and_reset_failed_logins: 激活和重置失败的帐户
-    authentication_provider: 身份认证提供程序
-    identity_url_text: 身份验证提供商提供的内部唯一标识符。
-    authentication_settings_disabled_due_to_external_authentication: '该用户通过外部身份验证提供程序进行身份验证，因此在 OpenProject 中没有密码可供更改。
-
-      '
-    authorization_rejected: 你不允许登录。
-    assign_random_password: 分配随机密码 (通过电子邮件发送给用户)
-    blocked: 暂时锁定
+    all: "所有"
+    active: "激活"
+    activate: "激活"
+    activate_and_reset_failed_logins: "激活和重置失败的帐户"
+    authentication_provider: "身份认证提供程序"
+    identity_url_text: "身份验证提供商提供的内部唯一标识符。"
+    authentication_settings_disabled_due_to_external_authentication: >
+      该用户通过外部身份验证提供程序进行身份验证，因此在 Yojana 中没有密码可供更改。
+    authorization_rejected: "你不允许登录。"
+    assign_random_password: "分配随机密码 (通过电子邮件发送给用户)"
+    blocked: "暂时锁定"
     blocked_num_failed_logins:
       other: 暂时锁定（%{count} 次尝试登录失败）
     confirm_status_change: 您即将更改 "%{name}" 的状态。确实要继续吗？
@@ -5815,7 +5715,17 @@ zh-CN:
   note_password_login_disabled_link: 密码登录已通过[配置设置](configuration_url)禁用。
   warning: 警告
   warning_attachments_not_saved: "%{count} 文件不能被保存。"
-  warning_imminent_user_limit_html: '您邀请的用户数超过了当前方案支持的用户数。受邀用户可能无法加入您的 OpenProject 环境。请[升级您的方案](upgrade_url)或阻止现有用户，以允许受邀用户和注册用户加入。
+  warning_imminent_user_limit: >
+    您邀请的用户数超过了当前计划支持的用户数。 受邀用户可能无法加入您的Yojana环境。 请<a href="%{upgrade_url}">升级您的计划</a>或阻止现有用户，以允许受邀和注册用户加入。
+  warning_registration_token_expired: |
+    激活邮件已过期，我们给您发送了一封新邮件到%{email}。请单击内部的链接以激活您的帐户。
+  warning_user_limit_reached: >
+    添加额外的用户将超出当前限制。请联系管理员以增加用户限制，以确保外部用户能够访问此实例。
+  warning_user_limit_reached_admin: >
+    添加额外的用户将超出当前限制。请<a href="%{upgrade_url}">升级您的计划</a>，以确保外部用户能够访问此实例。
+  warning_user_limit_reached_instructions: >
+    您达到了用户限制（%{current}/%{max}活跃用户）。 请联系sales@girishm.info以升级您的Enterprise edition计划并添加其他用户。
+  warning_protocol_mismatch_html: >
 
     '
   warning_registration_token_expired: '激活邮件已过期，我们给您发送了一封新邮件到%{email}。请单击内部的链接以激活您的帐户。
@@ -6113,55 +6023,48 @@ zh-CN:
       non_confidential: 非机密
       default_scopes: "（默认范围）"
       instructions:
-        enabled: 启用此应用程序，允许用户使用它执行授权授予。
-        name: 您的应用程序的名称。将在授权后显示给其他用户。
-        redirect_uri_html: '授权的用户可以重定向到的允许 URL。每行一个条目。<br/>如果您注册的是桌面应用程序，请使用以下 URL。
-
-          '
-        confidential: 检查在客户端密钥可以保密的地方是否使用应用程序。原生移动应用和单页应用被假定为非机密。
-        scopes: 选择您希望应用程序授予权限的范围。如果不选择任何范围，将假定 api_v3。
-        client_credential_user_id: 在客户端使用此应用程序时要冒充的可选用户 ID。留空可以仅允许公开访问
-        register_intro: 如果您正在为 OpenProject 开发 OAuth API 客户端应用程序，则可以使用此表单注册，供所有用户使用。
-        default_scopes: ''
+        enabled: "启用此应用程序，允许用户使用它执行授权授予。"
+        name: "您的应用程序的名称。将在授权后显示给其他用户。"
+        redirect_uri_html: >
+          授权的用户可以重定向到的允许 URL。每行一个条目。<br/>如果您注册的是桌面应用程序，请使用以下 URL。
+        confidential: "检查在客户端密钥可以保密的地方是否使用应用程序。原生移动应用和单页应用被假定为非机密。"
+        scopes: "选择您希望应用程序授予权限的范围。如果不选择任何范围，将假定 api_v3。"
+        client_credential_user_id: "在客户端使用此应用程序时要冒充的可选用户 ID。留空可以仅允许公开访问"
+        register_intro: "如果您正在为 Yojana 开发 OAuth API 客户端应用程序，则可以使用此表单注册，供所有用户使用。"
+        default_scopes: ""
     header:
       builtin_applications: 内置 OAuth 应用程序
       other_applications: 其他 OAuth 应用程序
     empty_application_lists: 没有注册任何OAuth应用程序。
-    client_id: 客户端 ID
-    client_secret_notice: '这是我们唯一可以打印客户端密钥的时间，请记下密钥并保证它的安全。密钥应被视为密码，并且之后无法通过 OpenProject 检索。
-
-      '
+    client_id: "客户端 ID"
+    client_secret_notice: >
+      这是我们唯一可以打印客户端密钥的时间，请记下密钥并保证它的安全。密钥应被视为密码，并且之后无法通过 Yojana 检索。
     authorization_dialog:
-      authorize: 授权
-      cancel: 取消并拒绝授权。
-      prompt_html: 授权 <strong>%{application_name}</strong> 使用您的帐户 <em>%{login}</em>？
-      title: 授权 %{application_name}
-      wants_to_access_html: '此应用程序请求访问您的 OpenProject 帐户。<br/> <strong>它请求了以下权限：</strong>
-
-        '
+      authorize: "授权"
+      cancel: "取消并拒绝授权。"
+      prompt_html: "授权 <strong>%{application_name}</strong> 使用您的帐户 <em>%{login}</em>？"
+      title: "授权 %{application_name}"
+      wants_to_access_html: >
+        此应用程序请求访问您的 Yojana 帐户。<br/> <strong>它请求了以下权限：</strong>
     scopes:
-      api_v3: API v3 完全访问权限
-      api_v3_text: 应用程序将获得 OpenProject API v3 的完全读写访问权限来代表您执行操作。
-      mcp: Access to MCP
-      mcp_text: Application will receive access to the OpenProject MCP endpoints. They are a limited subset of APIv3, that's tailored for usage with AI agents.
+      api_v3: "API v3 完全访问权限"
+      api_v3_text: "应用程序将获得 Yojana API v3 的完全读写访问权限来代表您执行操作。"
     grants:
       created_date: 批准于
       scopes: 权限
       successful_application_revocation: 已成功撤销应用程序 %{application_name}。
       none_given: 没有 OAuth 应用程序已获得访问您的用户帐户的权限。
     flows:
-      authorization_code: 授权码流
-      client_credentials: 客户端凭据流
-    client_credentials: 用于客户端凭据的用户
-    client_credentials_impersonation_set_to: 设置的目标客户端凭据用户
-    client_credentials_impersonation_warning: 注：在此应用程序中使用“客户端凭据”流的客户端将具有此用户的权限。
-    client_credentials_impersonation_html: '默认情况下，OpenProject 通过 %{authorization_code_flow_link} 提供 OAuth 2.0 授权。您可以选择启用 %{client_credentials_flow_link}，但您必须提供代其执行请求的用户。
-
-      '
-    confirm_revoke_my_application:
-      other: 您真的要删除此应用程序吗？这将撤销 %{count} 已激活的令牌。
-    authorization_error: 发生了验证错误。
-    my_registered_applications: 已注册的 OAuth 应用程序
+      authorization_code: "授权码流"
+      client_credentials: "客户端凭据流"
+    client_credentials: "用于客户端凭据的用户"
+    client_credentials_impersonation_set_to: "设置的目标客户端凭据用户"
+    client_credentials_impersonation_warning: "注：在此应用程序中使用“客户端凭据”流的客户端将具有此用户的权限。"
+    client_credentials_impersonation_html: >
+      默认情况下，Yojana 通过 %{authorization_code_flow_link} 提供 OAuth 2.0 授权。您可以选择启用 %{client_credentials_flow_link}，但您必须提供代其执行请求的用户。
+    authorization_error: "发生了验证错误。"
+    revoke_my_application_confirmation: "确定想要移除此应用程序吗？这将撤销对其有效的 %{token_count}。"
+    my_registered_applications: "已注册的 OAuth 应用程序"
   oauth_client:
     urn_connection_status:
       connected: 已连接
@@ -6174,39 +6077,36 @@ zh-CN:
       label_request_token: 请求令牌
       label_refresh_token: 刷新令牌
     errors:
-      oauth_authorization_code_grant_had_errors: OAuth2 授权授予失败
-      oauth_reported: OAuth2 提供程序报告
-      oauth_returned_error: OAuth2 返回错误
-      oauth_returned_json_error: OAuth2 返回 JSON 错误
-      oauth_returned_http_error: OAuth2 返回网络错误
-      oauth_returned_standard_error: OAuth2 返回内部错误
-      wrong_token_type_returned: OAuth2 返回了错误类型的令牌，应为 AccessToken::Bearer
-      oauth_issue_contact_admin: OAuth2 报告错误。请联系您的系统管理员。
-      oauth_client_not_found: 在 'callback' 端点 (redirect_uri) 中找不到 OAuth2 客户端。
-      refresh_token_called_without_existing_token: '内部错误：在没有先前存在的令牌的情况下调用 refresh_token。
-
-        '
-      refresh_token_updated_failed: 更新 OAuthClientToken 时出错
-      oauth_client_not_found_explanation: '此错误在您更新 OpenProject 中的 client_id 和 client_secret，但尚未更新 OAuth2 提供程序中的 ''Return URI'' 字段后出现。
-
-        '
-      oauth_code_not_present: 在 'callback' 端点 (redirect_uri) 中找不到 OAuth2 'code'。
-      oauth_code_not_present_explanation: '如果您在 OAuth2 提供程序中选择了错误的 response_type，则会出现此错误。Response_type 应当为 ''code'' 或类似条目。
-
-        '
-      oauth_state_not_present: 在 'callback' 端点 (redirect_uri) 中找不到 OAuth2 'state'。
-      oauth_state_not_present_explanation: "'state' 用于向 OpenProject 指示在成功 OAuth2 授权后从哪里继续。缺少 'state' 是安装过程中可能出现的内部错误。请联系您的系统管理员。\n"
+      oauth_authorization_code_grant_had_errors: "OAuth2 授权授予失败"
+      oauth_reported: "OAuth2 提供程序报告"
+      oauth_returned_error: "OAuth2 返回错误"
+      oauth_returned_json_error: "OAuth2 返回 JSON 错误"
+      oauth_returned_http_error: "OAuth2 返回网络错误"
+      oauth_returned_standard_error: "OAuth2 返回内部错误"
+      wrong_token_type_returned: "OAuth2 返回了错误类型的令牌，应为 AccessToken::Bearer"
+      oauth_issue_contact_admin: "OAuth2 报告错误。请联系您的系统管理员。"
+      oauth_client_not_found: "在 'callback' 端点 (redirect_uri) 中找不到 OAuth2 客户端。"
+      refresh_token_called_without_existing_token: >
+        内部错误：在没有先前存在的令牌的情况下调用 refresh_token。
+      refresh_token_updated_failed: "更新 OAuthClientToken 时出错"
+      oauth_client_not_found_explanation: >
+        此错误在您更新 Yojana 中的 client_id 和 client_secret，但尚未更新 OAuth2 提供程序中的 'Return URI' 字段后出现。
+      oauth_code_not_present: "在 'callback' 端点 (redirect_uri) 中找不到 OAuth2 'code'。"
+      oauth_code_not_present_explanation: >
+        如果您在 OAuth2 提供程序中选择了错误的 response_type，则会出现此错误。Response_type 应当为 'code' 或类似条目。
+      oauth_state_not_present: "在 'callback' 端点 (redirect_uri) 中找不到 OAuth2 'state'。"
+      oauth_state_not_present_explanation: >
+        'state' 用于向 Yojana 指示在成功 OAuth2 授权后从哪里继续。缺少 'state' 是安装过程中可能出现的内部错误。请联系您的系统管理员。
       rack_oauth2:
-        client_secret_invalid: 客户端密钥无效 (client_secret_invalid)
-        invalid_request: 'OAuth2 授权服务器以 ''invalid_request'' 响应。如果您尝试多次授权或者出现技术问题，则会出现此错误。
-
-          '
-        invalid_response: OAuth2 授权服务器提供了无效响应 (invalid_response)
-        invalid_grant: OAuth2 授权服务器要求您重新授权 (invalid_grant)。
-        invalid_client: OAuth2 授权服务器无法识别 OpenProject (invalid_client)。
-        unauthorized_client: OAuth2 授权服务器拒绝了该授权类型 (unauthorized_client)
-        unsupported_grant_type: OAuth2 授权服务器要求您重新授权 (unsupported_grant_type)。
-        invalid_scope: 您无权访问请求的资源 (invalid_scope)。
+        client_secret_invalid: "客户端密钥无效 (client_secret_invalid)"
+        invalid_request: >
+          OAuth2 授权服务器以 'invalid_request' 响应。如果您尝试多次授权或者出现技术问题，则会出现此错误。
+        invalid_response: "OAuth2 授权服务器提供了无效响应 (invalid_response)"
+        invalid_grant: "OAuth2 授权服务器要求您重新授权 (invalid_grant)。"
+        invalid_client: "OAuth2 授权服务器无法识别 Yojana (invalid_client)。"
+        unauthorized_client: "OAuth2 授权服务器拒绝了该授权类型 (unauthorized_client)"
+        unsupported_grant_type: "OAuth2 授权服务器要求您重新授权 (unsupported_grant_type)。"
+        invalid_scope: "您无权访问请求的资源 (invalid_scope)。"
   http:
     request:
       failed_authorization: 服务器端请求未能自行授权。
@@ -6216,18 +6116,18 @@ zh-CN:
   you: 您
   link: 链接
   plugin_openproject_auth_plugins:
-    name: OpenProject 认证插件
-    description: 在 OpenProject 中集成 OmniAuth 策略提供程序以进行身份验证。
+    name: "Yojana 认证插件"
+    description: "在 Yojana 中集成 OmniAuth 策略提供程序以进行身份验证。"
   plugin_openproject_auth_saml:
-    name: OmniAuth SAML / SSO单点登录
-    description: 将 OmniAuth SAML 身份提供程序添加到 OpenProject
+    name: "OmniAuth SAML / SSO单点登录"
+    description: "将 OmniAuth SAML 身份提供程序添加到 Yojana"
   enterprise_plans:
     legacy_enterprise: 企业计划
   token:
     hashed_token:
       display_value_placeholder: "***"
   external_link_warning:
-    title: 离开 OpenProject
-    warning_message: 您即将离开 OpenProject 并访问外部网站。请注意，外部网站不受我们的管控，可能采用不同的隐私和安全政策。
-    continue_message: 确定要继续访问以下外部链接吗？
-    continue_button: 继续访问外部网站
+    title: "离开 Yojana"
+    warning_message: "您即将离开 Yojana 并访问外部网站。请注意，外部网站不受我们的管控，可能采用不同的隐私和安全政策。"
+    continue_message: "确定要继续访问以下外部链接吗？"
+    continue_button: "继续访问外部网站"

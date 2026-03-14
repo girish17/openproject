@@ -106,19 +106,19 @@ Please be aware that the actual installation of a specific Ruby version takes so
 ```
 
 We suggest you install the version we require in [.ruby-version](https://github.com/opf/openproject/blob/dev/.ruby-version).
-Read the first line e.g. `4.0.2` and install that version.
+Read the first line e.g. `3.4.9` and install that version.
 
 ```shell
-[openproject@host] rbenv install 4.0.2
+[openproject@host] rbenv install 3.4.9
 [openproject@host] rbenv rehash
-[openproject@host] rbenv global 4.0.2
+[openproject@host] rbenv global 3.4.9
 ```
 
 To check our Ruby installation we run `ruby --version`. It should output
 something very similar to:
 
 ```text
-ruby 4.0.2 (2026-03-17 revision d3da9fec82) +PRISM [arm64-darwin25]
+ruby 3.4.9 (2025-10-08 revision 7a5688e2a2) +PRISM [arm64-darwin25]
 ```
 
 ## Installation of Node
@@ -145,7 +145,7 @@ time to finish.
 To check our Node installation we run `node --version`. It should output something very similar to:
 
 ```text
-v22.22.3
+v22.22.1
 ```
 
 ## Installation of OpenProject
@@ -317,8 +317,8 @@ SetEnv EXECJS_RUNTIME Disabled
 <VirtualHost *:80>
    ServerName yourdomain.com
    # !!! Be sure to point DocumentRoot to 'public'!
-   DocumentRoot /home/openproject/openproject/public
-   <Directory /home/openproject/openproject/public>
+   DocumentRoot /home/girish17/yojana/public
+   <Directory /home/girish17/yojana/public>
       # This relaxes Apache security settings.
       AllowOverride all
       # MultiViews must be turned off.
@@ -367,7 +367,7 @@ OpenProject sends (some) mails asynchronously by using background jobs. All such
 Now, the crontab file opens in the standard editor. Add the following entry to the file:
 
 ```cron
-*/1 * * * * cd /home/openproject/openproject; /home/openproject/.rvm/gems/ruby-2.1.5/wrappers/rake jobs:workoff
+*/1 * * * * cd /home/girish17/yojana; /home/openproject/.rvm/gems/ruby-2.1.5/wrappers/rake jobs:workoff
 ```
 
 This will start the worker job every minute.
@@ -415,7 +415,7 @@ We encourage you to extend OpenProject yourself by writing a plug-in. Please, re
 
 You can find the error logs for apache here: `/var/log/apache2/error.log`
 
-The OpenProject logfile can be found here: `/home/openproject/openproject/log/production.log`
+The OpenProject logfile can be found here: `/home/girish17/yojana/log/production.log`
 
 If an error occurs, it should be logged there.
 
@@ -440,7 +440,7 @@ If you need to restart the server (for example after a configuration change), do
 
   Things can go wrong on different levels. You can find the apache error logs here: `/var/log/apache2/error.log`
 
-  The OpenProject log can be found here: `/home/openproject/openproject/log/production.log`
+  The OpenProject log can be found here: `/home/girish17/yojana/log/production.log`
 
 - **I cannot solve an error, not even with the log files. How do I get help?**
 

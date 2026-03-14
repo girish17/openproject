@@ -2,8 +2,8 @@
 ---
 en:
   plugin_openproject_bim:
-    name: "OpenProject BIM and BCF functionality"
-    description: "This OpenProject plugin introduces BIM and BCF functionality."
+    name: "Yojana BIM and BCF functionality"
+    description: "This Yojana plugin introduces BIM and BCF functionality."
 
   bim:
     label_bim: 'BIM'
@@ -89,7 +89,7 @@ en:
   oauth:
     scopes:
       bcf_v2_1: "Full access to the BCF v2.1 API"
-      bcf_v2_1_text: "Application will receive full read & write access to the OpenProject BCF API v2.1 to perform actions on your behalf."
+      bcf_v2_1_text: "Application will receive full read & write access to the Yojana BCF API v2.1 to perform actions on your behalf."
 
   activerecord:
     models:

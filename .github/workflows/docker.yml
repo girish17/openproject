@@ -37,7 +37,7 @@ on:
         required: true
         type: string
       use_test_registry:
-        description: "Use openproject/openproject-test registry instead (for testing)"
+        description: "Use girish17/yojana-test registry instead (for testing)"
         required: false
         type: boolean
         default: false
@@ -45,6 +45,9 @@ on:
 
 permissions:
   contents: read # to fetch code (actions/checkout)
+
+env:
+  REGISTRY_IMAGE: girish17/yojana
 
 jobs:
   build-hocuspocus:
@@ -79,8 +82,8 @@ jobs:
           ./script/gh/docker-tags.rb "$INPUT_TAG" --format-for-docker
 
           # Determine registry image based on workflow_dispatch input
-          if [ "$INPUT_USE_TEST_REGISTRY" = "true" ]; then
-            echo "registry_image=openproject/openproject-test" >> "$GITHUB_OUTPUT"
+          if [ "${{ inputs.use_test_registry }}" = "true" ]; then
+            echo "registry_image=girish17/yojana-test" >> "$GITHUB_OUTPUT"
           else
             echo "registry_image=$REGISTRY_IMAGE" >> "$GITHUB_OUTPUT"
           fi

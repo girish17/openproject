@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -494,12 +494,18 @@ vi:
         next: Tiếp
         got_it: Hiểu rồi
       steps:
-        help_menu: Menu Trợ giúp (?) cung cấp <b>các tài nguyên trợ giúp bổ sung</b>. Tại đây bạn có thể tìm thấy hướng dẫn người dùng, video hướng dẫn hữu ích và nhiều hơn nữa. <br> Chúc bạn làm việc vui vẻ với OpenProject!
-        members: Mời <b>thành viên</b> mới tham gia dự án của bạn.
-        quick_add_button: Nhấp vào biểu tượng dấu cộng (+) trong điều hướng tiêu đề để <b>tạo dự án mới</b> hoặc để <b>mời đồng nghiệp</b>.
-        sidebar_arrow: Sử dụng mũi tên quay lại ở góc trên cùng bên trái để quay lại <b>menu chính</b> của dự án.
-        welcome: Hãy tham gia chuyến tham quan giới thiệu dài ba phút để tìm hiểu <b>tính năng quan trọng nhất</b>. <br> Chúng tôi khuyên bạn nên hoàn thành các bước cho đến hết. Bạn có thể bắt đầu lại chuyến tham quan bất cứ lúc nào.
-        wiki: Trong <b>wiki</b> bạn có thể ghi lại và chia sẻ kiến ​​thức cùng với nhóm của mình.
+        help_menu: "Menu Trợ giúp (?) cung cấp <b>các tài nguyên trợ giúp bổ sung</b>. Tại đây bạn có thể tìm thấy hướng dẫn người dùng, video hướng dẫn hữu ích và nhiều hơn nữa. <br> Chúc bạn làm việc vui vẻ với Yojana!"
+        members: "Mời <b>thành viên</b> mới tham gia dự án của bạn."
+        quick_add_button: "Nhấp vào biểu tượng dấu cộng (+) trong điều hướng tiêu đề để <b>tạo dự án mới</b> hoặc để <b>mời đồng nghiệp</b>."
+        sidebar_arrow: "Sử dụng mũi tên quay lại ở góc trên cùng bên trái để quay lại <b>menu chính</b> của dự án."
+        welcome: "Hãy tham gia chuyến tham quan giới thiệu dài ba phút để tìm hiểu <b>tính năng quan trọng nhất</b>. <br> Chúng tôi khuyên bạn nên hoàn thành các bước cho đến hết. Bạn có thể bắt đầu lại chuyến tham quan bất cứ lúc nào."
+        wiki: "Trong <b>wiki</b> bạn có thể ghi lại và chia sẻ kiến ​​thức cùng với nhóm của mình."
+        backlogs:
+          overview: "Quản lý công việc của bạn trong chế độ xem <b>backlogs</b>."
+          sprints: "Ở bên phải, bạn có tồn đọng sản phẩm và tồn đọng lỗi, ở bên trái, bạn có các lần chạy nước rút tương ứng. Tại đây, bạn có thể tạo <b>sử thi, cốt truyện của người dùng và lỗi</b>, ưu tiên bằng cách kéo và thả và thêm chúng vào chạy nước rút."
+          task_board_arrow: "Để xem <b>bảng nhiệm vụ</b> của bạn, hãy mở trình đơn thả xuống chạy nước rút..."
+          task_board_select: "...và chọn mục nhập <b>bảng nhiệm vụ</b>."
+          task_board: "Bảng nhiệm vụ hiển thị tiến trình <b> cho lần chạy nước rút này</b>. Nhấp vào biểu tượng dấu cộng (+) bên cạnh cốt truyện của người dùng để thêm nhiệm vụ hoặc trở ngại mới. <br> Trạng thái có thể được cập nhật bằng cách kéo và thả."
         boards:
           overview: Chọn <b>boards</b> để thay đổi chế độ xem và quản lý dự án của bạn bằng chế độ xem bảng linh hoạt.
           lists_kanban: 'Tại đây bạn có thể tạo nhiều danh sách (cột) trong bảng của mình. Ví dụ: tính năng này cho phép bạn tạo <b>Kanban board</b>.'

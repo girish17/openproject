@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -348,13 +348,13 @@ fil:
         unknown_name: Unknown
     mcp_configurations:
       index:
-        description: The model context protocol allows AI agents to provide its users with tools and resources exposed by this OpenProject instance. This feature is still in beta.
-        resources_heading: Resources
-        resources_description: OpenProject implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url).
-        resources_submit: Update resources
-        tools_heading: Tools
-        tools_description: OpenProject implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url).
-        tools_submit: Update tools
+        description: "The model context protocol allows AI agents to provide its users with tools and resources exposed by this Yojana instance."
+        resources_heading: "Resources"
+        resources_description: "Yojana implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
+        resources_submit: "Update resources"
+        tools_heading: "Tools"
+        tools_description: "Yojana implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url)."
+        tools_submit: "Update tools"
       multi_update:
         success: MCP configurations were updated successfully.
       server_form:
@@ -397,31 +397,31 @@ fil:
       edit:
         label_delete_scim_client: Delete SCIM client
       form:
-        auth_provider_description: This is the service that users added by the SCIM provider will use to authenticate in OpenProject.
-        authentication_method_description_html: This is how the SCIM client authenticates at OpenProject. Please ensure that OAuth tokens include the <code>scim_v2</code> scope.
-        description: Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options.
-        jwt_sub_description: For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case.
-        name_description: Choose a name that will help other admins better understand why this client was configured.
+        auth_provider_description: "This is the service that users added by the SCIM provider will use to authenticate in Yojana."
+        authentication_method_description_html: "This is how the SCIM client authenticates at Yojana. Please ensure that OAuth tokens include the <code>scim_v2</code> scope."
+        description: "Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options."
+        jwt_sub_description: "For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case."
+        name_description: "Choose a name that will help other admins better understand why this client was configured."
       index:
-        description: SCIM clients configured here are able to interact with OpenProject SCIM server API to provision, update, and deprovision user accounts and groups.
-        label_create_button: Add SCIM client
+        description: "SCIM clients configured here are able to interact with Yojana SCIM server API to provision, update, and deprovision user accounts and groups."
+        label_create_button: "Add SCIM client"
       new:
         title: New SCIM client
       revoke_static_token_dialog_component:
-        confirm_button: Revoke
-        title: Revoke static token
-        heading: Are you sure you want to revoke this token?
-        description: The SCIM client that uses this token will no longer be able to access OpenProject's SCIM server API.
+        confirm_button: "Revoke"
+        title: "Revoke static token"
+        heading: "Are you sure you want to revoke this token?"
+        description: "The SCIM client that uses this token will no longer be able to access Yojana's SCIM server API."
       table_component:
         blank_slate:
           title: No SCIM clients configured yet
           description: Add clients to see them here
         user_count: Mga gumagamit
       token_list_component:
-        description: The tokens you generate here can be passed by a SCIM client to access the OpenProject SCIM API.
-        heading: Tokens
-        label_add_token: Token
-        label_aria_add_token: Add token
+        description: "The tokens you generate here can be passed by a SCIM client to access the Yojana SCIM API."
+        heading: "Tokens"
+        label_add_token: "Token"
+        label_aria_add_token: "Add token"
       token_table_component:
         blank_slate:
           title: No tokens have been created yet
@@ -564,38 +564,38 @@ fil:
       name: Arbitrary name of the LDAP connection
       host: LDAP host name or IP address
       login_map: The attribute key in LDAP that is used to identify the unique user login. Usually, this will be `uid` or `samAccountName`.
-      generic_map: The attribute key in LDAP that is mapped to the OpenProject `%{attribute}` attribute
-      admin_map_html: 'Optional: The attribute key in LDAP that <strong>if present</strong> marks the OpenProject user an admin. Leave empty when in doubt.'
+      generic_map: The attribute key in LDAP that is mapped to the Yojana `%{attribute}` attribute
+      admin_map_html: "Optional: The attribute key in LDAP that <strong>if present</strong> marks the Yojana user an admin. Leave empty when in doubt."
       system_user_dn_html: |
         Enter the DN of the system user used for read-only access.
         <br>
-        Example: uid=openproject,ou=system,dc=example,dc=com
+        Example: uid=yojana,ou=system,dc=example,dc=com
       system_user_password: Enter the bind password of the system user
       base_dn: |
-        Enter the Base DN of the subtree in LDAP you want OpenProject to look for users and groups.
-        OpenProject will filter for provided usernames in this subtree only.
+        Enter the Base DN of the subtree in LDAP you want Yojana to look for users and groups.
+        Yojana will filter for provided usernames in this subtree only.
         Example: ou=users,dc=example,dc=com
       filter_string: |
         Add an optional RFC4515 filter to apply to the results returned for users filtered in the LDAP.
-        This can be used to restrict the set of users that are found by OpenProject for authentication and group synchronization.
+        This can be used to restrict the set of users that are found by Yojana for authentication and group synchronization.
       filter_string_concat: |
-        OpenProject will always filter for the login attribute provided by the user to identify the record. If you provide a filter here,
+        Yojana will always filter for the login attribute provided by the user to identify the record. If you provide a filter here,
         it will be concatenated with an AND. By default, a catch-all (objectClass=*) will be used as a filter.
       onthefly_register: |
-        If you check this box, OpenProject will automatically create new users from their LDAP entries
-        when they first authenticate with OpenProject.
-        Leave this unchecked to only allow existing accounts in OpenProject to authenticate through LDAP!
-    connection_encryption: Connection encryption
-    encryption_details: LDAPS / STARTTLS options
-    system_account: System account
+        If you check this box, Yojana will automatically create new users from their LDAP entries
+        when they first authenticate with Yojana.
+        Leave this unchecked to only allow existing accounts in Yojana to authenticate through LDAP!
+    connection_encryption: "Connection encryption"
+    encryption_details: "LDAPS / STARTTLS options"
+    system_account: "System account"
     system_account_legend: |
-      OpenProject requires read-only access through a system account to lookup users and groups in your LDAP tree.
+      Yojana requires read-only access through a system account to lookup users and groups in your LDAP tree.
       Please specify the bind credentials for that system user in the following section.
     ldap_details: LDAP details
     user_settings: Attribute mapping
     user_settings_legend: |
-      The following fields are related to how users are created in OpenProject from LDAP entries and
-      what LDAP attributes are used to define the attributes of an OpenProject user (attribute mapping).
+      The following fields are related to how users are created in Yojana from LDAP entries and
+      what LDAP attributes are used to define the attributes of an Yojana user (attribute mapping).
     tls_mode:
       plain: wala
       simple_tls: LDAPS
@@ -2135,18 +2135,17 @@ fil:
         circular_dependency: Itong pakikipag-ugnayan ay lilikha ng kabilugang dependecia.
         confirmation: hindi tugma %{attribute}.
         could_not_be_copied: "%{dependency} could not be (fully) copied."
-        datetime_must_be_in_future: must be in the future.
-        does_not_exist: hindi umiiral.
-        error_enterprise_only: "%{action} is only available in the OpenProject Enterprise edition."
-        error_unauthorized: may not be accessed.
-        error_readonly: was attempted to be written but is not writable.
-        error_conflict: Ang impormasyon ay naka-update sa kahit hindi baba isa o.
-        error_not_found: not found.
-        email: is not a valid email address.
-        empty: hindi pwedeng blanko.
-        enterprise_plan_required: requires at least the %{plan_name}.
-        even: dapat ay kapareho.
-        exclusion: ay nakareserba.
+        does_not_exist: "hindi umiiral."
+        error_enterprise_only: "%{action} is only available in the Yojana Enterprise edition."
+        error_unauthorized: "may not be accessed."
+        error_readonly: "was attempted to be written but is not writable."
+        error_conflict: "Ang impormasyon ay naka-update sa kahit hindi baba isa o."
+        error_not_found: "not found."
+        email: "is not a valid email address."
+        empty: "hindi pwedeng blanko."
+        enterprise_plan_required: "requires at least the %{plan_name}."
+        even: "dapat ay kapareho."
+        exclusion: "ay nakareserba."
         feature_disabled: is not available.
         feature_disabled_for_project: is disabled for this project.
         file_too_large: ay masyadong malaki (pinakamataas na laki ay %{count} Bytes).
@@ -2801,17 +2800,14 @@ fil:
     reset_token:
       action_create: Lumikha
       action_reset: I-reset
-      heading_reset: Reset backup token
-      heading_create: Create backup token
-      implications: 'Enabling backups will allow any user with the required permissions and this backup token to download a backup containing all data of this OpenProject installation. This includes the data of all other users.
-
-        '
-      info: 'You will need to generate a backup token to be able to create a backup. Each time you want to request a backup you will have to provide this token. You can delete the backup token to disable backups for this user.
-
-        '
-      verification_html: 'Enter %{word} to confirm you want to %{action} the backup token.
-
-        '
+      heading_reset: "Reset backup token"
+      heading_create: "Create backup token"
+      implications: >
+        Enabling backups will allow any user with the required permissions and this backup token to download a backup containing all data of this Yojana installation. This includes the data of all other users.
+      info: >
+        You will need to generate a backup token to be able to create a backup. Each time you want to request a backup you will have to provide this token. You can delete the backup token to disable backups for this user.
+      verification: >
+        Enter %{word} to confirm you want to %{action} the backup token.
       verification_word_reset: reset
       verification_word_create: create
       warning: 'When you create a new token you will only be allowed to request a backup after 24 hours. This is a safety measure. After that you can request a backup any time using that token.
@@ -3160,29 +3156,26 @@ fil:
       title: Enterprise add-on
       plan_title: Enterprise %{plan} add-on
       plan_name: "%{plan} enterprise plan"
-      trial_text: This feature is included in your active Enterprise trial.
-      plan_text_html: Available starting with the %{plan_name}.
-      unlimited: Unlimited
-      already_have_token: 'Already have a token? Add it using the button below to upgrade to the booked Enterprise plan.
-
-        '
-      hide_banner: Hide this banner
-      homescreen_description: 'Enterprise plans extend the Community edition of OpenProject with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running OpenProject in a mission-critical environment.
-
-        '
+      plan_text_html: "Available starting with the %{plan_name}."
+      unlimited: "Unlimited"
+      already_have_token: >
+        Already have a token? Add it using the button below to upgrade to the booked Enterprise plan.
+      hide_banner: "Hide this banner"
+      homescreen_description: >
+        Enterprise plans extend the Community edition of Yojana with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running Yojana in a mission-critical environment.
       homescreen_subline: By upgrading, you will also be supporting an open source project.
       baseline_comparison:
         description: Highlight changes made to this list since any point in the past.
       benefits:
-        description: What are the benefits of the Enterprise on-premises edition?
-        high_security: Security features
-        high_security_text: Single sign on (SAML, OpenID Connect, CAS), LDAP groups.
-        installation: Installation support
-        installation_text: Experienced software engineers guide you through the complete installation and setup process in your own infrastructure.
-        premium_features: Enterprise add-ons
-        premium_features_text: Agile boards, custom theme and logo, graphs, intelligent workflows with custom actions, full text search for work package attachments and multi-select custom fields.
-        professional_support: Propesyonal na suporta
-        professional_support_text: Get reliable, high-touch support from senior support engineers with expert knowledge about running OpenProject in business-critical environments.
+        description: "What are the benefits of the Enterprise on-premises edition?"
+        high_security: "Security features"
+        high_security_text: "Single sign on (SAML, OpenID Connect, CAS), LDAP groups."
+        installation: "Installation support"
+        installation_text: "Experienced software engineers guide you through the complete installation and setup process in your own infrastructure."
+        premium_features: "Enterprise add-ons"
+        premium_features_text: "Agile boards, custom theme and logo, graphs, intelligent workflows with custom actions, full text search for work package attachments and multi-select custom fields."
+        professional_support: "Propesyonal na suporta"
+        professional_support_text: "Get reliable, high-touch support from senior support engineers with expert knowledge about running Yojana in business-critical environments."
       work_package_subject_generation:
         description: Create automatically generated subjects using referenced attributes and text.
       customize_life_cycle:
@@ -3212,34 +3205,31 @@ fil:
       calculated_values:
         description: Calculated values allow you to create a mathematical formula based attribute using numeric values and other project attributes and custom fields.
       define_custom_style:
-        title: Custom color theme and logo
-        more_info: 'Note: the used logo will be publicly accessible.'
-        description: Customize your OpenProject installation with your own logo and colors.
+        title: "Custom color theme and logo"
+        more_info: "Note: the used logo will be publicly accessible."
+        description: Customize your Yojana installation with your own logo and colors.
       custom_actions:
         title: Mga custom aksyon
         description: Custom actions are one-click shortcuts to a set of pre-defined actions that you can make available on certain work packages based on status, role, type or project.
       mcp_server:
-        description: Bring OpenProject into your AI workflows with a secure MCP server.
-      meeting_templates:
-        description: Define meeting templates with a set agenda structure and save time by reusing them when creating new meetings.
+        description: "Integrate AI agents with your Yojana instance through MCP."
       nextcloud_sso:
         title: Single Sign-On for Nextcloud Storage
         description: Enable seamless and secure authentication for your Nextcloud storage with Single Sign-On. Simplify access management and enhance user convenience.
       scim_api:
-        title: SCIM clients
-        description: Automate user management in OpenProject by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan.
+        title: "SCIM clients"
+        description: "Automate user management in Yojana by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan."
       sso_auth_providers:
         title: Single Sign-On (SSO)
         description: Enable users to log in via external SSO providers using SAML or OpenID Connect for seamless access and integration with existing identity systems.
       virus_scanning:
-        description: Ensure uploaded files in OpenProject are scanned for viruses before being accessible by other users.
+        description: "Ensure uploaded files in Yojana are scanned for viruses before being accessible by other users."
       project_creation_wizard:
         description: Generate a step-by-step wizard to help project managers fill out a project initiation request.
       placeholder_users:
         title: Placeholder users
-        description: 'Placeholder users are a way to assign work packages to users who are not part of your project. They can be useful in a range of scenarios; for example, if you need to track tasks for a resource that is not yet named or available, or if you don’t want to give that person access to OpenProject but still want to track tasks assigned to them.
-
-          '
+        description: >
+          Placeholder users are a way to assign work packages to users who are not part of your project. They can be useful in a range of scenarios; for example, if you need to track tasks for a resource that is not yet named or available, or if you don’t want to give that person access to Yojana but still want to track tasks assigned to them.
       internal_comments:
         title: Internal comments
         description: Internal comments allow an internal team to communicate amongst themselves privately. These are only visible to certain project roles and will never be visible publicly.
@@ -3254,26 +3244,25 @@ fil:
         other: "%{count} days left of %{trial_plan} trial token"
       description_html: You have access to all %{trial_plan} features.
     trial:
-      not_found: You have requested a trial token, but that request is no longer available. Please try again.
-      wait_for_confirmation: We sent you an email to confirm your address in order to retrieve a trial token.
-      already_retrieved: 'Your trial enterprise token was already retrieved. Please check your emails for the token being attached. Please reach out to our support team if you need a new one.
-
-        '
-      successfully_saved: Your trial enterprise token has been successfully retrieved.
-      token_sent: Trial token requested
-      request_again: Request again
-      resend_action: Resend confirmation email
-      welcome_title: Quick feature overview
-      welcome_description: Get a quick overview of project management and team collaboration with OpenProject Enterprise edition.
-      confirmation_info: 'We sent you an email on %{date} to %{email} with all the information to start the free trial of OpenProject Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
-
-        '
-      confirmation_subline: 'Please, check your inbox and follow the steps to start your 14-day free trial.
-
-        '
+      not_found: "You have requested a trial token, but that request is no longer available. Please try again."
+      wait_for_confirmation: "We sent you an email to confirm your address in order to retrieve a trial token."
+      already_retrieved: >
+        Your trial enterprise token was already retrieved. Please check your emails for the token being attached. Please reach out to our support team if you need a new one.
+      successfully_saved: "Your trial enterprise token has been successfully retrieved."
+      token_sent: "Trial token requested"
+      request_again: "Request again"
+      resend_action: "Resend confirmation email"
+      welcome_title: "Quick feature overview"
+      welcome_description: "Get a quick overview of project management and team collaboration with Yojana Enterprise edition."
+      confirmation_info: >
+        We sent you an email on %{date} to %{email} with all the information to start the free trial of Yojana Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
+      confirmation_subline: >
+        Please, check your inbox and follow the steps to start your 14-day free trial.
       domain_caption: The token will be valid for your currently configured host name.
-      receive_newsletter: I want to receive the OpenProject [newsletter](newsletter_url).
-      consent: I agree with the [terms of service](tos_url) and the [privacy policy](privacy_url).
+      receive_newsletter_html: >
+        I want to receive the Yojana <a target="_blank" href="https://www.yojana.girishm.info/newsletter/">newsletter</a>.
+      consent_html: >
+        I agree with the <a target="_blank" href="https://www.yojana.girishm.info/terms-of-service/">terms of service</a> and the <a target="_blank" href="https://www.yojana.girishm.info/data-privacy-and-security/">privacy policy</a>.
   email_calendar_updates:
     state:
       disabled: Disabled.
@@ -3297,51 +3286,51 @@ fil:
   error_can_not_delete_in_use_archived_undisclosed: There are also work packages in archived projects. You need to ask an administrator to perform the deletion to see which projects are affected.
   error_can_not_delete_in_use_archived_work_packages: 'There are also work packages in archived projects. You need to reactivate the following projects first, before you can change the attribute of the respective work packages: %{archived_projects_urls}'
   error_can_not_delete_type:
-    explanation: This type contains work packages and cannot be deleted. You can see all affected work packages in <a target="_blank" href="%{url}">this view</a>.
-  error_can_not_delete_standard_type: Ang mga uri ng pamantayan na hindi maaring burahin.
-  error_can_not_invite_user: Nabigong ipadala ang imbiyltasyon sa gumagamit.
-  error_can_not_remove_role: Itong tungkulin ay ginamit pa at hindi pwedeng burahin.
-  error_can_not_reopen_work_package_on_closed_version: Ang work package ay nakatalaga sa isinarang bersyon na hindi pwede buksan muli
-  error_can_not_find_all_resources: Could not find all related resources to this request.
-  error_can_not_unarchive_project: 'This project cannot be unarchived: %{errors}'
-  error_check_user_and_role: Mangyaring pumili ng gumagamit at tungkulin.
-  error_code: Error %{code}
-  error_color_could_not_be_saved: Ang kulay ay hindi dapat naka-save
-  error_cookie_missing: Ang OpenProject cookie ay nawawala. Mangyaring siguraduhin na ang mga cookie ay pinagana, bilang aplikasyon na ito ay hindi gumagana ng maayos na hindi kasama ang.
-  error_custom_option_not_found: Ang opsyon ay hindi umiiral.
-  error_enterprise_plan_needed: You need the %{plan} enterprise plan to perform this action.
-  error_enterprise_activation_user_limit: Your account could not be activated (user limit reached). Please contact your administrator to gain access.
-  error_enterprise_token_invalid_domain: The Enterprise edition is not active. Your Enterprise token's domain (%{actual}) does not match the system's host name (%{expected}).
-  error_failed_to_delete_entry: Nabigong burahin ang entry na ito.
-  error_in_dependent: 'Error attempting to alter dependent object: %{dependent_class} #%{related_id} - %{related_subject}: %{error}'
-  error_in_new_dependent: 'Error attempting to create dependent object: %{dependent_class} - %{related_subject}: %{error}'
-  error_invalid_selected_value: Invalid selected value.
-  error_journal_attribute_not_present: Journal does not contain attribute %{attribute}.
-  error_pdf_export_too_many_columns: Masyadong maraming hanay ang napili para sa PDF export. Mangyaring bawasan ang mga bilang ng hanay.
-  error_pdf_date_range_too_long: The selected work package date range exceeds the allowable PDF export limit. Please condense the range to a maximum of %{years} years.
-  error_pdf_failed_to_export: 'The PDF export could not be saved: %{error}'
-  error_token_authenticity: Unable to verify Cross-Site Request Forgery token. Did you try to submit data on multiple browsers or tabs? Please close all tabs and try again.
-  error_reminder_not_found: The reminder was not found or was already notified about.
-  error_work_package_not_found_in_project: Ang work package ay hindi natagpuan o hindi kabilang sa proyektong ito
-  error_work_package_id_not_found: The work package was not found.
-  error_must_be_project_member: dapat ay miyembro ng proyekto
-  error_migrations_are_pending: Your OpenProject installation has pending database migrations. You have likely missed running the migrations on your last upgrade. Please check the upgrade guide to properly upgrade your installation.
-  error_migrations_visit_upgrade_guides: Please visit our upgrade guide documentation
-  error_no_default_work_package_status: Walang default work package estado ang tinukoy. Mangyaring suriin ang iyong kumpigurasyon ( Pumunta sa "Administration -> Work package statuses").
-  error_no_type_in_project: Walang uri ay nauugnay sa proyektong ito. Mangyaring suriin ang mga setting ng proyekto.
-  error_omniauth_registration_timed_out: Ang pagparehistro sa pamamagitan ng external authentication provider ay nagtime-out. Mangyaring subukan ulit.
-  error_omniauth_invalid_auth: The authentication information returned from the identity provider was invalid. Please contact your administrator for further help.
-  error_password_change_failed: An error occurred when trying to change the password.
-  error_scm_command_failed: 'Isang mali ang naganap nong subukam ang pag-access ng repositoryo: %{value}'
-  error_scm_not_found: Ang entry o rebisyon ay hindi natagpuan sa repositoryo.
-  error_type_could_not_be_saved: Ang mga uri ay hindi mai-save
-  error_unable_delete_status: Ang estado ng work package ay hindi pwedeng burahin dahil ginamit ito sa kahit isang work package.
-  error_unable_delete_default_status: Hindi mabura ang default estado ng work package. Mangyaring pumili ng ibang estado ng work package bago buburahin ang kasulukuyang isa.
-  error_unable_to_connect: Hindi makakonekta (%{value})
-  error_unable_delete_wiki: Hindi maitanggal ang wiki page.
-  error_unable_update_wiki: Hindi mai-update ang wiki page.
-  error_workflow_copy_source: Mangyaring piliin ang uri ng pinagmulan at tungkulin
-  error_workflow_copy_target: Mangyaring piliin ang uri ng target at tungkulin
+    explanation: 'This type contains work packages and cannot be deleted. You can see all affected work packages in <a target="_blank" href="%{url}">this view</a>.'
+  error_can_not_delete_standard_type: "Ang mga uri ng pamantayan na hindi maaring burahin."
+  error_can_not_invite_user: "Nabigong ipadala ang imbiyltasyon sa gumagamit."
+  error_can_not_remove_role: "Itong tungkulin ay ginamit pa at hindi pwedeng burahin."
+  error_can_not_reopen_work_package_on_closed_version: "Ang work package ay nakatalaga sa isinarang bersyon na hindi pwede buksan muli"
+  error_can_not_find_all_resources: "Could not find all related resources to this request."
+  error_can_not_unarchive_project: "This project cannot be unarchived: %{errors}"
+  error_check_user_and_role: "Mangyaring pumili ng gumagamit at tungkulin."
+  error_code: "Error %{code}"
+  error_color_could_not_be_saved: "Ang kulay ay hindi dapat naka-save"
+  error_cookie_missing: "Ang Yojana cookie ay nawawala. Mangyaring siguraduhin na ang mga cookie ay pinagana, bilang aplikasyon na ito ay hindi gumagana ng maayos na hindi kasama ang."
+  error_custom_option_not_found: "Ang opsyon ay hindi umiiral."
+  error_enterprise_plan_needed: "You need the %{plan} enterprise plan to perform this action."
+  error_enterprise_activation_user_limit: "Your account could not be activated (user limit reached). Please contact your administrator to gain access."
+  error_enterprise_token_invalid_domain: "The Enterprise edition is not active. Your Enterprise token's domain (%{actual}) does not match the system's host name (%{expected})."
+  error_failed_to_delete_entry: "Nabigong burahin ang entry na ito."
+  error_in_dependent: "Error attempting to alter dependent object: %{dependent_class} #%{related_id} - %{related_subject}: %{error}"
+  error_in_new_dependent: "Error attempting to create dependent object: %{dependent_class} - %{related_subject}: %{error}"
+  error_invalid_selected_value: "Invalid selected value."
+  error_journal_attribute_not_present: "Journal does not contain attribute %{attribute}."
+  error_pdf_export_too_many_columns: "Masyadong maraming hanay ang napili para sa PDF export. Mangyaring bawasan ang mga bilang ng hanay."
+  error_pdf_date_range_too_long: "The selected work package date range exceeds the allowable PDF export limit. Please condense the range to a maximum of %{years} years."
+  error_pdf_failed_to_export: "The PDF export could not be saved: %{error}"
+  error_token_authenticity: "Unable to verify Cross-Site Request Forgery token. Did you try to submit data on multiple browsers or tabs? Please close all tabs and try again."
+  error_reminder_not_found: "The reminder was not found or was already notified about."
+  error_work_package_not_found_in_project: "Ang work package ay hindi natagpuan o hindi kabilang sa proyektong ito"
+  error_work_package_id_not_found: "The work package was not found."
+  error_must_be_project_member: "dapat ay miyembro ng proyekto"
+  error_migrations_are_pending: "Your Yojana installation has pending database migrations. You have likely missed running the migrations on your last upgrade. Please check the upgrade guide to properly upgrade your installation."
+  error_migrations_visit_upgrade_guides: "Please visit our upgrade guide documentation"
+  error_no_default_work_package_status: 'Walang default work package estado ang tinukoy. Mangyaring suriin ang iyong kumpigurasyon ( Pumunta sa "Administration -> Work package statuses").'
+  error_no_type_in_project: "Walang uri ay nauugnay sa proyektong ito. Mangyaring suriin ang mga setting ng proyekto."
+  error_omniauth_registration_timed_out: "Ang pagparehistro sa pamamagitan ng external authentication provider ay nagtime-out. Mangyaring subukan ulit."
+  error_omniauth_invalid_auth: "The authentication information returned from the identity provider was invalid. Please contact your administrator for further help."
+  error_password_change_failed: "An error occurred when trying to change the password."
+  error_scm_command_failed: "Isang mali ang naganap nong subukam ang pag-access ng repositoryo: %{value}"
+  error_scm_not_found: "Ang entry o rebisyon ay hindi natagpuan sa repositoryo."
+  error_type_could_not_be_saved: "Ang mga uri ay hindi mai-save"
+  error_unable_delete_status: "Ang estado ng work package ay hindi pwedeng burahin dahil ginamit ito sa kahit isang work package."
+  error_unable_delete_default_status: "Hindi mabura ang default estado ng work package. Mangyaring pumili ng ibang estado ng work package bago buburahin ang kasulukuyang isa."
+  error_unable_to_connect: "Hindi makakonekta (%{value})"
+  error_unable_delete_wiki: "Hindi maitanggal ang wiki page."
+  error_unable_update_wiki: "Hindi mai-update ang wiki page."
+  error_workflow_copy_source: "Mangyaring piliin ang uri ng pinagmulan at tungkulin"
+  error_workflow_copy_target: "Mangyaring piliin ang uri ng target at tungkulin"
   error_menu_item_not_created: Aytem ng pagpipilian ay hindi pwede idagdag
   error_menu_item_not_saved: Aytem ng pagpipilian ay hindi pwede i-save
   error_wiki_root_menu_item_conflict: 'Hindi mapalitan ng pangalan ang "%{old_name}" sa "%{new_name}" dahil sa kasalungatan sa resulta ng pagpipiliang aytem sa umiiral na pagpipiliang aytem "%{existing_caption}" (%{existing_identifier}).
@@ -3436,8 +3425,8 @@ fil:
     succeeded: Export completed
     failed: 'An error has occurred while trying to export the work packages: %{message}'
     demo:
-      heading: Demo PDF
-      footer: Generated by OpenProject
+      heading: "Demo PDF"
+      footer: "Generated by Yojana"
       button_text: Generate Demo PDF
     errors:
       embedded_table_with_too_many_columns: This embedded work package table could not fit on the page, please reduce the number of columns.
@@ -3558,7 +3547,7 @@ fil:
         no_results_subtext: Add one or multiple projects as favorite through their overview or in a project list.
       users: Pinakamabagong rehistrong gumagamit sa panahong ito.
     blocks:
-      community: Komunidad ng OpenProject
+      community: "Komunidad ng Yojana"
       upsell:
         title: Upgrade to Enterprise edition
       new_features:
@@ -3570,40 +3559,38 @@ fil:
 
             '
           new_features_list:
-            line_0: XWiki integration (Corporate plan).
-            line_1: Sprint goals.
-            line_2: "'All sprints' overview page."
-            line_3: Display backlog buckets in work packages and work package tables.
-            line_4: Improved support for project-based (semantic) identifiers.
-            line_5: Convert meeting agenda items into work packages.
-            line_6: Configure cost types per project.
+            line_0: Automated project initiation (Enterprise add-on).
+            line_1: "Meetings: add new or existing work packages as outcomes."
+            line_2: "Meetings: show iCal responses in Yojana."
+            line_3: "Recurring meetings: duplicate agenda items to the next occurrence."
+            line_4: "Release to Community: Attribute highlighting."
+            line_5: Warning before opening external links in user-provided content (Enterprise add-on).
+            line_6: Improved performance and user experience, including the Activity tab and Documents module.
     links:
-      upgrade_enterprise_edition: Upgrade to Enterprise edition
-      postgres_migration: Migrating your installation to PostgreSQL
-      user_guides: Mga gabay ng gumagamit
-      faq: FAQ
-      impressum: Legal notice
-      glossary: Glosaryo
-      shortcuts: Mga madalian
-      blog: Blog ng OpenProject
-      forums: Komunidad forum
-      security_alerts: Security alerts
-      newsletter: Newsletter
+      upgrade_enterprise_edition: "Upgrade to Enterprise edition"
+      postgres_migration: "Migrating your installation to PostgreSQL"
+      user_guides: "Mga gabay ng gumagamit"
+      faq: "FAQ"
+      impressum: "Legal notice"
+      glossary: "Glosaryo"
+      shortcuts: "Mga madalian"
+      blog: "Blog ng Yojana"
+      forums: "Komunidad forum"
+      security_alerts: "Security alerts"
+      newsletter: "Newsletter"
   image_conversion:
     imagemagick: Imagemagick
   journals:
     changes_retracted: The changes were retracted.
     caused_changes:
-      budget_deleted: Budget has been deleted
-      dates_changed: Dates changed
-      default_attribute_written: Read-only attributes written
-      import: Imported
-      progress_mode_changed_to_status_based: Progress calculation updated
-      status_changed: Status '%{status_name}'
-      system_update: 'OpenProject system update:'
-      work_package_duplicate_closed: 'Duplicate work package updated:'
-      total_percent_complete_mode_changed_to_work_weighted_average: Calculation of % Complete totals now weighted by Work.
-      total_percent_complete_mode_changed_to_simple_average: Calculation of % Complete totals now based on a simple average of only % Complete values.
+      dates_changed: "Dates changed"
+      default_attribute_written: "Read-only attributes written"
+      progress_mode_changed_to_status_based: "Progress calculation updated"
+      status_changed: "Status '%{status_name}'"
+      system_update: "Yojana system update:"
+      work_package_duplicate_closed: "Duplicate work package updated:"
+      total_percent_complete_mode_changed_to_work_weighted_average: "Calculation of % Complete totals now weighted by Work."
+      total_percent_complete_mode_changed_to_simple_average: "Calculation of % Complete totals now based on a simple average of only % Complete values."
     cause_descriptions:
       import:
         header: changes by %{author}
@@ -3667,7 +3654,7 @@ fil:
         notifications: Notification settings
         email_reminders: Email reminders
     access_tokens:
-      description: Provider tokens are issued by OpenProject, allowing other applications to access it. Client tokens are issued by other applications, allowing OpenProject to access them.
+      description: "Provider tokens are issued by Yojana, allowing other applications to access it. Client tokens are issued by other applications, allowing Yojana to access them."
       no_results:
         title: Walang access token upang ipakita
         description: Lahat sila ay hindi na pinagana. Maaari silang paganahin muli sa pagpilian ng tagapangasiwa.
@@ -3683,49 +3670,49 @@ fil:
         provider:
           title: Provider tokens
       token/api:
-        blank_description: There is no API token yet. You can create one using the button below.
-        blank_title: No API token
-        title: API
-        table_title: API tokens
-        text_hint: API tokens allow third-party applications to communicate with this OpenProject instance via REST APIs.
-        static_token_name: API token
-        disabled_text: API tokens are not enabled by the administrator. Please contact your administrator to use this feature.
-        add_button: API token
+        blank_description: "There is no API token yet. You can create one using the button below."
+        blank_title: "No API token"
+        title: "API"
+        table_title: "API tokens"
+        text_hint: "API tokens allow third-party applications to communicate with this Yojana instance via REST APIs."
+        static_token_name: "API token"
+        disabled_text: "API tokens are not enabled by the administrator. Please contact your administrator to use this feature."
+        add_button: "API token"
       ical:
-        blank_description: To add an iCalendar token, subscribe to a new or existing calendar from within the Calendar module of a project. You must have the necessary permissions.
-        blank_title: No iCalendar token
-        title: iCalendar
-        table_title: iCalendar tokens
-        text_hint_link: iCalendar tokens allow users to [subscribe to OpenProject calendars](docs_url) and view up-to-date work package information from external clients.
-        disabled_text: iCalendar subscriptions are not enabled by the administrator. Please contact your administrator to use this feature.
+        blank_description: "To add an iCalendar token, subscribe to a new or existing calendar from within the Calendar module of a project. You must have the necessary permissions."
+        blank_title: "No iCalendar token"
+        title: "iCalendar"
+        table_title: "iCalendar tokens"
+        text_hint_link: "iCalendar tokens allow users to [subscribe to Yojana calendars](docs_url) and view up-to-date work package information from external clients."
+        disabled_text: "iCalendar subscriptions are not enabled by the administrator. Please contact your administrator to use this feature."
       oauth_application:
-        active_tokens: Active tokens
-        blank_description: There is no third-party application access configured and active for you.
-        blank_title: No OAuth application token
-        last_refreshed_at: Last refreshed at
-        title: OAuth
-        table_title: OAuth application tokens
-        text_hint: OAuth application tokens allow third-party applications to connect with this OpenProject instance.
+        active_tokens: "Active tokens"
+        blank_description: "There is no third-party application access configured and active for you."
+        blank_title: "No OAuth application token"
+        last_used_at: "Last used at"
+        title: "OAuth"
+        table_title: "OAuth application tokens"
+        text_hint: "OAuth application tokens allow third-party applications to connect with this Yojana instance."
       oauth_client:
-        blank_description: There are no OAuth client tokens yet.
-        blank_title: No OAuth client tokens
-        failed: An error occurred and the token couldn't be removed. Please try again later.
-        integration_type: Integration type
-        table_title: OAuth client tokens
-        text_hint: OAuth client tokens allow this OpenProject instance to connect with external applications, such as file storages.
-        title: OAuth
-        remove_token: Do you really want to remove this token? You will need to login again on %{integration}.
-        removed: OAuth client token successfully removed
-        unknown_integration: Unknown
+        blank_description: "There are no OAuth client tokens yet."
+        blank_title: "No OAuth client tokens"
+        failed: "An error occurred and the token couldn't be removed. Please try again later."
+        integration_type: "Integration type"
+        table_title: "OAuth client tokens"
+        text_hint: "OAuth client tokens allow this Yojana instance to connect with external applications, such as file storages."
+        title: "OAuth"
+        remove_token: "Do you really want to remove this token? You will need to login again on %{integration}."
+        removed: "OAuth client token successfully removed"
+        unknown_integration: "Unknown"
       token/rss:
-        add_button: RSS token
-        blank_description: There is no RSS token yet. You can create one using the button below.
-        blank_title: No RSS token
-        title: RSS
-        table_title: RSS tokens
-        text_hint: RSS tokens allow users to keep up with the latest changes in this OpenProject instance via an external RSS reader.
-        static_token_name: RSS token
-        disabled_text: RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature.
+        add_button: "RSS token"
+        blank_description: "There is no RSS token yet. You can create one using the button below."
+        blank_title: "No RSS token"
+        title: "RSS"
+        table_title: "RSS tokens"
+        text_hint: "RSS tokens allow users to keep up with the latest changes in this Yojana instance via an external RSS reader."
+        static_token_name: "RSS token"
+        disabled_text: "RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature."
       storages:
         unknown_storage: Unknown storage
     email_reminders:
@@ -3949,51 +3936,48 @@ fil:
   label_collapse: Bumagsak
   label_collapsed_click_to_show: Collapsed. Click to show
   label_configuration: kumpigurasyon
-  label_comment_add: Magdagdag ng komento
-  label_comment_added: Idinagdag na komento
-  label_comment_delete: Ang mga binurang komento
-  label_comment_plural: Mga komento
-  label_commits_per_author: Pinangako sa bawat ng may-akda
-  label_commits_per_month: Ipinangako sa bawat buwan
-  label_confirmation: Kompirmasyon
-  label_contains: naglalaman
-  label_starts_with: starts with
-  label_content: Nilalaman
-  label_color_plural: Mga kulay
-  label_copied: kinopya
-  label_copy_same_as_target: Tulad bilang target
-  label_copy_source: Pinagkukunan
-  label_copy_target: Target
-  label_copy_workflow_from: Kopyahin ang workflow mula sa
-  label_copy_workflow_from_type: Copy to another type
-  label_copy_workflow_from_role: Copy to other roles
-  label_copy_project: Kopyahin ang proyekto
-  label_core_version: Ang core bersyon
-  label_core_build: Core build
-  label_created_by: Created by %{user}
-  label_current_status: Kasulukuyang bersyon
-  label_current_version: Kasukukuyang bersyon
-  label_custom_field_add_no_type: Idagdag ang patlang na ito sa uri ng work package
-  label_custom_field_new: Bagong custom field
-  label_custom_field_plural: Mga pasadyang patlang
-  label_custom_field_default_type: Uri ng walang laman
-  label_custom_style: Disenyo
-  label_custom_style_description: Choose how OpenProject looks to you with themes, select your default colors to use in the app and how exports look like.
-  label_dashboard: Dashboard
-  label_database_version: PostgreSQL version
-  label_date: Petsa
-  label_dates: Mga petsa
-  label_date_and_time: Petsa at oras
-  label_date_format: Format ng petsa
-  label_date_from: Mula sa
-  label_date_from_to: Mula sa %{start} hanggang %{end}
-  label_date_to: Sa
-  label_day_plural: mga araw
-  label_default: Default
-  label_delete_user: Burahin ang gumagamit
-  label_delete_project: Burahin ang proyekto
-  label_delete: Burahin
-  label_deleted: binura
+  label_comment_add: "Magdagdag ng komento"
+  label_comment_added: "Idinagdag na komento"
+  label_comment_delete: "Ang mga binurang komento"
+  label_comment_plural: "Mga komento"
+  label_commits_per_author: "Pinangako sa bawat ng may-akda"
+  label_commits_per_month: "Ipinangako sa bawat buwan"
+  label_confirmation: "Kompirmasyon"
+  label_contains: "naglalaman"
+  label_content: "Nilalaman"
+  label_color_plural: "Mga kulay"
+  label_copied: "kinopya"
+  label_copy_same_as_target: "Tulad bilang target"
+  label_copy_source: "Pinagkukunan"
+  label_copy_target: "Target"
+  label_copy_workflow_from: "Kopyahin ang workflow mula sa"
+  label_copy_project: "Kopyahin ang proyekto"
+  label_core_version: "Ang core bersyon"
+  label_core_build: "Core build"
+  label_created_by: "Created by %{user}"
+  label_current_status: "Kasulukuyang bersyon"
+  label_current_version: "Kasukukuyang bersyon"
+  label_custom_field_add_no_type: "Idagdag ang patlang na ito sa uri ng work package"
+  label_custom_field_new: "Bagong custom field"
+  label_custom_field_plural: "Mga pasadyang patlang"
+  label_custom_field_default_type: "Uri ng walang laman"
+  label_custom_style: "Disenyo"
+  label_custom_style_description: "Choose how Yojana looks to you with themes, select your default colors to use in the app and how exports look like."
+  label_dashboard: "Dashboard"
+  label_database_version: "PostgreSQL version"
+  label_date: "Petsa"
+  label_dates: "Mga petsa"
+  label_date_and_time: "Petsa at oras"
+  label_date_format: "Format ng petsa"
+  label_date_from: "Mula sa"
+  label_date_from_to: "Mula sa %{start} hanggang %{end}"
+  label_date_to: "Sa"
+  label_day_plural: "mga araw"
+  label_default: "Default"
+  label_delete_user: "Burahin ang gumagamit"
+  label_delete_project: "Burahin ang proyekto"
+  label_delete: "Burahin"
+  label_deleted: "binura"
   label_deleted_custom_field: "(binurang custom field)"
   label_deleted_custom_item: "(deleted item)"
   label_deleted_custom_option: "(deleted option)"
@@ -4247,61 +4231,53 @@ fil:
   label_not_found: hindi nakita
   label_none: wala
   label_none_parentheses: "(wala)"
-  label_not_contains: hindi naglalaman
-  label_not_equals: ay hindi
-  label_life_cycle_step_plural: Project life cycle
-  label_on: sa
-  label_operator_all: is not empty
-  label_operator_none: is empty
-  label_operator_equals_or: is (OR)
-  label_operator_equals_all: is (AND)
-  label_operator_shared_with_user_any: any
-  label_open: buksan
-  label_closed: isinara
-  label_open_menu: Buksan ang pagpipilian
-  label_open_work_packages: buksan
-  label_open_work_packages_plural: buksan
-  label_openproject_website: OpenProject website
-  label_optional_description: Deskripsyon
-  label_options: Mga opsyon
-  label_other: Iba pa
-  label_overall_activity: Pangkalahatang gawain
-  label_overview: Buod
-  label_page_title: Page title
-  label_parent_group_caption: 'Setting a parent group will make this group a subgroup of the selected parent group. This will also inherit all memberships, including permissions of the parent group.
-
-    '
-  label_part_of: bahagi ng
-  label_password_lost: Nakalimutan ang iyong password?
-  label_password_rule_lowercase: Lowercase
-  label_password_rule_numeric: Ang mga karakter na numeric
-  label_password_rule_special: Mga espesyal karakter
-  label_password_rule_uppercase: Uppercase
-  label_password_requirement_lowercase: Must contain at least one lowercase character.
-  label_password_requirement_numeric: Must contain at least one numeric character.
-  label_password_requirement_special: Must contain at least one special character.
-  label_password_requirement_uppercase: Must contain at least one uppercase character.
-  label_path_encoding: Landas ng page-encode
-  label_per_page: 'Bawat pahina:'
-  label_people: Mga tao
-  label_permissions: Mga pahintulot
-  label_permissions_report: Mga pinahintulutan na ulat
-  label_personalize_page: Personalize ang pahina na ito
-  label_placeholder_user: Placeholder user
-  label_placeholder_user_new: New placeholder user
-  label_placeholder_user_plural: Placeholder users
-  label_planning: Pagpaplano
-  label_please_login: Mangyaring mag-log in
-  label_plugins: Mga plugin
-  label_portfolio_plural: Portfolios
-  label_modules_and_plugins: Modules and Plugins
-  label_precedes: precedes
-  label_preferences: Mga kagustuhan
-  label_preview: Tanawin ulit
-  label_preview_not_available: Preview not available
-  label_previous: Nakaraan
-  label_previous_week: Nakaraang linggo
-  label_previous_year: Previous year
+  label_not_contains: "hindi naglalaman"
+  label_not_equals: "ay hindi"
+  label_life_cycle_step_plural: "Project life cycle"
+  label_on: "sa"
+  label_operator_all: "is not empty"
+  label_operator_none: "is empty"
+  label_operator_equals_or: "is (OR)"
+  label_operator_equals_all: "is (AND)"
+  label_operator_shared_with_user_any: "any"
+  label_open: "buksan"
+  label_closed: "isinara"
+  label_open_menu: "Buksan ang pagpipilian"
+  label_open_work_packages: "buksan"
+  label_open_work_packages_plural: "buksan"
+  label_openproject_website: "Yojana website"
+  label_optional_description: "Deskripsyon"
+  label_options: "Mga opsyon"
+  label_other: "Iba pa"
+  label_overall_activity: "Pangkalahatang gawain"
+  label_overview: "Buod"
+  label_page_title: "Page title"
+  label_part_of: "bahagi ng"
+  label_password_lost: "Nakalimutan ang iyong password?"
+  label_password_rule_lowercase: "Lowercase"
+  label_password_rule_numeric: "Ang mga karakter na numeric"
+  label_password_rule_special: "Mga espesyal karakter"
+  label_password_rule_uppercase: "Uppercase"
+  label_path_encoding: "Landas ng page-encode"
+  label_per_page: "Bawat pahina:"
+  label_people: "Mga tao"
+  label_permissions: "Mga pahintulot"
+  label_permissions_report: "Mga pinahintulutan na ulat"
+  label_personalize_page: "Personalize ang pahina na ito"
+  label_placeholder_user: "Placeholder user"
+  label_placeholder_user_new: "New placeholder user"
+  label_placeholder_user_plural: "Placeholder users"
+  label_planning: "Pagpaplano"
+  label_please_login: "Mangyaring mag-log in"
+  label_plugins: "Mga plugin"
+  label_portfolio_plural: "Portfolios"
+  label_modules_and_plugins: "Modules and Plugins"
+  label_precedes: "precedes"
+  label_preferences: "Mga kagustuhan"
+  label_preview: "Tanawin ulit"
+  label_preview_not_available: "Preview not available"
+  label_previous: "Nakaraan"
+  label_previous_week: "Nakaraang linggo"
   label_principal_invite_via_email: " o imbitahin ang bagong gumagamit sa pamamagitan ng email"
   label_principal_search: Magdagdag ng umiiral na mga user o grupo
   label_privacy_policy: Data privacy and security policy
@@ -4702,11 +4678,11 @@ fil:
   mail_body_backup_token_reset_user_info: Your backup token has been reset.
   mail_body_backup_token_info: The previous token is no longer valid.
   mail_body_backup_waiting_period: The new token will be enabled in %{hours} hours.
-  mail_body_backup_token_warning: If this wasn't you, login to OpenProject immediately and reset it again.
-  mail_body_incoming_email_error: The email you sent to OpenProject could not be processed.
-  mail_body_incoming_email_error_in_reply_to: At %{received_at} %{from_email} wrote
-  mail_body_incoming_email_error_logs: Logs
-  mail_body_lost_password: 'Upang baguhin ang iyong password, pindutin ang mga sumusunod na link:'
+  mail_body_backup_token_warning: If this wasn't you, login to Yojana immediately and reset it again.
+  mail_body_incoming_email_error: The email you sent to Yojana could not be processed.
+  mail_body_incoming_email_error_in_reply_to: "At %{received_at} %{from_email} wrote"
+  mail_body_incoming_email_error_logs: "Logs"
+  mail_body_lost_password: "Upang baguhin ang iyong password, pindutin ang mga sumusunod na link:"
   mail_password_change_not_possible:
     title: Password change not possible
     body: Your account at %{app_title} is connected to an external authentication provider (%{name}).
@@ -4716,22 +4692,22 @@ fil:
   mail_body_register_user: 'Dear %{name}, '
   mail_body_register_links_html: |
     Please feel free to browse our youtube channel (%{youtube_link}) where we provide a webinar (%{webinar_link})
-    and “Get started” videos (%{get_started_link}) to make your first steps in OpenProject as easy as possible.
+    and “Get started” videos (%{get_started_link}) to make your first steps in Yojana as easy as possible.
     <br />
     If you have any further questions, consult our documentation (%{documentation_link}) or contact your administrator.
-  mail_body_register_closing: Your OpenProject team
-  mail_body_register_ending: Stay connected! Kind regards,
+  mail_body_register_closing: "Your Yojana team"
+  mail_body_register_ending: "Stay connected! Kind regards,"
   mail_body_reminder: "%{count} work package na nakatakaga sa iyo ay dapat isumite sa mga sumusunod na %{days} araw:"
   mail_body_group_reminder: '%{count} work package(s) that are assigned to group "%{group}" are due in the next %{days} days:'
   mail_body_wiki_page_added: Ang '%{id}' wiking pahina ay naidagdag sa %{author}.
   mail_body_wiki_page_updated: Ang '%{id}' wiking pahina ay na i-update sa %{author}.
   mail_subject_account_activation_request: "%{value} kahilingan ng akwant aktibasyon"
-  mail_subject_backup_ready: Your backup is ready
-  mail_subject_backup_token_reset: Backup token reset
-  mail_subject_incoming_email_error: An email you sent to OpenProject could not be processed
-  mail_subject_lost_password: Ang iyong %{value} password
-  mail_subject_register: Ang iyong %{value} akwant aktibasyon
-  mail_subject_wiki_content_added: Ang '%{id}' wikin pahina ay naidagdag
+  mail_subject_backup_ready: "Your backup is ready"
+  mail_subject_backup_token_reset: "Backup token reset"
+  mail_subject_incoming_email_error: "An email you sent to Yojana could not be processed"
+  mail_subject_lost_password: "Ang iyong %{value} password"
+  mail_subject_register: "Ang iyong %{value} akwant aktibasyon"
+  mail_subject_wiki_content_added: "Ang '%{id}' wikin pahina ay naidagdag"
   mail_subject_wiki_content_updated: "'%{id}' wiking pahina ay naka-update na"
   mail_member_added_project:
     subject: "%{project} - You have been added as a member"
@@ -4756,17 +4732,17 @@ fil:
       roles: 'You now have the following roles:'
   mail_user_activation_limit_reached:
     subject: User activation limit reached
-    message_html: |
-      A new user (%{email}) tried to create an account on an OpenProject environment that you manage (%{host}).
+    message: |
+      A new user (%{email}) tried to create an account on an Yojana environment that you manage (%{host}).
       The user cannot activate their account since the user limit has been reached.
     steps:
-      a: Upgrade your payment plan ([here](upgrade_url))
-      b: Lock or delete an existing user ([here](users_url))
-      label: 'To allow the user to sign in you can either: '
-  more_actions: Karagdagang functio
-  noscript_description: Kailangan mong i-aktibo ang JavaScript upang gamitin sa OpenProject!
-  noscript_heading: Ang JavaScript ay hindi pinagana
-  noscript_learn_more: Matuto ng higit pa
+      label: "To allow the user to sign in you can either: "
+      a: "Upgrade your payment plan ([here](upgrade_url))" #here turned into a link
+      b: "Lock or delete an existing user ([here](users_url))" #here turned into a link
+  more_actions: "Karagdagang functio"
+  noscript_description: "Kailangan mong i-aktibo ang JavaScript upang gamitin sa Yojana!"
+  noscript_heading: "Ang JavaScript ay hindi pinagana"
+  noscript_learn_more: "Matuto ng higit pa"
   notice_accessibility_mode: Ang aksesibilidad mode ay maaring paganahin sa iyong [account setting](url).
   notice_account_activated: Ang iyong akwant ay naka-aktibo na. Maari ka ng mag-log in.
   notice_account_already_activated: Ang account na ito ay na-activate na.
@@ -4844,10 +4820,10 @@ fil:
   notice_automatic_set_of_standard_type: Magtakda ng automatikong pamantayang uri.
   notice_logged_out: Ikaw ay naka-log out na.
   notice_wont_delete_auth_source: The LDAP connection cannot be deleted as long as there are still users using it.
-  notice_project_cannot_update_custom_fields: 'Hindi mo pwedeng i-update ang mga patlang ng project''s available custom. Ang proyekto ay hindi balido: %{errors}'
-  notice_attachment_migration_wiki_page: 'Ang pahinang ito ay awtomatikong binuo sa panahon ng pag-update sa OpenProject. Ito ay naglalaman ng lahat na mga nakakalakip sa nakaraang nauugnay sa %{container_type} "%{container_name}".
-
-    '
+  notice_project_cannot_update_custom_fields: "Hindi mo pwedeng i-update ang mga patlang ng project's available custom. Ang proyekto ay hindi balido: %{errors}"
+  notice_attachment_migration_wiki_page: >
+    Ang pahinang ito ay awtomatikong binuo sa panahon ng pag-update sa Yojana. Ito ay naglalaman ng lahat na mga nakakalakip sa nakaraang nauugnay sa %{container_type} "%{container_name}".
+  #Default format for numbers
   number:
     format:
       delimiter: ","
@@ -4868,138 +4844,127 @@ fil:
           mb: MB
           tb: TB
   onboarding:
-    heading_getting_started: Kumuha ng isang buod
-    text_getting_started_description: Get a quick overview of project management and team collaboration with OpenProject. You can restart this video from the help menu.
-    welcome: Welcome to %{app_title}
-    select_language: Please select your language
-  open_project:
-    common:
-      work_package_card_component:
-        drag_handle:
-          label: Drag to reorder
-        menu:
-          label_actions: Work package actions
-        parent: Parent
-        undisclosed: Undisclosed
-  permission_add_work_package_comments: Add comments
-  permission_add_work_packages: Magdagdag ng mga work package
-  permission_add_messages: Mga post na mensahe
-  permission_add_project: Create projects
-  permission_add_portfolios: Create portfolios
-  permission_add_programs: Create programs
-  permission_add_work_package_attachments: Magdagdag ng mga nakalakip
-  permission_add_work_package_attachments_explanation: Allows adding attachments without Edit work packages permission
-  permission_add_internal_comments: Write internal comments
-  permission_archive_project: I-archive ang proyekto
-  permission_create_user: Create users
-  permission_manage_user: Edit users
-  permission_manage_placeholder_user: Create, edit, and delete placeholder users
-  permission_add_subprojects: Lumikha ng mga subproject
-  permission_add_work_package_watchers: Magdagdag ng manunuod
-  permission_assign_versions: Assign versions
-  permission_browse_repository: Basahin-lamang nag-access sa respositoryo (browse at checkout)
-  permission_change_work_package_status: Change work package status
-  permission_change_work_package_status_explanation: Allows changing status without Edit work packages permission
-  permission_comment_news: Mga komento ng balita
-  permission_commit_access: Magbasa/magsulat acess sa repositoryo (commit)
-  permission_copy_projects: Kopyahin ang mga proyekto
-  permission_copy_projects_explanation: In template projects, this permission has a secondary function, it allows the creation of new projects derived from the template.
-  permission_copy_work_packages: Duplicate work packages
-  permission_create_backup: Create backups
-  permission_delete_work_package_watchers: Burahin ang mga manunuod
-  permission_delete_work_packages: Burahin ang mga work package
-  permission_delete_messages: Burahin ang mga mensahe
-  permission_delete_own_messages: Burahin ang mga sariling mensahe
-  permission_delete_reportings: Burahin ang mga ulat
-  permission_delete_timelines: Burahin ang mga timeline
-  permission_edit_work_package_comments: Moderate comments
-  permission_edit_work_package_comments_explanation: 'Caution: Users with this permission are able to edit anyone''s comment.'
-  permission_edit_work_packages: I-edit ang mga work package
-  permission_edit_messages: E-edit ang mga mensahe
-  permission_edit_own_internal_comments: Edit own internal comments
-  permission_edit_own_work_package_comments: Edit own comments
-  permission_edit_own_messages: I-edit ang mga sariling mensahe
-  permission_edit_own_time_entries: I-edit ang mga log ng oras
-  permission_edit_others_internal_comments: Moderate internal comments
-  permission_edit_others_internal_comments_explanation: 'Caution: Users with this permission are able to edit other users'' internal comments.'
-  permission_edit_project: I-edit ang proyekto
-  permission_edit_project_attributes: Edit project attributes
-  permission_edit_project_phases: Edit project phases
-  permission_edit_reportings: I- edit ang mga ulat
-  permission_edit_time_entries: Edit time logs for other users
-  permission_edit_timelines: I-edit ang mga timeline
-  permission_edit_wiki_pages: I-edit ang mga work package
-  permission_export_work_packages: I-export ang mga work package
-  permission_export_projects: Export projects
-  permission_invite_members_by_email: Invite members by email
-  permission_invite_members_by_email_explanation: 'Allows users to invite new members by email. Invited users will receive an email with a link to set their password and activate their account. Depends on the permission to manage members
-
-    '
-  permission_log_own_time: Log own time
-  permission_log_time: Log time for other users
-  permission_manage_forums: Pamahalain ang mga forum
-  permission_manage_categories: Pamahalain ang mga kategorya ng work package
-  permission_manage_dashboards: Manage dashboards
-  permission_manage_work_package_relations: Nauugnay na pamahalin ang work package
-  permission_manage_members: Pamahalain ang mga miyembro
-  permission_manage_news: Pamahalain ang mga balita
-  permission_manage_project_activities: Ang mga aktibidad ng pamahalaing proyekto
-  permission_manage_public_queries: Manage public views
-  permission_manage_repository: Pamahalain ang repositoryo
-  permission_manage_subtasks: Manage work package hierarchies
-  permission_manage_versions: Pamahalain ang mga bersyon
-  permission_manage_wiki: Pamahalain ang wiki
-  permission_manage_own_working_times: Manage own working times
-  permission_manage_own_working_times_explanation: 'Allows users to manage their own working times, and personal non-working days.
-
-    '
-  permission_manage_working_times: Manage working times for all users
-  permission_manage_working_times_explanation: 'Allows users to manage working times for all users, including personal non-working days.
-
-    '
-  permission_move_work_packages: Ilipat ang work package
-  permission_save_queries: Save views
-  permission_search_project: Search project
-  permission_select_custom_fields: Select custom fields
-  permission_select_project_custom_fields: Select project attributes
-  permission_select_project_phases: Select project phases
-  permission_select_project_phases_explanation: Activate/Deactivate the phases in a project. Enables the user to select the life cycle appropriate for the project as inactive phases will not be visible in the project overview page nor the project list.
-  permission_select_project_modules: Piliin ang mga proyektong modyul
-  permission_share_work_packages: Share work packages
-  permission_manage_types: Pumili ng mga uri
-  permission_manage_own_reminders: Create own reminders
-  permission_view_all_principals: View all users and groups
-  permission_view_all_principals_explanation: 'Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
-
-    '
-  permission_view_project: View projects
-  permission_view_changesets: Tingnan ang mga repository revision ng OpenProject
-  permission_view_internal_comments: View internal comments
-  permission_view_commit_author_statistics: Tanawin ang commit
-  permission_view_dashboards: View dashboards
-  permission_view_work_package_watchers: Tanawin ang mga manunuod ng listahan
-  permission_view_work_packages: Tingnan ang mga work packages
-  permission_view_messages: Tingnan ang mga mensahe
-  permission_view_news: View news
-  permission_view_members: Tingnan ang mga miyembro
-  permission_view_reportings: Tanawin ang mga ulat
-  permission_view_shared_work_packages: View work package shares
-  permission_view_time_entries: Tanawin ang ginugol na oras
-  permission_view_timelines: Tingnan ang mga timeline
-  permission_view_user_email: View users' mail addresses
-  permission_view_wiki_edits: Tingnan ang mga kasaysayan ng wiki
-  permission_view_wiki_pages: Tanawin ang wiki
-  permission_work_package_assigned: Become assignee/responsible
-  permission_work_package_assigned_explanation: Ang mga work package ay maaring nakatalaga sa mga gumagamit at grupo sa possesyon ng tungkulin na ito sa nakatalagang proyekto
-  permission_view_project_activity: View project activity
-  permission_view_project_attributes: View project attributes
-  permission_view_project_phases: View project phases
-  permission_save_bcf_queries: Save BCF queries
-  permission_manage_public_bcf_queries: Manage public BCF queries
-  permission_edit_attribute_help_texts: Edit attribute help texts
-  permission_manage_public_project_queries: Manage public project lists
-  permission_view_project_query: View project query
-  permission_edit_project_query: Edit project query
+    heading_getting_started: "Kumuha ng isang buod"
+    text_getting_started_description: "Get a quick overview of project management and team collaboration with Yojana. You can restart this video from the help menu."
+    welcome: "Welcome to %{app_title}"
+    select_language: "Please select your language"
+  permission_add_work_package_comments: "Add comments"
+  permission_add_work_packages: "Magdagdag ng mga work package"
+  permission_add_messages: "Mga post na mensahe"
+  permission_add_project: "Create projects"
+  permission_add_portfolios: "Create portfolios"
+  permission_add_programs: "Create programs"
+  permission_add_work_package_attachments: "Magdagdag ng mga nakalakip"
+  permission_add_work_package_attachments_explanation: "Allows adding attachments without Edit work packages permission"
+  permission_add_internal_comments: "Write internal comments"
+  permission_archive_project: "I-archive ang proyekto"
+  permission_create_user: "Create users"
+  permission_manage_user: "Edit users"
+  permission_manage_placeholder_user: "Create, edit, and delete placeholder users"
+  permission_add_subprojects: "Lumikha ng mga subproject"
+  permission_add_work_package_watchers: "Magdagdag ng manunuod"
+  permission_assign_versions: "Assign versions"
+  permission_browse_repository: "Basahin-lamang nag-access sa respositoryo (browse at checkout)"
+  permission_change_wiki_parent_page: "Baguhin ang pahina ng magulang na wiki"
+  permission_change_work_package_status: "Change work package status"
+  permission_change_work_package_status_explanation: "Allows changing status without Edit work packages permission"
+  permission_comment_news: "Mga komento ng balita"
+  permission_commit_access: "Magbasa/magsulat acess sa repositoryo (commit)"
+  permission_copy_projects: "Kopyahin ang mga proyekto"
+  permission_copy_projects_explanation: "In template projects, this permission has a secondary function, it allows the creation of new projects derived from the template."
+  permission_copy_work_packages: "Duplicate work packages"
+  permission_create_backup: "Create backups"
+  permission_delete_work_package_watchers: "Burahin ang mga manunuod"
+  permission_delete_work_packages: "Burahin ang mga work package"
+  permission_delete_messages: "Burahin ang mga mensahe"
+  permission_delete_own_messages: "Burahin ang mga sariling mensahe"
+  permission_delete_reportings: "Burahin ang mga ulat"
+  permission_delete_timelines: "Burahin ang mga timeline"
+  permission_delete_wiki_pages: "Burahin ang pahina g wiki"
+  permission_delete_wiki_pages_attachments: "Burahin ang paglalakip"
+  permission_edit_work_package_comments: "Moderate comments"
+  permission_edit_work_package_comments_explanation: "Caution: Users with this permission are able to edit anyone's comment."
+  permission_edit_work_packages: "I-edit ang mga work package"
+  permission_edit_messages: "E-edit ang mga mensahe"
+  permission_edit_own_internal_comments: "Edit own internal comments"
+  permission_edit_own_work_package_comments: "Edit own comments"
+  permission_edit_own_messages: "I-edit ang mga sariling mensahe"
+  permission_edit_own_time_entries: "I-edit ang mga log ng oras"
+  permission_edit_others_internal_comments: "Moderate internal comments"
+  permission_edit_others_internal_comments_explanation: "Caution: Users with this permission are able to edit other users' internal comments."
+  permission_edit_project: "I-edit ang proyekto"
+  permission_edit_project_attributes: "Edit project attributes"
+  permission_edit_project_phases: "Edit project phases"
+  permission_edit_reportings: "I- edit ang mga ulat"
+  permission_edit_time_entries: "Edit time logs for other users"
+  permission_edit_timelines: "I-edit ang mga timeline"
+  permission_edit_wiki_pages: "I-edit ang mga work package"
+  permission_export_work_packages: "I-export ang mga work package"
+  permission_export_projects: "Export projects"
+  permission_export_wiki_pages: "I-edit ang mga work package"
+  permission_invite_members_by_email: "Invite members by email"
+  permission_invite_members_by_email_explanation: >
+    Allows users to invite new members by email. Invited users will receive an email with a link to set their password and activate their account. Depends on the permission to manage members
+  permission_list_attachments: "Listahan ng paglalakip"
+  permission_log_own_time: "Log own time"
+  permission_log_time: "Log time for other users"
+  permission_manage_forums: "Pamahalain ang mga forum"
+  permission_manage_categories: "Pamahalain ang mga kategorya ng work package"
+  permission_manage_dashboards: "Manage dashboards"
+  permission_manage_work_package_relations: "Nauugnay na pamahalin ang work package"
+  permission_manage_members: "Pamahalain ang mga miyembro"
+  permission_manage_news: "Pamahalain ang mga balita"
+  permission_manage_project_activities: "Ang mga aktibidad ng pamahalaing proyekto"
+  permission_manage_public_queries: "Manage public views"
+  permission_manage_repository: "Pamahalain ang repositoryo"
+  permission_manage_subtasks: "Manage work package hierarchies"
+  permission_manage_versions: "Pamahalain ang mga bersyon"
+  permission_manage_wiki: "Pamahalain ang wiki"
+  permission_manage_wiki_menu: "Pagpipilian ng pamahalaing wiki"
+  permission_move_work_packages: "Ilipat ang work package"
+  permission_protect_wiki_pages: "Protektahan ang mga wiki package"
+  permission_rename_wiki_pages: "Baguhin ang pangalan ng mga wiki na pahina"
+  permission_save_queries: "Save views"
+  permission_search_project: "Search project"
+  permission_select_custom_fields: "Select custom fields"
+  permission_select_project_custom_fields: "Select project attributes"
+  permission_select_project_phases: "Select project phases"
+  permission_select_project_phases_explanation: "Activate/Deactivate the phases in a project. Enables the user to select the life cycle appropriate for the project as inactive phases will not be visible in the project overview page nor the project list."
+  permission_select_project_modules: "Piliin ang mga proyektong modyul"
+  permission_share_work_packages: "Share work packages"
+  permission_manage_types: "Pumili ng mga uri"
+  permission_manage_own_reminders: "Create own reminders"
+  permission_view_all_principals: "View all users and groups"
+  permission_view_all_principals_explanation: >
+    Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
+  permission_view_project: "View projects"
+  permission_view_changesets: "Tingnan ang mga repository revision ng Yojana"
+  permission_view_internal_comments: "View internal comments"
+  permission_view_commit_author_statistics: "Tanawin ang commit"
+  permission_view_dashboards: "View dashboards"
+  permission_view_work_package_watchers: "Tanawin ang mga manunuod ng listahan"
+  permission_view_work_packages: "Tingnan ang mga work packages"
+  permission_view_messages: "Tingnan ang mga mensahe"
+  permission_view_news: "View news"
+  permission_view_members: "Tingnan ang mga miyembro"
+  permission_view_reportings: "Tanawin ang mga ulat"
+  permission_view_shared_work_packages: "View work package shares"
+  permission_view_time_entries: "Tanawin ang ginugol na oras"
+  permission_view_timelines: "Tingnan ang mga timeline"
+  permission_view_user_email: "View users' mail addresses"
+  permission_view_wiki_edits: "Tingnan ang mga kasaysayan ng wiki"
+  permission_view_wiki_pages: "Tanawin ang wiki"
+  permission_work_package_assigned: "Become assignee/responsible"
+  permission_work_package_assigned_explanation: "Ang mga work package ay maaring nakatalaga sa mga gumagamit at grupo sa possesyon ng tungkulin na ito sa nakatalagang proyekto"
+  permission_view_project_activity: "View project activity"
+  permission_view_project_attributes: "View project attributes"
+  permission_view_project_phases: "View project phases"
+  permission_save_bcf_queries: "Save BCF queries"
+  permission_manage_public_bcf_queries: "Manage public BCF queries"
+  permission_edit_attribute_help_texts: "Edit attribute help texts"
+  permission_manage_public_project_queries: "Manage public project lists"
+  permission_view_project_query: "View project query"
+  permission_edit_project_query: "Edit project query"
   placeholders:
     default: "-"
     templated_hint: Automatically generated through type %{type}
@@ -5097,49 +5062,50 @@ fil:
     create_successful: Ang repository ay naka rehistro na.
     delete_sucessful: Ang repository ay tinanggal na.
     destroy:
-      confirmation: Kung magpatuloy ka, itobay permanenteng burahin ang pinamahalaan repositoryo.
-      info: Pagbubura ng repositoryo ay isang hindi mababawi ang aksyon.
-      info_not_managed: 'Tandaan: Ito ay HINDI tatanggalin ang mga nilalaman sa repositoryi ito, bilang ito ay hindi pinamahalaan sa OpenProject.'
-      managed_path_note: 'Ang sumusunod na direktoryo ay buburahin: %{path}'
-      repository_verification_html: Enter the project's identifier %{identifier} to verify the deletion of its repository.
-      subtitle: Gusto mo ba talaga na burahin ang %{repository_type} ng proyektong %{project_name}?
-      subtitle_not_managed_html: Do you really want to remove the linked %{repository_type} %{url} from the project %{project_name}?
-      title_html: Delete the %{repository_type}
-      title_not_managed: Alisin ang naka-link %{repository_type}?
+      confirmation: "Kung magpatuloy ka, itobay permanenteng burahin ang pinamahalaan repositoryo."
+      info: "Pagbubura ng repositoryo ay isang hindi mababawi ang aksyon."
+      info_not_managed: "Tandaan: Ito ay HINDI tatanggalin ang mga nilalaman sa repositoryi ito, bilang ito ay hindi pinamahalaan sa Yojana."
+      managed_path_note: "Ang sumusunod na direktoryo ay buburahin: %{path}"
+      repository_verification: "Ipasok ang pagkakilanlan ng proyekto %{identifier} upang matiyak ang pagbubuta ng repositoryo ito."
+      subtitle: "Gusto mo ba talaga na burahin ang %{repository_type} ng proyektong %{project_name}?"
+      subtitle_not_managed: "Gusto mo ba talaga na alisin ang naka-link %{repository_type}%{url} mula sa proyektong%{project_name}?"
+      title: "Burahin ang %{repository_type}"
+      title_not_managed: "Alisin ang naka-link %{repository_type}?"
     errors:
-      build_failed: Hindi makalikha ng repositoryo sa napiling kumpigurasyon. %{reason}
-      managed_delete: Hindi maibura ang pinamahalaan repositoryo.
-      managed_delete_local: 'Hindi maibura ang lokal repositoryo sa filesysytem ng %{path}'': %{error_message}'
-      empty_repository: Ang repostoryo ay umiiral, ngunit ito ay walang laman. Ito ay walang laman na kahit anong rebisyon.
-      exists_on_filesystem: Ang direktoryong respositoryo ay umiiral na sa filesystem.
-      filesystem_access_failed: 'Isang mali ang naganap habang nag-aaccess ng repositoryo sa filesystem: %{message}'
-      not_manageable: Itong repositoryo vendor ay hindi mapamahalaan ng OpenProject.
-      path_permission_failed: 'Isang mali ang naganap habang sinusubukan lumikha ng sumusunod na landas: %{path}. Mangyaring siguraduhin na ang OpenProject ay maaaring sumulat sa folder na iyon.'
-      unauthorized: Hindi ka pinahintulutan na i-access ang respositoryo o ang mga kredensyal ay hindi balido.
-      unavailable: Ang repository ay hindi available.
-      exception_title: 'Hindi maka-access ang respositoryo: %{message}'
-      disabled_or_unknown_type: Ang napiling uri %{type} ay hindi pinagana o hindi na magagamit para sa SCM vendor %{vendor}.
-      disabled_or_unknown_vendor: Ang SCM vendor %{vendor} ay hindi pinagana o hindi na magagamit.
-      remote_call_failed: 'Pagtatawag ng managed remote fauled na may kasamang menshae ng ''%{message}'' (Code: %{code})'
-      remote_invalid_response: Nakatanggap ng isang balidong tugon mula sa namamahala ng remote.
-      remote_save_failed: Hindi mai-save ang respositoryo sa mga parametro naibalik mula sa remote.
+      build_failed: "Hindi makalikha ng repositoryo sa napiling kumpigurasyon. %{reason}"
+      managed_delete: "Hindi maibura ang pinamahalaan repositoryo."
+      managed_delete_local: "Hindi maibura ang lokal repositoryo sa filesysytem ng %{path}': %{error_message}"
+      empty_repository: "Ang repostoryo ay umiiral, ngunit ito ay walang laman. Ito ay walang laman na kahit anong rebisyon."
+      exists_on_filesystem: "Ang direktoryong respositoryo ay umiiral na sa filesystem."
+      filesystem_access_failed: "Isang mali ang naganap habang nag-aaccess ng repositoryo sa filesystem: %{message}"
+      not_manageable: "Itong repositoryo vendor ay hindi mapamahalaan ng Yojana."
+      path_permission_failed: "Isang mali ang naganap habang sinusubukan lumikha ng sumusunod na landas: %{path}. Mangyaring siguraduhin na ang Yojana ay maaaring sumulat sa folder na iyon."
+      unauthorized: "Hindi ka pinahintulutan na i-access ang respositoryo o ang mga kredensyal ay hindi balido."
+      unavailable: "Ang repository ay hindi available."
+      exception_title: "Hindi maka-access ang respositoryo: %{message}"
+      disabled_or_unknown_type: "Ang napiling uri %{type} ay hindi pinagana o hindi na magagamit para sa SCM vendor %{vendor}."
+      disabled_or_unknown_vendor: "Ang SCM vendor %{vendor} ay hindi pinagana o hindi na magagamit."
+      remote_call_failed: "Pagtatawag ng managed remote fauled na may kasamang menshae ng '%{message}' (Code: %{code})"
+      remote_invalid_response: "Nakatanggap ng isang balidong tugon mula sa namamahala ng remote."
+      remote_save_failed: "Hindi mai-save ang respositoryo sa mga parametro naibalik mula sa remote."
     git:
       instructions:
-        managed_url: Ito ay ang URL ng namunong (lokal) Git respository.
-        path: Tukuyin ang landas ng iyong lokal na imbakan na Git (e.g., %{example_path} ). Pwede ka ring mag gamit ng remote na mga imbakan kung alin sa mga ito ay naka-clone sa isang lokal na kopya sa pamamagitan ng paggamit ng isang halaga simula sa http(s):// o file://.
-        path_encoding: 'Pawalang-bisa ang landas ng Git encoding (Default: UTF-8)'
-      local_title: Ang link ng umiiral na Git respositoryo
-      local_url: Lokal URL
-      local_introduction: Kung mayroon kang umiiral na na lokal Gir repository, pwedi mo itong i-link sa OpenProject para ma-access ang mga ito mula sa loob ng application.
-      managed_introduction: Hayaang ang OpenProject ay lumikha at awtomatikong mag-integrate ng isang local Git repository.
-      managed_title: Ang Git repository ay isinama sa OpenProject
-      managed_url: Pamahalain ang URL
-      path: Landas sa Git respositoryo
-      path_encoding: Landas ng page-encode
-    go_to_revision: Pumunta sa rebisyon
-    managed_remote: Pamahalain ang mga respository para vendor na ito ay isinasagawa ng remotely.
-    managed_remote_note: Ang impormasyon sa URL at landas ng repository na ito ay hindi available bago ito nalikha.
-    managed_url: Pamahalain ang URL
+        managed_url: "Ito ay ang URL ng namunong (lokal) Git respository."
+        path: >-
+          Tukuyin ang landas ng iyong lokal na imbakan na Git (e.g., %{example_path} ). Pwede ka ring mag gamit ng remote na mga imbakan kung alin sa mga ito ay naka-clone sa isang lokal na kopya sa pamamagitan ng paggamit ng isang halaga simula sa http(s):// o file://.
+        path_encoding: "Pawalang-bisa ang landas ng Git encoding (Default: UTF-8)"
+      local_title: "Ang link ng umiiral na Git respositoryo"
+      local_url: "Lokal URL"
+      local_introduction: "Kung mayroon kang umiiral na na lokal Gir repository, pwedi mo itong i-link sa Yojana para ma-access ang mga ito mula sa loob ng application."
+      managed_introduction: "Hayaang ang Yojana ay lumikha at awtomatikong mag-integrate ng isang local Git repository."
+      managed_title: "Ang Git repository ay isinama sa Yojana"
+      managed_url: "Pamahalain ang URL"
+      path: "Landas sa Git respositoryo"
+      path_encoding: "Landas ng page-encode"
+    go_to_revision: "Pumunta sa rebisyon"
+    managed_remote: "Pamahalain ang mga respository para vendor na ito ay isinasagawa ng remotely."
+    managed_remote_note: "Ang impormasyon sa URL at landas ng repository na ito ay hindi available bago ito nalikha."
+    managed_url: "Pamahalain ang URL"
     settings:
       automatic_managed_repos_disabled: Hindi paganahin ang awtomatikong paglikha
       automatic_managed_repos: Automatiko paglikha ng mga naka-manage na respositoryo
@@ -5147,206 +5113,179 @@ fil:
     scm_vendor: Sistema ng Source control management
     scm_type: Uri ng repository
     scm_types:
-      local: Umiiral na link sa lokal respository
-      existing: Umiiral na link sa respository
-      managed: Lumikha ng bagong repositoryo sa OpenProject
+      local: "Umiiral na link sa lokal respository"
+      existing: "Umiiral na link sa respository"
+      managed: "Lumikha ng bagong repositoryo sa Yojana"
     storage:
-      not_available: Ang konsumo ng disk storage ay hindi available para sa ganitong repository.
-      update_timeout: |-
-        Panatilihin ang huling kailangang espasyo disk impormasyon para sa repositoryo ng N minuto.
-        Bilang pagbibilang ang kailangang espasyo ng disk ng repositoryo ay maaring gastos, palakihin ang hakaga na ito upang mabawasan ang epekto ng pagganap.
-      oauth_application_details_html: 'The client secret value will not be accessible again after you close this window. Please copy these values into the Nextcloud OpenProject Integration settings:'
-      oauth_application_details_link_text: Go to settings page
-      setup_documentation_details: 'If you need help configuring a new file storage please check the documentation: '
-      setup_documentation_details_link_text: File storages setup
-      show_warning_details: To use this file storage remember to activate the module and the specific storage in the project settings of each desired project.
+      not_available: "Ang konsumo ng disk storage ay hindi available para sa ganitong repository."
+      update_timeout: "Panatilihin ang huling kailangang espasyo disk impormasyon para sa repositoryo ng N minuto.\nBilang pagbibilang ang kailangang espasyo ng disk ng repositoryo ay maaring gastos, palakihin ang hakaga na ito upang mabawasan ang epekto ng pagganap."
+      oauth_application_details: "The client secret value will not be accessible again after you close this window. Please copy these values into the Nextcloud Yojana Integration settings:"
+      oauth_application_details_link_text: "Go to settings page"
+      setup_documentation_details: "If you need help configuring a new file storage please check the documentation: "
+      setup_documentation_details_link_text: "File storages setup"
+      show_warning_details: "To use this file storage remember to activate the module and the specific storage in the project settings of each desired project."
     subversion:
-      existing_title: Umiiral na subversion respository
-      existing_introduction: Kung mayroon kang umiiral na Subversion repository, pwedi mo itong ma-link sa OpenProject para ma access ang mga ito mula sa loob ng application.
-      existing_url: Umiiral na URL
+      existing_title: "Umiiral na subversion respository"
+      existing_introduction: "Kung mayroon kang umiiral na Subversion repository, pwedi mo itong ma-link sa Yojana para ma access ang mga ito mula sa loob ng application."
+      existing_url: "Umiiral na URL"
       instructions:
-        managed_url: Ito ay ang URL na pinapamahalaan (lokal) ng Subversion repository.
-        url: |-
-          Ipasok ang respository URLA. Baka ito ay alinman target ng lokal respository ( nasisimula sa %{local_proto} ), o ang remote respository
-          Ang mga sumusunod na URL scheme ay suportado ng:
-      managed_title: Ang subversion respository ay pinagsama sa OpenProject
-      managed_introduction: Hayaan ang OpenProject na lumikha at automatikong pagsamahin ang lokal Subversion respository.
-      managed_url: Pamahalain ang URL
-      password: Password ng Repository
-      username: Username ng Repository
-    truncated: Paumanhin, kailangan namin i-truncate ang direktoryong ito sa %{limit} mga file. Ang mga %{truncated} entry ay tinanggal na mula sa listahan.
+        managed_url: "Ito ay ang URL na pinapamahalaan (lokal) ng Subversion repository."
+        url: "Ipasok ang respository URLA. Baka ito ay alinman target ng lokal respository ( nasisimula sa %{local_proto} ), o ang remote respository\nAng mga sumusunod na URL scheme ay suportado ng:"
+      managed_title: "Ang subversion respository ay pinagsama sa Yojana"
+      managed_introduction: "Hayaan ang Yojana na lumikha at automatikong pagsamahin ang lokal Subversion respository."
+      managed_url: "Pamahalain ang URL"
+      password: "Password ng Repository"
+      username: "Username ng Repository"
+    truncated: "Paumanhin, kailangan namin i-truncate ang direktoryong ito sa %{limit} mga file. Ang mga %{truncated} entry ay tinanggal na mula sa listahan."
     named_repository: "%{vendor_name} repositoryo"
     update_settings_successful: The settings have been successfully saved.
     url: URL sa repositoryo
     warnings:
       cannot_annotate: Ang file na ito ay hindi naka-annotate.
   scheduling:
-    manual: set to Manual
-    automatic: set to Automatic
-  search_input_placeholder: Hanapin ...
-  setting_allowed_link_protocols: Allowed link protocols
-  setting_allowed_link_protocols_text_html: Allow these protocols to be rendered as links in work package descriptions, long text fields and comments. For example, %{tel_code} or %{element_code}. Enter one protocol per line. <br/> Protocols %{http_code}, %{https_code}, and %{mailto_code} are always allowed.
-  setting_capture_external_links: Capture external links
-  setting_capture_external_links_text: 'When enabled, all external links in formatted text will redirect through a warning page before leaving the application. This helps protect users from potentially malicious external websites.
-
-    '
-  setting_capture_external_links_require_login: Require users to be logged in
-  setting_capture_external_links_require_login_text: 'When enabled, users wanting to click on external links need to be logged in before being able to continue.
-
-    '
-  setting_after_first_login_redirect_url: First login redirect
-  setting_after_first_login_redirect_url_text_html: 'Set a path to redirect users after their first login. If empty, redirects to the home page for the onboarding tour. <br/> Example: <code>/my/page</code>
-
-    '
-  setting_after_login_default_redirect_url: After login redirect
-  setting_after_login_default_redirect_url_example_html: 'Set a default path to redirect users after login, if no back link was provided. Redirects to home page if not set. <br/> Example: %{example_code}
-
-    '
-  setting_apiv3_cors_title: Cross-Origin Resource Sharing (CORS)
-  setting_apiv3_cors_enabled: Enable CORS
-  setting_apiv3_cors_origins: API V3 Cross-Origin Resource Sharing (CORS) allowed origins
-  setting_apiv3_cors_origins_instructions_html: 'If CORS is enabled, these are the origins that are allowed to access OpenProject API. <br/> Please check the [Documentation on the Origin header](docs_url) on how to specify the expected values.
-
-    '
-  setting_apiv3_write_readonly_attributes: Write access to read-only attributes
-  setting_apiv3_write_readonly_attributes_instructions: 'If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
-
-    '
-  setting_apiv3_write_readonly_attributes_warning: 'This setting has a use-case for e.g., importing data, but allows administrators to impersonate the creation of items as other users. All creation requests are being logged however with the true author.
-
-    '
-  setting_apiv3_write_readonly_attributes_additional_html: 'For more information on attributes and supported resources, please see the [API documentation](api_documentation_link).
-
-    '
-  setting_apiv3_max_page_size: Maximum API page size
-  setting_apiv3_max_page_size_instructions: 'Set the maximum page size the API will respond with. It will not be possible to perform API requests that return more values on a single page.
-
-    '
-  setting_apiv3_max_page_size_warning: 'Please only change this value if you are sure why you need it. Setting to a high value will result in significant performance impacts, while a value lower than the per page options will cause errors in paginated views.
-
-    '
-  setting_apiv3_docs: Dokumentasyon
-  setting_apiv3_docs_enabled: Enable docs page
-  setting_apiv3_docs_enabled_instructions_html: 'If the docs page is enabled you can get an interactive view of the APIv3 documentation under <a href="%{link}" target="_blank">%{link}</a>.
-
-    '
-  setting_apiv3_docs_enabled_instructions_warning: 'Please be aware that enabling the API docs on a production system may expose sensitive information or result in accidental loss of data when not being careful. We recommend to only enable this setting for development purposes.
-
-    '
-  setting_attachment_whitelist: Attachment upload whitelist
-  setting_email_delivery_method: Pamaraan ng paghahatid ng email
-  setting_emails_salutation: Address user in emails with
-  setting_oauth_allow_remapping_of_existing_users: Allow remapping of existing users
-  setting_sendmail_location: Lokasyon ng sendmail na pagpapatupad
-  setting_sendmail_arguments: Arguments for sendmail
-  setting_smtp_enable_starttls_auto: Automatikong gagamitin ang STARTTLS kung magagamit
-  setting_smtp_ssl: Use SSL connection
-  setting_smtp_address: Server g SMTP
-  setting_smtp_port: Port ng SMTP
-  setting_smtp_authentication: Pagpapatunay ng SMTP
-  setting_smtp_user_name: Username ng SMTP
-  setting_smtp_password: Password ng SMTP
-  setting_smtp_domain: SMTP HELO domain
-  setting_activity_days_default: Ang mga araw na naka-display sa aktibidad ng proyekto
-  setting_api_tokens_enabled: Enable API tokens
-  setting_api_tokens_enabled_caption: 'Decide whether users can create personal API tokens in their account settings. These tokens can be used to access the different APIs of OpenProject, such as APIv3 and MCP.
-
-    '
-  setting_app_subtitle: Aplikasyong subtitle
-  setting_app_title: Aplikasyong pamagat
-  setting_organization_name: Organization name
-  setting_attachment_max_size: Paglalakip ng mataas na laki
-  setting_show_work_package_attachments: Show attachments in the files tab by default
-  setting_antivirus_scan_mode: Scan mode
-  setting_antivirus_scan_action: Infected file action
-  setting_autofetch_changesets: I-autofetch ang mga pagbabago ng respositoryo
-  setting_autologin: Autologin
-  setting_available_languages: Magagamit na mga linggwahe
-  setting_bcc_recipients: Blind carbon copy recipients (bcc)
-  setting_brute_force_block_after_failed_logins: I-block ang gumagamit pagkatapos ang numero na ito ay nabigo sa pagtatangkang pag-login
-  setting_brute_force_block_minutes: Oras ng user na na-block sa
-  setting_cache_formatted_text: Tesktong naka-format na cache
-  setting_use_wysiwyg_description: Select to enable CKEditor5 WYSIWYG editor for all users by default. CKEditor has limited functionality for GFM Markdown.
-  setting_column_options: Default work package lists columns
-  setting_commit_fix_keywords: Isinasaayos ang mga keyword
-  setting_commit_logs_encoding: Paglalagay ng commit mensahe
-  setting_commit_logtime_activity_id: Aktibidad para sa naka-log na oras
-  setting_commit_logtime_enabled: Paganahin ang oras ng pag-log
-  setting_commit_ref_keywords: Pagsangguni ng mga keyword
-  setting_consent_time: Consent time
-  setting_consent_info: Consent information text
-  setting_consent_required: Consent required
-  setting_consent_decline_mail: Consent contact mail address
-  setting_cross_project_work_package_relations: Pahintulutan ang cross-project na relasyon ng work package
-  setting_csv_escape_formulas: Escape formulas in CSV exports
-  setting_csv_escape_formulas_text: 'Escape spreadsheet formulas in CSV exports by prefixing cells that begin with characters such as =, +, -, or @ with a single quote. This mitigates CSV formula injection when exported files are opened in spreadsheet applications such as Excel. This comes at the downside of modifying the string values inside the CSV, so you may want to disable this if downstream tools require the exact, unescaped cell values.
-
-    '
-  setting_first_week_of_year: First week in year contains
-  setting_date_format: Petsa
-  setting_default_language: Default na linggwahe
-  setting_default_projects_modules: I-default ang pinaganang mga modyul para sa bagong proyekto
-  setting_default_projects_public: Bagong proyektong ay publiko sa pamamagitan ng default
-  setting_disable_password_login: Disable password authentication
-  setting_diff_max_lines_displayed: Mataas na bilang ng naka-display na linya
-  setting_omniauth_direct_login_provider: Direct login SSO provider
-  setting_display_subprojects_work_packages: Ipakita ang mga subproject ng work package sa pangunahing proyekto sa pamamagitan ng default
-  setting_duration_format: Duration format
-  setting_duration_format_hours_only: Hours only
-  setting_duration_format_days_and_hours: Days and hours
-  setting_duration_format_instructions: This defines how Work, Remaining work, and Time spent durations are displayed.
-  setting_emails_footer: Ang mga email ng footer
-  setting_emails_header: Ang email ng header
-  setting_email_login: Use email as login
-  setting_enabled_scm: Paganahin ang SCM
-  setting_enabled_projects_columns: Columns in a projects list displayed by default
-  setting_feeds_enabled: Paganahin ang mga feed
-  setting_ical_enabled: Enable iCalendar subscriptions
-  setting_feeds_limit: Limitasyon ng nilalaman na feed
-  setting_file_max_size_displayed: Max na laki ng mga tekstong file na ipinapakita inline
-  setting_host_name: Host name
-  setting_collaborative_editing_hocuspocus_url: Hocuspocus server URL
-  setting_collaborative_editing_hocuspocus_secret: Hocuspocus server secret
-  setting_hours_per_day: Hours per day
-  setting_hours_per_day_explanation: This defines what is considered a "day" when displaying duration in days and hours (for example, if a day is 8 hours, 32 hours would be 4 days).
-  setting_invitation_expiration_days: Activation email expires after
-  setting_invitation_expiration_days_caption: Number of days after which the activation email expires.
-  setting_work_package_done_ratio: Progress calculation mode
-  setting_work_package_done_ratio_field: Work-based
-  setting_work_package_done_ratio_field_caption_html: "<i>% Complete</i> can be freely set to any value. If you optionally enter a value for <i>Work</i>, <i>Remaining work</i> will automatically be derived."
-  setting_work_package_done_ratio_status: Status-based
-  setting_work_package_done_ratio_status_caption_html: Each status has a <i>% Complete</i> value associated with it. Changing status will change <i>% Complete</i>.
-  setting_work_package_done_ratio_explanation_html: 'In <b>work-based</b> mode, % Complete can be freely set to any value. If you optionally enter a value for Work, Remaining work will automatically be derived. In <b>status-based</b> mode, each status has a % Complete value associated with it. Changing status will change % Complete.
-
-    '
-  setting_work_package_properties: Ang mga property ng work package
-  setting_work_package_startdate_is_adddate: Gamitin ang kasulukuyang petsa bilang pagsisimula ng petsa para sa mga bagong work package
-  setting_work_packages_projects_export_limit: Work packages / Projects export limit
-  setting_work_packages_projects_export_limit_text: 'Maximum number of work packages or projects that can be included in a single export. Larger exports are truncated to this limit.
-
-    '
-  setting_journal_aggregation_time_minutes: Aggregation period
-  setting_log_requesting_user: Log user login, pangalan at mga mail address para sa lahat na hiling
-  setting_login_required: Kailangan ng pagpapatunay
-  setting_login_required_caption: When checked, all requests to the application have to be authenticated.
-  setting_lost_password: Enable password reset
-  setting_lost_password_caption: When checked, allow users to reset their own passwords.
-  setting_mail_from: Emission ng email address
-  setting_mail_handler_api_key: API key
-  setting_mail_handler_body_delimiters: I-truncate ang mga email pagatapod ng mga linyang ito
-  setting_mail_handler_body_delimiter_regex: Ang nga truncate email ay nagkakatugma sa regex na ito
-  setting_mail_handler_ignore_filenames: Ignored mail attachments
-  setting_new_project_user_role_id: Ibinigay na tungkulin para sa non-admin na gumagamit isa sa mga lumilikha ng proyekto
-  setting_new_project_user_role_id_caption: 'Only roles that include the permissions to edit project attributes and to manage members are listed, so that the creator can complete the project setup.
-
-    '
-  setting_new_project_send_confirmation_email: Send notification to author when creating a new project
-  setting_new_project_notification_text: Notification text
-  setting_password_active_rules: Password requirements
-  setting_password_count_former_banned: Bilang ng mga pinakamabagong ginamit na password na naka-ban para sa muling gumamit
-  setting_password_days_valid: Bilang ng mga araw, pagkatapos na ipinatupad ang pagbabago ng password
-  setting_password_min_length: Ang pinaka mababang sukat ng haba
-  setting_per_page_options: Ang mga bagay kada pahina ng pagpipilian
+    manual: "set to Manual"
+    automatic: "set to Automatic"
+  search_input_placeholder: "Hanapin ..."
+  setting_allowed_link_protocols: "Allowed link protocols"
+  setting_allowed_link_protocols_text_html: >-
+    Allow these protocols to be rendered as links in work package descriptions, long text fields and comments. For example, %{tel_code} or %{element_code}. Enter one protocol per line. <br/> Protocols %{http_code}, %{https_code}, and %{mailto_code} are always allowed.
+  setting_capture_external_links: "Capture external links"
+  setting_capture_external_links_text: >
+    When enabled, all external links in formatted text will redirect through a warning page before leaving the application. This helps protect users from potentially malicious external websites.
+  setting_capture_external_links_require_login: "Require users to be logged in"
+  setting_capture_external_links_require_login_text: >
+    When enabled, users wanting to click on external links need to be logged in before being able to continue.
+  setting_after_first_login_redirect_url: "First login redirect"
+  setting_after_first_login_redirect_url_text_html: >
+    Set a path to redirect users after their first login. If empty, redirects to the home page for the onboarding tour. <br/> Example: <code>/my/page</code>
+  setting_after_login_default_redirect_url: "After login redirect"
+  setting_after_login_default_redirect_url_text_html: >
+    Set a default path to redirect users after login, if no back link was provided. Redirects to home page if not set. <br/> Example: <code>/my/page</code>
+  setting_apiv3_cors_title: "Cross-Origin Resource Sharing (CORS)"
+  setting_apiv3_cors_enabled: "Enable CORS"
+  setting_apiv3_cors_origins: "API V3 Cross-Origin Resource Sharing (CORS) allowed origins"
+  setting_apiv3_cors_origins_text_html: >
+    If CORS is enabled, these are the origins that are allowed to access Yojana API. <br/> Please check the <a href="%{origin_link}" target="_blank">Documentation on the Origin header</a> on how to specify the expected values.
+  setting_apiv3_write_readonly_attributes: "Write access to read-only attributes"
+  setting_apiv3_write_readonly_attributes_instructions: >
+    If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
+  setting_apiv3_write_readonly_attributes_warning: >
+    This setting has a use-case for e.g., importing data, but allows administrators to impersonate the creation of items as other users. All creation requests are being logged however with the true author.
+  setting_apiv3_write_readonly_attributes_additional: >
+    For more information on attributes and supported resources, please see the %{api_documentation_link}.
+  setting_apiv3_max_page_size: "Maximum API page size"
+  setting_apiv3_max_page_size_instructions: >
+    Set the maximum page size the API will respond with. It will not be possible to perform API requests that return more values on a single page.
+  setting_apiv3_max_page_size_warning: >
+    Please only change this value if you are sure why you need it. Setting to a high value will result in significant performance impacts, while a value lower than the per page options will cause errors in paginated views.
+  setting_apiv3_docs: "Dokumentasyon"
+  setting_apiv3_docs_enabled: "Enable docs page"
+  setting_apiv3_docs_enabled_instructions_html: >
+    If the docs page is enabled you can get an interactive view of the APIv3 documentation under <a href="%{link}" target="_blank">%{link}</a>.
+  setting_apiv3_docs_enabled_instructions_warning: >
+    Please be aware that enabling the API docs on a production system may expose sensitive information or result in accidental loss of data when not being careful. We recommend to only enable this setting for development purposes.
+  setting_attachment_whitelist: "Attachment upload whitelist"
+  setting_email_delivery_method: "Pamaraan ng paghahatid ng email"
+  setting_emails_salutation: "Address user in emails with"
+  setting_oauth_allow_remapping_of_existing_users: "Allow remapping of existing users"
+  setting_sendmail_location: "Lokasyon ng sendmail na pagpapatupad"
+  setting_sendmail_arguments: "Arguments for sendmail"
+  setting_smtp_enable_starttls_auto: "Automatikong gagamitin ang STARTTLS kung magagamit"
+  setting_smtp_ssl: "Use SSL connection"
+  setting_smtp_address: "Server g SMTP"
+  setting_smtp_port: "Port ng SMTP"
+  setting_smtp_authentication: "Pagpapatunay ng SMTP"
+  setting_smtp_user_name: "Username ng SMTP"
+  setting_smtp_password: "Password ng SMTP"
+  setting_smtp_domain: "SMTP HELO domain"
+  setting_activity_days_default: "Ang mga araw na naka-display sa aktibidad ng proyekto"
+  setting_app_subtitle: "Aplikasyong subtitle"
+  setting_app_title: "Aplikasyong pamagat"
+  setting_attachment_max_size: "Paglalakip ng mataas na laki"
+  setting_show_work_package_attachments: "Show attachments in the files tab by default"
+  setting_antivirus_scan_mode: "Scan mode"
+  setting_antivirus_scan_action: "Infected file action"
+  setting_autofetch_changesets: "I-autofetch ang mga pagbabago ng respositoryo"
+  setting_autologin: "Autologin"
+  setting_available_languages: "Magagamit na mga linggwahe"
+  setting_bcc_recipients: "Blind carbon copy recipients (bcc)"
+  setting_brute_force_block_after_failed_logins: "I-block ang gumagamit pagkatapos ang numero na ito ay nabigo sa pagtatangkang pag-login"
+  setting_brute_force_block_minutes: "Oras ng user na na-block sa"
+  setting_cache_formatted_text: "Tesktong naka-format na cache"
+  setting_use_wysiwyg_description: "Select to enable CKEditor5 WYSIWYG editor for all users by default. CKEditor has limited functionality for GFM Markdown."
+  setting_column_options: "Default work package lists columns"
+  setting_commit_fix_keywords: "Isinasaayos ang mga keyword"
+  setting_commit_logs_encoding: "Paglalagay ng commit mensahe"
+  setting_commit_logtime_activity_id: "Aktibidad para sa naka-log na oras"
+  setting_commit_logtime_enabled: "Paganahin ang oras ng pag-log"
+  setting_commit_ref_keywords: "Pagsangguni ng mga keyword"
+  setting_consent_time: "Consent time"
+  setting_consent_info: "Consent information text"
+  setting_consent_required: "Consent required"
+  setting_consent_decline_mail: "Consent contact mail address"
+  setting_cross_project_work_package_relations: "Pahintulutan ang cross-project na relasyon ng work package"
+  setting_first_week_of_year: "First week in year contains"
+  setting_date_format: "Petsa"
+  setting_default_language: "Default na linggwahe"
+  setting_default_projects_modules: "I-default ang pinaganang mga modyul para sa bagong proyekto"
+  setting_default_projects_public: "Bagong proyektong ay publiko sa pamamagitan ng default"
+  setting_disable_password_login: "Disable password authentication"
+  setting_diff_max_lines_displayed: "Mataas na bilang ng naka-display na linya"
+  setting_omniauth_direct_login_provider: "Direct login SSO provider"
+  setting_display_subprojects_work_packages: "Ipakita ang mga subproject ng work package sa pangunahing proyekto sa pamamagitan ng default"
+  setting_duration_format: "Duration format"
+  setting_duration_format_hours_only: "Hours only"
+  setting_duration_format_days_and_hours: "Days and hours"
+  setting_duration_format_instructions: "This defines how Work, Remaining work, and Time spent durations are displayed."
+  setting_emails_footer: "Ang mga email ng footer"
+  setting_emails_header: "Ang email ng header"
+  setting_email_login: "Use email as login"
+  setting_enabled_scm: "Paganahin ang SCM"
+  setting_enabled_projects_columns: "Columns in a projects list displayed by default"
+  setting_feeds_enabled: "Paganahin ang mga feed"
+  setting_ical_enabled: "Enable iCalendar subscriptions"
+  setting_feeds_limit: "Limitasyon ng nilalaman na feed"
+  setting_file_max_size_displayed: "Max na laki ng mga tekstong file na ipinapakita inline"
+  setting_host_name: "Host name"
+  setting_collaborative_editing_hocuspocus_url: "Hocuspocus server URL"
+  setting_collaborative_editing_hocuspocus_secret: "Hocuspocus server secret"
+  setting_hours_per_day: "Hours per day"
+  setting_hours_per_day_explanation: >-
+    This defines what is considered a "day" when displaying duration in days and hours (for example, if a day is 8 hours, 32 hours would be 4 days).
+  setting_invitation_expiration_days: "Activation email expires after"
+  setting_invitation_expiration_days_caption: "Number of days after which the activation email expires."
+  setting_work_package_done_ratio: "Progress calculation mode"
+  setting_work_package_done_ratio_field: "Work-based"
+  setting_work_package_done_ratio_field_caption_html: >-
+    <i>% Complete</i> can be freely set to any value. If you optionally enter a value for <i>Work</i>, <i>Remaining work</i> will automatically be derived.
+  setting_work_package_done_ratio_status: "Status-based"
+  setting_work_package_done_ratio_status_caption_html: >-
+    Each status has a <i>% Complete</i> value associated with it. Changing status will change <i>% Complete</i>.
+  setting_work_package_done_ratio_explanation_html: >
+    In <b>work-based</b> mode, % Complete can be freely set to any value. If you optionally enter a value for Work, Remaining work will automatically be derived. In <b>status-based</b> mode, each status has a % Complete value associated with it. Changing status will change % Complete.
+  setting_work_package_properties: "Ang mga property ng work package"
+  setting_work_package_startdate_is_adddate: "Gamitin ang kasulukuyang petsa bilang pagsisimula ng petsa para sa mga bagong work package"
+  setting_work_packages_projects_export_limit: "Work packages / Projects export limit"
+  setting_journal_aggregation_time_minutes: "User actions aggregated within"
+  setting_log_requesting_user: "Log user login, pangalan at mga mail address para sa lahat na hiling"
+  setting_login_required: "Kailangan ng pagpapatunay"
+  setting_login_required_caption: "When checked, all requests to the application have to be authenticated."
+  setting_lost_password: "Enable password reset"
+  setting_lost_password_caption: "When checked, allow users to reset their own passwords."
+  setting_mail_from: "Emission ng email address"
+  setting_mail_handler_api_key: "API key"
+  setting_mail_handler_body_delimiters: "I-truncate ang mga email pagatapod ng mga linyang ito"
+  setting_mail_handler_body_delimiter_regex: "Ang nga truncate email ay nagkakatugma sa regex na ito"
+  setting_mail_handler_ignore_filenames: "Ignored mail attachments"
+  setting_new_project_user_role_id: "Ibinigay na tungkulin para sa non-admin na gumagamit isa sa mga lumilikha ng proyekto"
+  setting_new_project_send_confirmation_email: "Send notification to author when creating a new project"
+  setting_new_project_notification_text: "Notification text"
+  setting_password_active_rules: "Ang mga klase ng aktibong karakter"
+  setting_password_count_former_banned: "Bilang ng mga pinakamabagong ginamit na password na naka-ban para sa muling gumamit"
+  setting_password_days_valid: "Bilang ng mga araw, pagkatapos na ipinatupad ang pagbabago ng password"
+  setting_password_min_length: "Ang pinaka mababang sukat ng haba"
+  setting_password_min_adhered_rules: "Pinakamababang bilang"
+  setting_per_page_options: "Ang mga bagay kada pahina ng pagpipilian"
   setting_percent_complete_on_status_closed: "% Complete when status is closed"
   setting_percent_complete_on_status_closed_no_change: No change
   setting_percent_complete_on_status_closed_no_change_caption_html: The value of <i>% Complete</i> will not change even when a work package is closed.
@@ -5422,15 +5361,13 @@ fil:
       not_writable: The setting is not writable and can only be changed by a sysadmin.
       failed_to_update: 'Setting ''%{name}'' could not be updated: %{message}'
     authentication:
-      login: Mag-login
-      registration: Registration
-      sso: Single Sign-On (SSO)
-      omniauth_direct_login_hint_html: 'If this option is active, login requests will redirect to the configured omniauth provider. The login dropdown and sign-in page will be disabled. <br/> <strong>Note:</strong> Unless you also disable password logins, with this option enabled, users can still log in internally by visiting the <code>%{internal_path}</code> login page.
-
-        '
-      remapping_existing_users_hint: 'If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the OpenProject instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
-
-        '
+      login: "Mag-login"
+      registration: "Registration"
+      sso: "Single Sign-On (SSO)"
+      omniauth_direct_login_hint_html: >
+        If this option is active, login requests will redirect to the configured omniauth provider. The login dropdown and sign-in page will be disabled. <br/> <strong>Note:</strong> Unless you also disable password logins, with this option enabled, users can still log in internally by visiting the <code>%{internal_path}</code> login page.
+      remapping_existing_users_hint: >
+        If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the Yojana instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
     attachments:
       whitelist_text_html: 'Define a list of valid file extensions and/or mime types for uploaded files. <br/> Enter file extensions (e.g., <code>%{ext_example}</code>) or mime types (e.g., <code>%{mime_example}</code>). <br/> Leave empty to allow any file type to be uploaded. Multiple values allowed (one line for each value).
 
@@ -5459,10 +5396,9 @@ fil:
       modes:
         clamav_socket_html: Enter the socket to the clamd daemon, e.g., %{example}
         clamav_host_html: Enter the hostname and port to the clamd daemon separated by colon. e.g., %{example}
-        description_html: 'Select the mode in which the antivirus scanner integration should operate. <br/> <ul> <li><strong>%{disabled_option}</strong>: Uploaded files are not scanned for viruses.</li> <li><strong>%{socket_option}</strong>: You have set up ClamAV on the same server as OpenProject and the scan daemon clamd is running in the background</li> <li><strong>%{host_option}</strong>: You are streaming files to an external virus scanning host.</li> </ul>
-
-          '
-    brute_force_prevention: Naka-automate na user block
+        description_html: >
+          Select the mode in which the antivirus scanner integration should operate. <br/> <ul> <li><strong>%{disabled_option}</strong>: Uploaded files are not scanned for viruses.</li> <li><strong>%{socket_option}</strong>: You have set up ClamAV on the same server as Yojana and the scan daemon clamd is running in the background</li> <li><strong>%{host_option}</strong>: You are streaming files to an external virus scanning host.</li> </ul>
+    brute_force_prevention: "Naka-automate na user block"
     date_format:
       first_date_of_week_and_year_set: 'If either options "%{day_of_week_setting_name}" or "%{first_week_setting_name}" are set, the other has to be set as well to avoid inconsistencies in the frontend.
 
@@ -5471,8 +5407,8 @@ fil:
 
         '
     experimental:
-      save_confirmation: Caution! Risk of data loss! Only activate experimental features if you do not mind breaking your OpenProject installation and losing all of its data.
-      warning_toast: Feature flags are settings that activate features that are still under development. They shall only be used for testing purposes. They shall never be activated on OpenProject installations holding important data. These features will very likely corrupt your data. Use them at your own risk.
+      save_confirmation: Caution! Risk of data loss! Only activate experimental features if you do not mind breaking your Yojana installation and losing all of its data.
+      warning_toast: Feature flags are settings that activate features that are still under development. They shall only be used for testing purposes. They shall never be activated on Yojana installations holding important data. These features will very likely corrupt your data. Use them at your own risk.
       feature_flags: Feature flags
     general: Pangkalahatan
     highlighting:
@@ -5483,7 +5419,7 @@ fil:
         type: Entire row by Type
         priority: Entire row by Priority
     icalendar:
-      enable_subscriptions_text_html: Allows users with the necessary permissions to subscribe to OpenProject calendars and access work package information via an external calendar client. <strong>Note:</strong> Please read about <a href="%{link}" target="_blank">iCalendar subscriptions</a> to understand potential security risks before enabling this.
+      enable_subscriptions_text_html: Allows users with the necessary permissions to subscribe to Yojana calendars and access work package information via an external calendar client. <strong>Note:</strong> Please read about <a href="%{link}" target="_blank">iCalendar subscriptions</a> to understand potential security risks before enabling this.
     language_name_being_default: "%{language_name} (default)"
     notifications:
       events_explanation: Governs for which event an email is sent out. Work packages are excluded from this list as the notifications for them can be configured specifically for every user.
@@ -5517,9 +5453,8 @@ fil:
               label: Side panel
               description: Add all the project attributes in a section inside the right side panel in the project overview.
     project_initiation_request:
-      header_description: 'OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
-
-        '
+      header_description: >
+        Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
       status:
         submitted: "%{wizard_name} has been submitted"
         submitted_description: Click the button below to go to the work package for the submission process.
@@ -5531,8 +5466,8 @@ fil:
         project_creation_wizard: Open project creation wizard
         project_mandate: Open project mandate
       blankslate:
-        title: Initiation request not enabled
-        description: OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard.
+        title: "Initiation request not enabled"
+        description: "Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard."
       disable_dialog:
         title: Disable project initiation request
         heading: Disable this project initiation request?
@@ -5637,22 +5572,21 @@ fil:
   status_deleted: binura
   support:
     array:
-      sentence_connector: at
-      skip_last_comma: mali
-  text_accessibility_hint: Ang aksibilidad mode ay naka-disenyo para sa mga gumagamit na bulag, motorcically handicsped o mayroong masamang paningin. Para sa mga elementong latter focus ay espesyal na naka-hightlight. Mangyaring pansinin, na ang Backlogs modyul ay hindi magagamit sa modyul na ito.
-  text_access_token_hint: Ang access token ay pinayagan kang pagbigyan ang external applications access sa pinagkukunan sa OpenProject.
-  text_analyze: 'Karagdagang pagsusuri: %{subject}'
-  text_are_you_sure: Sigurado ka ba?
-  open_link_in_a_new_tab: Open link in a new tab
-  text_are_you_sure_continue: Are you sure you want to continue?
-  text_are_you_sure_with_children: Burahi ang work packaage at lahag ng batang work pckage?
-  text_are_you_sure_with_project_custom_fields: Deleting this attribute will also delete its values in all projects. Are you sure you want to do this?
-  text_are_you_sure_with_project_life_cycle_step: Deleting this phase will also delete its usages in all projects. Are you sure you want to do this?
-  text_assign_to_project: Nakatalaga sa proyekto
-  text_form_configuration: 'Pwede mong i-customize kung saan ang mga patlang ay maipapakita sa mga porma ng pakete ng mga gawain. Pwede kang malayang magpapagrupo sa mga patlang para ito ay sumasalamin sa mga kailangan mo para sa iyong domain.
-
-    '
-  text_form_configuration_required_attribute: Katangian ay marka na kinakailangan at kaya laging ipinapakita
+      sentence_connector: "at"
+      skip_last_comma: "mali"
+  text_accessibility_hint: "Ang aksibilidad mode ay naka-disenyo para sa mga gumagamit na bulag, motorcically handicsped o mayroong masamang paningin. Para sa mga elementong latter focus ay espesyal na naka-hightlight. Mangyaring pansinin, na ang Backlogs modyul ay hindi magagamit sa modyul na ito."
+  text_access_token_hint: "Ang access token ay pinayagan kang pagbigyan ang external applications access sa pinagkukunan sa Yojana."
+  text_analyze: "Karagdagang pagsusuri: %{subject}"
+  text_are_you_sure: "Sigurado ka ba?"
+  open_link_in_a_new_tab: "Open link in a new tab"
+  text_are_you_sure_continue: "Are you sure you want to continue?"
+  text_are_you_sure_with_children: "Burahi ang work packaage at lahag ng batang work pckage?"
+  text_are_you_sure_with_project_custom_fields: "Deleting this attribute will also delete its values in all projects. Are you sure you want to do this?"
+  text_are_you_sure_with_project_life_cycle_step: "Deleting this phase will also delete its usages in all projects. Are you sure you want to do this?"
+  text_assign_to_project: "Nakatalaga sa proyekto"
+  text_form_configuration: >
+    Pwede mong i-customize kung saan ang mga patlang ay maipapakita sa mga porma ng pakete ng mga gawain. Pwede kang malayang magpapagrupo sa mga patlang para ito ay sumasalamin sa mga kailangan mo para sa iyong domain.
+  text_form_configuration_required_attribute: "Katangian ay marka na kinakailangan at kaya laging ipinapakita"
   text_caracters_maximum: "%{count} Pinakamaramig karakter."
   text_caracters_minimum: Dapar ay hindi baba sa mga %{count} karakter blog.
   text_comma_separated: Maramihang halaga ang pinahintulutan (magkahiwalay na comma).
@@ -5752,41 +5686,30 @@ fil:
   text_line_separated: Maramihang halaga ang pinahintulutan (isang linya para sa bawat halaga).
   text_load_default_configuration: I-load ang kumpigurasyong default
   text_no_roles_defined: Walang mga role na niliwanag.
-  text_no_access_tokens_configurable: Walang mga access tokens na pweding ma configure.
-  text_no_configuration_data: |-
-    Ang mga tungkulin, uri, estado ng work package at daloy na trabaho ay hindi pa na configure.
-    Ito ay lubos na inirerekomenda upang i-lpad anh default na kumpigurasyon. Magagawa mong baguhin ito pag naka-load.
-  text_no_notes: Walang mga komento na available para sa work package na ito.
-  text_notice_too_many_values_are_inperformant: 'Tandaan: Pagpapakita ng mahigit isang daan aytem bawat pahina bay maaring lalaki ang pahina ng load na oras.'
-  text_notice_security_badge_displayed_html: 'Note: if enabled, this will display a badge with your installation status in the <a href="%{information_panel_path}">%{information_panel_label}</a> administration panel, and on the home page. It is displayed to administrators only. <br/> The badge will check your current OpenProject version against the official OpenProject release database to alert you of any updates or known vulnerabilities. For more information on what the check provides, what data is needed to provide available updates, and how to disable this check, please visit <a href="%{more_info_url}">the configuration documentation</a>.
-
-    '
-  text_own_membership_delete_confirmation: |-
-    Kinakailangan mong alisin ang ilan o lahat ng iyong perniso at hindi na maaring magagawa na i-edit ang itong proyekto pagkatapos na iyan.
-    Sigurado ka ba gusto mong magpatuloy?
-  text_permanent_delete_confirmation_checkbox_label: I understand that this deletion cannot be reversed
-  text_permanent_remove_confirmation_checkbox_label: I understand that this removal cannot be reversed
-  text_plugin_assets_writable: Plugin asstes directory writable
-  text_powered_by: Pinalatakbo ng %{link}
-  text_project_identifier_info: Maliit na titik lamang (a-z), mga numero, mga dash at underscore ang pinahintulutan, dapat magsimula sa maliit na titik.
-  text_project_identifier_description: The project identifier is prepended to all work package IDs. If the identifier is "PROJ" for example, the work package identifier will be "PROJ-12" or "PROJ-246".
-  text_project_identifier_url_description: The project identifier is included in the URL of the project.
-  text_project_identifier_handle_format: Must start with a letter and contain only uppercase letters, numbers, and underscores (max 10 characters).
-  text_project_identifier_format: Must start with a lowercase letter. Only lowercase letters (a-z), numbers, dashes and underscores are allowed.
-  text_reassign: 'I-reassign sa work package:'
-  text_regexp_multiline: Ang regex ay nakalagay sa multi-line mlde. hal., ^---\s+
-  text_rename_wiki_page: Rename wiki page
-  text_repository_usernames_mapping: |-
-    Piliin o i-update ang OpenProject usrt naka-map sa bawat username nakita sa repositoryo log.
-    Ang mga gumagamit sa kaparehong OpenProject at repositoryong username o ang email ay automatikong naka-map.
-  text_status_changed_by_changeset: Ilapaylt sa changeset %{value}.
-  text_table_difference_description: Sa talaan na ito ang solong %{entries} ay ipinapakita. Maari mong tingnan ang kaibahansa pagitan ng kahit anong dalawang entry sa pamamagitan ng unang pagpili ayon sa mga checkbox sa talaan. Kapag nag-pindut sa pindutan ng ibaba sa talaan ang mga pagkakaiba ay ipinapakita.
-  text_time_logged_by_changeset: Ilapaylt sa changeset %{value}.
-  text_tip_work_package_begin_day: ang work package ay magsisimula ngayong araw
-  text_tip_work_package_begin_end_day: ang work package ay masisimula at magtatapos ngayong araw
-  text_tip_work_package_end_day: ang work package ay matatapis ngayong araw
-  text_type_no_workflow: Walang workflow ay tinukoy para sa uri na ito
-  text_unallowed_characters: Hindi pinayagang mga karakter
+  text_no_access_tokens_configurable: "Walang mga access tokens na pweding ma configure."
+  text_no_configuration_data: "Ang mga tungkulin, uri, estado ng work package at daloy na trabaho ay hindi pa na configure.\nIto ay lubos na inirerekomenda upang i-lpad anh default na kumpigurasyon. Magagawa mong baguhin ito pag naka-load."
+  text_no_notes: "Walang mga komento na available para sa work package na ito."
+  text_notice_too_many_values_are_inperformant: "Tandaan: Pagpapakita ng mahigit isang daan aytem bawat pahina bay maaring lalaki ang pahina ng load na oras."
+  text_notice_security_badge_displayed_html: >
+    Note: if enabled, this will display a badge with your installation status in the <a href="%{information_panel_path}">%{information_panel_label}</a> administration panel, and on the home page. It is displayed to administrators only. <br/> The badge will check your current Yojana version against the official Yojana release database to alert you of any updates or known vulnerabilities. For more information on what the check provides, what data is needed to provide available updates, and how to disable this check, please visit <a href="%{more_info_url}">the configuration documentation</a>.
+  text_own_membership_delete_confirmation: "Kinakailangan mong alisin ang ilan o lahat ng iyong perniso at hindi na maaring magagawa na i-edit ang itong proyekto pagkatapos na iyan.\nSigurado ka ba gusto mong magpatuloy?"
+  text_permanent_delete_confirmation_checkbox_label: "I understand that this deletion cannot be reversed"
+  text_permanent_remove_confirmation_checkbox_label: "I understand that this removal cannot be reversed"
+  text_plugin_assets_writable: "Plugin asstes directory writable"
+  text_powered_by: "Pinalatakbo ng %{link}"
+  text_project_identifier_info: "Maliit na titik lamang (a-z), mga numero, mga dash at underscore ang pinahintulutan, dapat magsimula sa maliit na titik."
+  text_reassign: "I-reassign sa work package:"
+  text_regexp_info: "e. g ^[A-Z0-9]+$"
+  text_regexp_multiline: 'Ang regex ay nakalagay sa multi-line mlde. hal., ^---\s+'
+  text_repository_usernames_mapping: "Piliin o i-update ang Yojana usrt naka-map sa bawat username nakita sa repositoryo log.\nAng mga gumagamit sa kaparehong Yojana at repositoryong username o ang email ay automatikong naka-map."
+  text_status_changed_by_changeset: "Ilapaylt sa changeset %{value}."
+  text_table_difference_description: "Sa talaan na ito ang solong %{entries} ay ipinapakita. Maari mong tingnan ang kaibahansa pagitan ng kahit anong dalawang entry sa pamamagitan ng unang pagpili ayon sa mga checkbox sa talaan. Kapag nag-pindut sa pindutan ng ibaba sa talaan ang mga pagkakaiba ay ipinapakita."
+  text_time_logged_by_changeset: "Ilapaylt sa changeset %{value}."
+  text_tip_work_package_begin_day: "ang work package ay magsisimula ngayong araw"
+  text_tip_work_package_begin_end_day: "ang work package ay masisimula at magtatapos ngayong araw"
+  text_tip_work_package_end_day: "ang work package ay matatapis ngayong araw"
+  text_type_no_workflow: "Walang workflow ay tinukoy para sa uri na ito"
+  text_unallowed_characters: "Hindi pinayagang mga karakter"
   text_user_invited: Ang user ay inanyayahan at isa rin itong pending na registration.
   text_user_wrote: "%{value} isinulat:"
   text_wrote: wrote
@@ -5848,18 +5771,17 @@ fil:
     help_and_support: Tulong at supora
   total_progress: Kabuuang progreso
   user:
-    all: lahat
-    active: aktibo
-    activate: Aktibo
-    activate_and_reset_failed_logins: Gawing aktibo at i-reset ang nabigong mga paglog-in
-    authentication_provider: Pagpapatunay na provider
-    identity_url_text: The internal unique identifier provided by the authentication provider.
-    authentication_settings_disabled_due_to_external_authentication: 'Ang gumagamit ay nagpapatunay sa pamamagitan ng pagpapatunay na provider, kaya walang password sa OpenProject na magbago.
-
-      '
-    authorization_rejected: Ikaw ay hindi pinapayagang mag-sign in.
-    assign_random_password: Mag-atas ng random na password (ipinadala sa user sa pamamagitan ng email)
-    blocked: pansamantalang nakandado
+    all: "lahat"
+    active: "aktibo"
+    activate: "Aktibo"
+    activate_and_reset_failed_logins: "Gawing aktibo at i-reset ang nabigong mga paglog-in"
+    authentication_provider: "Pagpapatunay na provider"
+    identity_url_text: "The internal unique identifier provided by the authentication provider."
+    authentication_settings_disabled_due_to_external_authentication: >
+      Ang gumagamit ay nagpapatunay sa pamamagitan ng pagpapatunay na provider, kaya walang password sa Yojana na magbago.
+    authorization_rejected: "Ikaw ay hindi pinapayagang mag-sign in."
+    assign_random_password: "Mag-atas ng random na password (ipinadala sa user sa pamamagitan ng email)"
+    blocked: "pansamantalang nakandado"
     blocked_num_failed_logins:
       one: pansamantalang nakandado (isang nabigong pagtatangkang paglog-in)
       other: pansamantalang nakandado (%{count} ay nabigo sa mga pagtatangkang paglog-in)
@@ -5890,13 +5812,18 @@ fil:
   note_password_login_disabled_link: Password login has been disabled through a [configuration setting](configuration_url).
   warning: Babala
   warning_attachments_not_saved: "%{count} na(mga) file ay hindi mai-save."
-  warning_imminent_user_limit_html: 'You invited more users than are supported by your current plan. Invited users may not be able to join your OpenProject environment. Please [upgrade your plan](upgrade_url) or block existing users in order to allow invited and registered users to join.
-
-    '
+  warning_imminent_user_limit: >
+    You invited more users than are supported by your current plan. Invited users may not be able to join your Yojana environment. Please <a href="%{upgrade_url}">upgrade your plan</a> or block existing users in order to allow invited and registered users to join.
   warning_registration_token_expired: |
     Ang pagaaktibo ng email ay nag-expire na. Nagpadala kami ng isang bagi sa %{email}.
     Mangyaring pindutin ang link sa loob nito.
-  warning_user_limit_reached: 'Adding additional users will exceed the current limit. Please contact an administrator to increase the user limit to ensure external users are able to access this instance.
+  warning_user_limit_reached: >
+    Adding additional users will exceed the current limit. Please contact an administrator to increase the user limit to ensure external users are able to access this instance.
+  warning_user_limit_reached_admin: >
+    Adding additional users will exceed the current limit. Please <a href="%{upgrade_url}">upgrade your plan</a> to be able to ensure external users are able to access this instance.
+  warning_user_limit_reached_instructions: >
+    You reached your user limit (%{current}/%{max} active users). Please contact sales@girishm.info to upgrade your Enterprise edition plan and add additional users.
+  warning_protocol_mismatch_html: >
 
     '
   warning_user_limit_reached_admin_html: 'Adding additional users will exceed the current limit. Please [upgrade your plan](upgrade_url) to be able to ensure external users are able to access this instance.
@@ -6188,56 +6115,48 @@ fil:
       non_confidential: Non confidential
       default_scopes: "(Default scopes)"
       instructions:
-        enabled: Enable this application, allowing users to perform authorization grants with it.
-        name: The name of your application. This will be displayed to other users upon authorization.
-        redirect_uri_html: 'The allowed URLs authorized users can be redirected to. One entry per line. <br/> If you''re registering a desktop application, use the following URL.
-
-          '
-        confidential: Check if the application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are assumed non-confidential.
-        scopes: Check the scopes you want the application to grant access to. If no scope is checked, api_v3 is assumed.
-        client_credential_user_id: Optional user ID to impersonate when clients use this application. Leave empty to allow public access only
-        register_intro: If you are developing an OAuth API client application for OpenProject, you can register it using this form for all users to use.
-        default_scopes: ''
+        enabled: "Enable this application, allowing users to perform authorization grants with it."
+        name: "The name of your application. This will be displayed to other users upon authorization."
+        redirect_uri_html: >
+          The allowed URLs authorized users can be redirected to. One entry per line. <br/> If you're registering a desktop application, use the following URL.
+        confidential: "Check if the application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are assumed non-confidential."
+        scopes: "Check the scopes you want the application to grant access to. If no scope is checked, api_v3 is assumed."
+        client_credential_user_id: "Optional user ID to impersonate when clients use this application. Leave empty to allow public access only"
+        register_intro: "If you are developing an OAuth API client application for Yojana, you can register it using this form for all users to use."
+        default_scopes: ""
     header:
       builtin_applications: Built-in OAuth applications
       other_applications: Other OAuth applications
     empty_application_lists: No OAuth applications have been registered.
-    client_id: Client ID
-    client_secret_notice: 'This is the only time we can print the client secret, please note it down and keep it secure. It should be treated as a password and cannot be retrieved by OpenProject at a later time.
-
-      '
+    client_id: "Client ID"
+    client_secret_notice: >
+      This is the only time we can print the client secret, please note it down and keep it secure. It should be treated as a password and cannot be retrieved by Yojana at a later time.
     authorization_dialog:
-      authorize: Authorize
-      cancel: Cancel and deny authorization.
-      prompt_html: Authorize <strong>%{application_name}</strong> to use your account <em>%{login}</em>?
-      title: Authorize %{application_name}
-      wants_to_access_html: 'This application requests access to your OpenProject account. <br/> <strong>It has requested the following permissions:</strong>
-
-        '
+      authorize: "Authorize"
+      cancel: "Cancel and deny authorization."
+      prompt_html: "Authorize <strong>%{application_name}</strong> to use your account <em>%{login}</em>?"
+      title: "Authorize %{application_name}"
+      wants_to_access_html: >
+        This application requests access to your Yojana account. <br/> <strong>It has requested the following permissions:</strong>
     scopes:
-      api_v3: Full API v3 access
-      api_v3_text: Application will receive full read & write access to the OpenProject API v3 to perform actions on your behalf.
-      mcp: Access to MCP
-      mcp_text: Application will receive access to the OpenProject MCP endpoints. They are a limited subset of APIv3, that's tailored for usage with AI agents.
+      api_v3: "Full API v3 access"
+      api_v3_text: "Application will receive full read & write access to the Yojana API v3 to perform actions on your behalf."
     grants:
       created_date: Approved on
       scopes: Mga pahintulot
       successful_application_revocation: Revocation of application %{application_name} successful.
       none_given: No OAuth applications have been granted access to your user account.
     flows:
-      authorization_code: Authorization code flow
-      client_credentials: Client credentials flow
-    client_credentials: User used for Client credentials
-    client_credentials_impersonation_set_to: Client credentials user set to
-    client_credentials_impersonation_warning: 'Note: Clients using the ''Client credentials'' flow in this application will have the rights of this user'
-    client_credentials_impersonation_html: 'By default, OpenProject provides OAuth 2.0 authorization via %{authorization_code_flow_link}. You can optionally enable %{client_credentials_flow_link}, but you must provide a user on whose behalf requests will be performed.
-
-      '
-    confirm_revoke_my_application:
-      one: Do you really want to remove this application? This will revoke one token active for it.
-      other: Do you really want to remove this application? This will revoke %{count} tokens active for it.
-    authorization_error: An authorization error has occurred.
-    my_registered_applications: Registered OAuth applications
+      authorization_code: "Authorization code flow"
+      client_credentials: "Client credentials flow"
+    client_credentials: "User used for Client credentials"
+    client_credentials_impersonation_set_to: "Client credentials user set to"
+    client_credentials_impersonation_warning: "Note: Clients using the 'Client credentials' flow in this application will have the rights of this user"
+    client_credentials_impersonation_html: >
+      By default, Yojana provides OAuth 2.0 authorization via %{authorization_code_flow_link}. You can optionally enable %{client_credentials_flow_link}, but you must provide a user on whose behalf requests will be performed.
+    authorization_error: "An authorization error has occurred."
+    revoke_my_application_confirmation: "Do you really want to remove this application? This will revoke %{token_count} active for it."
+    my_registered_applications: "Registered OAuth applications"
   oauth_client:
     urn_connection_status:
       connected: Connected
@@ -6250,41 +6169,36 @@ fil:
       label_request_token: Request token
       label_refresh_token: Refresh token
     errors:
-      oauth_authorization_code_grant_had_errors: OAuth2 Authorization grant unsuccessful
-      oauth_reported: OAuth2 provider reported
-      oauth_returned_error: OAuth2 returned an error
-      oauth_returned_json_error: OAuth2 returned a JSON error
-      oauth_returned_http_error: OAuth2 returned a network error
-      oauth_returned_standard_error: OAuth2 returned an internal error
-      wrong_token_type_returned: OAuth2 returned a wrong type of token, expecting AccessToken::Bearer
-      oauth_issue_contact_admin: OAuth2 reported an error. Please contact your system administrator.
-      oauth_client_not_found: OAuth2 client not found in 'callback' endpoint (redirect_uri).
-      refresh_token_called_without_existing_token: 'Internal error: Called refresh_token without a previously existing token.
-
-        '
-      refresh_token_updated_failed: Error during update of OAuthClientToken
-      oauth_client_not_found_explanation: 'This error appears after you have updated the client_id and client_secret in OpenProject, but haven''t updated the ''Return URI'' field in the OAuth2 provider.
-
-        '
-      oauth_code_not_present: OAuth2 'code' not found in 'callback' endpoint (redirect_uri).
-      oauth_code_not_present_explanation: 'This error appears if you have selected the wrong response_type in the OAuth2 provider. Response_type should be ''code'' or similar.
-
-        '
-      oauth_state_not_present: OAuth2 'state' not found in 'callback' endpoint (redirect_uri).
-      oauth_state_not_present_explanation: 'The ''state'' is used to indicate to OpenProject where to continue after a successful OAuth2 authorization. A missing ''state'' is an internal error that may appear during setup. Please contact your system administrator.
-
-        '
+      oauth_authorization_code_grant_had_errors: "OAuth2 Authorization grant unsuccessful"
+      oauth_reported: "OAuth2 provider reported"
+      oauth_returned_error: "OAuth2 returned an error"
+      oauth_returned_json_error: "OAuth2 returned a JSON error"
+      oauth_returned_http_error: "OAuth2 returned a network error"
+      oauth_returned_standard_error: "OAuth2 returned an internal error"
+      wrong_token_type_returned: "OAuth2 returned a wrong type of token, expecting AccessToken::Bearer"
+      oauth_issue_contact_admin: "OAuth2 reported an error. Please contact your system administrator."
+      oauth_client_not_found: "OAuth2 client not found in 'callback' endpoint (redirect_uri)."
+      refresh_token_called_without_existing_token: >
+        Internal error: Called refresh_token without a previously existing token.
+      refresh_token_updated_failed: "Error during update of OAuthClientToken"
+      oauth_client_not_found_explanation: >
+        This error appears after you have updated the client_id and client_secret in Yojana, but haven't updated the 'Return URI' field in the OAuth2 provider.
+      oauth_code_not_present: "OAuth2 'code' not found in 'callback' endpoint (redirect_uri)."
+      oauth_code_not_present_explanation: >
+        This error appears if you have selected the wrong response_type in the OAuth2 provider. Response_type should be 'code' or similar.
+      oauth_state_not_present: "OAuth2 'state' not found in 'callback' endpoint (redirect_uri)."
+      oauth_state_not_present_explanation: >
+        The 'state' is used to indicate to Yojana where to continue after a successful OAuth2 authorization. A missing 'state' is an internal error that may appear during setup. Please contact your system administrator.
       rack_oauth2:
-        client_secret_invalid: Client secret is invalid (client_secret_invalid)
-        invalid_request: 'OAuth2 Authorization Server responded with ''invalid_request''. This error appears if you try to authorize multiple times or in case of technical issues.
-
-          '
-        invalid_response: OAuth2 Authorization Server provided an invalid response (invalid_response)
-        invalid_grant: The OAuth2 Authorization Server asks you to reauthorize (invalid_grant).
-        invalid_client: The OAuth2 Authorization Server doesn't recognize OpenProject (invalid_client).
-        unauthorized_client: The OAuth2 Authorization Server rejects the grant type (unauthorized_client)
-        unsupported_grant_type: The OAuth2 Authorization Server asks you to reauthorize (unsupported_grant_type).
-        invalid_scope: You are not allowed to access the requested resource (invalid_scope).
+        client_secret_invalid: "Client secret is invalid (client_secret_invalid)"
+        invalid_request: >
+          OAuth2 Authorization Server responded with 'invalid_request'. This error appears if you try to authorize multiple times or in case of technical issues.
+        invalid_response: "OAuth2 Authorization Server provided an invalid response (invalid_response)"
+        invalid_grant: "The OAuth2 Authorization Server asks you to reauthorize (invalid_grant)."
+        invalid_client: "The OAuth2 Authorization Server doesn't recognize Yojana (invalid_client)."
+        unauthorized_client: "The OAuth2 Authorization Server rejects the grant type (unauthorized_client)"
+        unsupported_grant_type: "The OAuth2 Authorization Server asks you to reauthorize (unsupported_grant_type)."
+        invalid_scope: "You are not allowed to access the requested resource (invalid_scope)."
   http:
     request:
       failed_authorization: The server side request failed authorizing itself.
@@ -6294,18 +6208,18 @@ fil:
   you: you
   link: link
   plugin_openproject_auth_plugins:
-    name: OpenProject Auth Plugins
-    description: Integration of OmniAuth strategy providers for authentication in OpenProject.
+    name: "Yojana Auth Plugins"
+    description: "Integration of OmniAuth strategy providers for authentication in Yojana."
   plugin_openproject_auth_saml:
-    name: OmniAuth SAML / Single-Sign On
-    description: Adds the OmniAuth SAML provider to OpenProject
+    name: "OmniAuth SAML / Single-Sign On"
+    description: "Adds the OmniAuth SAML provider to Yojana"
   enterprise_plans:
     legacy_enterprise: Enterprise Plan
   token:
     hashed_token:
       display_value_placeholder: "***"
   external_link_warning:
-    title: Leaving OpenProject
-    warning_message: You are about to leave OpenProject and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies.
-    continue_message: Are you sure you want to proceed to the following external link?
-    continue_button: Continue to external website
+    title: "Leaving Yojana"
+    warning_message: "You are about to leave Yojana and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies."
+    continue_message: "Are you sure you want to proceed to the following external link?"
+    continue_button: "Continue to external website"

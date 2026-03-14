@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -341,13 +341,13 @@ ms:
         unknown_name: Unknown
     mcp_configurations:
       index:
-        description: The model context protocol allows AI agents to provide its users with tools and resources exposed by this OpenProject instance. This feature is still in beta.
-        resources_heading: Resources
-        resources_description: OpenProject implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url).
-        resources_submit: Update resources
-        tools_heading: Tools
-        tools_description: OpenProject implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url).
-        tools_submit: Update tools
+        description: "The model context protocol allows AI agents to provide its users with tools and resources exposed by this Yojana instance."
+        resources_heading: "Resources"
+        resources_description: "Yojana implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
+        resources_submit: "Update resources"
+        tools_heading: "Tools"
+        tools_description: "Yojana implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url)."
+        tools_submit: "Update tools"
       multi_update:
         success: MCP configurations were updated successfully.
       server_form:
@@ -390,31 +390,31 @@ ms:
       edit:
         label_delete_scim_client: Delete SCIM client
       form:
-        auth_provider_description: This is the service that users added by the SCIM provider will use to authenticate in OpenProject.
-        authentication_method_description_html: This is how the SCIM client authenticates at OpenProject. Please ensure that OAuth tokens include the <code>scim_v2</code> scope.
-        description: Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options.
-        jwt_sub_description: For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case.
-        name_description: Choose a name that will help other admins better understand why this client was configured.
+        auth_provider_description: "This is the service that users added by the SCIM provider will use to authenticate in Yojana."
+        authentication_method_description_html: "This is how the SCIM client authenticates at Yojana. Please ensure that OAuth tokens include the <code>scim_v2</code> scope."
+        description: "Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options."
+        jwt_sub_description: "For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case."
+        name_description: "Choose a name that will help other admins better understand why this client was configured."
       index:
-        description: SCIM clients configured here are able to interact with OpenProject SCIM server API to provision, update, and deprovision user accounts and groups.
-        label_create_button: Add SCIM client
+        description: "SCIM clients configured here are able to interact with Yojana SCIM server API to provision, update, and deprovision user accounts and groups."
+        label_create_button: "Add SCIM client"
       new:
         title: New SCIM client
       revoke_static_token_dialog_component:
-        confirm_button: Tarik balik
-        title: Revoke static token
-        heading: Adakah anda pasti anda mahu membatalkan token ini?
-        description: The SCIM client that uses this token will no longer be able to access OpenProject's SCIM server API.
+        confirm_button: "Tarik balik"
+        title: "Revoke static token"
+        heading: "Adakah anda pasti anda mahu membatalkan token ini?"
+        description: "The SCIM client that uses this token will no longer be able to access Yojana's SCIM server API."
       table_component:
         blank_slate:
           title: No SCIM clients configured yet
           description: Add clients to see them here
         user_count: Pengguna-pengguna
       token_list_component:
-        description: The tokens you generate here can be passed by a SCIM client to access the OpenProject SCIM API.
-        heading: Tokens
-        label_add_token: Token
-        label_aria_add_token: Add token
+        description: "The tokens you generate here can be passed by a SCIM client to access the Yojana SCIM API."
+        heading: "Tokens"
+        label_add_token: "Token"
+        label_aria_add_token: "Add token"
       token_table_component:
         blank_slate:
           title: No tokens have been created yet
@@ -554,38 +554,37 @@ ms:
       name: Nama arbitrari sambungan LDAP
       host: Nama hos atau alamat IP LDAP
       login_map: Kunci atribut dalam LDAP yang digunakan untuk mengenal pasti log masuk pengguna yang unik. Biasanya, ini akan menjadi `uid` atau `samAccountName`.
-      generic_map: Kunci atribut LDAP yang telah dipetakan ke atribut `%{attribute}` OpenProject
-      admin_map_html: 'Pilihan: Kunci atribut LDAP yang <strong>jika hadir</strong> menandakan pengguna OpenProject sebagai pentadbir. Biarkan kosong jika ragu-ragu.'
+      generic_map: Kunci atribut LDAP yang telah dipetakan ke atribut `%{attribute}` Yojana
+      admin_map_html: "Pilihan: Kunci atribut LDAP yang <strong>jika hadir</strong> menandakan pengguna Yojana sebagai pentadbir. Biarkan kosong jika ragu-ragu."
       system_user_dn_html: |
         Enter the DN of the system user used for read-only access.
         <br>
-        Example: uid=openproject,ou=system,dc=example,dc=com
+        Example: uid=yojana,ou=system,dc=example,dc=com
       system_user_password: Masukkan kata laluan ikatan bagi pengguna sistem
       base_dn: |
-        Masukkan pangkalan DN dari subpokok LDAP yang anda mahukan di OpenProject untuk mencari pengguna dan kumpulan.
-        OpenProject akan menyaring nama pengguna yang disediakan di subpokok ini sahaja.
+        Masukkan pangkalan DN dari subpokok LDAP yang anda mahukan di Yojana untuk mencari pengguna dan kumpulan.
+        Yojana akan menyaring nama pengguna yang disediakan di subpokok ini sahaja.
         Contoh: ou=pengguna,dc=contoh,dc=com
       filter_string: |
         Tambah penyaring RFC4515 secara pilihan untuk digunakan pada hasil yang dikembalikan untuk pengguna yang disaring dalam LDAP.
-        Ini boleh digunakan untuk mengehadkan set pengguna yang ditemui oleh OpenProject untuk pengesahan dan sinkronisasi kumpulan.
-      filter_string_concat: 'OpenProject akan sentiasa menyaring atribut log masuk yang disediakan oleh pengguna untuk mengenal pasti rekod. Jika anda menyediakan penyaringan di sini, ia akan digabungkan ke satu AND. Secara default, tangkap semua (objekKelas=*) akan digunakan sebagai penyaring.
-
-        '
+        Ini boleh digunakan untuk mengehadkan set pengguna yang ditemui oleh Yojana untuk pengesahan dan sinkronisasi kumpulan.
+      filter_string_concat: |
+        Yojana akan sentiasa menyaring atribut log masuk yang disediakan oleh pengguna untuk mengenal pasti rekod. Jika anda menyediakan penyaringan di sini, ia akan digabungkan ke satu AND. Secara default, tangkap semua (objekKelas=*) akan digunakan sebagai penyaring.
       onthefly_register: |
-        Jika anda menandakan kotak ini, OpenProject akan mencipta pengguna baharu secara automatik daripada entri LDAP mereka
-        apabila mereka pertama kali mengesahkan dengan OpenProject.
-        Biarkan kotak ini kosong untuk hanya membenarkan akaun sedia ada dalam OpenProject untuk mengesahkan melalui LDAP!
-    connection_encryption: Penyulitan sambungan
-    encryption_details: pilihan-pilihan LDAPS/STARTTTLS
-    system_account: Akaun sistem
+        Jika anda menandakan kotak ini, Yojana akan mencipta pengguna baharu secara automatik daripada entri LDAP mereka
+        apabila mereka pertama kali mengesahkan dengan Yojana.
+        Biarkan kotak ini kosong untuk hanya membenarkan akaun sedia ada dalam Yojana untuk mengesahkan melalui LDAP!
+    connection_encryption: "Penyulitan sambungan"
+    encryption_details: "pilihan-pilihan LDAPS/STARTTTLS"
+    system_account: "Akaun sistem"
     system_account_legend: |
-      OpenProject memerlukan akses baca-sahaja melalui akaun sistem untuk pencarian pengguna dan kumpulan dalam pokok LDAP anda.
+      Yojana memerlukan akses baca-sahaja melalui akaun sistem untuk pencarian pengguna dan kumpulan dalam pokok LDAP anda.
       Sila tetapkan kelayakan ikatan bagi pengguna sistem tersebut dalam bahagian berikutnya.
     ldap_details: Butiran LDAP
     user_settings: Pemetaan atribut
     user_settings_legend: |
-      Ruang berikut berkaitan tentang bagaimana pengguna dicipta dalam OpenProject daripada entri LDAP dan
-      atribut LDAP apa yang digunakan untuk menentukan atribut pengguna OpenProject (pemetaan atribut)
+      Ruang berikut berkaitan tentang bagaimana pengguna dicipta dalam Yojana daripada entri LDAP dan
+      atribut LDAP apa yang digunakan untuk menentukan atribut pengguna Yojana (pemetaan atribut)
     tls_mode:
       plain: tiada
       simple_tls: LDAPS
@@ -2113,18 +2112,17 @@ ms:
         circular_dependency: Hubungan ini akan mencipta kebergantungan bulat.
         confirmation: tidak sepadan dengan %{attribute}.
         could_not_be_copied: "%{dependency} tidak dapat disalin (sepenuhnya)."
-        datetime_must_be_in_future: mestilah pada masa hadapan.
-        does_not_exist: tidak wujud.
-        error_enterprise_only: "%{action} is only available in the OpenProject Enterprise edition."
-        error_unauthorized: tidak boleh diakses.
-        error_readonly: telah cuba untuk menulis tetapi tidak dapat ditulis.
-        error_conflict: Sementara itu, maklumat telah dikemas kini oleh sekurang-kurangnya salah satu pengguna lain.
-        error_not_found: tidak dijumpai.
-        email: adalah bukan alamat e-mel yang sah.
-        empty: tidak boleh kosong.
-        enterprise_plan_required: requires at least the %{plan_name}.
-        even: perlu sama.
-        exclusion: sudah dikhaskan.
+        does_not_exist: "tidak wujud."
+        error_enterprise_only: "%{action} is only available in the Yojana Enterprise edition."
+        error_unauthorized: "tidak boleh diakses."
+        error_readonly: "telah cuba untuk menulis tetapi tidak dapat ditulis."
+        error_conflict: "Sementara itu, maklumat telah dikemas kini oleh sekurang-kurangnya salah satu pengguna lain."
+        error_not_found: "tidak dijumpai."
+        email: "adalah bukan alamat e-mel yang sah."
+        empty: "tidak boleh kosong."
+        enterprise_plan_required: "requires at least the %{plan_name}."
+        even: "perlu sama."
+        exclusion: "sudah dikhaskan."
         feature_disabled: is not available.
         feature_disabled_for_project: is disabled for this project.
         file_too_large: adalah terlalu besar (saiz maksimum adalah %{count} Bytes).
@@ -2765,17 +2763,14 @@ ms:
     reset_token:
       action_create: Cipta
       action_reset: Tetapkan semula
-      heading_reset: Set semula token sandaran
-      heading_create: Cipta token sandaran
-      implications: 'Mengaktifkan sandaran akan membenarkan mana-mana pengguna dengan kebenaran yang diperlukan, dan token sandaran ini untuk memuat turun sandaran yang mengandungi semua data pemasangan OpenProject ini. Ini termasuk data semua pengguna.
-
-        '
-      info: 'Anda perlu menghasilkan token sandaran untuk dapat mencipta sandaran. Setiap kali anda ingin meminta sandaran anda perlu menyediakan token ini. Anda boleh memadam token sandaran tersebut untuk menyahdayakan sandaran untuk pengguna ini.
-
-        '
-      verification_html: 'Enter %{word} to confirm you want to %{action} the backup token.
-
-        '
+      heading_reset: "Set semula token sandaran"
+      heading_create: "Cipta token sandaran"
+      implications: >
+        Mengaktifkan sandaran akan membenarkan mana-mana pengguna dengan kebenaran yang diperlukan, dan token sandaran ini untuk memuat turun sandaran yang mengandungi semua data pemasangan Yojana ini. Ini termasuk data semua pengguna.
+      info: >
+        Anda perlu menghasilkan token sandaran untuk dapat mencipta sandaran. Setiap kali anda ingin meminta sandaran anda perlu menyediakan token ini. Anda boleh memadam token sandaran tersebut untuk menyahdayakan sandaran untuk pengguna ini.
+      verification: >
+        Masukkan %{word} untuk mengesahkan anda mahu %{action} token sandaran.
       verification_word_reset: Tetapkan semula
       verification_word_create: cipta
       warning: 'Apabila anda mencipta token baharu anda hanya akan dibenarkan untuk meminta sandaran selepas 24 jam. Ini adalah langkah keselamatan. Selepas itu anda boleh meminta sandaran pada bila-bila masa menggunakan token tersebut.
@@ -3104,29 +3099,26 @@ ms:
       title: Alat tambah perusahaan
       plan_title: Enterprise %{plan} add-on
       plan_name: "%{plan} enterprise plan"
-      trial_text: This feature is included in your active Enterprise trial.
-      plan_text_html: Available starting with the %{plan_name}.
-      unlimited: Tiada had
-      already_have_token: 'Already have a token? Add it using the button below to upgrade to the booked Enterprise plan.
-
-        '
-      hide_banner: Hide this banner
-      homescreen_description: 'Enterprise plans extend the Community edition of OpenProject with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running OpenProject in a mission-critical environment.
-
-        '
+      plan_text_html: "Available starting with the %{plan_name}."
+      unlimited: "Tiada had"
+      already_have_token: >
+        Already have a token? Add it using the button below to upgrade to the booked Enterprise plan.
+      hide_banner: "Hide this banner"
+      homescreen_description: >
+        Enterprise plans extend the Community edition of Yojana with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running Yojana in a mission-critical environment.
       homescreen_subline: By upgrading, you will also be supporting an open source project.
       baseline_comparison:
         description: Sorotkan perubahan yang dibuat ke senarai ini pada bila-bila masa lalu.
       benefits:
-        description: Apakah manfaat edisi Enterprise di premis?
-        high_security: Fitur keselamatan
-        high_security_text: Log masuk tunggal (SAML, OpenID Connect, CAS), kumpulan LDAP.
-        installation: Sokongan pemasangan
-        installation_text: Jurutera perisian berpengalaman membimbing anda melalui pemasangan lengkap dan proses persediaan dalam infrastruktur anda sendiri.
-        premium_features: Tambahan Enterprise
-        premium_features_text: Board Agile, tema tersuai dan logo, graf, aliran kerja yang cerdas dengan tindakan tersuai, carian teks penuh untuk lampiran pakej kerja dan pelbagai pilihan ruang tersuai.
-        professional_support: Sokongan profesional
-        professional_support_text: Dapatkan sokongan yang boleh dipercayai, sokongan peribadi yang berkualiti tinggi daripada jurutera sokongan berpengalaman dengan pengetahuan pakar tentang menjalankan OpenProject dalam persekitaran perniagaan yang kritikal.
+        description: "Apakah manfaat edisi Enterprise di premis?"
+        high_security: "Fitur keselamatan"
+        high_security_text: "Log masuk tunggal (SAML, OpenID Connect, CAS), kumpulan LDAP."
+        installation: "Sokongan pemasangan"
+        installation_text: "Jurutera perisian berpengalaman membimbing anda melalui pemasangan lengkap dan proses persediaan dalam infrastruktur anda sendiri."
+        premium_features: "Tambahan Enterprise"
+        premium_features_text: "Board Agile, tema tersuai dan logo, graf, aliran kerja yang cerdas dengan tindakan tersuai, carian teks penuh untuk lampiran pakej kerja dan pelbagai pilihan ruang tersuai."
+        professional_support: "Sokongan profesional"
+        professional_support_text: "Dapatkan sokongan yang boleh dipercayai, sokongan peribadi yang berkualiti tinggi daripada jurutera sokongan berpengalaman dengan pengetahuan pakar tentang menjalankan Yojana dalam persekitaran perniagaan yang kritikal."
       work_package_subject_generation:
         description: Create automatically generated subjects using referenced attributes and text.
       customize_life_cycle:
@@ -3156,34 +3148,31 @@ ms:
       calculated_values:
         description: Calculated values allow you to create a mathematical formula based attribute using numeric values and other project attributes and custom fields.
       define_custom_style:
-        title: Custom color theme and logo
-        more_info: 'Perhatian: logo yang digunakan akan boleh diakses secara umum.'
-        description: Ubah suai pemasangan OpenProject dengan logo dan warna anda sendiri.
+        title: "Custom color theme and logo"
+        more_info: "Perhatian: logo yang digunakan akan boleh diakses secara umum."
+        description: Ubah suai pemasangan Yojana dengan logo dan warna anda sendiri.
       custom_actions:
         title: Tindakan tersuai
         description: Tindakan tersuai adalah pintasan satu klik ke satu set tindakan yang telah ditetapkan yang anda boleh sediakan untuk pakej kerja tertentu berdasarkan status, peranan, jenis atau projek.
       mcp_server:
-        description: Bring OpenProject into your AI workflows with a secure MCP server.
-      meeting_templates:
-        description: Define meeting templates with a set agenda structure and save time by reusing them when creating new meetings.
+        description: "Integrate AI agents with your Yojana instance through MCP."
       nextcloud_sso:
         title: Single Sign-On for Nextcloud Storage
         description: Enable seamless and secure authentication for your Nextcloud storage with Single Sign-On. Simplify access management and enhance user convenience.
       scim_api:
-        title: SCIM clients
-        description: Automate user management in OpenProject by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan.
+        title: "SCIM clients"
+        description: "Automate user management in Yojana by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan."
       sso_auth_providers:
         title: Single Sign-On (SSO)
         description: Enable users to log in via external SSO providers using SAML or OpenID Connect for seamless access and integration with existing identity systems.
       virus_scanning:
-        description: Pastikan fail yang dimuat naik dalam OpenProject diimbas untuk virus sebelum boleh diakses oleh pengguna lain.
+        description: "Pastikan fail yang dimuat naik dalam Yojana diimbas untuk virus sebelum boleh diakses oleh pengguna lain."
       project_creation_wizard:
         description: Generate a step-by-step wizard to help project managers fill out a project initiation request.
       placeholder_users:
         title: Pengguna placeholder
-        description: 'Pengguna placeholder ialah satu cara untuk memperuntukkan pakej kerja kepada pengguna yang bukan sebahagian daripada projek anda. Ianya berguna dalam pelbagai senario; contohnya, jika anda perlu menjejaki tugas untuk sumber yang masih belum dinamakan atau disediakan, atau jika anda tidak ingin memberikan akses kepada seseorang di OpenProject, tetapi masih hendak menjejaki tugas yang telah diperuntukkan ke mereka.
-
-          '
+        description: >
+          Pengguna placeholder ialah satu cara untuk memperuntukkan pakej kerja kepada pengguna yang bukan sebahagian daripada projek anda. Ianya berguna dalam pelbagai senario; contohnya, jika anda perlu menjejaki tugas untuk sumber yang masih belum dinamakan atau disediakan, atau jika anda tidak ingin memberikan akses kepada seseorang di Yojana, tetapi masih hendak menjejaki tugas yang telah diperuntukkan ke mereka.
       internal_comments:
         title: Internal comments
         description: Internal comments allow an internal team to communicate amongst themselves privately. These are only visible to certain project roles and will never be visible publicly.
@@ -3197,26 +3186,25 @@ ms:
         other: "%{count} days left of %{trial_plan} trial token"
       description_html: You have access to all %{trial_plan} features.
     trial:
-      not_found: You have requested a trial token, but that request is no longer available. Please try again.
-      wait_for_confirmation: We sent you an email to confirm your address in order to retrieve a trial token.
-      already_retrieved: 'Your trial enterprise token was already retrieved. Please check your emails for the token being attached. Please reach out to our support team if you need a new one.
-
-        '
-      successfully_saved: Your trial enterprise token has been successfully retrieved.
-      token_sent: Trial token requested
-      request_again: Request again
-      resend_action: Resend confirmation email
-      welcome_title: Quick feature overview
-      welcome_description: Dapatkan gambaran keseluruhan ringkas pengurusan projek dan kolaborasi kumpulan dengan OpenProject edisi Enterprise.
-      confirmation_info: 'We sent you an email on %{date} to %{email} with all the information to start the free trial of OpenProject Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
-
-        '
-      confirmation_subline: 'Please, check your inbox and follow the steps to start your 14-day free trial.
-
-        '
+      not_found: "You have requested a trial token, but that request is no longer available. Please try again."
+      wait_for_confirmation: "We sent you an email to confirm your address in order to retrieve a trial token."
+      already_retrieved: >
+        Your trial enterprise token was already retrieved. Please check your emails for the token being attached. Please reach out to our support team if you need a new one.
+      successfully_saved: "Your trial enterprise token has been successfully retrieved."
+      token_sent: "Trial token requested"
+      request_again: "Request again"
+      resend_action: "Resend confirmation email"
+      welcome_title: "Quick feature overview"
+      welcome_description: "Dapatkan gambaran keseluruhan ringkas pengurusan projek dan kolaborasi kumpulan dengan Yojana edisi Enterprise."
+      confirmation_info: >
+        We sent you an email on %{date} to %{email} with all the information to start the free trial of Yojana Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
+      confirmation_subline: >
+        Please, check your inbox and follow the steps to start your 14-day free trial.
       domain_caption: The token will be valid for your currently configured host name.
-      receive_newsletter: I want to receive the OpenProject [newsletter](newsletter_url).
-      consent: I agree with the [terms of service](tos_url) and the [privacy policy](privacy_url).
+      receive_newsletter_html: >
+        I want to receive the Yojana <a target="_blank" href="https://www.yojana.girishm.info/newsletter/">newsletter</a>.
+      consent_html: >
+        I agree with the <a target="_blank" href="https://www.yojana.girishm.info/terms-of-service/">terms of service</a> and the <a target="_blank" href="https://www.yojana.girishm.info/data-privacy-and-security/">privacy policy</a>.
   email_calendar_updates:
     state:
       disabled: Disabled.
@@ -3240,51 +3228,51 @@ ms:
   error_can_not_delete_in_use_archived_undisclosed: Terdapat juga pakej kerja dalam projek yang telah diarkibkan. Anda perlu meminta pentadbir untuk melaksanakan pemadaman untuk melihat projek yang mana akan terjejas.
   error_can_not_delete_in_use_archived_work_packages: 'Terdapat juga pakej kerja dalam projek yang telah diarkibkan. Anda perlu mengaktifkan semula projek berikut dahulu, sebelum anda boleh mengubah atribut pakej kerja yang berkenaan: %{archived_projects_urls}'
   error_can_not_delete_type:
-    explanation: Jenis ini mengandungi pakej kerja dan tidak boleh dipadamkan. Anda boleh melihat semua pakej kerja yang terjejas dalam <a target="_blank" href="%{url}">paparan ini</a>.
-  error_can_not_delete_standard_type: Jenis standard tidak boleh dipadamkan.
-  error_can_not_invite_user: Gagal menghantar jemputan kepada pengguna.
-  error_can_not_remove_role: Peranan ini sedang digunakan dan tidak boleh dipadam.
-  error_can_not_reopen_work_package_on_closed_version: Pakej kerja yang ditugaskan ke versi tertutup tidak boleh dibuka semula
-  error_can_not_find_all_resources: Tidak dapat mencari semua sumber yang berkaitan dengan permintaan ini.
-  error_can_not_unarchive_project: 'Projek ini tidak boleh dinyaharkibkan: %{errors}'
-  error_check_user_and_role: Sila pilih pengguna dan peranan.
-  error_code: Ralat %{code}
-  error_color_could_not_be_saved: Warna tidak dapat disimpan
-  error_cookie_missing: Kuki OpenProject tidak ditemui. Sila pastikan bahawa kuki telah diaktifkan, kerana aplikasi ini tidak akan berfungsi dengan betul tanpanya.
-  error_custom_option_not_found: Pilihan tidak wujud.
-  error_enterprise_plan_needed: You need the %{plan} enterprise plan to perform this action.
-  error_enterprise_activation_user_limit: Akaun anda tidak dapat diaktifkan (had pengguna dicapai). Sila hubungi pentadbir anda  untuk dapatkan akses.
-  error_enterprise_token_invalid_domain: Edisi Enterprise tidak aktif. Domain token Enterprise anda (%{actual}) tidak sepadan dengan nama hos sistem (%{expected}).
-  error_failed_to_delete_entry: Gagal untuk memadamkan entri ini.
-  error_in_dependent: 'Ralat dalam pencubaan untuk mengubah objek yang bergantung: %{dependent_class} #%{related_id} -  %{related_subject}: %{error}'
-  error_in_new_dependent: 'Ralat dalam percubaan untuk mencipta objek yang bergantung: %{dependent_class} - %{related_subject}: %{error}'
-  error_invalid_selected_value: Nilai yang dipilih tidak sah.
-  error_journal_attribute_not_present: Jurnal tidak mengandungi atribut %{attribute}.
-  error_pdf_export_too_many_columns: Terlalu banyak kolum dipilih untuk eksport PDF. Sila kurangkan bilangan kolum.
-  error_pdf_date_range_too_long: The selected work package date range exceeds the allowable PDF export limit. Please condense the range to a maximum of %{years} years.
-  error_pdf_failed_to_export: 'Eksport PDF tidak dapat disimpan: %{error}'
-  error_token_authenticity: Tidak dapat mengesahkan token Cross-Site Request Forgery. Adakah anda sedang mencuba untuk menghantar data di pelbagai pelayar atau tab? Sila tutup semua tab dan cuba lagi.
-  error_reminder_not_found: Peringatan itu tidak ditemui atau telah dimaklumkan tentangnya.
-  error_work_package_not_found_in_project: Pakej kerja tidak ditemui atau tidak tergolong dalam projek ini
-  error_work_package_id_not_found: Pakej kerja tidak ditemui.
-  error_must_be_project_member: perlu menjadi ahli projek
-  error_migrations_are_pending: Pemasangan OpenProject anda mempunyai migrasi pangkalan data yang belum selesai. Anda mungkin telah terlepas menjalankan migrasi semasa naik taraf terakhir anda. Sila semak panduan menaik taraf untuk menaikkan taraf pemasangan anda dengan betul.
-  error_migrations_visit_upgrade_guides: Sila kunjungi dokumentasi panduan naik taraf kami
-  error_no_default_work_package_status: Tiada status pakej kerja default telah ditetapkan. Sila semak konfigurasi anda (Pergi ke "Pentadbiran -> Status pakej kerja").
-  error_no_type_in_project: Tiada jenis yang berkaitan dengan projek ini. Sila semak tetapan Projek.
-  error_omniauth_registration_timed_out: Pendaftaran melalui penyedia pengesahan luaran telah tamat tempoh. Sila cuba lagi.
-  error_omniauth_invalid_auth: Maklumat pengesahan yang dikembalikan dari penyedia identiti adalah tidak sah. Sila hubungi pentadbir anda untuk bantuan lanjut.
-  error_password_change_failed: Ralat berlaku semasa percubaan untuk menukar kata laluan.
-  error_scm_command_failed: 'Ralat berlaku semasa percubaan untuk mengakses repositori: %{value}'
-  error_scm_not_found: Entri atau semakan tersebut tidak ditemui dalam repositori.
-  error_type_could_not_be_saved: Jenis tidak dapat disimpan
-  error_unable_delete_status: Status pakej kerja tidak boleh dipadamkan kerana ianya digunakan oleh sekurang-kurangnya satu pakej kerja.
-  error_unable_delete_default_status: Tidak dapat memadamkan status pakej kerja default. Sila pilih status pakej kerja default yang lain sebelum memadamkan yang semasa.
-  error_unable_to_connect: Tidak dapat untuk menyambung (%{value})
-  error_unable_delete_wiki: Tidak dapat memadam halaman wiki berikut.
-  error_unable_update_wiki: Tidak dapat menaik taraf halaman wiki berikut.
-  error_workflow_copy_source: Sila pilih jenis sumber atau peranan
-  error_workflow_copy_target: Sila pilih jenis sasaran dan peranan
+    explanation: 'Jenis ini mengandungi pakej kerja dan tidak boleh dipadamkan. Anda boleh melihat semua pakej kerja yang terjejas dalam <a target="_blank" href="%{url}">paparan ini</a>.'
+  error_can_not_delete_standard_type: "Jenis standard tidak boleh dipadamkan."
+  error_can_not_invite_user: "Gagal menghantar jemputan kepada pengguna."
+  error_can_not_remove_role: "Peranan ini sedang digunakan dan tidak boleh dipadam."
+  error_can_not_reopen_work_package_on_closed_version: "Pakej kerja yang ditugaskan ke versi tertutup tidak boleh dibuka semula"
+  error_can_not_find_all_resources: "Tidak dapat mencari semua sumber yang berkaitan dengan permintaan ini."
+  error_can_not_unarchive_project: "Projek ini tidak boleh dinyaharkibkan: %{errors}"
+  error_check_user_and_role: "Sila pilih pengguna dan peranan."
+  error_code: "Ralat %{code}"
+  error_color_could_not_be_saved: "Warna tidak dapat disimpan"
+  error_cookie_missing: "Kuki Yojana tidak ditemui. Sila pastikan bahawa kuki telah diaktifkan, kerana aplikasi ini tidak akan berfungsi dengan betul tanpanya."
+  error_custom_option_not_found: "Pilihan tidak wujud."
+  error_enterprise_plan_needed: "You need the %{plan} enterprise plan to perform this action."
+  error_enterprise_activation_user_limit: "Akaun anda tidak dapat diaktifkan (had pengguna dicapai). Sila hubungi pentadbir anda  untuk dapatkan akses."
+  error_enterprise_token_invalid_domain: "Edisi Enterprise tidak aktif. Domain token Enterprise anda (%{actual}) tidak sepadan dengan nama hos sistem (%{expected})."
+  error_failed_to_delete_entry: "Gagal untuk memadamkan entri ini."
+  error_in_dependent: "Ralat dalam pencubaan untuk mengubah objek yang bergantung: %{dependent_class} #%{related_id} -  %{related_subject}: %{error}"
+  error_in_new_dependent: "Ralat dalam percubaan untuk mencipta objek yang bergantung: %{dependent_class} - %{related_subject}: %{error}"
+  error_invalid_selected_value: "Nilai yang dipilih tidak sah."
+  error_journal_attribute_not_present: "Jurnal tidak mengandungi atribut %{attribute}."
+  error_pdf_export_too_many_columns: "Terlalu banyak kolum dipilih untuk eksport PDF. Sila kurangkan bilangan kolum."
+  error_pdf_date_range_too_long: "The selected work package date range exceeds the allowable PDF export limit. Please condense the range to a maximum of %{years} years."
+  error_pdf_failed_to_export: "Eksport PDF tidak dapat disimpan: %{error}"
+  error_token_authenticity: "Tidak dapat mengesahkan token Cross-Site Request Forgery. Adakah anda sedang mencuba untuk menghantar data di pelbagai pelayar atau tab? Sila tutup semua tab dan cuba lagi."
+  error_reminder_not_found: "Peringatan itu tidak ditemui atau telah dimaklumkan tentangnya."
+  error_work_package_not_found_in_project: "Pakej kerja tidak ditemui atau tidak tergolong dalam projek ini"
+  error_work_package_id_not_found: "Pakej kerja tidak ditemui."
+  error_must_be_project_member: "perlu menjadi ahli projek"
+  error_migrations_are_pending: "Pemasangan Yojana anda mempunyai migrasi pangkalan data yang belum selesai. Anda mungkin telah terlepas menjalankan migrasi semasa naik taraf terakhir anda. Sila semak panduan menaik taraf untuk menaikkan taraf pemasangan anda dengan betul."
+  error_migrations_visit_upgrade_guides: "Sila kunjungi dokumentasi panduan naik taraf kami"
+  error_no_default_work_package_status: 'Tiada status pakej kerja default telah ditetapkan. Sila semak konfigurasi anda (Pergi ke "Pentadbiran -> Status pakej kerja").'
+  error_no_type_in_project: "Tiada jenis yang berkaitan dengan projek ini. Sila semak tetapan Projek."
+  error_omniauth_registration_timed_out: "Pendaftaran melalui penyedia pengesahan luaran telah tamat tempoh. Sila cuba lagi."
+  error_omniauth_invalid_auth: "Maklumat pengesahan yang dikembalikan dari penyedia identiti adalah tidak sah. Sila hubungi pentadbir anda untuk bantuan lanjut."
+  error_password_change_failed: "Ralat berlaku semasa percubaan untuk menukar kata laluan."
+  error_scm_command_failed: "Ralat berlaku semasa percubaan untuk mengakses repositori: %{value}"
+  error_scm_not_found: "Entri atau semakan tersebut tidak ditemui dalam repositori."
+  error_type_could_not_be_saved: "Jenis tidak dapat disimpan"
+  error_unable_delete_status: "Status pakej kerja tidak boleh dipadamkan kerana ianya digunakan oleh sekurang-kurangnya satu pakej kerja."
+  error_unable_delete_default_status: "Tidak dapat memadamkan status pakej kerja default. Sila pilih status pakej kerja default yang lain sebelum memadamkan yang semasa."
+  error_unable_to_connect: "Tidak dapat untuk menyambung (%{value})"
+  error_unable_delete_wiki: "Tidak dapat memadam halaman wiki berikut."
+  error_unable_update_wiki: "Tidak dapat menaik taraf halaman wiki berikut."
+  error_workflow_copy_source: "Sila pilih jenis sumber atau peranan"
+  error_workflow_copy_target: "Sila pilih jenis sasaran dan peranan"
   error_menu_item_not_created: Item menu tidak dapat ditambah
   error_menu_item_not_saved: Item menu tidak dapat disimpan
   error_wiki_root_menu_item_conflict: 'Tidak dapat menamakan semula "%{old_name}" ke "%{new_name}" disebabkan konflik dalam item menu yang dihasilkan dengan item menu yang sedia ada "%{existing_caption}" (%{existing_identifier}).
@@ -3379,8 +3367,8 @@ ms:
     succeeded: Eksport selesai
     failed: 'Ralat telah berlaku semasa cuba mengeksport pakej kerja: %{message}'
     demo:
-      heading: Demo PDF
-      footer: Generated by OpenProject
+      heading: "Demo PDF"
+      footer: "Generated by Yojana"
       button_text: Generate Demo PDF
     errors:
       embedded_table_with_too_many_columns: This embedded work package table could not fit on the page, please reduce the number of columns.
@@ -3501,7 +3489,7 @@ ms:
         no_results_subtext: Add one or multiple projects as favorite through their overview or in a project list.
       users: Pengguna berdaftar terbaru dalam contoh ini
     blocks:
-      community: Komuniti OpenProject
+      community: "Komuniti Yojana"
       upsell:
         title: Naik taraf ke edisi Enterprise
       new_features:
@@ -3513,40 +3501,38 @@ ms:
 
             '
           new_features_list:
-            line_0: XWiki integration (Corporate plan).
-            line_1: Sprint goals.
-            line_2: "'All sprints' overview page."
-            line_3: Display backlog buckets in work packages and work package tables.
-            line_4: Improved support for project-based (semantic) identifiers.
-            line_5: Convert meeting agenda items into work packages.
-            line_6: Configure cost types per project.
+            line_0: Automated project initiation (Enterprise add-on).
+            line_1: "Meetings: add new or existing work packages as outcomes."
+            line_2: "Meetings: show iCal responses in Yojana."
+            line_3: "Recurring meetings: duplicate agenda items to the next occurrence."
+            line_4: "Release to Community: Attribute highlighting."
+            line_5: Warning before opening external links in user-provided content (Enterprise add-on).
+            line_6: Improved performance and user experience, including the Activity tab and Documents module.
     links:
-      upgrade_enterprise_edition: Naik taraf ke edisi Enterprise
-      postgres_migration: Mengalihkan pemasangan anda ke PostgreSQL
-      user_guides: Panduan pengguna
-      faq: SOALAN-SOALAN LAZIM
-      impressum: Notis undang-undang
-      glossary: Glosari
-      shortcuts: Pintasan
-      blog: Blog OpenProject
-      forums: Forum komuniti
-      security_alerts: Security alerts
-      newsletter: Newsletter
+      upgrade_enterprise_edition: "Naik taraf ke edisi Enterprise"
+      postgres_migration: "Mengalihkan pemasangan anda ke PostgreSQL"
+      user_guides: "Panduan pengguna"
+      faq: "SOALAN-SOALAN LAZIM"
+      impressum: "Notis undang-undang"
+      glossary: "Glosari"
+      shortcuts: "Pintasan"
+      blog: "Blog Yojana"
+      forums: "Forum komuniti"
+      security_alerts: "Security alerts"
+      newsletter: "Newsletter"
   image_conversion:
     imagemagick: Imagemagick
   journals:
     changes_retracted: Perubahan telah ditarik balik.
     caused_changes:
-      budget_deleted: Budget has been deleted
-      dates_changed: Tarikh ditukar
-      default_attribute_written: Atribut baca-sahaja ditulis
-      import: Imported
-      progress_mode_changed_to_status_based: Pengiraan perkembangan dikemas kini
-      status_changed: Status '%{status_name}'
-      system_update: 'Kemas kini sistem OpenProject:'
-      work_package_duplicate_closed: 'Pakej kerja pendua dikemas kini:'
-      total_percent_complete_mode_changed_to_work_weighted_average: Pengiraan % Jumlah lengkap kini ditimbang mengikut Kerja.
-      total_percent_complete_mode_changed_to_simple_average: Pengiraan % Jumlah lengkap sekarang berdasarkan purata mudah hanya % nilai Lengkap.
+      dates_changed: "Tarikh ditukar"
+      default_attribute_written: "Atribut baca-sahaja ditulis"
+      progress_mode_changed_to_status_based: "Pengiraan perkembangan dikemas kini"
+      status_changed: "Status '%{status_name}'"
+      system_update: "Kemas kini sistem Yojana:"
+      work_package_duplicate_closed: "Pakej kerja pendua dikemas kini:"
+      total_percent_complete_mode_changed_to_work_weighted_average: "Pengiraan % Jumlah lengkap kini ditimbang mengikut Kerja."
+      total_percent_complete_mode_changed_to_simple_average: "Pengiraan % Jumlah lengkap sekarang berdasarkan purata mudah hanya % nilai Lengkap."
     cause_descriptions:
       import:
         header: changes by %{author}
@@ -3610,7 +3596,7 @@ ms:
         notifications: Notification settings
         email_reminders: Email reminders
     access_tokens:
-      description: Provider tokens are issued by OpenProject, allowing other applications to access it. Client tokens are issued by other applications, allowing OpenProject to access them.
+      description: "Provider tokens are issued by Yojana, allowing other applications to access it. Client tokens are issued by other applications, allowing Yojana to access them."
       no_results:
         title: Tiada token akses untuk dipaparkan
         description: Semuanya telah dinyahdayakan. Mereka boleh didayakan semula dalam menu pentadbiran.
@@ -3626,49 +3612,49 @@ ms:
         provider:
           title: Provider tokens
       token/api:
-        blank_description: There is no API token yet. You can create one using the button below.
-        blank_title: No API token
-        title: API
-        table_title: API tokens
-        text_hint: Token API membenarkan aplikasi pihak ketiga untuk berkomunikasi dengan OpenProject ini, contohnya, melalui REST API.
-        static_token_name: API token
-        disabled_text: Token API tidak didayakan oleh pentadbir. Sila hubungi pentadbir anda untuk menggunakan fitur ini.
-        add_button: API token
+        blank_description: "There is no API token yet. You can create one using the button below."
+        blank_title: "No API token"
+        title: "API"
+        table_title: "API tokens"
+        text_hint: "Token API membenarkan aplikasi pihak ketiga untuk berkomunikasi dengan Yojana ini, contohnya, melalui REST API."
+        static_token_name: "API token"
+        disabled_text: "Token API tidak didayakan oleh pentadbir. Sila hubungi pentadbir anda untuk menggunakan fitur ini."
+        add_button: "API token"
       ical:
-        blank_description: To add an iCalendar token, subscribe to a new or existing calendar from within the Calendar module of a project. You must have the necessary permissions.
-        blank_title: No iCalendar token
-        title: iCalendar
-        table_title: iCalendar tokens
-        text_hint_link: iCalendar tokens allow users to [subscribe to OpenProject calendars](docs_url) and view up-to-date work package information from external clients.
-        disabled_text: Langganan iCalendar tidak didayakan oleh pentadbir. Sila hubungi pentadbir anda untuk menggunakan fitur ini.
+        blank_description: "To add an iCalendar token, subscribe to a new or existing calendar from within the Calendar module of a project. You must have the necessary permissions."
+        blank_title: "No iCalendar token"
+        title: "iCalendar"
+        table_title: "iCalendar tokens"
+        text_hint_link: "iCalendar tokens allow users to [subscribe to Yojana calendars](docs_url) and view up-to-date work package information from external clients."
+        disabled_text: "Langganan iCalendar tidak didayakan oleh pentadbir. Sila hubungi pentadbir anda untuk menggunakan fitur ini."
       oauth_application:
-        active_tokens: Active tokens
-        blank_description: There is no third-party application access configured and active for you.
-        blank_title: No OAuth application token
-        last_refreshed_at: Last refreshed at
-        title: OAuth
-        table_title: OAuth application tokens
-        text_hint: OAuth application tokens allow third-party applications to connect with this OpenProject instance.
+        active_tokens: "Active tokens"
+        blank_description: "There is no third-party application access configured and active for you."
+        blank_title: "No OAuth application token"
+        last_used_at: "Last used at"
+        title: "OAuth"
+        table_title: "OAuth application tokens"
+        text_hint: "OAuth application tokens allow third-party applications to connect with this Yojana instance."
       oauth_client:
-        blank_description: There are no OAuth client tokens yet.
-        blank_title: No OAuth client tokens
-        failed: An error occurred and the token couldn't be removed. Please try again later.
-        integration_type: Integration type
-        table_title: OAuth client tokens
-        text_hint: OAuth client tokens allow this OpenProject instance to connect with external applications, such as file storages.
-        title: OAuth
-        remove_token: Do you really want to remove this token? You will need to login again on %{integration}.
-        removed: OAuth client token successfully removed
-        unknown_integration: Unknown
+        blank_description: "There are no OAuth client tokens yet."
+        blank_title: "No OAuth client tokens"
+        failed: "An error occurred and the token couldn't be removed. Please try again later."
+        integration_type: "Integration type"
+        table_title: "OAuth client tokens"
+        text_hint: "OAuth client tokens allow this Yojana instance to connect with external applications, such as file storages."
+        title: "OAuth"
+        remove_token: "Do you really want to remove this token? You will need to login again on %{integration}."
+        removed: "OAuth client token successfully removed"
+        unknown_integration: "Unknown"
       token/rss:
-        add_button: RSS token
-        blank_description: There is no RSS token yet. You can create one using the button below.
-        blank_title: No RSS token
-        title: RSS
-        table_title: RSS tokens
-        text_hint: RSS tokens allow users to keep up with the latest changes in this OpenProject instance via an external RSS reader.
-        static_token_name: RSS token
-        disabled_text: RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature.
+        add_button: "RSS token"
+        blank_description: "There is no RSS token yet. You can create one using the button below."
+        blank_title: "No RSS token"
+        title: "RSS"
+        table_title: "RSS tokens"
+        text_hint: "RSS tokens allow users to keep up with the latest changes in this Yojana instance via an external RSS reader."
+        static_token_name: "RSS token"
+        disabled_text: "RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature."
       storages:
         unknown_storage: Storan tidak dikenal pasti
     email_reminders:
@@ -3892,51 +3878,48 @@ ms:
   label_collapse: Sembunyikan
   label_collapsed_click_to_show: Disembunyikan. Klik untuk paparkan
   label_configuration: konfigurasi
-  label_comment_add: Tambah komen
-  label_comment_added: Komen ditambah
-  label_comment_delete: Padam komen
-  label_comment_plural: Komen
-  label_commits_per_author: Komit setiap pengarang
-  label_commits_per_month: Komit setiap bulan
-  label_confirmation: Pengesahan
-  label_contains: mengandungi
-  label_starts_with: starts with
-  label_content: Kandungan
-  label_color_plural: Warna
-  label_copied: disalin
-  label_copy_same_as_target: Sama seperti sasaran
-  label_copy_source: Sumber
-  label_copy_target: Sasaran
-  label_copy_workflow_from: Salin aliran kerja dari
-  label_copy_workflow_from_type: Copy to another type
-  label_copy_workflow_from_role: Copy to other roles
-  label_copy_project: Salin projek
-  label_core_version: Versi teras
-  label_core_build: Binaan teras
-  label_created_by: Dicipta oleh %{user}
-  label_current_status: Status semasa
-  label_current_version: Versi semasa
-  label_custom_field_add_no_type: Tambah ruangan ini ke jenis pakej kerja
-  label_custom_field_new: Ruang tersuai baharu
-  label_custom_field_plural: Ruangan tersuai
-  label_custom_field_default_type: Jenis kosong
-  label_custom_style: Reka bentuk
-  label_custom_style_description: Pilih cara OpenProject melihat kepada anda dengan tema, pilih warna lalai anda untuk digunakan dalam apl dan rupa eksport.
-  label_dashboard: Papan Pemuka
-  label_database_version: Versi PostgreSQL
-  label_date: Tarikh
-  label_dates: Dates
-  label_date_and_time: Tarikh dan masa
-  label_date_format: Format tarikh
-  label_date_from: Dari
-  label_date_from_to: Dari %{start} hingga %{end}
-  label_date_to: Ke
-  label_day_plural: hari-hari
-  label_default: Default
-  label_delete_user: Padam pengguna
-  label_delete_project: Padam projek
-  label_delete: Padamkan
-  label_deleted: dipadam
+  label_comment_add: "Tambah komen"
+  label_comment_added: "Komen ditambah"
+  label_comment_delete: "Padam komen"
+  label_comment_plural: "Komen"
+  label_commits_per_author: "Komit setiap pengarang"
+  label_commits_per_month: "Komit setiap bulan"
+  label_confirmation: "Pengesahan"
+  label_contains: "mengandungi"
+  label_content: "Kandungan"
+  label_color_plural: "Warna"
+  label_copied: "disalin"
+  label_copy_same_as_target: "Sama seperti sasaran"
+  label_copy_source: "Sumber"
+  label_copy_target: "Sasaran"
+  label_copy_workflow_from: "Salin aliran kerja dari"
+  label_copy_project: "Salin projek"
+  label_core_version: "Versi teras"
+  label_core_build: "Binaan teras"
+  label_created_by: "Dicipta oleh %{user}"
+  label_current_status: "Status semasa"
+  label_current_version: "Versi semasa"
+  label_custom_field_add_no_type: "Tambah ruangan ini ke jenis pakej kerja"
+  label_custom_field_new: "Ruang tersuai baharu"
+  label_custom_field_plural: "Ruangan tersuai"
+  label_custom_field_default_type: "Jenis kosong"
+  label_custom_style: "Reka bentuk"
+  label_custom_style_description: "Pilih cara Yojana melihat kepada anda dengan tema, pilih warna lalai anda untuk digunakan dalam apl dan rupa eksport."
+  label_dashboard: "Papan Pemuka"
+  label_database_version: "Versi PostgreSQL"
+  label_date: "Tarikh"
+  label_dates: "Dates"
+  label_date_and_time: "Tarikh dan masa"
+  label_date_format: "Format tarikh"
+  label_date_from: "Dari"
+  label_date_from_to: "Dari %{start} hingga %{end}"
+  label_date_to: "Ke"
+  label_day_plural: "hari-hari"
+  label_default: "Default"
+  label_delete_user: "Padam pengguna"
+  label_delete_project: "Padam projek"
+  label_delete: "Padamkan"
+  label_deleted: "dipadam"
   label_deleted_custom_field: "(ruang tersuai yang telah dipadam)"
   label_deleted_custom_item: "(item dipadamkan)"
   label_deleted_custom_option: "(pilihan yang telah dipadam)"
@@ -4192,66 +4175,58 @@ ms:
   label_not_found: tidak ditemui
   label_none: tiada
   label_none_parentheses: "(tiada)"
-  label_not_contains: tidak mengandungi
-  label_not_equals: adalah bukan
-  label_life_cycle_step_plural: Project life cycle
-  label_on: pada
-  label_operator_all: bukan kosong
-  label_operator_none: adalah kosong
-  label_operator_equals_or: adalah (ATAU)
-  label_operator_equals_all: adalah (DAN)
-  label_operator_shared_with_user_any: sebarang
-  label_open: buka
-  label_closed: ditutup
-  label_open_menu: Buka menu
-  label_open_work_packages: buka
-  label_open_work_packages_plural: buka
-  label_openproject_website: Laman web OpenProject
-  label_optional_description: Deskripsi
-  label_options: Pilihan
-  label_other: Lain-lain
-  label_overall_activity: Aktiviti keseluruhan
-  label_overview: Gambaran Keseluruhan
-  label_page_title: Tajuk halaman
-  label_parent_group_caption: 'Setting a parent group will make this group a subgroup of the selected parent group. This will also inherit all memberships, including permissions of the parent group.
-
-    '
-  label_part_of: sebahagian daripada
-  label_password_lost: Lupa kata laluan anda?
-  label_password_rule_lowercase: Huruf Kecil
-  label_password_rule_numeric: Aksara Nombor
-  label_password_rule_special: Aksara Khas
-  label_password_rule_uppercase: Huruf Besar
-  label_password_requirement_lowercase: Must contain at least one lowercase character.
-  label_password_requirement_numeric: Must contain at least one numeric character.
-  label_password_requirement_special: Must contain at least one special character.
-  label_password_requirement_uppercase: Must contain at least one uppercase character.
-  label_path_encoding: Laluan pengekodan
-  label_per_page: 'Setiap halaman:'
-  label_people: Orang
-  label_permissions: Kebenaran
-  label_permissions_report: Laporan kebenaran
-  label_personalize_page: Peribadikan halaman ini
-  label_placeholder_user: Pengguna placeholder
-  label_placeholder_user_new: Pengguna placeholder baharu
-  label_placeholder_user_plural: Pengguna placeholder
-  label_planning: Perancangan
-  label_please_login: Sila log masuk
-  label_plugins: Plugin
-  label_portfolio_plural: Portfolios
-  label_modules_and_plugins: Modul dan Plugin
-  label_precedes: mendahului
-  label_preferences: Keutamaan
-  label_preview: Previu
-  label_preview_not_available: Previu tidak tersedia
-  label_previous: Sebelumnya
-  label_previous_week: Minggu sebelumnya
-  label_previous_year: Previous year
-  label_principal_invite_via_email: atau jemput pengguna baharu melalui e-mel
-  label_principal_search: Tambah pengguna atau kumpulan sedia ada
-  label_privacy_policy: Privasi data dan dasar keselamatan
-  label_product_version: Versi produk
-  label_profile: Profil
+  label_not_contains: "tidak mengandungi"
+  label_not_equals: "adalah bukan"
+  label_life_cycle_step_plural: "Project life cycle"
+  label_on: "pada"
+  label_operator_all: "bukan kosong"
+  label_operator_none: "adalah kosong"
+  label_operator_equals_or: "adalah (ATAU)"
+  label_operator_equals_all: "adalah (DAN)"
+  label_operator_shared_with_user_any: "sebarang"
+  label_open: "buka"
+  label_closed: "ditutup"
+  label_open_menu: "Buka menu"
+  label_open_work_packages: "buka"
+  label_open_work_packages_plural: "buka"
+  label_openproject_website: "Laman web Yojana"
+  label_optional_description: "Deskripsi"
+  label_options: "Pilihan"
+  label_other: "Lain-lain"
+  label_overall_activity: "Aktiviti keseluruhan"
+  label_overview: "Gambaran Keseluruhan"
+  label_page_title: "Tajuk halaman"
+  label_part_of: "sebahagian daripada"
+  label_password_lost: "Lupa kata laluan anda?"
+  label_password_rule_lowercase: "Huruf Kecil"
+  label_password_rule_numeric: "Aksara Nombor"
+  label_password_rule_special: "Aksara Khas"
+  label_password_rule_uppercase: "Huruf Besar"
+  label_path_encoding: "Laluan pengekodan"
+  label_per_page: "Setiap halaman:"
+  label_people: "Orang"
+  label_permissions: "Kebenaran"
+  label_permissions_report: "Laporan kebenaran"
+  label_personalize_page: "Peribadikan halaman ini"
+  label_placeholder_user: "Pengguna placeholder"
+  label_placeholder_user_new: "Pengguna placeholder baharu"
+  label_placeholder_user_plural: "Pengguna placeholder"
+  label_planning: "Perancangan"
+  label_please_login: "Sila log masuk"
+  label_plugins: "Plugin"
+  label_portfolio_plural: "Portfolios"
+  label_modules_and_plugins: "Modul dan Plugin"
+  label_precedes: "mendahului"
+  label_preferences: "Keutamaan"
+  label_preview: "Previu"
+  label_preview_not_available: "Previu tidak tersedia"
+  label_previous: "Sebelumnya"
+  label_previous_week: "Minggu sebelumnya"
+  label_principal_invite_via_email: "atau jemput pengguna baharu melalui e-mel"
+  label_principal_search: "Tambah pengguna atau kumpulan sedia ada"
+  label_privacy_policy: "Privasi data dan dasar keselamatan"
+  label_product_version: "Versi produk"
+  label_profile: "Profil"
   label_percent_complete: "% Selesai"
   label_progress_tracking: Penjejakan kemajuan
   label_project: Projek
@@ -4644,11 +4619,11 @@ ms:
   mail_body_backup_token_reset_user_info: Token sandaran anda telah ditetapkan semula.
   mail_body_backup_token_info: Token sebelumnya sudah tidak sah.
   mail_body_backup_waiting_period: Token baharu akan diaktifkan dalam %{hours} jam.
-  mail_body_backup_token_warning: Jika ini bukan anda, log masuk ke OpenProject dengan serta merta dan tetapkannya semula.
-  mail_body_incoming_email_error: E-mel yang anda hantar ke OpenProject tidak boleh diproses.
-  mail_body_incoming_email_error_in_reply_to: Di %{received_at} %{from_email} menulis
-  mail_body_incoming_email_error_logs: Log
-  mail_body_lost_password: 'Untuk menukar kata laluan, klik pautan berikut:'
+  mail_body_backup_token_warning: Jika ini bukan anda, log masuk ke Yojana dengan serta merta dan tetapkannya semula.
+  mail_body_incoming_email_error: E-mel yang anda hantar ke Yojana tidak boleh diproses.
+  mail_body_incoming_email_error_in_reply_to: "Di %{received_at} %{from_email} menulis"
+  mail_body_incoming_email_error_logs: "Log"
+  mail_body_lost_password: "Untuk menukar kata laluan, klik pautan berikut:"
   mail_password_change_not_possible:
     title: Tidak dapat menukar kata laluan
     body: Akaun anda %{app_title} telah disambungkan ke penyedia pengesahan luaran (%{name}).
@@ -4658,23 +4633,23 @@ ms:
   mail_body_register_user: Kepada %{name},
   mail_body_register_links_html: |
     Dengan rasa lapang, sila melayari saluran Youtube kami (%{youtube_link}), di mana kami akan menyediakan webinar (%{webinar_link})
-    dan video-video "Mari bermula" (%{get_started_link}) untuk membuat langkah pertama anda di OpenProject dengan mudah.
+    dan video-video "Mari bermula" (%{get_started_link}) untuk membuat langkah pertama anda di Yojana dengan mudah.
     <br />
     Jika anda mempunyai sebarang soalan, rujuklah dokumentasi kami (%{documentation_link}) atau hubungi pentadbir anda.
-  mail_body_register_closing: Pasukan OpenProject anda
-  mail_body_register_ending: 'Kekal berhubung! Yang benar, '
+  mail_body_register_closing: "Pasukan Yojana anda"
+  mail_body_register_ending: "Kekal berhubung! Yang benar, "
   mail_body_reminder: "%{count} pakej kerja yang ditugaskan kepada anda akan tamat dalam masa %{days} hari yang akan datang:"
   mail_body_group_reminder: '%{count} pakej kerja yang ditugaskan kepada kumpulan "%{group}" akan tamat dalam masa %{days} hari yang akan datang:'
-  mail_body_wiki_page_added: Halaman wiki '%{id}' telah ditambah oleh %{author}.
-  mail_body_wiki_page_updated: Halaman wiki '%{id}' telah dikemas kini oleh %{author}.
-  mail_subject_account_activation_request: Permintaan pengaktifan akaun %{value}
-  mail_subject_backup_ready: Sandaran anda telah siap
-  mail_subject_backup_token_reset: Tetapkan semula token sandaran
-  mail_subject_incoming_email_error: E-mel yang anda hantar ke OpenProject tidak boleh diproses
-  mail_subject_lost_password: Kata laluan %{value} anda
-  mail_subject_register: Pengaktifan akaun %{value} anda
-  mail_subject_wiki_content_added: Halaman wiki '%{id}' telah ditambah
-  mail_subject_wiki_content_updated: Halaman wiki '%{id}' telah dikemas kini
+  mail_body_wiki_page_added: "Halaman wiki '%{id}' telah ditambah oleh %{author}."
+  mail_body_wiki_page_updated: "Halaman wiki '%{id}' telah dikemas kini oleh %{author}."
+  mail_subject_account_activation_request: "Permintaan pengaktifan akaun %{value}"
+  mail_subject_backup_ready: "Sandaran anda telah siap"
+  mail_subject_backup_token_reset: "Tetapkan semula token sandaran"
+  mail_subject_incoming_email_error: "E-mel yang anda hantar ke Yojana tidak boleh diproses"
+  mail_subject_lost_password: "Kata laluan %{value} anda"
+  mail_subject_register: "Pengaktifan akaun %{value} anda"
+  mail_subject_wiki_content_added: "Halaman wiki '%{id}' telah ditambah"
+  mail_subject_wiki_content_updated: "Halaman wiki '%{id}' telah dikemas kini"
   mail_member_added_project:
     subject: "%{project} - Anda telah ditambah sebagai ahli"
     body:
@@ -4698,17 +4673,17 @@ ms:
       roles: 'Anda kini mempunyai peranan yang berikut:'
   mail_user_activation_limit_reached:
     subject: Had pengaktifan pengguna dicapai
-    message_html: |
-      A new user (%{email}) tried to create an account on an OpenProject environment that you manage (%{host}).
-      The user cannot activate their account since the user limit has been reached.
+    message: |
+      Pengguna baharu (%{email}) telah cuba mencipta satu akaun pada persekitaran Yojana yang anda uruskan (%{host}).
+      Pengguna tersebut tidak dapat mengaktifkan akaun mereka kerana had pengguna telah dicapai.
     steps:
-      a: Naik taraf pelan pembayaran anda ([di sini](upgrade_url))
-      b: Kunci atau padam pengguna sedia ada ([di sini](users_url))
-      label: 'Untuk membenarkan pengguna untuk daftar masuk, anda juga boleh: '
-  more_actions: Lebih banyak fungsi
-  noscript_description: Anda perlu mengaktifkan JavaScript untuk menggunakan OpenProject!
-  noscript_heading: JavaScript dinyahdayakan
-  noscript_learn_more: Ketahui lebih lanjut
+      label: "Untuk membenarkan pengguna untuk daftar masuk, anda juga boleh: "
+      a: "Naik taraf pelan pembayaran anda ([di sini](upgrade_url))" #here turned into a link
+      b: "Kunci atau padam pengguna sedia ada ([di sini](users_url))" #here turned into a link
+  more_actions: "Lebih banyak fungsi"
+  noscript_description: "Anda perlu mengaktifkan JavaScript untuk menggunakan Yojana!"
+  noscript_heading: "JavaScript dinyahdayakan"
+  noscript_learn_more: "Ketahui lebih lanjut"
   notice_accessibility_mode: Mod kebolehcapaian boleh didayakan dalam [tetapan akaun](url) anda.
   notice_account_activated: Akaun anda telah diaktifkan. Anda kini boleh log masuk.
   notice_account_already_activated: Akaun tersebut sudah diaktifkan.
@@ -4784,10 +4759,10 @@ ms:
   notice_automatic_set_of_standard_type: Tetapkan jenis standard secara automatik.
   notice_logged_out: Anda telah dilog keluar.
   notice_wont_delete_auth_source: Sambungan LDAP tidak boleh dipadam sekiranya masih ada pengguna yang menggunakannya.
-  notice_project_cannot_update_custom_fields: 'Anda tidak boleh mengemas kini ruang tersuai tersedia projek. Projek tersebut tidak sah: %{errors}'
-  notice_attachment_migration_wiki_page: 'Halaman ini dijanakan secara automatik semasa penaiktarafan OpenProject. Ia mengandungi semua lampiran yang sebelum ini berkaitan dengan %{container_type} "%{container_name}".
-
-    '
+  notice_project_cannot_update_custom_fields: "Anda tidak boleh mengemas kini ruang tersuai tersedia projek. Projek tersebut tidak sah: %{errors}"
+  notice_attachment_migration_wiki_page: >
+    Halaman ini dijanakan secara automatik semasa penaiktarafan Yojana. Ia mengandungi semua lampiran yang sebelum ini berkaitan dengan %{container_type} "%{container_name}".
+  #Default format for numbers
   number:
     format:
       delimiter: ","
@@ -4807,138 +4782,127 @@ ms:
           mb: MB
           tb: TB
   onboarding:
-    heading_getting_started: Dapatkan gambaran keseluruhan
-    text_getting_started_description: Dapatkan gambaran ringkas pengurusan projek dan kolaborasi kumpulan dengan OpenProject. Anda boleh mula semula video ini di menu bantuan.
-    welcome: Selamat datang ke %{app_title}
-    select_language: Sila pilih bahasa anda
-  open_project:
-    common:
-      work_package_card_component:
-        drag_handle:
-          label: Drag to reorder
-        menu:
-          label_actions: Work package actions
-        parent: Parent
-        undisclosed: Undisclosed
-  permission_add_work_package_comments: Add comments
-  permission_add_work_packages: Tambah pakej kerja
-  permission_add_messages: Pos mesej
-  permission_add_project: Cipta projek
-  permission_add_portfolios: Create portfolios
-  permission_add_programs: Create programs
-  permission_add_work_package_attachments: Tambah lampiran
-  permission_add_work_package_attachments_explanation: Benarkan penambahan lampiran tanpa kebenaran Edit pakej kerja
-  permission_add_internal_comments: Write internal comments
-  permission_archive_project: Arkib projek
-  permission_create_user: Cipta pengguna
-  permission_manage_user: Edit pengguna
-  permission_manage_placeholder_user: Cipta, edit, dan buang pengguna placeholder
-  permission_add_subprojects: Cipta subprojek
-  permission_add_work_package_watchers: Tambah pemerhati
-  permission_assign_versions: Tetapkan versi
-  permission_browse_repository: Akses baca-sahaja kepada repositori (melayari dan keluar)
-  permission_change_work_package_status: Tukar status pakej kerja
-  permission_change_work_package_status_explanation: Benarkan penukaran status tanpa kebenaran Edit pakej kerja
-  permission_comment_news: Komen berita
-  permission_commit_access: Baca/tulis akses ke repositori (komit)
-  permission_copy_projects: Salin projek
-  permission_copy_projects_explanation: In template projects, this permission has a secondary function, it allows the creation of new projects derived from the template.
-  permission_copy_work_packages: Duplicate work packages
-  permission_create_backup: Cipta sandaran
-  permission_delete_work_package_watchers: Buang pemerhati
-  permission_delete_work_packages: Padam pakej kerja
-  permission_delete_messages: Padam mesej
-  permission_delete_own_messages: Padam mesej sendiri
-  permission_delete_reportings: Padam laporan
-  permission_delete_timelines: Padam garis masa
-  permission_edit_work_package_comments: Moderate comments
-  permission_edit_work_package_comments_explanation: 'Caution: Users with this permission are able to edit anyone''s comment.'
-  permission_edit_work_packages: Edit pakej kerja
-  permission_edit_messages: Edit mesej
-  permission_edit_own_internal_comments: Edit own internal comments
-  permission_edit_own_work_package_comments: Edit own comments
-  permission_edit_own_messages: Edit mesej sendiri
-  permission_edit_own_time_entries: Edit log masa sendiri
-  permission_edit_others_internal_comments: Moderate internal comments
-  permission_edit_others_internal_comments_explanation: 'Caution: Users with this permission are able to edit other users'' internal comments.'
-  permission_edit_project: Edit projek
-  permission_edit_project_attributes: Edit atribut projek
-  permission_edit_project_phases: Edit project phases
-  permission_edit_reportings: Edit laporan
-  permission_edit_time_entries: Edit log masa untuk pengguna lain
-  permission_edit_timelines: Edit garis masa
-  permission_edit_wiki_pages: Edit halaman wiki
-  permission_export_work_packages: Eksport pakej kerja
-  permission_export_projects: Export projects
-  permission_invite_members_by_email: Invite members by email
-  permission_invite_members_by_email_explanation: 'Allows users to invite new members by email. Invited users will receive an email with a link to set their password and activate their account. Depends on the permission to manage members
-
-    '
-  permission_log_own_time: Log masa sendiri
-  permission_log_time: Log masa untuk pengguna lain
-  permission_manage_forums: Uruskan forum
-  permission_manage_categories: Urus kategori pakej kerja
-  permission_manage_dashboards: Urus papan pemuka
-  permission_manage_work_package_relations: Urus hubungan pakej kerja
-  permission_manage_members: Urus ahli-ahli
-  permission_manage_news: Urus berita
-  permission_manage_project_activities: Urus aktiviti projek
-  permission_manage_public_queries: Uruskan paparan umum
-  permission_manage_repository: Urus repositori
-  permission_manage_subtasks: Urus hierarki pakej kerja
-  permission_manage_versions: Urus versi
-  permission_manage_wiki: Urus wiki
-  permission_manage_own_working_times: Manage own working times
-  permission_manage_own_working_times_explanation: 'Allows users to manage their own working times, and personal non-working days.
-
-    '
-  permission_manage_working_times: Manage working times for all users
-  permission_manage_working_times_explanation: 'Allows users to manage working times for all users, including personal non-working days.
-
-    '
-  permission_move_work_packages: Alih pakej kerja
-  permission_save_queries: Simpan paparan
-  permission_search_project: Cari projek
-  permission_select_custom_fields: Pilih ruang tersuai
-  permission_select_project_custom_fields: Pilih atribut projek
-  permission_select_project_phases: Select project phases
-  permission_select_project_phases_explanation: Activate/Deactivate the phases in a project. Enables the user to select the life cycle appropriate for the project as inactive phases will not be visible in the project overview page nor the project list.
-  permission_select_project_modules: Pilih modul projek
-  permission_share_work_packages: Kongsi pakej kerja
-  permission_manage_types: Pilih jenis
-  permission_manage_own_reminders: Buat peringatan sendiri
-  permission_view_all_principals: View all users and groups
-  permission_view_all_principals_explanation: 'Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
-
-    '
-  permission_view_project: Lihat projek
-  permission_view_changesets: Lihat semakan repositori dalam OpenProject
-  permission_view_internal_comments: View internal comments
-  permission_view_commit_author_statistics: Lihat statistik pengarang komit
-  permission_view_dashboards: Lihat papan pemuka
-  permission_view_work_package_watchers: Lihat senarai pemerhati
-  permission_view_work_packages: Lihat pakej kerja
-  permission_view_messages: Lihat mesej
-  permission_view_news: Lihat berita
-  permission_view_members: Lihat ahli
-  permission_view_reportings: Lihat laporan
-  permission_view_shared_work_packages: Lihat perkongsian pakej kerja
-  permission_view_time_entries: Lihat masa yang digunakan
-  permission_view_timelines: Lihat garis masa
-  permission_view_user_email: Lihat alamat mel pengguna
-  permission_view_wiki_edits: Lihat sejarah wiki
-  permission_view_wiki_pages: Lihat wiki
-  permission_work_package_assigned: Menjadi penerima tugasan/bertanggungjawab
-  permission_work_package_assigned_explanation: Pakej kerja boleh ditugaskan kepada pengguna dan kumpulan yang memegang peranan ini dalam projek yang berkaitan
-  permission_view_project_activity: Lihat aktiviti projek
-  permission_view_project_attributes: Lihat atribut projek
-  permission_view_project_phases: View project phases
-  permission_save_bcf_queries: Simpan pertanyaan BCF
-  permission_manage_public_bcf_queries: Urus pertanyaan BCF awam
-  permission_edit_attribute_help_texts: Edit atribut teks bantuan
-  permission_manage_public_project_queries: Uruskan senarai projek awam
-  permission_view_project_query: Lihat pertanyaan projek
-  permission_edit_project_query: Edit pertanyaan projek
+    heading_getting_started: "Dapatkan gambaran keseluruhan"
+    text_getting_started_description: "Dapatkan gambaran ringkas pengurusan projek dan kolaborasi kumpulan dengan Yojana. Anda boleh mula semula video ini di menu bantuan."
+    welcome: "Selamat datang ke %{app_title}"
+    select_language: "Sila pilih bahasa anda"
+  permission_add_work_package_comments: "Add comments"
+  permission_add_work_packages: "Tambah pakej kerja"
+  permission_add_messages: "Pos mesej"
+  permission_add_project: "Cipta projek"
+  permission_add_portfolios: "Create portfolios"
+  permission_add_programs: "Create programs"
+  permission_add_work_package_attachments: "Tambah lampiran"
+  permission_add_work_package_attachments_explanation: "Benarkan penambahan lampiran tanpa kebenaran Edit pakej kerja"
+  permission_add_internal_comments: "Write internal comments"
+  permission_archive_project: "Arkib projek"
+  permission_create_user: "Cipta pengguna"
+  permission_manage_user: "Edit pengguna"
+  permission_manage_placeholder_user: "Cipta, edit, dan buang pengguna placeholder"
+  permission_add_subprojects: "Cipta subprojek"
+  permission_add_work_package_watchers: "Tambah pemerhati"
+  permission_assign_versions: "Tetapkan versi"
+  permission_browse_repository: "Akses baca-sahaja kepada repositori (melayari dan keluar)"
+  permission_change_wiki_parent_page: "Tukar induk halaman wiki "
+  permission_change_work_package_status: "Tukar status pakej kerja"
+  permission_change_work_package_status_explanation: "Benarkan penukaran status tanpa kebenaran Edit pakej kerja"
+  permission_comment_news: "Komen berita"
+  permission_commit_access: "Baca/tulis akses ke repositori (komit)"
+  permission_copy_projects: "Salin projek"
+  permission_copy_projects_explanation: "In template projects, this permission has a secondary function, it allows the creation of new projects derived from the template."
+  permission_copy_work_packages: "Duplicate work packages"
+  permission_create_backup: "Cipta sandaran"
+  permission_delete_work_package_watchers: "Buang pemerhati"
+  permission_delete_work_packages: "Padam pakej kerja"
+  permission_delete_messages: "Padam mesej"
+  permission_delete_own_messages: "Padam mesej sendiri"
+  permission_delete_reportings: "Padam laporan"
+  permission_delete_timelines: "Padam garis masa"
+  permission_delete_wiki_pages: "Padam halaman wiki"
+  permission_delete_wiki_pages_attachments: "Padam lampiran"
+  permission_edit_work_package_comments: "Moderate comments"
+  permission_edit_work_package_comments_explanation: "Caution: Users with this permission are able to edit anyone's comment."
+  permission_edit_work_packages: "Edit pakej kerja"
+  permission_edit_messages: "Edit mesej"
+  permission_edit_own_internal_comments: "Edit own internal comments"
+  permission_edit_own_work_package_comments: "Edit own comments"
+  permission_edit_own_messages: "Edit mesej sendiri"
+  permission_edit_own_time_entries: "Edit log masa sendiri"
+  permission_edit_others_internal_comments: "Moderate internal comments"
+  permission_edit_others_internal_comments_explanation: "Caution: Users with this permission are able to edit other users' internal comments."
+  permission_edit_project: "Edit projek"
+  permission_edit_project_attributes: "Edit atribut projek"
+  permission_edit_project_phases: "Edit project phases"
+  permission_edit_reportings: "Edit laporan"
+  permission_edit_time_entries: "Edit log masa untuk pengguna lain"
+  permission_edit_timelines: "Edit garis masa"
+  permission_edit_wiki_pages: "Edit halaman wiki"
+  permission_export_work_packages: "Eksport pakej kerja"
+  permission_export_projects: "Export projects"
+  permission_export_wiki_pages: "Eksport halaman wiki"
+  permission_invite_members_by_email: "Invite members by email"
+  permission_invite_members_by_email_explanation: >
+    Allows users to invite new members by email. Invited users will receive an email with a link to set their password and activate their account. Depends on the permission to manage members
+  permission_list_attachments: "Senarai lampiran"
+  permission_log_own_time: "Log masa sendiri"
+  permission_log_time: "Log masa untuk pengguna lain"
+  permission_manage_forums: "Uruskan forum"
+  permission_manage_categories: "Urus kategori pakej kerja"
+  permission_manage_dashboards: "Urus papan pemuka"
+  permission_manage_work_package_relations: "Urus hubungan pakej kerja"
+  permission_manage_members: "Urus ahli-ahli"
+  permission_manage_news: "Urus berita"
+  permission_manage_project_activities: "Urus aktiviti projek"
+  permission_manage_public_queries: "Uruskan paparan umum"
+  permission_manage_repository: "Urus repositori"
+  permission_manage_subtasks: "Urus hierarki pakej kerja"
+  permission_manage_versions: "Urus versi"
+  permission_manage_wiki: "Urus wiki"
+  permission_manage_wiki_menu: "Urus menu wiki"
+  permission_move_work_packages: "Alih pakej kerja"
+  permission_protect_wiki_pages: "Lindungi halaman wiki"
+  permission_rename_wiki_pages: "Nama semula halaman wiki"
+  permission_save_queries: "Simpan paparan"
+  permission_search_project: "Cari projek"
+  permission_select_custom_fields: "Pilih ruang tersuai"
+  permission_select_project_custom_fields: "Pilih atribut projek"
+  permission_select_project_phases: "Select project phases"
+  permission_select_project_phases_explanation: "Activate/Deactivate the phases in a project. Enables the user to select the life cycle appropriate for the project as inactive phases will not be visible in the project overview page nor the project list."
+  permission_select_project_modules: "Pilih modul projek"
+  permission_share_work_packages: "Kongsi pakej kerja"
+  permission_manage_types: "Pilih jenis"
+  permission_manage_own_reminders: "Buat peringatan sendiri"
+  permission_view_all_principals: "View all users and groups"
+  permission_view_all_principals_explanation: >
+    Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
+  permission_view_project: "Lihat projek"
+  permission_view_changesets: "Lihat semakan repositori dalam Yojana"
+  permission_view_internal_comments: "View internal comments"
+  permission_view_commit_author_statistics: "Lihat statistik pengarang komit"
+  permission_view_dashboards: "Lihat papan pemuka"
+  permission_view_work_package_watchers: "Lihat senarai pemerhati"
+  permission_view_work_packages: "Lihat pakej kerja"
+  permission_view_messages: "Lihat mesej"
+  permission_view_news: "Lihat berita"
+  permission_view_members: "Lihat ahli"
+  permission_view_reportings: "Lihat laporan"
+  permission_view_shared_work_packages: "Lihat perkongsian pakej kerja"
+  permission_view_time_entries: "Lihat masa yang digunakan"
+  permission_view_timelines: "Lihat garis masa"
+  permission_view_user_email: "Lihat alamat mel pengguna"
+  permission_view_wiki_edits: "Lihat sejarah wiki"
+  permission_view_wiki_pages: "Lihat wiki"
+  permission_work_package_assigned: "Menjadi penerima tugasan/bertanggungjawab"
+  permission_work_package_assigned_explanation: "Pakej kerja boleh ditugaskan kepada pengguna dan kumpulan yang memegang peranan ini dalam projek yang berkaitan"
+  permission_view_project_activity: "Lihat aktiviti projek"
+  permission_view_project_attributes: "Lihat atribut projek"
+  permission_view_project_phases: "View project phases"
+  permission_save_bcf_queries: "Simpan pertanyaan BCF"
+  permission_manage_public_bcf_queries: "Urus pertanyaan BCF awam"
+  permission_edit_attribute_help_texts: "Edit atribut teks bantuan"
+  permission_manage_public_project_queries: "Uruskan senarai projek awam"
+  permission_view_project_query: "Lihat pertanyaan projek"
+  permission_edit_project_query: "Edit pertanyaan projek"
   placeholders:
     default: "-"
     templated_hint: Automatically generated through type %{type}
@@ -5040,49 +5004,50 @@ ms:
     create_successful: Repositori telah didaftarkan.
     delete_sucessful: Repositori telah dipadamkan.
     destroy:
-      confirmation: Jika anda teruskan, ini akan memadamkan repositori yang diuruskan selama-lamanya.
-      info: Memadam repositori tersebut adalah tindakan yang tidak dapat dipulihkan.
-      info_not_managed: 'Perhatian: Ini TIDAK akan memadam kandungan repositori, kerana ia bukan diuruskan oleh OpenProject.'
-      managed_path_note: 'Direktori berikut akan dipadamkan: %{path}'
-      repository_verification_html: Enter the project's identifier %{identifier} to verify the deletion of its repository.
-      subtitle: Adakah anda benar-benar ingin memadam %{repository_type} projek %{project_name}?
-      subtitle_not_managed_html: Do you really want to remove the linked %{repository_type} %{url} from the project %{project_name}?
-      title_html: Delete the %{repository_type}
-      title_not_managed: Keluarkan pautan %{repository_type}?
+      confirmation: "Jika anda teruskan, ini akan memadamkan repositori yang diuruskan selama-lamanya."
+      info: "Memadam repositori tersebut adalah tindakan yang tidak dapat dipulihkan."
+      info_not_managed: "Perhatian: Ini TIDAK akan memadam kandungan repositori, kerana ia bukan diuruskan oleh Yojana."
+      managed_path_note: "Direktori berikut akan dipadamkan: %{path}"
+      repository_verification: "Masukkan pengenal projek %{identifier} untuk mengesahkan pemadaman repositorinya."
+      subtitle: "Adakah anda benar-benar ingin memadam %{repository_type} projek %{project_name}?"
+      subtitle_not_managed: "Adakah anda benar-benar mahu mengeluarkan %{repository_type} %{url} yang terpaut daripada projek %{project_name}?"
+      title: "Padamkan %{repository_type} tersebut"
+      title_not_managed: "Keluarkan pautan %{repository_type}?"
     errors:
-      build_failed: Tidak boleh mencipta repositori dengan konfigurasi yang dipilih. %{reason}
-      managed_delete: Tidak boleh memadam repositori yang diuruskan.
-      managed_delete_local: 'TIdak dapat memadam repositori tempatan pada sistem fail di ''%{path}'': %{error_message}'
-      empty_repository: Repositori tersebut wujud, tetapi kosong. Ia tidak mengandungi sebarang semakan lagi.
-      exists_on_filesystem: Direktori repositori telah wujud dalam sistem fail.
-      filesystem_access_failed: 'Satu ralat berlaku semasa mengakses repositori dalam sistem fail: %{message}'
-      not_manageable: Vendor repositori ini tidak boleh diuruskan oleh OpenProject.
-      path_permission_failed: 'Ralat berlaku semasa percubaan membuat laluan berikut: %{path}. Sila pastikan OpenProject boleh menulis pada folder tersebut.'
-      unauthorized: Anda tidak dibenarkan untuk mengakses repositori atau kelayakan tersebut tidak sah.
-      unavailable: Repositori tersebut tidak tersedia.
-      exception_title: 'Tidak boleh mengakses repositori tersebut: %{message}'
-      disabled_or_unknown_type: Jenis yang dipilih %{type} dinyahaktifkan atau tidak lagi tersedia untuk vendor SCM %{vendor}.
-      disabled_or_unknown_vendor: Vendor SCM %{vendor} dinyahaktifkan atau tidak lagi tersedia.
-      remote_call_failed: 'Panggilan ke remote yang diuruskan gagal dengan mesej ''%{message}'' (Kod: %{code})'
-      remote_invalid_response: Tindak balas yang diterima tidak sah dari remote yang diuruskan.
-      remote_save_failed: Tidak dapat menyimpan repositori dengan parameter yang diambil dari remote tersebut.
+      build_failed: "Tidak boleh mencipta repositori dengan konfigurasi yang dipilih. %{reason}"
+      managed_delete: "Tidak boleh memadam repositori yang diuruskan."
+      managed_delete_local: "TIdak dapat memadam repositori tempatan pada sistem fail di '%{path}': %{error_message}"
+      empty_repository: "Repositori tersebut wujud, tetapi kosong. Ia tidak mengandungi sebarang semakan lagi."
+      exists_on_filesystem: "Direktori repositori telah wujud dalam sistem fail."
+      filesystem_access_failed: "Satu ralat berlaku semasa mengakses repositori dalam sistem fail: %{message}"
+      not_manageable: "Vendor repositori ini tidak boleh diuruskan oleh Yojana."
+      path_permission_failed: "Ralat berlaku semasa percubaan membuat laluan berikut: %{path}. Sila pastikan Yojana boleh menulis pada folder tersebut."
+      unauthorized: "Anda tidak dibenarkan untuk mengakses repositori atau kelayakan tersebut tidak sah."
+      unavailable: "Repositori tersebut tidak tersedia."
+      exception_title: "Tidak boleh mengakses repositori tersebut: %{message}"
+      disabled_or_unknown_type: "Jenis yang dipilih %{type} dinyahaktifkan atau tidak lagi tersedia untuk vendor SCM %{vendor}."
+      disabled_or_unknown_vendor: "Vendor SCM %{vendor} dinyahaktifkan atau tidak lagi tersedia."
+      remote_call_failed: "Panggilan ke remote yang diuruskan gagal dengan mesej '%{message}' (Kod: %{code})"
+      remote_invalid_response: "Tindak balas yang diterima tidak sah dari remote yang diuruskan."
+      remote_save_failed: "Tidak dapat menyimpan repositori dengan parameter yang diambil dari remote tersebut."
     git:
       instructions:
-        managed_url: Ini adalah URL repositori Git terurus (lokal).
-        path: Tentukan laluan ke repositori Git tempatan anda (cth., %{example_path} ). Anda juga boleh menggunakan repositori jauh yang diklon ke salinan tempatan menggunakan nilai permulaan dengan http(s):// atau file://.
-        path_encoding: 'Mengatasi pengekodan laluan Git (Default: UTF-8)'
-      local_title: Pautkan repositori Git lokal sedia ada
-      local_url: URL lokal
-      local_introduction: JIka anda mempunyai repositori Git sedia ada, anda boleh pautkan ia dengan OpenProject untuk mengaksesnya dari dalam aplikasi.
-      managed_introduction: Biarkan OpenProject mencipta dan mengintegrasikan repositori Git lokal secara automatik.
-      managed_title: Repositori Git diintegrasikan ke dalam OpenProject
-      managed_url: URL yang diuruskan
-      path: Laluan ke repositori Git
-      path_encoding: Laluan pengekodan
-    go_to_revision: Pergi ke semakan
-    managed_remote: Repositori yang diurus untuk vendor ini dikendalikan dari jauh.
-    managed_remote_note: Maklumat URL dan laluan repositori ini tidak tersedia sebelum penciptaannya.
-    managed_url: URL yang diuruskan
+        managed_url: "Ini adalah URL repositori Git terurus (lokal)."
+        path: >-
+          Tentukan laluan ke repositori Git tempatan anda (cth., %{example_path} ). Anda juga boleh menggunakan repositori jauh yang diklon ke salinan tempatan menggunakan nilai permulaan dengan http(s):// atau file://.
+        path_encoding: "Mengatasi pengekodan laluan Git (Default: UTF-8)"
+      local_title: "Pautkan repositori Git lokal sedia ada"
+      local_url: "URL lokal"
+      local_introduction: "JIka anda mempunyai repositori Git sedia ada, anda boleh pautkan ia dengan Yojana untuk mengaksesnya dari dalam aplikasi."
+      managed_introduction: "Biarkan Yojana mencipta dan mengintegrasikan repositori Git lokal secara automatik."
+      managed_title: "Repositori Git diintegrasikan ke dalam Yojana"
+      managed_url: "URL yang diuruskan"
+      path: "Laluan ke repositori Git"
+      path_encoding: "Laluan pengekodan"
+    go_to_revision: "Pergi ke semakan"
+    managed_remote: "Repositori yang diurus untuk vendor ini dikendalikan dari jauh."
+    managed_remote_note: "Maklumat URL dan laluan repositori ini tidak tersedia sebelum penciptaannya."
+    managed_url: "URL yang diuruskan"
     settings:
       automatic_managed_repos_disabled: Nyahdayakan penciptaan automatik
       automatic_managed_repos: Penciptaan automatik repositori yang diuruskan
@@ -5090,32 +5055,28 @@ ms:
     scm_vendor: Sistem pengurusan kawalan sumber
     scm_type: Jenis repositori
     scm_types:
-      local: Pautkan repositori lokal sedia ada
-      existing: Pautkan repositori lokal
-      managed: Cipta repositori baharu dalam OpenProject
+      local: "Pautkan repositori lokal sedia ada"
+      existing: "Pautkan repositori lokal"
+      managed: "Cipta repositori baharu dalam Yojana"
     storage:
-      not_available: Penggunaan storan cakera tidak tersedia untuk repositori.
-      update_timeout: |-
-        Simpan informasi ruang cakera terakhir yang diperlukan untuk repositori selama N minit.
-        Memandangkan pengiraan ruang cakera yang diperlukan bagi repositori mungkin mahal, tinggikan nilai ini untuk mengurangkan kesan prestasinya.
-      oauth_application_details_html: 'The client secret value will not be accessible again after you close this window. Please copy these values into the Nextcloud OpenProject Integration settings:'
-      oauth_application_details_link_text: Pergi ke halaman tetapan
-      setup_documentation_details: 'Jika anda memerlukan bantuan mengkonfigurasikan storan fail baharu, sila lihat dokumentasi berikut:'
-      setup_documentation_details_link_text: File storages setup
-      show_warning_details: Untuk gunakan storan fail ini, ingat untuk mengaktifkan modul dan storan khusus di tetapan projek setiap projek yang dikehendaki.
+      not_available: "Penggunaan storan cakera tidak tersedia untuk repositori."
+      update_timeout: "Simpan informasi ruang cakera terakhir yang diperlukan untuk repositori selama N minit.\nMemandangkan pengiraan ruang cakera yang diperlukan bagi repositori mungkin mahal, tinggikan nilai ini untuk mengurangkan kesan prestasinya."
+      oauth_application_details: "Nilai rahsia pelanggan tidak akan dapat untuk diakses lagi setelah anda menutup tetingkap ini. Sila salin nilai-nilai ini ke tetapan Integrasi Nextcloud Yojana:"
+      oauth_application_details_link_text: "Pergi ke halaman tetapan"
+      setup_documentation_details: "Jika anda memerlukan bantuan mengkonfigurasikan storan fail baharu, sila lihat dokumentasi berikut:"
+      setup_documentation_details_link_text: "File storages setup"
+      show_warning_details: "Untuk gunakan storan fail ini, ingat untuk mengaktifkan modul dan storan khusus di tetapan projek setiap projek yang dikehendaki."
     subversion:
-      existing_title: Repositori Subversion sedia ada
-      existing_introduction: Jika anda mempunyai repositori Subversion sedia ada, anda boleh pautkan ia dengan OpenProject untuk mengaksesnya dari dalam aplikasi.
-      existing_url: URL sedia ada
+      existing_title: "Repositori Subversion sedia ada"
+      existing_introduction: "Jika anda mempunyai repositori Subversion sedia ada, anda boleh pautkan ia dengan Yojana untuk mengaksesnya dari dalam aplikasi."
+      existing_url: "URL sedia ada"
       instructions:
-        managed_url: Ini ialah URL repositori Subversion yang telah dikendalikan (lokal).
-        url: |-
-          Masukkan URL repositori. Ia mungkin sama ada menyasarkan repositori lokal (bermula dengan %{local_proto} ), atau repositori jauh.
-          Skim URL yang disokong adalah seperti berikut:
-      managed_title: Repositori Subversion diintegrasikan ke OpenProject
-      managed_introduction: Biarkan OpenProject mencipta dan mengintegrasikan repositori Subversion lokal secara automatik.
-      managed_url: URL yang diuruskan
-      password: 'Kata Laluan Repositori '
+        managed_url: "Ini ialah URL repositori Subversion yang telah dikendalikan (lokal)."
+        url: "Masukkan URL repositori. Ia mungkin sama ada menyasarkan repositori lokal (bermula dengan %{local_proto} ), atau repositori jauh.\nSkim URL yang disokong adalah seperti berikut:"
+      managed_title: "Repositori Subversion diintegrasikan ke Yojana"
+      managed_introduction: "Biarkan Yojana mencipta dan mengintegrasikan repositori Subversion lokal secara automatik."
+      managed_url: "URL yang diuruskan"
+      password: "Kata Laluan Repositori "
       username: " Nama Pengguna Repositori"
     truncated: Harap maaf, kami terpaksa pangkas direktori ini ke fail %{limit}. Entri %{truncated} telah dipadamkan dari senarai.
     named_repository: repositori %{vendor_name}
@@ -5124,172 +5085,149 @@ ms:
     warnings:
       cannot_annotate: Fail ini tidak boleh dianotasikan.
   scheduling:
-    manual: set to Manual
-    automatic: set to Automatic
-  search_input_placeholder: Cari ...
-  setting_allowed_link_protocols: Allowed link protocols
-  setting_allowed_link_protocols_text_html: Allow these protocols to be rendered as links in work package descriptions, long text fields and comments. For example, %{tel_code} or %{element_code}. Enter one protocol per line. <br/> Protocols %{http_code}, %{https_code}, and %{mailto_code} are always allowed.
-  setting_capture_external_links: Capture external links
-  setting_capture_external_links_text: 'When enabled, all external links in formatted text will redirect through a warning page before leaving the application. This helps protect users from potentially malicious external websites.
-
-    '
-  setting_capture_external_links_require_login: Require users to be logged in
-  setting_capture_external_links_require_login_text: 'When enabled, users wanting to click on external links need to be logged in before being able to continue.
-
-    '
-  setting_after_first_login_redirect_url: First login redirect
-  setting_after_first_login_redirect_url_text_html: 'Set a path to redirect users after their first login. If empty, redirects to the home page for the onboarding tour. <br/> Example: <code>/my/page</code>
-
-    '
-  setting_after_login_default_redirect_url: After login redirect
-  setting_after_login_default_redirect_url_example_html: 'Set a default path to redirect users after login, if no back link was provided. Redirects to home page if not set. <br/> Example: %{example_code}
-
-    '
-  setting_apiv3_cors_title: Perkongsian Sumber Silang Asal (CORS)
-  setting_apiv3_cors_enabled: Aktifkan CORS
-  setting_apiv3_cors_origins: 'Asal yang dibenarkan Perkongsian Sumber Rentas Asal (CORS) API V3 '
-  setting_apiv3_cors_origins_instructions_html: 'If CORS is enabled, these are the origins that are allowed to access OpenProject API. <br/> Please check the [Documentation on the Origin header](docs_url) on how to specify the expected values.
-
-    '
-  setting_apiv3_write_readonly_attributes: Tulis akses pada atribut baca-sahaja
-  setting_apiv3_write_readonly_attributes_instructions: 'If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
-
-    '
-  setting_apiv3_write_readonly_attributes_warning: 'This setting has a use-case for e.g., importing data, but allows administrators to impersonate the creation of items as other users. All creation requests are being logged however with the true author.
-
-    '
-  setting_apiv3_write_readonly_attributes_additional_html: 'For more information on attributes and supported resources, please see the [API documentation](api_documentation_link).
-
-    '
-  setting_apiv3_max_page_size: Saiz halaman maksimum API
-  setting_apiv3_max_page_size_instructions: 'Set the maximum page size the API will respond with. It will not be possible to perform API requests that return more values on a single page.
-
-    '
-  setting_apiv3_max_page_size_warning: 'Please only change this value if you are sure why you need it. Setting to a high value will result in significant performance impacts, while a value lower than the per page options will cause errors in paginated views.
-
-    '
-  setting_apiv3_docs: Dokumentasi
-  setting_apiv3_docs_enabled: Benarkan halaman docs
-  setting_apiv3_docs_enabled_instructions_html: 'Jika halaman docs dibenarkan anda boleh mendapatkan paparan interaktif dokumentasi APIv3 dibawah <a href="%{link}" target="_blank">.
-
-    '
-  setting_apiv3_docs_enabled_instructions_warning: 'Please be aware that enabling the API docs on a production system may expose sensitive information or result in accidental loss of data when not being careful. We recommend to only enable this setting for development purposes.
-
-    '
-  setting_attachment_whitelist: Lampiran memuat naik senarai putih
-  setting_email_delivery_method: Kaedah penghantaran e-mel
-  setting_emails_salutation: Menggelar pengguna dalam e-mel dengan
-  setting_oauth_allow_remapping_of_existing_users: Allow remapping of existing users
-  setting_sendmail_location: Lokasi sendmail boleh dilaksanakan
-  setting_sendmail_arguments: Arguments for sendmail
-  setting_smtp_enable_starttls_auto: Gunakan STARTTLS secara automatik jika tersedia
-  setting_smtp_ssl: Guna sambungan SSL
-  setting_smtp_address: Server SMTP
-  setting_smtp_port: Port SMTP
-  setting_smtp_authentication: Pengesahan SMTP
-  setting_smtp_user_name: Nama pengguna SMTP
-  setting_smtp_password: Kata laluan SMTP
-  setting_smtp_domain: Domain SMTP HELO
-  setting_activity_days_default: Hari yang dipaparkan pada aktiviti projek
-  setting_api_tokens_enabled: Enable API tokens
-  setting_api_tokens_enabled_caption: 'Decide whether users can create personal API tokens in their account settings. These tokens can be used to access the different APIs of OpenProject, such as APIv3 and MCP.
-
-    '
-  setting_app_subtitle: Subtajuk aplikasi
-  setting_app_title: Tajuk aplikasi
-  setting_organization_name: Organization name
-  setting_attachment_max_size: Saiz maksimum lampiran
-  setting_show_work_package_attachments: Paparkan lampiran di tab fail secara default
-  setting_antivirus_scan_mode: Mod pengimbas
-  setting_antivirus_scan_action: Tindakan fail yang dijangkiti
-  setting_autofetch_changesets: Perubahan repositori autofetch
-  setting_autologin: Log masuk automatik
-  setting_available_languages: Bahasa yang tersedia
-  setting_bcc_recipients: Penerima salinan karbon tertutup (bcc)
-  setting_brute_force_block_after_failed_logins: Sekat pengguna selepas bilangan percubaan log masuk gagal ini
-  setting_brute_force_block_minutes: Masa pengguna disekat selama
-  setting_cache_formatted_text: Teks yang diformat dalam cache
-  setting_use_wysiwyg_description: Pilih untuk aktifkan pengedit CKEditor5 WYSIWYG untuk semua pengguna secara default. CKEditor mempunyai kefungsian terhad untuk GFM Markdown.
-  setting_column_options: Senarai kolum pakej kerja default
-  setting_commit_fix_keywords: Membetulkan kata kunci
-  setting_commit_logs_encoding: Pengekodan mesej komit
-  setting_commit_logtime_activity_id: Aktiviti masa dicatat
-  setting_commit_logtime_enabled: Benarkan pencatatan masa
-  setting_commit_ref_keywords: Merujuk kata kunci
-  setting_consent_time: Masa pemberian persetujuan
-  setting_consent_info: Teks maklumat persetujuan
-  setting_consent_required: Persetujuan yang diperlukan
-  setting_consent_decline_mail: Alamat mel hubungan pemberi persetujuan
-  setting_cross_project_work_package_relations: Benarkan hubungan pakej kerja rentas projek
-  setting_csv_escape_formulas: Escape formulas in CSV exports
-  setting_csv_escape_formulas_text: 'Escape spreadsheet formulas in CSV exports by prefixing cells that begin with characters such as =, +, -, or @ with a single quote. This mitigates CSV formula injection when exported files are opened in spreadsheet applications such as Excel. This comes at the downside of modifying the string values inside the CSV, so you may want to disable this if downstream tools require the exact, unescaped cell values.
-
-    '
-  setting_first_week_of_year: 'Minggu pertama dalam tahun mengandungi '
-  setting_date_format: Tarikh
-  setting_default_language: Bahasa default
-  setting_default_projects_modules: Modul yang diaktifkan secara default untuk projek baharu
-  setting_default_projects_public: Projek baharu adalah awam secara default
-  setting_disable_password_login: Lumpuhkan pengesahan kata laluan
-  setting_diff_max_lines_displayed: Jumlah maksimum baris perbezaan yang dipaparkan
-  setting_omniauth_direct_login_provider: Pembekal SSO log masuk terus
-  setting_display_subprojects_work_packages: Paparkan subprojek pakej kerja di projek utama secara default
-  setting_duration_format: Format tempoh
-  setting_duration_format_hours_only: Jam sahaja
-  setting_duration_format_days_and_hours: Hari dan jam
-  setting_duration_format_instructions: Ini mentakrifkan cara Tempoh Kerja, Baki kerja dan Masa yang dihabiskan dipaparkan.
-  setting_emails_footer: Pengaki e-mel
-  setting_emails_header: Pengepala e-mel
-  setting_email_login: Guna e-mel untuk log masuk
-  setting_enabled_scm: Aktifkan SCM
-  setting_enabled_projects_columns: Kolum dalam senarai projek dipaparkan secara default
-  setting_feeds_enabled: Aktifkan Feed
-  setting_ical_enabled: Benarkan langganan iCalendar
-  setting_feeds_limit: 'Had kandungan feed '
-  setting_file_max_size_displayed: 'Saiz maksimum fail teks ditampilkan sebaris '
-  setting_host_name: Nama hos
-  setting_collaborative_editing_hocuspocus_url: Hocuspocus server URL
-  setting_collaborative_editing_hocuspocus_secret: Hocuspocus server secret
-  setting_hours_per_day: Jam sehari
-  setting_hours_per_day_explanation: Ini mentakrifkan perkara yang dianggap sebagai "hari" apabila memaparkan tempoh dalam hari dan jam (contohnya, jika sehari ialah 8 jam, 32 jam ialah 4 hari).
-  setting_invitation_expiration_days: Pengaktifan e-mel tamat tempoh selepas
-  setting_invitation_expiration_days_caption: Number of days after which the activation email expires.
-  setting_work_package_done_ratio: Mod pengiraan kemajuan
-  setting_work_package_done_ratio_field: Berasaskan kerja
-  setting_work_package_done_ratio_field_caption_html: "<i>% Lengkap</i> boleh ditetapkan secara bebas kepada sebarang nilai. Jika anda secara pilihan memasukkan nilai untuk <i>Kerja</i>, <i>Kerja yang tinggal</i> akan diperoleh secara automatik."
-  setting_work_package_done_ratio_status: Berasaskan status
-  setting_work_package_done_ratio_status_caption_html: Setiap status mempunyai nilai <i>% Lengkap</i> yang dikaitkan dengannya. Menukar status akan berubah <i>% Selesai</i>.
-  setting_work_package_done_ratio_explanation_html: 'Dalam mod <b>berasaskan kerja</b>, % Selesai boleh ditetapkan secara bebas kepada sebarang nilai. Jika anda secara pilihan memasukkan nilai untuk Kerja, Kerja yang selebihnya akan diperoleh secara automatik. Dalam mod <b>berasaskan status</b>, setiap status mempunyai % nilai Lengkap yang dikaitkan dengannya. Menukar status akan berubah % Selesai.
-
-    '
-  setting_work_package_properties: Ciri-ciri pakej kerja
-  setting_work_package_startdate_is_adddate: Guna tarikh semasa sebagai tarikh mula untuk pakej kerja baharu
-  setting_work_packages_projects_export_limit: Pakej kerja / Had eksport projek
-  setting_work_packages_projects_export_limit_text: 'Maximum number of work packages or projects that can be included in a single export. Larger exports are truncated to this limit.
-
-    '
-  setting_journal_aggregation_time_minutes: Aggregation period
-  setting_log_requesting_user: Log masuk pengguna yang direkodkan, nama, dan alamat mel untuk semua permintaan
-  setting_login_required: Pengesahan diperlukan
-  setting_login_required_caption: When checked, all requests to the application have to be authenticated.
-  setting_lost_password: Enable password reset
-  setting_lost_password_caption: When checked, allow users to reset their own passwords.
-  setting_mail_from: Alamat e-mel pengeluaran
-  setting_mail_handler_api_key: Kekunci API
-  setting_mail_handler_body_delimiters: Memangkas e-mel selepas salah satu barisan ini
-  setting_mail_handler_body_delimiter_regex: Memangkas e-mel yang hampir sama dengan regex ini
-  setting_mail_handler_ignore_filenames: Lampiran mel yang diabaikan
-  setting_new_project_user_role_id: Peranan yang diberikan kepada pengguna bukan pentadbir yang mencipta projek
-  setting_new_project_user_role_id_caption: 'Only roles that include the permissions to edit project attributes and to manage members are listed, so that the creator can complete the project setup.
-
-    '
-  setting_new_project_send_confirmation_email: Send notification to author when creating a new project
-  setting_new_project_notification_text: Notification text
-  setting_password_active_rules: Password requirements
-  setting_password_count_former_banned: Jumlah kebanyakkan kata laluan buat masa ini yang telah digunakan yang disekat untuk penggunaan semula
-  setting_password_days_valid: Jumlah hari, selepas untuk menguatkuasakan pertukaran kata laluan
-  setting_password_min_length: Panjang minimum
-  setting_per_page_options: Pilihan objek setiap halaman
+    manual: "set to Manual"
+    automatic: "set to Automatic"
+  search_input_placeholder: "Cari ..."
+  setting_allowed_link_protocols: "Allowed link protocols"
+  setting_allowed_link_protocols_text_html: >-
+    Allow these protocols to be rendered as links in work package descriptions, long text fields and comments. For example, %{tel_code} or %{element_code}. Enter one protocol per line. <br/> Protocols %{http_code}, %{https_code}, and %{mailto_code} are always allowed.
+  setting_capture_external_links: "Capture external links"
+  setting_capture_external_links_text: >
+    When enabled, all external links in formatted text will redirect through a warning page before leaving the application. This helps protect users from potentially malicious external websites.
+  setting_capture_external_links_require_login: "Require users to be logged in"
+  setting_capture_external_links_require_login_text: >
+    When enabled, users wanting to click on external links need to be logged in before being able to continue.
+  setting_after_first_login_redirect_url: "First login redirect"
+  setting_after_first_login_redirect_url_text_html: >
+    Set a path to redirect users after their first login. If empty, redirects to the home page for the onboarding tour. <br/> Example: <code>/my/page</code>
+  setting_after_login_default_redirect_url: "After login redirect"
+  setting_after_login_default_redirect_url_text_html: >
+    Set a default path to redirect users after login, if no back link was provided. Redirects to home page if not set. <br/> Example: <code>/my/page</code>
+  setting_apiv3_cors_title: "Perkongsian Sumber Silang Asal (CORS)"
+  setting_apiv3_cors_enabled: "Aktifkan CORS"
+  setting_apiv3_cors_origins: "Asal yang dibenarkan Perkongsian Sumber Rentas Asal (CORS) API V3 "
+  setting_apiv3_cors_origins_text_html: >
+    Jika CORS telah dibenarkan, ini ialah asal yang dibenarkan untuk mengakses API Yojana. <br/> Sila semak dokumentasi <a href="%{origin_link}" target="_blank">di pengepala Asal </a> untuk cara nyatakan nilai-nilai yang dijangkakan.
+  setting_apiv3_write_readonly_attributes: "Tulis akses pada atribut baca-sahaja"
+  setting_apiv3_write_readonly_attributes_instructions: >
+    If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
+  setting_apiv3_write_readonly_attributes_warning: >
+    This setting has a use-case for e.g., importing data, but allows administrators to impersonate the creation of items as other users. All creation requests are being logged however with the true author.
+  setting_apiv3_write_readonly_attributes_additional: >
+    For more information on attributes and supported resources, please see the %{api_documentation_link}.
+  setting_apiv3_max_page_size: "Saiz halaman maksimum API"
+  setting_apiv3_max_page_size_instructions: >
+    Set the maximum page size the API will respond with. It will not be possible to perform API requests that return more values on a single page.
+  setting_apiv3_max_page_size_warning: >
+    Please only change this value if you are sure why you need it. Setting to a high value will result in significant performance impacts, while a value lower than the per page options will cause errors in paginated views.
+  setting_apiv3_docs: "Dokumentasi"
+  setting_apiv3_docs_enabled: "Benarkan halaman docs"
+  setting_apiv3_docs_enabled_instructions_html: >
+    Jika halaman docs dibenarkan anda boleh mendapatkan paparan interaktif dokumentasi APIv3 dibawah <a href="%{link}" target="_blank">.
+  setting_apiv3_docs_enabled_instructions_warning: >
+    Please be aware that enabling the API docs on a production system may expose sensitive information or result in accidental loss of data when not being careful. We recommend to only enable this setting for development purposes.
+  setting_attachment_whitelist: "Lampiran memuat naik senarai putih"
+  setting_email_delivery_method: "Kaedah penghantaran e-mel"
+  setting_emails_salutation: "Menggelar pengguna dalam e-mel dengan"
+  setting_oauth_allow_remapping_of_existing_users: "Allow remapping of existing users"
+  setting_sendmail_location: "Lokasi sendmail boleh dilaksanakan"
+  setting_sendmail_arguments: "Arguments for sendmail"
+  setting_smtp_enable_starttls_auto: "Gunakan STARTTLS secara automatik jika tersedia"
+  setting_smtp_ssl: "Guna sambungan SSL"
+  setting_smtp_address: "Server SMTP"
+  setting_smtp_port: "Port SMTP"
+  setting_smtp_authentication: "Pengesahan SMTP"
+  setting_smtp_user_name: "Nama pengguna SMTP"
+  setting_smtp_password: "Kata laluan SMTP"
+  setting_smtp_domain: "Domain SMTP HELO"
+  setting_activity_days_default: "Hari yang dipaparkan pada aktiviti projek"
+  setting_app_subtitle: "Subtajuk aplikasi"
+  setting_app_title: "Tajuk aplikasi"
+  setting_attachment_max_size: "Saiz maksimum lampiran"
+  setting_show_work_package_attachments: "Paparkan lampiran di tab fail secara default"
+  setting_antivirus_scan_mode: "Mod pengimbas"
+  setting_antivirus_scan_action: "Tindakan fail yang dijangkiti"
+  setting_autofetch_changesets: "Perubahan repositori autofetch"
+  setting_autologin: "Log masuk automatik"
+  setting_available_languages: "Bahasa yang tersedia"
+  setting_bcc_recipients: "Penerima salinan karbon tertutup (bcc)"
+  setting_brute_force_block_after_failed_logins: "Sekat pengguna selepas bilangan percubaan log masuk gagal ini"
+  setting_brute_force_block_minutes: "Masa pengguna disekat selama"
+  setting_cache_formatted_text: "Teks yang diformat dalam cache"
+  setting_use_wysiwyg_description: "Pilih untuk aktifkan pengedit CKEditor5 WYSIWYG untuk semua pengguna secara default. CKEditor mempunyai kefungsian terhad untuk GFM Markdown."
+  setting_column_options: "Senarai kolum pakej kerja default"
+  setting_commit_fix_keywords: "Membetulkan kata kunci"
+  setting_commit_logs_encoding: "Pengekodan mesej komit"
+  setting_commit_logtime_activity_id: "Aktiviti masa dicatat"
+  setting_commit_logtime_enabled: "Benarkan pencatatan masa"
+  setting_commit_ref_keywords: "Merujuk kata kunci"
+  setting_consent_time: "Masa pemberian persetujuan"
+  setting_consent_info: "Teks maklumat persetujuan"
+  setting_consent_required: "Persetujuan yang diperlukan"
+  setting_consent_decline_mail: "Alamat mel hubungan pemberi persetujuan"
+  setting_cross_project_work_package_relations: "Benarkan hubungan pakej kerja rentas projek"
+  setting_first_week_of_year: "Minggu pertama dalam tahun mengandungi "
+  setting_date_format: "Tarikh"
+  setting_default_language: "Bahasa default"
+  setting_default_projects_modules: "Modul yang diaktifkan secara default untuk projek baharu"
+  setting_default_projects_public: "Projek baharu adalah awam secara default"
+  setting_disable_password_login: "Lumpuhkan pengesahan kata laluan"
+  setting_diff_max_lines_displayed: "Jumlah maksimum baris perbezaan yang dipaparkan"
+  setting_omniauth_direct_login_provider: "Pembekal SSO log masuk terus"
+  setting_display_subprojects_work_packages: "Paparkan subprojek pakej kerja di projek utama secara default"
+  setting_duration_format: "Format tempoh"
+  setting_duration_format_hours_only: "Jam sahaja"
+  setting_duration_format_days_and_hours: "Hari dan jam"
+  setting_duration_format_instructions: "Ini mentakrifkan cara Tempoh Kerja, Baki kerja dan Masa yang dihabiskan dipaparkan."
+  setting_emails_footer: "Pengaki e-mel"
+  setting_emails_header: "Pengepala e-mel"
+  setting_email_login: "Guna e-mel untuk log masuk"
+  setting_enabled_scm: "Aktifkan SCM"
+  setting_enabled_projects_columns: "Kolum dalam senarai projek dipaparkan secara default"
+  setting_feeds_enabled: "Aktifkan Feed"
+  setting_ical_enabled: "Benarkan langganan iCalendar"
+  setting_feeds_limit: "Had kandungan feed "
+  setting_file_max_size_displayed: "Saiz maksimum fail teks ditampilkan sebaris "
+  setting_host_name: "Nama hos"
+  setting_collaborative_editing_hocuspocus_url: "Hocuspocus server URL"
+  setting_collaborative_editing_hocuspocus_secret: "Hocuspocus server secret"
+  setting_hours_per_day: "Jam sehari"
+  setting_hours_per_day_explanation: >-
+    Ini mentakrifkan perkara yang dianggap sebagai "hari" apabila memaparkan tempoh dalam hari dan jam (contohnya, jika sehari ialah 8 jam, 32 jam ialah 4 hari).
+  setting_invitation_expiration_days: "Pengaktifan e-mel tamat tempoh selepas"
+  setting_invitation_expiration_days_caption: "Number of days after which the activation email expires."
+  setting_work_package_done_ratio: "Mod pengiraan kemajuan"
+  setting_work_package_done_ratio_field: "Berasaskan kerja"
+  setting_work_package_done_ratio_field_caption_html: >-
+    <i>% Lengkap</i> boleh ditetapkan secara bebas kepada sebarang nilai. Jika anda secara pilihan memasukkan nilai untuk <i>Kerja</i>, <i>Kerja yang tinggal</i> akan diperoleh secara automatik.
+  setting_work_package_done_ratio_status: "Berasaskan status"
+  setting_work_package_done_ratio_status_caption_html: >-
+    Setiap status mempunyai nilai <i>% Lengkap</i> yang dikaitkan dengannya. Menukar status akan berubah <i>% Selesai</i>.
+  setting_work_package_done_ratio_explanation_html: >
+    Dalam mod <b>berasaskan kerja</b>, % Selesai boleh ditetapkan secara bebas kepada sebarang nilai. Jika anda secara pilihan memasukkan nilai untuk Kerja, Kerja yang selebihnya akan diperoleh secara automatik. Dalam mod <b>berasaskan status</b>, setiap status mempunyai % nilai Lengkap yang dikaitkan dengannya. Menukar status akan berubah % Selesai.
+  setting_work_package_properties: "Ciri-ciri pakej kerja"
+  setting_work_package_startdate_is_adddate: "Guna tarikh semasa sebagai tarikh mula untuk pakej kerja baharu"
+  setting_work_packages_projects_export_limit: "Pakej kerja / Had eksport projek"
+  setting_journal_aggregation_time_minutes: "Tindakan pengguna dikumpulkan dalam"
+  setting_log_requesting_user: "Log masuk pengguna yang direkodkan, nama, dan alamat mel untuk semua permintaan"
+  setting_login_required: "Pengesahan diperlukan"
+  setting_login_required_caption: "When checked, all requests to the application have to be authenticated."
+  setting_lost_password: "Enable password reset"
+  setting_lost_password_caption: "When checked, allow users to reset their own passwords."
+  setting_mail_from: "Alamat e-mel pengeluaran"
+  setting_mail_handler_api_key: "Kekunci API"
+  setting_mail_handler_body_delimiters: "Memangkas e-mel selepas salah satu barisan ini"
+  setting_mail_handler_body_delimiter_regex: "Memangkas e-mel yang hampir sama dengan regex ini"
+  setting_mail_handler_ignore_filenames: "Lampiran mel yang diabaikan"
+  setting_new_project_user_role_id: "Peranan yang diberikan kepada pengguna bukan pentadbir yang mencipta projek"
+  setting_new_project_send_confirmation_email: "Send notification to author when creating a new project"
+  setting_new_project_notification_text: "Notification text"
+  setting_password_active_rules: "Kelas-kelas karakter yang aktif"
+  setting_password_count_former_banned: "Jumlah kebanyakkan kata laluan buat masa ini yang telah digunakan yang disekat untuk penggunaan semula"
+  setting_password_days_valid: "Jumlah hari, selepas untuk menguatkuasakan pertukaran kata laluan"
+  setting_password_min_length: "Panjang minimum"
+  setting_password_min_adhered_rules: "Bilangan minimum kelas yang diperlukan"
+  setting_per_page_options: "Pilihan objek setiap halaman"
   setting_percent_complete_on_status_closed: "% Lengkap apabila status ditutup"
   setting_percent_complete_on_status_closed_no_change: Tiada perubahan
   setting_percent_complete_on_status_closed_no_change_caption_html: Nilai <i>% Selesai</i> tidak akan berubah walaupun pakej kerja ditutup.
@@ -5365,15 +5303,13 @@ ms:
       not_writable: The setting is not writable and can only be changed by a sysadmin.
       failed_to_update: 'Setting ''%{name}'' could not be updated: %{message}'
     authentication:
-      login: Log masuk
-      registration: Registration
-      sso: Single Sign-On (SSO)
-      omniauth_direct_login_hint_html: 'Jika pilihan ini aktif, permintaan log masuk akan mengubah hala ke penyedia omniaut yang dikonfigurasikan. Halaman lungsur turun dan log masuk log masuk akan dilumpuhkan. <br/> <strong>Nota:</strong> Melainkan anda juga melumpuhkan log masuk kata laluan, dengan pilihan ini didayakan, pengguna masih boleh log masuk secara dalaman dengan melawati halaman log masuk <code>%{internal_path}</code>.
-
-        '
-      remapping_existing_users_hint: 'If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the OpenProject instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
-
-        '
+      login: "Log masuk"
+      registration: "Registration"
+      sso: "Single Sign-On (SSO)"
+      omniauth_direct_login_hint_html: >
+        Jika pilihan ini aktif, permintaan log masuk akan mengubah hala ke penyedia omniaut yang dikonfigurasikan. Halaman lungsur turun dan log masuk log masuk akan dilumpuhkan. <br/> <strong>Nota:</strong> Melainkan anda juga melumpuhkan log masuk kata laluan, dengan pilihan ini didayakan, pengguna masih boleh log masuk secara dalaman dengan melawati halaman log masuk <code>%{internal_path}</code>.
+      remapping_existing_users_hint: >
+        If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the Yojana instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
     attachments:
       whitelist_text_html: 'Jelaskan senarai sambungan fail yang sah dan/atau jenis mime bagi fail yang telah dimuat naik. <br/> Masukkan sambungan fail (cth., <code>%{ext_example}</code>) atau jenis mime (cth., <code>%{mime_example}</code>). <br/> Tinggalkan kosong untuk benarkan sebarang jenis fail untuk dimuat naik. Pelbagai nilai juga dibenarkan. (satu baris untuk setiap nilai)
 
@@ -5402,10 +5338,9 @@ ms:
       modes:
         clamav_socket_html: Masukkan soket ke clamd daemon, cth., %{example}
         clamav_host_html: Masukkan nama hos dan port ke clamd daemon dipisahkan dengan kolon. cth., %{example}
-        description_html: 'Pilih mod di mana integrasi pengimbas antivirus perlu dioperasikan. <br/> <ul> <li><strong>%{disabled_option}</strong>: Fail yang telah dimuat naik belum diimbas untuk virus.</li> <li><strong>%{socket_option}</strong>: Anda telah tetapkan ClamAV di server sama seperti OpenProject dan imbasan daemon clamd sedang dilancarkan di latar belakang </li> <li><strong>%{host_option}</strong>: Anda sedang strim fail ke hos imbasan virus luaran.</li> </ul>
-
-          '
-    brute_force_prevention: Penyekatan pengguna secara automatik
+        description_html: >
+          Pilih mod di mana integrasi pengimbas antivirus perlu dioperasikan. <br/> <ul> <li><strong>%{disabled_option}</strong>: Fail yang telah dimuat naik belum diimbas untuk virus.</li> <li><strong>%{socket_option}</strong>: Anda telah tetapkan ClamAV di server sama seperti Yojana dan imbasan daemon clamd sedang dilancarkan di latar belakang </li> <li><strong>%{host_option}</strong>: Anda sedang strim fail ke hos imbasan virus luaran.</li> </ul>
+    brute_force_prevention: "Penyekatan pengguna secara automatik"
     date_format:
       first_date_of_week_and_year_set: 'Jika pilihan sama ada"%{day_of_week_setting_name}" atau "%{first_week_setting_name}" telah ditetapkan, pilihan yang lain juga perlu ditetapkan untuk mengelakkan ketidakselarasan di bahagian muka depan.
 
@@ -5414,8 +5349,8 @@ ms:
 
         '
     experimental:
-      save_confirmation: Awas! Risiko kehilangan data! Hanyalah aktifkan fitur eksperimen jika anda tidak keberatan melanggar pemasangan OpenProject anda dan kehilangan kesemua datanya.
-      warning_toast: Bendera fitur ialah tetapan yang mengaktifkan fitur yang masih dalam pembangunan. Ia hanyalah patut digunakan atas tujuan pemeriksaan. Ia tidak boleh diaktifkan pada pemasangan OpenProject yang memegang data penting. Fitur ini kemungkinan besar akan merosakkan data anda. Gunakannya dengan risiko anda sendiri.
+      save_confirmation: Awas! Risiko kehilangan data! Hanyalah aktifkan fitur eksperimen jika anda tidak keberatan melanggar pemasangan Yojana anda dan kehilangan kesemua datanya.
+      warning_toast: Bendera fitur ialah tetapan yang mengaktifkan fitur yang masih dalam pembangunan. Ia hanyalah patut digunakan atas tujuan pemeriksaan. Ia tidak boleh diaktifkan pada pemasangan Yojana yang memegang data penting. Fitur ini kemungkinan besar akan merosakkan data anda. Gunakannya dengan risiko anda sendiri.
       feature_flags: Bendera fitur
     general: Umum
     highlighting:
@@ -5426,9 +5361,7 @@ ms:
         type: Keseluruhan baris mengikut Jenis
         priority: Keseluruhan baris mengikut Keutamaan
     icalendar:
-      enable_subscriptions_text_html: |-
-        Benarkan pengguna dengan kebenaran yang diperlukan untuk melanggan kalendar OpenProject dan akses maklumat pakej kerja melalui kalendar pelanggan luaran.
-        <strong>Perhatian:</strong> Sila baca tentang <a href="%{link}" target="_blank">langganan iCalendar</a> untuk fahami tentang potensi risiko keselamatan sebelum membenarkannya.
+      enable_subscriptions_text_html: "Benarkan pengguna dengan kebenaran yang diperlukan untuk melanggan kalendar Yojana dan akses maklumat pakej kerja melalui kalendar pelanggan luaran.\n<strong>Perhatian:</strong> Sila baca tentang <a href=\"%{link}\" target=\"_blank\">langganan iCalendar</a> untuk fahami tentang potensi risiko keselamatan sebelum membenarkannya."
     language_name_being_default: "%{language_name} (default)"
     notifications:
       events_explanation: Tetapkan mana-mana peristiwa untuk e-mel dihantar keluar. Pakej kerja dikecualikan daripada senarai ini kerana pemberitahuannya boleh dikonfigurasikan khusus ke setiap pengguna.
@@ -5462,9 +5395,8 @@ ms:
               label: Side panel
               description: Add all the project attributes in a section inside the right side panel in the project overview.
     project_initiation_request:
-      header_description: 'OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
-
-        '
+      header_description: >
+        Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
       status:
         submitted: "%{wizard_name} has been submitted"
         submitted_description: Click the button below to go to the work package for the submission process.
@@ -5476,8 +5408,8 @@ ms:
         project_creation_wizard: Open project creation wizard
         project_mandate: Open project mandate
       blankslate:
-        title: Initiation request not enabled
-        description: OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard.
+        title: "Initiation request not enabled"
+        description: "Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard."
       disable_dialog:
         title: Disable project initiation request
         heading: Disable this project initiation request?
@@ -5582,22 +5514,21 @@ ms:
   status_deleted: dipadam
   support:
     array:
-      sentence_connector: dan
-      skip_last_comma: palsu
-  text_accessibility_hint: Mod kebolehcapaian direka untuk pengguna yang buta, kurang upaya atau yang mempunyai masalah penglihatan. Untuk yang kemudian, unsur yang difokuskan ditekankan secara khusus. Harap maklum, modul Tunggakan tersebut tidak tersedia dalam mod ini.
-  text_access_token_hint: Token akses membenarkan anda untuk memberikan aplikasi luaran akses kepada sumber data OpenProject.
-  text_analyze: 'Analisis selanjutnya: %{subject}'
-  text_are_you_sure: Adakah anda pasti?
-  open_link_in_a_new_tab: Open link in a new tab
-  text_are_you_sure_continue: Adakah anda pasti anda ingin teruskan?
-  text_are_you_sure_with_children: Padam pakej kerja dan semua pakej kerja anak?
-  text_are_you_sure_with_project_custom_fields: Memadam atribut ini akan memadam nilainya dalam semua projek. Adakah anda pasti anda ingin lakukan ini?
-  text_are_you_sure_with_project_life_cycle_step: Deleting this phase will also delete its usages in all projects. Are you sure you want to do this?
-  text_assign_to_project: Tugaskan ke projek
-  text_form_configuration: 'Anda boleh mengubah suai ruangan yang akan dipaparkan dalam borang pakej kerja. Anda boleh mengumpulkan ruangan tersebut dengan bebas untuk memantulkan keperluan domain anda.
-
-    '
-  text_form_configuration_required_attribute: Atribut ditandakan sebagai diperlukan dan dengan itu sentiasa dipaparkan
+      sentence_connector: "dan"
+      skip_last_comma: "palsu"
+  text_accessibility_hint: "Mod kebolehcapaian direka untuk pengguna yang buta, kurang upaya atau yang mempunyai masalah penglihatan. Untuk yang kemudian, unsur yang difokuskan ditekankan secara khusus. Harap maklum, modul Tunggakan tersebut tidak tersedia dalam mod ini."
+  text_access_token_hint: "Token akses membenarkan anda untuk memberikan aplikasi luaran akses kepada sumber data Yojana."
+  text_analyze: "Analisis selanjutnya: %{subject}"
+  text_are_you_sure: "Adakah anda pasti?"
+  open_link_in_a_new_tab: "Open link in a new tab"
+  text_are_you_sure_continue: "Adakah anda pasti anda ingin teruskan?"
+  text_are_you_sure_with_children: "Padam pakej kerja dan semua pakej kerja anak?"
+  text_are_you_sure_with_project_custom_fields: "Memadam atribut ini akan memadam nilainya dalam semua projek. Adakah anda pasti anda ingin lakukan ini?"
+  text_are_you_sure_with_project_life_cycle_step: "Deleting this phase will also delete its usages in all projects. Are you sure you want to do this?"
+  text_assign_to_project: "Tugaskan ke projek"
+  text_form_configuration: >
+    Anda boleh mengubah suai ruangan yang akan dipaparkan dalam borang pakej kerja. Anda boleh mengumpulkan ruangan tersebut dengan bebas untuk memantulkan keperluan domain anda.
+  text_form_configuration_required_attribute: "Atribut ditandakan sebagai diperlukan dan dengan itu sentiasa dipaparkan"
   text_caracters_maximum: "%{count} aksara maksimum."
   text_caracters_minimum: Mesti sekurang-kurangnya %{count} bilangan aksara.
   text_comma_separated: 'Beberapa nilai dibenarkan (dipisahkan dengan koma).  '
@@ -5697,37 +5628,30 @@ ms:
   text_line_separated: Lebihan nilai dibenarkan (satu baris untuk setiap nilai).
   text_load_default_configuration: Muatkan konfigurasi default
   text_no_roles_defined: Tiada peranan ditentukan.
-  text_no_access_tokens_configurable: Tiada token akses yang boleh dikonfigurasikan.
-  text_no_configuration_data: Peranan, jenis, status pakej kerja dan aliran kerja belum dikonfigurasikan lagi. Sangat disarankan untuk memuatkan konfigurasi default. Anda akan dapat mengubahnya setelah ianya dimuatkan.
-  text_no_notes: Tiada komen yang tersedia untuk pakej kerja ini.
-  text_notice_too_many_values_are_inperformant: 'Perhatian: Memaparkan lebih daripada 100 item setiap halaman akan meningkatkan masa muat halaman.'
-  text_notice_security_badge_displayed_html: 'Perhatian: jika dibenarkan, ini akan paparkan lambang bersertaan status pemasangan di <a href="%{information_panel_path}">%{information_panel_label}</a> panel pentadbiran, dan di halaman utama. Ia hanya akan dipaparkan ke para pentadbir sahaja. <br/> Lambang tersebut akan menyemak versi OpenProject terkini anda terhadap pangkalan data keluaran rasmi OpenProject untuk memaklumkan anda tentang sebarang kemas kini atau kelemahan yang diketahui. Untuk maklumat lanjut bagi penyediaan semakan, data apa yang diperlukan untuk menyediakan kemas kini tersedia, dan bagaimana untuk menyahaktifkan semakan ini, sila kunjungi <a href="%{more_info_url}">dokumentasi konfigurasi</a>.
-
-    '
-  text_own_membership_delete_confirmation: |-
-    Anda akan mengeluarkan beberapa atau semua kebenaran anda dan mungkin tidak lagi dapat mengedit projek ini selepas itu.
-    Adakah anda pasti anda ingin teruskan?
-  text_permanent_delete_confirmation_checkbox_label: I understand that this deletion cannot be reversed
-  text_permanent_remove_confirmation_checkbox_label: I understand that this removal cannot be reversed
-  text_plugin_assets_writable: Aset plugin direktori yang boleh ditulis
-  text_powered_by: Dikuasakan oleh %{link}
-  text_project_identifier_info: Hanya huruf kecil (a-z), nombor, sengkang dan tanda garis bawah adalah dibenarkan, mesti mula dengan huruf kecil.
-  text_project_identifier_description: The project identifier is prepended to all work package IDs. If the identifier is "PROJ" for example, the work package identifier will be "PROJ-12" or "PROJ-246".
-  text_project_identifier_url_description: The project identifier is included in the URL of the project.
-  text_project_identifier_handle_format: Must start with a letter and contain only uppercase letters, numbers, and underscores (max 10 characters).
-  text_project_identifier_format: Must start with a lowercase letter. Only lowercase letters (a-z), numbers, dashes and underscores are allowed.
-  text_reassign: 'Tugaskan semula ke pakej kerja:'
-  text_regexp_multiline: Regex digunakan dalam mod berbilang baris. cth., ^---\s+
-  text_rename_wiki_page: Rename wiki page
-  text_repository_usernames_mapping: "Pilih atau kemas kini pengguna OpenProject yang dipetakan ke setiap nama pengguna yang ditemui dalam log repositori.\nPengguna dengan OpenProject dan nama pengguna repositori atau e-mel yang sama dipetakan secara automatik. "
-  text_status_changed_by_changeset: Dilaksanakan dalam set perubahan %{value}.
-  text_table_difference_description: Dalam jadual ini, %{entries} yang tunggal dipaparkan. Anda boleh lihat perbezaan antara mana-mana dua entri dengan mula memilih kotak penyemakan dalam jadual. Apabila butang di bawah jadual ditekan, perbezaan akan ditunjukkan.
-  text_time_logged_by_changeset: Dilaksanakan dalam set perubahan %{value}.
-  text_tip_work_package_begin_day: pakej kerja bermula pada hari ini
-  text_tip_work_package_begin_end_day: pakej kerja yang bermula dan berakhir pada hari ini
-  text_tip_work_package_end_day: pakej kerja berakhir pada hari ini
-  text_type_no_workflow: Tiada aliran kerja yang ditakrifkan untuk jenis ini
-  text_unallowed_characters: Aksara yang tidak dibenarkan
+  text_no_access_tokens_configurable: "Tiada token akses yang boleh dikonfigurasikan."
+  text_no_configuration_data: "Peranan, jenis, status pakej kerja dan aliran kerja belum dikonfigurasikan lagi. Sangat disarankan untuk memuatkan konfigurasi default. Anda akan dapat mengubahnya setelah ianya dimuatkan."
+  text_no_notes: "Tiada komen yang tersedia untuk pakej kerja ini."
+  text_notice_too_many_values_are_inperformant: "Perhatian: Memaparkan lebih daripada 100 item setiap halaman akan meningkatkan masa muat halaman."
+  text_notice_security_badge_displayed_html: >
+    Perhatian: jika dibenarkan, ini akan paparkan lambang bersertaan status pemasangan di <a href="%{information_panel_path}">%{information_panel_label}</a> panel pentadbiran, dan di halaman utama. Ia hanya akan dipaparkan ke para pentadbir sahaja. <br/> Lambang tersebut akan menyemak versi Yojana terkini anda terhadap pangkalan data keluaran rasmi Yojana untuk memaklumkan anda tentang sebarang kemas kini atau kelemahan yang diketahui. Untuk maklumat lanjut bagi penyediaan semakan, data apa yang diperlukan untuk menyediakan kemas kini tersedia, dan bagaimana untuk menyahaktifkan semakan ini, sila kunjungi <a href="%{more_info_url}">dokumentasi konfigurasi</a>.
+  text_own_membership_delete_confirmation: "Anda akan mengeluarkan beberapa atau semua kebenaran anda dan mungkin tidak lagi dapat mengedit projek ini selepas itu.\nAdakah anda pasti anda ingin teruskan?"
+  text_permanent_delete_confirmation_checkbox_label: "I understand that this deletion cannot be reversed"
+  text_permanent_remove_confirmation_checkbox_label: "I understand that this removal cannot be reversed"
+  text_plugin_assets_writable: "Aset plugin direktori yang boleh ditulis"
+  text_powered_by: "Dikuasakan oleh %{link}"
+  text_project_identifier_info: "Hanya huruf kecil (a-z), nombor, sengkang dan tanda garis bawah adalah dibenarkan, mesti mula dengan huruf kecil."
+  text_reassign: "Tugaskan semula ke pakej kerja:"
+  text_regexp_info: "cth. ^[A-Z0-9]+$"
+  text_regexp_multiline: 'Regex digunakan dalam mod berbilang baris. cth., ^---\s+'
+  text_repository_usernames_mapping: "Pilih atau kemas kini pengguna Yojana yang dipetakan ke setiap nama pengguna yang ditemui dalam log repositori.\nPengguna dengan Yojana dan nama pengguna repositori atau e-mel yang sama dipetakan secara automatik. "
+  text_status_changed_by_changeset: "Dilaksanakan dalam set perubahan %{value}."
+  text_table_difference_description: "Dalam jadual ini, %{entries} yang tunggal dipaparkan. Anda boleh lihat perbezaan antara mana-mana dua entri dengan mula memilih kotak penyemakan dalam jadual. Apabila butang di bawah jadual ditekan, perbezaan akan ditunjukkan."
+  text_time_logged_by_changeset: "Dilaksanakan dalam set perubahan %{value}."
+  text_tip_work_package_begin_day: "pakej kerja bermula pada hari ini"
+  text_tip_work_package_begin_end_day: "pakej kerja yang bermula dan berakhir pada hari ini"
+  text_tip_work_package_end_day: "pakej kerja berakhir pada hari ini"
+  text_type_no_workflow: "Tiada aliran kerja yang ditakrifkan untuk jenis ini"
+  text_unallowed_characters: "Aksara yang tidak dibenarkan"
   text_user_invited: Pengguna telah dijemput dan sedang menunggu pendaftaran.
   text_user_wrote: "%{value} menulis:"
   text_wrote: wrote
@@ -5789,18 +5713,17 @@ ms:
     help_and_support: Bantuan dan sokongan
   total_progress: Jumlah perkembangan
   user:
-    all: semua
-    active: aktif
-    activate: Aktifkan
-    activate_and_reset_failed_logins: Aktifkan dan set semula log masuk yang gagal
-    authentication_provider: Penyedia Pengesahan
-    identity_url_text: Pengenal unik dalaman disediakan oleh pemberi pengesahan.
-    authentication_settings_disabled_due_to_external_authentication: 'Pengguna ini mengesahkan melalui penyedia pengesahan luaran, jadi tiada kata laluan dalam OpenProject untuk diubah.
-
-      '
-    authorization_rejected: Anda tidak dibenarkan untuk daftar masuk.
-    assign_random_password: Tetapkan kata laluan rawak (dihantar ke pengguna melalui e-mel)
-    blocked: dikunci sementara
+    all: "semua"
+    active: "aktif"
+    activate: "Aktifkan"
+    activate_and_reset_failed_logins: "Aktifkan dan set semula log masuk yang gagal"
+    authentication_provider: "Penyedia Pengesahan"
+    identity_url_text: "Pengenal unik dalaman disediakan oleh pemberi pengesahan."
+    authentication_settings_disabled_due_to_external_authentication: >
+      Pengguna ini mengesahkan melalui penyedia pengesahan luaran, jadi tiada kata laluan dalam Yojana untuk diubah.
+    authorization_rejected: "Anda tidak dibenarkan untuk daftar masuk."
+    assign_random_password: "Tetapkan kata laluan rawak (dihantar ke pengguna melalui e-mel)"
+    blocked: "dikunci sementara"
     blocked_num_failed_logins:
       other: dikunci sementara (%{count} percubaan log masuk gagal)
     confirm_status_change: Anda akan mengubah status '%{name}'. Adakah anda pasti anda ingin teruskan?
@@ -5830,13 +5753,18 @@ ms:
   note_password_login_disabled_link: Password login has been disabled through a [configuration setting](configuration_url).
   warning: Amaran
   warning_attachments_not_saved: "%{count} fail tidak dapat disimpan."
-  warning_imminent_user_limit_html: 'You invited more users than are supported by your current plan. Invited users may not be able to join your OpenProject environment. Please [upgrade your plan](upgrade_url) or block existing users in order to allow invited and registered users to join.
-
-    '
+  warning_imminent_user_limit: >
+    Anda menjemput pengguna lebih dari yang disokong pelan semasa anda. Pengguna yang dijemput mungkin tidak dapat sertai persekitaran Yojana anda. Sila <a href="%{upgrade_url}">naik taraf pelan anda</a> atau sekat pengguna sedia ada untuk membenarkan pengguna yang dijemput dan berdaftar untuk menyertai.
   warning_registration_token_expired: |
     Pengaktifan e-mel telah tamat tempoh. Kami telah hantar yang baharu kepada anda di %{email}.
     Sila klik pautan di dalamnya untuk mengaktifkan akaun anda.
-  warning_user_limit_reached: 'Menambah pengguna tambahan akan melebihi had semasa. Sila hubungi pentadbir untuk meningkatkan had pengguna bagi memastikan pengguna luaran dapat mengakses contoh ini.
+  warning_user_limit_reached: >
+    Menambah pengguna tambahan akan melebihi had semasa. Sila hubungi pentadbir untuk meningkatkan had pengguna bagi memastikan pengguna luaran dapat mengakses contoh ini.
+  warning_user_limit_reached_admin: >
+    Menambah pengguna tambahan akan melebihi had semasa. Sila <a href="%{upgrade_url}">naik taraf pelan anda</a> bagi memastikan pengguna luaran dapat mengakses contoh ini.
+  warning_user_limit_reached_instructions: >
+    Anda telah mencapai had pengguna anda (%{current}/%{max} pengguna aktif). Sila hubungi sales@girishm.info untuk menaik taraf pelan edisi Enterprise anda dan tambah pengguna tambahan.
+  warning_protocol_mismatch_html: >
 
     '
   warning_user_limit_reached_admin_html: 'Adding additional users will exceed the current limit. Please [upgrade your plan](upgrade_url) to be able to ensure external users are able to access this instance.
@@ -6130,55 +6058,48 @@ ms:
       non_confidential: Tidak sulit
       default_scopes: "(Skop default)"
       instructions:
-        enabled: Dayakan aplikasi ini, membenarkan pengguna melaksanakan pemberian kebenaran dengannya.
-        name: Nama aplikasi anda. Ini akan dipaparkan ke pengguna lain selepas kebenaran.
-        redirect_uri_html: 'URL yang dibenarkan membenarkan pengguna boleh diubah hala. Satu entri setiap baris. <br/> Jika anda mendaftar aplikasi desktop, gunakan URL berikut.
-
-          '
-        confidential: Semak jika aplikasi akan digunakan dimana rahsia pelanggan boleh dikekalkan sulit. Aplikasi mudah alih asal dan Single Page Apps dianggap sebagai tidak sulit.
-        scopes: Tandakan skop yang anda mahu untuk berikan akses ke aplikasi tersebut. Jika tiada skop ditandakan, api_v3 akan diandaikan.
-        client_credential_user_id: ID pengguna pilihan untuk menyamar apabila pelanggan menggunakan aplikasi ini. Tinggalkan kosong untuk benarkan akses awam sahaja.
-        register_intro: Jika anda sedang membangunkan aplikasi pelanggan API OAuth untuk OpenProject, anda boleh mendaftarkannya menggunakan borang ini untuk semua pengguna menggunakannya.
-        default_scopes: ''
+        enabled: "Dayakan aplikasi ini, membenarkan pengguna melaksanakan pemberian kebenaran dengannya."
+        name: "Nama aplikasi anda. Ini akan dipaparkan ke pengguna lain selepas kebenaran."
+        redirect_uri_html: >
+          URL yang dibenarkan membenarkan pengguna boleh diubah hala. Satu entri setiap baris. <br/> Jika anda mendaftar aplikasi desktop, gunakan URL berikut.
+        confidential: "Semak jika aplikasi akan digunakan dimana rahsia pelanggan boleh dikekalkan sulit. Aplikasi mudah alih asal dan Single Page Apps dianggap sebagai tidak sulit."
+        scopes: "Tandakan skop yang anda mahu untuk berikan akses ke aplikasi tersebut. Jika tiada skop ditandakan, api_v3 akan diandaikan."
+        client_credential_user_id: "ID pengguna pilihan untuk menyamar apabila pelanggan menggunakan aplikasi ini. Tinggalkan kosong untuk benarkan akses awam sahaja."
+        register_intro: "Jika anda sedang membangunkan aplikasi pelanggan API OAuth untuk Yojana, anda boleh mendaftarkannya menggunakan borang ini untuk semua pengguna menggunakannya."
+        default_scopes: ""
     header:
       builtin_applications: Aplikasi OAuth terbina dalam
       other_applications: Aplikasi OAuth lain
     empty_application_lists: Tiada aplikasi OAuth telah didaftarkan.
-    client_id: ID pelanggan
-    client_secret_notice: 'Ini adalah satu-satunya masa di mana kita boleh mencetak rahsia pelanggan, sila catat dan simpankan ia dengan selamat. Ia perlu diperlakukan sebagai sebuah kata laluan dan tidak boleh dipulihkan oleh OpenProject pada masa kemudian.
-
-      '
+    client_id: "ID pelanggan"
+    client_secret_notice: >
+      Ini adalah satu-satunya masa di mana kita boleh mencetak rahsia pelanggan, sila catat dan simpankan ia dengan selamat. Ia perlu diperlakukan sebagai sebuah kata laluan dan tidak boleh dipulihkan oleh Yojana pada masa kemudian.
     authorization_dialog:
-      authorize: Benarkan
-      cancel: Batal dan nafikan kebenaran.
-      prompt_html: Benarkan <strong>%{application_name}</strong> untuk menggunakan akaun anda <em>%{login}</em>?
-      title: Benarkan %{application_name}
-      wants_to_access_html: 'Aplikasi ini meminta akses ke akaun OpenProject anda. <br/> <strong>Ia telah meminta kebenaran yang berikut:</strong>
-
-        '
+      authorize: "Benarkan"
+      cancel: "Batal dan nafikan kebenaran."
+      prompt_html: "Benarkan <strong>%{application_name}</strong> untuk menggunakan akaun anda <em>%{login}</em>?"
+      title: "Benarkan %{application_name}"
+      wants_to_access_html: >
+        Aplikasi ini meminta akses ke akaun Yojana anda. <br/> <strong>Ia telah meminta kebenaran yang berikut:</strong>
     scopes:
-      api_v3: Akses API v3 penuh
-      api_v3_text: Aplikasi akan menerima akses penuh baca & tulis di OpenProject API v3 untuk melaksanakan tindakan bagi pihak anda.
-      mcp: Access to MCP
-      mcp_text: Application will receive access to the OpenProject MCP endpoints. They are a limited subset of APIv3, that's tailored for usage with AI agents.
+      api_v3: "Akses API v3 penuh"
+      api_v3_text: "Aplikasi akan menerima akses penuh baca & tulis di Yojana API v3 untuk melaksanakan tindakan bagi pihak anda."
     grants:
       created_date: Diluluskan pada
       scopes: Kebenaran
       successful_application_revocation: Pembatalan aplikasi %{application_name} berjaya.
       none_given: Tiada aplikasi OAuth yang telah diberi akses ke akaun anda.
     flows:
-      authorization_code: Aliran kod kebenaran
-      client_credentials: Aliran kelayakan pelanggan
-    client_credentials: Pengguna yang digunakan untuk kelayakan Pelanggan
-    client_credentials_impersonation_set_to: Pengguna kelayakan pelanggan ditetapkan kepada
-    client_credentials_impersonation_warning: 'Perhatian: Pelanggan yang menggunakan aliran ''Kelayakan Pelanggan'' dalam aplikasi ini akan mempunyai hak pengguna ini.'
-    client_credentials_impersonation_html: 'Secara default, OpenProject menyediakan kebenaran OAuth 2.0 melalui %{authorization_code_flow_link}. Anda boleh memilih untuk mengaktifkan %{client_credentials_flow_link}, tetapi anda mesti menyediakan pengguna yang akan mewakili permintaan.
-
-      '
-    confirm_revoke_my_application:
-      other: Do you really want to remove this application? This will revoke %{count} tokens active for it.
-    authorization_error: Sebuah ralat kebenaran telah berlaku.
-    my_registered_applications: Aplikasi OAuth berdaftar
+      authorization_code: "Aliran kod kebenaran"
+      client_credentials: "Aliran kelayakan pelanggan"
+    client_credentials: "Pengguna yang digunakan untuk kelayakan Pelanggan"
+    client_credentials_impersonation_set_to: "Pengguna kelayakan pelanggan ditetapkan kepada"
+    client_credentials_impersonation_warning: "Perhatian: Pelanggan yang menggunakan aliran 'Kelayakan Pelanggan' dalam aplikasi ini akan mempunyai hak pengguna ini."
+    client_credentials_impersonation_html: >
+      Secara default, Yojana menyediakan kebenaran OAuth 2.0 melalui %{authorization_code_flow_link}. Anda boleh memilih untuk mengaktifkan %{client_credentials_flow_link}, tetapi anda mesti menyediakan pengguna yang akan mewakili permintaan.
+    authorization_error: "Sebuah ralat kebenaran telah berlaku."
+    revoke_my_application_confirmation: "Adakah anda benar-benar mahu memadam aplikasi ini? Ini akan menarik balik %{token_count} yang aktif darinya."
+    my_registered_applications: "Aplikasi OAuth berdaftar"
   oauth_client:
     urn_connection_status:
       connected: Disambungkan
@@ -6212,18 +6133,18 @@ ms:
 
         '
       oauth_state_not_present: "'Kondisi' OAuth2 tidak ditemui dalam titik terakhir 'panggilan balik' (ubah hala_url)."
-      oauth_state_not_present_explanation: "'Kondisi' digunakan untuk menunjukkan ke OpenProject tempat untuk meneruskan selepas kebenaran OAuth2 berjaya. Ketiadaan 'kondisi' adalah ralat dalaman yang mungkin muncul semasa penyediaan. Sila hubungi pentadbir sistem anda.\n"
+      oauth_state_not_present_explanation: >
+        'Kondisi' digunakan untuk menunjukkan ke Yojana tempat untuk meneruskan selepas kebenaran OAuth2 berjaya. Ketiadaan 'kondisi' adalah ralat dalaman yang mungkin muncul semasa penyediaan. Sila hubungi pentadbir sistem anda.
       rack_oauth2:
-        client_secret_invalid: Rahsia pelanggan adalah tidak sah (rahsia_pelanggan_tidak sah)
-        invalid_request: 'Server Pengesahan OAuth2 menjawab dengan ''permintaan_tidak sah''. Ralat ini muncul jika anda cuba untuk mendapatkan kebenaran beberapa kali atau dalam kes masalah teknikal.
-
-          '
-        invalid_response: Server Pengesahan OAuth2 menyediakan tindak balas yang tidak sah (respons_tidak sah)
-        invalid_grant: Server Pengesahan OAuth2 tersebut meminta anda untuk mengesahkan semula (pemberian_tidak sah).
-        invalid_client: Server Pengesahan OAuth2 tidak mengenali OpenProject (pelanggan_tidak sah).
-        unauthorized_client: Server Pengesahan OAuth2 tersebut menolak jenis pemberian (pelanggan_tidak berkebenaran)
-        unsupported_grant_type: Server Pengesahan OAuth2 tersebut meminta anda untuk mengesahkan semula (jenis_pemberian_tidak disokong).
-        invalid_scope: Anda tidak dibenarkan untuk mengakses sumber yang diminta (skop_tidak sah).
+        client_secret_invalid: "Rahsia pelanggan adalah tidak sah (rahsia_pelanggan_tidak sah)"
+        invalid_request: >
+          Server Pengesahan OAuth2 menjawab dengan 'permintaan_tidak sah'. Ralat ini muncul jika anda cuba untuk mendapatkan kebenaran beberapa kali atau dalam kes masalah teknikal.
+        invalid_response: "Server Pengesahan OAuth2 menyediakan tindak balas yang tidak sah (respons_tidak sah)"
+        invalid_grant: "Server Pengesahan OAuth2 tersebut meminta anda untuk mengesahkan semula (pemberian_tidak sah)."
+        invalid_client: "Server Pengesahan OAuth2 tidak mengenali Yojana (pelanggan_tidak sah)."
+        unauthorized_client: "Server Pengesahan OAuth2 tersebut menolak jenis pemberian (pelanggan_tidak berkebenaran)"
+        unsupported_grant_type: "Server Pengesahan OAuth2 tersebut meminta anda untuk mengesahkan semula (jenis_pemberian_tidak disokong)."
+        invalid_scope: "Anda tidak dibenarkan untuk mengakses sumber yang diminta (skop_tidak sah)."
   http:
     request:
       failed_authorization: Permintaan dari pihak server gagal mengesahkan dirinya sendiri.
@@ -6233,18 +6154,18 @@ ms:
   you: anda
   link: pautan
   plugin_openproject_auth_plugins:
-    name: Plugin Auth OpenProject
-    description: Integrasi penyedia strategi OmniAuth untuk pengesahan dalam OpenProject.
+    name: "Plugin Auth Yojana"
+    description: "Integrasi penyedia strategi OmniAuth untuk pengesahan dalam Yojana."
   plugin_openproject_auth_saml:
-    name: SAML OmniAuth / Daftar Masuk Tunggal
-    description: Tambah penyediaan SAML OmniAuth ke OpenProject
+    name: "SAML OmniAuth / Daftar Masuk Tunggal"
+    description: "Tambah penyediaan SAML OmniAuth ke Yojana"
   enterprise_plans:
     legacy_enterprise: Enterprise Plan
   token:
     hashed_token:
       display_value_placeholder: "***"
   external_link_warning:
-    title: Leaving OpenProject
-    warning_message: You are about to leave OpenProject and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies.
-    continue_message: Are you sure you want to proceed to the following external link?
-    continue_button: Continue to external website
+    title: "Leaving Yojana"
+    warning_message: "You are about to leave Yojana and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies."
+    continue_message: "Are you sure you want to proceed to the following external link?"
+    continue_button: "Continue to external website"

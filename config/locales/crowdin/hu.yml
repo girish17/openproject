@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -348,13 +348,13 @@ hu:
         unknown_name: Unknown
     mcp_configurations:
       index:
-        description: The model context protocol allows AI agents to provide its users with tools and resources exposed by this OpenProject instance. This feature is still in beta.
-        resources_heading: Resources
-        resources_description: OpenProject implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url).
-        resources_submit: Update resources
-        tools_heading: Tools
-        tools_description: OpenProject implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url).
-        tools_submit: Update tools
+        description: "The model context protocol allows AI agents to provide its users with tools and resources exposed by this Yojana instance."
+        resources_heading: "Resources"
+        resources_description: "Yojana implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
+        resources_submit: "Update resources"
+        tools_heading: "Tools"
+        tools_description: "Yojana implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url)."
+        tools_submit: "Update tools"
       multi_update:
         success: MCP configurations were updated successfully.
       server_form:
@@ -397,31 +397,31 @@ hu:
       edit:
         label_delete_scim_client: Delete SCIM client
       form:
-        auth_provider_description: This is the service that users added by the SCIM provider will use to authenticate in OpenProject.
-        authentication_method_description_html: This is how the SCIM client authenticates at OpenProject. Please ensure that OAuth tokens include the <code>scim_v2</code> scope.
-        description: Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options.
-        jwt_sub_description: For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case.
-        name_description: Choose a name that will help other admins better understand why this client was configured.
+        auth_provider_description: "This is the service that users added by the SCIM provider will use to authenticate in Yojana."
+        authentication_method_description_html: "This is how the SCIM client authenticates at Yojana. Please ensure that OAuth tokens include the <code>scim_v2</code> scope."
+        description: "Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options."
+        jwt_sub_description: "For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case."
+        name_description: "Choose a name that will help other admins better understand why this client was configured."
       index:
-        description: SCIM clients configured here are able to interact with OpenProject SCIM server API to provision, update, and deprovision user accounts and groups.
-        label_create_button: Add SCIM client
+        description: "SCIM clients configured here are able to interact with Yojana SCIM server API to provision, update, and deprovision user accounts and groups."
+        label_create_button: "Add SCIM client"
       new:
         title: New SCIM client
       revoke_static_token_dialog_component:
-        confirm_button: Visszavonás
-        title: Revoke static token
-        heading: Are you sure you want to revoke this token?
-        description: The SCIM client that uses this token will no longer be able to access OpenProject's SCIM server API.
+        confirm_button: "Visszavonás"
+        title: "Revoke static token"
+        heading: "Are you sure you want to revoke this token?"
+        description: "The SCIM client that uses this token will no longer be able to access Yojana's SCIM server API."
       table_component:
         blank_slate:
           title: No SCIM clients configured yet
           description: Add clients to see them here
         user_count: Felhasználók
       token_list_component:
-        description: The tokens you generate here can be passed by a SCIM client to access the OpenProject SCIM API.
-        heading: Tokens
-        label_add_token: Token
-        label_aria_add_token: Add token
+        description: "The tokens you generate here can be passed by a SCIM client to access the Yojana SCIM API."
+        heading: "Tokens"
+        label_add_token: "Token"
+        label_aria_add_token: "Add token"
       token_table_component:
         blank_slate:
           title: No tokens have been created yet
@@ -566,38 +566,37 @@ hu:
       name: Az LDAP kapcsolat tetszőleges neve
       host: LDAP Kiszolgáló neve vagy IP címe
       login_map: Az LDAP attribútumkulcsa, amelyet az egyedi felhasználói bejelentkezés azonosítására használnak. Ez általában `uid` vagy` samAccountName`.
-      generic_map: Az LDAP attribútumkulcsa, amely az OpenProject %{attribute} attribútumhoz van leképezve
-      admin_map_html: 'Opcionális: Az LDAP attribútumkulcsa, amely a <strong> ha van </strong> jelöli az OpenProject felhasználó adminisztrátorát. Hagyja üresen ha kétséges.'
+      generic_map: Az LDAP attribútumkulcsa, amely az Yojana %{attribute} attribútumhoz van leképezve
+      admin_map_html: "Opcionális: Az LDAP attribútumkulcsa, amely a <strong> ha van </strong> jelöli az Yojana felhasználó adminisztrátorát. Hagyja üresen ha kétséges."
       system_user_dn_html: |
         Enter the DN of the system user used for read-only access.
         <br>
-        Example: uid=openproject,ou=system,dc=example,dc=com
+        Example: uid=yojana,ou=system,dc=example,dc=com
       system_user_password: Adja meg a rendszergazda bind jelszavát
       base_dn: |
-        Írja be annak az alrésznek az alap DN-jét az LDAP-ban, amelyben az OpenProject felhasználókat és csoportokat szeretne keresni.
-        Az OpenProject csak ebben a részfában biztosítja a megadott felhasználóneveket.
+        Írja be annak az alrésznek az alap DN-jét az LDAP-ban, amelyben az Yojana felhasználókat és csoportokat szeretne keresni.
+        Az Yojana csak ebben a részfában biztosítja a megadott felhasználóneveket.
         Példa: ou = felhasználók, dc = példa, dc = com
       filter_string: |
         Adjon hozzá egy opcionális RFC4515 szűrőt az LDAP -ban szűrt felhasználók számára visszaadott eredményekhez.
-        Ezzel korlátozhatja az OpenProject által hitelesítésre és csoportszinkronizálásra talált felhasználók körét.
+        Ezzel korlátozhatja az Yojana által hitelesítésre és csoportszinkronizálásra talált felhasználók körét.
       filter_string_concat: |
-        Az OpenProject mindig szűri a felhasználó által megadott bejelentkezési attribútumot a rekord azonosítására. Ha itt megad egy szűrőt,
+        Az Yojana mindig szűri a felhasználó által megadott bejelentkezési attribútumot a rekord azonosítására. Ha itt megad egy szűrőt,
         ÉS -sel lesz összekapcsolva. Alapértelmezés szerint a mindenre kiterjedő (objectClass =*) lesz szűrő.
       onthefly_register: |
-        Ha bejelöli ezt a négyzetet, az OpenProject automatikusan új felhasználókat hoz létre az LDAP bejegyzéseikből
-        amikor először hitelesítenek az OpenProject segítségével.
-        Ha ezt nem jelöli, akkor az OpenProject már létező fiókjai csak az LDAP segítségével hitelesíthetők!
-    connection_encryption: Kapcsolat titkosítása
-    encryption_details: LDAPS / STARTTLS beállítások
-    system_account: Rendszer fiók
+        Ha bejelöli ezt a négyzetet, az Yojana automatikusan új felhasználókat hoz létre az LDAP bejegyzéseikből
+        amikor először hitelesítenek az Yojana segítségével.
+        Ha ezt nem jelöli, akkor az Yojana már létező fiókjai csak az LDAP segítségével hitelesíthetők!
+    connection_encryption: "Kapcsolat titkosítása"
+    encryption_details: "LDAPS / STARTTLS beállítások"
+    system_account: "Rendszer fiók"
     system_account_legend: |
-      Az OpenProject csak olvasható hozzáférést igényel egy rendszerfiókon keresztül az LDAP-fában lévő felhasználók és csoportok kereséséhez.
+      Az Yojana csak olvasható hozzáférést igényel egy rendszerfiókon keresztül az LDAP-fában lévő felhasználók és csoportok kereséséhez.
       A következő szakaszban adja meg a rendszerfelhasználó bind hitelesítő adatait.
-    ldap_details: LDAP részletek
-    user_settings: Attribútum-leképezés
-    user_settings_legend: 'Az alábbi mezők a felhasználók létrehozásához kapcsolódnak LDAP bejegyzések alapján az OpenProject-ben, és ahhoz mely LDAP tulajdonságok lesznek felhasználva OpenProject felhasználó tulajdonságainak deffiniálásakor (tulajdonság társítás).
-
-      '
+    ldap_details: "LDAP részletek"
+    user_settings: "Attribútum-leképezés"
+    user_settings_legend: |
+      Az alábbi mezők a felhasználók létrehozásához kapcsolódnak LDAP bejegyzések alapján az Yojana-ben, és ahhoz mely LDAP tulajdonságok lesznek felhasználva Yojana felhasználó tulajdonságainak deffiniálásakor (tulajdonság társítás).
     tls_mode:
       plain: Egyik sem
       simple_tls: LDAPS
@@ -2160,19 +2159,18 @@ hu:
         cant_link_a_work_package_with_a_descendant: A feladatcsoport nem kapcsolható saját részfeladatához.
         circular_dependency: Ez a kapcsolat egy körkörös függőséget eredményezne.
         confirmation: "%{attribute} nem egyezik."
-        could_not_be_copied: A (z) %{dependency} nem másolható (teljesen).
-        datetime_must_be_in_future: must be in the future.
-        does_not_exist: nem létezik.
-        error_enterprise_only: "%{action} is only available in the OpenProject Enterprise edition."
-        error_unauthorized: lehet, hogy nem érhető el.
-        error_readonly: írása megkísérelve, de nem írható.
-        error_conflict: Az adatokat frissítette egy másik felhasználó időközben.
-        error_not_found: not found.
-        email: nem valós e-mail cím
-        empty: nem lehet üres.
-        enterprise_plan_required: requires at least the %{plan_name}.
-        even: kell még.
-        exclusion: foglalt.
+        could_not_be_copied: "A (z) %{dependency} nem másolható (teljesen)."
+        does_not_exist: "nem létezik."
+        error_enterprise_only: "%{action} is only available in the Yojana Enterprise edition."
+        error_unauthorized: "lehet, hogy nem érhető el."
+        error_readonly: "írása megkísérelve, de nem írható."
+        error_conflict: "Az adatokat frissítette egy másik felhasználó időközben."
+        error_not_found: "not found."
+        email: "nem valós e-mail cím"
+        empty: "nem lehet üres."
+        enterprise_plan_required: "requires at least the %{plan_name}."
+        even: "kell még."
+        exclusion: "foglalt."
         feature_disabled: is not available.
         feature_disabled_for_project: is disabled for this project.
         file_too_large: túl nagy fájlméret (maximális méret %{count} Byte).
@@ -2855,17 +2853,14 @@ hu:
     reset_token:
       action_create: Létrehoz
       action_reset: Visszaállít, reset
-      heading_reset: Visszaállítási kulcs törlése
-      heading_create: Visszaállítási kulcs létrehozása
-      implications: 'A biztonsági mentések engedélyezésével a szükséges jogosultságokkal és ezzel a biztonsági mentési jogkivonattal rendelkező felhasználók letölthetnek egy biztonsági másolatot, amely tartalmazza az OpenProject telepítés összes adatát. Ez magában foglalja az összes többi felhasználó adatait.
-
-        '
-      info: 'A biztonsági mentés létrehozásához biztonsági másolatot kell generálnia. Minden alkalommal, amikor biztonsági másolatot szeretne kérni, meg kell adnia ezt a tokent. A biztonsági mentés törlésével letilthatja a biztonsági mentést ennél a felhasználónál.
-
-        '
-      verification_html: 'Enter %{word} to confirm you want to %{action} the backup token.
-
-        '
+      heading_reset: "Visszaállítási kulcs törlése"
+      heading_create: "Visszaállítási kulcs létrehozása"
+      implications: >
+        A biztonsági mentések engedélyezésével a szükséges jogosultságokkal és ezzel a biztonsági mentési jogkivonattal rendelkező felhasználók letölthetnek egy biztonsági másolatot, amely tartalmazza az Yojana telepítés összes adatát. Ez magában foglalja az összes többi felhasználó adatait.
+      info: >
+        A biztonsági mentés létrehozásához biztonsági másolatot kell generálnia. Minden alkalommal, amikor biztonsági másolatot szeretne kérni, meg kell adnia ezt a tokent. A biztonsági mentés törlésével letilthatja a biztonsági mentést ennél a felhasználónál.
+      verification: >
+        Írja be a %{word} billentyűt, hogy megerősítse, hogy %{action} a biztonsági mentés tokent szeretné használni.
       verification_word_reset: visszaállít
       verification_word_create: létrehoz
       warning: 'Új token létrehozásakor csak 24 óra elteltével kérhet biztonsági másolatot. Ez biztonsági intézkedés. Ezt követően bármikor kérhet biztonsági másolatot a jogkivonat használatával.
@@ -3214,31 +3209,26 @@ hu:
       title: Enterprise add-on
       plan_title: Enterprise %{plan} add-on
       plan_name: "%{plan} enterprise plan"
-      trial_text: This feature is included in your active Enterprise trial.
-      plan_text_html: Available starting with the %{plan_name}.
-      unlimited: Korlátlan
-      already_have_token: 'Already have a token? Add it using the button below to upgrade to the booked Enterprise plan.
-
-        '
-      hide_banner: Hide this banner
-      homescreen_description: 'Enterprise plans extend the Community edition of OpenProject with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running OpenProject in a mission-critical environment.
-
-        '
+      plan_text_html: "Available starting with the %{plan_name}."
+      unlimited: "Korlátlan"
+      already_have_token: >
+        Already have a token? Add it using the button below to upgrade to the booked Enterprise plan.
+      hide_banner: "Hide this banner"
+      homescreen_description: >
+        Enterprise plans extend the Community edition of Yojana with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running Yojana in a mission-critical environment.
       homescreen_subline: By upgrading, you will also be supporting an open source project.
       baseline_comparison:
         description: Highlight changes made to this list since any point in the past.
       benefits:
-        description: What are the benefits of the Enterprise on-premises edition?
-        high_security: Biztonsági szolgáltatások
-        high_security_text: Single sign on (SAML, OpenID Connect, CAS), LDAP groups.
-        installation: Telepítési támogatás
-        installation_text: 'Tapasztalt szoftvermérnökök végigvezetik Önt a teljes telepítési és beállítási folyamaton saját infrastruktúrájában.
-
-          '
-        premium_features: Enterprise add-ons
-        premium_features_text: Agilis táblák, egyedi téma és embléma, grafikonok, intelligens munkafolyamatok egyéni műveletekkel, teljes szövegű keresés a munkacsomag mellékletekhez és több kiválasztott egyéni mező.
-        professional_support: Szakmai támogatás
-        professional_support_text: Megbízható támogatást kaphat a vezető támogató mérnököktől, akik szakértő ismeretekkel rendelkeznek az OpenProject futtatásáról üzleti szempontból kritikus környezetben.
+        description: "What are the benefits of the Enterprise on-premises edition?"
+        high_security: "Biztonsági szolgáltatások"
+        high_security_text: "Single sign on (SAML, OpenID Connect, CAS), LDAP groups."
+        installation: "Telepítési támogatás"
+        installation_text: "Tapasztalt szoftvermérnökök végigvezetik Önt a teljes telepítési és beállítási folyamaton saját infrastruktúrájában.\n"
+        premium_features: "Enterprise add-ons"
+        premium_features_text: "Agilis táblák, egyedi téma és embléma, grafikonok, intelligens munkafolyamatok egyéni műveletekkel, teljes szövegű keresés a munkacsomag mellékletekhez és több kiválasztott egyéni mező."
+        professional_support: "Szakmai támogatás"
+        professional_support_text: "Megbízható támogatást kaphat a vezető támogató mérnököktől, akik szakértő ismeretekkel rendelkeznek az Yojana futtatásáról üzleti szempontból kritikus környezetben."
       work_package_subject_generation:
         description: Create automatically generated subjects using referenced attributes and text.
       customize_life_cycle:
@@ -3268,34 +3258,31 @@ hu:
       calculated_values:
         description: Calculated values allow you to create a mathematical formula based attribute using numeric values and other project attributes and custom fields.
       define_custom_style:
-        title: Custom color theme and logo
-        more_info: 'Megjegyzés: a használt logó nyilvánosan elérhető lesz.'
-        description: Testreszabhatja OpenProject telepítését saját logójával és színeivel.
+        title: "Custom color theme and logo"
+        more_info: "Megjegyzés: a használt logó nyilvánosan elérhető lesz."
+        description: Testreszabhatja Yojana telepítését saját logójával és színeivel.
       custom_actions:
         title: Egyéni műveletek
         description: Az egyéni műveletek egy kattintással elérhető parancsikonok előre meghatározott műveletek csoportjához, amelyeket állapot, szerep, típus vagy projekt alapján elérhetővé tehet bizonyos munkacsomagokon.
       mcp_server:
-        description: Bring OpenProject into your AI workflows with a secure MCP server.
-      meeting_templates:
-        description: Define meeting templates with a set agenda structure and save time by reusing them when creating new meetings.
+        description: "Integrate AI agents with your Yojana instance through MCP."
       nextcloud_sso:
         title: Single Sign-On for Nextcloud Storage
         description: Enable seamless and secure authentication for your Nextcloud storage with Single Sign-On. Simplify access management and enhance user convenience.
       scim_api:
-        title: SCIM clients
-        description: Automate user management in OpenProject by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan.
+        title: "SCIM clients"
+        description: "Automate user management in Yojana by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan."
       sso_auth_providers:
         title: Single Sign-On (SSO)
         description: Enable users to log in via external SSO providers using SAML or OpenID Connect for seamless access and integration with existing identity systems.
       virus_scanning:
-        description: Ensure uploaded files in OpenProject are scanned for viruses before being accessible by other users.
+        description: "Ensure uploaded files in Yojana are scanned for viruses before being accessible by other users."
       project_creation_wizard:
         description: Generate a step-by-step wizard to help project managers fill out a project initiation request.
       placeholder_users:
         title: Teszt felhasználók
-        description: 'Placeholder users are a way to assign work packages to users who are not part of your project. They can be useful in a range of scenarios; for example, if you need to track tasks for a resource that is not yet named or available, or if you don’t want to give that person access to OpenProject but still want to track tasks assigned to them.
-
-          '
+        description: >
+          Placeholder users are a way to assign work packages to users who are not part of your project. They can be useful in a range of scenarios; for example, if you need to track tasks for a resource that is not yet named or available, or if you don’t want to give that person access to Yojana but still want to track tasks assigned to them.
       internal_comments:
         title: Internal comments
         description: Internal comments allow an internal team to communicate amongst themselves privately. These are only visible to certain project roles and will never be visible publicly.
@@ -3310,26 +3297,25 @@ hu:
         other: "%{count} days left of %{trial_plan} trial token"
       description_html: You have access to all %{trial_plan} features.
     trial:
-      not_found: You have requested a trial token, but that request is no longer available. Please try again.
-      wait_for_confirmation: We sent you an email to confirm your address in order to retrieve a trial token.
-      already_retrieved: 'Your trial enterprise token was already retrieved. Please check your emails for the token being attached. Please reach out to our support team if you need a new one.
-
-        '
-      successfully_saved: Your trial enterprise token has been successfully retrieved.
-      token_sent: Trial token requested
-      request_again: Request again
-      resend_action: Resend confirmation email
-      welcome_title: Quick feature overview
-      welcome_description: Get a quick overview of project management and team collaboration with OpenProject Enterprise edition.
-      confirmation_info: 'We sent you an email on %{date} to %{email} with all the information to start the free trial of OpenProject Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
-
-        '
-      confirmation_subline: 'Please, check your inbox and follow the steps to start your 14-day free trial.
-
-        '
+      not_found: "You have requested a trial token, but that request is no longer available. Please try again."
+      wait_for_confirmation: "We sent you an email to confirm your address in order to retrieve a trial token."
+      already_retrieved: >
+        Your trial enterprise token was already retrieved. Please check your emails for the token being attached. Please reach out to our support team if you need a new one.
+      successfully_saved: "Your trial enterprise token has been successfully retrieved."
+      token_sent: "Trial token requested"
+      request_again: "Request again"
+      resend_action: "Resend confirmation email"
+      welcome_title: "Quick feature overview"
+      welcome_description: "Get a quick overview of project management and team collaboration with Yojana Enterprise edition."
+      confirmation_info: >
+        We sent you an email on %{date} to %{email} with all the information to start the free trial of Yojana Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
+      confirmation_subline: >
+        Please, check your inbox and follow the steps to start your 14-day free trial.
       domain_caption: The token will be valid for your currently configured host name.
-      receive_newsletter: I want to receive the OpenProject [newsletter](newsletter_url).
-      consent: I agree with the [terms of service](tos_url) and the [privacy policy](privacy_url).
+      receive_newsletter_html: >
+        I want to receive the Yojana <a target="_blank" href="https://www.yojana.girishm.info/newsletter/">newsletter</a>.
+      consent_html: >
+        I agree with the <a target="_blank" href="https://www.yojana.girishm.info/terms-of-service/">terms of service</a> and the <a target="_blank" href="https://www.yojana.girishm.info/data-privacy-and-security/">privacy policy</a>.
   email_calendar_updates:
     state:
       disabled: Disabled.
@@ -3353,57 +3339,51 @@ hu:
   error_can_not_delete_in_use_archived_undisclosed: Az archivált projektekben is vannak munkacsomagok. Meg kell kérnie egy rendszergazdát, hogy végezze el a törlést, hogy lássa, mely projekteket érinti a törlés.
   error_can_not_delete_in_use_archived_work_packages: 'Az archivált projektek szintén tartalmaznak munkacsomagokat. A következő projektek újra aktiválása szükséges, mielőtt a vonatkozó munkacsomagok típusát meg lehet változtatni: %{archived_projects_urls}'
   error_can_not_delete_type:
-    explanation: Ez a típus munkacsomagokat tartalmaz és nem törölhető. Az érintett munkacsomagok <a target="_blank" href="%{url}">ebben a nézetben</a> megtekinthetők.
-  error_can_not_delete_standard_type: Alap típusokat nem lehet törölni.
-  error_can_not_invite_user: A meghívó küldése sikertelen a felhasználó részére.
-  error_can_not_remove_role: Ez a szerepkör használatban van, nem lehet törölni
-  error_can_not_reopen_work_package_on_closed_version: A feladatcsoport lezárt verzió, nem lehet újra nyitni
-  error_can_not_find_all_resources: Nem található a kéréshez tartozó összes erőforrás.
-  error_can_not_unarchive_project: 'Ezt a projektet nem lehet az archívumból visszavenni: %{errors}'
-  error_check_user_and_role: Légy szíves válassz felhasználót és szerepkört
-  error_code: 'Hibakód: %{code}'
-  error_color_could_not_be_saved: A szín nem menthető
-  error_cookie_missing: Hiányzó OpenProject cookie. Ellenőrizze, hogy böngészőjében a cookie-k használata engedélyezve van, mert anélkül ez az alkalmazás nem tud megfelelően működni.
-  error_custom_option_not_found: A beállítás nem létezik.
-  error_enterprise_plan_needed: You need the %{plan} enterprise plan to perform this action.
-  error_enterprise_activation_user_limit: Fiókját nem lehet aktiválni (elérte a felhasználói korlátot). Kérjük, lépjen kapcsolatba rendszergazdájával a hozzáféréshez.
-  error_enterprise_token_invalid_domain: The Enterprise edition is not active. Your Enterprise token's domain (%{actual}) does not match the system's host name (%{expected}).
-  error_failed_to_delete_entry: Nem sikerült törölni ezt a bejegyzést.
-  error_in_dependent: 'Hiba a függő objektum módosítása során: %{dependent_class} # %{related_id} - %{related_subject}: %{error}
-
-    '
-  error_in_new_dependent: 'Hiba a függő objektum létrehozása során: %{dependent_class} - %{related_subject}: %{error}
-
-    '
-  error_invalid_selected_value: Kijelölt érték érvénytelen.
-  error_journal_attribute_not_present: A lap nem tartalmaz attribútumot %{attribute}.
-  error_pdf_export_too_many_columns: Túl sok oszlop lett kiválasztva a PDF exportáláshoz. Kérlek csökkentsd a sorok számát.
-  error_pdf_date_range_too_long: The selected work package date range exceeds the allowable PDF export limit. Please condense the range to a maximum of %{years} years.
-  error_pdf_failed_to_export: 'A PDF-Exportálás mentése nem sikerült: %{error}'
-  error_token_authenticity: Nem sikerült ellenőrizni a Cross-Site Request Forgery token-t. Megpróbált adatokat küldeni több böngészőn vagy lapon keresztül? Kérjük, zárja be az összes lapot, és próbálkozzon újra.
-  error_reminder_not_found: The reminder was not found or was already notified about.
-  error_work_package_not_found_in_project: A feladatcsoport nem található, vagy nem tartozik ehhez a projekthez
-  error_work_package_id_not_found: The work package was not found.
-  error_must_be_project_member: projekt tagnak kell lennie
-  error_migrations_are_pending: Az Openproject adatbázisainak költöztetése függőben van. Valószínűleg elmulasztotta lefuttatni az átvitelt a legutóbbi frissítéskor. Kérjük, a megfelelő frissítéshez kövesse a frissítési útmutatót.
-  error_migrations_visit_upgrade_guides: Kérjük, látogassa meg frissítési útmutatónkat
-  error_no_default_work_package_status: Nincs alapértelmezett feladatcsoport állapot meghatározva. Kérjük, ellenőrizze a konfigurációt ("Adminisztráció - feladatcsoport állapotok").
-  error_no_type_in_project: Nincs típus hozzárendelve ehhez a projekthez. Kérjük, ellenőrizze a projekt beállításait.
-  error_omniauth_registration_timed_out: A regisztráció egy külső hitelesítés-szolgáltatón keresztül túllépte az időkorlátot. Kérjük, próbálja meg újra.
-  error_omniauth_invalid_auth: 'Az azonosító szolgáltatótól visszaadott hitelesítési adatok érvénytelenek. További segítségért lépjen kapcsolatba rendszergazdájával.
-
-    '
-  error_password_change_failed: Hiba történt a jelszó megváltoztatásakor.
-  error_scm_command_failed: 'Hiba mikor kipróbáláshoz el akarja érni a repository: %{value}'
-  error_scm_not_found: A bejegyzés vagy a revízió  a csomagtárolóban  nem található.
-  error_type_could_not_be_saved: A típust nem lehet menteni
-  error_unable_delete_status: A munka csomag állapot nem törölhető, mivel legalább egy munka csomag használja.
-  error_unable_delete_default_status: Nem tudom törtölni az alapértelmezett munkacsomag állapotát. Kérjük, válasszon egy másik alapértelmezett munka csomag állapotot, mielött ezt törli.
-  error_unable_to_connect: Nem tud kapcsolódni (%{value} )
-  error_unable_delete_wiki: Nem lehet törölni a wikioldalt.
-  error_unable_update_wiki: Nem lehet frissíteni a wikioldalt.
-  error_workflow_copy_source: Kérjük, válassza ki a forrás típusát vagy a szerepkört
-  error_workflow_copy_target: Válassza ki a cél típusokat, és szerepköröket
+    explanation: 'Ez a típus munkacsomagokat tartalmaz és nem törölhető. Az érintett munkacsomagok <a target="_blank" href="%{url}">ebben a nézetben</a> megtekinthetők.'
+  error_can_not_delete_standard_type: "Alap típusokat nem lehet törölni."
+  error_can_not_invite_user: "A meghívó küldése sikertelen a felhasználó részére."
+  error_can_not_remove_role: "Ez a szerepkör használatban van, nem lehet törölni"
+  error_can_not_reopen_work_package_on_closed_version: "A feladatcsoport lezárt verzió, nem lehet újra nyitni"
+  error_can_not_find_all_resources: "Nem található a kéréshez tartozó összes erőforrás."
+  error_can_not_unarchive_project: "Ezt a projektet nem lehet az archívumból visszavenni: %{errors}"
+  error_check_user_and_role: "Légy szíves válassz felhasználót és szerepkört"
+  error_code: "Hibakód: %{code}"
+  error_color_could_not_be_saved: "A szín nem menthető"
+  error_cookie_missing: "Hiányzó Yojana cookie. Ellenőrizze, hogy böngészőjében a cookie-k használata engedélyezve van, mert anélkül ez az alkalmazás nem tud megfelelően működni."
+  error_custom_option_not_found: "A beállítás nem létezik."
+  error_enterprise_plan_needed: "You need the %{plan} enterprise plan to perform this action."
+  error_enterprise_activation_user_limit: "Fiókját nem lehet aktiválni (elérte a felhasználói korlátot). Kérjük, lépjen kapcsolatba rendszergazdájával a hozzáféréshez."
+  error_enterprise_token_invalid_domain: "The Enterprise edition is not active. Your Enterprise token's domain (%{actual}) does not match the system's host name (%{expected})."
+  error_failed_to_delete_entry: "Nem sikerült törölni ezt a bejegyzést."
+  error_in_dependent: "Hiba a függő objektum módosítása során: %{dependent_class} # %{related_id} - %{related_subject}: %{error}\n" #%{related_id} - %{related_subject}: %{error}\n"
+  error_in_new_dependent: "Hiba a függő objektum létrehozása során: %{dependent_class} - %{related_subject}: %{error}\n"
+  error_invalid_selected_value: "Kijelölt érték érvénytelen."
+  error_journal_attribute_not_present: "A lap nem tartalmaz attribútumot %{attribute}."
+  error_pdf_export_too_many_columns: "Túl sok oszlop lett kiválasztva a PDF exportáláshoz. Kérlek csökkentsd a sorok számát."
+  error_pdf_date_range_too_long: "The selected work package date range exceeds the allowable PDF export limit. Please condense the range to a maximum of %{years} years."
+  error_pdf_failed_to_export: "A PDF-Exportálás mentése nem sikerült: %{error}"
+  error_token_authenticity: "Nem sikerült ellenőrizni a Cross-Site Request Forgery token-t. Megpróbált adatokat küldeni több böngészőn vagy lapon keresztül? Kérjük, zárja be az összes lapot, és próbálkozzon újra."
+  error_reminder_not_found: "The reminder was not found or was already notified about."
+  error_work_package_not_found_in_project: "A feladatcsoport nem található, vagy nem tartozik ehhez a projekthez"
+  error_work_package_id_not_found: "The work package was not found."
+  error_must_be_project_member: "projekt tagnak kell lennie"
+  error_migrations_are_pending: "Az Openproject adatbázisainak költöztetése függőben van. Valószínűleg elmulasztotta lefuttatni az átvitelt a legutóbbi frissítéskor. Kérjük, a megfelelő frissítéshez kövesse a frissítési útmutatót."
+  error_migrations_visit_upgrade_guides: "Kérjük, látogassa meg frissítési útmutatónkat"
+  error_no_default_work_package_status: 'Nincs alapértelmezett feladatcsoport állapot meghatározva. Kérjük, ellenőrizze a konfigurációt ("Adminisztráció - feladatcsoport állapotok").'
+  error_no_type_in_project: "Nincs típus hozzárendelve ehhez a projekthez. Kérjük, ellenőrizze a projekt beállításait."
+  error_omniauth_registration_timed_out: "A regisztráció egy külső hitelesítés-szolgáltatón keresztül túllépte az időkorlátot. Kérjük, próbálja meg újra."
+  error_omniauth_invalid_auth: "Az azonosító szolgáltatótól visszaadott hitelesítési adatok érvénytelenek. További segítségért lépjen kapcsolatba rendszergazdájával.\n"
+  error_password_change_failed: "Hiba történt a jelszó megváltoztatásakor."
+  error_scm_command_failed: "Hiba mikor kipróbáláshoz el akarja érni a repository: %{value}"
+  error_scm_not_found: "A bejegyzés vagy a revízió  a csomagtárolóban  nem található."
+  error_type_could_not_be_saved: "A típust nem lehet menteni"
+  error_unable_delete_status: "A munka csomag állapot nem törölhető, mivel legalább egy munka csomag használja."
+  error_unable_delete_default_status: "Nem tudom törtölni az alapértelmezett munkacsomag állapotát. Kérjük, válasszon egy másik alapértelmezett munka csomag állapotot, mielött ezt törli."
+  error_unable_to_connect: "Nem tud kapcsolódni (%{value} )"
+  error_unable_delete_wiki: "Nem lehet törölni a wikioldalt."
+  error_unable_update_wiki: "Nem lehet frissíteni a wikioldalt."
+  error_workflow_copy_source: "Kérjük, válassza ki a forrás típusát vagy a szerepkört"
+  error_workflow_copy_target: "Válassza ki a cél típusokat, és szerepköröket"
   error_menu_item_not_created: Nem adható hozzá menüpont
   error_menu_item_not_saved: Menüelem nem menthető
   error_wiki_root_menu_item_conflict: 'Nem lehet átnevezni "%{old_name}", mert "%{new_name}" menü egy már létező menüvel "%{existing_caption}" (%{existing_identifier}) ütközik.
@@ -3498,8 +3478,8 @@ hu:
     succeeded: Export completed
     failed: 'An error has occurred while trying to export the work packages: %{message}'
     demo:
-      heading: Demo PDF
-      footer: Generated by OpenProject
+      heading: "Demo PDF"
+      footer: "Generated by Yojana"
       button_text: Generate Demo PDF
     errors:
       embedded_table_with_too_many_columns: This embedded work package table could not fit on the page, please reduce the number of columns.
@@ -3620,7 +3600,7 @@ hu:
         no_results_subtext: Add one or multiple projects as favorite through their overview or in a project list.
       users: Legújabb regisztrált felhasználók ebben az esetben.
     blocks:
-      community: OpenProject Közösség
+      community: "Yojana Közösség"
       upsell:
         title: Váltás Vállalati Verzióra
       new_features:
@@ -3632,40 +3612,38 @@ hu:
 
             '
           new_features_list:
-            line_0: XWiki integration (Corporate plan).
-            line_1: Sprint goals.
-            line_2: "'All sprints' overview page."
-            line_3: Display backlog buckets in work packages and work package tables.
-            line_4: Improved support for project-based (semantic) identifiers.
-            line_5: Convert meeting agenda items into work packages.
-            line_6: Configure cost types per project.
+            line_0: Automated project initiation (Enterprise add-on).
+            line_1: "Meetings: add new or existing work packages as outcomes."
+            line_2: "Meetings: show iCal responses in Yojana."
+            line_3: "Recurring meetings: duplicate agenda items to the next occurrence."
+            line_4: "Release to Community: Attribute highlighting."
+            line_5: Warning before opening external links in user-provided content (Enterprise add-on).
+            line_6: Improved performance and user experience, including the Activity tab and Documents module.
     links:
-      upgrade_enterprise_edition: Váltás Vállalati Verzióra
-      postgres_migration: A rendszer költöztetése PostreSQL-re
-      user_guides: Felhasználói útmutató
-      faq: GY. I. K.
-      impressum: Jogi nyilatkozat
-      glossary: Szószedet
-      shortcuts: Parancsikonok
-      blog: OpenProject blog
-      forums: Közösségi fórum
-      security_alerts: Security alerts
-      newsletter: Newsletter
+      upgrade_enterprise_edition: "Váltás Vállalati Verzióra"
+      postgres_migration: "A rendszer költöztetése PostreSQL-re"
+      user_guides: "Felhasználói útmutató"
+      faq: "GY. I. K."
+      impressum: "Jogi nyilatkozat"
+      glossary: "Szószedet"
+      shortcuts: "Parancsikonok"
+      blog: "Yojana blog"
+      forums: "Közösségi fórum"
+      security_alerts: "Security alerts"
+      newsletter: "Newsletter"
   image_conversion:
     imagemagick: Képmásoló
   journals:
     changes_retracted: A módosítások visszavonásra kerültek.
     caused_changes:
-      budget_deleted: Budget has been deleted
-      dates_changed: Dátum módosítva
-      default_attribute_written: Read-only attributes written
-      import: Imported
-      progress_mode_changed_to_status_based: Progress calculation updated
-      status_changed: Status '%{status_name}'
-      system_update: 'OpenProject rendszerfrissítés:'
-      work_package_duplicate_closed: 'Duplicate work package updated:'
-      total_percent_complete_mode_changed_to_work_weighted_average: Calculation of % Complete totals now weighted by Work.
-      total_percent_complete_mode_changed_to_simple_average: Calculation of % Complete totals now based on a simple average of only % Complete values.
+      dates_changed: "Dátum módosítva"
+      default_attribute_written: "Read-only attributes written"
+      progress_mode_changed_to_status_based: "Progress calculation updated"
+      status_changed: "Status '%{status_name}'"
+      system_update: "Yojana rendszerfrissítés:"
+      work_package_duplicate_closed: "Duplicate work package updated:"
+      total_percent_complete_mode_changed_to_work_weighted_average: "Calculation of % Complete totals now weighted by Work."
+      total_percent_complete_mode_changed_to_simple_average: "Calculation of % Complete totals now based on a simple average of only % Complete values."
     cause_descriptions:
       import:
         header: changes by %{author}
@@ -3729,7 +3707,7 @@ hu:
         notifications: Notification settings
         email_reminders: Email reminders
     access_tokens:
-      description: Provider tokens are issued by OpenProject, allowing other applications to access it. Client tokens are issued by other applications, allowing OpenProject to access them.
+      description: "Provider tokens are issued by Yojana, allowing other applications to access it. Client tokens are issued by other applications, allowing Yojana to access them."
       no_results:
         title: Nincs megjeleníthető fiók
         description: Mindenki le lett tiltva. Újra engedélyezhetők az adminisztrációs menüben.
@@ -3745,49 +3723,49 @@ hu:
         provider:
           title: Provider tokens
       token/api:
-        blank_description: There is no API token yet. You can create one using the button below.
-        blank_title: No API token
-        title: API
-        table_title: API tokens
-        text_hint: API tokens allow third-party applications to communicate with this OpenProject instance via REST APIs.
-        static_token_name: API token
-        disabled_text: API tokens are not enabled by the administrator. Please contact your administrator to use this feature.
-        add_button: API token
+        blank_description: "There is no API token yet. You can create one using the button below."
+        blank_title: "No API token"
+        title: "API"
+        table_title: "API tokens"
+        text_hint: "API tokens allow third-party applications to communicate with this Yojana instance via REST APIs."
+        static_token_name: "API token"
+        disabled_text: "API tokens are not enabled by the administrator. Please contact your administrator to use this feature."
+        add_button: "API token"
       ical:
-        blank_description: To add an iCalendar token, subscribe to a new or existing calendar from within the Calendar module of a project. You must have the necessary permissions.
-        blank_title: No iCalendar token
-        title: iCalendar
-        table_title: iCalendar tokens
-        text_hint_link: iCalendar tokens allow users to [subscribe to OpenProject calendars](docs_url) and view up-to-date work package information from external clients.
-        disabled_text: iCalendar subscriptions are not enabled by the administrator. Please contact your administrator to use this feature.
+        blank_description: "To add an iCalendar token, subscribe to a new or existing calendar from within the Calendar module of a project. You must have the necessary permissions."
+        blank_title: "No iCalendar token"
+        title: "iCalendar"
+        table_title: "iCalendar tokens"
+        text_hint_link: "iCalendar tokens allow users to [subscribe to Yojana calendars](docs_url) and view up-to-date work package information from external clients."
+        disabled_text: "iCalendar subscriptions are not enabled by the administrator. Please contact your administrator to use this feature."
       oauth_application:
-        active_tokens: Active tokens
-        blank_description: There is no third-party application access configured and active for you.
-        blank_title: No OAuth application token
-        last_refreshed_at: Last refreshed at
-        title: OAuth
-        table_title: OAuth application tokens
-        text_hint: OAuth application tokens allow third-party applications to connect with this OpenProject instance.
+        active_tokens: "Active tokens"
+        blank_description: "There is no third-party application access configured and active for you."
+        blank_title: "No OAuth application token"
+        last_used_at: "Last used at"
+        title: "OAuth"
+        table_title: "OAuth application tokens"
+        text_hint: "OAuth application tokens allow third-party applications to connect with this Yojana instance."
       oauth_client:
-        blank_description: There are no OAuth client tokens yet.
-        blank_title: No OAuth client tokens
-        failed: An error occurred and the token couldn't be removed. Please try again later.
-        integration_type: Integration type
-        table_title: OAuth client tokens
-        text_hint: OAuth client tokens allow this OpenProject instance to connect with external applications, such as file storages.
-        title: OAuth
-        remove_token: Do you really want to remove this token? You will need to login again on %{integration}.
-        removed: OAuth client token successfully removed
-        unknown_integration: Unknown
+        blank_description: "There are no OAuth client tokens yet."
+        blank_title: "No OAuth client tokens"
+        failed: "An error occurred and the token couldn't be removed. Please try again later."
+        integration_type: "Integration type"
+        table_title: "OAuth client tokens"
+        text_hint: "OAuth client tokens allow this Yojana instance to connect with external applications, such as file storages."
+        title: "OAuth"
+        remove_token: "Do you really want to remove this token? You will need to login again on %{integration}."
+        removed: "OAuth client token successfully removed"
+        unknown_integration: "Unknown"
       token/rss:
-        add_button: RSS token
-        blank_description: There is no RSS token yet. You can create one using the button below.
-        blank_title: No RSS token
-        title: RSS
-        table_title: RSS tokens
-        text_hint: RSS tokens allow users to keep up with the latest changes in this OpenProject instance via an external RSS reader.
-        static_token_name: RSS token
-        disabled_text: RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature.
+        add_button: "RSS token"
+        blank_description: "There is no RSS token yet. You can create one using the button below."
+        blank_title: "No RSS token"
+        title: "RSS"
+        table_title: "RSS tokens"
+        text_hint: "RSS tokens allow users to keep up with the latest changes in this Yojana instance via an external RSS reader."
+        static_token_name: "RSS token"
+        disabled_text: "RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature."
       storages:
         unknown_storage: Unknown storage
     email_reminders:
@@ -4013,43 +3991,40 @@ hu:
   label_collapse: Collapse
   label_collapsed_click_to_show: Összecsukot. Kattintson a megjelenítéshez
   label_configuration: Konfiguráció
-  label_comment_add: Vélemény hozzáadása
-  label_comment_added: Vélemény hozzáadása
-  label_comment_delete: Vélemény törlése
-  label_comment_plural: Vélemény
-  label_commits_per_author: Szerzönként vállalja
-  label_commits_per_month: Havonként vállalja
-  label_confirmation: Új jelszó újra
-  label_contains: tartalmaznak
-  label_starts_with: starts with
-  label_content: Tartalom
-  label_color_plural: Színek
-  label_copied: másolva
-  label_copy_same_as_target: Ugyanaz, mint a cél
-  label_copy_source: Forrás
-  label_copy_target: Cél
-  label_copy_workflow_from: Munkafolyamat másolása  -ból
-  label_copy_workflow_from_type: Copy to another type
-  label_copy_workflow_from_role: Copy to other roles
-  label_copy_project: Projekt másolása
-  label_core_version: Core verzió
-  label_core_build: Core build
-  label_created_by: Created by %{user}
-  label_current_status: Jelenlegi állapot
-  label_current_version: Jelenlegi verzió
-  label_custom_field_add_no_type: Mező hozzáadása egy feladatcsoport típushoz
-  label_custom_field_new: Új választható mező
-  label_custom_field_plural: Választható mezők
-  label_custom_field_default_type: Üres típus
-  label_custom_style: Kinézet
-  label_custom_style_description: Choose how OpenProject looks to you with themes, select your default colors to use in the app and how exports look like.
-  label_dashboard: Vezérlőpult
-  label_database_version: PostgreSQL verzió
-  label_date: dátum
-  label_dates: Dátumok
-  label_date_and_time: Dátum és idő
-  label_date_format: Dátum formátum
-  label_date_from: tól
+  label_comment_add: "Vélemény hozzáadása"
+  label_comment_added: "Vélemény hozzáadása"
+  label_comment_delete: "Vélemény törlése"
+  label_comment_plural: "Vélemény"
+  label_commits_per_author: "Szerzönként vállalja"
+  label_commits_per_month: "Havonként vállalja"
+  label_confirmation: "Új jelszó újra"
+  label_contains: "tartalmaznak"
+  label_content: "Tartalom"
+  label_color_plural: "Színek"
+  label_copied: "másolva"
+  label_copy_same_as_target: "Ugyanaz, mint a cél"
+  label_copy_source: "Forrás"
+  label_copy_target: "Cél"
+  label_copy_workflow_from: "Munkafolyamat másolása  -ból"
+  label_copy_project: "Projekt másolása"
+  label_core_version: "Core verzió"
+  label_core_build: "Core build"
+  label_created_by: "Created by %{user}"
+  label_current_status: "Jelenlegi állapot"
+  label_current_version: "Jelenlegi verzió"
+  label_custom_field_add_no_type: "Mező hozzáadása egy feladatcsoport típushoz"
+  label_custom_field_new: "Új választható mező"
+  label_custom_field_plural: "Választható mezők"
+  label_custom_field_default_type: "Üres típus"
+  label_custom_style: "Kinézet"
+  label_custom_style_description: "Choose how Yojana looks to you with themes, select your default colors to use in the app and how exports look like."
+  label_dashboard: "Vezérlőpult"
+  label_database_version: "PostgreSQL verzió"
+  label_date: "dátum"
+  label_dates: "Dátumok"
+  label_date_and_time: "Dátum és idő"
+  label_date_format: "Dátum formátum"
+  label_date_from: "tól"
   label_date_from_to: "%{start}-tól %{end}-ig"
   label_date_to: címzett
   label_day_plural: nap
@@ -4311,61 +4286,53 @@ hu:
   label_not_found: nem található
   label_none: Egyik sem
   label_none_parentheses: "(nincs)"
-  label_not_contains: nem tartalmaz
-  label_not_equals: nem
-  label_life_cycle_step_plural: Project life cycle
-  label_on: be
-  label_operator_all: is not empty
-  label_operator_none: is empty
-  label_operator_equals_or: is (OR)
-  label_operator_equals_all: is (AND)
-  label_operator_shared_with_user_any: bármely
-  label_open: nyitva
-  label_closed: lezárt
-  label_open_menu: Menü megnyitása
-  label_open_work_packages: nyitott
-  label_open_work_packages_plural: nyitott
-  label_openproject_website: OpenProject honlap
-  label_optional_description: Leírás
-  label_options: Beállítások
-  label_other: Egyéb
-  label_overall_activity: Általános tevékenység
-  label_overview: Áttekintés
-  label_page_title: Oldalcím
-  label_parent_group_caption: 'Setting a parent group will make this group a subgroup of the selected parent group. This will also inherit all memberships, including permissions of the parent group.
-
-    '
-  label_part_of: része
-  label_password_lost: Elfelejtetted a jelszavad?
-  label_password_rule_lowercase: Kisbetűk
-  label_password_rule_numeric: Numerikus karakterek
-  label_password_rule_special: Különleges karakterek
-  label_password_rule_uppercase: Nagybetű
-  label_password_requirement_lowercase: Must contain at least one lowercase character.
-  label_password_requirement_numeric: Must contain at least one numeric character.
-  label_password_requirement_special: Must contain at least one special character.
-  label_password_requirement_uppercase: Must contain at least one uppercase character.
-  label_path_encoding: Elérési út kódolás
-  label_per_page: 'Oldalanként:'
-  label_people: Személyek
-  label_permissions: Jogosultságok
-  label_permissions_report: Jogosultságok riportálása
-  label_personalize_page: A lap testreszabása
-  label_placeholder_user: Teszt felhasználó
-  label_placeholder_user_new: Új teszt felhasználó
-  label_placeholder_user_plural: Teszt felhasználók
-  label_planning: Tervezés
-  label_please_login: Kérjük, jelentkezzen be
-  label_plugins: Modulok
-  label_portfolio_plural: Portfolios
-  label_modules_and_plugins: Modulok és kiegészítők
-  label_precedes: Megelőzi
-  label_preferences: Tulajdonságok
-  label_preview: Előnézet
-  label_preview_not_available: Preview not available
-  label_previous: Korábbi
-  label_previous_week: Előző héten
-  label_previous_year: Previous year
+  label_not_contains: "nem tartalmaz"
+  label_not_equals: "nem"
+  label_life_cycle_step_plural: "Project life cycle"
+  label_on: "be"
+  label_operator_all: "is not empty"
+  label_operator_none: "is empty"
+  label_operator_equals_or: "is (OR)"
+  label_operator_equals_all: "is (AND)"
+  label_operator_shared_with_user_any: "bármely"
+  label_open: "nyitva"
+  label_closed: "lezárt"
+  label_open_menu: "Menü megnyitása"
+  label_open_work_packages: "nyitott"
+  label_open_work_packages_plural: "nyitott"
+  label_openproject_website: "Yojana honlap"
+  label_optional_description: "Leírás"
+  label_options: "Beállítások"
+  label_other: "Egyéb"
+  label_overall_activity: "Általános tevékenység"
+  label_overview: "Áttekintés"
+  label_page_title: "Oldalcím"
+  label_part_of: "része"
+  label_password_lost: "Elfelejtetted a jelszavad?"
+  label_password_rule_lowercase: "Kisbetűk"
+  label_password_rule_numeric: "Numerikus karakterek"
+  label_password_rule_special: "Különleges karakterek"
+  label_password_rule_uppercase: "Nagybetű"
+  label_path_encoding: "Elérési út kódolás"
+  label_per_page: "Oldalanként:"
+  label_people: "Személyek"
+  label_permissions: "Jogosultságok"
+  label_permissions_report: "Jogosultságok riportálása"
+  label_personalize_page: "A lap testreszabása"
+  label_placeholder_user: "Teszt felhasználó"
+  label_placeholder_user_new: "Új teszt felhasználó"
+  label_placeholder_user_plural: "Teszt felhasználók"
+  label_planning: "Tervezés"
+  label_please_login: "Kérjük, jelentkezzen be"
+  label_plugins: "Modulok"
+  label_portfolio_plural: "Portfolios"
+  label_modules_and_plugins: "Modulok és kiegészítők"
+  label_precedes: "Megelőzi"
+  label_preferences: "Tulajdonságok"
+  label_preview: "Előnézet"
+  label_preview_not_available: "Preview not available"
+  label_previous: "Korábbi"
+  label_previous_week: "Előző héten"
   label_principal_invite_via_email: " vagy új felhasználót hívhat meg e-mailben"
   label_principal_search: Meglévő felhasználók vagy csoportok hozzáadása
   label_privacy_policy: Adatvédelmi és biztonsági szabályzat
@@ -4782,10 +4749,8 @@ hu:
   mail_body_backup_token_reset_user_info: A visszaállítási kulcs törölve.
   mail_body_backup_token_info: Az előző kulcs elavult.
   mail_body_backup_waiting_period: A visszaállítási kulcs még %{hours} óráig érvényes.
-  mail_body_backup_token_warning: 'Ha nem te voltál, azonnal jelentkezz be az OpenProject szolgáltatásba, és állítsd újra.
-
-    '
-  mail_body_incoming_email_error: Az OpenProjectnek küldött e-mailt nem sikerült feldolgozni.
+  mail_body_backup_token_warning: "Ha nem te voltál, azonnal jelentkezz be az Yojana szolgáltatásba, és állítsd újra.\n"
+  mail_body_incoming_email_error: Az Yojananek küldött e-mailt nem sikerült feldolgozni.
   mail_body_incoming_email_error_in_reply_to: "%{received_at} %{from_email} írta"
   mail_body_incoming_email_error_logs: Naplók
   mail_body_lost_password: 'A jelszó módosításához kattintson az alábbi linkre:'
@@ -4800,21 +4765,21 @@ hu:
   mail_body_register_user: Kedves %{name},
   mail_body_register_links_html: |
     Nyugodtan böngésszen YouTube-csatornánkon (%{youtube_link}), ahol webináriumot biztosítunk (%{webinar_link})
-    és „Kezdő lépések” videók (%{get_started_link}), hogy a lehető legegyszerűbbé tegye az OpenProject első lépéseit.
+    és „Kezdő lépések” videók (%{get_started_link}), hogy a lehető legegyszerűbbé tegye az Yojana első lépéseit.
     <br />
     Ha további kérdései vannak, tekintse meg dokumentációnkat (%{documentation_link}), vagy forduljon rendszergazdájához.
-  mail_body_register_closing: Az OpenProject csapata
-  mail_body_register_ending: Maradj kapcsolatban! Üdvözlettel,
-  mail_body_reminder: 'Ön rendelt  %{count} munkacsomag(ok) a következő  %{days}  napokon esedékesek:'
+  mail_body_register_closing: "Az Yojana csapata"
+  mail_body_register_ending: "Maradj kapcsolatban! Üdvözlettel,"
+  mail_body_reminder: "Ön rendelt  %{count} munkacsomag(ok) a következő  %{days}  napokon esedékesek:"
   mail_body_group_reminder: 'A "%{group}" csoporthoz rendelt %{count} feladat határidős az elkövetkező %{days} napban:'
   mail_body_wiki_page_added: A '%{id}' wiki oldal hozzáadva %{author} által.
   mail_body_wiki_page_updated: A '%{id}' wiki oldal frissítve %{author} által.
   mail_subject_account_activation_request: "%{value} fiók aktiválásának kérése"
-  mail_subject_backup_ready: A biztonsági mentés elkészült
-  mail_subject_backup_token_reset: Biztonsági mentés token visszaállítás
-  mail_subject_incoming_email_error: Az OpenProjectnek küldött e-mailt nem sikerült feldolgozni.
-  mail_subject_lost_password: A jelszavad %{value}
-  mail_subject_register: A %{value} fiókód aktiválása
+  mail_subject_backup_ready: "A biztonsági mentés elkészült"
+  mail_subject_backup_token_reset: "Biztonsági mentés token visszaállítás"
+  mail_subject_incoming_email_error: "Az Yojananek küldött e-mailt nem sikerült feldolgozni."
+  mail_subject_lost_password: "A jelszavad %{value}"
+  mail_subject_register: "A %{value} fiókód aktiválása"
   mail_subject_wiki_content_added: "'%{id}' wiki oldal hozzáadva"
   mail_subject_wiki_content_updated: "'%{id}' wiki oldal frissítve"
   mail_member_added_project:
@@ -4842,17 +4807,16 @@ hu:
       roles: 'A következő jogosultságaid vannak :'
   mail_user_activation_limit_reached:
     subject: A felhasználó aktiválási korlátját elérte
-    message_html: |
-      A new user (%{email}) tried to create an account on an OpenProject environment that you manage (%{host}).
-      The user cannot activate their account since the user limit has been reached.
+    message: |
+      Egy új felhasználó (%{email}) megpróbált létrehozni egy fiókot az Ön által kezelt Yojana környezetben (%{host}). A felhasználó nem tudja aktiválni fiókját, mivel elérte a felhasználói korlátot.
     steps:
-      a: Fizetés módjának frissítése ([here](upgrade_url))
-      b: Felhasználó zárolása vagy törlése ([here](users_url))
-      label: 'A felhasználó bejelentkezéséhez a következőket teheti: '
-  more_actions: További funkciók
-  noscript_description: Engedélyezze a JavaScriptet, hogy használni tudja az OpenProjectet !
-  noscript_heading: JavaScript le van tiltva
-  noscript_learn_more: További információ
+      label: "A felhasználó bejelentkezéséhez a következőket teheti: "
+      a: "Fizetés módjának frissítése ([here](upgrade_url))" #here turned into a link
+      b: "Felhasználó zárolása vagy törlése ([here](users_url))" #here turned into a link
+  more_actions: "További funkciók"
+  noscript_description: "Engedélyezze a JavaScriptet, hogy használni tudja az Yojanaet !"
+  noscript_heading: "JavaScript le van tiltva"
+  noscript_learn_more: "További információ"
   notice_accessibility_mode: A kisegítő lehetőségek mód bekapcsolható a [felhasználói fiók beállításaiban](url).
   notice_account_activated: A fiók aktiválva van. Most már bejelentkezhet.
   notice_account_already_activated: A fiók már aktiválva van.
@@ -4930,10 +4894,10 @@ hu:
   notice_automatic_set_of_standard_type: Automatikusan beállítja alap típust .
   notice_logged_out: Kijelentkeztél.
   notice_wont_delete_auth_source: The LDAP connection cannot be deleted as long as there are still users using it.
-  notice_project_cannot_update_custom_fields: 'Nem tudod firssíteni a projekt egyedi mezőit. A projekt érvénytelen: %{errors}'
-  notice_attachment_migration_wiki_page: 'Ez az oldal automatikusan jött létre az OpenProject frissítésekor. Tartalmazza az összes mellékletet az alábbiakhoz: %{container_type} %{container_name}.
-
-    '
+  notice_project_cannot_update_custom_fields: "Nem tudod firssíteni a projekt egyedi mezőit. A projekt érvénytelen: %{errors}"
+  notice_attachment_migration_wiki_page: >
+    Ez az oldal automatikusan jött létre az Yojana frissítésekor. Tartalmazza az összes mellékletet az alábbiakhoz: %{container_type} %{container_name}.
+  #Default format for numbers
   number:
     format:
       delimiter: ","
@@ -4954,138 +4918,127 @@ hu:
           mb: MB
           tb: TB
   onboarding:
-    heading_getting_started: Áttekintés
-    text_getting_started_description: Get a quick overview of project management and team collaboration with OpenProject. You can restart this video from the help menu.
-    welcome: Üdvözli a %{app_title}
-    select_language: Kéjük válasszon nyelvet
-  open_project:
-    common:
-      work_package_card_component:
-        drag_handle:
-          label: Drag to reorder
-        menu:
-          label_actions: Work package actions
-        parent: Parent
-        undisclosed: Undisclosed
-  permission_add_work_package_comments: Add comments
-  permission_add_work_packages: feladatcsoport hozzáadása
-  permission_add_messages: Elküldött üzenetek
-  permission_add_project: Projekt létrehozása
-  permission_add_portfolios: Create portfolios
-  permission_add_programs: Create programs
-  permission_add_work_package_attachments: Melléklet hozzáadása
-  permission_add_work_package_attachments_explanation: Allows adding attachments without Edit work packages permission
-  permission_add_internal_comments: Write internal comments
-  permission_archive_project: Projekt archiválása
-  permission_create_user: Create users
-  permission_manage_user: Edit users
-  permission_manage_placeholder_user: Teszt felhasználók létrehozása, módosítása, törlése
-  permission_add_subprojects: Alprojektek létrehozása
-  permission_add_work_package_watchers: Megfigyelő hozzáadása
-  permission_assign_versions: Hozzárendelt verziók.
-  permission_browse_repository: Csak olvasható hozzáférés a tárolóhoz (böngészés és kijelentkezés)
-  permission_change_work_package_status: Change work package status
-  permission_change_work_package_status_explanation: Allows changing status without Edit work packages permission
-  permission_comment_news: Megjegyzések írása a hírekehez
-  permission_commit_access: Olvasási és írási jog a tárolóhoz (commit)
-  permission_copy_projects: Projekt másolása
-  permission_copy_projects_explanation: In template projects, this permission has a secondary function, it allows the creation of new projects derived from the template.
-  permission_copy_work_packages: Duplicate work packages
-  permission_create_backup: Biztonsági mentés létrehozása
-  permission_delete_work_package_watchers: Megfigyelők törlése
-  permission_delete_work_packages: Törölje a feladatcsoportokat
-  permission_delete_messages: Üzenetek törlése
-  permission_delete_own_messages: Saját üzenetek törlése
-  permission_delete_reportings: Jelentések törlése
-  permission_delete_timelines: Idővonalak törlése
-  permission_edit_work_package_comments: Moderate comments
-  permission_edit_work_package_comments_explanation: 'Caution: Users with this permission are able to edit anyone''s comment.'
-  permission_edit_work_packages: feladatcsoportok szerkesztése
-  permission_edit_messages: Üzenetek szerkesztése
-  permission_edit_own_internal_comments: Edit own internal comments
-  permission_edit_own_work_package_comments: Edit own comments
-  permission_edit_own_messages: Saját üzenetek szerkesztése
-  permission_edit_own_time_entries: Rögzített eltöltött időim szerkesztése
-  permission_edit_others_internal_comments: Moderate internal comments
-  permission_edit_others_internal_comments_explanation: 'Caution: Users with this permission are able to edit other users'' internal comments.'
-  permission_edit_project: Projekt szerkesztése
-  permission_edit_project_attributes: Edit project attributes
-  permission_edit_project_phases: Edit project phases
-  permission_edit_reportings: Jelentések szerkesztése
-  permission_edit_time_entries: Időnaplók szerkesztése más felhasználóknál
-  permission_edit_timelines: Idővonalak szerkesztése
-  permission_edit_wiki_pages: Wiki lapok szerkesztése
-  permission_export_work_packages: feladatcsoportok exportálása
-  permission_export_projects: Export projects
-  permission_invite_members_by_email: Invite members by email
-  permission_invite_members_by_email_explanation: 'Allows users to invite new members by email. Invited users will receive an email with a link to set their password and activate their account. Depends on the permission to manage members
-
-    '
-  permission_log_own_time: Saját idő naplózása
-  permission_log_time: Mások idejének naplózása
-  permission_manage_forums: Fórum kezelése
-  permission_manage_categories: feladatcsoport kategóriák kezelése
-  permission_manage_dashboards: Manage dashboards
-  permission_manage_work_package_relations: feladatcsoport kapcsolatok kezelése
-  permission_manage_members: Tagok kezelése
-  permission_manage_news: Hírek kezelése
-  permission_manage_project_activities: Projekt tevékenységek kezelése
-  permission_manage_public_queries: Nyilvános nézetek kezelése
-  permission_manage_repository: Csomagtároló kezelése
-  permission_manage_subtasks: feladatcsoport hierarchiák kezelése
-  permission_manage_versions: Verziók kezelése
-  permission_manage_wiki: Wiki kezelése
-  permission_manage_own_working_times: Manage own working times
-  permission_manage_own_working_times_explanation: 'Allows users to manage their own working times, and personal non-working days.
-
-    '
-  permission_manage_working_times: Manage working times for all users
-  permission_manage_working_times_explanation: 'Allows users to manage working times for all users, including personal non-working days.
-
-    '
-  permission_move_work_packages: Feladatcsoportok áthelyezése
-  permission_save_queries: Nézet mentése
-  permission_search_project: Search project
-  permission_select_custom_fields: Egyedi mezők kiválasztása
-  permission_select_project_custom_fields: Select project attributes
-  permission_select_project_phases: Select project phases
-  permission_select_project_phases_explanation: Activate/Deactivate the phases in a project. Enables the user to select the life cycle appropriate for the project as inactive phases will not be visible in the project overview page nor the project list.
-  permission_select_project_modules: Projekt modulok kiválasztása
-  permission_share_work_packages: Share work packages
-  permission_manage_types: Jelölje ki a típust
-  permission_manage_own_reminders: Create own reminders
-  permission_view_all_principals: View all users and groups
-  permission_view_all_principals_explanation: 'Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
-
-    '
-  permission_view_project: View projects
-  permission_view_changesets: Tároló verziók megtekintése az OpenProject-ben
-  permission_view_internal_comments: View internal comments
-  permission_view_commit_author_statistics: Szerző,statisztika megtekintése
-  permission_view_dashboards: View dashboards
-  permission_view_work_package_watchers: A megfigyelők listájának megtekintése
-  permission_view_work_packages: Munkacsomagok megtekintése
-  permission_view_messages: Üzenetek megtekintése
-  permission_view_news: View news
-  permission_view_members: Tagok megtekintése
-  permission_view_reportings: Jelentések megtekintése
-  permission_view_shared_work_packages: View work package shares
-  permission_view_time_entries: Az eltöltött idő megtekintése
-  permission_view_timelines: Az idővonalak megtekintése
-  permission_view_user_email: View users' mail addresses
-  permission_view_wiki_edits: Wiki-előzmények megtekintése
-  permission_view_wiki_pages: Wiki megtekintése
-  permission_work_package_assigned: Legyen megbízott/felelős
-  permission_work_package_assigned_explanation: Munkacsomagok hozzárendelhetők a szerephez tartozó felhasználókhoz és csoportokhoz az adott projektben
-  permission_view_project_activity: View project activity
-  permission_view_project_attributes: View project attributes
-  permission_view_project_phases: View project phases
-  permission_save_bcf_queries: Save BCF queries
-  permission_manage_public_bcf_queries: Manage public BCF queries
-  permission_edit_attribute_help_texts: Edit attribute help texts
-  permission_manage_public_project_queries: Manage public project lists
-  permission_view_project_query: View project query
-  permission_edit_project_query: Edit project query
+    heading_getting_started: "Áttekintés"
+    text_getting_started_description: "Get a quick overview of project management and team collaboration with Yojana. You can restart this video from the help menu."
+    welcome: "Üdvözli a %{app_title}"
+    select_language: "Kéjük válasszon nyelvet"
+  permission_add_work_package_comments: "Add comments"
+  permission_add_work_packages: "feladatcsoport hozzáadása"
+  permission_add_messages: "Elküldött üzenetek"
+  permission_add_project: "Projekt létrehozása"
+  permission_add_portfolios: "Create portfolios"
+  permission_add_programs: "Create programs"
+  permission_add_work_package_attachments: "Melléklet hozzáadása"
+  permission_add_work_package_attachments_explanation: "Allows adding attachments without Edit work packages permission"
+  permission_add_internal_comments: "Write internal comments"
+  permission_archive_project: "Projekt archiválása"
+  permission_create_user: "Create users"
+  permission_manage_user: "Edit users"
+  permission_manage_placeholder_user: "Teszt felhasználók létrehozása, módosítása, törlése"
+  permission_add_subprojects: "Alprojektek létrehozása"
+  permission_add_work_package_watchers: "Megfigyelő hozzáadása"
+  permission_assign_versions: "Hozzárendelt verziók."
+  permission_browse_repository: "Csak olvasható hozzáférés a tárolóhoz (böngészés és kijelentkezés)"
+  permission_change_wiki_parent_page: "A szülő wiki oldal megváltoztatása"
+  permission_change_work_package_status: "Change work package status"
+  permission_change_work_package_status_explanation: "Allows changing status without Edit work packages permission"
+  permission_comment_news: "Megjegyzések írása a hírekehez"
+  permission_commit_access: "Olvasási és írási jog a tárolóhoz (commit)"
+  permission_copy_projects: "Projekt másolása"
+  permission_copy_projects_explanation: "In template projects, this permission has a secondary function, it allows the creation of new projects derived from the template."
+  permission_copy_work_packages: "Duplicate work packages"
+  permission_create_backup: "Biztonsági mentés létrehozása"
+  permission_delete_work_package_watchers: "Megfigyelők törlése"
+  permission_delete_work_packages: "Törölje a feladatcsoportokat"
+  permission_delete_messages: "Üzenetek törlése"
+  permission_delete_own_messages: "Saját üzenetek törlése"
+  permission_delete_reportings: "Jelentések törlése"
+  permission_delete_timelines: "Idővonalak törlése"
+  permission_delete_wiki_pages: "Wiki oldalak törlése"
+  permission_delete_wiki_pages_attachments: "Mellékletek törlése"
+  permission_edit_work_package_comments: "Moderate comments"
+  permission_edit_work_package_comments_explanation: "Caution: Users with this permission are able to edit anyone's comment."
+  permission_edit_work_packages: "feladatcsoportok szerkesztése"
+  permission_edit_messages: "Üzenetek szerkesztése"
+  permission_edit_own_internal_comments: "Edit own internal comments"
+  permission_edit_own_work_package_comments: "Edit own comments"
+  permission_edit_own_messages: "Saját üzenetek szerkesztése"
+  permission_edit_own_time_entries: "Rögzített eltöltött időim szerkesztése"
+  permission_edit_others_internal_comments: "Moderate internal comments"
+  permission_edit_others_internal_comments_explanation: "Caution: Users with this permission are able to edit other users' internal comments."
+  permission_edit_project: "Projekt szerkesztése"
+  permission_edit_project_attributes: "Edit project attributes"
+  permission_edit_project_phases: "Edit project phases"
+  permission_edit_reportings: "Jelentések szerkesztése"
+  permission_edit_time_entries: "Időnaplók szerkesztése más felhasználóknál"
+  permission_edit_timelines: "Idővonalak szerkesztése"
+  permission_edit_wiki_pages: "Wiki lapok szerkesztése"
+  permission_export_work_packages: "feladatcsoportok exportálása"
+  permission_export_projects: "Export projects"
+  permission_export_wiki_pages: "Wiki oldalak exportálása"
+  permission_invite_members_by_email: "Invite members by email"
+  permission_invite_members_by_email_explanation: >
+    Allows users to invite new members by email. Invited users will receive an email with a link to set their password and activate their account. Depends on the permission to manage members
+  permission_list_attachments: "Mellékletek listája"
+  permission_log_own_time: "Saját idő naplózása"
+  permission_log_time: "Mások idejének naplózása"
+  permission_manage_forums: "Fórum kezelése"
+  permission_manage_categories: "feladatcsoport kategóriák kezelése"
+  permission_manage_dashboards: "Manage dashboards"
+  permission_manage_work_package_relations: "feladatcsoport kapcsolatok kezelése"
+  permission_manage_members: "Tagok kezelése"
+  permission_manage_news: "Hírek kezelése"
+  permission_manage_project_activities: "Projekt tevékenységek kezelése"
+  permission_manage_public_queries: "Nyilvános nézetek kezelése"
+  permission_manage_repository: "Csomagtároló kezelése"
+  permission_manage_subtasks: "feladatcsoport hierarchiák kezelése"
+  permission_manage_versions: "Verziók kezelése"
+  permission_manage_wiki: "Wiki kezelése"
+  permission_manage_wiki_menu: "Wiki menü kezelése"
+  permission_move_work_packages: "Feladatcsoportok áthelyezése"
+  permission_protect_wiki_pages: "Védett wiki oldalak"
+  permission_rename_wiki_pages: "Wiki oldalak átnevezése"
+  permission_save_queries: "Nézet mentése"
+  permission_search_project: "Search project"
+  permission_select_custom_fields: "Egyedi mezők kiválasztása"
+  permission_select_project_custom_fields: "Select project attributes"
+  permission_select_project_phases: "Select project phases"
+  permission_select_project_phases_explanation: "Activate/Deactivate the phases in a project. Enables the user to select the life cycle appropriate for the project as inactive phases will not be visible in the project overview page nor the project list."
+  permission_select_project_modules: "Projekt modulok kiválasztása"
+  permission_share_work_packages: "Share work packages"
+  permission_manage_types: "Jelölje ki a típust"
+  permission_manage_own_reminders: "Create own reminders"
+  permission_view_all_principals: "View all users and groups"
+  permission_view_all_principals_explanation: >
+    Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
+  permission_view_project: "View projects"
+  permission_view_changesets: "Tároló verziók megtekintése az Yojana-ben"
+  permission_view_internal_comments: "View internal comments"
+  permission_view_commit_author_statistics: "Szerző,statisztika megtekintése"
+  permission_view_dashboards: "View dashboards"
+  permission_view_work_package_watchers: "A megfigyelők listájának megtekintése"
+  permission_view_work_packages: "Munkacsomagok megtekintése"
+  permission_view_messages: "Üzenetek megtekintése"
+  permission_view_news: "View news"
+  permission_view_members: "Tagok megtekintése"
+  permission_view_reportings: "Jelentések megtekintése"
+  permission_view_shared_work_packages: "View work package shares"
+  permission_view_time_entries: "Az eltöltött idő megtekintése"
+  permission_view_timelines: "Az idővonalak megtekintése"
+  permission_view_user_email: "View users' mail addresses"
+  permission_view_wiki_edits: "Wiki-előzmények megtekintése"
+  permission_view_wiki_pages: "Wiki megtekintése"
+  permission_work_package_assigned: "Legyen megbízott/felelős"
+  permission_work_package_assigned_explanation: "Munkacsomagok hozzárendelhetők a szerephez tartozó felhasználókhoz és csoportokhoz az adott projektben"
+  permission_view_project_activity: "View project activity"
+  permission_view_project_attributes: "View project attributes"
+  permission_view_project_phases: "View project phases"
+  permission_save_bcf_queries: "Save BCF queries"
+  permission_manage_public_bcf_queries: "Manage public BCF queries"
+  permission_edit_attribute_help_texts: "Edit attribute help texts"
+  permission_manage_public_project_queries: "Manage public project lists"
+  permission_view_project_query: "View project query"
+  permission_edit_project_query: "Edit project query"
   placeholders:
     default: "-"
     templated_hint: Automatically generated through type %{type}
@@ -5189,49 +5142,50 @@ hu:
     create_successful: A tároló regisztrációja sikerült.
     delete_sucessful: A tároló törölve lett.
     destroy:
-      confirmation: Ha folytatja, a kezelt tároló véglegesen törlésre kerül.
-      info: A tároló törlése visszafordíthatatlan művelet.
-      info_not_managed: 'Megjegyzés: Ez NEM törli a tároló tartalmát, mivel nem az OpenProject által kezelt.'
-      managed_path_note: 'Az következő könyvtár törlésre kerül: %{path}'
-      repository_verification_html: Enter the project's identifier %{identifier} to verify the deletion of its repository.
-      subtitle: Biztosan törli a %{project_name} projekthez tartozó %{repository_type}-t?
-      subtitle_not_managed_html: Do you really want to remove the linked %{repository_type} %{url} from the project %{project_name}?
-      title_html: Delete the %{repository_type}
-      title_not_managed: Törli a csatolt %{repository_type}-t?
+      confirmation: "Ha folytatja, a kezelt tároló véglegesen törlésre kerül."
+      info: "A tároló törlése visszafordíthatatlan művelet."
+      info_not_managed: "Megjegyzés: Ez NEM törli a tároló tartalmát, mivel nem az Yojana által kezelt."
+      managed_path_note: "Az következő könyvtár törlésre kerül: %{path}"
+      repository_verification: "Írja be a projekt azonosítót %{identifier} a tároló törlésének megerősítéséhez."
+      subtitle: "Biztosan törli a %{project_name} projekthez tartozó %{repository_type}-t?"
+      subtitle_not_managed: "Biztosan törli a %{project_name} projekthez kapcsolt %{repository_type} %{url} -t?"
+      title: "%{repository_type} törlése"
+      title_not_managed: "Törli a csatolt %{repository_type}-t?"
     errors:
-      build_failed: A tároló nem hozható létre a kiválasztott konfigurációval. %{reason}
-      managed_delete: Nem lehet törölni a használt tárolót.
-      managed_delete_local: 'Nem lehetséges törölni a helyi tárolót a fájlrendszeren a ''%{path}'' helyen: %{error_message}'
-      empty_repository: A tároló létezik, de üres. Nem tartalmaz egy revíziót sem.
-      exists_on_filesystem: A tároló könyvtár már létezik a fájlrendszeren.
-      filesystem_access_failed: 'Hiba merült fel a tároló fájlrendszeren való elérésekor: %{message}'
-      not_manageable: A tároló típusa OpenProjecttel nem kezelhető.
-      path_permission_failed: 'Hiba merült fel a következő létrehozásakor: %{path}. Kérem, biztosítsa az OpenProject írási jogát a könyvtárban.'
-      unauthorized: Nincs jogosultsága elérni a tárolót vagy a hitelesítő adatai hibásak.
-      unavailable: A tároló nem érhető el.
-      exception_title: 'A tároló nem elérhető: %{message}'
-      disabled_or_unknown_type: A kiválasztott típus %{type} ki van kapcsolva vagy már nem elérhető a verzió követő %{vendor} rendszerhez.
-      disabled_or_unknown_vendor: A verzió követő %{vendor} rendszer ki van kapcsolva vagy már nem elérhető.
-      remote_call_failed: 'A kezelt távoli ág hívása meghiúsult: ''%{message}'' (Code: %{code})'
-      remote_invalid_response: Érvénytelen választ kapott a távoli felügyelettől.
-      remote_save_failed: A tároló nem menthető a távoli ágról (remote) származó paraméterekkel.
+      build_failed: "A tároló nem hozható létre a kiválasztott konfigurációval. %{reason}"
+      managed_delete: "Nem lehet törölni a használt tárolót."
+      managed_delete_local: "Nem lehetséges törölni a helyi tárolót a fájlrendszeren a '%{path}' helyen: %{error_message}"
+      empty_repository: "A tároló létezik, de üres. Nem tartalmaz egy revíziót sem."
+      exists_on_filesystem: "A tároló könyvtár már létezik a fájlrendszeren."
+      filesystem_access_failed: "Hiba merült fel a tároló fájlrendszeren való elérésekor: %{message}"
+      not_manageable: "A tároló típusa Yojanatel nem kezelhető."
+      path_permission_failed: "Hiba merült fel a következő létrehozásakor: %{path}. Kérem, biztosítsa az Yojana írási jogát a könyvtárban."
+      unauthorized: "Nincs jogosultsága elérni a tárolót vagy a hitelesítő adatai hibásak."
+      unavailable: "A tároló nem érhető el."
+      exception_title: "A tároló nem elérhető: %{message}"
+      disabled_or_unknown_type: "A kiválasztott típus %{type} ki van kapcsolva vagy már nem elérhető a verzió követő %{vendor} rendszerhez."
+      disabled_or_unknown_vendor: "A verzió követő %{vendor} rendszer ki van kapcsolva vagy már nem elérhető."
+      remote_call_failed: "A kezelt távoli ág hívása meghiúsult: '%{message}' (Code: %{code})"
+      remote_invalid_response: "Érvénytelen választ kapott a távoli felügyelettől."
+      remote_save_failed: "A tároló nem menthető a távoli ágról (remote) származó paraméterekkel."
     git:
       instructions:
-        managed_url: Ez a kezelt (helyi) Git tároló URL-e.
-        path: Adja meg a helyi Git tároló elérési útját (pl. %{example_path} ). Távoli tárolót is használhat http(s):// vagy file:// kezdettel, ami aztán helyben klónozásra kerül.
-        path_encoding: 'Git útvonal kódolásának felülírása (Alapértelmezett: UTF-8)'
-      local_title: Hivatkozás egy meglévő helyi tárolóra
-      local_url: Helyi URL
-      local_introduction: Ha rendelkezik meglévő helyi Git tárolóval, akkor az OpenProject alkalmazáson belül kapcsolódhat hozzá.
-      managed_introduction: Engedélyezze, hogy az OpenProject automatikusan létrehozza és integrálja a helyi Git tárolót.
-      managed_title: Git tároló integrálva az OpenProject-be
-      managed_url: Kezelt URL
-      path: Git tároló elérési útja
-      path_encoding: Elérési út kódolás
-    go_to_revision: Lépés a felülvizsgálatra
-    managed_remote: A kezelt tárolókat távolról kezelik a szállítónak.
-    managed_remote_note: Ennek a tárolónak az URL címére és elérési útjára vonatkozó információk nem állnak rendelkezésre a létrehozás előtt.
-    managed_url: Kezelt URL
+        managed_url: "Ez a kezelt (helyi) Git tároló URL-e."
+        path: >-
+          Adja meg a helyi Git tároló elérési útját (pl. %{example_path} ). Távoli tárolót is használhat http(s):// vagy file:// kezdettel, ami aztán helyben klónozásra kerül.
+        path_encoding: "Git útvonal kódolásának felülírása (Alapértelmezett: UTF-8)"
+      local_title: "Hivatkozás egy meglévő helyi tárolóra"
+      local_url: "Helyi URL"
+      local_introduction: "Ha rendelkezik meglévő helyi Git tárolóval, akkor az Yojana alkalmazáson belül kapcsolódhat hozzá."
+      managed_introduction: "Engedélyezze, hogy az Yojana automatikusan létrehozza és integrálja a helyi Git tárolót."
+      managed_title: "Git tároló integrálva az Yojana-be"
+      managed_url: "Kezelt URL"
+      path: "Git tároló elérési útja"
+      path_encoding: "Elérési út kódolás"
+    go_to_revision: "Lépés a felülvizsgálatra"
+    managed_remote: "A kezelt tárolókat távolról kezelik a szállítónak."
+    managed_remote_note: "Ennek a tárolónak az URL címére és elérési útjára vonatkozó információk nem állnak rendelkezésre a létrehozás előtt."
+    managed_url: "Kezelt URL"
     settings:
       automatic_managed_repos_disabled: Automatikus létrehozatal letiltása
       automatic_managed_repos: A kezelt tárolók automatikus létrehozatala
@@ -5239,206 +5193,179 @@ hu:
     scm_vendor: Forrás menedzsment rendszer
     scm_type: Tároló típusa
     scm_types:
-      local: Hivatkozás egy meglévő helyi tárolóra
-      existing: Hivatkozás egy meglévő tárolóra
-      managed: Új tároló létrehozása az OpenProject-ben
+      local: "Hivatkozás egy meglévő helyi tárolóra"
+      existing: "Hivatkozás egy meglévő tárolóra"
+      managed: "Új tároló létrehozása az Yojana-ben"
     storage:
-      not_available: A lemez felhasználási adatai nem érhetőek el a tárolón.
-      update_timeout: Tartsa meg az utolsó szükséges lemezterület-információt egy tárolóhoz N percig. Mivel egy tároló szükséges lemezterületének kiszámítása erőforrás igényes lehet, növelje ezt az értéket a teljesítmény növelésének érdekében.
-      oauth_application_details_html: 'The client secret value will not be accessible again after you close this window. Please copy these values into the Nextcloud OpenProject Integration settings:'
-      oauth_application_details_link_text: Menjen a beállítások oldalra
-      setup_documentation_details: 'Ha segítségre van szüksége egy új fájltároló beállításához, kérjük, ellenőrizze a dokumentációt:'
-      setup_documentation_details_link_text: File storages setup
-      show_warning_details: To use this file storage remember to activate the module and the specific storage in the project settings of each desired project.
+      not_available: "A lemez felhasználási adatai nem érhetőek el a tárolón."
+      update_timeout: "Tartsa meg az utolsó szükséges lemezterület-információt egy tárolóhoz N percig. Mivel egy tároló szükséges lemezterületének kiszámítása erőforrás igényes lehet, növelje ezt az értéket a teljesítmény növelésének érdekében."
+      oauth_application_details: "Az ablak bezárása után az ügyfél titkos értéke nem lesz többé elérhető. Kérjük, másolja be ezeket az értékeket a Nextcloud Yojana Integration beállításaiba:"
+      oauth_application_details_link_text: "Menjen a beállítások oldalra"
+      setup_documentation_details: "Ha segítségre van szüksége egy új fájltároló beállításához, kérjük, ellenőrizze a dokumentációt:"
+      setup_documentation_details_link_text: "File storages setup"
+      show_warning_details: "To use this file storage remember to activate the module and the specific storage in the project settings of each desired project."
     subversion:
-      existing_title: Meglévő Subversion tároló
-      existing_introduction: Ha rendelkezik meglévő Subversion tárolóval, akkor az OpenProject segítségével kapcsolódhat hozzá az alkalmazáson belül.
-      existing_url: Létező URL
+      existing_title: "Meglévő Subversion tároló"
+      existing_introduction: "Ha rendelkezik meglévő Subversion tárolóval, akkor az Yojana segítségével kapcsolódhat hozzá az alkalmazáson belül."
+      existing_url: "Létező URL"
       instructions:
-        managed_url: Ez egy hivatkozás kezelt (helyi) Subversion tárolóra.
-        url: 'Adja meg az tároló URL-jét. Ez akár egy helyi tároló is lehet (kezdődő %{local_proto} ), vagy egy távoli cím. A következő URL-sémák támogatottak:'
-      managed_title: Subversion tároló integrálva az OpenProject-be
-      managed_introduction: Hagyja, hogy az OpenProject hozza létre, és integrálja a helyi Subversion tárolót automatikusan.
-      managed_url: Kezelt URL
-      password: Tároló jelszava
-      username: Tároló felhasználónév
-    truncated: Elnézést, le kellett szűkítenünk ezt a könyvtárat %{limit} fájlra. %{truncated} bejegyzés került kihagyásra.
+        managed_url: "Ez egy hivatkozás kezelt (helyi) Subversion tárolóra."
+        url: "Adja meg az tároló URL-jét. Ez akár egy helyi tároló is lehet (kezdődő %{local_proto} ), vagy egy távoli cím. A következő URL-sémák támogatottak:"
+      managed_title: "Subversion tároló integrálva az Yojana-be"
+      managed_introduction: "Hagyja, hogy az Yojana hozza létre, és integrálja a helyi Subversion tárolót automatikusan."
+      managed_url: "Kezelt URL"
+      password: "Tároló jelszava"
+      username: "Tároló felhasználónév"
+    truncated: "Elnézést, le kellett szűkítenünk ezt a könyvtárat %{limit} fájlra. %{truncated} bejegyzés került kihagyásra."
     named_repository: "%{vendor_name} tároló"
     update_settings_successful: A beállításokat mentése sikerült.
     url: Tároló URL-címe
     warnings:
       cannot_annotate: Ez a fájl nem annotálható.
   scheduling:
-    manual: manuálisra állítás
-    automatic: automatára állítás
-  search_input_placeholder: Keresés ...
-  setting_allowed_link_protocols: Allowed link protocols
-  setting_allowed_link_protocols_text_html: Allow these protocols to be rendered as links in work package descriptions, long text fields and comments. For example, %{tel_code} or %{element_code}. Enter one protocol per line. <br/> Protocols %{http_code}, %{https_code}, and %{mailto_code} are always allowed.
-  setting_capture_external_links: Capture external links
-  setting_capture_external_links_text: 'When enabled, all external links in formatted text will redirect through a warning page before leaving the application. This helps protect users from potentially malicious external websites.
-
-    '
-  setting_capture_external_links_require_login: Require users to be logged in
-  setting_capture_external_links_require_login_text: 'When enabled, users wanting to click on external links need to be logged in before being able to continue.
-
-    '
-  setting_after_first_login_redirect_url: First login redirect
-  setting_after_first_login_redirect_url_text_html: 'Set a path to redirect users after their first login. If empty, redirects to the home page for the onboarding tour. <br/> Example: <code>/my/page</code>
-
-    '
-  setting_after_login_default_redirect_url: After login redirect
-  setting_after_login_default_redirect_url_example_html: 'Set a default path to redirect users after login, if no back link was provided. Redirects to home page if not set. <br/> Example: %{example_code}
-
-    '
-  setting_apiv3_cors_title: Cross-Origin Resource Sharing (CORS)
-  setting_apiv3_cors_enabled: A CORS engedélyezése
-  setting_apiv3_cors_origins: API V3 Cross-Origin Resource Sharing (CORS) engedélyezett származások
-  setting_apiv3_cors_origins_instructions_html: 'If CORS is enabled, these are the origins that are allowed to access OpenProject API. <br/> Please check the [Documentation on the Origin header](docs_url) on how to specify the expected values.
-
-    '
-  setting_apiv3_write_readonly_attributes: Write access to read-only attributes
-  setting_apiv3_write_readonly_attributes_instructions: 'If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
-
-    '
-  setting_apiv3_write_readonly_attributes_warning: 'This setting has a use-case for e.g., importing data, but allows administrators to impersonate the creation of items as other users. All creation requests are being logged however with the true author.
-
-    '
-  setting_apiv3_write_readonly_attributes_additional_html: 'For more information on attributes and supported resources, please see the [API documentation](api_documentation_link).
-
-    '
-  setting_apiv3_max_page_size: Maximum API oldal méret
-  setting_apiv3_max_page_size_instructions: 'Set the maximum page size the API will respond with. It will not be possible to perform API requests that return more values on a single page.
-
-    '
-  setting_apiv3_max_page_size_warning: 'Please only change this value if you are sure why you need it. Setting to a high value will result in significant performance impacts, while a value lower than the per page options will cause errors in paginated views.
-
-    '
-  setting_apiv3_docs: Dokumentáció
-  setting_apiv3_docs_enabled: 'Dokumentumok oldal engedélyezése
-
-    '
-  setting_apiv3_docs_enabled_instructions_html: 'Ha a Dokumentumok oldal engedélyezve van, interaktív nézetet kaphat az APIv3 dokumentációjáról a <a href="%{link}" target="_blank">%{link} </a> alatt.
-
-    '
-  setting_apiv3_docs_enabled_instructions_warning: 'Please be aware that enabling the API docs on a production system may expose sensitive information or result in accidental loss of data when not being careful. We recommend to only enable this setting for development purposes.
-
-    '
-  setting_attachment_whitelist: Mellékletfeltöltési fehérlista
-  setting_email_delivery_method: E-mail küldés módja
-  setting_emails_salutation: Address user in emails with
-  setting_oauth_allow_remapping_of_existing_users: Allow remapping of existing users
-  setting_sendmail_location: A sendmail program elérési útja
-  setting_sendmail_arguments: Arguments for sendmail
-  setting_smtp_enable_starttls_auto: Automatikus STARTTLS, ha rendelkezésre áll
-  setting_smtp_ssl: SSL-kapcsolat használata
-  setting_smtp_address: SMTP-kiszolgáló
-  setting_smtp_port: SMTP-port
-  setting_smtp_authentication: SMTP-hitelesítés
-  setting_smtp_user_name: SMTP-Felhasználónév
-  setting_smtp_password: SMTP-jelszó
-  setting_smtp_domain: SMTP HELO domain
-  setting_activity_days_default: Ennyi nap megjelenítése a projekttevékenységekben
-  setting_api_tokens_enabled: Enable API tokens
-  setting_api_tokens_enabled_caption: 'Decide whether users can create personal API tokens in their account settings. These tokens can be used to access the different APIs of OpenProject, such as APIv3 and MCP.
-
-    '
-  setting_app_subtitle: Alkalmazás felirat
-  setting_app_title: Alkalmazás címe
-  setting_organization_name: Organization name
-  setting_attachment_max_size: Melléklet max. méret
-  setting_show_work_package_attachments: Show attachments in the files tab by default
-  setting_antivirus_scan_mode: Scan mode
-  setting_antivirus_scan_action: Infected file action
-  setting_autofetch_changesets: Automatikus letöltés tároló változás
-  setting_autologin: Automatikus bejelentkezés
-  setting_available_languages: A rendelkezésre álló nyelvek
-  setting_bcc_recipients: Titkos másolat címzettjei (bcc)
-  setting_brute_force_block_after_failed_logins: Mennyi hibás bejelentkezési próbálkozás után tiltsa a felhasználót
-  setting_brute_force_block_minutes: Mennyi időre tiltsa ki
-  setting_cache_formatted_text: Gyorsítótárazott formázott szöveg
-  setting_use_wysiwyg_description: Összes felhasználó CKEditor5 WYSIWYG szerkesztő alapértelmezés szerint. CKEditor tegye a GFM Markdown korlátozott funkcionalitással.
-  setting_column_options: Default work package lists columns
-  setting_commit_fix_keywords: Kulcsszavak rögzítése
-  setting_commit_logs_encoding: Üzenetek kódolása
-  setting_commit_logtime_activity_id: Tevékenységek a naplózott időben
-  setting_commit_logtime_enabled: Bejelentkezési idő naplózásának engedélyezése
-  setting_commit_ref_keywords: Viszonyítási kulcsszavak
-  setting_consent_time: Engedélyezési idő
-  setting_consent_info: Hozzájárulás tájékoztató szöveg
-  setting_consent_required: Beleegyezés szükséges
-  setting_consent_decline_mail: Hozzájárulás a kapcsolattartói e-mail címhez
-  setting_cross_project_work_package_relations: Projektek közötti feladatcsoportok kapcsolatainak engedélyezése
-  setting_csv_escape_formulas: Escape formulas in CSV exports
-  setting_csv_escape_formulas_text: 'Escape spreadsheet formulas in CSV exports by prefixing cells that begin with characters such as =, +, -, or @ with a single quote. This mitigates CSV formula injection when exported files are opened in spreadsheet applications such as Excel. This comes at the downside of modifying the string values inside the CSV, so you may want to disable this if downstream tools require the exact, unescaped cell values.
-
-    '
-  setting_first_week_of_year: 'Az év első hete tartalmazza
-
-    '
-  setting_date_format: dátum
-  setting_default_language: Alapértelmezett nyelv
-  setting_default_projects_modules: Az új projektekben alapértelmezetten engedélyezett modulok
-  setting_default_projects_public: Új projektek nyilvánosak alapértelmezetten
-  setting_disable_password_login: Disable password authentication
-  setting_diff_max_lines_displayed: A különböző sorok megjelenítésének maximális száma
-  setting_omniauth_direct_login_provider: Direct login SSO provider
-  setting_display_subprojects_work_packages: Megjelenítendő alprojektek, feladatcsoportok a fő projekt alapértelmezett beállítása szerint
-  setting_duration_format: Duration format
-  setting_duration_format_hours_only: Hours only
-  setting_duration_format_days_and_hours: Days and hours
-  setting_duration_format_instructions: This defines how Work, Remaining work, and Time spent durations are displayed.
-  setting_emails_footer: E-mailek lábléce
-  setting_emails_header: E-mailek fejléce
-  setting_email_login: Használd az e-mail címet a bejellentkezéshez
-  setting_enabled_scm: SCM engedélyezve
-  setting_enabled_projects_columns: Columns in a projects list displayed by default
-  setting_feeds_enabled: Hírcsatornák engedélyezése
-  setting_ical_enabled: Enable iCalendar subscriptions
-  setting_feeds_limit: Tartalom szintjének a korlátja
-  setting_file_max_size_displayed: A szöveg fájl sorainak maximum mérete megjelenítéskor
-  setting_host_name: Gazdagép neve
-  setting_collaborative_editing_hocuspocus_url: Hocuspocus server URL
-  setting_collaborative_editing_hocuspocus_secret: Hocuspocus server secret
-  setting_hours_per_day: Hours per day
-  setting_hours_per_day_explanation: This defines what is considered a "day" when displaying duration in days and hours (for example, if a day is 8 hours, 32 hours would be 4 days).
-  setting_invitation_expiration_days: Az aktivációs email lejár ekkor
-  setting_invitation_expiration_days_caption: Number of days after which the activation email expires.
-  setting_work_package_done_ratio: Progress calculation mode
-  setting_work_package_done_ratio_field: Work-based
-  setting_work_package_done_ratio_field_caption_html: "<i>% Complete</i> can be freely set to any value. If you optionally enter a value for <i>Work</i>, <i>Remaining work</i> will automatically be derived."
-  setting_work_package_done_ratio_status: Status-based
-  setting_work_package_done_ratio_status_caption_html: Each status has a <i>% Complete</i> value associated with it. Changing status will change <i>% Complete</i>.
-  setting_work_package_done_ratio_explanation_html: 'In <b>work-based</b> mode, % Complete can be freely set to any value. If you optionally enter a value for Work, Remaining work will automatically be derived. In <b>status-based</b> mode, each status has a % Complete value associated with it. Changing status will change % Complete.
-
-    '
-  setting_work_package_properties: feladatcsoport tulajdonságok
-  setting_work_package_startdate_is_adddate: Az aktuális dátum használata, mint kezdő dátuma az új feladatcsoportoknak
-  setting_work_packages_projects_export_limit: Work packages / Projects export limit
-  setting_work_packages_projects_export_limit_text: 'Maximum number of work packages or projects that can be included in a single export. Larger exports are truncated to this limit.
-
-    '
-  setting_journal_aggregation_time_minutes: Aggregation period
-  setting_log_requesting_user: Jelentkezzen be a felhasználóként, név és e-mail cím minden lekéréshez
-  setting_login_required: Hitelesítés szükséges
-  setting_login_required_caption: When checked, all requests to the application have to be authenticated.
-  setting_lost_password: Enable password reset
-  setting_lost_password_caption: When checked, allow users to reset their own passwords.
-  setting_mail_from: Értesítő e-mailek feladója
-  setting_mail_handler_api_key: API-kulcs
-  setting_mail_handler_body_delimiters: E-mailek csonkolása e sorok után
-  setting_mail_handler_body_delimiter_regex: E-mailek csonkítása a megegyező kifejezéssel
-  setting_mail_handler_ignore_filenames: Összes melléklet figyelmen kívül hagyva
-  setting_new_project_user_role_id: Szerepkör a  nem admin felhasználónak, aki létrehoz egy projektet,
-  setting_new_project_user_role_id_caption: 'Only roles that include the permissions to edit project attributes and to manage members are listed, so that the creator can complete the project setup.
-
-    '
-  setting_new_project_send_confirmation_email: Send notification to author when creating a new project
-  setting_new_project_notification_text: Notification text
-  setting_password_active_rules: Password requirements
-  setting_password_count_former_banned: A legutóbb használt  jelszavak száma, ezeket tilos újra felhasználni
-  setting_password_days_valid: Hány nap után kényszerítse ki a jelszó cserét
-  setting_password_min_length: Minimum hosszúság
-  setting_per_page_options: Objektum per oldal opció
+    manual: "manuálisra állítás"
+    automatic: "automatára állítás"
+  search_input_placeholder: "Keresés ..."
+  setting_allowed_link_protocols: "Allowed link protocols"
+  setting_allowed_link_protocols_text_html: >-
+    Allow these protocols to be rendered as links in work package descriptions, long text fields and comments. For example, %{tel_code} or %{element_code}. Enter one protocol per line. <br/> Protocols %{http_code}, %{https_code}, and %{mailto_code} are always allowed.
+  setting_capture_external_links: "Capture external links"
+  setting_capture_external_links_text: >
+    When enabled, all external links in formatted text will redirect through a warning page before leaving the application. This helps protect users from potentially malicious external websites.
+  setting_capture_external_links_require_login: "Require users to be logged in"
+  setting_capture_external_links_require_login_text: >
+    When enabled, users wanting to click on external links need to be logged in before being able to continue.
+  setting_after_first_login_redirect_url: "First login redirect"
+  setting_after_first_login_redirect_url_text_html: >
+    Set a path to redirect users after their first login. If empty, redirects to the home page for the onboarding tour. <br/> Example: <code>/my/page</code>
+  setting_after_login_default_redirect_url: "After login redirect"
+  setting_after_login_default_redirect_url_text_html: >
+    Set a default path to redirect users after login, if no back link was provided. Redirects to home page if not set. <br/> Example: <code>/my/page</code>
+  setting_apiv3_cors_title: "Cross-Origin Resource Sharing (CORS)"
+  setting_apiv3_cors_enabled: "A CORS engedélyezése"
+  setting_apiv3_cors_origins: "API V3 Cross-Origin Resource Sharing (CORS) engedélyezett származások"
+  setting_apiv3_cors_origins_text_html: >
+    Ha a CORS engedélyezve van, ezek azok az eredetiek, amelyek hozzáférhetnek az Yojana API-hoz. <br/> Kérjük, olvassa el a <a href="%{origin_link}" target="_blank">Dokumentáció az Origin fejlécről</a> című dokumentumot az elvárt értékek megadásáról.
+  setting_apiv3_write_readonly_attributes: "Write access to read-only attributes"
+  setting_apiv3_write_readonly_attributes_instructions: >
+    If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
+  setting_apiv3_write_readonly_attributes_warning: >
+    This setting has a use-case for e.g., importing data, but allows administrators to impersonate the creation of items as other users. All creation requests are being logged however with the true author.
+  setting_apiv3_write_readonly_attributes_additional: >
+    For more information on attributes and supported resources, please see the %{api_documentation_link}.
+  setting_apiv3_max_page_size: "Maximum API oldal méret"
+  setting_apiv3_max_page_size_instructions: >
+    Set the maximum page size the API will respond with. It will not be possible to perform API requests that return more values on a single page.
+  setting_apiv3_max_page_size_warning: >
+    Please only change this value if you are sure why you need it. Setting to a high value will result in significant performance impacts, while a value lower than the per page options will cause errors in paginated views.
+  setting_apiv3_docs: "Dokumentáció"
+  setting_apiv3_docs_enabled: "Dokumentumok oldal engedélyezése\n"
+  setting_apiv3_docs_enabled_instructions_html: >
+    Ha a Dokumentumok oldal engedélyezve van, interaktív nézetet kaphat az APIv3 dokumentációjáról a <a href="%{link}" target="_blank">%{link} </a> alatt.
+  setting_apiv3_docs_enabled_instructions_warning: >
+    Please be aware that enabling the API docs on a production system may expose sensitive information or result in accidental loss of data when not being careful. We recommend to only enable this setting for development purposes.
+  setting_attachment_whitelist: "Mellékletfeltöltési fehérlista"
+  setting_email_delivery_method: "E-mail küldés módja"
+  setting_emails_salutation: "Address user in emails with"
+  setting_oauth_allow_remapping_of_existing_users: "Allow remapping of existing users"
+  setting_sendmail_location: "A sendmail program elérési útja"
+  setting_sendmail_arguments: "Arguments for sendmail"
+  setting_smtp_enable_starttls_auto: "Automatikus STARTTLS, ha rendelkezésre áll"
+  setting_smtp_ssl: "SSL-kapcsolat használata"
+  setting_smtp_address: "SMTP-kiszolgáló"
+  setting_smtp_port: "SMTP-port"
+  setting_smtp_authentication: "SMTP-hitelesítés"
+  setting_smtp_user_name: "SMTP-Felhasználónév"
+  setting_smtp_password: "SMTP-jelszó"
+  setting_smtp_domain: "SMTP HELO domain"
+  setting_activity_days_default: "Ennyi nap megjelenítése a projekttevékenységekben"
+  setting_app_subtitle: "Alkalmazás felirat"
+  setting_app_title: "Alkalmazás címe"
+  setting_attachment_max_size: "Melléklet max. méret"
+  setting_show_work_package_attachments: "Show attachments in the files tab by default"
+  setting_antivirus_scan_mode: "Scan mode"
+  setting_antivirus_scan_action: "Infected file action"
+  setting_autofetch_changesets: "Automatikus letöltés tároló változás"
+  setting_autologin: "Automatikus bejelentkezés"
+  setting_available_languages: "A rendelkezésre álló nyelvek"
+  setting_bcc_recipients: "Titkos másolat címzettjei (bcc)"
+  setting_brute_force_block_after_failed_logins: "Mennyi hibás bejelentkezési próbálkozás után tiltsa a felhasználót"
+  setting_brute_force_block_minutes: "Mennyi időre tiltsa ki"
+  setting_cache_formatted_text: "Gyorsítótárazott formázott szöveg"
+  setting_use_wysiwyg_description: "Összes felhasználó CKEditor5 WYSIWYG szerkesztő alapértelmezés szerint. CKEditor tegye a GFM Markdown korlátozott funkcionalitással."
+  setting_column_options: "Default work package lists columns"
+  setting_commit_fix_keywords: "Kulcsszavak rögzítése"
+  setting_commit_logs_encoding: "Üzenetek kódolása"
+  setting_commit_logtime_activity_id: "Tevékenységek a naplózott időben"
+  setting_commit_logtime_enabled: "Bejelentkezési idő naplózásának engedélyezése"
+  setting_commit_ref_keywords: "Viszonyítási kulcsszavak"
+  setting_consent_time: "Engedélyezési idő"
+  setting_consent_info: "Hozzájárulás tájékoztató szöveg"
+  setting_consent_required: "Beleegyezés szükséges"
+  setting_consent_decline_mail: "Hozzájárulás a kapcsolattartói e-mail címhez"
+  setting_cross_project_work_package_relations: "Projektek közötti feladatcsoportok kapcsolatainak engedélyezése"
+  setting_first_week_of_year: "Az év első hete tartalmazza\n"
+  setting_date_format: "dátum"
+  setting_default_language: "Alapértelmezett nyelv"
+  setting_default_projects_modules: "Az új projektekben alapértelmezetten engedélyezett modulok"
+  setting_default_projects_public: "Új projektek nyilvánosak alapértelmezetten"
+  setting_disable_password_login: "Disable password authentication"
+  setting_diff_max_lines_displayed: "A különböző sorok megjelenítésének maximális száma"
+  setting_omniauth_direct_login_provider: "Direct login SSO provider"
+  setting_display_subprojects_work_packages: "Megjelenítendő alprojektek, feladatcsoportok a fő projekt alapértelmezett beállítása szerint"
+  setting_duration_format: "Duration format"
+  setting_duration_format_hours_only: "Hours only"
+  setting_duration_format_days_and_hours: "Days and hours"
+  setting_duration_format_instructions: "This defines how Work, Remaining work, and Time spent durations are displayed."
+  setting_emails_footer: "E-mailek lábléce"
+  setting_emails_header: "E-mailek fejléce"
+  setting_email_login: "Használd az e-mail címet a bejellentkezéshez"
+  setting_enabled_scm: "SCM engedélyezve"
+  setting_enabled_projects_columns: "Columns in a projects list displayed by default"
+  setting_feeds_enabled: "Hírcsatornák engedélyezése"
+  setting_ical_enabled: "Enable iCalendar subscriptions"
+  setting_feeds_limit: "Tartalom szintjének a korlátja"
+  setting_file_max_size_displayed: "A szöveg fájl sorainak maximum mérete megjelenítéskor"
+  setting_host_name: "Gazdagép neve"
+  setting_collaborative_editing_hocuspocus_url: "Hocuspocus server URL"
+  setting_collaborative_editing_hocuspocus_secret: "Hocuspocus server secret"
+  setting_hours_per_day: "Hours per day"
+  setting_hours_per_day_explanation: >-
+    This defines what is considered a "day" when displaying duration in days and hours (for example, if a day is 8 hours, 32 hours would be 4 days).
+  setting_invitation_expiration_days: "Az aktivációs email lejár ekkor"
+  setting_invitation_expiration_days_caption: "Number of days after which the activation email expires."
+  setting_work_package_done_ratio: "Progress calculation mode"
+  setting_work_package_done_ratio_field: "Work-based"
+  setting_work_package_done_ratio_field_caption_html: >-
+    <i>% Complete</i> can be freely set to any value. If you optionally enter a value for <i>Work</i>, <i>Remaining work</i> will automatically be derived.
+  setting_work_package_done_ratio_status: "Status-based"
+  setting_work_package_done_ratio_status_caption_html: >-
+    Each status has a <i>% Complete</i> value associated with it. Changing status will change <i>% Complete</i>.
+  setting_work_package_done_ratio_explanation_html: >
+    In <b>work-based</b> mode, % Complete can be freely set to any value. If you optionally enter a value for Work, Remaining work will automatically be derived. In <b>status-based</b> mode, each status has a % Complete value associated with it. Changing status will change % Complete.
+  setting_work_package_properties: "feladatcsoport tulajdonságok"
+  setting_work_package_startdate_is_adddate: "Az aktuális dátum használata, mint kezdő dátuma az új feladatcsoportoknak"
+  setting_work_packages_projects_export_limit: "Work packages / Projects export limit"
+  setting_journal_aggregation_time_minutes: "Felhasználói műveletek összevontan\n"
+  setting_log_requesting_user: "Jelentkezzen be a felhasználóként, név és e-mail cím minden lekéréshez"
+  setting_login_required: "Hitelesítés szükséges"
+  setting_login_required_caption: "When checked, all requests to the application have to be authenticated."
+  setting_lost_password: "Enable password reset"
+  setting_lost_password_caption: "When checked, allow users to reset their own passwords."
+  setting_mail_from: "Értesítő e-mailek feladója"
+  setting_mail_handler_api_key: "API-kulcs"
+  setting_mail_handler_body_delimiters: "E-mailek csonkolása e sorok után"
+  setting_mail_handler_body_delimiter_regex: "E-mailek csonkítása a megegyező kifejezéssel"
+  setting_mail_handler_ignore_filenames: "Összes melléklet figyelmen kívül hagyva"
+  setting_new_project_user_role_id: "Szerepkör a  nem admin felhasználónak, aki létrehoz egy projektet,"
+  setting_new_project_send_confirmation_email: "Send notification to author when creating a new project"
+  setting_new_project_notification_text: "Notification text"
+  setting_password_active_rules: "Választható karakter típusok"
+  setting_password_count_former_banned: "A legutóbb használt  jelszavak száma, ezeket tilos újra felhasználni"
+  setting_password_days_valid: "Hány nap után kényszerítse ki a jelszó cserét"
+  setting_password_min_length: "Minimum hosszúság"
+  setting_password_min_adhered_rules: "Minimális számú szükséges ezekhez az osztályokhoz"
+  setting_per_page_options: "Objektum per oldal opció"
   setting_percent_complete_on_status_closed: "% Complete when status is closed"
   setting_percent_complete_on_status_closed_no_change: No change
   setting_percent_complete_on_status_closed_no_change_caption_html: The value of <i>% Complete</i> will not change even when a work package is closed.
@@ -5516,15 +5443,13 @@ hu:
       not_writable: The setting is not writable and can only be changed by a sysadmin.
       failed_to_update: 'Setting ''%{name}'' could not be updated: %{message}'
     authentication:
-      login: Bejelentkezés
-      registration: Registration
-      sso: Single Sign-On (SSO)
-      omniauth_direct_login_hint_html: 'If this option is active, login requests will redirect to the configured omniauth provider. The login dropdown and sign-in page will be disabled. <br/> <strong>Note:</strong> Unless you also disable password logins, with this option enabled, users can still log in internally by visiting the <code>%{internal_path}</code> login page.
-
-        '
-      remapping_existing_users_hint: 'If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the OpenProject instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
-
-        '
+      login: "Bejelentkezés"
+      registration: "Registration"
+      sso: "Single Sign-On (SSO)"
+      omniauth_direct_login_hint_html: >
+        If this option is active, login requests will redirect to the configured omniauth provider. The login dropdown and sign-in page will be disabled. <br/> <strong>Note:</strong> Unless you also disable password logins, with this option enabled, users can still log in internally by visiting the <code>%{internal_path}</code> login page.
+      remapping_existing_users_hint: >
+        If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the Yojana instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
     attachments:
       whitelist_text_html: 'Határozza meg a feltöltött fájlok érvényes fájlkiterjesztéseinek és/vagy mime típusainak listáját. <br/> Adjon meg fájlkiterjesztéseket (pl. <code>%{ext_example} </code>) vagy mime típusokat (pl. <code>%{mime_example} </code>). <br/> Hagyja üresen, ha bármilyen fájltípust szeretne feltölteni. Több érték megengedett (egy sor minden értékhez).
 
@@ -5553,10 +5478,9 @@ hu:
       modes:
         clamav_socket_html: Enter the socket to the clamd daemon, e.g., %{example}
         clamav_host_html: Enter the hostname and port to the clamd daemon separated by colon. e.g., %{example}
-        description_html: 'Select the mode in which the antivirus scanner integration should operate. <br/> <ul> <li><strong>%{disabled_option}</strong>: Uploaded files are not scanned for viruses.</li> <li><strong>%{socket_option}</strong>: You have set up ClamAV on the same server as OpenProject and the scan daemon clamd is running in the background</li> <li><strong>%{host_option}</strong>: You are streaming files to an external virus scanning host.</li> </ul>
-
-          '
-    brute_force_prevention: Felhasználó automatikus blokkolása
+        description_html: >
+          Select the mode in which the antivirus scanner integration should operate. <br/> <ul> <li><strong>%{disabled_option}</strong>: Uploaded files are not scanned for viruses.</li> <li><strong>%{socket_option}</strong>: You have set up ClamAV on the same server as Yojana and the scan daemon clamd is running in the background</li> <li><strong>%{host_option}</strong>: You are streaming files to an external virus scanning host.</li> </ul>
+    brute_force_prevention: "Felhasználó automatikus blokkolása"
     date_format:
       first_date_of_week_and_year_set: 'Ha a "%{day_of_week_setting_name}" vagy a "%{first_week_setting_name}" opciók közül valamelyik be van állítva, akkor a másiknak is be kell lennie, hogy elkerüljük az ellentmondásokat a frontendben.
 
@@ -5565,8 +5489,8 @@ hu:
 
         '
     experimental:
-      save_confirmation: Caution! Risk of data loss! Only activate experimental features if you do not mind breaking your OpenProject installation and losing all of its data.
-      warning_toast: Feature flags are settings that activate features that are still under development. They shall only be used for testing purposes. They shall never be activated on OpenProject installations holding important data. These features will very likely corrupt your data. Use them at your own risk.
+      save_confirmation: Caution! Risk of data loss! Only activate experimental features if you do not mind breaking your Yojana installation and losing all of its data.
+      warning_toast: Feature flags are settings that activate features that are still under development. They shall only be used for testing purposes. They shall never be activated on Yojana installations holding important data. These features will very likely corrupt your data. Use them at your own risk.
       feature_flags: Feature flags
     general: Általános
     highlighting:
@@ -5577,7 +5501,7 @@ hu:
         type: Teljes sor típus szerint
         priority: Teljes sor prioritás szerint
     icalendar:
-      enable_subscriptions_text_html: Allows users with the necessary permissions to subscribe to OpenProject calendars and access work package information via an external calendar client. <strong>Note:</strong> Please read about <a href="%{link}" target="_blank">iCalendar subscriptions</a> to understand potential security risks before enabling this.
+      enable_subscriptions_text_html: Allows users with the necessary permissions to subscribe to Yojana calendars and access work package information via an external calendar client. <strong>Note:</strong> Please read about <a href="%{link}" target="_blank">iCalendar subscriptions</a> to understand potential security risks before enabling this.
     language_name_being_default: "%{language_name} (default)"
     notifications:
       events_explanation: 'Azt szabályozza, hogy melyik eseményhez küldjön e -mailt. A munkacsomagok nem tartoznak ebbe a listába, mivel a rájuk vonatkozó értesítések kifejezetten minden felhasználó számára konfigurálhatók.
@@ -5615,9 +5539,8 @@ hu:
               label: Side panel
               description: Add all the project attributes in a section inside the right side panel in the project overview.
     project_initiation_request:
-      header_description: 'OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
-
-        '
+      header_description: >
+        Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
       status:
         submitted: "%{wizard_name} has been submitted"
         submitted_description: Click the button below to go to the work package for the submission process.
@@ -5629,8 +5552,8 @@ hu:
         project_creation_wizard: Open project creation wizard
         project_mandate: Open project mandate
       blankslate:
-        title: Initiation request not enabled
-        description: OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard.
+        title: "Initiation request not enabled"
+        description: "Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard."
       disable_dialog:
         title: Disable project initiation request
         heading: Disable this project initiation request?
@@ -5735,81 +5658,64 @@ hu:
   status_deleted: Törölve
   support:
     array:
-      sentence_connector: és
-      skip_last_comma: hamis
-  text_accessibility_hint: A kisegítő lehetőségek mód vakok és gyengén látók illetve mozgásukban korlátozottak számára lett tervezve. Gyengénlátók számára a fókuszált elemek kivételes kiemeléssel jelennek meg. Vegye figyelembe, hogy a "Backlogs" modul nem érhető el ebben a módban.
-  text_access_token_hint: Hozzáférés tokennel lehetővé teszi, hogy külső alkalmazások hozzáférhessenek az OpenProject forrásaihoz.
-  text_analyze: 'További elemzése: %{subject}'
-  text_are_you_sure: Biztos vagy benne?
-  open_link_in_a_new_tab: Open link in a new tab
-  text_are_you_sure_continue: Are you sure you want to continue?
-  text_are_you_sure_with_children: Törli a feladatcsoportot és minden hozzá tartozó gyermek feladatcsoportot?
-  text_are_you_sure_with_project_custom_fields: Deleting this attribute will also delete its values in all projects. Are you sure you want to do this?
-  text_are_you_sure_with_project_life_cycle_step: Deleting this phase will also delete its usages in all projects. Are you sure you want to do this?
-  text_assign_to_project: Hozzárendelés projekthez
-  text_form_configuration: 'Testreszabhatja, hogy mely mezők jelenjenek meg a munkacsomag űrlapjánál. A mezőket szabadon csoportosíthatja, hogy kellően tükrözze a problémakör igényeit.
-
-    '
-  text_form_configuration_required_attribute: Attribútum megjelölve, így mindig látszik
-  text_caracters_maximum: legfeljebb %{count} hosszúságú karakter lehet.
-  text_caracters_minimum: Legalább %{count} karakter hosszúnak kell lennie.
-  text_comma_separated: Többszörös érték megengedett (vesszővel elválasztva).
-  text_comment_wiki_page: 'Megjegyzés a wiki oldalhoz: %{page}'
-  text_custom_field_possible_values_info: Az egyes értékek külön sorban
-  text_custom_field_hint_activate_per_project: 'Egyéni mezők használatakor: tartsa szem előtt, hogy az egyéni mezőket minden projektben külön aktiválni kell.
-
-    '
-  text_custom_field_hint_activate_per_project_and_type: 'Az egyéni mezőket feladatcsoport típusonként és projektenként egyenként aktiválni kell.
-
-    '
-  text_project_custom_field_html: 'The Enterprise edition will add these additional add-ons for projects'' custom fields: <br> <ul> <li><b>Add custom fields for projects to your Project list to create a project portfolio view</b></li> </ul>
-
-    '
-  text_custom_logo_instructions: 'The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×47px image. You can add as much spacing inside that image as you like.
-
-    '
-  text_custom_logo_mobile_instructions: 'The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×33px image. You can add as much spacing inside that image as you like.
-
-    '
-  text_custom_export_logo_instructions: 'This is the logo that appears in your PDF exports. It needs to be a PNG or JPEG image file. A black or colored logo on transparent or white background is recommended.
-
-    '
-  text_custom_export_cover_instructions: 'This is the image that appears in the background of a cover page in your PDF exports. It needs to be an about 800px width by 500px height sized PNG or JPEG image file.
-
-    '
-  text_custom_export_footer_instructions: 'PDF exports will include a graphical element positioned to the left of the footer. This image must be a PNG or JPEG file with approximately 200 pixels in width.
-
-    '
-  label_custom_export_font_instructions: 'Upload and manage custom TrueType (.ttf) fonts used in your PDF exports. For best results, use matching files from the same font family. If no font is provided, the default NotoSans font will be used.
-
-    '
-  label_custom_export_images_instructions: 'Upload and manage custom image files used in your PDF exports.
-
-    '
-  text_custom_export_font_regular_instructions: 'This is the font file for regular text. It needs to be in TTF format and is required.
-
-    '
-  text_custom_export_font_bold_instructions: 'This is the font file for bold text. It needs to be in TTF format.
-
-    '
-  text_custom_export_font_italic_instructions: 'This is the font file for italic text. It needs to be in TTF format.
-
-    '
-  text_custom_export_font_bold_italic_instructions: 'This is the font file for bold and italic text. It needs to be in TTF format.
-
-    '
-  text_custom_favicon_instructions: 'This is the tiny icon that appears in your browser window/tab next to the page''s title. It needs to be a squared 32 by 32 pixels sized PNG image file with a transparent background.
-
-    '
-  text_custom_touch_icon_instructions: 'This is the icon that appears in your mobile or tablet when you place a bookmark on your homescreen. It needs to be a squared 180 by 180 pixels sized PNG image file. Please make sure the image''s background is not transparent otherwise it will look bad on iOS.
-
-    '
-  text_database_allows_tsv: Az adatbázis lehetővé teszi a TSVector (opcionális)
-  text_default_administrator_account_changed: Az alapértelmezett rendszergazdai fiók megváltozott
-  text_default_encoding: 'Alapértelmezett érték: UTF-8'
-  text_destroy: Törlés
-  text_destroy_with_associated: 'There are additional objects associated with the work package(s) that are to be deleted. Those objects are of the following types:'
-  text_destroy_what_to_do: Mit szeretne tenni?
+      sentence_connector: "és"
+      skip_last_comma: "hamis"
+  text_accessibility_hint: "A kisegítő lehetőségek mód vakok és gyengén látók illetve mozgásukban korlátozottak számára lett tervezve. Gyengénlátók számára a fókuszált elemek kivételes kiemeléssel jelennek meg. Vegye figyelembe, hogy a \"Backlogs\" modul nem érhető el ebben a módban."
+  text_access_token_hint: "Hozzáférés tokennel lehetővé teszi, hogy külső alkalmazások hozzáférhessenek az Yojana forrásaihoz."
+  text_analyze: "További elemzése: %{subject}"
+  text_are_you_sure: "Biztos vagy benne?"
+  open_link_in_a_new_tab: "Open link in a new tab"
+  text_are_you_sure_continue: "Are you sure you want to continue?"
+  text_are_you_sure_with_children: "Törli a feladatcsoportot és minden hozzá tartozó gyermek feladatcsoportot?"
+  text_are_you_sure_with_project_custom_fields: "Deleting this attribute will also delete its values in all projects. Are you sure you want to do this?"
+  text_are_you_sure_with_project_life_cycle_step: "Deleting this phase will also delete its usages in all projects. Are you sure you want to do this?"
+  text_assign_to_project: "Hozzárendelés projekthez"
+  text_form_configuration: >
+    Testreszabhatja, hogy mely mezők jelenjenek meg a munkacsomag űrlapjánál. A mezőket szabadon csoportosíthatja, hogy kellően tükrözze a problémakör igényeit.
+  text_form_configuration_required_attribute: "Attribútum megjelölve, így mindig látszik"
+  text_caracters_maximum: "legfeljebb %{count} hosszúságú karakter lehet."
+  text_caracters_minimum: "Legalább %{count} karakter hosszúnak kell lennie."
+  text_comma_separated: "Többszörös érték megengedett (vesszővel elválasztva)."
+  text_comment_wiki_page: "Megjegyzés a wiki oldalhoz: %{page}"
+  text_custom_field_possible_values_info: "Az egyes értékek külön sorban"
+  text_custom_field_hint_activate_per_project: >
+    Egyéni mezők használatakor: tartsa szem előtt, hogy az egyéni mezőket minden projektben külön aktiválni kell.
+  text_custom_field_hint_activate_per_project_and_type: >
+    Az egyéni mezőket feladatcsoport típusonként és projektenként egyenként aktiválni kell.
+  text_project_custom_field_html: >
+    The Enterprise edition will add these additional add-ons for projects' custom fields: <br> <ul> <li><b>Add custom fields for projects to your Project list to create a project portfolio view</b></li> </ul>
+  text_custom_logo_instructions: >
+    The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×47px image. You can add as much spacing inside that image as you like.
+  text_custom_logo_mobile_instructions: >
+    The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×33px image. You can add as much spacing inside that image as you like.
+  text_custom_export_logo_instructions: >
+    This is the logo that appears in your PDF exports. It needs to be a PNG or JPEG image file. A black or colored logo on transparent or white background is recommended.
+  text_custom_export_cover_instructions: >
+    This is the image that appears in the background of a cover page in your PDF exports. It needs to be an about 800px width by 500px height sized PNG or JPEG image file.
+  text_custom_export_footer_instructions: >
+    PDF exports will include a graphical element positioned to the left of the footer. This image must be a PNG or JPEG file with approximately 200 pixels in width.
+  label_custom_export_font_instructions: >
+    Upload and manage custom TrueType (.ttf) fonts used in your PDF exports. For best results, use matching files from the same font family. If no font is provided, the default NotoSans font will be used.
+  label_custom_export_images_instructions: >
+    Upload and manage custom image files used in your PDF exports.
+  text_custom_export_font_regular_instructions: >
+    This is the font file for regular text. It needs to be in TTF format and is required.
+  text_custom_export_font_bold_instructions: >
+    This is the font file for bold text. It needs to be in TTF format.
+  text_custom_export_font_italic_instructions: >
+    This is the font file for italic text. It needs to be in TTF format.
+  text_custom_export_font_bold_italic_instructions: >
+    This is the font file for bold and italic text. It needs to be in TTF format.
+  text_custom_favicon_instructions: >
+    This is the tiny icon that appears in your browser window/tab next to the page's title. It needs to be a squared 32 by 32 pixels sized PNG image file with a transparent background.
+  text_custom_touch_icon_instructions: >
+    This is the icon that appears in your mobile or tablet when you place a bookmark on your homescreen. It needs to be a squared 180 by 180 pixels sized PNG image file. Please make sure the image's background is not transparent otherwise it will look bad on iOS.
+  text_database_allows_tsv: "Az adatbázis lehetővé teszi a TSVector (opcionális)"
+  text_default_administrator_account_changed: "Az alapértelmezett rendszergazdai fiók megváltozott"
+  text_default_encoding: "Alapértelmezett érték: UTF-8"
+  text_destroy: "Törlés"
+  text_destroy_with_associated: "További objektumok vannak hozzárendelve, a feladatcsoport(ok)hoz, amelyeket törölni kell. Ezek az objektumok a következők:"
+  text_destroy_what_to_do: "Mit szeretne tenni?"
   text_diff_truncated: "... Ez a különbség csonkolva lett, mert meghaladja a maximálisan megjeleníthető méretet."
   text_email_delivery_not_configured: |-
     Email küldés nincs bekonfigurálva, és az értesítések ki vannak kapcsolva.
@@ -5850,35 +5756,30 @@ hu:
   text_line_separated: A többszörös érték adás megengedett (minden érték külön sorban).
   text_load_default_configuration: Az alapértelmezett konfiguráció betöltése
   text_no_roles_defined: Nincsenek szerepkörök meghatározva.
-  text_no_access_tokens_configurable: Nincs hozzáférési token, amely konfigurálható.
-  text_no_configuration_data: Szerepkörök, típusok, a feladatcsoport állapotok és a munkafolyamatok nincsenek beállítva. Erősen ajánlott, az alapértelmezett konfiguráció betöltése. Akkor képes lesz arra, hogy módosítsa.
-  text_no_notes: Ehhez a munkacsomaghoz nincsenek megjegyzések.
-  text_notice_too_many_values_are_inperformant: 'Megjegyzés: Az oldalanként több mint 100 elem megjelenítésekor az oldal betöltési ideje  növekedhet.'
-  text_notice_security_badge_displayed_html: 'Megjegyzés: ha engedélyezve van, akkor a telepítési állapotot jelző jelvény jelenik meg a <a href="%{information_panel_path}">%{information_panel_label} </a> adminisztrációs panelen és a kezdőlapon. Csak a rendszergazdák számára jelenik meg. <br/> A jelvény ellenőrzi az aktuális OpenProject verziót a hivatalos OpenProject kiadási adatbázishoz képest, hogy figyelmeztesse Önt minden frissítésre vagy ismert biztonsági résre. Ha többet szeretne megtudni arról, hogy mit tartalmaz az ellenőrzés, milyen adatokra van szükség az elérhető frissítésekhez, és hogyan tilthatja le ezt az ellenőrzést, keresse fel a <a href="%{more_info_url}"> konfigurációs dokumentációt </a>.
-
-    '
-  text_own_membership_delete_confirmation: Értesítem arról, hogy eltávolít néhány vagy az összes jogosultságot, és ezt követően már nem lehet szerkeszteni ezt a projektet. Biztosan folytatni kívánja?
-  text_permanent_delete_confirmation_checkbox_label: I understand that this deletion cannot be reversed
-  text_permanent_remove_confirmation_checkbox_label: I understand that this removal cannot be reversed
-  text_plugin_assets_writable: Plugin eszközök könyvtára írható
-  text_powered_by: Készítette %{link}
-  text_project_identifier_info: Csak kisbetű (a-z), számok, kötőjelek és aláhúzásjelek van engedélyezve, és kisbetűvel kell kezdődnie.
-  text_project_identifier_description: The project identifier is prepended to all work package IDs. If the identifier is "PROJ" for example, the work package identifier will be "PROJ-12" or "PROJ-246".
-  text_project_identifier_url_description: The project identifier is included in the URL of the project.
-  text_project_identifier_handle_format: Must start with a letter and contain only uppercase letters, numbers, and underscores (max 10 characters).
-  text_project_identifier_format: Must start with a lowercase letter. Only lowercase letters (a-z), numbers, dashes and underscores are allowed.
-  text_reassign: 'A munkacsomag ismételt hozzárendelése:'
-  text_regexp_multiline: A reguláris kifejezés többsoros módban legyen alkalmazva. pld. ^---\s+
-  text_rename_wiki_page: Rename wiki page
-  text_repository_usernames_mapping: Jelölje be, vagy frissítse az alkalmazás felhasználóit, minden felhasználónév eltárolva, megtalálhatóak a csomagtároló naplóban. A felhasználók ugyanazzal az alkalmazási és csomagtárolói felhasználó névvel vagy email címmel automatikusan tárolódnak.
-  text_status_changed_by_changeset: A %{value} commit-ban hozzáadva.
-  text_table_difference_description: Ebben a táblázatban látható az egyszeri %{entries}. Megtekintheti a két bejegyzés közötti különbséget azáltal, hogy először kiválasztja a megfelelő jelölőnégyzeteket a táblázatban. A táblázat alatti gombra kattintva a különbségek jelennek meg.
-  text_time_logged_by_changeset: A %{value} commit-ban hozzáadva.
-  text_tip_work_package_begin_day: ezen a napon kezdődik a feladatcsoport
-  text_tip_work_package_begin_end_day: Ezen a napon kezdődik és zárodik a feladatcsoport
-  text_tip_work_package_end_day: ezen a napon zárul a feladatcsoport
-  text_type_no_workflow: Nincs munkafolyamat meghatározva ehhez a típushoz
-  text_unallowed_characters: Nem engedélyezett karakterek
+  text_no_access_tokens_configurable: "Nincs hozzáférési token, amely konfigurálható."
+  text_no_configuration_data: "Szerepkörök, típusok, a feladatcsoport állapotok és a munkafolyamatok nincsenek beállítva. Erősen ajánlott, az alapértelmezett konfiguráció betöltése. Akkor képes lesz arra, hogy módosítsa."
+  text_no_notes: "Ehhez a munkacsomaghoz nincsenek megjegyzések."
+  text_notice_too_many_values_are_inperformant: "Megjegyzés: Az oldalanként több mint 100 elem megjelenítésekor az oldal betöltési ideje  növekedhet."
+  text_notice_security_badge_displayed_html: >
+    Megjegyzés: ha engedélyezve van, akkor a telepítési állapotot jelző jelvény jelenik meg a <a href="%{information_panel_path}">%{information_panel_label} </a> adminisztrációs panelen és a kezdőlapon. Csak a rendszergazdák számára jelenik meg. <br/> A jelvény ellenőrzi az aktuális Yojana verziót a hivatalos Yojana kiadási adatbázishoz képest, hogy figyelmeztesse Önt minden frissítésre vagy ismert biztonsági résre. Ha többet szeretne megtudni arról, hogy mit tartalmaz az ellenőrzés, milyen adatokra van szükség az elérhető frissítésekhez, és hogyan tilthatja le ezt az ellenőrzést, keresse fel a <a href="%{more_info_url}"> konfigurációs dokumentációt </a>.
+  text_own_membership_delete_confirmation: "Értesítem arról, hogy eltávolít néhány vagy az összes jogosultságot, és ezt követően már nem lehet szerkeszteni ezt a projektet. Biztosan folytatni kívánja?"
+  text_permanent_delete_confirmation_checkbox_label: "I understand that this deletion cannot be reversed"
+  text_permanent_remove_confirmation_checkbox_label: "I understand that this removal cannot be reversed"
+  text_plugin_assets_writable: "Plugin eszközök könyvtára írható"
+  text_powered_by: "Készítette %{link}"
+  text_project_identifier_info: "Csak kisbetű (a-z), számok, kötőjelek és aláhúzásjelek van engedélyezve, és kisbetűvel kell kezdődnie."
+  text_reassign: "A munkacsomag ismételt hozzárendelése:"
+  text_regexp_info: "pl. ^[A-Z0-9]+$"
+  text_regexp_multiline: 'A reguláris kifejezés többsoros módban legyen alkalmazva. pld. ^---\s+'
+  text_repository_usernames_mapping: "Jelölje be, vagy frissítse az alkalmazás felhasználóit, minden felhasználónév eltárolva, megtalálhatóak a csomagtároló naplóban. A felhasználók ugyanazzal az alkalmazási és csomagtárolói felhasználó névvel vagy email címmel automatikusan tárolódnak."
+  text_status_changed_by_changeset: "A %{value} commit-ban hozzáadva."
+  text_table_difference_description: "Ebben a táblázatban látható az egyszeri %{entries}. Megtekintheti a két bejegyzés közötti különbséget azáltal, hogy először kiválasztja a megfelelő jelölőnégyzeteket a táblázatban. A táblázat alatti gombra kattintva a különbségek jelennek meg."
+  text_time_logged_by_changeset: "A %{value} commit-ban hozzáadva."
+  text_tip_work_package_begin_day: "ezen a napon kezdődik a feladatcsoport"
+  text_tip_work_package_begin_end_day: "Ezen a napon kezdődik és zárodik a feladatcsoport"
+  text_tip_work_package_end_day: "ezen a napon zárul a feladatcsoport"
+  text_type_no_workflow: "Nincs munkafolyamat meghatározva ehhez a típushoz"
+  text_unallowed_characters: "Nem engedélyezett karakterek"
   text_user_invited: A felhasználót meghívták és a regisztráció folyamatban van.
   text_user_wrote: "%{value} írta:"
   text_wrote: wrote
@@ -5982,13 +5883,18 @@ hu:
   note_password_login_disabled_link: Password login has been disabled through a [configuration setting](configuration_url).
   warning: Figyelem
   warning_attachments_not_saved: "%{count} fájl nem menthető."
-  warning_imminent_user_limit_html: 'You invited more users than are supported by your current plan. Invited users may not be able to join your OpenProject environment. Please [upgrade your plan](upgrade_url) or block existing users in order to allow invited and registered users to join.
-
-    '
+  warning_imminent_user_limit: >
+    Több olyan felhasználót hívott meg, akiket a jelenlegi beállítás támogat. A meghívott felhasználók nem tudnak csatlakozni az Yojana környezetéhez. Kérjük, <a href="%{upgrade_url}"> frissítse a beállítást </a>, vagy blokkolja a meglévő felhasználókat, hogy engedélyezhesse a meghívott és regisztrált felhasználók csatlakozását.
   warning_registration_token_expired: |
     Az aktiváló e-mail lejárt. Új levelet küldtünk Önnek %{email} részére.
     Kérjük, kattintson a belsejében lévő linkre a fiók aktiválásához.
-  warning_user_limit_reached: 'Adding additional users will exceed the current limit. Please contact an administrator to increase the user limit to ensure external users are able to access this instance.
+  warning_user_limit_reached: >
+    Adding additional users will exceed the current limit. Please contact an administrator to increase the user limit to ensure external users are able to access this instance.
+  warning_user_limit_reached_admin: >
+    Adding additional users will exceed the current limit. Please <a href="%{upgrade_url}">upgrade your plan</a> to be able to ensure external users are able to access this instance.
+  warning_user_limit_reached_instructions: >
+    You reached your user limit (%{current}/%{max} active users). Please contact sales@girishm.info to upgrade your Enterprise edition plan and add additional users.
+  warning_protocol_mismatch_html: >
 
     '
   warning_user_limit_reached_admin_html: 'Adding additional users will exceed the current limit. Please [upgrade your plan](upgrade_url) to be able to ensure external users are able to access this instance.
@@ -6292,43 +6198,32 @@ hu:
       non_confidential: Non confidential
       default_scopes: Alapértelmezett hatáskörök
       instructions:
-        enabled: Enable this application, allowing users to perform authorization grants with it.
-        name: 'Az alkalmazás neve. Ez más felhasználók számára jelenik meg engedélyezéskor.
-
-          '
-        redirect_uri_html: 'Az engedélyezett URL -címek átirányíthatók a jogosult felhasználókra. Soronként egy bejegyzés. <br/> Ha asztali alkalmazást regisztrál, használja a következő URL -t.
-
-          '
-        confidential: Ellenőrizze, hogy az alkalmazást olyan helyen használják-e, ahol az ügyféltitkot bizalmasan lehet kezelni. A natív mobilalkalmazások és az egyoldalas alkalmazások feltételezhetően nem bizalmasak.
-        scopes: Ellenőrizze azokat a hatóköröket, amelyekhez az alkalmazás hozzáférést biztosít. Ha nem ellenőrzi a hatókört, akkor az api_v3 feltételezzük.
-        client_credential_user_id: 'Választható felhasználói azonosító, amelyet az ügyfelek az alkalmazás használatakor megszemélyesíthetnek. Üresen hagyva csak nyilvános hozzáférést engedélyez
-
-          '
-        register_intro: Ha OAuth API kliensalkalmazást fejleszt az OpenProject számára, akkor ezen az űrlapon regisztrálhatja azt, hogy minden felhasználó használhassa.
-        default_scopes: ''
+        enabled: "Enable this application, allowing users to perform authorization grants with it."
+        name: "Az alkalmazás neve. Ez más felhasználók számára jelenik meg engedélyezéskor.\n"
+        redirect_uri_html: >
+          Az engedélyezett URL -címek átirányíthatók a jogosult felhasználókra. Soronként egy bejegyzés. <br/> Ha asztali alkalmazást regisztrál, használja a következő URL -t.
+        confidential: "Ellenőrizze, hogy az alkalmazást olyan helyen használják-e, ahol az ügyféltitkot bizalmasan lehet kezelni. A natív mobilalkalmazások és az egyoldalas alkalmazások feltételezhetően nem bizalmasak."
+        scopes: "Ellenőrizze azokat a hatóköröket, amelyekhez az alkalmazás hozzáférést biztosít. Ha nem ellenőrzi a hatókört, akkor az api_v3 feltételezzük."
+        client_credential_user_id: "Választható felhasználói azonosító, amelyet az ügyfelek az alkalmazás használatakor megszemélyesíthetnek. Üresen hagyva csak nyilvános hozzáférést engedélyez\n"
+        register_intro: "Ha OAuth API kliensalkalmazást fejleszt az Yojana számára, akkor ezen az űrlapon regisztrálhatja azt, hogy minden felhasználó használhassa."
+        default_scopes: ""
     header:
       builtin_applications: Built-in OAuth applications
       other_applications: Other OAuth applications
     empty_application_lists: No OAuth applications have been registered.
-    client_id: Ügyfél azonosító
-    client_secret_notice: 'Ez az egyetlen alkalom, amikor kinyomtathatjuk az ügyfél titkát, jegyezze fel és tartsa biztonságban. Jelszóként kell kezelni, és az OpenProject később nem tudja lekérni.
-
-      '
+    client_id: "Ügyfél azonosító"
+    client_secret_notice: >
+      Ez az egyetlen alkalom, amikor kinyomtathatjuk az ügyfél titkát, jegyezze fel és tartsa biztonságban. Jelszóként kell kezelni, és az Yojana később nem tudja lekérni.
     authorization_dialog:
-      authorize: Engedélyez
-      cancel: 'Az engedély visszavonása és megtagadása.
-
-        '
-      prompt_html: Engedélyezze <strong>%{application_name}</strong> hogy használhassa a felhasználó<em>%{login}</em>
-      title: Engedélyezze %{application_name}
-      wants_to_access_html: 'Ez az alkalmazás hozzáférést kér az Ön OpenProject-fiókjához. <br/> <strong>A következő jogosultságokat kérte:</strong>
-
-        '
+      authorize: "Engedélyez"
+      cancel: "Az engedély visszavonása és megtagadása.\n"
+      prompt_html: "Engedélyezze <strong>%{application_name}</strong> hogy használhassa a felhasználó<em>%{login}</em>"
+      title: "Engedélyezze %{application_name}"
+      wants_to_access_html: >
+        Ez az alkalmazás hozzáférést kér az Ön Yojana-fiókjához. <br/> <strong>A következő jogosultságokat kérte:</strong>
     scopes:
-      api_v3: Teljes API v3 hozzáférés
-      api_v3_text: Az alkalmazás teljes olvasási és írási hozzáférést kap az OpenProject API v3 verzióhoz az Ön nevében végzett műveletek elvégzéséhez.
-      mcp: Access to MCP
-      mcp_text: Application will receive access to the OpenProject MCP endpoints. They are a limited subset of APIv3, that's tailored for usage with AI agents.
+      api_v3: "Teljes API v3 hozzáférés"
+      api_v3_text: "Az alkalmazás teljes olvasási és írási hozzáférést kap az Yojana API v3 verzióhoz az Ön nevében végzett műveletek elvégzéséhez."
     grants:
       created_date: 'Elfogadva '
       scopes: Jogosultságok
@@ -6339,27 +6234,16 @@ hu:
 
         '
     flows:
-      authorization_code: 'Hitelesítő kód:'
-      client_credentials: 'Ügyfél hitelesítő adatok forgalma
-
-        '
-    client_credentials: 'Az ügyfél hitelesítő adataihoz használt felhasználó
-
-      '
-    client_credentials_impersonation_set_to: 'Az ügyfél hitelesítő adathoz felhasználó beállítása
-
-      '
-    client_credentials_impersonation_warning: 'Megjegyzés: Az ebben az alkalmazásban az „Ügyféladatok” folyamatot használó ügyfelek jogosultak lesznek erre a felhasználóra
-
-      '
-    client_credentials_impersonation_html: 'Alapértelmezés szerint az OpenProject az OAuth 2.0 engedélyezést a %{authorization_code_flow_link} segítségével biztosítja. Opcionálisan engedélyezheti a %{client_credentials_flow_link} opciót, de meg kell adnia egy felhasználót, akinek a nevében a kérések végrehajtásra kerülnek.
-
-      '
-    confirm_revoke_my_application:
-      one: Do you really want to remove this application? This will revoke one token active for it.
-      other: Do you really want to remove this application? This will revoke %{count} tokens active for it.
-    authorization_error: Engedélyezési hiba történt.
-    my_registered_applications: Regisztrált OAuth alkalmazások
+      authorization_code: "Hitelesítő kód:"
+      client_credentials: "Ügyfél hitelesítő adatok forgalma\n"
+    client_credentials: "Az ügyfél hitelesítő adataihoz használt felhasználó\n"
+    client_credentials_impersonation_set_to: "Az ügyfél hitelesítő adathoz felhasználó beállítása\n"
+    client_credentials_impersonation_warning: "Megjegyzés: Az ebben az alkalmazásban az „Ügyféladatok” folyamatot használó ügyfelek jogosultak lesznek erre a felhasználóra\n"
+    client_credentials_impersonation_html: >
+      Alapértelmezés szerint az Yojana az OAuth 2.0 engedélyezést a %{authorization_code_flow_link} segítségével biztosítja. Opcionálisan engedélyezheti a %{client_credentials_flow_link} opciót, de meg kell adnia egy felhasználót, akinek a nevében a kérések végrehajtásra kerülnek.
+    authorization_error: "Engedélyezési hiba történt."
+    revoke_my_application_confirmation: "Tényleg el akarja távolítani ezt az alkalmazást? Ez visszavonja az aktív %{token_count} értéket.\n"
+    my_registered_applications: "Regisztrált OAuth alkalmazások"
   oauth_client:
     urn_connection_status:
       connected: Csatlakozva
@@ -6372,41 +6256,36 @@ hu:
       label_request_token: Request token
       label_refresh_token: Refresh token
     errors:
-      oauth_authorization_code_grant_had_errors: OAuth2 Authorization grant unsuccessful
-      oauth_reported: OAuth2 provider reported
-      oauth_returned_error: OAuth2 returned an error
-      oauth_returned_json_error: OAuth2 returned a JSON error
-      oauth_returned_http_error: OAuth2 returned a network error
-      oauth_returned_standard_error: OAuth2 returned an internal error
-      wrong_token_type_returned: OAuth2 returned a wrong type of token, expecting AccessToken::Bearer
-      oauth_issue_contact_admin: OAuth2 reported an error. Please contact your system administrator.
-      oauth_client_not_found: OAuth2 client not found in 'callback' endpoint (redirect_uri).
-      refresh_token_called_without_existing_token: 'Internal error: Called refresh_token without a previously existing token.
-
-        '
-      refresh_token_updated_failed: Error during update of OAuthClientToken
-      oauth_client_not_found_explanation: 'This error appears after you have updated the client_id and client_secret in OpenProject, but haven''t updated the ''Return URI'' field in the OAuth2 provider.
-
-        '
-      oauth_code_not_present: OAuth2 'code' not found in 'callback' endpoint (redirect_uri).
-      oauth_code_not_present_explanation: 'This error appears if you have selected the wrong response_type in the OAuth2 provider. Response_type should be ''code'' or similar.
-
-        '
-      oauth_state_not_present: OAuth2 'state' not found in 'callback' endpoint (redirect_uri).
-      oauth_state_not_present_explanation: 'The ''state'' is used to indicate to OpenProject where to continue after a successful OAuth2 authorization. A missing ''state'' is an internal error that may appear during setup. Please contact your system administrator.
-
-        '
+      oauth_authorization_code_grant_had_errors: "OAuth2 Authorization grant unsuccessful"
+      oauth_reported: "OAuth2 provider reported"
+      oauth_returned_error: "OAuth2 returned an error"
+      oauth_returned_json_error: "OAuth2 returned a JSON error"
+      oauth_returned_http_error: "OAuth2 returned a network error"
+      oauth_returned_standard_error: "OAuth2 returned an internal error"
+      wrong_token_type_returned: "OAuth2 returned a wrong type of token, expecting AccessToken::Bearer"
+      oauth_issue_contact_admin: "OAuth2 reported an error. Please contact your system administrator."
+      oauth_client_not_found: "OAuth2 client not found in 'callback' endpoint (redirect_uri)."
+      refresh_token_called_without_existing_token: >
+        Internal error: Called refresh_token without a previously existing token.
+      refresh_token_updated_failed: "Error during update of OAuthClientToken"
+      oauth_client_not_found_explanation: >
+        This error appears after you have updated the client_id and client_secret in Yojana, but haven't updated the 'Return URI' field in the OAuth2 provider.
+      oauth_code_not_present: "OAuth2 'code' not found in 'callback' endpoint (redirect_uri)."
+      oauth_code_not_present_explanation: >
+        This error appears if you have selected the wrong response_type in the OAuth2 provider. Response_type should be 'code' or similar.
+      oauth_state_not_present: "OAuth2 'state' not found in 'callback' endpoint (redirect_uri)."
+      oauth_state_not_present_explanation: >
+        The 'state' is used to indicate to Yojana where to continue after a successful OAuth2 authorization. A missing 'state' is an internal error that may appear during setup. Please contact your system administrator.
       rack_oauth2:
-        client_secret_invalid: Client secret is invalid (client_secret_invalid)
-        invalid_request: 'OAuth2 Authorization Server responded with ''invalid_request''. This error appears if you try to authorize multiple times or in case of technical issues.
-
-          '
-        invalid_response: OAuth2 Authorization Server provided an invalid response (invalid_response)
-        invalid_grant: The OAuth2 Authorization Server asks you to reauthorize (invalid_grant).
-        invalid_client: The OAuth2 Authorization Server doesn't recognize OpenProject (invalid_client).
-        unauthorized_client: The OAuth2 Authorization Server rejects the grant type (unauthorized_client)
-        unsupported_grant_type: The OAuth2 Authorization Server asks you to reauthorize (unsupported_grant_type).
-        invalid_scope: You are not allowed to access the requested resource (invalid_scope).
+        client_secret_invalid: "Client secret is invalid (client_secret_invalid)"
+        invalid_request: >
+          OAuth2 Authorization Server responded with 'invalid_request'. This error appears if you try to authorize multiple times or in case of technical issues.
+        invalid_response: "OAuth2 Authorization Server provided an invalid response (invalid_response)"
+        invalid_grant: "The OAuth2 Authorization Server asks you to reauthorize (invalid_grant)."
+        invalid_client: "The OAuth2 Authorization Server doesn't recognize Yojana (invalid_client)."
+        unauthorized_client: "The OAuth2 Authorization Server rejects the grant type (unauthorized_client)"
+        unsupported_grant_type: "The OAuth2 Authorization Server asks you to reauthorize (unsupported_grant_type)."
+        invalid_scope: "You are not allowed to access the requested resource (invalid_scope)."
   http:
     request:
       failed_authorization: The server side request failed authorizing itself.
@@ -6416,18 +6295,18 @@ hu:
   you: te
   link: link
   plugin_openproject_auth_plugins:
-    name: OpenProject Auth Plugins
-    description: Integration of OmniAuth strategy providers for authentication in OpenProject.
+    name: "Yojana Auth Plugins"
+    description: "Integration of OmniAuth strategy providers for authentication in Yojana."
   plugin_openproject_auth_saml:
-    name: OmniAuth SAML / Single-Sign On
-    description: Adds the OmniAuth SAML provider to OpenProject
+    name: "OmniAuth SAML / Single-Sign On"
+    description: "Adds the OmniAuth SAML provider to Yojana"
   enterprise_plans:
     legacy_enterprise: Enterprise Plan
   token:
     hashed_token:
       display_value_placeholder: "***"
   external_link_warning:
-    title: Leaving OpenProject
-    warning_message: You are about to leave OpenProject and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies.
-    continue_message: Are you sure you want to proceed to the following external link?
-    continue_button: Continue to external website
+    title: "Leaving Yojana"
+    warning_message: "You are about to leave Yojana and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies."
+    continue_message: "Are you sure you want to proceed to the following external link?"
+    continue_button: "Continue to external website"

@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -348,13 +348,13 @@ tr:
         unknown_name: Unknown
     mcp_configurations:
       index:
-        description: The model context protocol allows AI agents to provide its users with tools and resources exposed by this OpenProject instance. This feature is still in beta.
-        resources_heading: Kaynaklar
-        resources_description: OpenProject aşağıdaki araçları destekler. Her biri etkinleştirilebilir, adı ve açıklaması değiştirilebilir. Daha fazla bilgi için   [documentation on MCP tools](docs_url).
-        resources_submit: Kaynakları güncelle
-        tools_heading: Araçlar
-        tools_description: OpenProject aşağıdaki araçları destekler. Her biri etkinleştirilebilir, adı ve açıklaması değiştirilebilir. Daha fazla bilgi için   [documentation on MCP tools](docs_url).
-        tools_submit: Araçları güncelle
+        description: "MCP (Model Bağlam Protokolü), AI ajanlarının bu Yojana sisteminde sunulan araç ve kaynakları kullanıcılara erişilebilir kılmasını sağlar."
+        resources_heading: "Kaynaklar"
+        resources_description: "Yojana implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
+        resources_submit: "Kaynakları güncelle"
+        tools_heading: "Araçlar"
+        tools_description: "Yojana aşağıdaki araçları destekler. Her biri etkinleştirilebilir, adı ve açıklaması değiştirilebilir. Daha fazla bilgi için   [documentation on MCP tools](docs_url)."
+        tools_submit: "Araçları güncelle"
       multi_update:
         success: MCP yapılandırmaları başarıyla güncellendi.
       server_form:
@@ -397,31 +397,31 @@ tr:
       edit:
         label_delete_scim_client: SCIM istemcisini sil
       form:
-        auth_provider_description: Bu, SCIM sağlayıcısı tarafından eklenen kullanıcıların OpenProject'te kimlik doğrulaması yapmak için kullanacağı hizmettir.
-        authentication_method_description_html: SCIM istemcisi OpenProject'te bu şekilde kimlik doğrulaması yapar. Lütfen OAuth belirteçlerinin <code>scim_v2</code> kapsamını içerdiğinden emin olun.
-        description: Bu yapılandırma seçenekleri hakkında daha fazla bilgi için lütfen [SAML sağlayıcılarını yapılandırma belgeleri] (docs_url) bakın.
-        jwt_sub_description: Örneğin, Keycloak için bu, SCIM istemcisi ile ilişkili hizmet hesabının UUID'sidir. Kullanım durumunuz için söz konusu talebi nasıl bulacağınızı öğrenmek için [belgelerimize] (docs_url) başvurun.
-        name_description: Diğer yöneticilerin bu istemcinin neden yapılandırıldığını daha iyi anlamalarına yardımcı olacak bir ad seçin.
+        auth_provider_description: "This is the service that users added by the SCIM provider will use to authenticate in Yojana."
+        authentication_method_description_html: "This is how the SCIM client authenticates at Yojana. Please ensure that OAuth tokens include the <code>scim_v2</code> scope."
+        description: "Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options."
+        jwt_sub_description: "For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case."
+        name_description: "Choose a name that will help other admins better understand why this client was configured."
       index:
-        description: Burada yapılandırılan SCIM istemcileri, kullanıcı hesaplarını ve gruplarını sağlamak, güncellemek ve onaylarını kaldırmak için OpenProject SCIM sunucu API'si ile etkileşime girebilir.
-        label_create_button: SCIM istemcisi ekle
+        description: "SCIM clients configured here are able to interact with Yojana SCIM server API to provision, update, and deprovision user accounts and groups."
+        label_create_button: "SCIM istemcisi ekle"
       new:
         title: Yeni SCIM istemcisi
       revoke_static_token_dialog_component:
-        confirm_button: İptal et
-        title: Statik anahtarı iptal et
-        heading: Bu belirteci iptal etmek istediğinizden emin misiniz?
-        description: The SCIM client that uses this token will no longer be able to access OpenProject's SCIM server API.
+        confirm_button: "İptal et"
+        title: "Statik anahtarı iptal et"
+        heading: "Bu belirteci iptal etmek istediğinizden emin misiniz?"
+        description: "The SCIM client that uses this token will no longer be able to access Yojana's SCIM server API."
       table_component:
         blank_slate:
           title: Henüz yapılandırılmış SCIM istemcisi yok
           description: Onları burada görmek için istemci ekleyin
         user_count: Kullanıcılar
       token_list_component:
-        description: Burada oluşturduğunuz belirteçler, OpenProject SCIM API'sine erişmek için bir SCIM istemcisi tarafından geçirilebilir.
-        heading: Anahtarlar
-        label_add_token: Erişim Anahtarı
-        label_aria_add_token: Anahtar ekle
+        description: "Burada oluşturduğunuz belirteçler, Yojana SCIM API'sine erişmek için bir SCIM istemcisi tarafından geçirilebilir."
+        heading: "Anahtarlar"
+        label_add_token: "Erişim Anahtarı"
+        label_aria_add_token: "Anahtar ekle"
       token_table_component:
         blank_slate:
           title: Henüz hiçbir anahtar oluşturulmadı
@@ -564,39 +564,39 @@ tr:
       name: LDAP bağlantısının keyfi adı
       host: LDAP ana bilgisayar adı veya IP adresi
       login_map: LDAP’deki benzersiz kullanıcı girişini tanımlamak için kullanılan özellik anahtarı. Genelde bu, 'uid' veya 'samAccountName' olacaktır.
-      generic_map: LDAP'de, OpenProject `%{attribute}` niteliğiyle eşlenen özellik anahtarı
-      admin_map_html: 'İsteğe bağlı: LDAP''daki, <strong> varsa </strong> OpenProject kullanıcısına bir yönetici işaretleyen özellik anahtarı. Şüphe duyduğunuzda boş bırakın.'
+      generic_map: LDAP'de, Yojana `%{attribute}` niteliğiyle eşlenen özellik anahtarı
+      admin_map_html: "İsteğe bağlı: LDAP'daki, <strong> varsa </strong> Yojana kullanıcısına bir yönetici işaretleyen özellik anahtarı. Şüphe duyduğunuzda boş bırakın."
       system_user_dn_html: |
         Salt okunur erişim için kullanılan sistem kullanıcısının DN'sini girin.
         <br>
         Örnek:
-        uid=openproject,ou=system,dc=example,dc=com
+        uid=yojana,ou=system,dc=example,dc=com
       system_user_password: Sistem kullanıcısının cilt şifresini girin
       base_dn: |
-        LDAP'da, OpenProject'in kullanıcıları ve grupları aramasını istediğiniz alt ağacın Temel DN'sini girin.
-        OpenProject yalnızca bu alt ağaçta belirtilen kullanıcı adlarını filtreleyecektir.
+        LDAP'da, Yojana'in kullanıcıları ve grupları aramasını istediğiniz alt ağacın Temel DN'sini girin.
+        Yojana yalnızca bu alt ağaçta belirtilen kullanıcı adlarını filtreleyecektir.
         Örnek: ou = kullanıcılar, dc = örnek, dc = com
       filter_string: |
         LDAP'de filtrelenen kullanıcılar için döndürülen sonuçlara uygulamak üzere isteğe bağlı bir RFC4515 filtresi ekleyin.
-        Bu, OpenProject tarafından kimlik doğrulama ve grup senkronizasyonu için bulunan kullanıcı kümesini kısıtlamak için kullanılabilir.
+        Bu, Yojana tarafından kimlik doğrulama ve grup senkronizasyonu için bulunan kullanıcı kümesini kısıtlamak için kullanılabilir.
       filter_string_concat: |
-        OpenProject her zaman kullanıcının kaydı tanımlaması için sağlanan oturum açma özniteliğine filtre uygular. Burada bir filtre sağlarsanız,
+        Yojana her zaman kullanıcının kaydı tanımlaması için sağlanan oturum açma özniteliğine filtre uygular. Burada bir filtre sağlarsanız,
         bir AND ile birleştirilecektir. Varsayılan olarak filtre olarak bir tümünü yakala (objectClass = *) kullanılır.
       onthefly_register: |
-        Bu kutuyu işaretlerseniz, OpenProject otomatik olarak LDAP girişlerinden yeni kullanıcılar oluşturur
-        OpenProject ile ilk kimlik doğrulaması yaptıklarında.
-        Yalnızca OpenProject’deki mevcut hesapların LDAP üzerinden kimlik doğrulaması yapmasına izin vermek için işaretlenmemiş bırakın!
-    connection_encryption: Bağlantı şifreleme
-    encryption_details: LDAPS / STARTTLS seçenekleri
-    system_account: Sistem hesabı
+        Bu kutuyu işaretlerseniz, Yojana otomatik olarak LDAP girişlerinden yeni kullanıcılar oluşturur
+        Yojana ile ilk kimlik doğrulaması yaptıklarında.
+        Yalnızca Yojana’deki mevcut hesapların LDAP üzerinden kimlik doğrulaması yapmasına izin vermek için işaretlenmemiş bırakın!
+    connection_encryption: "Bağlantı şifreleme"
+    encryption_details: "LDAPS / STARTTLS seçenekleri"
+    system_account: "Sistem hesabı"
     system_account_legend: |
-      OpenProject, LDAP ağacınızdaki kullanıcıları ve grupları aramak için bir sistem hesabı üzerinden salt okunur erişim gerektirir.
+      Yojana, LDAP ağacınızdaki kullanıcıları ve grupları aramak için bir sistem hesabı üzerinden salt okunur erişim gerektirir.
       Lütfen aşağıdaki bölümde bu sistem kullanıcısı için bağlama bilgilerini belirtin.
     ldap_details: LDAP ayrıntıları
     user_settings: Öznitelik eşlemesi
     user_settings_legend: |
-      Aşağıdaki alanlar LDAP girişlerinden kullanıcıların OpenProject'te nasıl oluşturulduğuyla ilgilidir ve
-      OpenProject kullanıcısının niteliklerini tanımlamak için hangi LDAP niteliklerinin kullanıldığı (özellik eşlemesi).
+      Aşağıdaki alanlar LDAP girişlerinden kullanıcıların Yojana'te nasıl oluşturulduğuyla ilgilidir ve
+      Yojana kullanıcısının niteliklerini tanımlamak için hangi LDAP niteliklerinin kullanıldığı (özellik eşlemesi).
     tls_mode:
       plain: hiçbiri
       simple_tls: LDAPS
@@ -2136,20 +2136,17 @@ tr:
         circular_dependency: Bu ilişki döngüsel bağımlılık oluşturacak.
         confirmation: "%{attribute} eşleşmiyor."
         could_not_be_copied: "%{dependency} (tam olarak) kopyalanamadı."
-        datetime_must_be_in_future: gelecekte olmalı.
-        does_not_exist: mevcut değil.
-        error_enterprise_only: "%{action} yalnızca OpenProject Enterprise sürümünde mevcuttur."
-        error_unauthorized: erişilemez.
-        error_readonly: yazılmaya çalışıldı fakat yazılabilir değil.
-        error_conflict: Bu arada, bilgi en az bir başka kullanıcı tarafından güncellendi.
-        error_not_found: bulunamadı.
-        email: 'Geçerli bir e-posta adresi değil.
-
-          '
-        empty: boş olamaz.
-        enterprise_plan_required: en azından %{plan_name} gerektirir.
-        even: çift olmalı.
-        exclusion: ayrılmıştır.
+        does_not_exist: "mevcut değil."
+        error_enterprise_only: "%{action} is only available in the Yojana Enterprise edition."
+        error_unauthorized: "erişilemez."
+        error_readonly: "yazılmaya çalışıldı fakat yazılabilir değil."
+        error_conflict: "Bu arada, bilgi en az bir başka kullanıcı tarafından güncellendi."
+        error_not_found: "bulunamadı."
+        email: "Geçerli bir e-posta adresi değil.\n"
+        empty: "boş olamaz."
+        enterprise_plan_required: "en azından %{plan_name} gerektirir."
+        even: "çift olmalı."
+        exclusion: "ayrılmıştır."
         feature_disabled: mevcut değil.
         feature_disabled_for_project: bu proje için devre dışı bırakılmıştır.
         file_too_large: çok büyük (en büyük boyut %{count} bayt).
@@ -2806,17 +2803,14 @@ tr:
     reset_token:
       action_create: Oluştur
       action_reset: Sıfırla
-      heading_reset: Yedekleme jetonunu sıfırlayın
-      heading_create: Yedek jeton oluşturun
-      implications: 'Yedeklemeleri etkinleştirmek, gerekli izinlere ve bu yedekleme jetonuna sahip herhangi bir kullanıcının bu OpenProject kurulumunun tüm verilerini içeren bir yedeği indirmesine izin verecektir. Bu, diğer tüm kullanıcıların verilerini içerir.
-
-        '
-      info: 'Yedek oluşturabilmek için bir yedekleme belirteci oluşturmanız gerekecektir. Her yedekleme talebinde bulunduğunuzda, bu belirteci sağlamanız gerekecektir. Bu kullanıcı için yedeklemeleri devre dışı bırakmak için yedekleme jetonunu silebilirsiniz.
-
-        '
-      verification_html: 'Enter %{word} to confirm you want to %{action} the backup token.
-
-        '
+      heading_reset: "Yedekleme jetonunu sıfırlayın"
+      heading_create: "Yedek jeton oluşturun"
+      implications: >
+        Yedeklemeleri etkinleştirmek, gerekli izinlere ve bu yedekleme jetonuna sahip herhangi bir kullanıcının bu Yojana kurulumunun tüm verilerini içeren bir yedeği indirmesine izin verecektir. Bu, diğer tüm kullanıcıların verilerini içerir.
+      info: >
+        Yedek oluşturabilmek için bir yedekleme belirteci oluşturmanız gerekecektir. Her yedekleme talebinde bulunduğunuzda, bu belirteci sağlamanız gerekecektir. Bu kullanıcı için yedeklemeleri devre dışı bırakmak için yedekleme jetonunu silebilirsiniz.
+      verification: >
+        Yedek jetonu %{action} istediğinizi onaylamak için %{word} girin.
       verification_word_reset: Sıfırla
       verification_word_create: oluşturuldu
       warning: 'Yeni bir belirteç oluşturduğunuzda, yalnızca 24 saat sonra bir yedekleme isteğinde bulunmanıza izin verilir. Bu bir güvenlik önlemidir. Bundan sonra, bu belirteci kullanarak istediğiniz zaman bir yedekleme talep edebilirsiniz.
@@ -3167,27 +3161,25 @@ tr:
       plan_name: "%{plan} kurumsal plan"
       trial_text: This feature is included in your active Enterprise trial.
       plan_text_html: "%{plan_name} ile başlayarak kullanılabilir."
-      unlimited: Sınırsız
-      already_have_token: 'Zaten bir anahtarınız mı var? Rezervasyonlu Enterprise plana yükseltmek için aşağıdaki düğmeyi kullanarak ekleyin.
-
-        '
-      hide_banner: Bu afişi gizle
-      homescreen_description: 'Kurumsal planlar, OpenProject''in Topluluk sürümünü ek [Kurumsal eklentiler](enterprise_url) ve profesyonel destek ile genişletir, OpenProject''i görev açısından kritik bir ortamda çalıştıran kuruluşlar için idealdir.
-
-        '
+      unlimited: "Sınırsız"
+      already_have_token: >
+        Zaten bir anahtarınız mı var? Rezervasyonlu Enterprise plana yükseltmek için aşağıdaki düğmeyi kullanarak ekleyin.
+      hide_banner: "Bu afişi gizle"
+      homescreen_description: >
+        Enterprise plans extend the Community edition of Yojana with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running Yojana in a mission-critical environment.
       homescreen_subline: Yükseltme yaparak açık kaynaklı bir projeyi de desteklemiş olacaksınız.
       baseline_comparison:
         description: Geçmişte herhangi bir noktadan bu yana bu listede yapılan değişiklikleri vurgulayın.
       benefits:
-        description: Enterprise şirket içi sürümünün avantajları nelerdir?
-        high_security: Güvenlik özellikleri
-        high_security_text: Çoklu oturum açma (SAML, OpenID Connect, CAS), LDAP grupları.
-        installation: Kurulum desteği
-        installation_text: Deneyimli yazılım mühendisleri, kendi altyapınızdaki eksiksiz kurulum ve yapılandırma sürecinde size rehberlik eder.
-        premium_features: Enterprise eklentiler
-        premium_features_text: Çevik tahtalar, özel tema ve logo, grafikler, özel eylemlerle akıllı iş akışları, iş paketi ekleri için tam metin araması ve çoklu seçim özel alanları.
-        professional_support: Profesyonel destek
-        professional_support_text: İş açısından kritik ortamlarda OpenProject çalıştırma konusunda uzman bilgiye sahip kıdemli destek mühendislerinden güvenilir, yüksek dokunuşlu destek alın.
+        description: "Enterprise şirket içi sürümünün avantajları nelerdir?"
+        high_security: "Güvenlik özellikleri"
+        high_security_text: "Çoklu oturum açma (SAML, OpenID Connect, CAS), LDAP grupları."
+        installation: "Kurulum desteği"
+        installation_text: "Deneyimli yazılım mühendisleri, kendi altyapınızdaki eksiksiz kurulum ve yapılandırma sürecinde size rehberlik eder."
+        premium_features: "Enterprise eklentiler"
+        premium_features_text: "Çevik tahtalar, özel tema ve logo, grafikler, özel eylemlerle akıllı iş akışları, iş paketi ekleri için tam metin araması ve çoklu seçim özel alanları."
+        professional_support: "Profesyonel destek"
+        professional_support_text: "İş açısından kritik ortamlarda Yojana çalıştırma konusunda uzman bilgiye sahip kıdemli destek mühendislerinden güvenilir, yüksek dokunuşlu destek alın."
       work_package_subject_generation:
         description: Referens öznitelikleri ve metni kullanarak otomatik konular oluşturun.
       customize_life_cycle:
@@ -3217,34 +3209,31 @@ tr:
       calculated_values:
         description: Calculated values allow you to create a mathematical formula based attribute using numeric values and other project attributes and custom fields.
       define_custom_style:
-        title: Özel renk teması ve logo
-        more_info: 'Not: Kullanılan logo herkese açık olacaktır.'
-        description: OpenProject kurulumunuzu kendi logonuz ve renklerinizle özelleştirin.
+        title: "Özel renk teması ve logo"
+        more_info: "Not: Kullanılan logo herkese açık olacaktır."
+        description: Yojana kurulumunuzu kendi logonuz ve renklerinizle özelleştirin.
       custom_actions:
         title: Özel eylemler
         description: Özel eylemler, duruma, role, türe veya projeye göre belirli iş paketlerinde kullanıma sunabileceğiniz bir dizi önceden tanımlanmış eylemin tek tıkla kısayollarıdır.
       mcp_server:
-        description: Bring OpenProject into your AI workflows with a secure MCP server.
-      meeting_templates:
-        description: Define meeting templates with a set agenda structure and save time by reusing them when creating new meetings.
+        description: "Yapay zeka aracılarını MCP aracılığıyla Yojana örneğinizle entegre edin."
       nextcloud_sso:
         title: Single Sign-On for Nextcloud Storage
         description: Enable seamless and secure authentication for your Nextcloud storage with Single Sign-On. Simplify access management and enhance user convenience.
       scim_api:
-        title: SCIM istemcileri
-        description: SCIM Server API aracılığıyla Microsoft Entra veya Keycloak gibi harici kimlik servisleriyle sorunsuz entegrasyon sağlayarak OpenProject’te kullanıcı yönetimini otomatikleştirin. Sadece Kurumsal plan başlatılırsa.
+        title: "SCIM istemcileri"
+        description: "SCIM Server API aracılığıyla Microsoft Entra veya Keycloak gibi harici kimlik servisleriyle sorunsuz entegrasyon sağlayarak Yojana’te kullanıcı yönetimini otomatikleştirin. Sadece Kurumsal plan başlatılırsa."
       sso_auth_providers:
         title: Tek Oturum Açma (SSO)
         description: Enable users to log in via external SSO providers using SAML or OpenID Connect for seamless access and integration with existing identity systems.
       virus_scanning:
-        description: OpenProject'te yüklenen dosyaların diğer kullanıcılar tarafından erişilmeden önce virüslere karşı tarandığından emin olun.
+        description: "Yojana'te yüklenen dosyaların diğer kullanıcılar tarafından erişilmeden önce virüslere karşı tarandığından emin olun."
       project_creation_wizard:
         description: Proje yöneticilerinin proje başlatma talebini doldurmasına yardımcı olacak adım adım bir sihirbaz oluşturun.
       placeholder_users:
         title: Yer tutucu kullanıcı
-        description: 'Yer tutucu kullanıcılar, projenizin parçası olmayan kullanıcılara iş paketleri atamanın bir yoludur. Bir dizi senaryoda yararlı olabilirler; örneğin, henüz adlandırılmamış veya mevcut olmayan bir kaynak için görevleri izlemeniz gerekiyorsa veya o kişiye OpenProject''e erişim izni vermek istemiyorsanız ancak yine de kendilerine atanan görevleri izlemek istiyorsanız.
-
-          '
+        description: >
+          Yer tutucu kullanıcılar, projenizin parçası olmayan kullanıcılara iş paketleri atamanın bir yoludur. Bir dizi senaryoda yararlı olabilirler; örneğin, henüz adlandırılmamış veya mevcut olmayan bir kaynak için görevleri izlemeniz gerekiyorsa veya o kişiye Yojana'e erişim izni vermek istemiyorsanız ancak yine de kendilerine atanan görevleri izlemek istiyorsanız.
       internal_comments:
         title: Dahili yorumlar
         description: Dahili yorumlar, dahili bir ekibin kendi aralarında özel olarak iletişim kurmasına olanak tanır. Bunlar yalnızca belirli proje rolleri tarafından görülebilir ve asla herkese açık olarak görünmez.
@@ -3259,26 +3248,25 @@ tr:
         other: "%{trial_plan} deneme anahtarının son %{count} günü kaldı"
       description_html: You have access to all %{trial_plan} features.
     trial:
-      not_found: Bir deneme anahtarı talep ettiniz, ancak bu talep artık mevcut değil. Lütfen tekrar deneyin.
-      wait_for_confirmation: Deneme anahtarını alabilmeniz için adresinizi onaylamanız amacıyla size bir e-posta gönderdik.
-      already_retrieved: 'Your trial enterprise token was already retrieved. Please check your emails for the token being attached. Please reach out to our support team if you need a new one.
-
-        '
-      successfully_saved: Deneme amaçlı kurumsal anahtarınızı başarıyla alındı.
-      token_sent: Deneme anahtarı talep edildi
-      request_again: Tekrar talep edin
-      resend_action: Onay e-postasını yeniden gönder
-      welcome_title: Özelliklere hızlı genel bakış
-      welcome_description: OpenProject Kurumsal sürümü ile proje yönetimi ve ekip işbirliğine hızlı bir genel bakış elde edin.
-      confirmation_info: 'Size %{date} tarihinde %{email} adresine OpenProject Enterprise''ın ücretsiz deneme sürümünü başlatmanız için gerekli tüm bilgileri içeren bir e-posta gönderdik. Lütfen gelen kutunuzu kontrol edin ve 14 günlük ücretsiz denemenizi başlatmak için verilen onay bağlantısına tıklayın.
-
-        '
-      confirmation_subline: 'Lütfen gelen kutunuzu kontrol edin ve 14 günlük ücretsiz denemenizi başlatmak için adımları izleyin.
-
-        '
+      not_found: "Bir deneme anahtarı talep ettiniz, ancak bu talep artık mevcut değil. Lütfen tekrar deneyin."
+      wait_for_confirmation: "Deneme anahtarını alabilmeniz için adresinizi onaylamanız amacıyla size bir e-posta gönderdik."
+      already_retrieved: >
+        Your trial enterprise token was already retrieved. Please check your emails for the token being attached. Please reach out to our support team if you need a new one.
+      successfully_saved: "Deneme amaçlı kurumsal anahtarınızı başarıyla alındı."
+      token_sent: "Deneme anahtarı talep edildi"
+      request_again: "Tekrar talep edin"
+      resend_action: "Onay e-postasını yeniden gönder"
+      welcome_title: "Özelliklere hızlı genel bakış"
+      welcome_description: "Yojana Kurumsal sürümü ile proje yönetimi ve ekip işbirliğine hızlı bir genel bakış elde edin."
+      confirmation_info: >
+        Size %{date} tarihinde %{email} adresine Yojana Enterprise'ın ücretsiz deneme sürümünü başlatmanız için gerekli tüm bilgileri içeren bir e-posta gönderdik. Lütfen gelen kutunuzu kontrol edin ve 14 günlük ücretsiz denemenizi başlatmak için verilen onay bağlantısına tıklayın.
+      confirmation_subline: >
+        Lütfen gelen kutunuzu kontrol edin ve 14 günlük ücretsiz denemenizi başlatmak için adımları izleyin.
       domain_caption: Anahtar, şu anda yapılandırılmış ana bilgisayar adınız için geçerli olacaktır.
-      receive_newsletter: I want to receive the OpenProject [newsletter](newsletter_url).
-      consent: I agree with the [terms of service](tos_url) and the [privacy policy](privacy_url).
+      receive_newsletter_html: >
+        Yojana <a target="_blank" href="https://www.yojana.girishm.info/newsletter/">haber bültenini</a> almak istiyorum.
+      consent_html: >
+        <a target="_blank" href="https://www.yojana.girishm.info/terms-of-service/">Hizmet şartlarını</a> ve <a target="_blank" href="https://www.yojana.girishm.info/data-privacy-and-security/">gizlilik politikasını</a> kabul ediyorum.
   email_calendar_updates:
     state:
       disabled: Devre dışı.
@@ -3302,51 +3290,51 @@ tr:
   error_can_not_delete_in_use_archived_undisclosed: Arşivlenmiş projelerde de iş paketleri var. Hangi projelerin etkilendiğini görmek için bir yöneticiden silme işlemini gerçekleştirmesini istemeniz gerekir.
   error_can_not_delete_in_use_archived_work_packages: 'Arşivlenen projelerde de iş paketleri var. İlgili iş paketlerinin niteliğini değiştirebilmeniz için önce aşağıdaki projeleri yeniden etkinleştirmeniz gerekir: %{archived_projects_urls}'
   error_can_not_delete_type:
-    explanation: Bu tür iş paketleri içerir ve silinemez. Etkilenen tüm iş paketlerini <a target="_blank" href="%{url}">bu görünümde</a> görebilirsiniz.
-  error_can_not_delete_standard_type: Standart türler silinemez.
-  error_can_not_invite_user: Kullanıcı daveti gönderemedi.
-  error_can_not_remove_role: Bu rol kullanımda ve silinemez.
-  error_can_not_reopen_work_package_on_closed_version: Kapalı bir sürüme atanan bir iş paketi yeniden açılamaz
-  error_can_not_find_all_resources: Bu istekle ilgili tüm kaynaklar bulunamadı.
-  error_can_not_unarchive_project: 'Bu proje arşivlenemez: %{errors}'
-  error_check_user_and_role: Lütfen bir kullanıcı ve bir rol seçin.
-  error_code: Hata  %{code}
-  error_color_could_not_be_saved: Renk kaydedilemedi
-  error_cookie_missing: OpenProject çerezi yok. Lütfen uygulamanın düzgün çalışabilmesi için, tarayıcınızda çerezlere izin verildiğine emin olun.
-  error_custom_option_not_found: Seçenek yok.
-  error_enterprise_plan_needed: Bu eylemi gerçekleştirmek için %{plan} kurumsal planına ihtiyacınız vardır.
-  error_enterprise_activation_user_limit: Hesabınız etkinleştirilemedi (kullanıcı limitine ulaşıldı). Erişim sağlamak için lütfen yöneticinize başvurun.
-  error_enterprise_token_invalid_domain: Enterprise sürümü etkin değil. Enterprise belirtecinizin alanı (%{actual}), sistemin ana bilgisayar adıyla (%{expected}) eşleşmiyor.
-  error_failed_to_delete_entry: Girdi silinemedi.
-  error_in_dependent: 'Bağımlı nesneyi değiştirmeye çalışırken hata: %{dependent_class} #%{related_id} - %{related_subject}: %{error}'
-  error_in_new_dependent: 'Bağımlı nesne yaratma girişiminde hata oluştu: %{dependent_class} - %{related_subject}: %{error}'
-  error_invalid_selected_value: Seçili değeri geçersiz.
-  error_journal_attribute_not_present: Günlük  %{attribute} özniteliği içermiyor.
-  error_pdf_export_too_many_columns: PDF Dışa Aktarma için çok fazla sütun seçili. Sütun sayısını azaltın.
-  error_pdf_date_range_too_long: The selected work package date range exceeds the allowable PDF export limit. Please condense the range to a maximum of %{years} years.
-  error_pdf_failed_to_export: 'PDF çıktısı kaydedilemedi: %{error}'
-  error_token_authenticity: Siteler Arası İstek Sahteciliği belirteci doğrulanamadı. Birden fazla tarayıcı veya sekme hakkında veri göndermeyi denediniz mi? Lütfen tüm sekmeleri kapatın ve tekrar deneyin
-  error_reminder_not_found: Hatırlatma bulunamadı veya zaten bildirilmişti.
-  error_work_package_not_found_in_project: Iş paketi bulunamadı veya bu projeye ait değil
-  error_work_package_id_not_found: İş paketi bulunamadı.
-  error_must_be_project_member: projesi üyesi olmalıdır
-  error_migrations_are_pending: OpenProject kurulumunuzda bekleyen veritabanı geçişleri var. Son yükseltme işleminizde geçiş işlemlerini gerçekleştirme ihtimalinizi büyük olasılıkla kaçırdınız. Lütfen kurulumunuzu uygun şekilde yükseltmek için yükseltme kılavuzunu kontrol edin.
-  error_migrations_visit_upgrade_guides: Lütfen yükseltme kılavuzu belgelerimizi ziyaret edin
-  error_no_default_work_package_status: Varsayılan iş paketi durumu tanımlanmadı. Lütfen yapılandırmanızı kontrol edin ("Yönetim -> İş paketi durumu " na gidin).
-  error_no_type_in_project: Bu proje ile ilişkili bir tür yok. Lütfen Proje ayarlarını kontrol edin.
-  error_omniauth_registration_timed_out: Harici bir kimlik doğrulama sağlayıcısı aracılığıyla kayıt zaman aşımına uğradı. Lütfen tekrar deneyin.
-  error_omniauth_invalid_auth: Kimlik sağlayıcısından döndürülen kimlik doğrulama bilgileri geçersizdi. Daha fazla yardım için lütfen yöneticinizle iletişime geçin.
-  error_password_change_failed: Parolayı değiştirmeye çalışırken bir hata oluştu.
-  error_scm_command_failed: Depoya erişmeye çalışılırken bir hata oluştu:%{value}
-  error_scm_not_found: Depoda girme veya düzeltme bulunamadı.
-  error_type_could_not_be_saved: Type kaydedilemedi
-  error_unable_delete_status: İş paketi durumu en az bir tarafından kullanılır beri silinemez iş paketi.
-  error_unable_delete_default_status: Varsayılan iş paketi durumu silinemiyor. Mevcut bir silmeden önce lütfen başka bir varsayılan iş paketi durumu seçin.
-  error_unable_to_connect: Bağlanma başarısız (%{value})
-  error_unable_delete_wiki: Wiki sayfası silinemedi.
-  error_unable_update_wiki: Wiki sayfası güncelleştirilemiyor.
-  error_workflow_copy_source: Lütfen kaynak türü veya rolü seçin
-  error_workflow_copy_target: Lütfen kaynak tür(leri) veya rol(leri) seçin
+    explanation: 'Bu tür iş paketleri içerir ve silinemez. Etkilenen tüm iş paketlerini <a target="_blank" href="%{url}">bu görünümde</a> görebilirsiniz.'
+  error_can_not_delete_standard_type: "Standart türler silinemez."
+  error_can_not_invite_user: "Kullanıcı daveti gönderemedi."
+  error_can_not_remove_role: "Bu rol kullanımda ve silinemez."
+  error_can_not_reopen_work_package_on_closed_version: "Kapalı bir sürüme atanan bir iş paketi yeniden açılamaz"
+  error_can_not_find_all_resources: "Bu istekle ilgili tüm kaynaklar bulunamadı."
+  error_can_not_unarchive_project: "Bu proje arşivlenemez: %{errors}"
+  error_check_user_and_role: "Lütfen bir kullanıcı ve bir rol seçin."
+  error_code: "Hata  %{code}"
+  error_color_could_not_be_saved: "Renk kaydedilemedi"
+  error_cookie_missing: "Yojana çerezi yok. Lütfen uygulamanın düzgün çalışabilmesi için, tarayıcınızda çerezlere izin verildiğine emin olun."
+  error_custom_option_not_found: "Seçenek yok."
+  error_enterprise_plan_needed: "Bu eylemi gerçekleştirmek için %{plan} kurumsal planına ihtiyacınız vardır."
+  error_enterprise_activation_user_limit: "Hesabınız etkinleştirilemedi (kullanıcı limitine ulaşıldı). Erişim sağlamak için lütfen yöneticinize başvurun."
+  error_enterprise_token_invalid_domain: "Enterprise sürümü etkin değil. Enterprise belirtecinizin alanı (%{actual}), sistemin ana bilgisayar adıyla (%{expected}) eşleşmiyor."
+  error_failed_to_delete_entry: "Girdi silinemedi."
+  error_in_dependent: "Bağımlı nesneyi değiştirmeye çalışırken hata: %{dependent_class} #%{related_id} - %{related_subject}: %{error}"
+  error_in_new_dependent: "Bağımlı nesne yaratma girişiminde hata oluştu: %{dependent_class} - %{related_subject}: %{error}"
+  error_invalid_selected_value: "Seçili değeri geçersiz."
+  error_journal_attribute_not_present: "Günlük  %{attribute} özniteliği içermiyor."
+  error_pdf_export_too_many_columns: "PDF Dışa Aktarma için çok fazla sütun seçili. Sütun sayısını azaltın."
+  error_pdf_date_range_too_long: "The selected work package date range exceeds the allowable PDF export limit. Please condense the range to a maximum of %{years} years."
+  error_pdf_failed_to_export: "PDF çıktısı kaydedilemedi: %{error}"
+  error_token_authenticity: "Siteler Arası İstek Sahteciliği belirteci doğrulanamadı. Birden fazla tarayıcı veya sekme hakkında veri göndermeyi denediniz mi? Lütfen tüm sekmeleri kapatın ve tekrar deneyin"
+  error_reminder_not_found: "Hatırlatma bulunamadı veya zaten bildirilmişti."
+  error_work_package_not_found_in_project: "Iş paketi bulunamadı veya bu projeye ait değil"
+  error_work_package_id_not_found: "İş paketi bulunamadı."
+  error_must_be_project_member: "projesi üyesi olmalıdır"
+  error_migrations_are_pending: "Yojana kurulumunuzda bekleyen veritabanı geçişleri var. Son yükseltme işleminizde geçiş işlemlerini gerçekleştirme ihtimalinizi büyük olasılıkla kaçırdınız. Lütfen kurulumunuzu uygun şekilde yükseltmek için yükseltme kılavuzunu kontrol edin."
+  error_migrations_visit_upgrade_guides: "Lütfen yükseltme kılavuzu belgelerimizi ziyaret edin"
+  error_no_default_work_package_status: 'Varsayılan iş paketi durumu tanımlanmadı. Lütfen yapılandırmanızı kontrol edin ("Yönetim -> İş paketi durumu " na gidin).'
+  error_no_type_in_project: "Bu proje ile ilişkili bir tür yok. Lütfen Proje ayarlarını kontrol edin."
+  error_omniauth_registration_timed_out: "Harici bir kimlik doğrulama sağlayıcısı aracılığıyla kayıt zaman aşımına uğradı. Lütfen tekrar deneyin."
+  error_omniauth_invalid_auth: "Kimlik sağlayıcısından döndürülen kimlik doğrulama bilgileri geçersizdi. Daha fazla yardım için lütfen yöneticinizle iletişime geçin."
+  error_password_change_failed: "Parolayı değiştirmeye çalışırken bir hata oluştu."
+  error_scm_command_failed: "Depoya erişmeye çalışılırken bir hata oluştu:%{value}"
+  error_scm_not_found: "Depoda girme veya düzeltme bulunamadı."
+  error_type_could_not_be_saved: "Type kaydedilemedi"
+  error_unable_delete_status: "İş paketi durumu en az bir tarafından kullanılır beri silinemez iş paketi."
+  error_unable_delete_default_status: "Varsayılan iş paketi durumu silinemiyor. Mevcut bir silmeden önce lütfen başka bir varsayılan iş paketi durumu seçin."
+  error_unable_to_connect: "Bağlanma başarısız (%{value})"
+  error_unable_delete_wiki: "Wiki sayfası silinemedi."
+  error_unable_update_wiki: "Wiki sayfası güncelleştirilemiyor."
+  error_workflow_copy_source: "Lütfen kaynak türü veya rolü seçin"
+  error_workflow_copy_target: "Lütfen kaynak tür(leri) veya rol(leri) seçin"
   error_menu_item_not_created: Menü öğesini eklenemez
   error_menu_item_not_saved: Menü öğesi kaydedilemez
   error_wiki_root_menu_item_conflict: 'Var olan menü üyesi "%{existing_caption}" (%{existing_identifier}) ile çakıştığından, "%{old_name}" adı "%{new_name}" olarak değiştirilemiyor.
@@ -3441,8 +3429,8 @@ tr:
     succeeded: Dışa aktarma tamamlandı
     failed: 'İş paketlerini dışa aktarmaya çalışırken bir hata oluştu: %{message}'
     demo:
-      heading: Demo PDF
-      footer: OpenProject tarafından oluşturulmuştur
+      heading: "Demo PDF"
+      footer: "Yojana tarafından oluşturulmuştur"
       button_text: Demo PDF Oluştur
     errors:
       embedded_table_with_too_many_columns: This embedded work package table could not fit on the page, please reduce the number of columns.
@@ -3563,7 +3551,7 @@ tr:
         no_results_subtext: Add one or multiple projects as favorite through their overview or in a project list.
       users: Bu bölümdeki kaydolan en son kullanıcılar.
     blocks:
-      community: OpenProject topluluğu
+      community: "Yojana topluluğu"
       upsell:
         title: Enterprise sürümüne yükseltin
       new_features:
@@ -3575,40 +3563,38 @@ tr:
 
             '
           new_features_list:
-            line_0: XWiki integration (Corporate plan).
-            line_1: Sprint goals.
-            line_2: "'All sprints' overview page."
-            line_3: Display backlog buckets in work packages and work package tables.
-            line_4: Improved support for project-based (semantic) identifiers.
-            line_5: Convert meeting agenda items into work packages.
-            line_6: Configure cost types per project.
+            line_0: Automated project initiation (Enterprise add-on).
+            line_1: "Meetings: add new or existing work packages as outcomes."
+            line_2: "Toplantılar: Yojana'te iCal yanıtlarını gösterin."
+            line_3: "Recurring meetings: duplicate agenda items to the next occurrence."
+            line_4: "Release to Community: Attribute highlighting."
+            line_5: Warning before opening external links in user-provided content (Enterprise add-on).
+            line_6: Improved performance and user experience, including the Activity tab and Documents module.
     links:
-      upgrade_enterprise_edition: Enterprise sürümüne yükseltin
-      postgres_migration: Kurulumunuzu PostgreSQL'e taşıyın
-      user_guides: Kullanıcı rehberleri
-      faq: SSS
-      impressum: Yasal uyarı
-      glossary: Terimler sözlüğü
-      shortcuts: Kısayollar
-      blog: OpenProject blog
-      forums: Topluluk forumu
-      security_alerts: Güvenlik uyarıları
-      newsletter: Haber bülteni
+      upgrade_enterprise_edition: "Enterprise sürümüne yükseltin"
+      postgres_migration: "Kurulumunuzu PostgreSQL'e taşıyın"
+      user_guides: "Kullanıcı rehberleri"
+      faq: "SSS"
+      impressum: "Yasal uyarı"
+      glossary: "Terimler sözlüğü"
+      shortcuts: "Kısayollar"
+      blog: "Yojana blog"
+      forums: "Topluluk forumu"
+      security_alerts: "Güvenlik uyarıları"
+      newsletter: "Haber bülteni"
   image_conversion:
     imagemagick: Resim büyüsü
   journals:
     changes_retracted: Değişiklikler geri alındı.
     caused_changes:
-      budget_deleted: Budget has been deleted
-      dates_changed: Tarihler değişti
-      default_attribute_written: Salt okunur öznitelikler yazıldı
-      import: Imported
-      progress_mode_changed_to_status_based: İlerleme hesaplaması güncellendi
-      status_changed: Durum '%{status_name}'
-      system_update: 'OpenProject sistem güncellemesi:'
-      work_package_duplicate_closed: 'Mükerrer iş paketi güncellendi:'
-      total_percent_complete_mode_changed_to_work_weighted_average: Tamamlanan % toplamlarının hesaplanması artık İşe göre ağırlıklandırılıyor.
-      total_percent_complete_mode_changed_to_simple_average: Calculation of % Complete totals now based on a simple average of only % Complete values.
+      dates_changed: "Tarihler değişti"
+      default_attribute_written: "Salt okunur öznitelikler yazıldı"
+      progress_mode_changed_to_status_based: "İlerleme hesaplaması güncellendi"
+      status_changed: "Durum '%{status_name}'"
+      system_update: "Yojana sistem güncellemesi:"
+      work_package_duplicate_closed: "Mükerrer iş paketi güncellendi:"
+      total_percent_complete_mode_changed_to_work_weighted_average: "Tamamlanan % toplamlarının hesaplanması artık İşe göre ağırlıklandırılıyor."
+      total_percent_complete_mode_changed_to_simple_average: "Calculation of % Complete totals now based on a simple average of only % Complete values."
     cause_descriptions:
       import:
         header: changes by %{author}
@@ -3672,7 +3658,7 @@ tr:
         notifications: Notification settings
         email_reminders: Email reminders
     access_tokens:
-      description: Provider tokens are issued by OpenProject, allowing other applications to access it. Client tokens are issued by other applications, allowing OpenProject to access them.
+      description: "Provider tokens are issued by Yojana, allowing other applications to access it. Client tokens are issued by other applications, allowing Yojana to access them."
       no_results:
         title: Görüntülenecek hiçbir erişim izni yok
         description: Hepsi de engellendi. Yönetim menüsünden yeniden etkinleştirilebilirler.
@@ -3688,49 +3674,49 @@ tr:
         provider:
           title: Provider tokens
       token/api:
-        blank_description: There is no API token yet. You can create one using the button below.
-        blank_title: No API token
-        title: API
-        table_title: API tokens
-        text_hint: API belirteçleri, üçüncü taraf uygulamaların REST API'leri aracılığıyla bu OpenProject kurulumunuzla iletişim kurmasına olanak tanır.
-        static_token_name: API token
-        disabled_text: API belirteçleri yönetici tarafından etkinleştirilmemiştir. Bu özelliği kullanmak için lütfen yöneticinize başvurun.
-        add_button: API anahtarı
+        blank_description: "There is no API token yet. You can create one using the button below."
+        blank_title: "No API token"
+        title: "API"
+        table_title: "API tokens"
+        text_hint: "API belirteçleri, üçüncü taraf uygulamaların REST API'leri aracılığıyla bu Yojana kurulumunuzla iletişim kurmasına olanak tanır."
+        static_token_name: "API token"
+        disabled_text: "API belirteçleri yönetici tarafından etkinleştirilmemiştir. Bu özelliği kullanmak için lütfen yöneticinize başvurun."
+        add_button: "API anahtarı"
       ical:
-        blank_description: To add an iCalendar token, subscribe to a new or existing calendar from within the Calendar module of a project. You must have the necessary permissions.
-        blank_title: No iCalendar token
-        title: iCalendar
-        table_title: iCalendar tokens
-        text_hint_link: iCalendar tokens allow users to [subscribe to OpenProject calendars](docs_url) and view up-to-date work package information from external clients.
-        disabled_text: iCalendar abonelikleri yönetici tarafından etkinleştirilmemiştir. Bu özelliği kullanmak için lütfen yöneticinize başvurun.
+        blank_description: "To add an iCalendar token, subscribe to a new or existing calendar from within the Calendar module of a project. You must have the necessary permissions."
+        blank_title: "No iCalendar token"
+        title: "iCalendar"
+        table_title: "iCalendar tokens"
+        text_hint_link: "iCalendar tokens allow users to [subscribe to Yojana calendars](docs_url) and view up-to-date work package information from external clients."
+        disabled_text: "iCalendar abonelikleri yönetici tarafından etkinleştirilmemiştir. Bu özelliği kullanmak için lütfen yöneticinize başvurun."
       oauth_application:
-        active_tokens: Active tokens
-        blank_description: There is no third-party application access configured and active for you.
-        blank_title: No OAuth application token
-        last_refreshed_at: Last refreshed at
-        title: OAuth
-        table_title: OAuth application tokens
-        text_hint: OAuth application tokens allow third-party applications to connect with this OpenProject instance.
+        active_tokens: "Active tokens"
+        blank_description: "There is no third-party application access configured and active for you."
+        blank_title: "No OAuth application token"
+        last_used_at: "Last used at"
+        title: "OAuth"
+        table_title: "OAuth application tokens"
+        text_hint: "OAuth application tokens allow third-party applications to connect with this Yojana instance."
       oauth_client:
-        blank_description: There are no OAuth client tokens yet.
-        blank_title: No OAuth client tokens
-        failed: An error occurred and the token couldn't be removed. Please try again later.
-        integration_type: Integration type
-        table_title: OAuth client tokens
-        text_hint: OAuth client tokens allow this OpenProject instance to connect with external applications, such as file storages.
-        title: OAuth
-        remove_token: Do you really want to remove this token? You will need to login again on %{integration}.
-        removed: OAuth client token successfully removed
-        unknown_integration: Bilinmeyen
+        blank_description: "There are no OAuth client tokens yet."
+        blank_title: "No OAuth client tokens"
+        failed: "An error occurred and the token couldn't be removed. Please try again later."
+        integration_type: "Integration type"
+        table_title: "OAuth client tokens"
+        text_hint: "OAuth client tokens allow this Yojana instance to connect with external applications, such as file storages."
+        title: "OAuth"
+        remove_token: "Do you really want to remove this token? You will need to login again on %{integration}."
+        removed: "OAuth client token successfully removed"
+        unknown_integration: "Unknown"
       token/rss:
-        add_button: RSS anahtarı
-        blank_description: Henüz bir RSS anahtarı yok. Aşağıdaki düğmeyi kullanarak bir tane oluşturabilirsiniz.
-        blank_title: RSS anahtarı yok
-        title: RSS
-        table_title: RSS Anahtarları
-        text_hint: RSS anahtarları, kullanıcıların harici bir RSS okuyucu aracılığıyla bu OpenProject örneğindeki en son değişiklikleri takip etmelerini sağlar.
-        static_token_name: RSS Anahtarı
-        disabled_text: RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature.
+        add_button: "RSS anahtarı"
+        blank_description: "There is no RSS token yet. You can create one using the button below."
+        blank_title: "No RSS token"
+        title: "RSS"
+        table_title: "RSS tokens"
+        text_hint: "RSS tokens allow users to keep up with the latest changes in this Yojana instance via an external RSS reader."
+        static_token_name: "RSS token"
+        disabled_text: "RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature."
       storages:
         unknown_storage: Bilinmeyen depolama
     email_reminders:
@@ -3976,21 +3962,21 @@ tr:
   label_core_version: Çekirdek sürümü
   label_core_build: Çekirdek yapı
   label_created_by: "%{user} tarafından oluşturuldu"
-  label_current_status: Mevcut durum
-  label_current_version: Mevcut sürüm
-  label_custom_field_add_no_type: Bu alanı bir iş paketi türüne ekleyin
-  label_custom_field_new: Yeni özel alan
-  label_custom_field_plural: Özel alanlar
-  label_custom_field_default_type: Boş tür
-  label_custom_style: Tasarım
-  label_custom_style_description: Temalarla OpenProject görünümünü belirleyin, uygulamada kullanmak için varsayılan renklerinizi ve dışa aktarımların nasıl görüneceğini seçin.
-  label_dashboard: Gösterge paneli
-  label_database_version: PostgreSQL sürümü
-  label_date: Tarih
-  label_dates: Tarih
-  label_date_and_time: Tarih ve zaman
-  label_date_format: Tarih formatı
-  label_date_from: Başlangıç
+  label_current_status: "Mevcut durum"
+  label_current_version: "Mevcut sürüm"
+  label_custom_field_add_no_type: "Bu alanı bir iş paketi türüne ekleyin"
+  label_custom_field_new: "Yeni özel alan"
+  label_custom_field_plural: "Özel alanlar"
+  label_custom_field_default_type: "Boş tür"
+  label_custom_style: "Tasarım"
+  label_custom_style_description: "Temalarla Yojana görünümünü belirleyin, uygulamada kullanmak için varsayılan renklerinizi ve dışa aktarımların nasıl görüneceğini seçin."
+  label_dashboard: "Gösterge paneli"
+  label_database_version: "PostgreSQL sürümü"
+  label_date: "Tarih"
+  label_dates: "Tarih"
+  label_date_and_time: "Tarih ve zaman"
+  label_date_format: "Tarih formatı"
+  label_date_from: "Başlangıç"
   label_date_from_to: "%{start} tarihinden %{end} tarihine"
   label_date_to: Bitiş
   label_day_plural: gün
@@ -4260,53 +4246,45 @@ tr:
   label_operator_none: boş
   label_operator_equals_or: "(YA DA)"
   label_operator_equals_all: "(VE) dir"
-  label_operator_shared_with_user_any: herhangi bir
-  label_open: aç
-  label_closed: kapalı
-  label_open_menu: Menüyü Aç
-  label_open_work_packages: açık
-  label_open_work_packages_plural: açık
-  label_openproject_website: OpenProject web sitesi
-  label_optional_description: Açıklama
-  label_options: Ayarlar
-  label_other: Diğer
-  label_overall_activity: Genel etkinlik
-  label_overview: Genel Bakış
-  label_page_title: Sayfa başlığı
-  label_parent_group_caption: 'Setting a parent group will make this group a subgroup of the selected parent group. This will also inherit all memberships, including permissions of the parent group.
-
-    '
-  label_part_of: bölümü
-  label_password_lost: Parolanızı mı unuttunuz?
-  label_password_rule_lowercase: Küçük harf
-  label_password_rule_numeric: Sayısal karakterler
-  label_password_rule_special: Özel karakterler
-  label_password_rule_uppercase: Büyük harf
-  label_password_requirement_lowercase: Must contain at least one lowercase character.
-  label_password_requirement_numeric: Must contain at least one numeric character.
-  label_password_requirement_special: Must contain at least one special character.
-  label_password_requirement_uppercase: Must contain at least one uppercase character.
-  label_path_encoding: Yol kodlaması
-  label_per_page: 'Sayfa başına:'
-  label_people: Kişiler
-  label_permissions: İzinler
-  label_permissions_report: İzin raporu
-  label_personalize_page: Bu sayfayı kişiselleştir
-  label_placeholder_user: Yer tutucu kullanıcı
-  label_placeholder_user_new: Yeni yer tutucu kullanıcı
-  label_placeholder_user_plural: Yer tutucu kullanıcılar
-  label_planning: Planlanıyor
-  label_please_login: Lütfen giriş yapın
-  label_plugins: Eklentiler
-  label_portfolio_plural: Portföyler
-  label_modules_and_plugins: Modüller ve Eklentiler
-  label_precedes: iletletir
-  label_preferences: Seçenekler
-  label_preview: Ön İzleme
-  label_preview_not_available: Önizleme mevcut değil
-  label_previous: Önceki
-  label_previous_week: Geçen Hafta
-  label_previous_year: Previous year
+  label_operator_shared_with_user_any: "herhangi bir"
+  label_open: "aç"
+  label_closed: "kapalı"
+  label_open_menu: "Menüyü Aç"
+  label_open_work_packages: "açık"
+  label_open_work_packages_plural: "açık"
+  label_openproject_website: "Yojana web sitesi"
+  label_optional_description: "Açıklama"
+  label_options: "Ayarlar"
+  label_other: "Diğer"
+  label_overall_activity: "Genel etkinlik"
+  label_overview: "Genel Bakış"
+  label_page_title: "Sayfa başlığı"
+  label_part_of: "bölümü"
+  label_password_lost: "Parolanızı mı unuttunuz?"
+  label_password_rule_lowercase: "Küçük harf"
+  label_password_rule_numeric: "Sayısal karakterler"
+  label_password_rule_special: "Özel karakterler"
+  label_password_rule_uppercase: "Büyük harf"
+  label_path_encoding: "Yol kodlaması"
+  label_per_page: "Sayfa başına:"
+  label_people: "Kişiler"
+  label_permissions: "İzinler"
+  label_permissions_report: "İzin raporu"
+  label_personalize_page: "Bu sayfayı kişiselleştir"
+  label_placeholder_user: "Yer tutucu kullanıcı"
+  label_placeholder_user_new: "Yeni yer tutucu kullanıcı"
+  label_placeholder_user_plural: "Yer tutucu kullanıcılar"
+  label_planning: "Planlanıyor"
+  label_please_login: "Lütfen giriş yapın"
+  label_plugins: "Eklentiler"
+  label_portfolio_plural: "Portfolios"
+  label_modules_and_plugins: "Modüller ve Eklentiler"
+  label_precedes: "iletletir"
+  label_preferences: "Seçenekler"
+  label_preview: "Ön İzleme"
+  label_preview_not_available: "Önizleme mevcut değil"
+  label_previous: "Önceki"
+  label_previous_week: "Geçen Hafta"
   label_principal_invite_via_email: " veya yeni kullanıcılar e-posta ile davet et"
   label_principal_search: Mevcut kullanıcıları veya grupları ekle
   label_privacy_policy: Veri gizliliği ve güvenlik politikası
@@ -4707,8 +4685,8 @@ tr:
   mail_body_backup_token_reset_user_info: Yedek jetonunuz sıfırlandı.
   mail_body_backup_token_info: Önceki jeton artık geçerli değil.
   mail_body_backup_waiting_period: Yeni jeton %{hours} saat içinde etkinleştirilecek.
-  mail_body_backup_token_warning: Bu siz değildiyseniz, hemen OpenProject'te oturum açın ve yeniden sıfırlayın.
-  mail_body_incoming_email_error: OpenProject'e gönderdiğiniz e-posta işlenemedi.
+  mail_body_backup_token_warning: Bu siz değildiyseniz, hemen Yojana'te oturum açın ve yeniden sıfırlayın.
+  mail_body_incoming_email_error: Yojana'e gönderdiğiniz e-posta işlenemedi.
   mail_body_incoming_email_error_in_reply_to: "%{received_at} adresinde %{from_email} yazdı"
   mail_body_incoming_email_error_logs: Günlükler
   mail_body_lost_password: 'Parolanızı değiştirmek için aşağıdaki bağlantıyı tıklayın:'
@@ -4720,21 +4698,21 @@ tr:
   mail_body_register_header_title: Proje üyesi davet e-postası
   mail_body_register_user: Sevgili %{name},
   mail_body_register_links_html: |
-    OpenProject'teki ilk adımlarınızı olabildiğince kolaylaştırmak için bir web semineri (%{webinar_link}) ve "Başlangıç" videoları (%{get_started_link}) sağladığımız youtube kanalımıza (%{youtube_link}) göz atmaktan lütfen çekinmeyin.
+    Yojana'teki ilk adımlarınızı olabildiğince kolaylaştırmak için bir web semineri (%{webinar_link}) ve "Başlangıç" videoları (%{get_started_link}) sağladığımız youtube kanalımıza (%{youtube_link}) göz atmaktan lütfen çekinmeyin.
     <br />
     Başka sorunuz varsa belgelerimize (%{documentation_link}) bakın veya yöneticinizle iletişime geçin.
-  mail_body_register_closing: OpenProject ekibiniz
-  mail_body_register_ending: Bağlı kalın! Saygılarımla,
-  mail_body_reminder: 'Size tahsis edilen(ler) %{count} iş paketinin bir sonraki %{days} gün içinde ödemesi gerekiyor:'
+  mail_body_register_closing: "Yojana ekibiniz"
+  mail_body_register_ending: "Bağlı kalın! Saygılarımla,"
+  mail_body_reminder: "Size tahsis edilen(ler) %{count} iş paketinin bir sonraki %{days} gün içinde ödemesi gerekiyor:"
   mail_body_group_reminder: '"%{group}" grubuna atanan %{count} çalışma paketi / paketleri sonraki %{days}  gününden kaynaklanmaktadır:'
   mail_body_wiki_page_added: "' %{id} ' wiki sayfası %{author} tarafından eklendi."
   mail_body_wiki_page_updated: "'%{id}' wiki sayfası, %{author} tarafından güncellendi."
   mail_subject_account_activation_request: "%{value} hesap etkinleştirme isteği"
-  mail_subject_backup_ready: Yedeklemeniz hazır
-  mail_subject_backup_token_reset: Yedek anahtarı sıfırlandı
-  mail_subject_incoming_email_error: OpenProject'e gönderdiğiniz bir e-posta işlenemedi
-  mail_subject_lost_password: Sizin %{value} parola
-  mail_subject_register: İşletme %{value} hesap etkinleştirme
+  mail_subject_backup_ready: "Yedeklemeniz hazır"
+  mail_subject_backup_token_reset: "Yedek anahtarı sıfırlandı"
+  mail_subject_incoming_email_error: "Yojana'e gönderdiğiniz bir e-posta işlenemedi"
+  mail_subject_lost_password: "Sizin %{value} parola"
+  mail_subject_register: "İşletme %{value} hesap etkinleştirme"
   mail_subject_wiki_content_added: "'%{id}' viki sayfası eklendi"
   mail_subject_wiki_content_updated: "'%{id}' wiki sayfası güncellendi"
   mail_member_added_project:
@@ -4760,17 +4738,17 @@ tr:
       roles: 'Aşağıdaki rollere sahipsiniz:'
   mail_user_activation_limit_reached:
     subject: Kullanıcı etkinleştirme sınırına ulaşıldı
-    message_html: |
-      A new user (%{email}) tried to create an account on an OpenProject environment that you manage (%{host}).
-      The user cannot activate their account since the user limit has been reached.
+    message: |
+      Yeni bir kullanıcı (%{email}) yönettiğiniz bir Yojana ortamında bir hesap oluşturmaya çalıştı (%{host}).
+      Kullanıcı sınırına ulaşıldığından beri kullanıcı hesaplarını etkinleştiremiyor.
     steps:
-      a: Ödeme planınızı yükseltin ([here](upgrade_url))
-      b: Mevcut bir kullanıcıyı kilitle veya sil ([buradan](users_url))
-      label: 'Kullanıcının oturum açmasına izin vermek için şunlardan birini yapabilirsiniz:'
-  more_actions: Daha fazla işlev
-  noscript_description: OpenProject'i kullanmak için JavaScript'i etkinleştirmeniz gerekiyor!
-  noscript_heading: JavaScript kapalı
-  noscript_learn_more: Daha fazla bilgi edin
+      label: "Kullanıcının oturum açmasına izin vermek için şunlardan birini yapabilirsiniz:"
+      a: "Ödeme planınızı yükseltin ([here](upgrade_url))" #here turned into a link
+      b: "Mevcut bir kullanıcıyı kilitle veya sil ([buradan](users_url))" #here turned into a link
+  more_actions: "Daha fazla işlev"
+  noscript_description: "Yojana'i kullanmak için JavaScript'i etkinleştirmeniz gerekiyor!"
+  noscript_heading: "JavaScript kapalı"
+  noscript_learn_more: "Daha fazla bilgi edin"
   notice_accessibility_mode: Erişilebilirlik modu, [hesap settings](url). altından etkinleştirilebilir.
   notice_account_activated: Hesabınız etkinleştirildi. Şimdi giriş yapabilirsiniz.
   notice_account_already_activated: Hesap zaten etkinleştirildi.
@@ -4846,10 +4824,10 @@ tr:
   notice_automatic_set_of_standard_type: Standart türün otomatik olarak ayarlanması.
   notice_logged_out: Oturumunuz kapatıldı.
   notice_wont_delete_auth_source: The LDAP connection cannot be deleted as long as there are still users using it.
-  notice_project_cannot_update_custom_fields: 'Projenin kullanılabilir özel alanları güncelleştirilemiyor. Proje geçersiz: %{errors}'
-  notice_attachment_migration_wiki_page: 'Bu sayfa OpenProject güncelleme sırasında otomatik olarak yaratılır. Daha önce %{container_type} "%{container_name}" ile ilişkili tüm ekleri içerir.
-
-    '
+  notice_project_cannot_update_custom_fields: "Projenin kullanılabilir özel alanları güncelleştirilemiyor. Proje geçersiz: %{errors}"
+  notice_attachment_migration_wiki_page: >
+    Bu sayfa Yojana güncelleme sırasında otomatik olarak yaratılır. Daha önce %{container_type} "%{container_name}" ile ilişkili tüm ekleri içerir.
+  #Default format for numbers
   number:
     format:
       delimiter: ","
@@ -4870,138 +4848,127 @@ tr:
           mb: MB
           tb: TB
   onboarding:
-    heading_getting_started: Genel görünümü al
-    text_getting_started_description: OpenProject ile proje yönetimi ve ekip çalışması konusunda genel bir fikir edinin. Bu videoyu yardım menüsünden yeniden başlatabilirsiniz.
+    heading_getting_started: "Genel görünümü al"
+    text_getting_started_description: "Yojana ile proje yönetimi ve ekip çalışması konusunda genel bir fikir edinin. Bu videoyu yardım menüsünden yeniden başlatabilirsiniz."
     welcome: "%{app_title}'e hoş geldiniz"
-    select_language: Lütfen dilinizi seçin
-  open_project:
-    common:
-      work_package_card_component:
-        drag_handle:
-          label: Drag to reorder
-        menu:
-          label_actions: Work package actions
-        parent: Parent
-        undisclosed: Undisclosed
-  permission_add_work_package_comments: Yorum ekle
-  permission_add_work_packages: İş paketi eklemek
-  permission_add_messages: İleti göndermek
-  permission_add_project: Proje oluşturma
-  permission_add_portfolios: Portföyler oluştur
-  permission_add_programs: Programlar oluştur
-  permission_add_work_package_attachments: Dosya Ekle
-  permission_add_work_package_attachments_explanation: Allows adding attachments without Edit work packages permission
-  permission_add_internal_comments: Dahili yorumlar yazın
-  permission_archive_project: Projeyi arşivle
-  permission_create_user: Kullanıcı oluşturma
-  permission_manage_user: Kullanıcı düzenleme
-  permission_manage_placeholder_user: Yer tutucu kullanıcıları oluşturun, düzenleyin ve silin
-  permission_add_subprojects: Alt proje oluşturmak
-  permission_add_work_package_watchers: Takip eden ekle
-  permission_assign_versions: Sürüm ata
-  permission_browse_repository: Depoya salt okunur erişim (göz atma ve ödeme)
-  permission_change_work_package_status: İş paketi durumunu değiştirme
-  permission_change_work_package_status_explanation: Allows changing status without Edit work packages permission
-  permission_comment_news: Haberlere yorum yazmak
-  permission_commit_access: Depoya okuma / yazma erişimi (tamamlama)
-  permission_copy_projects: Proje kopyalamak
-  permission_copy_projects_explanation: In template projects, this permission has a secondary function, it allows the creation of new projects derived from the template.
-  permission_copy_work_packages: İş paketlerini çoğalt
-  permission_create_backup: Yedek oluşturma
-  permission_delete_work_package_watchers: Takipçi sil
-  permission_delete_work_packages: İş paketi silmek
-  permission_delete_messages: İleti silmek
-  permission_delete_own_messages: Kendi iletilerini silmek
-  permission_delete_reportings: Raporları silmek
-  permission_delete_timelines: Zaman akışını silmek
-  permission_edit_work_package_comments: Yorumları denetle
-  permission_edit_work_package_comments_explanation: 'Caution: Users with this permission are able to edit anyone''s comment.'
-  permission_edit_work_packages: İş paketlerini düzenlemek
-  permission_edit_messages: İletileri düzenlemek
-  permission_edit_own_internal_comments: Kendi dahili yorumlarınızı düzenleyin
-  permission_edit_own_work_package_comments: Kendi notlarını düzenleme
-  permission_edit_own_messages: Kendi iletilerini düzenlemek
-  permission_edit_own_time_entries: Kendi zaman kayıtlarını düzenlemek
-  permission_edit_others_internal_comments: Dahili yorumları denetleyin
-  permission_edit_others_internal_comments_explanation: 'Dikkat: Bu izne sahip kullanıcılar diğer kullanıcıların dahili yorumlarını düzenleyebilir.'
-  permission_edit_project: Proje düzenleme
-  permission_edit_project_attributes: Proje özniteliklerini düzenleme
-  permission_edit_project_phases: Proje aşamalarını düzenleme
-  permission_edit_reportings: Raporlamayı düzenlemek
-  permission_edit_time_entries: Diğer kullanıcılar için zaman günlüklerini düzenleyin
-  permission_edit_timelines: Zaman akışını düzenlemek
-  permission_edit_wiki_pages: Wiki sayfalarını düzenlemek
-  permission_export_work_packages: İş paketlerini dışarı aktar
-  permission_export_projects: Export projects
-  permission_invite_members_by_email: Invite members by email
-  permission_invite_members_by_email_explanation: 'Allows users to invite new members by email. Invited users will receive an email with a link to set their password and activate their account. Depends on the permission to manage members
-
-    '
-  permission_log_own_time: Kendi zamanını günlüğe kaydet
-  permission_log_time: Diğer kullanıcıların zamanını günlüğe kaydet
-  permission_manage_forums: Forumları yönetmek
-  permission_manage_categories: İş paket kategorilerini yönet
-  permission_manage_dashboards: Gösterge panellerini yönetme
-  permission_manage_work_package_relations: İş paketi ilişkilerini yönet
-  permission_manage_members: Üyeleri yönetmek
-  permission_manage_news: Haberleri yönet
-  permission_manage_project_activities: Proje aktivitilerini yönet
-  permission_manage_public_queries: Herkese açık görünümleri yönetmek
-  permission_manage_repository: Depo yönetimi
-  permission_manage_subtasks: İş paketi kategorilerini yönet
-  permission_manage_versions: Sürümleri yönetmek
-  permission_manage_wiki: Wiki'yi yönet
-  permission_manage_own_working_times: Manage own working times
-  permission_manage_own_working_times_explanation: 'Allows users to manage their own working times, and personal non-working days.
-
-    '
-  permission_manage_working_times: Manage working times for all users
-  permission_manage_working_times_explanation: 'Allows users to manage working times for all users, including personal non-working days.
-
-    '
-  permission_move_work_packages: İş paketini taşı
-  permission_save_queries: Görünüm kaydetmek
-  permission_search_project: Projeyi ara
-  permission_select_custom_fields: Özel alanları seçin
-  permission_select_project_custom_fields: Proje özniteliklerini seçme
-  permission_select_project_phases: Proje aşamalarını seçin
-  permission_select_project_phases_explanation: Activate/Deactivate the phases in a project. Enables the user to select the life cycle appropriate for the project as inactive phases will not be visible in the project overview page nor the project list.
-  permission_select_project_modules: Proje modülleri seçmek
-  permission_share_work_packages: İş paketini paylaşma
-  permission_manage_types: İş paketi türlerini seçmek
-  permission_manage_own_reminders: Kendi hatırlatıcısını oluşturma
-  permission_view_all_principals: View all users and groups
-  permission_view_all_principals_explanation: 'Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
-
-    '
-  permission_view_project: Projeleri görüntüleme
-  permission_view_changesets: OpenProject'de depo revizyonlarını görüntüle
-  permission_view_internal_comments: Dahili yorumları görüntüle
-  permission_view_commit_author_statistics: Yazar istatistiklerini inceleyin
-  permission_view_dashboards: Gösterge panellerini gösterme
-  permission_view_work_package_watchers: Takip eden listesini göster
-  permission_view_work_packages: İş paketlerini görüntüle
-  permission_view_messages: İletileri görüntüle
-  permission_view_news: Haberleri görüntüleme
-  permission_view_members: Üyeleri görmek
-  permission_view_reportings: Raporları görüntüle
-  permission_view_shared_work_packages: İş paketi paylaşımlarını görüntüleme
-  permission_view_time_entries: Harcanan süreyi görüntüleme
-  permission_view_timelines: Zaman çizelgelerini görüntüle
-  permission_view_user_email: Kullanıcıların posta adresini görüntüleme
-  permission_view_wiki_edits: Wiki geçmişini görüntüle
-  permission_view_wiki_pages: Wiki'yi görüntüle
-  permission_work_package_assigned: Atanan/sorumlu olun
-  permission_work_package_assigned_explanation: İşpaketleri bağlı projedeki rollere göre kullanıcı ve gruplara atanabilir
-  permission_view_project_activity: Proje faaliyetlerini görüntüleme
-  permission_view_project_attributes: Proje özniteliklerini görüntüleme
-  permission_view_project_phases: Proje aşamalarını görüntüleyin
-  permission_save_bcf_queries: BCF sorgularını kaydetme
-  permission_manage_public_bcf_queries: Genel BCF sorgularını yönetme
-  permission_edit_attribute_help_texts: Öznitelik yardım metinlerini düzenleme
-  permission_manage_public_project_queries: Genel proje listelerini yönetme
-  permission_view_project_query: Proje sorgusunu görüntüleme
-  permission_edit_project_query: Proje sorgusunu düzenleme
+    select_language: "Lütfen dilinizi seçin"
+  permission_add_work_package_comments: "Yorum ekle"
+  permission_add_work_packages: "İş paketi eklemek"
+  permission_add_messages: "İleti göndermek"
+  permission_add_project: "Proje oluşturma"
+  permission_add_portfolios: "Portföyler oluştur"
+  permission_add_programs: "Programlar oluştur"
+  permission_add_work_package_attachments: "Dosya Ekle"
+  permission_add_work_package_attachments_explanation: "Allows adding attachments without Edit work packages permission"
+  permission_add_internal_comments: "Dahili yorumlar yazın"
+  permission_archive_project: "Projeyi arşivle"
+  permission_create_user: "Kullanıcı oluşturma"
+  permission_manage_user: "Kullanıcı düzenleme"
+  permission_manage_placeholder_user: "Yer tutucu kullanıcıları oluşturun, düzenleyin ve silin"
+  permission_add_subprojects: "Alt proje oluşturmak"
+  permission_add_work_package_watchers: "Takip eden ekle"
+  permission_assign_versions: "Sürüm ata"
+  permission_browse_repository: "Depoya salt okunur erişim (göz atma ve ödeme)"
+  permission_change_wiki_parent_page: "Üst Wiki sayfasını değiştirmek"
+  permission_change_work_package_status: "İş paketi durumunu değiştirme"
+  permission_change_work_package_status_explanation: "Allows changing status without Edit work packages permission"
+  permission_comment_news: "Haberlere yorum yazmak"
+  permission_commit_access: "Depoya okuma / yazma erişimi (tamamlama)"
+  permission_copy_projects: "Proje kopyalamak"
+  permission_copy_projects_explanation: "In template projects, this permission has a secondary function, it allows the creation of new projects derived from the template."
+  permission_copy_work_packages: "İş paketlerini çoğalt"
+  permission_create_backup: "Yedek oluşturma"
+  permission_delete_work_package_watchers: "Takipçi sil"
+  permission_delete_work_packages: "İş paketi silmek"
+  permission_delete_messages: "İleti silmek"
+  permission_delete_own_messages: "Kendi iletilerini silmek"
+  permission_delete_reportings: "Raporları silmek"
+  permission_delete_timelines: "Zaman akışını silmek"
+  permission_delete_wiki_pages: "Wiki sayfalarını silmek"
+  permission_delete_wiki_pages_attachments: "Ekleri silmek"
+  permission_edit_work_package_comments: "Yorumları denetle"
+  permission_edit_work_package_comments_explanation: "Caution: Users with this permission are able to edit anyone's comment."
+  permission_edit_work_packages: "İş paketlerini düzenlemek"
+  permission_edit_messages: "İletileri düzenlemek"
+  permission_edit_own_internal_comments: "Kendi dahili yorumlarınızı düzenleyin"
+  permission_edit_own_work_package_comments: "Kendi notlarını düzenleme"
+  permission_edit_own_messages: "Kendi iletilerini düzenlemek"
+  permission_edit_own_time_entries: "Kendi zaman kayıtlarını düzenlemek"
+  permission_edit_others_internal_comments: "Dahili yorumları denetleyin"
+  permission_edit_others_internal_comments_explanation: "Dikkat: Bu izne sahip kullanıcılar diğer kullanıcıların dahili yorumlarını düzenleyebilir."
+  permission_edit_project: "Proje düzenleme"
+  permission_edit_project_attributes: "Proje özniteliklerini düzenleme"
+  permission_edit_project_phases: "Proje aşamalarını düzenleme"
+  permission_edit_reportings: "Raporlamayı düzenlemek"
+  permission_edit_time_entries: "Diğer kullanıcılar için zaman günlüklerini düzenleyin"
+  permission_edit_timelines: "Zaman akışını düzenlemek"
+  permission_edit_wiki_pages: "Wiki sayfalarını düzenlemek"
+  permission_export_work_packages: "İş paketlerini dışarı aktar"
+  permission_export_projects: "Export projects"
+  permission_export_wiki_pages: "Wiki sayfalarını dışarı aktar"
+  permission_invite_members_by_email: "Invite members by email"
+  permission_invite_members_by_email_explanation: >
+    Allows users to invite new members by email. Invited users will receive an email with a link to set their password and activate their account. Depends on the permission to manage members
+  permission_list_attachments: "Ekleri listelemek"
+  permission_log_own_time: "Kendi zamanını günlüğe kaydet"
+  permission_log_time: "Diğer kullanıcıların zamanını günlüğe kaydet"
+  permission_manage_forums: "Forumları yönetmek"
+  permission_manage_categories: "İş paket kategorilerini yönet"
+  permission_manage_dashboards: "Gösterge panellerini yönetme"
+  permission_manage_work_package_relations: "İş paketi ilişkilerini yönet"
+  permission_manage_members: "Üyeleri yönetmek"
+  permission_manage_news: "Haberleri yönet"
+  permission_manage_project_activities: "Proje aktivitilerini yönet"
+  permission_manage_public_queries: "Herkese açık görünümleri yönetmek"
+  permission_manage_repository: "Depo yönetimi"
+  permission_manage_subtasks: "İş paketi kategorilerini yönet"
+  permission_manage_versions: "Sürümleri yönetmek"
+  permission_manage_wiki: "Wiki'yi yönet"
+  permission_manage_wiki_menu: "Wiki menüsünü yönet"
+  permission_move_work_packages: "İş paketini taşı"
+  permission_protect_wiki_pages: "Wiki sayfalarını koruma"
+  permission_rename_wiki_pages: "Wiki sayfalarını yeniden adlandır"
+  permission_save_queries: "Görünüm kaydetmek"
+  permission_search_project: "Projeyi ara"
+  permission_select_custom_fields: "Özel alanları seçin"
+  permission_select_project_custom_fields: "Proje özniteliklerini seçme"
+  permission_select_project_phases: "Proje aşamalarını seçin"
+  permission_select_project_phases_explanation: "Activate/Deactivate the phases in a project. Enables the user to select the life cycle appropriate for the project as inactive phases will not be visible in the project overview page nor the project list."
+  permission_select_project_modules: "Proje modülleri seçmek"
+  permission_share_work_packages: "İş paketini paylaşma"
+  permission_manage_types: "İş paketi türlerini seçmek"
+  permission_manage_own_reminders: "Kendi hatırlatıcısını oluşturma"
+  permission_view_all_principals: "View all users and groups"
+  permission_view_all_principals_explanation: >
+    Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
+  permission_view_project: "Projeleri görüntüleme"
+  permission_view_changesets: "Yojana'de depo revizyonlarını görüntüle"
+  permission_view_internal_comments: "Dahili yorumları görüntüle"
+  permission_view_commit_author_statistics: "Yazar istatistiklerini inceleyin"
+  permission_view_dashboards: "Gösterge panellerini gösterme"
+  permission_view_work_package_watchers: "Takip eden listesini göster"
+  permission_view_work_packages: "İş paketlerini görüntüle"
+  permission_view_messages: "İletileri görüntüle"
+  permission_view_news: "Haberleri görüntüleme"
+  permission_view_members: "Üyeleri görmek"
+  permission_view_reportings: "Raporları görüntüle"
+  permission_view_shared_work_packages: "İş paketi paylaşımlarını görüntüleme"
+  permission_view_time_entries: "Harcanan süreyi görüntüleme"
+  permission_view_timelines: "Zaman çizelgelerini görüntüle"
+  permission_view_user_email: "Kullanıcıların posta adresini görüntüleme"
+  permission_view_wiki_edits: "Wiki geçmişini görüntüle"
+  permission_view_wiki_pages: "Wiki'yi görüntüle"
+  permission_work_package_assigned: "Atanan/sorumlu olun"
+  permission_work_package_assigned_explanation: "İşpaketleri bağlı projedeki rollere göre kullanıcı ve gruplara atanabilir"
+  permission_view_project_activity: "Proje faaliyetlerini görüntüleme"
+  permission_view_project_attributes: "Proje özniteliklerini görüntüleme"
+  permission_view_project_phases: "Proje aşamalarını görüntüleyin"
+  permission_save_bcf_queries: "BCF sorgularını kaydetme"
+  permission_manage_public_bcf_queries: "Genel BCF sorgularını yönetme"
+  permission_edit_attribute_help_texts: "Öznitelik yardım metinlerini düzenleme"
+  permission_manage_public_project_queries: "Genel proje listelerini yönetme"
+  permission_view_project_query: "Proje sorgusunu görüntüleme"
+  permission_edit_project_query: "Proje sorgusunu düzenleme"
   placeholders:
     default: "-"
     templated_hint: Automatically generated through type %{type}
@@ -5105,11 +5072,11 @@ tr:
     create_successful: Depo kaydedildi.
     delete_sucessful: Depo silindi.
     destroy:
-      confirmation: Devam ederseniz, yönetilen depoyu kalıcı olarak silecektir.
-      info: Deponun silinmesi geri döndürülemez bir işlemdir.
-      info_not_managed: 'Not: Bu, OpenProject tarafından yönetilmediğinden, bu deponun içeriğini Silmeyecektir.'
-      managed_path_note: Aşağıdaki dizin silinir:% {path} %{path}
-      repository_verification_html: Enter the project's identifier %{identifier} to verify the deletion of its repository.
+      confirmation: "Devam ederseniz, yönetilen depoyu kalıcı olarak silecektir."
+      info: "Deponun silinmesi geri döndürülemez bir işlemdir."
+      info_not_managed: "Not: Bu, Yojana tarafından yönetilmediğinden, bu deponun içeriğini Silmeyecektir."
+      managed_path_note: "Aşağıdaki dizin silinir:% {path} %{path}"
+      repository_verification: "Deponun silinmesini doğrulamak için projenin tanımlayıcı% {identifier} 'yi girin. %{identifier}"
       subtitle: "% {Project_name} projesinin% {repository_type} dosyasını gerçekten silmek istiyor musunuz? %{repository_type} %{project_name}"
       subtitle_not_managed_html: Do you really want to remove the linked %{repository_type} %{url} from the project %{project_name}?
       title_html: Delete the %{repository_type}
@@ -5118,36 +5085,37 @@ tr:
       build_failed: Seçili yapılandırmayla havuz oluşturulamadı. %{reason}
       managed_delete: Yönetilen depo açılamadı.
       managed_delete_local: "'% {Path}' adresindeki dosya deposundaki yerel depoyu silemedi:% {error_message} %{path} %{error_message}"
-      empty_repository: Depo var, ancak boş. Henüz düzeltme içermiyor.
-      exists_on_filesystem: Depo dizini zaten dosya sisteminde var.
-      filesystem_access_failed: Dosya sistemindeki havuza erişirken bir hata oluştu:% {message} %{message}
-      not_manageable: Bu depo satıcısı OpenProject tarafından yönetilemez.
-      path_permission_failed: Aşağıdaki yolu oluşturmaya çalışırken bir hata oluştu:% {path}. Lütfen OpenProject'in bu klasöre yazabileceğinden emin olun. %{path}.
-      unauthorized: Depolama alanına erişim yetkiniz yok ya da kimlik bilgileri geçersiz.
-      unavailable: Depo kullanılamaz.
-      exception_title: Depoya erişilemiyor:% {message} %{message}
-      disabled_or_unknown_type: Seçilen% {type} türü devre dışı veya artık SCM satıcısı% {satıcı} için kullanılamıyor. %{type}  %{vendor}
-      disabled_or_unknown_vendor: SCM satıcısı% {satıcı} devre dışı bırakıldı veya artık mevcut değil. %{vendor}.
-      remote_call_failed: Yönetilen uzaktan çağırma işlemi '% {message}' mesajıyla başarısız oldu (Kod:% {code}) %{message} %{code}
-      remote_invalid_response: Yönetilen uzaktan kumandadan geçersiz bir yanıt alındı.
-      remote_save_failed: Uzaktan kumandadan alınan parametrelerle depoyu kaydedemedim.
+      empty_repository: "Depo var, ancak boş. Henüz düzeltme içermiyor."
+      exists_on_filesystem: "Depo dizini zaten dosya sisteminde var."
+      filesystem_access_failed: "Dosya sistemindeki havuza erişirken bir hata oluştu:% {message} %{message}"
+      not_manageable: "Bu depo satıcısı Yojana tarafından yönetilemez."
+      path_permission_failed: "Aşağıdaki yolu oluşturmaya çalışırken bir hata oluştu:% {path}. Lütfen Yojana'in bu klasöre yazabileceğinden emin olun. %{path}."
+      unauthorized: "Depolama alanına erişim yetkiniz yok ya da kimlik bilgileri geçersiz."
+      unavailable: "Depo kullanılamaz."
+      exception_title: "Depoya erişilemiyor:% {message} %{message}"
+      disabled_or_unknown_type: "Seçilen% {type} türü devre dışı veya artık SCM satıcısı% {satıcı} için kullanılamıyor. %{type}  %{vendor}"
+      disabled_or_unknown_vendor: "SCM satıcısı% {satıcı} devre dışı bırakıldı veya artık mevcut değil. %{vendor}."
+      remote_call_failed: "Yönetilen uzaktan çağırma işlemi '% {message}' mesajıyla başarısız oldu (Kod:% {code}) %{message} %{code}"
+      remote_invalid_response: "Yönetilen uzaktan kumandadan geçersiz bir yanıt alındı."
+      remote_save_failed: "Uzaktan kumandadan alınan parametrelerle depoyu kaydedemedim."
     git:
       instructions:
-        managed_url: Bu yönetilen (yerel) Git deponunun URL'si.
-        path: Yerel Git depo (örneğin, %{example_path}) yolunu belirtin. Yerel kopya için bir http (s) ile başlayan :// değeri veya file:// kullanarak klonlanır uzak depoları da kullanabilirsiniz.
-        path_encoding: 'Git yol kodlamasını geçersiz kıl (Varsayılan: UTF-8)'
-      local_title: Mevcut yerel Git deponuzu bağlayın
-      local_url: Yerel adres
-      local_introduction: Mevcut bir yerel Git deponuz varsa, uygulamadan erişmek için onu OpenProject ile bağlayabilirsiniz.
-      managed_introduction: OpenProject yerel bir Git deposunu otomatik olarak oluşturup entegre edin.
-      managed_title: Git deposu OpenProject'e entegredir
-      managed_url: Yönetilen URL
-      path: Git deposunun yolu
-      path_encoding: Yol kodlaması
-    go_to_revision: Revizyona git
-    managed_remote: Bu satıcı için yönetilen depolar uzaktan ele alınır.
-    managed_remote_note: Bu havuzun URL'si ve yolu hakkındaki bilgileri, oluşturulmadan önce mevcut değildir.
-    managed_url: Yönetilen URL
+        managed_url: "Bu yönetilen (yerel) Git deponunun URL'si."
+        path: >-
+          Yerel Git depo (örneğin, %{example_path}) yolunu belirtin. Yerel kopya için bir http (s) ile başlayan :// değeri veya file:// kullanarak klonlanır uzak depoları da kullanabilirsiniz.
+        path_encoding: "Git yol kodlamasını geçersiz kıl (Varsayılan: UTF-8)"
+      local_title: "Mevcut yerel Git deponuzu bağlayın"
+      local_url: "Yerel adres"
+      local_introduction: "Mevcut bir yerel Git deponuz varsa, uygulamadan erişmek için onu Yojana ile bağlayabilirsiniz."
+      managed_introduction: "Yojana yerel bir Git deposunu otomatik olarak oluşturup entegre edin."
+      managed_title: "Git deposu Yojana'e entegredir"
+      managed_url: "Yönetilen URL"
+      path: "Git deposunun yolu"
+      path_encoding: "Yol kodlaması"
+    go_to_revision: "Revizyona git"
+    managed_remote: "Bu satıcı için yönetilen depolar uzaktan ele alınır."
+    managed_remote_note: "Bu havuzun URL'si ve yolu hakkındaki bilgileri, oluşturulmadan önce mevcut değildir."
+    managed_url: "Yönetilen URL"
     settings:
       automatic_managed_repos_disabled: Otomatik oluşturulmayı devre dışı bırak
       automatic_managed_repos: Yönetilen depoların otomatik oluşturulması
@@ -5155,288 +5123,256 @@ tr:
     scm_vendor: Sürüm kontrol yönetim sistemi
     scm_type: Depo türü
     scm_types:
-      local: Varolan yerel depoyu bağla
-      existing: Varolan depoyu bağla
-      managed: OpenProject'de yeni depo oluşturun
+      local: "Varolan yerel depoyu bağla"
+      existing: "Varolan depoyu bağla"
+      managed: "Yojana'de yeni depo oluşturun"
     storage:
-      not_available: Bu depo için disk depolama tüketimi yok.
-      update_timeout: |-
-        Bir depo için N dakika boyunca gereken son disk alanı bilgilerini saklayın.
-        Deponun gerekli disk alanını saymak maliyetli olabileceğinden performans etkisini azaltmak için bu değeri yükseltin.
-      oauth_application_details_html: 'The client secret value will not be accessible again after you close this window. Please copy these values into the Nextcloud OpenProject Integration settings:'
-      oauth_application_details_link_text: Ayarlar sayfasına git
-      setup_documentation_details: 'Yeni bir dosya deposunu yapılandırmak için yardıma ihtiyacınız varsa, lütfen belgelere bakın:'
-      setup_documentation_details_link_text: Dosya depoları kurulumu
-      show_warning_details: Bu dosya deposunu kullanmak için, istenen her projenin proje ayarlarında modülü ve belirli depolamayı etkinleştirmeyi unutmayın.
+      not_available: "Bu depo için disk depolama tüketimi yok."
+      update_timeout: "Bir depo için N dakika boyunca gereken son disk alanı bilgilerini saklayın.\nDeponun gerekli disk alanını saymak maliyetli olabileceğinden performans etkisini azaltmak için bu değeri yükseltin."
+      oauth_application_details: "Bu pencereyi kapattıktan sonra istemci gizli anahtarı değerine tekrar erişilemez. Lütfen bu değerleri Nextcloud Yojana Entegrasyon ayarlarına kopyalayın:"
+      oauth_application_details_link_text: "Ayarlar sayfasına git"
+      setup_documentation_details: "Yeni bir dosya deposunu yapılandırmak için yardıma ihtiyacınız varsa, lütfen belgelere bakın:"
+      setup_documentation_details_link_text: "Dosya depoları kurulumu"
+      show_warning_details: "Bu dosya deposunu kullanmak için, istenen her projenin proje ayarlarında modülü ve belirli depolamayı etkinleştirmeyi unutmayın."
     subversion:
-      existing_title: Mevcut Subversion deposu
-      existing_introduction: Varolan bir Subversion havuzunuz varsa, uygulamanın içinden erişmek için onu OpenProject ile bağlayabilirsiniz.
-      existing_url: Varolan Adres
+      existing_title: "Mevcut Subversion deposu"
+      existing_introduction: "Varolan bir Subversion havuzunuz varsa, uygulamanın içinden erişmek için onu Yojana ile bağlayabilirsiniz."
+      existing_url: "Varolan Adres"
       instructions:
-        managed_url: Bu, yönetilen (yerel) Subversion havuzunun URL'si.
-        url: |-
-          Depo URL'sini girin. Bu, yerel bir depoyu (% {local_proto} ile başlayan) veya uzak bir depoyu hedefleyebilir.
-          Aşağıdaki URL şemaları desteklenmektedir: %{local_proto}
-      managed_title: OpenProject'e entegre edilen Subversion deposu
-      managed_introduction: OpenProject yerel bir Subversion havuzunu otomatik olarak oluşturup entegre edin.
-      managed_url: Yönetilen URL
-      password: Depo Parolası
-      username: Depo kullanıcı adı
-    truncated: Üzgünüz, dosyaları %{limit} ile limitlemek zorunda kaldık. %{truncated} girdileri listeden göz ardı edildi.
+        managed_url: "Bu, yönetilen (yerel) Subversion havuzunun URL'si."
+        url: "Depo URL'sini girin. Bu, yerel bir depoyu (% {local_proto} ile başlayan) veya uzak bir depoyu hedefleyebilir.\nAşağıdaki URL şemaları desteklenmektedir: %{local_proto}"
+      managed_title: "Yojana'e entegre edilen Subversion deposu"
+      managed_introduction: "Yojana yerel bir Subversion havuzunu otomatik olarak oluşturup entegre edin."
+      managed_url: "Yönetilen URL"
+      password: "Depo Parolası"
+      username: "Depo kullanıcı adı"
+    truncated: "Üzgünüz, dosyaları %{limit} ile limitlemek zorunda kaldık. %{truncated} girdileri listeden göz ardı edildi."
     named_repository: "%{vendor_name} deposu"
     update_settings_successful: Ayarlar başarıyla kaydedildi.
     url: Depo URL'si
     warnings:
       cannot_annotate: Bu dosyaya açıklama yapılamaz.
   scheduling:
-    manual: Elle ayarla
-    automatic: Otomatik ayarla
-  search_input_placeholder: Ara ...
-  setting_allowed_link_protocols: İzin verilen bağlantı protokolleri
-  setting_allowed_link_protocols_text_html: Bu protokollerin iş paketi açıklamalarında, uzun metin alanlarında ve yorumlarda bağlantı olarak gösterilmesine izin verin. Örneğin, %{tel_code} veya %{element_code}. Her satıra bir protokol girin. <br/> %{http_code}, %{https_code} ve %{mailto_code} protokollerine her zaman izin verilir.
-  setting_capture_external_links: Capture external links
-  setting_capture_external_links_text: 'When enabled, all external links in formatted text will redirect through a warning page before leaving the application. This helps protect users from potentially malicious external websites.
-
-    '
-  setting_capture_external_links_require_login: Require users to be logged in
-  setting_capture_external_links_require_login_text: 'When enabled, users wanting to click on external links need to be logged in before being able to continue.
-
-    '
-  setting_after_first_login_redirect_url: İlk giriş yönlendirmesi
-  setting_after_first_login_redirect_url_text_html: 'Set a path to redirect users after their first login. If empty, redirects to the home page for the onboarding tour. <br/> Example: <code>/my/page</code>
-
-    '
-  setting_after_login_default_redirect_url: Giriş yönlendirmesinden sonra
-  setting_after_login_default_redirect_url_example_html: 'Set a default path to redirect users after login, if no back link was provided. Redirects to home page if not set. <br/> Example: %{example_code}
-
-    '
-  setting_apiv3_cors_title: Çapraz Kaynak Paylaşımı (CORS)
-  setting_apiv3_cors_enabled: CORS'u etkinleştir
-  setting_apiv3_cors_origins: API V3 Kaynaklar Arası Kaynak Paylaşımı (CORS) izin verilen kaynaklar
-  setting_apiv3_cors_origins_instructions_html: 'If CORS is enabled, these are the origins that are allowed to access OpenProject API. <br/> Please check the [Documentation on the Origin header](docs_url) on how to specify the expected values.
-
-    '
-  setting_apiv3_write_readonly_attributes: Salt okunur özniteliklere yazma erişimi
-  setting_apiv3_write_readonly_attributes_instructions: 'If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
-
-    '
-  setting_apiv3_write_readonly_attributes_warning: 'This setting has a use-case for e.g., importing data, but allows administrators to impersonate the creation of items as other users. All creation requests are being logged however with the true author.
-
-    '
-  setting_apiv3_write_readonly_attributes_additional_html: 'For more information on attributes and supported resources, please see the [API documentation](api_documentation_link).
-
-    '
-  setting_apiv3_max_page_size: En büyük API sayfası boyutu
-  setting_apiv3_max_page_size_instructions: 'Set the maximum page size the API will respond with. It will not be possible to perform API requests that return more values on a single page.
-
-    '
-  setting_apiv3_max_page_size_warning: 'Please only change this value if you are sure why you need it. Setting to a high value will result in significant performance impacts, while a value lower than the per page options will cause errors in paginated views.
-
-    '
-  setting_apiv3_docs: Belgeleme
-  setting_apiv3_docs_enabled: Dokümanlar sayfasını etkinleştir
-  setting_apiv3_docs_enabled_instructions_html: 'Dokümanlar sayfası etkinleştirildiyse, <a href="%{link}" target="_blank">%{link}</a> altında APIv3 belgelerinin etkileşimli bir görünümünü elde edebilirsiniz.
-
-    '
-  setting_apiv3_docs_enabled_instructions_warning: 'Uyarı: API dokümantasyonunu canlı ortamda etkinleştirmek güvenlik riskleri ve olası veri kaybına neden olabilir. Bu ayarı sadece geliştirme ortamlarında kullanmanızı öneririz.
-
-    '
-  setting_attachment_whitelist: Ek yükleme beyaz listesi
-  setting_email_delivery_method: E-posta teslim yöntemi
-  setting_emails_salutation: E-postalarda kullanıcıya şu şekilde hitap edin
-  setting_oauth_allow_remapping_of_existing_users: Allow remapping of existing users
-  setting_sendmail_location: Çalıştırılabilir sendmail aracının yolu
-  setting_sendmail_arguments: Arguments for sendmail
-  setting_smtp_enable_starttls_auto: STARTTLS varsa otomatik olarak kullan
-  setting_smtp_ssl: SSL bağlantısı kullan
-  setting_smtp_address: SMTP sunucusu
-  setting_smtp_port: SMTP port
-  setting_smtp_authentication: SMTP kimlik doğrulaması
-  setting_smtp_user_name: SMTP kullanıcı adı
-  setting_smtp_password: SMTP parolası
-  setting_smtp_domain: SMTP HELO alan adı
-  setting_activity_days_default: Proje faaliyetin de gösterilen gün sayısı istinaden
-  setting_api_tokens_enabled: Enable API tokens
-  setting_api_tokens_enabled_caption: 'Decide whether users can create personal API tokens in their account settings. These tokens can be used to access the different APIs of OpenProject, such as APIv3 and MCP.
-
-    '
-  setting_app_subtitle: Uygulama alt başlığı
-  setting_app_title: Uygulama başlığı
-  setting_organization_name: Organization name
-  setting_attachment_max_size: En büyük ek boyutu
-  setting_show_work_package_attachments: Ekleri varsayılan olarak dosyalar sekmesinde göster
-  setting_antivirus_scan_mode: Tarama modu
-  setting_antivirus_scan_action: Etkilenen dosya eylemi
-  setting_autofetch_changesets: Autofetch depo değişiklikleri
-  setting_autologin: Otomatik giriş
-  setting_available_languages: Mevcut diller
-  setting_bcc_recipients: Kör karbon kopya alıcıları (bcc)
-  setting_brute_force_block_after_failed_logins: Bu başarısız giriş denemesinden sonra kullanıcıyı engelle
-  setting_brute_force_block_minutes: Kullanıcının engellediği süre
-  setting_cache_formatted_text: Biçimlendirilmiş metni önbelleğe al
-  setting_use_wysiwyg_description: Tüm kullanıcılar için varsayılan olarak CKEditor5 WYSIWYG düzenleyiciyi etkinleştirmek için seçin. GFM Markdown için CKEditor sınırlı işleve sahiptir.
-  setting_column_options: Varsayılan iş paketi listeleme sütunları
-  setting_commit_fix_keywords: Anahtar kelimeleri düzeltme
-  setting_commit_logs_encoding: İleti kodlamayı tamamla
-  setting_commit_logtime_activity_id: Kaydedilen zaman için faaliyet
-  setting_commit_logtime_enabled: Zaman kaydını etkinleştir
-  setting_commit_ref_keywords: Anahtar kelimeleri referansla
-  setting_consent_time: Rıza süresi
-  setting_consent_info: Rıza bilgi metni
-  setting_consent_required: Onay gerekli
-  setting_consent_decline_mail: Onay iletişim posta adresi
-  setting_cross_project_work_package_relations: Projeler arası iş paketi ilişkilerine izin ver
-  setting_csv_escape_formulas: Escape formulas in CSV exports
-  setting_csv_escape_formulas_text: 'Escape spreadsheet formulas in CSV exports by prefixing cells that begin with characters such as =, +, -, or @ with a single quote. This mitigates CSV formula injection when exported files are opened in spreadsheet applications such as Excel. This comes at the downside of modifying the string values inside the CSV, so you may want to disable this if downstream tools require the exact, unescaped cell values.
-
-    '
-  setting_first_week_of_year: Yılın ilk haftası
-  setting_date_format: Tarih
-  setting_default_language: Varsayılan dil
-  setting_default_projects_modules: Yeni projeler için varsayılan etkin modüller
-  setting_default_projects_public: Yeni projeler varsayılan olarak herkese açık
-  setting_disable_password_login: Parola kimlik doğrulamasını devre dışı bırak
-  setting_diff_max_lines_displayed: Görüntülenen fark satırlarının maksimum sayısı
-  setting_omniauth_direct_login_provider: Doğrudan oturum açma SSO sağlayıcısı
-  setting_display_subprojects_work_packages: Varsayılan olarak ana projenin iş listesinde alt proje iş paketlerini göster
-  setting_duration_format: Süre biçimi
-  setting_duration_format_hours_only: Sadece saat
-  setting_duration_format_days_and_hours: Gün ve saat
-  setting_duration_format_instructions: Bu, İş, Kalan iş ve Harcanan zaman sürelerinin nasıl görüntüleneceğini tanımlar.
-  setting_emails_footer: E-posta altbilgi
-  setting_emails_header: E-posta üstbilgisi
-  setting_email_login: Giriş olarak e-posta kullanın
-  setting_enabled_scm: Etkinleştirilmiş SCM
-  setting_enabled_projects_columns: Columns in a projects list displayed by default
-  setting_feeds_enabled: Akışları etkinleştir
-  setting_ical_enabled: iCalendar aboneliklerini etkinleştir
-  setting_feeds_limit: Akış içeriği sınırı
-  setting_file_max_size_displayed: Satır içi görüntülenen maksimum metin dosyası boyutu
-  setting_host_name: Ana bilgisayar adı
-  setting_collaborative_editing_hocuspocus_url: Hocuspocus sunucu URL'si
-  setting_collaborative_editing_hocuspocus_secret: Hocuspocus sunucu sırrı
-  setting_hours_per_day: Gün başına saat
-  setting_hours_per_day_explanation: Bu, süreyi gün ve saat olarak görüntülerken neyin "gün" olarak kabul edildiğini tanımlar (örneğin, bir gün 8 saat ise, 32 saat 4 gün olacaktır).
-  setting_invitation_expiration_days: Etkinleştirme e-posta kullanım süresi sonu
-  setting_invitation_expiration_days_caption: Etkinleştirme e-postasının süresinin dolduğu gün sayısı.
-  setting_work_package_done_ratio: İlerleme hesaplama modu
-  setting_work_package_done_ratio_field: İş temelli
-  setting_work_package_done_ratio_field_caption_html: "<i>Tamamlanma yüzdesi</i> serbestçe herhangi bir değere ayarlanabilir. <i>İş</i> için isteğe bağlı olarak bir değer girerseniz, <i>Kalan iş</i> otomatik olarak türetilecektir."
-  setting_work_package_done_ratio_status: Durum temelli
-  setting_work_package_done_ratio_status_caption_html: Her durumun kendisiyle ilişkili bir <i>tamamlanma yüzdesi</i> değeri vardır. Durumun değiştirilmesi <i>tamamlanma yüzdesi</i>ni değiştirecektir.
-  setting_work_package_done_ratio_explanation_html: "<b>İşe dayalı</b> modda, tamamlanma yüzdesi serbestçe ayarlanabilir. İsteğe bağlı olarak İş için bir değer girerseniz, Kalan iş otomatik olarak türetilecektir. <b>Durum tabanlı</b> modda, her durum kendisiyle ilişkilendirilmiş bir tamamlanma yüzdesi değerine sahiptir. Durumun değiştirilmesi tamamlanma yüzdesini değiştirecektir.\n"
-  setting_work_package_properties: İş paketi özellikleri
-  setting_work_package_startdate_is_adddate: Yeni iş paketlerinde şu anki tarihi başlangıç tarihi olarak kullan
-  setting_work_packages_projects_export_limit: İş paketleri / Projeler dışa aktarım limiti
-  setting_work_packages_projects_export_limit_text: 'Maximum number of work packages or projects that can be included in a single export. Larger exports are truncated to this limit.
-
-    '
-  setting_journal_aggregation_time_minutes: Aggregation period
-  setting_log_requesting_user: Tüm istekler için kullanıcı oturum açma, ad ve posta adresini girme
-  setting_login_required: Kimlik doğrulaması gerekli
-  setting_login_required_caption: İşaretlendiğinde, uygulamaya gelen tüm isteklerin kimliği doğrulanmalıdır.
-  setting_lost_password: Parola sıfırlamayı etkinleştir
-  setting_lost_password_caption: İşaretlendiğinde, kullanıcıların kendi parolalarını sıfırlamalarına izin verir.
-  setting_mail_from: Gönderici e-posta adresi
-  setting_mail_handler_api_key: API anahtarı
-  setting_mail_handler_body_delimiters: Bu satırlardan birinden sonra e-postaları kısaltın
-  setting_mail_handler_body_delimiter_regex: Bu düzenli ifade ile uyuşan e-postaları kırp
-  setting_mail_handler_ignore_filenames: Yoksayılan posta ekleri
-  setting_new_project_user_role_id: Bir proje oluşturan yönetici olmayan bir kullanıcıya verilen rolü
-  setting_new_project_user_role_id_caption: 'Only roles that include the permissions to edit project attributes and to manage members are listed, so that the creator can complete the project setup.
-
-    '
-  setting_new_project_send_confirmation_email: Send notification to author when creating a new project
-  setting_new_project_notification_text: Notification text
-  setting_password_active_rules: Password requirements
-  setting_password_count_former_banned: Yeniden kullanımı yasaklanan en son kullanılan parola sayısı
-  setting_password_days_valid: Ardından, bir şifre değişikliğinin uygulanması için gereken gün sayısı
-  setting_password_min_length: Minimum uzunluk
-  setting_per_page_options: Sayfa başı nesne seçenekleri
-  setting_percent_complete_on_status_closed: Durum kapatıldığında tamamlanma yüzdesi
-  setting_percent_complete_on_status_closed_no_change: Değişiklik yok
-  setting_percent_complete_on_status_closed_no_change_caption_html: "<i>Tamamlanma yüzdesi</i> değeri, bir iş paketi kapatıldığında bile değişmeyecektir."
-  setting_percent_complete_on_status_closed_set_100p: Otomatik olarak %100'e ayarla
-  setting_percent_complete_on_status_closed_set_100p_caption: Kapatılan bir iş paketi tamamlanmış kabul edilir.
-  setting_plain_text_mail: Düz metin postası (HTML yok)
-  setting_protocol: Protokol
-  setting_project_gantt_query: Proje portföyü Gantt görünümü
-  setting_project_gantt_query_text: Gantt grafiğini görüntülemek için kullanılan sorguyu projeye genel bakış sayfasından değiştirebilirsiniz.
-  setting_security_badge_displayed: Güvenlik rozeti göster
-  setting_registration_footer: Kayıt alt bilgisi
-  setting_registration_footer_caption: Bu metin kayıt sayfasının altbilgisinde görüntülenir. Seçilen her dil için metni biçimlendirmek üzere HTML düzenleyicisini kullanın.
-  setting_repositories_automatic_managed_vendor: Otomatik depo satıcısı türü
-  setting_repositories_encodings: Depolar kodlamaları
-  setting_repository_storage_cache_minutes: Depo disk boyutu önbelleği
-  setting_repository_checkout_display: Ödeme talimatlarını göster
-  setting_repository_checkout_base_url: Satın alma tabanı URL'si
-  setting_repository_checkout_text: Ödeme talimat metni
-  setting_repository_log_display_limit: Dosya günlüğünde görüntülenen revizyonların maksimum sayısı
-  setting_repository_truncate_at: Depo tarayıcıda görüntülenen dosya sayısı üst sınırı
-  setting_self_registration: Kendi kendine kayıt
-  setting_self_registration_caption: 'Kullanıcılar için kendi kendine kayıt mekanizmasını seçin. Bazı seçenekler kullanıcıların bu sistemde kendi hesaplarını etkinleştirmelerine izin verdiğinden, seçtiğiniz ayara dikkat edin.
-
-    '
-  setting_self_registration_warning: 'Kullanıcı kendi hesaplarını etkinleştirebilecektir. Lütfen bunun onlara tüm genel projelere ve içeriklerine erişim sağlayacağını unutmayın. Lütfen herkese açık projelerde hiçbir hassas veya özel verinin ifşa edilmediğinden emin olun.
-
-    '
-  setting_self_registration_disabled: Kapalı
-  setting_self_registration_disabled_caption: 'Hiçbir hesap kendi başına kaydedilemez. Yalnızca yöneticiler ve yeni kullanıcı oluşturma genel iznine sahip kullanıcılar yeni hesaplar oluşturabilir.
-
-    '
-  setting_self_registration_activation_by_email: E-posta ile hesap etkinleştirmesi
-  setting_self_registration_activation_by_email_caption: 'Kullanıcılar kendi başlarına kaydolabilir ve e-posta adreslerini onayladıktan sonra hesaplarını etkinleştirebilirler. Yöneticilerin aktivasyon süreci üzerinde hiçbir denetim kontrolü yoktur.
-
-    '
-  setting_self_registration_automatic_activation: Hesabı otomatik etkinleştir
-  setting_self_registration_automatic_activation_caption: 'Kullanıcılar kendi başlarına kayıt olabilirler. Hesapları başka bir işlem yapılmadan hemen aktif hale gelir. Yöneticilerin etkinleştirme süreci üzerinde hiçbir denetim kontrolü yoktur.
-
-    '
-  setting_self_registration_manual_activation: Elle hesap etkinleştirme
-  setting_self_registration_manual_activation_caption: 'Kullanıcılar kendi başlarına kayıt olabilirler. Kullanıcı oluşturma veya yönetme genel iznine sahip bir yönetici veya kullanıcı onları etkinleştirene kadar hesapları beklemede durumundadır.
-
-    '
-  setting_session_ttl: Session expiration time after inactivity
-  setting_session_ttl_hint: 5'in altındaki değer, devre dışı gibi
-  setting_session_ttl_enabled: Oturum sona eriyor
-  setting_start_of_week: Hafta Başlangıcı
-  setting_sys_api_enabled: Depo yönetimi web hizmetini etkinleştir
-  setting_sys_api_description: Depo yönetimi web servisi depolara erişmek için entegrasyon ve kullanıcı yetkilendirmesi sağlar.
-  setting_time_format: Zaman
-  setting_total_percent_complete_mode: Tamamlanma yüzdesinin hesabı hiyerarşi toplamları ile yapılır
-  setting_total_percent_complete_mode_work_weighted_average: İşe göre ağırlıklandırılmış
-  setting_total_percent_complete_mode_work_weighted_average_caption_html: "<i>Toplam Tamamlanma Yüzdesi</i>, hiyerarşideki her bir iş paketinin <i>İşine</i> göre ağırlıklandırılacaktır. <i>İş</i> içermeyen iş paketleri göz ardı edilecektir."
-  setting_total_percent_complete_mode_simple_average: Basit ortalama
-  setting_total_percent_complete_mode_simple_average_caption_html: "<i>İş</i> göz ardı edilir ve <i>toplam tamamlanma yüzdesi</i>, hiyerarşideki iş paketlerinin <i> tamamlanma yüzdesinin</i> basit bir ortalaması olacak şekilde hesaplanacaktır."
-  setting_accessibility_mode_for_anonymous: İsimsiz kullanıcılar için erişilebilirlik modunu etkinleştir
-  setting_user_format: Kullanıcı adı biçimi
-  setting_user_default_timezone: Kullanıcıların varsayılan saat dilimi
-  setting_users_deletable_by_admins: Yöneticiler kullanıcı hesaplarını silebilsin
-  setting_users_deletable_by_self: Kullanıcılar kendi hesaplarını silebilsin
-  setting_welcome_text: Hoş geldiniz blok metini
-  setting_welcome_title: Hoş geldiniz blok başlığı
-  setting_welcome_on_homescreen: Hoşgeldiniz bloğunu ana ekranda göster
-  setting_work_packages_identifier_classic: Instance-wide numerical sequence (default)
-  setting_work_packages_identifier_classic_caption: 'Every work package gets a sequential number starting with 1 (for example, #1234). The numbers are unique within the instance and remain the same even if work packages are moved between projects.'
-  setting_work_packages_identifier_semantic: Project-based semantic identifiers (Beta)
-  setting_work_packages_identifier_semantic_caption: Every project has a unique project identifier prefixed to a number (for example, PROJ-11). The numbering of each project starts at 1. If a work package is moved to another project, a new identifier is generated but the old one will continue to function.
-  setting_work_package_list_default_highlighting_mode: Varsayılan vurgulama modu
-  setting_work_package_list_default_highlighted_attributes: Varsayılan satır içi vurgulanan özellikler
-  setting_working_days: İş günleri
+    manual: "Elle ayarla"
+    automatic: "Otomatik ayarla"
+  search_input_placeholder: "Ara ..."
+  setting_allowed_link_protocols: "İzin verilen bağlantı protokolleri"
+  setting_allowed_link_protocols_text_html: >-
+    Bu protokollerin iş paketi açıklamalarında, uzun metin alanlarında ve yorumlarda bağlantı olarak gösterilmesine izin verin. Örneğin, %{tel_code} veya %{element_code}. Her satıra bir protokol girin. <br/> %{http_code}, %{https_code} ve %{mailto_code} protokollerine her zaman izin verilir.
+  setting_capture_external_links: "Capture external links"
+  setting_capture_external_links_text: >
+    When enabled, all external links in formatted text will redirect through a warning page before leaving the application. This helps protect users from potentially malicious external websites.
+  setting_capture_external_links_require_login: "Require users to be logged in"
+  setting_capture_external_links_require_login_text: >
+    When enabled, users wanting to click on external links need to be logged in before being able to continue.
+  setting_after_first_login_redirect_url: "İlk giriş yönlendirmesi"
+  setting_after_first_login_redirect_url_text_html: >
+    Set a path to redirect users after their first login. If empty, redirects to the home page for the onboarding tour. <br/> Example: <code>/my/page</code>
+  setting_after_login_default_redirect_url: "Giriş yönlendirmesinden sonra"
+  setting_after_login_default_redirect_url_text_html: >
+    Set a default path to redirect users after login, if no back link was provided. Redirects to home page if not set. <br/> Example: <code>/my/page</code>
+  setting_apiv3_cors_title: "Çapraz Kaynak Paylaşımı (CORS)"
+  setting_apiv3_cors_enabled: "CORS'u etkinleştir"
+  setting_apiv3_cors_origins: "API V3 Kaynaklar Arası Kaynak Paylaşımı (CORS) izin verilen kaynaklar"
+  setting_apiv3_cors_origins_text_html: >
+    CORS etkinleştirilirse, bunlar Yojana API'ye erişmesine izin verilen kaynaklardır. <br/> Beklenen değerlerin nasıl belirtileceğini öğrenmek için lütfen  <a href="%{origin_link}" target="_blank">Kaynak başlığındaki Belgeleri </a> kontrol edin.
+  setting_apiv3_write_readonly_attributes: "Salt okunur özniteliklere yazma erişimi"
+  setting_apiv3_write_readonly_attributes_instructions: >
+    If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
+  setting_apiv3_write_readonly_attributes_warning: >
+    This setting has a use-case for e.g., importing data, but allows administrators to impersonate the creation of items as other users. All creation requests are being logged however with the true author.
+  setting_apiv3_write_readonly_attributes_additional: >
+    For more information on attributes and supported resources, please see the %{api_documentation_link}.
+  setting_apiv3_max_page_size: "En büyük API sayfası boyutu"
+  setting_apiv3_max_page_size_instructions: >
+    Set the maximum page size the API will respond with. It will not be possible to perform API requests that return more values on a single page.
+  setting_apiv3_max_page_size_warning: >
+    Please only change this value if you are sure why you need it. Setting to a high value will result in significant performance impacts, while a value lower than the per page options will cause errors in paginated views.
+  setting_apiv3_docs: "Belgeleme"
+  setting_apiv3_docs_enabled: "Dokümanlar sayfasını etkinleştir"
+  setting_apiv3_docs_enabled_instructions_html: >
+    Dokümanlar sayfası etkinleştirildiyse, <a href="%{link}" target="_blank">%{link}</a> altında APIv3 belgelerinin etkileşimli bir görünümünü elde edebilirsiniz.
+  setting_apiv3_docs_enabled_instructions_warning: >
+    Uyarı: API dokümantasyonunu canlı ortamda etkinleştirmek güvenlik riskleri ve olası veri kaybına neden olabilir. Bu ayarı sadece geliştirme ortamlarında kullanmanızı öneririz.
+  setting_attachment_whitelist: "Ek yükleme beyaz listesi"
+  setting_email_delivery_method: "E-posta teslim yöntemi"
+  setting_emails_salutation: "E-postalarda kullanıcıya şu şekilde hitap edin"
+  setting_oauth_allow_remapping_of_existing_users: "Allow remapping of existing users"
+  setting_sendmail_location: "Çalıştırılabilir sendmail aracının yolu"
+  setting_sendmail_arguments: "Arguments for sendmail"
+  setting_smtp_enable_starttls_auto: "STARTTLS varsa otomatik olarak kullan"
+  setting_smtp_ssl: "SSL bağlantısı kullan"
+  setting_smtp_address: "SMTP sunucusu"
+  setting_smtp_port: "SMTP port"
+  setting_smtp_authentication: "SMTP kimlik doğrulaması"
+  setting_smtp_user_name: "SMTP kullanıcı adı"
+  setting_smtp_password: "SMTP parolası"
+  setting_smtp_domain: "SMTP HELO alan adı"
+  setting_activity_days_default: "Proje faaliyetin de gösterilen gün sayısı istinaden"
+  setting_app_subtitle: "Uygulama alt başlığı"
+  setting_app_title: "Uygulama başlığı"
+  setting_attachment_max_size: "En büyük ek boyutu"
+  setting_show_work_package_attachments: "Ekleri varsayılan olarak dosyalar sekmesinde göster"
+  setting_antivirus_scan_mode: "Tarama modu"
+  setting_antivirus_scan_action: "Etkilenen dosya eylemi"
+  setting_autofetch_changesets: "Autofetch depo değişiklikleri"
+  setting_autologin: "Otomatik giriş"
+  setting_available_languages: "Mevcut diller"
+  setting_bcc_recipients: "Kör karbon kopya alıcıları (bcc)"
+  setting_brute_force_block_after_failed_logins: "Bu başarısız giriş denemesinden sonra kullanıcıyı engelle"
+  setting_brute_force_block_minutes: "Kullanıcının engellediği süre"
+  setting_cache_formatted_text: "Biçimlendirilmiş metni önbelleğe al"
+  setting_use_wysiwyg_description: "Tüm kullanıcılar için varsayılan olarak CKEditor5 WYSIWYG düzenleyiciyi etkinleştirmek için seçin. GFM Markdown için CKEditor sınırlı işleve sahiptir."
+  setting_column_options: "Varsayılan iş paketi listeleme sütunları"
+  setting_commit_fix_keywords: "Anahtar kelimeleri düzeltme"
+  setting_commit_logs_encoding: "İleti kodlamayı tamamla"
+  setting_commit_logtime_activity_id: "Kaydedilen zaman için faaliyet"
+  setting_commit_logtime_enabled: "Zaman kaydını etkinleştir"
+  setting_commit_ref_keywords: "Anahtar kelimeleri referansla"
+  setting_consent_time: "Rıza süresi"
+  setting_consent_info: "Rıza bilgi metni"
+  setting_consent_required: "Onay gerekli"
+  setting_consent_decline_mail: "Onay iletişim posta adresi"
+  setting_cross_project_work_package_relations: "Projeler arası iş paketi ilişkilerine izin ver"
+  setting_first_week_of_year: "Yılın ilk haftası"
+  setting_date_format: "Tarih"
+  setting_default_language: "Varsayılan dil"
+  setting_default_projects_modules: "Yeni projeler için varsayılan etkin modüller"
+  setting_default_projects_public: "Yeni projeler varsayılan olarak herkese açık"
+  setting_disable_password_login: "Parola kimlik doğrulamasını devre dışı bırak"
+  setting_diff_max_lines_displayed: "Görüntülenen fark satırlarının maksimum sayısı"
+  setting_omniauth_direct_login_provider: "Doğrudan oturum açma SSO sağlayıcısı"
+  setting_display_subprojects_work_packages: "Varsayılan olarak ana projenin iş listesinde alt proje iş paketlerini göster"
+  setting_duration_format: "Süre biçimi"
+  setting_duration_format_hours_only: "Sadece saat"
+  setting_duration_format_days_and_hours: "Gün ve saat"
+  setting_duration_format_instructions: "Bu, İş, Kalan iş ve Harcanan zaman sürelerinin nasıl görüntüleneceğini tanımlar."
+  setting_emails_footer: "E-posta altbilgi"
+  setting_emails_header: "E-posta üstbilgisi"
+  setting_email_login: "Giriş olarak e-posta kullanın"
+  setting_enabled_scm: "Etkinleştirilmiş SCM"
+  setting_enabled_projects_columns: "Columns in a projects list displayed by default"
+  setting_feeds_enabled: "Akışları etkinleştir"
+  setting_ical_enabled: "iCalendar aboneliklerini etkinleştir"
+  setting_feeds_limit: "Akış içeriği sınırı"
+  setting_file_max_size_displayed: "Satır içi görüntülenen maksimum metin dosyası boyutu"
+  setting_host_name: "Ana bilgisayar adı"
+  setting_collaborative_editing_hocuspocus_url: "Hocuspocus sunucu URL'si"
+  setting_collaborative_editing_hocuspocus_secret: "Hocuspocus sunucu sırrı"
+  setting_hours_per_day: "Gün başına saat"
+  setting_hours_per_day_explanation: >-
+    Bu, süreyi gün ve saat olarak görüntülerken neyin "gün" olarak kabul edildiğini tanımlar (örneğin, bir gün 8 saat ise, 32 saat 4 gün olacaktır).
+  setting_invitation_expiration_days: "Etkinleştirme e-posta kullanım süresi sonu"
+  setting_invitation_expiration_days_caption: "Etkinleştirme e-postasının süresinin dolduğu gün sayısı."
+  setting_work_package_done_ratio: "İlerleme hesaplama modu"
+  setting_work_package_done_ratio_field: "İş temelli"
+  setting_work_package_done_ratio_field_caption_html: >-
+    <i>Tamamlanma yüzdesi</i> serbestçe herhangi bir değere ayarlanabilir. <i>İş</i> için isteğe bağlı olarak bir değer girerseniz, <i>Kalan iş</i> otomatik olarak türetilecektir.
+  setting_work_package_done_ratio_status: "Durum temelli"
+  setting_work_package_done_ratio_status_caption_html: >-
+    Her durumun kendisiyle ilişkili bir <i>tamamlanma yüzdesi</i> değeri vardır. Durumun değiştirilmesi <i>tamamlanma yüzdesi</i>ni değiştirecektir.
+  setting_work_package_done_ratio_explanation_html: >
+    <b>İşe dayalı</b> modda, tamamlanma yüzdesi serbestçe ayarlanabilir. İsteğe bağlı olarak İş için bir değer girerseniz, Kalan iş otomatik olarak türetilecektir. <b>Durum tabanlı</b> modda, her durum kendisiyle ilişkilendirilmiş bir tamamlanma yüzdesi değerine sahiptir. Durumun değiştirilmesi tamamlanma yüzdesini değiştirecektir.
+  setting_work_package_properties: "İş paketi özellikleri"
+  setting_work_package_startdate_is_adddate: "Yeni iş paketlerinde şu anki tarihi başlangıç tarihi olarak kullan"
+  setting_work_packages_projects_export_limit: "İş paketleri / Projeler dışa aktarım limiti"
+  setting_journal_aggregation_time_minutes: "İçinde biriken kullanıcı işlemleri"
+  setting_log_requesting_user: "Tüm istekler için kullanıcı oturum açma, ad ve posta adresini girme"
+  setting_login_required: "Kimlik doğrulaması gerekli"
+  setting_login_required_caption: "İşaretlendiğinde, uygulamaya gelen tüm isteklerin kimliği doğrulanmalıdır."
+  setting_lost_password: "Parola sıfırlamayı etkinleştir"
+  setting_lost_password_caption: "İşaretlendiğinde, kullanıcıların kendi parolalarını sıfırlamalarına izin verir."
+  setting_mail_from: "Gönderici e-posta adresi"
+  setting_mail_handler_api_key: "API anahtarı"
+  setting_mail_handler_body_delimiters: "Bu satırlardan birinden sonra e-postaları kısaltın"
+  setting_mail_handler_body_delimiter_regex: "Bu düzenli ifade ile uyuşan e-postaları kırp"
+  setting_mail_handler_ignore_filenames: "Yoksayılan posta ekleri"
+  setting_new_project_user_role_id: "Bir proje oluşturan yönetici olmayan bir kullanıcıya verilen rolü"
+  setting_new_project_send_confirmation_email: "Send notification to author when creating a new project"
+  setting_new_project_notification_text: "Notification text"
+  setting_password_active_rules: "Aktif karakter sınıfları"
+  setting_password_count_former_banned: "Yeniden kullanımı yasaklanan en son kullanılan parola sayısı"
+  setting_password_days_valid: "Ardından, bir şifre değişikliğinin uygulanması için gereken gün sayısı"
+  setting_password_min_length: "Minimum uzunluk"
+  setting_password_min_adhered_rules: "Gerekli minimum sınıf sayısı"
+  setting_per_page_options: "Sayfa başı nesne seçenekleri"
+  setting_percent_complete_on_status_closed: "Durum kapatıldığında tamamlanma yüzdesi"
+  setting_percent_complete_on_status_closed_no_change: "Değişiklik yok"
+  setting_percent_complete_on_status_closed_no_change_caption_html: >-
+    <i>Tamamlanma yüzdesi</i> değeri, bir iş paketi kapatıldığında bile değişmeyecektir.
+  setting_percent_complete_on_status_closed_set_100p: "Otomatik olarak %100'e ayarla"
+  setting_percent_complete_on_status_closed_set_100p_caption: >-
+    Kapatılan bir iş paketi tamamlanmış kabul edilir.
+  setting_plain_text_mail: "Düz metin postası (HTML yok)"
+  setting_protocol: "Protokol"
+  setting_project_gantt_query: "Proje portföyü Gantt görünümü"
+  setting_project_gantt_query_text: "Gantt grafiğini görüntülemek için kullanılan sorguyu projeye genel bakış sayfasından değiştirebilirsiniz."
+  setting_security_badge_displayed: "Güvenlik rozeti göster"
+  setting_registration_footer: "Kayıt alt bilgisi"
+  setting_registration_footer_caption: "Bu metin kayıt sayfasının altbilgisinde görüntülenir. Seçilen her dil için metni biçimlendirmek üzere HTML düzenleyicisini kullanın."
+  setting_repositories_automatic_managed_vendor: "Otomatik depo satıcısı türü"
+  setting_repositories_encodings: "Depolar kodlamaları"
+  setting_repository_storage_cache_minutes: "Depo disk boyutu önbelleği"
+  setting_repository_checkout_display: "Ödeme talimatlarını göster"
+  setting_repository_checkout_base_url: "Satın alma tabanı URL'si"
+  setting_repository_checkout_text: "Ödeme talimat metni"
+  setting_repository_log_display_limit: "Dosya günlüğünde görüntülenen revizyonların maksimum sayısı"
+  setting_repository_truncate_at: "Depo tarayıcıda görüntülenen dosya sayısı üst sınırı"
+  setting_rest_api_enabled: "REST web hizmetini etkinleştir"
+  setting_self_registration: "Kendi kendine kayıt"
+  setting_self_registration_caption: >
+    Kullanıcılar için kendi kendine kayıt mekanizmasını seçin. Bazı seçenekler kullanıcıların bu sistemde kendi hesaplarını etkinleştirmelerine izin verdiğinden, seçtiğiniz ayara dikkat edin.
+  setting_self_registration_warning: >
+    Kullanıcı kendi hesaplarını etkinleştirebilecektir. Lütfen bunun onlara tüm genel projelere ve içeriklerine erişim sağlayacağını unutmayın. Lütfen herkese açık projelerde hiçbir hassas veya özel verinin ifşa edilmediğinden emin olun.
+  setting_self_registration_disabled: "Kapalı"
+  setting_self_registration_disabled_caption: >
+    Hiçbir hesap kendi başına kaydedilemez. Yalnızca yöneticiler ve yeni kullanıcı oluşturma genel iznine sahip kullanıcılar yeni hesaplar oluşturabilir.
+  setting_self_registration_activation_by_email: "E-posta ile hesap etkinleştirmesi"
+  setting_self_registration_activation_by_email_caption: >
+    Kullanıcılar kendi başlarına kaydolabilir ve e-posta adreslerini onayladıktan sonra hesaplarını etkinleştirebilirler. Yöneticilerin aktivasyon süreci üzerinde hiçbir denetim kontrolü yoktur.
+  setting_self_registration_automatic_activation: "Hesabı otomatik etkinleştir"
+  setting_self_registration_automatic_activation_caption: >
+    Kullanıcılar kendi başlarına kayıt olabilirler. Hesapları başka bir işlem yapılmadan hemen aktif hale gelir. Yöneticilerin etkinleştirme süreci üzerinde hiçbir denetim kontrolü yoktur.
+  setting_self_registration_manual_activation: "Elle hesap etkinleştirme"
+  setting_self_registration_manual_activation_caption: >
+    Kullanıcılar kendi başlarına kayıt olabilirler. Kullanıcı oluşturma veya yönetme genel iznine sahip bir yönetici veya kullanıcı onları etkinleştirene kadar hesapları beklemede durumundadır.
+  setting_session_ttl: "Session expiration time after inactivity"
+  setting_session_ttl_hint: "5'in altındaki değer, devre dışı gibi"
+  setting_session_ttl_enabled: "Oturum sona eriyor"
+  setting_start_of_week: "Hafta Başlangıcı"
+  setting_sys_api_enabled: "Depo yönetimi web hizmetini etkinleştir"
+  setting_sys_api_description: "Depo yönetimi web servisi depolara erişmek için entegrasyon ve kullanıcı yetkilendirmesi sağlar."
+  setting_time_format: "Zaman"
+  setting_total_percent_complete_mode: "Tamamlanma yüzdesinin hesabı hiyerarşi toplamları ile yapılır"
+  setting_total_percent_complete_mode_work_weighted_average: "İşe göre ağırlıklandırılmış"
+  setting_total_percent_complete_mode_work_weighted_average_caption_html: >-
+    <i>Toplam Tamamlanma Yüzdesi</i>, hiyerarşideki her bir iş paketinin <i>İşine</i> göre ağırlıklandırılacaktır. <i>İş</i> içermeyen iş paketleri göz ardı edilecektir.
+  setting_total_percent_complete_mode_simple_average: "Basit ortalama"
+  setting_total_percent_complete_mode_simple_average_caption_html: >-
+    <i>İş</i> göz ardı edilir ve <i>toplam tamamlanma yüzdesi</i>, hiyerarşideki iş paketlerinin <i> tamamlanma yüzdesinin</i> basit bir ortalaması olacak şekilde hesaplanacaktır.
+  setting_accessibility_mode_for_anonymous: "İsimsiz kullanıcılar için erişilebilirlik modunu etkinleştir"
+  setting_user_format: "Kullanıcı adı biçimi"
+  setting_user_default_timezone: "Kullanıcıların varsayılan saat dilimi"
+  setting_users_deletable_by_admins: "Yöneticiler kullanıcı hesaplarını silebilsin"
+  setting_users_deletable_by_self: "Kullanıcılar kendi hesaplarını silebilsin"
+  setting_welcome_text: "Hoş geldiniz blok metini"
+  setting_welcome_title: "Hoş geldiniz blok başlığı"
+  setting_welcome_on_homescreen: "Hoşgeldiniz bloğunu ana ekranda göster"
+  setting_work_package_list_default_highlighting_mode: "Varsayılan vurgulama modu"
+  setting_work_package_list_default_highlighted_attributes: "Varsayılan satır içi vurgulanan özellikler"
+  setting_working_days: "İş günleri"
   settings:
     errors:
       not_writable: The setting is not writable and can only be changed by a sysadmin.
       failed_to_update: 'Setting ''%{name}'' could not be updated: %{message}'
     authentication:
-      login: Oturum aç
-      registration: Üye Olma
-      sso: Tek Oturum Açma (SSO)
-      omniauth_direct_login_hint_html: 'Bu seçenek etkinse, oturum açma istekleri yapılandırılmış omniauth sağlayıcısına yönlendirilir. Oturum açma açılır menüsü ve oturum açma sayfası devre dışı bırakılacaktır. <br/> <strong>Not:</strong> Parola girişlerini de devre dışı bırakmadığınız sürece, bu seçenek etkinleştirildiğinde kullanıcılar <code>%{internal_path}</code> giriş sayfasından giriş yapabilirler.
-
-        '
-      remapping_existing_users_hint: 'If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the OpenProject instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
-
-        '
+      login: "Oturum aç"
+      registration: "Üye Olma"
+      sso: "Tek Oturum Açma (SSO)"
+      omniauth_direct_login_hint_html: >
+        Bu seçenek etkinse, oturum açma istekleri yapılandırılmış omniauth sağlayıcısına yönlendirilir. Oturum açma açılır menüsü ve oturum açma sayfası devre dışı bırakılacaktır. <br/> <strong>Not:</strong> Parola girişlerini de devre dışı bırakmadığınız sürece, bu seçenek etkinleştirildiğinde kullanıcılar <code>%{internal_path}</code> giriş sayfasından giriş yapabilirler.
+      remapping_existing_users_hint: >
+        If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the Yojana instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
     attachments:
       whitelist_text_html: 'Yüklenen dosyalar için geçerli dosya uzantılarının ve/veya mim türlerinin bir listesini tanımlayın. <br/> Dosya uzantılarını (ör. <code>%{ext_example}</code>) veya mime türlerini (ör. <code>%{mime_example}</code>) girin. <br/> Herhangi bir dosya türünün yüklenmesine izin vermek için boş bırakın. Birden çok değere izin verilir (her değer için bir satır).
 
@@ -5465,10 +5401,9 @@ tr:
       modes:
         clamav_socket_html: Enter the socket to the clamd daemon, e.g., %{example}
         clamav_host_html: Enter the hostname and port to the clamd daemon separated by colon. e.g., %{example}
-        description_html: 'Antivirüs tarayıcı entegrasyonunun çalışması gereken modu seçin. <br/> <ul> <li><strong>%{disabled_option}</strong>: Yüklenen dosyalar virüslere karşı taranmaz.</li> <li><strong>%{socket_option}</strong>: ClamAV''ı OpenProject ile aynı sunucuya kurdunuz ve tarama servisi clamd arka planda çalışıyor</li> <li><strong>%{host_option}</strong>: Dosyaları harici bir virüs tarama servisine aktarıyorsunuz.</li> </ul>
-
-          '
-    brute_force_prevention: Otomatik kullanıcı engelleme
+        description_html: >
+          Antivirüs tarayıcı entegrasyonunun çalışması gereken modu seçin. <br/> <ul> <li><strong>%{disabled_option}</strong>: Yüklenen dosyalar virüslere karşı taranmaz.</li> <li><strong>%{socket_option}</strong>: ClamAV'ı Yojana ile aynı sunucuya kurdunuz ve tarama servisi clamd arka planda çalışıyor</li> <li><strong>%{host_option}</strong>: Dosyaları harici bir virüs tarama servisine aktarıyorsunuz.</li> </ul>
+    brute_force_prevention: "Otomatik kullanıcı engelleme"
     date_format:
       first_date_of_week_and_year_set: 'Eğer %{day_of_week_setting_name} veya %{first_week_setting_name} seçeneklerinden biri ayarlanmışsa, ön uçta tutarsızlık yaşanmaması için diğer seçeneğin de ayarlanması gerekir.
 
@@ -5477,8 +5412,8 @@ tr:
 
         '
     experimental:
-      save_confirmation: Dikkat! Veri kaybı riski! Deneysel özellikleri sadece OpenProject kurulumunuzu bozmak ve tüm verilerini kaybetmeyi önemsemiyorsanız etkinleştirin.
-      warning_toast: Özellik bayrakları, halen geliştirilme aşamasında olan özellikleri etkinleştiren ayarlardır. Sadece test amaçlı kullanılmalıdırlar. Önemli veriler içeren OpenProject kurulumlarında asla etkinleştirilmemelidirler. Bu özellikler büyük olasılıkla verilerinizi bozacaktır. Bunları kendi sorumluluğunuzda kullanın.
+      save_confirmation: Dikkat! Veri kaybı riski! Deneysel özellikleri sadece Yojana kurulumunuzu bozmak ve tüm verilerini kaybetmeyi önemsemiyorsanız etkinleştirin.
+      warning_toast: Özellik bayrakları, halen geliştirilme aşamasında olan özellikleri etkinleştiren ayarlardır. Sadece test amaçlı kullanılmalıdırlar. Önemli veriler içeren Yojana kurulumlarında asla etkinleştirilmemelidirler. Bu özellikler büyük olasılıkla verilerinizi bozacaktır. Bunları kendi sorumluluğunuzda kullanın.
       feature_flags: Özellik bayrakları
     general: Genel
     highlighting:
@@ -5489,7 +5424,7 @@ tr:
         type: Türe göre tüm satır
         priority: Önceliğe göre tüm satır
     icalendar:
-      enable_subscriptions_text_html: Gerekli izinlere sahip kullanıcıların OpenProject takvimlerine abone olmalarını ve harici bir takvim istemcisi aracılığıyla iş paketi bilgilerine erişmelerini sağlar. <strong>Not:</strong> Bunu etkinleştirmeden önce olası güvenlik risklerini anlamak için lütfen <a href="%{link}" target="_blank">iCalendar abonelikleri</a> hakkında bilgi edinin.
+      enable_subscriptions_text_html: Gerekli izinlere sahip kullanıcıların Yojana takvimlerine abone olmalarını ve harici bir takvim istemcisi aracılığıyla iş paketi bilgilerine erişmelerini sağlar. <strong>Not:</strong> Bunu etkinleştirmeden önce olası güvenlik risklerini anlamak için lütfen <a href="%{link}" target="_blank">iCalendar abonelikleri</a> hakkında bilgi edinin.
     language_name_being_default: "%{language_name} (varsayılan)"
     notifications:
       events_explanation: Bir e-postanın hangi olay için gönderileceğini yönetir. İş paketleri, bildirimleri her kullanıcı için özel olarak yapılandırılabileceğinden bu listenin dışında tutulur.
@@ -5523,9 +5458,8 @@ tr:
               label: Side panel
               description: Add all the project attributes in a section inside the right side panel in the project overview.
     project_initiation_request:
-      header_description: 'OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
-
-        '
+      header_description: >
+        Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
       status:
         submitted: "%{wizard_name} has been submitted"
         submitted_description: Click the button below to go to the work package for the submission process.
@@ -5537,8 +5471,8 @@ tr:
         project_creation_wizard: Open project creation wizard
         project_mandate: Open project mandate
       blankslate:
-        title: Initiation request not enabled
-        description: OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard.
+        title: "Initiation request not enabled"
+        description: "Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard."
       disable_dialog:
         title: Disable project initiation request
         heading: Disable this project initiation request?
@@ -5643,81 +5577,64 @@ tr:
   status_deleted: silindi
   support:
     array:
-      sentence_connector: ve
-      skip_last_comma: yanlış
-  text_accessibility_hint: Erişilebilirlik modu, kör, engelli ve ya ciddi görme güçlüğü çeken kullanıcılar için tasarlandı. Bu modda yazı odaklı bileşenler özellikle vurgulanır. Backlogs modülünde bu özelliği henüz kullanamayacağınızı da belirtelim.
-  text_access_token_hint: Erişim belirteçleri, OpenProject içindeki kaynaklara harici uygulamalar erişimi vermenizi sağlar.
-  text_analyze: 'Daha fazla analiz: %{subject}'
-  text_are_you_sure: Emin misiniz?
-  open_link_in_a_new_tab: Bağlantıyı yeni sekmede aç
-  text_are_you_sure_continue: Devam etmek istediğinize emin misiniz?
-  text_are_you_sure_with_children: Sil iş paketi ve tüm alt çalışma paketlerini?
-  text_are_you_sure_with_project_custom_fields: Bu niteliğin silinmesi, tüm projelerdeki değerlerini de silecektir. Bunu yapmak istediğinizden emin misiniz?
-  text_are_you_sure_with_project_life_cycle_step: Deleting this phase will also delete its usages in all projects. Are you sure you want to do this?
-  text_assign_to_project: Projeye ata
-  text_form_configuration: 'İş paketi formunda görüntülenecek alanları özelleştirebilirsiniz. Tüm işlerinizde kullanabileceğiniz şekilde bunları gruplayabilirsiniz.
-
-    '
-  text_form_configuration_required_attribute: Öznitelik gerekli olarak işaretlendiği için her zaman gösterilir
-  text_caracters_maximum: En çok %{count} karakter.
-  text_caracters_minimum: En az %{count} karakter uzunluğunda olmalı.
-  text_comma_separated: Birden fazla değer kullanılabilir (virgülle ayrılmış).
-  text_comment_wiki_page: 'Yorum için wiki sayfası: %{page}'
-  text_custom_field_possible_values_info: Her değer için bir satır
-  text_custom_field_hint_activate_per_project: 'Özel alanları kullanırken: Özel alanların her proje için aktif yapılması gerektiğini unutmayın.
-
-    '
-  text_custom_field_hint_activate_per_project_and_type: 'Özel alanların iş paketi türü ve proje bazında aktive edilmesi gerekiyor.
-
-    '
-  text_project_custom_field_html: 'Enterprise sürümü, projelerin özel alanları için şu ek eklentileri ekleyecektir: <br> <ul> <li><b>Bir proje portföy görünümü oluşturmak için Projeler için özel alanları Proje listenize ekleyin</b></li > </ul>
-
-    '
-  text_custom_logo_instructions: 'The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×47px image. You can add as much spacing inside that image as you like.
-
-    '
-  text_custom_logo_mobile_instructions: 'The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×33px image. You can add as much spacing inside that image as you like.
-
-    '
-  text_custom_export_logo_instructions: 'Bu, PDF dışa aktarımlarınızda görünen logodur. Bir PNG veya JPEG görüntü dosyası olması gerekir. Şeffaf veya beyaz arka plan üzerinde siyah veya renkli bir logo önerilir.
-
-    '
-  text_custom_export_cover_instructions: 'Bu, PDF dışa aktarımlarınızda bir kapak sayfasının arka planında görünen görüntüdür. Yaklaşık 800 piksel genişlik ve 500 piksel yükseklik boyutunda bir PNG veya JPEG görüntü dosyası olması gerekir.
-
-    '
-  text_custom_export_footer_instructions: 'PDF exports will include a graphical element positioned to the left of the footer. This image must be a PNG or JPEG file with approximately 200 pixels in width.
-
-    '
-  label_custom_export_font_instructions: 'Upload and manage custom TrueType (.ttf) fonts used in your PDF exports. For best results, use matching files from the same font family. If no font is provided, the default NotoSans font will be used.
-
-    '
-  label_custom_export_images_instructions: 'Upload and manage custom image files used in your PDF exports.
-
-    '
-  text_custom_export_font_regular_instructions: 'Bu, normal metin için yazı tipi dosyasıdır. TTF biçiminde olması gerekir ve gereklidir.
-
-    '
-  text_custom_export_font_bold_instructions: 'Bu, kalın metin için yazı tipi dosyasıdır. TTF biçiminde olması gerekir.
-
-    '
-  text_custom_export_font_italic_instructions: 'Bu, italik metin için yazı tipi dosyasıdır. TTF biçiminde olması gerekir.
-
-    '
-  text_custom_export_font_bold_italic_instructions: 'Bu, kalın ve italik metin için yazı tipi dosyasıdır. TTF biçiminde olması gerekir.
-
-    '
-  text_custom_favicon_instructions: 'Bu, tarayıcı pencerenizde/sekmenizde sayfa başlığının yanında görünen küçük simgedir. Şeffaf bir arka plana sahip 32 x 32 piksel boyutunda kare şeklinde bir PNG görüntü dosyası olması gerekir.
-
-    '
-  text_custom_touch_icon_instructions: 'Bu, ana ekranınıza bir yer imi yerleştirdiğinizde cep telefonunuzda veya tabletinizde görünen simgedir. Kare şeklinde 180 x 180 piksel boyutunda bir PNG görüntü dosyası olması gerekir. Lütfen resmin arka planının şeffaf olmadığından emin olun, aksi takdirde iOS''ta kötü görünecektir.
-
-    '
-  text_database_allows_tsv: Veritabanı TSVector erişimi  (isteğe bağlı)
-  text_default_administrator_account_changed: Varsayılan yönetici hesabı değişti
-  text_default_encoding: 'Varsayılan: UTF-8'
-  text_destroy: Sil
-  text_destroy_with_associated: 'There are additional objects associated with the work package(s) that are to be deleted. Those objects are of the following types:'
-  text_destroy_what_to_do: Ne yapmak istiyorsun?
+      sentence_connector: "ve"
+      skip_last_comma: "yanlış"
+  text_accessibility_hint: "Erişilebilirlik modu, kör, engelli ve ya ciddi görme güçlüğü çeken kullanıcılar için tasarlandı. Bu modda yazı odaklı bileşenler özellikle vurgulanır. Backlogs modülünde bu özelliği henüz kullanamayacağınızı da belirtelim."
+  text_access_token_hint: "Erişim belirteçleri, Yojana içindeki kaynaklara harici uygulamalar erişimi vermenizi sağlar."
+  text_analyze: "Daha fazla analiz: %{subject}"
+  text_are_you_sure: "Emin misiniz?"
+  open_link_in_a_new_tab: "Bağlantıyı yeni sekmede aç"
+  text_are_you_sure_continue: "Devam etmek istediğinize emin misiniz?"
+  text_are_you_sure_with_children: "Sil iş paketi ve tüm alt çalışma paketlerini?"
+  text_are_you_sure_with_project_custom_fields: "Bu niteliğin silinmesi, tüm projelerdeki değerlerini de silecektir. Bunu yapmak istediğinizden emin misiniz?"
+  text_are_you_sure_with_project_life_cycle_step: "Deleting this phase will also delete its usages in all projects. Are you sure you want to do this?"
+  text_assign_to_project: "Projeye ata"
+  text_form_configuration: >
+    İş paketi formunda görüntülenecek alanları özelleştirebilirsiniz. Tüm işlerinizde kullanabileceğiniz şekilde bunları gruplayabilirsiniz.
+  text_form_configuration_required_attribute: "Öznitelik gerekli olarak işaretlendiği için her zaman gösterilir"
+  text_caracters_maximum: "En çok %{count} karakter."
+  text_caracters_minimum: "En az %{count} karakter uzunluğunda olmalı."
+  text_comma_separated: "Birden fazla değer kullanılabilir (virgülle ayrılmış)."
+  text_comment_wiki_page: "Yorum için wiki sayfası: %{page}"
+  text_custom_field_possible_values_info: "Her değer için bir satır"
+  text_custom_field_hint_activate_per_project: >
+    Özel alanları kullanırken: Özel alanların her proje için aktif yapılması gerektiğini unutmayın.
+  text_custom_field_hint_activate_per_project_and_type: >
+    Özel alanların iş paketi türü ve proje bazında aktive edilmesi gerekiyor.
+  text_project_custom_field_html: >
+    Enterprise sürümü, projelerin özel alanları için şu ek eklentileri ekleyecektir: <br> <ul> <li><b>Bir proje portföy görünümü oluşturmak için Projeler için özel alanları Proje listenize ekleyin</b></li > </ul>
+  text_custom_logo_instructions: >
+    The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×47px image. You can add as much spacing inside that image as you like.
+  text_custom_logo_mobile_instructions: >
+    The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×33px image. You can add as much spacing inside that image as you like.
+  text_custom_export_logo_instructions: >
+    Bu, PDF dışa aktarımlarınızda görünen logodur. Bir PNG veya JPEG görüntü dosyası olması gerekir. Şeffaf veya beyaz arka plan üzerinde siyah veya renkli bir logo önerilir.
+  text_custom_export_cover_instructions: >
+    Bu, PDF dışa aktarımlarınızda bir kapak sayfasının arka planında görünen görüntüdür. Yaklaşık 800 piksel genişlik ve 500 piksel yükseklik boyutunda bir PNG veya JPEG görüntü dosyası olması gerekir.
+  text_custom_export_footer_instructions: >
+    PDF exports will include a graphical element positioned to the left of the footer. This image must be a PNG or JPEG file with approximately 200 pixels in width.
+  label_custom_export_font_instructions: >
+    Upload and manage custom TrueType (.ttf) fonts used in your PDF exports. For best results, use matching files from the same font family. If no font is provided, the default NotoSans font will be used.
+  label_custom_export_images_instructions: >
+    Upload and manage custom image files used in your PDF exports.
+  text_custom_export_font_regular_instructions: >
+    Bu, normal metin için yazı tipi dosyasıdır. TTF biçiminde olması gerekir ve gereklidir.
+  text_custom_export_font_bold_instructions: >
+    Bu, kalın metin için yazı tipi dosyasıdır. TTF biçiminde olması gerekir.
+  text_custom_export_font_italic_instructions: >
+    Bu, italik metin için yazı tipi dosyasıdır. TTF biçiminde olması gerekir.
+  text_custom_export_font_bold_italic_instructions: >
+    Bu, kalın ve italik metin için yazı tipi dosyasıdır. TTF biçiminde olması gerekir.
+  text_custom_favicon_instructions: >
+    Bu, tarayıcı pencerenizde/sekmenizde sayfa başlığının yanında görünen küçük simgedir. Şeffaf bir arka plana sahip 32 x 32 piksel boyutunda kare şeklinde bir PNG görüntü dosyası olması gerekir.
+  text_custom_touch_icon_instructions: >
+    Bu, ana ekranınıza bir yer imi yerleştirdiğinizde cep telefonunuzda veya tabletinizde görünen simgedir. Kare şeklinde 180 x 180 piksel boyutunda bir PNG görüntü dosyası olması gerekir. Lütfen resmin arka planının şeffaf olmadığından emin olun, aksi takdirde iOS'ta kötü görünecektir.
+  text_database_allows_tsv: "Veritabanı TSVector erişimi  (isteğe bağlı)"
+  text_default_administrator_account_changed: "Varsayılan yönetici hesabı değişti"
+  text_default_encoding: "Varsayılan: UTF-8"
+  text_destroy: "Sil"
+  text_destroy_with_associated: "Silinecek iş paketleri ile birlikte ek nesne(ler) vardır. Bu nesneler aşağıdaki türdedir:"
+  text_destroy_what_to_do: "Ne yapmak istiyorsun?"
   text_diff_truncated: "... Bu fark, görüntülenebilecek maksimum boyutu aştığı için kesildi."
   text_email_delivery_not_configured: |-
     E-posta teslimi yapılandırılmamış ve bildirimler devre dışı bırakılmış.
@@ -5758,35 +5675,30 @@ tr:
   text_line_separated: Birden fazla değer kullanılabilir (her değer için bir satır).
   text_load_default_configuration: Varsayılan yapılandırmayı yükle
   text_no_roles_defined: Hiçbir rol tanımlanmadı.
-  text_no_access_tokens_configurable: Yapılandırılacak erişim belirteçleri yok.
-  text_no_configuration_data: Roller, türleri, çalışma paketi durumu ve iş akışı henüz yapılandırılmadı. Varsayılan yapılandırmayı yüklemeniz kesinlikle önerilir. Yüklendikten sonra onu değiştirebileceksiniz.
-  text_no_notes: Bu çalışma paketi için bir yorum bulunmuyor.
-  text_notice_too_many_values_are_inperformant: 'Not: Her sayfada 100''den fazla öğe gösterildiğinde, sayfa yükleme süresi artabilir.'
-  text_notice_security_badge_displayed_html: 'Not: Etkinleştirildiğinde, bu, <a href="%{information_panel_path}">%{information_panel_label}</a> yönetim panelinde ve giriş sayfasında yükleme durumunuzla birlikte bir rozet görüntüler. Sadece yöneticilere gösterilir. <br/> Rozet, mevcut OpenProject sürümünüzü resmi OpenProject sürüm veritabanına karşı kontrol eder ve sizi herhangi bir güncelleme veya bilinen güvenlik açığı hakkında uyarır. Çekin sağladığı, mevcut güncellemeleri sağlamak için hangi verilerin gerekli olduğu ve bu kontrolün nasıl devre dışı bırakılacağı hakkında daha fazla bilgi için lütfen <a href="%{more_info_url}">yapılandırma belgelerini</a> ziyaret edin.
-
-    '
-  text_own_membership_delete_confirmation: İzinlerinizden bazılarını veya tümünü kaldırmak üzeresiniz ve bundan sonra bu projeyi düzenleyemeyebilirsiniz. Devam etmek istediğine emin misin?
-  text_permanent_delete_confirmation_checkbox_label: Bu silme işleminin geri alınamayacağını anlıyorum
-  text_permanent_remove_confirmation_checkbox_label: I understand that this removal cannot be reversed
-  text_plugin_assets_writable: Plugin assets dizini yazılabilir
+  text_no_access_tokens_configurable: "Yapılandırılacak erişim belirteçleri yok."
+  text_no_configuration_data: "Roller, türleri, çalışma paketi durumu ve iş akışı henüz yapılandırılmadı. Varsayılan yapılandırmayı yüklemeniz kesinlikle önerilir. Yüklendikten sonra onu değiştirebileceksiniz."
+  text_no_notes: "Bu çalışma paketi için bir yorum bulunmuyor."
+  text_notice_too_many_values_are_inperformant: "Not: Her sayfada 100'den fazla öğe gösterildiğinde, sayfa yükleme süresi artabilir."
+  text_notice_security_badge_displayed_html: >
+    Not: Etkinleştirildiğinde, bu, <a href="%{information_panel_path}">%{information_panel_label}</a> yönetim panelinde ve giriş sayfasında yükleme durumunuzla birlikte bir rozet görüntüler. Sadece yöneticilere gösterilir. <br/> Rozet, mevcut Yojana sürümünüzü resmi Yojana sürüm veritabanına karşı kontrol eder ve sizi herhangi bir güncelleme veya bilinen güvenlik açığı hakkında uyarır. Çekin sağladığı, mevcut güncellemeleri sağlamak için hangi verilerin gerekli olduğu ve bu kontrolün nasıl devre dışı bırakılacağı hakkında daha fazla bilgi için lütfen <a href="%{more_info_url}">yapılandırma belgelerini</a> ziyaret edin.
+  text_own_membership_delete_confirmation: "İzinlerinizden bazılarını veya tümünü kaldırmak üzeresiniz ve bundan sonra bu projeyi düzenleyemeyebilirsiniz. Devam etmek istediğine emin misin?"
+  text_permanent_delete_confirmation_checkbox_label: "Bu silme işleminin geri alınamayacağını anlıyorum"
+  text_permanent_remove_confirmation_checkbox_label: "I understand that this removal cannot be reversed"
+  text_plugin_assets_writable: "Plugin assets dizini yazılabilir"
   text_powered_by: "%{link} tarafından destekleniyor"
-  text_project_identifier_info: Yalnızca küçük harfler (a-z), sayılar, tire ve alt tire kullanılabilir ve mutlaka küçük harfle başlamalıdır.
-  text_project_identifier_description: The project identifier is prepended to all work package IDs. If the identifier is "PROJ" for example, the work package identifier will be "PROJ-12" or "PROJ-246".
-  text_project_identifier_url_description: The project identifier is included in the URL of the project.
-  text_project_identifier_handle_format: Must start with a letter and contain only uppercase letters, numbers, and underscores (max 10 characters).
-  text_project_identifier_format: Must start with a lowercase letter. Only lowercase letters (a-z), numbers, dashes and underscores are allowed.
-  text_reassign: 'İş paketine yeniden atama:'
-  text_regexp_multiline: Regex (düzenli ifade) birden çok satırlı modda uygulanır. Örneğin, ^---\s+
-  text_rename_wiki_page: Rename wiki page
-  text_repository_usernames_mapping: Depo günlüklerinde bulunan her kullanıcı adına eşlenen OpenProject kullanıcısını seçin veya güncelleyin. Aynı OpenProject ve depo kullanıcı adına veya e-postasına sahip kullanıcılar otomatik olarak eşleştirilir.
-  text_status_changed_by_changeset: Uygulanan Değişiklik listesi %{value}.
-  text_table_difference_description: Bu tabloda tek %{entries} girdisi gösteriliyor. İki girdi arasındaki farkı görmek için, tablodaki ilgili alanların üzerindeki seçim kutularını işaretlemelisiniz. Seçiminizden sonra tablonun altındakı tuşa tıklayarak farkları görebilirsiniz.
-  text_time_logged_by_changeset: Uygulanan Değişiklik listesi %{value}.
-  text_tip_work_package_begin_day: bu gün başlayan iş paketleri
-  text_tip_work_package_begin_end_day: bugün başlayıp biten iş paketleri
-  text_tip_work_package_end_day: bugün biten iş paketleri
-  text_type_no_workflow: Bu tür için tanımlanmış bir iş akışı yok
-  text_unallowed_characters: Yasaklı karakterler
+  text_project_identifier_info: "Yalnızca küçük harfler (a-z), sayılar, tire ve alt tire kullanılabilir ve mutlaka küçük harfle başlamalıdır."
+  text_reassign: "İş paketine yeniden atama:"
+  text_regexp_info: "ör ^[A-Z0-9]+$"
+  text_regexp_multiline: 'Regex (düzenli ifade) birden çok satırlı modda uygulanır. Örneğin, ^---\s+'
+  text_repository_usernames_mapping: "Depo günlüklerinde bulunan her kullanıcı adına eşlenen Yojana kullanıcısını seçin veya güncelleyin. Aynı Yojana ve depo kullanıcı adına veya e-postasına sahip kullanıcılar otomatik olarak eşleştirilir."
+  text_status_changed_by_changeset: "Uygulanan Değişiklik listesi %{value}."
+  text_table_difference_description: "Bu tabloda tek %{entries} girdisi gösteriliyor. İki girdi arasındaki farkı görmek için, tablodaki ilgili alanların üzerindeki seçim kutularını işaretlemelisiniz. Seçiminizden sonra tablonun altındakı tuşa tıklayarak farkları görebilirsiniz."
+  text_time_logged_by_changeset: "Uygulanan Değişiklik listesi %{value}."
+  text_tip_work_package_begin_day: "bu gün başlayan iş paketleri"
+  text_tip_work_package_begin_end_day: "bugün başlayıp biten iş paketleri"
+  text_tip_work_package_end_day: "bugün biten iş paketleri"
+  text_type_no_workflow: "Bu tür için tanımlanmış bir iş akışı yok"
+  text_unallowed_characters: "Yasaklı karakterler"
   text_user_invited: Kullanıcı davet edildi ve kayıt bekliyor.
   text_user_wrote: "%{value} demiş ki:"
   text_wrote: yazdı
@@ -5848,18 +5760,17 @@ tr:
     help_and_support: Yardım ve Destek
   total_progress: Toplam ilerleme
   user:
-    all: tüm
-    active: etkin
-    activate: Etkinleştir
-    activate_and_reset_failed_logins: Başarısız oturum açma işlemlerinin kilidini aç ve sıfırla
-    authentication_provider: Kimlik doğrulama sağlayıcısı
-    identity_url_text: The internal unique identifier provided by the authentication provider.
-    authentication_settings_disabled_due_to_external_authentication: 'Bu kullanıcı harici bir kimlik doğrulama sağlayıcısı aracılığıyla kimlik doğrulaması yapar, böylece OpenProject''de değiştirilecek parola yoktur.
-
-      '
-    authorization_rejected: Oturum açma izniniz yok.
-    assign_random_password: Rastgele parola atayın (kullanıcıya e-posta ile gönderilir)
-    blocked: geçici olarak kilitlendi
+    all: "tüm"
+    active: "etkin"
+    activate: "Etkinleştir"
+    activate_and_reset_failed_logins: "Başarısız oturum açma işlemlerinin kilidini aç ve sıfırla"
+    authentication_provider: "Kimlik doğrulama sağlayıcısı"
+    identity_url_text: "The internal unique identifier provided by the authentication provider."
+    authentication_settings_disabled_due_to_external_authentication: >
+      Bu kullanıcı harici bir kimlik doğrulama sağlayıcısı aracılığıyla kimlik doğrulaması yapar, böylece Yojana'de değiştirilecek parola yoktur.
+    authorization_rejected: "Oturum açma izniniz yok."
+    assign_random_password: "Rastgele parola atayın (kullanıcıya e-posta ile gönderilir)"
+    blocked: "geçici olarak kilitlendi"
     blocked_num_failed_logins:
       one: geçici olarak kilitlenmiştir (bir başarısız giriş denemesi)
       other: geçici olarak kilitlenmiştir (%{count} başarısız giriş denemeleri)
@@ -5890,7 +5801,17 @@ tr:
   note_password_login_disabled_link: Password login has been disabled through a [configuration setting](configuration_url).
   warning: Uyarı
   warning_attachments_not_saved: "%{count} dosya (lar) kaydedilemedi."
-  warning_imminent_user_limit_html: 'You invited more users than are supported by your current plan. Invited users may not be able to join your OpenProject environment. Please [upgrade your plan](upgrade_url) or block existing users in order to allow invited and registered users to join.
+  warning_imminent_user_limit: >
+    Mevcut planınız tarafından desteklenenden daha fazla kullanıcı davet ettiniz. Davet edilen kullanıcılar Yojana ortamınıza katılamayabilir. Lütfen davet edilen ve kayıtlı kullanıcıların katılmasına izin vermek için <a href="%{upgrade_url}"> planınızı yükseltin </a> veya mevcut kullanıcıları engelleyin.
+  warning_registration_token_expired: |
+    Etkinleştirme e-postası süresi doldu. Sana yeni bir %{email} gönderdik. Hesabınızı etkinleştirmek için linki tıklayınız.
+  warning_user_limit_reached: >
+    Adding additional users will exceed the current limit. Please contact an administrator to increase the user limit to ensure external users are able to access this instance.
+  warning_user_limit_reached_admin: >
+    Ek kullanıcı eklenmesi mevcut sınırı aşacaktır. Harici kullanıcıların bu kuruluma erişebilmesinden emin olmak için <a href="%{upgrade_url}">planınızı yükseltin</a>.
+  warning_user_limit_reached_instructions: >
+    Kullanıcı sınırınıza ulaştınız (%{current}/%{max} aktif kullanıcılar). Enterprise sürüm planınızı yükseltmek ve ek kullanıcılar eklemek için lütfen sales@girishm.info adresine başvurun.
+  warning_protocol_mismatch_html: >
 
     '
   warning_registration_token_expired: 'Etkinleştirme e-postası süresi doldu. Sana yeni bir %{email} gönderdik. Hesabınızı etkinleştirmek için linki tıklayınız.
@@ -6190,56 +6111,48 @@ tr:
       non_confidential: Gizli olmayan
       default_scopes: "(Varsayılan kapsamlar)"
       instructions:
-        enabled: Bu uygulamayı etkinleştirerek kullanıcıların bununla yetkilendirme bağışları gerçekleştirmesine izin verin.
-        name: Uygulamanızın adı. Bu, yetkilendirildikten sonra diğer kullanıcılara gösterilecektir.
-        redirect_uri_html: 'İzin verilen URL''ler yetkili kullanıcılar adresine yönlendirilebilir. Her satıra bir giriş. <br/> Bir masaüstü uygulamasına kaydoluyorsanız, aşağıdaki URL''yi kullanın.
-
-          '
-        confidential: Uygulamanın, müşteri sırrının gizli tutulabileceği yerlerde kullanılıp kullanılmayacağını kontrol edin. Yerel mobil uygulamalar ve Tek Sayfa Uygulamaları gizli değildir.
-        scopes: Uygulamanın erişmesine izin vermek istediğiniz kapsamları kontrol edin. Kapsam işaretli değilse, api_v3 olduğu kabul edilir.
-        client_credential_user_id: İstemciler bu uygulamayı kullandıklarında kimliğe bürünmek için isteğe bağlı kullanıcı kimliği. Yalnızca genel erişime izin vermek için boş bırakın
-        register_intro: OpenProject için bir OAuth API istemci uygulaması geliştiriyorsanız, tüm kullanıcıların kullanması için bu formu kullanarak kayıt olabilirsiniz.
-        default_scopes: ''
+        enabled: "Enable this application, allowing users to perform authorization grants with it."
+        name: "Uygulamanızın adı. Bu, yetkilendirildikten sonra diğer kullanıcılara gösterilecektir."
+        redirect_uri_html: >
+          İzin verilen URL'ler yetkili kullanıcılar adresine yönlendirilebilir. Her satıra bir giriş. <br/> Bir masaüstü uygulamasına kaydoluyorsanız, aşağıdaki URL'yi kullanın.
+        confidential: "Uygulamanın, müşteri sırrının gizli tutulabileceği yerlerde kullanılıp kullanılmayacağını kontrol edin. Yerel mobil uygulamalar ve Tek Sayfa Uygulamaları gizli değildir."
+        scopes: "Uygulamanın erişmesine izin vermek istediğiniz kapsamları kontrol edin. Kapsam işaretli değilse, api_v3 olduğu kabul edilir."
+        client_credential_user_id: "İstemciler bu uygulamayı kullandıklarında kimliğe bürünmek için isteğe bağlı kullanıcı kimliği. Yalnızca genel erişime izin vermek için boş bırakın"
+        register_intro: "Yojana için bir OAuth API istemci uygulaması geliştiriyorsanız, tüm kullanıcıların kullanması için bu formu kullanarak kayıt olabilirsiniz."
+        default_scopes: ""
     header:
       builtin_applications: Yerleşik OAuth uygulamaları
       other_applications: Diğer OAuth uygulamaları
     empty_application_lists: Hiçbir OAuth uygulaması kaydedilmemiştir.
-    client_id: İstemci ID
-    client_secret_notice: 'Müşterinin sırrını basabileceğimiz tek zaman bu, lütfen not edin ve güvende tutun. Parola olarak değerlendirilmeli ve daha sonra OpenProject tarafından alınamaz.
-
-      '
+    client_id: "İstemci ID"
+    client_secret_notice: >
+      Müşterinin sırrını basabileceğimiz tek zaman bu, lütfen not edin ve güvende tutun. Parola olarak değerlendirilmeli ve daha sonra Yojana tarafından alınamaz.
     authorization_dialog:
       authorize: Yetkilendir
       cancel: İptal et ve izni reddet.
       prompt_html: Hesabınızı <strong>%{application_name}</strong> kullanmak için <em>%{login}</em>?yetkilendirilsin mi?
       title: "%{application_name} adlı kişiyi yetkilendir"
-      wants_to_access_html: 'Bu uygulama OpenProject hesabınıza erişim istiyor. <br/> <strong> Aşağıdaki izinleri istedi: </strong>
-
-        '
+      wants_to_access_html: >
+        Bu uygulama Yojana hesabınıza erişim istiyor. <br/> <strong> Aşağıdaki izinleri istedi: </strong>
     scopes:
-      api_v3: Tam API v3 erişimi
-      api_v3_text: Uygulama, sizin adınıza işlem yapmak için OpenProject API v3'e tam okuma ve yazma erişimi alacaktır.
-      mcp: Access to MCP
-      mcp_text: Application will receive access to the OpenProject MCP endpoints. They are a limited subset of APIv3, that's tailored for usage with AI agents.
+      api_v3: "Tam API v3 erişimi"
+      api_v3_text: "Uygulama, sizin adınıza işlem yapmak için Yojana API v3'e tam okuma ve yazma erişimi alacaktır."
     grants:
       created_date: Tarihinde onaylandı
       scopes: İzinler
       successful_application_revocation: "%{application_name} uygulamasının iptali başarılı oldu."
       none_given: Hiçbir OAuth uygulamasına kullanıcı hesabınıza erişim izni verilmedi.
     flows:
-      authorization_code: Yetki kodu akışı
-      client_credentials: Müşteri kimlik bilgisi akışı
-    client_credentials: Müşteri kimlik bilgileri için kullanılan kullanıcı
-    client_credentials_impersonation_set_to: İstemci kimlik bilgileri kullanıcısı olarak ayarlandı
-    client_credentials_impersonation_warning: 'Not: Bu uygulamadaki ''Müşteri kimlik bilgileri'' akışını kullanan müşteriler bu kullanıcının haklarına sahip olacak'
-    client_credentials_impersonation_html: 'Varsayılan olarak, OpenProject,%{authorization_code_flow_link}. yoluyla OAuth 2.0 yetkilendirmesi sağlar. İsteğe bağlı olarak%{client_credentials_flow_link} özelliğini etkinleştirebilirsiniz, ancak kendi adına istekleri gerçekleştirilecek bir kullanıcı sağlamanız gerekir.
-
-      '
-    confirm_revoke_my_application:
-      one: Do you really want to remove this application? This will revoke one token active for it.
-      other: Do you really want to remove this application? This will revoke %{count} tokens active for it.
-    authorization_error: Bir yetkilendirme hatası oluştu.
-    my_registered_applications: OAuth uygulamalarını kayıtedin
+      authorization_code: "Yetki kodu akışı"
+      client_credentials: "Müşteri kimlik bilgisi akışı"
+    client_credentials: "Müşteri kimlik bilgileri için kullanılan kullanıcı"
+    client_credentials_impersonation_set_to: "İstemci kimlik bilgileri kullanıcısı olarak ayarlandı"
+    client_credentials_impersonation_warning: "Not: Bu uygulamadaki 'Müşteri kimlik bilgileri' akışını kullanan müşteriler bu kullanıcının haklarına sahip olacak"
+    client_credentials_impersonation_html: >
+      Varsayılan olarak, Yojana,%{authorization_code_flow_link}. yoluyla OAuth 2.0 yetkilendirmesi sağlar. İsteğe bağlı olarak%{client_credentials_flow_link} özelliğini etkinleştirebilirsiniz, ancak kendi adına istekleri gerçekleştirilecek bir kullanıcı sağlamanız gerekir.
+    authorization_error: "Bir yetkilendirme hatası oluştu."
+    revoke_my_application_confirmation: "Bu uygulamayı gerçekten kaldırmak istiyor musunuz? Bu, %{token_count} aktif olanını iptal edecektir."
+    my_registered_applications: "OAuth uygulamalarını kayıtedin"
   oauth_client:
     urn_connection_status:
       connected: Bağlandı
@@ -6252,41 +6165,36 @@ tr:
       label_request_token: Belirteç iste
       label_refresh_token: Belirteci yenile
     errors:
-      oauth_authorization_code_grant_had_errors: OAuth2 Yetkilendirme izni başarısız
-      oauth_reported: OAuth2 sağlayıcısı bildirildi
-      oauth_returned_error: OAuth2 bir hata döndürdü
-      oauth_returned_json_error: OAuth2 bir JSON hatası döndürdü
-      oauth_returned_http_error: OAuth2 bir ağ hatası döndürdü
-      oauth_returned_standard_error: OAuth2 bir dahili hata döndürdü
-      wrong_token_type_returned: OAuth2 yanlış türde bir belirteç döndürdü ve AccessToken::Bearer bekleniyor
-      oauth_issue_contact_admin: OAuth2 bir hata bildirdi. Lütfen sistem yöneticinize başvurun.
-      oauth_client_not_found: OAuth2 istemcisi 'geri arama' bitiş noktasında bulunamadı (redirect_uri).
-      refresh_token_called_without_existing_token: 'Dahili hata: Daha önce var olan bir belirteç olmadan fresh_token olarak adlandırıldı.
-
-        '
-      refresh_token_updated_failed: OAuthClientToken güncellemesi sırasında hata
-      oauth_client_not_found_explanation: 'Bu hata, OpenProject''te client_id ve client_secret''i güncelledikten sonra, ancak OAuth2 sağlayıcısındaki ''Dönüş URI''sı'' alanını güncellemedikten sonra görünür.
-
-        '
-      oauth_code_not_present: OAuth2 "kodu", "geri arama" bitiş noktasında (redirect_uri) bulunamadı.
-      oauth_code_not_present_explanation: 'OAuth2 sağlayıcısında yanlış yanıt_türü seçtiyseniz bu hata görünür. Yanıt_türü ''kod'' veya benzeri olmalıdır.
-
-        '
-      oauth_state_not_present: OAuth2 "durumu", "geri arama" bitiş noktasında (redirect_uri) bulunamadı.
-      oauth_state_not_present_explanation: '''Durum'', OpenProject''e başarılı bir OAuth2 yetkilendirmesinden sonra nereye devam edileceğini belirtmek için kullanılır. Eksik bir "durum", kurulum sırasında görünebilen dahili bir hatadır. Lütfen sistem yöneticinize başvurun.
-
-        '
+      oauth_authorization_code_grant_had_errors: "OAuth2 Yetkilendirme izni başarısız"
+      oauth_reported: "OAuth2 sağlayıcısı bildirildi"
+      oauth_returned_error: "OAuth2 bir hata döndürdü"
+      oauth_returned_json_error: "OAuth2 bir JSON hatası döndürdü"
+      oauth_returned_http_error: "OAuth2 bir ağ hatası döndürdü"
+      oauth_returned_standard_error: "OAuth2 bir dahili hata döndürdü"
+      wrong_token_type_returned: "OAuth2 yanlış türde bir belirteç döndürdü ve AccessToken::Bearer bekleniyor"
+      oauth_issue_contact_admin: "OAuth2 bir hata bildirdi. Lütfen sistem yöneticinize başvurun."
+      oauth_client_not_found: "OAuth2 istemcisi 'geri arama' bitiş noktasında bulunamadı (redirect_uri)."
+      refresh_token_called_without_existing_token: >
+        Dahili hata: Daha önce var olan bir belirteç olmadan fresh_token olarak adlandırıldı.
+      refresh_token_updated_failed: "OAuthClientToken güncellemesi sırasında hata"
+      oauth_client_not_found_explanation: >
+        Bu hata, Yojana'te client_id ve client_secret'i güncelledikten sonra, ancak OAuth2 sağlayıcısındaki 'Dönüş URI'sı' alanını güncellemedikten sonra görünür.
+      oauth_code_not_present: "OAuth2 \"kodu\", \"geri arama\" bitiş noktasında (redirect_uri) bulunamadı."
+      oauth_code_not_present_explanation: >
+        OAuth2 sağlayıcısında yanlış yanıt_türü seçtiyseniz bu hata görünür. Yanıt_türü 'kod' veya benzeri olmalıdır.
+      oauth_state_not_present: "OAuth2 \"durumu\", \"geri arama\" bitiş noktasında (redirect_uri) bulunamadı."
+      oauth_state_not_present_explanation: >
+        'Durum', Yojana'e başarılı bir OAuth2 yetkilendirmesinden sonra nereye devam edileceğini belirtmek için kullanılır. Eksik bir "durum", kurulum sırasında görünebilen dahili bir hatadır. Lütfen sistem yöneticinize başvurun.
       rack_oauth2:
-        client_secret_invalid: İstemci sırrı geçersiz (client_secret_invalid)
-        invalid_request: 'OAuth2 Yetkilendirme Sunucusu ''invalid_request'' ile yanıt verdi. Bu hata, birden çok kez yetkilendirmeye çalıştığınızda veya teknik sorunlarda ortaya çıkar.
-
-          '
-        invalid_response: OAuth2 Yetkilendirme Sunucusu geçersiz bir yanıt sağladı (invalid_response)
-        invalid_grant: 'OAuth2 Yetkilendirme Sunucusu, yeniden yetkilendirme yapmanızı istiyor (invalid_grant). '
-        invalid_client: OAuth2 Yetkilendirme Sunucusu, OpenProject'i (invalid_client) tanımıyor.
-        unauthorized_client: OAuth2 Yetkilendirme Sunucusu, izin türünü (unauthorized_client) reddediyor
-        unsupported_grant_type: OAuth2 Yetkilendirme Sunucusu, yeniden yetkilendirme yapmanızı istiyor (unsupported_grant_type).
-        invalid_scope: İstenen kaynağa (invalid_scope) erişmenize izin verilmiyor.
+        client_secret_invalid: "İstemci sırrı geçersiz (client_secret_invalid)"
+        invalid_request: >
+          OAuth2 Yetkilendirme Sunucusu 'invalid_request' ile yanıt verdi. Bu hata, birden çok kez yetkilendirmeye çalıştığınızda veya teknik sorunlarda ortaya çıkar.
+        invalid_response: "OAuth2 Yetkilendirme Sunucusu geçersiz bir yanıt sağladı (invalid_response)"
+        invalid_grant: "OAuth2 Yetkilendirme Sunucusu, yeniden yetkilendirme yapmanızı istiyor (invalid_grant). "
+        invalid_client: "OAuth2 Yetkilendirme Sunucusu, Yojana'i (invalid_client) tanımıyor."
+        unauthorized_client: "OAuth2 Yetkilendirme Sunucusu, izin türünü (unauthorized_client) reddediyor"
+        unsupported_grant_type: "OAuth2 Yetkilendirme Sunucusu, yeniden yetkilendirme yapmanızı istiyor (unsupported_grant_type)."
+        invalid_scope: "İstenen kaynağa (invalid_scope) erişmenize izin verilmiyor."
   http:
     request:
       failed_authorization: Sunucu tarafı isteğ kendi kendini yetkilendirmede başarısız oldu.
@@ -6296,18 +6204,18 @@ tr:
   you: sen
   link: bağlantı
   plugin_openproject_auth_plugins:
-    name: OpenProject Auth Eklentileri
-    description: OpenProject'te kimlik doğrulama için OmniAuth entegrasyonu.
+    name: "Yojana Auth Eklentileri"
+    description: "Integration of OmniAuth strategy providers for authentication in Yojana."
   plugin_openproject_auth_saml:
-    name: OmniAuth SAML / Tek Oturum Açma
-    description: OmniAuth SAML sağlayıcısını OpenProject'e ekler
+    name: "OmniAuth SAML / Tek Oturum Açma"
+    description: "OmniAuth SAML sağlayıcısını Yojana'e ekler"
   enterprise_plans:
     legacy_enterprise: Kurumsal Plan
   token:
     hashed_token:
       display_value_placeholder: "***"
   external_link_warning:
-    title: OpenProject'ten Ayrıl
-    warning_message: OpenProject'ten ayrılmak ve harici bir web sitesini ziyaret etmek üzeresiniz. Lütfen harici web sitelerinin bizim kontrolümüz altında olmadığını ve farklı gizlilik ve güvenlik politikalarına sahip olabileceğini unutmayın.
-    continue_message: Aşağıdaki harici bağlantıya gitmek istediğinizden emin misiniz?
-    continue_button: Harici web sitesine devam edin
+    title: "Leaving Yojana"
+    warning_message: "You are about to leave Yojana and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies."
+    continue_message: "Are you sure you want to proceed to the following external link?"
+    continue_button: "Continue to external website"

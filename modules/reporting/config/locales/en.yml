@@ -29,8 +29,8 @@
 ---
 en:
   plugin_openproject_reporting:
-    name: "OpenProject Reporting"
-    description: "This plugin allows creating custom cost reports with filtering and grouping created by the OpenProject Time and costs plugin."
+    name: "Yojana Reporting"
+    description: "This plugin allows creating custom cost reports with filtering and grouping created by the Yojana Time and costs plugin."
 
   button_save_report_as: "Save report as..."
 

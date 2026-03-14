@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -362,13 +362,13 @@ lt:
         unknown_name: Unknown
     mcp_configurations:
       index:
-        description: The model context protocol allows AI agents to provide its users with tools and resources exposed by this OpenProject instance. This feature is still in beta.
-        resources_heading: Resources
-        resources_description: OpenProject implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url).
-        resources_submit: Update resources
-        tools_heading: Tools
-        tools_description: OpenProject implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url).
-        tools_submit: Update tools
+        description: "The model context protocol allows AI agents to provide its users with tools and resources exposed by this Yojana instance."
+        resources_heading: "Resources"
+        resources_description: "Yojana implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
+        resources_submit: "Update resources"
+        tools_heading: "Tools"
+        tools_description: "Yojana implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url)."
+        tools_submit: "Update tools"
       multi_update:
         success: MCP configurations were updated successfully.
       server_form:
@@ -411,31 +411,31 @@ lt:
       edit:
         label_delete_scim_client: Delete SCIM client
       form:
-        auth_provider_description: This is the service that users added by the SCIM provider will use to authenticate in OpenProject.
-        authentication_method_description_html: This is how the SCIM client authenticates at OpenProject. Please ensure that OAuth tokens include the <code>scim_v2</code> scope.
-        description: Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options.
-        jwt_sub_description: For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case.
-        name_description: Choose a name that will help other admins better understand why this client was configured.
+        auth_provider_description: "This is the service that users added by the SCIM provider will use to authenticate in Yojana."
+        authentication_method_description_html: "This is how the SCIM client authenticates at Yojana. Please ensure that OAuth tokens include the <code>scim_v2</code> scope."
+        description: "Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options."
+        jwt_sub_description: "For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case."
+        name_description: "Choose a name that will help other admins better understand why this client was configured."
       index:
-        description: SCIM clients configured here are able to interact with OpenProject SCIM server API to provision, update, and deprovision user accounts and groups.
-        label_create_button: Add SCIM client
+        description: "SCIM clients configured here are able to interact with Yojana SCIM server API to provision, update, and deprovision user accounts and groups."
+        label_create_button: "Add SCIM client"
       new:
         title: New SCIM client
       revoke_static_token_dialog_component:
-        confirm_button: Atšaukti
-        title: Revoke static token
-        heading: Ar tikrai norite atšaukti šį raktą?
-        description: The SCIM client that uses this token will no longer be able to access OpenProject's SCIM server API.
+        confirm_button: "Atšaukti"
+        title: "Revoke static token"
+        heading: "Ar tikrai norite atšaukti šį raktą?"
+        description: "The SCIM client that uses this token will no longer be able to access Yojana's SCIM server API."
       table_component:
         blank_slate:
           title: No SCIM clients configured yet
           description: Add clients to see them here
         user_count: Naudotojai
       token_list_component:
-        description: The tokens you generate here can be passed by a SCIM client to access the OpenProject SCIM API.
-        heading: Tokens
-        label_add_token: Token
-        label_aria_add_token: Add token
+        description: "The tokens you generate here can be passed by a SCIM client to access the Yojana SCIM API."
+        heading: "Tokens"
+        label_add_token: "Token"
+        label_aria_add_token: "Add token"
       token_table_component:
         blank_slate:
           title: No tokens have been created yet
@@ -584,37 +584,35 @@ lt:
       name: LDAP prisijungimui suteiktas pavadinimas
       host: LDAP serverio vardas arba IP adresas
       login_map: LDAP atributo, kuris naudojamas vienareikšmiškai nustatyti besijungiantį asmenį, pavadinimas. Dažniausiai tai būna `uid` arba `samAccountName`.
-      generic_map: LDAP atributo pavadinimas, kuris bus susietas su OpenProject atributu `%{attribute}`
-      admin_map_html: 'Pasirinktinis: LDAP atributas, kuris <strong>jei bus nustatytas</strong> pažymi, kad naudotojas yra OpenProject administratorius. Jei abejojate, palikite tuščią.'
+      generic_map: LDAP atributo pavadinimas, kuris bus susietas su Yojana atributu `%{attribute}`
+      admin_map_html: "Pasirinktinis: LDAP atributas, kuris <strong>jei bus nustatytas</strong> pažymi, kad naudotojas yra Yojana administratorius. Jei abejojate, palikite tuščią."
       system_user_dn_html: |
         Enter the DN of the system user used for read-only access.
         <br>
-        Example: uid=openproject,ou=system,dc=example,dc=com
+        Example: uid=yojana,ou=system,dc=example,dc=com
       system_user_password: Įveskite sisteminio naudotojo, kuris jungsis prie LDAP, slaptažodį
       base_dn: |
-        Įveskite submedžio, kuriame OpenProject ieškos naudotojų ir grupių šaknies DN (Base DN).
-        OpenProject ieškos naudotojų tik šio submedžio ribose.
+        Įveskite submedžio, kuriame Yojana ieškos naudotojų ir grupių šaknies DN (Base DN).
+        Yojana ieškos naudotojų tik šio submedžio ribose.
         Pavyzdys: ou=users,dc=example,dc=com
       filter_string: |
         Pridėkite nebūtiną RFC4515 filtrą, kuris bus naudojamas riboti perduodamų iš LDAP naudotojų sąrašą.
-        Jis gali būti naudojamas norint sumažinti aibę naudotojų, kuriuos OpenProject ras ir galės naudoti autentifikavimui ir grupių sinchronizavimui.
-      filter_string_concat: 'OpenProject įrašų identifikavimui visada naudos login atributą su naudotojo pateiktais duomenimis. Jei jūs čia nurodysite filtrą, jis prie kitų filtrų bus prijungtas naudojant AND. Nenurodžius, bus naudojamas viską apimantis filtras (objectClass=*).
-
-        '
+        Jis gali būti naudojamas norint sumažinti aibę naudotojų, kuriuos Yojana ras ir galės naudoti autentifikavimui ir grupių sinchronizavimui.
+      filter_string_concat: |
+        Yojana įrašų identifikavimui visada naudos login atributą su naudotojo pateiktais duomenimis. Jei jūs čia nurodysite filtrą, jis prie kitų filtrų bus prijungtas naudojant AND. Nenurodžius, bus naudojamas viską apimantis filtras (objectClass=*).
       onthefly_register: |
-        Jei pažymėsite šį lauką, OpenProject automatiškai sukurs naujus naudotojus pagal LDAP informaciją, kai tik šie naudotojai pirmą kartą prisijungs prie OpenProject.
+        Jei pažymėsite šį lauką, Yojana automatiškai sukurs naujus naudotojus pagal LDAP informaciją, kai tik šie naudotojai pirmą kartą prisijungs prie Yojana.
         Nežymėkite šio lauko, jei norite, kad tik jau sukurti naudotojai galėtų prisijungti pasinaudodami LDAP!
     connection_encryption: Jungties šifravimas
     encryption_details: LDAPS / STARTTLS parinktys
     system_account: Sistemos paskyra
     system_account_legend: |
-      OpenProject reikia tik-skaitymui skirto sisteminio naudotojo kitų naudotojų ir grupių patikrinimui jūsų LDAP medyje.
+      Yojana reikia tik-skaitymui skirto sisteminio naudotojo kitų naudotojų ir grupių patikrinimui jūsų LDAP medyje.
       Šioje skiltyje prašome pateikti tokio naudotojo prisijungimo duomenis.
-    ldap_details: LDAP duomenys
-    user_settings: Atributų surišimas
-    user_settings_legend: 'Žemiau esantys laukai yra naudojami nurodant, kaip OpenProject naudotojai yra kuriami pagal LDAP įrašus ir kokie LDAP atributai yra naudojami nurodant kuriuos OpenProject naudotojo atributus (atributų surišimas).
-
-      '
+    ldap_details: "LDAP duomenys"
+    user_settings: "Atributų surišimas"
+    user_settings_legend: |
+      Žemiau esantys laukai yra naudojami nurodant, kaip Yojana naudotojai yra kuriami pagal LDAP įrašus ir kokie LDAP atributai yra naudojami nurodant kuriuos Yojana naudotojo atributus (atributų surišimas).
     tls_mode:
       plain: joks
       simple_tls: LDAPS
@@ -2178,18 +2176,17 @@ lt:
         circular_dependency: Šis ryšys sukurtų ciklinę priklausomybę.
         confirmation: nesutampa su %{attribute}.
         could_not_be_copied: "%{dependency} negali (pilnai) būti nukopijuota(s)."
-        datetime_must_be_in_future: must be in the future.
-        does_not_exist: neegzistuoja.
-        error_enterprise_only: "%{action} is only available in the OpenProject Enterprise edition."
-        error_unauthorized: negali būti pasiektas.
-        error_readonly: bandytas įrašyti, bet įrašyti nebuvo galima.
-        error_conflict: Tuo metu informaciją pakeitė bent vienas kitas naudotojas.
-        error_not_found: not found.
-        email: nėra tinkamas el. pašto adresas.
-        empty: negali būti tuščia.
-        enterprise_plan_required: requires at least the %{plan_name}.
-        even: turi būti lyginis.
-        exclusion: yra rezervuotas.
+        does_not_exist: "neegzistuoja."
+        error_enterprise_only: "%{action} is only available in the Yojana Enterprise edition."
+        error_unauthorized: "negali būti pasiektas."
+        error_readonly: "bandytas įrašyti, bet įrašyti nebuvo galima."
+        error_conflict: "Tuo metu informaciją pakeitė bent vienas kitas naudotojas."
+        error_not_found: "not found."
+        email: "nėra tinkamas el. pašto adresas."
+        empty: "negali būti tuščia."
+        enterprise_plan_required: "requires at least the %{plan_name}."
+        even: "turi būti lyginis."
+        exclusion: "yra rezervuotas."
         feature_disabled: is not available.
         feature_disabled_for_project: is disabled for this project.
         file_too_large: per didelis (didžiausias leistinas dydis yra %{count} baitų).
@@ -2884,17 +2881,14 @@ lt:
     reset_token:
       action_create: Kurti
       action_reset: Atstatyti
-      heading_reset: Atstatyti atsarginės kopijos žetoną
-      heading_create: Sukurti atsarginės kopijos žetoną
-      implications: 'Atsarginių kopijų įgalinimas leis bet kuriam naudotojui su priskirtomis teisėmis ir šiuo atsarginės kopijos žetonu parsisiųsti atsarginę kopiją, turinčią visus šio OpenProject egzemplioriaus duomenis. Juose bus ir visų kitų naudotojų duomenys.
-
-        '
-      info: 'Norint sukurti atsarginę kopiją jums reikės sugeneruoti atsarginės kopijos žetoną. Kaskart, kai jūs norėsite sukurti atsarginę kopiją, turėsite pateikti šį žetoną. Jūs galite ištrinti žetoną ir taip atimsite iš naudotojo teisę daryti atsargines kopijas.
-
-        '
-      verification_html: 'Enter %{word} to confirm you want to %{action} the backup token.
-
-        '
+      heading_reset: "Atstatyti atsarginės kopijos žetoną"
+      heading_create: "Sukurti atsarginės kopijos žetoną"
+      implications: >
+        Atsarginių kopijų įgalinimas leis bet kuriam naudotojui su priskirtomis teisėmis ir šiuo atsarginės kopijos žetonu parsisiųsti atsarginę kopiją, turinčią visus šio Yojana egzemplioriaus duomenis. Juose bus ir visų kitų naudotojų duomenys.
+      info: >
+        Norint sukurti atsarginę kopiją jums reikės sugeneruoti atsarginės kopijos žetoną. Kaskart, kai jūs norėsite sukurti atsarginę kopiją, turėsite pateikti šį žetoną. Jūs galite ištrinti žetoną ir taip atimsite iš naudotojo teisę daryti atsargines kopijas.
+      verification: >
+        Įveskite %{word} norėdami patvirtinti veiksmą su atsarginės kopijos žetonu: %{action}.
       verification_word_reset: atstatyti
       verification_word_create: sukurti
       warning: 'Kai jūs sukuriate atsarginės kopijos žetoną, daryti atsargines kopijas jums bus leista po 24 valandų. Tai apsauga. Po šio laiko, pateikę žetoną galėsite bet kuriuo metu užsakyti atsarginę kopiją.
@@ -3283,29 +3277,26 @@ lt:
       title: Enterprise priedas
       plan_title: Enterprise %{plan} add-on
       plan_name: "%{plan} enterprise plan"
-      trial_text: This feature is included in your active Enterprise trial.
-      plan_text_html: Available starting with the %{plan_name}.
-      unlimited: Neribota
-      already_have_token: 'Already have a token? Add it using the button below to upgrade to the booked Enterprise plan.
-
-        '
-      hide_banner: Hide this banner
-      homescreen_description: 'Enterprise plans extend the Community edition of OpenProject with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running OpenProject in a mission-critical environment.
-
-        '
+      plan_text_html: "Available starting with the %{plan_name}."
+      unlimited: "Neribota"
+      already_have_token: >
+        Already have a token? Add it using the button below to upgrade to the booked Enterprise plan.
+      hide_banner: "Hide this banner"
+      homescreen_description: >
+        Enterprise plans extend the Community edition of Yojana with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running Yojana in a mission-critical environment.
       homescreen_subline: By upgrading, you will also be supporting an open source project.
       baseline_comparison:
         description: Paryškinti pakeitimus, padarytus šiame sąraše, nuo bet kokio laiko momento praeityje.
       benefits:
-        description: Kokie yra Enterprise vietinės versijos privalumai?
-        high_security: Saugumo funkcijos
-        high_security_text: Vienas prisijungimas (SAML, OpenID Connect, CAS), LDAP grupės.
-        installation: Diegimo pagalba
-        installation_text: Patyręs programų inžinierius ves jus per visą diegimo ir nustatymo procesą naudojant jūsų pačių infrastruktūrą.
-        premium_features: Enterprise priedai
-        premium_features_text: Agile lentos, savo tema ir logotipas, grafai, protingi darbo scenarijai su apibrėžtais veiksmais, pilna teksto paieška darbo paketų prieduose ir galimybė pasirinkti daugiau nei vieną reikšmę pritaikytuose laukuose.
-        professional_support: Profesionali pagalba
-        professional_support_text: Gaukite patikimą, artimą pagalbą iš patyrusių pagalbos inžinierių su ekspertinėmis žiniomis apie OpenProject naudojimą verslui kritinėse aplinkose.
+        description: "Kokie yra Enterprise vietinės versijos privalumai?"
+        high_security: "Saugumo funkcijos"
+        high_security_text: "Vienas prisijungimas (SAML, OpenID Connect, CAS), LDAP grupės."
+        installation: "Diegimo pagalba"
+        installation_text: "Patyręs programų inžinierius ves jus per visą diegimo ir nustatymo procesą naudojant jūsų pačių infrastruktūrą."
+        premium_features: "Enterprise priedai"
+        premium_features_text: "Agile lentos, savo tema ir logotipas, grafai, protingi darbo scenarijai su apibrėžtais veiksmais, pilna teksto paieška darbo paketų prieduose ir galimybė pasirinkti daugiau nei vieną reikšmę pritaikytuose laukuose."
+        professional_support: "Profesionali pagalba"
+        professional_support_text: "Gaukite patikimą, artimą pagalbą iš patyrusių pagalbos inžinierių su ekspertinėmis žiniomis apie Yojana naudojimą verslui kritinėse aplinkose."
       work_package_subject_generation:
         description: Create automatically generated subjects using referenced attributes and text.
       customize_life_cycle:
@@ -3335,34 +3326,31 @@ lt:
       calculated_values:
         description: Calculated values allow you to create a mathematical formula based attribute using numeric values and other project attributes and custom fields.
       define_custom_style:
-        title: Custom color theme and logo
-        more_info: 'Pastaba: panaudotas logotipas bus viešai prieinamas.'
-        description: Tinkinkite jūsų OpenProject naudodami savo logotipą ir spalvas.
+        title: "Custom color theme and logo"
+        more_info: "Pastaba: panaudotas logotipas bus viešai prieinamas."
+        description: Tinkinkite jūsų Yojana naudodami savo logotipą ir spalvas.
       custom_actions:
         title: Pasirinktiniai veiksmai
         description: Savo veiksmai yra vieno paspaudimo kombinacijos, leidžiančios nustatyti veiksmus, kuriuos galite padaryti preinamais kai kuriuose darbo paketuose pagal jų būseną, rolę, tipą ar projektą.
       mcp_server:
-        description: Bring OpenProject into your AI workflows with a secure MCP server.
-      meeting_templates:
-        description: Define meeting templates with a set agenda structure and save time by reusing them when creating new meetings.
+        description: "Integrate AI agents with your Yojana instance through MCP."
       nextcloud_sso:
         title: Single Sign-On for Nextcloud Storage
         description: Enable seamless and secure authentication for your Nextcloud storage with Single Sign-On. Simplify access management and enhance user convenience.
       scim_api:
-        title: SCIM clients
-        description: Automate user management in OpenProject by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan.
+        title: "SCIM clients"
+        description: "Automate user management in Yojana by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan."
       sso_auth_providers:
         title: Single Sign-On (SSO)
         description: Enable users to log in via external SSO providers using SAML or OpenID Connect for seamless access and integration with existing identity systems.
       virus_scanning:
-        description: Užtikrinkite, kad į OpenProject įkelti failai būtų patikrinti nuo virusų prieš padarant juos prieinamus kitiems naudotojams.
+        description: "Užtikrinkite, kad į Yojana įkelti failai būtų patikrinti nuo virusų prieš padarant juos prieinamus kitiems naudotojams."
       project_creation_wizard:
         description: Generate a step-by-step wizard to help project managers fill out a project initiation request.
       placeholder_users:
         title: Statytiniai naudotojai
-        description: 'Statytiniai naudotojai leidžia paskirti darbo paketus naudotojams, kurių nėra jūsų projekte. Jie gali būti naudingi įvairiose situacijose. Pavyzdžiui jums reikia sekti užduotis resursų, kurie dar neįvardinti ar negalimi arba jūs nenorite duoti konkrečiam asmeniui prieigos prie OpenProject, bet vis tiek norite sekti jiems paskirtas užduotis.
-
-          '
+        description: >
+          Statytiniai naudotojai leidžia paskirti darbo paketus naudotojams, kurių nėra jūsų projekte. Jie gali būti naudingi įvairiose situacijose. Pavyzdžiui jums reikia sekti užduotis resursų, kurie dar neįvardinti ar negalimi arba jūs nenorite duoti konkrečiam asmeniui prieigos prie Yojana, bet vis tiek norite sekti jiems paskirtas užduotis.
       internal_comments:
         title: Internal comments
         description: Internal comments allow an internal team to communicate amongst themselves privately. These are only visible to certain project roles and will never be visible publicly.
@@ -3379,26 +3367,25 @@ lt:
         other: "%{count} days left of %{trial_plan} trial token"
       description_html: You have access to all %{trial_plan} features.
     trial:
-      not_found: You have requested a trial token, but that request is no longer available. Please try again.
-      wait_for_confirmation: We sent you an email to confirm your address in order to retrieve a trial token.
-      already_retrieved: 'Your trial enterprise token was already retrieved. Please check your emails for the token being attached. Please reach out to our support team if you need a new one.
-
-        '
-      successfully_saved: Your trial enterprise token has been successfully retrieved.
-      token_sent: Trial token requested
-      request_again: Request again
-      resend_action: Resend confirmation email
-      welcome_title: Quick feature overview
-      welcome_description: Gaukite greitą apžvalgą apie projektų valdymą ir komandos bendradarbiavimą naudojant OpenProject Enterprise versiją.
-      confirmation_info: 'We sent you an email on %{date} to %{email} with all the information to start the free trial of OpenProject Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
-
-        '
-      confirmation_subline: 'Please, check your inbox and follow the steps to start your 14-day free trial.
-
-        '
+      not_found: "You have requested a trial token, but that request is no longer available. Please try again."
+      wait_for_confirmation: "We sent you an email to confirm your address in order to retrieve a trial token."
+      already_retrieved: >
+        Your trial enterprise token was already retrieved. Please check your emails for the token being attached. Please reach out to our support team if you need a new one.
+      successfully_saved: "Your trial enterprise token has been successfully retrieved."
+      token_sent: "Trial token requested"
+      request_again: "Request again"
+      resend_action: "Resend confirmation email"
+      welcome_title: "Quick feature overview"
+      welcome_description: "Gaukite greitą apžvalgą apie projektų valdymą ir komandos bendradarbiavimą naudojant Yojana Enterprise versiją."
+      confirmation_info: >
+        We sent you an email on %{date} to %{email} with all the information to start the free trial of Yojana Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
+      confirmation_subline: >
+        Please, check your inbox and follow the steps to start your 14-day free trial.
       domain_caption: The token will be valid for your currently configured host name.
-      receive_newsletter: I want to receive the OpenProject [newsletter](newsletter_url).
-      consent: I agree with the [terms of service](tos_url) and the [privacy policy](privacy_url).
+      receive_newsletter_html: >
+        I want to receive the Yojana <a target="_blank" href="https://www.yojana.girishm.info/newsletter/">newsletter</a>.
+      consent_html: >
+        I agree with the <a target="_blank" href="https://www.yojana.girishm.info/terms-of-service/">terms of service</a> and the <a target="_blank" href="https://www.yojana.girishm.info/data-privacy-and-security/">privacy policy</a>.
   email_calendar_updates:
     state:
       disabled: Disabled.
@@ -3422,51 +3409,51 @@ lt:
   error_can_not_delete_in_use_archived_undisclosed: Taipogi yra darbo paketų archyvuotuose projektuose. Jums reikia paprašyti administratoriaus, kad įvykdytų trynimą, kad pamatytų, kurie projektai įtakoti.
   error_can_not_delete_in_use_archived_work_packages: 'Taip pat yra darbo paketų archyvuotuose projektuose. Jums iš pradžių reikia iš naujo aktyvuoti šiuos projektus, kad galėtumėte pakeisti atitinkamų darbo paketų atributą: %{archived_projects_urls}'
   error_can_not_delete_type:
-    explanation: Yra darbo paketų su tokiu tipu, todėl jis negali būti ištrintas. Visus susijusius darbo paketus galite matyti <a target="_blank" href="%{url}">šiame vaizde</a>.
-  error_can_not_delete_standard_type: Standartiniai vaidmenys negali būti ištrinti.
-  error_can_not_invite_user: Nepavyko išsiųsti pakvietimo vartotojui.
-  error_can_not_remove_role: Šis vaidmuo naudojamas, todėl negali būti ištrintas.
-  error_can_not_reopen_work_package_on_closed_version: Uždarytai versijai priskirtas darbų paketas negali būti atvertas
-  error_can_not_find_all_resources: Nepavyko rasti visų su šia užklausa susijusių resursų.
-  error_can_not_unarchive_project: 'Projekto negalima išarchyvuoti: %{errors}'
-  error_check_user_and_role: Prašome pasirinkti naudotoją ir vaidmenį.
-  error_code: Klaida %{code}
-  error_color_could_not_be_saved: Nepavyko įrašyti spalvos
-  error_cookie_missing: OpenProject sausainėlis nerastas. Prašome patikrinti, ar sausainėliai yra įgalinti, nes kitaip aplikacija tinkamai neveiks.
-  error_custom_option_not_found: Galimybė neegzistuoja.
-  error_enterprise_plan_needed: You need the %{plan} enterprise plan to perform this action.
-  error_enterprise_activation_user_limit: Jūsų paskyra negali būti aktyvuota (pasiektas vartotojų limitas). Prašome kreiptis į savo sistemos administratorių.
-  error_enterprise_token_invalid_domain: Enterprise versija neaktyvi. Jūsų Enterprise žetono domenas (%{actual}) nesutampa su jūsų sistemos serverio vardu (%{expected}).
-  error_failed_to_delete_entry: Šio įrašo nepavyko panaikinti.
-  error_in_dependent: 'Klaida bandant pakeisti priklausomą objektą: %{dependent_class} #%{related_id} - %{related_subject}: %{error}'
-  error_in_new_dependent: 'Klaida bandant sukurti priklausomą objektą: %{dependent_class} - %{related_subject}: %{error}'
-  error_invalid_selected_value: Netinkama parinkta reikšmė.
-  error_journal_attribute_not_present: Žurnale nėra atributo %{attribute}.
-  error_pdf_export_too_many_columns: PDF eksportavimui pasirinkta per daug stulpelių. Prašome sumažinti stulpelių skaičių.
-  error_pdf_date_range_too_long: The selected work package date range exceeds the allowable PDF export limit. Please condense the range to a maximum of %{years} years.
-  error_pdf_failed_to_export: 'PDF eksportas negali būti išsaugotas: %{error}'
-  error_token_authenticity: Neįmanoma patikrinti Cross-Site Request Forgery žetono. Gal bandėte nusiųsti duomenis iš kelių naršyklių ar kortelių? Prašome uždaryti visas korteles ir pabandyti dar kartą.
-  error_reminder_not_found: The reminder was not found or was already notified about.
-  error_work_package_not_found_in_project: Darbų paketas nerastas arba nepriklauso šiam projektui
-  error_work_package_id_not_found: The work package was not found.
-  error_must_be_project_member: turi būti projekto narys
-  error_migrations_are_pending: Jūsų OpenProject instaliacijai trūksta duomenų bazės migracijos. Greičiausiai atnaujinimo metu buvo nepaleistas migravimas. Atnaujinimo gide aprašyta kaip tinkamai atnaujinti jūsų instaliaciją.
-  error_migrations_visit_upgrade_guides: Prašome perskaityti dokumentaciją atnaujinimo vadove
-  error_no_default_work_package_status: Numatytoji darbų paketo būsena nenustatyta. Prašome patikrinti nustatymus (Eiti į „Administravimas“->„Darbų paketų būsenos“).
-  error_no_type_in_project: Joks tipas nepriskirtas šiam projektui. Prašome patikrinti projekto nustatymus.
-  error_omniauth_registration_timed_out: Registracijos, naudojant išorinį autentifikacijos teikėją, laikas pasibaigė. Bandykite dar kartą.
-  error_omniauth_invalid_auth: Autentifikavimo informacija, atėjusi iš tapatybės tiekėjo, buvo neteisinga. Dėl tolesnės pagalbos prašome kreiptis į savo administratorių.
-  error_password_change_failed: Bandant pakeisti slaptažodį įvyko klaida.
-  error_scm_command_failed: 'Įvyko klaida jungiantis prie repozitorijos: %{value}'
-  error_scm_not_found: Toks įrašas ar revizija nebuvo rasti repozitorijoje.
-  error_type_could_not_be_saved: Tipas negalėjo būti įrašytas
-  error_unable_delete_status: Darbų paketo būsena negali būti ištrinta tol, kol yra naudojama bent viename darbų pakete.
-  error_unable_delete_default_status: Neįmanoma ištrinti numatytosios darbų paketo būsenos. Prašome pakeisti numatytąją darbų paketo būseną prieš ištrinant šią.
-  error_unable_to_connect: Negalima prisijungti (%{value})
-  error_unable_delete_wiki: Neįmanoma panaikinti wiki puslapio.
-  error_unable_update_wiki: Neįmanoma atnaujinti wiki puslapio.
-  error_workflow_copy_source: Prašome pasirinkti šaltinio tipą arba rolę
-  error_workflow_copy_target: Prašome pasirinkti tipą(-us) ir rolę(-es), kuriuos norite nukopijuoti
+    explanation: 'Yra darbo paketų su tokiu tipu, todėl jis negali būti ištrintas. Visus susijusius darbo paketus galite matyti <a target="_blank" href="%{url}">šiame vaizde</a>.'
+  error_can_not_delete_standard_type: "Standartiniai vaidmenys negali būti ištrinti."
+  error_can_not_invite_user: "Nepavyko išsiųsti pakvietimo vartotojui."
+  error_can_not_remove_role: "Šis vaidmuo naudojamas, todėl negali būti ištrintas."
+  error_can_not_reopen_work_package_on_closed_version: "Uždarytai versijai priskirtas darbų paketas negali būti atvertas"
+  error_can_not_find_all_resources: "Nepavyko rasti visų su šia užklausa susijusių resursų."
+  error_can_not_unarchive_project: "Projekto negalima išarchyvuoti: %{errors}"
+  error_check_user_and_role: "Prašome pasirinkti naudotoją ir vaidmenį."
+  error_code: "Klaida %{code}"
+  error_color_could_not_be_saved: "Nepavyko įrašyti spalvos"
+  error_cookie_missing: "Yojana sausainėlis nerastas. Prašome patikrinti, ar sausainėliai yra įgalinti, nes kitaip aplikacija tinkamai neveiks."
+  error_custom_option_not_found: "Galimybė neegzistuoja."
+  error_enterprise_plan_needed: "You need the %{plan} enterprise plan to perform this action."
+  error_enterprise_activation_user_limit: "Jūsų paskyra negali būti aktyvuota (pasiektas vartotojų limitas). Prašome kreiptis į savo sistemos administratorių."
+  error_enterprise_token_invalid_domain: "Enterprise versija neaktyvi. Jūsų Enterprise žetono domenas (%{actual}) nesutampa su jūsų sistemos serverio vardu (%{expected})."
+  error_failed_to_delete_entry: "Šio įrašo nepavyko panaikinti."
+  error_in_dependent: "Klaida bandant pakeisti priklausomą objektą: %{dependent_class} #%{related_id} - %{related_subject}: %{error}"
+  error_in_new_dependent: "Klaida bandant sukurti priklausomą objektą: %{dependent_class} - %{related_subject}: %{error}"
+  error_invalid_selected_value: "Netinkama parinkta reikšmė."
+  error_journal_attribute_not_present: "Žurnale nėra atributo %{attribute}."
+  error_pdf_export_too_many_columns: "PDF eksportavimui pasirinkta per daug stulpelių. Prašome sumažinti stulpelių skaičių."
+  error_pdf_date_range_too_long: "The selected work package date range exceeds the allowable PDF export limit. Please condense the range to a maximum of %{years} years."
+  error_pdf_failed_to_export: "PDF eksportas negali būti išsaugotas: %{error}"
+  error_token_authenticity: "Neįmanoma patikrinti Cross-Site Request Forgery žetono. Gal bandėte nusiųsti duomenis iš kelių naršyklių ar kortelių? Prašome uždaryti visas korteles ir pabandyti dar kartą."
+  error_reminder_not_found: "The reminder was not found or was already notified about."
+  error_work_package_not_found_in_project: "Darbų paketas nerastas arba nepriklauso šiam projektui"
+  error_work_package_id_not_found: "The work package was not found."
+  error_must_be_project_member: "turi būti projekto narys"
+  error_migrations_are_pending: "Jūsų Yojana instaliacijai trūksta duomenų bazės migracijos. Greičiausiai atnaujinimo metu buvo nepaleistas migravimas. Atnaujinimo gide aprašyta kaip tinkamai atnaujinti jūsų instaliaciją."
+  error_migrations_visit_upgrade_guides: "Prašome perskaityti dokumentaciją atnaujinimo vadove"
+  error_no_default_work_package_status: 'Numatytoji darbų paketo būsena nenustatyta. Prašome patikrinti nustatymus (Eiti į „Administravimas“->„Darbų paketų būsenos“).'
+  error_no_type_in_project: "Joks tipas nepriskirtas šiam projektui. Prašome patikrinti projekto nustatymus."
+  error_omniauth_registration_timed_out: "Registracijos, naudojant išorinį autentifikacijos teikėją, laikas pasibaigė. Bandykite dar kartą."
+  error_omniauth_invalid_auth: "Autentifikavimo informacija, atėjusi iš tapatybės tiekėjo, buvo neteisinga. Dėl tolesnės pagalbos prašome kreiptis į savo administratorių."
+  error_password_change_failed: "Bandant pakeisti slaptažodį įvyko klaida."
+  error_scm_command_failed: "Įvyko klaida jungiantis prie repozitorijos: %{value}"
+  error_scm_not_found: "Toks įrašas ar revizija nebuvo rasti repozitorijoje."
+  error_type_could_not_be_saved: "Tipas negalėjo būti įrašytas"
+  error_unable_delete_status: "Darbų paketo būsena negali būti ištrinta tol, kol yra naudojama bent viename darbų pakete."
+  error_unable_delete_default_status: "Neįmanoma ištrinti numatytosios darbų paketo būsenos. Prašome pakeisti numatytąją darbų paketo būseną prieš ištrinant šią."
+  error_unable_to_connect: "Negalima prisijungti (%{value})"
+  error_unable_delete_wiki: "Neįmanoma panaikinti wiki puslapio."
+  error_unable_update_wiki: "Neįmanoma atnaujinti wiki puslapio."
+  error_workflow_copy_source: "Prašome pasirinkti šaltinio tipą arba rolę"
+  error_workflow_copy_target: "Prašome pasirinkti tipą(-us) ir rolę(-es), kuriuos norite nukopijuoti"
   error_menu_item_not_created: Meniu punktas negali būti pridėtas
   error_menu_item_not_saved: Meniu punktas negali būti išsaugotas
   error_wiki_root_menu_item_conflict: 'Negalima pervadinti „%{old_name}“ į „%{new_name}“ dėl konflikto su esamu meniu punktu „%{existing_caption}“ (%{existing_identifier}).
@@ -3561,8 +3548,8 @@ lt:
     succeeded: Export completed
     failed: 'An error has occurred while trying to export the work packages: %{message}'
     demo:
-      heading: Demo PDF
-      footer: Generated by OpenProject
+      heading: "Demo PDF"
+      footer: "Generated by Yojana"
       button_text: Generate Demo PDF
     errors:
       embedded_table_with_too_many_columns: This embedded work package table could not fit on the page, please reduce the number of columns.
@@ -3687,7 +3674,7 @@ lt:
         no_results_subtext: Add one or multiple projects as favorite through their overview or in a project list.
       users: Naujausi registruoti naudotojai.
     blocks:
-      community: OpenProject community
+      community: "Yojana community"
       upsell:
         title: Pagerinti į Enterprise versiją
       new_features:
@@ -3699,40 +3686,38 @@ lt:
 
             '
           new_features_list:
-            line_0: XWiki integration (Corporate plan).
-            line_1: Sprint goals.
-            line_2: "'All sprints' overview page."
-            line_3: Display backlog buckets in work packages and work package tables.
-            line_4: Improved support for project-based (semantic) identifiers.
-            line_5: Convert meeting agenda items into work packages.
-            line_6: Configure cost types per project.
+            line_0: Automated project initiation (Enterprise add-on).
+            line_1: "Meetings: add new or existing work packages as outcomes."
+            line_2: "Meetings: show iCal responses in Yojana."
+            line_3: "Recurring meetings: duplicate agenda items to the next occurrence."
+            line_4: "Release to Community: Attribute highlighting."
+            line_5: Warning before opening external links in user-provided content (Enterprise add-on).
+            line_6: Improved performance and user experience, including the Activity tab and Documents module.
     links:
-      upgrade_enterprise_edition: Pagerinti į Enterprise versiją
-      postgres_migration: Migruojame jūsų instaliaciją į PostgreSQL
-      user_guides: Vartotojo vadovai
-      faq: D.U.K
-      impressum: Teisinė informacija
-      glossary: Aiškinamasis terminų žodynas
-      shortcuts: Nuorodos
-      blog: OpenProject blogas
-      forums: Bendruomenės forumas
-      security_alerts: Security alerts
-      newsletter: Newsletter
+      upgrade_enterprise_edition: "Pagerinti į Enterprise versiją"
+      postgres_migration: "Migruojame jūsų instaliaciją į PostgreSQL"
+      user_guides: "Vartotojo vadovai"
+      faq: "D.U.K"
+      impressum: "Teisinė informacija"
+      glossary: "Aiškinamasis terminų žodynas"
+      shortcuts: "Nuorodos"
+      blog: "Yojana blogas"
+      forums: "Bendruomenės forumas"
+      security_alerts: "Security alerts"
+      newsletter: "Newsletter"
   image_conversion:
     imagemagick: Imagemagick
   journals:
     changes_retracted: Pakeitimai buvo atšaukti.
     caused_changes:
-      budget_deleted: Budget has been deleted
-      dates_changed: Datos pasikeitė
-      default_attribute_written: Tik-skaitymo atributai įrašyti
-      import: Imported
-      progress_mode_changed_to_status_based: Eigos skaičiavimas atnaujintas
-      status_changed: Status '%{status_name}'
-      system_update: OpenProject sistemos atnaujinimas
-      work_package_duplicate_closed: 'Duplicate work package updated:'
-      total_percent_complete_mode_changed_to_work_weighted_average: Calculation of % Complete totals now weighted by Work.
-      total_percent_complete_mode_changed_to_simple_average: Calculation of % Complete totals now based on a simple average of only % Complete values.
+      dates_changed: "Datos pasikeitė"
+      default_attribute_written: "Tik-skaitymo atributai įrašyti"
+      progress_mode_changed_to_status_based: "Eigos skaičiavimas atnaujintas"
+      status_changed: "Status '%{status_name}'"
+      system_update: "Yojana sistemos atnaujinimas"
+      work_package_duplicate_closed: "Duplicate work package updated:"
+      total_percent_complete_mode_changed_to_work_weighted_average: "Calculation of % Complete totals now weighted by Work."
+      total_percent_complete_mode_changed_to_simple_average: "Calculation of % Complete totals now based on a simple average of only % Complete values."
     cause_descriptions:
       import:
         header: changes by %{author}
@@ -3796,7 +3781,7 @@ lt:
         notifications: Notification settings
         email_reminders: Email reminders
     access_tokens:
-      description: Provider tokens are issued by OpenProject, allowing other applications to access it. Client tokens are issued by other applications, allowing OpenProject to access them.
+      description: "Provider tokens are issued by Yojana, allowing other applications to access it. Client tokens are issued by other applications, allowing Yojana to access them."
       no_results:
         title: Nėra rodytinų prieigos raktų
         description: Visi iš jų buvo išjungti. Jie gali būti vėl įgalinti administravimo meniu.
@@ -3812,49 +3797,49 @@ lt:
         provider:
           title: Provider tokens
       token/api:
-        blank_description: There is no API token yet. You can create one using the button below.
-        blank_title: No API token
-        title: API
-        table_title: API tokens
-        text_hint: API žetonai leidžia trečiųjų šalių aplikacijoms komunikuoti su šiuo OpenProject per REST
-        static_token_name: API token
-        disabled_text: Administratorius neįjungė API žetonų. Prašome susisiekti su administratoriumi, kad galėtumėte naudoti šią savybę.
-        add_button: API token
+        blank_description: "There is no API token yet. You can create one using the button below."
+        blank_title: "No API token"
+        title: "API"
+        table_title: "API tokens"
+        text_hint: "API žetonai leidžia trečiųjų šalių aplikacijoms komunikuoti su šiuo Yojana per REST"
+        static_token_name: "API token"
+        disabled_text: "Administratorius neįjungė API žetonų. Prašome susisiekti su administratoriumi, kad galėtumėte naudoti šią savybę."
+        add_button: "API token"
       ical:
-        blank_description: To add an iCalendar token, subscribe to a new or existing calendar from within the Calendar module of a project. You must have the necessary permissions.
-        blank_title: No iCalendar token
-        title: iCalendar
-        table_title: iCalendar tokens
-        text_hint_link: iCalendar tokens allow users to [subscribe to OpenProject calendars](docs_url) and view up-to-date work package information from external clients.
-        disabled_text: Administratorius neįjungė iCalendar prenumeratų. Prašome susisiekti su administratoriumi, kad galėtumėte naudoti šią savybę.
+        blank_description: "To add an iCalendar token, subscribe to a new or existing calendar from within the Calendar module of a project. You must have the necessary permissions."
+        blank_title: "No iCalendar token"
+        title: "iCalendar"
+        table_title: "iCalendar tokens"
+        text_hint_link: "iCalendar tokens allow users to [subscribe to Yojana calendars](docs_url) and view up-to-date work package information from external clients."
+        disabled_text: "Administratorius neįjungė iCalendar prenumeratų. Prašome susisiekti su administratoriumi, kad galėtumėte naudoti šią savybę."
       oauth_application:
-        active_tokens: Active tokens
-        blank_description: There is no third-party application access configured and active for you.
-        blank_title: No OAuth application token
-        last_refreshed_at: Last refreshed at
-        title: OAuth
-        table_title: OAuth application tokens
-        text_hint: OAuth application tokens allow third-party applications to connect with this OpenProject instance.
+        active_tokens: "Active tokens"
+        blank_description: "There is no third-party application access configured and active for you."
+        blank_title: "No OAuth application token"
+        last_used_at: "Last used at"
+        title: "OAuth"
+        table_title: "OAuth application tokens"
+        text_hint: "OAuth application tokens allow third-party applications to connect with this Yojana instance."
       oauth_client:
-        blank_description: There are no OAuth client tokens yet.
-        blank_title: No OAuth client tokens
-        failed: An error occurred and the token couldn't be removed. Please try again later.
-        integration_type: Integration type
-        table_title: OAuth client tokens
-        text_hint: OAuth client tokens allow this OpenProject instance to connect with external applications, such as file storages.
-        title: OAuth
-        remove_token: Do you really want to remove this token? You will need to login again on %{integration}.
-        removed: OAuth client token successfully removed
-        unknown_integration: Unknown
+        blank_description: "There are no OAuth client tokens yet."
+        blank_title: "No OAuth client tokens"
+        failed: "An error occurred and the token couldn't be removed. Please try again later."
+        integration_type: "Integration type"
+        table_title: "OAuth client tokens"
+        text_hint: "OAuth client tokens allow this Yojana instance to connect with external applications, such as file storages."
+        title: "OAuth"
+        remove_token: "Do you really want to remove this token? You will need to login again on %{integration}."
+        removed: "OAuth client token successfully removed"
+        unknown_integration: "Unknown"
       token/rss:
-        add_button: RSS token
-        blank_description: There is no RSS token yet. You can create one using the button below.
-        blank_title: No RSS token
-        title: RSS
-        table_title: RSS tokens
-        text_hint: RSS tokens allow users to keep up with the latest changes in this OpenProject instance via an external RSS reader.
-        static_token_name: RSS token
-        disabled_text: RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature.
+        add_button: "RSS token"
+        blank_description: "There is no RSS token yet. You can create one using the button below."
+        blank_title: "No RSS token"
+        title: "RSS"
+        table_title: "RSS tokens"
+        text_hint: "RSS tokens allow users to keep up with the latest changes in this Yojana instance via an external RSS reader."
+        static_token_name: "RSS token"
+        disabled_text: "RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature."
       storages:
         unknown_storage: Nežinoma saugykla
     email_reminders:
@@ -4078,51 +4063,48 @@ lt:
   label_collapse: Sutraukti
   label_collapsed_click_to_show: Sutraukta. Spauskite parodymui
   label_configuration: konfigūracija
-  label_comment_add: Pridėkite komentarą
-  label_comment_added: Komentaras pridėtas
-  label_comment_delete: Pašalinti komentarus
-  label_comment_plural: Komentarai
-  label_commits_per_author: Komentarai pagal autorių
-  label_commits_per_month: Komentarai pagal mėnesį
-  label_confirmation: Patvirtinimas
-  label_contains: turi
-  label_starts_with: starts with
-  label_content: Turinys
-  label_color_plural: Spalvos
-  label_copied: nukopijuotas
-  label_copy_same_as_target: Toks pat kaip tikslas
-  label_copy_source: Šaltinis
-  label_copy_target: Tikslas
-  label_copy_workflow_from: Kopijuoti darbų eigą iš
-  label_copy_workflow_from_type: Copy to another type
-  label_copy_workflow_from_role: Copy to other roles
-  label_copy_project: Kopijuoti projektą
-  label_core_version: Branduolio versija
-  label_core_build: Branduolio versija
-  label_created_by: Created by %{user}
-  label_current_status: Dabartinė būsena
-  label_current_version: Esama versija
-  label_custom_field_add_no_type: Pridėti šį laukelį prie darbų paketo tipo
-  label_custom_field_new: Naujas kliento laukas
-  label_custom_field_plural: Pritaikyti laukai
-  label_custom_field_default_type: Tuščias tipas
-  label_custom_style: Išvaizda
-  label_custom_style_description: Choose how OpenProject looks to you with themes, select your default colors to use in the app and how exports look like.
-  label_dashboard: Skydelis
-  label_database_version: PostgreSQL versija
-  label_date: Data
-  label_dates: Datos
-  label_date_and_time: Data ir laikas
-  label_date_format: Datos formatas
-  label_date_from: Nuo
-  label_date_from_to: Nuo %{start} iki %{end}
-  label_date_to: Į
-  label_day_plural: dienas(-ų)
-  label_default: Numatytasis
-  label_delete_user: Ištrinti vartotoją
-  label_delete_project: Ištrinti projektą
-  label_delete: Ištrinti
-  label_deleted: panaikintas
+  label_comment_add: "Pridėkite komentarą"
+  label_comment_added: "Komentaras pridėtas"
+  label_comment_delete: "Pašalinti komentarus"
+  label_comment_plural: "Komentarai"
+  label_commits_per_author: "Komentarai pagal autorių"
+  label_commits_per_month: "Komentarai pagal mėnesį"
+  label_confirmation: "Patvirtinimas"
+  label_contains: "turi"
+  label_content: "Turinys"
+  label_color_plural: "Spalvos"
+  label_copied: "nukopijuotas"
+  label_copy_same_as_target: "Toks pat kaip tikslas"
+  label_copy_source: "Šaltinis"
+  label_copy_target: "Tikslas"
+  label_copy_workflow_from: "Kopijuoti darbų eigą iš"
+  label_copy_project: "Kopijuoti projektą"
+  label_core_version: "Branduolio versija"
+  label_core_build: "Branduolio versija"
+  label_created_by: "Created by %{user}"
+  label_current_status: "Dabartinė būsena"
+  label_current_version: "Esama versija"
+  label_custom_field_add_no_type: "Pridėti šį laukelį prie darbų paketo tipo"
+  label_custom_field_new: "Naujas kliento laukas"
+  label_custom_field_plural: "Pritaikyti laukai"
+  label_custom_field_default_type: "Tuščias tipas"
+  label_custom_style: "Išvaizda"
+  label_custom_style_description: "Choose how Yojana looks to you with themes, select your default colors to use in the app and how exports look like."
+  label_dashboard: "Skydelis"
+  label_database_version: "PostgreSQL versija"
+  label_date: "Data"
+  label_dates: "Datos"
+  label_date_and_time: "Data ir laikas"
+  label_date_format: "Datos formatas"
+  label_date_from: "Nuo"
+  label_date_from_to: "Nuo %{start} iki %{end}"
+  label_date_to: "Į"
+  label_day_plural: "dienas(-ų)"
+  label_default: "Numatytasis"
+  label_delete_user: "Ištrinti vartotoją"
+  label_delete_project: "Ištrinti projektą"
+  label_delete: "Ištrinti"
+  label_deleted: "panaikintas"
   label_deleted_custom_field: "(panaikintas vartotojo laukas)"
   label_deleted_custom_item: "(deleted item)"
   label_deleted_custom_option: "(panaikintas nustatymas)"
@@ -4376,61 +4358,53 @@ lt:
   label_not_found: nerasta
   label_none: joks
   label_none_parentheses: "(nėra)"
-  label_not_contains: neturi
-  label_not_equals: nėra
-  label_life_cycle_step_plural: Project life cycle
-  label_on: įjungta
-  label_operator_all: nėra tuščias
-  label_operator_none: yra tuščias
-  label_operator_equals_or: yra (ARBA)
-  label_operator_equals_all: yra (IR)
-  label_operator_shared_with_user_any: bet kuris
-  label_open: atverti
-  label_closed: uždaryta
-  label_open_menu: Atidaryti meniu
-  label_open_work_packages: atidarytas
-  label_open_work_packages_plural: atidarytas
-  label_openproject_website: OpenProject svetainė
-  label_optional_description: Aprašymas
-  label_options: Nustatymai
-  label_other: Kita
-  label_overall_activity: Visa veikla
-  label_overview: Peržiūra
-  label_page_title: Puslapio antraštė
-  label_parent_group_caption: 'Setting a parent group will make this group a subgroup of the selected parent group. This will also inherit all memberships, including permissions of the parent group.
-
-    '
-  label_part_of: dalis
-  label_password_lost: Pamiršote slaptažodį?
-  label_password_rule_lowercase: Mažosios raidės
-  label_password_rule_numeric: Skaitiniai simboliai
-  label_password_rule_special: Specialūs simboliai
-  label_password_rule_uppercase: Didžiosios raidės
-  label_password_requirement_lowercase: Must contain at least one lowercase character.
-  label_password_requirement_numeric: Must contain at least one numeric character.
-  label_password_requirement_special: Must contain at least one special character.
-  label_password_requirement_uppercase: Must contain at least one uppercase character.
-  label_path_encoding: Kelio koduotė
-  label_per_page: 'Puslapyje:'
-  label_people: Žmonės
-  label_permissions: Leidimai
-  label_permissions_report: Leidimų ataskaita
-  label_personalize_page: Suasmeninti šį puslapį
-  label_placeholder_user: Statytinis naudotojas
-  label_placeholder_user_new: Naujas statytinis naudotojas
-  label_placeholder_user_plural: Statytiniai naudotojai
-  label_planning: Planavimas
-  label_please_login: Prašome prisijungti
-  label_plugins: Papildiniai
-  label_portfolio_plural: Portfolios
-  label_modules_and_plugins: Moduliai ir priedai
-  label_precedes: ankstesnis
-  label_preferences: Parinktys
-  label_preview: Peržiūra
-  label_preview_not_available: Peržiūra negalima
-  label_previous: Ankstesnis
-  label_previous_week: Ankstesnė savaitė
-  label_previous_year: Previous year
+  label_not_contains: "neturi"
+  label_not_equals: "nėra"
+  label_life_cycle_step_plural: "Project life cycle"
+  label_on: "įjungta"
+  label_operator_all: "nėra tuščias"
+  label_operator_none: "yra tuščias"
+  label_operator_equals_or: "yra (ARBA)"
+  label_operator_equals_all: "yra (IR)"
+  label_operator_shared_with_user_any: "bet kuris"
+  label_open: "atverti"
+  label_closed: "uždaryta"
+  label_open_menu: "Atidaryti meniu"
+  label_open_work_packages: "atidarytas"
+  label_open_work_packages_plural: "atidarytas"
+  label_openproject_website: "Yojana svetainė"
+  label_optional_description: "Aprašymas"
+  label_options: "Nustatymai"
+  label_other: "Kita"
+  label_overall_activity: "Visa veikla"
+  label_overview: "Peržiūra"
+  label_page_title: "Puslapio antraštė"
+  label_part_of: "dalis"
+  label_password_lost: "Pamiršote slaptažodį?"
+  label_password_rule_lowercase: "Mažosios raidės"
+  label_password_rule_numeric: "Skaitiniai simboliai"
+  label_password_rule_special: "Specialūs simboliai"
+  label_password_rule_uppercase: "Didžiosios raidės"
+  label_path_encoding: "Kelio koduotė"
+  label_per_page: "Puslapyje:"
+  label_people: "Žmonės"
+  label_permissions: "Leidimai"
+  label_permissions_report: "Leidimų ataskaita"
+  label_personalize_page: "Suasmeninti šį puslapį"
+  label_placeholder_user: "Statytinis naudotojas"
+  label_placeholder_user_new: "Naujas statytinis naudotojas"
+  label_placeholder_user_plural: "Statytiniai naudotojai"
+  label_planning: "Planavimas"
+  label_please_login: "Prašome prisijungti"
+  label_plugins: "Papildiniai"
+  label_portfolio_plural: "Portfolios"
+  label_modules_and_plugins: "Moduliai ir priedai"
+  label_precedes: "ankstesnis"
+  label_preferences: "Parinktys"
+  label_preview: "Peržiūra"
+  label_preview_not_available: "Peržiūra negalima"
+  label_previous: "Ankstesnis"
+  label_previous_week: "Ankstesnė savaitė"
   label_principal_invite_via_email: " arba pakviesti naujus vartotojus naudojant el. paštą"
   label_principal_search: Pridėti esamus vartotojus ar grupes
   label_privacy_policy: Duomenų privatumo ir saugumo politika
@@ -4841,8 +4815,8 @@ lt:
   mail_body_backup_token_reset_user_info: Jūsų atsarginės kopijos žetonas buvo atstatytas.
   mail_body_backup_token_info: Ankstesnis žetonas nebegalioja.
   mail_body_backup_waiting_period: Naujas atsarginės kopijos žetonas bus tinkamas po %{hours} valandų.
-  mail_body_backup_token_warning: Jei tai buvote ne jūs, nedelsiant prisijunkite prie OpenProject ir atšaukite jį dar kartą.
-  mail_body_incoming_email_error: Nepavyksta apdoroti laiško, kurį jūs nusiuntėte OpenProject.
+  mail_body_backup_token_warning: Jei tai buvote ne jūs, nedelsiant prisijunkite prie Yojana ir atšaukite jį dar kartą.
+  mail_body_incoming_email_error: Nepavyksta apdoroti laiško, kurį jūs nusiuntėte Yojana.
   mail_body_incoming_email_error_in_reply_to: "%{received_at} %{from_email} rašė"
   mail_body_incoming_email_error_logs: Žurnalai
   mail_body_lost_password: 'Norėdami pakeisti slaptažodį, spauskite nuorodą:'
@@ -4855,23 +4829,23 @@ lt:
   mail_body_register_user: 'Brangus %{name}, '
   mail_body_register_links_html: |
     Galite panaršyti mūsų youtube kanale (%{youtube_link}), kur mes pateikiame  (%{webinar_link})
-    ir „Pradėkime“ video (%{get_started_link}) tam, kad jūsų pirmieji OpenProject žingsniai būtų kaip įmanoma lengvesni.
+    ir „Pradėkime“ video (%{get_started_link}) tam, kad jūsų pirmieji Yojana žingsniai būtų kaip įmanoma lengvesni.
     <br />
     Jei turėsite papildomų klausimų, pažiūrėkite mūsų dokumentaciją (%{documentation_link}) arba susisiekite su jūsų administratoriumi.
-  mail_body_register_closing: Jūsų OpenProject komanda
-  mail_body_register_ending: Likite prisijungę! Su geriausiais linkėjimais,
+  mail_body_register_closing: "Jūsų Yojana komanda"
+  mail_body_register_ending: "Likite prisijungę! Su geriausiais linkėjimais,"
   mail_body_reminder: "%{count} darbų paketai, kurie yra jums priskirti, baigiasi per artimiausias %{days} dienų (-ą, -as):"
   mail_body_group_reminder: "%{count} darbo paketas(ai), kurie priskirti grupei „%{group}“ turi būti baigti per kitas %{days} dienas:"
   mail_body_wiki_page_added: "%{author} pridėjo '%{id}' wiki puslapį."
   mail_body_wiki_page_updated: "%{author} atnaujino '%{id}' wiki puslapį."
   mail_subject_account_activation_request: "%{value} paskyros aktyvavimo prašymas"
-  mail_subject_backup_ready: Jūsų atsarginė kopija paruošta
-  mail_subject_backup_token_reset: Rezervinės kopijos žetonas atstatytas
-  mail_subject_incoming_email_error: Nepavyksta apdoroti laiško, kurį jūs nusiuntėte OpenProject.
-  mail_subject_lost_password: Jūsų slaptažodis %{value}
-  mail_subject_register: Jūsų %{value} paskyros aktyvavimas
-  mail_subject_wiki_content_added: Wiki puslapis '%{id}' buvo pridėtas
-  mail_subject_wiki_content_updated: Wiki puslapis '%{id}' buvo atnaujintas
+  mail_subject_backup_ready: "Jūsų atsarginė kopija paruošta"
+  mail_subject_backup_token_reset: "Rezervinės kopijos žetonas atstatytas"
+  mail_subject_incoming_email_error: "Nepavyksta apdoroti laiško, kurį jūs nusiuntėte Yojana."
+  mail_subject_lost_password: "Jūsų slaptažodis %{value}"
+  mail_subject_register: "Jūsų %{value} paskyros aktyvavimas"
+  mail_subject_wiki_content_added: "Wiki puslapis '%{id}' buvo pridėtas"
+  mail_subject_wiki_content_updated: "Wiki puslapis '%{id}' buvo atnaujintas"
   mail_member_added_project:
     subject: "%{project} - Jūs buvote pridėtas kaip narys"
     body:
@@ -4895,17 +4869,17 @@ lt:
       roles: 'Jūs dabar turite tokius vaidmenis:'
   mail_user_activation_limit_reached:
     subject: Pasiekta vartotojų aktyvinimo riba
-    message_html: |
-      A new user (%{email}) tried to create an account on an OpenProject environment that you manage (%{host}).
-      The user cannot activate their account since the user limit has been reached.
+    message: |
+      Naujas vartotojas (%{email}) bandė sukurti paskyrą Yojana aplinkoją, kurią jūs valdote (%{host}).
+      Vartotojas negali aktyvuoti savo paskyros, nes sistemoje pasiekta vartotojų riba.
     steps:
-      a: Atnaujinti savo mokėjimo planą ([here](upgrade_url))
-      b: Užrakinti arba panaikinti esamo naudotojo paskyrą ([here](users_url))
-      label: 'Norėdami leisti vartotojui prisijungti jūs galite: '
-  more_actions: Daugiau funkcijų
-  noscript_description: Jums reikia įjungti JavaScript, kad galėtumėte naudoti OpenProject!
-  noscript_heading: JavaScript išjungta
-  noscript_learn_more: Sužinoti daugiau
+      label: "Norėdami leisti vartotojui prisijungti jūs galite: "
+      a: "Atnaujinti savo mokėjimo planą ([here](upgrade_url))" #here turned into a link
+      b: "Užrakinti arba panaikinti esamo naudotojo paskyrą ([here](users_url))" #here turned into a link
+  more_actions: "Daugiau funkcijų"
+  noscript_description: "Jums reikia įjungti JavaScript, kad galėtumėte naudoti Yojana!"
+  noscript_heading: "JavaScript išjungta"
+  noscript_learn_more: "Sužinoti daugiau"
   notice_accessibility_mode: Pasiekiamumo režimas gali būti įjungtas Jūsų paskyros nustatymuose [account settings](nuoroda).
   notice_account_activated: Jūsų paskyra aktyvuota. Galite prisijungti.
   notice_account_already_activated: Paskyra jau aktyvuota.
@@ -4983,10 +4957,10 @@ lt:
   notice_automatic_set_of_standard_type: Automatiškai nustatyti standartinį tipą.
   notice_logged_out: Jūs sėkmingai atsijungėte.
   notice_wont_delete_auth_source: Negalima ištrinti LDAP jungties, kol naudotojai ją naudoja.
-  notice_project_cannot_update_custom_fields: 'Jūs negalite atnaujinti projekto pasirinktinų laukų. Projektas yra netinkamas: %{errors}'
-  notice_attachment_migration_wiki_page: 'Šis puslapis buvo sugeneruotas automatiškai, kai buvo naujinama OpenProject. Jame yra visi prisegti failai, kurie buvo susieti su %{container_type} „%{container_name}“.
-
-    '
+  notice_project_cannot_update_custom_fields: "Jūs negalite atnaujinti projekto pasirinktinų laukų. Projektas yra netinkamas: %{errors}"
+  notice_attachment_migration_wiki_page: >
+    Šis puslapis buvo sugeneruotas automatiškai, kai buvo naujinama Yojana. Jame yra visi prisegti failai, kurie buvo susieti su %{container_type} „%{container_name}“.
+  #Default format for numbers
   number:
     format:
       delimiter: ","
@@ -5009,138 +4983,127 @@ lt:
           mb: MB
           tb: TB
   onboarding:
-    heading_getting_started: Gauti aprašymą
-    text_getting_started_description: Gaukite greitą apžvalgą apie projektų valdymą ir komandos bendradarbiavimą naudojant OpenProject. Šį video galite paleisti iš naujo per pagalbos meniu.
-    welcome: Jus sveikina %{app_title}
-    select_language: Pasirinkite kalbą
-  open_project:
-    common:
-      work_package_card_component:
-        drag_handle:
-          label: Drag to reorder
-        menu:
-          label_actions: Work package actions
-        parent: Parent
-        undisclosed: Undisclosed
-  permission_add_work_package_comments: Add comments
-  permission_add_work_packages: Pridėti darbų paketų
-  permission_add_messages: Skelbti pranešimus
-  permission_add_project: Kurti projektus
-  permission_add_portfolios: Create portfolios
-  permission_add_programs: Create programs
-  permission_add_work_package_attachments: Prisegti priedus
-  permission_add_work_package_attachments_explanation: Leidžia pridėti priedus be darbo paketo keitimo teisių
-  permission_add_internal_comments: Write internal comments
-  permission_archive_project: Archyvuoti projektą
-  permission_create_user: Kurti naudotojus
-  permission_manage_user: Keisti naudotojus
-  permission_manage_placeholder_user: Kurti, keisti ir trinti statytinius naudotojus
-  permission_add_subprojects: Sukurti sub-projektus
-  permission_add_work_package_watchers: Pridėti stebėtojus
-  permission_assign_versions: Priskirti versijas
-  permission_browse_repository: Tik skaityti prieiga prie repozitorijos (naršyti ir pasiimti)
-  permission_change_work_package_status: Keisti darbo paketo būseną
-  permission_change_work_package_status_explanation: Leidžia keisti būseną neturint darbo paketo keitimo teisių
-  permission_comment_news: Komentuoti naujienas
-  permission_commit_access: Skaitymo/rašymo prieiga į repozitoriją
-  permission_copy_projects: Kopijuoti projekus
-  permission_copy_projects_explanation: In template projects, this permission has a secondary function, it allows the creation of new projects derived from the template.
-  permission_copy_work_packages: Duplicate work packages
-  permission_create_backup: Kurti atsargines kopijas
-  permission_delete_work_package_watchers: Pašalinti stebėtojus
-  permission_delete_work_packages: Pašalinti darbų paketus
-  permission_delete_messages: Pašalinti pranešimus
-  permission_delete_own_messages: Pašalinti savo pranešimus
-  permission_delete_reportings: Šalinti ataskaitas
-  permission_delete_timelines: Šalinti laiko juostas
-  permission_edit_work_package_comments: Moderate comments
-  permission_edit_work_package_comments_explanation: 'Caution: Users with this permission are able to edit anyone''s comment.'
-  permission_edit_work_packages: Redaguoti darbų paketus
-  permission_edit_messages: Redaguoti pranešimus
-  permission_edit_own_internal_comments: Edit own internal comments
-  permission_edit_own_work_package_comments: Edit own comments
-  permission_edit_own_messages: Redaguoti savo pranešimus
-  permission_edit_own_time_entries: Redaguoti savo laiko įrašus
-  permission_edit_others_internal_comments: Moderate internal comments
-  permission_edit_others_internal_comments_explanation: 'Caution: Users with this permission are able to edit other users'' internal comments.'
-  permission_edit_project: Redaguoti projektą
-  permission_edit_project_attributes: Edit project attributes
-  permission_edit_project_phases: Edit project phases
-  permission_edit_reportings: Redaguoti ataskaitas
-  permission_edit_time_entries: Keitimo laiko žurnalai kitiems naudotojams
-  permission_edit_timelines: Redaguoti tvarkaraščius
-  permission_edit_wiki_pages: Redaguoti wiki puslapius
-  permission_export_work_packages: Eksportuoti darbų paketus
-  permission_export_projects: Export projects
-  permission_invite_members_by_email: Invite members by email
-  permission_invite_members_by_email_explanation: 'Allows users to invite new members by email. Invited users will receive an email with a link to set their password and activate their account. Depends on the permission to manage members
-
-    '
-  permission_log_own_time: Registruoti savo laiką
-  permission_log_time: Registruoti kitų naudotojų laiką
-  permission_manage_forums: Valdyti forumus
-  permission_manage_categories: Valdyti darbų paketo kategorijas
-  permission_manage_dashboards: Valdyti švieslentes
-  permission_manage_work_package_relations: Valdyti darbų paketo ryšius
-  permission_manage_members: Valdyti narius
-  permission_manage_news: Valdyti naujienas
-  permission_manage_project_activities: Valdyti projekto veiklas
-  permission_manage_public_queries: Tvarkyti viešus vaizdus
-  permission_manage_repository: Valdyti repozitoriją
-  permission_manage_subtasks: Valdyti darbų paketo hierarchijas
-  permission_manage_versions: Valdyti versijas
-  permission_manage_wiki: Valdyti wiki
-  permission_manage_own_working_times: Manage own working times
-  permission_manage_own_working_times_explanation: 'Allows users to manage their own working times, and personal non-working days.
-
-    '
-  permission_manage_working_times: Manage working times for all users
-  permission_manage_working_times_explanation: 'Allows users to manage working times for all users, including personal non-working days.
-
-    '
-  permission_move_work_packages: Perkelti darbų paketus
-  permission_save_queries: Įrašyti vaizdus
-  permission_search_project: Ieškoti projekte
-  permission_select_custom_fields: Parinkite savo laukus
-  permission_select_project_custom_fields: Parinkite projekto atributus
-  permission_select_project_phases: Select project phases
-  permission_select_project_phases_explanation: Activate/Deactivate the phases in a project. Enables the user to select the life cycle appropriate for the project as inactive phases will not be visible in the project overview page nor the project list.
-  permission_select_project_modules: Parinkti projekto modulius
-  permission_share_work_packages: Bendrinti darbo paketus
-  permission_manage_types: Pasirinkti tipus
-  permission_manage_own_reminders: Create own reminders
-  permission_view_all_principals: View all users and groups
-  permission_view_all_principals_explanation: 'Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
-
-    '
-  permission_view_project: Peržiūrėti projektus
-  permission_view_changesets: Rodyti repozitorijos pakeitimus OpenProject
-  permission_view_internal_comments: View internal comments
-  permission_view_commit_author_statistics: Peržiūrėti autorių pakeitimų pateikimo statistiką
-  permission_view_dashboards: Peržiūrėti švieslentes
-  permission_view_work_package_watchers: Peržiūrėti stebėtojų sąrašą
-  permission_view_work_packages: Rodyti darbų paketus
-  permission_view_messages: Peržiūrėti žinutes
-  permission_view_news: Žiūrėti naujienas
-  permission_view_members: Rodyti narius
-  permission_view_reportings: Peržiūrėti ataskaitas
-  permission_view_shared_work_packages: Žiūrėti darbo paketo bendrinimus
-  permission_view_time_entries: Peržiūrėti dirbtą laiką
-  permission_view_timelines: Peržiūrėti laiko juostas
-  permission_view_user_email: View users' mail addresses
-  permission_view_wiki_edits: Peržiūrėti wiki istoriją
-  permission_view_wiki_pages: Peržiūrėti wiki
-  permission_work_package_assigned: Tapti paskirtuoju/atsakinguoju
-  permission_work_package_assigned_explanation: Darbų paketai gali būti priskirti naudotojams ir grupėms pagal vaidmenį atitinkamame projekte
-  permission_view_project_activity: Žiūrėti veiksmus projekte
-  permission_view_project_attributes: View project attributes
-  permission_view_project_phases: View project phases
-  permission_save_bcf_queries: Įrašyti BCF užklausas
-  permission_manage_public_bcf_queries: Valdyti viešas BCF užklausas
-  permission_edit_attribute_help_texts: Keisti atributų pagalbos tekstus
-  permission_manage_public_project_queries: Manage public project lists
-  permission_view_project_query: View project query
-  permission_edit_project_query: Edit project query
+    heading_getting_started: "Gauti aprašymą"
+    text_getting_started_description: "Gaukite greitą apžvalgą apie projektų valdymą ir komandos bendradarbiavimą naudojant Yojana. Šį video galite paleisti iš naujo per pagalbos meniu."
+    welcome: "Jus sveikina %{app_title}"
+    select_language: "Pasirinkite kalbą"
+  permission_add_work_package_comments: "Add comments"
+  permission_add_work_packages: "Pridėti darbų paketų"
+  permission_add_messages: "Skelbti pranešimus"
+  permission_add_project: "Kurti projektus"
+  permission_add_portfolios: "Create portfolios"
+  permission_add_programs: "Create programs"
+  permission_add_work_package_attachments: "Prisegti priedus"
+  permission_add_work_package_attachments_explanation: "Leidžia pridėti priedus be darbo paketo keitimo teisių"
+  permission_add_internal_comments: "Write internal comments"
+  permission_archive_project: "Archyvuoti projektą"
+  permission_create_user: "Kurti naudotojus"
+  permission_manage_user: "Keisti naudotojus"
+  permission_manage_placeholder_user: "Kurti, keisti ir trinti statytinius naudotojus"
+  permission_add_subprojects: "Sukurti sub-projektus"
+  permission_add_work_package_watchers: "Pridėti stebėtojus"
+  permission_assign_versions: "Priskirti versijas"
+  permission_browse_repository: "Tik skaityti prieiga prie repozitorijos (naršyti ir pasiimti)"
+  permission_change_wiki_parent_page: "Pakeisti tėvinį wiki puslapį"
+  permission_change_work_package_status: "Keisti darbo paketo būseną"
+  permission_change_work_package_status_explanation: "Leidžia keisti būseną neturint darbo paketo keitimo teisių"
+  permission_comment_news: "Komentuoti naujienas"
+  permission_commit_access: "Skaitymo/rašymo prieiga į repozitoriją"
+  permission_copy_projects: "Kopijuoti projekus"
+  permission_copy_projects_explanation: "In template projects, this permission has a secondary function, it allows the creation of new projects derived from the template."
+  permission_copy_work_packages: "Duplicate work packages"
+  permission_create_backup: "Kurti atsargines kopijas"
+  permission_delete_work_package_watchers: "Pašalinti stebėtojus"
+  permission_delete_work_packages: "Pašalinti darbų paketus"
+  permission_delete_messages: "Pašalinti pranešimus"
+  permission_delete_own_messages: "Pašalinti savo pranešimus"
+  permission_delete_reportings: "Šalinti ataskaitas"
+  permission_delete_timelines: "Šalinti laiko juostas"
+  permission_delete_wiki_pages: "Pašalinti wiki puslapius"
+  permission_delete_wiki_pages_attachments: "Pašalinti priedus"
+  permission_edit_work_package_comments: "Moderate comments"
+  permission_edit_work_package_comments_explanation: "Caution: Users with this permission are able to edit anyone's comment."
+  permission_edit_work_packages: "Redaguoti darbų paketus"
+  permission_edit_messages: "Redaguoti pranešimus"
+  permission_edit_own_internal_comments: "Edit own internal comments"
+  permission_edit_own_work_package_comments: "Edit own comments"
+  permission_edit_own_messages: "Redaguoti savo pranešimus"
+  permission_edit_own_time_entries: "Redaguoti savo laiko įrašus"
+  permission_edit_others_internal_comments: "Moderate internal comments"
+  permission_edit_others_internal_comments_explanation: "Caution: Users with this permission are able to edit other users' internal comments."
+  permission_edit_project: "Redaguoti projektą"
+  permission_edit_project_attributes: "Edit project attributes"
+  permission_edit_project_phases: "Edit project phases"
+  permission_edit_reportings: "Redaguoti ataskaitas"
+  permission_edit_time_entries: "Keitimo laiko žurnalai kitiems naudotojams"
+  permission_edit_timelines: "Redaguoti tvarkaraščius"
+  permission_edit_wiki_pages: "Redaguoti wiki puslapius"
+  permission_export_work_packages: "Eksportuoti darbų paketus"
+  permission_export_projects: "Export projects"
+  permission_export_wiki_pages: "Eksportuoti wiki puslapius"
+  permission_invite_members_by_email: "Invite members by email"
+  permission_invite_members_by_email_explanation: >
+    Allows users to invite new members by email. Invited users will receive an email with a link to set their password and activate their account. Depends on the permission to manage members
+  permission_list_attachments: "Pateikti priedus"
+  permission_log_own_time: "Registruoti savo laiką"
+  permission_log_time: "Registruoti kitų naudotojų laiką"
+  permission_manage_forums: "Valdyti forumus"
+  permission_manage_categories: "Valdyti darbų paketo kategorijas"
+  permission_manage_dashboards: "Valdyti švieslentes"
+  permission_manage_work_package_relations: "Valdyti darbų paketo ryšius"
+  permission_manage_members: "Valdyti narius"
+  permission_manage_news: "Valdyti naujienas"
+  permission_manage_project_activities: "Valdyti projekto veiklas"
+  permission_manage_public_queries: "Tvarkyti viešus vaizdus"
+  permission_manage_repository: "Valdyti repozitoriją"
+  permission_manage_subtasks: "Valdyti darbų paketo hierarchijas"
+  permission_manage_versions: "Valdyti versijas"
+  permission_manage_wiki: "Valdyti wiki"
+  permission_manage_wiki_menu: "Valdyti wiki meniu"
+  permission_move_work_packages: "Perkelti darbų paketus"
+  permission_protect_wiki_pages: "Apsaugoti wiki puslapius"
+  permission_rename_wiki_pages: "Pervadinti wiki puslapius"
+  permission_save_queries: "Įrašyti vaizdus"
+  permission_search_project: "Ieškoti projekte"
+  permission_select_custom_fields: "Parinkite savo laukus"
+  permission_select_project_custom_fields: "Parinkite projekto atributus"
+  permission_select_project_phases: "Select project phases"
+  permission_select_project_phases_explanation: "Activate/Deactivate the phases in a project. Enables the user to select the life cycle appropriate for the project as inactive phases will not be visible in the project overview page nor the project list."
+  permission_select_project_modules: "Parinkti projekto modulius"
+  permission_share_work_packages: "Bendrinti darbo paketus"
+  permission_manage_types: "Pasirinkti tipus"
+  permission_manage_own_reminders: "Create own reminders"
+  permission_view_all_principals: "View all users and groups"
+  permission_view_all_principals_explanation: >
+    Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
+  permission_view_project: "Peržiūrėti projektus"
+  permission_view_changesets: "Rodyti repozitorijos pakeitimus Yojana"
+  permission_view_internal_comments: "View internal comments"
+  permission_view_commit_author_statistics: "Peržiūrėti autorių pakeitimų pateikimo statistiką"
+  permission_view_dashboards: "Peržiūrėti švieslentes"
+  permission_view_work_package_watchers: "Peržiūrėti stebėtojų sąrašą"
+  permission_view_work_packages: "Rodyti darbų paketus"
+  permission_view_messages: "Peržiūrėti žinutes"
+  permission_view_news: "Žiūrėti naujienas"
+  permission_view_members: "Rodyti narius"
+  permission_view_reportings: "Peržiūrėti ataskaitas"
+  permission_view_shared_work_packages: "Žiūrėti darbo paketo bendrinimus"
+  permission_view_time_entries: "Peržiūrėti dirbtą laiką"
+  permission_view_timelines: "Peržiūrėti laiko juostas"
+  permission_view_user_email: "View users' mail addresses"
+  permission_view_wiki_edits: "Peržiūrėti wiki istoriją"
+  permission_view_wiki_pages: "Peržiūrėti wiki"
+  permission_work_package_assigned: "Tapti paskirtuoju/atsakinguoju"
+  permission_work_package_assigned_explanation: "Darbų paketai gali būti priskirti naudotojams ir grupėms pagal vaidmenį atitinkamame projekte"
+  permission_view_project_activity: "Žiūrėti veiksmus projekte"
+  permission_view_project_attributes: "View project attributes"
+  permission_view_project_phases: "View project phases"
+  permission_save_bcf_queries: "Įrašyti BCF užklausas"
+  permission_manage_public_bcf_queries: "Valdyti viešas BCF užklausas"
+  permission_edit_attribute_help_texts: "Keisti atributų pagalbos tekstus"
+  permission_manage_public_project_queries: "Manage public project lists"
+  permission_view_project_query: "View project query"
+  permission_edit_project_query: "Edit project query"
   placeholders:
     default: "-"
     templated_hint: Automatically generated through type %{type}
@@ -5240,49 +5203,50 @@ lt:
     create_successful: Repozitorija buvo užregistruota.
     delete_sucessful: Repozitorija buvo ištrinta.
     destroy:
-      confirmation: Jei tęsite, visam laikui ištrinsite valdomą repozitoriją.
-      info: Repozitorijos ištrynimas yra negrįžtamas veiksmas.
-      info_not_managed: 'Pastaba: tai NEIŠTRINS jokių duomenų repozitorijoje, KURIŲ nevaldo OpenProject sistema.'
-      managed_path_note: 'Ši katalogas bus išvalytas: %{path}'
-      repository_verification_html: Enter the project's identifier %{identifier} to verify the deletion of its repository.
-      subtitle: Ar tikrai norite ištrinti projekto %{project_name} repozitoriją %{repository_type}?
-      subtitle_not_managed_html: Do you really want to remove the linked %{repository_type} %{url} from the project %{project_name}?
-      title_html: Delete the %{repository_type}
-      title_not_managed: Ištrinti susietą %{repository_type}?
+      confirmation: "Jei tęsite, visam laikui ištrinsite valdomą repozitoriją."
+      info: "Repozitorijos ištrynimas yra negrįžtamas veiksmas."
+      info_not_managed: "Pastaba: tai NEIŠTRINS jokių duomenų repozitorijoje, KURIŲ nevaldo Yojana sistema."
+      managed_path_note: "Ši katalogas bus išvalytas: %{path}"
+      repository_verification: "Įveskite projekto identifikatorių %{identifier}, kad patvirtintumėte repozitorijos ištrynimą."
+      subtitle: "Ar tikrai norite ištrinti projekto %{project_name} repozitoriją %{repository_type}?"
+      subtitle_not_managed: "Ar tikrai norite pašalinti susietą %{repository_type} %{url} iš projekto %{project_name}?"
+      title: "Ištrinti saugyklą %{repository_type}"
+      title_not_managed: "Ištrinti susietą %{repository_type}?"
     errors:
-      build_failed: Nepavyko sukurti repozitorijos su parinkta konfigūracija. %{reason}
-      managed_delete: Nepavyko ištrinti valdomos repozitorijos.
-      managed_delete_local: 'Nepavyko ištrinti lokalios repozitorijos, kuri yra ''%{path}'': %{error_message}'
-      empty_repository: Repozitorija egzistuoja, bet ji yra tuščia. Joje dar nėra jokių peržiūrų.
-      exists_on_filesystem: Repozitorijos katalogas jau yra sukurtas šioje failų sistemoje.
-      filesystem_access_failed: 'Įvyko klaida bandant pasiekti repozitoriją failų sistemoje: %{message}'
-      not_manageable: Repozitorijos paslaugų teikėjas negali būti valdomas OpenProject sistemos.
-      path_permission_failed: 'Įvyko klaida bandant sukurti šį kelią: %{path}. Prašome įsitikinti, kad OpenProject turi rašymo teises šiame kataloge.'
-      unauthorized: Jūs neturite teisės pasiekti šią repozitoriją arba prisijungimo duomenys yra neteisingi.
-      unavailable: Repozitorija yra nepasiekiama.
-      exception_title: 'Neina pasiekti repozitorijos: %{message}'
-      disabled_or_unknown_type: Pasirinktas tipas %{type} yra išjungtas arba daugiau SCM teikėjui %{vendor} nepasiekiamas.
-      disabled_or_unknown_vendor: SCM teikėjas %{vendor} yra išjungtas arba daugiau nebepasiekiamas.
-      remote_call_failed: 'Kviečiant nuotolinę paslaugą gautas klaidos pranešimas ''%{message}'' (Kodas: %{code})'
-      remote_invalid_response: Kreipiantis dėl nuotolinės paslaugos gautas neleistinas atsakymas.
-      remote_save_failed: Nepavyko išsaugoti repozitorijos su parametrais, gautais iš nuotolinės paslaugos.
+      build_failed: "Nepavyko sukurti repozitorijos su parinkta konfigūracija. %{reason}"
+      managed_delete: "Nepavyko ištrinti valdomos repozitorijos."
+      managed_delete_local: "Nepavyko ištrinti lokalios repozitorijos, kuri yra '%{path}': %{error_message}"
+      empty_repository: "Repozitorija egzistuoja, bet ji yra tuščia. Joje dar nėra jokių peržiūrų."
+      exists_on_filesystem: "Repozitorijos katalogas jau yra sukurtas šioje failų sistemoje."
+      filesystem_access_failed: "Įvyko klaida bandant pasiekti repozitoriją failų sistemoje: %{message}"
+      not_manageable: "Repozitorijos paslaugų teikėjas negali būti valdomas Yojana sistemos."
+      path_permission_failed: "Įvyko klaida bandant sukurti šį kelią: %{path}. Prašome įsitikinti, kad Yojana turi rašymo teises šiame kataloge."
+      unauthorized: "Jūs neturite teisės pasiekti šią repozitoriją arba prisijungimo duomenys yra neteisingi."
+      unavailable: "Repozitorija yra nepasiekiama."
+      exception_title: "Neina pasiekti repozitorijos: %{message}"
+      disabled_or_unknown_type: "Pasirinktas tipas %{type} yra išjungtas arba daugiau SCM teikėjui %{vendor} nepasiekiamas."
+      disabled_or_unknown_vendor: "SCM teikėjas %{vendor} yra išjungtas arba daugiau nebepasiekiamas."
+      remote_call_failed: "Kviečiant nuotolinę paslaugą gautas klaidos pranešimas '%{message}' (Kodas: %{code})"
+      remote_invalid_response: "Kreipiantis dėl nuotolinės paslaugos gautas neleistinas atsakymas."
+      remote_save_failed: "Nepavyko išsaugoti repozitorijos su parametrais, gautais iš nuotolinės paslaugos."
     git:
       instructions:
-        managed_url: Tai yra valdomos (vietinės) Git repozitorijos URL adresas.
-        path: Nurodykite kelią į savo vietinę Git repozitoriją (pvz., %{example_path}). Jūs taip pat galite naudoti nuotolines repozitorijas, kurios yra klonuotos į vietinę kopiją , naudodami kelią, prasidedantį http(s):// ar file://.
-        path_encoding: 'Perrašyti Git kelio koduotę (numatytoji: UTF-8)'
-      local_title: Susieti esamą vietinę Git repozitoriją
-      local_url: Vietinis URL
-      local_introduction: Jei turite jau egzistuojančią vietinę Git repozitoriją, Jūs galite susieti ją su OpenProject, kad galėtumėte repozitoriją pasiekti sistemos viduje.
-      managed_introduction: Leisti OpenProject automatiškai sukurti ir integruoti vietinę Git repozitoriją.
-      managed_title: Git repozitorija integruota į OpenProject
-      managed_url: Valdomas URL
-      path: Kelias į Git repozitoriją
-      path_encoding: Kelio koduotė
-    go_to_revision: Eiti į peržiūrą
-    managed_remote: Valdomos saugyklos šiam tiekėjui valdomos nuotoliniu būdu.
-    managed_remote_note: Informacija apie URL ir kelią į repozitoriją nėra galima iki repozitorijos sukūrimo.
-    managed_url: Valdomas URL
+        managed_url: "Tai yra valdomos (vietinės) Git repozitorijos URL adresas."
+        path: >-
+          Nurodykite kelią į savo vietinę Git repozitoriją (pvz., %{example_path}). Jūs taip pat galite naudoti nuotolines repozitorijas, kurios yra klonuotos į vietinę kopiją , naudodami kelią, prasidedantį http(s):// ar file://.
+        path_encoding: "Perrašyti Git kelio koduotę (numatytoji: UTF-8)"
+      local_title: "Susieti esamą vietinę Git repozitoriją"
+      local_url: "Vietinis URL"
+      local_introduction: "Jei turite jau egzistuojančią vietinę Git repozitoriją, Jūs galite susieti ją su Yojana, kad galėtumėte repozitoriją pasiekti sistemos viduje."
+      managed_introduction: "Leisti Yojana automatiškai sukurti ir integruoti vietinę Git repozitoriją."
+      managed_title: "Git repozitorija integruota į Yojana"
+      managed_url: "Valdomas URL"
+      path: "Kelias į Git repozitoriją"
+      path_encoding: "Kelio koduotė"
+    go_to_revision: "Eiti į peržiūrą"
+    managed_remote: "Valdomos saugyklos šiam tiekėjui valdomos nuotoliniu būdu."
+    managed_remote_note: "Informacija apie URL ir kelią į repozitoriją nėra galima iki repozitorijos sukūrimo."
+    managed_url: "Valdomas URL"
     settings:
       automatic_managed_repos_disabled: Išjungti automatinį kūrimą
       automatic_managed_repos: Valdomų saugyklų automatinis kūrimas
@@ -5290,204 +5254,179 @@ lt:
     scm_vendor: Šaltinio kontrolės valdymo sistema
     scm_type: Repozitorijos tipas
     scm_types:
-      local: Susieti esamą vietinę repozitoriją
-      existing: Susieti esamą repozitoriją
-      managed: Sukurti naują repozitoriją OpenProject
+      local: "Susieti esamą vietinę repozitoriją"
+      existing: "Susieti esamą repozitoriją"
+      managed: "Sukurti naują repozitoriją Yojana"
     storage:
-      not_available: Disko vietos naudojimas nėra prieinamas šiai repozitorijai.
-      update_timeout: Laikyti paskiausią reikalingą disko vietos informaciją repozitorijai N minutes (-ių). Kadangi reikalingos vietos repozitorijai skaičiavimas gali būti reiklus resursams, minučių reikšmės didinimas gali stipriai sumažinti sistemos našumą.
-      oauth_application_details_html: 'The client secret value will not be accessible again after you close this window. Please copy these values into the Nextcloud OpenProject Integration settings:'
-      oauth_application_details_link_text: Eiti į nustatymų puslapį
-      setup_documentation_details: 'Jei jums reikia pagalbos konfigūruojant naują failų saugyklą, prašome skaityti dokumentaciją: '
-      setup_documentation_details_link_text: File storages setup
-      show_warning_details: Norėdami naudoti šią failų talpyklą, nepamirškite aktyvuoti modulį ir konkrečią saugyklą projekto nustatymuose kiekvienam reikiamam projektui.
+      not_available: "Disko vietos naudojimas nėra prieinamas šiai repozitorijai."
+      update_timeout: "Laikyti paskiausią reikalingą disko vietos informaciją repozitorijai N minutes (-ių). Kadangi reikalingos vietos repozitorijai skaičiavimas gali būti reiklus resursams, minučių reikšmės didinimas gali stipriai sumažinti sistemos našumą."
+      oauth_application_details: "Kliento slapta reikšmė daugiau nebebus prieinama po to, kai uždarysite šį langą. Prašome nukopijuoti šias reikšmes į Nextcloud Yojana integracijos nustatymus:"
+      oauth_application_details_link_text: "Eiti į nustatymų puslapį"
+      setup_documentation_details: "Jei jums reikia pagalbos konfigūruojant naują failų saugyklą, prašome skaityti dokumentaciją: "
+      setup_documentation_details_link_text: "File storages setup"
+      show_warning_details: "Norėdami naudoti šią failų talpyklą, nepamirškite aktyvuoti modulį ir konkrečią saugyklą projekto nustatymuose kiekvienam reikiamam projektui."
     subversion:
-      existing_title: Esama Subversion repozitorija
-      existing_introduction: Jei jau turite esamą Subversion repozitoriją, Jūs galite ją susieti su OpenProject, kad galėtumėte informaciją pasiekti iš sistemos vidaus.
-      existing_url: Esamas URL
+      existing_title: "Esama Subversion repozitorija"
+      existing_introduction: "Jei jau turite esamą Subversion repozitoriją, Jūs galite ją susieti su Yojana, kad galėtumėte informaciją pasiekti iš sistemos vidaus."
+      existing_url: "Esamas URL"
       instructions:
-        managed_url: Tai yra URL kelias į valdomą (vietinę) Subversion repozitoriją.
-        url: |-
-          Įveskite repozitorijos URL kelią. Jis gali rodyti tiek į vietinę (pasidedančią %{local_proto}), tiek į nuotolinę repozitoriją.
-          Šios URL kelio schemos yra palaikomos:
-      managed_title: Subversion repozitorija integruota į OpenProject
-      managed_introduction: Leisti OpenProject automatiškai sukurti ir integruoti vietinę Subversion repozitoriją.
-      managed_url: Valdomas URL
-      password: Repozitorijos slaptažodis
-      username: Repozitorijos vartotojo vardas
-    truncated: Atsiprašome, mes turėjo apkirpti šią direktoriją iki %{limit} failų. %{truncated} įrašų buvo neįtraukti į sąrašą.
+        managed_url: "Tai yra URL kelias į valdomą (vietinę) Subversion repozitoriją."
+        url: "Įveskite repozitorijos URL kelią. Jis gali rodyti tiek į vietinę (pasidedančią %{local_proto}), tiek į nuotolinę repozitoriją.\nŠios URL kelio schemos yra palaikomos:"
+      managed_title: "Subversion repozitorija integruota į Yojana"
+      managed_introduction: "Leisti Yojana automatiškai sukurti ir integruoti vietinę Subversion repozitoriją."
+      managed_url: "Valdomas URL"
+      password: "Repozitorijos slaptažodis"
+      username: "Repozitorijos vartotojo vardas"
+    truncated: "Atsiprašome, mes turėjo apkirpti šią direktoriją iki %{limit} failų. %{truncated} įrašų buvo neįtraukti į sąrašą."
     named_repository: "%{vendor_name} repozitorija"
     update_settings_successful: Nustatymai sėkmingai išsaugoti.
     url: URL į repozitoriją
     warnings:
       cannot_annotate: Šis failas negali turėti pastabų.
   scheduling:
-    manual: set to Manual
-    automatic: set to Automatic
-  search_input_placeholder: Paieška...
-  setting_allowed_link_protocols: Allowed link protocols
-  setting_allowed_link_protocols_text_html: Allow these protocols to be rendered as links in work package descriptions, long text fields and comments. For example, %{tel_code} or %{element_code}. Enter one protocol per line. <br/> Protocols %{http_code}, %{https_code}, and %{mailto_code} are always allowed.
-  setting_capture_external_links: Capture external links
-  setting_capture_external_links_text: 'When enabled, all external links in formatted text will redirect through a warning page before leaving the application. This helps protect users from potentially malicious external websites.
-
-    '
-  setting_capture_external_links_require_login: Require users to be logged in
-  setting_capture_external_links_require_login_text: 'When enabled, users wanting to click on external links need to be logged in before being able to continue.
-
-    '
-  setting_after_first_login_redirect_url: First login redirect
-  setting_after_first_login_redirect_url_text_html: 'Set a path to redirect users after their first login. If empty, redirects to the home page for the onboarding tour. <br/> Example: <code>/my/page</code>
-
-    '
-  setting_after_login_default_redirect_url: After login redirect
-  setting_after_login_default_redirect_url_example_html: 'Set a default path to redirect users after login, if no back link was provided. Redirects to home page if not set. <br/> Example: %{example_code}
-
-    '
-  setting_apiv3_cors_title: Cross-Origin Resource Sharing (CORS)
-  setting_apiv3_cors_enabled: Įgalinti CORS
-  setting_apiv3_cors_origins: API V3 Cross-Origin Resource Sharing (CORS) leidžiami kilmės domenai
-  setting_apiv3_cors_origins_instructions_html: 'If CORS is enabled, these are the origins that are allowed to access OpenProject API. <br/> Please check the [Documentation on the Origin header](docs_url) on how to specify the expected values.
-
-    '
-  setting_apiv3_write_readonly_attributes: Rašymo prieiga prie tik skaitymui skirtų atributų
-  setting_apiv3_write_readonly_attributes_instructions: 'If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
-
-    '
-  setting_apiv3_write_readonly_attributes_warning: 'This setting has a use-case for e.g., importing data, but allows administrators to impersonate the creation of items as other users. All creation requests are being logged however with the true author.
-
-    '
-  setting_apiv3_write_readonly_attributes_additional_html: 'For more information on attributes and supported resources, please see the [API documentation](api_documentation_link).
-
-    '
-  setting_apiv3_max_page_size: Maksimalus API puslapio dydis
-  setting_apiv3_max_page_size_instructions: 'Set the maximum page size the API will respond with. It will not be possible to perform API requests that return more values on a single page.
-
-    '
-  setting_apiv3_max_page_size_warning: 'Please only change this value if you are sure why you need it. Setting to a high value will result in significant performance impacts, while a value lower than the per page options will cause errors in paginated views.
-
-    '
-  setting_apiv3_docs: Dokumentacija
-  setting_apiv3_docs_enabled: Įjungti dokumentų puslapį
-  setting_apiv3_docs_enabled_instructions_html: 'Jei dokumentų puslapis yra įjungtas, jūs galite gauti interaktyvią APIv3 dokumentaciją <a href="%{link}" target="_blank">%{link}</a>.
-
-    '
-  setting_apiv3_docs_enabled_instructions_warning: 'Please be aware that enabling the API docs on a production system may expose sensitive information or result in accidental loss of data when not being careful. We recommend to only enable this setting for development purposes.
-
-    '
-  setting_attachment_whitelist: Leidžiamų failų tipų sąrašas
-  setting_email_delivery_method: El. pašto pristatymo metodas
-  setting_emails_salutation: Kreiptis į naudotojus e-laiškuose su
-  setting_oauth_allow_remapping_of_existing_users: Allow remapping of existing users
-  setting_sendmail_location: Sendmail vykdomojo failo lokacija
-  setting_sendmail_arguments: Arguments for sendmail
-  setting_smtp_enable_starttls_auto: Automatiškai naudoti STARTTLS, jei galima
-  setting_smtp_ssl: Naudoti SSL jungtį
-  setting_smtp_address: SMTP serveris
-  setting_smtp_port: SMTP prievadas
-  setting_smtp_authentication: SMTP autentifikacija
-  setting_smtp_user_name: SMTP vartotojo vardas
-  setting_smtp_password: SMTP slaptažodis
-  setting_smtp_domain: SMTP HELO domenas
-  setting_activity_days_default: Projekto veiklos atvaizduojamų dienų skaičius
-  setting_api_tokens_enabled: Enable API tokens
-  setting_api_tokens_enabled_caption: 'Decide whether users can create personal API tokens in their account settings. These tokens can be used to access the different APIs of OpenProject, such as APIv3 and MCP.
-
-    '
-  setting_app_subtitle: Programos paantraštė
-  setting_app_title: Programos pavadinimas
-  setting_organization_name: Organization name
-  setting_attachment_max_size: Didžiausias prisegamo failo dydis
-  setting_show_work_package_attachments: Pagal nutylėjimą rodyti priedus failų kortelėje
-  setting_antivirus_scan_mode: Skenavimo režimas
-  setting_antivirus_scan_action: Užkrėsto failo veiksmas
-  setting_autofetch_changesets: Automatiškai įkelti repozitorijos pakeitimus
-  setting_autologin: Automatinis prisijungimas
-  setting_available_languages: Siūlomos kalbos
-  setting_bcc_recipients: Nematomos kopijos (bcc) gavėjai
-  setting_brute_force_block_after_failed_logins: Blokuoti vartotoją po šio skaičiaus nesėkmingų prisijungimo bandymų
-  setting_brute_force_block_minutes: Laikas, kuriam vartotojas yra blokuojamas
-  setting_cache_formatted_text: Atmintyje laikyti formatuotą tekstą
-  setting_use_wysiwyg_description: Parinkite, kad įjungtumėte CKEditor5 WYSIWYG redaktorių visiems naudotojams pagal nutylėjimą. CKEditor turi ribotą GFM Markdown funkcionalumą.
-  setting_column_options: Numatyti darbų paketų sąrašo stulpeliai
-  setting_commit_fix_keywords: Reikšminių žodžių fiksavimas
-  setting_commit_logs_encoding: Patvirtinti žinučių koduotę
-  setting_commit_logtime_activity_id: Veiklos įrašai prisijungus
-  setting_commit_logtime_enabled: Įjungti laiko registravimą
-  setting_commit_ref_keywords: Nuoroda į reikšminius žodžius
-  setting_consent_time: Sutikimo laikas
-  setting_consent_info: Sutikimo informacijos tekstas
-  setting_consent_required: Reikia sutikimo
-  setting_consent_decline_mail: Sutikimo kontaktinis pašto adresas
-  setting_cross_project_work_package_relations: Leisti tarp-projektinius darbų paketo ryšius
-  setting_csv_escape_formulas: Escape formulas in CSV exports
-  setting_csv_escape_formulas_text: 'Escape spreadsheet formulas in CSV exports by prefixing cells that begin with characters such as =, +, -, or @ with a single quote. This mitigates CSV formula injection when exported files are opened in spreadsheet applications such as Excel. This comes at the downside of modifying the string values inside the CSV, so you may want to disable this if downstream tools require the exact, unescaped cell values.
-
-    '
-  setting_first_week_of_year: Pirma metų savaitė turi
-  setting_date_format: Data
-  setting_default_language: Numatytoji kalba
-  setting_default_projects_modules: Pagal nutylėjimą naujame projekte įjungti moduliai
-  setting_default_projects_public: Nauji projektai yra vieši pagal nutylėjimą
-  setting_disable_password_login: Disable password authentication
-  setting_diff_max_lines_displayed: Maksimalus rodomas pakeitimų eilučių skaičius
-  setting_omniauth_direct_login_provider: Direct login SSO provider
-  setting_display_subprojects_work_packages: Pagal nutylėjimą rodyti sub-projektų darbų paketus pagrindiniuose projektuose.
-  setting_duration_format: Duration format
-  setting_duration_format_hours_only: Hours only
-  setting_duration_format_days_and_hours: Days and hours
-  setting_duration_format_instructions: This defines how Work, Remaining work, and Time spent durations are displayed.
-  setting_emails_footer: El. laiškų poraštė
-  setting_emails_header: El. laiškų antraštė
-  setting_email_login: Naudokite e-paštą prisijungimui
-  setting_enabled_scm: Įgalinti SCM
-  setting_enabled_projects_columns: Stulpeliai projektų sąraše rodomi pagal nutylėjimą
-  setting_feeds_enabled: Leisti naujienų kanalus
-  setting_ical_enabled: Įjungti iCalendar prenumeratas
-  setting_feeds_limit: Naujienų kanalų turinio limitas
-  setting_file_max_size_displayed: Maksimalus tekstinių failų dydis rodomas vienoje eilutėje
-  setting_host_name: Serverio vardas
-  setting_collaborative_editing_hocuspocus_url: Hocuspocus server URL
-  setting_collaborative_editing_hocuspocus_secret: Hocuspocus server secret
-  setting_hours_per_day: Hours per day
-  setting_hours_per_day_explanation: This defines what is considered a "day" when displaying duration in days and hours (for example, if a day is 8 hours, 32 hours would be 4 days).
-  setting_invitation_expiration_days: Aktyvavimo laiško galiojimas baigiasi po
-  setting_invitation_expiration_days_caption: Number of days after which the activation email expires.
-  setting_work_package_done_ratio: Progress calculation mode
-  setting_work_package_done_ratio_field: Pagal-darbą
-  setting_work_package_done_ratio_field_caption_html: "<i>% Complete</i> can be freely set to any value. If you optionally enter a value for <i>Work</i>, <i>Remaining work</i> will automatically be derived."
-  setting_work_package_done_ratio_status: Pagal-būseną
-  setting_work_package_done_ratio_status_caption_html: Each status has a <i>% Complete</i> value associated with it. Changing status will change <i>% Complete</i>.
-  setting_work_package_done_ratio_explanation_html: 'In <b>work-based</b> mode, % Complete can be freely set to any value. If you optionally enter a value for Work, Remaining work will automatically be derived. In <b>status-based</b> mode, each status has a % Complete value associated with it. Changing status will change % Complete.
-
-    '
-  setting_work_package_properties: Darbų paketo ypatybės
-  setting_work_package_startdate_is_adddate: Naudoti dabartinę datą kaip naujų darbų paketų pradžios datą
-  setting_work_packages_projects_export_limit: Darbo paketų / Projektų eksporto limitas
-  setting_work_packages_projects_export_limit_text: 'Maximum number of work packages or projects that can be included in a single export. Larger exports are truncated to this limit.
-
-    '
-  setting_journal_aggregation_time_minutes: Aggregation period
-  setting_log_requesting_user: Įrašyti vartotojo vardą, prisijungimo vardą, e. pašto adresą visiems prašymams
-  setting_login_required: Reikalinga autentifikacija
-  setting_login_required_caption: When checked, all requests to the application have to be authenticated.
-  setting_lost_password: Enable password reset
-  setting_lost_password_caption: When checked, allow users to reset their own passwords.
-  setting_mail_from: Išsiuntimo el. pašto adresas
-  setting_mail_handler_api_key: API raktas
-  setting_mail_handler_body_delimiters: Trumpinti laiškus po vienos iš šių eilučių
-  setting_mail_handler_body_delimiter_regex: Sutrumpinti laiškus, atitinkančius šią reguliarią išraišką
-  setting_mail_handler_ignore_filenames: Ignoruoti laiško priedai
-  setting_new_project_user_role_id: Vaidmuo suteiktas naudotojui, kuris nėra administratorius ir kuris kuria projektą
-  setting_new_project_user_role_id_caption: 'Only roles that include the permissions to edit project attributes and to manage members are listed, so that the creator can complete the project setup.
-
-    '
-  setting_new_project_send_confirmation_email: Send notification to author when creating a new project
-  setting_new_project_notification_text: Notification text
-  setting_password_active_rules: Password requirements
-  setting_password_count_former_banned: Vėliausiai uždraustų pakartotinai naudoti slaptažodžių skaičius
-  setting_password_days_valid: Dienų skaičius, po kurio versti pasikeisti slaptažodį
-  setting_password_min_length: Minimalus ilgis
-  setting_per_page_options: Įrašų puslapyje nustatymai
+    manual: "set to Manual"
+    automatic: "set to Automatic"
+  search_input_placeholder: "Paieška..."
+  setting_allowed_link_protocols: "Allowed link protocols"
+  setting_allowed_link_protocols_text_html: >-
+    Allow these protocols to be rendered as links in work package descriptions, long text fields and comments. For example, %{tel_code} or %{element_code}. Enter one protocol per line. <br/> Protocols %{http_code}, %{https_code}, and %{mailto_code} are always allowed.
+  setting_capture_external_links: "Capture external links"
+  setting_capture_external_links_text: >
+    When enabled, all external links in formatted text will redirect through a warning page before leaving the application. This helps protect users from potentially malicious external websites.
+  setting_capture_external_links_require_login: "Require users to be logged in"
+  setting_capture_external_links_require_login_text: >
+    When enabled, users wanting to click on external links need to be logged in before being able to continue.
+  setting_after_first_login_redirect_url: "First login redirect"
+  setting_after_first_login_redirect_url_text_html: >
+    Set a path to redirect users after their first login. If empty, redirects to the home page for the onboarding tour. <br/> Example: <code>/my/page</code>
+  setting_after_login_default_redirect_url: "After login redirect"
+  setting_after_login_default_redirect_url_text_html: >
+    Set a default path to redirect users after login, if no back link was provided. Redirects to home page if not set. <br/> Example: <code>/my/page</code>
+  setting_apiv3_cors_title: "Cross-Origin Resource Sharing (CORS)"
+  setting_apiv3_cors_enabled: "Įgalinti CORS"
+  setting_apiv3_cors_origins: "API V3 Cross-Origin Resource Sharing (CORS) leidžiami kilmės domenai"
+  setting_apiv3_cors_origins_text_html: >
+    Jei CORS yra įgalinta, tai yra kilmės domenai, kuriems leidžiama pasiekti Yojana API. <br/> Kaip nurodyti reikšmes aprašoma <a href="%{origin_link}" target="_blank">Origin antraštės dokumentacijoje</a>.
+  setting_apiv3_write_readonly_attributes: "Rašymo prieiga prie tik skaitymui skirtų atributų"
+  setting_apiv3_write_readonly_attributes_instructions: >
+    If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
+  setting_apiv3_write_readonly_attributes_warning: >
+    This setting has a use-case for e.g., importing data, but allows administrators to impersonate the creation of items as other users. All creation requests are being logged however with the true author.
+  setting_apiv3_write_readonly_attributes_additional: >
+    For more information on attributes and supported resources, please see the %{api_documentation_link}.
+  setting_apiv3_max_page_size: "Maksimalus API puslapio dydis"
+  setting_apiv3_max_page_size_instructions: >
+    Set the maximum page size the API will respond with. It will not be possible to perform API requests that return more values on a single page.
+  setting_apiv3_max_page_size_warning: >
+    Please only change this value if you are sure why you need it. Setting to a high value will result in significant performance impacts, while a value lower than the per page options will cause errors in paginated views.
+  setting_apiv3_docs: "Dokumentacija"
+  setting_apiv3_docs_enabled: "Įjungti dokumentų puslapį"
+  setting_apiv3_docs_enabled_instructions_html: >
+    Jei dokumentų puslapis yra įjungtas, jūs galite gauti interaktyvią APIv3 dokumentaciją <a href="%{link}" target="_blank">%{link}</a>.
+  setting_apiv3_docs_enabled_instructions_warning: >
+    Please be aware that enabling the API docs on a production system may expose sensitive information or result in accidental loss of data when not being careful. We recommend to only enable this setting for development purposes.
+  setting_attachment_whitelist: "Leidžiamų failų tipų sąrašas"
+  setting_email_delivery_method: "El. pašto pristatymo metodas"
+  setting_emails_salutation: "Kreiptis į naudotojus e-laiškuose su"
+  setting_oauth_allow_remapping_of_existing_users: "Allow remapping of existing users"
+  setting_sendmail_location: "Sendmail vykdomojo failo lokacija"
+  setting_sendmail_arguments: "Arguments for sendmail"
+  setting_smtp_enable_starttls_auto: "Automatiškai naudoti STARTTLS, jei galima"
+  setting_smtp_ssl: "Naudoti SSL jungtį"
+  setting_smtp_address: "SMTP serveris"
+  setting_smtp_port: "SMTP prievadas"
+  setting_smtp_authentication: "SMTP autentifikacija"
+  setting_smtp_user_name: "SMTP vartotojo vardas"
+  setting_smtp_password: "SMTP slaptažodis"
+  setting_smtp_domain: "SMTP HELO domenas"
+  setting_activity_days_default: "Projekto veiklos atvaizduojamų dienų skaičius"
+  setting_app_subtitle: "Programos paantraštė"
+  setting_app_title: "Programos pavadinimas"
+  setting_attachment_max_size: "Didžiausias prisegamo failo dydis"
+  setting_show_work_package_attachments: "Pagal nutylėjimą rodyti priedus failų kortelėje"
+  setting_antivirus_scan_mode: "Skenavimo režimas"
+  setting_antivirus_scan_action: "Užkrėsto failo veiksmas"
+  setting_autofetch_changesets: "Automatiškai įkelti repozitorijos pakeitimus"
+  setting_autologin: "Automatinis prisijungimas"
+  setting_available_languages: "Siūlomos kalbos"
+  setting_bcc_recipients: "Nematomos kopijos (bcc) gavėjai"
+  setting_brute_force_block_after_failed_logins: "Blokuoti vartotoją po šio skaičiaus nesėkmingų prisijungimo bandymų"
+  setting_brute_force_block_minutes: "Laikas, kuriam vartotojas yra blokuojamas"
+  setting_cache_formatted_text: "Atmintyje laikyti formatuotą tekstą"
+  setting_use_wysiwyg_description: "Parinkite, kad įjungtumėte CKEditor5 WYSIWYG redaktorių visiems naudotojams pagal nutylėjimą. CKEditor turi ribotą GFM Markdown funkcionalumą."
+  setting_column_options: "Numatyti darbų paketų sąrašo stulpeliai"
+  setting_commit_fix_keywords: "Reikšminių žodžių fiksavimas"
+  setting_commit_logs_encoding: "Patvirtinti žinučių koduotę"
+  setting_commit_logtime_activity_id: "Veiklos įrašai prisijungus"
+  setting_commit_logtime_enabled: "Įjungti laiko registravimą"
+  setting_commit_ref_keywords: "Nuoroda į reikšminius žodžius"
+  setting_consent_time: "Sutikimo laikas"
+  setting_consent_info: "Sutikimo informacijos tekstas"
+  setting_consent_required: "Reikia sutikimo"
+  setting_consent_decline_mail: "Sutikimo kontaktinis pašto adresas"
+  setting_cross_project_work_package_relations: "Leisti tarp-projektinius darbų paketo ryšius"
+  setting_first_week_of_year: "Pirma metų savaitė turi"
+  setting_date_format: "Data"
+  setting_default_language: "Numatytoji kalba"
+  setting_default_projects_modules: "Pagal nutylėjimą naujame projekte įjungti moduliai"
+  setting_default_projects_public: "Nauji projektai yra vieši pagal nutylėjimą"
+  setting_disable_password_login: "Disable password authentication"
+  setting_diff_max_lines_displayed: "Maksimalus rodomas pakeitimų eilučių skaičius"
+  setting_omniauth_direct_login_provider: "Direct login SSO provider"
+  setting_display_subprojects_work_packages: "Pagal nutylėjimą rodyti sub-projektų darbų paketus pagrindiniuose projektuose."
+  setting_duration_format: "Duration format"
+  setting_duration_format_hours_only: "Hours only"
+  setting_duration_format_days_and_hours: "Days and hours"
+  setting_duration_format_instructions: "This defines how Work, Remaining work, and Time spent durations are displayed."
+  setting_emails_footer: "El. laiškų poraštė"
+  setting_emails_header: "El. laiškų antraštė"
+  setting_email_login: "Naudokite e-paštą prisijungimui"
+  setting_enabled_scm: "Įgalinti SCM"
+  setting_enabled_projects_columns: "Stulpeliai projektų sąraše rodomi pagal nutylėjimą"
+  setting_feeds_enabled: "Leisti naujienų kanalus"
+  setting_ical_enabled: "Įjungti iCalendar prenumeratas"
+  setting_feeds_limit: "Naujienų kanalų turinio limitas"
+  setting_file_max_size_displayed: "Maksimalus tekstinių failų dydis rodomas vienoje eilutėje"
+  setting_host_name: "Serverio vardas"
+  setting_collaborative_editing_hocuspocus_url: "Hocuspocus server URL"
+  setting_collaborative_editing_hocuspocus_secret: "Hocuspocus server secret"
+  setting_hours_per_day: "Hours per day"
+  setting_hours_per_day_explanation: >-
+    This defines what is considered a "day" when displaying duration in days and hours (for example, if a day is 8 hours, 32 hours would be 4 days).
+  setting_invitation_expiration_days: "Aktyvavimo laiško galiojimas baigiasi po"
+  setting_invitation_expiration_days_caption: "Number of days after which the activation email expires."
+  setting_work_package_done_ratio: "Progress calculation mode"
+  setting_work_package_done_ratio_field: "Pagal-darbą"
+  setting_work_package_done_ratio_field_caption_html: >-
+    <i>% Complete</i> can be freely set to any value. If you optionally enter a value for <i>Work</i>, <i>Remaining work</i> will automatically be derived.
+  setting_work_package_done_ratio_status: "Pagal-būseną"
+  setting_work_package_done_ratio_status_caption_html: >-
+    Each status has a <i>% Complete</i> value associated with it. Changing status will change <i>% Complete</i>.
+  setting_work_package_done_ratio_explanation_html: >
+    In <b>work-based</b> mode, % Complete can be freely set to any value. If you optionally enter a value for Work, Remaining work will automatically be derived. In <b>status-based</b> mode, each status has a % Complete value associated with it. Changing status will change % Complete.
+  setting_work_package_properties: "Darbų paketo ypatybės"
+  setting_work_package_startdate_is_adddate: "Naudoti dabartinę datą kaip naujų darbų paketų pradžios datą"
+  setting_work_packages_projects_export_limit: "Darbo paketų / Projektų eksporto limitas"
+  setting_journal_aggregation_time_minutes: "Laikais, per kurį įvykę naudotojo veiksmai yra grupuojami"
+  setting_log_requesting_user: "Įrašyti vartotojo vardą, prisijungimo vardą, e. pašto adresą visiems prašymams"
+  setting_login_required: "Reikalinga autentifikacija"
+  setting_login_required_caption: "When checked, all requests to the application have to be authenticated."
+  setting_lost_password: "Enable password reset"
+  setting_lost_password_caption: "When checked, allow users to reset their own passwords."
+  setting_mail_from: "Išsiuntimo el. pašto adresas"
+  setting_mail_handler_api_key: "API raktas"
+  setting_mail_handler_body_delimiters: "Trumpinti laiškus po vienos iš šių eilučių"
+  setting_mail_handler_body_delimiter_regex: "Sutrumpinti laiškus, atitinkančius šią reguliarią išraišką"
+  setting_mail_handler_ignore_filenames: "Ignoruoti laiško priedai"
+  setting_new_project_user_role_id: "Vaidmuo suteiktas naudotojui, kuris nėra administratorius ir kuris kuria projektą"
+  setting_new_project_send_confirmation_email: "Send notification to author when creating a new project"
+  setting_new_project_notification_text: "Notification text"
+  setting_password_active_rules: "Aktyvios savybių klasės"
+  setting_password_count_former_banned: "Vėliausiai uždraustų pakartotinai naudoti slaptažodžių skaičius"
+  setting_password_days_valid: "Dienų skaičius, po kurio versti pasikeisti slaptažodį"
+  setting_password_min_length: "Minimalus ilgis"
+  setting_password_min_adhered_rules: "Minimalus reikalingų klasių skaičius"
+  setting_per_page_options: "Įrašų puslapyje nustatymai"
   setting_percent_complete_on_status_closed: "% Complete when status is closed"
   setting_percent_complete_on_status_closed_no_change: No change
   setting_percent_complete_on_status_closed_no_change_caption_html: The value of <i>% Complete</i> will not change even when a work package is closed.
@@ -5563,15 +5502,13 @@ lt:
       not_writable: The setting is not writable and can only be changed by a sysadmin.
       failed_to_update: 'Setting ''%{name}'' could not be updated: %{message}'
     authentication:
-      login: Prisijungimo vardas
-      registration: Registration
-      sso: Single Sign-On (SSO)
-      omniauth_direct_login_hint_html: 'If this option is active, login requests will redirect to the configured omniauth provider. The login dropdown and sign-in page will be disabled. <br/> <strong>Note:</strong> Unless you also disable password logins, with this option enabled, users can still log in internally by visiting the <code>%{internal_path}</code> login page.
-
-        '
-      remapping_existing_users_hint: 'If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the OpenProject instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
-
-        '
+      login: "Prisijungimo vardas"
+      registration: "Registration"
+      sso: "Single Sign-On (SSO)"
+      omniauth_direct_login_hint_html: >
+        If this option is active, login requests will redirect to the configured omniauth provider. The login dropdown and sign-in page will be disabled. <br/> <strong>Note:</strong> Unless you also disable password logins, with this option enabled, users can still log in internally by visiting the <code>%{internal_path}</code> login page.
+      remapping_existing_users_hint: >
+        If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the Yojana instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
     attachments:
       whitelist_text_html: 'Sudarykite sąrašą leidžiamų failų praplėtimų ir/arba MIME tipų su kuriais bus leidžiama įkelti failus. <br/> Įveskite failų praplėtimus (t.y., <code>%{ext_example}</code>) arba MIME tipus (t.y., <code>%{mime_example}</code>). <br/> Palikite tuščią, jei norite leisti visus tipus. Leidžiama daugiau nei viena reikšmė (po vieną kiekvienoje eilutėje).
 
@@ -5600,10 +5537,9 @@ lt:
       modes:
         clamav_socket_html: Įveskite clamd demono lizdą, pvz., %{example}
         clamav_host_html: Įveskite kompiuterio pavadinimą ir prievadą clamd demonui, atskirti dvitaškiu. pvz., %{example}
-        description_html: 'Pasirinkite režimą, kuriuo turėtų veikti virusų tikrinimo integracija. <br/> <ul> <li><strong>%{disabled_option}</strong>: Įkelti failai nėra tikrinami dėl virusų.</li> <li><strong>%{socket_option}</strong>: Tame pačiame serveryje, kuriame yra „OpenProject“, įdiegėte "ClamAV" ir fone veikia skenavimo demonas clamd.</li> <li><strong>%{host_option}</strong>: Siunčiate failus į išorinį virusų skenavimo kompiuterį.</li> </ul>
-
-          '
-    brute_force_prevention: Automatinis vartotojų blokavimas
+        description_html: >
+          Pasirinkite režimą, kuriuo turėtų veikti virusų tikrinimo integracija. <br/> <ul> <li><strong>%{disabled_option}</strong>: Įkelti failai nėra tikrinami dėl virusų.</li> <li><strong>%{socket_option}</strong>: Tame pačiame serveryje, kuriame yra „Yojana“, įdiegėte "ClamAV" ir fone veikia skenavimo demonas clamd.</li> <li><strong>%{host_option}</strong>: Siunčiate failus į išorinį virusų skenavimo kompiuterį.</li> </ul>
+    brute_force_prevention: "Automatinis vartotojų blokavimas"
     date_format:
       first_date_of_week_and_year_set: 'Jei vienas iš „%{day_of_week_setting_name}“ ir „%{first_week_setting_name}“ yra nustatytas, tai kitas taip pat turi būti nustatytas vengiant netikslumų naudotojo sąsajoje.
 
@@ -5612,8 +5548,8 @@ lt:
 
         '
     experimental:
-      save_confirmation: Atsargiai! Duomenų praradimo rizika! Eksperimentines savybes įjunkite tik tada, jei nebijote sugadinti savo OpenProject ir prarasti visus duomenis.
-      warning_toast: Savybių vėliavėlės yra nustatymai, kurie aktyvuoja vis dar kuriamas savybes. Jos turėtų būti naudojamos tik testavimo tikslais. Jų niekada nereikia įjungti OpenProject serveriuose, kuriuose yra svarbūs duomenys. Šios savybės labai gali sugadinti jūsų duomenis. Naudokite savo rizika.
+      save_confirmation: Atsargiai! Duomenų praradimo rizika! Eksperimentines savybes įjunkite tik tada, jei nebijote sugadinti savo Yojana ir prarasti visus duomenis.
+      warning_toast: Savybių vėliavėlės yra nustatymai, kurie aktyvuoja vis dar kuriamas savybes. Jos turėtų būti naudojamos tik testavimo tikslais. Jų niekada nereikia įjungti Yojana serveriuose, kuriuose yra svarbūs duomenys. Šios savybės labai gali sugadinti jūsų duomenis. Naudokite savo rizika.
       feature_flags: Savybių vėliavėlės
     general: Bendra
     highlighting:
@@ -5624,7 +5560,7 @@ lt:
         type: Visa eilutė pagal tipą
         priority: Visa eilutė pagal prioritetą
     icalendar:
-      enable_subscriptions_text_html: Leidžia naudotojams su reikiamomis teisėmis prenumeruoti OpenProject kalendorius ir turėti prieigą prie darbo paketo informacijos per išorinį kalendoriaus klientą. <strong>Pastaba:</strong> Prašome prieš įjungiant šį funkcionalumą paskaityti apie <a href="%{link}" target="_blank">iCalendar prenumeratas</a>, kad suprastiumėte potencialias rizikas.
+      enable_subscriptions_text_html: Leidžia naudotojams su reikiamomis teisėmis prenumeruoti Yojana kalendorius ir turėti prieigą prie darbo paketo informacijos per išorinį kalendoriaus klientą. <strong>Pastaba:</strong> Prašome prieš įjungiant šį funkcionalumą paskaityti apie <a href="%{link}" target="_blank">iCalendar prenumeratas</a>, kad suprastiumėte potencialias rizikas.
     language_name_being_default: "%{language_name} (numatytoji)"
     notifications:
       events_explanation: Valdo, kuriems įvykiams yra siunčiami el.laiškai. Darbų paketai nepatenka į šį sąrašą, nes kiekvienam naudotojui pranešimai gali būti sukonfigūruoti individualiai.
@@ -5658,9 +5594,8 @@ lt:
               label: Side panel
               description: Add all the project attributes in a section inside the right side panel in the project overview.
     project_initiation_request:
-      header_description: 'OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
-
-        '
+      header_description: >
+        Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
       status:
         submitted: "%{wizard_name} has been submitted"
         submitted_description: Click the button below to go to the work package for the submission process.
@@ -5672,8 +5607,8 @@ lt:
         project_creation_wizard: Open project creation wizard
         project_mandate: Open project mandate
       blankslate:
-        title: Initiation request not enabled
-        description: OpenProject can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard.
+        title: "Initiation request not enabled"
+        description: "Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard."
       disable_dialog:
         title: Disable project initiation request
         heading: Disable this project initiation request?
@@ -5778,22 +5713,21 @@ lt:
   status_deleted: panaikintas
   support:
     array:
-      sentence_connector: ir
-      skip_last_comma: netiesa
-  text_accessibility_hint: Pasiekiamumo režimas yra skirtas vartotojams, kurie turi regėjimo sutrikimų. Tuo tikslu svarbūs elementai būna paryškinami/pabrėžiami. Prašome atkreipti dėmesį, kad Backlogs modulis neprieinamas, kai šis režimas įjungtas.
-  text_access_token_hint: Prieigos raktai leidžia išorinėms aplikacijoms pasiekti OpenProject resursus.
-  text_analyze: 'Toliau analizuoti: %{subject}'
-  text_are_you_sure: Ar esate įsitikinę?
-  open_link_in_a_new_tab: Open link in a new tab
-  text_are_you_sure_continue: Ar tikrai norite tęsti?
-  text_are_you_sure_with_children: Ištrinti darbų paketą ir visus jo vaikų paketus?
-  text_are_you_sure_with_project_custom_fields: Ištrynus šį atributą taipogi bus ištrintos ir jo reikšmės visuose projektuose. Ar tikrai norite tai padaryti?
-  text_are_you_sure_with_project_life_cycle_step: Deleting this phase will also delete its usages in all projects. Are you sure you want to do this?
-  text_assign_to_project: Priskirti projektui
-  text_form_configuration: 'Jūs galite nustatyti, kurie laukeliai bus rodomi darbų paketų formoje. Jūs galite laisvai grupuoti laukelius pagal savo poreikius.
-
-    '
-  text_form_configuration_required_attribute: Atributas yra pažymėtas kaip reikalingas, todėl visada rodomas
+      sentence_connector: "ir"
+      skip_last_comma: "netiesa"
+  text_accessibility_hint: "Pasiekiamumo režimas yra skirtas vartotojams, kurie turi regėjimo sutrikimų. Tuo tikslu svarbūs elementai būna paryškinami/pabrėžiami. Prašome atkreipti dėmesį, kad Backlogs modulis neprieinamas, kai šis režimas įjungtas."
+  text_access_token_hint: "Prieigos raktai leidžia išorinėms aplikacijoms pasiekti Yojana resursus."
+  text_analyze: "Toliau analizuoti: %{subject}"
+  text_are_you_sure: "Ar esate įsitikinę?"
+  open_link_in_a_new_tab: "Open link in a new tab"
+  text_are_you_sure_continue: "Ar tikrai norite tęsti?"
+  text_are_you_sure_with_children: "Ištrinti darbų paketą ir visus jo vaikų paketus?"
+  text_are_you_sure_with_project_custom_fields: "Ištrynus šį atributą taipogi bus ištrintos ir jo reikšmės visuose projektuose. Ar tikrai norite tai padaryti?"
+  text_are_you_sure_with_project_life_cycle_step: "Deleting this phase will also delete its usages in all projects. Are you sure you want to do this?"
+  text_assign_to_project: "Priskirti projektui"
+  text_form_configuration: >
+    Jūs galite nustatyti, kurie laukeliai bus rodomi darbų paketų formoje. Jūs galite laisvai grupuoti laukelius pagal savo poreikius.
+  text_form_configuration_required_attribute: "Atributas yra pažymėtas kaip reikalingas, todėl visada rodomas"
   text_caracters_maximum: "%{count} simbolių maksimumas."
   text_caracters_minimum: Turi būti mažiausiai %{count} simbolių ilgio.
   text_comma_separated: Leistinos kelios reikšmės (atskirtos kableliu).
@@ -5893,39 +5827,30 @@ lt:
   text_line_separated: Galimos kelios reikšmės (viena eilutė vienai reikšmei).
   text_load_default_configuration: Įkelti numatytąją konfigūraciją
   text_no_roles_defined: Nėra nustatytų vaidmenų.
-  text_no_access_tokens_configurable: Nėra prieigos raktų, kurie gali būti konfigūruojami.
-  text_no_configuration_data: Vaidmenys, tipai, darbų paketo būsenos ir darbų eiga dar nesukonfigūruoti. Stipriai rekomenduojama įkelti numatytąją konfigūraciją. Jūs ją galėsite redaguoti iškart po įkėlimo.
-  text_no_notes: Šis darbų paketas neturi komentarų.
-  text_notice_too_many_values_are_inperformant: 'Pastaba: Rodant daugiau nei 100 įrašų puslapyje gali prailginti puslapio įkėlimo laiką.'
-  text_notice_security_badge_displayed_html: 'Pastaba: įjungus bus rodomas ženkliukas su jūsų diegimo būsena <a href="%{information_panel_path}">%{information_panel_label}</a> administravimo skydelyje. Rodoma tik administratoriams. <br/> Ženkliukas palygins jūsų OpenProject versiją su oficialia OpenProject laidų duomenų baze ir praneš, jei yra atnaujinimų dėl žinomų saugumo problemų. Daugiau informacijos, ką daro šis tikrinimas, kokią reikia pateikti informaciją ir kaip šį tikrinimą išjungti, rasite <a href="%{more_info_url}">konfigūravimo dokumentacijoje</a>.
-
-    '
-  text_own_membership_delete_confirmation: |-
-    Jūs ketinate pašalinti keletą ar visus leidimus ir gali būti, kad nebegalėsite redaguoti šio projekto po to.
-    Ar jūs tikrai norite tęsti?
-  text_permanent_delete_confirmation_checkbox_label: I understand that this deletion cannot be reversed
-  text_permanent_remove_confirmation_checkbox_label: I understand that this removal cannot be reversed
-  text_plugin_assets_writable: Į papildinių katalogą galima rašyti
-  text_powered_by: Parengta pagal %{link}
-  text_project_identifier_info: Leidžiamos tik mažosios raidės (a-z), skaitmenys, paprasti (-) ir žemi brūkšneliai (_). Taip pat privalo prasidėti mažąja raide.
-  text_project_identifier_description: The project identifier is prepended to all work package IDs. If the identifier is "PROJ" for example, the work package identifier will be "PROJ-12" or "PROJ-246".
-  text_project_identifier_url_description: The project identifier is included in the URL of the project.
-  text_project_identifier_handle_format: Must start with a letter and contain only uppercase letters, numbers, and underscores (max 10 characters).
-  text_project_identifier_format: Must start with a lowercase letter. Only lowercase letters (a-z), numbers, dashes and underscores are allowed.
-  text_reassign: 'Iš naujo priskirti darbų paketui:'
-  text_regexp_multiline: Reguliarioji išraiška yra pritaikoma daug eilučių režime, pvz., ^---\s+
-  text_rename_wiki_page: Rename wiki page
-  text_repository_usernames_mapping: |-
-    Parinkite ar atnaujinkite OpenProject naudotoją, kuris paminėtas repozitorijos žurnale.
-    Naudotojai, turintys tą patį OpenProject ir repozitorijos vardą ar el. paštą yra automatiškai surišti.
-  text_status_changed_by_changeset: Atlikta pakeitimų pakete %{value}.
-  text_table_difference_description: Šioje lentelėje pavieniai %{entries} yra rodomi. Jūs galite palyginti skirtumus tarp bet kutių dviejų įrašų pasirinkdami atitinkamus žymėtinus laukelius lentelėje. Vėliau paspaudus ant mygtuko apačioje parodomi skirtumai.
-  text_time_logged_by_changeset: Atlikta pakeitimų pakete %{value}.
-  text_tip_work_package_begin_day: darbų paketas, prasidedantis šiandien
-  text_tip_work_package_begin_end_day: darbų paketas, prasidedantis ir pasibaigiantis šiandien
-  text_tip_work_package_end_day: darbų paketas, pasibaigiantis šiandien
-  text_type_no_workflow: Jokia darbų eiga neparinkta šiam tipui
-  text_unallowed_characters: Neleistini simboliai
+  text_no_access_tokens_configurable: "Nėra prieigos raktų, kurie gali būti konfigūruojami."
+  text_no_configuration_data: "Vaidmenys, tipai, darbų paketo būsenos ir darbų eiga dar nesukonfigūruoti. Stipriai rekomenduojama įkelti numatytąją konfigūraciją. Jūs ją galėsite redaguoti iškart po įkėlimo."
+  text_no_notes: "Šis darbų paketas neturi komentarų."
+  text_notice_too_many_values_are_inperformant: "Pastaba: Rodant daugiau nei 100 įrašų puslapyje gali prailginti puslapio įkėlimo laiką."
+  text_notice_security_badge_displayed_html: >
+    Pastaba: įjungus bus rodomas ženkliukas su jūsų diegimo būsena <a href="%{information_panel_path}">%{information_panel_label}</a> administravimo skydelyje. Rodoma tik administratoriams. <br/> Ženkliukas palygins jūsų Yojana versiją su oficialia Yojana laidų duomenų baze ir praneš, jei yra atnaujinimų dėl žinomų saugumo problemų. Daugiau informacijos, ką daro šis tikrinimas, kokią reikia pateikti informaciją ir kaip šį tikrinimą išjungti, rasite <a href="%{more_info_url}">konfigūravimo dokumentacijoje</a>.
+  text_own_membership_delete_confirmation: "Jūs ketinate pašalinti keletą ar visus leidimus ir gali būti, kad nebegalėsite redaguoti šio projekto po to.\nAr jūs tikrai norite tęsti?"
+  text_permanent_delete_confirmation_checkbox_label: "I understand that this deletion cannot be reversed"
+  text_permanent_remove_confirmation_checkbox_label: "I understand that this removal cannot be reversed"
+  text_plugin_assets_writable: "Į papildinių katalogą galima rašyti"
+  text_powered_by: "Parengta pagal %{link}"
+  text_project_identifier_info: "Leidžiamos tik mažosios raidės (a-z), skaitmenys, paprasti (-) ir žemi brūkšneliai (_). Taip pat privalo prasidėti mažąja raide."
+  text_reassign: "Iš naujo priskirti darbų paketui:"
+  text_regexp_info: "pvz., ^[A-Z0-9]+$"
+  text_regexp_multiline: 'Reguliarioji išraiška yra pritaikoma daug eilučių režime, pvz., ^---\s+'
+  text_repository_usernames_mapping: "Parinkite ar atnaujinkite Yojana naudotoją, kuris paminėtas repozitorijos žurnale.\nNaudotojai, turintys tą patį Yojana ir repozitorijos vardą ar el. paštą yra automatiškai surišti."
+  text_status_changed_by_changeset: "Atlikta pakeitimų pakete %{value}."
+  text_table_difference_description: "Šioje lentelėje pavieniai %{entries} yra rodomi. Jūs galite palyginti skirtumus tarp bet kutių dviejų įrašų pasirinkdami atitinkamus žymėtinus laukelius lentelėje. Vėliau paspaudus ant mygtuko apačioje parodomi skirtumai."
+  text_time_logged_by_changeset: "Atlikta pakeitimų pakete %{value}."
+  text_tip_work_package_begin_day: "darbų paketas, prasidedantis šiandien"
+  text_tip_work_package_begin_end_day: "darbų paketas, prasidedantis ir pasibaigiantis šiandien"
+  text_tip_work_package_end_day: "darbų paketas, pasibaigiantis šiandien"
+  text_type_no_workflow: "Jokia darbų eiga neparinkta šiam tipui"
+  text_unallowed_characters: "Neleistini simboliai"
   text_user_invited: Vartotojas yra pakviestas ir laukia registracijos.
   text_user_wrote: "%{value} parašė:"
   text_wrote: wrote
@@ -5987,18 +5912,17 @@ lt:
     help_and_support: Pagalba ir palaikymas
   total_progress: Visas progresas
   user:
-    all: visi
-    active: aktyvus
-    activate: Aktyvuoti
-    activate_and_reset_failed_logins: Aktyvuoti ir iš naujo nustatyti nepavykusius prisijungimus
-    authentication_provider: Autentifikacijos paslaugos teikėjas
-    identity_url_text: Autentifikacijos tiekėjo suteiktas vidinis unikalus identifikatorius.
-    authentication_settings_disabled_due_to_external_authentication: 'Šis vartotojas naudoja išorinį autentifikacijos paslaugų teikėją, todėl nėra galimo pakeisti slaptažodžio OpenProject aplinkoje.
-
-      '
-    authorization_rejected: Jums neleidžiama prisijungti.
-    assign_random_password: Priskirti atsitiktinį slaptažodį (siunčiamas vartotojui el. paštu)
-    blocked: laikinai užrakintas
+    all: "visi"
+    active: "aktyvus"
+    activate: "Aktyvuoti"
+    activate_and_reset_failed_logins: "Aktyvuoti ir iš naujo nustatyti nepavykusius prisijungimus"
+    authentication_provider: "Autentifikacijos paslaugos teikėjas"
+    identity_url_text: "Autentifikacijos tiekėjo suteiktas vidinis unikalus identifikatorius."
+    authentication_settings_disabled_due_to_external_authentication: >
+      Šis vartotojas naudoja išorinį autentifikacijos paslaugų teikėją, todėl nėra galimo pakeisti slaptažodžio Yojana aplinkoje.
+    authorization_rejected: "Jums neleidžiama prisijungti."
+    assign_random_password: "Priskirti atsitiktinį slaptažodį (siunčiamas vartotojui el. paštu)"
+    blocked: "laikinai užrakintas"
     blocked_num_failed_logins:
       one: laikinai užrakintas (vienas nesėkmingas prisijungimas)
       few: laikinai užrakintas (%{count} nesėkmingi prisijungimai)
@@ -6031,7 +5955,17 @@ lt:
   note_password_login_disabled_link: Password login has been disabled through a [configuration setting](configuration_url).
   warning: Įspėjimas
   warning_attachments_not_saved: "%{count} failas (-ai, -ų) negali būti išsaugotas (-i)."
-  warning_imminent_user_limit_html: 'You invited more users than are supported by your current plan. Invited users may not be able to join your OpenProject environment. Please [upgrade your plan](upgrade_url) or block existing users in order to allow invited and registered users to join.
+  warning_imminent_user_limit: >
+    Jūs pakvietėte daugiau naudotojų, nei palaiko jūsų dabartis planas. Pakviestiems naudotojams gali nepavykti prisijungti prie jūsų Yojana aplinkos. <a href="%{upgrade_url}">Atnaujinkite savo planą</a> arba blokuokite esamus naudotojus, kad pakviesti ir registruoti vartotojai galėtų prisijungti.
+  warning_registration_token_expired: |
+    Aktyvavimo el. laiško galiojimas pasibaigė. Išsiuntėme jums naują %{email}. Paspauskite laiške duotą nuorodą, kad aktyvuotumėte savo paskyrą.
+  warning_user_limit_reached: >
+    Pridėjus papildomus naudotojus bus viršytas dabartinis apribojimas. Prašome susisiekti su administratoriumi ir padidinti naudotojų apribojimą, kad užtikrintumėte, jog išoriniai naudotojai gali prieiti prie šio egzemplioriaus.
+  warning_user_limit_reached_admin: >
+    Pridėjus papildomus naudotojus bus viršytas dabartinis apribojimas. Prašome <a href="%{upgrade_url}">pagerinti jūsų planą</a>, kad užtikrintumėte, jog išoriniai naudotojai gali prieigi prie šio egzemplioriaus.
+  warning_user_limit_reached_instructions: >
+    Jūs pasiekėte naudotojų ribą (%{current}/%{max} aktyvūs naudotojai). Susisiekite su sales@girishm.info norėdami atnaujinti savo Enterprise versijos planą arba pridėti papildomų naudotojų.
+  warning_protocol_mismatch_html: >
 
     '
   warning_registration_token_expired: 'Aktyvavimo el. laiško galiojimas pasibaigė. Išsiuntėme jums naują %{email}. Paspauskite laiške duotą nuorodą, kad aktyvuotumėte savo paskyrą.
@@ -6333,58 +6267,48 @@ lt:
       non_confidential: Non confidential
       default_scopes: "(Numatytos apimtys)"
       instructions:
-        enabled: Enable this application, allowing users to perform authorization grants with it.
-        name: Jūsų aplikacijos pavadinimas. Bus rodomas kitiems naudotojams autorizacijos metu.
-        redirect_uri_html: 'Leidžiami URL, kur gali būti peradresuojami autorizuoti naudotojai. Po vieną įrašą eilutėje. <br/> Jei jūs registruojate darbastalio aplikaciją, naudokite šį URL.
-
-          '
-        confidential: Patikrinkite, ar bus naudojama aplikacija, kurioje kliento paslaptis gali likti konfidenciali. Mobilios aplikacijos ir Vieno puslapio aplikacijos laikomos nekonfidencialiomis.
-        scopes: Pažymėkite programos sritis, kurioms norite suteikti prieigą. Kai jokia sritis nėra pažymėta, api_v3 yra leidžiama.
-        client_credential_user_id: Neprivalomas naudotojo ID, naudojamas kai klientai naudoja šią aplikaciją. Palikite tuščią, jei norite leisti tik viešą prieigą
-        register_intro: Jei kuriate OAuth API kliento aplikaciją skirtą OpenProject, jūs galite registruoti ją visiems naudotojams naudojant šią formą.
-        default_scopes: ''
+        enabled: "Enable this application, allowing users to perform authorization grants with it."
+        name: "Jūsų aplikacijos pavadinimas. Bus rodomas kitiems naudotojams autorizacijos metu."
+        redirect_uri_html: >
+          Leidžiami URL, kur gali būti peradresuojami autorizuoti naudotojai. Po vieną įrašą eilutėje. <br/> Jei jūs registruojate darbastalio aplikaciją, naudokite šį URL.
+        confidential: "Patikrinkite, ar bus naudojama aplikacija, kurioje kliento paslaptis gali likti konfidenciali. Mobilios aplikacijos ir Vieno puslapio aplikacijos laikomos nekonfidencialiomis."
+        scopes: "Pažymėkite programos sritis, kurioms norite suteikti prieigą. Kai jokia sritis nėra pažymėta, api_v3 yra leidžiama."
+        client_credential_user_id: "Neprivalomas naudotojo ID, naudojamas kai klientai naudoja šią aplikaciją. Palikite tuščią, jei norite leisti tik viešą prieigą"
+        register_intro: "Jei kuriate OAuth API kliento aplikaciją skirtą Yojana, jūs galite registruoti ją visiems naudotojams naudojant šią formą."
+        default_scopes: ""
     header:
       builtin_applications: Built-in OAuth applications
       other_applications: Other OAuth applications
     empty_application_lists: No OAuth applications have been registered.
-    client_id: Kliento ID
-    client_secret_notice: 'Tai vienintelis kartas, kai mes galime atspausdinti kliento paslaptį, prašome ją užsirašyti ir laikyti saugiai. Ji turi būti saugoma kaip slaptažodis ir jos vėliau nebebus galima ištraukti iš OpenProject.
-
-      '
+    client_id: "Kliento ID"
+    client_secret_notice: >
+      Tai vienintelis kartas, kai mes galime atspausdinti kliento paslaptį, prašome ją užsirašyti ir laikyti saugiai. Ji turi būti saugoma kaip slaptažodis ir jos vėliau nebebus galima ištraukti iš Yojana.
     authorization_dialog:
-      authorize: Autorizuoti
-      cancel: Nutraukti arba neleisti autorizacijos.
-      prompt_html: Autorizuokite <strong>%{application_name}</strong>, kad naudotumėte jūsų paskyrą <em>%{login}</em>?
-      title: Autorizuoti %{application_name}
-      wants_to_access_html: 'Šiai aplikacijai reikia prieigos prie jūsų OpenProject paskyros. <br/> <strong>Ji paprašė tokių teisių:</strong>
-
-        '
+      authorize: "Autorizuoti"
+      cancel: "Nutraukti arba neleisti autorizacijos."
+      prompt_html: "Autorizuokite <strong>%{application_name}</strong>, kad naudotumėte jūsų paskyrą <em>%{login}</em>?"
+      title: "Autorizuoti %{application_name}"
+      wants_to_access_html: >
+        Šiai aplikacijai reikia prieigos prie jūsų Yojana paskyros. <br/> <strong>Ji paprašė tokių teisių:</strong>
     scopes:
-      api_v3: Pilna API v3 prieiga
-      api_v3_text: Aplikacija gaus pilną skaitymo ir rašymo prieigą prie OpenProject API v3 vykdyti veiksmus jūsų vardu.
-      mcp: Access to MCP
-      mcp_text: Application will receive access to the OpenProject MCP endpoints. They are a limited subset of APIv3, that's tailored for usage with AI agents.
+      api_v3: "Pilna API v3 prieiga"
+      api_v3_text: "Aplikacija gaus pilną skaitymo ir rašymo prieigą prie Yojana API v3 vykdyti veiksmus jūsų vardu."
     grants:
       created_date: Patvirtinimo data
       scopes: Leidimai
       successful_application_revocation: Aplikacijos %{application_name} atšaukimas sėkmingas.
       none_given: Jokioms OAuth aplikacijoms nesuteikta prieiga prie jūsų paskyros.
     flows:
-      authorization_code: Autorizacijos kodo eiga
-      client_credentials: Kliento įgaliojimų eiga
-    client_credentials: Kliento įgaliojimams naudotas naudotojas
-    client_credentials_impersonation_set_to: Kliento įgaliojimų naudotojas nustatytas į
-    client_credentials_impersonation_warning: 'Pastaba: klientai, naudojantys „kliento įgaliojimų“ eigą šioje aplikacijoje turės šio naudotojo teises'
-    client_credentials_impersonation_html: 'Pagal nutylėjimą OpenProject teikia OAuth 2.0 autorizaciją per %{authorization_code_flow_link}. Pasirinktinai galite įjungti %{client_credentials_flow_link}, bet privalote pateikti naudotoją, kurio vardu bus vykdomos visos užklausos.
-
-      '
-    confirm_revoke_my_application:
-      one: Do you really want to remove this application? This will revoke one token active for it.
-      few: Do you really want to remove this application? This will revoke %{count} tokens active for it.
-      many: Do you really want to remove this application? This will revoke %{count} tokens active for it.
-      other: Do you really want to remove this application? This will revoke %{count} tokens active for it.
-    authorization_error: Įvyko autorizacijos klaida.
-    my_registered_applications: Registruotos OAuth aplikacijos
+      authorization_code: "Autorizacijos kodo eiga"
+      client_credentials: "Kliento įgaliojimų eiga"
+    client_credentials: "Kliento įgaliojimams naudotas naudotojas"
+    client_credentials_impersonation_set_to: "Kliento įgaliojimų naudotojas nustatytas į"
+    client_credentials_impersonation_warning: "Pastaba: klientai, naudojantys „kliento įgaliojimų“ eigą šioje aplikacijoje turės šio naudotojo teises"
+    client_credentials_impersonation_html: >
+      Pagal nutylėjimą Yojana teikia OAuth 2.0 autorizaciją per %{authorization_code_flow_link}. Pasirinktinai galite įjungti %{client_credentials_flow_link}, bet privalote pateikti naudotoją, kurio vardu bus vykdomos visos užklausos.
+    authorization_error: "Įvyko autorizacijos klaida."
+    revoke_my_application_confirmation: "Ar tikrai norite išimti šią aplikaciją? Tai atšauks %{token_count} aktyvių žetonų."
+    my_registered_applications: "Registruotos OAuth aplikacijos"
   oauth_client:
     urn_connection_status:
       connected: Prisijungta
@@ -6397,39 +6321,36 @@ lt:
       label_request_token: Užklausos žetonas
       label_refresh_token: Atnaujinti žetoną
     errors:
-      oauth_authorization_code_grant_had_errors: OAuth2 Autorizacijos teisių suteikimas nesėkmingas
-      oauth_reported: OAuth2 tiekėjas pranešė
-      oauth_returned_error: OAuth2 grąžino klaidą
-      oauth_returned_json_error: OAuth2 grąžino JSON klaidą
-      oauth_returned_http_error: OAuth2 grąžino tinklo klaidą
-      oauth_returned_standard_error: OAuth2 grąžino vidinę klaidą
-      wrong_token_type_returned: OAuth2 grąžino netinkamą žetono tipą, tikėtasi AccessToken::Bearer
-      oauth_issue_contact_admin: OAuth2 grąžino klaidą. Prašome susisiekti su jūsų sistemos administratoriumi.
-      oauth_client_not_found: OAuth2 klientas nerastas „callback“ taške (redirect_uri).
-      refresh_token_called_without_existing_token: 'Vidinė klaida: refresh_token pakviestas be iki to esančio žetono.
-
-        '
-      refresh_token_updated_failed: Klaida atnaujinant OAuthClientToken
-      oauth_client_not_found_explanation: 'Ši klaida pasirodo po to, kai jūs pakeičiate OpenProject client_id ir client_secret, bet nepakeičiate „Grąžinamo URI“ lauko OAuth2 tiekėjo pusėje.
-
-        '
-      oauth_code_not_present: OAuth2 „code“ nerastas „callback“ taške (redirect_uri).
-      oauth_code_not_present_explanation: 'Ši klaida pasirodo, jei jūs parinkote netinkamą OAuth2 tiekėjo response_type. Response_type privalo būti „code“ ar panašus.
-
-        '
-      oauth_state_not_present: OAuth2 „state“ nerastas „callback“ taške (redirect_uri).
-      oauth_state_not_present_explanation: "„State“ naudojama nurodyti OpenProject, kur tęsti po sėkmingos OAuth2 autorizacijos. Trūkstamas „state“ yra vidinė klaida, kuri gali atsitikti nustatymo metu. Prašome susisiekti su jūsų sistemos administratoriumi.\n"
+      oauth_authorization_code_grant_had_errors: "OAuth2 Autorizacijos teisių suteikimas nesėkmingas"
+      oauth_reported: "OAuth2 tiekėjas pranešė"
+      oauth_returned_error: "OAuth2 grąžino klaidą"
+      oauth_returned_json_error: "OAuth2 grąžino JSON klaidą"
+      oauth_returned_http_error: "OAuth2 grąžino tinklo klaidą"
+      oauth_returned_standard_error: "OAuth2 grąžino vidinę klaidą"
+      wrong_token_type_returned: "OAuth2 grąžino netinkamą žetono tipą, tikėtasi AccessToken::Bearer"
+      oauth_issue_contact_admin: "OAuth2 grąžino klaidą. Prašome susisiekti su jūsų sistemos administratoriumi."
+      oauth_client_not_found: "OAuth2 klientas nerastas „callback“ taške (redirect_uri)."
+      refresh_token_called_without_existing_token: >
+        Vidinė klaida: refresh_token pakviestas be iki to esančio žetono.
+      refresh_token_updated_failed: "Klaida atnaujinant OAuthClientToken"
+      oauth_client_not_found_explanation: >
+        Ši klaida pasirodo po to, kai jūs pakeičiate Yojana client_id ir client_secret, bet nepakeičiate „Grąžinamo URI“ lauko OAuth2 tiekėjo pusėje.
+      oauth_code_not_present: "OAuth2 „code“ nerastas „callback“ taške (redirect_uri)."
+      oauth_code_not_present_explanation: >
+        Ši klaida pasirodo, jei jūs parinkote netinkamą OAuth2 tiekėjo response_type. Response_type privalo būti „code“ ar panašus.
+      oauth_state_not_present: "OAuth2 „state“ nerastas „callback“ taške (redirect_uri)."
+      oauth_state_not_present_explanation: >
+        „State“ naudojama nurodyti Yojana, kur tęsti po sėkmingos OAuth2 autorizacijos. Trūkstamas „state“ yra vidinė klaida, kuri gali atsitikti nustatymo metu. Prašome susisiekti su jūsų sistemos administratoriumi.
       rack_oauth2:
-        client_secret_invalid: Kliento paslaptis netinkama (client_secret_invalid)
-        invalid_request: 'OAuth2 autorizacijos serveris atsakė „netinkama užklausa“. Ši klaida įvyksta, kai jūs bandote autorizuoti kelis kartus arba dėl techninių problemų.
-
-          '
-        invalid_response: OAuth2 autorizacijos serveris pateikė netinkamą atsakymą (invalid_response)
-        invalid_grant: OAuth2 autorizacijos serveris prašo jūsų autorizuotis iš naujo (invalid_grant).
-        invalid_client: OAuth2 autorizacijos serveris neatpažįsta OpenProject (invalid_client).
-        unauthorized_client: OAuth2 autorizacijos serveris nepriima privilegijos tipo (unauthorized_client)
-        unsupported_grant_type: OAuth2 autorizacijos serveris prašo jūsų autorizuotis iš naujo (unsupported_grant_type).
-        invalid_scope: Jums neleidžiama prieiti prie prašomo resurso (invalid_scope).
+        client_secret_invalid: "Kliento paslaptis netinkama (client_secret_invalid)"
+        invalid_request: >
+          OAuth2 autorizacijos serveris atsakė „netinkama užklausa“. Ši klaida įvyksta, kai jūs bandote autorizuoti kelis kartus arba dėl techninių problemų.
+        invalid_response: "OAuth2 autorizacijos serveris pateikė netinkamą atsakymą (invalid_response)"
+        invalid_grant: "OAuth2 autorizacijos serveris prašo jūsų autorizuotis iš naujo (invalid_grant)."
+        invalid_client: "OAuth2 autorizacijos serveris neatpažįsta Yojana (invalid_client)."
+        unauthorized_client: "OAuth2 autorizacijos serveris nepriima privilegijos tipo (unauthorized_client)"
+        unsupported_grant_type: "OAuth2 autorizacijos serveris prašo jūsų autorizuotis iš naujo (unsupported_grant_type)."
+        invalid_scope: "Jums neleidžiama prieiti prie prašomo resurso (invalid_scope)."
   http:
     request:
       failed_authorization: Serverio pusės užklausai nepavyko savęs autorizuoti.
@@ -6439,18 +6360,18 @@ lt:
   you: jūs
   link: nuoroda
   plugin_openproject_auth_plugins:
-    name: OpenProject Auth Priedai
-    description: OmniAuth stretegijos tiekėjų OpenProject autentifikacijos integracija.
+    name: "Yojana Auth Priedai"
+    description: "OmniAuth stretegijos tiekėjų Yojana autentifikacijos integracija."
   plugin_openproject_auth_saml:
-    name: OmniAuth SAML / Vienas prisijungimas
-    description: Prideda OmniAuth SAML tiekėja į OpenProject
+    name: "OmniAuth SAML / Vienas prisijungimas"
+    description: "Prideda OmniAuth SAML tiekėja į Yojana"
   enterprise_plans:
     legacy_enterprise: Enterprise Plan
   token:
     hashed_token:
       display_value_placeholder: "***"
   external_link_warning:
-    title: Leaving OpenProject
-    warning_message: You are about to leave OpenProject and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies.
-    continue_message: Are you sure you want to proceed to the following external link?
-    continue_button: Continue to external website
+    title: "Leaving Yojana"
+    warning_message: "You are about to leave Yojana and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies."
+    continue_message: "Are you sure you want to proceed to the following external link?"
+    continue_button: "Continue to external website"

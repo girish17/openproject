@@ -1,9 +1,9 @@
 #-- copyright
-#OpenProject is an open source project management software.
-#Copyright (C) the OpenProject GmbH
+#Yojana is an open source project management software.
+#Copyright (C) the Yojana GmbH
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License version 3.
-#OpenProject is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
+#Yojana is a fork of ChiliProject, which is a fork of Redmine. The copyright follows:
 #Copyright (C) 2006-2013 Jean-Philippe Lang
 #Copyright (C) 2010-2013 the ChiliProject Team
 #This program is free software; you can redistribute it and/or
@@ -355,13 +355,13 @@ ro:
         unknown_name: Unknown
     mcp_configurations:
       index:
-        description: The model context protocol allows AI agents to provide its users with tools and resources exposed by this OpenProject instance. This feature is still in beta.
-        resources_heading: Resources
-        resources_description: OpenProject implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url).
-        resources_submit: Update resources
-        tools_heading: Tools
-        tools_description: OpenProject implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url).
-        tools_submit: Update tools
+        description: "The model context protocol allows AI agents to provide its users with tools and resources exposed by this Yojana instance."
+        resources_heading: "Resources"
+        resources_description: "Yojana implements the following resources. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP resources](docs_url)."
+        resources_submit: "Update resources"
+        tools_heading: "Tools"
+        tools_description: "Yojana implements the following tools. Each can be enabled, renamed and described as you want. For more information, please refer to the [documentation on MCP tools](docs_url)."
+        tools_submit: "Update tools"
       multi_update:
         success: MCP configurations were updated successfully.
       server_form:
@@ -404,31 +404,31 @@ ro:
       edit:
         label_delete_scim_client: Delete SCIM client
       form:
-        auth_provider_description: This is the service that users added by the SCIM provider will use to authenticate in OpenProject.
-        authentication_method_description_html: This is how the SCIM client authenticates at OpenProject. Please ensure that OAuth tokens include the <code>scim_v2</code> scope.
-        description: Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options.
-        jwt_sub_description: For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case.
-        name_description: Choose a name that will help other admins better understand why this client was configured.
+        auth_provider_description: "This is the service that users added by the SCIM provider will use to authenticate in Yojana."
+        authentication_method_description_html: "This is how the SCIM client authenticates at Yojana. Please ensure that OAuth tokens include the <code>scim_v2</code> scope."
+        description: "Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options."
+        jwt_sub_description: "For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case."
+        name_description: "Choose a name that will help other admins better understand why this client was configured."
       index:
-        description: SCIM clients configured here are able to interact with OpenProject SCIM server API to provision, update, and deprovision user accounts and groups.
-        label_create_button: Add SCIM client
+        description: "SCIM clients configured here are able to interact with Yojana SCIM server API to provision, update, and deprovision user accounts and groups."
+        label_create_button: "Add SCIM client"
       new:
         title: New SCIM client
       revoke_static_token_dialog_component:
-        confirm_button: Revocă
-        title: Revoke static token
-        heading: Are you sure you want to revoke this token?
-        description: The SCIM client that uses this token will no longer be able to access OpenProject's SCIM server API.
+        confirm_button: "Revocă"
+        title: "Revoke static token"
+        heading: "Are you sure you want to revoke this token?"
+        description: "The SCIM client that uses this token will no longer be able to access Yojana's SCIM server API."
       table_component:
         blank_slate:
           title: No SCIM clients configured yet
           description: Add clients to see them here
         user_count: Utilizatori
       token_list_component:
-        description: The tokens you generate here can be passed by a SCIM client to access the OpenProject SCIM API.
-        heading: Tokens
-        label_add_token: Token
-        label_aria_add_token: Add token
+        description: "The tokens you generate here can be passed by a SCIM client to access the Yojana SCIM API."
+        heading: "Tokens"
+        label_add_token: "Token"
+        label_aria_add_token: "Add token"
       token_table_component:
         blank_slate:
           title: No tokens have been created yet
@@ -574,38 +574,38 @@ ro:
       name: Numele arbitrar al conexiunii LDAP
       host: Numele gazdei LDAP sau adresa IP
       login_map: Cheia atributului în LDAP care este utilizată pentru a identifica autentificarea unică a utilizatorului. De obicei, aceasta va fi `uid` sau `samAccountName`.
-      generic_map: Cheia atributului din LDAP care este mapată pe atributul OpenProject `%{attribute}`
-      admin_map_html: 'Opțional: Cheia atributului în LDAP care, <strong>dacă este prezentă</strong>, marchează utilizatorul OpenProject ca fiind administrator. Lăsați gol dacă aveți îndoieli.'
+      generic_map: Cheia atributului din LDAP care este mapată pe atributul Yojana `%{attribute}`
+      admin_map_html: "Opțional: Cheia atributului în LDAP care, <strong>dacă este prezentă</strong>, marchează utilizatorul Yojana ca fiind administrator. Lăsați gol dacă aveți îndoieli."
       system_user_dn_html: |
         Enter the DN of the system user used for read-only access.
         <br>
-        Example: uid=openproject,ou=system,dc=example,dc=com
+        Example: uid=yojana,ou=system,dc=example,dc=com
       system_user_password: Introdu parola de legătură a utilizatorului de sistem
       base_dn: |
-        Introdu DN-ul de bază al subarborelui din LDAP în care vrei ca OpenProject să caute utilizatori și grupuri.
-        OpenProject va filtra numai pentru numele de utilizator furnizate în acest subarbore.
+        Introdu DN-ul de bază al subarborelui din LDAP în care vrei ca Yojana să caute utilizatori și grupuri.
+        Yojana va filtra numai pentru numele de utilizator furnizate în acest subarbore.
         Exemplu: ou=users,dc=example,dc=com
       filter_string: |
         Adaugă un filtru RFC4515 opțional care să se aplice rezultatelor returnate pentru utilizatorii filtrați în LDAP.
-        Acesta poate fi utilizat pentru a restricționa setul de utilizatori care sunt găsiți de OpenProject pentru autentificare și sincronizare de grup.
+        Acesta poate fi utilizat pentru a restricționa setul de utilizatori care sunt găsiți de Yojana pentru autentificare și sincronizare de grup.
       filter_string_concat: |
-        OpenProject va filtra întotdeauna pentru atributul de autentificare furnizat de utilizator pentru a identifica înregistrarea. Dacă furnizați un filtru aici,
+        Yojana va filtra întotdeauna pentru atributul de autentificare furnizat de utilizator pentru a identifica înregistrarea. Dacă furnizați un filtru aici,
         acesta va fi concatenat cu un AND. În mod implicit, ca filtru se va utiliza un "catch-all" (objectClass=*).
       onthefly_register: |
-        Dacă bifezi această casetă, OpenProject va crea automat noi utilizatori din intrările LDAP ale acestora
-        atunci când aceștia se autentifică pentru prima dată cu OpenProject.
-        Lasă această casetă debifată pentru a permite doar conturilor existente în OpenProject să se autentifice prin LDAP!
-    connection_encryption: Criptarea conexiunii
-    encryption_details: Opțiuni LDAPS / STARTTLS
-    system_account: Contul de sistem
+        Dacă bifezi această casetă, Yojana va crea automat noi utilizatori din intrările LDAP ale acestora
+        atunci când aceștia se autentifică pentru prima dată cu Yojana.
+        Lasă această casetă debifată pentru a permite doar conturilor existente în Yojana să se autentifice prin LDAP!
+    connection_encryption: "Criptarea conexiunii"
+    encryption_details: "Opțiuni LDAPS / STARTTLS"
+    system_account: "Contul de sistem"
     system_account_legend: |
-      OpenProject necesită acces doar pentru citire printr-un cont de sistem pentru a căuta utilizatori și grupuri în arborele LDAP.
+      Yojana necesită acces doar pentru citire printr-un cont de sistem pentru a căuta utilizatori și grupuri în arborele LDAP.
       Te rog să specifici acreditările de conectare pentru acest utilizator de sistem în secțiunea următoare.
     ldap_details: Detalii LDAP
     user_settings: Lista Mapare Atribute
     user_settings_legend: |
-      Următoarele câmpuri sunt legate de modul în care sunt creați utilizatorii în OpenProject din intrările LDAP și
-      ce atribute LDAP sunt utilizate pentru a defini atributele unui utilizator OpenProject (cartografiere de atribute).
+      Următoarele câmpuri sunt legate de modul în care sunt creați utilizatorii în Yojana din intrările LDAP și
+      ce atribute LDAP sunt utilizate pentru a defini atributele unui utilizator Yojana (cartografiere de atribute).
     tls_mode:
       plain: niciuna
       simple_tls: LDAPS
@@ -2157,18 +2157,17 @@ ro:
         circular_dependency: Această relație ar crea o dependință circulară.
         confirmation: nu se potrivește cu %{attribute}.
         could_not_be_copied: "%{dependency} nu a putut fi copiat (integral)."
-        datetime_must_be_in_future: must be in the future.
-        does_not_exist: nu există.
-        error_enterprise_only: "%{action} is only available in the OpenProject Enterprise edition."
-        error_unauthorized: nu pot fi accesate.
-        error_readonly: a fost încercat să fie scris, dar nu este inscriptibil.
-        error_conflict: Informaţia a fost actualizată de cel puţin un alt utilizator între timp.
-        error_not_found: nu a fost găsit.
-        email: nu este o adresă de e-mail validă.
-        empty: nu poate fi gol.
-        enterprise_plan_required: requires at least the %{plan_name}.
-        even: trebuie să fie par.
-        exclusion: este rezervat.
+        does_not_exist: "nu există."
+        error_enterprise_only: "%{action} is only available in the Yojana Enterprise edition."
+        error_unauthorized: "nu pot fi accesate."
+        error_readonly: "a fost încercat să fie scris, dar nu este inscriptibil."
+        error_conflict: "Informaţia a fost actualizată de cel puţin un alt utilizator între timp."
+        error_not_found: "nu a fost găsit."
+        email: "nu este o adresă de e-mail validă."
+        empty: "nu poate fi gol."
+        enterprise_plan_required: "requires at least the %{plan_name}."
+        even: "trebuie să fie par."
+        exclusion: "este rezervat."
         feature_disabled: is not available.
         feature_disabled_for_project: is disabled for this project.
         file_too_large: este prea mare (dimensiunea maximă este %{count} Octeți).
@@ -2843,17 +2842,14 @@ ro:
     reset_token:
       action_create: Creează
       action_reset: Resetează
-      heading_reset: Resetează token copie de rezervă
-      heading_create: Creează token copie de rezervă
-      implications: 'Activarea copiilor de rezervă va permite oricărui utilizator cu permisiunile necesare și acestui token pentru copii de rezervă să descarce o copie de rezervă care conține toate datele acestei instalări OpenProject. Acestea includ datele tuturor celorlalți utilizatori.
-
-        '
-      info: 'Va trebui să generezi un token pentru copia de rezervă pentru a putea crea o copie de rezervă. De fiecare dată când vrei să soliciți o copie de rezervă va trebui să furnizezi acest token. Poți șterge token-ul pentru copia de rezervă pentru a dezactiva copiile de rezervă ale acestui utilizator.
-
-        '
-      verification_html: 'Enter %{word} to confirm you want to %{action} the backup token.
-
-        '
+      heading_reset: "Resetează token copie de rezervă"
+      heading_create: "Creează token copie de rezervă"
+      implications: >
+        Activarea copiilor de rezervă va permite oricărui utilizator cu permisiunile necesare și acestui token pentru copii de rezervă să descarce o copie de rezervă care conține toate datele acestei instalări Yojana. Acestea includ datele tuturor celorlalți utilizatori.
+      info: >
+        Va trebui să generezi un token pentru copia de rezervă pentru a putea crea o copie de rezervă. De fiecare dată când vrei să soliciți o copie de rezervă va trebui să furnizezi acest token. Poți șterge token-ul pentru copia de rezervă pentru a dezactiva copiile de rezervă ale acestui utilizator.
+      verification: >
+        Introdu %{word} pentru a confirma că vrei să %{action} token-ul pentru copia de rezervă.
       verification_word_reset: resetezi
       verification_word_create: creezi
       warning: 'Când creați un token nou, veți putea solicita o copie de rezervă abia după 24 de ore. Aceasta este o măsură de siguranţă. După aceea puteţi solicita o copie de rezervă în orice moment folosind acel token.
@@ -3222,29 +3218,26 @@ ro:
       title: Enterprise add-on
       plan_title: Enterprise %{plan} add-on
       plan_name: "%{plan} enterprise plan"
-      trial_text: This feature is included in your active Enterprise trial.
-      plan_text_html: Available starting with the %{plan_name}.
-      unlimited: Nelimitat
-      already_have_token: 'Already have a token? Add it using the button below to upgrade to the booked Enterprise plan.
-
-        '
-      hide_banner: Hide this banner
-      homescreen_description: 'Enterprise plans extend the Community edition of OpenProject with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running OpenProject in a mission-critical environment.
-
-        '
+      plan_text_html: "Available starting with the %{plan_name}."
+      unlimited: "Nelimitat"
+      already_have_token: >
+        Already have a token? Add it using the button below to upgrade to the booked Enterprise plan.
+      hide_banner: "Hide this banner"
+      homescreen_description: >
+        Enterprise plans extend the Community edition of Yojana with additional [Enterprise add-ons](enterprise_url) and professional support, ideal for organizations running Yojana in a mission-critical environment.
       homescreen_subline: By upgrading, you will also be supporting an open source project.
       baseline_comparison:
         description: Evidențiază modificările făcute la această listă de la orice punct din trecut.
       benefits:
-        description: Care sunt avantajele ediției Enterprise on-premise?
-        high_security: Caracteristici de securitate
-        high_security_text: Autentificare unică (SAML, OpenID Connect, CAS), grupuri LDAP.
-        installation: Suport instalare
-        installation_text: Inginerii de software experimentați te ghidează prin procesul complet de instalare și configurare în propria infrastructură.
-        premium_features: Enterprise add-on-uri
-        premium_features_text: Tablouri agile, temă și logo personalizate, grafice, fluxuri de lucru inteligente cu acțiuni personalizate, căutare în text complet pentru atașamentele pachetelor de lucru și câmpuri personalizate cu selectare multiplă.
-        professional_support: Suport profesional
-        professional_support_text: Beneficiază de asistență fiabilă, de înaltă calitate, din partea unor ingineri de asistență seniori cu, cunoștințe de specialitate în ceea ce privește utilizarea OpenProject în medii critice pentru afaceri.
+        description: "Care sunt avantajele ediției Enterprise on-premise?"
+        high_security: "Caracteristici de securitate"
+        high_security_text: "Autentificare unică (SAML, OpenID Connect, CAS), grupuri LDAP."
+        installation: "Suport instalare"
+        installation_text: "Inginerii de software experimentați te ghidează prin procesul complet de instalare și configurare în propria infrastructură."
+        premium_features: "Enterprise add-on-uri"
+        premium_features_text: "Tablouri agile, temă și logo personalizate, grafice, fluxuri de lucru inteligente cu acțiuni personalizate, căutare în text complet pentru atașamentele pachetelor de lucru și câmpuri personalizate cu selectare multiplă."
+        professional_support: "Suport profesional"
+        professional_support_text: "Beneficiază de asistență fiabilă, de înaltă calitate, din partea unor ingineri de asistență seniori cu, cunoștințe de specialitate în ceea ce privește utilizarea Yojana în medii critice pentru afaceri."
       work_package_subject_generation:
         description: Create automatically generated subjects using referenced attributes and text.
       customize_life_cycle:
@@ -3274,34 +3267,31 @@ ro:
       calculated_values:
         description: Calculated values allow you to create a mathematical formula based attribute using numeric values and other project attributes and custom fields.
       define_custom_style:
-        title: Custom color theme and logo
-        more_info: 'Notă: logo-ul utilizat va fi accesibil publicului.'
-        description: Personalizează-ți instalarea OpenProject cu propriul logo și culori.
+        title: "Custom color theme and logo"
+        more_info: "Notă: logo-ul utilizat va fi accesibil publicului."
+        description: Personalizează-ți instalarea Yojana cu propriul logo și culori.
       custom_actions:
         title: Acțiuni personalizate
         description: Acțiunile personalizate sunt comenzi rapide cu un singur clic către un set de acțiuni predefinite pe care le puteți face disponibile pentru anumite pachete de lucru în funcție de statut, rol, tip sau proiect.
       mcp_server:
-        description: Bring OpenProject into your AI workflows with a secure MCP server.
-      meeting_templates:
-        description: Define meeting templates with a set agenda structure and save time by reusing them when creating new meetings.
+        description: "Integrate AI agents with your Yojana instance through MCP."
       nextcloud_sso:
         title: Single Sign-On for Nextcloud Storage
         description: Enable seamless and secure authentication for your Nextcloud storage with Single Sign-On. Simplify access management and enhance user convenience.
       scim_api:
-        title: Clienți SCIM
-        description: Automate user management in OpenProject by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan.
+        title: "Clienți SCIM"
+        description: "Automate user management in Yojana by seamlessly integrating external identity services like Microsoft Entra or Keycloak through our SCIM Server API. Available starting with the Enterprise corporate plan."
       sso_auth_providers:
         title: Single Sign-On (SSO)
         description: Enable users to log in via external SSO providers using SAML or OpenID Connect for seamless access and integration with existing identity systems.
       virus_scanning:
-        description: Ensure uploaded files in OpenProject are scanned for viruses before being accessible by other users.
+        description: "Ensure uploaded files in Yojana are scanned for viruses before being accessible by other users."
       project_creation_wizard:
         description: Generate a step-by-step wizard to help project managers fill out a project initiation request.
       placeholder_users:
         title: Utilizatori Placeholder
-        description: 'Utilizatorii de tip placeholder sunt o modalitate de a atribui pachete de lucru utilizatorilor care nu fac parte din proiectul tău. Acesta poate fi utilă într-o serie de scenarii; de exemplu, dacă trebuie să urmărești sarcinile pentru o resursă care nu este încă numită sau disponibilă, sau dacă nu vrei să acorzi acestei persoane acces la OpenProject dar totuși vrei să urmărești sarcinile care le-au fost atribuite.
-
-          '
+        description: >
+          Utilizatorii de tip placeholder sunt o modalitate de a atribui pachete de lucru utilizatorilor care nu fac parte din proiectul tău. Acesta poate fi utilă într-o serie de scenarii; de exemplu, dacă trebuie să urmărești sarcinile pentru o resursă care nu este încă numită sau disponibilă, sau dacă nu vrei să acorzi acestei persoane acces la Yojana dar totuși vrei să urmărești sarcinile care le-au fost atribuite.
       internal_comments:
         title: Comentarii interne
         description: Comentariile interne permit unei echipe interne să comunice între ele în mod privat, acestea sunt vizibile doar pentru anumite roluri de proiect și nu vor fi niciodată vizibile public.
@@ -3317,26 +3307,25 @@ ro:
         other: "%{count} days left of %{trial_plan} trial token"
       description_html: You have access to all %{trial_plan} features.
     trial:
-      not_found: You have requested a trial token, but that request is no longer available. Please try again.
-      wait_for_confirmation: We sent you an email to confirm your address in order to retrieve a trial token.
-      already_retrieved: 'Your trial enterprise token was already retrieved. Please check your emails for the token being attached. Please reach out to our support team if you need a new one.
-
-        '
-      successfully_saved: Your trial enterprise token has been successfully retrieved.
-      token_sent: Trial token requested
-      request_again: Request again
-      resend_action: Resend confirmation email
-      welcome_title: Quick feature overview
-      welcome_description: Obține o imagine de ansamblu rapidă a gestionării proiectelor și a colaborării în echipă cu OpenProject Enterprise edition.
-      confirmation_info: 'We sent you an email on %{date} to %{email} with all the information to start the free trial of OpenProject Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
-
-        '
-      confirmation_subline: 'Please, check your inbox and follow the steps to start your 14-day free trial.
-
-        '
+      not_found: "You have requested a trial token, but that request is no longer available. Please try again."
+      wait_for_confirmation: "We sent you an email to confirm your address in order to retrieve a trial token."
+      already_retrieved: >
+        Your trial enterprise token was already retrieved. Please check your emails for the token being attached. Please reach out to our support team if you need a new one.
+      successfully_saved: "Your trial enterprise token has been successfully retrieved."
+      token_sent: "Trial token requested"
+      request_again: "Request again"
+      resend_action: "Resend confirmation email"
+      welcome_title: "Quick feature overview"
+      welcome_description: "Obține o imagine de ansamblu rapidă a gestionării proiectelor și a colaborării în echipă cu Yojana Enterprise edition."
+      confirmation_info: >
+        We sent you an email on %{date} to %{email} with all the information to start the free trial of Yojana Enterprise. Please check your inbox and click the confirmation link provided to start your 14-day free trial.
+      confirmation_subline: >
+        Please, check your inbox and follow the steps to start your 14-day free trial.
       domain_caption: The token will be valid for your currently configured host name.
-      receive_newsletter: I want to receive the OpenProject [newsletter](newsletter_url).
-      consent: I agree with the [terms of service](tos_url) and the [privacy policy](privacy_url).
+      receive_newsletter_html: >
+        I want to receive the Yojana <a target="_blank" href="https://www.yojana.girishm.info/newsletter/">newsletter</a>.
+      consent_html: >
+        I agree with the <a target="_blank" href="https://www.yojana.girishm.info/terms-of-service/">terms of service</a> and the <a target="_blank" href="https://www.yojana.girishm.info/data-privacy-and-security/">privacy policy</a>.
   email_calendar_updates:
     state:
       disabled: Dezactivat.
@@ -3360,51 +3349,51 @@ ro:
   error_can_not_delete_in_use_archived_undisclosed: Există, de asemenea, pachete de lucru în proiecte arhivate. Trebuie să cereți unui administrator să efectueze ștergerea pentru a vedea ce proiecte sunt afectate.
   error_can_not_delete_in_use_archived_work_packages: 'Există, de asemenea, pachete de lucru în proiecte arhivate. Trebuie să reactivați mai întâi următoarele proiecte, înainte de a putea schimba tipul pachetelor de lucru respective: %{archived_projects_urls}'
   error_can_not_delete_type:
-    explanation: Acest tip conține pachete de lucru și nu poate fi șters. Puteți vedea toate pachetele de lucru afectate în <a target="_blank" href="%{url}">această vizualizare</a>.
-  error_can_not_delete_standard_type: Tipurile standard nu pot fi șterse.
-  error_can_not_invite_user: Nu s-a reușit trimiterea invitației către utilizator.
-  error_can_not_remove_role: Acest rol este utilizat și nu poate fi șters.
-  error_can_not_reopen_work_package_on_closed_version: Un pachet de lucru atribuit la o versiune închisă nu poate fi redeschis
-  error_can_not_find_all_resources: Nu s-au putut găsi toate resursele legate de această cerere.
-  error_can_not_unarchive_project: 'Acest proiect nu poate fi dezarhivat: %{errors}'
-  error_check_user_and_role: Alege un utilizator și un rol.
-  error_code: Eroare %{code}
-  error_color_could_not_be_saved: Culoarea nu a putut fi salvată
-  error_cookie_missing: Cookie-ul OpenProject lipseşte. Vă rugăm să verificați setările referitoare la cookies, această aplicație nu va funcţiona corespunzător fără acestea.
-  error_custom_option_not_found: Opțiunea nu există.
-  error_enterprise_plan_needed: You need the %{plan} enterprise plan to perform this action.
-  error_enterprise_activation_user_limit: Contul dvs. nu a putut fi activat (limita utilizatorilor a fost atinsă). Contactați administratorul dvs. pentru a avea acces.
-  error_enterprise_token_invalid_domain: Ediția Enterprise nu este activă. Domeniul token-ului Enterprise (%{actual}) nu se potrivește cu numele de gazdă al sistemului (%{expected}).
-  error_failed_to_delete_entry: Nu s-a reușit ștergerea acestei intrări.
-  error_in_dependent: 'Eroare la încercarea de a modifica un obiect dependent: %{dependent_class} #%{related_id} - %{related_subject}: %{error}'
-  error_in_new_dependent: 'Eroare la încercarea de a crea un obiect dependent: %{dependent_class} - %{related_subject}: %{error}'
-  error_invalid_selected_value: Valoare selectată invalidă.
-  error_journal_attribute_not_present: Jurnalul nu conține atributul %{attribute}.
-  error_pdf_export_too_many_columns: Prea multe coloane selectate pentru exportul PDF. Vă rugăm să reduceți numărul de coloane.
-  error_pdf_date_range_too_long: The selected work package date range exceeds the allowable PDF export limit. Please condense the range to a maximum of %{years} years.
-  error_pdf_failed_to_export: 'Exportul pdf nu poate fi salvat: %{error}'
-  error_token_authenticity: Nu se poate verifica tokenul Cross-Site Request Forgery. Ați încercat să trimiteți datele pe mai multe browsere sau tab-uri? Vă rugăm să închideți toate filele și să încercați din nou.
-  error_reminder_not_found: The reminder was not found or was already notified about.
-  error_work_package_not_found_in_project: Pachetul de lucru nu a fost găsit sau nu aparține acestui proiect
-  error_work_package_id_not_found: Pachetul de lucru nu a fost găsit.
-  error_must_be_project_member: trebuie să fie membru al proiectului
-  error_migrations_are_pending: Instalarea OpenProject are migrări de baze de date în așteptare. Probabil că nu ați reușit să executați migrările la ultima actualizare. Vă rugăm să consultați ghidul de actualizare pentru a vă actualiza corect instalarea.
-  error_migrations_visit_upgrade_guides: Vă rugăm să vizitați documentația ghidului nostru de actualizare
-  error_no_default_work_package_status: Nu există un status implicit al pachetelor de lucru. Verificați configurația ("Administrare -> Stări pachete de lucru").
-  error_no_type_in_project: Nu există un tip asociat cu proiectul. Verificați setările proiectului.
-  error_omniauth_registration_timed_out: Înregistrarea prin intermediul unui furnizor de autentificare extern a expirat. Vă rugăm să încercaţi din nou.
-  error_omniauth_invalid_auth: Informațiile de autentificare returnate de la furnizorul de identitate nu erau valide. Vă rugăm să contactați administratorul dumneavoastră pentru ajutor suplimentar.
-  error_password_change_failed: Eroare la încercarea de a schimba parola.
-  error_scm_command_failed: 'A intervenit o eroare la accesarea repo-ului: %{value}'
-  error_scm_not_found: Nu am găsit articolul sau revizia în repo.
-  error_type_could_not_be_saved: Tipul nu a putut fi salvat
-  error_unable_delete_status: Starea pachetului de lucru nu poate fi ștearsă deoarece este folosită de cel puțin un pachet de lucru.
-  error_unable_delete_default_status: Starea implicită pentru pachetele de lucru nu poate fi ștearsă. Setează o altă stare implicită pentru pachetele de lucru și apoi șterge-o pe cea actuală.
-  error_unable_to_connect: Nu a putut fi stabilită conexiunea (%{value})
-  error_unable_delete_wiki: Pagina wiki nu poate fi ștearsă.
-  error_unable_update_wiki: Pagina wiki nu poate fi actualizată.
-  error_workflow_copy_source: Selectaţi un tip de sursă sau un rol
-  error_workflow_copy_target: Selectați tipurile și rolurile țintă
+    explanation: 'Acest tip conține pachete de lucru și nu poate fi șters. Puteți vedea toate pachetele de lucru afectate în <a target="_blank" href="%{url}">această vizualizare</a>.'
+  error_can_not_delete_standard_type: "Tipurile standard nu pot fi șterse."
+  error_can_not_invite_user: "Nu s-a reușit trimiterea invitației către utilizator."
+  error_can_not_remove_role: "Acest rol este utilizat și nu poate fi șters."
+  error_can_not_reopen_work_package_on_closed_version: "Un pachet de lucru atribuit la o versiune închisă nu poate fi redeschis"
+  error_can_not_find_all_resources: "Nu s-au putut găsi toate resursele legate de această cerere."
+  error_can_not_unarchive_project: "Acest proiect nu poate fi dezarhivat: %{errors}"
+  error_check_user_and_role: "Alege un utilizator și un rol."
+  error_code: "Eroare %{code}"
+  error_color_could_not_be_saved: "Culoarea nu a putut fi salvată"
+  error_cookie_missing: "Cookie-ul Yojana lipseşte. Vă rugăm să verificați setările referitoare la cookies, această aplicație nu va funcţiona corespunzător fără acestea."
+  error_custom_option_not_found: "Opțiunea nu există."
+  error_enterprise_plan_needed: "You need the %{plan} enterprise plan to perform this action."
+  error_enterprise_activation_user_limit: "Contul dvs. nu a putut fi activat (limita utilizatorilor a fost atinsă). Contactați administratorul dvs. pentru a avea acces."
+  error_enterprise_token_invalid_domain: "Ediția Enterprise nu este activă. Domeniul token-ului Enterprise (%{actual}) nu se potrivește cu numele de gazdă al sistemului (%{expected})."
+  error_failed_to_delete_entry: "Nu s-a reușit ștergerea acestei intrări."
+  error_in_dependent: "Eroare la încercarea de a modifica un obiect dependent: %{dependent_class} #%{related_id} - %{related_subject}: %{error}"
+  error_in_new_dependent: "Eroare la încercarea de a crea un obiect dependent: %{dependent_class} - %{related_subject}: %{error}"
+  error_invalid_selected_value: "Valoare selectată invalidă."
+  error_journal_attribute_not_present: "Jurnalul nu conține atributul %{attribute}."
+  error_pdf_export_too_many_columns: "Prea multe coloane selectate pentru exportul PDF. Vă rugăm să reduceți numărul de coloane."
+  error_pdf_date_range_too_long: "The selected work package date range exceeds the allowable PDF export limit. Please condense the range to a maximum of %{years} years."
+  error_pdf_failed_to_export: "Exportul pdf nu poate fi salvat: %{error}"
+  error_token_authenticity: "Nu se poate verifica tokenul Cross-Site Request Forgery. Ați încercat să trimiteți datele pe mai multe browsere sau tab-uri? Vă rugăm să închideți toate filele și să încercați din nou."
+  error_reminder_not_found: "The reminder was not found or was already notified about."
+  error_work_package_not_found_in_project: "Pachetul de lucru nu a fost găsit sau nu aparține acestui proiect"
+  error_work_package_id_not_found: "Pachetul de lucru nu a fost găsit."
+  error_must_be_project_member: "trebuie să fie membru al proiectului"
+  error_migrations_are_pending: "Instalarea Yojana are migrări de baze de date în așteptare. Probabil că nu ați reușit să executați migrările la ultima actualizare. Vă rugăm să consultați ghidul de actualizare pentru a vă actualiza corect instalarea."
+  error_migrations_visit_upgrade_guides: "Vă rugăm să vizitați documentația ghidului nostru de actualizare"
+  error_no_default_work_package_status: 'Nu există un status implicit al pachetelor de lucru. Verificați configurația ("Administrare -> Stări pachete de lucru").'
+  error_no_type_in_project: "Nu există un tip asociat cu proiectul. Verificați setările proiectului."
+  error_omniauth_registration_timed_out: "Înregistrarea prin intermediul unui furnizor de autentificare extern a expirat. Vă rugăm să încercaţi din nou."
+  error_omniauth_invalid_auth: "Informațiile de autentificare returnate de la furnizorul de identitate nu erau valide. Vă rugăm să contactați administratorul dumneavoastră pentru ajutor suplimentar."
+  error_password_change_failed: "Eroare la încercarea de a schimba parola."
+  error_scm_command_failed: "A intervenit o eroare la accesarea repo-ului: %{value}"
+  error_scm_not_found: "Nu am găsit articolul sau revizia în repo."
+  error_type_could_not_be_saved: "Tipul nu a putut fi salvat"
+  error_unable_delete_status: "Starea pachetului de lucru nu poate fi ștearsă deoarece este folosită de cel puțin un pachet de lucru."
+  error_unable_delete_default_status: "Starea implicită pentru pachetele de lucru nu poate fi ștearsă. Setează o altă stare implicită pentru pachetele de lucru și apoi șterge-o pe cea actuală."
+  error_unable_to_connect: "Nu a putut fi stabilită conexiunea (%{value})"
+  error_unable_delete_wiki: "Pagina wiki nu poate fi ștearsă."
+  error_unable_update_wiki: "Pagina wiki nu poate fi actualizată."
+  error_workflow_copy_source: "Selectaţi un tip de sursă sau un rol"
+  error_workflow_copy_target: "Selectați tipurile și rolurile țintă"
   error_menu_item_not_created: Meniu nu a putut fi adăugat
   error_menu_item_not_saved: Meniul nu a putut fi salvat
   error_wiki_root_menu_item_conflict: 'Nu se poate redenumi %{old_name} în %{new_name} datorită unui conflict între noul meniu și meniul deja existent "%{existing_caption}" (%{existing_identifier}).
@@ -3499,8 +3488,8 @@ ro:
     succeeded: Export finalizat
     failed: 'An error has occurred while trying to export the work packages: %{message}'
     demo:
-      heading: Demo PDF
-      footer: Generated by OpenProject
+      heading: "Demo PDF"
+      footer: "Generated by Yojana"
       button_text: Generate Demo PDF
     errors:
       embedded_table_with_too_many_columns: This embedded work package table could not fit on the page, please reduce the number of columns.
@@ -3623,7 +3612,7 @@ ro:
         no_results_subtext: Add one or multiple projects as favorite through their overview or in a project list.
       users: Cei mai noi utilizatori înregistrați.
     blocks:
-      community: Comunitatea OpenProject
+      community: "Comunitatea Yojana"
       upsell:
         title: Actualizează la ediția Enterprise
       new_features:
@@ -3635,25 +3624,25 @@ ro:
 
             '
           new_features_list:
-            line_0: XWiki integration (Corporate plan).
-            line_1: Sprint goals.
-            line_2: "'All sprints' overview page."
-            line_3: Display backlog buckets in work packages and work package tables.
-            line_4: Improved support for project-based (semantic) identifiers.
-            line_5: Convert meeting agenda items into work packages.
-            line_6: Configure cost types per project.
+            line_0: Automated project initiation (Enterprise add-on).
+            line_1: "Meetings: add new or existing work packages as outcomes."
+            line_2: "Meetings: show iCal responses in Yojana."
+            line_3: "Recurring meetings: duplicate agenda items to the next occurrence."
+            line_4: "Release to Community: Attribute highlighting."
+            line_5: Warning before opening external links in user-provided content (Enterprise add-on).
+            line_6: Improved performance and user experience, including the Activity tab and Documents module.
     links:
-      upgrade_enterprise_edition: Actualizează la ediția Enterprise
-      postgres_migration: Migrarea instalației dvs. către PostgreSQL
-      user_guides: Ghiduri utilizator
-      faq: Întrebări Frecvente
-      impressum: Notificare legală
-      glossary: Glosar
-      shortcuts: Scurtături
-      blog: Blog-ul OpenProject
-      forums: Forum comunitate
-      security_alerts: Security alerts
-      newsletter: Newsletter
+      upgrade_enterprise_edition: "Actualizează la ediția Enterprise"
+      postgres_migration: "Migrarea instalației dvs. către PostgreSQL"
+      user_guides: "Ghiduri utilizator"
+      faq: "Întrebări Frecvente"
+      impressum: "Notificare legală"
+      glossary: "Glosar"
+      shortcuts: "Scurtături"
+      blog: "Blog-ul Yojana"
+      forums: "Forum comunitate"
+      security_alerts: "Security alerts"
+      newsletter: "Newsletter"
   image_conversion:
     imagemagick: Imagemagick
   journals:
@@ -3732,7 +3721,7 @@ ro:
         notifications: Notification settings
         email_reminders: Email reminders
     access_tokens:
-      description: Provider tokens are issued by OpenProject, allowing other applications to access it. Client tokens are issued by other applications, allowing OpenProject to access them.
+      description: "Provider tokens are issued by Yojana, allowing other applications to access it. Client tokens are issued by other applications, allowing Yojana to access them."
       no_results:
         title: Nu există tichete de acces de afișat
         description: Toate au fost dezactivate. Pot fi reactivate în meniul de administrare.
@@ -3748,49 +3737,49 @@ ro:
         provider:
           title: Provider tokens
       token/api:
-        blank_description: There is no API token yet. You can create one using the button below.
-        blank_title: No API token
-        title: API
-        table_title: API tokens
-        text_hint: API tokens allow third-party applications to communicate with this OpenProject instance via REST APIs.
-        static_token_name: API token
-        disabled_text: API tokens are not enabled by the administrator. Please contact your administrator to use this feature.
-        add_button: API token
+        blank_description: "There is no API token yet. You can create one using the button below."
+        blank_title: "No API token"
+        title: "API"
+        table_title: "API tokens"
+        text_hint: "API tokens allow third-party applications to communicate with this Yojana instance via REST APIs."
+        static_token_name: "API token"
+        disabled_text: "API tokens are not enabled by the administrator. Please contact your administrator to use this feature."
+        add_button: "API token"
       ical:
-        blank_description: To add an iCalendar token, subscribe to a new or existing calendar from within the Calendar module of a project. You must have the necessary permissions.
-        blank_title: No iCalendar token
-        title: iCalendar
-        table_title: iCalendar tokens
-        text_hint_link: iCalendar tokens allow users to [subscribe to OpenProject calendars](docs_url) and view up-to-date work package information from external clients.
-        disabled_text: iCalendar subscriptions are not enabled by the administrator. Please contact your administrator to use this feature.
+        blank_description: "To add an iCalendar token, subscribe to a new or existing calendar from within the Calendar module of a project. You must have the necessary permissions."
+        blank_title: "No iCalendar token"
+        title: "iCalendar"
+        table_title: "iCalendar tokens"
+        text_hint_link: "iCalendar tokens allow users to [subscribe to Yojana calendars](docs_url) and view up-to-date work package information from external clients."
+        disabled_text: "iCalendar subscriptions are not enabled by the administrator. Please contact your administrator to use this feature."
       oauth_application:
-        active_tokens: Active tokens
-        blank_description: There is no third-party application access configured and active for you.
-        blank_title: No OAuth application token
-        last_refreshed_at: Last refreshed at
-        title: OAuth
-        table_title: OAuth application tokens
-        text_hint: OAuth application tokens allow third-party applications to connect with this OpenProject instance.
+        active_tokens: "Active tokens"
+        blank_description: "There is no third-party application access configured and active for you."
+        blank_title: "No OAuth application token"
+        last_used_at: "Last used at"
+        title: "OAuth"
+        table_title: "OAuth application tokens"
+        text_hint: "OAuth application tokens allow third-party applications to connect with this Yojana instance."
       oauth_client:
-        blank_description: There are no OAuth client tokens yet.
-        blank_title: No OAuth client tokens
-        failed: An error occurred and the token couldn't be removed. Please try again later.
-        integration_type: Integration type
-        table_title: OAuth client tokens
-        text_hint: OAuth client tokens allow this OpenProject instance to connect with external applications, such as file storages.
-        title: OAuth
-        remove_token: Do you really want to remove this token? You will need to login again on %{integration}.
-        removed: OAuth client token successfully removed
-        unknown_integration: Unknown
+        blank_description: "There are no OAuth client tokens yet."
+        blank_title: "No OAuth client tokens"
+        failed: "An error occurred and the token couldn't be removed. Please try again later."
+        integration_type: "Integration type"
+        table_title: "OAuth client tokens"
+        text_hint: "OAuth client tokens allow this Yojana instance to connect with external applications, such as file storages."
+        title: "OAuth"
+        remove_token: "Do you really want to remove this token? You will need to login again on %{integration}."
+        removed: "OAuth client token successfully removed"
+        unknown_integration: "Unknown"
       token/rss:
-        add_button: RSS token
-        blank_description: There is no RSS token yet. You can create one using the button below.
-        blank_title: No RSS token
-        title: RSS
-        table_title: RSS tokens
-        text_hint: RSS tokens allow users to keep up with the latest changes in this OpenProject instance via an external RSS reader.
-        static_token_name: RSS token
-        disabled_text: RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature.
+        add_button: "RSS token"
+        blank_description: "There is no RSS token yet. You can create one using the button below."
+        blank_title: "No RSS token"
+        title: "RSS"
+        table_title: "RSS tokens"
+        text_hint: "RSS tokens allow users to keep up with the latest changes in this Yojana instance via an external RSS reader."
+        static_token_name: "RSS token"
+        disabled_text: "RSS tokens are not enabled by the administrator. Please contact your administrator to use this feature."
       storages:
         unknown_storage: Unknown storage
     email_reminders:
@@ -4014,51 +4003,48 @@ ro:
   label_collapse: Restrângere
   label_collapsed_click_to_show: S-a restrâns. Clic pentru a afișa
   label_configuration: configurație
-  label_comment_add: Adaugă un comentariu
-  label_comment_added: Comentariu adăugat
-  label_comment_delete: Ştergere comentarii
-  label_comment_plural: Comentarii
-  label_commits_per_author: Încărcări pe autor
-  label_commits_per_month: Încărcări pe lună
-  label_confirmation: Confirmare
-  label_contains: conţine
-  label_starts_with: starts with
-  label_content: Conținut
-  label_color_plural: Culori
-  label_copied: copiat
-  label_copy_same_as_target: La fel ca destinația
-  label_copy_source: Sursă
-  label_copy_target: Destinație
-  label_copy_workflow_from: Copiază flux de la
-  label_copy_workflow_from_type: Copy to another type
-  label_copy_workflow_from_role: Copy to other roles
-  label_copy_project: Copiază proiect
-  label_core_version: Versiune de bază
-  label_core_build: Core build
-  label_created_by: Creat de %{user}
-  label_current_status: Stare actuală
-  label_current_version: Versiune actuală
-  label_custom_field_add_no_type: Adaugați acest câmp la un pachet de lucru
-  label_custom_field_new: Câmp personalizat nou
-  label_custom_field_plural: Câmpuri personalizate
-  label_custom_field_default_type: Golire tip
-  label_custom_style: Design
-  label_custom_style_description: Choose how OpenProject looks to you with themes, select your default colors to use in the app and how exports look like.
-  label_dashboard: Panou de control
-  label_database_version: Versiunea PostgreSQL
-  label_date: Data
-  label_dates: Date
-  label_date_and_time: Data
-  label_date_format: Format dată
-  label_date_from: Din
-  label_date_from_to: Din %{start} la %{end}
-  label_date_to: La
-  label_day_plural: zile
-  label_default: Implicit
-  label_delete_user: Șterge utilizator
-  label_delete_project: Ștergeți proiectul
-  label_delete: Șterge
-  label_deleted: șters
+  label_comment_add: "Adaugă un comentariu"
+  label_comment_added: "Comentariu adăugat"
+  label_comment_delete: "Ştergere comentarii"
+  label_comment_plural: "Comentarii"
+  label_commits_per_author: "Încărcări pe autor"
+  label_commits_per_month: "Încărcări pe lună"
+  label_confirmation: "Confirmare"
+  label_contains: "conţine"
+  label_content: "Conținut"
+  label_color_plural: "Culori"
+  label_copied: "copiat"
+  label_copy_same_as_target: "La fel ca destinația"
+  label_copy_source: "Sursă"
+  label_copy_target: "Destinație"
+  label_copy_workflow_from: "Copiază flux de la"
+  label_copy_project: "Copiază proiect"
+  label_core_version: "Versiune de bază"
+  label_core_build: "Core build"
+  label_created_by: "Creat de %{user}"
+  label_current_status: "Stare actuală"
+  label_current_version: "Versiune actuală"
+  label_custom_field_add_no_type: "Adaugați acest câmp la un pachet de lucru"
+  label_custom_field_new: "Câmp personalizat nou"
+  label_custom_field_plural: "Câmpuri personalizate"
+  label_custom_field_default_type: "Golire tip"
+  label_custom_style: "Design"
+  label_custom_style_description: "Choose how Yojana looks to you with themes, select your default colors to use in the app and how exports look like."
+  label_dashboard: "Panou de control"
+  label_database_version: "Versiunea PostgreSQL"
+  label_date: "Data"
+  label_dates: "Date"
+  label_date_and_time: "Data"
+  label_date_format: "Format dată"
+  label_date_from: "Din"
+  label_date_from_to: "Din %{start} la %{end}"
+  label_date_to: "La"
+  label_day_plural: "zile"
+  label_default: "Implicit"
+  label_delete_user: "Șterge utilizator"
+  label_delete_project: "Ștergeți proiectul"
+  label_delete: "Șterge"
+  label_deleted: "șters"
   label_deleted_custom_field: "(câmp personalizat șters)"
   label_deleted_custom_item: "(deleted item)"
   label_deleted_custom_option: "(opțiune eliminată)"
@@ -4312,61 +4298,53 @@ ro:
   label_not_found: nu a fost găsit
   label_none: niciunul
   label_none_parentheses: "(niciuna)"
-  label_not_contains: nu conține
-  label_not_equals: nu este
-  label_life_cycle_step_plural: Ciclul de viață proiect
-  label_on: pe
-  label_operator_all: nu este gol
-  label_operator_none: este gol
-  label_operator_equals_or: este (SAU)
-  label_operator_equals_all: este (ȘI)
-  label_operator_shared_with_user_any: oricare
-  label_open: deschis
-  label_closed: închis
-  label_open_menu: Deschidere meniu
-  label_open_work_packages: deschise
-  label_open_work_packages_plural: deschise
-  label_openproject_website: Site-ul OpenProject
-  label_optional_description: Descriere
-  label_options: Opțiuni
-  label_other: Altele
-  label_overall_activity: Activitate globală
-  label_overview: Vedere de ansamblu
-  label_page_title: Titlu pagină
-  label_parent_group_caption: 'Setting a parent group will make this group a subgroup of the selected parent group. This will also inherit all memberships, including permissions of the parent group.
-
-    '
-  label_part_of: parte a
-  label_password_lost: V-aţi uitat parola?
-  label_password_rule_lowercase: Litere mici
-  label_password_rule_numeric: Cifre
-  label_password_rule_special: Caractere speciale
-  label_password_rule_uppercase: Majuscule
-  label_password_requirement_lowercase: Must contain at least one lowercase character.
-  label_password_requirement_numeric: Must contain at least one numeric character.
-  label_password_requirement_special: Must contain at least one special character.
-  label_password_requirement_uppercase: Must contain at least one uppercase character.
-  label_path_encoding: Codificare cale
-  label_per_page: 'Per pagină:'
-  label_people: Persoane
-  label_permissions: Drepturi
-  label_permissions_report: Raport drepturi
-  label_personalize_page: Personalizare pagină
-  label_placeholder_user: Utilizator placeholder
-  label_placeholder_user_new: Utilizator placeholder nou
-  label_placeholder_user_plural: Utilizatori de tip Placeholder
-  label_planning: Planificare
-  label_please_login: Te rog să te autentifici
-  label_plugins: Module
-  label_portfolio_plural: Portfolios
-  label_modules_and_plugins: Module și Plugin-uri
-  label_precedes: precede
-  label_preferences: Preferinţe
-  label_preview: Previzualizare
-  label_preview_not_available: Preview not available
-  label_previous: Înapoi
-  label_previous_week: Săptămâna trecută
-  label_previous_year: Previous year
+  label_not_contains: "nu conține"
+  label_not_equals: "nu este"
+  label_life_cycle_step_plural: "Ciclul de viață proiect"
+  label_on: "pe"
+  label_operator_all: "nu este gol"
+  label_operator_none: "este gol"
+  label_operator_equals_or: "este (SAU)"
+  label_operator_equals_all: "este (ȘI)"
+  label_operator_shared_with_user_any: "oricare"
+  label_open: "deschis"
+  label_closed: "închis"
+  label_open_menu: "Deschidere meniu"
+  label_open_work_packages: "deschise"
+  label_open_work_packages_plural: "deschise"
+  label_openproject_website: "Site-ul Yojana"
+  label_optional_description: "Descriere"
+  label_options: "Opțiuni"
+  label_other: "Altele"
+  label_overall_activity: "Activitate globală"
+  label_overview: "Vedere de ansamblu"
+  label_page_title: "Titlu pagină"
+  label_part_of: "parte a"
+  label_password_lost: "V-aţi uitat parola?"
+  label_password_rule_lowercase: "Litere mici"
+  label_password_rule_numeric: "Cifre"
+  label_password_rule_special: "Caractere speciale"
+  label_password_rule_uppercase: "Majuscule"
+  label_path_encoding: "Codificare cale"
+  label_per_page: "Per pagină:"
+  label_people: "Persoane"
+  label_permissions: "Drepturi"
+  label_permissions_report: "Raport drepturi"
+  label_personalize_page: "Personalizare pagină"
+  label_placeholder_user: "Utilizator placeholder"
+  label_placeholder_user_new: "Utilizator placeholder nou"
+  label_placeholder_user_plural: "Utilizatori de tip Placeholder"
+  label_planning: "Planificare"
+  label_please_login: "Te rog să te autentifici"
+  label_plugins: "Module"
+  label_portfolio_plural: "Portfolios"
+  label_modules_and_plugins: "Module și Plugin-uri"
+  label_precedes: "precede"
+  label_preferences: "Preferinţe"
+  label_preview: "Previzualizare"
+  label_preview_not_available: "Preview not available"
+  label_previous: "Înapoi"
+  label_previous_week: "Săptămâna trecută"
   label_principal_invite_via_email: " sau invită utilizatori folosind email"
   label_principal_search: Adaugă utilizatori sau grupuri existente
   label_privacy_policy: Politica privind confidențialitatea și securitatea datelor
@@ -4772,11 +4750,11 @@ ro:
   mail_body_backup_token_reset_user_info: Token-ul backup a fost resetat.
   mail_body_backup_token_info: Token-ul anterior nu mai este valid.
   mail_body_backup_waiting_period: Noul token va fi activat în %{hours} ore.
-  mail_body_backup_token_warning: Dacă nu ai fost tu, conectează-te la OpenProject imediat și resetează-l din nou.
-  mail_body_incoming_email_error: E-mailul trimis la OpenProject nu a putut fi procesat.
-  mail_body_incoming_email_error_in_reply_to: La %{received_at} %{from_email} a scris
-  mail_body_incoming_email_error_logs: Jurnale
-  mail_body_lost_password: 'Pentru a vă modifica parola, dați click pe următorul link:'
+  mail_body_backup_token_warning: Dacă nu ai fost tu, conectează-te la Yojana imediat și resetează-l din nou.
+  mail_body_incoming_email_error: E-mailul trimis la Yojana nu a putut fi procesat.
+  mail_body_incoming_email_error_in_reply_to: "La %{received_at} %{from_email} a scris"
+  mail_body_incoming_email_error_logs: "Jurnale"
+  mail_body_lost_password: "Pentru a vă modifica parola, dați click pe următorul link:"
   mail_password_change_not_possible:
     title: Modificarea parolei nu este posibilă
     body: Contul tău %{app_title} este conectat la un furnizor extern de autentificare (%{name}).
@@ -4786,23 +4764,23 @@ ro:
   mail_body_register_user: Dragă %{name},
   mail_body_register_links_html: |
     Nu ezita să navighezi pe canalul nostru de youtube (%{youtube_link}) unde oferim un webinar (%{webinar_link})
-    și videoclipuri cu “Începe” (%{get_started_link}) pentru a face primii pași în OpenProject cât mai ușor posibil.
+    și videoclipuri cu “Începe” (%{get_started_link}) pentru a face primii pași în Yojana cât mai ușor posibil.
     <br />
     Dacă ai orice întrebări suplimentare, consultă documentația noastră (%{documentation_link}) sau contactează administratorul.
-  mail_body_register_closing: Echipa dumneavoastră OpenProject
-  mail_body_register_ending: Rămâneți conectați! Vă salutăm cu drag,
+  mail_body_register_closing: "Echipa dumneavoastră Yojana"
+  mail_body_register_ending: "Rămâneți conectați! Vă salutăm cu drag,"
   mail_body_reminder: "%{count} pachete de lucru care vă sunt atribuite au scadență în următoarele %{days} zile:"
   mail_body_group_reminder: '%{count} pachetul (pachetele) de lucru care sunt atribuite grupului "%{group}" trebuie depuse în următoarele %{days} zile:'
-  mail_body_wiki_page_added: Pagina de wiki '%{id}' a fost adăugată de %{author}.
-  mail_body_wiki_page_updated: Pagina wiki '%{id}' a fost actualizată de %{author}.
-  mail_subject_account_activation_request: cererea de activare a contului %{value}
-  mail_subject_backup_ready: Copia ta de rezervă este gata
-  mail_subject_backup_token_reset: Resetează token-ul pentru copia de rezervă
-  mail_subject_incoming_email_error: Un e-mail pe care l-ai trimis la OpenProject nu a putut fi procesat
-  mail_subject_lost_password: Parola dumneavoastră pentru %{value}
-  mail_subject_register: Activarea contului dumneavoastră %{value}
-  mail_subject_wiki_content_added: Pagina de wiki '%{id}' a fost adăugată
-  mail_subject_wiki_content_updated: Pagina wiki '%{id}' a fost actualizată
+  mail_body_wiki_page_added: "Pagina de wiki '%{id}' a fost adăugată de %{author}."
+  mail_body_wiki_page_updated: "Pagina wiki '%{id}' a fost actualizată de %{author}."
+  mail_subject_account_activation_request: "cererea de activare a contului %{value}"
+  mail_subject_backup_ready: "Copia ta de rezervă este gata"
+  mail_subject_backup_token_reset: "Resetează token-ul pentru copia de rezervă"
+  mail_subject_incoming_email_error: "Un e-mail pe care l-ai trimis la Yojana nu a putut fi procesat"
+  mail_subject_lost_password: "Parola dumneavoastră pentru %{value}"
+  mail_subject_register: "Activarea contului dumneavoastră %{value}"
+  mail_subject_wiki_content_added: "Pagina de wiki '%{id}' a fost adăugată"
+  mail_subject_wiki_content_updated: "Pagina wiki '%{id}' a fost actualizată"
   mail_member_added_project:
     subject: "%{project} - Ați fost adăugat ca membru"
     body:
@@ -4830,13 +4808,13 @@ ro:
       A new user (%{email}) tried to create an account on an OpenProject environment that you manage (%{host}).
       The user cannot activate their account since the user limit has been reached.
     steps:
-      a: Actualizați planul de plată ([here](upgrade_url))
-      b: Blocați sau ștergeți un utilizator existent ([aici](users_url))
-      label: 'Pentru a permite utilizatorului să se conecteze, puteți: '
-  more_actions: Mai multe acțiuni
-  noscript_description: Trebuie să activaţi JavaScript pentru a utiliza OpenProject!
-  noscript_heading: JavaScript dezactivat
-  noscript_learn_more: Află mai multe
+      label: "Pentru a permite utilizatorului să se conecteze, puteți: "
+      a: "Actualizați planul de plată ([here](upgrade_url))" #here turned into a link
+      b: "Blocați sau ștergeți un utilizator existent ([aici](users_url))" #here turned into a link
+  more_actions: "Mai multe acțiuni"
+  noscript_description: "Trebuie să activaţi JavaScript pentru a utiliza Yojana!"
+  noscript_heading: "JavaScript dezactivat"
+  noscript_learn_more: "Află mai multe"
   notice_accessibility_mode: Modul accesibilitate poate fi activat în contul tău [settings](url).
   notice_account_activated: Contul a fost activat. Vă puteți autentifica acum.
   notice_account_already_activated: Contul a fost activat deja.
@@ -4914,10 +4892,10 @@ ro:
   notice_automatic_set_of_standard_type: Setare automată a tipului standard.
   notice_logged_out: Ați fost deconectat.
   notice_wont_delete_auth_source: The LDAP connection cannot be deleted as long as there are still users using it.
-  notice_project_cannot_update_custom_fields: 'Nu poți actualiza câmpurile particularizate disponibile ale proiectului. Proiectul este invalid: %{errors}'
-  notice_attachment_migration_wiki_page: 'Această pagină a fost generată automat în timpul actualizării OpenProject. Aceasta conține toate atașamentele asociate anterior cu %{container_type} "%{container_name}".
-
-    '
+  notice_project_cannot_update_custom_fields: "Nu poți actualiza câmpurile particularizate disponibile ale proiectului. Proiectul este invalid: %{errors}"
+  notice_attachment_migration_wiki_page: >
+    Această pagină a fost generată automat în timpul actualizării Yojana. Aceasta conține toate atașamentele asociate anterior cu %{container_type} "%{container_name}".
+  #Default format for numbers
   number:
     format:
       delimiter: ","
@@ -4939,138 +4917,127 @@ ro:
           mb: MB
           tb: TB
   onboarding:
-    heading_getting_started: Urmărește prezentarea generală
-    text_getting_started_description: Obține o imagine de ansamblu rapidă a gestionării proiectelor și a colaborării în echipă cu OpenProject. Poți reporni acest videoclip din meniul de ajutor.
-    welcome: Bun venit la %{app_title}
-    select_language: Te rog selectează limba
-  open_project:
-    common:
-      work_package_card_component:
-        drag_handle:
-          label: Drag to reorder
-        menu:
-          label_actions: Work package actions
-        parent: Parent
-        undisclosed: Undisclosed
-  permission_add_work_package_comments: Add comments
-  permission_add_work_packages: Adaugă pachete de lucru
-  permission_add_messages: Publicare mesaje
-  permission_add_project: Creează proiecte
-  permission_add_portfolios: Create portfolios
-  permission_add_programs: Create programs
-  permission_add_work_package_attachments: Adaugă fișiere
-  permission_add_work_package_attachments_explanation: Allows adding attachments without Edit work packages permission
-  permission_add_internal_comments: Scrie comentarii interne
-  permission_archive_project: Arhivare proiect
-  permission_create_user: Create users
-  permission_manage_user: Editează utilizatori
-  permission_manage_placeholder_user: Creează, editează și șterge utilizatori de tip placeholder
-  permission_add_subprojects: Creează subproiecte
-  permission_add_work_package_watchers: Adaugă observatori
-  permission_assign_versions: Atribuie versiuni
-  permission_browse_repository: Acces doar citire la repo (vizualizare și descărcare)
-  permission_change_work_package_status: Schimbare stare pachet de lucru
-  permission_change_work_package_status_explanation: Allows changing status without Edit work packages permission
-  permission_comment_news: Comentare noutăți
-  permission_commit_access: Acces de citire/scriere la repo (încărcare)
-  permission_copy_projects: Copiază proiecte
-  permission_copy_projects_explanation: In template projects, this permission has a secondary function, it allows the creation of new projects derived from the template.
-  permission_copy_work_packages: Duplicate work packages
-  permission_create_backup: Creează copie de rezervă
-  permission_delete_work_package_watchers: Eliminare observatori
-  permission_delete_work_packages: Ștergere pachete de lucru
-  permission_delete_messages: Ștergere mesaje
-  permission_delete_own_messages: Ștergere mesaje proprii
-  permission_delete_reportings: Ștergere raportări
-  permission_delete_timelines: Ștergere linii de timp
-  permission_edit_work_package_comments: Moderate comments
-  permission_edit_work_package_comments_explanation: 'Caution: Users with this permission are able to edit anyone''s comment.'
-  permission_edit_work_packages: Editare pachete de lucru
-  permission_edit_messages: Editare mesaje
-  permission_edit_own_internal_comments: Editează propriile comentarii interne
-  permission_edit_own_work_package_comments: Edit own comments
-  permission_edit_own_messages: Editare mesaje proprii
-  permission_edit_own_time_entries: Editare jurnale de timp proprii
-  permission_edit_others_internal_comments: Moderează comentariile interne
-  permission_edit_others_internal_comments_explanation: 'Atenție: Utilizatorii cu această permisiune pot edita comentariile interne ale altor utilizatori.'
-  permission_edit_project: Editare proiect
-  permission_edit_project_attributes: Edit project attributes
-  permission_edit_project_phases: Editează faze proiect
-  permission_edit_reportings: Editare raportări
-  permission_edit_time_entries: Editează jurnalele de timp pentru alți utilizatori
-  permission_edit_timelines: Editare linii de timp
-  permission_edit_wiki_pages: Editare pagini wiki
-  permission_export_work_packages: Export pachete de lucru
-  permission_export_projects: Export projects
-  permission_invite_members_by_email: Invite members by email
-  permission_invite_members_by_email_explanation: 'Allows users to invite new members by email. Invited users will receive an email with a link to set their password and activate their account. Depends on the permission to manage members
-
-    '
-  permission_log_own_time: Înregistrare timp propriu
-  permission_log_time: Înregistrare timp pentru alți utilizatori
-  permission_manage_forums: Gestionare forumuri
-  permission_manage_categories: Gestionare categorii pachete de lucru
-  permission_manage_dashboards: Manage dashboards
-  permission_manage_work_package_relations: Gestionare relații pachete de lucru
-  permission_manage_members: Gestionare participanți
-  permission_manage_news: Gestionare știri
-  permission_manage_project_activities: Gestionare activități proiect
-  permission_manage_public_queries: Gestionare opinii publice
-  permission_manage_repository: Gestionare arhivă
-  permission_manage_subtasks: Gestionați ierarhiile pachetelor de lucru
-  permission_manage_versions: Gestionare versiuni
-  permission_manage_wiki: Gestionare wiki
-  permission_manage_own_working_times: Manage own working times
-  permission_manage_own_working_times_explanation: 'Allows users to manage their own working times, and personal non-working days.
-
-    '
-  permission_manage_working_times: Manage working times for all users
-  permission_manage_working_times_explanation: 'Allows users to manage working times for all users, including personal non-working days.
-
-    '
-  permission_move_work_packages: Mutare pachete de lucru
-  permission_save_queries: Salvare vizualizări
-  permission_search_project: Caută proiect
-  permission_select_custom_fields: Selectează câmpuri personalizate
-  permission_select_project_custom_fields: Select project attributes
-  permission_select_project_phases: Selectează faze proiect
-  permission_select_project_phases_explanation: Activează/Dezactivează fazele unui proiect. Permite utilizatorului să selecteze ciclul de viață potrivit pentru proiect ca fazele inactive nu vor fi vizibile în pagina de ansamblu a proiectului și nici în lista de proiecte.
-  permission_select_project_modules: Selectare module proiect
-  permission_share_work_packages: Partajare pachete de lucru
-  permission_manage_types: Selectare tipuri
-  permission_manage_own_reminders: Create own reminders
-  permission_view_all_principals: View all users and groups
-  permission_view_all_principals_explanation: 'Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
-
-    '
-  permission_view_project: Vezi proiecte
-  permission_view_changesets: Vizualizare revizii repo în OpenProject
-  permission_view_internal_comments: Vezi comentariile interne
-  permission_view_commit_author_statistics: Vizualizare statistici autor înregistrări
-  permission_view_dashboards: Vezi panouri
-  permission_view_work_package_watchers: Vizualizare listă observatori
-  permission_view_work_packages: Vizualizare pachete de lucru
-  permission_view_messages: Vizualizare mesaje
-  permission_view_news: Vezi noutăți
-  permission_view_members: Vezi membrii
-  permission_view_reportings: Vizualizare raportări
-  permission_view_shared_work_packages: Vizualizare partajări pachete de lucru
-  permission_view_time_entries: Vizualizare timp consumat
-  permission_view_timelines: Vizualizare linii de timp
-  permission_view_user_email: View users' mail addresses
-  permission_view_wiki_edits: Vizualizare istoric wiki
-  permission_view_wiki_pages: Vizualizare wiki
-  permission_work_package_assigned: Devino executant/responsabil
-  permission_work_package_assigned_explanation: Pachetele de lucru pot fi atribuite utilizatorilor și grupurilor care dețin acest rol în proiectul respectiv
-  permission_view_project_activity: Vezi activitate proiect
-  permission_view_project_attributes: Vezi atribute proiect
-  permission_view_project_phases: Vezi faze proiect
-  permission_save_bcf_queries: Save BCF queries
-  permission_manage_public_bcf_queries: Manage public BCF queries
-  permission_edit_attribute_help_texts: Edit attribute help texts
-  permission_manage_public_project_queries: Gestionează listă proiecte publice
-  permission_view_project_query: View project query
-  permission_edit_project_query: Edit project query
+    heading_getting_started: "Urmărește prezentarea generală"
+    text_getting_started_description: "Obține o imagine de ansamblu rapidă a gestionării proiectelor și a colaborării în echipă cu Yojana. Poți reporni acest videoclip din meniul de ajutor."
+    welcome: "Bun venit la %{app_title}"
+    select_language: "Te rog selectează limba"
+  permission_add_work_package_comments: "Add comments"
+  permission_add_work_packages: "Adaugă pachete de lucru"
+  permission_add_messages: "Publicare mesaje"
+  permission_add_project: "Creează proiecte"
+  permission_add_portfolios: "Create portfolios"
+  permission_add_programs: "Create programs"
+  permission_add_work_package_attachments: "Adaugă fișiere"
+  permission_add_work_package_attachments_explanation: "Allows adding attachments without Edit work packages permission"
+  permission_add_internal_comments: "Scrie comentarii interne"
+  permission_archive_project: "Arhivare proiect"
+  permission_create_user: "Create users"
+  permission_manage_user: "Editează utilizatori"
+  permission_manage_placeholder_user: "Creează, editează și șterge utilizatori de tip placeholder"
+  permission_add_subprojects: "Creează subproiecte"
+  permission_add_work_package_watchers: "Adaugă observatori"
+  permission_assign_versions: "Atribuie versiuni"
+  permission_browse_repository: "Acces doar citire la repo (vizualizare și descărcare)"
+  permission_change_wiki_parent_page: "Schimbare pagina wiki părinte"
+  permission_change_work_package_status: "Schimbare stare pachet de lucru"
+  permission_change_work_package_status_explanation: "Allows changing status without Edit work packages permission"
+  permission_comment_news: "Comentare noutăți"
+  permission_commit_access: "Acces de citire/scriere la repo (încărcare)"
+  permission_copy_projects: "Copiază proiecte"
+  permission_copy_projects_explanation: "In template projects, this permission has a secondary function, it allows the creation of new projects derived from the template."
+  permission_copy_work_packages: "Duplicate work packages"
+  permission_create_backup: "Creează copie de rezervă"
+  permission_delete_work_package_watchers: "Eliminare observatori"
+  permission_delete_work_packages: "Ștergere pachete de lucru"
+  permission_delete_messages: "Ștergere mesaje"
+  permission_delete_own_messages: "Ștergere mesaje proprii"
+  permission_delete_reportings: "Ștergere raportări"
+  permission_delete_timelines: "Ștergere linii de timp"
+  permission_delete_wiki_pages: "Ștergere pagini wiki"
+  permission_delete_wiki_pages_attachments: "Ștergere atașamente"
+  permission_edit_work_package_comments: "Moderate comments"
+  permission_edit_work_package_comments_explanation: "Caution: Users with this permission are able to edit anyone's comment."
+  permission_edit_work_packages: "Editare pachete de lucru"
+  permission_edit_messages: "Editare mesaje"
+  permission_edit_own_internal_comments: "Editează propriile comentarii interne"
+  permission_edit_own_work_package_comments: "Edit own comments"
+  permission_edit_own_messages: "Editare mesaje proprii"
+  permission_edit_own_time_entries: "Editare jurnale de timp proprii"
+  permission_edit_others_internal_comments: "Moderează comentariile interne"
+  permission_edit_others_internal_comments_explanation: "Atenție: Utilizatorii cu această permisiune pot edita comentariile interne ale altor utilizatori."
+  permission_edit_project: "Editare proiect"
+  permission_edit_project_attributes: "Edit project attributes"
+  permission_edit_project_phases: "Editează faze proiect"
+  permission_edit_reportings: "Editare raportări"
+  permission_edit_time_entries: "Editează jurnalele de timp pentru alți utilizatori"
+  permission_edit_timelines: "Editare linii de timp"
+  permission_edit_wiki_pages: "Editare pagini wiki"
+  permission_export_work_packages: "Export pachete de lucru"
+  permission_export_projects: "Export projects"
+  permission_export_wiki_pages: "Export pagini wiki"
+  permission_invite_members_by_email: "Invite members by email"
+  permission_invite_members_by_email_explanation: >
+    Allows users to invite new members by email. Invited users will receive an email with a link to set their password and activate their account. Depends on the permission to manage members
+  permission_list_attachments: "Listare atașamente"
+  permission_log_own_time: "Înregistrare timp propriu"
+  permission_log_time: "Înregistrare timp pentru alți utilizatori"
+  permission_manage_forums: "Gestionare forumuri"
+  permission_manage_categories: "Gestionare categorii pachete de lucru"
+  permission_manage_dashboards: "Manage dashboards"
+  permission_manage_work_package_relations: "Gestionare relații pachete de lucru"
+  permission_manage_members: "Gestionare participanți"
+  permission_manage_news: "Gestionare știri"
+  permission_manage_project_activities: "Gestionare activități proiect"
+  permission_manage_public_queries: "Gestionare opinii publice"
+  permission_manage_repository: "Gestionare arhivă"
+  permission_manage_subtasks: "Gestionați ierarhiile pachetelor de lucru"
+  permission_manage_versions: "Gestionare versiuni"
+  permission_manage_wiki: "Gestionare wiki"
+  permission_manage_wiki_menu: "Gestionare meniu wiki"
+  permission_move_work_packages: "Mutare pachete de lucru"
+  permission_protect_wiki_pages: "Protejare pagini wiki"
+  permission_rename_wiki_pages: "Redenumește pagini wiki"
+  permission_save_queries: "Salvare vizualizări"
+  permission_search_project: "Caută proiect"
+  permission_select_custom_fields: "Selectează câmpuri personalizate"
+  permission_select_project_custom_fields: "Select project attributes"
+  permission_select_project_phases: "Selectează faze proiect"
+  permission_select_project_phases_explanation: "Activează/Dezactivează fazele unui proiect. Permite utilizatorului să selecteze ciclul de viață potrivit pentru proiect ca fazele inactive nu vor fi vizibile în pagina de ansamblu a proiectului și nici în lista de proiecte."
+  permission_select_project_modules: "Selectare module proiect"
+  permission_share_work_packages: "Partajare pachete de lucru"
+  permission_manage_types: "Selectare tipuri"
+  permission_manage_own_reminders: "Create own reminders"
+  permission_view_all_principals: "View all users and groups"
+  permission_view_all_principals_explanation: >
+    Allows users to see all users and groups in the system, even if they are not members of any joined projects or groups.
+  permission_view_project: "Vezi proiecte"
+  permission_view_changesets: "Vizualizare revizii repo în Yojana"
+  permission_view_internal_comments: "Vezi comentariile interne"
+  permission_view_commit_author_statistics: "Vizualizare statistici autor înregistrări"
+  permission_view_dashboards: "Vezi panouri"
+  permission_view_work_package_watchers: "Vizualizare listă observatori"
+  permission_view_work_packages: "Vizualizare pachete de lucru"
+  permission_view_messages: "Vizualizare mesaje"
+  permission_view_news: "Vezi noutăți"
+  permission_view_members: "Vezi membrii"
+  permission_view_reportings: "Vizualizare raportări"
+  permission_view_shared_work_packages: "Vizualizare partajări pachete de lucru"
+  permission_view_time_entries: "Vizualizare timp consumat"
+  permission_view_timelines: "Vizualizare linii de timp"
+  permission_view_user_email: "View users' mail addresses"
+  permission_view_wiki_edits: "Vizualizare istoric wiki"
+  permission_view_wiki_pages: "Vizualizare wiki"
+  permission_work_package_assigned: "Devino executant/responsabil"
+  permission_work_package_assigned_explanation: "Pachetele de lucru pot fi atribuite utilizatorilor și grupurilor care dețin acest rol în proiectul respectiv"
+  permission_view_project_activity: "Vezi activitate proiect"
+  permission_view_project_attributes: "Vezi atribute proiect"
+  permission_view_project_phases: "Vezi faze proiect"
+  permission_save_bcf_queries: "Save BCF queries"
+  permission_manage_public_bcf_queries: "Manage public BCF queries"
+  permission_edit_attribute_help_texts: "Edit attribute help texts"
+  permission_manage_public_project_queries: "Gestionează listă proiecte publice"
+  permission_view_project_query: "View project query"
+  permission_edit_project_query: "Edit project query"
   placeholders:
     default: "-"
     templated_hint: Automatically generated through type %{type}
@@ -5170,49 +5137,50 @@ ro:
     create_successful: Repo-ul a fost înregistrat.
     delete_sucessful: Repo-ul a fost șters.
     destroy:
-      confirmation: Prin continuarea operațiunii veți șterge permanent repo-ul gestionat.
-      info: Ștergerea repo-ului este o acțiune ireversibilă.
-      info_not_managed: 'Atenție: Această acțiune NU va șterge conținutul repo-ului, deoarece acesta nu este gestionat de OpenProject.'
-      managed_path_note: 'Urmatorul director va fi şters: %{path}'
-      repository_verification_html: Enter the project's identifier %{identifier} to verify the deletion of its repository.
-      subtitle: Ești sigur că vrei să ştergi %{repository_type} din proiectul %{project_name}?
-      subtitle_not_managed_html: Do you really want to remove the linked %{repository_type} %{url} from the project %{project_name}?
-      title_html: Delete the %{repository_type}
-      title_not_managed: Doriți eliminarea %{repository_type} corespunzător?
+      confirmation: "Prin continuarea operațiunii veți șterge permanent repo-ul gestionat."
+      info: "Ștergerea repo-ului este o acțiune ireversibilă."
+      info_not_managed: "Atenție: Această acțiune NU va șterge conținutul repo-ului, deoarece acesta nu este gestionat de Yojana."
+      managed_path_note: "Urmatorul director va fi şters: %{path}"
+      repository_verification: "Introduceţi identificatorul proiectului %{identifier} pentru a verifica ștergerea sa din repo."
+      subtitle: "Ești sigur că vrei să ştergi %{repository_type} din proiectul %{project_name}?"
+      subtitle_not_managed: "Sunteți sigur că doriţi să ştergeţi %{repository_type} %{url} din proiectul %{project_name}?"
+      title: "Ștergere %{repository_type}"
+      title_not_managed: "Doriți eliminarea %{repository_type} corespunzător?"
     errors:
-      build_failed: Imposibil de creat repo-ul cu configuraţia selectată. %{reason}
-      managed_delete: Nu se poate șterge repo-ul gestionat.
-      managed_delete_local: 'Nu se poate șterge repo-ul local de la adresa ''%{path}'': %{error_message}'
-      empty_repository: Repo-ul există, dar este gol. Nu conține nicio revizie deocamdată.
-      exists_on_filesystem: Directorul repo-ului există deja în sistemul de fișiere.
-      filesystem_access_failed: 'A apărut o eroare la accesarea repo-ului în sistemul de fişiere: %{message}'
-      not_manageable: Acest furnizor de repo nu poate fi gestionat de OpenProject.
-      path_permission_failed: 'A apărut o eroare la încercarea de a crea calea următoare: %{path}. Asiguraţi-vă că OpenProject are drepturi de scriere în acel folder.'
-      unauthorized: Nu sunteți autorizat să accesați repo-ul sau credențialele nu sunt valide.
-      unavailable: Repo-ul este indisponibil.
-      exception_title: 'Repo-ul nu este accesibil: %{message}'
-      disabled_or_unknown_type: Tipul selectat - %{type} - este dezactivat sau nu mai este disponibil pentru furnizorul SCM %{vendor}.
-      disabled_or_unknown_vendor: Furnizorul SCM %{vendor} este dezactivat sau nu mai este disponibil.
-      remote_call_failed: 'Apelarea serviciului la distanță a eșuat cu mesajul ''%{message}'' (Cod: %{code})'
-      remote_invalid_response: A fost primit un răspuns invalid de la serviciul la distanță.
-      remote_save_failed: Repo-ul nu a putut fi salvat cu parametrii primiți de la serviciul la distanță.
+      build_failed: "Imposibil de creat repo-ul cu configuraţia selectată. %{reason}"
+      managed_delete: "Nu se poate șterge repo-ul gestionat."
+      managed_delete_local: "Nu se poate șterge repo-ul local de la adresa '%{path}': %{error_message}"
+      empty_repository: "Repo-ul există, dar este gol. Nu conține nicio revizie deocamdată."
+      exists_on_filesystem: "Directorul repo-ului există deja în sistemul de fișiere."
+      filesystem_access_failed: "A apărut o eroare la accesarea repo-ului în sistemul de fişiere: %{message}"
+      not_manageable: "Acest furnizor de repo nu poate fi gestionat de Yojana."
+      path_permission_failed: "A apărut o eroare la încercarea de a crea calea următoare: %{path}. Asiguraţi-vă că Yojana are drepturi de scriere în acel folder."
+      unauthorized: "Nu sunteți autorizat să accesați repo-ul sau credențialele nu sunt valide."
+      unavailable: "Repo-ul este indisponibil."
+      exception_title: "Repo-ul nu este accesibil: %{message}"
+      disabled_or_unknown_type: "Tipul selectat - %{type} - este dezactivat sau nu mai este disponibil pentru furnizorul SCM %{vendor}."
+      disabled_or_unknown_vendor: "Furnizorul SCM %{vendor} este dezactivat sau nu mai este disponibil."
+      remote_call_failed: "Apelarea serviciului la distanță a eșuat cu mesajul '%{message}' (Cod: %{code})"
+      remote_invalid_response: "A fost primit un răspuns invalid de la serviciul la distanță."
+      remote_save_failed: "Repo-ul nu a putut fi salvat cu parametrii primiți de la serviciul la distanță."
     git:
       instructions:
-        managed_url: Aceasta este adresa URL a repo-ului Git gestionat (local).
-        path: Specifică calea către depozitul Git local ( de exemplu, %{example_path} ). De asemenea, poți utiliza depozite la distanță care sunt clonate într-o copie locală utilizând o valoare care începe cu http(s):// sau file://.
-        path_encoding: 'Suprascriere codificare text Git (implicit: UTF-8)'
-      local_title: Legare la repo Git local existent
-      local_url: URL local
-      local_introduction: Dacă aveţi deja un repo de Git local, puteți să-l conectați cu OpenProject pentru a-l accesa din aplicație.
-      managed_introduction: Permiteți aplicației OpenProject să creeze şi să integreze un repo Git local automat.
-      managed_title: Repo Git integrat cu OpenProject
-      managed_url: URL gestionat
-      path: Calea către repo-ul Git
-      path_encoding: Codificare cale
-    go_to_revision: Deplasare la revizia
-    managed_remote: Repo-urile gestionate pentru acest furnizor sunt controlate de la distanță.
-    managed_remote_note: Informații privind URL-ul și calea acestui repo nu sunt disponibile înainte de crearea lui.
-    managed_url: URL gestionat
+        managed_url: "Aceasta este adresa URL a repo-ului Git gestionat (local)."
+        path: >-
+          Specifică calea către depozitul Git local ( de exemplu, %{example_path} ). De asemenea, poți utiliza depozite la distanță care sunt clonate într-o copie locală utilizând o valoare care începe cu http(s):// sau file://.
+        path_encoding: "Suprascriere codificare text Git (implicit: UTF-8)"
+      local_title: "Legare la repo Git local existent"
+      local_url: "URL local"
+      local_introduction: "Dacă aveţi deja un repo de Git local, puteți să-l conectați cu Yojana pentru a-l accesa din aplicație."
+      managed_introduction: "Permiteți aplicației Yojana să creeze şi să integreze un repo Git local automat."
+      managed_title: "Repo Git integrat cu Yojana"
+      managed_url: "URL gestionat"
+      path: "Calea către repo-ul Git"
+      path_encoding: "Codificare cale"
+    go_to_revision: "Deplasare la revizia"
+    managed_remote: "Repo-urile gestionate pentru acest furnizor sunt controlate de la distanță."
+    managed_remote_note: "Informații privind URL-ul și calea acestui repo nu sunt disponibile înainte de crearea lui."
+    managed_url: "URL gestionat"
     settings:
       automatic_managed_repos_disabled: Dezactivează creare automată
       automatic_managed_repos: Creare automată a repo-urilor gestionate
@@ -5220,206 +5188,179 @@ ro:
     scm_vendor: Sistem de management al controlului codului sursă
     scm_type: Tip repo
     scm_types:
-      local: Link la repo local
-      existing: Link la repo existent
-      managed: Creează repo nou în OpenProject
+      local: "Link la repo local"
+      existing: "Link la repo existent"
+      managed: "Creează repo nou în Yojana"
     storage:
-      not_available: Consumul de spațiu de stocare nu este disponibil pentru acest repo.
-      update_timeout: |-
-        Păstrează ultimele informații privind spațiul necesar pe disc pentru un depozit timp de N minute.
-        Deoarece numărarea spațiului necesar pe disc al unui depozit poate fi costisitoare, crește această valoare pentru a reduce impactul asupra performanței.
-      oauth_application_details_html: 'The client secret value will not be accessible again after you close this window. Please copy these values into the Nextcloud OpenProject Integration settings:'
-      oauth_application_details_link_text: Mergi la pagina setări
-      setup_documentation_details: 'Dacă ai nevoie de ajutor pentru configurarea unui nou depozit de fișiere, consultă documentația: '
-      setup_documentation_details_link_text: Configurarea stocărilor de fișiere
-      show_warning_details: Pentru a utiliza acest spațiu de stocare a fișierelor, nu uita să activezi modulul și spațiul de stocare specific în setările de proiect ale fiecărui proiect dorit.
+      not_available: "Consumul de spațiu de stocare nu este disponibil pentru acest repo."
+      update_timeout: "Păstrează ultimele informații privind spațiul necesar pe disc pentru un depozit timp de N minute.\nDeoarece numărarea spațiului necesar pe disc al unui depozit poate fi costisitoare, crește această valoare pentru a reduce impactul asupra performanței."
+      oauth_application_details: "Valoarea secretă a clientului nu va mai fi accesibilă după ce închizi această fereastră. Te rog să copiezi aceste valori în setările Nextcloud Yojana Integration:"
+      oauth_application_details_link_text: "Mergi la pagina setări"
+      setup_documentation_details: "Dacă ai nevoie de ajutor pentru configurarea unui nou depozit de fișiere, consultă documentația: "
+      setup_documentation_details_link_text: "Configurarea stocărilor de fișiere"
+      show_warning_details: "Pentru a utiliza acest spațiu de stocare a fișierelor, nu uita să activezi modulul și spațiul de stocare specific în setările de proiect ale fiecărui proiect dorit."
     subversion:
-      existing_title: Repo Subversion existent
-      existing_introduction: Dacă aveţi deja un repo de Subversion, puteți să-l conectați cu OpenProject pentru a-l accesa din aplicație.
-      existing_url: URL existent
+      existing_title: "Repo Subversion existent"
+      existing_introduction: "Dacă aveţi deja un repo de Subversion, puteți să-l conectați cu Yojana pentru a-l accesa din aplicație."
+      existing_url: "URL existent"
       instructions:
-        managed_url: Aceasta este adresa URL a repo-ului Subversion gestionat (local).
-        url: |-
-          Introduceţi adresa URL a repo-ului. Aceasta poate să adreseze fie un repo local (începe cu %{local_proto}), fie un repo la distanță.
-          Următoarele modele de adrese URL sunt acceptate:
-      managed_title: Repo Subversion integrat cu OpenProject
-      managed_introduction: Permiteți aplicației OpenProject să creeze şi să integreze un repo Subversion local automat.
-      managed_url: URL gestionat
-      password: Parola repo
-      username: Utilizatorul repo
-    truncated: Ne pare rău, am fost nevoiți să fragmentăm acest director în %{limit} fișiere. Intrările %{truncated} au fost omise din listă.
-    named_repository: Repo %{vendor_name}
-    update_settings_successful: Setările tale au fost salvate cu succes.
-    url: Adresa URL a repo-ului
+        managed_url: "Aceasta este adresa URL a repo-ului Subversion gestionat (local)."
+        url: "Introduceţi adresa URL a repo-ului. Aceasta poate să adreseze fie un repo local (începe cu %{local_proto}), fie un repo la distanță.\nUrmătoarele modele de adrese URL sunt acceptate:"
+      managed_title: "Repo Subversion integrat cu Yojana"
+      managed_introduction: "Permiteți aplicației Yojana să creeze şi să integreze un repo Subversion local automat."
+      managed_url: "URL gestionat"
+      password: "Parola repo"
+      username: "Utilizatorul repo"
+    truncated: "Ne pare rău, am fost nevoiți să fragmentăm acest director în %{limit} fișiere. Intrările %{truncated} au fost omise din listă."
+    named_repository: "Repo %{vendor_name}"
+    update_settings_successful: "Setările tale au fost salvate cu succes."
+    url: "Adresa URL a repo-ului"
     warnings:
       cannot_annotate: Acest fișier nu poate fi adnotat.
   scheduling:
-    manual: setează la Manual
-    automatic: setează la Automat
-  search_input_placeholder: Caută ...
-  setting_allowed_link_protocols: Allowed link protocols
-  setting_allowed_link_protocols_text_html: Allow these protocols to be rendered as links in work package descriptions, long text fields and comments. For example, %{tel_code} or %{element_code}. Enter one protocol per line. <br/> Protocols %{http_code}, %{https_code}, and %{mailto_code} are always allowed.
-  setting_capture_external_links: Capture external links
-  setting_capture_external_links_text: 'When enabled, all external links in formatted text will redirect through a warning page before leaving the application. This helps protect users from potentially malicious external websites.
-
-    '
-  setting_capture_external_links_require_login: Require users to be logged in
-  setting_capture_external_links_require_login_text: 'When enabled, users wanting to click on external links need to be logged in before being able to continue.
-
-    '
-  setting_after_first_login_redirect_url: First login redirect
-  setting_after_first_login_redirect_url_text_html: 'Set a path to redirect users after their first login. If empty, redirects to the home page for the onboarding tour. <br/> Example: <code>/my/page</code>
-
-    '
-  setting_after_login_default_redirect_url: After login redirect
-  setting_after_login_default_redirect_url_example_html: 'Set a default path to redirect users after login, if no back link was provided. Redirects to home page if not set. <br/> Example: %{example_code}
-
-    '
-  setting_apiv3_cors_title: Cross-Origin Resource Sharing (CORS)
-  setting_apiv3_cors_enabled: Activați CORS
-  setting_apiv3_cors_origins: API V3 Cross-Origin Resource Sharing (CORS) origini permise
-  setting_apiv3_cors_origins_instructions_html: 'If CORS is enabled, these are the origins that are allowed to access OpenProject API. <br/> Please check the [Documentation on the Origin header](docs_url) on how to specify the expected values.
-
-    '
-  setting_apiv3_write_readonly_attributes: Write access to read-only attributes
-  setting_apiv3_write_readonly_attributes_instructions: 'If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
-
-    '
-  setting_apiv3_write_readonly_attributes_warning: 'This setting has a use-case for e.g., importing data, but allows administrators to impersonate the creation of items as other users. All creation requests are being logged however with the true author.
-
-    '
-  setting_apiv3_write_readonly_attributes_additional_html: 'For more information on attributes and supported resources, please see the [API documentation](api_documentation_link).
-
-    '
-  setting_apiv3_max_page_size: Dimensiunea maximă a paginii API
-  setting_apiv3_max_page_size_instructions: 'Set the maximum page size the API will respond with. It will not be possible to perform API requests that return more values on a single page.
-
-    '
-  setting_apiv3_max_page_size_warning: 'Please only change this value if you are sure why you need it. Setting to a high value will result in significant performance impacts, while a value lower than the per page options will cause errors in paginated views.
-
-    '
-  setting_apiv3_docs: Documentație
-  setting_apiv3_docs_enabled: Activare pagină documente
-  setting_apiv3_docs_enabled_instructions_html: 'Dacă pagina de documente este activată, poți obține o vizualizare interactivă a documentației APIv3 la adresa <a href="%{link}" target="_blank">%{link}</a>.
-
-    '
-  setting_apiv3_docs_enabled_instructions_warning: 'Please be aware that enabling the API docs on a production system may expose sensitive information or result in accidental loss of data when not being careful. We recommend to only enable this setting for development purposes.
-
-    '
-  setting_attachment_whitelist: Lista albă de încărcare a atașamentelor
-  setting_email_delivery_method: Metoda de livrare e-mail
-  setting_emails_salutation: Adresează utilizator în e-mailuri cu
-  setting_oauth_allow_remapping_of_existing_users: Allow remapping of existing users
-  setting_sendmail_location: Locația executabilului "sendmail"
-  setting_sendmail_arguments: Arguments for sendmail
-  setting_smtp_enable_starttls_auto: Utilizează automat STARTTLS dacă este disponibil
-  setting_smtp_ssl: Utilizează conexiunea SSL
-  setting_smtp_address: Server SMTP
-  setting_smtp_port: Port SMTP
-  setting_smtp_authentication: Autentificare SMTP
-  setting_smtp_user_name: Utilizatorul SMTP
-  setting_smtp_password: Parola SMTP
-  setting_smtp_domain: Domeniul SMTP HELO
-  setting_activity_days_default: Zile afișate în lista de activități a proiectului
-  setting_api_tokens_enabled: Enable API tokens
-  setting_api_tokens_enabled_caption: 'Decide whether users can create personal API tokens in their account settings. These tokens can be used to access the different APIs of OpenProject, such as APIv3 and MCP.
-
-    '
-  setting_app_subtitle: Subtitlu aplicație
-  setting_app_title: Titlu aplicație
-  setting_organization_name: Organization name
-  setting_attachment_max_size: Dimensiune maximă atașament
-  setting_show_work_package_attachments: Show attachments in the files tab by default
-  setting_antivirus_scan_mode: Scan mode
-  setting_antivirus_scan_action: Infected file action
-  setting_autofetch_changesets: Preluare automată a schimbărilor din repo
-  setting_autologin: Autentificare automată
-  setting_available_languages: Limbi disponibile
-  setting_bcc_recipients: Adaugă destinatarii ca invizibili (BCC)
-  setting_brute_force_block_after_failed_logins: Blocare utilizator după acest număr de încercări de autentificare nereușite
-  setting_brute_force_block_minutes: Durata pentru care utilizatorul este blocat
-  setting_cache_formatted_text: Păstrare text formatat în memorie
-  setting_use_wysiwyg_description: Selectați pentru a activa în mod implicit editorul CKEditor5 WYSIWYG pentru toți utilizatorii. CKEditor are o funcționalitate limitată pentru GFM Markdown.
-  setting_column_options: Default work package lists columns
-  setting_commit_fix_keywords: Cuvinte cheie pentru rezolvări
-  setting_commit_logs_encoding: Encodare pentru mesajele la încărcare
-  setting_commit_logtime_activity_id: Activitate la înregistrarea duratei de lucru
-  setting_commit_logtime_enabled: Activare timp de lucru
-  setting_commit_ref_keywords: Cuvinte cheie pentru legături
-  setting_consent_time: Timp de consimțământ
-  setting_consent_info: Textul de informare privind consimțământul
-  setting_consent_required: Consimțământ necesar
-  setting_consent_decline_mail: Consimțământ adresa de e-mail de contact
-  setting_cross_project_work_package_relations: Permiteți legături între pachetele de lucru din proiecte diferite
-  setting_csv_escape_formulas: Escape formulas in CSV exports
-  setting_csv_escape_formulas_text: 'Escape spreadsheet formulas in CSV exports by prefixing cells that begin with characters such as =, +, -, or @ with a single quote. This mitigates CSV formula injection when exported files are opened in spreadsheet applications such as Excel. This comes at the downside of modifying the string values inside the CSV, so you may want to disable this if downstream tools require the exact, unescaped cell values.
-
-    '
-  setting_first_week_of_year: Prima săptămână din an conține
-  setting_date_format: Dată
-  setting_default_language: Limbă implicită
-  setting_default_projects_modules: Module activate implicit la creare proiect
-  setting_default_projects_public: Proiectele noi sunt implicit publice
-  setting_disable_password_login: Disable password authentication
-  setting_diff_max_lines_displayed: Numărul maxim de linii afișate în comparație
-  setting_omniauth_direct_login_provider: Direct login SSO provider
-  setting_display_subprojects_work_packages: Afișare pachete de lucru din subproiecte pe pagina proiectului principal
-  setting_duration_format: Duration format
-  setting_duration_format_hours_only: Hours only
-  setting_duration_format_days_and_hours: Days and hours
-  setting_duration_format_instructions: Aceasta definește modul în care sunt afișate munca, munca rămasă și durata timpului consumat.
-  setting_emails_footer: Subsol e-mail
-  setting_emails_header: Antet e-mail
-  setting_email_login: Folosiți e-mailul ca autentificare
-  setting_enabled_scm: SCM activat
-  setting_enabled_projects_columns: Columns in a projects list displayed by default
-  setting_feeds_enabled: Activare fluxuri
-  setting_ical_enabled: Enable iCalendar subscriptions
-  setting_feeds_limit: Limită conținut flux
-  setting_file_max_size_displayed: Numărul maxim de linii afișat în text
-  setting_host_name: Numele serverului
-  setting_collaborative_editing_hocuspocus_url: Hocuspocus server URL
-  setting_collaborative_editing_hocuspocus_secret: Hocuspocus server secret
-  setting_hours_per_day: Hours per day
-  setting_hours_per_day_explanation: This defines what is considered a "day" when displaying duration in days and hours (for example, if a day is 8 hours, 32 hours would be 4 days).
-  setting_invitation_expiration_days: E-mailul de activare expiră după
-  setting_invitation_expiration_days_caption: Numărul de zile după care e-mailul de activare expiră.
-  setting_work_package_done_ratio: Progress calculation mode
-  setting_work_package_done_ratio_field: Work-based
-  setting_work_package_done_ratio_field_caption_html: "<i>% Complete</i> can be freely set to any value. If you optionally enter a value for <i>Work</i>, <i>Remaining work</i> will automatically be derived."
-  setting_work_package_done_ratio_status: Status-based
-  setting_work_package_done_ratio_status_caption_html: Each status has a <i>% Complete</i> value associated with it. Changing status will change <i>% Complete</i>.
-  setting_work_package_done_ratio_explanation_html: 'In <b>work-based</b> mode, % Complete can be freely set to any value. If you optionally enter a value for Work, Remaining work will automatically be derived. In <b>status-based</b> mode, each status has a % Complete value associated with it. Changing status will change % Complete.
-
-    '
-  setting_work_package_properties: Proprietăți pachet de lucru
-  setting_work_package_startdate_is_adddate: Folosire data curentă ca dată de început pentru pachetele de lucru noi
-  setting_work_packages_projects_export_limit: Limita de export a pachetelor de lucru / proiectelor
-  setting_work_packages_projects_export_limit_text: 'Maximum number of work packages or projects that can be included in a single export. Larger exports are truncated to this limit.
-
-    '
-  setting_journal_aggregation_time_minutes: Aggregation period
-  setting_log_requesting_user: Auditare utilizator, nume și adresă de email pentru toate cererile
-  setting_login_required: Autentificare obligatorie
-  setting_login_required_caption: When checked, all requests to the application have to be authenticated.
-  setting_lost_password: Enable password reset
-  setting_lost_password_caption: When checked, allow users to reset their own passwords.
-  setting_mail_from: Adresa de e-mail a expeditorului
-  setting_mail_handler_api_key: Cheie API
-  setting_mail_handler_body_delimiters: Trunchiere e-mail-uri după una dintre aceste linii
-  setting_mail_handler_body_delimiter_regex: Trunchiază email-uri care se potrivesc cu acest regex
-  setting_mail_handler_ignore_filenames: Atașamente de e-mail ignorate
-  setting_new_project_user_role_id: Rol atribuit unui utilizator non-administrator care crează un proiect
-  setting_new_project_user_role_id_caption: 'Only roles that include the permissions to edit project attributes and to manage members are listed, so that the creator can complete the project setup.
-
-    '
-  setting_new_project_send_confirmation_email: Trimite notificare autorului la crearea unui proiect nou
-  setting_new_project_notification_text: Notification text
-  setting_password_active_rules: Password requirements
-  setting_password_count_former_banned: Numărul celor mai recente parole folosite interzise spre a fi reutilizate
-  setting_password_days_valid: Numărul de zile după care este obligatorie schimbarea parolei
-  setting_password_min_length: Lungime minimă
-  setting_per_page_options: Opțiuni pentru obiecte pe pagină
+    manual: "setează la Manual"
+    automatic: "setează la Automat"
+  search_input_placeholder: "Caută ..."
+  setting_allowed_link_protocols: "Allowed link protocols"
+  setting_allowed_link_protocols_text_html: >-
+    Allow these protocols to be rendered as links in work package descriptions, long text fields and comments. For example, %{tel_code} or %{element_code}. Enter one protocol per line. <br/> Protocols %{http_code}, %{https_code}, and %{mailto_code} are always allowed.
+  setting_capture_external_links: "Capture external links"
+  setting_capture_external_links_text: >
+    When enabled, all external links in formatted text will redirect through a warning page before leaving the application. This helps protect users from potentially malicious external websites.
+  setting_capture_external_links_require_login: "Require users to be logged in"
+  setting_capture_external_links_require_login_text: >
+    When enabled, users wanting to click on external links need to be logged in before being able to continue.
+  setting_after_first_login_redirect_url: "First login redirect"
+  setting_after_first_login_redirect_url_text_html: >
+    Set a path to redirect users after their first login. If empty, redirects to the home page for the onboarding tour. <br/> Example: <code>/my/page</code>
+  setting_after_login_default_redirect_url: "After login redirect"
+  setting_after_login_default_redirect_url_text_html: >
+    Set a default path to redirect users after login, if no back link was provided. Redirects to home page if not set. <br/> Example: <code>/my/page</code>
+  setting_apiv3_cors_title: "Cross-Origin Resource Sharing (CORS)"
+  setting_apiv3_cors_enabled: "Activați CORS"
+  setting_apiv3_cors_origins: "API V3 Cross-Origin Resource Sharing (CORS) origini permise"
+  setting_apiv3_cors_origins_text_html: >
+    Dacă CORS este activat, acestea sunt originile cărora li se permite accesul la Yojana API. <br/> Vă rugăm să consultați <a href="%{origin_link}" target="_blank">documentația privind antetul Origin</a> pentru a specifica valorile așteptate.
+  setting_apiv3_write_readonly_attributes: "Write access to read-only attributes"
+  setting_apiv3_write_readonly_attributes_instructions: >
+    If enabled, the API will allow administrators to write static read-only attributes during creation, such as createdAt and author.
+  setting_apiv3_write_readonly_attributes_warning: >
+    This setting has a use-case for e.g., importing data, but allows administrators to impersonate the creation of items as other users. All creation requests are being logged however with the true author.
+  setting_apiv3_write_readonly_attributes_additional: >
+    For more information on attributes and supported resources, please see the %{api_documentation_link}.
+  setting_apiv3_max_page_size: "Dimensiunea maximă a paginii API"
+  setting_apiv3_max_page_size_instructions: >
+    Set the maximum page size the API will respond with. It will not be possible to perform API requests that return more values on a single page.
+  setting_apiv3_max_page_size_warning: >
+    Please only change this value if you are sure why you need it. Setting to a high value will result in significant performance impacts, while a value lower than the per page options will cause errors in paginated views.
+  setting_apiv3_docs: "Documentație"
+  setting_apiv3_docs_enabled: "Activare pagină documente"
+  setting_apiv3_docs_enabled_instructions_html: >
+    Dacă pagina de documente este activată, poți obține o vizualizare interactivă a documentației APIv3 la adresa <a href="%{link}" target="_blank">%{link}</a>.
+  setting_apiv3_docs_enabled_instructions_warning: >
+    Please be aware that enabling the API docs on a production system may expose sensitive information or result in accidental loss of data when not being careful. We recommend to only enable this setting for development purposes.
+  setting_attachment_whitelist: "Lista albă de încărcare a atașamentelor"
+  setting_email_delivery_method: "Metoda de livrare e-mail"
+  setting_emails_salutation: "Adresează utilizator în e-mailuri cu"
+  setting_oauth_allow_remapping_of_existing_users: "Allow remapping of existing users"
+  setting_sendmail_location: "Locația executabilului \"sendmail\""
+  setting_sendmail_arguments: "Arguments for sendmail"
+  setting_smtp_enable_starttls_auto: "Utilizează automat STARTTLS dacă este disponibil"
+  setting_smtp_ssl: "Utilizează conexiunea SSL"
+  setting_smtp_address: "Server SMTP"
+  setting_smtp_port: "Port SMTP"
+  setting_smtp_authentication: "Autentificare SMTP"
+  setting_smtp_user_name: "Utilizatorul SMTP"
+  setting_smtp_password: "Parola SMTP"
+  setting_smtp_domain: "Domeniul SMTP HELO"
+  setting_activity_days_default: "Zile afișate în lista de activități a proiectului"
+  setting_app_subtitle: "Subtitlu aplicație"
+  setting_app_title: "Titlu aplicație"
+  setting_attachment_max_size: "Dimensiune maximă atașament"
+  setting_show_work_package_attachments: "Show attachments in the files tab by default"
+  setting_antivirus_scan_mode: "Scan mode"
+  setting_antivirus_scan_action: "Infected file action"
+  setting_autofetch_changesets: "Preluare automată a schimbărilor din repo"
+  setting_autologin: "Autentificare automată"
+  setting_available_languages: "Limbi disponibile"
+  setting_bcc_recipients: "Adaugă destinatarii ca invizibili (BCC)"
+  setting_brute_force_block_after_failed_logins: "Blocare utilizator după acest număr de încercări de autentificare nereușite"
+  setting_brute_force_block_minutes: "Durata pentru care utilizatorul este blocat"
+  setting_cache_formatted_text: "Păstrare text formatat în memorie"
+  setting_use_wysiwyg_description: "Selectați pentru a activa în mod implicit editorul CKEditor5 WYSIWYG pentru toți utilizatorii. CKEditor are o funcționalitate limitată pentru GFM Markdown."
+  setting_column_options: "Default work package lists columns"
+  setting_commit_fix_keywords: "Cuvinte cheie pentru rezolvări"
+  setting_commit_logs_encoding: "Encodare pentru mesajele la încărcare"
+  setting_commit_logtime_activity_id: "Activitate la înregistrarea duratei de lucru"
+  setting_commit_logtime_enabled: "Activare timp de lucru"
+  setting_commit_ref_keywords: "Cuvinte cheie pentru legături"
+  setting_consent_time: "Timp de consimțământ"
+  setting_consent_info: "Textul de informare privind consimțământul"
+  setting_consent_required: "Consimțământ necesar"
+  setting_consent_decline_mail: "Consimțământ adresa de e-mail de contact"
+  setting_cross_project_work_package_relations: "Permiteți legături între pachetele de lucru din proiecte diferite"
+  setting_first_week_of_year: "Prima săptămână din an conține"
+  setting_date_format: "Dată"
+  setting_default_language: "Limbă implicită"
+  setting_default_projects_modules: "Module activate implicit la creare proiect"
+  setting_default_projects_public: "Proiectele noi sunt implicit publice"
+  setting_disable_password_login: "Disable password authentication"
+  setting_diff_max_lines_displayed: "Numărul maxim de linii afișate în comparație"
+  setting_omniauth_direct_login_provider: "Direct login SSO provider"
+  setting_display_subprojects_work_packages: "Afișare pachete de lucru din subproiecte pe pagina proiectului principal"
+  setting_duration_format: "Duration format"
+  setting_duration_format_hours_only: "Hours only"
+  setting_duration_format_days_and_hours: "Days and hours"
+  setting_duration_format_instructions: "Aceasta definește modul în care sunt afișate munca, munca rămasă și durata timpului consumat."
+  setting_emails_footer: "Subsol e-mail"
+  setting_emails_header: "Antet e-mail"
+  setting_email_login: "Folosiți e-mailul ca autentificare"
+  setting_enabled_scm: "SCM activat"
+  setting_enabled_projects_columns: "Columns in a projects list displayed by default"
+  setting_feeds_enabled: "Activare fluxuri"
+  setting_ical_enabled: "Enable iCalendar subscriptions"
+  setting_feeds_limit: "Limită conținut flux"
+  setting_file_max_size_displayed: "Numărul maxim de linii afișat în text"
+  setting_host_name: "Numele serverului"
+  setting_collaborative_editing_hocuspocus_url: "Hocuspocus server URL"
+  setting_collaborative_editing_hocuspocus_secret: "Hocuspocus server secret"
+  setting_hours_per_day: "Hours per day"
+  setting_hours_per_day_explanation: >-
+    This defines what is considered a "day" when displaying duration in days and hours (for example, if a day is 8 hours, 32 hours would be 4 days).
+  setting_invitation_expiration_days: "E-mailul de activare expiră după"
+  setting_invitation_expiration_days_caption: "Numărul de zile după care e-mailul de activare expiră."
+  setting_work_package_done_ratio: "Progress calculation mode"
+  setting_work_package_done_ratio_field: "Work-based"
+  setting_work_package_done_ratio_field_caption_html: >-
+    <i>% Complete</i> can be freely set to any value. If you optionally enter a value for <i>Work</i>, <i>Remaining work</i> will automatically be derived.
+  setting_work_package_done_ratio_status: "Status-based"
+  setting_work_package_done_ratio_status_caption_html: >-
+    Each status has a <i>% Complete</i> value associated with it. Changing status will change <i>% Complete</i>.
+  setting_work_package_done_ratio_explanation_html: >
+    In <b>work-based</b> mode, % Complete can be freely set to any value. If you optionally enter a value for Work, Remaining work will automatically be derived. In <b>status-based</b> mode, each status has a % Complete value associated with it. Changing status will change % Complete.
+  setting_work_package_properties: "Proprietăți pachet de lucru"
+  setting_work_package_startdate_is_adddate: "Folosire data curentă ca dată de început pentru pachetele de lucru noi"
+  setting_work_packages_projects_export_limit: "Limita de export a pachetelor de lucru / proiectelor"
+  setting_journal_aggregation_time_minutes: "Acțiunile utilizatorilor agregate în cadrul"
+  setting_log_requesting_user: "Auditare utilizator, nume și adresă de email pentru toate cererile"
+  setting_login_required: "Autentificare obligatorie"
+  setting_login_required_caption: "When checked, all requests to the application have to be authenticated."
+  setting_lost_password: "Enable password reset"
+  setting_lost_password_caption: "When checked, allow users to reset their own passwords."
+  setting_mail_from: "Adresa de e-mail a expeditorului"
+  setting_mail_handler_api_key: "Cheie API"
+  setting_mail_handler_body_delimiters: "Trunchiere e-mail-uri după una dintre aceste linii"
+  setting_mail_handler_body_delimiter_regex: "Trunchiază email-uri care se potrivesc cu acest regex"
+  setting_mail_handler_ignore_filenames: "Atașamente de e-mail ignorate"
+  setting_new_project_user_role_id: "Rol atribuit unui utilizator non-administrator care crează un proiect"
+  setting_new_project_send_confirmation_email: "Trimite notificare autorului la crearea unui proiect nou"
+  setting_new_project_notification_text: "Notification text"
+  setting_password_active_rules: "Clase de caractere active"
+  setting_password_count_former_banned: "Numărul celor mai recente parole folosite interzise spre a fi reutilizate"
+  setting_password_days_valid: "Numărul de zile după care este obligatorie schimbarea parolei"
+  setting_password_min_length: "Lungime minimă"
+  setting_password_min_adhered_rules: "Numărul minim de clase necesare"
+  setting_per_page_options: "Opțiuni pentru obiecte pe pagină"
   setting_percent_complete_on_status_closed: "% Complete when status is closed"
   setting_percent_complete_on_status_closed_no_change: Nicio modificare
   setting_percent_complete_on_status_closed_no_change_caption_html: The value of <i>% Complete</i> will not change even when a work package is closed.
@@ -5495,15 +5436,13 @@ ro:
       not_writable: The setting is not writable and can only be changed by a sysadmin.
       failed_to_update: 'Setting ''%{name}'' could not be updated: %{message}'
     authentication:
-      login: Autentificare
-      registration: Registration
-      sso: Single Sign-On (SSO)
-      omniauth_direct_login_hint_html: 'Dacă această opțiune este activă, cererile de conectare vor fi redirecționate către furnizorul omniauth configurat. Pagina de autentificare verticală și pagina de autentificare vor fi dezactivate. <br/> <strong>Notă:</strong> Dacă nu dezactivezi și autentificarea cu parole, cu această opțiune activată, utilizatorii încă se pot autentifica intern vizitând pagina de autentificare <code>%{internal_path}</code>.
-
-        '
-      remapping_existing_users_hint: 'If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the OpenProject instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
-
-        '
+      login: "Autentificare"
+      registration: "Registration"
+      sso: "Single Sign-On (SSO)"
+      omniauth_direct_login_hint_html: >
+        Dacă această opțiune este activă, cererile de conectare vor fi redirecționate către furnizorul omniauth configurat. Pagina de autentificare verticală și pagina de autentificare vor fi dezactivate. <br/> <strong>Notă:</strong> Dacă nu dezactivezi și autentificarea cu parole, cu această opțiune activată, utilizatorii încă se pot autentifica intern vizitând pagina de autentificare <code>%{internal_path}</code>.
+      remapping_existing_users_hint: >
+        If enabled, allows any configured identity provider to login existing users based on their username, even if the user never signed in through that provider before. This can be useful when migrating the Yojana instance to a new SSO provider, but is not recommended when using a provider that is not trusted by all users of your instance.
     attachments:
       whitelist_text_html: 'Definește o listă validă de extensii de fișiere și/sau tipuri mime pentru fișierele încărcate. <br/> Introdu extensii de fișiere (de ex. <code>%{ext_example}</code>) sau tipuri mime (e. ., <code>%{mime_example}</code>). <br/> Lasă gol pentru a permite oricărui tip de fișier să fie încărcat. Valori multiple permise (o linie pentru fiecare valoare).
 
@@ -5532,10 +5471,9 @@ ro:
       modes:
         clamav_socket_html: Enter the socket to the clamd daemon, e.g., %{example}
         clamav_host_html: Enter the hostname and port to the clamd daemon separated by colon. e.g., %{example}
-        description_html: 'Select the mode in which the antivirus scanner integration should operate. <br/> <ul> <li><strong>%{disabled_option}</strong>: Uploaded files are not scanned for viruses.</li> <li><strong>%{socket_option}</strong>: You have set up ClamAV on the same server as OpenProject and the scan daemon clamd is running in the background</li> <li><strong>%{host_option}</strong>: You are streaming files to an external virus scanning host.</li> </ul>
-
-          '
-    brute_force_prevention: Blocare automată a utilizatorilor
+        description_html: >
+          Select the mode in which the antivirus scanner integration should operate. <br/> <ul> <li><strong>%{disabled_option}</strong>: Uploaded files are not scanned for viruses.</li> <li><strong>%{socket_option}</strong>: You have set up ClamAV on the same server as Yojana and the scan daemon clamd is running in the background</li> <li><strong>%{host_option}</strong>: You are streaming files to an external virus scanning host.</li> </ul>
+    brute_force_prevention: "Blocare automată a utilizatorilor"
     date_format:
       first_date_of_week_and_year_set: 'If either options "%{day_of_week_setting_name}" or "%{first_week_setting_name}" are set, the other has to be set as well to avoid inconsistencies in the frontend.
 
@@ -5544,8 +5482,8 @@ ro:
 
         '
     experimental:
-      save_confirmation: Caution! Risk of data loss! Only activate experimental features if you do not mind breaking your OpenProject installation and losing all of its data.
-      warning_toast: Feature flags are settings that activate features that are still under development. They shall only be used for testing purposes. They shall never be activated on OpenProject installations holding important data. These features will very likely corrupt your data. Use them at your own risk.
+      save_confirmation: Caution! Risk of data loss! Only activate experimental features if you do not mind breaking your Yojana installation and losing all of its data.
+      warning_toast: Feature flags are settings that activate features that are still under development. They shall only be used for testing purposes. They shall never be activated on Yojana installations holding important data. These features will very likely corrupt your data. Use them at your own risk.
       feature_flags: Feature flags
     general: General
     highlighting:
@@ -5556,7 +5494,7 @@ ro:
         type: Întregul rând pe tipuri
         priority: Întregul rând în funcție de Prioritate
     icalendar:
-      enable_subscriptions_text_html: Permite utilizatorilor cu permisiunile necesare să se aboneze la calendarele OpenProject şi să acceseze informaţiile pachetului de lucru prin intermediul unui client extern al calendarului. <strong>Notă:</strong> Te rog să citești despre <a href="%{link}" target="_blank">abonamentele iCalendar</a> pentru a înţelege potenţialele riscuri de securitate înainte de a activa acest lucru.
+      enable_subscriptions_text_html: Permite utilizatorilor cu permisiunile necesare să se aboneze la calendarele Yojana şi să acceseze informaţiile pachetului de lucru prin intermediul unui client extern al calendarului. <strong>Notă:</strong> Te rog să citești despre <a href="%{link}" target="_blank">abonamentele iCalendar</a> pentru a înţelege potenţialele riscuri de securitate înainte de a activa acest lucru.
     language_name_being_default: "%{language_name} (default)"
     notifications:
       events_explanation: Stabilește pentru ce eveniment se trimite un e-mail. Pachetele de lucru sunt excluse din această listă, deoarece notificările pentru acestea pot fi configurate în mod specific pentru fiecare utilizator.
@@ -5590,9 +5528,8 @@ ro:
               label: Side panel
               description: Add all the project attributes in a section inside the right side panel in the project overview.
     project_initiation_request:
-      header_description: 'OpenProject poate genera un asistent pas cu pas pentru a ajuta managerii de proiect să completeze o cerere de inițiere a proiectului. Poți alege ce atribute ale proiectului ar trebui sa fie incluse si sa creezi un artefact PDF ca rezultat.
-
-        '
+      header_description: >
+        Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and create a PDF artifact as a result.
       status:
         submitted: "%{wizard_name} a fost trimis"
         submitted_description: Fă clic pe butonul de mai jos pentru a merge la pachetul de lucru pentru procesul de trimitere.
@@ -5604,8 +5541,8 @@ ro:
         project_creation_wizard: Deschide expertul de creare a proiectului
         project_mandate: Mandatul proiectului deschis
       blankslate:
-        title: Cererea de inițiere nu este activată
-        description: OpenProject poate genera un asistent pas cu pas pentru a ajuta managerii de proiect să completeze o cerere de inițiere a proiectului. Puteți alege ce atribute ale proiectului ar trebui să fie incluse și ce să faceți cu documentul de ieșire. Activați-l aici pentru a începe configurarea expertului.
+        title: "Initiation request not enabled"
+        description: "Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard."
       disable_dialog:
         title: Dezactivează solicitarea de inițiere a proiectului
         heading: Disable this project initiation request?
@@ -5710,81 +5647,64 @@ ro:
   status_deleted: șters
   support:
     array:
-      sentence_connector: și
-      skip_last_comma: fals
-  text_accessibility_hint: Modul de accesibilitate este conceput pentru utilizatorii nevăzători, cu handicap motor sau cu vedere slabă. Pentru aceștia din urmă, elementele focalizate sunt evidențiate în mod special. Vă rugăm să rețineți că modulul Backlogs nu este disponibil în acest mod.
-  text_access_token_hint: Tichetele de acces permit aplicaţiilor externe accesul la resurse din OpenProject.
-  text_analyze: 'Continuare analiză: %{subject}'
-  text_are_you_sure: Sunteți sigur?
-  open_link_in_a_new_tab: Open link in a new tab
-  text_are_you_sure_continue: Sigur dorești să continui?
-  text_are_you_sure_with_children: Doriți ștergerea pachetului de lucru și a tuturor pachetelor fii?
-  text_are_you_sure_with_project_custom_fields: Deleting this attribute will also delete its values in all projects. Are you sure you want to do this?
-  text_are_you_sure_with_project_life_cycle_step: Ștergerea acestei faze va șterge și utilizarea sa în toate proiectele. Ești sigur că vrei să faci asta?
-  text_assign_to_project: Alocare la proiect
-  text_form_configuration: 'Puteți personaliza ce câmpuri vor fi afișate în formularele pachetelor de lucru. Puteți grupa în mod liber câmpurile pentru a reflecta nevoile domeniului dumneavoastră.
-
-    '
-  text_form_configuration_required_attribute: Atributul este marcat drept necesar, acesta va fi vizibil permanent
-  text_caracters_maximum: maximum %{count} caractere.
-  text_caracters_minimum: Trebuie să aibă cel putin %{count} caractere.
-  text_comma_separated: Sunt permise valori multiple (separate prin virgulă).
-  text_comment_wiki_page: 'Comentează la pagina wiki: %{page}'
-  text_custom_field_possible_values_info: O linie pentru fiecare valoare
-  text_custom_field_hint_activate_per_project: 'Când utilizezi câmpuri personalizate: Reține că fiecare câmp personalizat trebuie activat individual în cadrul fiecărui proiect.
-
-    '
-  text_custom_field_hint_activate_per_project_and_type: 'Câmpurile personalizate trebuie să fie activate pentru fiecare pachet de lucru și pentru fiecare proiect.
-
-    '
-  text_project_custom_field_html: 'Ediția Enterprise va adăuga aceste add-on-uri suplimentare pentru câmpurile personalizate ale proiectelor: <br> <ul> <li><b>Adăugă câmpuri personalizate pentru proiecte la lista de proiecte pentru a crea o vizualizare a portofoliului de proiecte</b></li> </ul>
-
-    '
-  text_custom_logo_instructions: 'The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×47px image. You can add as much spacing inside that image as you like.
-
-    '
-  text_custom_logo_mobile_instructions: 'The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×33px image. You can add as much spacing inside that image as you like.
-
-    '
-  text_custom_export_logo_instructions: 'This is the logo that appears in your PDF exports. It needs to be a PNG or JPEG image file. A black or colored logo on transparent or white background is recommended.
-
-    '
-  text_custom_export_cover_instructions: 'This is the image that appears in the background of a cover page in your PDF exports. It needs to be an about 800px width by 500px height sized PNG or JPEG image file.
-
-    '
-  text_custom_export_footer_instructions: 'PDF exports will include a graphical element positioned to the left of the footer. This image must be a PNG or JPEG file with approximately 200 pixels in width.
-
-    '
-  label_custom_export_font_instructions: 'Upload and manage custom TrueType (.ttf) fonts used in your PDF exports. For best results, use matching files from the same font family. If no font is provided, the default NotoSans font will be used.
-
-    '
-  label_custom_export_images_instructions: 'Upload and manage custom image files used in your PDF exports.
-
-    '
-  text_custom_export_font_regular_instructions: 'Acesta este fișierul de font pentru textul obișnuit. Acesta trebuie să fie în format TTF și este necesar.
-
-    '
-  text_custom_export_font_bold_instructions: 'Acesta este fișierul font pentru text îngroșat. Trebuie să fie în format TTF.
-
-    '
-  text_custom_export_font_italic_instructions: 'Acesta este fișierul de font pentru textul italic. Trebuie să fie în format TTF.
-
-    '
-  text_custom_export_font_bold_italic_instructions: 'Acesta este fișierul font pentru text îngroșat și italic. Trebuie să fie în format TTF.
-
-    '
-  text_custom_favicon_instructions: 'Această pictogramă este afișată în fereastra/fila browserului lângă titlul site-ului. Aceasta trebuie să aibă dimensiunea de 32px pe 32px, să fie în format PNG și fundalul să fie transparent.
-
-    '
-  text_custom_touch_icon_instructions: 'This is the icon that appears in your mobile or tablet when you place a bookmark on your homescreen. It needs to be a squared 180 by 180 pixels sized PNG image file. Please make sure the image''s background is not transparent otherwise it will look bad on iOS.
-
-    '
-  text_database_allows_tsv: Baza de date permite TSVector (opțional)
-  text_default_administrator_account_changed: Contul de administrator implicit a fost schimbat
-  text_default_encoding: 'Implicit: UTF-8'
-  text_destroy: Șterge
-  text_destroy_with_associated: 'There are additional objects associated with the work package(s) that are to be deleted. Those objects are of the following types:'
-  text_destroy_what_to_do: Ce vrei să faci?
+      sentence_connector: "și"
+      skip_last_comma: "fals"
+  text_accessibility_hint: "Modul de accesibilitate este conceput pentru utilizatorii nevăzători, cu handicap motor sau cu vedere slabă. Pentru aceștia din urmă, elementele focalizate sunt evidențiate în mod special. Vă rugăm să rețineți că modulul Backlogs nu este disponibil în acest mod."
+  text_access_token_hint: "Tichetele de acces permit aplicaţiilor externe accesul la resurse din Yojana."
+  text_analyze: "Continuare analiză: %{subject}"
+  text_are_you_sure: "Sunteți sigur?"
+  open_link_in_a_new_tab: "Open link in a new tab"
+  text_are_you_sure_continue: "Sigur dorești să continui?"
+  text_are_you_sure_with_children: "Doriți ștergerea pachetului de lucru și a tuturor pachetelor fii?"
+  text_are_you_sure_with_project_custom_fields: "Deleting this attribute will also delete its values in all projects. Are you sure you want to do this?"
+  text_are_you_sure_with_project_life_cycle_step: "Ștergerea acestei faze va șterge și utilizarea sa în toate proiectele. Ești sigur că vrei să faci asta?"
+  text_assign_to_project: "Alocare la proiect"
+  text_form_configuration: >
+    Puteți personaliza ce câmpuri vor fi afișate în formularele pachetelor de lucru. Puteți grupa în mod liber câmpurile pentru a reflecta nevoile domeniului dumneavoastră.
+  text_form_configuration_required_attribute: "Atributul este marcat drept necesar, acesta va fi vizibil permanent"
+  text_caracters_maximum: "maximum %{count} caractere."
+  text_caracters_minimum: "Trebuie să aibă cel putin %{count} caractere."
+  text_comma_separated: "Sunt permise valori multiple (separate prin virgulă)."
+  text_comment_wiki_page: "Comentează la pagina wiki: %{page}"
+  text_custom_field_possible_values_info: "O linie pentru fiecare valoare"
+  text_custom_field_hint_activate_per_project: >
+    Când utilizezi câmpuri personalizate: Reține că fiecare câmp personalizat trebuie activat individual în cadrul fiecărui proiect.
+  text_custom_field_hint_activate_per_project_and_type: >
+    Câmpurile personalizate trebuie să fie activate pentru fiecare pachet de lucru și pentru fiecare proiect.
+  text_project_custom_field_html: >
+    Ediția Enterprise va adăuga aceste add-on-uri suplimentare pentru câmpurile personalizate ale proiectelor: <br> <ul> <li><b>Adăugă câmpuri personalizate pentru proiecte la lista de proiecte pentru a crea o vizualizare a portofoliului de proiecte</b></li> </ul>
+  text_custom_logo_instructions: >
+    The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×47px image. You can add as much spacing inside that image as you like.
+  text_custom_logo_mobile_instructions: >
+    The logo automatically scales to fit the header. For best results, upload a white logo on a transparent 130×33px image. You can add as much spacing inside that image as you like.
+  text_custom_export_logo_instructions: >
+    This is the logo that appears in your PDF exports. It needs to be a PNG or JPEG image file. A black or colored logo on transparent or white background is recommended.
+  text_custom_export_cover_instructions: >
+    This is the image that appears in the background of a cover page in your PDF exports. It needs to be an about 800px width by 500px height sized PNG or JPEG image file.
+  text_custom_export_footer_instructions: >
+    PDF exports will include a graphical element positioned to the left of the footer. This image must be a PNG or JPEG file with approximately 200 pixels in width.
+  label_custom_export_font_instructions: >
+    Upload and manage custom TrueType (.ttf) fonts used in your PDF exports. For best results, use matching files from the same font family. If no font is provided, the default NotoSans font will be used.
+  label_custom_export_images_instructions: >
+    Upload and manage custom image files used in your PDF exports.
+  text_custom_export_font_regular_instructions: >
+    Acesta este fișierul de font pentru textul obișnuit. Acesta trebuie să fie în format TTF și este necesar.
+  text_custom_export_font_bold_instructions: >
+    Acesta este fișierul font pentru text îngroșat. Trebuie să fie în format TTF.
+  text_custom_export_font_italic_instructions: >
+    Acesta este fișierul de font pentru textul italic. Trebuie să fie în format TTF.
+  text_custom_export_font_bold_italic_instructions: >
+    Acesta este fișierul font pentru text îngroșat și italic. Trebuie să fie în format TTF.
+  text_custom_favicon_instructions: >
+    Această pictogramă este afișată în fereastra/fila browserului lângă titlul site-ului. Aceasta trebuie să aibă dimensiunea de 32px pe 32px, să fie în format PNG și fundalul să fie transparent.
+  text_custom_touch_icon_instructions: >
+    This is the icon that appears in your mobile or tablet when you place a bookmark on your homescreen. It needs to be a squared 180 by 180 pixels sized PNG image file. Please make sure the image's background is not transparent otherwise it will look bad on iOS.
+  text_database_allows_tsv: "Baza de date permite TSVector (opțional)"
+  text_default_administrator_account_changed: "Contul de administrator implicit a fost schimbat"
+  text_default_encoding: "Implicit: UTF-8"
+  text_destroy: "Șterge"
+  text_destroy_with_associated: "Există obiecte suplimentare asociate cu pachetul(ele) de lucru care urmează să fie șters(e). Aceste obiecte sunt de următoarele tipuri:"
+  text_destroy_what_to_do: "Ce vrei să faci?"
   text_diff_truncated: "... Acest diff a fost trunchiat deoarece depășește dimensiunea maximă care poate fi afișată."
   text_email_delivery_not_configured: |-
     Livrarea e-mailurilor nu este configurată, iar notificările sunt dezactivate.
@@ -5825,15 +5745,12 @@ ro:
   text_line_separated: Sunt permise valori multiple (un rând pentru fiecare valoare).
   text_load_default_configuration: Încărcare configurația implicită
   text_no_roles_defined: Nu există roluri definite.
-  text_no_access_tokens_configurable: Nu există tichete de acces care pot fi configurate.
-  text_no_configuration_data: |-
-    Rolurile, tipurile, stările pachetelor de lucru și fluxul de lucru nu au fost configurate încă.
-    Este recomandat să încărcați configurația implicită. Veți putea să o modificați după ce e încărcată.
-  text_no_notes: Nu sunt comentarii disponibile pentru acest pachet de lucru.
-  text_notice_too_many_values_are_inperformant: 'Atenție: Afişarea unui număr mai mare de 100 de articole pe pagină poate creşte durata de încărcare.'
-  text_notice_security_badge_displayed_html: 'Notă: dacă este activată, aceasta va afișa o insignă cu starea instalării în fereastra <a href="%{information_panel_path}">%{information_panel_label}</a> panoul de administrare și pe pagina principală. Aceasta este afișată numai pentru administratori. <br/> Insigna va verifica versiunea curentă a OpenProject în raport cu baza de date oficială a versiunilor OpenProject pentru a alerta cu privire la orice actualizări sau vulnerabilități cunoscute. Pentru mai multe informații despre ce oferă verificarea, ce date sunt necesare pentru a furniza actualizările disponibile și cum să dezactivezi această verificare, te rog să vizitezi <a href="%{more_info_url}">documentația de configurare</a>.
-
-    '
+  text_no_access_tokens_configurable: "Nu există tichete de acces care pot fi configurate."
+  text_no_configuration_data: "Rolurile, tipurile, stările pachetelor de lucru și fluxul de lucru nu au fost configurate încă.\nEste recomandat să încărcați configurația implicită. Veți putea să o modificați după ce e încărcată."
+  text_no_notes: "Nu sunt comentarii disponibile pentru acest pachet de lucru."
+  text_notice_too_many_values_are_inperformant: "Atenție: Afişarea unui număr mai mare de 100 de articole pe pagină poate creşte durata de încărcare."
+  text_notice_security_badge_displayed_html: >
+    Notă: dacă este activată, aceasta va afișa o insignă cu starea instalării în fereastra <a href="%{information_panel_path}">%{information_panel_label}</a> panoul de administrare și pe pagina principală. Aceasta este afișată numai pentru administratori. <br/> Insigna va verifica versiunea curentă a Yojana în raport cu baza de date oficială a versiunilor Yojana pentru a alerta cu privire la orice actualizări sau vulnerabilități cunoscute. Pentru mai multe informații despre ce oferă verificarea, ce date sunt necesare pentru a furniza actualizările disponibile și cum să dezactivezi această verificare, te rog să vizitezi <a href="%{more_info_url}">documentația de configurare</a>.
   text_own_membership_delete_confirmation: "Sunteţi cale de a elimina unele sau toate permisiunile şi e posibil să nu mai puteți edita acest proiect după aceea. \nSunteţi sigur că doriţi să continuaţi?"
   text_permanent_delete_confirmation_checkbox_label: I understand that this deletion cannot be reversed
   text_permanent_remove_confirmation_checkbox_label: I understand that this removal cannot be reversed
@@ -5846,18 +5763,15 @@ ro:
   text_project_identifier_format: Must start with a lowercase letter. Only lowercase letters (a-z), numbers, dashes and underscores are allowed.
   text_reassign: 'Reatribuire la pachetul de lucru:'
   text_regexp_multiline: 'Formula regex este aplicată într-un mod multilinie - de exemplu: ^---\s+'
-  text_rename_wiki_page: Rename wiki page
-  text_repository_usernames_mapping: |-
-    Selectați sau modificați contul OpenProject mapat la fiecare cont din istoricul repo-ului.
-    Utilizatorii cu cont sau e-mail identic în OpenProject și repo sunt echivalați automat.
-  text_status_changed_by_changeset: Aplicat prin editarea %{value}.
-  text_table_difference_description: În acest tabel este prezentat un singur %{entries}. Puteți vizualiza diferența dintre oricare două intrări selectând mai întâi casetele de selectare corespunzătoare din tabel. Când faceți clic pe butonul de sub tabel, se afișează diferențele.
-  text_time_logged_by_changeset: Aplicat prin editarea %{value}.
-  text_tip_work_package_begin_day: pachet de lucru care începe în această zi
-  text_tip_work_package_begin_end_day: pachet de lucru care începe sau se termină în această zi
-  text_tip_work_package_end_day: pachet de lucru care se termină în această zi
-  text_type_no_workflow: Nu există flux de lucru definit pentru acest tip
-  text_unallowed_characters: Caractere nepermise
+  text_repository_usernames_mapping: "Selectați sau modificați contul Yojana mapat la fiecare cont din istoricul repo-ului.\nUtilizatorii cu cont sau e-mail identic în Yojana și repo sunt echivalați automat."
+  text_status_changed_by_changeset: "Aplicat prin editarea %{value}."
+  text_table_difference_description: "În acest tabel este prezentat un singur %{entries}. Puteți vizualiza diferența dintre oricare două intrări selectând mai întâi casetele de selectare corespunzătoare din tabel. Când faceți clic pe butonul de sub tabel, se afișează diferențele."
+  text_time_logged_by_changeset: "Aplicat prin editarea %{value}."
+  text_tip_work_package_begin_day: "pachet de lucru care începe în această zi"
+  text_tip_work_package_begin_end_day: "pachet de lucru care începe sau se termină în această zi"
+  text_tip_work_package_end_day: "pachet de lucru care se termină în această zi"
+  text_type_no_workflow: "Nu există flux de lucru definit pentru acest tip"
+  text_unallowed_characters: "Caractere nepermise"
   text_user_invited: Utilizatorul a fost invitat şi este în curs de înregistrare.
   text_user_wrote: "%{value} a scris:"
   text_wrote: wrote
@@ -5919,18 +5833,17 @@ ro:
     help_and_support: Asistenţă şi suport
   total_progress: Progres total
   user:
-    all: toate
-    active: activ
-    activate: Activare
-    activate_and_reset_failed_logins: Activare și resetare autentificări eșuate
-    authentication_provider: Furnizor de autentificare
-    identity_url_text: The internal unique identifier provided by the authentication provider.
-    authentication_settings_disabled_due_to_external_authentication: 'Acest utilizator se autentifică prin intermediul unui furnizor de autentificare extern, prin urmare nu există o parolă în OpenProject care să poată fi schimbată.
-
-      '
-    authorization_rejected: Nu aveți drepturi de autentificare.
-    assign_random_password: Atribuiţi o parolă aleatoare (trimisă utilizatorului prin e-mail)
-    blocked: blocat temporar
+    all: "toate"
+    active: "activ"
+    activate: "Activare"
+    activate_and_reset_failed_logins: "Activare și resetare autentificări eșuate"
+    authentication_provider: "Furnizor de autentificare"
+    identity_url_text: "The internal unique identifier provided by the authentication provider."
+    authentication_settings_disabled_due_to_external_authentication: >
+      Acest utilizator se autentifică prin intermediul unui furnizor de autentificare extern, prin urmare nu există o parolă în Yojana care să poată fi schimbată.
+    authorization_rejected: "Nu aveți drepturi de autentificare."
+    assign_random_password: "Atribuiţi o parolă aleatoare (trimisă utilizatorului prin e-mail)"
+    blocked: "blocat temporar"
     blocked_num_failed_logins:
       one: blocat temporar (o tentativă de autentificare eșuată)
       few: blocat temporar (%{count} tentative de autentificare eșuate)
@@ -5961,14 +5874,19 @@ ro:
   note: Notă
   note_password_login_disabled_link: Password login has been disabled through a [configuration setting](configuration_url).
   warning: Avertizare
-  warning_attachments_not_saved: Nu au putut fi salvate %{count} fișiere.
-  warning_imminent_user_limit_html: 'You invited more users than are supported by your current plan. Invited users may not be able to join your OpenProject environment. Please [upgrade your plan](upgrade_url) or block existing users in order to allow invited and registered users to join.
-
-    '
+  warning_attachments_not_saved: "Nu au putut fi salvate %{count} fișiere."
+  warning_imminent_user_limit: >
+    Ați invitat mai mulți utilizatori decât suportă planul dvs. actual. Este posibil ca utilizatorii invitați să nu se poată alătura mediului dumneavoastră Yojana. Vă rugăm să <a href="%{upgrade_url}">vă actualizați planul</a> sau să blocați utilizatorii existenți pentru a permite utilizatorilor invitați și înregistrați să se alăture.
   warning_registration_token_expired: |
     E-mailul de activare a expirat. Ți-am trimis unul nou la %{email}.
     Vă rugăm să faceți clic pe linkul din interiorul acestuia pentru a vă activa contul.
-  warning_user_limit_reached: 'Adding additional users will exceed the current limit. Please contact an administrator to increase the user limit to ensure external users are able to access this instance.
+  warning_user_limit_reached: >
+    Adding additional users will exceed the current limit. Please contact an administrator to increase the user limit to ensure external users are able to access this instance.
+  warning_user_limit_reached_admin: >
+    Adding additional users will exceed the current limit. Please <a href="%{upgrade_url}">upgrade your plan</a> to be able to ensure external users are able to access this instance.
+  warning_user_limit_reached_instructions: >
+    Ai atins limita de utilizatori (%{current}/%{max} utilizatori activi). Te rog să contactezi sales@girishm.info pentru a vă actualiza planul ediției Enterprise și a adăuga utilizatori suplimentari.
+  warning_protocol_mismatch_html: >
 
     '
   warning_user_limit_reached_admin_html: 'Adding additional users will exceed the current limit. Please [upgrade your plan](upgrade_url) to be able to ensure external users are able to access this instance.
@@ -6260,57 +6178,48 @@ ro:
       non_confidential: Non confidential
       default_scopes: Scopuri
       instructions:
-        enabled: Enable this application, allowing users to perform authorization grants with it.
-        name: Numele aplicației dumneavoastră. Acesta va fi afișat celorlalți utilizatori în momentul autorizării.
-        redirect_uri_html: 'URL-urile permise către care pot fi redirecționați utilizatorii autorizați. O intrare pe linie. <br/> Dacă înregistrezi o aplicație desktop, utilizează următoarea adresă URL.
-
-          '
-        confidential: Verificați dacă aplicația va fi utilizată în cazul în care secretul clientului poate fi păstrat confidențial. Aplicațiile mobile native și aplicațiile cu o singură pagină sunt considerate neconfidențiale.
-        scopes: Bifează domeniile la care vrei ca aplicația să acorde acces. Dacă nu se bifează niciun domeniu de aplicare, se presupune api_v3.
-        client_credential_user_id: ID-ul de utilizator opțional pe care trebuie să se substituie atunci când clienții utilizează această aplicație. Lăsați gol pentru a permite doar accesul public
-        register_intro: Dacă dezvoltați o aplicație client OAuth API pentru OpenProject, o puteți înregistra folosind acest formular pentru toți utilizatorii.
-        default_scopes: ''
+        enabled: "Enable this application, allowing users to perform authorization grants with it."
+        name: "Numele aplicației dumneavoastră. Acesta va fi afișat celorlalți utilizatori în momentul autorizării."
+        redirect_uri_html: >
+          URL-urile permise către care pot fi redirecționați utilizatorii autorizați. O intrare pe linie. <br/> Dacă înregistrezi o aplicație desktop, utilizează următoarea adresă URL.
+        confidential: "Verificați dacă aplicația va fi utilizată în cazul în care secretul clientului poate fi păstrat confidențial. Aplicațiile mobile native și aplicațiile cu o singură pagină sunt considerate neconfidențiale."
+        scopes: "Bifează domeniile la care vrei ca aplicația să acorde acces. Dacă nu se bifează niciun domeniu de aplicare, se presupune api_v3."
+        client_credential_user_id: "ID-ul de utilizator opțional pe care trebuie să se substituie atunci când clienții utilizează această aplicație. Lăsați gol pentru a permite doar accesul public"
+        register_intro: "Dacă dezvoltați o aplicație client OAuth API pentru Yojana, o puteți înregistra folosind acest formular pentru toți utilizatorii."
+        default_scopes: ""
     header:
       builtin_applications: Built-in OAuth applications
       other_applications: Other OAuth applications
     empty_application_lists: No OAuth applications have been registered.
-    client_id: ID Client
-    client_secret_notice: 'Acesta este singurul moment în care putem imprima secretul clientului, vă rugăm să îl notați și să îl păstrați în siguranță. Acesta trebuie tratat ca o parolă și nu poate fi recuperat ulterior de OpenProject.
-
-      '
+    client_id: "ID Client"
+    client_secret_notice: >
+      Acesta este singurul moment în care putem imprima secretul clientului, vă rugăm să îl notați și să îl păstrați în siguranță. Acesta trebuie tratat ca o parolă și nu poate fi recuperat ulterior de Yojana.
     authorization_dialog:
-      authorize: Autorizează
-      cancel: Anulează și refuză autorizarea.
-      prompt_html: Autorizarea <strong>%{application_name}</strong> pentru a utiliza contul dvs <em>%{login}</em>?
-      title: Autorizează %{application_name}
-      wants_to_access_html: 'Această aplicație solicită acces la contul dumneavoastră OpenProject. <br/> <strong>A solicitat următoarele permisiuni</strong>:
-
-        '
+      authorize: "Autorizează"
+      cancel: "Anulează și refuză autorizarea."
+      prompt_html: "Autorizarea <strong>%{application_name}</strong> pentru a utiliza contul dvs <em>%{login}</em>?"
+      title: "Autorizează %{application_name}"
+      wants_to_access_html: >
+        Această aplicație solicită acces la contul dumneavoastră Yojana. <br/> <strong>A solicitat următoarele permisiuni</strong>:
     scopes:
-      api_v3: Acces complet la API v3
-      api_v3_text: Aplicația va primi acces complet de citire și scriere la OpenProject API v3 pentru a efectua acțiuni în numele dumneavoastră.
-      mcp: Access to MCP
-      mcp_text: Application will receive access to the OpenProject MCP endpoints. They are a limited subset of APIv3, that's tailored for usage with AI agents.
+      api_v3: "Acces complet la API v3"
+      api_v3_text: "Aplicația va primi acces complet de citire și scriere la Yojana API v3 pentru a efectua acțiuni în numele dumneavoastră."
     grants:
       created_date: Aprobat
       scopes: Permisiuni
       successful_application_revocation: Revocarea cererii %{application_name} a avut succes.
       none_given: Nu a fost acordat acces la contul dvs. de utilizator niciunei aplicații OAuth.
     flows:
-      authorization_code: Fluxul codului de autorizare
-      client_credentials: Credențiale client ID utilizator
-    client_credentials: Credențiale client ID utilizator
-    client_credentials_impersonation_set_to: Credențiale client ID utilizator
-    client_credentials_impersonation_warning: 'Notă: Clienții care utilizează fluxul "Client credentials" în această aplicație vor avea drepturile acestui utilizator'
-    client_credentials_impersonation_html: 'În mod implicit, OpenProject oferă autorizare OAuth 2.0 prin %{authorization_code_flow_link}. Puteți activa opțional %{client_credentials_flow_link}, dar trebuie să furnizați un utilizator în numele căruia vor fi efectuate cererile.
-
-      '
-    confirm_revoke_my_application:
-      one: Do you really want to remove this application? This will revoke one token active for it.
-      few: Do you really want to remove this application? This will revoke %{count} tokens active for it.
-      other: Do you really want to remove this application? This will revoke %{count} tokens active for it.
-    authorization_error: A apărut o eroare internă.
-    my_registered_applications: Aplicații OAuth înregistrate
+      authorization_code: "Fluxul codului de autorizare"
+      client_credentials: "Credențiale client ID utilizator"
+    client_credentials: "Credențiale client ID utilizator"
+    client_credentials_impersonation_set_to: "Credențiale client ID utilizator"
+    client_credentials_impersonation_warning: "Notă: Clienții care utilizează fluxul \"Client credentials\" în această aplicație vor avea drepturile acestui utilizator"
+    client_credentials_impersonation_html: >
+      În mod implicit, Yojana oferă autorizare OAuth 2.0 prin %{authorization_code_flow_link}. Puteți activa opțional %{client_credentials_flow_link}, dar trebuie să furnizați un utilizator în numele căruia vor fi efectuate cererile.
+    authorization_error: "A apărut o eroare internă."
+    revoke_my_application_confirmation: "Chiar doriți să eliminați această aplicație? Acest lucru va anula %{token_count} active pentru aceasta."
+    my_registered_applications: "Aplicații OAuth înregistrate"
   oauth_client:
     urn_connection_status:
       connected: Conectat
@@ -6323,39 +6232,36 @@ ro:
       label_request_token: Token cerere
       label_refresh_token: Token reîmprospătare
     errors:
-      oauth_authorization_code_grant_had_errors: OAuth2 Authorization grant unsuccessful
-      oauth_reported: Furnizor OAuth2 raportat
-      oauth_returned_error: OAuth2 a returnat o eroare
-      oauth_returned_json_error: OAuth2 a returnat o eroare JSON
-      oauth_returned_http_error: OAuth2 a returnat o eroare de rețea
-      oauth_returned_standard_error: OAuth2 a returnat o eroare internă
-      wrong_token_type_returned: OAuth2 a returnat un tip greșit de token, așteptând AccessToken::Purtător
-      oauth_issue_contact_admin: OAuth2 a raportat o eroare. Vă rugăm să contactați administratorul de sistem.
-      oauth_client_not_found: Clientul OAuth2 nu a fost găsit în endpoint-ul  'callback' (redirect_uri).
-      refresh_token_called_without_existing_token: 'Eroare internă: A apelat refresh_token fără un token existent anterior.
-
-        '
-      refresh_token_updated_failed: Eroare în timpul actualizării OAuthClientToken
-      oauth_client_not_found_explanation: 'Această eroare apare după ce ați actualizat client_id și client_secret în OpenProject, dar nu ați actualizat câmpul "Return URI" în furnizorul OAuth2.
-
-        '
-      oauth_code_not_present: OAuth2 'code' nu a fost găsit în parametrul 'callback' (redirect_uri).
-      oauth_code_not_present_explanation: 'Această eroare apare dacă ați selectat un tip de răspuns greșit în furnizorul OAuth2. Response_type ar trebui să fie ''code'' sau similar.
-
-        '
-      oauth_state_not_present: OAuth2 'state' nu a fost găsit în parametrul 'callback' (redirect_uri).
-      oauth_state_not_present_explanation: "'State' este utilizat pentru a indica OpenProject unde să continue după o autorizare OAuth2 reușită. Un 'state' lipsă este o eroare internă care poate apărea în timpul configurării. Vă rugăm să vă contactați administratorul de sistem.\n"
+      oauth_authorization_code_grant_had_errors: "OAuth2 Authorization grant unsuccessful"
+      oauth_reported: "Furnizor OAuth2 raportat"
+      oauth_returned_error: "OAuth2 a returnat o eroare"
+      oauth_returned_json_error: "OAuth2 a returnat o eroare JSON"
+      oauth_returned_http_error: "OAuth2 a returnat o eroare de rețea"
+      oauth_returned_standard_error: "OAuth2 a returnat o eroare internă"
+      wrong_token_type_returned: "OAuth2 a returnat un tip greșit de token, așteptând AccessToken::Purtător"
+      oauth_issue_contact_admin: "OAuth2 a raportat o eroare. Vă rugăm să contactați administratorul de sistem."
+      oauth_client_not_found: "Clientul OAuth2 nu a fost găsit în endpoint-ul  'callback' (redirect_uri)."
+      refresh_token_called_without_existing_token: >
+        Eroare internă: A apelat refresh_token fără un token existent anterior.
+      refresh_token_updated_failed: "Eroare în timpul actualizării OAuthClientToken"
+      oauth_client_not_found_explanation: >
+        Această eroare apare după ce ați actualizat client_id și client_secret în Yojana, dar nu ați actualizat câmpul "Return URI" în furnizorul OAuth2.
+      oauth_code_not_present: "OAuth2 'code' nu a fost găsit în parametrul 'callback' (redirect_uri)."
+      oauth_code_not_present_explanation: >
+        Această eroare apare dacă ați selectat un tip de răspuns greșit în furnizorul OAuth2. Response_type ar trebui să fie 'code' sau similar.
+      oauth_state_not_present: "OAuth2 'state' nu a fost găsit în parametrul 'callback' (redirect_uri)."
+      oauth_state_not_present_explanation: >
+        'State' este utilizat pentru a indica Yojana unde să continue după o autorizare OAuth2 reușită. Un 'state' lipsă este o eroare internă care poate apărea în timpul configurării. Vă rugăm să vă contactați administratorul de sistem.
       rack_oauth2:
-        client_secret_invalid: Secretul clientului nu este valabil (client_secret_invalid)
-        invalid_request: 'OAuth2 Serverul de autorizare a răspuns cu ''invalid_request''. Această eroare apare dacă încercați să autorizați de mai multe ori sau în cazul unor probleme tehnice.
-
-          '
-        invalid_response: OAuth2 Serverul de autorizare a furnizat un răspuns invalid (invalid_response)
-        invalid_grant: Serverul de Autorizare OAuth2 vă cere să reautorizați (invalid_grant).
-        invalid_client: Serverul de autorizare OAuth2 nu recunoaște OpenProject (invalid_client).
-        unauthorized_client: Serverul de Autorizare OAuth2 respinge tipul de grant (unauthorized_client)
-        unsupported_grant_type: Serverul de Autorizare OAuth2 vă cere să reautorizați (unsupported_grant_type).
-        invalid_scope: Nu ai permisiunea de a accesa resursa solicitată (invalid_scope).
+        client_secret_invalid: "Secretul clientului nu este valabil (client_secret_invalid)"
+        invalid_request: >
+          OAuth2 Serverul de autorizare a răspuns cu 'invalid_request'. Această eroare apare dacă încercați să autorizați de mai multe ori sau în cazul unor probleme tehnice.
+        invalid_response: "OAuth2 Serverul de autorizare a furnizat un răspuns invalid (invalid_response)"
+        invalid_grant: "Serverul de Autorizare OAuth2 vă cere să reautorizați (invalid_grant)."
+        invalid_client: "Serverul de autorizare OAuth2 nu recunoaște Yojana (invalid_client)."
+        unauthorized_client: "Serverul de Autorizare OAuth2 respinge tipul de grant (unauthorized_client)"
+        unsupported_grant_type: "Serverul de Autorizare OAuth2 vă cere să reautorizați (unsupported_grant_type)."
+        invalid_scope: "Nu ai permisiunea de a accesa resursa solicitată (invalid_scope)."
   http:
     request:
       failed_authorization: Solicitarea din partea serverului nu a reușit să se autorizeze.
@@ -6365,18 +6271,18 @@ ro:
   you: tu
   link: link
   plugin_openproject_auth_plugins:
-    name: Plugin-urile OpenProject Auth
-    description: Integration of OmniAuth strategy providers for authentication in OpenProject.
+    name: "Plugin-urile Yojana Auth"
+    description: "Integration of OmniAuth strategy providers for authentication in Yojana."
   plugin_openproject_auth_saml:
-    name: OmniAuth SAML / Single-Sign On
-    description: Adaugă furnizorul SAML OmniAuth la OpenProject
+    name: "OmniAuth SAML / Single-Sign On"
+    description: "Adaugă furnizorul SAML OmniAuth la Yojana"
   enterprise_plans:
     legacy_enterprise: Enterprise Plan
   token:
     hashed_token:
       display_value_placeholder: "***"
   external_link_warning:
-    title: Leaving OpenProject
-    warning_message: You are about to leave OpenProject and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies.
-    continue_message: Are you sure you want to proceed to the following external link?
-    continue_button: Continue to external website
+    title: "Leaving Yojana"
+    warning_message: "You are about to leave Yojana and visit an external website. Please be aware that external websites are not under our control and may have different privacy and security policies."
+    continue_message: "Are you sure you want to proceed to the following external link?"
+    continue_button: "Continue to external website"

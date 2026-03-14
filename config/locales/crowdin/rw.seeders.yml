@@ -141,7 +141,7 @@ rw:
                 options:
                   name: Getting started
                   text: |
-                    We are glad you joined! We suggest to try a few things to get started in OpenProject.
+                    We are glad you joined! We suggest to try a few things to get started in Yojana.
 
                     Discover the most important features with our [Guided Tour]({{opSetting:base_url}}/projects/demo-project/work_packages/?start_onboarding_tour=true).
 
@@ -154,7 +154,7 @@ rw:
                     5. *Activate further modules*: &rightarrow; Go to [Project settings &rightarrow; Modules]({{opSetting:base_url}}/projects/demo-project/settings/modules).
                     6. *Complete your tasks in the project*: &rightarrow; Go to [Work packages &rightarrow; Tasks]({{opSetting:base_url}}/projects/demo-project/work_packages/details/##wp.id:set_date_and_location_of_conference/overview?query_id=##query.id:demo_project__query__tasks).
 
-                    Here you will find our [User Guides](https://www.openproject.org/docs/user-guide/).
+                    Here you will find our [User Guides](https://www.yojana.girishm.info/docs/user-guide/).
                     Please let us know if you have any questions or need support. Contact us: [support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
@@ -211,7 +211,7 @@ rw:
             * View the change history
             * View as Markdown
 
-            More information: [https://www.openproject.org/docs/user-guide/wiki/](https://www.openproject.org/docs/user-guide/wiki/)
+            More information: [https://www.yojana.girishm.info/docs/user-guide/wiki/](https://www.yojana.girishm.info/docs/user-guide/wiki/)
         scrum-project:
           name: Scrum project
           status_explanation: All tasks are on schedule. The people involved know their tasks. The system is completely set up.
@@ -313,7 +313,7 @@ rw:
                 options:
                   name: Getting started
                   text: |
-                    We are glad you joined! We suggest to try a few things to get started in OpenProject.
+                    We are glad you joined! We suggest to try a few things to get started in Yojana.
 
                     _Try the following steps:_
 
@@ -325,7 +325,7 @@ rw:
                     6. *Create a Sprint wiki*: &rightarrow; Go to [Backlogs]({{opSetting:base_url}}/projects/your-scrum-project/backlogs) and open the sprint wiki from the right drop down menu in a sprint. You can edit the [wiki template]({{opSetting:base_url}}/projects/your-scrum-project/wiki/) based on your needs.
                     7. *Activate further modules*: &rightarrow; Go to [Project settings &rightarrow; Modules]({{opSetting:base_url}}/projects/your-scrum-project/settings/modules).
 
-                    Here you will find our [User Guides](https://www.openproject.org/docs/user-guide/).
+                    Here you will find our [User Guides](https://www.yojana.girishm.info/docs/user-guide/).
                     Please let us know if you have any questions or need support. Contact us: [support[at]openproject.com](mailto:support@openproject.com).
               item_5:
                 options:
@@ -488,19 +488,19 @@ rw:
         item_6:
           name: Bug
       welcome:
-        title: Welcome to OpenProject!
+        title: Welcome to Yojana!
         text: |
-          OpenProject is the leading open source project management software. It supports classic, agile as well as hybrid project management and gives you full control over your data.
+          Yojana is the leading open source project management software. It supports classic, agile as well as hybrid project management and gives you full control over your data.
 
           Core features and use cases:
 
-          * [Project Portfolio Management](https://www.openproject.org/collaboration-software-features/project-portfolio-management/)
-          * [Project Planning and Scheduling](https://www.openproject.org/collaboration-software-features/project-planning-scheduling/)
-          * [Task Management and Issue Tracking](https://www.openproject.org/collaboration-software-features/task-management/)
-          * [Agile Boards (Scrum and Kanban)](https://www.openproject.org/collaboration-software-features/agile-project-management/)
-          * [Requirements Management and Release Planning](https://www.openproject.org/collaboration-software-features/product-development/)
-          * [Time and Cost Tracking, Budgets](https://www.openproject.org/collaboration-software-features/time-tracking/)
-          * [Team Collaboration and Documentation](https://www.openproject.org/collaboration-software-features/team-collaboration/)
+          * [Project Portfolio Management](https://www.yojana.girishm.info/collaboration-software-features/project-portfolio-management/)
+          * [Project Planning and Scheduling](https://www.yojana.girishm.info/collaboration-software-features/project-planning-scheduling/)
+          * [Task Management and Issue Tracking](https://www.yojana.girishm.info/collaboration-software-features/task-management/)
+          * [Agile Boards (Scrum and Kanban)](https://www.yojana.girishm.info/collaboration-software-features/agile-project-management/)
+          * [Requirements Management and Release Planning](https://www.yojana.girishm.info/collaboration-software-features/product-development/)
+          * [Time and Cost Tracking, Budgets](https://www.yojana.girishm.info/collaboration-software-features/time-tracking/)
+          * [Team Collaboration and Documentation](https://www.yojana.girishm.info/collaboration-software-features/team-collaboration/)
 
           Welcome to the future of project management.
 
