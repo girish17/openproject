@@ -37,8 +37,7 @@ module OpenProject::TeamPlanner
              bundled: true,
              settings: {} do
       project_module :team_planner_view,
-                     dependencies: :work_package_tracking,
-                     enterprise_feature: "team_planner_view" do
+                     dependencies: :work_package_tracking do
         permission :view_team_planner,
                    { "team_planner/team_planner": %i[index show upsell overview],
                      "team_planner/menus": %i[show] },
@@ -68,16 +67,14 @@ module OpenProject::TeamPlanner
            before: :boards,
            after: :calendar_view,
            icon: "op-team-planner",
-           if: should_render_global_menu_item,
-           enterprise_feature: "team_planner_view"
+           if: should_render_global_menu_item
 
       menu :project_menu,
            :team_planner_view,
            { controller: "/team_planner/team_planner", action: :index },
            caption: :"team_planner.label_team_planner_plural",
            after: :work_packages,
-           icon: "op-team-planner",
-           enterprise_feature: "team_planner_view"
+           icon: "op-team-planner"
 
       menu :project_menu,
            :team_planner_menu,
@@ -94,8 +91,7 @@ module OpenProject::TeamPlanner
            before: :boards,
            after: :calendar_view,
            icon: "op-team-planner",
-           if: should_render_global_menu_item,
-           enterprise_feature: "team_planner_view"
+           if: should_render_global_menu_item
     end
 
     add_view :TeamPlanner,

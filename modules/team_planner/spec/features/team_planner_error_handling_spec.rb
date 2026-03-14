@@ -53,7 +53,7 @@ RSpec.describe "Team planner error handling",
 
   let(:type) { create(:type, custom_fields: [custom_field]) }
 
-  context "with full permissions", with_ee: %i[team_planner_view] do
+  context "with full permissions" do
     before do
       project.types << type
       project.save!

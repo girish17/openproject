@@ -73,7 +73,7 @@ RSpec.describe "Team planner add existing work packages",
   let(:this_tuesday) { start_of_week.next_occurring(:tuesday) }
   let(:this_thursday) { start_of_week.next_occurring(:thursday) }
 
-  context "with full permissions", with_ee: %i[team_planner_view] do
+  context "with full permissions" do
     before do
       team_planner.visit!
 

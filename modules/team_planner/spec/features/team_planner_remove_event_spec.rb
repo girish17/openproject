@@ -33,7 +33,6 @@ require_relative "../support/components/add_existing_pane"
 RSpec.describe "Team planner remove event",
                :js,
                :selenium,
-               with_ee: %i[team_planner_view],
                with_settings: { start_of_week: 1 } do
   include_context "with team planner full access"
 

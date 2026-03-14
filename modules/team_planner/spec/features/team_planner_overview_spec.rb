@@ -34,8 +34,7 @@ require_relative "shared_context"
 
 RSpec.describe "Team planner overview",
                :js,
-               :selenium,
-               with_ee: %i[team_planner_view] do
+               :selenium do
   # The order the Projects are created in is important. By naming `project` alphanumerically
   # after `other_project`, we can ensure that subsequent specs that assert sorting is
   # correct for the right reasons (sorting by Project name and not id)
