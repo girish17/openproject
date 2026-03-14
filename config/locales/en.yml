@@ -4448,7 +4448,8 @@ en:
       not_available: "Disk storage consumption is not available for this repository."
       update_timeout: "Keep the last required disk space information for a repository for N minutes.\nAs counting the required disk space of a repository may be costly, increase this value to reduce performance impact."
       description: "The client secret value will not be accessible again after you close this window. Please copy these values into the Nextcloud Yojana Integration settings:"
-      oauth_application_details_link_text: "Go to settings page"      setup_documentation_details: "If you need help configuring a new file storage please check the documentation: "
+      oauth_application_details_link_text: "Go to settings page"
+      setup_documentation_details: "If you need help configuring a new file storage please check the documentation: "
       setup_documentation_details_link_text: "File storages setup"
       show_warning_details: "To use this file storage remember to activate the module and the specific storage in the project settings of each desired project."
     subversion:
@@ -4770,7 +4771,7 @@ en:
           <br/>
           <ul>
           <li><strong>%{disabled_option}</strong>: Uploaded files are not scanned for viruses.</li>
-You have set up ClamAV on the same server as Yojana and the scan daemon clamd is running in the background</li>
+          <li><strong>%{socket_option}</strong>: You have set up ClamAV on the same server as Yojana and the scan daemon clamd is running in the background</li>
           <li><strong>%{host_option}</strong>: You are streaming files to an external virus scanning host.</li>
           </ul>
     brute_force_prevention: "Automated user blocking"
@@ -4783,8 +4784,8 @@ You have set up ClamAV on the same server as Yojana and the scan daemon clamd is
         This value together with first day of the week determines the total number of weeks in a year.
         For more information, please see our <a href="%{link}" target="_blank">documentation</a> on this topic.
     experimental:
-Caution! Risk of data loss! Only activate experimental features if you do not mind breaking your Yojana installation and losing all of its data.
-Feature flags are settings that activate features that are still under development. They shall only be used for testing purposes. They shall never be activated on Yojana installations holding important data. These features will very likely corrupt your data. Use them at your own risk.
+      save_confirmation: Caution! Risk of data loss! Only activate experimental features if you do not mind breaking your Yojana installation and losing all of its data.
+      warning_toast: Feature flags are settings that activate features that are still under development. They shall only be used for testing purposes. They shall never be activated on Yojana installations holding important data. These features will very likely corrupt your data. Use them at your own risk.
       feature_flags: Feature flags
     general: "General"
     highlighting:
@@ -4795,7 +4796,7 @@ Feature flags are settings that activate features that are still under developme
         type: "Entire row by Type"
         priority: "Entire row by Priority"
     icalendar:
-Allows users with the necessary permissions to subscribe to Yojana calendars and access work package information via an external calendar client. <strong>Note:</strong> Please read about <a href="%{link}" target="_blank">iCalendar subscriptions</a> to understand potential security risks before enabling this.
+      enable_subscriptions_text_html: Allows users with the necessary permissions to subscribe to Yojana calendars and access work package information via an external calendar client. <strong>Note:</strong> Please read about <a href="%{link}" target="_blank">iCalendar subscriptions</a> to understand potential security risks before enabling this.
     language_name_being_default: "%{language_name} (default)"
     notifications:
       events_explanation: "Governs for which event an email is sent out. Work packages are excluded from this list as the notifications for them can be configured specifically for every user."
@@ -4843,7 +4844,7 @@ Allows users with the necessary permissions to subscribe to Yojana calendars and
         project_mandate: "Open project mandate"
       blankslate:
         title: "Initiation request not enabled"
-"Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard."
+        description: "Yojana can generate a step-by-step wizard to help project managers fill out a project initiation request. You can choose which project attributes should be included and what to do with the output document. Enable it here to start configuring the wizard."
       disable_dialog:
         title: "Disable project initiation request"
         heading: "Disable this project initiation request?"
@@ -4932,7 +4933,7 @@ Allows users with the necessary permissions to subscribe to Yojana calendars and
       skip_last_comma: "false"
 
   text_accessibility_hint: "The accessibility mode is designed for users who are blind, motorically handicaped or have a bad eyesight. For the latter focused elements are specially highlighted. Please notice, that the Backlogs module is not available in this mode."
-"Access tokens allow you to grant external applications access to resources in Yojana."
+  text_access_token_hint: "Access tokens allow you to grant external applications access to resources in Yojana."
   text_analyze: "Further analyze: %{subject}"
   text_are_you_sure: "Are you sure?"
   open_link_in_a_new_tab: "Open link in a new tab"
@@ -5066,7 +5067,7 @@ Allows users with the necessary permissions to subscribe to Yojana calendars and
   text_reassign: "Reassign to work package:"
   text_regexp_info: "eg. ^[A-Z0-9]+$"
   text_regexp_multiline: 'The regex is applied in a multi-line mode. e.g., ^---\s+'
-"Select or update the Yojana user mapped to each username found in the repository log.\nUsers with the same Yojana and repository username or email are automatically mapped."
+  text_repository_usernames_mapping: "Select or update the Yojana user mapped to each username found in the repository log.\nUsers with the same Yojana and repository username or email are automatically mapped."
   text_status_changed_by_changeset: "Applied in changeset %{value}."
   text_table_difference_description: "In this table the single %{entries} are shown. You can view the difference between any two entries by first selecting the according checkboxes in the table. When clicking on the button below the table the differences are shown."
   text_time_logged_by_changeset: "Applied in changeset %{value}."
@@ -5504,7 +5505,7 @@ Allows users with the necessary permissions to subscribe to Yojana calendars and
         confidential: "Check if the application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are assumed non-confidential."
         scopes: "Check the scopes you want the application to grant access to. If no scope is checked, api_v3 is assumed."
         client_credential_user_id: "Optional user ID to impersonate when clients use this application. Leave empty to allow public access only"
-"If you are developing an OAuth API client application for Yojana, you can register it using this form for all users to use."
+        register_intro: "If you are developing an OAuth API client application for Yojana, you can register it using this form for all users to use."
         default_scopes: ""
     header:
       builtin_applications: Built-in OAuth applications
@@ -5525,7 +5526,7 @@ Allows users with the necessary permissions to subscribe to Yojana calendars and
         <strong>It has requested the following permissions:</strong>
     scopes:
       api_v3: "Full API v3 access"
-"Application will receive full read & write access to the Yojana API v3 to perform actions on your behalf."
+      api_v3_text: "Application will receive full read & write access to the Yojana API v3 to perform actions on your behalf."
     grants:
       created_date: "Approved on"
       scopes: "Permissions"
@@ -5591,7 +5592,7 @@ Allows users with the necessary permissions to subscribe to Yojana calendars and
           This error appears if you try to authorize multiple times or in case of technical issues.
         invalid_response: "OAuth2 Authorization Server provided an invalid response (invalid_response)"
         invalid_grant: "The OAuth2 Authorization Server asks you to reauthorize (invalid_grant)."
-"The OAuth2 Authorization Server doesn't recognize Yojana (invalid_client)."
+        invalid_client: "The OAuth2 Authorization Server doesn't recognize Yojana (invalid_client)."
         unauthorized_client: "The OAuth2 Authorization Server rejects the grant type (unauthorized_client)"
         unsupported_grant_type: "The OAuth2 Authorization Server asks you to reauthorize (unsupported_grant_type)."
         invalid_scope: "You are not allowed to access the requested resource (invalid_scope)."
