@@ -51,8 +51,9 @@ module Boards
 
       return ServiceResult.failure(errors: ["CSV must have at least 2 columns"]) if columns.length < 2
 
-      subject_column = columns.first
-      status_column = columns.last
+      # Smart column detection
+      subject_column = columns.find { |c| c.downcase.include?("title") || c.downcase.include?("subject") } || columns.first
+      status_column = columns.find { |c| c.downcase.include?("status") || c.downcase.include?("board choice") || c.downcase.include?("choice1") } || columns.last
 
       Rails.logger.error "=============== columns: #{columns.inspect}, subject_column: #{subject_column.inspect}, status_column: #{status_column.inspect}"
 
@@ -197,22 +198,25 @@ module Boards
         subject = row[subject_column]
         status_value = row[status_column]
 
-        next if subject.blank? || status_value.blank?
+        next if subject.blank?
 
         status = status_map[status_value]
         unless status
-          status = Status.find_by(name: status_value)
+          status = Status.find_by(name: status_value) if status_value.present?
           status ||= Status.default
         end
 
-        WorkPackage.create!(
+        # Check if a work package with this subject already exists in this project
+        # to avoid duplicates during re-imports or multi-clicks
+        WorkPackage.find_or_create_by!(
           project:,
-          subject:,
-          status:,
-          type: default_type,
-          priority: default_priority,
-          author: user
-        )
+          subject:
+        ) do |wp|
+          wp.status = status
+          wp.type = default_type
+          wp.priority = default_priority
+          wp.author = user
+        end
       end
     end
   end

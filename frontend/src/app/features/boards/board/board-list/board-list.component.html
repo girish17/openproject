@@ -12,7 +12,8 @@
       </div>
     }
     <div class="op-board-list--header"
-      data-test-selector="op-board-list--header">
+      data-test-selector="op-board-list--header"
+      [ngClass]="{ '-wip-exceeded': isWipExceeded }">
       @if (headerComponent) {
         <ndc-dynamic [ndcDynamicComponent]="headerComponent"
           [ndcDynamicInputs]="{ resource: actionResource }" />
@@ -27,25 +28,36 @@
             [initialFocus]="initiallyFocused"
             class="-small" />
         }
-      </h3>
-      <board-list-menu class="op-board-list--menu"
-        data-test-selector="op-board-list--menu"
-        [board]="board"
-        (onRemove)="deleteList()" />
-    </div>
-    <div class="op-board-list--query-container drop-zone"
-      [ngClass]="{ '-with-create-button': board.isAction || showAddButton }">
-      <div class="op-board-list--button-container">
+        <span class="op-board-list--count">
+          ({{ cardCount }}{{ wipLimit ? ' / ' + wipLimit : '' }})
+        </span>
         @if (showAddButton) {
           <button [title]="text.addCard"
-            data-test-selector="op-board-list--card-dropdown-add-button"
-            data-tour-selector="op-board-list--card-dropdown-add-button"
-            class="op-board-list--add-button op-board-list--card-dropdown-button button"
-            op-addCardDropdown>
+            class="op-board-list--header-add-button button -flat"
+            (click)="addNewCard()">
             <op-icon icon-classes="icon-small icon-add" />
           </button>
         }
-      </div>
+        </h3>
+        <board-list-menu class="op-board-list--menu"
+        data-test-selector="op-board-list--menu"
+        [board]="board"
+        [resource]="resource"
+        (onRemove)="deleteList()" />
+        </div>
+        <div class="op-board-list--query-container drop-zone"
+        [ngClass]="{ '-with-create-button': board.isAction || showAddButton }">
+        <div class="op-board-list--button-container">
+        @if (showAddButton) {
+          <button [title]="text.addCard"
+            data-test-selector="op-board-list--add-button"
+            data-tour-selector="op-board-list--add-button"
+            class="op-board-list--add-button button"
+            (click)="addNewCard()">
+            <op-icon icon-classes="icon-small icon-add" />
+          </button>
+        }
+        </div>
       <wp-card-view [dragOutOfHandler]="canDragOutOfHandler"
         [dragInto]="canDragInto"
         [workPackageAddedHandler]="workPackageAddedHandler"

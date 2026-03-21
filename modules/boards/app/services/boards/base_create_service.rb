@@ -5,8 +5,15 @@ module Boards
     protected
 
     def instance(attributes)
+      name = attributes[:name]
+      if name.blank?
+        project = attributes[:project]
+        count = Boards::Grid.where(project:).count + 1
+        name = "Untitled Board #{count}"
+      end
+
       Boards::Grid.new(
-        name: attributes[:name],
+        name:,
         project: attributes[:project],
         row_count: row_count_for_board,
         column_count: column_count_for_board
