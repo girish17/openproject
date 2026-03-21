@@ -66,6 +66,8 @@ import { firstValueFrom } from 'rxjs';
 import { WorkPackageIsolatedQuerySpaceDirective } from 'core-app/features/work-packages/directives/query-space/wp-isolated-query-space.directive';
 import { CurrentProjectService } from 'core-app/core/current-project/current-project.service';
 import { PathHelperService } from 'core-app/core/path-helper/path-helper.service';
+import { States } from 'core-app/core/states/states.service';
+import { StatusResource } from 'core-app/features/hal/resources/status-resource';
 
 export interface DisabledButtonPlaceholder {
   text:string;
@@ -116,6 +118,19 @@ export class BoardListComponent extends AbstractWidgetComponent implements OnIni
 
   /** Rename inFlight */
   public inFlight:boolean;
+
+  /** Current card count */
+  public cardCount = 0;
+
+  /** WIP limit */
+  public get wipLimit():number|undefined {
+    return this.resource.options.wipLimit as number|undefined;
+  }
+
+  /** Whether WIP limit is exceeded */
+  public get isWipExceeded():boolean {
+    return !!this.wipLimit && this.cardCount > this.wipLimit;
+  }
 
   /** Whether the add button should be shown */
   public showAddButton = false;
@@ -175,6 +190,7 @@ export class BoardListComponent extends AbstractWidgetComponent implements OnIni
     readonly keepTab:KeepTabService,
     readonly currentProject:CurrentProjectService,
     readonly pathHelper:PathHelperService,
+    readonly states:States,
   ) {
     super(I18n, injector);
   }
@@ -274,7 +290,7 @@ export class BoardListComponent extends AbstractWidgetComponent implements OnIni
   }
 
   public addNewCard() {
-    this.cardView.addNewCard();
+    this.addReferenceCard();
   }
 
   public deleteList(query?:QueryResource) {
@@ -395,10 +411,37 @@ export class BoardListComponent extends AbstractWidgetComponent implements OnIni
     // Assign to the action attribute if this is an action board
     this.actionService?.assignToWorkPackage(changeset, query);
 
-    if (changeset.isEmpty()) {
+    // Foolproof fallback: if status is still missing/New for a new card, try to match column name
+    if (workPackage.isNew && this.query.name) {
+      const currentStatus = changeset.value<StatusResource>('status');
+      // If status is not set or is the default "New", try to find a better match
+      if (!currentStatus || (currentStatus.name === 'New' && this.query.name.toLowerCase() !== 'new')) {
+        const statuses = (this.states as any).statuses.snapshot;
+        const matchingStatus = _.find(statuses, (s:any) => s.name.toLowerCase() === this.query.name.toLowerCase());
+
+        if (matchingStatus) {
+          changeset.setValue('status', matchingStatus);
+        }
+      }
+    }
+
+    if (changeset.isEmpty() && !workPackage.isNew) {
       // Ensure work package and its schema is loaded
       return this.apiv3Service.work_packages.cache.updateWorkPackage(workPackage);
     }
+
+    // If it's a new work package and we have a manual order, we MUST add it to the order
+    // so it shows up in this specific free-form column.
+    if (workPackage.isNew && query.updateOrderedWorkPackages) {
+      return this.halEditing.save(changeset).then(async (commit:any) => {
+        const savedWp = commit.resource as WorkPackageResource;
+        const currentOrder = this.cardView.workPackages.map(wp => wp.id!).filter(id => id !== 'new');
+        const newOrder = [savedWp.id!, ...currentOrder];
+        await firstValueFrom(this.apiv3Service.queries.id(query.id!).patch({ orderedWorkPackages: newOrder }));
+        return savedWp;
+      });
+    }
+
     // Save changes to the work package, which reloads it as well
     return this.halEditing.save(changeset);
   }
@@ -422,6 +465,7 @@ export class BoardListComponent extends AbstractWidgetComponent implements OnIni
     observable
       .subscribe(
         (query) => {
+          this.cardCount = query.results.total;
           this.wpStatesInitialization.updateQuerySpace(query, query.results);
         },
         (error) => {
@@ -486,11 +530,13 @@ export class BoardListComponent extends AbstractWidgetComponent implements OnIni
       });
   }
 
-  openFullViewOnDoubleClick(event:{ workPackageId:string, double:boolean }) {
+  openFullViewOnDoubleClick(event:{ workPackageId:string, event:MouseEvent, double:boolean }) {
     if (event.double) {
       const projectIdentifier = this.currentProject.identifier;
       const link = this.pathHelper.genericWorkPackagePath(projectIdentifier, event.workPackageId) + window.location.search;
       Turbo.visit(link, { action: 'advance' });
+    } else {
+      this.openStateLink({ workPackageId: event.workPackageId, requestedState: 'split' });
     }
   }
 

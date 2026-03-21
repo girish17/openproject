@@ -31,7 +31,7 @@ en:
     label_create_new_board: "Create new board"
     label_board_type: "Board type"
     board_types:
-      free: Basic
+      free: Kanban
       action: "Action board (%{attribute})"
     board_type_attributes:
       assignee: Assignee
@@ -39,10 +39,10 @@ en:
       version: Version
       subproject: Subproject
       subtasks: Parent-child
-      basic: Basic
+      basic: Kanban
     board_type_descriptions:
       basic: >
-        Start from scratch with a blank board.
+        Start from scratch with a Kanban board.
         Manually add cards and columns to this board.
       status: >
         Basic kanban style board with columns for status such as To Do, In Progress, Done.

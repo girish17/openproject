@@ -163,6 +163,12 @@ export class WorkPackageFilterValues {
       return 'project';
     }
 
+    // Map _id filters to their attribute names
+    const idMatch = /^(.*)_id$/.exec(filter.id);
+    if (idMatch) {
+      return idMatch[1];
+    }
+
     // Default to returning the filter id
     return filter.id;
   }

@@ -26,6 +26,7 @@
 // See COPYRIGHT and LICENSE files for more details.
 //++
 
+import Mousetrap from 'mousetrap';
 import {
   ChangeDetectorRef, Directive, ElementRef, Injector,
 } from '@angular/core';
@@ -59,6 +60,39 @@ export class AddCardDropdownMenuDirective extends OpContextMenuTrigger {
   protected open(evt:Event) {
     this.items = this.buildItems();
     this.opContextMenu.show(this, evt);
+  }
+
+  override ngAfterViewInit():void {
+    this.element = this.elementRef.nativeElement;
+
+    // Open by clicking the element
+    this.element.addEventListener('click', (evt:MouseEvent) => {
+      // If it's a normal left click without modifiers, do the immediate action
+      if (evt.button === 0 && !evt.ctrlKey && !evt.shiftKey && !evt.altKey && !evt.metaKey) {
+        evt.preventDefault();
+        evt.stopImmediatePropagation();
+        this.boardList.addNewCard();
+      } else {
+        // Otherwise, show the context menu
+        evt.preventDefault();
+        if (this.opContextMenu.isActive(this)) {
+          this.opContextMenu.close();
+        } else {
+          this.open(evt);
+        }
+      }
+    });
+
+    // Handle context menu (right click)
+    this.element.addEventListener('contextmenu', (evt:MouseEvent) => {
+      evt.preventDefault();
+      this.open(evt);
+    });
+
+    // Open with keyboard combination as well
+    Mousetrap(this.element).bind('shift+alt+f10', (evt:any) => {
+      this.open(evt);
+    });
   }
 
   private buildItems() {

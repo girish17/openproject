@@ -51,6 +51,8 @@ import { ApiV3FilterBuilder } from 'core-app/shared/helpers/api-v3/api-v3-filter
 import { OpAutocompleterComponent } from 'core-app/shared/components/autocompleter/op-autocompleter/op-autocompleter.component';
 import { WorkPackageResource } from 'core-app/features/hal/resources/work-package-resource';
 import { HalResourceService } from 'core-app/features/hal/services/hal-resource.service';
+import { WorkPackageCreateService } from 'core-app/features/work-packages/components/wp-new/wp-create.service';
+import { WorkPackageChangeset } from 'core-app/features/work-packages/components/wp-edit/work-package-changeset';
 
 @Component({
   selector: 'board-inline-add-autocompleter',
@@ -65,7 +67,11 @@ export class BoardInlineAddAutocompleterComponent implements AfterViewInit {
     placeholder: this.I18n.t('js.relations_autocomplete.placeholder'),
   };
 
+  /** The current search string */
+  public searchTerm = '';
+
   getAutocompleterData = (searchString:string):Observable<WorkPackageResource[]> => {
+    this.searchTerm = searchString;
     // Return when the search string is empty
     if (searchString.length === 0) {
       return of([]);
@@ -124,6 +130,7 @@ export class BoardInlineAddAutocompleterComponent implements AfterViewInit {
     private readonly schemaCacheService:SchemaCacheService,
     private readonly cdRef:ChangeDetectorRef,
     private readonly I18n:I18nService,
+    private readonly wpCreate:WorkPackageCreateService,
     private readonly wpCardDragDrop:WorkPackageCardDragAndDropService) {
   }
 
@@ -140,8 +147,14 @@ export class BoardInlineAddAutocompleterComponent implements AfterViewInit {
     this.onCancel.emit();
   }
 
-  public addWorkPackageToQuery(workPackage?:WorkPackageResource) {
-    if (workPackage) {
+  public handleKeydown(event:KeyboardEvent) {
+    if (event.key === 'Enter' && this.searchTerm && !this.ngSelectComponent.ngSelectInstance.selectedItems.length) {
+      this.createNewWorkPackage(this.searchTerm);
+    }
+  }
+
+  public addWorkPackageToQuery(workPackage?:WorkPackageResource|string) {
+    if (workPackage && typeof workPackage !== 'string') {
       this.schemaCacheService
         .ensureLoaded(workPackage)
         .then(() => {
@@ -149,5 +162,17 @@ export class BoardInlineAddAutocompleterComponent implements AfterViewInit {
           this.ngSelectComponent.closeSelect();
         });
     }
+  }
+
+  private createNewWorkPackage(subject:string) {
+    this.wpCreate
+      .createOrContinueWorkPackage(this.CurrentProject.id!, 8)
+      .then((changeset:WorkPackageChangeset) => {
+        changeset.setValue('subject', subject);
+        (this.wpCreate as any).halEditing.save(changeset).then((commit:any) => {
+          this.onReferenced.emit(commit.resource as WorkPackageResource);
+          this.ngSelectComponent.closeSelect();
+        });
+      });
   }
 }

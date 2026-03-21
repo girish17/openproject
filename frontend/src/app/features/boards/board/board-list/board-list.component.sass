@@ -23,10 +23,41 @@ $board-list-max-width: 300px
     align-items: center
     max-height: 52px
 
+    &.-wip-exceeded
+      background-color: var(--color-danger-emphasis)
+      color: white
+      border-radius: 4px
+
+      editable-toolbar-title ::ng-deep .editable-toolbar-title--text
+        color: white
+
+      .op-board-list--count
+        color: white
+
     editable-toolbar-title
       flex: 1
       margin-bottom: 0
       margin-right: 0.25rem
+
+  &--count
+    font-size: 0.85rem
+    color: var(--color-fg-muted)
+    margin-left: 0.5rem
+    white-space: nowrap
+
+  &--header-add-button
+    margin-left: auto
+    padding: 2px 4px
+    min-width: auto
+    height: auto
+
+    &:hover
+      background-color: rgba(0, 0, 0, 0.05)
+
+    .-wip-exceeded &
+      color: white
+      &:hover
+        background-color: rgba(255, 255, 255, 0.2)
 
   &--toaster-box
     margin-top: 0

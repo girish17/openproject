@@ -1,5 +1,7 @@
 import { Injectable, Injector, Optional } from '@angular/core';
 import { WorkPackageResource } from 'core-app/features/hal/resources/work-package-resource';
+import { HalResource } from 'core-app/features/hal/resources/hal-resource';
+import { HalSource } from 'core-app/features/hal/interfaces';
 import { WorkPackageViewOrderService } from 'core-app/features/work-packages/routing/wp-view-base/view-services/wp-view-order.service';
 import { States } from 'core-app/core/states/states.service';
 import { WorkPackageCreateService } from 'core-app/features/work-packages/components/wp-new/wp-create.service';
@@ -153,9 +155,9 @@ export class WorkPackageCardDragAndDropService {
   /**
    * Inline create a new card
    */
-  public addNewCard() {
+  public addNewCard(defaults?:HalSource) {
     this.wpCreate
-      .createOrContinueWorkPackage(this.currentProject.identifier)
+      .createOrContinueWorkPackage(this.currentProject.identifier, 8, defaults)
       .then((changeset:WorkPackageChangeset) => {
         this.activeInlineCreateWp = changeset.projectedResource;
         this.workPackages = this.workPackages;
