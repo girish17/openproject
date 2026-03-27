@@ -64,11 +64,11 @@ module MeetingsHelper
 
     if journal.details.any?
       details = content_tag "ul", class: "details journal-attributes" do
-        journal.details.filter_map do |detail|
+        safe_join(journal.details.filter_map do |detail|
           if d = journal.render_detail(detail, cache: options[:cache])
             content_tag("li", d.html_safe)
           end
-        end.join(" ").html_safe
+        end, " ".html_safe)
       end
     end
 
