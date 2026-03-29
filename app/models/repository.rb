@@ -246,7 +246,7 @@ class Repository < ApplicationRecord
         if new_user_id && (new_user_id.to_i != user_id.to_i)
           new_user_id = (new_user_id.to_i > 0 ? new_user_id.to_i : nil)
           Changeset.where(["repository_id = ? AND committer = ?", id, committer])
-            .update_all("user_id = #{new_user_id.nil? ? 'NULL' : new_user_id}")
+            .update_all(user_id: new_user_id)
         end
       end
       @committers = nil
