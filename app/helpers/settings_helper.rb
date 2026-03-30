@@ -193,17 +193,17 @@ module SettingsHelper
     content_tag(:tr, class: "form--matrix-header-row") do
       content_tag(:th, I18n.t(options[:label_choices] || :label_choices),
                   class: "form--matrix-header-cell") +
-        settings.map do |setting|
+        safe_join(settings.map do |setting|
           content_tag(:th, class: "form--matrix-header-cell") do
             hidden_field_tag("settings[#{setting}][]", "") +
               I18n.t("setting_#{setting}")
           end
-        end.join.html_safe
+        end)
     end
   end
 
   def build_settings_matrix_body(settings, choices)
-    choices.map do |choice|
+    safe_join(choices.map do |choice|
       value = choice[:value]
       caption = choice[:caption] || value.to_s
       exceptions = Array(choice[:except]).compact
@@ -211,11 +211,11 @@ module SettingsHelper
         content_tag(:td, caption, class: "form--matrix-cell") +
           settings_matrix_tds(settings, exceptions, value)
       end
-    end.join.html_safe # rubocop:disable Rails/OutputSafety
+    end)
   end
 
   def settings_matrix_tds(settings, exceptions, value)
-    settings.map do |setting|
+    safe_join(settings.map do |setting|
       content_tag(:td, class: "form--matrix-checkbox-cell") do
         unless exceptions.include?(setting)
           styled_check_box_tag("settings[#{setting}][]", value,
@@ -223,7 +223,7 @@ module SettingsHelper
                                disabled_setting_option(setting).merge(id: "#{setting}_#{value}"))
         end
       end
-    end.join.html_safe # rubocop:disable Rails/OutputSafety
+    end)
   end
 
   def setting_multiselect_choice(setting, choice, options)
