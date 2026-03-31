@@ -60,9 +60,16 @@ class Forum < ApplicationRecord
   # Updates topics_count, messages_count and last_message_id attributes for +forum_id+
   def self.reset_counters!(forum_id)
     forum_id = forum_id.to_i
+
+    topics_count_sql = Message.where(forum_id:, parent_id: nil).select("COUNT(*)").to_sql
+    messages_count_sql = Message.where(forum_id:).select("COUNT(*)").to_sql
+    last_message_id_sql = Message.where(forum_id:).select("MAX(id)").to_sql
+
     where(id: forum_id)
-      .update_all("topics_count = (SELECT COUNT(*) FROM #{Message.table_name} WHERE forum_id=#{forum_id} AND parent_id IS NULL)," +
-               " messages_count = (SELECT COUNT(*) FROM #{Message.table_name} WHERE forum_id=#{forum_id})," +
-               " last_message_id = (SELECT MAX(id) FROM #{Message.table_name} WHERE forum_id=#{forum_id})")
+      .update_all(
+        "topics_count = (#{topics_count_sql})," \
+        " messages_count = (#{messages_count_sql})," \
+        " last_message_id = (#{last_message_id_sql})"
+      )
   end
 end
