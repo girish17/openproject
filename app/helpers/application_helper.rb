@@ -155,7 +155,7 @@ module ApplicationHelper
   end
 
   def labeled_check_box_tags(name, collection, options = {})
-    collection.sort.map do |object|
+    safe_join(collection.sort.map do |object|
       id = name.gsub(/[\[\]]+/, "_") + object.id.to_s
 
       object_options = options.inject({}) do |h, (k, v)|
@@ -170,7 +170,7 @@ module ApplicationHelper
           styled_check_box_tag(name, object.id, false, id:) + object.to_s
         end
       end
-    end.join.html_safe
+    end)
   end
 
   def html_safe_gsub(string, *gsub_args, &)
