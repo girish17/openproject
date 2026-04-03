@@ -1,9 +1,4 @@
-## 2024-05-24 - SQL Injection via string interpolation in Category#destroy
-**Vulnerability:** In `app/models/category.rb`, `Category#destroy` used string interpolation in a raw SQL string to reassign work packages: `WorkPackage.where("category_id = #{id}").update_all("category_id = #{reassign_to.id}")`.
-**Learning:** This is a vulnerability if user input reaches `reassign_to.id` (even if it's currently an integer from a related model) and is generally an unsafe practice in Rails.
-**Prevention:** Always use parameterized queries (e.g. hash syntax) for `where` and `update_all`: `WorkPackage.where(category_id: id).update_all(category_id: reassign_to.id)`.
-
-## 2024-05-24 - Cross-Site Scripting (XSS) via Array#join and html_safe
-**Vulnerability:** Several helper methods (e.g., `settings_matrix_tds`, `labeled_check_box_tags`) were using `array.join.html_safe` instead of `safe_join(array)`. When using `array.join.html_safe`, HTML escaping for the array elements is bypassed, meaning any user input within the array is rendered unsanitized, leading to an XSS vulnerability.
-**Learning:** `Array#join` combined with `.html_safe` is an anti-pattern in Rails for constructing HTML strings containing dynamically generated components.
-**Prevention:** Always use Rails' built-in `safe_join(array)` method when joining an array of strings that should be rendered as HTML, which correctly ensures that only components explicitly marked as safe are unescaped.
+## 2025-04-16 - [SQL Injection via String Interpolation in update_all]
+**Vulnerability:** Found string interpolation directly inside `update_all` calls in `app/models/work_package/time_entries_cleaner.rb` and `app/models/work_packages/costs.rb`.
+**Learning:** Even though IDs are usually integers, passing user-supplied IDs (e.g. `to_do[:reassign_to_id]`) through string interpolation into ActiveRecord's `update_all` creates a critical SQL injection risk.
+**Prevention:** Always use Rails hash syntax (e.g., `{ entity_id: reassign_to.id }`) for assignments in `update_all` to ensure proper parameterization.

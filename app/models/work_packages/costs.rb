@@ -127,7 +127,7 @@ module WorkPackages::Costs
 
         false
       else
-        condition = "entity_type='WorkPackage', entity_id = #{reassign_to.id}, project_id = #{reassign_to.project_id}"
+        condition = { entity_type: "WorkPackage", entity_id: reassign_to.id, project_id: reassign_to.project_id }
         ::WorkPackage.update_cost_entries(work_packages, condition)
       end
     end
