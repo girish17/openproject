@@ -49,7 +49,7 @@ module WorkPackage::TimeEntriesCleaner
         # nothing to do
       when "nullify"
         work_packages = Array(work_packages)
-        WorkPackage.update_time_entries(work_packages, "work_package_id = NULL")
+        WorkPackage.update_time_entries(work_packages, { work_package_id: nil })
       when "reassign"
         reassign_time_entries_before_destruction_of(work_packages, user, to_do[:reassign_to_id])
       else
@@ -75,7 +75,7 @@ module WorkPackage::TimeEntriesCleaner
 
         false
       else
-        condition = "entity_type = 'WorkPackage', entity_id = #{reassign_to.id}, project_id = #{reassign_to.project_id}"
+        condition = { entity_type: "WorkPackage", entity_id: reassign_to.id, project_id: reassign_to.project_id }
         WorkPackage.update_time_entries(work_packages, condition)
       end
     end
