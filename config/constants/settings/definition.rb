@@ -1199,6 +1199,11 @@ module Settings
         description: "Override software application URL",
         default: "https://yojana.girishm.info"
       },
+      google_analytics_id: {
+        description: "Google Analytics 4 Measurement ID (e.g., G-XXXXXXXXXX). Leave empty to disable.",
+        format: :string,
+        default: nil
+      },
       sql_slow_query_threshold: {
         description: "Time limit in ms after which queries will be logged as slow queries",
         default: 2000,

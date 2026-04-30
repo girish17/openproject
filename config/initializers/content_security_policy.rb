@@ -92,6 +92,13 @@ Rails.application.config.after_initialize do
       # Allow to extend the script-src in specific situations
       script_src = assets_src + %w(js.chargebee.com)
 
+      # Google Analytics 4
+      google_analytics_id = Setting.google_analytics_id
+      if google_analytics_id.present?
+        script_src += ["https://www.googletagmanager.com", "https://www.google-analytics.com"]
+        connect_src += ["https://www.google-analytics.com", "https://stats.g.doubleclick.net"]
+      end
+
       # Allow unsafe-eval for rack-mini-profiler
       if Rails.env.development? && ENV.fetch("OPENPROJECT_RACK_PROFILER_ENABLED", false)
         script_src += %w('unsafe-eval') # rubocop:disable Lint/PercentStringArray

@@ -99,6 +99,13 @@ module Admin
         )
 
         sf.check_box(name: :security_badge_displayed) if OpenProject::Configuration.security_badge_displayed?
+
+        sf.text_field(
+          name: :google_analytics_id,
+          label: I18n.t("setting_google_analytics_id"),
+          input_width: :medium,
+          caption: "Google Analytics 4 Measurement ID (e.g., G-XXXXXXXXXX). Leave empty to disable."
+        )
       end
     end
   end
