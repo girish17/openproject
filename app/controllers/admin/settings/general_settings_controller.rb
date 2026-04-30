@@ -43,7 +43,7 @@ module Admin::Settings
     def extra_permitted_filters
       # attachment_whitelist is normally permitted as an array parameter.
       # Explicitly permit it as a string here.
-      [:allowed_link_protocols, :google_analytics_id]
+      [:allowed_link_protocols]
     end
 
     def show
