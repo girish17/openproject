@@ -46,7 +46,7 @@ See COPYRIGHT and LICENSE files for more details.
   logo_icon_url = "/assets/icon_logo.svg"
   logo_icon_white_url = "/assets/icon_logo_white.svg"
 
-  high_contrast_bim_logo_url = asset_path("bim/logo_openproject_bim_big_coloured.png")
+  high_contrast_bim_logo_url = "/assets/bim/logo_openproject_bim_big_coloured.png"
 
   if cs
     has_logo = cs.logo.present?
@@ -55,13 +55,20 @@ See COPYRIGHT and LICENSE files for more details.
     if has_logo
       logo_url = high_contrast_logo_url = custom_style_logo_path(digest: cs.digest, filename: cs.logo_identifier)
     elsif has_logo_mobile
-      logo_url = high_contrast_logo_url = custom_style_logo_mobile_path(digest: cs.digest, filename: cs.logo_mobile_identifier)
+      logo_url = high_contrast_logo_url = custom_style_logo_mobile_path(
+        digest: cs.digest,
+        filename: cs.logo_mobile_identifier
+      )
     elsif cs.theme_logo.present?
-      logo_url = asset_path(cs.theme_logo)
+      logo_url = "/assets/#{cs.theme_logo}"
     end
 
-    if is_ru && logo_url == asset_path("logo_openproject.png")
-      logo_url = asset_path("logo-black-bg-ua.png")
+    if is_ru && logo_url == "/assets/logo_yojana.png"
+      logo_url = "/assets/logo-black-bg-ua.png"
+    end
+
+    if is_ru && logo_url == "/assets/logo_yojana.png"
+      logo_url = "/assets/logo-black-bg-ua.png"
     end
 
     if has_logo_mobile
