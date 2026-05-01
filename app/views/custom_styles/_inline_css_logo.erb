@@ -33,18 +33,18 @@ See COPYRIGHT and LICENSE files for more details.
   cs = apply_custom_styles? ? CustomStyle.current : nil
 
   logo_url = if is_ru
-               asset_path("logo-white-bg-ua.png")
-             else
-               asset_path("logo_openproject_white_big.png")
-             end
+                 "/assets/logo-white-bg-ua.png"
+               else
+                 "/assets/logo_yojana_white_big.png"
+               end
 
   high_contrast_logo_url = if is_ru
-                             asset_path("logo-black-bg-ua.png")
-                           else
-                             asset_path("logo_openproject.png")
-                           end
-  logo_icon_url = asset_path("icon_logo.svg")
-  logo_icon_white_url = asset_path("icon_logo_white.svg")
+                               "/assets/logo-black-bg-ua.png"
+                             else
+                               "/assets/logo_yojana.png"
+                             end
+  logo_icon_url = "/assets/icon_logo.svg"
+  logo_icon_white_url = "/assets/icon_logo_white.svg"
 
   high_contrast_bim_logo_url = asset_path("bim/logo_openproject_bim_big_coloured.png")
 
