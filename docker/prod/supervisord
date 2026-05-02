@@ -154,8 +154,25 @@ fi
 echo "-----> Database setup finished."
 echo "       On first installation, the default admin credentials are login: admin, password: admin"
 
-# Ensure supervisord can manage memcached itself without a stale daemon keeping port 11211 busy.
-stop_memcached_daemon
+# Precompile assets on first run (stored in persistent volume)
+if [ ! -f /var/openproject/assets/.assets-compiled ]; then
+	echo "-----> Precompiling assets (first run)..."
+	cd $APP_PATH
+	# Skip npm install - assets are compiled by Rails
+	# Use nulldb to avoid needing database connection
+	SECRET_KEY_BASE=1 RAILS_ENV=production DATABASE_URL=nulldb://db \
+		bundle exec rake assets:precompile 2>&1 | indent || true
+	# Store compiled assets in persistent volume
+	mkdir -p /var/openproject/assets/assets /var/openproject/assets/packs
+	cp -rn $APP_PATH/public/assets/. /var/openproject/assets/assets/ 2>/dev/null || true
+	cp -rn $APP_PATH/public/packs/. /var/openproject/assets/packs/ 2>/dev/null || true
+	touch /var/openproject/assets/.assets-compiled
+	echo "-----> Assets precompiled and stored in persistent volume"
+else
+	echo "-----> Loading precompiled assets from persistent volume..."
+	cp -rn /var/openproject/assets/assets/. $APP_PATH/public/assets/ 2>/dev/null || true
+	cp -rn /var/openproject/assets/packs/. $APP_PATH/public/packs/ 2>/dev/null || true
+fi
 
 echo "-----> Launching supervisord..."
 erb -r uri $APP_PATH/docker/prod/supervisord.conf.erb > /etc/supervisor/supervisord.conf

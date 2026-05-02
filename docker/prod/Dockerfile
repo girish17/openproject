@@ -24,6 +24,7 @@ ENV BUNDLE_APP_CONFIG="$APP_PATH/.bundle"
 ENV PGVERSION="17"
 ENV PGVERSION_CHOICES="13 15 17"
 ENV PGBIN="/usr/lib/postgresql/$PGVERSION/bin"
+ENV PGCONF_FILE="/etc/postgresql/$PGVERSION/main/postgresql.conf"
 ENV PATH="$PGBIN:$PATH"
 ENV BUNDLE_WITHOUT="development:test"
 
@@ -56,9 +57,15 @@ WORKDIR $APP_PATH
 # upgrade bundler
 RUN gem install bundler --no-document
 
-# runtime dependencies
-COPY ./docker/prod/setup/preinstall-common.sh ./docker/prod/setup/preinstall-common.sh
-RUN ./docker/prod/setup/preinstall-common.sh
+# system dependencies, nodejs
+COPY ./docker/prod/setup/preinstall-common.sh /tmp/preinstall-common.sh
+COPY ./docker/prod/setup/preinstall-alpine.sh /tmp/preinstall-alpine.sh
+RUN apk add --no-cache bash 2>/dev/null || true; \
+    if [ "$DEBIAN_BASE" = "alpine" ]; then \
+      /tmp/preinstall-alpine.sh; \
+    else \
+      /tmp/preinstall-common.sh; \
+    fi
 
 FROM runtime-base AS build-base
 ARG NODE_VERSION="22.22.3"
@@ -82,29 +89,21 @@ RUN bash vendor/bundle-install.sh && rm vendor/bundle-install.sh
 
 COPY . .
 
+# Copy logo files to public/assets for direct serving in production
+RUN mkdir -p /app/public/assets && \
+  cp /app/app/assets/images/logo_yojana.png /app/public/assets/ && \
+  cp /app/app/assets/images/logo_yojana_white_big.png /app/public/assets/ && \
+  cp /app/app/assets/images/logo_openproject.png /app/public/assets/ && \
+  cp /app/app/assets/images/logo_openproject_white_big.png /app/public/assets/ 2>/dev/null || true
+
 # Copy lock file again as the updated version was overriden by COPY just now
 RUN cp Gemfile.lock.bak Gemfile.lock && rm Gemfile.lock.bak && \
-  ./docker/prod/setup/precompile-assets.sh
-
-FROM app-build AS app-build-slim
-COPY ./docker/prod/setup/prune-slim-runtime.sh ./docker/prod/setup/prune-slim-runtime.sh
-RUN ./docker/prod/setup/prune-slim-runtime.sh
-
-FROM runtime-base AS app-runtime
-
-COPY --chown=$APP_USER:$APP_USER --from=app-build /app /app
-
-RUN ./docker/prod/setup/postinstall-common.sh && \
+  ./docker/prod/setup/postinstall-common.sh && \
   cp ./config/database.production.yml config/database.yml && \
   ln -s $APP_PATH/docker/prod/setup/.irbrc /home/$APP_USER/
 
-FROM runtime-base AS app-runtime-slim
-
-COPY --chown=$APP_USER:$APP_USER --from=app-build-slim /app /app
-
-RUN ./docker/prod/setup/postinstall-common.sh && \
-  cp ./config/database.production.yml config/database.yml && \
-  ln -s $APP_PATH/docker/prod/setup/.irbrc /home/$APP_USER/
+# Precompile assets on first run (not during build to avoid OOM)
+RUN mkdir -p /app/tmp/assets-precompiled
 
 # -------------------------------------
 # slim (public)
@@ -151,6 +150,25 @@ RUN ./docker/prod/setup/postinstall-onprem.sh && \
   ln -sf ../lib/node_modules/npm/bin/npx-cli.js /usr/local/bin/npx && \
   ln -sf ../lib/node_modules/corepack/dist/corepack.js /usr/local/bin/corepack && \
   ln -s /app/docker/prod/setup/.irbrc /root/
+
+# Install Node.js for asset compilation
+RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - && \
+  apt-get install -y nodejs
+
+# Fix symlinks for linked plugins (point to /app/modules instead of /home/dev/openproject)
+RUN cd /app/frontend/src/app/features/plugins/linked && \
+  for link in *; do \
+    if [ -L "$link" ]; then \
+      target=$(readlink "$link"); \
+      newtarget=$(echo "$target" | sed 's|/home/dev/openproject/modules|/app/modules|'); \
+      rm "$link" && ln -s "$newtarget" "$link"; \
+    fi; \
+  done
+
+# Build frontend assets
+RUN cd /app && npm install && \
+  cd /app/frontend && npm install && \
+  npm run build
 
 # Expose ports for apache and postgres
 EXPOSE 80

@@ -13,6 +13,20 @@
   ProxyRequests off
   ProxyPreserveHost On
 
+  # Serve static assets directly from DocumentRoot (Apache)
+  <Directory <%= ENV.fetch("APP_PATH") %>/public>
+    Options -Indexes +FollowSymLinks
+    AllowOverride All
+    Require all granted
+  </Directory>
+
+  # Don't proxy static assets - serve directly from DocumentRoot
+  ProxyPass /assets/ !
+  ProxyPass /packs/ !
+  ProxyPass /favicon.ico !
+  ProxyPass /robots.txt !
+  ProxyPass /sitemap.xml !
+
   <% location = ENV.fetch("OPENPROJECT_RAILS__RELATIVE__URL__ROOT", "").chomp("/") %>
   <Location <%= location == "" ? "/" : location %>>
     ProxyPass http://<%= ENV.fetch("APP_HOST", "127.0.0.1") %>:8080<%= location %>/ retry=0

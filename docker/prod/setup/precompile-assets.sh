@@ -7,12 +7,19 @@ if [ -f config/frontend_assets.manifest.json ]; then
   echo "Assets have already been precompiled. Reusing."
 else
   echo "Assets need to be compiled"
-  JOBS=8 npm install
+
+  JOBS=4 npm install
 
   SECRET_KEY_BASE="$(openssl rand -hex 64)" RAILS_ENV=production DATABASE_URL=nulldb://db \
     bin/rails openproject:plugins:register_frontend assets:precompile
 
   if [ "$DOCKER" = "1" ]; then
+    # Disable swap
+    if [ -f /swapfile ]; then
+      swapoff /swapfile
+      rm -f /swapfile
+    fi
+
     rm -rf /tmp/nulldb
     # Remove sprockets cache
     rm -rf "$APP_PATH/tmp/cache/assets"

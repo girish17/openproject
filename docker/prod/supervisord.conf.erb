@@ -93,7 +93,7 @@ stderr_logfile_maxbytes = 0
 [program:postgres]
 user=postgres
 priority=1
-command=%(ENV_PGBIN)s/postgres -D %(ENV_PGDATA)s -c config_file=%(ENV_PGCONF_FILE)s
+command=<%= ENV['PGBIN'] %>/postgres -D <%= ENV['PGDATA'] %> -c config_file=<%= ENV['PGCONF_FILE'] %>
 autorestart=true
 stderr_logfile = /dev/stderr
 stdout_logfile = /dev/stdout

@@ -1,0 +1,90 @@
+ARG RUBY_VERSION=3.4
+ARG ALPINE_VERSION=""
+ARG NODE_VERSION=22.22.1
+ARG BIM_SUPPORT=true
+ARG BUILDKIT_SBOM_SCAN_CONTEXT=true
+ARG BUILDKIT_SBOM_SCAN_STAGE=true
+FROM ruby:3.4-alpine AS base
+LABEL maintainer="operations@openproject.com"
+
+ENV USE_JEMALLOC=false
+ENV DEBIAN_FRONTEND=noninteractive
+ENV BUNDLE_JOBS=8
+ENV BUNDLE_RETRY=3
+ENV BUNDLE_WITHOUT="development:test"
+ENV DOCKER=1
+ENV APP_USER=app
+ENV APP_PATH=/app
+ENV APP_DATA_PATH=/var/openproject/assets
+ENV PGVERSION="17"
+ENV BUNDLE_WITHOUT="development:test"
+ENV SECRET_KEY_BASE=OVERWRITE_ME
+ENV RAILS_ENV=production
+ENV RAILS_LOG_TO_STDOUT=1
+ENV RAILS_SERVE_STATIC_FILES=1
+ENV OPENPROJECT_EDITION=standard
+ENV OPENPROJECT_INSTALLATION__TYPE=docker
+ENV OPENPROJECT_ATTACHMENTS__STORAGE__PATH=$APP_DATA_PATH/files
+ENV OPENPROJECT_RAILS__CACHE__STORE=file_store
+ENV OPENPROJECT_ANGULAR_UGLIFY=true
+ENV OPENPROJECT_COLLABORATIVE__EDITING__HOCUSPOCUS__URL=auto
+ENV OPENPROJECT_COLLABORATIVE__EDITING__HOCUSPOCUS__SECRET=
+
+RUN apk add --no-cache bash shadow && \
+    apk add --no-cache --repository=https://dl-cdn.alpinelinux.org/alpine/v3.19/main glibc glibc-bin libstdc++ && \
+    /usr/glibc-compat/sbin/ldconfig || true && \
+    useradd -d /home/$APP_USER -m $APP_USER && \
+    mkdir -p $APP_PATH && chown $APP_USER:$APP_USER $APP_PATH && \
+    mkdir -p $APP_DATA_PATH && chown $APP_USER:$APP_USER $APP_DATA_PATH && chmod g+rwx $APP_DATA_PATH
+
+WORKDIR $APP_PATH
+
+RUN gem install bundler --no-document
+
+COPY ./docker/prod/setup/preinstall-alpine.sh /tmp/preinstall.sh
+RUN chmod +x /tmp/preinstall.sh && /tmp/preinstall.sh
+
+COPY Gemfile Gemfile.* .ruby-version ./
+COPY modules ./modules
+COPY vendor ./vendor
+COPY lib ./lib
+
+COPY ./docker/prod/setup/bundle-install.sh ./vendor/bundle* ./vendor/
+RUN bash vendor/bundle-install.sh && rm vendor/bundle-install.sh
+
+COPY . .
+
+RUN cp Gemfile.lock.bak Gemfile.lock && rm Gemfile.lock.bak && \
+    ./docker/prod/setup/precompile-assets.sh && \
+    ./docker/prod/setup/postinstall-common.sh && \
+    cp ./config/database.production.yml config/database.yml && \
+    ln -s $APP_PATH/docker/prod/setup/.irbrc /home/$APP_USER/
+
+FROM base AS slim
+
+USER $APP_USER
+EXPOSE 8080
+CMD ["./docker/prod/web"]
+ENTRYPOINT ["./docker/prod/entrypoint-slim.sh"]
+VOLUME ["$APP_DATA_PATH"]
+
+FROM base AS all-in-one
+
+ENV OPENPROJECT_RAILS__CACHE__STORE=memcache
+ENV DATABASE_URL=postgres://openproject:openproject@127.0.0.1/openproject
+ENV PGDATA=/var/openproject/pgdata
+
+COPY --from=openproject/gosu /go/bin/gosu /go/bin/gosu
+RUN chmod +x /go/bin/gosu && /go/bin/gosu nobody true
+
+COPY --from=openproject/hocuspocus:release-38128805 --chown=$APP_USER:$APP_USER /app /opt/hocuspocus
+
+RUN ./docker/prod/setup/postinstall-onprem.sh && \
+    ln -s /app/docker/prod/setup/.irbrc /root/
+
+EXPOSE 80
+
+VOLUME ["$PGDATA", "$APP_DATA_PATH"]
+
+ENTRYPOINT ["./docker/prod/entrypoint.sh"]
+CMD ["./docker/prod/supervisord"]
