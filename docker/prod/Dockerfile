@@ -170,6 +170,14 @@ RUN cd /app && npm install && \
   cd /app/frontend && npm install && \
   npm run build
 
+# Create symlinks for main assets (Angular outputs hashed filenames)
+# This allows direct file access at logical names (e.g., styles.css -> styles-XXXX.css)
+RUN cd /app/public/assets/frontend && \
+  ln -sf main-*.js main.js 2>/dev/null || true && \
+  ln -sf polyfills-*.js polyfills.js 2>/dev/null || true && \
+  ln -sf styles-*.css styles.css 2>/dev/null || true && \
+  ln -sf jquery-*.js jquery.js 2>/dev/null || true || true
+
 # Expose ports for apache and postgres
 EXPOSE 80
 

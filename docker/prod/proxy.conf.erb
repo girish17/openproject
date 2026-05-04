@@ -20,12 +20,21 @@
     Require all granted
   </Directory>
 
-  # Don't proxy static assets - serve directly from DocumentRoot
-  ProxyPass /assets/ !
-  ProxyPass /packs/ !
-  ProxyPass /favicon.ico !
-  ProxyPass /robots.txt !
-  ProxyPass /sitemap.xml !
+  # Serve static assets directly using Alias
+  Alias /assets /app/public/assets
+  Alias /packs /app/public/packs
+  Alias /favicon.ico /app/public/favicon.ico
+  
+  <Directory /app/public/assets>
+    Options -Indexes +FollowSymLinks
+    AllowOverride None
+    Require all granted
+  </Directory>
+  <Directory /app/public/packs>
+    Options -Indexes +FollowSymLinks
+    AllowOverride None
+    Require all granted
+  </Directory>
 
   <% location = ENV.fetch("OPENPROJECT_RAILS__RELATIVE__URL__ROOT", "").chomp("/") %>
   <Location <%= location == "" ? "/" : location %>>
