@@ -1,0 +1,10 @@
+<% if OpenProject::FeatureDecisions.ai_chat_assistant_active? && User.current.logged? %>
+  <button class="op-app-header--item"
+          data-controller="ai--chat-toggle"
+          data-action="click->ai--chat-toggle#toggle"
+          title="<%= I18n.t('ai.label_chat') %>"
+          aria-label="<%= I18n.t('ai.label_chat') %>"
+          style="background:none;border:none;cursor:pointer;font-size:18px;padding:4px 10px;">
+    💬
+  </button>
+<% end %>

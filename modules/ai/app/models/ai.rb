@@ -1,0 +1,2 @@
+module Ai
+end

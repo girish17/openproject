@@ -1,0 +1,18 @@
+<div class="ai-summarize-button">
+  <%= render(Primer::Beta::Button.new(
+    scheme: :link,
+    data: {
+      controller: "ai--summarize",
+      "ai--summarize-work-package-id-value": @work_package.id,
+      action: "click->ai--summarize#summarize"
+    }
+  )) do |c| %>
+    <% c.with_leading_visual_icon(icon: :comment) %>
+    <%= I18n.t("ai.button_summarize") %>
+  <% end %>
+  <div
+    data-ai--summarize-target="output"
+    class="ai-summary"
+    hidden
+  ></div>
+</div>

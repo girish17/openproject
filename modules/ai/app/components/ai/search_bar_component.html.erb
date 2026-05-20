@@ -1,0 +1,15 @@
+<div class="ai-search-bar"
+     data-controller="ai--search"
+     data-ai--search-url-value="<%= suggestions_path %>"
+     data-ai--search-redirect-url-value="<%= search_path %>">
+  <input type="search"
+         name="ai_query"
+         placeholder="<%= I18n.t('ai.placeholder_search') %>"
+         class="input"
+         data-action="input->ai--search#query focusin->ai--search#focus">
+  <div
+    data-ai--search-target="results"
+    class="ai-search-results"
+    hidden
+  ></div>
+</div>

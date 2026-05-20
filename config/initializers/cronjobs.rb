@@ -71,6 +71,10 @@ Rails.application.config.after_initialize do
       "RecurringMeetings::InitNextOccurrenceWatchdogJob": {
         cron: "11 05 * * *",
         class: RecurringMeetings::InitNextOccurrenceWatchdogJob.name
+      },
+      "Ai::AgentSchedulerJob": {
+        cron: "*/5 * * * *", # every 5 minutes
+        class: defined?(Ai::AgentSchedulerJob) ? Ai::AgentSchedulerJob.name : "Ai::AgentSchedulerJob"
       }
     }
   )

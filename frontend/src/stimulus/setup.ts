@@ -28,12 +28,9 @@ import StemsController from './controllers/dynamic/work-packages/activities-tab/
 import EditorController from './controllers/dynamic/work-packages/activities-tab/editor.controller';
 import LazyPageController from './controllers/dynamic/work-packages/activities-tab/lazy-page.controller';
 import EditablePageHeaderTitleController from './controllers/dynamic/editable-page-header-title.controller';
-import WorkingHoursFormController from './controllers/dynamic/users/working-hours-form.controller';
-import DailyRemindersController from './controllers/dynamic/my/daily-reminders.controller';
-import HeaderProjectSelectController from './controllers/header-project-select.controller';
-import NonWorkingTimesController from './controllers/dynamic/users/non-working-times.controller';
-import NonWorkingTimesFormController from './controllers/dynamic/users/non-working-times-form.controller';
-import OpPasswordForceChangeController from './controllers/password-force-change.controller';
+import AiChatController from './controllers/dynamic/ai/chat.controller';
+import AiChatToggleController from './controllers/dynamic/ai/chat-toggle.controller';
+import AiAgentsController from './controllers/dynamic/ai/agents.controller';
 
 import AutoSubmit from '@stimulus-components/auto-submit';
 import RevealController from '@stimulus-components/reveal';
@@ -102,7 +99,10 @@ OpenProjectStimulusApplication.preregister('password-force-change', OpPasswordFo
 OpenProjectStimulusApplication.preregister('check-all', CheckAllController);
 OpenProjectStimulusApplication.preregister('header-project-select', HeaderProjectSelectController);
 OpenProjectStimulusApplication.preregister('checkable', CheckableController);
-OpenProjectStimulusApplication.preregister('expandable-text', ExpandableTextController);
+OpenProjectStimulusApplication.preregister('truncation', TruncationController);
+OpenProjectStimulusApplication.preregister('ai--chat', AiChatController);
+OpenProjectStimulusApplication.preregister('ai--chat-toggle', AiChatToggleController);
+OpenProjectStimulusApplication.preregister('ai--agents', AiAgentsController);
 
 const instance = OpenProjectStimulusApplication.start();
 window.Stimulus = instance;

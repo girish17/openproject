@@ -1,0 +1,4 @@
+<% wp = @work_package || local_assigns[:work_package] %>
+<% if wp&.description.present? %>
+  <%= render(Ai::SummarizeButtonComponent.new(work_package: wp)) %>
+<% end %>

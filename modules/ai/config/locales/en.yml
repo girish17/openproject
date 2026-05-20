@@ -1,0 +1,109 @@
+en:
+  plugin_openproject_ai:
+    name: "Yojana AI"
+    description: "AI-native features powered by Ollama."
+
+  permission_view_ai_assistant: "View AI assistant"
+  permission_manage_ai_assistant: "Manage AI assistant"
+  project_module_ai_assistant: "AI Assistant"
+
+  ai:
+    label_ai: "AI"
+    label_chat: "AI Chat"
+    label_conversation: "Conversation"
+    label_conversations: "Conversations"
+    label_new_conversation: "New conversation"
+    label_message: "Message"
+    label_messages: "Messages"
+    label_settings: "AI Settings"
+    label_ollama_endpoint: "Ollama endpoint"
+    label_default_model: "Default model"
+    label_max_tokens: "Max tokens"
+    label_temperature: "Temperature"
+    label_unavailable: "AI is unavailable. Check that Ollama is running."
+    feature_unavailable: "This AI feature is not available."
+    chat_welcome: "Ask me anything about your projects..."
+    chat_thinking: "Thinking..."
+
+    placeholder_message: "Ask me anything about your projects..."
+    placeholder_search: "Search in natural language..."
+
+    button_send: "Send"
+    button_new_chat: "New chat"
+    button_save: "Save"
+    button_summarize: "Summarize"
+    button_apply: "Apply"
+    button_apply_all: "Apply all"
+    button_dismiss: "Dismiss"
+
+    search_placeholder: "Search in natural language..."
+    search_loading: "Searching..."
+    search_unavailable: "AI search unavailable"
+    search_scope_work_packages: "Work packages"
+    search_scope_projects: "Projects"
+    search_scope_all: "Everything"
+
+    suggestion_prompt: "AI suggestions available"
+    summarize_loading: "Summarizing..."
+    summarize_unavailable: "Summarization unavailable"
+    summarize_no_summary: "No summary available"
+
+    label_ai_summary: "AI Summary"
+    no_description: "No description to summarize"
+    no_description_hint: "Add a description to the work package to use AI summarization."
+
+    tool:
+      search_work_packages: "Search work packages"
+      create_work_package: "Create work package"
+      update_work_package: "Update work package"
+      get_project_info: "Get project info"
+      get_user_tasks: "Get my tasks"
+      list_projects: "List projects"
+
+    label_agents: "AI Agents"
+    label_agent: "AI Agent"
+    label_new_agent: "New Agent"
+    label_agent_executions: "Execution History"
+    label_agent_type: "Type"
+    label_cron_expression: "Schedule (cron)"
+    label_agent_active: "Active"
+    label_last_run: "Last Run"
+    label_agent_status: "Status"
+    label_agent_result: "Result"
+
+    agent_type_custom: "Custom"
+    agent_type_daily_summary: "Daily Summary"
+
+    placeholder_agent_name: "My AI Agent"
+    placeholder_agent_prompt: "You are an agent that monitors work packages..."
+    placeholder_cron: "0 8 * * *"
+
+    button_new_agent: "New Agent"
+    button_run_now: "Run Now"
+
+    agent_status_pending: "Pending"
+    agent_status_running: "Running"
+    agent_status_completed: "Completed"
+    agent_status_failed: "Failed"
+
+    no_agents: "No AI agents configured yet."
+    no_executions: "No executions yet."
+
+  activerecord:
+    models:
+      ai/agent: "AI Agent"
+      ai/agent_execution: "Agent Execution"
+    attributes:
+      ai/agent:
+        name: "Name"
+        prompt: "Prompt"
+        cron_expression: "Cron expression"
+        agent_type: "Type"
+        active: "Active"
+        description: "Description"
+      ai/agent_execution:
+        status: "Status"
+        result: "Result"
+        error_message: "Error message"
+        started_at: "Started at"
+        completed_at: "Completed at"

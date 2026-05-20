@@ -137,6 +137,9 @@ lefthook-local.yml
 AGENTS.local.md
 CLAUDE.local.md
 
+# AI coding agent session notes
+session-*.md
+
 /.lefthook-local/
 
 frontend/package-lock.json

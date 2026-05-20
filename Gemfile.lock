@@ -72,6 +72,11 @@ GIT
       reline (>= 0.6.0)
 
 PATH
+  remote: modules/ai
+  specs:
+    openproject-ai (1.0.0)
+
+PATH
   remote: modules/auth_plugins
   specs:
     openproject-auth_plugins (1.0.0)
@@ -1679,6 +1684,7 @@ DEPENDENCIES
   omniauth-openid-connect!
   omniauth-openid_connect-providers!
   op-clamav-client (~> 3.4)
+  openproject-ai!
   openproject-auth_plugins!
   openproject-auth_saml!
   openproject-avatars!
@@ -2062,6 +2068,7 @@ CHECKSUMS
   op-clamav-client (3.4.2) sha256=f28d697d11758a2ba3dc530cfdf4871a00ecd517631e8bac30dee30cd6012964
   open4 (1.3.4) sha256=a1df037310624ecc1ea1d81264b11c83e96d0c3c1c6043108d37d396dcd0f4b1
   openid_connect (2.2.1) sha256=31264e85b5a36e33dff5e31560cc176175c26f30c260d7e95af93ff0065f3101
+  openproject-ai (1.0.0)
   openproject-auth_plugins (1.0.0)
   openproject-auth_saml (1.0.0)
   openproject-avatars (1.0.0)

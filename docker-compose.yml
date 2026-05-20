@@ -11,6 +11,7 @@ volumes:
   pgdata-test:
   tmp-test:
   fedata-test:
+  ollama_data:
 
 x-op-restart-policy: &restart_policy
   restart: unless-stopped
@@ -109,7 +110,17 @@ services:
     networks:
       - network
 
-  ######### Testing stuff below ############
+  ollama:
+    image: ollama/ollama
+    <<: *restart_policy
+    volumes:
+      - "ollama_data:/root/.ollama"
+    ports:
+      - "${OLLAMA_PORT:-11434}:11434"
+    networks:
+      - network
+
+######### Testing stuff below ############
 
   db-test:
     image: postgres:17

@@ -137,7 +137,7 @@ ENV OPENPROJECT_RAILS__CACHE__STORE=memcache
 ENV DATABASE_URL=postgres://openproject:openproject@127.0.0.1/openproject
 ENV PGDATA=/var/openproject/pgdata
 
-COPY --from=openproject/gosu /go/bin/gosu /usr/local/bin/gosu
+ADD https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64 /usr/local/bin/gosu
 RUN chmod +x /usr/local/bin/gosu && gosu nobody true
 
 COPY --from=openproject/hocuspocus:17.5.1 --chown=$APP_USER:$APP_USER /app /opt/hocuspocus
@@ -175,8 +175,7 @@ RUN cd /app && npm install && \
 RUN cd /app/public/assets/frontend && \
   ln -sf main-*.js main.js 2>/dev/null || true && \
   ln -sf polyfills-*.js polyfills.js 2>/dev/null || true && \
-  ln -sf styles-*.css styles.css 2>/dev/null || true && \
-  ln -sf jquery-*.js jquery.js 2>/dev/null || true || true
+  ln -sf styles-*.css styles.css 2>/dev/null || true
 
 # Expose ports for apache and postgres
 EXPOSE 80
