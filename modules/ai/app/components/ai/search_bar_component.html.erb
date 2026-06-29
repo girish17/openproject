@@ -1,3 +1,55 @@
+<style>
+  .ai-search-bar { position: relative; }
+  .ai-search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--body-background, #fff);
+    border: 1px solid var(--borderColor-default, #d0d7de);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 100;
+    max-height: 400px;
+    overflow-y: auto;
+    margin-top: 4px;
+  }
+  .ai-search-suggestion { padding: 12px 16px; }
+  .ai-search-summary {
+    font-size: 14px;
+    color: var(--fgColor-default, #1f2328);
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  .ai-search-results-list { margin: 8px 0; }
+  .ai-search-result-item { border-bottom: 1px solid var(--borderColor-muted, #e8eaed); }
+  .ai-search-result-item:last-child { border-bottom: none; }
+  .ai-search-result-link {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+    text-decoration: none;
+    color: inherit;
+  }
+  .ai-search-result-link:hover { color: var(--fgColor-accent, #0969da); }
+  .ai-search-result-title { font-size: 14px; font-weight: 500; }
+  .ai-search-result-meta { font-size: 12px; color: var(--fgColor-muted, #656d76); margin-top: 2px; }
+  .ai-search-more { font-size: 12px; color: var(--fgColor-muted, #656d76); padding: 4px 0; text-align: center; }
+  .ai-search-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--borderColor-muted, #e8eaed); }
+  .ai-search-count { font-size: 12px; color: var(--fgColor-muted, #656d76); }
+  .ai-search-go {
+    background: var(--bgColor-accent, #0969da);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .ai-search-go:hover { background: var(--bgColor-accent-emphasis, #0550ae); }
+  .ai-search-no-results { text-align: center; color: var(--fgColor-muted, #656d76); }
+</style>
+
 <div class="ai-search-bar"
      data-controller="ai--search"
      data-ai--search-url-value="<%= suggestions_path %>"

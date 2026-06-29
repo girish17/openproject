@@ -10,7 +10,7 @@ module Ai
       project = Project.find_by(id: params[:project_id]) if params[:project_id]
       result = Ai::SearchService.new(query, project:).call
 
-      redirect_to ai_search_path(q: result[:q], scope: result[:scope])
+      redirect_to Rails.application.routes.url_helpers.search_path(q: result[:q])
     end
 
     def suggestions

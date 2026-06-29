@@ -8,10 +8,12 @@ export default class AiSearchController extends Controller<HTMLInputElement> {
   }
 
   declare readonly resultsTarget: HTMLElement
+  declare readonly inputTarget: HTMLInputElement
   declare urlValue: string
   declare redirectUrlValue: string
 
   private debounceTimer: number | null = null
+  private lastQuery: string = ""
 
   query(event: InputEvent): void {
     const value = (event.target as HTMLInputElement).value.trim()
@@ -22,6 +24,7 @@ export default class AiSearchController extends Controller<HTMLInputElement> {
 
     if (value.length < 2) {
       this.resultsTarget.hidden = true
+      this.lastQuery = ""
       return
     }
 
@@ -37,6 +40,7 @@ export default class AiSearchController extends Controller<HTMLInputElement> {
   private async fetchSuggestions(query: string): Promise<void> {
     this.resultsTarget.hidden = false
     this.resultsTarget.textContent = "Searching..."
+    this.lastQuery = query
 
     try {
       const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute("content") || ""
@@ -59,34 +63,59 @@ export default class AiSearchController extends Controller<HTMLInputElement> {
     }
   }
 
-  private renderSuggestions(data: { q: string; scope: string; filters: Record<string, unknown> }): void {
+  private renderSuggestions(data: { q: string; scope: string; filters: Record<string, unknown>; results: unknown[]; summary?: string; count: number }): void {
+    if (!data.results || data.results.length === 0) {
+      this.resultsTarget.innerHTML = `
+        <div class="ai-search-suggestion ai-search-no-results">
+          <div class="ai-search-summary">No results found for "${this.escapeHtml(data.q)}"</div>
+          <button class="ai-search-go" data-action="click->ai--search#go">
+            Search anyway →
+          </button>
+        </div>
+      `
+      return
+    }
+
     const scopeLabel = data.scope === "work_packages" ? "Work packages" :
                        data.scope === "projects" ? "Projects" : "Everything"
 
-    const filterParts: string[] = []
-    if (data.filters) {
-      if (data.filters.status) filterParts.push(`status: ${data.filters.status}`)
-      if (data.filters.assignee) filterParts.push(`assignee: ${data.filters.assignee}`)
-      if (data.filters.priority) filterParts.push(`priority: ${data.filters.priority}`)
-      if (data.filters.type) filterParts.push(`type: ${data.filters.type}`)
+    let resultsHtml = ""
+    if (data.results.length > 0) {
+      const topResults = data.results.slice(0, 5) as Array<{id: number; subject?: string; name?: string; type?: string; status?: string; project?: string; url: string}>
+      resultsHtml = `<div class="ai-search-results-list">
+        ${topResults.map(r => `
+          <div class="ai-search-result-item">
+            <a href="${r.url}" class="ai-search-result-link">
+              <span class="ai-search-result-title">${this.escapeHtml(r.subject || r.name || "")}</span>
+              <span class="ai-search-result-meta">${[r.type, r.status, r.project].filter(Boolean).join(" · ")}</span>
+            </a>
+          </div>
+        `).join("")}
+        ${data.count > 5 ? `<div class="ai-search-more">+${data.count - 5} more results</div>` : ""}
+      </div>`
     }
 
     this.resultsTarget.innerHTML = `
       <div class="ai-search-suggestion">
-        <strong>Search:</strong> ${this.escapeHtml(data.q)}
-        <div class="ai-search-meta">
-          <span class="ai-search-scope">${scopeLabel}</span>
-          ${filterParts.length ? `<span class="ai-search-filters">${filterParts.join(" · ")}</span>` : ""}
+        ${data.summary ? `<div class="ai-search-summary">${this.escapeHtml(data.summary)}</div>` : ""}
+        ${resultsHtml}
+        <div class="ai-search-footer">
+          <span class="ai-search-count">${data.count} result${data.count !== 1 ? "s" : ""}</span>
+          <button class="ai-search-go" data-action="click->ai--search#go">
+            View all →
+          </button>
         </div>
-        <button class="ai-search-go" data-action="click->ai--search#go">
-          Search →
-        </button>
       </div>
     `
   }
 
   go(): void {
-    window.location.href = this.redirectUrlValue
+    if (this.lastQuery) {
+      const params = new URLSearchParams({ q: this.lastQuery })
+      window.location.href = `${this.redirectUrlValue}?${params.toString()}`
+    } else {
+      window.location.href = this.redirectUrlValue
+    }
   }
 
   private escapeHtml(text: string): string {

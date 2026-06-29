@@ -660,7 +660,7 @@ module Settings
       # to ensure a default is returned
       gravatar_fallback_image: {
         description: "Set default gravatar image fallback",
-        default: "404"
+        default: "mp"
       },
       hidden_menu_items: {
         description: "Hide menu items in the menu sidebar for each main menu (such as Administration and Projects).",
@@ -1389,7 +1389,7 @@ module Settings
       },
       youtube_channel: {
         description: "Link to YouTube channel in help menu",
-        default: "https://www.youtube.com/c/OpenProjectCommunity"
+        default: "https://yojana.girishm.info"
       },
       capture_external_links: {
         description: "Redirect external links through a warning page before leaving the application",

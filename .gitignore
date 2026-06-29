@@ -137,6 +137,9 @@ lefthook-local.yml
 AGENTS.local.md
 CLAUDE.local.md
 
+# Local deployment reference with real credentials
+docs/azure-deployment.local.md
+
 # AI coding agent session notes
 session-*.md
 

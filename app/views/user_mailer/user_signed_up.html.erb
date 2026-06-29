@@ -36,16 +36,6 @@ See COPYRIGHT and LICENSE files for more details.
    <%= link_to @activation_url, @activation_url %>
 </p>
 
-<br>
-<p>
-   <%= t(
-         :mail_body_register_links_html,
-         webinar_link: link_to("Webinar Link", OpenProject::Static::Links.url_for(:webinar_videos)),
-         youtube_link: link_to("Youtube Link", OpenProject::Configuration.youtube_channel),
-         get_started_link: link_to("Get Started Videos Link", OpenProject::Static::Links.url_for(:get_started_videos)),
-         documentation_link: link_to("Documentation Link", OpenProject::Static::Links.url_for(:openproject_docs))
-       ) %>
-</p>
 
 <p>
    <br>

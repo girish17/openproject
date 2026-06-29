@@ -9,9 +9,9 @@ module Ai
 
     def search_path
       if @project
-        project_ai_search_path(@project)
+        Rails.application.routes.url_helpers.project_search_path(@project, q: "")
       else
-        ai_search_path
+        Rails.application.routes.url_helpers.search_path(q: "")
       end
     end
 

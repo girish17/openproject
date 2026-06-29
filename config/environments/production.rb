@@ -87,11 +87,11 @@ Rails.application.configure do
 
   # Assume all access to the app is happening through a SSL-terminating reverse proxy.
   # Can be used together with config.force_ssl for Strict-Transport-Security and secure cookies.
-  # config.assume_ssl = true
+  config.assume_ssl = true
 
   # When https is configured, Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # Allow disabling HSTS redirect by using OPENPROJECT_HSTS=false
-  config.force_ssl = OpenProject::Configuration.https?
+  config.force_ssl = false
   config.ssl_options = {
     hsts: OpenProject::Configuration.hsts_enabled?,
     # Disable redirect on the internal SYS API

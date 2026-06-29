@@ -310,7 +310,7 @@ export default class AiChatController extends Controller<HTMLElement> {
     div.className = "ai-message assistant"
     div.innerHTML = `
       <div class="ai-message-avatar">AI</div>
-      <div class="ai-message-bubble">${this.escapeHtml(content)}</div>
+      <div class="ai-message-bubble">${this.markdownToHtml(content)}</div>
     `
     this.messagesTarget.appendChild(div)
     return div
@@ -328,12 +328,12 @@ export default class AiChatController extends Controller<HTMLElement> {
     if (el.classList.contains("ai-message")) {
       const bubble = el.querySelector(".ai-message-bubble")
       if (bubble) {
-        bubble.textContent = content
+        bubble.innerHTML = this.markdownToHtml(content)
       } else {
         el.textContent = content
       }
     } else {
-      el.innerHTML = `<div class="ai-message assistant"><div class="ai-message-avatar">AI</div><div class="ai-message-bubble">${this.escapeHtml(content)}</div></div>`
+      el.innerHTML = `<div class="ai-message assistant"><div class="ai-message-avatar">AI</div><div class="ai-message-bubble">${this.markdownToHtml(content)}</div></div>`
     }
     this.scrollToBottom()
   }
@@ -413,5 +413,17 @@ export default class AiChatController extends Controller<HTMLElement> {
     const div = document.createElement("div")
     div.textContent = text
     return div.innerHTML
+  }
+
+  private markdownToHtml(text: string): string {
+    const escaped = this.escapeHtml(text)
+    return escaped
+      .replace(/```([\s\S]*?)```/g, "<pre><code>$1</code></pre>")
+      .replace(/`([^`]+)`/g, "<code>$1</code>")
+      .replace(/\*\*([^*\n]+)\*\*/g, "<strong>$1</strong>")
+      .replace(/\*([^*\n]+)\*/g, "<em>$1</em>")
+      .replace(/^(#{1,6})\s+(.+)$/gm, (_, hashes, text) => `<h${hashes.length}>${text}</h${hashes.length}>`)
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+      .replace(/\n/g, "<br>")
   }
 }

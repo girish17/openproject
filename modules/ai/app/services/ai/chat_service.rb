@@ -26,6 +26,15 @@ module Ai
         end
 
         tool_calls = @last_response&.dig("message", "tool_calls")
+
+        if tool_calls.blank?
+          text_calls = detect_text_tool_calls(@last_response&.dig("message", "content") || "")
+          if text_calls.present?
+            tool_calls = text_calls
+            @last_response["message"]["tool_calls"] = tool_calls
+          end
+        end
+
         break if tool_calls.blank? || loop_count >= MAX_TOOL_CALL_LOOPS
 
         yield({ type: :tool_calls_start })
@@ -81,13 +90,51 @@ module Ai
         Current user: #{@user.name} (#{@user.mail})
         Current time: #{now.strftime("%Y-%m-%d %H:%M %Z")}
 
-        You have access to tools that let you search, create, and update work packages.
-        When a user asks you to do something, use the appropriate tool.
+        You have access to tools. When the user asks you to do something, use the appropriate tool.
         Always confirm what you've done and provide relevant URLs when creating or finding items.
-
         If the user asks about "my tasks" or "my work", use the get_user_tasks tool.
-        Be concise but helpful. Use markdown formatting for clarity.
+
+        IMPORTANT: You must NEVER output raw JSON, function call syntax, or tool call definitions
+        as text in your response. For example, do NOT write things like:
+          {"function": {"name": "search_work_packages", ...}}
+        or
+          Here's the result: {"id": 123, "subject": "..."}
+        Always respond in plain natural language, using markdown for formatting (bold, italic, lists, etc).
+        If you need to share structured data, describe it in words or use a markdown table.
       PROMPT
+    end
+
+    TEXT_TOOL_CALL_PATTERN = /
+      \{\s*
+        (?:
+          "function"\s*:\s*\{\s*"name"\s*:\s*"(\w+)"\s*,\s*"arguments"\s*:\s*(\{[^}]*\})
+          |
+          "name"\s*:\s*"(\w+)"\s*,\s*"arguments"\s*:\s*(\{[^}]*\})
+        )
+      \s*\}
+    /x
+
+    def detect_text_tool_calls(content)
+      calls = []
+      content.scan(TEXT_TOOL_CALL_PATTERN) do |match|
+        tool_name = match[0] || match[2]
+        args_str = match[1] || match[3]
+        next unless tool_name && args_str
+
+        begin
+          args = JSON.parse(args_str)
+          calls << {
+            "id" => "text-#{SecureRandom.hex(8)}",
+            "function" => {
+              "name" => tool_name,
+              "arguments" => args.is_a?(Hash) ? args.to_json : "{}"
+            }
+          }
+        rescue JSON::ParserError
+          next
+        end
+      end
+      calls
     end
 
     def tool_definitions

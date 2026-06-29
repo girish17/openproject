@@ -18,7 +18,7 @@ class CreateAiTables < ActiveRecord::Migration[8.0]
 
     create_table :ai_settings do |t|
       t.string :ollama_endpoint, null: false, default: "http://localhost:11434"
-      t.string :default_model, null: false, default: "llama3.2:3b"
+      t.string :default_model, null: false, default: "qwen2.5:7b"
       t.integer :max_tokens, null: false, default: 2048
       t.float :temperature, null: false, default: 0.7
       t.timestamps
