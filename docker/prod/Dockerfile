@@ -155,13 +155,17 @@ RUN ./docker/prod/setup/postinstall-onprem.sh && \
 RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - && \
   apt-get install -y nodejs
 
-# Fix symlinks for linked plugins (point to /app/modules instead of /home/dev/openproject)
+# Fix symlinks for linked plugins (point to /app/modules instead of local dev paths)
 RUN cd /app/frontend/src/app/features/plugins/linked && \
   for link in *; do \
     if [ -L "$link" ]; then \
       target=$(readlink "$link"); \
-      newtarget=$(echo "$target" | sed 's|/home/dev/openproject/modules|/app/modules|'); \
-      rm "$link" && ln -s "$newtarget" "$link"; \
+      newtarget=$(echo "$target" | \
+        sed -e 's|/home/dev/openproject/modules|/app/modules|g' \
+            -e 's|/Users/admin/yojana/modules|/app/modules|g' \
+            -e 's|/Users/[^/]*/yojana/modules|/app/modules|g' \
+            -e 's|/app/frontend/src/app/features/plugins/linked/../[^/]*|/app/modules|g'); \
+      rm -f "$link" && ln -s "$newtarget" "$link"; \
     fi; \
   done
 

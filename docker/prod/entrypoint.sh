@@ -51,7 +51,11 @@ if [ "$(id -u)" = '0' ]; then
 
 	mkdir -p "$APP_DATA_PATH"/{files,git,svn}
 	# The $APP_DATA_PATH may be hosted on a NAS that creates snapshots (or a btrfs filesystem). In such a case, the .snapshot folder cannot be touched.
-	find "$APP_DATA_PATH" -path '*/.snapshot*' -prune -o -exec chown "$APP_USER:$APP_USER" {} +
+<<<<<<< Updated upstream
+	find "$APP_DATA_PATH" -path '*/.snapshot*' -prune -o ! -path '*/pgdata*' -exec chown "$APP_USER:$APP_USER" {} + || true
+=======
+  find $APP_DATA_PATH | grep -v .snapshot | grep -v pgdata | xargs -n 1 chown $APP_USER:$APP_USER || true
+>>>>>>> Stashed changes
 	if [ -d /etc/apache2/sites-enabled ]; then
 		chown -R "$APP_USER:$APP_USER" /etc/apache2/sites-enabled
 		echo "OpenProject currently expects to be reached on the following domain: ${SERVER_NAME:=localhost}, which does not seem to be how your installation is configured." > /var/www/html/index.html
