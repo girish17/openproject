@@ -8,7 +8,7 @@ module Ai
       @llm = Ai::LlmClient.new
     end
 
-    def call
+    def call(stream: true)
       messages = build_messages
       tools = tool_definitions
       tool_objects = tool_registry
@@ -16,13 +16,17 @@ module Ai
       loop_count = 0
 
       begin
-        @llm.chat(messages, tools:, stream: true) do |event|
-          case event[:type]
-          when :token
-            yield({ type: :token, content: event[:content] })
-          when :done
-            @last_response = event[:response]
+        if stream
+          @llm.chat(messages, tools:, stream: true) do |event|
+            case event[:type]
+            when :token
+              yield({ type: :token, content: event[:content] })
+            when :done
+              @last_response = event[:response]
+            end
           end
+        else
+          @last_response = @llm.chat(messages, tools:, stream: false)
         end
 
         tool_calls = @last_response&.dig("message", "tool_calls")

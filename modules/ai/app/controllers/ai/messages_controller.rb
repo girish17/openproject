@@ -1,7 +1,5 @@
 module Ai
   class MessagesController < ApplicationController
-    include ActionController::Live
-
     no_authorization_required! :index, :create
     before_action :require_login
     before_action :require_ai_chat
@@ -38,35 +36,28 @@ module Ai
       response.headers["Cache-Control"] = "no-cache"
       response.headers["X-Accel-Buffering"] = "no"
 
-      write_sse(event: "connected", data: {})
+      sse = ["event: connected\ndata: {}\n\n"]
 
-      Ai::ChatService.new(conversation: @conversation, user: User.current).call do |event|
+      Ai::ChatService.new(conversation: @conversation, user: User.current).call(stream: false) do |event|
         case event[:type]
-        when :token
-          write_sse(event: "token", data: { token: event[:content] })
         when :done
-          write_sse(event: "done", data: { content: event[:content] })
+          sse << "event: token\ndata: #{({ token: event[:content] }).to_json}\n\n"
+          sse << "event: done\ndata: #{({ content: event[:content] }).to_json}\n\n"
         when :error
-          write_sse(event: "error", data: { message: event[:message] })
+          sse << "event: error\ndata: #{({ message: event[:message] }).to_json}\n\n"
         when :tool_calls_start
-          write_sse(event: "tool_calls_start", data: {})
+          sse << "event: tool_calls_start\ndata: {}\n\n"
         when :tool_call
-          write_sse(event: "tool_call", data: { name: event[:name], arguments: event[:arguments] })
+          sse << "event: tool_call\ndata: #{({ name: event[:name], arguments: event[:arguments] }).to_json}\n\n"
         when :tool_result
-          write_sse(event: "tool_result", data: { name: event[:name] })
+          sse << "event: tool_result\ndata: #{({ name: event[:name] }).to_json}\n\n"
         when :tool_calls_end
-          write_sse(event: "tool_calls_end", data: {})
+          sse << "event: tool_calls_end\ndata: {}\n\n"
         end
       end
 
-      write_sse(event: "completed", data: {})
-    rescue ActionController::Live::ClientDisconnected
-    ensure
-      response.stream.close
-    end
-
-    def write_sse(event:, data:)
-      response.stream.write("event: #{event}\ndata: #{data.to_json}\n\n")
+      sse << "event: completed\ndata: {}\n\n"
+      render plain: sse.join, content_type: "text/event-stream"
     end
 
     def serialize_message(m)
