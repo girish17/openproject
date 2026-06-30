@@ -68,7 +68,6 @@ import { firstValueFrom } from 'rxjs';
 import { WorkPackageIsolatedQuerySpaceDirective } from 'core-app/features/work-packages/directives/query-space/wp-isolated-query-space.directive';
 import { CurrentProjectService } from 'core-app/core/current-project/current-project.service';
 import { PathHelperService } from 'core-app/core/path-helper/path-helper.service';
-import { States } from 'core-app/core/states/states.service';
 import { StatusResource } from 'core-app/features/hal/resources/status-resource';
 
 export interface DisabledButtonPlaceholder {
@@ -114,6 +113,7 @@ export class BoardListComponent extends AbstractWidgetComponent implements OnIni
   readonly keepTab = inject(KeepTabService);
   readonly currentProject = inject(CurrentProjectService);
   readonly pathHelper = inject(PathHelperService);
+  readonly states = inject(States);
 
   /** Output fired upon query removal */
   @Output() onRemove = new EventEmitter<void>();
@@ -191,38 +191,6 @@ export class BoardListComponent extends AbstractWidgetComponent implements OnIni
   public canDragOutOfHandler = (workPackage:WorkPackageResource) => this.canMove(workPackage);
 
   public buttonPlaceholder:DisabledButtonPlaceholder|undefined;
-
-  constructor(
-    readonly apiv3Service:ApiV3Service,
-    readonly I18n:I18nService,
-    readonly state:StateService,
-    readonly cdRef:ChangeDetectorRef,
-    readonly transitions:TransitionService,
-    readonly boardFilters:BoardFiltersService,
-    readonly toastService:ToastService,
-    readonly querySpace:IsolatedQuerySpace,
-    readonly halNotification:HalResourceNotificationService,
-    readonly halEvents:HalEventsService,
-    readonly wpStatesInitialization:WorkPackageStatesInitializationService,
-    readonly wpViewFocusService:WorkPackageViewFocusService,
-    readonly wpViewSelectionService:WorkPackageViewSelectionService,
-    readonly boardListCrossSelectionService:BoardListCrossSelectionService,
-    readonly authorisationService:AuthorisationService,
-    readonly wpInlineCreate:WorkPackageInlineCreateService,
-    readonly injector:Injector,
-    readonly halEditing:HalResourceEditingService,
-    readonly loadingIndicator:LoadingIndicatorService,
-    readonly schemaCache:SchemaCacheService,
-    readonly boardService:BoardService,
-    readonly boardActionRegistry:BoardActionsRegistryService,
-    readonly causedUpdates:CausedUpdatesService,
-    readonly keepTab:KeepTabService,
-    readonly currentProject:CurrentProjectService,
-    readonly pathHelper:PathHelperService,
-    readonly states:States,
-  ) {
-    super(I18n, injector);
-  }
 
   ngOnInit():void {
     // Unset the isNew flag
@@ -446,7 +414,7 @@ export class BoardListComponent extends AbstractWidgetComponent implements OnIni
       // If status is not set or is the default "New", try to find a better match
       if (!currentStatus || (currentStatus.name === 'New' && this.query.name.toLowerCase() !== 'new')) {
         const statuses = (this.states as any).statuses.snapshot;
-        const matchingStatus = _.find(statuses, (s:any) => s.name.toLowerCase() === this.query.name.toLowerCase());
+        const matchingStatus = statuses.find((s:any) => s.name.toLowerCase() === this.query.name.toLowerCase());
 
         if (matchingStatus) {
           changeset.setValue('status', matchingStatus);

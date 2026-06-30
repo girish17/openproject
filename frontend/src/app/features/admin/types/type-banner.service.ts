@@ -1,21 +1,15 @@
 import { I18nService } from 'core-app/core/i18n/i18n.service';
 import { BannersService } from 'core-app/core/enterprise/banners.service';
-import { Inject, Injectable, DOCUMENT } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
 import { ConfirmDialogService } from 'core-app/shared/components/modals/confirm-dialog/confirm-dialog.service';
-import { ConfigurationService } from 'core-app/core/config/configuration.service';
 
 @Injectable()
 export class TypeBannerService extends BannersService {
-  eeAvailable = this.allowsTo('edit_attribute_groups');
+  readonly confirmDialog = inject(ConfirmDialogService);
 
-  constructor(
-    @Inject(DOCUMENT) protected documentElement:Document,
-    protected confirmDialog:ConfirmDialogService,
-    protected I18n:I18nService,
-    protected configuration:ConfigurationService,
-  ) {
-    super(documentElement, configuration);
-  }
+  readonly I18n = inject(I18nService);
+
+  eeAvailable = this.allowsTo('edit_attribute_groups');
 
   showEEOnlyHint():void {
     this.confirmDialog.confirm({

@@ -27,7 +27,7 @@
 //++
 
 import {
-  Component, EventEmitter, Input, Output, inject,
+  ChangeDetectionStrategy, Component, EventEmitter, Input, Output, inject,
 } from '@angular/core';
 import { I18nService } from 'core-app/core/i18n/i18n.service';
 import { AuthorisationService } from 'core-app/core/model-auth/model-auth.service';
@@ -66,14 +66,6 @@ export class BoardListMenuComponent {
   @Output() onRemove = new EventEmitter<void>();
 
   private halResourceService = inject(HalResourceService);
-
-  constructor(readonly opModalService:OpModalService,
-    readonly authorisationService:AuthorisationService,
-    private readonly querySpace:IsolatedQuerySpace,
-    private readonly boardService:BoardService,
-    private readonly boardActionRegistry:BoardActionsRegistryService,
-    readonly I18n:I18nService) {
-  }
 
   public get menuItems() {
     return async () => {

@@ -28,7 +28,7 @@
 
 import Mousetrap from 'mousetrap';
 import {
-  ChangeDetectorRef, Directive, ElementRef, Injector,
+  ChangeDetectorRef, Directive, ElementRef, Injector, inject,
 } from '@angular/core';
 import { I18nService } from 'core-app/core/i18n/i18n.service';
 import { AuthorisationService } from 'core-app/core/model-auth/model-auth.service';

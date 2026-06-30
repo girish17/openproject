@@ -91,15 +91,9 @@ OpenProjectStimulusApplication.preregister('external-links', ExternalLinksContro
 OpenProjectStimulusApplication.preregister('highlight-target-element', HighlightTargetElementController);
 OpenProjectStimulusApplication.preregister('select-autosize', SelectAutosizeController);
 OpenProjectStimulusApplication.preregister('editable-page-header-title', EditablePageHeaderTitleController);
-OpenProjectStimulusApplication.preregister('users--working-hours-form', WorkingHoursFormController);
-OpenProjectStimulusApplication.preregister('my--daily-reminders', DailyRemindersController);
-OpenProjectStimulusApplication.preregister('users--non-working-times', NonWorkingTimesController);
-OpenProjectStimulusApplication.preregister('users--non-working-times-form', NonWorkingTimesFormController);
-OpenProjectStimulusApplication.preregister('password-force-change', OpPasswordForceChangeController);
 OpenProjectStimulusApplication.preregister('check-all', CheckAllController);
-OpenProjectStimulusApplication.preregister('header-project-select', HeaderProjectSelectController);
 OpenProjectStimulusApplication.preregister('checkable', CheckableController);
-OpenProjectStimulusApplication.preregister('truncation', TruncationController);
+OpenProjectStimulusApplication.preregister('expandable-text', ExpandableTextController);
 OpenProjectStimulusApplication.preregister('ai--chat', AiChatController);
 OpenProjectStimulusApplication.preregister('ai--chat-toggle', AiChatToggleController);
 OpenProjectStimulusApplication.preregister('ai--agents', AiAgentsController);

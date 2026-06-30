@@ -106,6 +106,34 @@ RUN cp Gemfile.lock.bak Gemfile.lock && rm Gemfile.lock.bak && \
 RUN mkdir -p /app/tmp/assets-precompiled
 
 # -------------------------------------
+# app-runtime (intermediate, not published)
+# -------------------------------------
+FROM runtime-base AS app-runtime
+
+COPY --chown=$APP_USER:$APP_USER --from=app-build /app /app
+
+RUN ./docker/prod/setup/postinstall-common.sh && \
+  cp ./config/database.production.yml config/database.yml && \
+  ln -s $APP_PATH/docker/prod/setup/.irbrc /home/$APP_USER/
+
+# Precompile assets on first run (not during build to avoid OOM)
+RUN mkdir -p /app/tmp/assets-precompiled
+
+# -------------------------------------
+# app-runtime-slim (intermediate, not published)
+# -------------------------------------
+FROM runtime-base AS app-runtime-slim
+
+COPY --chown=$APP_USER:$APP_USER --from=app-build /app /app
+
+RUN ./docker/prod/setup/postinstall-common.sh && \
+  cp ./config/database.production.yml config/database.yml && \
+  ln -s $APP_PATH/docker/prod/setup/.irbrc /home/$APP_USER/
+
+# Precompile assets on first run (not during build to avoid OOM)
+RUN mkdir -p /app/tmp/assets-precompiled
+
+# -------------------------------------
 # slim (public)
 # -------------------------------------
 FROM app-runtime-slim AS slim
@@ -151,9 +179,9 @@ RUN ./docker/prod/setup/postinstall-onprem.sh && \
   ln -sf ../lib/node_modules/corepack/dist/corepack.js /usr/local/bin/corepack && \
   ln -s /app/docker/prod/setup/.irbrc /root/
 
-# Install Node.js for asset compilation
-RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - && \
-  apt-get install -y nodejs
+# Install Node.js 22.22.3 for asset compilation (frontend requires ^22.22.3)
+RUN curl -sL https://nodejs.org/dist/v22.22.3/node-v22.22.3-linux-x64.tar.gz | tar xzf - -C /usr/local --strip-components=1 && \
+  npm install -g npm@latest
 
 # Fix symlinks for linked plugins (point to /app/modules instead of local dev paths)
 RUN cd /app/frontend/src/app/features/plugins/linked && \

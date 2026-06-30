@@ -69,6 +69,7 @@ export class BoardInlineAddAutocompleterComponent implements AfterViewInit {
   private readonly cdRef = inject(ChangeDetectorRef);
   private readonly I18n = inject(I18nService);
   private readonly wpCardDragDrop = inject(WorkPackageCardDragAndDropService);
+  private readonly wpCreate = inject(WorkPackageCreateService);
 
   readonly text = {
     placeholder: this.I18n.t('js.relations_autocomplete.placeholder'),
@@ -126,20 +127,6 @@ export class BoardInlineAddAutocompleterComponent implements AfterViewInit {
   @Output() onCancel = new EventEmitter<undefined>();
 
   @Output() onReferenced = new EventEmitter<WorkPackageResource>();
-
-  constructor(private readonly querySpace:IsolatedQuerySpace,
-    private readonly pathHelper:PathHelperService,
-    private readonly apiV3Service:ApiV3Service,
-    private readonly urlParamsHelper:UrlParamsHelperService,
-    private readonly notificationService:WorkPackageNotificationService,
-    private readonly CurrentProject:CurrentProjectService,
-    private readonly halResourceService:HalResourceService,
-    private readonly schemaCacheService:SchemaCacheService,
-    private readonly cdRef:ChangeDetectorRef,
-    private readonly I18n:I18nService,
-    private readonly wpCreate:WorkPackageCreateService,
-    private readonly wpCardDragDrop:WorkPackageCardDragAndDropService) {
-  }
 
   ngAfterViewInit():void {
     if (!this.ngSelectComponent.ngSelectInstance) {
