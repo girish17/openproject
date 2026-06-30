@@ -67,6 +67,9 @@ RUN apk add --no-cache bash 2>/dev/null || true; \
       /tmp/preinstall-common.sh; \
     fi
 
+# Generate en_US.UTF-8 locale for PostgreSQL compatibility (pgdata may have been initialized with this locale)
+RUN localedef -i en_US -f UTF-8 en_US.UTF-8
+
 FROM runtime-base AS build-base
 ARG NODE_VERSION="22.22.3"
 
