@@ -215,22 +215,7 @@ RUN cd /app/public/assets/frontend && \
   ln -sf styles-*.css styles.css 2>/dev/null || true
 
 # Rebuild the frontend assets manifest (maps logical names to hashed filenames)
-RUN cd /app && ruby -e '
-require "json"
-require "pathname"
-assets_path = Pathname.new("public/assets/frontend/")
-manifest = assets_path.glob("**/*").select(&:file?).filter_map do |asset|
-  name = asset.basename(asset.extname).to_s
-  ext = asset.extname
-  if name =~ /\A(.+?)[-\.][A-Z0-9]{8}\z/
-    unhashed = $1
-    [Pathname.new(unhashed + ext).to_s, asset.relative_path_from(assets_path).to_s]
-  else
-    nil
-  end
-end.to_h
-Pathname.new("config/frontend_assets.manifest.json").write(manifest.to_json)
-puts "Frontend manifest: #{manifest.length} entries"
+RUN cd /app && ruby -e 'require "json"; require "pathname"; a=Pathname.new("public/assets/frontend/"); m=a.glob("**/*").select(&:file?).filter_map{|f|n=f.basename(f.extname).to_s;e=f.extname;if n=~/\A(.+?)[-\.][A-Z0-9]{8}\z/;[Pathname.new($1+e).to_s,f.relative_path_from(a).to_s]else;nil;end}.to_h;Pathname.new("config/frontend_assets.manifest.json").write(m.to_json);puts "Frontend manifest: #{m.length} entries"'
 
 # Expose ports for apache and postgres
 EXPOSE 80
