@@ -214,6 +214,24 @@ RUN cd /app/public/assets/frontend && \
   ln -sf polyfills-*.js polyfills.js 2>/dev/null || true && \
   ln -sf styles-*.css styles.css 2>/dev/null || true
 
+# Rebuild the frontend assets manifest (maps logical names to hashed filenames)
+RUN cd /app && ruby -e '
+require "json"
+require "pathname"
+assets_path = Pathname.new("public/assets/frontend/")
+manifest = assets_path.glob("**/*").select(&:file?).filter_map do |asset|
+  name = asset.basename(asset.extname).to_s
+  ext = asset.extname
+  if name =~ /\A(.+?)[-\.][A-Z0-9]{8}\z/
+    unhashed = $1
+    [Pathname.new(unhashed + ext).to_s, asset.relative_path_from(assets_path).to_s]
+  else
+    nil
+  end
+end.to_h
+Pathname.new("config/frontend_assets.manifest.json").write(manifest.to_json)
+puts "Frontend manifest: #{manifest.length} entries"
+
 # Expose ports for apache and postgres
 EXPOSE 80
 
