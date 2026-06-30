@@ -29,6 +29,10 @@ for version in $PGVERSION_CHOICES ; do
 	apt-get install -yq --no-install-recommends postgresql-$version
 done
 
+# Force-create cluster config for the primary version (pg_createcluster skips if
+# any other version's config already exists, but supervisord needs a config per version)
+pg_createcluster --start-conf=manual $PGVERSION main || true
+
 # remove any existing cluster
 service postgresql stop
 for version in $PGVERSION_CHOICES ; do

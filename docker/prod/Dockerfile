@@ -68,7 +68,9 @@ RUN apk add --no-cache bash 2>/dev/null || true; \
     fi
 
 # Generate en_US.UTF-8 locale for PostgreSQL compatibility (pgdata may have been initialized with this locale)
-RUN localedef -i en_US -f UTF-8 en_US.UTF-8
+# locales-all provides pre-compiled locale binaries for all supported locales
+RUN apt-get update -qq && apt-get install -yq --no-install-recommends locales-all && \
+  rm -rf /var/lib/apt/lists/*
 
 FROM runtime-base AS build-base
 ARG NODE_VERSION="22.22.3"
