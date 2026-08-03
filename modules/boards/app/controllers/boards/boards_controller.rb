@@ -7,6 +7,7 @@ module ::Boards
 
     before_action :load_and_authorize_in_optional_project
     before_action :find_board_for_deletion, only: %i[destroy]
+    before_action :find_board, only: %i[show split_view]
     before_action :find_board_for_export, only: %i[export]
 
     # The boards permission alone does not suffice
