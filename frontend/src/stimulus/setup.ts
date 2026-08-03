@@ -31,6 +31,8 @@ import EditablePageHeaderTitleController from './controllers/dynamic/editable-pa
 import AiChatController from './controllers/dynamic/ai/chat.controller';
 import AiChatToggleController from './controllers/dynamic/ai/chat-toggle.controller';
 import AiAgentsController from './controllers/dynamic/ai/agents.controller';
+import AiSearchController from './controllers/dynamic/ai/search.controller';
+import AiSummarizeController from './controllers/dynamic/ai/summarize.controller';
 
 import AutoSubmit from '@stimulus-components/auto-submit';
 import RevealController from '@stimulus-components/reveal';
@@ -97,6 +99,8 @@ OpenProjectStimulusApplication.preregister('expandable-text', ExpandableTextCont
 OpenProjectStimulusApplication.preregister('ai--chat', AiChatController);
 OpenProjectStimulusApplication.preregister('ai--chat-toggle', AiChatToggleController);
 OpenProjectStimulusApplication.preregister('ai--agents', AiAgentsController);
+OpenProjectStimulusApplication.preregister('ai--search', AiSearchController);
+OpenProjectStimulusApplication.preregister('ai--summarize', AiSummarizeController);
 
 const instance = OpenProjectStimulusApplication.start();
 window.Stimulus = instance;
