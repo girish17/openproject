@@ -336,11 +336,19 @@ class ApplicationController < ActionController::Base
 
   # Returns the API key present in the request
   def api_key_from_request
-    if params[:key].present?
-      params[:key]
-    elsif request.headers["X-OpenProject-API-Key"].present?
-      request.headers["X-OpenProject-API-Key"]
-    end
+    params[:key].presence ||
+      request.headers["X-OpenProject-API-Key"].presence ||
+      api_key_from_bearer_token
+  end
+
+  # Allows API tokens to be sent as Bearer tokens, e.g. for webhook authentication
+  def api_key_from_bearer_token
+    return unless (authorization = request.authorization)
+
+    scheme, credentials = authorization.split(" ", 2)
+    return unless scheme.casecmp("bearer").zero? && credentials.present?
+
+    credentials
   end
 
   # Converts the errors on an ActiveRecord object into a common JSON format

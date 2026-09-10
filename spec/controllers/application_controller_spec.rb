@@ -222,6 +222,49 @@ RSpec.describe ApplicationController do
     end
   end
 
+  describe "api key authentication", with_settings: { login_required: false } do
+    controller do
+      accept_key_auth :index
+      no_authorization_required! :index
+
+      def index
+        render plain: current_user.logged? ? current_user.id.to_s : "anon"
+      end
+    end
+
+    let(:token) { create(:api_token, user:) }
+
+    it "authenticates via API key param" do
+      get :index, params: { key: token.plain_value }, format: "json"
+
+      expect(response.body).to eq user.id.to_s
+    end
+
+    it "authenticates via X-OpenProject-API-Key" do
+      request.headers["X-OpenProject-API-Key"] = token.plain_value
+      request.headers["Accept"] = "application/json"
+      get :index
+
+      expect(response.body).to eq user.id.to_s
+    end
+
+    it "authenticates via Bearer API token" do
+      request.headers["Authorization"] = "Bearer #{token.plain_value}"
+      request.headers["Accept"] = "application/json"
+      get :index
+
+      expect(response.body).to eq user.id.to_s
+    end
+
+    it "does not authenticate via Basic auth" do
+      request.headers["Authorization"] = "Basic #{['user:pass'].pack('m0')}"
+      request.headers["Accept"] = "application/json"
+      get :index
+
+      expect(response.body).to eq "anon"
+    end
+  end
+
   describe "#require_login redirect target", with_settings: { login_required: true } do
     before do
       allow(controller).to receive(:current_user).and_return(User.anonymous)
