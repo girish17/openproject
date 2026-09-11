@@ -28,11 +28,33 @@ export LOCAL_CACHE_PATH="${WS_HOST}/cache"
 # mount, container-relative path for creating it)
 mkdir -p "${PWD}/cache"/{bundle,node/.npm,node/node_modules,node/frontend/node_modules,angular,runtime-logs}
 
+# Postgres conf tuned for the 2-vCPU/8GB CI host. The default docker/ci conf
+# targets 32GB/16-core runners and cannot map its shared memory here.
+cat > "$LOCAL_CACHE_PATH/postgresql.conf" <<EOF
+fsync = off
+synchronous_commit = off
+checkpoint_timeout = 30min
+full_page_writes = off
+deadlock_timeout = 20s
+autovacuum = off
+listen_addresses = '127.0.0.1'
+unix_socket_directories = '/tmp'
+max_connections = 30
+shared_buffers = 128MB
+effective_cache_size = 512MB
+maintenance_work_mem = 128MB
+wal_buffers = 4MB
+max_parallel_workers_per_gather = 2
+max_parallel_workers = 2
+max_parallel_maintenance_workers = 2
+EOF
+
 exec docker run --rm \
   -e CI_JOBS \
   -e RSPEC_RETRY_RETRY_COUNT="${CI_RETRY_COUNT:-4}" \
   --tmpfs /tmp \
   -v "$WS_HOST:/app" \
+  -v "$LOCAL_CACHE_PATH/postgresql.conf:/app/docker/ci/postgresql.conf" \
   -v "$LOCAL_CACHE_PATH/node/.npm:/app/.npm" \
   -v "$LOCAL_CACHE_PATH/node/node_modules:/app/node_modules" \
   -v "$LOCAL_CACHE_PATH/node/frontend/node_modules:/app/frontend/node_modules" \
