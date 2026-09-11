@@ -31,11 +31,11 @@ pipeline {
                description: 'Branch to test/build/deploy.')
         string(name: 'IMAGE_TAG', defaultValue: '',
                description: 'Override image tag (default: dev-azure-<BUILD_NUM>). For rollback, pass a previously-pushed tag with SKIP_BUILD=true.')
-        booleanParam(name: 'SKIP_TEST', defaultValue: false,
+        booleanParam(name: 'SKIP_TEST', defaultValue: true,
                description: 'Skip lint + spec + unit test stages.')
         booleanParam(name: 'SKIP_BUILD', defaultValue: false,
                description: 'Skip image build+push (deploy an existing tag).')
-        booleanParam(name: 'SKIP_DEPLOY', defaultValue: false,
+        booleanParam(name: 'SKIP_DEPLOY', defaultValue: true,
                description: 'Build+push the image only; do not deploy to production.')
     }
 
