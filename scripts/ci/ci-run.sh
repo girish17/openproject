@@ -5,8 +5,15 @@
 # The Jenkins agent is itself a Docker container: its workspace is at
 # /var/jenkins_home/workspace/... (bind-mounted from /var/lib/jenkins on the
 # host). Docker bind mounts are resolved against the host filesystem, so paths
-# must use the host-visible location (/var/lib/jenkins/...) rather than relying
-# on relative paths in docker-compose.ci.yml.
+# must use the host-visible location (/var/lib/jenkins/...).
+#
+# Notes:
+# - Persistent caches (bundler gems, npm) live OUTSIDE the workspace tree so
+#   the per-build `git clean -fdx` never wipes or conflicts with them.
+# - Never create docker bind mounts whose target directories live inside the
+#   checkout: docker creates missing targets as root, which breaks the next
+#   checkout's git clean. Angular's cache dir therefore uses NG_CACHE_PATH
+#   (tmpfs) instead of a volume.
 #
 # Usage: CI_JOBS=n scripts/ci/ci-run.sh <command...>
 
@@ -22,15 +29,23 @@ if ! docker image inspect openproject/ci:v1 >/dev/null 2>&1; then
 fi
 
 WS_HOST="$(echo "$PWD" | sed 's|^/var/jenkins_home|/var/lib/jenkins|')"
-export LOCAL_CACHE_PATH="${WS_HOST}/cache"
 
-# cache lives in the checked-out workspace (host path used for the docker bind
-# mount, container-relative path for creating it)
-mkdir -p "${PWD}/cache"/{bundle,node/.npm,node/node_modules,node/frontend/node_modules,angular,runtime-logs}
+# Persistent host-side cache locations (kept outside the workspace so the
+# per-build `git clean -fdx` does not touch them).
+CI_CACHE_HOST=/var/lib/jenkins/yojana-ci-cache
+conf_dir="${PWD}/.ci-cache"          # container-visible (workspace) for scratch files
+mkdir -p "$conf_dir"
+
+# Create + own the host cache dirs through the daemon (the script itself can
+# only see /var/jenkins_home/..., not /var/lib/jenkins).
+docker run --rm -u root \
+  -v "$CI_CACHE_HOST:/ci-cache" \
+  openproject/ci:v1 bash -c \
+  'mkdir -p /ci-cache/bundle /ci-cache/npm && chown -R 1000:1000 /ci-cache'
 
 # Postgres conf tuned for the 2-vCPU/8GB CI host. The default docker/ci conf
 # targets 32GB/16-core runners and cannot map its shared memory here.
-cat > "$LOCAL_CACHE_PATH/postgresql.conf" <<EOF
+cat > "$conf_dir/postgresql.conf" <<EOF
 fsync = off
 synchronous_commit = off
 checkpoint_timeout = 30min
@@ -52,12 +67,11 @@ EOF
 exec docker run --rm \
   -e CI_JOBS \
   -e RSPEC_RETRY_RETRY_COUNT="${CI_RETRY_COUNT:-4}" \
+  -e npm_config_cache=/usr/local/npm-cache \
+  -e NG_CACHE_PATH=/tmp/ng-cache \
   --tmpfs /tmp \
   -v "$WS_HOST:/app" \
-  -v "$LOCAL_CACHE_PATH/postgresql.conf:/app/docker/ci/postgresql.conf" \
-  -v "$LOCAL_CACHE_PATH/node/.npm:/app/.npm" \
-  -v "$LOCAL_CACHE_PATH/node/node_modules:/app/node_modules" \
-  -v "$LOCAL_CACHE_PATH/node/frontend/node_modules:/app/frontend/node_modules" \
-  -v "$LOCAL_CACHE_PATH/bundle:/usr/local/bundle" \
-  -v "$LOCAL_CACHE_PATH/angular:/app/frontend/.angular/cache" \
+  -v "$conf_dir/postgresql.conf:/app/docker/ci/postgresql.conf" \
+  -v "$CI_CACHE_HOST/bundle:/usr/local/bundle" \
+  -v "$CI_CACHE_HOST/npm:/usr/local/npm-cache" \
   openproject/ci:v1 "$@"
