@@ -38,7 +38,7 @@ RSpec.describe OpenProject::Static::Links do
 
     it "resolves the URL stored in the href with a locale" do
       expect(subject)
-        .to eq("https://www.openproject.org/docs/user-guide/agile-boards/#{locale_param}#action-boards-enterprise-add-on")
+        .to eq("https://yojana.girishm.info/docs/user-guide/agile-boards/#{locale_param}#action-boards-enterprise-add-on")
     end
 
     context "with german locale" do
@@ -48,7 +48,7 @@ RSpec.describe OpenProject::Static::Links do
 
       it "resolves the URL stored in the href with a locale" do
         expect(subject)
-          .to eq("https://www.openproject.org/docs/user-guide/agile-boards/#{locale_param}#action-boards-enterprise-add-on")
+          .to eq("https://yojana.girishm.info/docs/user-guide/agile-boards/#{locale_param}#action-boards-enterprise-add-on")
       end
     end
 
@@ -57,7 +57,7 @@ RSpec.describe OpenProject::Static::Links do
 
       it "adds locale parameter to docs URLs" do
         expect(subject)
-          .to eq("https://www.openproject.org/docs/system-admin-guide/authentication/openid-providers/#{locale_param}")
+          .to eq("https://yojana.girishm.info/docs/system-admin-guide/authentication/openid-providers/#{locale_param}")
       end
     end
 
@@ -65,7 +65,7 @@ RSpec.describe OpenProject::Static::Links do
       let(:args) { %i[website] }
 
       it "adds locale parameter to website URL" do
-        expect(subject).to eq("https://www.openproject.org?go_to_locale=en")
+        expect(subject).to eq("https://yojana.girishm.info?go_to_locale=en")
       end
     end
 
@@ -102,7 +102,7 @@ RSpec.describe OpenProject::Static::Links do
       it "does not add locale parameter when localize_url is false" do
         result = described_class.url_for(*args, localize_url: false)
         expect(result).not_to include("go_to_locale=")
-        expect(result).to eq("https://www.openproject.org/docs/user-guide/agile-boards/#action-boards-enterprise-add-on")
+        expect(result).to eq("https://yojana.girishm.info/docs/user-guide/agile-boards/#action-boards-enterprise-add-on")
       end
     end
   end
@@ -172,7 +172,7 @@ RSpec.describe OpenProject::Static::Links do
     subject { described_class.website_url }
 
     it "returns the website URL" do
-      expect(subject).to eq("https://www.openproject.org")
+      expect(subject).to eq("https://yojana.girishm.info")
     end
   end
 
@@ -180,7 +180,7 @@ RSpec.describe OpenProject::Static::Links do
     subject { described_class.website_link?(url) }
 
     context "with docs URLs" do
-      let(:url) { "https://www.openproject.org/docs/user-guide/agile-boards/" }
+      let(:url) { "https://yojana.girishm.info/docs/user-guide/agile-boards/" }
 
       it "returns true for URLs that start with the docs base URL" do
         expect(subject).to be true
@@ -237,7 +237,7 @@ RSpec.describe OpenProject::Static::Links do
       end
 
       it "returns the default user guides link" do
-        expect(subject).to eq("https://www.openproject.org/docs/user-guide/")
+        expect(subject).to eq("https://yojana.girishm.info/docs/user-guide/")
       end
     end
 

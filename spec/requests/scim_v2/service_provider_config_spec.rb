@@ -46,7 +46,7 @@ RSpec.describe "SCIM API ServiceProviderConfig" do
         get "/scim_v2/ServiceProviderConfig", {}, headers
 
         response_body = JSON.parse(last_response.body)
-        expect(response_body).to include("authenticationSchemes" => [{ "description" => "Bearer Token can be obtained in 3 different ways(https://www.openproject.org/docs/system-admin-guide/authentication/scim/#step-3-choose-an-authentication-method)",
+        expect(response_body).to include("authenticationSchemes" => [{ "description" => "Bearer Token can be obtained in 3 different ways(https://yojana.girishm.info/docs/system-admin-guide/authentication/scim/#step-3-choose-an-authentication-method)",
 
                                                                        "name" => "OAuth Bearer Token",
                                                                        "type" => "oauthbearertoken" }],
@@ -80,7 +80,7 @@ RSpec.describe "SCIM API ServiceProviderConfig" do
           expect(last_response).to have_http_status(200)
           response_body = JSON.parse(last_response.body)
           expect(response_body.keys).to eq(["meta", "schemas", "authenticationSchemes"])
-          expect(response_body).to include("authenticationSchemes" => [{ "description" => "Bearer Token can be obtained in 3 different ways(https://www.openproject.org/docs/system-admin-guide/authentication/scim/#step-3-choose-an-authentication-method)",
+          expect(response_body).to include("authenticationSchemes" => [{ "description" => "Bearer Token can be obtained in 3 different ways(https://yojana.girishm.info/docs/system-admin-guide/authentication/scim/#step-3-choose-an-authentication-method)",
                                                                          "name" => "OAuth Bearer Token",
                                                                          "type" => "oauthbearertoken" }],
                                            "schemas" => ["urn:ietf:params:scim:schemas:core:2.0:ServiceProviderConfig"])

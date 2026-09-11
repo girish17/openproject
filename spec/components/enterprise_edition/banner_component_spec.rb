@@ -257,7 +257,7 @@ RSpec.describe EnterpriseEdition::BannerComponent, type: :component do
       expect(component).to have_text(expected_title)
       expect(component).to have_text(expected_description)
 
-      expect(component).to have_link("More information", href: "https://www.openproject.org/enterprise-edition?go_to_locale=mo")
+      expect(component).to have_link("More information", href: "https://yojana.girishm.info/enterprise-edition?go_to_locale=mo")
     end
   end
 
