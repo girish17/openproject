@@ -186,7 +186,7 @@ RUN ./docker/prod/setup/postinstall-onprem.sh && \
 
 # Install Node.js 22.22.3 for asset compilation (frontend requires ^22.22.3)
 RUN curl -sL https://nodejs.org/dist/v22.22.3/node-v22.22.3-linux-x64.tar.gz | tar xzf - -C /usr/local --strip-components=1 && \
-  npm install -g npm@latest
+  npm install -g npm@11
 
 # Fix symlinks for linked plugins (point to /app/modules instead of local dev paths)
 RUN mkdir -p /app/frontend/src/app/features/plugins/linked && \
