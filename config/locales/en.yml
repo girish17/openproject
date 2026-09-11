@@ -3355,6 +3355,8 @@ en:
         description: "Custom actions are one-click shortcuts to a set of pre-defined actions that you can make available on certain work packages based on status, role, type or project."
       mcp_server:
         description: "Integrate AI agents with your Yojana instance through MCP."
+      meeting_templates:
+        description: "Define meeting templates with a set agenda structure and save time by reusing them when creating new meetings."
       nextcloud_sso:
         title: "Single Sign-On for Nextcloud Storage"
         description: "Enable seamless and secure authentication for your Nextcloud storage with Single Sign-On. Simplify access management and enhance user convenience."
@@ -4664,6 +4666,7 @@ en:
   label_wiki_toc_empty: "Table of Contents is empty as no headings are present."
   label_wiki_dont_show_menu_item: "Do not show this wikipage in project navigation"
   label_wiki_edit: "Wiki edit"
+  text_rename_wiki_page: "Rename wiki page"
   label_wiki_edit_plural: "Wiki edits"
   label_wiki_page_attachments: "Wiki page attachments"
   label_wiki_page_id: "Wiki page ID"
