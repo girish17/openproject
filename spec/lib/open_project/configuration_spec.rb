@@ -34,7 +34,7 @@ RSpec.describe OpenProject::Configuration, :settings_reset do
   describe ".[setting]" do
     it "fetches the value" do
       expect(described_class.app_title)
-        .to eql("OpenProject")
+        .to eql("Yojana")
     end
   end
 

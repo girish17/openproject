@@ -86,7 +86,7 @@ RSpec.describe "Authentication Stages" do
 
       expect_logged_in
       cookies = Capybara.current_session.driver.request.cookies
-      expect(cookies).to have_key "_open_project_session"
+      expect(cookies).to have_key "_yojana_session"
       expect(cookies).to have_key "autologin"
     end
   end

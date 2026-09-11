@@ -68,6 +68,10 @@ enterprise_features:
     href: https://yojana.girishm.info/docs/system-admin-guide/manage-work-packages/work-package-status/#create-a-new-work-package-status
   work_package_subject_generation:
     href: https://yojana.girishm.info/docs/system-admin-guide/manage-work-packages/work-package-types/automatic-subjects/
+enterprise_guide:
+  on_premises:
+    activate:
+      href: https://yojana.girishm.info/docs/enterprise-guide/enterprise-on-premises-guide/activate-enterprise-on-premises/
 enterprise_support:
   href: https://yojana.girishm.info/docs/enterprise-guide/support/
   label: :label_enterprise_support

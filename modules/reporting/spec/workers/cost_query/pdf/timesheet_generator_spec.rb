@@ -96,7 +96,7 @@ RSpec.describe CostQuery::PDF::TimesheetGenerator do
   end
 
   def expected_cover_page
-    ["OpenProject", query.name,
+    ["Yojana", query.name,
      time_entries.empty? ? nil : "#{format_date(time_entries.first.spent_on)} - #{format_date(time_entries.last.spent_on)}",
      user.name, export_time_formatted].compact
   end

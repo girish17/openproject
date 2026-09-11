@@ -53,8 +53,8 @@ RSpec.describe Setting do
   end
 
   describe "OpenProject's default settings" do
-    it "has OpenProject as application title" do
-      expect(described_class.app_title).to eq "OpenProject"
+    it "has Yojana as application title" do
+      expect(described_class.app_title).to eq "Yojana"
     end
 
     it "allows users to register themselves" do
@@ -124,7 +124,7 @@ RSpec.describe Setting do
   describe ".[setting]" do
     it "fetches the value" do
       expect(described_class.app_title)
-        .to eql("OpenProject")
+        .to eql("Yojana")
     end
 
     context "when value is blank but not nil" do
@@ -371,7 +371,7 @@ RSpec.describe Setting do
 
         # Falls back to default values, but hitting cache
         value = described_class.app_title
-        expect(described_class.app_title).to eq "OpenProject"
+        expect(described_class.app_title).to eq "Yojana"
         expect(value).to eq(described_class.app_title)
 
         expect(described_class).to have_received(:pluck).with(:name, :value).once
@@ -384,7 +384,7 @@ RSpec.describe Setting do
       end
 
       it "clears the cache when writing a setting" do
-        expect(described_class.app_title).to eq "OpenProject"
+        expect(described_class.app_title).to eq "Yojana"
         expect(RequestStore.read(:cached_settings)).to eq({})
 
         new_title = "OpenProject with changed title"

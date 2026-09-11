@@ -80,12 +80,12 @@ RSpec.describe UserMailer do
     it_behaves_like "mail is sent" do
       it "has the expected subject" do
         expect(deliveries.first.subject)
-          .to eql "OpenProject Test"
+          .to eql "Yojana Test"
       end
 
       it "includes the url to the instance" do
         expect(deliveries.first.body.encoded)
-          .to match Regexp.new("OpenProject URL: #{Setting.protocol}://#{Setting.host_name}")
+          .to match Regexp.new("Yojana URL: #{Setting.protocol}://#{Setting.host_name}")
       end
     end
 

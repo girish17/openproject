@@ -126,7 +126,7 @@ RSpec.describe "SAML provider callback",
       expect(subject.status).to eq(302)
       expect(subject.headers["Location"]).to eq("http://test.host/two_factor_authentication/request")
 
-      session = Sessions::SqlBypass.lookup_data(subject.cookies["_open_project_session"].first)
+      session = Sessions::SqlBypass.lookup_data(subject.cookies["_yojana_session"].first)
       expect(session["back_url"]).to eq "/projects?some_param=true"
     end
 

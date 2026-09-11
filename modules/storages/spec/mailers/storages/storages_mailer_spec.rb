@@ -41,7 +41,7 @@ RSpec.describe Storages::StoragesMailer do
     it "has the correct headers" do
       expect(mail.subject).to eq(expected_subject_text)
       expect(mail.to).to eq([admin.mail])
-      expect(mail.from).to eq(["openproject@example.net"])
+      expect(mail.from).to eq(["yojana@girishm.info"])
     end
 
     it "renders a link to the storage settings" do

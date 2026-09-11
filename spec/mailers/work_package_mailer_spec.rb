@@ -113,13 +113,13 @@ RSpec.describe WorkPackageMailer do
     it "has a message id header" do
       Timecop.freeze(Time.current) do
         expect(mail.message_id)
-          .to eql "op.journal-#{journal.id}.#{Time.current.strftime('%Y%m%d%H%M%S')}.#{recipient.id}@example.net"
+          .to eql "op.journal-#{journal.id}.#{Time.current.strftime('%Y%m%d%H%M%S')}.#{recipient.id}@girishm.info"
       end
     end
 
     it "has a references header" do
-      journal_part = "op.journal-#{journal.id}@example.net"
-      work_package_part = "op.work_package-#{work_package.id}@example.net"
+      journal_part = "op.journal-#{journal.id}@girishm.info"
+      work_package_part = "op.work_package-#{work_package.id}@girishm.info"
 
       expect(mail.references)
         .to eql [work_package_part, journal_part]
@@ -217,7 +217,7 @@ RSpec.describe WorkPackageMailer do
 
       it "has a references header" do
         expect(mail.references)
-          .to eql "op.work_package-#{work_package.id}@example.net"
+          .to eql "op.work_package-#{work_package.id}@girishm.info"
       end
     end
 
@@ -254,7 +254,7 @@ RSpec.describe WorkPackageMailer do
 
       it "has a references header" do
         expect(mail.references)
-          .to eql "op.work_package-#{work_package.id}@example.net"
+          .to eql "op.work_package-#{work_package.id}@girishm.info"
       end
     end
 

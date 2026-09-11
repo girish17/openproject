@@ -38,7 +38,7 @@ RSpec.describe OpenProject::TwoFactorAuthentication::TokenStrategy::MessageBird 
 
       it "returns the correct language and message" do
         expect(subject[:language]).to eq :"en-us"
-        expect(subject[:message]).to include "Your OpenProject one-time password is 1234"
+        expect(subject[:message]).to include "Your Yojana one-time password is 1234"
       end
     end
 

@@ -155,7 +155,7 @@ RSpec.describe "/oauth_clients/:oauth_client_id/ensure_connection endpoint", :we
 
               expect(last_response).to have_http_status(:found)
               expect(last_response.location).to eq("http://#{Setting.host_name}/")
-              expect(last_response.cookies.keys).to eq(["_open_project_session"])
+              expect(last_response.cookies.keys).to eq(["_yojana_session"])
             end
           end
 
@@ -169,7 +169,7 @@ RSpec.describe "/oauth_clients/:oauth_client_id/ensure_connection endpoint", :we
                 storage.oauth_client
                 expect(last_response).to have_http_status(:found)
                 expect(last_response.location).to eq("http://#{Setting.host_name}/123")
-                expect(last_response.cookies.keys).to eq(["_open_project_session"])
+                expect(last_response.cookies.keys).to eq(["_yojana_session"])
               end
             end
 
@@ -182,7 +182,7 @@ RSpec.describe "/oauth_clients/:oauth_client_id/ensure_connection endpoint", :we
                 storage.oauth_client
                 expect(last_response).to have_http_status(:found)
                 expect(last_response.location).to eq("http://#{Setting.host_name}/")
-                expect(last_response.cookies.keys).to eq(["_open_project_session"])
+                expect(last_response.cookies.keys).to eq(["_yojana_session"])
               end
             end
           end

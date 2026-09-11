@@ -48,7 +48,7 @@ RSpec.describe Reminders::NotificationMailer do
     describe "Email subject" do
       context "when the reminder has a note" do
         it "includes the note" do
-          expect(mail.subject).to eql("OpenProject - Reminder: This is an important reminder")
+          expect(mail.subject).to eql("Yojana - Reminder: This is an important reminder")
         end
       end
 
@@ -58,7 +58,7 @@ RSpec.describe Reminders::NotificationMailer do
         end
 
         it "includes the work package subject" do
-          expect(mail.subject).to eql("OpenProject - Reminder: #{work_package.subject}")
+          expect(mail.subject).to eql("Yojana - Reminder: #{work_package.subject}")
         end
       end
     end
@@ -70,7 +70,7 @@ RSpec.describe Reminders::NotificationMailer do
 
     it "sets the expected message_id header" do
       expect(mail.message_id)
-        .to eql "op.reminder.#{Time.current.strftime('%Y%m%d%H%M%S')}.#{recipient.id}@example.net"
+        .to eql "op.reminder.#{Time.current.strftime('%Y%m%d%H%M%S')}.#{recipient.id}@girishm.info"
     end
 
     it "sets the expected openproject headers" do

@@ -65,7 +65,7 @@ RSpec.describe DigestMailer do
     let(:mail_body) { mail.body.parts.detect { |part| part["Content-Type"].value == "text/html" }.body.to_s }
 
     it "notes the day and the number of notifications in the subject" do
-      expect(mail.subject).to eql "OpenProject - 1 unread notification"
+      expect(mail.subject).to eql "Yojana - 1 unread notification"
     end
 
     it "sends to the recipient" do
@@ -75,7 +75,7 @@ RSpec.describe DigestMailer do
     it "sets the expected message_id header" do
       allow(Time).to receive(:current).and_return(Time.current)
 
-      expect(mail.message_id).to eql "op.digest.#{Time.current.strftime('%Y%m%d%H%M%S')}.#{recipient.id}@example.net"
+      expect(mail.message_id).to eql "op.digest.#{Time.current.strftime('%Y%m%d%H%M%S')}.#{recipient.id}@girishm.info"
     end
 
     it "sets the expected openproject headers" do

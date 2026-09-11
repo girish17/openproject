@@ -119,7 +119,7 @@ RSpec.describe SharingMailer do
     it "has a message id header" do
       Timecop.freeze(Time.current) do
         expect(mail.message_id)
-          .to eq("op.member-#{work_package_member.id}.#{Time.current.strftime('%Y%m%d%H%M%S')}.#{current_user.id}@example.net")
+          .to eq("op.member-#{work_package_member.id}.#{Time.current.strftime('%Y%m%d%H%M%S')}.#{current_user.id}@girishm.info")
       end
     end
   end

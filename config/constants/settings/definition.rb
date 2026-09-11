@@ -76,7 +76,7 @@ module Settings
         default: false
       },
       app_title: {
-        default: "yojanā"
+        default: "Yojana"
       },
       organization_name: {
         format: :string,

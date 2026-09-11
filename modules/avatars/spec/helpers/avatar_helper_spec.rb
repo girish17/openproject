@@ -60,7 +60,7 @@ RSpec.describe AvatarHelper, with_settings: { protocol: "http" } do
         "http://gravatar.com"
       end
 
-    "#{host}/avatar/#{digest}?default=404&secure=#{ssl}"
+    "#{host}/avatar/#{digest}?default=#{OpenProject::Configuration.gravatar_fallback_image}&secure=#{ssl}"
   end
 
   describe "gravatar and local" do
