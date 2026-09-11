@@ -66,7 +66,7 @@ pipeline {
         stage('Setup CI env') {
             when { expression { !params.SKIP_TEST } }
             steps {
-                sh 'CI_JOBS=2 ./bin/ci setup-tests'
+                sh 'CI_JOBS=2 ./scripts/ci/ci-run.sh setup-tests'
             }
         }
 
@@ -78,7 +78,7 @@ pipeline {
                       if [ -z "$CHANGED" ]; then
                         echo "No Ruby files changed in this commit - skipping rubocop."
                       else
-                        CI_JOBS=2 ./bin/ci bundle exec rubocop --force-exclusion $CHANGED
+                        CI_JOBS=2 ./scripts/ci/ci-run.sh bundle exec rubocop --force-exclusion $CHANGED
                       fi'''
             }
         }
@@ -86,14 +86,14 @@ pipeline {
         stage('Spec (webhook auth)') {
             when { expression { !params.SKIP_TEST } }
             steps {
-                sh 'CI_JOBS=1 ./bin/ci bash -c "reset_dbs && bundle exec rspec spec/controllers/application_controller_spec.rb"'
+                sh 'CI_JOBS=1 ./scripts/ci/ci-run.sh bash -c "reset_dbs && bundle exec rspec spec/controllers/application_controller_spec.rb"'
             }
         }
 
         stage('Unit tests') {
             when { expression { !params.SKIP_TEST } }
             steps {
-                sh 'CI_JOBS=2 ./bin/ci run-units'
+                sh 'CI_JOBS=2 ./scripts/ci/ci-run.sh run-units'
             }
         }
 
