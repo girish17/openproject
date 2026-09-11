@@ -2,6 +2,9 @@
 
 # Production override to unlock all enterprise features
 Rails.application.config.after_initialize do
+  # Enterprise features are stubbed per-example in the test suite (with_ee)
+  next if Rails.env.test?
+
   next if EnterpriseToken.table_exists? && EnterpriseToken.active_tokens.any?
 
   EnterpriseToken.define_singleton_method(:active?) { true }

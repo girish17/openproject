@@ -1,5 +1,8 @@
 # Development-only override to allow all enterprise features
 Rails.application.config.after_initialize do
+  # Enterprise features are stubbed per-example in the test suite (with_ee)
+  next if Rails.env.test?
+
   # Override the load_token! method to return a mock token with all features
   module EnterpriseTokenDevOverride
     def load_token!
