@@ -113,7 +113,7 @@ RSpec.describe OpenProject::Static::Links do
     let(:args) { %i[website] }
 
     it "returns the translated label for the given path" do
-      expect(subject).to eq(I18n.t("label_openproject_website"))
+      expect(subject).to eq(I18n.t("label_yojana_website"))
     end
 
     context "with single key" do
