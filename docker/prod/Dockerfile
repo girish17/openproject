@@ -188,11 +188,6 @@ RUN ./docker/prod/setup/postinstall-onprem.sh && \
 RUN curl -sL https://nodejs.org/dist/v22.22.3/node-v22.22.3-linux-x64.tar.gz | tar xzf - -C /usr/local --strip-components=1 && \
   npm install -g npm@latest
 
-# Generate plugin frontend links (linked-plugins.module.ts, styles.sass, linked/)
-# In a clean checkout these are gitignored and must be created by the rake task.
-RUN cd /app && SECRET_KEY_BASE="$(openssl rand -hex 64)" DATABASE_URL=nulldb://db \
-  bundle exec rails openproject:plugins:register_frontend
-
 # Fix symlinks for linked plugins (point to /app/modules instead of local dev paths)
 RUN mkdir -p /app/frontend/src/app/features/plugins/linked && \
   cd /app/frontend/src/app/features/plugins/linked && \
@@ -209,8 +204,11 @@ RUN mkdir -p /app/frontend/src/app/features/plugins/linked && \
   done
 
 # Build frontend assets
+# linked/ and linked-plugins.{module.ts,styles.sass} are gitignored in a clean
+# checkout, so regenerate them via the node script before the angular build.
 RUN cd /app && npm install && \
   cd /app/frontend && npm install && \
+  npm run ci:plugins:register_frontend && \
   npm run build
 
 # Create symlinks for main assets (Angular outputs hashed filenames)
