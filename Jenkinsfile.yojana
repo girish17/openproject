@@ -1,0 +1,170 @@
+#!/usr/bin/env groovy
+/*
+ * Yojana CI/CD Pipeline (Jenkins job: yojana-pipeline)
+ *
+ * Test -> build all-in-one linux/amd64 image -> push Docker Hub -> blue-green
+ * deploy to VM `element` -> smoke tests. Manual "Build with Parameters".
+ *
+ * Required Jenkins credentials (IDs): see docs/CI-CD-YOJANA.md
+ *   github-yojana, dockerhub, yojana-azure-sp, yojana-azure-tenant
+ *
+ * Parameters:
+ *   BRANCH     - branch to test/build/deploy (default dev)
+ *   IMAGE_TAG  - override image tag (default dev-azure-<BUILD_NUM>); pass a
+ *                previously-pushed tag together with SKIP_BUILD=true to roll
+ *                back without rebuilding
+ *   SKIP_TEST  - skip lint + spec + unit test stages
+ *   SKIP_BUILD - skip image build+push (use with IMAGE_TAG for rollback)
+ *   SKIP_DEPLOY- finish after image build+push (no production impact)
+ */
+
+pipeline {
+    agent any
+    options {
+        disableConcurrentBuilds()
+        timestamps()
+        timeout(time: 360, unit: 'MINUTES')
+    }
+
+    parameters {
+        string(name: 'BRANCH', defaultValue: 'dev',
+               description: 'Branch to test/build/deploy.')
+        string(name: 'IMAGE_TAG', defaultValue: '',
+               description: 'Override image tag (default: dev-azure-<BUILD_NUM>). For rollback, pass a previously-pushed tag with SKIP_BUILD=true.')
+        booleanParam(name: 'SKIP_TEST', defaultValue: false,
+               description: 'Skip lint + spec + unit test stages.')
+        booleanParam(name: 'SKIP_BUILD', defaultValue: false,
+               description: 'Skip image build+push (deploy an existing tag).')
+        booleanParam(name: 'SKIP_DEPLOY', defaultValue: false,
+               description: 'Build+push the image only; do not deploy to production.')
+    }
+
+    environment {
+        REPO = 'https://github.com/girish17/yojana.git'
+        BRANCH = "${params.BRANCH}"
+        IMAGE_TAG = "${params.IMAGE_TAG ?: 'dev-azure-' + env.BUILD_NUMBER}"
+        IMAGE_BASE = 'girish17/yojana'
+        AZURE_SUBSCRIPTION = '5a1ef3e9-7b40-4163-b0ff-d0b8d2ec6e62'
+        AZURE_RG = 'AZUREQUANTUM'
+        VM_NAME = 'element'
+        CONTAINER_NAME = 'yojana-v5'
+        NOTIFY_EMAIL = 'm.girish.cs@gmail.com'
+    }
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+                checkout([$class: 'GitSCM',
+                    branches: [[name: BRANCH]],
+                    userRemoteConfigs: [[url: REPO,
+                        credentialsId: 'github-yojana']],
+                    extensions: [[$class: 'CleanBeforeCheckout']]])
+            }
+        }
+
+        stage('Setup CI env') {
+            when { expression { !params.SKIP_TEST } }
+            steps {
+                sh 'CI_JOBS=2 ./bin/ci setup-tests'
+            }
+        }
+
+        stage('Lint') {
+            when { expression { !params.SKIP_TEST } }
+            steps {
+                sh '''git fetch origin --quiet 2>/dev/null || true
+                      CHANGED="$(git diff --name-only $(git rev-parse HEAD~1 2>/dev/null || echo HEAD) HEAD 2>/dev/null | grep -E '\\.rb$' || true)"
+                      if [ -z "$CHANGED" ]; then
+                        echo "No Ruby files changed in this commit - skipping rubocop."
+                      else
+                        CI_JOBS=2 ./bin/ci bundle exec rubocop --force-exclusion $CHANGED
+                      fi'''
+            }
+        }
+
+        stage('Spec (webhook auth)') {
+            when { expression { !params.SKIP_TEST } }
+            steps {
+                sh 'CI_JOBS=1 ./bin/ci bash -c "reset_dbs && bundle exec rspec spec/controllers/application_controller_spec.rb"'
+            }
+        }
+
+        stage('Unit tests') {
+            when { expression { !params.SKIP_TEST } }
+            steps {
+                sh 'CI_JOBS=2 ./bin/ci run-units'
+            }
+        }
+
+        stage('Build image') {
+            when { expression { !params.SKIP_BUILD } }
+            steps {
+                withCredentials([usernamePassword(credentialsId: 'dockerhub',
+                                     usernameVariable: 'DH_USER',
+                                     passwordVariable: 'DH_PASS')]) {
+                    sh '''echo "$DH_PASS" | docker login -u "$DH_USER" --password-stdin
+                          docker buildx build --push \
+                            --platform linux/amd64 \
+                            -t ${IMAGE_BASE}:${IMAGE_TAG} \
+                            -t ${IMAGE_BASE}:dev-azure \
+                            --target all-in-one -f docker/prod/Dockerfile .'''
+                }
+            }
+        }
+
+        stage('Approve deploy') {
+            when { expression { !params.SKIP_DEPLOY } }
+            steps {
+                script {
+                    input message: "Deploy ${IMAGE_TAG} to yojana.girishm.info? (rollback mode: ${params.SKIP_BUILD})",
+                          ok: 'Deploy to production'
+                }
+            }
+        }
+
+        stage('Deploy blue-green') {
+            when { expression { !params.SKIP_DEPLOY } }
+            steps {
+                withCredentials([
+                    usernamePassword(credentialsId: 'yojana-azure-sp',
+                                     usernameVariable: 'AZ_CLIENT_ID',
+                                     passwordVariable: 'AZ_CLIENT_SECRET'),
+                    string(credentialsId: 'yojana-azure-tenant', variable: 'AZ_TENANT_ID')
+                ]) {
+                    sh 'bash scripts/ci/deploy-yojana.sh $IMAGE_TAG'
+                }
+            }
+        }
+
+        stage('Smoke tests') {
+            when { expression { !params.SKIP_DEPLOY } }
+            steps {
+                sh 'bash scripts/ci/smoke-test.sh https://yojana.girishm.info'
+            }
+        }
+    }
+
+    post {
+        success {
+            echo "Yojana ${env.BUILD_NUMBER} succeeded (image ${IMAGE_TAG})."
+            script {
+                try {
+                    mail to: NOTIFY_EMAIL,
+                         subject: "Yojana ${env.BUILD_NUMBER} SUCCESS (${BRANCH})",
+                         body: "Build ${currentBuild.absoluteUrl}\nBranch: ${BRANCH}\nImage: ${IMAGE_TAG}\nResult: ${currentBuild.currentResult}\n${currentBuild.absoluteUrl}console"
+                } catch (e) { echo "Failed to send success email: ${e}" }
+            }
+        }
+        failure {
+            echo "Yojana ${env.BUILD_NUMBER} failed - rollback guidance: docs/CI-CD-YOJANA.md"
+            script {
+                try {
+                    mail to: NOTIFY_EMAIL,
+                         subject: "Yojana ${env.BUILD_NUMBER} FAILURE (${BRANCH})",
+                         body: "Build ${currentBuild.absoluteUrl}\nBranch: ${BRANCH}\nImage: ${IMAGE_TAG}\nResult: ${currentBuild.currentResult}\n${currentBuild.absoluteUrl}console"
+                } catch (e) { echo "Failed to send failure email: ${e}" }
+            }
+        }
+    }
+}
