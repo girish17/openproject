@@ -24,7 +24,9 @@ fi
 WS_HOST="$(echo "$PWD" | sed 's|^/var/jenkins_home|/var/lib/jenkins|')"
 export LOCAL_CACHE_PATH="${WS_HOST}/cache"
 
-mkdir -p "$LOCAL_CACHE_PATH"/{bundle,node/.npm,node/node_modules,node/frontend/node_modules,angular,runtime-logs}
+# cache lives in the checked-out workspace (host path used for the docker bind
+# mount, container-relative path for creating it)
+mkdir -p "${PWD}/cache"/{bundle,node/.npm,node/node_modules,node/frontend/node_modules,angular,runtime-logs}
 
 exec docker run --rm \
   -e CI_JOBS \
