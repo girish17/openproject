@@ -35,6 +35,7 @@ WS_HOST="$(echo "$PWD" | sed 's|^/var/jenkins_home|/var/lib/jenkins|')"
 CI_CACHE_HOST=/var/lib/jenkins/yojana-ci-cache
 conf_dir="${PWD}/.ci-cache"          # container-visible (workspace) for scratch files
 mkdir -p "$conf_dir"
+conf_dir_host="$WS_HOST/.ci-cache"   # same dir as seen by the docker daemon (host FS)
 
 # Create + own the host cache dirs through the daemon (the script itself can
 # only see /var/jenkins_home/..., not /var/lib/jenkins).
@@ -71,7 +72,7 @@ exec docker run --rm \
   -e NG_CACHE_PATH=/tmp/ng-cache \
   --tmpfs /tmp \
   -v "$WS_HOST:/app" \
-  -v "$conf_dir/postgresql.conf:/app/docker/ci/postgresql.conf" \
+  -v "$conf_dir_host/postgresql.conf:/app/docker/ci/postgresql.conf" \
   -v "$CI_CACHE_HOST/bundle:/usr/local/bundle" \
   -v "$CI_CACHE_HOST/npm:/usr/local/npm-cache" \
   openproject/ci:v1 "$@"
