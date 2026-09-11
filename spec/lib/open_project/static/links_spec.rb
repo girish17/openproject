@@ -73,7 +73,7 @@ RSpec.describe OpenProject::Static::Links do
       let(:args) { %i[github] }
 
       it "does not add a parameter" do
-        expect(subject).to eq("https://github.com/opf/openproject")
+        expect(subject).to eq("https://github.com/girishm/yojana")
         expect(subject).not_to include("go_to_locale=")
       end
     end
