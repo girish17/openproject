@@ -10,19 +10,20 @@ module Boards
 
     def options_for_widgets(params)
       project = params[:project]
-      
+
       # Create 3 queries for the default lanes
       lane_names = ["To Do", "In Progress", "Done"]
       widgets = []
-      
+
       lane_names.each_with_index do |name, index|
         query_result = Queries::CreateService.new(user: User.current).call(
           project: project,
           name: name,
           public: true,
-          filters: query_filters
+          filters: query_filters,
+          sort_criteria: query_sort_criteria
         )
-        
+
         if query_result.success?
           widgets << Grids::Widget.new(
             start_row: 1,
@@ -37,14 +38,14 @@ module Boards
           )
         end
       end
-      
+
       widgets
     end
 
     def query_filters
       [{ manual_sort: { operator: "ow", values: [] } }]
     end
-    
+
     def column_count_for_board
       3
     end

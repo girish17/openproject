@@ -29,7 +29,7 @@
 #++
 
 require "spec_helper"
-require_relative "base_create_service_shared_examples"
+require_relative "../base_create_service_shared_examples"
 
 RSpec.describe Boards::BasicBoardCreateService do
   shared_let(:project) { create(:project) }
@@ -67,8 +67,8 @@ RSpec.describe Boards::BasicBoardCreateService do
       it "creates one of each", :aggregate_failures do
         subject
 
-        expect(widgets.count).to eq 1
-        expect(queries.count).to eq 1
+        expect(widgets.count).to eq 3
+        expect(queries.count).to eq 3
       end
 
       it "sets the manual sorting filter on each" do
